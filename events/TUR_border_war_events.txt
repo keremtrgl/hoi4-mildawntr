@@ -1,0 +1,174 @@
+# Turkey submod: outcome events for border conflicts started by decisions and focuses.
+# start_border_war expects event ids for on_win / on_lose / on_cancel.
+
+add_namespace = TUR_border_war
+
+# on_win (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.1
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		143 = { set_demilitarized_zone = yes }
+	}
+}
+
+# on_lose (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.2
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = -75 add_war_support = -0.05
+	}
+}
+
+# on_cancel (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.3
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_war_support = -0.03
+	}
+}
+
+# on_win (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.4
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = 75 add_war_support = 0.02
+	}
+}
+
+# on_lose (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.5
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = -75 add_stability = -0.03
+	}
+}
+
+# on_cancel (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.6
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = -50 add_stability = -0.02
+	}
+}
+
+# on_win (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.7
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		974 = { set_demilitarized_zone = yes }
+	}
+}
+
+# on_lose (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.8
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = -25 add_war_support = -0.03
+	}
+}
+
+# on_cancel (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.9
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_war_support = -0.03
+	}
+}
+
+# on_win (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.10
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = 75 add_war_support = 0.03
+	}
+}
+
+# on_lose (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.11
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = -75 add_stability = -0.05
+	}
+}
+
+# on_cancel (common/decisions/Turkey.txt)
+country_event = {
+	id = TUR_border_war.12
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = -50 add_stability = -0.03
+	}
+}
+
+# on_lose (common/national_focus/MD_TUR_MHF.txt)
+country_event = {
+	id = TUR_border_war.13
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = 50
+	}
+}
+
+# on_cancel (common/national_focus/MD_TUR_MHF.txt)
+country_event = {
+	id = TUR_border_war.14
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_war_support = -0.03
+	}
+}
+
+# on_win (common/national_focus/MD_TUR_MHF.txt)
+country_event = {
+	id = TUR_border_war.15
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = 75 add_war_support = 0.03
+	}
+}
+
+# on_lose (common/national_focus/MD_TUR_MHF.txt)
+country_event = {
+	id = TUR_border_war.16
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = -75 add_stability = -0.05
+	}
+}
+
+# on_cancel (common/national_focus/MD_TUR_MHF.txt)
+country_event = {
+	id = TUR_border_war.17
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_political_power = -50 add_stability = -0.03
+	}
+}

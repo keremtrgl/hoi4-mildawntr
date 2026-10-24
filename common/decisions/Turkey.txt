@@ -5319,17 +5319,17 @@ TUR_harsh_foreign_policy = {
     attacker = {
         state = 156
         num_provinces = 4
-        on_win = { 143 = { set_demilitarized_zone = yes } }
-        on_lose = { add_political_power = -75 add_war_support = -0.05 }
-        on_cancel = { add_war_support = -0.03 }
+        on_win = TUR_border_war.1
+        on_lose = TUR_border_war.2
+        on_cancel = TUR_border_war.3
     }
 				
     defender = {
         state = 143
         num_provinces = 4
-        on_win = { add_political_power = 75 add_war_support = 0.02 }
-        on_lose = { add_political_power = -75 add_stability = -0.03 }
-        on_cancel = { add_political_power = -50 add_stability = -0.02 }
+        on_win = TUR_border_war.4
+        on_lose = TUR_border_war.5
+        on_cancel = TUR_border_war.6
 	}     } } }	
 
 	battle_for_athens  = {
@@ -5374,17 +5374,17 @@ TUR_harsh_foreign_policy = {
     attacker = {
         state = 934
         num_provinces = 3
-        on_win = { 974 = { set_demilitarized_zone = yes } }
-        on_lose = { add_political_power = -25 add_war_support = -0.03 }
-        on_cancel = { add_war_support = -0.03 }
+        on_win = TUR_border_war.7
+        on_lose = TUR_border_war.8
+        on_cancel = TUR_border_war.9
     }
 				
     defender = {
         state = 974
         num_provinces = 1
-        on_win = { add_political_power = 75 add_war_support = 0.03 }
-        on_lose = { add_political_power = -75 add_stability = -0.05 }
-        on_cancel = { add_political_power = -50 add_stability = -0.03 }
+        on_win = TUR_border_war.10
+        on_lose = TUR_border_war.11
+        on_cancel = TUR_border_war.12
     }
 }  
 	}  }

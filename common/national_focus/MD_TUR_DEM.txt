@@ -394,7 +394,7 @@ block_defence_decrease = yes
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = air_doctrine
+				category = naval_doctrine
 			}
  
 			}
@@ -433,7 +433,7 @@ block_defence_decrease = yes
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = air_doctrine
+				category = naval_doctrine
 			}
   } 
 		}
@@ -3441,8 +3441,8 @@ TUR_kemalist_turn_hostile_effect = yes
 				recalculate_party = yes
 			}
 			custom_effect_tooltip = TUR_AKP_start
-			}
-hidden_effect = {
+			
+		hidden_effect = {
 remove_ideas = media_opinion_towards_good_happy_everyone
 remove_ideas = media_opinion_towards_bad_1_left_wing_sad
 remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
@@ -3453,6 +3453,8 @@ remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad
 remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
 add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 }
+		}
+
 		}
 	focus = {
 		id = TUR_open_minded_islam

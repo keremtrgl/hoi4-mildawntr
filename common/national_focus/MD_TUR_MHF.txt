@@ -2104,16 +2104,16 @@ change_state_after_war = yes
     attacker = {
         state = 162
         num_provinces = 3
-        on_lose = { add_political_power = 50 }
-        on_cancel = { add_war_support = -0.03 }
+        on_lose = TUR_border_war.13
+        on_cancel = TUR_border_war.14
     } } 
 				
     defender = {
         state = 193
         num_provinces = 4
-        on_win = { add_political_power = 75 add_war_support = 0.03 }
-        on_lose = { add_political_power = -75 add_stability = -0.05 }
-        on_cancel = { add_political_power = -50 add_stability = -0.03 }
+        on_win = TUR_border_war.15
+        on_lose = TUR_border_war.16
+        on_cancel = TUR_border_war.17
     }
 }  
 	}  

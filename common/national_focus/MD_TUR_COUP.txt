@@ -334,10 +334,12 @@ focus_tree = {
 		y = 7
 
 		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
-			hidden_effect = { country_event = Turkey_news.16 } 
+			 
 	completion_reward = {
     set_cosmetic_tag = IST
-			} 
+			
+		hidden_effect = { country_event = Turkey_news.16 }
+		} 
 	}
 	focus = {
 		id = TURF_destroy_corruption

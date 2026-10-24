@@ -1322,8 +1322,8 @@ swap_ideas = {
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
-			} }
-		    CHI = {
+			} 
+		CHI = {
 					army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = CAT_land_doctrine
@@ -1331,7 +1331,9 @@ swap_ideas = {
 				uses = 1
 				category = land_doctrine
 			}
-		} } 
+		}
+		}
+		     } 
 	focus = {
 		id = TKF_chinese_guarantees
 		icon = peoples_republic_of_china
@@ -5206,7 +5208,7 @@ swap_ideas = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = air_doctrine
+				category = naval_doctrine
 			}
 			157 = {
 				add_extra_state_shared_building_slots = 1
@@ -5279,7 +5281,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = air_doctrine
+				category = naval_doctrine
 			}
 			} }	
 	focus = {
@@ -8983,14 +8985,16 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = air_doctrine
-			} }
-					TUR = {
+				category = naval_doctrine
+			} 
+		TUR = {
 						army_experience = 25
 				set_temp_variable = { percent_change = 3 }
 				set_temp_variable = { tag_index = CHI.id }
 				change_influence_percentage = yes
 			}
+		}
+					
 			} 
 	focus = {
 		id = TKF_guerilla_warfare
@@ -9414,7 +9418,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = air_doctrine
+				category = naval_doctrine
 			}
 					add_war_support = 0.05
 					CHI = {
