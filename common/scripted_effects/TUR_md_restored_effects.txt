@@ -1,0 +1,119 @@
+# Millennium Dawn 2.0.2 Turkey scripted effects still used by MD on_actions and the submod.
+
+TUR_government_change = {
+	if = {
+		limit = {
+			PKK = {
+				is_subject_of = TUR
+			}
+			TUR = {
+				has_cosmetic_tag = TUR_NEW_TURKIC_STATE
+				PKK = {
+					NOT = {
+						has_cosmetic_tag = PKK_OTTOMAN_subject
+					}
+				}
+			}
+		}
+		PKK = {
+			drop_cosmetic_tag = yes
+			clear_variable = dynamic_flag_variant
+			set_cosmetic_tag = PKK_OTTOMAN_subject
+		}
+	}
+	if = {
+		limit = {
+			PKK = {
+				is_subject_of = TUR
+			}
+			TUR = {
+				has_cosmetic_tag = TUR_PAN_TURKIC
+				PKK = {
+					NOT = {
+						has_cosmetic_tag = PKK_TURKIC_subject
+					}
+				}
+			}
+		}
+		PKK = {
+			drop_cosmetic_tag = yes
+			clear_variable = dynamic_flag_variant
+			set_cosmetic_tag = PKK_TURKIC_subject
+		}
+	}
+	if = {
+		limit = {
+			PKK = {
+				is_subject_of = TUR
+			}
+			TUR = {
+				has_cosmetic_tag = TUR_VANGUARD
+				PKK = {
+					NOT = {
+						has_cosmetic_tag = PKK_VANGUARD_subject
+					}
+				}
+			}
+		}
+		PKK = {
+			drop_cosmetic_tag = yes
+			clear_variable = dynamic_flag_variant
+			set_cosmetic_tag = PKK_VANGUARD_subject
+		}
+	}
+	if = {
+		limit = {
+			PKK = {
+				is_subject_of = TUR
+			}
+			TUR = {
+				has_cosmetic_tag = TUR_ANATOLIAN_SYNDICATE
+				PKK = {
+					NOT = {
+						has_cosmetic_tag = PKK_KURDISH_SYNDICATE
+					}
+				}
+			}
+		}
+		PKK = {
+			drop_cosmetic_tag = yes
+			clear_variable = dynamic_flag_variant
+			set_cosmetic_tag = PKK_KURDISH_SYNDICATE
+		}
+	}
+}
+
+TUR_parties_random = {
+	random = {
+		chance = 30
+		add_to_variable = { TUR_event_counter_1_party = 1 }
+	}
+	if = {
+		limit = { check_variable = { TUR_event_counter_1_party > 5 } }
+			set_variable = { TUR_event_counter_1_party = 0 }
+			random_list = {
+				25 = {
+					country_event = Turkish_parties.1
+				}
+				25 = {
+					country_event = Turkish_parties.2
+				}
+				25 = {
+					country_event = Turkish_parties.3
+				}
+				25 = {
+					country_event = Turkish_parties.4
+				}
+			}
+	}
+}
+
+TUR_update_mafia_dirty_variable = {
+	if = {
+		limit = { check_variable = { TUR_mafia_ui_dirty_var < 10000 } }
+		add_to_variable = { TUR_mafia_ui_dirty_var = 1 }
+	}
+	else = {
+		set_variable = { TUR_mafia_ui_dirty_var = 1 }
+	}
+}

@@ -1,0 +1,185 @@
+# Millennium Dawn 2.0.2 Turkey ideas still referenced by MD content and the submod.
+ideas = {
+	country = {
+		TUR_no_disasters_plan = {
+
+			picture = risk_of_famine
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = -0.20
+				health_cost_multiplier_modifier = 0.20
+			}
+		}
+
+		TUR_drug_problem = { #
+
+			picture = prisoners
+			allowed_civil_war = { always = yes }
+			modifier = {
+				monthly_population = -0.05
+				recruitable_population_factor = -0.15
+			}
+		}
+
+		TUR_belgian_workers = { #Mafia idea
+
+			picture = scientists_defect
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.20
+				production_speed_radar_station_factor = 0.20
+				production_speed_arms_factory_factor = 0.20
+			}
+		}
+
+		TUR_no_economic_plan = {
+
+			picture = turkey_collapse_of_econ
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = -0.10
+				production_speed_buildings_factor = -0.25
+				tax_gain_multiplier_modifier = -0.05
+				interest_rate_multiplier_modifier = 0.50
+				projects_cost_modifier = 0.15
+				local_resources_oil_factor = -0.10
+local_resources_aluminium_factor = -0.10
+local_resources_rubber_factor = -0.10
+local_resources_tungsten_factor = -0.10
+local_resources_steel_factor = -0.10
+local_resources_chromium_factor = -0.10
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		TUR_party_rumours = {
+
+
+			picture = political_drain
+
+			allowed_civil_war = {
+				has_country_leader = {
+					character = TUR_bulent_ecevit
+					ruling_only = yes
+				}
+			}
+
+			cancel = {
+				NOT = {
+					has_country_leader = {
+						character = TUR_bulent_ecevit
+						ruling_only = yes
+					}
+				}
+			}
+			modifier = {
+				political_power_factor = -0.20
+				democratic_drift = -0.03
+			}
+		}
+
+		TUR_committees_of_resistance_patrol = {
+
+			picture = morale_bonus
+
+			allowed_civil_war = {
+				emerging_anarchist_communism_are_in_power = yes
+			}
+
+			cancel = {
+				NOT = {
+					OR = {
+						western_liberals_are_in_power = yes
+						emerging_communist_state_are_in_power = yes
+						emerging_anarchist_communism_are_in_power = yes
+						emerging_autocracy_are_in_power = yes
+					}
+				}
+			}
+
+			modifier = {
+				nationalist_drift = -0.02
+				foreign_subversive_activites = -0.1
+				enemy_operative_capture_chance_factor = 0.10
+				enemy_operative_detection_chance_factor = 0.15
+				political_power_factor = -0.05
+			}
+
+		}
+
+		CIW_member = {
+
+			picture = ciwmember
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			cancel = { }
+
+			rule = {
+				can_create_factions = no
+			}
+			modifier = {
+				trade_opinion_factor = 0.1
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.25
+			}
+		}
+
+		TUR_naval_expansion_response = {
+			picture = coastal_defense_ships
+			allowed_civil_war = { always = yes }
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+
+		TUR_neo_ottomanism = { #AKP/MHP Idea
+
+			allowed_civil_war = { always = yes }
+			cancel = {
+				NOT = {
+					neutrality_neutral_muslim_brotherhood_are_in_power = yes
+				}
+			}
+			picture = ottoman_spirit
+			modifier = {
+				foreign_influence_modifier = 0.05
+				conscription_factor = 0.075
+			}
+		}
+
+		TUR_islamic_legacy = { #IBDA-C Idea
+
+			allowed_civil_war = { always = yes }
+			cancel = {
+				NOT = {
+					salafist_caliphate_are_in_power = yes
+				}
+			}
+			picture = sunni1
+			modifier = {
+				fascism_drift = 0.05
+				army_attack_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+	}
+	hidden_ideas = {
+		TUR_taxing_bosphor = {
+
+
+			allowed_civil_war = { always = yes }
+
+			cancel = {
+				NOT = { has_government = communism }
+			}
+
+			modifier = {
+				custom_modifier_tooltip = TUR_taxing_bosphorus
+			}
+		}
+	}
+}

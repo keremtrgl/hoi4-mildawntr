@@ -12989,7 +12989,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 				ideology = Neutral_Muslim_Brotherhood
 				traits = {
 					neutrality_Neutral_Muslim_Brotherhood
-					engineer
+					ex_engineer
 				} }
 			custom_effect_tooltip = davutoglu_resigns_as_pressure
 	}
@@ -36131,7 +36131,7 @@ country_event = {
 	create_field_marshal = {
 		name = "Deniz Gülünç"
 		picture = "unknown_general.dds"
-		traits = { fast_planner skilled_expert}
+		traits = { fast_planner skilled_staffer}
 		skill = 4
 		attack_skill = 4
 		defense_skill = 4
@@ -36175,7 +36175,7 @@ country_event = {
 	create_corps_commander = {
 		name = "Ali Nurhan"
 		picture = "unknown_general.dds"
-		traits = { commando artillery_commando offensive_doctrine invader}
+		traits = { commando army_commando_1 offensive_doctrine }
 		skill = 3
 		attack_skill = 4
 		defense_skill = 1

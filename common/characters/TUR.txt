@@ -317,7 +317,7 @@ characters={
 			}
 		}
 		corps_commander={
-		traits = { panzer_leader skilled_staffer infantry_leader  }
+		traits = { panzer_leader skilled_staffer infantry_leader }
 		skill = 4
 		attack_skill = 4
 		defense_skill = 2
@@ -336,7 +336,7 @@ characters={
 			}
 		}
 		corps_commander={
-		traits = { invader organizer trickster}
+		traits = { organizer trickster}
 		skill = 4
 		attack_skill = 3
 		defense_skill = 2
@@ -475,7 +475,7 @@ characters={
 			}
 		}
 		corps_commander ={
-		traits = { air_cavalry_expert special_forces_expert tsk_ustun_hizmet_madalyonu}
+		traits = { air_cavalry_expert special_forces_trait tsk_ustun_hizmet_madalyonu}
 		skill = 4
 		attack_skill = 4
 		defense_skill = 3
@@ -616,7 +616,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ tsk_nato_officer screen_captain}
+			traits={ tsk_nato_officer }
 			skill=4
 			attack_skill=3
 			defense_skill=6
@@ -1049,7 +1049,7 @@ characters={
 			}
 		}
         field_marshal = {
-		traits = { expert_delegator adaptable charismatic }
+		traits = { expert_delegator adaptable }
 		skill = 4
 		attack_skill = 4
 		defense_skill = 5
@@ -1089,7 +1089,7 @@ characters={
 			}
 		}
         field_marshal = {
-		traits = { camouflage_expert adaptable fast_planner guerilla_fighter }
+		traits = { camouflage_expert adaptable fast_planner guerrilla_officer }
 		skill = 4
 		attack_skill = 2
 		defense_skill = 4

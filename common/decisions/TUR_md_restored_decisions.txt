@@ -1,0 +1,94 @@
+# Millennium Dawn 2.0.2 Turkey decisions (mafia system) still used by the submod.
+
+TUR_mafia_influence_mechanic = {
+	TUR_seize_goods_from_ports = {
+		fixed_random_seed = no
+		visible = {
+			has_country_flag = playing_mafia
+			has_country_flag = TUR_opening_holland
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TUR_we_need_60_mafia
+				check_variable = { from.mafia_germany > 0.59 }
+			}
+			hidden_trigger = {
+				has_country_flag = playing_mafia
+			}
+			NOT = {
+				OR = {
+					has_decision = TUR_decrease_policing_holland
+					has_decision = TUR_establish_drug_networks_rotterdam
+				}
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove TUR_seize_goods_from_ports"
+			random_list = {
+				33 = {
+					TUR = {
+						add_equipment_to_stockpile = {
+							type = convoy
+							amount = 30
+							producer = HOL
+						}
+					}
+					HOL = {
+						add_equipment_to_stockpile = {
+							type = convoy
+							amount = -30
+							producer = HOL
+						}
+					}
+				}
+				33 = {
+					TUR = {
+						add_equipment_to_stockpile = {
+							type = infantry_weapons_1
+							amount = 400
+							producer = HOL
+						}
+					}
+					HOL = {
+						add_equipment_to_stockpile = {
+							type = infantry_weapons_1
+							amount = -400
+							producer = HOL
+						}
+					}
+				}
+				33 = {
+					set_temp_variable = { treasury_change = 12 }
+					modify_treasury_effect = yes
+				}
+			}
+		}
+
+		days_remove = 45
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+}
+
+TUR_rebuilding_kurdistan = {
+	TUR_the_promise_of_no_return = {
+		allowed = { always = no }
+		fire_only_once = yes
+		available = {
+			has_country_flag = TUR_finalized_reforms
+		}
+		days_mission_timeout = 1500
+		is_good = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TUR_the_promise_of_no_return"
+			country_event = TUR_pkk.601
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TUR_the_promise_of_no_return"
+			country_event = TUR_pkk.600
+		}
+	}
+}
