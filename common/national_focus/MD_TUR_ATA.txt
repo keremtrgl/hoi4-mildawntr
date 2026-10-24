@@ -4111,7 +4111,6 @@ create_production_license = {
     equipment = {
         type = Rec_tank_1
         version = 0
-        new_prioritised = no
     }
     cost_factor = 0
 }
@@ -4162,7 +4161,6 @@ create_production_license = {
     equipment = {
         type = IFV_1
         version = 0
-        new_prioritised = no
     }
     cost_factor = 0
 }
@@ -4171,7 +4169,6 @@ create_production_license = {
     equipment = {
         type = MBT_3
         version = 0
-        new_prioritised = no
     }
     cost_factor = 0
 }
@@ -4278,7 +4275,6 @@ create_production_license = {
     equipment = {
         type = artillery_2
         version = 0
-        new_prioritised = no
     }
     cost_factor = 0
 }
@@ -4287,7 +4283,6 @@ create_production_license = {
     equipment = {
         type = SP_arty_3
         version = 0
-        new_prioritised = no
     }
     cost_factor = 0
 }
@@ -4770,7 +4765,7 @@ focus = {
      available = {
           is_power_balance_in_range = {
                id = TRGX_power_balance
-               range < TRG_middle_left_side_range  
+               range < TRGX_middle_left_side_range  
           }
      }
 

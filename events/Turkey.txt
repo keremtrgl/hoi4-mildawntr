@@ -6830,7 +6830,7 @@ country_event = {
 		name = Turkey.193.a
 		ai_chance = { factor = 1}
 
-    
+
 		935 = {
 			damage_building = {
 				type = infrastructure
@@ -6970,7 +6970,7 @@ country_event = {
 		name = Turkey.199.a
 		ai_chance = { factor = 1}
 
-  
+
     custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
 				add_to_variable = { party_pop_array^3 = 0.03 }
@@ -9537,7 +9537,7 @@ country_event = {
 	}	
   } 
 
- 
+
 ##Event: Space Plan
 #country_event = {
 #id = Turkey.273
@@ -13789,7 +13789,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	}	
   }
 
- 
+
 ##Event: Interest Rate Alternative: 8.1
 country_event = {
  id = Turkey.395
@@ -27805,7 +27805,7 @@ country_event = {
 		name = TurkeyF.39.a
 		ai_chance = { factor = 1}
 
-    
+
 	give_guarantee = EGY
 	EGY = {
 	give_guarantee = TUR 	
@@ -28181,7 +28181,7 @@ country_event = {
 		name = TurkeyF.50.a
 		ai_chance = { factor = 100}
 
-    
+
 		custom_effect_tooltip = DEC_5_PKK_POINT
 subtract_from_variable = { var = pkk_presence value = 5 }
 			add_to_variable = { TUR_PKK_aggro = -5 }
@@ -28274,7 +28274,7 @@ country_event = {
 		name = TurkeyF.53.a
 		ai_chance = { factor = 100}
 
-   
+
 	add_stability = -0.02
 	add_political_power = -50
 	}
@@ -29032,7 +29032,7 @@ country_event = {
 		name = TurkeyF.80.a
 		ai_chance = { factor = 100}
 
-    
+
 	TUR = {
 	country_event = TurkeyF.81
 	 }
@@ -29042,7 +29042,7 @@ country_event = {
 		name = TurkeyF.80.b
 		ai_chance = { factor = 100}
 
-    
+
 	TUR = {
 	country_event = TurkeyF.82
 	 }
@@ -29917,9 +29917,9 @@ country_event = {
 
                    add_war_support = 0.02
 				   add_ideas = defence_07
-				   
+
 		add_command_power = 25
-	
+
 		add_stability = -0.03
 	}
 	option = {
@@ -29930,7 +29930,7 @@ country_event = {
 				   add_stability = 0.02			
 }
 } 
-	
+
 
 
 
@@ -30688,7 +30688,7 @@ country_event = {
 } 
 }
 } 
-	
+
 
 
 ##Event: Turkey Wants To Recreation Of Central Powers
@@ -33473,11 +33473,12 @@ country_event = {
 					writer
 				}
 		}		
+	}
 	option = {
 		name = TurkeyF.223.c
 		ai_chance = { factor = 1}
 
- 
+
 			create_country_leader = {
 				name = "Kudret Özarsay"
 				picture = "kudret_ozersay.dds"
@@ -33487,7 +33488,7 @@ country_event = {
 				}
 		}		 
 }
-} }
+} 
 
 ##Event: Threats To Mafia Group
 country_event = {
@@ -36017,7 +36018,6 @@ add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_COM }
 	create_country_leader = {
 		name = "Kemal Okuyan"
 		picture = "TUR_Kemal_Okuyan.dds"
-		expire = ""
 		ideology = communist_state
 		traits = {
 		emerging_communist_state
@@ -38036,7 +38036,7 @@ country_event = {
 	    add_stability = 0.01
 		add_timed_idea = { idea = earthquake_preparations days = 30 } 
 		subtract_from_variable = { TUR_building_resistancy = -3}
-	
+
 		custom_effect_tooltip = HOUSING_INCREASE_3
 	}
 }
@@ -40690,7 +40690,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 			}
 		}
 
-	
+
 	5 = {
  TUR_kemalist_turn_ally_effect = yes 
 TUR_traditionalists_turn_enemy_effect = yes 

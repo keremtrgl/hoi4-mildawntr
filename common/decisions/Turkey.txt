@@ -5127,10 +5127,8 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		fire_only_once = yes		  
           selectable_mission = yes                
           days_mission_timeout = 100              
-          timeout_effect = {                      
-               complete_effect = {
+          timeout_effect = {
 			   country_event = Turkey.11
-			   }  			   
           }
           complete_effect = {            				   
           }

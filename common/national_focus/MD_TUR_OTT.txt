@@ -1477,7 +1477,7 @@ focus_tree = {
 				
 	completion_reward = {
 			add_stability = 0.05
-	  		political_power = -75
+	  		add_political_power = -75
 			custom_effect_tooltip = army_withdrawals_from_politics_action_ottomans
 					}
 				}
@@ -6720,7 +6720,9 @@ diplomatic_relation = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
 				
-    completion_reward = {
+    search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		completion_reward = {
 			add_war_support = 0.03
 			set_cosmetic_tag = UMAYYAD
 			custom_effect_tooltip = ibda_approaching_4
@@ -6729,8 +6731,8 @@ diplomatic_relation = {
 				recalculate_party = yes
 			}
 
-		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
-		search_filters = {FOCUS_FILTER_ANNEXATION}	
+			
+			
 
 
             add_state_core = 1120

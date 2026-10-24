@@ -3596,7 +3596,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 		available = {
 			is_power_balance_in_range = {
 				id = TRGX_power_balance
-				range < TRG_middle_left_side_range  
+				range < TRGX_middle_left_side_range  
 			}
 		}
 
@@ -3677,8 +3677,8 @@ custom_effect_tooltip = WARN_GULEN
 		custom_effect_tooltip = ALLIANCE_OF_ANTI_GULENISTS
 			set_power_balance = {
 					id = TRGX_power_balance
-					left_side = TRG_default_left_side 
-					right_side = TRG_default_right_side 
+					left_side = TRGX_default_left_side 
+					right_side = TRGX_default_right_side 
 					set_value = -0.15
 				}
 				}
