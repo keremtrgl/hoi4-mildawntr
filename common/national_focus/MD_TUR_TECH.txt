@@ -148,17 +148,17 @@ has_completed_focus = TECH_launch_the_new_government
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_Civilian
+				name = CAT_civilian
 				bonus = 0.5
 				uses = 2
-				category = CAT_Civilian
+				category = CAT_civilian
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_agriculture_tech
+				name = CAT_agriculture
 				bonus = 0.5
 				uses = 2
-				category = CAT_agriculture_tech
+				category = CAT_agriculture
 			}
 
  }
@@ -1003,7 +1003,7 @@ add_ideas = the_economist_cabinet
 	}
 	focus = {
 		id = TECH_the_new_point_mechanism
-		icon = business_man
+		icon = businessman
 		cost = 7.2
 		prerequisite = {
 			focus = TECH_manage_the_BIST
@@ -1752,7 +1752,7 @@ swap_ideas = {
 		GEO = {
 		add_political_power = 25
 		}
-		NGK = {
+		NKR = {
 		add_political_power = 25
 		}
 		SOO = {
@@ -1952,8 +1952,8 @@ swap_ideas = {
 		completion_reward = {
 	add_stability = -0.1
 	add_political_power = 50
-			set_temp_variable = { modify_eurosceptic = 0.03 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = -0.03 }
+			europeanism_change = yes
 }   } 
 	focus = {
 		id = TECH_schengen_visa_deal
@@ -1973,8 +1973,8 @@ swap_ideas = {
 		completion_reward = {
 	add_ideas = free_eu_visa_deal
 				
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 }   } 
 	focus = {
 		id = TECH_industrial_integrity
@@ -1996,8 +1996,8 @@ swap_ideas = {
                 934 = {
 				add_extra_state_shared_building_slots = 5
             } 
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 		} }
 	focus = {
 		id = TECH_taarif_deal
@@ -2017,8 +2017,8 @@ swap_ideas = {
 
 		completion_reward = {
              add_ideas = turkish_taarif_deal
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 		} }   
 	focus = {
 		id = TECH_destroy_the_eu_turkey_deal
@@ -2036,8 +2036,8 @@ swap_ideas = {
 	completion_reward = {
 	remove_ideas = EU_Turkey_deal
 	add_war_support = 0.02
-			set_temp_variable = { modify_eurosceptic = 0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = -0.02 }
+			europeanism_change = yes
  }
 }
 	focus = {
@@ -2058,8 +2058,8 @@ swap_ideas = {
 
 		completion_reward = {
              add_ideas = the_turkish_market_union
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 		} }  
 	focus = {
 		id = TECH_EU_industrial_parks
@@ -2098,8 +2098,8 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 			add_stability = 0.02
 		} } }
 	focus = {
@@ -2136,8 +2136,8 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 			add_stability = 0.02
 		} } }
 	focus = {
@@ -3000,10 +3000,10 @@ add_stability = 0.03
 		completion_reward = {
 add_political_power = 75
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 }   }
 	focus = {
@@ -3056,10 +3056,10 @@ add_political_power = 75
 					instant_build = yes
 				}
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 				} } }
 	focus = {
@@ -3765,10 +3765,10 @@ add_ideas = tourism_power
 	completion_reward = {
 	   add_stability = 0.1
 			add_tech_bonus = {
-				name = Cat_satellite
+				name = CAT_satellites
 				bonus = 0.5
 				uses = 1
-				category = Cat_satellite
+				category = CAT_satellites
 			}
       }
 	}
@@ -3844,10 +3844,10 @@ swap_ideas = {
             completion_reward = {
 			add_ideas = TUA_space_1
 			add_tech_bonus = {
-				name = Cat_satellite
+				name = CAT_satellites
 				bonus = 0.5
 				uses = 1
-				category = Cat_satellite
+				category = CAT_satellites
 			}
 				}
 	}
@@ -4339,7 +4339,7 @@ swap_ideas = {
 
 		completion_reward = {
 		add_political_power = 25
-        add_ideas = negligible_corruption
+        add_ideas = corruption_level_01
       
 }   }
 	focus = {
@@ -5574,21 +5574,21 @@ swap_ideas = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 	}
 			}
@@ -5988,17 +5988,17 @@ swap_ideas = {
 			SOM = {
 			add_war_support = 0.02
 	add_equipment_to_stockpile = {
-		type = infantry_weapons
+		type = infantry_weapons_type
 		amount = 1200 #HK33 - majority
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = command_control_equipment2
+		type = cnc_equipment_2
 		amount = 760
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = util_vehicle_0
+		type = util_vehicle_1
 		amount = 760
 		producer = TUR
 	}
@@ -6071,17 +6071,17 @@ swap_ideas = {
 			IND = {
 			add_war_support = 0.02
 	add_equipment_to_stockpile = {
-		type = infantry_weapons
+		type = infantry_weapons_type
 		amount = 1200 #HK33 - majority
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = command_control_equipment2
+		type = cnc_equipment_2
 		amount = 760
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = util_vehicle_0
+		type = util_vehicle_1
 		amount = 760
 		producer = TUR
 	}
@@ -6193,17 +6193,17 @@ swap_ideas = {
 			YEM = {
 			add_war_support = 0.02
 	add_equipment_to_stockpile = {
-		type = infantry_weapons
+		type = infantry_weapons_type
 		amount = 1200 #HK33 - majority
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = command_control_equipment2
+		type = cnc_equipment_2
 		amount = 760
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = util_vehicle_0
+		type = util_vehicle_1
 		amount = 760
 		producer = TUR
 	}
@@ -6236,17 +6236,17 @@ swap_ideas = {
 			LBA = {
 			add_war_support = 0.02
 	add_equipment_to_stockpile = {
-		type = infantry_weapons
+		type = infantry_weapons_type
 		amount = 1200 #HK33 - majority
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = command_control_equipment2
+		type = cnc_equipment_2
 		amount = 760
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = util_vehicle_0
+		type = util_vehicle_1
 		amount = 760
 		producer = TUR
 	}
@@ -6279,17 +6279,17 @@ swap_ideas = {
 			TUN = {
 			add_war_support = 0.02
 	add_equipment_to_stockpile = {
-		type = infantry_weapons
+		type = infantry_weapons_type
 		amount = 1200 #HK33 - majority
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = command_control_equipment2
+		type = cnc_equipment_2
 		amount = 760
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = util_vehicle_0
+		type = util_vehicle_1
 		amount = 760
 		producer = TUR
 	}
@@ -6323,17 +6323,17 @@ swap_ideas = {
 			MEX = {
 			add_war_support = 0.02
 	add_equipment_to_stockpile = {
-		type = infantry_weapons
+		type = infantry_weapons_type
 		amount = 1200 #HK33 - majority
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = command_control_equipment2
+		type = cnc_equipment_2
 		amount = 760
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = util_vehicle_0
+		type = util_vehicle_1
 		amount = 760
 		producer = TUR
 	}
@@ -7186,10 +7186,10 @@ swap_ideas = {
   add_idea = TUA_space_2
 }   
 			add_tech_bonus = {
-				name = Cat_satellite
+				name = CAT_satellites
 				bonus = 0.5
 				uses = 1
-				category = Cat_satellite
+				category = CAT_satellites
 			}
 }   }
 	focus = {

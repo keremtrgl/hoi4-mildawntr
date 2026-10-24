@@ -354,8 +354,8 @@ focus_tree = {
 	completion_reward = {
 	remove_ideas = army_of_the_corruption
 	swap_ideas = {
-    add_idea = rampant_corruption
-	remove_idea = paralyzing_corruption
+    add_idea = corruption_level_08
+	remove_idea = corruption_level_10
 	               } 
 			} 
 	}
@@ -441,12 +441,11 @@ hidden_effect = {
 	start_politics_input = yes
 	startup_politics = yes
 
-	add_to_array = { ruling_party = 23 }
+	set_variable = { ruling_party = 23 }
 	
 		hidden_effect = {
 			clear_array = gov_coalition_array
-			clear_array = ruling_party
-			add_to_array = { ruling_party = max_index_1 }
+			set_variable = { ruling_party = max_index_1 }
 		}
 
 		meta_effect = {

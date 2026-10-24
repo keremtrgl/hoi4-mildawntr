@@ -277,7 +277,7 @@ TUR_parliament = {
 	visible = {
 		original_tag = TUR
 		OR = {
-		neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		date < 2002.1.1
 		}
 		NOT = {
@@ -349,7 +349,7 @@ TUR_tourism_sector_management = {
 	}
 	
 	visible = {
-		riginal_tag = TUR
+		original_tag = TUR
 	}
 
 	scripted_gui = tur_tourism_management_gui
@@ -743,7 +743,7 @@ TUR_shut_down_the_last_court = {
 		original_tag = TUR
 		date > 2007.1.1
 		NOT = {
-		neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes			
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes			
 		has_global_flag = TUR_par
 		}
 	}	

@@ -2,7 +2,7 @@ capital = 934
 2000.1.1 = {
 	add_ideas = {
 		#pop_050
-		paralyzing_corruption
+		corruption_level_10
 		gdp_4
 		sunni
 		multi_ethnic_state_idea
@@ -37,10 +37,10 @@ capital = 934
 		infantry_mass_assault = 1
 
 		#Infantry weapons, only licensed G3A3
-		infantry_weapons = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		infantry_weapons3 = 1
+		infantry_weapons_type = 1
+		infantry_weapons_1 = 1
+		infantry_weapons_2 = 1
+		infantry_weapons_3 = 1
 		support_weapons = 1
 		tandem_charge_warheads = 1
 		squad_automatic_weapon = 1
@@ -50,15 +50,15 @@ capital = 934
 		special_forces2 = 1
 
 		#C&C equipment, 1995
-		command_control_equipment = 1
-		command_control_equipment1 = 1
+		cnc_equipment_type = 1
+		cnc_equipment_1 = 1
 
 		combat_eng_equipment = 1
 
 		#TAI TURNA
 		land_Drone_equipment = 1
 
-		Anti_tank_0 = 1
+		Anti_tank_1 = 1
 		Heavy_Anti_tank_0 = 1
 		AT_upgrade_1 = 1
 		Anti_tank_1 = 1
@@ -66,7 +66,7 @@ capital = 934
 
 		combat_eng_equipment = 1
 
-		util_vehicle_0 = 1
+		util_vehicle_1 = 1
 		util_vehicle_1 = 1
 		util_vehicle_2 = 1
 		util_vehicle_3 = 1	#Otokar Cobra
@@ -86,7 +86,7 @@ capital = 934
 		#Firtina & Kasirga
 
 		#AT for templates and soon to be released Mizrat
-		Anti_tank_0 = 1
+		Anti_tank_1 = 1
 		Heavy_Anti_tank_0 = 1
 		AT_upgrade_1 = 1
 
@@ -122,7 +122,7 @@ capital = 934
 
 
 
-		transport_helicopter1 = 1
+		transport_helicopter_1 = 1
 		nsb_transport_helicopter1 = 1
 		transport_helicopter2 = 1
 		nsb_transport_helicopter2 = 1
@@ -303,7 +303,7 @@ capital = 934
 				APC_3 = 1
 				SP_arty_0 = 1
 				SP_arty_1 = 1	#M52T
-				artillery_0 = 1
+				artillery_1 = 1
 				Arty_upgrade_1 = 1
 				SP_R_arty_0 = 1
 				SP_R_arty_1 = 1	#T-122 Sakariya
@@ -314,7 +314,7 @@ capital = 934
 				SP_Anti_Air_1 = 1 #Altigan PMADS
 				Anti_Air_0 = 1
 				SP_Anti_Air_0 = 1
-				attack_helicopter1 = 1
+				attack_helicopter_1 = 1
 			}
 		}
 	}
@@ -547,7 +547,7 @@ capital = 934
 
 	#Influence
 	set_variable = { domestic_influence_amount = 55 }
-	startup_influence = yes
+	sort_influence = yes
 
 	set_popularities = {
 		democratic = 0.0
@@ -592,7 +592,7 @@ capital = 934
 	set_variable = { party_pop_array^23 = 0 } #Monarchist
 
 	### Ruling Party
-	add_to_array = { ruling_party = 15 }
+	set_variable = { ruling_party = 15 }
 	startup_politics = yes
 
 	create_country_leader = {
@@ -600,7 +600,7 @@ capital = 934
 		picture = "sedat_peker.dds"
 		ideology = oligarchism
 		traits = {
-			oligarchism
+			neutrality_oligarchism
 			warrior_code
 		} 
 	  } 
@@ -616,11 +616,11 @@ capital = 934
 
 
 		#No army, but let's give them some basic tech in case they change their mind
-		infantry_weapons = 1
-		command_control_equipment = 1
-		Anti_tank_0 = 1
+		infantry_weapons_type = 1
+		cnc_equipment_type = 1
+		Anti_tank_1 = 1
 		Anti_Air_0 = 1
-		util_vehicle_0 = 1
+		util_vehicle_1 = 1
 
 		night_vision_1 = 1
 

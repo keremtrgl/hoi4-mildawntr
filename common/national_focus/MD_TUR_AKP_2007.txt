@@ -39,7 +39,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 	completion_reward = {
-				set_temp_variable = { temp_opinion = 15 }	
+				set_temp_variable = { temp_opinion_change = 15 }	
             change_the_military_opinion = yes		
 			army_experience = -75
 				add_popularity = {
@@ -140,7 +140,7 @@ focus_tree = {
 
 		
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         }
 				
 		completion_reward = {
@@ -185,7 +185,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 
 		
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         }
 		
 		completion_reward = {
@@ -296,7 +296,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 
 		
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         }
 				
 		completion_reward = {
@@ -315,7 +315,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_right_wing_sad
 		} }
 	focus = {
 		id = PKA_tradesman_support_package
-		icon = business_man
+		icon = businessman
 		cost = 7.2
 		prerequisite = {
 			focus = PKA_abdullah_guls_revenge
@@ -358,8 +358,8 @@ add_ideas =	media_opinion_towards_bad_2_neutral_right_wing_sad
 
 
 		available = {
-	has_idea = The_Military
-	has_idea = The_Ulema
+	has_idea = the_military
+	has_idea = the_ulema
         }
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -371,10 +371,10 @@ add_ideas =	media_opinion_towards_bad_2_neutral_right_wing_sad
 	        add_stability = -0.05
 				       	set_global_flag = FIRE_SUPEREVENT_9
 						hidden_effect = { sound_effect = "superev_tsk_march" }
-				set_temp_variable = { temp_opinion = -15 }	
+				set_temp_variable = { temp_opinion_change = -15 }	
             change_the_military_opinion = yes	
 	clr_country_flag = banned_head_scarf
-				set_temp_variable = { temp_opinion = 20 }	
+				set_temp_variable = { temp_opinion_change = 20 }	
             change_the_ulema_opinion = yes	
 				custom_effect_tooltip = TUR_MIL_relations_11
 				subtract_from_variable = { TUR_rel_akp = 7 }
@@ -608,8 +608,8 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 		
 	completion_reward = {
 	add_political_power = 175
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.03 }
+			europeanism_change = yes
             add_timed_idea = { idea = vision_of_european_union days = 1025}   
 	} }
 	focus = {
@@ -625,8 +625,8 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 		
 	completion_reward = {
     add_ideas = european_constitution
-			set_temp_variable = { modify_eurosceptic = -0.01 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.01 }
+			europeanism_change = yes
 	} }
 	focus = {
 		id = PKA_eu_law_origins
@@ -641,8 +641,8 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 		
 	completion_reward = {
     add_ideas = adopted_european_laws
-			set_temp_variable = { modify_eurosceptic = -0.01 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.01 }
+			europeanism_change = yes
 	} }
 	focus = {
 		id = PKA_european_studies
@@ -660,8 +660,8 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 		
 	completion_reward = {
     add_ideas = european_studies
-			set_temp_variable = { modify_eurosceptic = -0.01 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.01 }
+			europeanism_change = yes
 	} }
 	focus = {
 		id = PKA_protect_the_borders
@@ -679,8 +679,8 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 		
 	completion_reward = {
     add_ideas = european_border_protection
-			set_temp_variable = { modify_eurosceptic = -0.01 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.01 }
+			europeanism_change = yes
 	} }
 	focus = {
 		id = PKA_create_peace_forces
@@ -695,8 +695,8 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 		
 	completion_reward = {
     add_ideas = international_peace_forces
-			set_temp_variable = { modify_eurosceptic = -0.01 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.01 }
+			europeanism_change = yes
 	} }
 	focus = {
 		id = PKA_accordance_with_UN
@@ -731,8 +731,8 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 		
 	completion_reward = {
     add_ideas = full_accordance_with_AIHM
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 	} }
 	focus = {
 		id = PKA_european_cultural_sites
@@ -755,8 +755,8 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 		
 		completion_reward = {
 		    add_research_slot = 1
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.03 }
+			europeanism_change = yes
 			934 = { 
 				add_building_construction = {
 					type = infrastructure
@@ -872,7 +872,7 @@ swap_ideas = {
 
 		
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         }
 				
 		completion_reward = {
@@ -1102,7 +1102,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 			every_military_industrial_organization = {
 				add_mio_funds = 500
@@ -2017,8 +2017,8 @@ swap_ideas = {
 			custom_effect_tooltip = tooltip_focus_EU606
 			hidden_effect = {
 			clr_country_flag = focus_EU606_selected
-			set_temp_variable = { modify_eurosceptic = 0.05 }
-			EU_potential_eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = -0.05 }
+			EU_potential_europeanism_change = yes
 			if = {
 				limit = {
 					has_global_flag = european_federation
@@ -2136,7 +2136,7 @@ remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad
 remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
 add_ideas =	media_opinion_towards_bad_3_right_left_neutral_wing_sad
 }
-				set_temp_variable = { temp_opinion = -10 }	
+				set_temp_variable = { temp_opinion_change = -10 }	
             change_the_military_opinion = yes	
 
 				custom_effect_tooltip = TUR_MIL_relations_13
@@ -2155,7 +2155,7 @@ add_ideas =	media_opinion_towards_bad_3_right_left_neutral_wing_sad
 
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         has_idea = turkish_military_infulence
         }
 
@@ -2231,7 +2231,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 		}
 		
 		completion_reward = {
-		        add_ideas = TOKI_working_faster
+		        add_ideas = toki_working_faster
                 934 = {
 				add_extra_state_shared_building_slots = 1
 				} 
@@ -2494,7 +2494,7 @@ increase_economic_growth = yes
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 	completion_reward = {
-				set_temp_variable = { temp_opinion = 20 }	
+				set_temp_variable = { temp_opinion_change = 20 }	
             change_the_military_opinion = yes		
 				custom_effect_tooltip = TUR_MIL_relations_2
 				subtract_from_variable = { TUR_rel_akp = 3 }
@@ -4861,7 +4861,7 @@ add_ideas = nato_turkey_missionary
 	BEL = { country_event = TurkeyF.16}
 	HOL = { country_event = TurkeyF.16}
 	DEN = { country_event = TurkeyF.16}
-	NOR = { country_event = TurkeyF.16}
+	NRY = { country_event = TurkeyF.16}
 	USA = { country_event = TurkeyF.16}
 	CAN = { country_event = TurkeyF.16}
 	ICE = { country_event = TurkeyF.16}
@@ -4939,7 +4939,7 @@ swap_ideas = {
 	BEL = { country_event = TurkeyF.17}
 	HOL = { country_event = TurkeyF.17}
 	DEN = { country_event = TurkeyF.17}
-	NOR = { country_event = TurkeyF.17}
+	NRY = { country_event = TurkeyF.17}
 	USA = { country_event = TurkeyF.17}
 	CAN = { country_event = TurkeyF.17}
 	ICE = { country_event = TurkeyF.17}
@@ -4989,7 +4989,7 @@ swap_ideas = {
 	BEL = { country_event = TurkeyF.18}
 	HOL = { country_event = TurkeyF.18}
 	DEN = { country_event = TurkeyF.18}
-	NOR = { country_event = TurkeyF.18}
+	NRY = { country_event = TurkeyF.18}
 	USA = { country_event = TurkeyF.18}
 	CAN = { country_event = TurkeyF.18}
 	ICE = { country_event = TurkeyF.18}

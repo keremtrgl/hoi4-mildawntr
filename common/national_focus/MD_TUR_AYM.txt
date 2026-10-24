@@ -178,10 +178,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 			add_tech_bonus = {
 				name = CAT_industry
@@ -486,8 +486,8 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 
 	completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.03 }
+			europeanism_change = yes
 					country_event = TurkeyF.193
 	}
 	} 
@@ -812,8 +812,8 @@ swap_ideas = {
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 
 		completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.03 }
+			europeanism_change = yes
 	    add_ideas = european_colleges_for_turkey
 		} } 
 	focus = {
@@ -1198,7 +1198,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 			add_stability = 0.03
 			add_political_power = -25
 			army_experience = -25
-				set_temp_variable = { temp_opinion = -15 }	
+				set_temp_variable = { temp_opinion_change = -15 }	
             change_the_military_opinion = yes
 			subtract_from_variable = { TUR_rel_hepar = 3 }
 			}
@@ -2281,7 +2281,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		search_filters = {FOCUS_FILTER_CORRUPTION}
 
 	completion_reward = {
-			add_ideas = modest_corruption
+			add_ideas = corruption_level_03
                     }
 	}
 	focus = {
@@ -2368,8 +2368,8 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 
 	completion_reward = {
 swap_ideas = { 
-  remove_idea = modest_corruption
-  add_idea = slight_corruption
+  remove_idea = corruption_level_03
+  add_idea = corruption_level_02
 }
                     }
 	}
@@ -2842,21 +2842,21 @@ swap_ideas = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 			add_political_power = -75	
                     }
@@ -3305,7 +3305,7 @@ swap_ideas = {
 					producer = TUR
 				}
 				add_equipment_to_stockpile = {
-					type = infantry_weapons1
+					type = infantry_weapons_1
 					amount = 2000
 					producer = TUR
 				}
@@ -3331,14 +3331,14 @@ swap_ideas = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_tech_bonus = {
@@ -4050,8 +4050,8 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		search_filters = {FOCUS_FILTER_STABILITY}	
 
 		completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 		add_ideas = full_accordance_with_AIHM
 }   }
 	focus = {
@@ -4081,8 +4081,8 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 
 	completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 					reverse_add_opinion_modifier = { target = POL modifier = trade_mission }
 	reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
 	reverse_add_opinion_modifier = { target = SPR modifier = trade_mission }
@@ -4108,8 +4108,8 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
 
                     completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 				custom_effect_tooltip = TUR_westernize
 						subtract_from_variable = { radicalization = 5 }
 			subtract_from_variable = { social_conservatism_government = 10 }
@@ -4288,8 +4288,8 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 
             completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.03 }
+			europeanism_change = yes
 			add_political_power = 75
 			add_stability = 0.02
 			} 
@@ -4313,9 +4313,9 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 
 		completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
-		add_ideas = frontex
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
+		add_ideas = Frontex
 }   }
 	focus = {
 		id = AYM_open_the_borders
@@ -4382,9 +4382,9 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 
 	completion_reward = {
 					reverse_add_opinion_modifier = { target = KOS modifier = military_aid }
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -3000 }
 	 KOS = {
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 			} }
 	}
 	focus = {
@@ -4417,12 +4417,12 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 
 	completion_reward = {
 					reverse_add_opinion_modifier = { target = SOV modifier = declaration_of_hostility }
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -6000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -6000 }
 	 GEO = {
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 			} 
 	 UKR = {
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 			}			
 			
 			}
@@ -4449,8 +4449,8 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 
 	completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.03 }
+			europeanism_change = yes
 					country_event = TurkeyF.194
 	}
 	} 
@@ -4494,8 +4494,8 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 
             completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 			add_stability = 0.1
 			} 
 		}
@@ -4530,8 +4530,8 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.03 }
+			europeanism_change = yes
 		add_ideas = passive_european_membership
 }   }
 	focus = {
@@ -4578,8 +4578,8 @@ add_ideas = media_opinion_towards_good_happy_everyone
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.03 }
+			europeanism_change = yes
 		add_ideas = european_parliament_membership
 }   }
 	focus = {
@@ -4598,8 +4598,8 @@ add_ideas = media_opinion_towards_good_happy_everyone
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.03 }
+			europeanism_change = yes
 		add_ideas = eu_style_legislative
 }   }
 	focus = {
@@ -4668,7 +4668,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 				set_temp_variable = { tag_index = TUR.id }
 				change_influence_percentage = yes
 			}
-			YUG = {
+			SER = {
 				add_ideas = financed_balkans
 				set_temp_variable = { percent_change = 3 }
 				set_temp_variable = { tag_index = TUR.id }
@@ -4939,7 +4939,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		search_filters = {FOCUS_FILTER_CORRUPTION}
 
 	completion_reward = {
-    add_ideas = negligible_corruption
+    add_ideas = corruption_level_01
                     }
 	}
 	focus = {
@@ -5160,7 +5160,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 
 		completion_reward = {
 		add_political_power = 25
-        decrese_corruption = yes
+        decrease_corruption = yes
       
 }   }
 	focus = {
@@ -5746,8 +5746,8 @@ diplomatic_relation = {
 		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
 
 	completion_reward = {
-			set_temp_variable = { modify_eurosceptic = -0.02 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = 0.02 }
+			europeanism_change = yes
 			add_ideas = protective_EU_membership
                     }
 	}
@@ -6004,9 +6004,9 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -3000 }
 	 GEO = {
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 			} }
 	}
 	}
@@ -6281,7 +6281,7 @@ TRGX_bop_very_low_decrease_effect = yes
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 	completion_reward = {
-				set_temp_variable = { temp_opinion = 20 }	
+				set_temp_variable = { temp_opinion_change = 20 }	
             change_the_military_opinion = yes		
 			army_experience = -75
 			remove_ideas = betrayal_from_FETO2

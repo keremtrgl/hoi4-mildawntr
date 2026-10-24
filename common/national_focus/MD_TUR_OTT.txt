@@ -37,7 +37,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		
 		completion_reward = {
-			add_ideas = crippling_corruption 
+			add_ideas = corruption_level_09 
 			custom_effect_tooltip = ottoman_approaching_1
 			hidden_effect = {
 				add_to_variable = { party_pop_array^23 = 0.01 }
@@ -393,7 +393,7 @@ focus_tree = {
 	} }
 	focus = {
 		id = OTT_anti_capitalist_propagandas
-		icon = business_man
+		icon = businessman
 		cost = 10.00
 		prerequisite = {
 			focus = OTT_advance_with_economic_situation
@@ -405,7 +405,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 				
 		completion_reward = { 
-		    add_Stability = 0.03
+		    add_stability = 0.03
 			add_war_support = 0.02
 			subtract_from_variable = { treasury = 10.0 }
 			custom_effect_tooltip = 10_billion_expense_tt					
@@ -697,7 +697,7 @@ focus_tree = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 	   add_political_power = 100
@@ -1973,7 +1973,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		search_filters = {FOCUS_FILTER_STABILITY}
 		
 		completion_reward = {
-		army_stability = 0.05
+		add_stability = 0.05
 custom_effect_tooltip = DEC_5_PKK_POINT
 subtract_from_variable = { var = pkk_presence value = 5 }
 			add_to_variable = { TUR_PKK_aggro = -5 }
@@ -2131,7 +2131,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 
 		completion_reward = {
 			TRGX_bop_very_low_decrease_effect = yes
-				set_temp_variable = { temp_opinion = 25 }	
+				set_temp_variable = { temp_opinion_change = 25 }	
             change_the_ulema_opinion = yes	
 	} }
 	focus = {
@@ -2913,10 +2913,10 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 				}
 			}
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 			USA = {
 	  			subtract_from_variable = { treasury = 10.0 }
@@ -3361,7 +3361,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 	} }
@@ -4199,7 +4199,7 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
 			
 		completion_reward = {
-				set_temp_variable = { temp_opinion = 25 }	
+				set_temp_variable = { temp_opinion_change = 25 }	
             change_the_ulema_opinion = yes	
 	} }
 	focus = {
@@ -4225,17 +4225,17 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_Civilian
+				name = CAT_civilian
 				bonus = 0.5
 				uses = 2
-				category = CAT_Civilian
+				category = CAT_civilian
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_agriculture_tech
+				name = CAT_agriculture
 				bonus = 0.5
 				uses = 2
-				category = CAT_agriculture_tech
+				category = CAT_agriculture
 			}
 			}
 		} 
@@ -5643,7 +5643,7 @@ country_event = TurkeyF.111
         }
 
     bypass = {
-	contros_state = 189
+	controls_state = 189
 	OR = {
 	has_war_with = SOV
     NOT = {
@@ -5688,7 +5688,7 @@ country_event = TurkeyF.111
         }
 
     bypass = {
-	contros_state = 488
+	controls_state = 488
 	OR = {
 	has_war_with = USA
     NOT = {
@@ -7314,7 +7314,7 @@ diplomatic_relation = {
 			
     completion_reward = {
 			add_stability = 0.03
-				set_temp_variable = { temp_opinion = 25 }	
+				set_temp_variable = { temp_opinion_change = 25 }	
             change_the_ulema_opinion = yes	
 			}
 		}
@@ -7514,17 +7514,17 @@ diplomatic_relation = {
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_Civilian
+				name = CAT_civilian
 				bonus = 0.5
 				uses = 2
-				category = CAT_Civilian
+				category = CAT_civilian
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_agriculture_tech
+				name = CAT_agriculture
 				bonus = 0.5
 				uses = 2
-				category = CAT_agriculture_tech
+				category = CAT_agriculture
 			}
 
         }
@@ -7567,10 +7567,10 @@ swap_ideas = {
 	  			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt	
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 					}
 				}
@@ -8562,7 +8562,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 					producer = TUR
 				}
 				add_equipment_to_stockpile = {
-					type = infantry_weapons1
+					type = infantry_weapons_1
 					amount = 2000
 					producer = TUR
 				}
@@ -9012,7 +9012,7 @@ remove_ideas = covid_19_normalised
 
 		
 		completion_reward = {
-				set_temp_variable = { temp_opinion = 30 }	
+				set_temp_variable = { temp_opinion_change = 30 }	
             change_the_ulema_opinion = yes	
 			add_political_power = 50
 		}
@@ -9437,7 +9437,7 @@ has_completed_focus = OTT_put_the_cores
 
 	completion_reward = {
 	add_stability = 0.1
-	        add_ideas = negligible_corruption
+	        add_ideas = corruption_level_01
 	 }
 	}
 	focus = {
@@ -9609,9 +9609,9 @@ has_completed_focus = OTT_put_the_cores
 		
 	completion_reward = {
 					reverse_add_opinion_modifier = { target = ACE modifier = military_aid }
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -3000 }
 	 ACE = {
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 			} }
 	}
 	focus = {

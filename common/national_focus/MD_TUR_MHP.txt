@@ -264,17 +264,17 @@ focus_tree = {
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_ARMOR
+				category = CAT_armor
 			} 
 			add_tech_bonus = {
 				uses = 2
 				bonus = 1.0
-				category = Cat_L_DRONE
+				category = CAT_land_drones
 			}
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_ARTY
+				category = CAT_artillery
 			} } 
 		}
 	#focus = {
@@ -678,7 +678,7 @@ focus_tree = {
 		}
 		
 	completion_reward = {
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 1500 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 1500 }
 	 } } 
 	focus = {
 		id = AU_protect_the_ataturk_laws
@@ -920,7 +920,7 @@ focus_tree = {
 		}
 	focus = {
 		id = AU_better_relations_with_industrials
-		icon = business_man
+		icon = businessman
 		cost = 10.00
 		prerequisite = {
 			focus = AU_kick_the_liberals
@@ -941,8 +941,8 @@ focus_tree = {
 				set_temp_variable = { tag_index = ROOT.id }
 				change_influence_percentage = yes
 			}
-				set_temp_variable = { temp_opinion = 15 }	
-            change_the_industrial_conglomerates_opinion = yes	
+				set_temp_variable = { temp_opinion_change = 15 }	
+            change_industrial_conglomerates_opinion = yes	
 			}
 		}
 	focus = {
@@ -1142,7 +1142,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
 		
     completion_reward = {
-				set_temp_variable = { temp_opinion = 15 }	
+				set_temp_variable = { temp_opinion_change = 15 }	
             change_the_military_opinion = yes		
 			army_experience = -15
 			add_command_power = -15
@@ -1520,7 +1520,7 @@ focus_tree = {
 		
 	completion_reward = {
 	add_war_support = 0.02
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 1500 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 1500 }
 	 } } 
 	focus = {
 		id = AU_power_of_force
@@ -2131,7 +2131,7 @@ add_ideas = nato_turkey_missionary
 	BEL = { country_event = TurkeyF.16}
 	HOL = { country_event = TurkeyF.16}
 	DEN = { country_event = TurkeyF.16}
-	NOR = { country_event = TurkeyF.16}
+	NRY = { country_event = TurkeyF.16}
 	USA = { country_event = TurkeyF.16}
 	CAN = { country_event = TurkeyF.16}
 	ICE = { country_event = TurkeyF.16}
@@ -2208,7 +2208,7 @@ swap_ideas = {
 	BEL = { country_event = TurkeyF.17}
 	HOL = { country_event = TurkeyF.17}
 	DEN = { country_event = TurkeyF.17}
-	NOR = { country_event = TurkeyF.17}
+	NRY = { country_event = TurkeyF.17}
 	USA = { country_event = TurkeyF.17}
 	CAN = { country_event = TurkeyF.17}
 	ICE = { country_event = TurkeyF.17}
@@ -2258,7 +2258,7 @@ swap_ideas = {
 	BEL = { country_event = TurkeyF.18}
 	HOL = { country_event = TurkeyF.18}
 	DEN = { country_event = TurkeyF.18}
-	NOR = { country_event = TurkeyF.18}
+	NRY = { country_event = TurkeyF.18}
 	USA = { country_event = TurkeyF.18}
 	CAN = { country_event = TurkeyF.18}
 	ICE = { country_event = TurkeyF.18}

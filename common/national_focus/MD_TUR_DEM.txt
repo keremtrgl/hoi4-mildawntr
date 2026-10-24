@@ -247,7 +247,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 1
 				bonus = 0.5
-				category = Cat_ARMOR
+				category = CAT_armor
 			} } 
 		}
 	focus = {
@@ -266,7 +266,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_ARMOR
+				category = CAT_armor
 			} } 
 		}
 	focus = {
@@ -285,7 +285,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_INF_WEP
+				category = CAT_infantry_weapons
 			} }
 		}
 	focus = {
@@ -305,7 +305,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_ARTY
+				category = CAT_artillery
 			} } 
 		}
 
@@ -326,7 +326,7 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			} }
 		}
 	focus = {
@@ -347,7 +347,7 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			} } 
 		}
 	focus = {
@@ -367,7 +367,7 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}  } 
 		}
 	focus = {
@@ -387,14 +387,14 @@ block_defence_decrease = yes
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
  
 			}
@@ -419,21 +419,21 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
   } 
 		}
@@ -820,7 +820,7 @@ swap_ideas = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}	
 	completion_reward = {
 
-				set_temp_variable = { temp_opinion = 10 }	
+				set_temp_variable = { temp_opinion_change = 10 }	
             change_industrial_conglomerates_opinion = yes		
 			}
 	}
@@ -846,17 +846,17 @@ swap_ideas = {
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_Civilian
+				name = CAT_civilian
 				bonus = 0.5
 				uses = 2
-				category = CAT_Civilian
+				category = CAT_civilian
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_agriculture_tech
+				name = CAT_agriculture
 				bonus = 0.5
 				uses = 2
-				category = CAT_agriculture_tech
+				category = CAT_agriculture
 			}
 
 		} } 
@@ -1364,15 +1364,15 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			set_temp_variable = { change_resource = 500 }
 			change_reactor_grade_material_effect = yes
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 		} } 
 	focus = {
 		id = TUR_investment_time
-		icon = business_man
+		icon = businessman
 		cost = 10.00
 		prerequisite = {
 		   focus = TUR_bank_law
@@ -1971,10 +1971,10 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 					instant_build = yes
 				}
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 		} } }
 	focus = {
@@ -2260,7 +2260,7 @@ custom_effect_tooltip = TUR_economic_sicknesss
 		y = 3
 
 		available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		}
 
 		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
@@ -2665,7 +2665,7 @@ add_ideas = nato_turkey_missionary
 	BEL = { country_event = TurkeyF.16}
 	HOL = { country_event = TurkeyF.16}
 	DEN = { country_event = TurkeyF.16}
-	NOR = { country_event = TurkeyF.16}
+	NRY = { country_event = TurkeyF.16}
 	USA = { country_event = TurkeyF.16}
 	CAN = { country_event = TurkeyF.16}
 	ICE = { country_event = TurkeyF.16}
@@ -2742,7 +2742,7 @@ swap_ideas = {
 	BEL = { country_event = TurkeyF.17}
 	HOL = { country_event = TurkeyF.17}
 	DEN = { country_event = TurkeyF.17}
-	NOR = { country_event = TurkeyF.17}
+	NRY = { country_event = TurkeyF.17}
 	USA = { country_event = TurkeyF.17}
 	CAN = { country_event = TurkeyF.17}
 	ICE = { country_event = TurkeyF.17}
@@ -2792,7 +2792,7 @@ swap_ideas = {
 	BEL = { country_event = TurkeyF.18}
 	HOL = { country_event = TurkeyF.18}
 	DEN = { country_event = TurkeyF.18}
-	NOR = { country_event = TurkeyF.18}
+	NRY = { country_event = TurkeyF.18}
 	USA = { country_event = TurkeyF.18}
 	CAN = { country_event = TurkeyF.18}
 	ICE = { country_event = TurkeyF.18}
@@ -3490,7 +3490,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 		y = 13
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         }
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -3512,7 +3512,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 		y = 14
 
 		available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		}
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -3558,9 +3558,9 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 		y = 15
 
 		available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
-	has_idea = The_Military
-	has_idea = The_Ulema
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
+	has_idea = the_military
+	has_idea = the_ulema
         }
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -3582,7 +3582,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	        add_stability = -0.05
 				       	set_global_flag = FIRE_SUPEREVENT_9
 						clr_country_flag = banned_head_scarf
-				set_temp_variable = { temp_opinion = -15 }	
+				set_temp_variable = { temp_opinion_change = -15 }	
             change_the_military_opinion = yes	
 				custom_effect_tooltip = TUR_MIL_relations_11
 				subtract_from_variable = { TUR_rel_akp = 7 }
@@ -3706,7 +3706,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 		y = 17
   
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         }
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -3808,7 +3808,7 @@ completion_reward = {
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 	completion_reward = {
-				set_temp_variable = { temp_opinion = 10 }	
+				set_temp_variable = { temp_opinion_change = 10 }	
             change_the_military_opinion = yes	
 				custom_effect_tooltip = TUR_MIL_relations_2
 				subtract_from_variable = { TUR_rel_akp = 3 }
@@ -3998,7 +3998,7 @@ swap_ideas = {
 		y = 21
 		
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
 has_idea = pr_sabahattin
 has_global_flag = AKP_REFORMATION_DECLARED
 		 has_global_flag = TUR_367_CRISIS
@@ -4026,7 +4026,7 @@ has_global_flag = AKP_REFORMATION_DECLARED
 		y = 22
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         }
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -4041,10 +4041,10 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 			remove_ideas = maritime_industry
 			remove_ideas = small_medium_business_owners
 			remove_ideas = defense_industry
-			remove_ideas = intellegince_community
+			remove_ideas = intelligence_community
 			remove_ideas = landowners
 			remove_ideas = farmers
-			add_ideas = The_Ulema
+			add_ideas = the_ulema
 			} }
 		}
 	focus = {
@@ -4138,8 +4138,8 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 		y = 24
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
-        has_idea = The_Ulema	
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
+        has_idea = the_ulema	
 has_global_flag = TUR_false_removed
         }
 
@@ -4151,10 +4151,10 @@ has_global_flag = TUR_false_removed
 	completion_reward = {
 	        add_stability = 0.05
 			add_political_power = -150
-				set_temp_variable = { temp_opinion = -20 }	
+				set_temp_variable = { temp_opinion_change = -20 }	
             change_the_military_opinion = yes	
 			
-				set_temp_variable = { temp_opinion = 25 }	
+				set_temp_variable = { temp_opinion_change = 25 }	
             change_the_ulema_opinion = yes	
 			
 				custom_effect_tooltip = TUR_MIL_relations_12
@@ -4212,7 +4212,7 @@ has_global_flag = TUR_false_removed
 
         available = {
 		OR = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
 nationalist_right_wing_populists_are_in_power = yes
         } } 
 
@@ -4302,7 +4302,7 @@ production_speed_buildings_factor = 0.05
 		y = 26
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         }
 
 		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
@@ -4345,7 +4345,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 		y = 28
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         has_idea = turkish_military_infulence
         }
 
@@ -4373,7 +4373,7 @@ retire_character = hursit_tolon
 			custom_effect_tooltip = TUR_AKP_small_start
 	        add_stability = -0.05
 			add_political_power = 75
-				set_temp_variable = { temp_opinion = -15 }	
+				set_temp_variable = { temp_opinion_change = -15 }	
             change_the_military_opinion = yes	
 				custom_effect_tooltip = TUR_MIL_relations_13
 				subtract_from_variable = { TUR_rel_akp = 10 }			
@@ -4390,7 +4390,7 @@ retire_character = hursit_tolon
 		y = 29
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         has_idea = turkish_military_infulence
         }
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}		
@@ -4421,7 +4421,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 		y = 29
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         has_stability > 0.45
         }
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -4447,7 +4447,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 		y = 30
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         has_idea = turkish_military_infulence
         }
 
@@ -5064,7 +5064,7 @@ block_defence_decrease = yes
 
         available = {
 		OR = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
 				nationalist_right_wing_populists_are_in_power = yes
 		 }
         }
@@ -5345,16 +5345,16 @@ increase_social_spending = yes
 
         available = {
         NOT = {
-		has_idea = The_Ulema 
+		has_idea = the_ulema 
 		 }
         }
 
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 		completion_reward = {
-				set_temp_variable = { temp_opinion = -15 }	
+				set_temp_variable = { temp_opinion_change = -15 }	
             change_the_ulema_opinion = yes
-				set_temp_variable = { temp_opinion = 15 }	
+				set_temp_variable = { temp_opinion_change = 15 }	
             change_the_military_opinion = yes	
 				}
 			}
@@ -5427,7 +5427,7 @@ increase_social_spending = yes
 		y = 55
 
         available = {
-        has_idea = The_Military
+        has_idea = the_military
         }
 		
 		search_filters = {FOCUS_FILTER_POLITICAL}		
@@ -5437,7 +5437,7 @@ increase_social_spending = yes
 		
 	completion_reward = {
 	        add_political_power = 125
-				set_temp_variable = { temp_opinion = 25 }	
+				set_temp_variable = { temp_opinion_change = 25 }	
             change_the_military_opinion = yes	
 			}
 	}
@@ -5452,7 +5452,7 @@ increase_social_spending = yes
 		y = 54
 
         available = {
-        has_idea = The_Military
+        has_idea = the_military
         }
 
 		search_filters = {FOCUS_FILTER_TURKISH_KEMALISM}
@@ -5612,7 +5612,7 @@ swap_ideas = {
 		y = 55
 
         available = {
-        has_idea = The_Ulema
+        has_idea = the_ulema
         }
 
 		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
@@ -5720,9 +5720,9 @@ swap_ideas = {
 		
 	completion_reward = {
 					reverse_add_opinion_modifier = { target = GNA modifier = military_aid }
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -3000 }
 	 GNA = {
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 			} }
 	}
 	focus = {
@@ -5751,9 +5751,9 @@ swap_ideas = {
 		
 	completion_reward = {
 					reverse_add_opinion_modifier = { target = FSA modifier = military_aid }
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -3000 }
 	 FSA = {
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 			} }
 	}
 	focus = {
@@ -5858,7 +5858,7 @@ increase_healthcare_budget = yes
 		y = 61
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		is_puppet = no
         }
 
@@ -5895,7 +5895,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 	completion_reward = {
-				set_temp_variable = { temp_opinion = 20 }	
+				set_temp_variable = { temp_opinion_change = 20 }	
             change_the_military_opinion = yes		
 			army_experience = -75
 swap_ideas = { 
@@ -6056,7 +6056,7 @@ remove_ideas = covid_19_normalised
 		y = 32
 
         available = {
-        has_idea = The_Ulema	
+        has_idea = the_ulema	
         }
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -6070,7 +6070,7 @@ remove_ideas = covid_19_normalised
 				recalculate_party = yes
 			}
 			custom_effect_tooltip = TUR_AKP_small_start1	
-				set_temp_variable = { temp_opinion = 10 }	
+				set_temp_variable = { temp_opinion_change = 10 }	
             change_the_ulema_opinion = yes
 			add_stability = 0.02
 			subtract_from_variable = { treasury = 15.0 }
@@ -6123,7 +6123,7 @@ remove_ideas = covid_19_normalised
 		y = 33
 
         available = {
-        has_idea = The_Ulema	
+        has_idea = the_ulema	
         }
 
 		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
@@ -6156,7 +6156,7 @@ remove_ideas = covid_19_normalised
 		y = 34
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
         has_political_power > 100
         }
 		
@@ -6188,7 +6188,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 		y = 36
 
         available = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
 has_idea = pr_erdogan
         }
 
@@ -6626,8 +6626,8 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 		search_filters = {FOCUS_FILTER_TURKISH_KEMALISM}
 		
                     completion_reward = {
-					set_temp_variable = { modify_eurosceptic = -0.03 }
-					eurosceptic_change = yes
+					set_temp_variable = { modify_europeanism = 0.03 }
+					europeanism_change = yes
 
 				custom_effect_tooltip = TUR_westernize
 						subtract_from_variable = { radicalization = 5 }
@@ -7064,7 +7064,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = CAT_FIXED_WING
+				category = CAT_aircraft
 			} } 
 		}
 	focus = {
@@ -7102,7 +7102,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 			add_tech_bonus = {
 				bonus = 0.35
 				uses = 2
-				category = Cat_DESTROYER
+				category = CAT_destroyers
 			} } 
 		}
 	focus = {
@@ -7123,7 +7123,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_SURFACE_SHIP
+				category = CAT_surface_ships
 			} } 
 		}
 	focus = {
@@ -7147,7 +7147,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_CARRIER
+				category = CAT_aircraft_carriers
 	        } }
 		}
 	focus = {
@@ -7167,7 +7167,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_ARMOR
+				category = CAT_armor
 			} } 
 		}
 
@@ -7189,13 +7189,13 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 			add_tech_bonus = {
 				uses = 2
 				bonus = 1.0
-				category = Cat_L_DRONE
+				category = CAT_land_drones
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
 				uses = 2
 				bonus = 2.0
-				category = Cat_A_UAV
+				category = CAT_air_drones
 			
 			} }
 		}
@@ -7361,7 +7361,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 
 	completion_reward = {
 		        add_stability = 0.03
-				set_temp_variable = { temp_opinion = 15 }	
+				set_temp_variable = { temp_opinion_change = 15 }	
             change_the_ulema_opinion = yes	
  }
 }
@@ -7437,7 +7437,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
         available = {
 		OR = {
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
 				nationalist_right_wing_populists_are_in_power = yes
 		 }
         }
@@ -7499,10 +7499,10 @@ search_filters = {FOCUS_FILTER_STABILITY}
         completion_reward = {
 		add_stability = 0.1
 			add_tech_bonus = {
-				name = Cat_satellite
+				name = CAT_satellites
 				bonus = 0.3
 				uses = 1
-				category = Cat_satellite
+				category = CAT_satellites
 			}
 	} }
 	focus = {
@@ -7605,7 +7605,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
 
 	completion_reward = {
 	        add_stability = 0.03
-				set_temp_variable = { temp_opinion = 25 }	
+				set_temp_variable = { temp_opinion_change = 25 }	
             change_the_ulema_opinion = yes	
 			
 			}
@@ -7626,7 +7626,7 @@ search_filters = {FOCUS_FILTER_RESEARCH}
 			add_tech_bonus = {
 				uses = 3
 				bonus = 1.0
-				category = CAT_FIXED_WING
+				category = CAT_aircraft
 			} } 
 		}
 	focus = {
@@ -7645,7 +7645,7 @@ search_filters = {FOCUS_FILTER_RESEARCH}
 			add_tech_bonus = {
 				uses = 3
 				bonus = 1.0
-				category = Cat_SURFACE_SHIP
+				category = CAT_surface_ships
 			} } 
 		}
 	focus = {
@@ -8188,7 +8188,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
 
         available = {
-        has_idea = The_Military
+        has_idea = the_military
         }
 
 search_filters = {FOCUS_FILTER_STABILITY}

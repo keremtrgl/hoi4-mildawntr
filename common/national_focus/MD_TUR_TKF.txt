@@ -615,9 +615,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			create_country_leader = {
 				name = "Doğu Perinçek"
 				picture = "Dogu_Perincek.dds"
-				ideology = Communist-State
+				ideology = communist_state
 				traits = {
-					emerging_Communist-State
+					emerging_communist_state
 					writer
 					lawyer
 					pro_china
@@ -945,7 +945,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			        add_political_power = 50
 					reverse_add_opinion_modifier = { target = SOV modifier =  trade_mission }
 				 	hidden_effect = {
-	 add_equipment_to_stockpile = {	type = artillery_0 amount = 500 } 
+	 add_equipment_to_stockpile = {	type = artillery_1 amount = 500 } 
 	 add_equipment_to_stockpile = {	type = SP_arty_0 amount = 500 }
 			} 
 				} 
@@ -1321,7 +1321,7 @@ swap_ideas = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			} }
 		    CHI = {
 					army_experience = 25
@@ -1329,7 +1329,7 @@ swap_ideas = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 		} } 
 	focus = {
@@ -1432,7 +1432,7 @@ reverse_add_opinion_modifier = { target = TUR modifier = one_china_policy}
         } } }
 
 		completion_reward = {
-    add_ideas = sco_member
+    add_ideas = CHI_sco_member
 	} } 
 	focus = {
 		id = TKF_visit_shangai
@@ -2630,7 +2630,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 	subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
@@ -3992,9 +3992,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		name = "Kemal Okuyan"
 		picture = "TUR_Kemal_Okuyan.dds"
 		expire = ""
-		ideology = Communist-State
+		ideology = communist_state
 		traits = {
-		emerging_Communist-State
+		emerging_communist_state
 		writer 
 		} } }
 			custom_effect_tooltip = TKP_ACTION_3
@@ -4076,7 +4076,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 search_filters = {FOCUS_FILTER_POLITICAL}
 
 		available = {
-	    emerging_conservative_are_in_power= yes	
+	    emerging_reactionaries_are_in_power= yes	
 		}
 
 		completion_reward = {
@@ -4310,7 +4310,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ARMS}
        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 
 		completion_reward = {
-				set_temp_variable = { temp_opinion = -20 }	
+				set_temp_variable = { temp_opinion_change = -20 }	
             change_the_ulema_opinion = yes
 swap_ideas = {
                 add_idea = pluralist
@@ -4329,11 +4329,11 @@ swap_ideas = {
        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 
 		completion_reward = {
-				set_temp_variable = { temp_opinion = -20 }	
+				set_temp_variable = { temp_opinion_change = -20 }	
             change_the_ulema_opinion = yes
 swap_ideas = {
                 add_idea = labour_unions
-                remove_idea = The_Ulema
+                remove_idea = the_ulema
 	} } }
 	focus = {
 		id = TKF_deal_with_sharia
@@ -4352,9 +4352,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
 		        add_stability = 0.05
 				add_political_power = -75
-				set_temp_variable = { temp_opinion = 5}	
+				set_temp_variable = { temp_opinion_change = 5}	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion = 5 }	
+				set_temp_variable = { temp_opinion_change = 5 }	
             change_the_ulema_opinion = yes
 	} } 
 	focus = {
@@ -4659,7 +4659,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
         add_political_power = 125
 		add_stability = 0.03
-				set_temp_variable = { temp_opinion = 10 }	
+				set_temp_variable = { temp_opinion_change = 10 }	
             change_industrial_conglomerates_opinion = yes		
 				}
 			}
@@ -4942,10 +4942,10 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 				}
 			}
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 		subtract_from_variable = { treasury = 50 }
 			custom_effect_tooltip = 50_billion_expense_tt
@@ -5161,10 +5161,10 @@ swap_ideas = {
 				}
 			}
 			add_tech_bonus = {
-				name = Cat_ARTILLERY
+				name = CAT_artillery
 				bonus = 0.5
 				uses = 1
-				category = Cat_ARTILLERY
+				category = CAT_artillery
 			}
 		subtract_from_variable = { treasury = 50 }
 			custom_effect_tooltip = 50_billion_expense_tt
@@ -5192,21 +5192,21 @@ swap_ideas = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 			157 = {
 				add_extra_state_shared_building_slots = 1
@@ -5265,21 +5265,21 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 			} }	
 	focus = {
@@ -6478,20 +6478,20 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 				damage = 1.0
 			} }
 	GER = {
-			set_temp_variable = { modify_eurosceptic = 0.02 }
-			eurosceptic_change = yes	
+			set_temp_variable = { modify_europeanism = -0.02 }
+			europeanism_change = yes	
 	}
 	ENG = {
-			set_temp_variable = { modify_eurosceptic = 0.02 }
-			eurosceptic_change = yes	
+			set_temp_variable = { modify_europeanism = -0.02 }
+			europeanism_change = yes	
 	}
 	FRA = {
-			set_temp_variable = { modify_eurosceptic = 0.02 }
-			eurosceptic_change = yes	
+			set_temp_variable = { modify_europeanism = -0.02 }
+			europeanism_change = yes	
 	}
 	SPR = {
-            set_temp_variable = { modify_eurosceptic = 0.02 }
-			eurosceptic_change = yes	
+            set_temp_variable = { modify_europeanism = -0.02 }
+			europeanism_change = yes	
 	}
 	 GER = {			
 				add_popularity = {
@@ -6759,7 +6759,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	   
 		completion_reward = {
 				custom_effect_tooltip = every_neighbour_country_effects
-				set_temp_variable = { temp_opinion = -20 }	
+				set_temp_variable = { temp_opinion_change = -20 }	
             change_the_ulema_opinion = yes
 swap_ideas = {
                 add_idea = pluralist
@@ -7555,10 +7555,10 @@ swap_ideas = {
 				}
 			}
 			add_tech_bonus = {
-				name = Cat_ARTILLERY
+				name = CAT_artillery
 				bonus = 0.5
 				uses = 1
-				category = Cat_ARTILLERY
+				category = CAT_artillery
 			}
 		subtract_from_variable = { treasury = 50 }
 			custom_effect_tooltip = 50_billion_expense_tt
@@ -8370,20 +8370,20 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 				damage = 1.0
 			} }
 	GER = {
-			set_temp_variable = { modify_eurosceptic = 0.02 }
-			eurosceptic_change = yes	
+			set_temp_variable = { modify_europeanism = -0.02 }
+			europeanism_change = yes	
 	}
 	ENG = {
-			set_temp_variable = { modify_eurosceptic = 0.02 }
-			eurosceptic_change = yes	
+			set_temp_variable = { modify_europeanism = -0.02 }
+			europeanism_change = yes	
 	}
 	FRA = {
-			set_temp_variable = { modify_eurosceptic = 0.02 }
-			eurosceptic_change = yes	
+			set_temp_variable = { modify_europeanism = -0.02 }
+			europeanism_change = yes	
 	}
 	SPR = {
-            set_temp_variable = { modify_eurosceptic = 0.02 }
-			eurosceptic_change = yes	
+            set_temp_variable = { modify_europeanism = -0.02 }
+			europeanism_change = yes	
 	}
 	 GER = {			
 				add_popularity = {
@@ -8969,21 +8969,21 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			} }
 					TUR = {
 						army_experience = 25
@@ -9400,21 +9400,21 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 					add_war_support = 0.05
 					CHI = {

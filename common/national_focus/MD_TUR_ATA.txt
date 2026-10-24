@@ -150,7 +150,7 @@ swap_ideas = {
 
             completion_reward = {
 			add_political_power = 75
-				set_temp_variable = { temp_opinion = 7 }	
+				set_temp_variable = { temp_opinion_change = 7 }	
             change_industrial_conglomerates_opinion = yes	
 				}
 			}
@@ -234,7 +234,7 @@ swap_ideas = {
 } } }
 	focus = {
 		id = ATA_manage_to_have_investors
-		icon = business_man
+		icon = businessman
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_social_state
@@ -486,7 +486,7 @@ set_global_flag = ATA_BLOCK
 
             completion_reward = {
             add_political_power = 75
-				set_temp_variable = { temp_opinion = 7 }	
+				set_temp_variable = { temp_opinion_change = 7 }	
             change_industrial_conglomerates_opinion = yes	
 				}
 			}
@@ -511,10 +511,10 @@ set_global_flag = ATA_BLOCK
            add_stability = 0.02
 		   add_political_power = 75
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 				}
 			}
@@ -556,10 +556,10 @@ set_global_flag = ATA_BLOCK
 					instant_build = yes
 				}
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 		} } }
 	focus = {
@@ -983,7 +983,7 @@ add_offsite_building = { type = industrial_complex level = 1 }
 					level = 1
 				} 
 				add_extra_state_shared_building_slots = 1
-				add_bulding_construction = {
+				add_building_construction = {
 					type = industrial_complex
 					instant_build = yes
 					level = 1
@@ -2419,9 +2419,9 @@ add_offsite_building = { type = arms_factory level = 1 }
 
 	completion_reward = {
 					reverse_add_opinion_modifier = { target = GNA modifier = military_aid }
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -3000 }
 	 GNA = {
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 
 				set_temp_variable = { percent_change = 3 }
 				set_temp_variable = { tag_index = TUR.id }
@@ -2542,14 +2542,14 @@ add_offsite_building = { type = arms_factory level = 1 }
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 
             completion_reward = {
-				set_temp_variable = { temp_opinion = 15 }	
+				set_temp_variable = { temp_opinion_change = 15 }	
             change_the_military_opinion = yes	
 			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 				}
 		}
@@ -2649,21 +2649,21 @@ custom_effect_tooltip = WARN_GULEN
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 swap_ideas = { 
   remove_idea = turkish_military_infulence
@@ -3178,7 +3178,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 	completion_reward = {
-			remove_ideas = The_Ulema
+			remove_ideas = the_ulema
             swap_ideas = {
 			add_idea = pluralist
 			remove_idea = sunni
@@ -4109,19 +4109,19 @@ swap_ideas = {
 create_production_license = {
     target = USA
     equipment = {
-        type = Rec_tank_Equipment
+        type = Rec_tank_1
         version = 0
         new_prioritised = no
     }
     cost_factor = 0
 }
 				add_equipment_to_stockpile = {
-					type = Rec_tank_Equipment
+					type = Rec_tank_1
 					amount = 500
 					producer = USA
 				}
 				add_equipment_to_stockpile = {
-					type = infantry_weapons1
+					type = infantry_weapons_1
 					amount = 2000
 					producer = USA
 				}
@@ -4160,7 +4160,7 @@ create_production_license = {
 create_production_license = {
     target = USA
     equipment = {
-        type = IFV_Equipment
+        type = IFV_1
         version = 0
         new_prioritised = no
     }
@@ -4169,14 +4169,14 @@ create_production_license = {
 create_production_license = {
     target = USA
     equipment = {
-        type = mbt_hull_3
+        type = MBT_3
         version = 0
         new_prioritised = no
     }
     cost_factor = 0
 }
-	 add_equipment_to_stockpile = {	type = IFV_Equipment amount = 250 } 
-	 add_equipment_to_stockpile = {	type = mbt_hull_3 amount = 250 }
+	 add_equipment_to_stockpile = {	type = IFV_1 amount = 250 } 
+	 add_equipment_to_stockpile = {	type = MBT_3 amount = 250 }
 			
 		} } 
 	focus = {
@@ -4231,17 +4231,17 @@ create_production_license = {
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_air_eqp
+				name = CAT_aircraft
 				bonus = 1
 				uses = 2
-				category = CAT_air_eqp
+				category = CAT_aircraft
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_missile
+				name = CAT_missiles
 				bonus = 1
 				uses = 2
-				category = CAT_missile
+				category = CAT_missiles
 			}
 		} } 
 	focus = {
@@ -4745,7 +4745,7 @@ create_production_license = {
 
 		completion_reward = {
 			TRGX_bop_very_low_decrease_effect = yes
-				set_temp_variable = { temp_opinion = 25 }	
+				set_temp_variable = { temp_opinion_change = 25 }	
             change_the_ulema_opinion = yes	
 	} }
 focus = {
@@ -4953,7 +4953,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_CORRUPTION}
 
             completion_reward = {
-			add_ideas = negligible_corruption
+			add_ideas = corruption_level_01
 			add_stability = 0.05
 				}
 			}
@@ -5451,7 +5451,7 @@ focus = {
 
 
         available = {
-        has_idea = The_Military
+        has_idea = the_military
         }
 		
 	completion_reward = {

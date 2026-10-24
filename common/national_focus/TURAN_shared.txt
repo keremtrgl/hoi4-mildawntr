@@ -1037,7 +1037,7 @@ has_country_flag = TURKIC_CURRENCY
 		country_event = TurkeyF.44		
 		} 
 		custom_effect_tooltip = DRAFT_FORMAL_13
-hidden_Effect = {
+hidden_effect = {
 KAZ = {
 remove_ideas = turkic_heritage_council
 remove_ideas = center_of_nomidaic_civizilations
@@ -1368,9 +1368,9 @@ add_ideas = turkic_expansionism
         completion_reward = {
 		        add_political_power = 75
 				add_war_support = 0.05
-				set_temp_variable = { temp_opinion = -15 }	
+				set_temp_variable = { temp_opinion_change = -15 }	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion = 20 }	
+				set_temp_variable = { temp_opinion_change = 20 }	
             change_the_ulema_opinion = yes
 	} } 
 	shared_focus = {
@@ -1400,7 +1400,7 @@ add_ideas = turkic_expansionism
 		set_temp_variable = { party_index = 22 }
 		set_temp_variable = { party_popularity_increase = 0.30 }
 		set_temp_variable = { temp_outlook_increase = 0.30 }
-		add_relative_party_popularity = yes
+		change_relative_party_popularity = yes
 	}
 	}
 	shared_focus = {
@@ -1453,9 +1453,9 @@ add_ideas = turkic_expansionism
         completion_reward = {
 		        add_political_power = 75
 				add_war_support = 0.05
-				set_temp_variable = { temp_opinion = 15 }	
+				set_temp_variable = { temp_opinion_change = 15 }	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion = -20 }	
+				set_temp_variable = { temp_opinion_change = -20 }	
             change_the_ulema_opinion = yes	
 	} } 
 	shared_focus = {

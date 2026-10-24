@@ -28,7 +28,7 @@ TUR_turkmeneli_integration = {
 
 		modifier = {
 			political_power_cost = 0.05
-            MONTHLY_POPULATION = 0.05
+            monthly_population = 0.05
 		}
 
 		remove_effect = {
@@ -3489,7 +3489,7 @@ swap_ideas = {
 			custom_effect_tooltip = HOUSING_INCREASE_10
 	subtract_from_variable = { TUR_building_resistancy = -10 }
 			add_stability = -0.05
-					set_temp_variable = { temp_opinion = -5 }	
+					set_temp_variable = { temp_opinion_change = -5 }	
             change_industrial_conglomerates_opinion = yes
 	}   }
 
@@ -3557,7 +3557,7 @@ swap_ideas = {
 			set_party_index_to_ruling_party = yes
 			set_temp_variable = { party_popularity_increase = 0.03 }
 			set_temp_variable = { temp_outlook_increase = 0.01 }
-			add_relative_party_popularity = yes
+			change_relative_party_popularity = yes
 			set_temp_variable = { drift_switch_change = 0.01 }	
 	}   }
 	TUR_new_restorations = {
@@ -3595,7 +3595,7 @@ swap_ideas = {
 		clr_global_flag = EA_BLOCK_MOD_4	
 			custom_effect_tooltip = HOUSING_INCREASE_10
 		subtract_from_variable = { TUR_building_resistancy = -10 }
-					set_temp_variable = { temp_opinion = -3 }	
+					set_temp_variable = { temp_opinion_change = -3 }	
             change_industrial_conglomerates_opinion = yes
 			add_stability = -0.05
 			add_political_power = 100
@@ -3897,7 +3897,7 @@ check_variable = { var = TUR_building_resistancy value = 50 compare = less_than_
 		custom_effect_tooltip = HOUSING_DECREASE_5
 				subtract_from_variable = { TUR_building_resistancy = 5 }
 		add_stability = 0.01
-				set_temp_variable = { temp_opinion = 3 }	
+				set_temp_variable = { temp_opinion_change = 3 }	
             change_industrial_conglomerates_opinion = yes	
 			subtract_from_variable = { treasury = -5.0 }
 			custom_effect_tooltip = 5_billion_revenue_tt
@@ -4850,7 +4850,7 @@ remove_ideas = limits_of_the_parliament_main_target
 
 		visible = {
 			original_tag = TUR
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
          AND = {
              date > 2010.1.1
 	         date < 2011.1.1
@@ -4887,7 +4887,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 
 		visible = {
 			original_tag = TUR
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
          AND = {
              date > 2016.1.1
 	         date < 2017.1.1

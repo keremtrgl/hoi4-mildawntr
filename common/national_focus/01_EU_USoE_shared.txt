@@ -942,7 +942,7 @@ shared_focus = {
 		change_relative_party_popularity = yes
 		add_ideas = christian
 		#show_ideas_tooltip = christian
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_the_clergy_opinion = yes
 		add_war_support = 0.1
 	}
@@ -1876,10 +1876,10 @@ shared_focus = {
 		set_temp_variable = { party_popularity_increase = 0.20 }
 		set_temp_variable = { temp_outlook_increase = 0.20 }
 		change_relative_party_popularity = yes
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_farmers_opinion = yes
 		change_small_medium_business_owners_opinion = yes
-		set_temp_variable = { temp_opinion = -5 }
+		set_temp_variable = { temp_opinion_change = -5 }
 		change_industrial_conglomerates_opinion = yes
 		change_fossil_fuel_industry_opinion = yes
 	}
@@ -1907,7 +1907,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE501"
 		add_stability = 0.1
-		set_temp_variable = { temp_opinion = -5 }
+		set_temp_variable = { temp_opinion_change = -5 }
 		change_industrial_conglomerates_opinion = yes
 		change_fossil_fuel_industry_opinion = yes
 		set_cosmetic_tag = USoE_green
@@ -1942,7 +1942,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE502"
 		set_country_flag = environmental_imperialism
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_farmers_opinion = yes
 		change_international_bankers_opinion = yes
 	}
@@ -2193,7 +2193,7 @@ shared_focus = {
 		change_relative_party_popularity = yes
 		add_ideas = christian
 		#show_ideas_tooltip = christian
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_the_clergy_opinion = yes
 		add_war_support = 0.1
 	}
@@ -2230,7 +2230,7 @@ shared_focus = {
 	#icon = USoE601
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE601"
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_the_military_opinion = yes
 		change_defense_industry_opinion = yes
 		change_maritime_industry_opinion = yes
@@ -2264,7 +2264,7 @@ shared_focus = {
 	#icon = USoE602
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE602"
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_the_military_opinion = yes
 		change_defense_industry_opinion = yes
 		army_experience = 400
@@ -2298,7 +2298,7 @@ shared_focus = {
 	#icon = USoE603
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE603"
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_the_military_opinion = yes
 		change_intelligence_community_opinion = yes
 		air_experience = 400
@@ -2332,7 +2332,7 @@ shared_focus = {
 	#icon = USoE604
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE604"
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_the_military_opinion = yes
 		change_maritime_industry_opinion = yes
 		navy_experience = 400
@@ -2481,7 +2481,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE622"
 		custom_effect_tooltip = tooltip_USoE622_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_intelligence_community_opinion = yes
 		add_tech_bonus = {
 			name = USoE622
@@ -2541,7 +2541,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE623"
 		custom_effect_tooltip = tooltip_USoE623_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_small_medium_business_owners_opinion = yes
 		add_tech_bonus = {
 			name = USoE623
@@ -2601,7 +2601,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE624"
 		custom_effect_tooltip = tooltip_USoE624_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_the_clergy_opinion = yes
 		add_tech_bonus = {
 			name = USoE624
@@ -2661,7 +2661,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE625"
 		custom_effect_tooltip = tooltip_USoE625_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_defense_industry_opinion = yes
 		add_tech_bonus = {
 			name = USoE625
@@ -2721,7 +2721,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE626"
 		custom_effect_tooltip = tooltip_USoE626_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_farmers_opinion = yes
 		add_tech_bonus = {
 			name = USoE626
@@ -2782,7 +2782,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE627"
 		custom_effect_tooltip = tooltip_USoE627_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_maritime_industry_opinion = yes
 		add_tech_bonus = {
 			name = USoE627
@@ -2842,7 +2842,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE628"
 		custom_effect_tooltip = tooltip_USoE628_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_international_bankers_opinion = yes
 		add_tech_bonus = {
 			name = USoE628
@@ -2902,7 +2902,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE629"
 		custom_effect_tooltip = tooltip_USoE629_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_fossil_fuel_industry_opinion = yes
 		add_tech_bonus = {
 			name = USoE629
@@ -2962,7 +2962,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE630"
 		custom_effect_tooltip = tooltip_USoE630_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_intelligence_community_opinion = yes
 		change_landowners_opinion = yes
 		add_tech_bonus = {
@@ -3023,7 +3023,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE631"
 		custom_effect_tooltip = tooltip_USoE631_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_the_military_opinion = yes
 		change_defense_industry_opinion = yes
 		add_tech_bonus = {
@@ -3084,7 +3084,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE632"
 		custom_effect_tooltip = tooltip_USoE632_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_the_military_opinion = yes
 		change_landowners_opinion = yes
 		add_tech_bonus = {
@@ -3145,7 +3145,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE633"
 		custom_effect_tooltip = tooltip_USoE632_effect
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_the_military_opinion = yes
 		change_landowners_opinion = yes
 		add_tech_bonus = {
@@ -3861,7 +3861,7 @@ shared_focus = {
 	#icon = USoE647
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE647"
-		set_temp_variable = { temp_opinion = 5 }
+		set_temp_variable = { temp_opinion_change = 5 }
 		change_the_clergy_opinion = yes
 		set_USoE_flag_of_the_house = yes
 		set_temp_variable = { rul_party_temp = 23 }
@@ -3897,7 +3897,7 @@ shared_focus = {
 	#icon = USoE648
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USoE648"
-		set_temp_variable = { temp_opinion = -5 }
+		set_temp_variable = { temp_opinion_change = -5 }
 		change_the_clergy_opinion = yes
 		set_USoE_flag_of_the_house = yes
 		set_temp_variable = { rul_party_temp = 23 }

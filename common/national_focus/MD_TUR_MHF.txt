@@ -1514,10 +1514,10 @@ swap_ideas = {
 		completion_reward = {
 	    add_political_power = 100
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 	} }
 	focus = {
@@ -2091,7 +2091,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
      
 available = {
 NOT = {
-has_faction_with = SYR
+is_in_faction_with = SYR
 }
 }
 
@@ -2224,7 +2224,7 @@ change_state_after_war = yes
 	completion_reward = {
 	add_war_support = 0.02
 	add_manpower = 75000
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -2500 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -2500 }
 	 } } 
 	focus = {
 		id = MHF_control_the_society
@@ -2457,7 +2457,7 @@ custom_effect_tooltip = WARN_GULEN
 		
         completion_reward = {
 		        add_political_power = 75	
-				set_temp_variable = { temp_opinion = 15 }	
+				set_temp_variable = { temp_opinion_change = 15 }	
             change_the_ulema_opinion = yes	
 	} } 
 	focus = {
@@ -2892,7 +2892,7 @@ TUR_kemalist_turn_hostile_effect = yes
 		search_filters = {FOCUS_FILTER_TURKISH_KEMALISM}
 		
 	completion_reward = {
-			remove_ideas = The_Ulema
+			remove_ideas = the_ulema
             swap_ideas = {
 			add_idea = pluralist
 			remove_idea = sunni
@@ -2967,7 +2967,7 @@ TUR_kemalist_turn_hostile_effect = yes
 		search_filters = {FOCUS_FILTER_TURKISH_KEMALISM}
 		
         completion_reward = {
-				add_War_support = 0.05
+				add_war_support = 0.05
 				add_stability = 0.1
 	} } 
 	focus = {
@@ -3087,7 +3087,7 @@ TUR_kemalist_turn_hostile_effect = yes
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 		
         completion_reward = {
-				set_temp_variable = { temp_opinion = 20 }	
+				set_temp_variable = { temp_opinion_change = 20 }	
             change_the_ulema_opinion = yes	
 	} } 
 	focus = {
@@ -3206,7 +3206,7 @@ swap_ideas = {
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 		
         completion_reward = {
-				set_temp_variable = { temp_opinion = 30 }	
+				set_temp_variable = { temp_opinion_change = 30 }	
             change_the_ulema_opinion = yes	
 			add_stability = 0.05
 			add_ideas = sunni
@@ -3574,7 +3574,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 		custom_effect_tooltip = SPECIAL_COORDINATION_OF_ARMED_FORCES
 			}
@@ -5007,28 +5007,28 @@ swap_ideas = {
 		
 	completion_reward = {
 			GER = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			FRA = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			ITA = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			SPR = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			POR = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			POL = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 	GER = {
 	country_event = TurkeyF.150
@@ -5070,28 +5070,28 @@ swap_ideas = {
 	
 	completion_reward = {
 			GER = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			FRA = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			ITA = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			SPR = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			POR = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			POL = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 
 	GER = {
@@ -5127,28 +5127,28 @@ swap_ideas = {
 		
 	completion_reward = {
 			GRE = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			BUL = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			ROM = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			ALB = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			SER = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			FYR = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 
 	GRE = {
@@ -5184,16 +5184,16 @@ swap_ideas = {
 		
 	completion_reward = {
 			POL = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			HUN = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			SLO = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 	POL = {
 	country_event = TurkeyF.149
@@ -7252,7 +7252,7 @@ swap_ideas = {
 				name = nuclear_reactors_research_bonus
 				bonus = 0.1
 				uses = 1
-				category = Cat_nuclear_reactors
+				category = CAT_nuclear_reactors
 			}	
 		934 = {
 				add_resource = {
@@ -7306,7 +7306,7 @@ swap_ideas = {
 				name = nuclear_reactors_research_bonus
 				bonus = 0.1
 				uses = 1
-				category = Cat_nuclear_reactors
+				category = CAT_nuclear_reactors
 			}
 			set_temp_variable = { change_resource = 500 }
 			change_reactor_grade_material_effect = yes		
@@ -8002,7 +8002,7 @@ swap_ideas = {
 		search_filters = {FOCUS_FILTER_STABILITY}	
 		
 	completion_reward = { 
-	add_Stability = -0.03
+	add_stability = -0.03
 	custom_effect_tooltip = LIFT_BAN_EXECUTION
 } }
 	focus = {

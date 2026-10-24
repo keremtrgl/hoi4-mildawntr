@@ -151,9 +151,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 		completion_reward = {
-				set_temp_variable = { temp_opinion = 15 }	
+				set_temp_variable = { temp_opinion_change = 15 }	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion = -20 }	
+				set_temp_variable = { temp_opinion_change = -20 }	
             change_the_ulema_opinion = yes
 				}
 			}
@@ -178,9 +178,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
                 add_ideas = betrayal_from_FETO3
 		        add_stability = 0.03
 				add_political_power = -75
-				set_temp_variable = { temp_opinion = 15 }	
+				set_temp_variable = { temp_opinion_change = 15 }	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion = -10 }	
+				set_temp_variable = { temp_opinion_change = -10 }	
             change_the_ulema_opinion = yes
 				}
 			}
@@ -199,7 +199,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 		        add_stability = -0.05
 				swap_ideas = {
-                remove_idea = The_Ulema 
+                remove_idea = the_ulema 
 				add_idea = international_bankers
 				}
 			} }
@@ -627,10 +627,10 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 add_political_power = 100
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 1.0
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 }   }
 	focus = {
@@ -700,10 +700,10 @@ add_political_power = -75
 	  			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 }   }
 	focus = {
@@ -762,10 +762,10 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	  			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 				add_fuel = 15000
 			159 = {
@@ -896,7 +896,7 @@ add_ideas =  unemployment_level_1
 	}
 	focus = {
 		id = GENC_support_worker_givers
-		icon = business_man
+		icon = businessman
 		cost = 10.00
 		prerequisite = {
 			focus = GENC_war_on_unemployment
@@ -1066,10 +1066,10 @@ swap_ideas = {
   add_idea = agricultural_movement_3
 } 
 			add_tech_bonus = {
-				name = CAT_agriculture_tech
+				name = CAT_agriculture
 				bonus = 0.5
 				uses = 2
-				category = CAT_agriculture_tech
+				category = CAT_agriculture
 			}
 }
     }	
@@ -1135,8 +1135,8 @@ completion_reward = {
 				set_temp_variable = { tag_index = ROOT.id }
 				change_influence_percentage = yes
 			}
-	set_temp_variable = { modify_eurosceptic = 0.02 }
-	eurosceptic_change = yes	
+	set_temp_variable = { modify_europeanism = -0.02 }
+	europeanism_change = yes	
 				add_popularity = {
 					ideology = nationalist
 					popularity = 0.02
@@ -1597,9 +1597,9 @@ add_political_power = -100
 		
 	completion_reward = {
 					reverse_add_opinion_modifier = { target = GNA modifier = military_aid }
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -3000 }
 	 GNA = {
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 			} }
 	}
 	focus = {
@@ -1625,9 +1625,9 @@ add_political_power = -100
 		
 	completion_reward = {
 					reverse_add_opinion_modifier = { target = FSA modifier = military_aid }
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -3000 }
 	 FSA = {
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 			} }
 	}
 	focus = {
@@ -2145,7 +2145,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 1
 				bonus = 0.5
-				category = Cat_ARMOR
+				category = CAT_armor
 			} } 
 		}
 	focus = {
@@ -2164,7 +2164,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_ARMOR
+				category = CAT_armor
 			} } 
 		}
 	focus = {
@@ -2183,7 +2183,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_INF_WEP
+				category = CAT_infantry_weapons
 			} }
 		}
 	focus = {
@@ -2203,7 +2203,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_ARTY
+				category = CAT_artillery
 			} } 
 		}
 
@@ -2225,7 +2225,7 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			} }
 		}
 	focus = {
@@ -2245,7 +2245,7 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			} } 
 		}
 	focus = {
@@ -2266,7 +2266,7 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}  } 
 		}
 	focus = {
@@ -2286,14 +2286,14 @@ block_defence_decrease = yes
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
  
 			}
@@ -2319,21 +2319,21 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
  } 
 		}
@@ -2449,7 +2449,7 @@ swap_ideas = {
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = CAT_FIXED_WING
+				category = CAT_aircraft
 			} } 
 		}
 	focus = {
@@ -2487,7 +2487,7 @@ swap_ideas = {
 			add_tech_bonus = {
 				bonus = 0.35
 				uses = 2
-				category = Cat_DESTROYER
+				category = CAT_destroyers
 			} } 
 		}
 	focus = {
@@ -2508,7 +2508,7 @@ swap_ideas = {
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_SURFACE_SHIP
+				category = CAT_surface_ships
 			} } 
 		}
 	focus = {
@@ -2532,7 +2532,7 @@ swap_ideas = {
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_CARRIER
+				category = CAT_aircraft_carriers
 	        } }
 		}
 	focus = {
@@ -2552,7 +2552,7 @@ swap_ideas = {
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_ARMOR
+				category = CAT_armor
 			} } 
 		}
 
@@ -2574,13 +2574,13 @@ swap_ideas = {
 			add_tech_bonus = {
 				uses = 2
 				bonus = 1.0
-				category = Cat_L_DRONE
+				category = CAT_land_drones
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
 				uses = 2
 				bonus = 2.0
-				category = Cat_A_UAV
+				category = CAT_air_drones
 			
 			} }
 		}
@@ -2602,7 +2602,7 @@ swap_ideas = {
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 	completion_reward = {
-				set_temp_variable = { temp_opinion = 10 }	
+				set_temp_variable = { temp_opinion_change = 10 }	
             change_industrial_conglomerates_opinion = yes
 
 			add_tech_bonus = {
@@ -2724,7 +2724,7 @@ swap_ideas = {
 		} } 
 	focus = {
 		id = TUR_invest_in_state2
-		icon = business_man
+		icon = businessman
 		cost = 10.00
 		prerequisite = {
 			focus = TUR_small_industrialization_programs2
@@ -3471,7 +3471,7 @@ add_ideas = nato_turkey_missionary
 	BEL = { country_event = TurkeyF.16}
 	HOL = { country_event = TurkeyF.16}
 	DEN = { country_event = TurkeyF.16}
-	NOR = { country_event = TurkeyF.16}
+	NRY = { country_event = TurkeyF.16}
 	USA = { country_event = TurkeyF.16}
 	CAN = { country_event = TurkeyF.16}
 	ICE = { country_event = TurkeyF.16}
@@ -3548,7 +3548,7 @@ swap_ideas = {
 	BEL = { country_event = TurkeyF.17}
 	HOL = { country_event = TurkeyF.17}
 	DEN = { country_event = TurkeyF.17}
-	NOR = { country_event = TurkeyF.17}
+	NRY = { country_event = TurkeyF.17}
 	USA = { country_event = TurkeyF.17}
 	CAN = { country_event = TurkeyF.17}
 	ICE = { country_event = TurkeyF.17}
@@ -3598,7 +3598,7 @@ swap_ideas = {
 	BEL = { country_event = TurkeyF.18}
 	HOL = { country_event = TurkeyF.18}
 	DEN = { country_event = TurkeyF.18}
-	NOR = { country_event = TurkeyF.18}
+	NRY = { country_event = TurkeyF.18}
 	USA = { country_event = TurkeyF.18}
 	CAN = { country_event = TurkeyF.18}
 	ICE = { country_event = TurkeyF.18}

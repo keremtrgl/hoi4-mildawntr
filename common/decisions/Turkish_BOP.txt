@@ -550,7 +550,7 @@ TRGX_balance_of_power_category = {
           activation = {   
          tag = TUR
 		 country_exists = USA
-neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 NOT = {
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
@@ -621,12 +621,12 @@ TUR_mit_balance_category = {
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = infantry_weapons		 #M113
+		type = infantry_weapons_type		 #M113
 		amount = -125
 		producer = TUR
 	}
 	add_equipment_to_stockpile = {
-		type = command_control_equipment	 #M113
+		type = cnc_equipment_type	 #M113
 		amount = -125
 		producer = TUR
 	}

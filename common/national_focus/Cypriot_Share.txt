@@ -511,13 +511,13 @@ has_country_flag = OTT_FOCUS_LOCATION
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_fund_militias"
 			add_equipment_to_stockpile = {
-				type = infantry_weapons1
+				type = infantry_weapons_1
 				amount = -800
 				producer = TUR
 			}
 			NCY = {
 				add_equipment_to_stockpile = {
-					type = infantry_weapons1
+					type = infantry_weapons_1
 					amount = 800
 					producer = TUR
 				}
@@ -790,7 +790,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_last_second_upgrades"
 			add_equipment_to_stockpile = {
-				type = infantry_weapons1
+				type = infantry_weapons_1
 				amount = -100
 				producer = TUR
 			}
@@ -920,7 +920,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 			custom_effect_tooltip = TUR_crete_gets_guns
 			add_manpower = -15000
 			add_equipment_to_stockpile = {
-				type = infantry_weapons1
+				type = infantry_weapons_1
 				amount = -1000
 				producer = TUR
 			}
@@ -965,7 +965,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_smuggle_trucks"
 			custom_effect_tooltip = TUR_crete_gets_guns
 			add_equipment_to_stockpile = {
-				type = util_vehicle_equipment
+				type = util_vehicle_type
 				amount = -100
 				producer = TUR
 			}

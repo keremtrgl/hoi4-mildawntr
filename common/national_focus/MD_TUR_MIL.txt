@@ -82,7 +82,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 	completion_reward = {
-				set_temp_variable = { temp_opinion = 15 }	
+				set_temp_variable = { temp_opinion_change = 15 }	
             change_the_military_opinion = yes	
 			}
 	}
@@ -349,7 +349,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 
        available = {
 	   country_exists = USA
-	   has_idea = Nato_Member
+	   has_idea = NATO_member
 	   NOT = {
 	   has_war_with = USA
 	    }
@@ -360,7 +360,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
         bypass = {
 		OR = {
 		NOT = {
-		has_idea = Nato_Member
+		has_idea = NATO_member
 		}
 		has_war_with = USA
 		NOT = {
@@ -413,7 +413,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 			name = BOT_the_energy_debate
 			bonus = 0.5
 			uses = 2
-			category = synth_resources
+			category = CAT_fuel_refining
 		}
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 1

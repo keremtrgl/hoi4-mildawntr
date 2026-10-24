@@ -484,8 +484,8 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		
 		completion_reward = {
      add_stability = 0.03
-			set_temp_variable = { modify_eurosceptic = 0.03 }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_europeanism = -0.03 }
+			europeanism_change = yes
 	 remove_ideas = EU_member
 	 add_ideas = non_european
 	 } }
@@ -611,7 +611,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 				name = aircraft_designs_research
 				bonus = 0.5
 				uses = 1
-				category = Cat_AIR_EQP
+				category = CAT_aircraft
 			}
 			159 = { 
 				add_building_construction = {
@@ -651,7 +651,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 				name = GENERIC_air_force_reform
 				bonus = 0.4
 				uses = 2
-				category = Cat_AIR_EQP
+				category = CAT_aircraft
 			}
 			159 = { 
 				add_building_construction = {
@@ -1994,21 +1994,21 @@ reverse_add_opinion_modifier = { target = USA modifier = leader_of_our_hopes }
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
   } 
 		}
@@ -2139,7 +2139,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 1
 				bonus = 0.5
-				category = Cat_ARMOR
+				category = CAT_armor
 			} } 
 		}
 	focus = {
@@ -2158,7 +2158,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_ARMOR
+				category = CAT_armor
 			} } 
 		}
 	focus = {
@@ -2177,7 +2177,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_INF_WEP
+				category = CAT_infantry_weapons
 			} }
 		}
 	focus = {
@@ -2197,7 +2197,7 @@ block_defence_decrease = yes
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_ARTY
+				category = CAT_artillery
 			} } 
 		}
 
@@ -2218,7 +2218,7 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			} }
 		}
 	focus = {
@@ -2238,7 +2238,7 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			} } 
 		}
 	focus = {
@@ -2258,7 +2258,7 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}  } 
 		}
 	focus = {
@@ -2278,14 +2278,14 @@ block_defence_decrease = yes
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
  
 			}
@@ -2310,21 +2310,21 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
   } 
 		}
@@ -2439,7 +2439,7 @@ swap_ideas = {
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = CAT_FIXED_WING
+				category = CAT_aircraft
 			} } 
 		}
 	focus = {
@@ -2477,7 +2477,7 @@ swap_ideas = {
 			add_tech_bonus = {
 				bonus = 0.35
 				uses = 2
-				category = Cat_DESTROYER
+				category = CAT_destroyers
 			} } 
 		}
 	focus = {
@@ -2498,7 +2498,7 @@ swap_ideas = {
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_SURFACE_SHIP
+				category = CAT_surface_ships
 			} } 
 		}
 	focus = {
@@ -2522,7 +2522,7 @@ swap_ideas = {
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_CARRIER
+				category = CAT_aircraft_carriers
 	        } }
 		}
 	focus = {
@@ -2542,7 +2542,7 @@ swap_ideas = {
 			add_tech_bonus = {
 				uses = 2
 				bonus = 0.5
-				category = Cat_ARMOR
+				category = CAT_armor
 			} } 
 		}
 
@@ -2564,13 +2564,13 @@ swap_ideas = {
 			add_tech_bonus = {
 				uses = 2
 				bonus = 1.0
-				category = Cat_L_DRONE
+				category = CAT_land_drones
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
 				uses = 2
 				bonus = 2.0
-				category = Cat_A_UAV
+				category = CAT_air_drones
 			
 			} }
 		}
@@ -3137,7 +3137,7 @@ add_ideas = nato_turkey_missionary
 	BEL = { country_event = TurkeyF.16}
 	HOL = { country_event = TurkeyF.16}
 	DEN = { country_event = TurkeyF.16}
-	NOR = { country_event = TurkeyF.16}
+	NRY = { country_event = TurkeyF.16}
 	USA = { country_event = TurkeyF.16}
 	CAN = { country_event = TurkeyF.16}
 	ICE = { country_event = TurkeyF.16}
@@ -3215,7 +3215,7 @@ swap_ideas = {
 	BEL = { country_event = TurkeyF.17}
 	HOL = { country_event = TurkeyF.17}
 	DEN = { country_event = TurkeyF.17}
-	NOR = { country_event = TurkeyF.17}
+	NRY = { country_event = TurkeyF.17}
 	USA = { country_event = TurkeyF.17}
 	CAN = { country_event = TurkeyF.17}
 	ICE = { country_event = TurkeyF.17}
@@ -3265,7 +3265,7 @@ swap_ideas = {
 	BEL = { country_event = TurkeyF.18}
 	HOL = { country_event = TurkeyF.18}
 	DEN = { country_event = TurkeyF.18}
-	NOR = { country_event = TurkeyF.18}
+	NRY = { country_event = TurkeyF.18}
 	USA = { country_event = TurkeyF.18}
 	CAN = { country_event = TurkeyF.18}
 	ICE = { country_event = TurkeyF.18}

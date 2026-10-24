@@ -198,8 +198,8 @@ set_global_flag = NO_MIT
 	reverse_add_opinion_modifier = { target = SPR modifier = NATO_member_modifier }
 	add_opinion_modifier = { target = CZE modifier = NATO_member_modifier }
 	reverse_add_opinion_modifier = { target = CZE modifier = NATO_member_modifier }
-	add_opinion_modifier = { target = NOR modifier = NATO_member_modifier }
-	reverse_add_opinion_modifier = { target = NOR modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = NRY modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = NRY modifier = NATO_member_modifier }
 	add_opinion_modifier = { target = CAN modifier = NATO_member_modifier }
 	reverse_add_opinion_modifier = { target = CAN modifier = NATO_member_modifier }
 	add_opinion_modifier = { target = EGY modifier = historic_friends }
@@ -225,10 +225,10 @@ set_global_flag = NO_MIT
 		infantry_mass_assault = 1
 
 		#Infantry weapons, only licensed G3A3
-		infantry_weapons = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		infantry_weapons3 = 1
+		infantry_weapons_type = 1
+		infantry_weapons_1 = 1
+		infantry_weapons_2 = 1
+		infantry_weapons_3 = 1
 		support_weapons = 1
 		tandem_charge_warheads = 1
 		squad_automatic_weapon = 1
@@ -238,15 +238,15 @@ set_global_flag = NO_MIT
 		special_forces2 = 1
 
 		#C&C equipment, 1995
-		command_control_equipment = 1
-		command_control_equipment1 = 1
+		cnc_equipment_type = 1
+		cnc_equipment_1 = 1
 
 		combat_eng_equipment = 1
 
 		#TAI TURNA
 		land_Drone_equipment = 1
 
-		Anti_tank_0 = 1
+		Anti_tank_1 = 1
 		Heavy_Anti_tank_0 = 1
 		AT_upgrade_1 = 1
 		Anti_tank_1 = 1
@@ -254,7 +254,7 @@ set_global_flag = NO_MIT
 
 		combat_eng_equipment = 1
 
-		util_vehicle_0 = 1
+		util_vehicle_1 = 1
 		util_vehicle_1 = 1
 		util_vehicle_2 = 1
 		util_vehicle_3 = 1	#Otokar Cobra
@@ -274,7 +274,7 @@ set_global_flag = NO_MIT
 		#Firtina & Kasirga
 
 		#AT for templates and soon to be released Mizrat
-		Anti_tank_0 = 1
+		Anti_tank_1 = 1
 		Heavy_Anti_tank_0 = 1
 		AT_upgrade_1 = 1
 
@@ -310,7 +310,7 @@ set_global_flag = NO_MIT
 
 
 
-		transport_helicopter1 = 1
+		transport_helicopter_1 = 1
 		nsb_transport_helicopter1 = 1
 		transport_helicopter2 = 1
 		nsb_transport_helicopter2 = 1
@@ -491,7 +491,7 @@ set_global_flag = NO_MIT
 				APC_3 = 1
 				SP_arty_0 = 1
 				SP_arty_1 = 1	#M52T
-				artillery_0 = 1
+				artillery_1 = 1
 				Arty_upgrade_1 = 1
 				SP_R_arty_0 = 1
 				SP_R_arty_1 = 1	#T-122 Sakariya
@@ -502,7 +502,7 @@ set_global_flag = NO_MIT
 				SP_Anti_Air_1 = 1 #Altigan PMADS
 				Anti_Air_0 = 1
 				SP_Anti_Air_0 = 1
-				attack_helicopter1 = 1
+				attack_helicopter_1 = 1
 			}
 		}
 	}
@@ -729,7 +729,7 @@ set_global_flag = NO_MIT
 	add_ideas = {
 
 		#pop_050
-		systematic_corruption
+		corruption_level_06
 		sunni
 		liberal_society
 		stagnation
@@ -746,7 +746,7 @@ set_global_flag = NO_MIT
 		volunteer_women
 		NATO_member
 		industrial_conglomerates
-		The_Ulema
+		the_ulema
 		the_military
 		#civil_law
 		#tax_cost_19
@@ -819,7 +819,7 @@ set_global_flag = NO_MIT
 	add_to_array = { influence_array_val = 35 }
 	add_to_array = { influence_array = USA.id }
 	add_to_array = { influence_array_val = 40 }
-	startup_influence = yes
+	sort_influence = yes
 
 	### Economy
 	set_variable = { var = debt value = 364.076 }
@@ -956,7 +956,7 @@ set_global_flag = NO_MIT
 	set_variable = { party_pop_array^23 = 0 } #Monarchist
 
 	### Ruling Party
-	add_to_array = { ruling_party = 1 }
+	set_variable = { ruling_party = 1 }
 	add_to_array = { gov_coalition_array = 20 }
 	add_to_array = { gov_coalition_array = 16 }
 
@@ -1352,7 +1352,7 @@ set_global_flag = BLOCKED_SOUNDS
 		active = yes
 	}
 	diplomatic_relation = {
-		country = NOR
+		country = NRY
 		relation = military_access
 		active = yes
 	}
@@ -1414,7 +1414,7 @@ set_global_flag = BLOCKED_SOUNDS
 
 	add_ideas = {
 		#pop_050
-		systematic_corruption
+		corruption_level_06
 
 		sunni
 		stable_growth
@@ -1431,7 +1431,7 @@ set_global_flag = BLOCKED_SOUNDS
 		volunteer_women
 		NATO_member
 		industrial_conglomerates
-		The_Ulema
+		the_ulema
 		the_military
 		#civil_law
 		#tax_cost_25
@@ -1466,7 +1466,7 @@ set_global_flag = BLOCKED_SOUNDS
 		stagnation
 		defence_02
 		pr_demirel
-		rise_of_fp
+		TUR_rise_of_fp
 		general_staff_under_1
 		the_turkish_housing
 	}
@@ -1476,10 +1476,10 @@ set_global_flag = BLOCKED_SOUNDS
 	
 	set_technology = {
 		legacy_doctrines = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		infantry_weapons3 = 1
-		infantry_weapons4 = 1
+		infantry_weapons_1 = 1
+		infantry_weapons_2 = 1
+		infantry_weapons_3 = 1
+		infantry_weapons_4 = 1
 		support_weapons2 = 1
 		support_weapons3 = 1
 		support_weapons4 = 1
@@ -1491,7 +1491,7 @@ set_global_flag = BLOCKED_SOUNDS
 		special_forces5 = 1
 
 		#C&C equipment, 1995
-		command_control_equipment3 = 1
+		cnc_equipment_3 = 1
 
 		#Bayraktar Mini UAV
 		land_Drone_equipment2 = 1
@@ -1538,7 +1538,7 @@ set_global_flag = BLOCKED_SOUNDS
 
 		combat_eng_equipment = 1
 
-		util_vehicle_0 = 1
+		util_vehicle_1 = 1
 		util_vehicle_1 = 1
 		util_vehicle_2 = 1
 		util_vehicle_3 = 1
@@ -1548,7 +1548,7 @@ set_global_flag = BLOCKED_SOUNDS
 		SP_arty_1 = 1
 		SP_arty_2 = 1 #T-155 Firtina
 
-		artillery_0 = 1
+		artillery_1 = 1
 		artillery_1 = 1
 		artillery_2 = 1 #Panter
 
@@ -1561,7 +1561,7 @@ set_global_flag = BLOCKED_SOUNDS
 		SP_R_arty_2 = 1 #TR-300
 
 		early_helicopter = 1
-		attack_helicopter1 = 1
+		attack_helicopter_1 = 1
 		attack_helicopter2 = 1
 		attack_helicopter3 = 1
 
@@ -1808,7 +1808,7 @@ set_global_flag = BLOCKED_SOUNDS
 	set_variable = { party_pop_array^23 = 0 } #Monarchist
 
 	### Ruling Party
-	add_to_array = { ruling_party = 12 }
+	set_variable = { ruling_party = 12 }
 
 	#Previous elections (2015) - put all other politics info above
 	set_variable = { party_pop_elect_array^1 = 0 } #conservatism

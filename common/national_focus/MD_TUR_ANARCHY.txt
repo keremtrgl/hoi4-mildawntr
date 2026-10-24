@@ -432,7 +432,7 @@ remove_ideas = reformss_for_2001_crisis
 		y = 2
 
 		available = {
-neutrality_Neutral_social_are_in_power = yes	
+neutrality_neutral_social_are_in_power = yes	
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -468,7 +468,7 @@ neutrality_Neutral_social_are_in_power = yes
 			create_country_leader = {
 				name = "Anarchist Emergency Council"
 				picture = "anarcho_neutrality.dds"
-				ideology = Neutral_social
+				ideology = neutral_Social
 				traits = {
 				neutrality_neutral_Social	
 				} }
@@ -585,7 +585,7 @@ neutrality_Neutral_social_are_in_power = yes
 		y = 6
 
 		available = {
-				neutrality_Neutral_communism_are_in_power = yes
+				neutrality_neutral_communism_are_in_power = yes
 		}
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -850,9 +850,9 @@ neutrality_Neutral_social_are_in_power = yes
 
 		available = {
 		NOT = {
-	neutrality_Neutral_communism_are_in_power = yes	
-neutrality_Neutral_green_are_in_power = yes
-neutrality_Neutral_social_are_in_power = yes	
+	neutrality_neutral_communism_are_in_power = yes	
+neutrality_neutral_green_are_in_power = yes
+neutrality_neutral_social_are_in_power = yes	
 		}
 		}
 
@@ -864,7 +864,7 @@ neutrality_Neutral_social_are_in_power = yes
 				picture = "anarcho_cap.dds"
 				ideology = Neutral_Libertarian
 				traits = {
-					neutral_Neutral_Libertarian
+					neutrality_Neutral_Libertarian
 				}
 			}
 			add_stability = 0.15
@@ -1293,17 +1293,17 @@ swap_ideas = {
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_Civilian
+				name = CAT_civilian
 				bonus = 0.5
 				uses = 2
-				category = CAT_Civilian
+				category = CAT_civilian
 			}
 			newline = yes
 			add_tech_bonus = {
-				name = CAT_agriculture_tech
+				name = CAT_agriculture
 				bonus = 0.5
 				uses = 2
-				category = CAT_agriculture_tech
+				category = CAT_agriculture
 			}
 
 		}
@@ -1982,7 +1982,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		y = 6
 
 		available = {
-				neutrality_Neutral_green_are_in_power = yes
+				neutrality_neutral_green_are_in_power = yes
 		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1995,7 +1995,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 				picture = "anarcho_greens.dds"
 				ideology = Neutral_green
 				traits = {
-					neutral_Neutral_green
+					neutrality_Neutral_green
 				}
 			}			
 			custom_effect_tooltip = ANA_greens_1
@@ -4651,7 +4651,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 
 		completion_reward = {
 		    add_stability = -0.05
-			remove_ideas = The_Ulema
+			remove_ideas = the_ulema
 		}
 	}
 	focus = {
@@ -4763,7 +4763,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 			every_military_industrial_organization = {
 				add_mio_funds = 500
@@ -4852,7 +4852,7 @@ block_defence_decrease = yes
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_revenue_tt
@@ -5992,10 +5992,10 @@ subtract_from_variable = { treasury = 100.0 }
 		completion_reward = {
 		    add_political_power = 125
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 		}
 	}
@@ -6095,10 +6095,10 @@ subtract_from_variable = { treasury = 100.0 }
 					instant_build = yes
 				}
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 	  			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt	
@@ -6143,10 +6143,10 @@ subtract_from_variable = { treasury = 100.0 }
 					instant_build = yes
 				}
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 	  			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt	
@@ -6222,10 +6222,10 @@ subtract_from_variable = { treasury = 100.0 }
 					instant_build = yes
 				}
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 	  			subtract_from_variable = { treasury = 30.0 }
 			custom_effect_tooltip = 30_billion_expense_tt	
@@ -6325,10 +6325,10 @@ subtract_from_variable = { treasury = 100.0 }
 					instant_build = yes
 				}
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 	  			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt	
@@ -6524,8 +6524,8 @@ add_ideas = world_of_guns
 
 		completion_reward = {
 			add_stability = 0.05
-				set_temp_variable = { temp_international_bankers_opinion = -15 }	
-            change_the_international_bankers_opinion = yes			
+				set_temp_variable = { temp_opinion_change = -15 }	
+            change_international_bankers_opinion = yes			
 		}
 	}
 	focus = {
@@ -7004,8 +7004,8 @@ add_ideas = world_of_guns
 			#	picture = "asrin_tok.dds"
 			#	ideology = Neutral_green
 			#	traits = {
-			#		neutral_Neutral_green
-			#		business_man
+			#		neutrality_Neutral_green
+			#		businessman
 			#	}
 			#}	
 	hidden_effect = {

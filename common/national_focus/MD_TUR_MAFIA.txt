@@ -237,7 +237,7 @@ focus_tree = {
 		
     completion_reward = {
 	add_stability = -0.03
-	add_ideas = paralyzing_corruption
+	add_ideas = corruption_level_10
 	} }
 	focus = {
 		id = MAF_intervene_in_the_politics
@@ -1084,7 +1084,7 @@ add_ideas = secret_DNA_interventions_1
 	} 
 	focus = {
 		id = MAF_invest_in_DNA_modifications
-		icon = business_man
+		icon = businessman
 		cost = 7.2
 		prerequisite = {
 			focus = MAF_DNA_interventions
@@ -1609,10 +1609,10 @@ swap_ideas = {
 		completion_reward = {
 		    add_political_power = 125
 			add_tech_bonus = {
-				name = CAT_fuel_oil
+				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
-				category = CAT_fuel_oil
+				category = CAT_fuel_refining
 			}
 			add_tech_bonus = {
 				name = CAT_industry
@@ -1980,21 +1980,21 @@ swap_ideas = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 	} }
@@ -2016,7 +2016,7 @@ swap_ideas = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
     swap_ideas = {
 	add_idea = military_traditions_problematic_2
@@ -2632,7 +2632,7 @@ swap_ideas = {
 				
 	completion_reward = {
 	add_war_support = 0.02
-	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 1500 }
+	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 1500 }
 	 } } 
 	focus = {
 		id = MAF_defence_zones_against_PKK
@@ -3545,21 +3545,21 @@ swap_ideas = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 	} } 
 	focus = {
@@ -3835,21 +3835,21 @@ swap_ideas = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 	} } 
@@ -3870,21 +3870,21 @@ swap_ideas = {
 				name = CAT_land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = CAT_land_doctrine
+				category = land_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_air_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 
 			add_doctrine_cost_reduction = {
 				name = CAT_navy_doctrine
 				cost_reduction = 1.0
 				uses = 1
-				category = CAT_air_doctrine
+				category = air_doctrine
 			}
 	} } 
 	focus = {
@@ -4004,20 +4004,20 @@ swap_ideas = {
 				damage = 1.0
 			} }
 			GER = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			ENG = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			FRA = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 			SPR = {
-					set_temp_variable = { modify_eurosceptic = 0.02 }
-					eurosceptic_change = yes	
+					set_temp_variable = { modify_europeanism = -0.02 }
+					europeanism_change = yes	
 			}
 	 GER = {			
 	 add_stability = -0.1
