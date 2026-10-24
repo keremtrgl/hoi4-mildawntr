@@ -1,0 +1,116 @@
+############################################################################
+# Turkey submod - Millennium Dawn 2.0 compatibility layer
+#
+# Millennium Dawn 2.0 removed a number of helper effects the submod was
+# written against (MD 1.12). They are re-implemented here on top of the
+# current MD API so the submod's focuses, events and decisions keep working.
+############################################################################
+
+### Ruling party popularity (old MD "add_N_popularity" / "decrease_popularity_N")
+add_1_popularity = {
+	set_party_index_to_ruling_party = yes
+	set_temp_variable = { party_popularity_increase = 0.01 }
+	set_temp_variable = { temp_outlook_increase = 0.01 }
+	change_relative_party_popularity = yes
+}
+add_2_popularity = {
+	set_party_index_to_ruling_party = yes
+	set_temp_variable = { party_popularity_increase = 0.02 }
+	set_temp_variable = { temp_outlook_increase = 0.02 }
+	change_relative_party_popularity = yes
+}
+decrease_popularity_1 = {
+	set_party_index_to_ruling_party = yes
+	set_temp_variable = { party_popularity_increase = -0.01 }
+	set_temp_variable = { temp_outlook_increase = -0.01 }
+	change_relative_party_popularity = yes
+}
+decrease_popularity_2 = {
+	set_party_index_to_ruling_party = yes
+	set_temp_variable = { party_popularity_increase = -0.02 }
+	set_temp_variable = { temp_outlook_increase = -0.02 }
+	change_relative_party_popularity = yes
+}
+decrease_popularity_3 = {
+	set_party_index_to_ruling_party = yes
+	set_temp_variable = { party_popularity_increase = -0.03 }
+	set_temp_variable = { temp_outlook_increase = -0.03 }
+	change_relative_party_popularity = yes
+}
+decrease_popularity_4 = {
+	set_party_index_to_ruling_party = yes
+	set_temp_variable = { party_popularity_increase = -0.04 }
+	set_temp_variable = { temp_outlook_increase = -0.04 }
+	change_relative_party_popularity = yes
+}
+decrease_popularity_5 = {
+	set_party_index_to_ruling_party = yes
+	set_temp_variable = { party_popularity_increase = -0.05 }
+	set_temp_variable = { temp_outlook_increase = -0.05 }
+	change_relative_party_popularity = yes
+}
+
+### +10% to the Monarchist party (index 23)
+add_10_nationalist_monarchists = {
+	set_temp_variable = { party_index = 23 }
+	set_temp_variable = { party_popularity_increase = 0.10 }
+	set_temp_variable = { temp_outlook_increase = 0.10 }
+	change_relative_party_popularity = yes
+}
+
+### Military internal faction
+increase_The_military_opinion = {
+	set_temp_variable = { temp_opinion_change = 5 }
+	change_the_military_opinion = yes
+}
+decrease_The_military_opinion = {
+	set_temp_variable = { temp_opinion_change = -5 }
+	change_the_military_opinion = yes
+}
+
+### Influence
+# Gives the named power 5% influence in the current scope (THIS)
+generic_grant_5_percent_influence_of_USA = {
+	set_temp_variable = { percent_change = 5 }
+	set_temp_variable = { tag_index = USA }
+	set_temp_variable = { influence_target = THIS }
+	change_influence_percentage = yes
+}
+generic_grant_5_percent_influence_of_ENG = {
+	set_temp_variable = { percent_change = 5 }
+	set_temp_variable = { tag_index = ENG }
+	set_temp_variable = { influence_target = THIS }
+	change_influence_percentage = yes
+}
+generic_grant_5_percent_influence_of_CHI = {
+	set_temp_variable = { percent_change = 5 }
+	set_temp_variable = { tag_index = CHI }
+	set_temp_variable = { influence_target = THIS }
+	change_influence_percentage = yes
+}
+boost_domestic_influence_10_percent = {
+	set_temp_variable = { percent_change = 10 }
+	change_domestic_influence_percentage = yes
+}
+
+### European Union (run in the scope of the EU member being targeted, ROOT is the investor)
+EU_money_for_influence = {
+	set_temp_variable = { percent_change = 3 }
+	set_temp_variable = { tag_index = ROOT }
+	set_temp_variable = { influence_target = THIS }
+	change_influence_percentage = yes
+}
+invest_in_EU_single_market_cic = {
+	if = {
+		limit = {
+			any_owned_state = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+		}
+		random_owned_state = {
+			limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+		}
+		set_temp_variable = { modify_europeanism = 0.03 }
+		europeanism_change_this_and_root = yes
+	}
+}

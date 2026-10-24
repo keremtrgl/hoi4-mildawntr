@@ -11,7 +11,6 @@ TUR_kemalist_turn_hostile_effect = {
 			add_dynamic_modifier = { modifier = kemalist_schemers }
 		}
 		#TUR_kemalist_officer_power_check_effect = yes
-		TUR_kemalist_loyalty_and_power_update_effect = yes
 	}
 }
 
@@ -27,7 +26,6 @@ TUR_kemalist_turn_ally_effect = {
 			add_dynamic_modifier = { modifier = kemalist_loyalties }
 		}
 		#TUR_kemalist_officer_power_check_effect = yes
-		TUR_kemalist_loyalty_and_power_update_effect = yes
 	}
 }
 
@@ -44,7 +42,6 @@ TUR_traditionalists_turn_ally_effect = {
 			add_dynamic_modifier = { modifier = devout_islamists }
 		}
 		#TUR_kemalist_officer_power_check_effect = yes
-		TUR_kemalist_loyalty_and_power_update_effect = yes
 	}
 }
 
@@ -61,6 +58,5 @@ TUR_traditionalists_turn_enemy_effect = {
 			add_dynamic_modifier = { modifier = islamist_opposition }
 		}
 		#TUR_kemalist_officer_power_check_effect = yes
-		TUR_kemalist_loyalty_and_power_update_effect = yes
 	}
 }
