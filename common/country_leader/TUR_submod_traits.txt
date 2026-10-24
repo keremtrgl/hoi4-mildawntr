@@ -1,0 +1,24 @@
+# Turkey submod: additional Turkish country leader traits
+leader_traits = {
+	the_father_of_turks_modern_life = {
+		random = no
+		stability_factor = 0.15
+		political_power_gain = 0.3
+		political_power_cost = -0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	strategic_mastermind = {
+		random = no
+		foreign_influence_defense_modifier = 0.15
+		foreign_influence_modifier = 0.15
+		democratic_drift = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

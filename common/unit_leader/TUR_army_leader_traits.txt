@@ -1,0 +1,96 @@
+# Turkey submod: Turkish Armed Forces medals and faction traits
+leader_traits = {
+	tsk_seref_madalyonu = { 
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			planning_speed = 0.20
+			wounded_chance_factor = -0.2
+		}
+	}
+
+	tsk_basari_madalyonu = { 
+		type = land
+		trait_type = personality_trait
+
+		planning_skill = 1
+		
+		modifier = {
+					out_of_supply_factor = -0.05
+		}
+		
+		non_shared_modifier = {
+			experience_gain_factor = 0.1
+		}
+	}
+
+	tsk_nato_officer = { 
+		type = land
+		trait_type = personality_trait
+
+		planning_skill = 1
+		logistics_skill = 1
+		
+		non_shared_modifier = {
+			experience_gain_factor = 0.05
+		}
+	}
+
+	tsk_hizmet_madalyonu = { 
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			army_infantry_defence_factor = 0.05
+			army_infantry_attack_factor = 0.05			
+		}
+	}
+
+	tsk_ustun_hizmet_madalyonu = { 
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			army_infantry_defence_factor = 0.1
+			army_infantry_attack_factor = 0.1			
+		}
+	}
+
+	tsk_ustun_cesaret_madalyonu = { 
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+				land_reinforce_rate = 0.1	
+		}
+	}
+
+	trait_TUR_kemalist_champion = {
+
+		type = all
+		trait_type = personality_trait
+
+		allowed = {
+			FROM = { original_tag = TUR }
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	trait_TUR_gulen_champion = {
+
+		type = all
+		trait_type = personality_trait
+
+		allowed = {
+			FROM = { original_tag = TUR }
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}
