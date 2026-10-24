@@ -845,7 +845,7 @@ country_event = {
 	option = {
 		name = Turkey.1.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -15
 	}
 }
@@ -875,7 +875,7 @@ country_event = {
 	option = {
 		name = Turkey.2.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	}
 }
@@ -919,7 +919,7 @@ country_event = {
 	option = {
 		name = Turkey.3.a
 		ai_chance = { factor = 1}
-    
+
 			custom_effect_tooltip = UNION_DECREASE_10
 		subtract_from_variable = { TUR_union_acceptance = 10 }
 	add_ideas = turkish_2001_crisis
@@ -962,7 +962,7 @@ country_event = {
 	option = {
 		name = Turkey.5.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -75
 	add_stability = -0.02
 			custom_effect_tooltip = UNION_DECREASE_5
@@ -995,7 +995,7 @@ country_event = {
 	option = {
 		name = Turkey.4.a
 		ai_chance = { factor = 1}
-    
+
 	add_manpower = -34
 	}
 }
@@ -1026,7 +1026,7 @@ country_event = {
 	option = {
 		name = Turkey.8.a
 		ai_chance = { factor = 1}
-    
+
 	set_global_flag = akp
     custom_effect_tooltip = TUR_AKP_start_big
 			hidden_effect = {
@@ -1069,7 +1069,7 @@ country_event = {
 	option = {
 		name = Turkey.7.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -75
 	clr_global_flag = yilmaz
 	set_global_flag = nas
@@ -1077,7 +1077,7 @@ country_event = {
 	set_global_flag = sulo
       }
 	}
-}
+
 
 ##Event: Turkish Early Elections Agrement
 country_event = {
@@ -1106,7 +1106,7 @@ country_event = {
 	option = {
 		name = Turkey.6.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	add_stability = 0.02
 	}
@@ -1139,18 +1139,18 @@ country_event = {
 	option = {
 		name = Turkey.9.a
 		ai_chance = { factor = 1}
-    
+
     custom_effect_tooltip = TUR_AKP_fall
 			hidden_effect = {
 				add_to_variable = { party_pop_array^12 = -0.05 }
 				recalculate_party = yes
 			}
 	}
-	
+
 	option = {
 		name = Turkey.9.b
 		ai_chance = { factor = 1}
-    
+
     add_stability = 0.02
 	}
 }
@@ -1181,7 +1181,7 @@ country_event = {
 	option = {
 		name = Turkey.10.a
 		ai_chance = { factor = 1}
-    
+
     custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
 				add_to_variable = { party_pop_array^3 = 0.05 }
@@ -1203,7 +1203,7 @@ country_event = {
 	option = {
 		name = Turkey.11.a
 		ai_chance = { factor = 1}
-    
+
     country_event = MD4_election_campaign.0
 				set_politics = {
 					ruling_party = democratic
@@ -1256,10 +1256,10 @@ country_event = {
 	option = {
 		name = Turkey.12.a
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = -0.05
 		clr_country_flag = besimtibuk
-		
+
 	}
 }
 
@@ -1286,14 +1286,14 @@ country_event = {
 	option = {
 		name = Turkey.13.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 75
 	USA = { country_event = Turkey.14 }
 	}
 	option = {
 		name = Turkey.13.b
 		ai_chance = { factor = 1}
-    
+
 		create_wargoal = {
 			type = annex_everything
 			target = IRQ
@@ -1315,7 +1315,7 @@ country_event = {
 	option = {
 		name = Turkey.13.c
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.07
 	} 
 }
@@ -1334,7 +1334,7 @@ is_triggered_only = yes
 	option = {
 		name = Turkey.14.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	TUR = { country_event = Turkey.15 } 
 			subtract_from_variable = { treasury = 10.0 }
@@ -1344,7 +1344,7 @@ is_triggered_only = yes
 	option = {
 		name = Turkey.14.b
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	TUR = { country_event = Turkey.16 }
 	} 
@@ -1364,7 +1364,7 @@ is_triggered_only = yes
 	option = {
 		name = Turkey.15.a
 		ai_chance = { factor = 1}
-    
+
 		create_wargoal = {
 			type = annex_everything
 			target = IRQ
@@ -1394,7 +1394,7 @@ is_triggered_only = yes
 	option = {
 		name = Turkey.16.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 5
 	add_stability = 0.05
 	}
@@ -1428,7 +1428,7 @@ country_event = {
 	option = {
 		name = Turkey.17.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 35
 	}
 }
@@ -1460,7 +1460,7 @@ country_event = {
 	option = {
 		name = Turkey.19.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 35
 	}
 }
@@ -1492,7 +1492,7 @@ country_event = {
 	option = {
 		name = Turkey.20.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
                 add_opinion_modifier = { target = USA modifier = diplomatic_insults } 
 	}
@@ -1524,7 +1524,7 @@ country_event = {
 	option = {
 		name = Turkey.21.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	}
 }
@@ -1555,7 +1555,7 @@ country_event = {
 	option = {
 		name = Turkey.22.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	    ENG = {
         country_event = TurkeyForeign.6
@@ -1598,7 +1598,7 @@ country_event = {
 	option = {
 		name = Turkey.23.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	set_global_flag = BLOCK_THE_MAYOR_ELECTIONS
 	}
@@ -1634,7 +1634,7 @@ country_event = {
 		ai_chance = { factor = 1}
 
 	  	set_province_name = { id = 3983 name = "Afyonkarahisar" }
-    
+
 } } 
 ##Event: School Act
 country_event = {
@@ -1663,7 +1663,7 @@ country_event = {
 	option = {
 		name = Turkey.25.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 50
 	add_stability = 0.02
 	clr_global_flag = nas
@@ -1696,7 +1696,7 @@ country_event = {
 	option = {
 		name = Turkey.26.a
 		ai_chance = { factor = 1}
-    
+
 	add_command_power = 5
 	}
 }
@@ -1727,7 +1727,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.27.a
 		ai_chance = { factor = 1 }
-    
+
 	add_political_power = -75
  } }
 
@@ -1754,7 +1754,7 @@ country_event = {
 	option = {
 		name = Turkey.28.a
 		ai_chance = { factor = 1}
-		
+
 	add_stability = -0.01
 	}
 }
@@ -1788,7 +1788,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.29.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -75
 	add_stability = -0.03
 	custom_effect_tooltip = TUR_MIL_relations_1
@@ -1797,7 +1797,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 				add_to_variable = { party_pop_array^12 = -0.05 }
 				recalculate_party = yes
 			}
-		
+
 	}
 }
 
@@ -1827,7 +1827,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.30.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -50
 	add_command_power = -5
 	add_war_support = -0.01
@@ -1868,7 +1868,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.31.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -50
 	add_stability = -0.01
     custom_effect_tooltip = TUR_CHP_increase
@@ -1937,7 +1937,7 @@ country_event = {
 	option = {
 		name = Turkey.33.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	} 
 }
@@ -1969,7 +1969,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.34.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	add_stability = 0.01
 	}
@@ -2003,7 +2003,7 @@ country_event = {
 	option = {
 		name = Turkey.35.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.01
 		162 = {
 			damage_building = {
@@ -2040,7 +2040,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.36.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -75
 	}
 }
@@ -2072,7 +2072,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.37.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -35
 	add_war_support = 0.01
 	}
@@ -2105,7 +2105,7 @@ country_event = {
 	option = {
 		name = Turkey.38.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	}
 }
@@ -2137,7 +2137,7 @@ country_event = {
 	option = {
 		name = Turkey.39.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.01
 	add_political_power = 45
 	}
@@ -2170,7 +2170,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.40.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -65
 	}
 }
@@ -2197,7 +2197,7 @@ country_event = {
 	option = {
 		name = Turkey.41.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 		934 = {
 			damage_building = {
@@ -2239,14 +2239,14 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.42.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 75
     custom_effect_tooltip = TUR_AKP_small_start1
 			hidden_effect = {
 				add_to_variable = { party_pop_array^12 = 0.03 }
 				recalculate_party = yes
 			}
-		
+
 	}
 }
 
@@ -2271,7 +2271,7 @@ country_event = {
 	option = {
 		name = Turkey.43.a
 		ai_chance = { factor = 1}
- 
+
 		159 = {
 			damage_building = {
 				type = infrastructure
@@ -2303,7 +2303,7 @@ country_event = {
 	option = {
 		name = Turkey.44.a
 		ai_chance = { factor = 1}
-    
+
 	add_command_power = -2
 	}
 }
@@ -2338,7 +2338,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.45.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 75
 	add_war_support = 0.02
 	}
@@ -2370,7 +2370,7 @@ country_event = {
 	option = {
 		name = Turkey.46.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -35
 	}
 }
@@ -2396,7 +2396,7 @@ country_event = {
 	option = {
 		name = Turkey.47.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	}
 }
@@ -2427,7 +2427,7 @@ country_event = {
 	option = {
 		name = Turkey.48.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	}
 }
@@ -2458,7 +2458,7 @@ country_event = {
 	option = {
 		name = Turkey.49.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	clr_global_flag = muhsin
 	set_global_flag = oznur
@@ -2472,13 +2472,13 @@ country_event = {
  desc = Turkey.50.desc
  picture = GFX_terrorist_attack
  is_triggered_only = yes
- 
+
     mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.50.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	}
 }
@@ -2510,7 +2510,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.51.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 55
 	}
 }
@@ -2542,7 +2542,7 @@ country_event = {
 	option = {
 		name = Turkey.52.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 45
          USA = {  add_opinion_modifier = { target = TUR modifier = state_visists } 
 	} } 
@@ -2575,7 +2575,7 @@ country_event = {
 	option = {
 		name = Turkey.53.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -50
 	}
 }
@@ -2607,7 +2607,7 @@ country_event = {
 	option = {
 		name = Turkey.54.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -75
 	}
 }
@@ -2638,7 +2638,7 @@ country_event = {
 	option = {
 		name = Turkey.55.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.05
 	}
 }
@@ -2669,7 +2669,7 @@ country_event = {
 	option = {
 		name = Turkey.56.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 50
 	clr_global_flag = aras
 	set_global_flag = hayri
@@ -2683,13 +2683,13 @@ country_event = {
  desc = Turkey.57.desc
  picture = GFX_terrorist_attack
  is_triggered_only = yes
- 
+
     mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.57.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -35
 	}
 }
@@ -2716,7 +2716,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.58.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	clr_global_flag = osmanv
 	clr_global_flag = cem_uzan
@@ -2750,7 +2750,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.59.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 			custom_effect_tooltip = UNION_DECREASE_3
 		subtract_from_variable = { TUR_union_acceptance = 3 }
@@ -2783,7 +2783,7 @@ country_event = {
 	option = {
 		name = Turkey.60.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 75
 	add_stability = -0.01
 	set_global_flag = hdp
@@ -2820,7 +2820,7 @@ country_event = {
 	option = {
 		name = Turkey.61.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.01
 	clr_global_flag = demirtas
 	}
@@ -2847,7 +2847,7 @@ country_event = {
 	option = {
 		name = Turkey.62.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -5
 	clr_global_flag = baykal
 	clr_global_flag = hayri
@@ -2881,7 +2881,7 @@ country_event = {
 	option = {
 		name = Turkey.64.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 add_named_threat = { threat = 1 name = MV_marmara }
 			hidden_effect = { news_event = Turkey_news.22 } 
@@ -2910,7 +2910,7 @@ country_event = {
 	option = {
 		name = Turkey.63.a
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = 0.05
 	}
 }
@@ -2942,7 +2942,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.65.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -10
 	}
 }
@@ -2975,7 +2975,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.66.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.02
 	add_war_support = -0.01
 	add_manpower = -102
@@ -3011,7 +3011,7 @@ country_event = {
 	option = {
 		name = Turkey.67.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 35
 	add_command_power = 2
 	}
@@ -3039,7 +3039,7 @@ country_event = {
 	option = {
 		name = Turkey.67.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	}
 }
@@ -3060,7 +3060,7 @@ country_event = {
 	option = {
 		name = Turkey.69.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	add_stability = 0.01
 			set_temp_variable = { modify_europeanism = 0.05 }
@@ -3095,7 +3095,7 @@ country_event = {
 	option = {
 		name = Turkey.70.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -20
 	add_war_support = 0.01
 	}
@@ -3128,7 +3128,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.71.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.02
 	}
 }
@@ -3160,7 +3160,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.72.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	add_war_support = 0.02
 			set_temp_variable = { modify_europeanism = 0.02 }
@@ -3196,7 +3196,7 @@ country_event = {
 	option = {
 		name = Turkey.73.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 35
 	add_stability = 0.01
 	}
@@ -3223,7 +3223,7 @@ country_event = {
 	option = {
 		name = Turkey.74.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 		934 = {
 			damage_building = {
@@ -3255,7 +3255,7 @@ country_event = {
 	option = {
 		name = Turkey.75.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 		934 = {
 			damage_building = {
@@ -3291,7 +3291,7 @@ country_event = {
 	option = {
 		name = Turkey.76.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 50
 	add_stability = 0.01
 	}
@@ -3325,7 +3325,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.77.a
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = 0.02
 	add_stability = 0.01
 	}
@@ -3390,7 +3390,7 @@ country_event = {
 	option = {
 		name = Turkey.79.a
 		ai_chance = { factor = 1}
-    
+
 	add_command_power = 5
 	}
 }
@@ -3422,7 +3422,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.80.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	add_stability = -0.01
 	}
@@ -3455,7 +3455,7 @@ country_event = {
 	option = {
 		name = Turkey.81.a
 		ai_chance = { factor = 1}
-    
+
             add_political_power = -25
 	country_event = MD4_election_campaign.0
 			 set_global_flag = TUR_AKP_2011
@@ -3497,7 +3497,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.82.a
 		ai_chance = { factor = 1}
-   
+
 	add_political_power = -50
 	set_global_flag = TBMM_crisis
     custom_effect_tooltip = TUR_AKP_fall
@@ -3505,7 +3505,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 				add_to_variable = { party_pop_array^12 = -0.05 }
 				recalculate_party = yes
 			}
-		
+
 	}
 }
 
@@ -3530,7 +3530,7 @@ country_event = {
 	option = {
 		name = Turkey.83.a
 		ai_chance = { factor = 1}
-        
+
 	clr_global_flag = oznur
 		add_stability = -0.01
 		159 = {
@@ -3563,7 +3563,7 @@ country_event = {
 	option = {
 		name = Turkey.84.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 	    clr_global_flag = sulo
 		162 = {
@@ -3605,7 +3605,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.85.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -1
 	}
 }
@@ -3637,7 +3637,7 @@ country_event = {
 	option = {
 		name = Turkey.86.a
 		ai_chance = { factor = 1}
-    
+
 	add_manpower = -12
 	}
 }
@@ -3663,7 +3663,7 @@ country_event = {
 	option = {
 		name = Turkey.87.a
 		ai_chance = { factor = 1}
-    
+
 	add_manpower = -25
 	}
 }
@@ -3697,7 +3697,7 @@ country_event = {
 	option = {
 		name = Turkey.88.a
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = -0.02
 	}
 }
@@ -3714,7 +3714,7 @@ country_event = {
 	option = {
 		name = Turkey.89.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -100
 	add_stability = -0.1
 	add_war_support = -0.05
@@ -3769,7 +3769,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.90.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 			hidden_effect = { country_event = Turkey_news.5 } 
 	swap_ideas = {
@@ -3806,7 +3806,7 @@ country_event = {
 	option = {
 		name = Turkey.91.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 	}
 }
@@ -3872,7 +3872,7 @@ country_event = {
 	option = {
 		name = Turkey.93.a
 		ai_chance = { factor = 1}
-    
+
 
 	}
 }
@@ -3906,7 +3906,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.94.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -50
 	set_global_flag = TUR_solve   
 	}
@@ -3941,7 +3941,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.95.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	FSA = { add_research_slot = 1 }
 	}
@@ -3973,7 +3973,7 @@ country_event = {
 	option = {
 		name = Turkey.96.a
 		ai_chance = { factor = 1}
-    
+
 	add_manpower = -1
 	}
 }
@@ -3999,7 +3999,7 @@ country_event = {
 	option = {
 		name = Turkey.97.a
 		ai_chance = { factor = 1}
-    
+
 	add_manpower = -4
 	}
 }
@@ -4030,7 +4030,7 @@ country_event = {
 	option = {
 		name = Turkey.98.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 75
 	add_war_support = 0.03
 	}
@@ -4058,7 +4058,7 @@ country_event = {
 	option = {
 		name = Turkey.99.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 75
 	add_stability = 0.02
 	add_war_support = 0.02
@@ -4093,7 +4093,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.100.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 			set_temp_variable = { modify_europeanism = -0.02 }
 			europeanism_change = yes
@@ -4121,7 +4121,7 @@ country_event = {
 	option = {
 		name = Turkey.101.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -5
 	}
 }
@@ -4153,7 +4153,7 @@ country_event = {
 	option = {
 		name = Turkey.102.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	country_event = MD4_election_campaign.0
 	set_politics = {
@@ -4208,7 +4208,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.103.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.03
 	add_political_power = 75
 	custom_effect_tooltip = TUR_GREEN_relations_2
@@ -4243,7 +4243,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.104.a
 		ai_chance = { factor = 1}
-    
+
 	}
 }
 
@@ -4275,7 +4275,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.105.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 65
 	add_stability = 0.02
 	}
@@ -4303,7 +4303,7 @@ country_event = {
 	option = {
 		name = Turkey.106.a
 		ai_chance = { factor = 1}
-    
+
 	add_manpower = -1
 	}
 }
@@ -4330,7 +4330,7 @@ country_event = {
 	option = {
 		name = Turkey.107.a
 		ai_chance = { factor = 1}
-    
+
 	add_manpower = -4
 	}
 }
@@ -4362,7 +4362,7 @@ country_event = {
 	option = {
 		name = Turkey.108.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -90
 	}
 }
@@ -4393,7 +4393,7 @@ country_event = {
 	option = {
 		name = Turkey.110.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	} 
 }
@@ -4424,7 +4424,7 @@ country_event = {
 	option = {
 		name = Turkey.111.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	add_war_support = 0.02
 	}
@@ -4456,7 +4456,7 @@ country_event = {
 	option = {
 		name = Turkey.112.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.01
 	add_political_power = 50
 	}
@@ -4489,7 +4489,7 @@ country_event = {
 	option = {
 		name = Turkey.113.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	add_stability = 0.05
 	}
@@ -4523,7 +4523,7 @@ country_event = {
 	option = {
 		name = Turkey.115.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 		934 = {
 			damage_building = {
@@ -4556,7 +4556,7 @@ country_event = {
 	option = {
 		name = Turkey.116.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	add_command_power = -1
 		162 = {
@@ -4588,7 +4588,7 @@ country_event = {
 	option = {
 		name = Turkey.117.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	}
 }
@@ -4619,7 +4619,7 @@ country_event = {
 	option = {
 		name = Turkey.118.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	add_command_power = -1
 		162 = {
@@ -4656,7 +4656,7 @@ country_event = {
 	option = {
 		name = Turkey.119.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 		934 = {
 			damage_building = {
@@ -4673,13 +4673,13 @@ country_event = {
  desc = Turkey.120.desc
  picture = GFX_terrorist_attack
  is_triggered_only = yes 
- 
+
     mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.120.a
 		ai_chance = { factor = 0}
-    
+
 	add_war_support = 0.02
 	add_stability = 0.01
 	add_manpower = 1000
@@ -4696,7 +4696,7 @@ add_named_threat = { threat = 2 name = TUR_COUP_ATTEMPT }
 	option = {
 		name = Turkey.120.b
 		ai_chance = { factor = 0}
-    
+
     add_war_support = -0.02
 add_named_threat = { threat = 2 name = TUR_COUP_ATTEMPT }
 	custom_effect_tooltip = TUR_civil_war_warnings
@@ -4728,11 +4728,11 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	         date < 2016.8.15
          }
     }
-	
+
 	option = {
 		name = Turkey.121.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 75
 	retire_character = ilhan_tolu
 	retire_character = mustafa_ozsoy
@@ -4772,11 +4772,11 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	         date < 2016.8.15
          }
     }
-	
+
 	option = {
 		name = Turkey.122.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -75
 	add_stability = -0.1
 	set_global_flag = TUR_coup_attempt_success
@@ -4810,7 +4810,7 @@ country_event = {
 	option = {
 		name = Turkey.123.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	}
 }
@@ -4845,7 +4845,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.124.a
 		ai_chance = { factor = 1}
-    
+
 	add_command_power = 15
 	add_political_power = 75
 	add_stability = -0.01
@@ -4873,7 +4873,7 @@ country_event = {
 	option = {
 		name = Turkey.125.a
 		ai_chance = { factor = 1}
-   
+
  	add_stability = -0.01
 		156 = {
 			damage_building = {
@@ -4912,7 +4912,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.126.a
 		ai_chance = { factor = 1}
-   
+
 	add_stability = 0.01
 	add_political_power = 10
 	}
@@ -5112,7 +5112,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.131.a
 		ai_chance = { factor = 1}
- 
+
                     add_political_power = 15
 					add_war_support = 0.02
 					reverse_add_opinion_modifier = { target = HOL modifier = fascistic_tendencies_negative }	
@@ -5181,7 +5181,7 @@ country_event = {
 	option = {
 		name = Turkey.133.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 1
 	}
 }
@@ -5216,7 +5216,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.134.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -50
 	}
 }
@@ -5244,7 +5244,7 @@ country_event = {
 	option = {
 		name = Turkey.135.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	}
 }
@@ -5270,7 +5270,7 @@ country_event = {
 	option = {
 		name = Turkey.136.a
 		ai_chance = { factor = 1}
-    
+
 	add_manpower = -3
 	}
 }
@@ -5297,7 +5297,7 @@ country_event = {
 	option = {
 		name = Turkey.137.a
 		ai_chance = { factor = 1}
- 
+
     add_stability = -0.01
 		992 = {
 			damage_building = {
@@ -5355,7 +5355,7 @@ country_event = {
 	option = {
 		name = Turkey.139.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -5
 	}
 }
@@ -5389,7 +5389,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.140.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.01
 	add_political_power = 25
 	}
@@ -5417,7 +5417,7 @@ country_event = {
 	option = {
 		name = Turkey.141.a
 		ai_chance = { factor = 1}
-    
+
 	add_manpower = -1
 	}
 }
@@ -5450,7 +5450,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.142.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -5
 	}
 }
@@ -5483,7 +5483,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.143.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 		set_global_flag = FIRE_SUPEREVENT_7
 	if = {
@@ -5557,7 +5557,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.145.a
 		ai_chance = { factor = 1}
-    
+
 	country_event = MD4_election_campaign.0
 	add_political_power = 25
 	}
@@ -5591,7 +5591,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.146.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.01
 	add_political_power = -15
 	}
@@ -5625,7 +5625,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.1461.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	add_command_power = 5
 	add_war_support = 0.01
@@ -5659,7 +5659,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.147.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	set_global_flag = REFAH_TIME
 	clr_global_flag = EMEP_ACTIVE
@@ -5687,7 +5687,7 @@ country_event = {
 	option = {
 		name = Turkey.148.a
 		ai_chance = { factor = 1}
-   
+
         add_stability = -0.01
 		934 = {
 			damage_building = {
@@ -5719,7 +5719,7 @@ country_event = {
 	option = {
 		name = Turkey.149.a
 		ai_chance = { factor = 1}
-    
+
 	add_manpower = -4
 	}
 }
@@ -5747,7 +5747,7 @@ country_event = {
 	option = {
 		name = Turkey.150.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	}
 }
@@ -5778,7 +5778,7 @@ country_event = {
 	option = {
 		name = Turkey.151.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.02
 	}
 }
@@ -5804,7 +5804,7 @@ country_event = {
 	option = {
 		name = Turkey.152.a
 		ai_chance = { factor = 1}
-    
+
 	add_manpower = -4
 	}
 }
@@ -5838,7 +5838,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.153.a
 		ai_chance = { factor = 0}
-    
+
 	add_stability = -0.02
 	add_political_power = -75
     custom_effect_tooltip = TUR_CHP_increase
@@ -5858,7 +5858,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.153.b
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 	add_political_power = -75
     custom_effect_tooltip = TUR_CHP_increase
@@ -5982,7 +5982,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.158.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.02
 	}
 }
@@ -6015,7 +6015,7 @@ country_event = {
 	option = {
 		name = Turkey.159.a
 		ai_chance = { factor = 1}
-    
+
     add_political_power = 35
 	}
 }
@@ -6041,7 +6041,7 @@ country_event = {
 	option = {
 		name = Turkey.160.a
 		ai_chance = { factor = 1}
-    
+
     add_stability = 0.02
 			hidden_effect = { country_event = Turkey_news.10 } 
 	}
@@ -6075,7 +6075,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.161.a
 		ai_chance = { factor = 1}
-    
+
     add_stability = 0.01
 	add_political_power = -25
 	}
@@ -6102,7 +6102,7 @@ country_event = {
 	option = {
 		name = Turkey.162.a
 		ai_chance = { factor = 1}
-    
+
     add_stability = -0.01
 	}
 }
@@ -6129,7 +6129,7 @@ country_event = {
 	option = {
 		name = Turkey.163.a
 		ai_chance = { factor = 1}
-    
+
     add_stability = -0.02
 	add_war_support = 0.05
 add_opinion_modifier = { target = SYR modifier = strategic_rivals } 	
@@ -6157,7 +6157,7 @@ country_event = {
 	option = {
 		name = Turkey.164.a
 		ai_chance = { factor = 1}
-    
+
     add_ideas = covid_19
 	add_political_power = -50
 custom_effect_tooltip = COV_DECISION_OPENING_GEN
@@ -6191,7 +6191,7 @@ country_event = {
 	option = {
 		name = Turkey.165.a
 		ai_chance = { factor = 1}
-    
+
     add_stability = 0.01
 	add_political_power = 25
 	}
@@ -6219,7 +6219,7 @@ country_event = {
 	option = {
 		name = Turkey.166.a
 		ai_chance = { factor = 1}
-    
+
     add_stability = -0.01
 	}
 }
@@ -6245,7 +6245,7 @@ country_event = {
 	option = {
 		name = Turkey.167.a
 		ai_chance = { factor = 1}
-    
+
     add_stability = -0.01
 	}
 }
@@ -6276,7 +6276,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.168.a
 		ai_chance = { factor = 1}
-    
+
         add_stability = 0.02
                 add_popularity = {
                 ideology = neutrality
@@ -6312,7 +6312,7 @@ country_event = {
 	option = {
 		name = Turkey.169.a
 		ai_chance = { factor = 1}
-    
+
         add_stability = 0.02
                 add_popularity = {
                 ideology = neutrality
@@ -6349,7 +6349,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.170.a
 		ai_chance = { factor = 1}
-    
+
         add_stability = -0.01
                 add_popularity = {
                 ideology = neutrality
@@ -6379,7 +6379,7 @@ country_event = {
 	option = {
 		name = Turkey.171.a
 		ai_chance = { factor = 1}
-    
+
     add_political_power = 25
 	}
 }
@@ -6411,7 +6411,7 @@ country_event = {
 	option = {
 		name = Turkey.172.a
 		ai_chance = { factor = 1}
-    
+
     add_war_support = 0.02
 	}
 }
@@ -6437,7 +6437,7 @@ country_event = {
 	option = {
 		name = Turkey.173.a
 		ai_chance = { factor = 1}
-    
+
     add_stability = -0.01
 	}
 }
@@ -6470,7 +6470,7 @@ country_event = {
 	option = {
 		name = Turkey.174.a
 		ai_chance = { factor = 1}
-    
+
         add_stability = 0.02
                 add_popularity = {
                 ideology = neutrality
@@ -6543,7 +6543,7 @@ country_event = {
 	option = {
 		name = Turkey.177.a
 		ai_chance = { factor = 1}
-    
+
 		159 = {
 			damage_building = {
 				type = infrastructure
@@ -6574,7 +6574,7 @@ country_event = {
 	option = {
 		name = Turkey.178.a
 		ai_chance = { factor = 1}
-    
+
 		935 = {
 			damage_building = {
 				type = infrastructure
@@ -6609,7 +6609,7 @@ country_event = {
 	option = {
 		name = Turkey.179.a
 		ai_chance = { factor = 1}
-   
+
            add_stability = -0.01
 		159 = {
 			damage_building = {
@@ -6641,7 +6641,7 @@ country_event = {
 	option = {
 		name = Turkey.180.a
 		ai_chance = { factor = 1}
-    
+
 		934 = {
 			damage_building = {
 				type = infrastructure
@@ -6673,7 +6673,7 @@ country_event = {
 	option = {
 		name = Turkey.182.a
 		ai_chance = { factor = 1}
-    
+
 		156 = {
 			damage_building = {
 				type = infrastructure
@@ -6705,7 +6705,7 @@ country_event = {
 	option = {
 		name = Turkey.184.a
 		ai_chance = { factor = 1}
-    
+
 		156 = {
 			damage_building = {
 				type = infrastructure
@@ -6737,7 +6737,7 @@ country_event = {
 	option = {
 		name = Turkey.186.a
 		ai_chance = { factor = 1}
-    
+
 		935 = {
 			damage_building = {
 				type = infrastructure
@@ -6768,7 +6768,7 @@ country_event = {
 	option = {
 		name = Turkey.188.a
 		ai_chance = { factor = 1}
-    
+
 		155 = {
 			damage_building = {
 				type = infrastructure
@@ -6799,7 +6799,7 @@ country_event = {
 	option = {
 		name = Turkey.189.a
 		ai_chance = { factor = 1}
-    
+
 		159 = {
 			damage_building = {
 				type = infrastructure
@@ -6830,7 +6830,7 @@ country_event = {
 	option = {
 		name = Turkey.193.a
 		ai_chance = { factor = 1}
-    
+
     
 		935 = {
 			damage_building = {
@@ -6862,7 +6862,7 @@ country_event = {
 	option = {
 		name = Turkey.195.a
 		ai_chance = { factor = 1}
-    
+
 		159 = {
 			damage_building = {
 				type = infrastructure
@@ -6894,7 +6894,7 @@ country_event = {
 	option = {
 		name = Turkey.197.a
 		ai_chance = { factor = 1}
-    
+
 		157 = {
 			damage_building = {
 				type = infrastructure
@@ -6932,13 +6932,13 @@ country_event = {
 	option = {
 		name = Turkey.198.a
 		ai_chance = { factor = 1}
-  
+
     custom_effect_tooltip = TUR_AKP_small_start
 			hidden_effect = {
 				add_to_variable = { party_pop_array^12 = 0.05 }
 				recalculate_party = yes
 			}
-		
+
 	}
 }
 
@@ -6970,7 +6970,7 @@ country_event = {
 	option = {
 		name = Turkey.199.a
 		ai_chance = { factor = 1}
-    
+
   
     custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
@@ -7007,7 +7007,7 @@ country_event = {
 	option = {
 		name = Turkey.200.a
 		ai_chance = { factor = 1}
-    
+
 			custom_effect_tooltip = CHP_6_R
 			hidden_effect = {
 				add_to_variable = { party_pop_array^3 = 0.01 }
@@ -7160,7 +7160,7 @@ country_event = {
 	option = {
 		name = Turkey.204.b
 		ai_chance = { factor = 1}
-    
+
     set_global_flag = nocandidateofchp
 	clr_global_flag = incechp
 	custom_effect_tooltip = TUR_warn2
@@ -7194,7 +7194,7 @@ country_event = {
 	option = {
 		name = Turkey.205.a
 		ai_chance = { factor = 1}
-    
+
             add_stability = -0.01
             add_political_power = -25
 			set_global_flag = TUR_opposition_event
@@ -7265,7 +7265,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.207Blocked.a
 		ai_chance = { factor = 1}
-    
+
 	custom_effect_tooltip = 20_increase_12_TT
 	country_event = MD4_election_campaign.0
 						add_popularity = {
@@ -7281,7 +7281,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.207.bBlocked
 		ai_chance = { factor = 1}
-    
+
 	custom_effect_tooltip = 20_increase_3_TT
 	country_event = MD4_election_campaign.0
 						add_popularity = {
@@ -7321,7 +7321,7 @@ country_event = {
 	option = {
 		name = Turkey.208.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.07
 	add_political_power = 75
 	set_global_flag = FIRE_SUPEREVENT_1
@@ -7377,7 +7377,7 @@ country_event = {
 	option = {
 		name = Turkey.209.a	
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -35
 	}
 }
@@ -7448,7 +7448,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.211.a
 		ai_chance = { factor = 1}
-    
+
     add_stability = -0.05
 	add_political_power = 25
 				add_popularity = {
@@ -7479,7 +7479,7 @@ country_event = {
 	option = {
 		name = Turkey.212.a
 		ai_chance = { factor = 1}
-    
+
     add_stability = 0.02
 } }
 
@@ -7511,7 +7511,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.213.a
 		ai_chance = { factor = 1}
-    
+
     add_political_power = 50
 } }
 
@@ -7542,7 +7542,7 @@ country_event = {
 	option = {
 		name = Turkey.214.a
 		ai_chance = { factor = 1}
-    
+
     set_global_flag = iyi
 	clr_global_flag = noiyi
 	add_political_power = -25
@@ -7574,7 +7574,7 @@ country_event = {
 	option = {
 		name = Turkey.215.a
 		ai_chance = { factor = 1}
-    
+
     set_global_flag = fpdead
 	clr_global_flag = fpstrong
 	add_political_power = 25
@@ -7606,7 +7606,7 @@ country_event = {
 	option = {
 		name = Turkey.216.a
 		ai_chance = { factor = 1}
-    
+
     set_global_flag = btp
 	add_political_power = -15
 } }
@@ -7637,7 +7637,7 @@ country_event = {
 	option = {
 		name = Turkey.217.a
 		ai_chance = { factor = 1}
-    
+
 	set_global_flag = dp
 	clr_global_flag = dyp
 } }
@@ -7668,7 +7668,7 @@ country_event = {
 	option = {
 		name = Turkey.218.a
 		ai_chance = { factor = 1}
-    
+
 	set_global_flag = perincek2
 	clr_global_flag = perincek1
 } }
@@ -7701,7 +7701,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.219.a
 		ai_chance = { factor = 1}
-	
+
 	add_command_power = -35
 	add_stability = 0.02
 	add_war_support = -0.02
@@ -7709,7 +7709,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.219.b
 		ai_chance = { factor = 1}
-	
+
 	add_command_power = -15
 	add_stability = 0.05
 	add_war_support = 0.02
@@ -7718,14 +7718,14 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.219.c
 		ai_chance = { factor = 1}
-	
+
 	add_political_power = 25
 	add_stability = -0.02
 }
 	option = {
 		name = Turkey.219.d
 		ai_chance = { factor = 1}
-	
+
 	add_command_power = 15
 	add_stability = 0.03
 			add_popularity = {
@@ -7761,7 +7761,7 @@ country_event = {
 	option = {
 		name = Turkey.220.a
 		ai_chance = { factor = 1}
-		
+
     add_manpower = -11
 } }
 
@@ -7793,7 +7793,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.221.a
 		ai_chance = { factor = 1}
-	
+
 				add_popularity = {
 					ideology = neutrality
 					popularity = 0.01
@@ -7815,7 +7815,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 					ideology = democratic
 					popularity = 0.06
 				}	
-				
+
 			custom_effect_tooltip = TUR_CHP_increase_big
 			set_global_flag = istanbul_convention_withdrawal
 			hidden_effect = {
@@ -7854,13 +7854,13 @@ country_event = {
 	option = {
 		name = Turkey.222.a
 		ai_chance = { factor = 1}
-	
+
 	        add_political_power = -25
 				add_popularity = {
 					ideology = democratic
 					popularity = 0.03
 				}	
-				
+
 			custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
 				add_to_variable = { party_pop_array^3 = 0.03 }
@@ -7896,7 +7896,7 @@ country_event = {
 	option = {
 		name = Turkey.223.a
 		ai_chance = { factor = 1}
-	
+
 	        add_political_power = -50
     }
 } 
@@ -7930,12 +7930,12 @@ country_event = {
 	option = {
 		name = Turkey.224.a
 		ai_chance = { factor = 1}
-	
+
 	        add_political_power = -75
 			add_stability = -0.05
-    
+
 }   }
-  
+
 ##Event: Canal Should Be Builded!
 country_event = {
  id = Turkey.225
@@ -7964,10 +7964,10 @@ country_event = {
 	option = {
 		name = Turkey.225.a
 		ai_chance = { factor = 1}
-	
+
 	        add_political_power = 75
 			add_stability = -0.02
-    
+
 					add_popularity = {
 					ideology = neutrality
 					popularity = 0.01
@@ -7981,7 +7981,7 @@ country_event = {
  desc = Turkey.226.desc
  picture = GFX_coup_statement
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		 has_global_flag = coup_installed
@@ -7997,7 +7997,7 @@ country_event = {
 	option = {
 		name = Turkey.226.a
 		ai_chance = { factor = 1}
-	
+
 	        add_stability = 0.05
 } }
 
@@ -8008,7 +8008,7 @@ country_event = {
  desc = Turkey.227.desc
  picture = GFX_congress_of_junta
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		 has_global_flag = coup_installed
@@ -8025,7 +8025,7 @@ country_event = {
 	option = {
 		name = Turkey.227.a
 		ai_chance = { factor = 1}
-	
+
 	        add_stability = 0.03
 			add_political_power = -75
 } }
@@ -8037,7 +8037,7 @@ country_event = {
  desc = Turkey.228.desc
  picture = GFX_coup_tanks
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		 has_global_flag = coup_installed
@@ -8054,7 +8054,7 @@ country_event = {
 	option = {
 		name = Turkey.228.a
 		ai_chance = { factor = 1}
-	
+
 	        add_stability = -0.03
 } }
 
@@ -8065,7 +8065,7 @@ country_event = {
  desc = Turkey.229.desc
  picture = GFX_chp_victory
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		 			western_social_democrats_are_in_power = yes
@@ -8083,7 +8083,7 @@ country_event = {
 	option = {
 		name = Turkey.229.a
 		ai_chance = { factor = 1}
-	
+
 	        add_stability = 0.03
 	    custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
@@ -8099,7 +8099,7 @@ country_event = {
  desc = Turkey.230.desc
  picture = GFX_kemal_dervis
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
          AND = {
@@ -8119,12 +8119,12 @@ country_event = {
 	option = {
 		name = Turkey.230.a
 		ai_chance = { factor = 1}
-	
+
 
 add_timed_idea = { idea = turkish_IMF_reformation_3 days = 275}
 remove_ideas = turkish_IMF_reformation_2
 			}
-} } }
+}  
 
 ##Event: Jihad Movement
 country_event = {
@@ -8133,7 +8133,7 @@ country_event = {
  desc = Turkey.231.desc
  picture = GFX_jihadist
  fire_only_once = yes
- 
+
     trigger = {
          tag = MTU
          has_political_power > 24
@@ -8144,7 +8144,7 @@ country_event = {
 	option = {
 		name = Turkey.231.a
 		ai_chance = { factor = 1}
-	
+
 	        add_stability = 0.1
 			add_war_support = 0.1
 			}
@@ -8169,11 +8169,11 @@ country_event = {
 	option = {
 		name = Turkey.233.a
 		ai_chance = { factor = 1}
-	
+
 	        add_stability = -0.05
 			add_war_support = -0.05
 			}
-} } }
+}  
 
 ##Event: Mansur Victory
 country_event = {
@@ -8195,14 +8195,14 @@ country_event = {
 	option = {
 		name = Turkey.234.a
 		ai_chance = { factor = 1}
-	
+
 	        add_stability = 0.05
 					add_popularity = {
 					ideology = democratic
 					popularity = 0.05
 				}
 			}
-} } }
+}  
 
 ##Event: Mansur Visits Anıtkabir
 country_event = {
@@ -8224,14 +8224,14 @@ country_event = {
 	option = {
 		name = Turkey.235.a
 		ai_chance = { factor = 1}
-	
+
 	        add_political_power = 75
 					add_popularity = {
 					ideology = democratic
 					popularity = 0.03
 				}
 			}
-} } }
+}  
 
 ##Event: Mansur Economics
 country_event = {
@@ -8257,7 +8257,7 @@ country_event = {
 	option = {
 		name = Turkey.236.a
 		ai_chance = { factor = 1}
-	
+
 	        add_political_power = 75
 			add_stability = 0.1
 					add_popularity = {
@@ -8265,7 +8265,7 @@ country_event = {
 					popularity = 0.03
 				}
 			}
-} } } 
+}   
 
 ##Event: Return Of The Economic Crisis
 country_event = {
@@ -8287,7 +8287,7 @@ country_event = {
 	option = {
 		name = Turkey.237.a
 		ai_chance = { factor = 1}
-	
+
 add_stability = -0.05
 } } 
 
@@ -8309,7 +8309,7 @@ country_event = {
 	option = {
 		name = Turkey.239.a
 		ai_chance = { factor = 1}
-	
+
     add_political_power = 75
 	custom_effect_tooltip = LIRA_ABANDONING_TO_EURO
 	hidden_effect = {
@@ -8334,7 +8334,7 @@ country_event = {
 	option = {
 		name = Turkey.240.a
 		ai_chance = { factor = 1}
-	
+
     add_political_power = 75
 	add_stability = -0.02
 } } 
@@ -8353,7 +8353,7 @@ country_event = {
 	option = {
 		name = Turkey.241.a
 		ai_chance = { factor = 1}
-	
+
     add_stability = 0.02
 	add_political_power = 25
 } } 
@@ -8376,7 +8376,7 @@ country_event = {
 	option = {
 		name = Turkey.242.a
 		ai_chance = { factor = 1}
-	
+
     add_political_power = 75
        custom_effect_tooltip = TUR_liberals
 			hidden_effect = {
@@ -8411,7 +8411,7 @@ country_event = {
 	option = {
 		name = Turkey.243.a
 		ai_chance = { factor = 1}
-	
+
     add_political_power = -75
        custom_effect_tooltip = TUR_liberals_big
 			hidden_effect = {
@@ -8423,7 +8423,7 @@ country_event = {
 	option = {
 		name = Turkey.243.b
 		ai_chance = { factor = 1}
-	
+
     add_political_power = 75
 } } 
 
@@ -8491,7 +8491,7 @@ country_event = {
 	option = {
 		name = Turkey.245.a
 		ai_chance = { factor = 1}
-	
+
     add_political_power = 25
     custom_effect_tooltip = TUR_AKP_small_start1
 			hidden_effect = {
@@ -8526,7 +8526,7 @@ country_event = {
 	option = {
 		name = Turkey.246.a
 		ai_chance = { factor = 0}
-	
+
     custom_effect_tooltip = TUR_AKP_start_big
 			hidden_effect = { sound_effect = "speechev_rise_of_akp"}
 			custom_effect_tooltip = TR_speechev_rise_of_akp
@@ -8540,7 +8540,7 @@ country_event = {
 	option = {
 		name = Turkey.246.b
 		ai_chance = { factor = 1}
-	
+
     custom_effect_tooltip = TUR_AKP_start_big
 			custom_effect_tooltip = TR_speechev_rise_of_akp
 			hidden_effect = {
@@ -8577,7 +8577,7 @@ country_event = {
 	option = {
 		name = Turkey.247.a
 		ai_chance = { factor = 1}
-	
+
 	add_stability = -0.02
     custom_effect_tooltip = TUR_AKP_small_start1
 			hidden_effect = {
@@ -8614,7 +8614,7 @@ country_event = {
 	option = {
 		name = Turkey.248.a
 		ai_chance = { factor = 1}
-	
+
 	add_stability = 0.05
 	add_political_power = -75
 	set_country_flag = party24_banned
@@ -8659,12 +8659,12 @@ country_event = {
 	option = {
 		name = Turkey.249.a
 		ai_chance = { factor = 1}
-	
+
 	add_political_power = -125
 	add_stability = -0.07
 		}
 	} 
-	
+
 ##Event: Selahattin Demirtas Speech
 country_event = {
  id = Turkey.250
@@ -8776,7 +8776,7 @@ country_event = {
             add_political_power = -25
             add_stability = -0.05
 	}   }
-	
+
 ##Event: Rise Of Muharrem Ince
 country_event = {
  id = Turkey.253
@@ -9033,7 +9033,7 @@ country_event = {
 	option = {
 		name = Turkey.261.a
 		ai_chance = { factor = 1}
-        
+
 		    add_stability = 0.05
 			subtract_from_variable = { treasury = 75.0 }
 			custom_effect_tooltip = 70_billion_expense_tt
@@ -9107,7 +9107,7 @@ country_event = {
 	option = {
 		name = Turkey.259.b
 		ai_chance = { factor = 1}
-	
+
 	custom_effect_tooltip = KEMALIST_UNI
 					reverse_add_opinion_modifier = { target = GER modifier = EU_approach }
 					reverse_add_opinion_modifier = { target = FRA modifier = EU_approach }
@@ -9144,7 +9144,7 @@ country_event = {
 				}
 	}	}
 		}	
-    }	}
+
 ##Event: Mobilization Of The Turkey
 country_event = {
  id = Turkey.260
@@ -9537,7 +9537,7 @@ country_event = {
 	custom_effect_tooltip = TUR_dollar_rose
 	}	
   } 
- 
+
  
 ##Event: Space Plan
 #country_event = {
@@ -9570,7 +9570,7 @@ country_event = {
  desc = Turkey.274.desc
  picture = GFX_nasa_launch_pad_mars
  is_triggered_only = yes
- 
+
     mean_time_to_happen = {days = 1}
 
 	option = {
@@ -9588,7 +9588,7 @@ country_event = {
  desc = Turkey.275.desc
  picture = GFX_moonbase
  is_triggered_only = yes
- 
+
     mean_time_to_happen = {days = 1}
 
 	option = {
@@ -9607,7 +9607,7 @@ country_event = {
  desc = Turkey.276.desc
  picture = GFX_manned_mission_mars
  is_triggered_only = yes
- 
+
     mean_time_to_happen = {days = 1}
 
 	option = {
@@ -9626,7 +9626,7 @@ country_event = {
  desc = Turkey.277.desc
  picture = GFX_mars_colony_18
  is_triggered_only = yes
- 
+
     mean_time_to_happen = {days = 1}
 
 	option = {
@@ -9648,7 +9648,7 @@ country_event = {
 				}
 			}
         }
-		
+
 	option = {
 		name = Turkey.277.b
 		ai_chance = { factor = 1}
@@ -9717,7 +9717,7 @@ country_event = {
  desc = Turkey.278.desc
  picture = GFX_nasa_orion_space_capsule
  is_triggered_only = yes
- 
+
     mean_time_to_happen = {days = 1}
 
 	option = {
@@ -9755,7 +9755,7 @@ country_event = {
 #				recalculate_party = yes
 #			}
 #} } 
-  
+
 ##Event: GAZPROM Sign
 country_event = {
  id = Turkey.280
@@ -9763,7 +9763,7 @@ country_event = {
  desc = Turkey.280.desc
  picture = GFX_gazprom
  is_triggered_only = yes
- 
+
     mean_time_to_happen = {days = 1}
 
 	option = {
@@ -9802,7 +9802,7 @@ country_event = {
 	option = {
 		name = Turkey.281.a
 		ai_chance = { factor = 1}
-	
+
     add_war_support = 0.03
 					reverse_add_opinion_modifier = { target = ISR modifier = declaration_of_hostility }
 } } 
@@ -9835,7 +9835,7 @@ country_event = {
 	option = {
 		name = Turkey.282.a
 		ai_chance = { factor = 1}
-	
+
     add_political_power = -75
 	add_stability = -0.05
 	add_war_support = 0.01
@@ -9878,7 +9878,7 @@ country_event = {
 	set_variable = { TUR_lira_amount_against_sterlin = 942157 }
 	}	
   }
-  
+
 ##Event: Interest Rate : 46
 country_event = {
  id = Turkey.284
@@ -10237,7 +10237,7 @@ swap_ideas = {
 }
 
 	set_variable = { ruling_party = 4 }
-	
+
 		hidden_effect = {
 			clear_array = gov_coalition_array
 			set_variable = { ruling_party = max_index_1 }
@@ -10268,7 +10268,7 @@ swap_ideas = {
 					military_career
 				}
 			}
-		
+
 						add_popularity = {
 							ideology = nationalist
 							popularity = 0.45
@@ -10280,7 +10280,7 @@ swap_ideas = {
 	}	
   }
 
-  
+
 ##Event: FAQ
 #country_event = {
 #id = Turkey.294
@@ -10333,7 +10333,7 @@ country_event = {
 	add_stability = 0.03
 	}	
   }
- 
+
 
 ##Event: Ilker Basbug Trials
 country_event = {
@@ -10362,14 +10362,14 @@ country_event = {
 	option = {
 		name = Turkey.297.a
 		ai_chance = { factor = 1}
-	
+
     add_political_power = -75	
  				increase_The_military_opinion = yes   
 } 
 	option = {
 		name = Turkey.297.b
 		ai_chance = { factor = 1}
-	
+
     add_political_power = 75
 				decrease_The_military_opinion = yes
 } } 
@@ -10402,7 +10402,7 @@ country_event = {
 	option = {
 		name = Turkey.298.a
 		ai_chance = { factor = 1}
-	
+
        custom_effect_tooltip = TUR_MHP_small_start
 			hidden_effect = {
 				add_to_variable = { party_pop_array^20 = 0.02 }
@@ -10410,7 +10410,7 @@ country_event = {
 			}
 		}
     }
-	
+
 ##Event: Ali Demir Joins IYI
 country_event = {
  id = Turkey.299
@@ -10438,7 +10438,7 @@ country_event = {
 	option = {
 		name = Turkey.299.a
 		ai_chance = { factor = 1}
-	
+
        custom_effect_tooltip = TUR_IYI_small_start
 			hidden_effect = {
 				add_to_variable = { party_pop_array^1= 0.02 }
@@ -10474,7 +10474,7 @@ country_event = {
 	option = {
 		name = Turkey.300.a
 		ai_chance = { factor = 0}
-	
+
        add_political_power = -20
 	   add_stability = -0.02
     custom_effect_tooltip = TUR_CHP_decrease
@@ -10488,7 +10488,7 @@ country_event = {
 	option = {
 		name = Turkey.300.b
 		ai_chance = { factor = 1}
-	
+
        add_political_power = -20
 	   add_stability = -0.02
     custom_effect_tooltip = TUR_CHP_decrease
@@ -10526,7 +10526,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.301.a
 		ai_chance = { factor = 1}
-	
+
        add_political_power = 30
 	   add_stability = -0.07
 } }
@@ -10559,7 +10559,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.302.a
 		ai_chance = { factor = 1}
-	
+
        add_stability = -0.05
 	   add_political_power = -50
 } }
@@ -10592,7 +10592,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.303.a
 		ai_chance = { factor = 1}
-	
+
        add_political_power = 100
 } }
 
@@ -10624,7 +10624,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.304.a
 		ai_chance = { factor = 1}
-	
+
     add_political_power = -5
 } }
 
@@ -10657,7 +10657,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.305.a
 		ai_chance = { factor = 1}
-	
+
        add_political_power = -25
 	   add_stability = 0.02
 } }
@@ -10690,7 +10690,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.306.a
 		ai_chance = { factor = 1}
-	
+
 	   add_political_power = -100
 	   add_stability = -0.02
        swap_ideas = {
@@ -10726,7 +10726,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.307.a
 		ai_chance = { factor = 1}
-	
+
        add_political_power = 25
 } }
 
@@ -10758,7 +10758,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.308.a
 		ai_chance = { factor = 1}
-	
+
        add_stability = 0.01
 } }
 
@@ -10790,7 +10790,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.309.a
 		ai_chance = { factor = 1}
-	
+
        add_stability = 0.05
 	   add_political_power = 25
 } }
@@ -10821,7 +10821,7 @@ country_event = {
 	option = {
 		name = Turkey.310.a
 		ai_chance = { factor = 1}
-	
+
        add_stability = 0.07
 	   add_political_power = -75
 			hidden_effect = { news_event = Turkey_news.18 } 
@@ -10856,7 +10856,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.311.a
 		ai_chance = { factor = 1}
-	
+
 	add_political_power = -75
     custom_effect_tooltip = TUR_AKP_fall
 			hidden_effect = {
@@ -10894,7 +10894,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.312.a
 		ai_chance = { factor = 1}
-	
+
        add_stability = 0.03
 } }
 
@@ -10915,7 +10915,7 @@ country_event = {
 	option = {
 		name = Turkey.313.a
 		ai_chance = { factor = 1}
-	
+
        add_political_power = 50
 } }
 
@@ -10947,7 +10947,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.314.a
 		ai_chance = { factor = 1}
-	
+
        add_stability = 0.05
 } }
 
@@ -10979,7 +10979,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.315.a
 		ai_chance = { factor = 1}
-	
+
        add_stability = -0.03
 			subtract_from_variable = { treasury = 1.0 }
 			custom_effect_tooltip = 1_billion_expense_tt
@@ -11012,7 +11012,7 @@ country_event = {
 	option = {
 		name = Turkey.316.a
 		ai_chance = { factor = 1}
-	
+
        add_stability = 0.01
 	   add_political_power = -25
 } }
@@ -11043,7 +11043,7 @@ country_event = {
 	option = {
 		name = Turkey.317.a
 		ai_chance = { factor = 1}
-	
+
        add_stability = -0.02
 } }
 
@@ -11144,7 +11144,7 @@ country_event = {
 	option = {
 		name = Turkey.320.a
 		ai_chance = { factor = 1}
-	
+
        add_political_power = -50
     custom_effect_tooltip = TUR_CHP_decrease
 			hidden_effect = {
@@ -11167,7 +11167,7 @@ country_event = {
 	option = {
 		name = Turkey.321.a
 		ai_chance = { factor = 1}
-	
+
 						add_popularity = {
 							ideology = nationalist
 							popularity = 0.45
@@ -11192,11 +11192,11 @@ country_event = {
 	option = {
 		name = Turkey.322.a
 		ai_chance = { factor = 1}
-	
+
 hidden_effect = {
 			load_focus_tree = MD_TUR_MHPs
     country_event = MD4_election_campaign.0
-	
+
 			create_country_leader = {
 				name = "Devlet Bahçeli"
 				picture = "Devlet_Bahceli.dds"
@@ -11249,7 +11249,7 @@ country_event = {
 	option = {
 		name = Turkey.323.a
 		ai_chance = { factor = 1}
-	
+
 
     custom_effect_tooltip = TUR_CHP_decrease
 			hidden_effect = {
@@ -11493,7 +11493,7 @@ country_event = {
 	option = {
 		name = Turkey.330.a
 		ai_chance = { factor = 1} 
-		
+
 		add_political_power = 25
 		air_experience = 75
 		add_stability = 0.05
@@ -11867,7 +11867,7 @@ country_event = {
 	option = {
 		name = Turkey.341.a
 		ai_chance = { factor = 100} 
-		
+
 		add_command_power = 15
 		add_stability = -0.02 
 		add_manpower = -1000
@@ -12045,7 +12045,7 @@ country_event = {
     }
 
     mean_time_to_happen = {days = 1}
-	
+
 	option = {
 		name = Turkey.347.a
 		ai_chance = { factor = 1} 
@@ -12075,7 +12075,7 @@ country_event = {
 	option = {
 		name = Turkey.348.a
 		ai_chance = { factor = 1} 
-		
+
         navy_experience = -75
         add_war_support = -0.02
         }		
@@ -12139,7 +12139,7 @@ country_event = {
 	option = {
 		name = Turkey.350.a
 		ai_chance = { factor = 1} 
-		
+
 		add_political_power = 25
 		}
 } 
@@ -12171,7 +12171,7 @@ country_event = {
 	option = {
 		name = Turkey.351.a
 		ai_chance = { factor = 1} 
-		
+
         add_stability = 0.07
         }		
 } 
@@ -12202,7 +12202,7 @@ country_event = {
 	option = {
 		name = Turkey.352.a
 		ai_chance = { factor = 1} 
-		
+
         add_stability = -0.01
         }		
 } 
@@ -12233,7 +12233,7 @@ country_event = {
 	option = {
 		name = Turkey.353.a
 		ai_chance = { factor = 1} 
-		
+
         add_stability = -0.01
         }		
 } 
@@ -12264,7 +12264,7 @@ country_event = {
 	option = {
 		name = Turkey.354.a
 		ai_chance = { factor = 1} 
-		
+
         add_stability = 0.05
         }		
 } 
@@ -12297,7 +12297,7 @@ country_event = {
 	option = {
 		name = Turkey.355.a
 		ai_chance = { factor = 1} 
-		
+
         add_stability = 0.03
 		add_war_support = 0.02
         }		
@@ -12324,7 +12324,7 @@ country_event = {
 	option = {
 		name = Turkey.356.a
 		ai_chance = { factor = 1}
-    
+
     add_ideas = covid_19
 	add_political_power = -50
 	}
@@ -12351,7 +12351,7 @@ country_event = {
 	option = {
 		name = Turkey.357.a
 		ai_chance = { factor = 1}
-    
+
     add_ideas = covid_19
 	add_political_power = -50
 	}
@@ -12378,7 +12378,7 @@ country_event = {
 	option = {
 		name = Turkey.358.a
 		ai_chance = { factor = 1}
-    
+
     add_war_support = 0.01
 	GRE = {
 	add_political_power = -25
@@ -12415,7 +12415,7 @@ country_event = {
 	option = {
 		name = Turkey.359.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -30
 	add_stability = -0.01
 	}
@@ -12450,7 +12450,7 @@ country_event = {
 	option = {
 		name = Turkey.360.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -75
     custom_effect_tooltip = TUR_AKP_fall_small
 			hidden_effect = {
@@ -12487,7 +12487,7 @@ country_event = {
 	option = {
 		name = Turkey.361.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.03
 	add_political_power = -50
 	}
@@ -12514,7 +12514,7 @@ country_event = {
 	option = {
 		name = Turkey.362.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 1
 	}
 }
@@ -12537,7 +12537,7 @@ country_event = {
 	option = {
 		name = Turkey.363.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 1
 	retire_character = ilhan_tolu
 	retire_character = mustafa_ozsoy
@@ -12633,7 +12633,7 @@ country_event = {
 	option = {
 		name = Turkey.365.a
 		ai_chance = { factor = 1}
-    
+
             add_timed_idea = { idea = covid_19_global days = 525}
 	}
 }
@@ -12646,7 +12646,7 @@ country_event = {
  desc = Turkey.366.desc
  picture = GFX_hatay_nato_visit
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		 has_idea = NATO_member
@@ -12666,7 +12666,7 @@ country_event = {
 	option = {
 		name = Turkey.366.a
 		ai_chance = { factor = 1}
-    
+
 	            army_experience = 5
     			158 = { 
 				add_building_construction = {
@@ -12699,7 +12699,7 @@ country_event = {
  desc = Turkey.367.desc
  picture = GFX_nato_denounces_claims_on_hatay
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		  AND = {
@@ -12718,7 +12718,7 @@ country_event = {
 	option = {
 		name = Turkey.367.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 50
 	add_war_support = 0.01
     SYR = {
@@ -12735,7 +12735,7 @@ country_event = {
  desc = Turkey.368.desc
  picture = GFX_a_generic_visit
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		  AND = {
@@ -12756,7 +12756,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.368.a
 		ai_chance = { factor = 1}
-    
+
         add_political_power = 75
 	}
 }
@@ -12768,7 +12768,7 @@ country_event = {
  desc = Turkey.369.desc
  picture = GFX_erdogan_book
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		  AND = {
@@ -12789,7 +12789,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.369.a
 		ai_chance = { factor = 1}
-    
+
             add_political_power = 1
 	}
 }
@@ -12802,7 +12802,7 @@ country_event = {
  desc = Turkey.370.desc
  picture = GFX_eu_talks_cem_uzan
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		  AND = {
@@ -12822,7 +12822,7 @@ country_event = {
 	option = {
 		name = Turkey.370.a
 		ai_chance = { factor = 1}
-    
+
         add_stability = 0.07
 		add_war_support = 0.03
 			set_temp_variable = { modify_europeanism = -0.03 }
@@ -12842,7 +12842,7 @@ country_event = {
  desc = Turkey.371.desc
  picture = GFX_cem_uzan_deal_with_britain
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		  AND = {
@@ -12862,7 +12862,7 @@ country_event = {
 	option = {
 		name = Turkey.371.a
 		ai_chance = { factor = 1}
-    
+
 	        add_political_power = 25
 			ENG = {
 			add_political_power = 100
@@ -12894,7 +12894,7 @@ country_event = {
  desc = Turkey.372.desc
  picture = GFX_chp-mhp_alliance
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		  AND = {
@@ -12914,7 +12914,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.372.a
 		ai_chance = { factor = 1}
-    
+
         add_political_power = -50
 	}
 }
@@ -12927,7 +12927,7 @@ country_event = {
  desc = Turkey.373.desc
  picture = GFX_ekmeleddin
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		  AND = {
@@ -12947,7 +12947,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.373.a
 		ai_chance = { factor = 1}
-    
+
         add_political_power = -5
 	}
 }
@@ -12960,7 +12960,7 @@ country_event = {
  desc = Turkey.374.desc
  picture = GFX_binali_erdogan
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		  AND = {
@@ -12981,7 +12981,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.374.a
 		ai_chance = { factor = 1}
-    
+
         add_political_power = 75
 			create_country_leader = {
 				name = "Binali Yildirim"
@@ -13003,7 +13003,7 @@ country_event = {
  desc = Turkey.375.desc
  picture = GFX_ecevit_bahceli
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		 has_global_flag = DSP_delay_elections
@@ -13019,7 +13019,7 @@ country_event = {
 	option = {
 		name = Turkey.375.a
 		ai_chance = { factor = 1}
-    
+
 			add_to_array = { gov_coalition_array = 20}
 			add_political_power = 75
 			add_stability = 0.02
@@ -13039,7 +13039,7 @@ country_event = {
  desc = Turkey.376.desc
  picture = GFX_ecevit_mesut
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		 has_global_flag = DSP_delay_elections
@@ -13055,7 +13055,7 @@ country_event = {
 	option = {
 		name = Turkey.376.a
 		ai_chance = { factor = 1}
-    
+
 			add_to_array = { gov_coalition_array = 16 }
 			add_political_power = 75
 			add_stability = 0.02
@@ -13075,7 +13075,7 @@ country_event = {
  desc = Turkey.377.desc
  picture = GFX_ecevit_weakening
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 				western_conservatism_are_in_power = yes
@@ -13095,7 +13095,7 @@ country_event = {
 	option = {
 		name = Turkey.377.a
 		ai_chance = { factor = 1}
-    
+
 	        add_stability = 0.03
 			retire_country_leader = yes
 			set_global_flag = RESIGNED_ECEVIT
@@ -13105,7 +13105,7 @@ country_event = {
 	option = {
 		name = Turkey.377.b
 		ai_chance = { factor = 1}
-    
+
             add_political_power = -125
 	}
 }
@@ -13118,7 +13118,7 @@ country_event = {
  desc = Turkey.378.desc
  picture = GFX_ecevit_thinking
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 				western_conservatism_are_in_power = yes
@@ -13139,7 +13139,7 @@ country_event = {
 	option = {
 		name = Turkey.378.a
 		ai_chance = { factor = 1}
-    
+
         add_stability = -0.05
 		add_political_power = -175			
 		hidden_effect = {
@@ -13157,7 +13157,7 @@ country_event = {
  desc = Turkey.379.desc
  picture = GFX_ytp
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		  AND = {
@@ -13176,7 +13176,7 @@ country_event = {
 	option = {
 		name = Turkey.379.a
 		ai_chance = { factor = 1}
-    
+
        add_political_power = -25
 	}
 }
@@ -13188,7 +13188,7 @@ country_event = {
  desc = Turkey.380.desc
  picture = GFX_telsim
  fire_only_once = yes
- 
+
     trigger = {
          tag = TUR
 		  AND = {
@@ -13208,7 +13208,7 @@ country_event = {
 	option = {
 		name = Turkey.380.a
 		ai_chance = { factor = 1}
-    
+
             add_stability = -0.02
 			add_political_power = -75
 	}
@@ -13337,7 +13337,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 				}
 	}	
   }
-  
+
 
 ##Event: Creation Of The Turkic Union
 country_event = {
@@ -13435,7 +13435,7 @@ country_event = {
 	 add_ideas = turkic_state
 	}	}
   }  
- 
+
 ##Event: Hungary And Turkmenistan Becames Spectator Of The Turkic Union
 country_event = {
  id = Turkey.385
@@ -13480,7 +13480,7 @@ country_event = {
 	}	}
      custom_effect_tooltip = direct_replace_of_the_state
   } }
-  
+
 ##Event: Finland And Ukraine Becames Spectator Of The Turkic Union 
 country_event = {
  id = Turkey.386
@@ -13748,7 +13748,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	set_variable = { TUR_lira_amount_against_bitcoin = 30128 }
 	}	
   }
-  
+
 
 ##Event: Interest Rate Alternative: 15.5
 country_event = {
@@ -13789,7 +13789,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	set_variable = { TUR_lira_amount_against_bitcoin = 30128 }
 	}	
   }
- 
+
  
 ##Event: Interest Rate Alternative: 8.1
 country_event = {
@@ -13872,7 +13872,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	}	
   }
 
- 
+
 ##Event: Interest Rate Alternative: 3.4
 country_event = {
  id = Turkey.397
@@ -13954,7 +13954,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	}	
   }
 
- 
+
 ##Event: Interest Rate Alternative: 19.5
 country_event = {
  id = Turkey.399
@@ -14033,7 +14033,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 			custom_effect_tooltip = TUR_CHP_increase
 			add_political_power = -25
   }  }  
- 
+
 
 ##Event: Bitcoin?
 #country_event = {
@@ -14073,7 +14073,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 #     add_political_power = 1
 #	 custom_effect_tooltip = BLOCKED_BITCOIN_SELL_BUY_tooltip
 #  }  } 
-  
+
 
 ##Event: Turkish Office
 country_event = {
@@ -14138,7 +14138,7 @@ country_event = {
      set_global_flag = TUR_eastern_express_allowed
 	 custom_effect_tooltip = EASTERN_EXPRESS_DECISIONS
   }  }  
-  
+
 
 ##Event: Dollar Advances To 13.68
 country_event = {
@@ -14176,7 +14176,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	set_variable = { TUR_lira_amount_against_sterlin = 17.95 }
 	set_variable = { TUR_lira_amount_against_bitcoin = 694224 }
   }  } 
-  
+
 
 ##Event: Dollar Advances To 16.42
 country_event = {
@@ -14249,7 +14249,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 
      add_stability = 0.05
   }  } 
- 
+
 ##Event: Jewellery Of Social Democracy
 country_event = {
  id = Turkey.407
@@ -14281,7 +14281,7 @@ country_event = {
      add_stability = 0.05
 	   add_political_power = 125
   }  }  
- 
+
 ##Event: Economic Improvement Of The CHP
 country_event = {
  id = Turkey.408
@@ -14310,7 +14310,7 @@ country_event = {
 	option = {
 		name = Turkey.408.a
 		ai_chance = { factor = 1}
-		
+
      add_stability = 0.03
 	   add_political_power = 75
        custom_effect_tooltip = TUR_CHP_increase_so_small
@@ -14348,7 +14348,7 @@ country_event = {
 	option = {
 		name = Turkey.410.a
 		ai_chance = { factor = 0}
-	
+
        add_political_power = -20
 	   add_stability = -0.02
     custom_effect_tooltip = TUR_CHP_decrease
@@ -14371,7 +14371,7 @@ country_event = {
 	option = {
 		name = Turkey.410.b
 		ai_chance = { factor = 1}
-	
+
        add_political_power = -20
 	   add_stability = -0.02
 	   set_global_flag = DENIZ_BAYKAL_RESIGNS
@@ -14506,7 +14506,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 #		ai_chance = { factor = 1}
 #
 #  }  } 
- 
+
 
 ##Event: Kenan Yasar Elected To AYM
 country_event = {
@@ -14571,7 +14571,7 @@ country_event = {
 		name = Turkey.415.a
 		ai_chance = { factor = 1}
 
-    
+
     add_war_support = 0.03
 	create_corps_commander = {
 		name = "Osman Pamukoğlu"
@@ -14584,7 +14584,7 @@ country_event = {
 		logistics_skill = 3
 	}	
   }  }   
- 
+
 
 ##Event: Osman Pamukoğlu's Rallies
 country_event = {
@@ -14656,7 +14656,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 			load_focus_tree = MD_TUR_HEPAR
     custom_effect_tooltip = HEPAR_ACT
   }  } 
-  
+
 
 ##Event: Snow Dominates Istanbul
 country_event = {
@@ -14858,7 +14858,7 @@ country_event = {
 	 add_war_support = 0.01
   }  
 }
- 
+
 
 ##Event: Erdogan Returns To His Party
 country_event = {
@@ -16190,7 +16190,7 @@ country_event = {
 	option = {
 		name = Turkey.458.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -125
         hidden_effect = { news_event = Turkey_news.34 }
 	} }
@@ -16996,7 +16996,7 @@ country_event = {
 	option = {
 		name = Turkey.478.b
 		ai_chance = { factor = 1}
-    
+
     set_global_flag = nocandidateofchp
 	clr_global_flag = incechp
 	custom_effect_tooltip = TUR_warn2
@@ -17377,7 +17377,7 @@ country_event = {
 	option = {
 		name = Turkey.471.a
 		ai_chance = { factor = 1}
-   
+
            add_stability = -0.03
 		159 = {
 			damage_building = {
@@ -17958,7 +17958,7 @@ country_event = {
 	option = {
 		name = Turkey.493.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	set_global_flag = mustafaz_stands
   }  }
@@ -18139,7 +18139,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 has_global_flag = TUR_MAFIATIC_TR
          has_global_flag = ERDOGAN_NOT_ACHIEVED
 		 has_capitulated = yes
-                       
+
 		 } 
     }
 
@@ -19922,7 +19922,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.546.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.03
   }  } 
 
@@ -20706,7 +20706,7 @@ country_event = {
 	option = {
 		name = Turkey.567.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		934 = {
 			damage_building = {
@@ -20739,7 +20739,7 @@ country_event = {
 	option = {
 		name = Turkey.568.a
 		ai_chance = { factor = 1}
-    
+
 
 		934 = {
 			damage_building = {
@@ -20777,7 +20777,7 @@ country_event = {
 	option = {
 		name = Turkey.569.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = 0.01
 		934 = {
 			damage_building = {
@@ -20811,7 +20811,7 @@ country_event = {
 	option = {
 		name = Turkey.570.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		935 = {
 			damage_building = {
@@ -20849,7 +20849,7 @@ country_event = {
 	option = {
 		name = Turkey.571.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		159 = {
 			damage_building = {
@@ -20883,7 +20883,7 @@ country_event = {
 	option = {
 		name = Turkey.572.a
 		ai_chance = { factor = 1}
-    
+
 		1032 = {
 			damage_building = {
 				type = infrastructure
@@ -20916,7 +20916,7 @@ country_event = {
 	option = {
 		name = Turkey.573.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		159 = {
 			damage_building = {
@@ -20950,7 +20950,7 @@ country_event = {
 	option = {
 		name = Turkey.574.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		934 = {
 			damage_building = {
@@ -20988,7 +20988,7 @@ country_event = {
 	option = {
 		name = Turkey.575.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		934 = {
 			damage_building = {
@@ -21022,7 +21022,7 @@ country_event = {
 	option = {
 		name = Turkey.576.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		162 = {
 			damage_building = {
@@ -21056,7 +21056,7 @@ country_event = {
 	option = {
 		name = Turkey.577.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		934 = {
 			damage_building = {
@@ -21090,7 +21090,7 @@ country_event = {
 	option = {
 		name = Turkey.578.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		155 = {
 			damage_building = {
@@ -21128,7 +21128,7 @@ country_event = {
 	option = {
 		name = Turkey.579.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		162 = {
 			damage_building = {
@@ -21162,7 +21162,7 @@ country_event = {
 	option = {
 		name = Turkey.580.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		1032 = {
 			damage_building = {
@@ -21200,7 +21200,7 @@ country_event = {
 	option = {
 		name = Turkey.581.a
 		ai_chance = { factor = 1}
-    
+
 
 		158 = {
 			damage_building = {
@@ -21234,7 +21234,7 @@ country_event = {
 	option = {
 		name = Turkey.582.a
 		ai_chance = { factor = 1}
-    
+
 
 		992 = {
 			damage_building = {
@@ -21268,7 +21268,7 @@ country_event = {
 	option = {
 		name = Turkey.583.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.03
 		162 = {
 			damage_building = {
@@ -21314,7 +21314,7 @@ country_event = {
 	option = {
 		name = Turkey.584.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		155 = {
 			damage_building = {
@@ -21329,7 +21329,7 @@ country_event = {
 	}
 }
 
- 
+
 ##Event: 2016 Gaziantep Attack (Ekim)
 country_event = {
  id = Turkey.585
@@ -21352,7 +21352,7 @@ country_event = {
 	option = {
 		name = Turkey.585.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		992 = {
 			damage_building = {
@@ -21386,7 +21386,7 @@ country_event = {
 	option = {
 		name = Turkey.586.a
 		ai_chance = { factor = 1}
-    
+
 		162 = {
 			damage_building = {
 				type = infrastructure
@@ -21419,7 +21419,7 @@ country_event = {
 	option = {
 		name = Turkey.587.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		159 = {
 			damage_building = {
@@ -21453,7 +21453,7 @@ country_event = {
 	option = {
 		name = Turkey.588.a
 		ai_chance = { factor = 1}
-    
+
 
 		159 = {
 			damage_building = {
@@ -21491,7 +21491,7 @@ country_event = {
 	option = {
 		name = Turkey.589.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		934 = {
 			damage_building = {
@@ -21525,7 +21525,7 @@ country_event = {
 	option = {
 		name = Turkey.590.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		934 = {
 			damage_building = {
@@ -21563,7 +21563,7 @@ country_event = {
 	option = {
 		name = Turkey.591.a
 		ai_chance = { factor = 1}
-    
+
 		934 = {
 			damage_building = {
 				type = infrastructure
@@ -21596,7 +21596,7 @@ country_event = {
 	option = {
 		name = Turkey.592.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		935 = {
 			damage_building = {
@@ -21638,7 +21638,7 @@ country_event = {
 	option = {
 		name = Turkey.593.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		162 = {
 			damage_building = {
@@ -21672,7 +21672,7 @@ country_event = {
 	option = {
 		name = Turkey.595.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		162 = {
 			damage_building = {
@@ -21706,7 +21706,7 @@ country_event = {
 	option = {
 		name = Turkey.596.a
 		ai_chance = { factor = 1}
-    
+
 		158 = {
 			damage_building = {
 				type = infrastructure
@@ -21742,14 +21742,14 @@ country_event = {
 	option = {
 		name = Turkey.597.b
 		ai_chance = { factor = 1}
-    
+
 	}
 
 
 	option = {
 		name = Turkey.597.a
 		ai_chance = { factor = 1}
-    
+
 	subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt
 				set_temp_variable = { int_investment_change = 15.0 }
@@ -21776,7 +21776,7 @@ country_event = {
 	option = {
 		name = Turkey.598.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.01
 		162 = {
 				add_building_construction = {
@@ -21809,7 +21809,7 @@ country_event = {
 	option = {
 		name = Turkey.599.a
 		ai_chance = { factor = 1}
-    
+
 		add_war_support = 0.05
 		add_opinion_modifier = { target = TUR modifier = kurecik_base_iran }
         }
@@ -21843,7 +21843,7 @@ country_event = {
 	option = {
 		name = Turkey.600.a
 		ai_chance = { factor = 1}
-    
+
 		add_political_power = -75
 	}
 }
@@ -21876,7 +21876,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.601.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.03
 	custom_effect_tooltip = TUR_MIL_relations_1
 			subtract_from_variable = { TUR_rel_akp = 3 }
@@ -21911,7 +21911,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.602.a
 		ai_chance = { factor = 1}
-    
+
 		add_stability = -0.02
 custom_effect_tooltip = DEC_3_MEASURE_POINT
 subtract_from_variable = { var = pkk_presence value = -3 }
@@ -21949,7 +21949,7 @@ country_event = {
 	option = {
 		name = Turkey.603.a
 		ai_chance = { factor = 1}
-    
+
 		add_political_power = -50
 custom_effect_tooltip = DEC_3_MEASURE_POINT
 subtract_from_variable = { var = pkk_presence value = -3 }
@@ -21985,7 +21985,7 @@ country_event = {
 	option = {
 		name = Turkey.604.a
 		ai_chance = { factor = 1}
-    
+
 		PER = {
 			subtract_from_variable = { treasury = 1.0 }
 			custom_effect_tooltip = 1_billion_expense_tt		
@@ -22025,7 +22025,7 @@ country_event = {
 	option = {
 		name = Turkey.605.a
 		ai_chance = { factor = 1}
-    
+
 		add_political_power = 50
 		add_stability = 0.02
 	}
@@ -22059,7 +22059,7 @@ country_event = {
 	option = {
 		name = Turkey.606.a
 		ai_chance = { factor = 1}
-    
+
 			hidden_effect = {
 				add_to_variable = { party_pop_array^3 = -0.01 }
 				recalculate_party = yes
@@ -22095,7 +22095,7 @@ country_event = {
 	option = {
 		name = Turkey.607.a
 		ai_chance = { factor = 1}
-    
+
 		reverse_add_opinion_modifier = { target = TUR modifier = andrei_assasination }
 	    SOV = {
         country_event = TurkeyForeign.6
@@ -22131,7 +22131,7 @@ country_event = {
 	option = {
 		name = Turkey.608.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	}
 }
@@ -22356,7 +22356,7 @@ country_event = {
 	option = {
 		name = Turkey.612.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	set_global_flag = BLOCK_THE_MAYOR_ELECTIONS
 	}
@@ -22390,7 +22390,7 @@ country_event = {
 	option = {
 		name = Turkey.613.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	set_global_flag = BLOCK_THE_MAYOR_ELECTIONS
 	}
@@ -22424,7 +22424,7 @@ country_event = {
 	option = {
 		name = Turkey.614.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	set_global_flag = BLOCK_THE_MAYOR_ELECTIONS
 	}
@@ -22458,7 +22458,7 @@ country_event = {
 	option = {
 		name = Turkey.651.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	set_global_flag = BLOCK_THE_MAYOR_ELECTIONS
 	}
@@ -22493,7 +22493,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.615.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 50
 			hidden_effect = {
 				add_to_variable = { party_pop_array^3 = -0.01 }
@@ -22532,7 +22532,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.616.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 15
 			hidden_effect = {
 				add_to_variable = { party_pop_array^3 = -0.01 }
@@ -22571,7 +22571,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.617.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 	}
 }
@@ -22609,7 +22609,7 @@ country_event = {
     add_political_power = -50
 	add_stability = -0.03
   }  } 
- 
+
 ##Event: Question Of Emine Ulker
 country_event = {
  id = Turkey.619
@@ -22682,13 +22682,13 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 has_capitulated = yes
 		 } 
     }
- 
+
     mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.620.a
 		ai_chance = { factor = 0}
-    
+
 			hidden_effect = {
 				add_to_variable = { party_pop_array^12 = 0.02 }
 				recalculate_party = yes
@@ -22701,7 +22701,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.620.b
 		ai_chance = { factor = 1}
-    
+
 			hidden_effect = {
 				add_to_variable = { party_pop_array^12 = 0.02 }
 				recalculate_party = yes
@@ -22799,7 +22799,7 @@ country_event = {
 	option = {
 		name = Turkey.623.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 155 = { damage_building = { type = dockyard damage = 1.0 } }
 	}
@@ -22826,7 +22826,7 @@ country_event = {
 	option = {
 		name = Turkey.632.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 	}
 }
@@ -22863,7 +22863,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.625.a
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = 0.05
 	}
 }
@@ -22893,7 +22893,7 @@ country_event = {
 	option = {
 		name = Turkey.626.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 	USA = {
 	add_war_support = 0.02
@@ -22930,7 +22930,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.627.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 50
 	add_stability = -0.03
 	}
@@ -23005,7 +23005,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = Turkey.629.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
     custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
@@ -23042,7 +23042,7 @@ country_event = {
 	option = {
 		name = Turkey.633.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.03
 	}
 }
@@ -23074,7 +23074,7 @@ country_event = {
 	option = {
 		name = Turkey.634.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 	}
 }
@@ -23107,7 +23107,7 @@ country_event = {
 	option = {
 		name = Turkey.636.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -50
 	add_stability = -0.03
     custom_effect_tooltip = TUR_AKP_fall_small
@@ -23145,7 +23145,7 @@ country_event = {
 	option = {
 		name = Turkey.637.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -50
 	}
 }
@@ -23177,7 +23177,7 @@ country_event = {
 	option = {
 		name = Turkey.638.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.05
 	add_political_power = 100
     custom_effect_tooltip = TUR_AKP_small_start1
@@ -23215,7 +23215,7 @@ country_event = {
 	option = {
 		name = Turkey.639.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.05
 	add_political_power = 75
 	}
@@ -23248,7 +23248,7 @@ country_event = {
 	option = {
 		name = Turkey.640.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	}
 }
@@ -23281,7 +23281,7 @@ country_event = {
 	option = {
 		name = Turkey.641.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	add_manpower = -9
 	}
@@ -23313,7 +23313,7 @@ country_event = {
 	option = {
 		name = Turkey.642.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	}
 }
@@ -23568,7 +23568,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	set_variable = { TUR_lira_amount_against_sterlin = 40.81 }
 	set_variable = { TUR_lira_amount_against_bitcoin = 2236594 }
   }  } 
-  
+
 
 ##Event: Karabuk University Crisis
 country_event = {
@@ -25437,7 +25437,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 add_research_slot = -1
 } }
 
- 
+
 ##Event: Lights In, Lights Out!
 country_event = {
  id = Turkey.710
@@ -25750,7 +25750,7 @@ country_event = {
  option = {
   name = Turkey.719.a
   ai_chance = { factor = 100 }
-  
+
   add_war_support = -0.03
   add_political_power = -50
  }
@@ -25821,7 +25821,7 @@ country_event = {
  option = {
   name = Turkey.721.a
   ai_chance = { factor = 100 }
-  
+
   add_stability = 0.02
   add_political_power = -50
 			custom_effect_tooltip = TUR_AKP_fall_very_small
@@ -26608,7 +26608,7 @@ country_event = {
 	option = {
 		name = TurkeyF.1.a
 		ai_chance = { factor = 1}
-   
+
 			hidden_effect = { country_event = Turkey_news.9 } 
 add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_TSK }
 set_country_flag = do_not_kick_me
@@ -26646,7 +26646,7 @@ swap_ideas = {
 				set_ruling_leader = yes
 				set_leader = yes
 			}
-		
+
 
 
 			create_country_leader = {
@@ -26681,7 +26681,7 @@ country_event = {
 	option = {
 		name = TurkeyF.2.a
 		ai_chance = { factor = 1}
-    
+
 	set_global_flag = TUR_FETO_BAD
 	}
 }
@@ -26702,7 +26702,7 @@ country_event = {
 	option = {
 		name = TurkeyF.3.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	TUR =  {
 	country_event = TurkeyF.4
@@ -26711,7 +26711,7 @@ country_event = {
 	option = {
 		name = TurkeyF.3.b
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	TUR =  {
 	country_event = TurkeyF.5
@@ -26785,7 +26785,7 @@ country_event = {
 	option = {
 		name = TurkeyF.6.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.01
 add_named_threat = { threat = 1 name = BRUNSON_CRISIS }
 	USA =  {
@@ -26809,7 +26809,7 @@ country_event = {
 	option = {
 		name = TurkeyF.7.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	TUR =  {
 	country_event = TurkeyF.8
@@ -26819,7 +26819,7 @@ country_event = {
 	option = {
 		name = TurkeyF.7.b
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -75
 	TUR = {
 	add_stability = 0.03
@@ -26842,7 +26842,7 @@ country_event = {
 	option = {
 		name = TurkeyF.8.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.02
 	add_war_support = 0.03
             add_opinion_modifier = {
@@ -26856,7 +26856,7 @@ country_event = {
 	option = {
 		name = TurkeyF.8.b
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.03
 	add_war_support = -0.03
 						add_popularity = {
@@ -26882,7 +26882,7 @@ country_event = {
 	option = {
 		name = TurkeyF.9.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.03
 	}
 }
@@ -26904,7 +26904,7 @@ country_event = {
 	option = {
 		name = TurkeyF.10.a
 		ai_chance = { factor = 1}
-    
+
 	TUR = {
 			hidden_effect = { country_event = Turkey_news.13 } 
 add_named_threat = { threat = 1 name = TURKISH_ANNEXATION_AZE }
@@ -26926,7 +26926,7 @@ add_named_threat = { threat = 1 name = TURKISH_ANNEXATION_AZE }
 	option = {
 		name = TurkeyF.10.b
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	TUR =  {
 	country_event = TurkeyF.11
@@ -26950,7 +26950,7 @@ country_event = {
 	option = {
 		name = TurkeyF.11.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	}
 }
@@ -26971,7 +26971,7 @@ country_event = {
 	option = {
 		name = TurkeyF.12.a
 		ai_chance = { factor = 1}
-    
+
 	add_ideas = turkic_tv
 	}
 }
@@ -26992,7 +26992,7 @@ country_event = {
 	option = {
 		name = TurkeyF.13.a
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = 0.02
 	TUR = {
 		create_wargoal = {
@@ -27019,7 +27019,7 @@ country_event = {
 	option = {
 		name = TurkeyF.14.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	add_political_power = -25	
 
@@ -27038,7 +27038,7 @@ country_event = {
 	option = {
 		name = TurkeyF.14.b
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.01
 	add_political_power = 25
 	TUR = {
@@ -27063,7 +27063,7 @@ country_event = {
 	option = {
 		name = TurkeyF.15.a
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = 0.01
 	}
 }
@@ -27084,14 +27084,14 @@ country_event = {
 	option = {
 		name = TurkeyF.16.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 	}
 
 	option = {
 		name = TurkeyF.16.b
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 70
 	}
 }
@@ -27112,14 +27112,14 @@ country_event = {
 	option = {
 		name = TurkeyF.17.a
 		ai_chance = { factor = 1}
-    
+
 	add_ideas = NATO_industrialization
 	}
 
 	option = {
 		name = TurkeyF.17.b
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 50
 	}
 }
@@ -27169,7 +27169,7 @@ country_event = {
 		name = TurkeyF.19.a
 		ai_chance = { factor = 100}
 
-	
+
 	TUR = {
     set_cosmetic_tag = TRU
     TUR = {
@@ -27186,7 +27186,7 @@ country_event = {
 	add_state_core = 716
 	add_state_core = 715
 	add_state_core = 719
-	
+
 	} } }
 
 	option = {
@@ -27439,7 +27439,7 @@ country_event = {
  desc = TurkeyF.26.desc
  picture = GFX_coup_tanks
  is_triggered_only = yes
- 
+
 
 	option = {
 		name = TurkeyF.26.a
@@ -27447,7 +27447,7 @@ country_event = {
     diplomatic_relation = { country = KUR relation = guarantee active = no }
     TUR = { country_event = TurkeyF.27 } 
 	}
-	
+
 	option = {
 		name = TurkeyF.26.b
 		ai_chance = { factor = 1}
@@ -27463,12 +27463,12 @@ country_event = {
  desc = TurkeyF.27.desc
  picture = GFX_american_troops
  is_triggered_only = yes
- 
+
 
 	option = {
 		name = TurkeyF.27.a
 		ai_chance = { factor = 1}
-		
+
 create_wargoal= { 
 type = annex_everything 
 target = KUR
@@ -27484,7 +27484,7 @@ country_event = {
  desc = TurkeyF.28.desc
  picture = GFX_american_troops
  is_triggered_only = yes
- 
+
 
 	option = {
 		name = TurkeyF.28.a
@@ -27513,7 +27513,7 @@ country_event = {
 	option = {
 		name = TurkeyF.29.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.05
 	add_political_power = -50	
 
@@ -27531,7 +27531,7 @@ country_event = {
 	option = {
 		name = TurkeyF.29.b
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.03
 	add_political_power = 25
 	TUR = {
@@ -27556,7 +27556,7 @@ country_event = {
 	option = {
 		name = TurkeyF.30.a
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = 0.01
 		reverse_add_opinion_modifier = { target = TUR modifier = island_deal_backfired }
         add_opinion_modifier = { target = TUR modifier = island_deal_backfired }	
@@ -27580,10 +27580,10 @@ country_event = {
 	option = {
 		name = TurkeyF.31.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.05
 	add_political_power = -50	
-			
+
 	TUR = {
 	set_autonomy = {
 		target = BUL
@@ -27594,7 +27594,7 @@ country_event = {
 	option = {
 		name = TurkeyF.31.b
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.02
 	add_war_support = 0.02
 	TUR = {
@@ -27619,7 +27619,7 @@ country_event = {
 	option = {
 		name = TurkeyF.32.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -1
 	}
 }
@@ -27640,7 +27640,7 @@ country_event = {
 	option = {
 		name = TurkeyF.33.a
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = 0.02	
 		create_wargoal = {
 			type = annex_everything
@@ -27653,7 +27653,7 @@ country_event = {
 	option = {
 		name = TurkeyF.33.b
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 	TUR = {
 	country_event = TurkeyF.35
@@ -27678,7 +27678,7 @@ country_event = {
 	option = {
 		name = TurkeyF.34.a
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = 0.02	
 		create_wargoal = {
 			type = annex_everything
@@ -27702,7 +27702,7 @@ country_event = {
 	option = {
 		name = TurkeyF.35.a
 		ai_chance = { factor = 1}
-    
+
 	    add_war_support = -0.01
 		create_wargoal = {
 			type = annex_everything
@@ -27729,7 +27729,7 @@ country_event = {
 	option = {
 		name = TurkeyF.36.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.03
 	set_global_flag = UNIFICATION_TRIGGERED
 	clr_global_flag = dyp
@@ -27753,13 +27753,13 @@ country_event = {
 	option = {
 		name = TurkeyF.37.a
 		ai_chance = { factor = 1}  
-	
+
 	add_political_power = -5
 } 
 	option = {
 		name = TurkeyF.37.b
 		ai_chance = { factor = 1}
-    
+
 diplomatic_relation = { 
 	country = TUR 
 	relation = non_aggression_pact 
@@ -27783,7 +27783,7 @@ country_event = {
 	option = {
 		name = TurkeyF.38.a
 		ai_chance = { factor = 1}
-    
+
 	give_guarantee = PER
 	PER = {
 	give_guarantee = TUR 	
@@ -27806,7 +27806,7 @@ country_event = {
 	option = {
 		name = TurkeyF.39.a
 		ai_chance = { factor = 1}
-    
+
     
 	give_guarantee = EGY
 	EGY = {
@@ -27830,7 +27830,7 @@ country_event = {
 	option = {
 		name = TurkeyF.40.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 75
 } }
 
@@ -27850,7 +27850,7 @@ country_event = {
 	option = {
 		name = TurkeyF.41.a
 		ai_chance = { factor = 1}
-    
+
     TUR = {
 	annex_country = { target = KUR transfer_troops = yes}
 	add_state_core = 630
@@ -27862,12 +27862,12 @@ country_event = {
 			}
 		} 
 	}
-	
+
 }
 	option = {
 		name = TurkeyF.41.b
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = 0.07
 	TUR = { country_event = TurkeyF.42 } 
 	}
@@ -27998,7 +27998,7 @@ country_event = {
 	option = {
 		name = TurkeyF.45.a
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -1
 	}
 }
@@ -28021,7 +28021,7 @@ country_event = {
 	option = {
 		name = TurkeyF.46.a
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = 75
     add_stability = 0.05
 	add_war_support = 0.05
@@ -28039,7 +28039,7 @@ country_event = {
 	option = {
 		name = TurkeyF.46.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = 25
 			create_country_leader = {
 				name = "Heydar Aliyev"
@@ -28055,7 +28055,7 @@ country_event = {
 	option = {
 		name = TurkeyF.46.c
 		ai_chance = { factor = 100}
-    
+
 	add_war_support = 0.01
 			create_country_leader = {
 				name = "Recep Tayyip Erdogan"
@@ -28067,12 +28067,12 @@ country_event = {
 				}
 			}
 	}
-	
+
     #Kazakh Leadership
 	option = {
 		name = TurkeyF.46.d
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = 100
     add_stability = -0.01
 			create_country_leader = {
@@ -28103,7 +28103,7 @@ country_event = {
 	option = {
 		name = TurkeyF.47.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = 0.03
 	add_political_power = 75
 	}
@@ -28126,7 +28126,7 @@ country_event = {
 	option = {
 		name = TurkeyF.48.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = 0.03
 	add_political_power = 75    
 	}
@@ -28149,7 +28149,7 @@ country_event = {
 	option = {
 		name = TurkeyF.49.a
 		ai_chance = { factor = 100}
-    
+
 custom_effect_tooltip = DEC_5_PKK_POINT
 subtract_from_variable = { var = pkk_presence value = 5 }
 			add_to_variable = { TUR_PKK_aggro = -5 }
@@ -28182,7 +28182,7 @@ country_event = {
 	option = {
 		name = TurkeyF.50.a
 		ai_chance = { factor = 100}
-    
+
     
 		custom_effect_tooltip = DEC_5_PKK_POINT
 subtract_from_variable = { var = pkk_presence value = 5 }
@@ -28216,7 +28216,7 @@ country_event = {
 	option = {
 		name = TurkeyF.51.a
 		ai_chance = { factor = 100}
-     
+
 	custom_effect_tooltip = DEC_5_PKK_POINT
 subtract_from_variable = { var = pkk_presence value = 5 }
 			add_to_variable = { TUR_PKK_aggro = -5 }
@@ -28244,7 +28244,7 @@ country_event = {
 	option = {
 		name = TurkeyF.52.a
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	add_to_faction = GRE
 	 }
@@ -28253,7 +28253,7 @@ country_event = {
 	option = {
 		name = TurkeyF.52.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	}
 }
@@ -28275,7 +28275,7 @@ country_event = {
 	option = {
 		name = TurkeyF.53.a
 		ai_chance = { factor = 100}
-    
+
    
 	add_stability = -0.02
 	add_political_power = -50
@@ -28299,7 +28299,7 @@ country_event = {
 	option = {
 		name = TurkeyF.54.a
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	add_to_faction = ARM
 	 }
@@ -28308,7 +28308,7 @@ country_event = {
 	option = {
 		name = TurkeyF.54.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	}
 }
@@ -28331,7 +28331,7 @@ country_event = {
 	option = {
 		name = TurkeyF.55.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = -0.02
 	add_political_power = -50
 	}
@@ -28354,7 +28354,7 @@ country_event = {
 	option = {
 		name = TurkeyF.56.a
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	add_to_faction = CYP
 	 }
@@ -28363,7 +28363,7 @@ country_event = {
 	option = {
 		name = TurkeyF.56.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	}
 }
@@ -28387,7 +28387,7 @@ country_event = {
 		name = TurkeyF.57.a
 		ai_chance = { factor = 100}
 
-   
+
 	add_stability = -0.02
 	add_political_power = -50    
 	}
@@ -28410,7 +28410,7 @@ country_event = {
 	option = {
 		name = TurkeyF.58.a
 		ai_chance = { factor = 100}
-  
+
   			add_to_array = { gov_coalition_array = 1 }
                 add_political_power = 50
 				add_popularity = {
@@ -28437,7 +28437,7 @@ country_event = {
 	option = {
 		name = TurkeyF.59.a
 		ai_chance = { factor = 100}
-  
+
  			add_to_array = { gov_coalition_array = 0 }
                 add_political_power = 50		
   				add_popularity = {
@@ -28465,7 +28465,7 @@ country_event = {
 	option = {
 		name = TurkeyF.60.a
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	add_to_faction = TRK
 	 }
@@ -28474,7 +28474,7 @@ country_event = {
 	option = {
 		name = TurkeyF.60.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	TUR = {
 	country_event = TurkeyF.61
@@ -28498,7 +28498,7 @@ country_event = {
 	option = {
 		name = TurkeyF.61.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = -0.02
 	add_political_power = -50
 	}
@@ -28521,7 +28521,7 @@ country_event = {
 	option = {
 		name = TurkeyF.62.a
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	add_to_faction = KAZ
 	 }
@@ -28530,7 +28530,7 @@ country_event = {
 	option = {
 		name = TurkeyF.62.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	TUR = {
 	country_event = TurkeyF.63
@@ -28555,7 +28555,7 @@ country_event = {
 	option = {
 		name = TurkeyF.63.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = -0.02
 	add_political_power = -50
 	}
@@ -28578,7 +28578,7 @@ country_event = {
 	option = {
 		name = TurkeyF.64.a
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	add_to_faction = UZB
 	 }
@@ -28587,7 +28587,7 @@ country_event = {
 	option = {
 		name = TurkeyF.64.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	TUR = {
 	country_event = TurkeyF.65
@@ -28612,7 +28612,7 @@ country_event = {
 	option = {
 		name = TurkeyF.65.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = -0.02
 	add_political_power = -50
 	}
@@ -28635,7 +28635,7 @@ country_event = {
 	option = {
 		name = TurkeyF.66.a
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	add_to_faction = KYR
 	 }
@@ -28644,7 +28644,7 @@ country_event = {
 	option = {
 		name = TurkeyF.66.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	TUR = {
 	country_event = TurkeyF.67
@@ -28670,7 +28670,7 @@ country_event = {
 	option = {
 		name = TurkeyF.67.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = -0.02
 	add_political_power = -50
 	}
@@ -28693,7 +28693,7 @@ country_event = {
 	option = {
 		name = TurkeyF.68.a
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	add_to_faction = QAT
 	 }
@@ -28702,7 +28702,7 @@ country_event = {
 	option = {
 		name = TurkeyF.68.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	TUR = {
 	country_event = TurkeyF.69
@@ -28728,7 +28728,7 @@ country_event = {
 	option = {
 		name = TurkeyF.69.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = -0.02
 	add_political_power = -50
 	}
@@ -28751,7 +28751,7 @@ country_event = {
 	option = {
 		name = TurkeyF.70.a
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	add_to_faction = ISR
 	 }
@@ -28760,7 +28760,7 @@ country_event = {
 	option = {
 		name = TurkeyF.70.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	TUR = {
 	country_event = TurkeyF.71
@@ -28786,7 +28786,7 @@ country_event = {
 	option = {
 		name = TurkeyF.71.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = -0.02
 	add_political_power = -50
 	}
@@ -28809,7 +28809,7 @@ country_event = {
 	option = {
 		name = TurkeyF.72.a
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	add_to_faction = EGY
 	 }
@@ -28818,7 +28818,7 @@ country_event = {
 	option = {
 		name = TurkeyF.72.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	TUR = {
 	country_event = TurkeyF.73
@@ -28842,7 +28842,7 @@ country_event = {
 	option = {
 		name = TurkeyF.73.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = -0.02
 	add_political_power = -50
 	}
@@ -28865,7 +28865,7 @@ country_event = {
 	option = {
 		name = TurkeyF.74.a
 		ai_chance = { factor = 100}
- 
+
 	add_war_support = 0.05 
 	TUR = {
 	country_event = TurkeyF.75
@@ -28875,7 +28875,7 @@ country_event = {
 	option = {
 		name = TurkeyF.74.b
 		ai_chance = { factor = 100}
-    
+
 	add_war_support = -0.05
 	TUR = {
 	set_autonomy = {
@@ -28900,7 +28900,7 @@ country_event = {
 	option = {
 		name = TurkeyF.75.a
 		ai_chance = { factor = 100}
-    
+
 		create_wargoal = {
 			type = annex_everything
 			target = IRQ
@@ -28922,7 +28922,7 @@ country_event = {
 	option = {
 		name = TurkeyF.76.a
 		ai_chance = { factor = 100}
-    
+
 
                 add_popularity = {
                 ideology = nationalist
@@ -28933,7 +28933,7 @@ country_event = {
                 elections_allowed = no
 				}
 			}
-	
+
 }
 
 
@@ -28953,7 +28953,7 @@ country_event = {
 	option = {
 		name = TurkeyF.77.a
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	country_event = TurkeyF.78
 	 }
@@ -28962,7 +28962,7 @@ country_event = {
 	option = {
 		name = TurkeyF.77.b
 		ai_chance = { factor = 100}
-    
+
 	TUR = {
 	country_event = TurkeyF.79
 	 }
@@ -28985,7 +28985,7 @@ country_event = {
 	option = {
 		name = TurkeyF.78.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = -0.02
 	add_political_power = -50
 	}
@@ -29008,7 +29008,7 @@ country_event = {
 	option = {
 		name = TurkeyF.79.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = 0.02
 	add_political_power = 50
 		reverse_add_opinion_modifier = { target = PER modifier = nuclear_deal }
@@ -29033,7 +29033,7 @@ country_event = {
 	option = {
 		name = TurkeyF.80.a
 		ai_chance = { factor = 100}
-    
+
     
 	TUR = {
 	country_event = TurkeyF.81
@@ -29043,7 +29043,7 @@ country_event = {
 	option = {
 		name = TurkeyF.80.b
 		ai_chance = { factor = 100}
-    
+
     
 	TUR = {
 	country_event = TurkeyF.82
@@ -29067,7 +29067,7 @@ country_event = {
 	option = {
 		name = TurkeyF.81.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = -0.02
 	add_political_power = -50
 	}
@@ -29090,7 +29090,7 @@ country_event = {
 	option = {
 		name = TurkeyF.82.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = 0.02
 	add_political_power = 50
 		reverse_add_opinion_modifier = { target = SOV modifier = nuclear_deal }
@@ -29115,7 +29115,7 @@ country_event = {
 	option = {
 		name = TurkeyF.83.a
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = 75
 	}
 }
@@ -29136,11 +29136,11 @@ country_event = {
 	option = {
 		name = TurkeyF.84.a
 		ai_chance = { factor = 100}
-    
+
 	add_ideas = mafiatic_drain
 	add_ideas = tanks_and_airplanes_what
 	add_ideas = military_traditions_problematic
-	
+
 	remove_ideas = turkish_military_infulence
 	remove_ideas = tur_historical_confidence
 	remove_ideas = TUR_sectarian_woes	
@@ -29149,7 +29149,7 @@ country_event = {
 	remove_ideas = pr_demirel
 	remove_ideas = pr_necdet
 	remove_ideas = lira_1
-	
+
 retire_character = TUR_hulusi_akar
 retire_character = TUR_zeki_colak
 retire_character = TUR_ergin_celalsin
@@ -29223,7 +29223,7 @@ country_event = {
 	option = {
 		name = TurkeyF.85.a
 		ai_chance = { factor = 100}
-		
+
     add_state_core = 84
     add_state_core = 83
     add_state_core = 956
@@ -29266,7 +29266,7 @@ country_event = {
 	option = {
 		name = TurkeyF.86.a
 		ai_chance = { factor = 100}
- 
+
     add_state_core = 828
     add_state_core = 829
     add_state_core = 830
@@ -29309,7 +29309,7 @@ country_event = {
 	option = {
 		name = TurkeyF.87.a
 		ai_chance = { factor = 100}
-    
+
 	USA = {
 	kill_country_leader = yes
 	add_stability = -0.1
@@ -29334,7 +29334,7 @@ country_event = {
 	option = {
 		name = TurkeyF.88.a
 		ai_chance = { factor = 100}
- 
+
 	add_stability = -0.1    
 	add_political_power = -75
 	}
@@ -29357,7 +29357,7 @@ country_event = {
 	option = {
 		name = TurkeyF.89.a
 		ai_chance = { factor = 100}
-    
+
 	add_stability = -0.1
 	}
 }
@@ -29379,7 +29379,7 @@ country_event = {
 	option = {
 		name = TurkeyF.90.a
 		ai_chance = { factor = 100}
-     
+
 	add_stability = -0.1   
 	}
 }
@@ -29409,7 +29409,7 @@ country_event = {
 	option = {
 		name = TurkeyF.91.a
 		ai_chance = { factor = 100}
-     
+
     add_stability = 0.02
 	add_war_support = 0.03
 	create_country_leader = {
@@ -29426,7 +29426,7 @@ country_event = {
 	option = {
 		name = TurkeyF.91.b
 		ai_chance = { factor = 100}
-     
+
     add_stability = 0.04
 	add_war_support = 0.01
 	create_country_leader = {
@@ -29443,7 +29443,7 @@ country_event = {
 	option = {
 		name = TurkeyF.91.c
 		ai_chance = { factor = 100}
-     
+
     add_stability = 0.03
 	add_war_support = 0.02
 	create_country_leader = {
@@ -29459,7 +29459,7 @@ country_event = {
 	option = {
 		name = TurkeyF.91.d
 		ai_chance = { factor = 100}
-     
+
     add_stability = 0.05
 	add_political_power = 75
 	}
@@ -29594,7 +29594,7 @@ country_event = {
 	option = {
 		name = TurkeyF.96.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.03
 	custom_effect_tooltip = TUR_TKP_relations_2
 			custom_effect_tooltip = UNION_INCREASE_3
@@ -29643,7 +29643,7 @@ country_event = {
 	option = {
 		name = TurkeyF.98.a
 		ai_chance = { factor = 100}
-	
+
 	add_war_support = -0.07
 	add_stability = -0.05
 	custom_effect_tooltip = TUR_MHP_clash
@@ -29680,7 +29680,7 @@ country_event = {
 	option = {
 		name = TurkeyF.99.a
 		ai_chance = { factor = 100}
-	
+
 	add_political_power = -100
 	add_stability = -0.1
 	add_war_support = -0.05
@@ -29988,7 +29988,7 @@ country_event = {
 	option = {
 		name = TurkeyF.108.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.03
 	custom_effect_tooltip = TUR_GREEN_relations_3
 } }
@@ -30010,7 +30010,7 @@ country_event = {
 	option = {
 		name = TurkeyF.109.a
 		ai_chance = { factor = 100}
-	
+
 	retire_character = hursit_tolon
 	retire_character = sener_eruygur
 	retire_character = TUR_abidin_unal	
@@ -30033,9 +30033,9 @@ country_event = {
 	option = {
 		name = TurkeyF.110.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.05
-            
+
 			hidden_effect = {
 			clear_array = gov_coalition_array
 			set_variable = { ruling_party = 11 } #Caliphate
@@ -30098,7 +30098,7 @@ country_event = {
 	option = {
 		name = TurkeyF.111.b
 		ai_chance = { factor = 100}
-	 
+
 	        add_stability = 0.05
 			add_war_support = -0.02
 			create_country_leader = {
@@ -30128,7 +30128,7 @@ country_event = {
 	option = {
 		name = TurkeyF.112.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = -0.05
         add_opinion_modifier = { target = TUR modifier = threat_to_our_extension }
 } }
@@ -30149,7 +30149,7 @@ country_event = {
 	option = {
 		name = TurkeyF.113.a
 		ai_chance = { factor = 100}
-	
+
 	TUR = {
     TUR = {
 	annex_country = { target = ROOT transfer_troops = yes}
@@ -30163,7 +30163,7 @@ country_event = {
 	option = {
 		name = TurkeyF.113.b
 		ai_chance = { factor = 100}
-		
+
 	TUR = {
 		create_wargoal = {
 			type = annex_everything
@@ -30188,7 +30188,7 @@ country_event = {
 	option = {
 		name = TurkeyF.114.a
 		ai_chance = { factor = 100}
-	
+
 	white_peace = TUR
 	add_stability = 0.05
 	add_war_support = -0.1
@@ -30196,7 +30196,7 @@ country_event = {
 	option = {
 		name = TurkeyF.114.b
 		ai_chance = { factor = 100}
-		
+
 	add_stability = -0.1
 } 
   }
@@ -30217,7 +30217,7 @@ country_event = {
 	option = {
 		name = TurkeyF.115.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.05
 			hidden_effect = {
 			clear_array = gov_coalition_array
@@ -30263,7 +30263,7 @@ country_event = {
 	option = {
 		name = TurkeyF.116.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = -0.05
 	add_ideas = dusts_of_the_kemalist_guardians
 } }
@@ -30284,7 +30284,7 @@ country_event = {
 	option = {
 		name = TurkeyF.117.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.03
 
 			create_country_leader = {
@@ -30315,7 +30315,7 @@ country_event = {
 	option = {
 		name = TurkeyF.118.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.02
 } }
 
@@ -30336,7 +30336,7 @@ country_event = {
 	option = {
 		name = TurkeyF.119.a
 		ai_chance = { factor = 100}
-	
+
 	add_manpower = 100000
 	add_war_support = 0.1
 }   }
@@ -30357,7 +30357,7 @@ country_event = {
 	option = {
 		name = TurkeyF.120.a
 		ai_chance = { factor = 100}
-	
+
 	set_global_flag = USA_OIL_ACCEPT
 	add_stability = 0.03
 	add_manpower = 10000
@@ -30390,7 +30390,7 @@ country_event = {
 	option = {
 		name = TurkeyF.120.b
 		ai_chance = { factor = 100}
-	
+
 	set_global_flag = USA_OIL_REJECT
 	TUR = {
 	country_event = TurkeyF.122
@@ -30414,7 +30414,7 @@ country_event = {
 	option = {
 		name = TurkeyF.121.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.05
 } }
 
@@ -30435,7 +30435,7 @@ country_event = {
 	option = {
 		name = TurkeyF.122.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = -0.02
 	add_war_support = 0.03
 } }
@@ -30457,14 +30457,14 @@ country_event = {
 	option = {
 		name = TurkeyF.123.a
 		ai_chance = { factor = 100}
-	
+
 	            add_stability = -0.05
 				add_popularity = {
 					ideology = nationalist
 					popularity = 0.1
 				}	
             }   }		
-			   
+
 
 
 ##Event: Immigrant Waves In Europe 
@@ -30483,7 +30483,7 @@ country_event = {
 	option = {
 		name = TurkeyF.124.a
 		ai_chance = { factor = 100}
-	
+
 	random_list = {	
 	50 = {
 				add_popularity = {
@@ -30559,7 +30559,7 @@ country_event = {
 	option = {
 		name = TurkeyF.126.a
 		ai_chance = { factor = 0}
-	
+
 	remove_state_core = 669
 	add_state_claim = 669
 	TUR = {
@@ -30572,7 +30572,7 @@ country_event = {
 	option = {
 		name = TurkeyF.126.b
 		ai_chance = { factor = 100}
-	
+
 	TUR = {
 	country_event = TurkeyF.127
   } }
@@ -30594,7 +30594,7 @@ country_event = {
 	option = {
 		name = TurkeyF.127.a
 		ai_chance = { factor = 100}
-	
+
 	add_political_power = -10
 } }
 
@@ -30615,7 +30615,7 @@ country_event = {
 	option = {
 		name = TurkeyF.128.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.03
 	TUR = {
 	set_autonomy = {
@@ -30626,7 +30626,7 @@ country_event = {
 	option = {
 		name = TurkeyF.128.b
 		ai_chance = { factor = 100}
-	
+
 	TUR = {
 	country_event = TurkeyF.129
   } }
@@ -30649,7 +30649,7 @@ country_event = {
 	option = {
 		name = TurkeyF.129.a
 		ai_chance = { factor = 100}
-	
+
 		create_wargoal = {
 			type = annex_everything
 			target = GEO
@@ -30672,7 +30672,7 @@ country_event = {
 	option = {
 		name = TurkeyF.130.a
 		ai_chance = { factor = 100}
-	
+
     TUR = {
 	annex_country = { target = ROOT transfer_troops = yes}
 		ROOT = {
@@ -30685,7 +30685,7 @@ country_event = {
 	option = {
 		name = TurkeyF.130.b
 		ai_chance = { factor = 100}
-		
+
 	TUR = {
 		create_wargoal = {
 			type = annex_everything
@@ -30693,7 +30693,7 @@ country_event = {
 		} 
 } 
 }
- 
+
 
 ##Event: Turkey Wants To Recreation Of Central Powers
 country_event = {
@@ -30711,7 +30711,7 @@ country_event = {
 	option = {
 		name = TurkeyF.131.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.05
 	create_faction = CENTRAL_POWER
 	add_to_faction = TUR
@@ -30720,7 +30720,7 @@ country_event = {
 	option = {
 		name = TurkeyF.131.b
 		ai_chance = { factor = 100}
-	
+
 	add_stability = -0.05
 	TUR = {
 	country_event = TurkeyF.132
@@ -30744,7 +30744,7 @@ country_event = {
 	option = {
 		name = TurkeyF.132.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = -0.05
 } }
 
@@ -30769,7 +30769,7 @@ country_event = {
 	option = {
 		name = TurkeyF.133.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.03
 	add_to_faction = AUS
 	}
@@ -30777,7 +30777,7 @@ country_event = {
 	option = {
 		name = TurkeyF.133.b
 		ai_chance = { factor = 100}
-	
+
 	add_stability = -0.02
 	AUS = {
 	country_event = TurkeyF.134
@@ -30801,7 +30801,7 @@ country_event = {
 	option = {
 		name = TurkeyF.134.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = -0.02
 } }
 
@@ -30822,7 +30822,7 @@ country_event = {
 	option = {
 		name = TurkeyF.135.a
 		ai_chance = { factor = 100}
-	
+
 	TUR = {
 	country_event = TurkeyF.136
 	}
@@ -30831,7 +30831,7 @@ country_event = {
 	option = {
 		name = TurkeyF.135.b
 		ai_chance = { factor = 100}
-	
+
 	TUR = {
 	country_event = TurkeyF.137
 	}
@@ -30853,7 +30853,7 @@ country_event = {
 	option = {
 		name = TurkeyF.136.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.03
 	add_state_claim = 134
 	add_state_claim = 153
@@ -30916,7 +30916,7 @@ country_event = {
 	option = {
 		name = TurkeyF.137.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = -0.02
 } }
 
@@ -30938,7 +30938,7 @@ country_event = {
 	option = {
 		name = TurkeyF.138.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.05
 	   add_political_power = 25
                 add_popularity = {
@@ -30990,7 +30990,7 @@ country_event = {
 	option = {
 		name = TurkeyF.140.a
 		ai_chance = { factor = 100}
-	
+
 	add_political_power = 125
 	add_stability = 0.03
 } }
@@ -31035,7 +31035,7 @@ country_event = {
 	option = {
 		name = TurkeyF.142.a
 		ai_chance = { factor = 100}
-	
+
 	add_manpower = 100000
 	add_war_support = 0.05
 } }
@@ -31057,7 +31057,7 @@ country_event = {
 	option = {
 		name = TurkeyF.143.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.05
 } }
 
@@ -31102,7 +31102,7 @@ country_event = {
 	option = {
 		name = TurkeyF.145.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = 0.02
 	add_political_power = 75
 		reverse_add_opinion_modifier = { target = TUR modifier = turkic_islam_deal }
@@ -31136,7 +31136,7 @@ country_event = {
 	option = {
 		name = TurkeyF.146.b
 		ai_chance = { factor = 100}
-	
+
 	TUR = {
 	country_event = TurkeyF.147
 } } }
@@ -31158,7 +31158,7 @@ country_event = {
 	option = {
 		name = TurkeyF.147.a
 		ai_chance = { factor = 100}
-	
+
 	add_political_power = -50
 } }
 
@@ -31179,7 +31179,7 @@ country_event = {
 	option = {
 		name = TurkeyF.148.a
 		ai_chance = { factor = 100}
-	
+
 		TUR = {
 		add_to_faction = ROOT 
 		} }
@@ -31206,7 +31206,7 @@ country_event = {
 	option = {
 		name = TurkeyF.149.a
 		ai_chance = { factor = 100}
-	
+
 	random_list = {	
 	50 = {
 				add_popularity = {
@@ -31241,7 +31241,7 @@ country_event = {
 	option = {
 		name = TurkeyF.150.a
 		ai_chance = { factor = 100}
-	
+
 	random_list = {	
 	50 = {
 				add_popularity = {
@@ -31277,7 +31277,7 @@ country_event = {
 	option = {
 		name = TurkeyF.151.a
 		ai_chance = { factor = 100}
-	
+
 	random_list = {	
 	50 = {
 				add_popularity = {
@@ -31313,7 +31313,7 @@ country_event = {
 	option = {
 		name = TurkeyF.152.a
 		ai_chance = { factor = 100}
-	
+
 	random_list = {	
 	50 = {
 				add_popularity = {
@@ -31349,7 +31349,7 @@ country_event = {
 	option = {
 		name = TurkeyF.153.a
 		ai_chance = { factor = 100}
-	
+
 	add_political_power = 200
 } }
 
@@ -31370,7 +31370,7 @@ country_event = {
 	option = {
 		name = TurkeyF.154.a
 		ai_chance = { factor = 100}
-	
+
 	            add_stability = -0.03
                 add_popularity = {
                 ideology = neutrality
@@ -31452,7 +31452,7 @@ country_event = {
 		name = TurkeyF.157.a
 		ai_chance = { factor = 100}
 
-	
+
 	add_stability = 0.03
 	add_manpower = -45600
 } }
@@ -31474,7 +31474,7 @@ country_event = {
 	option = {
 		name = TurkeyF.158.a
 		ai_chance = { factor = 100}
-	
+
 	add_stability = -0.03
 	add_war_support = 0.02
 } }
@@ -31496,7 +31496,7 @@ country_event = {
 	option = {
 		name = TurkeyF.159.a
 		ai_chance = { factor = 100}
-	
+
 	annex_country = { target = GER transfer_troops = yes}
 		GER = {
 			every_unit_leader = {
@@ -31545,7 +31545,7 @@ country_event = {
 	add_state_core = 725
 
     }
-	
+
 	annex_country = { target = KAZ transfer_troops = yes}
 		KAZ = {
 			every_unit_leader = {
@@ -31561,7 +31561,7 @@ country_event = {
 	add_state_core = 719
 
     }
-	
+
 	annex_country = { target = AZE transfer_troops = yes}
 		AZE = {
 			every_unit_leader = {
@@ -31584,7 +31584,7 @@ country_event = {
 	add_state_core = 720
 	add_state_core = 721
     }
-	
+
 	annex_country = { target = TRK transfer_troops = yes}
 		TRK = {
 			every_unit_leader = {
@@ -31916,7 +31916,7 @@ country_event = {
 	option = {
 		name = TurkeyF.172.a
 		ai_chance = { factor = 100}
-   
+
 	TUR = {
 	add_to_faction = GRE
 	 }
@@ -31925,7 +31925,7 @@ country_event = {
 	option = {
 		name = TurkeyF.172.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	}
 }
@@ -31946,7 +31946,7 @@ country_event = {
 	option = {
 		name = TurkeyF.173.a
 		ai_chance = { factor = 100}
- 
+
     add_political_power = -25
 	}
 		}
@@ -31969,7 +31969,7 @@ country_event = {
 	option = {
 		name = TurkeyF.174.a
 		ai_chance = { factor = 100}
-   
+
 	TUR = {
 	add_to_faction = SYR
 	 }
@@ -31978,7 +31978,7 @@ country_event = {
 	option = {
 		name = TurkeyF.174.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	}
 }
@@ -31999,7 +31999,7 @@ country_event = {
 	option = {
 		name = TurkeyF.175.a
 		ai_chance = { factor = 100}
- 
+
     add_political_power = -25
 	}
 		}
@@ -32021,7 +32021,7 @@ country_event = {
 	option = {
 		name = TurkeyF.176.a
 		ai_chance = { factor = 100}
-   
+
 	TUR = {
 	add_to_faction = BUL
 	 }
@@ -32030,7 +32030,7 @@ country_event = {
 	option = {
 		name = TurkeyF.176.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	}
 }
@@ -32051,7 +32051,7 @@ country_event = {
 	option = {
 		name = TurkeyF.177.a
 		ai_chance = { factor = 100}
- 
+
     add_political_power = -25
 	}
 		}
@@ -32073,7 +32073,7 @@ country_event = {
 	option = {
 		name = TurkeyF.178.a
 		ai_chance = { factor = 100}
-   
+
 	TUR = {
 	add_to_faction = IRQ
 	 }
@@ -32082,7 +32082,7 @@ country_event = {
 	option = {
 		name = TurkeyF.178.b
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = -50
 	}
 }
@@ -32103,7 +32103,7 @@ country_event = {
 	option = {
 		name = TurkeyF.179.a
 		ai_chance = { factor = 100}
- 
+
     add_political_power = -25
 	}
 		}
@@ -32125,7 +32125,7 @@ country_event = {
 	option = {
 		name = TurkeyF.180.a
 		ai_chance = { factor = 100}
- 
+
     add_war_support = 0.1
 	}
 		}
@@ -32146,7 +32146,7 @@ country_event = {
 	option = {
 		name = TurkeyF.181.a
 		ai_chance = { factor = 100}
- 
+
     add_stability = 0.1
 	custom_effect_tooltip = EMEP_ACTION_4
 	custom_effect_tooltip = TERRORIST_CLASSIFICATION_EMEP
@@ -32173,7 +32173,7 @@ country_event = {
 	option = {
 		name = TurkeyF.182.a
 		ai_chance = { factor = 100}
- 
+
 				add_popularity = {
 					ideology = communism
 					popularity = 0.1
@@ -32197,7 +32197,7 @@ country_event = {
 	option = {
 		name = TurkeyF.183.a
 		ai_chance = { factor = 100}
- 
+
 				add_popularity = {
 					ideology = communism
 					popularity = 0.1
@@ -32221,7 +32221,7 @@ country_event = {
 	option = {
 		name = TurkeyF.184.a
 		ai_chance = { factor = 100}
- 
+
                 add_political_power = -35
 				add_popularity = {
 					ideology = communism
@@ -32246,7 +32246,7 @@ country_event = {
 	option = {
 		name = TurkeyF.185.a
 		ai_chance = { factor = 100}
- 
+
     white_peace = TUR
 	TUR = {
 	transfer_state = 672
@@ -32264,7 +32264,7 @@ country_event = {
 	option = {
 		name = TurkeyF.185.b
 		ai_chance = { factor = 100}
- 
+
     add_war_support = 0.05
 	TUR = {
 	country_event = TurkeyF.186
@@ -32288,7 +32288,7 @@ country_event = {
 	option = {
 		name = TurkeyF.186.a
 		ai_chance = { factor = 100}
- 
+
     add_war_support = 0.01
 	}
 }
@@ -32330,7 +32330,7 @@ country_event = {
 	option = {
 		name = TurkeyF.187.a
 		ai_chance = { factor = 100}
- 
+
 	add_political_power = -75
 	add_stability = -0.1
 	set_global_flag = TUR_coup_attempt_success
@@ -32359,7 +32359,7 @@ country_event = {
 	option = {
 		name = TurkeyF.188.a
 		ai_chance = { factor = 100}
- 
+
     complete_national_focus = TKF_preserve_the_nation
 	set_global_flag = TUR_TKP_GET_DESTROYED
 	country_event = MD4_election_campaign.0
@@ -32425,7 +32425,7 @@ country_event = {
 	option = {
 		name = TurkeyF.190.a
 		ai_chance = { factor = 100}
-    
+
 	add_political_power = 25
 	TUR = {
 	country_event = TurkeyF.192
@@ -32588,7 +32588,7 @@ country_event = {
 	option = {
 		name = TurkeyF.201.a
 		ai_chance = { factor = 100}
-    
+
 	give_guarantee = TUR
 	TUR = {
 	give_guarantee = POL
@@ -33075,7 +33075,7 @@ country_event = {
 	option = {
 		name = TurkeyF.211.a
 		ai_chance = { factor = 1}
-    
+
 	KUR = { country_event = TurkeyF.212 } 
 	}
 } 
@@ -33097,7 +33097,7 @@ country_event = {
 	option = {
 		name = TurkeyF.211.a
 		ai_chance = { factor = 1}
-    
+
 	news_event = Turkey_news.43
     TUR = {
 	annex_country = { target = KUR transfer_troops = yes}
@@ -33110,12 +33110,12 @@ country_event = {
 			}
 		} 
 	}
-	
+
 }
 	option = {
 		name = TurkeyF.212.b
 		ai_chance = { factor = 1}
-    
+
 	add_war_support = 0.02
 	add_stability = 0.03
 	TUR = { country_event = TurkeyF.213 } 
@@ -33139,7 +33139,7 @@ country_event = {
 	option = {
 		name = TurkeyF.213.a
 		ai_chance = { factor = 1}
-  		
+
 		add_stability = -0.02
 		add_political_power = -100
 } }
@@ -33161,7 +33161,7 @@ country_event = {
 	option = {
 		name = TurkeyF.214.a
 		ai_chance = { factor = 1}
-  		
+
 		add_political_power = 25
         add_opinion_modifier = { target = TUR modifier = suicided_the_gulen }
 		TUR = {
@@ -33173,7 +33173,7 @@ country_event = {
 	option = {
 		name = TurkeyF.214.b
 		ai_chance = { factor = 1}
-  		
+
 		add_political_power = -25
 }  } 
 
@@ -33194,7 +33194,7 @@ country_event = {
 	option = {
 		name = TurkeyF.215.a
 		ai_chance = { factor = 1}
-  		
+
 		add_stability = -0.03
 		add_ideas = stagnation
 } } 
@@ -33240,7 +33240,7 @@ custom_effect_tooltip = TECHNOCRAT_OPEN_THERE
 	option = {
 		name = TurkeyF.216.b
 		ai_chance = { factor = 1}
-  		
+
   add_political_power = 50
 } } 
 
@@ -33376,7 +33376,7 @@ country_event = {
 	option = {
 		name = TurkeyF.220.a
 		ai_chance = { factor = 1}
-  		
+
  add_political_power = 100
  				hidden_effect = { news_event = Turkey_news.48 } 
 	}
@@ -33394,7 +33394,7 @@ country_event = {
 	option = {
 		name = TurkeyF.221.a
 		ai_chance = { factor = 1}
-  		
+
 	add_ideas = pain_of_the_government
 	add_ideas = pain_of_the_parties
 } 
@@ -33412,7 +33412,7 @@ country_event = {
 	option = {
 		name = TurkeyF.222.a
 		ai_chance = { factor = 1}
-  		
+
 
 			create_country_leader = {
 				name = "Özgür Demirtaş"
@@ -33426,7 +33426,7 @@ country_event = {
 	option = {
 		name = TurkeyF.222.b
 		ai_chance = { factor = 1}
-  		
+
 			create_country_leader = {
 				name = "Daron Acemoğlu"
 				picture = "adem_acemoglu.dds"
@@ -33450,7 +33450,7 @@ country_event = {
 	option = {
 		name = TurkeyF.223.a
 		ai_chance = { factor = 1}
-  		
+
 
 			create_country_leader = {
 				name = "Celal Şengör"
@@ -33465,7 +33465,7 @@ country_event = {
 	option = {
 		name = TurkeyF.223.b
 		ai_chance = { factor = 1}
-  		
+
 
 			create_country_leader = {
 				name = "Aziz Sancar"
@@ -33480,7 +33480,7 @@ country_event = {
 	option = {
 		name = TurkeyF.223.c
 		ai_chance = { factor = 1}
-  		
+
  
 			create_country_leader = {
 				name = "Kudret Özarsay"
@@ -33546,7 +33546,7 @@ add_political_power = 25
 	add_ideas = pr_demirel
 	add_ideas = pr_necdet
 	add_ideas = lira_1
-	
+
 recruit_character = TUR_hulusi_akar
 recruit_character = TUR_zeki_colak
 recruit_character = TUR_ergin_celalsin
@@ -33596,7 +33596,7 @@ recruit_character = ozden_ordek
 	option = {
 		name = TurkeyF.224.b
 		ai_chance = { factor = 1}
-  		
+
 custom_effect_tooltip = MAFIA_MIT_DILEMNA
 add_political_power = 100
 } } 
@@ -33648,7 +33648,7 @@ country_event = {
 	option = {
 		name = TurkeyF.226.b
 		ai_chance = { factor = 1}
-  		
+
 	TUR = {
 	add_to_faction = ISR
 	}
@@ -33861,7 +33861,7 @@ country_event = {
 	option = {
 		name = TurkeyF.234.b
 		ai_chance = { factor = 1}
-  		
+
 	TUR = {
 	country_event = TurkeyF.235
 	add_equipment_to_stockpile = {
@@ -33916,7 +33916,7 @@ country_event = {
 	option = {
 		name = TurkeyF.236.a
 		ai_chance = { factor = 1}
-  		
+
 
 			create_country_leader = {
 				name = "Hilmi Özkök"
@@ -33930,7 +33930,7 @@ country_event = {
 	option = {
 		name = TurkeyF.236.b
 		ai_chance = { factor = 1}
-  		
+
 
 			create_country_leader = {
 				name = "Çevik Bir"
@@ -33944,7 +33944,7 @@ country_event = {
 	option = {
 		name = TurkeyF.236.c
 		ai_chance = { factor = 1}
-  		
+
     add_political_power = 50
 		}	
 }
@@ -33967,13 +33967,13 @@ country_event = {
 	option = {
 		name = TurkeyF.237.a
 		ai_chance = { factor = 1}
-  		
+
           add_stability = 0.05
 		}   
 	option = {
 		name = TurkeyF.237.b
 		ai_chance = { factor = 1}
-  		
+
 
            add_stability = -0.05
 		   set_global_flag = DARK_PARALYSIS
@@ -34009,7 +34009,7 @@ country_event = {
 	option = {
 		name = TurkeyF.238.a
 		ai_chance = { factor = 1}
-  		
+
           add_stability = 0.05
 			create_wargoal = {
 			type = annex_everything
@@ -34038,7 +34038,7 @@ country_event = {
 	option = {
 		name = TurkeyF.239.a
 		ai_chance = { factor = 1}
-  		
+
         add_stability = -0.05
 		custom_effect_tooltip = ISR_DARK_SECRETS
 		hidden_effect = {
@@ -34083,7 +34083,7 @@ country_event = {
 	option = {
 		name = TurkeyPresidency.1.a
 		ai_chance = { factor = 1}
-    
+
 clr_global_flag = END_THE_ELECTION_PR
 	set_variable = { var = TUR_the_first_party value = 38 }
 	set_variable = { var = TUR_the_second_party value = 62 }
@@ -34831,7 +34831,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.1.b
 		ai_chance = { factor = 1}
-	
+
 	TUR = {
 	country_event = TurkeyForeign.2
 	}
@@ -34849,7 +34849,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.2.a
 		ai_chance = { factor = 1}
-    
+
 	set_global_flag = RUSSIA_SETS_THE_STREAMLINE
 	custom_effect_tooltip = RUSSIAN_STREAMLINE
 	add_opinion_modifier = { target = SOV modifier = turkish_streamline }
@@ -34863,7 +34863,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.2.b
 		ai_chance = { factor = 1}
-	
+
 	add_political_power = -50
 } }  
 
@@ -34905,7 +34905,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.4.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 25
 	}
 
@@ -35015,7 +35015,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.9.b
 		ai_chance = { factor = 1}
-	
+
 	add_war_support = -0.1
 	add_political_power = -75
 } }  
@@ -35042,7 +35042,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.10.b
 		ai_chance = { factor = 1}
-	
+
 	add_political_power = -50
 } }  
 
@@ -35080,7 +35080,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.11.b
 		ai_chance = { factor = 1}
-	
+
 	add_political_power = -50
 } }  
 
@@ -35109,7 +35109,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.12.b
 		ai_chance = { factor = 1}
-	
+
 	add_war_support = -0.03
 } }  
 
@@ -35156,7 +35156,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.13.b
 		ai_chance = { factor = 1}
-	
+
 				set_temp_variable = { temp_opinion_change = -10 }	
             change_the_military_opinion = yes			
 } }  
@@ -35183,7 +35183,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.14.b
 		ai_chance = { factor = 1}
-	
+
 				set_temp_variable = { temp_opinion_change = -5 }	
             change_the_military_opinion = yes			
 } }  
@@ -35200,7 +35200,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.15.a
 		ai_chance = { factor = 1}
-	
+
 		army_experience = -5	
 } }  
 
@@ -35236,7 +35236,7 @@ reverse_add_opinion_modifier = { target = USA modifier =  trade_mission }
 	option = {
 		name = TurkeyForeign.16.b
 		ai_chance = { factor = 1}
-				
+
     add_political_power = 1
 	TUR = {
 	country_event = TurkeyForeign.14
@@ -35276,7 +35276,7 @@ country_event = {
 	option = {
 		name = TurkeyForeign.17.b
 		ai_chance = { factor = 1}
-				
+
     add_political_power = 1
 	TUR = {
 	country_event = TurkeyForeign.15
@@ -35380,7 +35380,7 @@ add_named_threat = { threat = 2 name = UNITED_STATES_INTERVENE_TURKEY }
 	option = {
 		name = TurkeyNATO.1.b
 		ai_chance = { factor = 1}
-	
+
 	add_political_power = 25
 	add_stability = 0.02
 } }  
@@ -35445,7 +35445,7 @@ country_event = {
 	option = {
 		name = TurkeyNATO.2.b
 		ai_chance = { factor = 1}
-	
+
 
 			subtract_from_variable = { treasury = 75.0 }
 			custom_effect_tooltip = 75_billion_expense_tt
@@ -35595,7 +35595,7 @@ country_event = {
 	option = {
 		name = TurkeyNATO.3.b
 		ai_chance = { factor = 1}
-	
+
 
 			subtract_from_variable = { treasury = 75.0 }
 			custom_effect_tooltip = 75_billion_expense_tt
@@ -35744,7 +35744,7 @@ country_event = {
 	option = {
 		name = TurkeyNATO.4.b
 		ai_chance = { factor = 1}
-	
+
 
 			subtract_from_variable = { treasury = 75.0 }
 			custom_effect_tooltip = 75_billion_expense_tt
@@ -35848,7 +35848,7 @@ country_event = {
 	option = {
 		name = TurkeyNATO.5.a
 		ai_chance = { factor = 1}
-	
+
 	add_political_power = 75
 	add_war_support = 0.02
         add_opinion_modifier = { target = USA modifier = military_aid }
@@ -35997,7 +35997,7 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 315}
 			set_temp_variable = { temp_outlook_increase = 0.5 }
 			change_relative_party_popularity = yes
 		}
-	
+
 			hidden_effect = {
 				add_to_variable = { party_pop_array^5= 0.2 }
 				recalculate_party = yes
@@ -36053,9 +36053,9 @@ country_event = {
 
         hidden_effect = {
 	remove_ideas = pr_necdet
-	
+
 	set_variable = { ruling_party = 15 }
-	
+
 		hidden_effect = {
 			clear_array = gov_coalition_array
 			set_variable = { ruling_party = max_index_1 }
@@ -36097,7 +36097,7 @@ country_event = {
 	remove_ideas = tur_historical_confidence 
     }
 
-    
+
 	create_corps_commander = {
 		name = "Nursun Özyurt"
 		picture = "unknown_general.dds"
@@ -36200,7 +36200,7 @@ add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_ANA }
 	set_cosmetic_tag = ANARCH_PASSIVE
     set_global_flag = ANARCHIST_YEAH
 	clr_global_flag = ANARCHIST_NO
-    
+
        hidden_effect = {
 add_timed_idea = { idea = turkish_civil_war_modifier days = 215}   
 		KTU = {
@@ -36240,7 +36240,7 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 215}
 	} 
 
  declare_war_on = { target = KTU type = annex_everything }
-	
+
 			clear_array = gov_coalition_array
 			set_variable = { ruling_party = 18 } #neutral_Social
 			add_to_variable = { party_pop_array^18 = 0.5 } #neutral_Social
@@ -36265,7 +36265,7 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 215}
 				set_leader = yes
 			}
 		}
-			
+
 retire_character = TUR_hulusi_akar
 retire_character = TUR_zeki_colak
 retire_character = TUR_ergin_celalsin
@@ -36338,9 +36338,9 @@ country_event = {
         hidden_effect = {
 	remove_ideas = pr_necdet
 
-	
+
 	set_variable = { ruling_party = 23 }
-	
+
 		hidden_effect = {
 			clear_array = gov_coalition_array
 			set_variable = { ruling_party = max_index_1 }
@@ -36387,13 +36387,13 @@ add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_OTT }
 				set_ruling_leader = yes
 				set_leader = yes
 			}
-		
+
 
                 set_politics = {
                 ruling_party = nationalist
                 elections_allowed = no
             }	
-			
+
 	retire_character = hursit_tolon
 	retire_character = TUR_izzet_cetingoz
 	retire_character = TUR_abidin_unal	
@@ -36440,10 +36440,10 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 215}
 					nationalist_Monarchist
 				}
 			}
-			
+
 	}
 } }
-} }
+
 
 
 ##Event: Collapse Of Kemalists
@@ -36689,7 +36689,7 @@ add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_ULK }
 		}
     	declare_war_on = { target = CTU type = annex_everything }
 	}  }
-} } }
+}  
 
 ##Event: TKP-ÖDP-EMEP Congress
 country_event = {
@@ -36874,7 +36874,7 @@ add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
 		planning_skill = 2
 		logistics_skill = 2
 	}
-	
+
 	create_corps_commander = {
 		name = "Metin Akkaya"
 		picture = "TUR_akkaya.dds"
@@ -36920,19 +36920,19 @@ add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
 		planning_skill = 2
 		logistics_skill = 3
 	}
-	
+
 	create_navy_leader = {
 		name = "Hasan Kulaç"
 		picture = "TUR_kulac.dds"
 		traits = { air_controller trait_TUR_gulen_champion}
 	}
-	
+
 	load_OOB = TUR_civilwar_1
         MTU = { change_tag_from = TUR }
 		TUR = {
 	         declare_war_on = { target = MTU type = annex_everything }
 	}  } } } 
-	
+
 
 	option = {
 		name = TurkeyC.1.b
@@ -36946,7 +36946,7 @@ add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
 	set_global_flag = TUR_CIVILWAR_BEGIN
 add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
 			hidden_effect = { country_event = Turkey_news.8 } 
-     
+
 	hidden_effect = {
 	add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
 		MTU = {
@@ -37016,7 +37016,7 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 125}
 		planning_skill = 2
 		logistics_skill = 2
 	}
-	
+
 	create_corps_commander = {
 		name = "Metin Akkaya"
 		picture = "TUR_akkaya.dds"
@@ -37062,13 +37062,13 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 125}
 		planning_skill = 2
 		logistics_skill = 3
 	}
-	
+
 	create_navy_leader = {
 		name = "Hasan Kulaç"
 		picture = "TUR_kulac.dds"
 		traits = { air_controller trait_TUR_gulen_champion}
 	}
-	
+
 	load_OOB = TUR_civilwar_1
 		TUR = {
 	         declare_war_on = { target = MTU type = annex_everything }
@@ -37174,7 +37174,7 @@ add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
 		planning_skill = 2
 		logistics_skill = 2
 	}
-	
+
 	create_corps_commander = {
 		name = "Metin Akkaya"
 		picture = "TUR_akkaya.dds"
@@ -37220,20 +37220,20 @@ add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
 		planning_skill = 2
 		logistics_skill = 3
 	}
-	
+
 	create_navy_leader = {
 		name = "Hasan Kulaç"
 		picture = "TUR_kulac.dds"
 		traits = { air_controller trait_TUR_gulen_champion}
 	}
-	
+
 	load_OOB = TUR_civilwar_1
                 load_OOB = TUR_civilwar_1_air
         MTU = { change_tag_from = TUR }
 		TUR = {
 	         declare_war_on = { target = MTU type = annex_everything }
 	}  } } } 
-	
+
 
 	option = {
 		name = TurkeyC.1.b
@@ -37247,7 +37247,7 @@ add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
 	set_global_flag = TUR_CIVILWAR_BEGIN
 add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
 			hidden_effect = { country_event = Turkey_news.8 } 
-     
+
 	hidden_effect = {
 	add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
 		MTU = {
@@ -37317,7 +37317,7 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 125}
 		planning_skill = 2
 		logistics_skill = 2
 	}
-	
+
 	create_corps_commander = {
 		name = "Metin Akkaya"
 		picture = "TUR_akkaya.dds"
@@ -37363,13 +37363,13 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 125}
 		planning_skill = 2
 		logistics_skill = 3
 	}
-	
+
 	create_navy_leader = {
 		name = "Hasan Kulaç"
 		picture = "TUR_kulac.dds"
 		traits = { air_controller trait_TUR_gulen_champion}
 	}
-	
+
 	load_OOB = TUR_civilwar_1
 		TUR = {
 	         declare_war_on = { target = MTU type = annex_everything }
@@ -37401,7 +37401,7 @@ country_event = {
 	option = {
 		name = TurkeyC.2.a
 		ai_chance = { factor = 1}
-    
+
 	retire_character = hursit_tolon
 	retire_character = sener_eruygur
 	retire_character = TUR_abidin_unal	
@@ -37436,7 +37436,7 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 125}
 	add_state_core = 155
 	add_state_core = 992
 	add_state_core = 1032
-		
+
 	load_OOB = TUR_civilwar_2
                 load_OOB = TUR_civilwar_1_air
 	         declare_war_on = { target = MTU type = annex_everything }
@@ -37623,7 +37623,7 @@ country_event = {
  desc = TurkeyC.5.desc
  picture = GFX_kirkuk
   fire_only_once = yes
-  
+
     trigger = {
 	         tag = TUR
     OR = {
@@ -37642,7 +37642,7 @@ country_event = {
 	option = {
 		name = TurkeyC.5.a
 		ai_chance = { factor = 1}
-    
+
 	hidden_effect = {
 	         declare_war_on = { target = KUR type = annex_everything }
 	KUR = {
@@ -37677,7 +37677,7 @@ country_event = {
 	remove_ideas = pr_necdet
 set_country_flag = MIT_FOCUS_LOCATION  
 	set_variable = { ruling_party = 14 }
-	
+
 		hidden_effect = {
 			clear_array = gov_coalition_array
 			set_variable = { ruling_party = max_index_1 }
@@ -37725,13 +37725,13 @@ add_named_threat = { threat = 3 name = MIT_REVOLUTION_OTT }
 				set_ruling_leader = yes
 				set_leader = yes
 			}
-		
+
 
                 set_politics = {
                 ruling_party = neutrality
                 elections_allowed = no
             }	
-			
+
 	set_global_flag = MIT_RISES_UP
     clr_global_flag = NO_MIT
     set_global_flag = YES_MIT
@@ -37792,8 +37792,8 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 365}
 	} }
     	         declare_war_on = { target = WTU type = annex_everything }
 	}
-} }
-} }
+} 
+
 
 
 
@@ -37811,7 +37811,7 @@ country_event = {
 	option = {
 		name = TurkeyCourt.1.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.03
 	custom_effect_tooltip = GOV_LOSS_POP_2
     country_event = MD4_election_campaign
@@ -37835,7 +37835,7 @@ country_event = {
 	option = {
 		name = TurkeyCourt.2.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 125
 	custom_effect_tooltip = GOV_LOSS_POP_3
 
@@ -37859,7 +37859,7 @@ country_event = {
 	option = {
 		name = TurkeyCourt.3.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	custom_effect_tooltip = GOV_LOSS_POP_3
 
@@ -37882,7 +37882,7 @@ country_event = {
 	option = {
 		name = TurkeyCourt.4.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.03
 	}
 }
@@ -37899,7 +37899,7 @@ country_event = {
 	option = {
 		name = TurkeyCourt.5.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -25
 	custom_effect_tooltip = GOV_LOSS_POP_2
 
@@ -37922,7 +37922,7 @@ country_event = {
 	option = {
 		name = TurkeyCourt.6.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 75
     add_stability = 0.02
 	}
@@ -37940,7 +37940,7 @@ country_event = {
 	option = {
 		name = TurkeyCourt.7.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
     add_political_power = 125
 	}
@@ -37958,7 +37958,7 @@ country_event = {
 	option = {
 		name = TurkeyCourt.8.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.03
 	}
 }
@@ -37976,7 +37976,7 @@ country_event = {
 	option = {
 		name = TurkeyT.1.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = 0.03
 	}
 }
@@ -37992,7 +37992,7 @@ country_event = {
 	option = {
 		name = TurkeyT.2.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -75
 	}
 }
@@ -38009,7 +38009,7 @@ country_event = {
 	option = {
 		name = TurkeyT.3.a
 		ai_chance = { factor = 1}
-    
+
 		add_timed_idea = { idea = economic_shifting_ease days = 365 }
 	}
 }
@@ -38025,7 +38025,7 @@ country_event = {
 	option = {
 		name = TurkeyT.4.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -35
 	add_stability = -0.01
 	}
@@ -38043,13 +38043,13 @@ country_event = {
 	option = {
 		name = TurkeyT.5.a
 		ai_chance = { factor = 1}
-    
+
 	    add_stability = 0.01
 		add_timed_idea = { idea = earthquake_preparations days = 30 } }
 		subtract_from_variable = { TUR_building_resistancy = -3}
 			custom_effect_tooltip = HOUSING_INCREASE_3
 	}
-} }
+
 
 ##Event:  Earthquake Preparations Rejected
 country_event = {
@@ -38062,7 +38062,7 @@ country_event = {
 	option = {
 		name = TurkeyT.6.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.01
 	}
 }
@@ -38079,7 +38079,7 @@ country_event = {
 	option = {
 		name = TurkeyT.7.a
 		ai_chance = { factor = 1}
-    
+
 	    add_stability = 0.07
 	}
 }
@@ -38095,7 +38095,7 @@ country_event = {
 	option = {
 		name = TurkeyT.8.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -10
 	}
 }
@@ -38112,7 +38112,7 @@ country_event = {
 	option = {
 		name = TurkeyT.9.a
 		ai_chance = { factor = 1}
-    
+
 	    add_command_power = 10.0
 	}
 }
@@ -38128,7 +38128,7 @@ country_event = {
 	option = {
 		name = TurkeyT.10.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -5
 	add_war_support = -0.01
 	}
@@ -38146,7 +38146,7 @@ country_event = {
 	option = {
 		name = TurkeyT.11.a
 		ai_chance = { factor = 1}
-    
+
 		add_timed_idea = { idea = corruption_change_ease days = 365 }
 	}
 }
@@ -38162,7 +38162,7 @@ country_event = {
 	option = {
 		name = TurkeyT.12.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = 50
 	add_stability = -0.02
 	}
@@ -38180,7 +38180,7 @@ country_event = {
 	option = {
 		name = TurkeyT.13.a
 		ai_chance = { factor = 1}
-    
+
 	    add_stability = 0.01
 	}
 }
@@ -38196,7 +38196,7 @@ country_event = {
 	option = {
 		name = TurkeyT.14.a
 		ai_chance = { factor = 1}
-    
+
 	add_political_power = -10
 	}
 }
@@ -38212,7 +38212,7 @@ country_event = {
 	option = {
 		name = TurkeyT.15.a
 		ai_chance = { factor = 1}
-    
+
 	    add_stability = 0.02
 	}
 }
@@ -38228,7 +38228,7 @@ country_event = {
 	option = {
 		name = TurkeyT.16.a
 		ai_chance = { factor = 1}
-    
+
 	    add_political_power = -10
 	}
 }
@@ -38245,7 +38245,7 @@ country_event = {
 	option = {
 		name = TurkeyT.17.a
 		ai_chance = { factor = 1}
-    
+
 	    add_political_power = 15
 	}
 }
@@ -38262,7 +38262,7 @@ country_event = {
 	option = {
 		name = TurkeyT.18.a
 		ai_chance = { factor = 1}
-    
+
 	    add_political_power = 25
 		add_war_support = -0.03
 	}
@@ -38288,7 +38288,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = TurkeyA.1.a
 		ai_chance = { factor = 1}
-    
+
 	add_stability = -0.02
 	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1
 } }
@@ -38613,7 +38613,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	option = {
 		name = TurkeyA.16.a
 		ai_chance = { factor = 1}
-    
+
 	country_event = TurkeyF.1
         AZE = { change_tag_from = TUR }	  
 } }
@@ -38643,7 +38643,7 @@ neutrality_neutral_libertarians_are_in_power = yes
 	option = {
 		name = TurkeyA.17.a
 		ai_chance = { factor = 1}
-    
+
 	country_event = TurkeyF.1
         AZE = { change_tag_from = TUR }	  
 	}
@@ -38950,7 +38950,7 @@ country_event = {
 	option = {
 		name = TurkeyA.29.a
 		ai_chance = { factor = 1}
-    
+
 	country_event = TurkeyF.1
         AZE = { change_tag_from = TUR }	
 	}
@@ -39042,7 +39042,7 @@ country_event = {
 	option = {
 		name = Turkey.112.a
 		ai_chance = { factor = 1}
-    
+
 
 	random_list = {	
 	5 = {
@@ -39153,7 +39153,7 @@ country_event = {
 	option = {
 		name = Turkey.112.a
 		ai_chance = { factor = 1}
-    
+
 		SOV = {
 			add_to_faction = CHI
 			add_to_faction = SER 
@@ -39204,7 +39204,7 @@ country_event = {
 	option = {
 		name = Turkey.112.a
 		ai_chance = { factor = 1}
-        
+
 		USA = {
 		give_guarantee = ISR
 		add_to_faction = ISR
@@ -39264,7 +39264,7 @@ country_event = {
 	option = {
 		name = Turkey.112.a
 		ai_chance = { factor = 1}
-        
+
 		USA = {
 		give_guarantee = ISR
 		}
@@ -39318,7 +39318,7 @@ country_event = {
 	option = {
 		name = Turkey.112.a
 		ai_chance = { factor = 1}
-        
+
 		USA = {
 		give_guarantee = ISR
 		}
@@ -39346,7 +39346,7 @@ country_event = {
 			subtract_from_variable = { treasury = -75000.0 }
 			custom_effect_tooltip = 75000_billion_expense_tt
  		 } } } } 
-	
+
 
 ######################### Leader Aging #########################
 
@@ -39468,7 +39468,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.2.a
 		ai_chance = { factor = 1}
-    
+
 		set_country_flag = CHP_FOCUS_LOCATION
         set_country_flag = CHP_government
 			load_focus_tree = MD_TUR_CHP
@@ -39516,7 +39516,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.3.a
 		ai_chance = { factor = 1}
-    
+
 
 		set_country_flag = DSP_FOCUS_LOCATION
         set_country_flag = DSP_government
@@ -39567,7 +39567,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.4.a
 		ai_chance = { factor = 1}
-    
+
 			load_focus_tree = MD_TUR_MHF
         set_country_flag = MHP_government
 			add_ideas = AI_powerhold_3
@@ -39611,7 +39611,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.5.a
 		ai_chance = { factor = 1}
-    
+
 
 			load_focus_tree = MD_TUR_MIL
         set_country_flag = MIL_government
@@ -39662,7 +39662,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.6.a
 		ai_chance = { factor = 1}
-    
+
 			load_focus_tree = MD_TUR_SAADET
 set_country_flag = SAADET_FOCUS_LOCATION 
         set_country_flag = SAA_government
@@ -39710,7 +39710,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.7.a
 		ai_chance = { factor = 1}
-    
+
 		set_country_flag = GENC_FOCUS_LOCATION
         set_country_flag = GEN_government
 			load_focus_tree = MD_TUR_GENC
@@ -39760,7 +39760,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.8.a
 		ai_chance = { factor = 1}
-    
+
 				add_ideas = AI_powerhold_4
  set_country_flag = HEPAR_FOCUS_LOCATION
          set_country_flag = HEP_government
@@ -39820,7 +39820,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.9.a
 		ai_chance = { factor = 1}
-    
+
 			load_focus_tree = MD_TUR_TKP 
 	set_country_flag = TKP_FOCUS_LOCATION
 			add_ideas = AI_powerhold_2
@@ -39842,7 +39842,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 				recalculate_party = yes
 			}
 			  }
-			
+
 		}
 }
 
@@ -39867,7 +39867,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.10.a
 		ai_chance = { factor = 1}
-    
+
 		set_country_flag = ANAP_FOCUS_LOCATION
         set_country_flag = ANA_government
 			load_focus_tree = MD_TUR_ANAP
@@ -39916,7 +39916,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.11.a
 		ai_chance = { factor = 1}
-    
+
 		set_country_flag = LDP_FOCUS_LOCATION
         set_country_flag = LDP_government
 			load_focus_tree = MD_TUR_LDP
@@ -40002,7 +40002,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.13.a
 		ai_chance = { factor = 1}
-    
+
 	load_focus_tree = MD_TUR_MAFIA
 	set_global_flag = TUR_mafias_organized
         set_country_flag = MAF_government
@@ -40112,7 +40112,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.15.a
 		ai_chance = { factor = 1}
-    
+
 			load_focus_tree = MD_TUR_OTT
 			add_ideas = AI_powerhold_3
 set_country_flag = OTT_FOCUS_LOCATION  
@@ -40144,7 +40144,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.16.a
 		ai_chance = { factor = 1}
-    
+
 add_named_threat = { threat = -2 name = RETURN_OF_ATATURK }
     add_stability = 0.15
 	news_event = Turkey_news.42
@@ -40201,7 +40201,7 @@ country_event = {
 	option = {
 		name = TurkeyAI.17.a
 		ai_chance = { factor = 1}
-    
+
 set_global_flag = TECHNOCRATIC_APPROACH
 set_country_flag = TECH_FOCUS_LOCATION 
         set_country_flag = TECH_government
@@ -40339,7 +40339,7 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
-	
+
 	random_list = {	
 	5 = {
  TUR_kemalist_turn_ally_effect = yes 
@@ -40367,7 +40367,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 				set_leader = yes
 			}
 		}	
-               
+
 
 
 	5 = {
@@ -40395,7 +40395,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 				set_ruling_leader = yes
 				set_leader = yes
 		}	}
-               
+
 
 
 	5 = {
@@ -40494,7 +40494,7 @@ set_global_flag = TECHNOCRATIC_APPROACH
 			}
 		}   
 	}
-	
+
 
 5 = {   
 	clr_global_flag = NO_MIT
@@ -40711,7 +40711,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 				set_leader = yes
 			}
 		}
-	
+
 	
 	5 = {
  TUR_kemalist_turn_ally_effect = yes 
@@ -40734,7 +40734,7 @@ set_country_flag = TKP_FOCUS_LOCATION
 				recalculate_party = yes
 			}
 			  }
-			
+
 		}
 
 	5 = {
@@ -40757,7 +40757,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 				recalculate_party = yes
 			}
 			  }
-			
+
 		} 
 
 	5 = {
