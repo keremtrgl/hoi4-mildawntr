@@ -1,4 +1,4 @@
-version="1.12.3A + 0.03.3"
+version="2.0.2-TUR"
 name="Millenium Dawn +Turkey"
 tags={
 	"Alternative History"
@@ -14,8 +14,7 @@ tags={
 }
 picture="thumbnail.png"
 dependencies={
-	"Millennium Dawn Developer Version"
 	"Millennium Dawn: A Modern Day Mod"
 }
-supported_version="1.17.*"
+supported_version="1.19.*"
 remote_file_id="2451505966"
