@@ -555,12 +555,12 @@ set_global_flag = ATA_BLOCK
 					level = 1
 					instant_build = yes
 				}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
 				category = CAT_fuel_refining
-			}
+			} }
 		} } }
 	focus = {
 		id = ATA_local_steel

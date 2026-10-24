@@ -929,7 +929,7 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-			add_stability = -0.01
+			owner = { add_stability = -0.01 }
 			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt
 		} } }
@@ -1024,7 +1024,7 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-			add_stability = -0.03
+			owner = { add_stability = -0.03 }
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
 		} } }
@@ -1062,7 +1062,7 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-			add_stability = 0.02
+			owner = { add_stability = 0.02 }
 			subtract_from_variable = { treasury = 10.0 }
 			custom_effect_tooltip = 10_billion_expense_tt
 		} } }
@@ -1108,7 +1108,7 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-			add_stability = 0.02
+			owner = { add_stability = 0.02 }
 		} } }
 	focus = {
 		id = TUR_digital_areas
@@ -1143,7 +1143,7 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-			add_stability = 0.03
+			owner = { add_stability = 0.03 }
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
 		} } }
@@ -1343,7 +1343,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 					instant_build = yes
 					level = 1
 				} 
-			add_stability = 0.07
+			owner = { add_stability = 0.07 }
 			subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_expense_tt
 		} } }
@@ -1699,7 +1699,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 					instant_build = yes
 					level = -1
 				} 
-			add_stability = 0.05
+			owner = { add_stability = 0.05 }
 			subtract_from_variable = { treasury = 10.0 }
 			custom_effect_tooltip = 10_billion_expense_tt
 		} } }
@@ -1862,11 +1862,11 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		
 		completion_reward = {
                 add_research_slot = 1
-				add_building_construction = {
+				capital_scope = { add_building_construction = {
 					type = infrastructure
 					instant_build = yes
 					level = 1
-				} 
+				} } 
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
 		} } 
@@ -1970,12 +1970,12 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 					level = 1
 					instant_build = yes
 				}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
 				category = CAT_fuel_refining
-			}
+			} }
 		} } }
 	focus = {
 		id = TUR_all_to_roads

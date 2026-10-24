@@ -4943,12 +4943,12 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
 				category = CAT_fuel_refining
-			}
+			} }
 		subtract_from_variable = { treasury = 50 }
 			custom_effect_tooltip = 50_billion_expense_tt
 			} }	}
@@ -5162,12 +5162,12 @@ swap_ideas = {
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_artillery
 				bonus = 0.5
 				uses = 1
 				category = CAT_artillery
-			}
+			} }
 		subtract_from_variable = { treasury = 50 }
 			custom_effect_tooltip = 50_billion_expense_tt
 			} }	}	
@@ -7508,12 +7508,12 @@ swap_ideas = {
 					instant_build = yes
 				}
 			}
-		add_tech_bonus = {
+		owner = { add_tech_bonus = {
 			name = industry
 			bonus = 0.5
 			uses = 1
 			category = industry
-		}	
+		} }	
 		subtract_from_variable = { treasury = 50 }
 			custom_effect_tooltip = 50_billion_expense_tt
 			} }	}	
@@ -7556,12 +7556,12 @@ swap_ideas = {
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_artillery
 				bonus = 0.5
 				uses = 1
 				category = CAT_artillery
-			}
+			} }
 		subtract_from_variable = { treasury = 50 }
 			custom_effect_tooltip = 50_billion_expense_tt
 			} }	}	

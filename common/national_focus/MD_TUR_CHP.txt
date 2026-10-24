@@ -750,11 +750,11 @@ swap_ideas = {
 
 		completion_reward = {
                 add_research_slot = 1
-				add_building_construction = {
+				capital_scope = { add_building_construction = {
 					type = infrastructure
 					instant_build = yes
 					level = 1
-				} 
+				} } 
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
 		} }
@@ -1025,12 +1025,12 @@ swap_ideas = {
 					level = 1
 					instant_build = yes
 				}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
 				category = CAT_fuel_refining
-			}
+			} }
 		} } }
 	focus = {
 		id = CHP_batman_oilground
@@ -1075,12 +1075,12 @@ swap_ideas = {
 					level = 1
 					instant_build = yes
 				}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
 				category = CAT_fuel_refining
-			}
+			} }
 		} } }
 	focus = {
 		id = CHP_southern_oil_deposits

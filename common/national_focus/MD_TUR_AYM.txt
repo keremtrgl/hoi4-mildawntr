@@ -3958,7 +3958,7 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-			add_stability = 0.02
+			owner = { add_stability = 0.02 }
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
 		} } }
@@ -5539,7 +5539,7 @@ diplomatic_relation = {
 				set_temp_variable = { tag_index = USA.id }
 				change_influence_percentage = yes
 			}
-			add_stability = 0.03
+			owner = { add_stability = 0.03 }
 		} } }
 	focus = {
 		id = AYM_approachment_with_eu
@@ -6004,7 +6004,7 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -3000 }
+	 owner = { add_equipment_to_stockpile = {	type = infantry_weapons_type amount = -3000 } }
 	 GEO = {
 	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 			} }

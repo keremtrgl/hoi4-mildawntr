@@ -6094,12 +6094,12 @@ subtract_from_variable = { treasury = 100.0 }
 					level = 1 
 					instant_build = yes
 				}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
 				category = CAT_fuel_refining
-			}
+			} }
 	  			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt	
 			}
@@ -6142,12 +6142,12 @@ subtract_from_variable = { treasury = 100.0 }
 					level = 1
 					instant_build = yes
 				}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
 				category = CAT_fuel_refining
-			}
+			} }
 	  			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt	
 			}
@@ -6221,12 +6221,12 @@ subtract_from_variable = { treasury = 100.0 }
 					level = 1
 					instant_build = yes
 				}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
 				category = CAT_fuel_refining
-			}
+			} }
 	  			subtract_from_variable = { treasury = 30.0 }
 			custom_effect_tooltip = 30_billion_expense_tt	
 			}
@@ -6324,12 +6324,12 @@ subtract_from_variable = { treasury = 100.0 }
 					level = 1
 					instant_build = yes
 				}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 2
 				category = CAT_fuel_refining
-			}
+			} }
 	  			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt	
 		}

@@ -2100,7 +2100,7 @@ swap_ideas = {
 				} 
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
-			add_stability = 0.02
+			owner = { add_stability = 0.02 }
 		} } }
 	focus = {
 		id = TECH_EU_offices
@@ -2138,7 +2138,7 @@ swap_ideas = {
 				} 
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
-			add_stability = 0.02
+			owner = { add_stability = 0.02 }
 		} } }
 	focus = {
 		id = TECH_reorganize_the_stability
@@ -3055,12 +3055,12 @@ add_political_power = 75
 					level = 1
 					instant_build = yes
 				}
-			add_tech_bonus = {
+			owner = { add_tech_bonus = {
 				name = CAT_fuel_refining
 				bonus = 0.5
 				uses = 1
 				category = CAT_fuel_refining
-			}
+			} }
 				} } }
 	focus = {
 		id = TECH_wealth_irons
@@ -3930,7 +3930,7 @@ swap_ideas = {
 		search_filters = {FOCUS_FILTER_EXPENDITURE}		
 		
 		completion_reward = {
-			add_extra_state_shared_building_slots = 1
+			capital_scope = { add_extra_state_shared_building_slots = 1 }
 			934 = { 
 				add_building_construction = {
 					type = offices
@@ -6775,16 +6775,20 @@ add_war_support = 0.1
 					instant_build = yes
 					level = 1
 				}
-			}
+			
 			add_extra_state_shared_building_slots = 1
+		}
+			
 			992 = { 
 				add_building_construction = {
 					type = arms_factory
 					instant_build = yes
 					level = 1
 				}
-			}
+			
 			add_extra_state_shared_building_slots = 1
+		}
+			
 			160 = { 
 				add_building_construction = {
 					type = arms_factory

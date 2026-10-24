@@ -887,7 +887,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 					instant_build = yes
 					level = 1
 				}
-			add_stability = 0.05
+			owner = { add_stability = 0.05 }
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
 		} } }
