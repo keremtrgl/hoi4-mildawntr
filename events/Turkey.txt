@@ -7132,7 +7132,7 @@ country_event = {
     trigger = {
          tag = TUR
  NOT = { has_completed_focus = CHP_a_new_start_for_turkey}
-        has_completed_focus = TUR_victory_of_national_alliance
+        always = no
 		 NOT = {
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
@@ -14989,7 +14989,7 @@ country_event = {
 	         date < 2008.5.1
          }
 		 NOT = {
-		has_completed_focus = TUR_367_CRISIS
+		always = no
 		 has_government = fascism
 		 has_capitulated = yes
 		 } 
@@ -16968,7 +16968,7 @@ country_event = {
     trigger = {
          tag = TUR
  NOT = { has_completed_focus = CHP_a_new_start_for_turkey}
-        has_completed_focus = TUR_victory_of_national_alliance
+        always = no
 		 NOT = {
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
@@ -32346,7 +32346,7 @@ country_event = {
  is_triggered_only = yes
 
     trigger = {
-	has_completed_focus = TUR_tkp_victory
+	always = no
 	date > 2009.1.1	
     }
 
@@ -33998,7 +33998,7 @@ country_event = {
 	trigger = {
 		tag = TUR
 		PER = {
-		has_completed_focus = PER_islamic_resistance_of_the_najba
+		always = no
 		}
 	}
 
