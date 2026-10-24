@@ -236,9 +236,10 @@ focus_tree = {
     has_global_flag = TUR_turkic_unification
     }			
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
 				uses = 1
-				bonus = 0.5
 				category = land_doctrine
 			} } 
 		}

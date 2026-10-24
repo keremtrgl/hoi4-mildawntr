@@ -1,0 +1,20 @@
+# Millennium Dawn 2.0.2 Turkish characters still referenced by MD ideas
+characters = {
+	TUR_bulent_ecevit = {
+		name = "Bülent Ecevit"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUR/Bulent_Ecevit.dds"
+			}
+		}
+		country_leader = {
+			desc = "TUR_bulent_ecevit_desc"
+			ideology = socialism
+			traits = {
+				western_socialism
+				writer
+				honest
+			}
+		}
+	}
+}

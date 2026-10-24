@@ -2088,7 +2088,7 @@ country_event = {
 
     trigger = {
          tag = TUR
-		 has_tech = internet3
+		 has_tech = internet_3
 		 NOT = {
 		 has_government = fascism
 		 		 has_global_flag = TUR_MAFIATIC_TR
@@ -2120,7 +2120,7 @@ country_event = {
 
     trigger = {
          tag = TUR
-		 has_tech = internet3
+		 has_tech = internet_3
 		 NOT = {
 		 has_government = fascism
 		 		 has_global_flag = TUR_MAFIATIC_TR
@@ -4472,7 +4472,7 @@ country_event = {
 
     trigger = {
          tag = TUR
-		 has_tech = internet4
+		 has_tech = internet_4
 		 NOT = {
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
@@ -7466,7 +7466,7 @@ country_event = {
 
     trigger = {
          tag = TUR
-		 has_tech = internet5
+		 has_tech = internet_5
          AND = {
              date > 2021.1.8
 	         date < 2021.2.8
@@ -8300,7 +8300,7 @@ country_event = {
 
     trigger = {
          tag = TUR
-		 has_idea = the_euro
+		 has_idea = euro
     }
 
     mean_time_to_happen = {days = 1}
@@ -37804,7 +37804,7 @@ country_event = {
 
 	add_stability = -0.03
 	custom_effect_tooltip = GOV_LOSS_POP_2
-    country_event = MD4_election_campaign
+    country_event = MD4_election_campaign.0
 
 			set_party_index_to_ruling_party = yes
 			set_temp_variable = { party_popularity_decrease = 0.03 }

@@ -21,7 +21,7 @@ TUR_mafia_category = {
 #
 TUR_mafia_influence_mechanic = {
 
-	icon = political_actions
+	icon = GFX_decision_generic_civil_support
 	scripted_gui = Turkey_mafia_system
 	allowed = {
 		original_tag = TUR
@@ -42,3 +42,14 @@ TUR_mafia_influence_mechanic = {
 	}
 }
 #
+
+# Restored from Millennium Dawn 2.0.2 (used by restored MD decisions)
+TUR_rebuilding_kurdistan = {
+	allowed = { original_tag = TUR }
+
+	icon = GFX_decision_category_generic_industry
+	priority = 300
+	visible_when_empty = yes
+
+	visible = { has_country_flag = TUR_PKK_reconciliation }
+}

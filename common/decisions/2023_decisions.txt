@@ -301,7 +301,7 @@ nuclear_energy_generation_modifier = -0.25
 
 
      TUR_strikes_recovery_greenish = {    
-          icon = GFX_decision_relations_dec	  
+          icon = GFX_decision_relation	  
           allowed = { tag = TUR }                 
           available = {   
                 has_global_flag = Inevitable  
@@ -932,7 +932,7 @@ set_global_flag = TUR_IN_GREEN_STRIKE_RECOVERY
 ############################### Green Energy Question Fossilpowerplant ##################################################
 
      TUR_anti_green_building_50 = {    
-          icon = GFX_decision_riots_dec
+          icon = GFX_decision_generic_protection
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -994,7 +994,7 @@ set_global_flag = TUR_IN_GREEN_STRIKE_RECOVERY
 				} } }
 
      TUR_anti_green_building_60 = {    
-          icon = GFX_decision_riots_dec
+          icon = GFX_decision_generic_protection
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1057,7 +1057,7 @@ set_global_flag = TUR_IN_GREEN_STRIKE_RECOVERY
 
 
      TUR_anti_green_building_70 = {    
-          icon = GFX_decision_riots_dec
+          icon = GFX_decision_generic_protection
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1120,7 +1120,7 @@ set_global_flag = TUR_IN_GREEN_STRIKE_RECOVERY
 
 
      TUR_anti_green_building_80 = {    
-          icon = GFX_decision_riots_dec
+          icon = GFX_decision_generic_protection
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1182,7 +1182,7 @@ set_global_flag = TUR_IN_GREEN_STRIKE_RECOVERY
 				} } }
 
      TUR_anti_green_building_90 = {    
-          icon = GFX_decision_riots_dec
+          icon = GFX_decision_generic_protection
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1245,7 +1245,7 @@ set_global_flag = TUR_IN_GREEN_STRIKE_RECOVERY
 
 
      TUR_anti_green_building_100 = {    
-          icon = GFX_decision_riots_dec
+          icon = GFX_decision_generic_protection
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1308,7 +1308,7 @@ set_global_flag = TUR_IN_GREEN_STRIKE_RECOVERY
 
 
      TUR_anti_green_building_110 = {    
-          icon = GFX_decision_riots_dec
+          icon = GFX_decision_generic_protection
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1371,7 +1371,7 @@ set_global_flag = TUR_IN_GREEN_STRIKE_RECOVERY
 
 
      TUR_anti_green_building_120 = {    
-          icon = GFX_decision_riots_dec
+          icon = GFX_decision_generic_protection
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1434,7 +1434,7 @@ set_global_flag = TUR_IN_GREEN_STRIKE_RECOVERY
 
 
      TUR_anti_green_building_130 = {    
-          icon = GFX_decision_riots_dec
+          icon = GFX_decision_generic_protection
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1497,7 +1497,7 @@ set_global_flag = TUR_IN_GREEN_STRIKE_RECOVERY
 
 
      TUR_anti_green_building_140 = {    
-          icon = GFX_decision_riots_dec
+          icon = GFX_decision_generic_protection
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1560,7 +1560,7 @@ set_global_flag = TUR_IN_GREEN_STRIKE_RECOVERY
 
 
      TUR_anti_green_building_150 = {    
-          icon = GFX_decision_riots_dec
+          icon = GFX_decision_generic_protection
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1873,7 +1873,7 @@ check_variable = { var = TUR_the_power_of_covid value = 1 compare = less_than_or
 	} 
 
      TUR_covid_increase_2020 = {    
-          icon = GFX_zsr_parlament
+          icon = GFX_decision_zsr_parlament
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1893,7 +1893,7 @@ check_variable = { var = TUR_the_power_of_covid value = 1 compare = less_than_or
         }
 
      TUR_covid_increase_2021 = {    
-          icon = GFX_zsr_parlament
+          icon = GFX_decision_zsr_parlament
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
@@ -1913,7 +1913,7 @@ check_variable = { var = TUR_the_power_of_covid value = 1 compare = less_than_or
         }
 
      TUR_covid_increase_2022 = {    
-          icon = GFX_zsr_parlament
+          icon = GFX_decision_zsr_parlament
           allowed = { tag = TUR }                 
           available = {  
 			has_global_flag = Inevitable                                        
