@@ -1,0 +1,105 @@
+# Turkey submod: AI path selection for Turkey (separate from MD's own TUR_ai_behavior rule)
+TUR_submod_ai_behavior = {
+	name = "TUR_SUBMOD_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = CLASSIC_REGIME_OF_ERDOGAN
+		text = "CLASSIC_REGIME_OF_ERDOGAN"
+		desc = "CLASSIC_REGIME_OF_ERDOGAN_DESC"
+	}
+	option = {
+		name = LIBERAL_REFORM_OF_AKP
+		text = "LIBERAL_REFORM_OF_AKP"
+		desc = "LIBERAL_REFORM_OF_AKP_DESC"
+	}
+	option = {
+		name = CHP_TAKE_OVER
+		text = "CHP_TAKE_OVER"
+		desc = "CHP_TAKE_OVER_DESC"
+	}
+	option = {
+		name = DSP_TAKE_OVER
+		text = "DSP_TAKE_OVER"
+		desc = "DSP_TAKE_OVER_DESC"
+	}
+	option = {
+		name = MHP_TAKE_OVER
+		text = "MHP_TAKE_OVER"
+		desc = "MHP_TAKE_OVER_DESC"
+	}
+	option = {
+		name = JUNTA_TAKE_OVER
+		text = "JUNTA_TAKE_OVER"
+		desc = "JUNTA_TAKE_OVER_DESC"
+	}
+	option = {
+		name = SAADET_TAKE_OVER
+		text = "SAADET_TAKE_OVER"
+		desc = "SAADET_TAKE_OVER_DESC"
+	}
+	option = {
+		name = GENC_TAKE_OVER
+		text = "GENC_TAKE_OVER"
+		desc = "GENC_TAKE_OVER_DESC"
+	}
+	option = {
+		name = HEPAR_TAKE_OVER
+		text = "HEPAR_TAKE_OVER"
+		desc = "HEPAR_TAKE_OVER_DESC"
+	}
+	option = {
+		name = TKP_TAKE_OVER
+		text = "TKP_TAKE_OVER"
+		desc = "TKP_TAKE_OVER_DESC"
+	}
+	option = {
+		name = ANAP_TAKE_OVER
+		text = "ANAP_TAKE_OVER"
+		desc = "ANAP_TAKE_OVER_DESC"
+	}
+	option = {
+		name = LDP_TAKE_OVER
+		text = "LDP_TAKE_OVER"
+		desc = "LDP_TAKE_OVER_DESC"
+	}
+	option = {
+		name = ANARCHIST_TAKE_OVER
+		text = "ANARCHIST_TAKE_OVER"
+		desc = "ANARCHIST_TAKE_OVER_DESC"
+	}
+	option = {
+		name = MAFIA_TAKE_OVER
+		text = "MAFIA_TAKE_OVER"
+		desc = "MAFIA_TAKE_OVER_DESC"
+	}
+	option = {
+		name = AYM_TAKE_OVER
+		text = "AYM_TAKE_OVER"
+		desc = "AYM_TAKE_OVER_DESC"
+	}
+	option = {
+		name = OSMAN_TAKE_OVER
+		text = "OSMAN_TAKE_OVER"
+		desc = "OSMAN_TAKE_OVER_DESC"
+	}
+	option = {
+		name = TECH_TAKE_OVER
+		text = "TECH_TAKE_OVER"
+		desc = "TECH_TAKE_OVER_DESC"
+	}
+	option = {
+		name = MIT_TAKE_OVER
+		text = "MIT_TAKE_OVER"
+		desc = "MIT_TAKE_OVER_DESC"
+	}
+	option = {
+		name = ATATURK_TAKE_OVER
+		text = "ATATURK_TAKE_OVER"
+		desc = "ATATURK_TAKE_OVER_DESC"
+	}
+}
