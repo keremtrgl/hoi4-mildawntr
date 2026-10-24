@@ -1,0 +1,13 @@
+TUR_startup = {
+	set_variable = { TUR_union_acceptance = -35 }
+
+	set_variable = { TUR_union_uneasiness = 15 }
+	set_variable = { TUR_union_political_level = 3 }
+}
+TUR_union_acceptance = {
+	clamp_variable = {
+		var = TUR_union_acceptance
+		min = 0
+		max = 100
+	}
+}

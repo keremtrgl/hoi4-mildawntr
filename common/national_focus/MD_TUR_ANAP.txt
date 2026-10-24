@@ -1,0 +1,5624 @@
+focus_tree = {
+	id = MD_TUR_ANAP
+	default = no
+
+	focus = {
+		id = ANAP_mesut_yilmaz_victory
+		icon = mesut_yilmaz
+		cost = 10,00
+		x = 14
+		y = 0
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+	        add_political_power = 75
+       custom_effect_tooltip = TUR_anap_normal
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16= 0.03 }
+				recalculate_party = yes
+			}			
+            add_stability = 0.02
+			}
+		}
+	focus = {
+		id = ANAP_talks_with_dyp
+		icon = tansu_mesut
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_mesut_yilmaz_victory
+		}
+		x = 14
+		y = 1
+
+			search_filters = {FOCUS_FILTER_POLITICAL}	
+    completion_reward = {
+	        add_political_power = 75
+       custom_effect_tooltip = TUR_anap_dyp_talks
+			}
+		}
+	focus = {
+		id = ANAP_side_the_unite
+		icon = treaty3
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_talks_with_dyp
+		}
+		mutually_exclusive = {
+			focus = ANAP_unside_the_unite
+		}
+		x = 13
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+    completion_reward = {
+	        add_political_power = -75
+       custom_effect_tooltip = TUR_anap_normal_decrease
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16= -0.03 }
+				recalculate_party = yes
+			}			
+            add_stability = 0.02
+			}
+		}
+	focus = {
+		id = ANAP_fund_dyp
+		icon = focus_generic_horse_studs
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_side_the_unite
+		}
+		x = 11
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		
+    completion_reward = {
+       custom_effect_tooltip = TUR_dyp_small
+			hidden_effect = {
+				add_to_variable = { party_pop_array^0= 0.01 }
+				recalculate_party = yes
+			}			
+            add_stability = -0.02
+			subtract_from_variable = { treasury = 1 }
+			custom_effect_tooltip = 1_billion_expense_tt
+			}
+		}
+	focus = {
+		id = ANAP_push_menderes_propagandas
+		icon = military_mission2
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_side_the_unite
+		}
+		x = 13
+		y = 3
+
+		
+    completion_reward = {
+       custom_effect_tooltip = TUR_dyp_small
+			hidden_effect = {
+				add_to_variable = { party_pop_array^0= 0.01 }
+				recalculate_party = yes
+			}			
+            custom_effect_tooltip = TUR_MIL_relations_22
+			}
+		}
+	focus = {
+		id = ANAP_unification_of_the_parties
+		icon = accept_treaty
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_push_menderes_propagandas
+		}
+		prerequisite = {
+			focus = ANAP_fund_dyp
+		}
+		x = 12
+		y = 4
+
+
+	completion_reward = {
+    set_global_flag = UNIFICATION_TRIGGERED
+					country_event = TurkeyF.36	
+				} }
+	focus = {
+		id = ANAP_unside_the_unite
+		icon = renounce_treaty
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_talks_with_dyp
+		}
+		mutually_exclusive = {
+			focus = ANAP_side_the_unite
+		}
+		x = 15
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+	        add_political_power = 75
+       custom_effect_tooltip = TUR_anap_normal
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16= 0.03 }
+				recalculate_party = yes
+			}			
+            add_stability = -0.02
+			}
+		}
+	focus = {
+		id = ANAP_reshape_the_resisting_kadro
+		icon = fallen_goverment_1
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_unside_the_unite
+		}
+		x = 15
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}		
+    completion_reward = {
+       custom_effect_tooltip = TUR_anap_normal_decrease
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16= 0.03 }
+				recalculate_party = yes
+			}			
+            add_stability = -0.02         
+			}
+		}
+	focus = {
+		id = ANAP_push_anti_dyp_news_in_the_news
+		icon = press_censorship
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_unside_the_unite
+		}
+		x = 17
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+			search_filters = {FOCUS_FILTER_EXPENDITURE}	
+			
+    completion_reward = {
+       custom_effect_tooltip = TUR_dyp_small_reserve
+			hidden_effect = {
+				add_to_variable = { party_pop_array^0= -0.01 }
+				recalculate_party = yes
+			}			
+			subtract_from_variable = { treasury = 1 }
+			custom_effect_tooltip = 1_billion_expense_tt            
+			}
+		}
+	focus = {
+		id = ANAP_protecting_its_values
+		icon = refuse_treaty
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_reshape_the_resisting_kadro
+		}
+		prerequisite = {
+			focus = ANAP_push_anti_dyp_news_in_the_news
+		}
+		x = 16
+		y = 4
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+    completion_reward = {
+           add_political_power = 100		
+            add_stability = 0.05  
+			}
+		}
+	focus = {
+		id = ANAP_end_the_political_question
+		icon = goal_JAP_defend_constitution
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_unification_of_the_parties
+			focus = ANAP_protecting_its_values
+		}
+		x = 14
+		y = 5
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+    completion_reward = {
+	        add_political_power = 100
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_bad_1_left_wing_sad
+}
+			}
+		}
+	focus = {
+		id = ANAP_protest_the_military_interventions_in_the_politics
+		icon = military_planning
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_end_the_political_question
+		}
+		x = 13
+		y = 6
+
+			search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
+    completion_reward = {
+	        custom_effect_tooltip = TUR_MIL_relations_23
+	        custom_effect_tooltip = TUR_ARMED_FORCES_planning_plot		
+				set_temp_variable = { temp_opinion = -15 }	
+            change_the_military_opinion = yes			
+			}
+		}
+	focus = {
+		id = ANAP_democratization_of_the_state
+		icon = blue_democracy
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_end_the_political_question
+		}
+		x = 15
+		y = 6
+		
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+            add_political_power = 25
+			add_stability = 0.03
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+             }				
+		}
+	focus = {
+		id = ANAP_weaken_centre_regime
+		icon = Focus_Rationing
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_end_the_political_question
+		}
+		x = 17
+		y = 6
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+				add_ideas = weakened_centralist_regime
+			}
+	}
+	focus = {
+		id = ANAP_working_bld
+		icon = parliament_box
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_weaken_centre_regime
+		}
+		x = 16
+		y = 7
+
+		
+	completion_reward = {
+				add_ideas = working_municipilites
+			}
+	}
+	focus = {
+		id = ANAP_redzyne_local_rule
+		icon = Generic_Hedonism
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_weaken_centre_regime
+		}
+		x = 18
+		y = 7
+
+			search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+				add_ideas = redzyned_local_rules
+			}
+	}
+	focus = {
+		id = ANAP_local_works
+		icon = Generic_Working_Women
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_redzyne_local_rule
+		}
+		x = 17
+		y = 8
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+				add_ideas = local_works
+			}
+	}
+	focus = {
+		id = ANAP_fund_the_local_rules
+		icon = Generic_Factionalism
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_redzyne_local_rule
+		}
+		x = 19
+		y = 8
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+			search_filters = {FOCUS_FILTER_STABILITY}
+			
+		completion_reward = {
+			add_stability = 0.03
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_legacy_of_turgut_ozal
+		icon = turgut_ozal
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_mesut_yilmaz_victory
+		}
+		x = 30
+		y = 1
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+    completion_reward = {
+	        add_political_power = 75
+			add_stability = 0.02
+       custom_effect_tooltip = TUR_anap_normal
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 2
+				category = CAT_industry
+			}
+			newline = yes
+			add_tech_bonus = {
+				name = CAT_Civilian
+				bonus = 0.5
+				uses = 2
+				category = CAT_Civilian
+			}
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16= 0.03 }
+				recalculate_party = yes
+			}
+		} }
+	focus = {
+		id = ANAP_redesign_the_economy_policy
+		icon = economic_prosperity
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_legacy_of_turgut_ozal
+		}
+		x = 30
+		y = 2
+		
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = reformed_2001_crisis
+  add_idea = reforms_for_2001_crisis
+} } }
+	focus = {
+		id = ANAP_promises_on_the_economy
+		icon = central_planned_economy3
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_redesign_the_economy_policy
+		}
+		x = 22
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+    completion_reward = {
+	        add_political_power = 15
+       custom_effect_tooltip = TUR_anap_small_increase
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16= 0.01 }
+				recalculate_party = yes
+			}
+		} }
+	focus = {
+		id = ANAP_morale_in_the_markets
+		icon = business_man2
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_redesign_the_economy_policy
+		}
+		x = 24
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = reforms_for_2001_crisis
+  add_idea = reformss_for_2001_crisis
+} } }
+	focus = {
+		id = ANAP_working_like_a_bee
+		icon = anap_bee
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_redesign_the_economy_policy
+		}
+		x = 27
+		y = 3
+		
+	completion_reward = {
+	            add_ideas = working_like_a_bee
+			}
+	}
+	focus = {
+		id = ANAP_cotton_industries
+		icon = mining_truck
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_working_like_a_bee
+		}
+		x = 26
+		y = 4
+
+
+	completion_reward = {
+	            add_ideas = cotton_industries
+			}
+	}
+	focus = {
+		id = ANAP_textile_industry
+		icon = sustainable_development
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_working_like_a_bee
+		}
+		x = 28
+		y = 4
+
+
+	completion_reward = {
+	            add_ideas = textile_industries
+			}
+	}
+	focus = {
+		id = ANAP_build_up_centre_anatolia
+		icon = GEO_Industrialize_the_Countryside
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_redesign_the_economy_policy
+		}
+		x = 30
+		y = 3
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			159 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_establish_military_factories_in_the_centre
+		icon = Generic_Underground_Factories
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_build_up_centre_anatolia
+		}
+		x = 30
+		y = 4
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			159 = { 
+add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_upgrade_military_factories_generation_5
+		icon = factory_complex
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_establish_military_factories_in_the_centre
+		}
+		x = 30
+		y = 5
+
+
+        available = {
+		controls_state = 159
+		controls_state = 157
+		controls_state = 156
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+		add_ideas = fifth_generation_military_industries
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}	
+			159 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			157 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			156 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			934 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_blacksea_navy_project
+		icon = Naval_Upgrade
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_redesign_the_economy_policy
+		}
+		x = 32
+		y = 3
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			160 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_industrialize_black_sea_borders
+		icon = industry2
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_blacksea_navy_project
+		}
+		x = 32
+		y = 4
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			160 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_build_up_the_istanbul
+		icon = broadway
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_redesign_the_economy_policy
+		}
+		x = 34
+		y = 3
+
+
+    available = {
+	controls_state = 934
+	}
+	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+ 		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+			934 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 3
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				} 
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_easier_transportation_in_istanbul
+		icon = centralization_question
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_build_up_the_istanbul
+		}
+		x = 34
+		y = 4
+
+
+    available = {
+	controls_state = 934
+	}
+	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+ 		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+			add_stability = 0.07
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_connected_airports
+		icon = fighter_plane
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_establish_military_factories_in_the_centre
+		}
+		prerequisite = {
+			focus = ANAP_industrialize_black_sea_borders
+		}
+		prerequisite = {
+			focus = ANAP_easier_transportation_in_istanbul
+		}
+		x = 32
+		y = 5
+
+
+        available = {
+		controls_state = 159
+		controls_state = 162
+		controls_state = 935
+		controls_state = 156
+		controls_state = 163
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+			search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		
+		completion_reward = {
+			159 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 3
+				}
+				} 
+			162 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 3
+				}
+				} 
+			935 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 3
+				}
+				}
+			156 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 3
+				}
+				}  				
+			163 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 3
+				} 
+				
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_countrywide_radios_iniative
+		icon = radio_communications
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_connected_airports
+		}
+		x = 30
+		y = 6
+
+
+        available = {
+		controls_state = 159
+		controls_state = 162
+		controls_state = 935
+		controls_state = 156
+		controls_state = 163
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+			search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		
+		completion_reward = {
+			159 = { 
+				add_building_construction = {
+					type = radar_station
+					instant_build = yes
+					level = 1
+				}
+				} 
+			162 = { 
+				add_building_construction = {
+					type = radar_station
+					instant_build = yes
+					level = 1
+				}
+				} 
+			935 = { 
+				add_building_construction = {
+					type = radar_station
+					instant_build = yes
+					level = 1
+				}
+				}
+			156 = { 
+				add_building_construction = {
+					type = radar_station
+					instant_build = yes
+					level = 1
+				}
+				}  				
+			163 = { 
+				add_building_construction = {
+					type = radar_station
+					instant_build = yes
+					level = 1
+				} 
+				
+			}
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_countrywide_roads_iniative
+		icon = Payment_on_roads
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_connected_airports
+		}
+		x = 34
+		y = 6
+
+
+        available = {
+		controls_state = 159
+		controls_state = 162
+		controls_state = 935
+		controls_state = 156
+		controls_state = 163
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+			search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		
+		completion_reward = {
+			159 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			162 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			935 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				}
+			156 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				}  				
+			163 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} 
+				
+			}
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_investment_policy
+		icon = business_man
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_redesign_the_economy_policy
+		}
+		x = 37
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+		completion_reward = {
+			add_political_power = 100
+			get_random_investment_targets = yes
+		} } 
+	focus = {
+		id = ANAP_visits_to_usa_and_uk
+		icon = align_to_america2
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_investment_policy
+		}
+		x = 36
+		y = 4
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+		completion_reward = {
+        add_opinion_modifier = { target = USA modifier = state_visists } 
+        add_opinion_modifier = { target = ENG modifier = state_visists }
+
+        reserve_opinion_modifier = { target = USA modifier = state_visists } 
+        reserve_opinion_modifier = { target = ENG modifier = state_visists }
+
+			set_temp_variable = { target_nation = USA.id }
+			set_temp_variable = { adding_nation = TUR.id }
+			change_permanent_investment_target = yes
+			set_temp_variable = { target_nation = TUR }
+			set_temp_variable = { adding_nation = USA }
+			change_permanent_investment_target = yes
+
+			set_temp_variable = { target_nation = ENG.id }
+			set_temp_variable = { adding_nation = TUR.id }
+			change_permanent_investment_target = yes
+			set_temp_variable = { target_nation = TUR }
+			set_temp_variable = { adding_nation = ENG }
+			change_permanent_investment_target = yes
+		} } 
+	focus = {
+		id = ANAP_receive_investments_civ
+		icon = industry_civilian
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_visits_to_usa_and_uk
+		}
+		x = 35
+		y = 5
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+		
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+		} } }
+	focus = {
+		id = ANAP_visits_to_nato
+		icon = arm_nato_defence
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_investment_policy
+		}
+		x = 38
+		y = 4
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+		completion_reward = {
+        add_opinion_modifier = { target = BEL modifier = state_visists }
+        reserve_opinion_modifier = { target = BEL modifier = state_visists }  
+		army_experience = 50
+
+			set_temp_variable = { target_nation = BEL.id }
+			set_temp_variable = { adding_nation = TUR.id }
+			change_permanent_investment_target = yes
+			set_temp_variable = { target_nation = TUR }
+			set_temp_variable = { adding_nation = BEL }
+			change_permanent_investment_target = yes
+
+		} } 
+	focus = {
+		id = ANAP_investments_on_dockyard
+		icon = naval_dockyard
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_visits_to_usa_and_uk
+		}
+		prerequisite = {
+			focus = ANAP_visits_to_nato
+		}
+		x = 37
+		y = 5
+
+
+        available = {
+		controls_state = 157
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+		
+		completion_reward = {
+			157 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}
+		} } }
+	focus = {
+		id = ANAP_for_the_happiness_of_working_people
+		icon = Fancy_Lady
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_end_the_political_question
+		}
+		x = 11
+		y = 6
+
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+	   add_stability = 0.03
+	   add_political_power = 10
+      }
+	}
+	focus = {
+		id = ANAP_make_the_politics_as_saying_we
+		icon = Generic_Working_Class_Family
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_for_the_happiness_of_working_people
+		}
+		x = 10
+		y = 7
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+				
+    completion_reward = {
+       custom_effect_tooltip = TUR_anap_normal
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16= 0.03 }
+				recalculate_party = yes
+			}			
+            add_stability = 0.05
+			}
+		}
+	focus = {
+		id = ANAP_disband_the_headscarves_ban
+		icon = muslim_women
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_make_the_politics_as_saying_we
+		}
+		prerequisite = {
+			focus = ANAP_respecting_the_islamic_values
+		}
+		x = 13
+		y = 8
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+			search_filters = {FOCUS_FILTER_POLITICAL}
+			search_filters = { FOCUS_FILTER_INTERNAL_FACTION }	
+			
+	completion_reward = {
+	        add_stability = 0.05
+			add_political_power = -150
+				set_temp_variable = { temp_opinion = -15 }	
+            change_the_military_opinion = yes	
+							clr_country_flag = banned_head_scarf
+				set_temp_variable = { temp_opinion = 20 }	
+            change_the_ulema_opinion = yes	
+				custom_effect_tooltip = TUR_MIL_relations_22
+				subtract_from_variable = { TUR_rel_anap = 3 }
+			}
+	}
+	focus = {
+		id = ANAP_build_roads
+		icon = Provincial_Funding_for_Roads
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_make_the_politics_as_saying_we
+		}
+		x = 11
+		y = 8
+
+
+        available = {
+		controls_state = 159
+		controls_state = 162
+		controls_state = 935
+		controls_state = 156
+		controls_state = 163
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+			search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		
+		completion_reward = {
+			159 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			162 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			935 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				}
+			156 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				}  				
+			163 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} 
+				
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_respecting_the_islamic_values
+		icon = islam
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_protest_the_military_interventions_in_the_politics
+		}
+		prerequisite = {
+			focus = ANAP_democratization_of_the_state
+		}
+		x = 14
+		y = 7
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+			search_filters = { FOCUS_FILTER_INTERNAL_FACTION }		
+			
+	completion_reward = {
+				set_temp_variable = { temp_opinion = 15 }	
+            change_the_ulema_opinion = yes
+				add_stability = 0.05
+			}
+	}
+	focus = {
+		id = ANAP_working_for_our_people
+		icon = family
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_make_the_politics_as_saying_we
+		}
+		x = 9
+		y = 8
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+       custom_effect_tooltip = TUR_anap_normal
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16= 0.03 }
+				recalculate_party = yes
+			}			
+            add_stability = 0.03
+			add_political_power = 50
+			}
+		}
+	focus = {
+		id = ANAP_working_SGK
+		icon = sgk
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_build_roads
+		}
+		prerequisite = {
+			focus = ANAP_working_for_our_people
+		}
+		x = 10
+		y = 9
+
+		
+	completion_reward = {
+				add_ideas = working_sgk
+			}
+	}
+	focus = {
+		id = ANAP_create_working_unions
+		icon = labor_unions
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_build_roads
+		}
+		prerequisite = {
+			focus = ANAP_disband_the_headscarves_ban
+		}
+		x = 12
+		y = 9
+
+		
+	completion_reward = {
+				add_ideas = unions_of_the_state
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_bad_1_right_wing_sad
+}
+			}
+	}
+	focus = {
+		id = ANAP_plan_the_new_strategies_to_defeat_terrorists
+		icon = brothers_in_arms
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_protect_the_eight_law
+		}
+		x = 17
+		y = 13
+		
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+			
+		completion_reward = {
+			add_war_support = 0.01
+			add_command_power = 25
+		} }
+	focus = {
+		id = ANAP_put_military_to_the_second_plan
+		icon = draw_up_war_plans
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_plan_the_new_strategies_to_defeat_terrorists
+		}
+		x = 16
+		y = 14
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+			
+		completion_reward = {
+			army_experience = -25
+			add_war_support = -0.07
+			add_stability = 0.02
+		} }
+	focus = {
+		id = ANAP_expand_the_kurdish_rights
+		icon = autonomy
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_plan_the_new_strategies_to_defeat_terrorists
+		}
+		x = 18
+		y = 14
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+        bypass = {
+        has_idea = kurdish_language_solutions_3
+        } 
+
+		completion_reward = {
+        add_ideas = kurdish_language_solutions_3
+		hidden_effect = {
+        remove_ideas = kurdish_language_solutions_5
+        remove_ideas = kurdish_language_solutions_4
+        remove_ideas = kurdish_language_solutions_2
+        remove_ideas = kurdish_language_solutions_1			
+			}
+		} }
+	focus = {
+		id = ANAP_train_civilian_corps
+		icon = Focus_Superior_Firepower_Doctrine
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_put_military_to_the_second_plan
+		}
+		prerequisite = {
+			focus = ANAP_expand_the_kurdish_rights
+		}
+		x = 17
+		y = 15
+
+
+	completion_reward = {
+				add_ideas = train_civilian_corps
+			}
+	}
+	focus = {
+		id = ANAP_local_defence_forces_of_civilians
+		icon = generic_entrenchment
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_train_civilian_corps
+		}
+		prerequisite = {
+			focus = ANAP_open_the_kurdish_television
+		}
+		prerequisite = {
+			focus = ANAP_border_security_first
+		}
+		x = 17
+		y = 16
+
+
+	completion_reward = {
+				swap_ideas = {
+				remove_idea = train_civilian_corps
+				add_idea = train_civilian_corps_better
+				}
+			}
+	}
+	focus = {
+		id = ANAP_border_security_first
+		icon = cctv2
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_put_military_to_the_second_plan
+		}
+		x = 15
+		y = 15
+
+	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+				add_ideas = border_security_first
+			}
+	}
+	focus = {
+		id = ANAP_open_the_kurdish_television
+		icon = support_the_left_right
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_expand_the_kurdish_rights
+		}
+		x = 19
+		y = 15
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+        bypass = {
+        has_idea = kurdish_language_solutions_5
+        } 
+
+		completion_reward = {
+        add_ideas = kurdish_language_solutions_5
+		hidden_effect = {
+        remove_ideas = kurdish_language_solutions_3
+        remove_ideas = kurdish_language_solutions_4
+        remove_ideas = kurdish_language_solutions_2
+        remove_ideas = kurdish_language_solutions_1			
+			}
+		} }
+	focus = {
+		id = ANAP_protect_the_eight_law
+		icon = stolen_papers
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_end_the_reforms_of_2006
+		}
+		x = 17
+		y = 12
+		
+		search_filters = {FOCUS_FILTER_STABILITY}
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+			
+		completion_reward = {
+		add_war_support = 0.07
+		add_stability = -0.02
+		} }
+	focus = {
+		id = ANAP_freedom_of_the_local_religions
+		icon = religious_unity
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_respecting_the_islamic_values
+		}
+		prerequisite = {
+			focus = ANAP_redzyne_local_rule
+		}
+		x = 15
+		y = 8
+
+		
+	completion_reward = {
+				add_ideas = local_religions_freedom
+			}
+	}
+	focus = {
+		id = ANAP_local_institutions
+		icon = generic_government
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_freedom_of_the_local_religions
+		}
+		prerequisite = {
+			focus = ANAP_local_works
+		}
+		prerequisite = {
+			focus = ANAP_fund_the_local_rules
+		}
+		x = 16
+		y = 9
+
+
+	completion_reward = {
+				add_ideas = local_institutions
+			}
+	}
+	focus = {
+		id = ANAP_send_money_to_our_people
+		icon = money_on_fire
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_for_the_happiness_of_working_people
+		}
+		x = 12
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+	completion_reward = {
+	   add_stability = 0.05
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+      }
+	}
+	focus = {
+		id = ANAP_local_banks
+		icon = business_man2
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_local_works
+		}
+		prerequisite = {
+			focus = ANAP_fund_the_local_rules
+		}
+		prerequisite = {
+			focus = ANAP_freedom_of_the_local_religions
+		}
+		x = 18
+		y = 9
+
+
+	completion_reward = {
+				add_ideas = local_banks
+			}
+	}
+	focus = {
+		id = ANAP_collected_economies_of_the_local_institutions
+		icon = central_planned_economy2
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_local_institutions
+		}
+		prerequisite = {
+			focus = ANAP_local_banks
+		}
+		x = 17
+		y = 10
+
+	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+				add_ideas = collected_economies_of_the_local_regions
+			}
+	}
+	focus = {
+		id = ANAP_protect_the_free_media
+		icon = liberal_press
+		cost = 7.2
+		prerequisite = {
+			focus = ANAP_create_working_unions
+		}
+		prerequisite = {
+			focus = ANAP_working_SGK
+		}
+		x = 11
+		y = 10
+
+			
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+				add_ideas = free_media_sponsored_state
+			}
+	}
+	focus = {
+		id = ANAP_end_the_reforms_of_2006
+		icon = roads_extend_plan
+		cost = 10,00
+		x = 14
+		y = 11
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+	available = {
+    has_completed_focus = ANAP_end_the_political_question	
+	}
+
+	completion_reward = {
+				add_political_power = 100
+			}
+	}
+	focus = {
+		id = ANAP_improve_the_lira_movement
+		icon = gold_standard
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_promises_on_the_economy
+		}
+		x = 22
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = lira_1
+  add_idea = lira_2
+} } }
+	focus = {
+		id = ANAP_remove_the_six_numbers
+		icon = lira
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_improve_the_lira_movement
+			focus = ANAP_establish_competition_authority
+		}
+		x = 23
+		y = 5
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = lira_2
+  add_idea = lira_3
+} } }
+	focus = {
+		id = ANAP_create_the_automotive_industry
+		icon = ossetia_car
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_textile_industry
+		}
+		prerequisite = {
+			focus = ANAP_cotton_industries
+		}
+		prerequisite = {
+			focus = ANAP_establish_competition_authority
+		}
+		x = 27
+		y = 5
+
+		
+	completion_reward = {
+	            add_ideas = new_created_automative_sector
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 2
+				category = CAT_fuel_oil
+			}
+			}
+	}
+	focus = {
+		id = ANAP_invite_german_helpers
+		icon = volkswagen
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_create_the_automotive_industry
+		}
+		x = 28
+		y = 6
+
+
+		available = {
+		 country_exists = GER
+		 NOT = {
+		 has_war_with = GER
+		  }
+		 }
+		 
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+		completion_reward = {
+        add_ideas = wolkswagen_technicans_tur
+		GER = {
+		add_ideas = wolkswagen_technicans_ger
+		} }
+	}
+	focus = {
+		id = ANAP_fund_the_automative_industry
+		icon = coins
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_create_the_automotive_industry
+		}
+		x = 26
+		y = 6
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		
+	completion_reward = {
+			add_stability = 0.01
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+				add_fuel = 15000
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 2
+				category = CAT_fuel_oil
+			}
+		}
+					}
+				}
+	focus = {
+		id = ANAP_turkish_cars_on_the_field
+		icon = import_economy
+		cost = 0,00
+		prerequisite = {
+			focus = ANAP_invite_german_helpers
+		}
+		prerequisite = {
+			focus = ANAP_fund_the_automative_industry
+		}
+		x = 27
+		y = 7
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = new_created_automative_sector
+  add_idea = good_created_automative_sector
+}
+      
+}   }
+	focus = {
+		id = ANAP_increase_up_the_confidence_of_the_economy
+		icon = ExpandTrade
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_an_economy_that_can_adapt_to_extraordinary_situations
+		}
+		x = 23
+		y = 7
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = lira_3
+  add_idea = lira_4
+} 
+	            remove_ideas = reformss_for_2001_crisis
+			}
+	}
+	focus = {
+		id = ANAP_establish_competition_authority
+		icon = rekabet_kurumu
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_morale_in_the_markets
+		}
+		x = 24
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+				add_ideas = competetion_authority
+			}
+	}
+	focus = {
+		id = ANAP_an_economy_that_can_adapt_to_extraordinary_situations
+		icon = economic_crisis
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_remove_the_six_numbers
+		}
+		x = 23
+		y = 6
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+	            add_ideas = adaptable_economy
+			}
+	}
+	focus = {
+		id = ANAP_receive_investments_mil
+		icon = industry_military
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_visits_to_nato
+		}
+		x = 39
+		y = 5
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+		
+		completion_reward = {
+			159 = { 
+add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+		} } }
+	focus = {
+		id = ANAP_build_up_the_east
+		icon = Generic_Public_Works
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_connected_airports
+		}
+		x = 32
+		y = 6
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			162 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_powerful_industry
+		icon = industrialization
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_countrywide_roads_iniative
+		}
+		prerequisite = {
+			focus = ANAP_build_up_the_east
+		}
+		prerequisite = {
+			focus = ANAP_countrywide_radios_iniative
+		}
+		x = 32
+		y = 7
+
+		available = {
+			num_of_factories > 150
+			}
+
+			search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+			
+		completion_reward = {
+        add_ideas = TUR_economic_power_house
+				}
+			}
+	focus = {
+		id = ANAP_education_strategy
+		icon = goal_JAP_education_rebuilding
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_end_the_reforms_of_2006
+		}
+		x = 11
+		y = 12
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+			add_stability = 0.03
+		} } 
+	focus = {
+		id = ANAP_fund_the_science
+		icon = fusion_science
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_education_strategy
+		}
+		x = 11
+		y = 13
+
+	
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+	completion_reward = {
+				add_ideas = funded_science
+			}
+	}
+	focus = {
+		id = ANAP_one_university_for_every_state
+		icon = research2
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_fund_the_science
+		}
+		x = 11
+		y = 14
+
+
+        available = {
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+		    add_research_slot = 1
+			934 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			155 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			156 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			157 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			159 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			160 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			163 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			935 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			162 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			992 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			158 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_modernize_the_bogazici
+		icon = free_higher_education
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_fund_the_science
+		}
+		x = 9
+		y = 14
+
+
+        available = {
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			934 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 2
+				}
+				} 
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = ANAP_modernize_the_marmara
+		icon = goal_JAP_protect_science
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_fund_the_science
+		}
+		x = 13
+		y = 14
+
+
+        available = {
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			934 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 2
+				}
+				} 
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} }
+	focus = {
+		id = ANAP_encouragement_instead_of_coercion
+		icon = goal_JAP_choose_research
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_one_university_for_every_state
+		}
+		prerequisite = {
+			focus = ANAP_modernize_the_marmara
+		}
+		prerequisite = {
+			focus = ANAP_modernize_the_bogazici
+		}
+		x = 11
+		y = 15
+	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+	completion_reward = {
+				add_ideas = encouragment_instead_of_coercion
+			}
+	}
+	focus = {
+		id = ANAP_redzyne_the_exams
+		icon = literacy_rate_improvment2
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_education_strategy
+		}
+		x = 13
+		y = 13
+
+	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+	completion_reward = {
+				add_ideas = improved_exams
+			}
+	}
+	focus = {
+		id = ANAP_power_of_the_education
+		icon = legislation
+		cost = 5,00
+		prerequisite = {
+			focus = ANAP_encouragement_instead_of_coercion
+		}
+		x = 11
+		y = 16
+
+	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+	completion_reward = {
+				add_ideas = believing_the_education_power
+			}
+	}
+	focus = {
+		id = ANAP_washington_competitions
+		icon = trade_with_america
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_establish_competition_authority
+		}
+		x = 25
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+			
+	completion_reward = {
+				add_political_power = 75
+				add_stability = 0.05
+				USA = {
+				add_stability = -0.03
+				add_war_support = 0.02
+				}
+			}
+	}
+	focus = {
+		id = ANAP_party_reorganization
+		icon = examine_foreign_laws
+		cost = 10,00
+		x = 14
+		y = 17
+
+	available = {
+    has_completed_focus = ANAP_end_the_political_question	
+	}
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+       custom_effect_tooltip = TUR_anap_normal
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16= 0.03 }
+				recalculate_party = yes
+			}		
+		add_political_power = -75
+        add_stability = 0.01		
+}   }
+	focus = {
+		id = ANAP_clamp_down_on_the_corruption
+		icon = focus_generic_buy_guns
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_party_reorganization
+		}
+		x = 15
+		y = 18
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_political_power = -25
+			decrease_corruption = yes
+      
+}   }
+	focus = {
+		id = ANAP_inside_visits
+		icon = BRA_cutting_the_red_tape
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_party_reorganization
+		}
+		x = 13
+		y = 18
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		add_political_power = 100
+        add_stability = 0.03		
+}   }
+	focus = {
+		id = ANAP_changes_in_the_ministers
+		icon = Focus_Northern_Expedition
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_inside_visits
+		}
+		x = 12
+		y = 19
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		add_political_power = 225
+        add_stability = -0.05
+       custom_effect_tooltip = TUR_anap_small_decrease
+			hidden_effect = {
+				add_to_variable = { party_pop_array^0= -0.01 }
+				recalculate_party = yes
+			}			
+}   }
+	focus = {
+		id = ANAP_protect_the_party_from_changing
+		icon = Fight_for_Freedom
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_inside_visits
+		}
+		prerequisite = {
+			focus = ANAP_clamp_down_on_the_corruption
+		}
+		x = 14
+		y = 19
+
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		add_political_power = -50
+        add_stability = 0.03
+       custom_effect_tooltip = TUR_anap_small_increase
+			hidden_effect = {
+				add_to_variable = { party_pop_array^0= 0.01 }
+				recalculate_party = yes
+			}			
+}   }
+	focus = {
+		id = ANAP_redzyne_the_party_program
+		icon = focus_consolidat
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_clamp_down_on_the_corruption
+		}
+		x = 16
+		y = 19
+
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		add_political_power = -10
+        add_stability = 0.01
+       custom_effect_tooltip = TUR_anap_small_increase
+			hidden_effect = {
+				add_to_variable = { party_pop_array^0= 0.01 }
+				recalculate_party = yes
+			}			
+}   }
+	focus = {
+		id = ANAP_touring_the_turkey
+		icon = intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_protect_the_party_from_changing
+		}
+		prerequisite = {
+			focus = ANAP_redzyne_the_party_program
+		}
+		prerequisite = {
+			focus = ANAP_changes_in_the_ministers
+		}
+		x = 14
+		y = 20
+		
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+			add_stability = 0.07
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_good_happy_everyone
+}
+		} } 
+	focus = {
+		id = ANAP_immigration_law
+		icon = refugees
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_mind_games
+		}
+		x = 19
+		y = 23
+
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}
+		
+	completion_reward = {
+	            add_ideas = immigration_law
+			}
+	}
+	focus = {
+		id = ANAP_mind_games
+		icon = play_our_hand
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_peace_state
+		}
+		x = 14
+		y = 22
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	completion_reward = {
+				add_ideas = mind_games
+set_global_flag = DISABLE_WAR_SYSTEM_PAR
+custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU			
+			}
+	}
+	focus = {
+		id = ANAP_infulence_politics
+		icon = enemy_of_china
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_mind_games
+		}
+		x = 14
+		y = 23
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	completion_reward = {
+	            swap_ideas = {
+				add_idea = mind_games_of_infulence
+				remove_idea = mind_games
+				}
+			}
+	}
+	focus = {
+		id = ANAP_strenghen_national_infulence
+		icon = national_unity
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_mind_games
+		}
+		x = 9
+		y = 23
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		
+    completion_reward = {
+	        add_political_power = -75
+			TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+			}
+		}
+	focus = {
+		id = ANAP_peace_state
+		icon = peace
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_touring_the_turkey
+		}
+		x = 14
+		y = 21
+
+	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+				add_ideas = peace_state
+			}
+	}
+	focus = {
+		id = ANAP_maximize_political_output
+		icon = generic_embrace_agrarian_society
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_political_maneuvers
+		}
+		prerequisite = {
+			focus = ANAP_ethuastic_speeches
+		}
+		x = 14
+		y = 25
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+	completion_reward = {
+	            swap_ideas = {
+				add_idea = maximixed_political_power_output
+				remove_idea = mind_games_of_infulence_and_man
+				}
+			}
+	}
+	focus = {
+		id = ANAP_political_maneuvers
+		icon = focus_drinks_peace
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_infulence_politics
+		}
+		x = 13
+		y = 24
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+	completion_reward = {
+	            swap_ideas = {
+				add_idea = mind_games_of_infulence_and_man
+				remove_idea = mind_games_of_infulence
+				}
+			}
+	}
+	focus = {
+		id = ANAP_ethuastic_speeches
+		icon = break_free2
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_infulence_politics
+		}
+		x = 15
+		y = 24
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+			
+		completion_reward = {
+			add_war_support = 0.07
+			add_stability = 0.02
+		} } 
+	focus = {
+		id = ANAP_infulence_drift_on_balkans
+		icon = balkan_conflict
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_maximize_political_output
+		}
+		x = 7
+		y = 26
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+			add_political_power = 125
+					}
+				}
+	focus = {
+		id = ANAP_investments_in_the_bulgaria
+		icon = align_to_bulgaria
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_infulence_drift_on_balkans
+		}
+		x = 5
+		y = 27
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = BUL
+		NOT = {
+		has_war_with = BUL
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = BUL
+    NOT = {
+	country_exists = BUL
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = BUL modifier = turkish_roads_project }
+			138 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			BUL = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+			set_temp_variable = { int_investment_change = 5.0 }
+			modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+			 
+	focus = {
+		id = ANAP_project_peace_in_greece
+		icon = focus_generic_befriend_greece
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_infulence_drift_on_balkans
+		}
+		x = 7
+		y = 27
+
+
+        available = {
+		country_exists = GRE
+		NOT = {
+		has_war_with = GRE
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GRE
+    NOT = {
+	country_exists = GRE
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+                    add_opinion_modifier = { target = GRE modifier = old_rival }			
+					reverse_add_opinion_modifier = { target = GRE modifier = old_rival }			
+				} }
+	focus = {
+		id = ANAP_thrace_mediator
+		icon = peace
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_project_peace_in_greece
+		}
+		prerequisite = {
+			focus = ANAP_investments_in_the_bulgaria
+		}
+		x = 6
+		y = 28
+
+	
+        available = {
+        NOT = {
+        has_war_with = BUL
+        has_war_with = GRE
+        has_war_with = TUR
+         }		
+        }
+		
+		bypass = {
+		controls_state = 974
+		}
+		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+custom_effect_tooltip = THRACE_MEDIATOR
+hidden_effect = {	
+BUL = {
+diplomatic_relation = { 
+	country = TUR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = GRE 
+	relation = non_aggression_pact 
+} }
+GRE = {
+diplomatic_relation = { 
+	country = TUR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BUL 
+	relation = non_aggression_pact 
+} }
+TUR = {
+diplomatic_relation = { 
+	country = BUL 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = GRE 
+	relation = non_aggression_pact 
+} } } } } 
+
+	focus = {
+		id = ANAP_muslim_europe
+		icon = muslim_europe
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_infulence_drift_on_balkans
+		}
+		x = 9
+		y = 27
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+			
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = ALB modifier = muslim_europe }
+					reverse_add_opinion_modifier = { target = BOS modifier = muslim_europe }					
+				} }
+	focus = {
+		id = ANAP_build_up_sofia_athens_istanbul_railway
+		icon = support_rail
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_thrace_mediator
+		}
+		x = 6
+		y = 29
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+			build_railway = {
+				path = { 4109 1109 976 3864 863 3973 3844 10163 3526 6857 9818 949 3973 6982 6814 11842 922 9833 }
+				level = 1
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_investments_in_albania
+		icon = align_to_albania
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_muslim_europe
+		}
+		x = 8
+		y = 28
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = ALB
+		NOT = {
+		has_war_with = ALB
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ALB
+    NOT = {
+	country_exists = ALB
+	 }
+	} }
+	
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = ALB modifier = turkish_roads_project }
+			138 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			ALB = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+			 
+	focus = {
+		id = ANAP_investments_in_bosnia
+		icon = align_to_bosnia
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_muslim_europe
+		}
+		x = 10
+		y = 28
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = BOS
+		NOT = {
+		has_war_with = BOS
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = BOS
+    NOT = {
+	country_exists = BOS
+	 }
+	} }
+	
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = BOS modifier = turkish_roads_project }
+			129 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			BOS = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_industrialize_romania_against_poorness
+		icon = align_to_romania
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_investments_in_the_bulgaria
+		}
+		x = 4
+		y = 28
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = ROM
+		NOT = {
+		has_war_with = ROM
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ROM
+    NOT = {
+	country_exists = ROM
+	 }
+	} }
+	
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = ROM modifier = turkish_roads_project }
+			150 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			284 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			152 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			ROM = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+			set_temp_variable = { int_investment_change = 50.0 }
+			modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_fund_romanian_institutions
+		icon = romania_republic
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_industrialize_romania_against_poorness
+		}
+		x = 4
+		y = 29
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	
+
+        available = {
+		country_exists = ROM
+		NOT = {
+		has_war_with = ROM
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ROM
+    NOT = {
+	country_exists = ROM
+	 }
+	} }
+	
+	completion_reward = {
+			ROM = {
+			add_stability = 0.05
+			}
+			set_temp_variable = { int_investment_change = 25.0 }
+			modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			ROM = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+				} }
+	focus = {
+		id = ANAP_expand_the_railways_to_the_bucharest
+		icon = great_railway_incident
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_build_up_sofia_athens_istanbul_railway
+		}
+		prerequisite = {
+			focus = ANAP_fund_romanian_institutions
+		}
+		x = 5
+		y = 30
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+			build_railway = {
+				path = { 4109 1109 976 3864 863 3973 3844 10163 3526 6857 9818 949 3973 6982 6814 11842 922 9833 793 11588 818 3636 9617}
+				level = 1
+			}
+			subtract_from_variable = { treasury = 1 }
+			custom_effect_tooltip = 1_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_investments_in_serbia
+		icon = align_to_serbia
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_investments_in_albania
+		}
+		prerequisite = {
+			focus = ANAP_investments_in_bosnia
+		}
+		x = 9
+		y = 29
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = SER
+		NOT = {
+		has_war_with = SER
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SER
+    NOT = {
+	country_exists = SER
+	 }
+	} }
+	
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = SER modifier = turkish_roads_project }
+			131 = {
+add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			SER = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 50.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_mediator_in_yugoslavia
+		icon = bread_and_peace
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_investments_in_serbia
+		}
+		x = 9
+		y = 30
+
+	
+        available = {
+        NOT = {
+        has_war_with = SER
+        has_war_with = KOS
+        has_war_with = FYR
+        has_war_with = BOS
+        has_war_with = CRO
+        has_war_with = SLV
+        has_war_with = MNT
+         }		
+        }
+		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+custom_effect_tooltip = YUGOSLAVIA_MEDIATOR
+hidden_effect = {
+SER = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = FYR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+KOS = {
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = FYR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+FYR = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+BOS = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = FYR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+CRO = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MAC 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+SLV = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = FYR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+MNT = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MAC 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+} } }
+					}
+				}
+	focus = {
+		id = ANAP_expand_railways_to_the_yugoslavia
+		icon = ser_balkan_federation
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_expand_the_railways_to_the_bucharest
+		}
+		prerequisite = {
+			focus = ANAP_mediator_in_yugoslavia
+		}
+		x = 7
+		y = 31
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+			build_railway = {
+				path = { 4109 1109 976 3864 863 3973 3844 10163 3526 6857 9818 949 3973 6982 6814 11842 922 9833 793 11588 818 3636 9617 11868 11887 9602 6998 414 11586}
+				level = 1
+			}
+			subtract_from_variable = { treasury = 100 }
+			custom_effect_tooltip = 100_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_infulence_drift_on_middle_east
+		icon = befriend_middle_east
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_maximize_political_output
+		}
+		x = 21
+		y = 26
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	completion_reward = {
+			add_political_power = 125
+					}
+				}
+	focus = {
+		id = ANAP_invest_in_iraq
+		icon = align_to_iraq
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_infulence_drift_on_middle_east
+		}
+		x = 19
+		y = 27
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = IRQ
+		NOT = {
+		has_war_with = IRQ
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = IRQ
+    NOT = {
+	country_exists = IRQ
+	 }
+	} }
+	
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = IRQ modifier = turkish_roads_project }
+			557 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			IRQ = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_plan_trancaucasia
+		icon = RUS_caucasus
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_maximize_political_output
+		}
+		x = 14
+		y = 26
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+			add_political_power = 125
+					}
+				}
+	focus = {
+		id = ANAP_open_gas_tunel_betweem_russia
+		icon = trade_with_russia
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_plan_trancaucasia
+		}
+		x = 14
+		y = 27
+
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+   bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }	
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+search_filters = {FOCUS_FILTER_POLITICAL}
+				search_filters = {FOCUS_FILTER_EXPENDITURE}
+				search_filters = {FOCUS_FILTER_RESOURCE}
+				
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 6
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 7
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+				type = fossil_powerplant
+				level = 1
+				instant_build = yes
+				}
+			}
+
+	  			subtract_from_variable = { treasury = 30.0 }
+			custom_effect_tooltip = 30_billion_expense_tt	
+		
+}   }
+	focus = {
+		id = ANAP_treaty_with_georgia
+		icon = align_to_georgia
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_open_gas_tunel_betweem_russia
+		}
+		x = 13
+		y = 28
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = GEO
+		NOT = {
+		has_war_with = GEO
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GEO
+    NOT = {
+	country_exists = GEO
+	 }
+	} }
+	
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GEO modifier = turkish_roads_project }
+			131 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			GEO = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+			set_temp_variable = { int_investment_change = 50.0 }
+			modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_treaty_with_azerbaijan
+		icon = align_to_azerbaijan
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_open_gas_tunel_betweem_russia
+		}
+		x = 15
+		y = 28
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = AZE
+		NOT = {
+		has_war_with = AZE
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = AZE
+    NOT = {
+	country_exists = AZE
+	 }
+	} }
+	
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = AZE modifier = turkish_roads_project }
+			131 = {
+add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			AZE = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+			set_temp_variable = { int_investment_change = 50.0 }
+			modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_baku_railway_to_ankara
+		icon = Generic_Railroads
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_treaty_with_azerbaijan
+		}
+		prerequisite = {
+			focus = ANAP_treaty_with_georgia
+		}
+		x = 14
+		y = 29
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+			build_railway = {
+				path = { 11747 804 3862 11826 919 3903 6950 3965 975 9932 3714 11753 7454 10403 9702 1599 12309 11674 4477 4614 7495 7661}
+				level = 1
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_anti_russian_aid
+		icon = attack_russia
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_treaty_with_georgia
+		}
+		x = 12
+		y = 29
+
+
+        available = {
+		country_exists = AZE
+		country_exists = GEO
+		NOT = {
+		has_war_with = AZE
+		has_war_with = GEO
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = AZE modifier = anti_russian_aid }
+					reverse_add_opinion_modifier = { target = GEO modifier = anti_russian_aid }
+			708 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+            add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			713 = {
+                add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+                add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_anti_armenian_aid
+		icon = armenian_militarism
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_treaty_with_azerbaijan
+		}
+		x = 16
+		y = 29
+	
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+        available = {
+		country_exists = AZE
+		country_exists = GEO
+		NOT = {
+		has_war_with = AZE
+		has_war_with = GEO
+		 }
+        }
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = AZE modifier = anti_armenian_aid }
+					reverse_add_opinion_modifier = { target = GEO modifier = anti_armenian_aid }
+			708 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			713 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_destroy_the_armenian
+		icon = attack_armenia
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_baku_railway_to_ankara
+		}
+		prerequisite = {
+			focus = ANAP_anti_armenian_aid
+		}
+		prerequisite = {
+			focus = ANAP_anti_russian_aid
+		}
+		x = 14
+		y = 30
+
+
+        available = {
+		country_exists = ARM
+		NOT = {
+		has_war_with = ARM
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ARM
+    NOT = {
+	country_exists = ARM
+	 }
+	} }
+	
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = ARM
+		}
+	} }
+	focus = {
+		id = ANAP_expand_railways_to_the_world
+		icon = infrastructure1
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_deploy_the_armenia
+		}
+		prerequisite = {
+			focus = ANAP_expand_railways_to_the_yugoslavia
+		}
+		prerequisite = {
+			focus = ANAP_egyptian_deal
+		}
+		x = 14
+		y = 32
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+			build_railway = {
+				path = { 4109 1109 976 3864 863 3973 3844 10163 3526 6857 9818 949 3973 6982 6814 11842 922 9833 793 11588 818 3636 9617 11868 11887 9602 6998 414 11586 11747 804 3862 11826 919 3903 6950 3965 975 9932 3714 11753 7454 10403 9702 1599 12309 11674 4477 4614 7495 7661 11829 11811 890 3905 6908 3807 921 6977 3921 886 806 3889 12029 1088 1108 792 11919 1065 1201 13207 4088 4161 11979 1155 12049 7011 3890 9860 11759 4512 12387 1549 10804 10106 11365 6826 11340 3302 5098 9816 8125 10922 10837}
+				level = 1
+			}
+			subtract_from_variable = { treasury = 100 }
+			custom_effect_tooltip = 100_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_deploy_the_armenia
+		icon = mgu_in_armenia
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_destroy_the_armenian
+		}
+		x = 14
+		y = 31
+
+
+        available = {
+		controls_state = 709
+        }
+			search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+			build_railway = {
+				path = { 11747 804 3862 11826 919 3903 6950 3965 975 9932 3714 11753 7454 10403 9702 1599 12309 11674 4477 4614 7495 7661 1254 12380 12320}
+				level = 1
+			}
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_improve_kurdish_relations
+		icon = align_to_kurdistan
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_infulence_drift_on_middle_east
+		}
+		x = 21
+		y = 27
+
+
+        available = {
+		country_exists = KUR
+		NOT = {
+		has_war_with = KUR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = KUR
+    NOT = {
+	country_exists = KUR
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = KUR modifier = good_relations_kurds }
+					}
+				}
+	focus = {
+		id = ANAP_push_referandum
+		icon = iraq_kurd_deal
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_improve_kurdish_relations
+		}
+		prerequisite = {
+			focus = ANAP_invest_in_iraq
+		}
+		prerequisite = {
+			focus = ANAP_invest_in_persia
+		}
+		x = 21
+		y = 28
+
+
+        available = {
+		country_exists = KUR
+		NOT = {
+		has_war_with = KUR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = KUR
+    NOT = {
+	country_exists = KUR
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					KUR = { country_event = TurkeyF.41 }
+				} }
+	focus = {
+		id = ANAP_invest_in_persia
+		icon = align_to_iran
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_infulence_drift_on_middle_east
+		}
+		x = 23
+		y = 27
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = PER
+		NOT = {
+		has_war_with = PER
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = PER
+    NOT = {
+	country_exists = PER
+	 }
+	} }
+	
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = PER modifier = turkish_roads_project }
+			405 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			PER = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = ANAP_tehran_deals
+		icon = iran_emblem
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_invest_in_persia
+		}
+		x = 23
+		y = 28
+
+
+        available = {
+		country_exists = PER
+		NOT = {
+		has_war_with = PER
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = PER
+    NOT = {
+	country_exists = PER
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					country_event = TurkeyF.38	
+					PER = {
+						country_event = TurkeyF.38					
+					}
+				} }
+	focus = {
+		id = ANAP_ensure_syrian_peace
+		icon = align_to_syria
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_oppose_rojava_situation
+		}
+		x = 21
+		y = 30
+
+       available = {
+		country_exists = SYR
+		NOT = {
+		has_war_with = SYR
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = SYR
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					give_guarantee = SYR
+					SYR = {
+					add_stability = 0.05
+					add_war_support = -0.05
+					 }
+					}
+				}
+	focus = {
+		id = ANAP_egyptian_deal
+		icon = align_to_egypt
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_ensure_syrian_peace
+		}
+		x = 21
+		y = 31
+
+
+        available = {
+		country_exists = EGY
+		NOT = {
+		has_war_with = EGY
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = EGY
+    NOT = {
+	country_exists = EGY
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					country_event = TurkeyF.39
+					PER = {
+						country_event = TurkeyF.39					
+					} } }
+	focus = {
+		id = ANAP_revive_baghadad_pact
+		icon = focus_TUR_treaty_of_saadabad
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_invest_in_iraq
+		}
+		x = 19
+		y = 28
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					PER = { country_event = TurkeyF.37 }
+					AFG = { country_event = TurkeyF.37 }
+					PER = { country_event = TurkeyF.37 }
+					IRQ = { country_event = TurkeyF.37 }
+				} }
+	focus = {
+		id = ANAP_oppose_rojava_situation
+		icon = attack_kurdistan2
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_push_referandum
+		}
+		prerequisite = {
+			focus = ANAP_tehran_deals
+		}
+		prerequisite = {
+			focus = ANAP_revive_baghadad_pact
+		}
+		x = 21
+		y = 29
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+
+        available = {
+		country_exists = ROJ
+		NOT = {
+		has_war_with = ROJ
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ROJ
+    NOT = {
+	country_exists = ROJ
+	 }
+	} }
+	
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = ROJ
+		}
+	} }
+	focus = {
+		id = ANAP_end_the_iniative
+		icon = enemy_of_china
+		cost = 15,00
+		prerequisite = {
+			focus = ANAP_expand_railways_to_the_world
+		}
+		x = 14
+		y = 33
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+	            add_ideas = turkish_gateway_project_finished
+			    custom_effect_tooltip = TUR_united_state
+					        				subtract_from_variable = { TUR_pop_KEM = -2 }
+								        				subtract_from_variable = { TUR_pop_KUR = 5 }
+	        				subtract_from_variable = { TUR_pop_ISL = -3 }
+			set_global_flag = TUR_UNITE_DIASPORA
+			hidden_effect = { news_event = Turkey_news.24 } 
+			TUR_remove_state_modifier_effects = yes
+			}
+	}
+	focus = {
+		id = ANAP_block_the_syrian_border
+		icon = attack_syria
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_immigration_law
+		}
+		x = 18
+		y = 24
+
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = SYR modifier = shut_down_the_borders }
+				custom_effect_tooltip = TUR_CLOSING_BORDERS_SYR
+			}
+	}
+	focus = {
+		id = ANAP_block_the_iraq_border
+		icon = iraqi_soldier
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_immigration_law
+		}
+		x = 20
+		y = 24
+
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = IRQ modifier = shut_down_the_borders }
+				custom_effect_tooltip = TUR_CLOSING_BORDERS_IRQ
+			}
+	}
+	focus = {
+		id = ANAP_immigration_buying
+		icon = money
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_block_the_iraq_border
+		}
+		prerequisite = {
+			focus = ANAP_block_the_syrian_border
+		}
+		x = 19
+		y = 25
+
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}
+		
+	completion_reward = {
+	            add_ideas = immigration_buying
+			}
+	}
+	focus = {
+		id = ANAP_attack_us_infulence
+		icon = attack_america
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_strenghen_national_infulence
+		}
+		x = 8
+		y = 24
+
+
+       available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = USA modifier = diplomatic_insults }
+	            					TUR = {
+				set_temp_variable = { percent_change = -3 }
+				set_temp_variable = { tag_index = USA.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+							add_political_power = -50
+					}
+				}
+	focus = {
+		id = ANAP_attack_chinese_infulence
+		icon = attack_china
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_strenghen_national_infulence
+		}
+		x = 10
+		y = 24
+
+
+       available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = diplomatic_insults }
+	       TUR = {
+				set_temp_variable = { percent_change = -3 }
+				set_temp_variable = { tag_index = CHI.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+							add_political_power = -50
+					}
+				}
+	focus = {
+		id = ANAP_national_covarage
+		icon = parliament_box
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_attack_chinese_infulence
+		}
+		prerequisite = {
+			focus = ANAP_attack_us_infulence
+		}
+		x = 9
+		y = 25
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		
+    completion_reward = {
+	        add_stability = 0.03
+			TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+			}
+		}
+
+
+	focus = {
+		id = TUR_armed_forces5
+		icon = TUR_military_regime
+		cost = 10,00
+		prerequisite = {
+			focus = ANAP_mesut_yilmaz_victory
+		}
+		x = 1
+		y = 1
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+    ai_will_do = {
+    factor = 0
+    }
+	
+		completion_reward = {
+        army_experience = 35
+}   }
+	focus = {
+		id = TUR_give_more_power_to_army5
+		icon = dangerous_laws
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_armed_forces5
+		}
+		x = 1
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		
+		completion_reward = {
+		add_political_power = -75
+        add_stability = -0.02
+		add_manpower = 15000
+}   }
+	focus = {
+		id = TUR_army_funds5
+		icon = money
+		cost = 5
+		prerequisite = {
+			focus = TUR_give_more_power_to_army5
+		}
+		x = 0
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+		completion_reward = {
+		add_political_power = 75
+			increase_military_spending = yes
+block_defence_decrease = yes
+      
+}   }
+	focus = {
+		id = TUR_nationalization_of_armed_forces5
+		icon = levant_and_anatolia
+		cost = 5
+		prerequisite = {
+			focus = TUR_give_more_power_to_army5
+		}
+		x = 2
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		
+		completion_reward = {
+    add_manpower = 50000
+} } 
+	focus = {
+		id = TUR_act_of_military5
+		icon = armed_forces_of_turkey
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_nationalization_of_armed_forces5
+		}
+		prerequisite = {
+			focus = TUR_army_funds5
+		}
+		x = 1
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+	completion_reward = {
+            add_command_power = 10
+			}
+	}
+	focus = {
+		id = TUR_modernization_of_armed_forces5
+		icon = military_mission
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_act_of_military5
+		}
+		x = -4
+		y = 5
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+		completion_reward = {
+        army_experience = 75
+			}  
+		}
+	focus = {
+		id = TUR_tank_modernization5
+		icon = Generic_Refit_Tanks
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_modernization_of_armed_forces5
+		}
+		x = -5
+		y = 6
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 1
+				bonus = 0.5
+				category = Cat_ARMOR
+			} } 
+		}
+	focus = {
+		id = TUR_altay_tank_project5
+		icon = tanks5
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_tank_modernization5
+		}
+		x = -6
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_ARMOR
+			} } 
+		}
+	focus = {
+		id = TUR_gun_modernization5
+		icon = Generic_Military_Equipment
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_modernization_of_armed_forces5
+		}
+		x = -3
+		y = 6
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_INF_WEP
+			} }
+		}
+	focus = {
+		id = TUR_artillery_modernizetion5
+		icon = artillery3
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_gun_modernization5
+		}
+		x = -2
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_ideas = turkish_artillery
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_ARTY
+			} } 
+		}
+
+	focus = {
+		id = TUR_war_tactics5
+		icon = military_planning
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_act_of_military5
+		}
+		x = 1
+		y = 5
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			} }
+		}
+	focus = {
+		id = TUR_modern_art_of_war5
+		icon = infiltration_tactics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_war_tactics5
+		}
+		x = 1
+		y = 6
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			} } 
+		}
+	focus = {
+		id = TUR_med_trainings5
+		icon = inundation_lines
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_modern_art_of_war5
+		}
+		x = 1
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}  } 
+		}
+	focus = {
+		id = TUR_tuz_trainings5
+		icon = grand_battleplan
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_modern_art_of_war5
+		}
+		x = 3
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+ 
+			}
+		}
+	focus = {
+		id = TUR_doctrine_of_war5
+		icon = static_defense
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_tuz_trainings5
+		}
+		prerequisite = {
+			focus = TUR_med_trainings5
+		}
+		x = 2
+		y = 8
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+  } 
+		}
+	focus = {
+		id = TUR_special_armed_forces5
+		icon = helmet_knife
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_act_of_military5
+		}
+		x = 5
+		y = 5
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		completion_reward = {
+        add_ideas = turk_ozel_kuvvetler
+			} 
+		}
+	focus = {
+		id = TUR_strenghen_combat5
+		icon = mass_assault
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_special_armed_forces5
+		}
+		x = 5
+		y = 6
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = turk_ozel_kuvvetler
+  add_idea = turk_ozel_kuvvetler1
+}
+      
+}   }
+	focus = {
+		id = TUR_strongest_special_armed_forces_in_NATO5
+		icon = nato3
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_strenghen_combat5
+		}
+		x = 5
+		y = 7
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = turk_ozel_kuvvetler1
+  add_idea = turk_ozel_kuvvetler2
+} } }
+      
+	focus = {
+		id = TUR_special_forces_for_turkish_state5
+		icon = align_to_turkey
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_strongest_special_armed_forces_in_NATO5
+		}
+		x = 5
+		y = 8
+		
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = turk_ozel_kuvvetler2
+  add_idea = turk_ozel_kuvvetler3
+} } }
+
+	focus = {
+		id = TUR_air_modernization5
+		icon = f35
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_gun_modernization5
+		}
+		prerequisite = {
+			focus = TUR_tank_modernization5
+		}
+		x = -4
+		y = 7
+
+		search_filters = {FOCUS_FILTER_AIRCRAFT}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+        air_experience = 75
+		add_ideas = thk_program
+			} 
+		}
+
+	focus = {
+		id = TUR_THK_program5
+		icon = fighter_plane
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_air_modernization5
+		}
+		x = -2
+		y = 8
+
+		search_filters = {FOCUS_FILTER_AIRCRAFT}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_ideas = thk_program_2
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = CAT_FIXED_WING
+			} } 
+		}
+	focus = {
+		id = TUR_navy_modernizations5
+		icon = TUR_navy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_air_modernization5
+		}
+		x = -4
+		y = 8
+
+		search_filters = {FOCUS_FILTER_NAVY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			navy_experience = 75
+			} 
+		}
+	focus = {
+		id = TUR_turkish_destroyers5
+		icon = destroyers
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_navy_modernizations5
+		}
+		x = -5
+		y = 9
+
+		search_filters = {FOCUS_FILTER_NAVY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_ideas = turkish_destroyers
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 2
+				category = Cat_DESTROYER
+			} } 
+		}
+	focus = {
+		id = TUR_battleship5
+		icon = battleships
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_navy_modernizations5
+		}
+		x = -3
+		y = 9
+
+		search_filters = {FOCUS_FILTER_NAVY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+				add_ideas = turkish_battleships
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_SURFACE_SHIP
+			} } 
+		}
+	focus = {
+		id = TUR_creation_of_turkish_carriers5
+		icon = ship_bleur_point
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_battleship5
+		}
+		prerequisite = {
+			focus = TUR_turkish_destroyers5
+		}
+		x = -4
+		y = 10
+
+		search_filters = {FOCUS_FILTER_NAVY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+					add_ideas = turkish_carriers
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_CARRIER
+	        } }
+		}
+	focus = {
+		id = TUR_turkish_tank_weaponary5
+		icon = tanks4
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_altay_tank_project5
+		}
+		x = -6
+		y = 8
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+				add_ideas = turkish_tankery
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_ARMOR
+			} } 
+		}
+
+	focus = {
+		id = TUR_turkish_drones5
+		icon = turkish_drone
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_THK_program5
+		}
+		x = -1
+		y = 9
+
+		search_filters = {FOCUS_FILTER_AIRCRAFT}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_ideas = turkish_drone_sector
+			add_tech_bonus = {
+				uses = 2
+				bonus = 1.0
+				category = Cat_L_DRONE
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				uses = 2
+				bonus = 2.0
+				category = Cat_A_UAV
+			
+			} }
+		}
+		
+
+	focus = {
+		id = TUR_covid-19_pandemic8
+		icon = generic_healthcare
+		cost = 10,00
+		x = 61
+		y = 0
+
+        available = {
+        has_idea = covid_19
+        }
+	
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+		completion_reward = {
+        add_political_power = 75
+	block_health_decrease = yes
+		} }
+	focus = {
+		id = TUR_covid-19_preparations8
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_pandemic8
+		}
+		x = 61
+		y = 1
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19
+  add_idea = covid_19_prepared
+}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TUR_build_up_hospitals8
+		icon = generic_hospital2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations8
+		}
+		x = 59
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}			
+	completion_reward = {
+			subtract_from_variable = { treasury = 20.0 }
+			add_stability = 0.03
+			custom_effect_tooltip = 20_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_turn_airports_to_hospital8
+		icon = generic_hospital
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_build_up_hospitals8
+		}
+		x = 59
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+			subtract_from_variable = { treasury = 5.0 }
+			add_stability = 0.02
+			custom_effect_tooltip = 5_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_start_up_vaccine_program_x
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations8
+		}
+		x = 61
+		y = 2
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		
+		
+	completion_reward = {
+	        add_stability = -0.05
+			add_political_power = -75
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			custom_effect_tooltip = COV_DECISION_OPENING_VAC
+			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
+			} 
+	}
+	focus = {
+		id = TUR_buy_german_vaccines_x
+		icon = trade_with_germany
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_start_up_vaccine_program_x
+		}
+		x = 61
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+
+	focus = {
+		id = TUR_increase_funds_to_science8
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations8
+		}
+		x = 63
+		y = 2
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+increase_healthcare_budget = yes
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_medicines8
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_funds_to_science8
+		}
+		prerequisite = {
+			focus = TUR_increase_funds_to_science8
+		}
+		x = 63
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_prepared
+  add_idea = covid_19_medicined
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_chinese_vaccines8
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turn_airports_to_hospital8
+		}
+		prerequisite = {
+			focus = TUR_buy_german_vaccines_x
+		}
+		prerequisite = {
+			focus = TUR_buy_medicines8
+		}
+		x = 61
+		y = 4
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_normalisation_from_covid8
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_buy_chinese_vaccines8
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
+		} }
+		x = 61
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_medicined
+  add_idea = covid_19_normalised
+} 
+	custom_effect_tooltip = COV_AVAILABLE_1
+}
+	}
+	focus = {
+		id = TUR_end_of_covid8
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_normalisation_from_covid8
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
+		} }
+		x = 61
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+remove_ideas = covid_19_normalised
+	custom_effect_tooltip = COV_AVAILABLE_2
+}
+	}
+
+	focus = {
+		id = TUR_hedef_20236
+		icon = 2023
+		cost = 10,00
+		mutually_exclusive = {
+			focus = TUR_peace_whatever_costs6
+		}
+		x = 50
+		y = 0
+		
+        available = {
+        date > 2023.1.1
+        is_puppet = no
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		
+	completion_reward = {
+add_war_support = 0.07
+add_named_threat = { threat = 1 name = 2023_tensions }
+}
+	}
+	focus = {
+		id = TUR_peace_whatever_costs6
+		icon = major_alliance3
+		cost = 10,00
+		mutually_exclusive = {
+			focus = TUR_hedef_20236
+		}
+		x = 53
+		y = 0
+
+        available = {
+        date > 2019.7.1
+		has_war = no
+        is_puppet = no
+        }
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+add_stability = 0.07
+add_named_threat = { threat = -1 name = peace_whatever_costs }
+}
+	}
+	focus = {
+		id = TUR_expansion_on_the_borders6
+		icon = entente
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_hedef_20236
+		}
+		x = 49
+		y = 1
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+	completion_reward = {
+add_war_support = 0.03
+add_political_power = 75
+}
+	}
+	focus = {
+		id = TUR_unification_with_azerbaijan6
+		icon = align_to_azerbaijan
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_expansion_on_the_borders6
+		}
+		x = 47
+		y = 2
+
+        available = {
+        country_exists = AZE
+		is_puppet = no
+		AZE = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = AZE
+		NOT = {
+        country_exists = AZE
+        } } }
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+	AZE = {
+    country_event = TurkeyF.10
+        } } 
+	}
+	focus = {
+		id = TUR_ultimatium_to_armenia6
+		icon = irredentism
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_unification_with_azerbaijan6
+		}
+		x = 47
+		y = 3
+
+        available = {
+        country_exists = ARM
+		is_puppet = no
+		ARM = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = ARM
+		NOT = {
+        country_exists = ARM
+        } } }
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+	ARM = {
+    country_event = TurkeyF.13
+        } } 
+	}
+	focus = {
+		id = TUR_money_for_batumi6
+		icon = liberalization_policies
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_expansion_on_the_borders6
+		}
+		x = 49
+		y = 2
+
+        available = {
+        country_exists = GEO
+		is_puppet = no
+		GEO = {
+        is_puppet = no
+        controls_state = 466
+		 }
+        }
+
+    bypass = {
+	controls_state = 466
+	}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+	GEO = {
+    country_event = TurkeyF.14
+        } } 
+	}
+	focus = {
+		id = TUR_integrate_batumi6
+		icon = small_arms5
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_money_for_batumi6
+		}
+		x = 49
+		y = 3
+
+        available = {
+        controls_state = 466
+        }
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}		
+	completion_reward = {
+add_state_claim = 466
+add_political_power = -75
+}
+	}
+	focus = {
+		id = TUR_PKK_attacks6
+		icon = focus_attack_pkk
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_expansion_on_the_borders6
+		}
+		x = 51
+		y = 2
+
+        available = {
+		OR = {
+		has_idea = TUR_PKK_insurgency_active
+		has_idea = TUR_PKK_insurgency_ceasefire
+		}
+        }
+
+    bypass = {
+	NOT = {
+		OR = {
+		has_idea = TUR_PKK_insurgency_active
+		has_idea = TUR_PKK_insurgency_ceasefire
+		}
+	 }
+	}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+	completion_reward = {
+    add_command_power = 15
+	TUR_remove_pkk = yes
+        }  
+	}
+	focus = {
+		id = TUR_end_of_FETO6
+		icon = thompson_submachine_gun
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_PKK_attacks6
+		}
+		x = 51
+		y = 3
+
+
+        available = {
+        has_idea = betrayal_from_FETO3
+        }
+
+    bypass = {
+	NOT = {
+	has_idea = betrayal_from_FETO3
+	 }
+	}
+
+		search_filters = {FOCUS_FILTER_NAME}
+		
+	completion_reward = {
+	set_global_flag = UNLOCK_GULEN_DEC
+	custom_effect_tooltip = UNLOCK_AS_GULEN
+			}
+	}
+	focus = {
+		id = TUR_strong_state6
+		icon = military_mission2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_integrate_batumi6
+		}
+		prerequisite = {
+			focus = TUR_end_of_FETO6
+		}
+		prerequisite = {
+			focus = TUR_ultimatium_to_armenia6
+		}
+		x = 49
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}		
+	completion_reward = {
+add_war_support = 0.05
+add_stability = 0.1
+}
+	}
+	focus = {
+		id = TUR_NATO_mission6
+		icon = nato_membership_action_plan
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_peace_whatever_costs6
+		}
+		x = 54
+		y = 1
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		
+	completion_reward = {
+add_ideas = nato_turkey_missionary
+}
+	}
+	focus = {
+		id = TUR_join_NATO_equipmentary6
+		icon = GFX_nato_standarts
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_NATO_mission6
+		}
+		x = 54
+		y = 2
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_EQUIPMENT}			
+	completion_reward = {
+	TUR = { country_event = TurkeyF.16}
+    custom_effect_tooltip = TUR_nato_alliance
+	hidden_effect = {
+	GRE = { country_event = TurkeyF.16}
+	ROM = { country_event = TurkeyF.16}
+	BUL = { country_event = TurkeyF.16}
+	ALB = { country_event = TurkeyF.16}
+	HUN = { country_event = TurkeyF.16}
+	CRO = { country_event = TurkeyF.16}
+	SLV = { country_event = TurkeyF.16}
+	SLO = { country_event = TurkeyF.16}
+	CZE = { country_event = TurkeyF.16}
+	POL = { country_event = TurkeyF.16}
+	LIT = { country_event = TurkeyF.16}
+	LAT = { country_event = TurkeyF.16}
+	EST = { country_event = TurkeyF.16}
+	FRA = { country_event = TurkeyF.16}
+	GER = { country_event = TurkeyF.16}
+	ENG = { country_event = TurkeyF.16}
+	ITA = { country_event = TurkeyF.16}
+	SPR = { country_event = TurkeyF.16}
+	POR = { country_event = TurkeyF.16}
+	LUX = { country_event = TurkeyF.16}
+	BEL = { country_event = TurkeyF.16}
+	HOL = { country_event = TurkeyF.16}
+	DEN = { country_event = TurkeyF.16}
+	NOR = { country_event = TurkeyF.16}
+	USA = { country_event = TurkeyF.16}
+	CAN = { country_event = TurkeyF.16}
+	ICE = { country_event = TurkeyF.16}
+			
+		}  } 
+	}
+	focus = {
+		id = TUR_positions_for_protection6
+		icon = nato3
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_NATO_mission6
+		}
+		x = 56
+		y = 2
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = nato_turkey_missionary
+  add_idea = nato_turkey_missionary1
+} 
+			}
+	}
+
+	focus = {
+		id = TUR_industrialization_program6
+		icon = factory_planning
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_join_NATO_equipmentary6
+		}
+		prerequisite = {
+			focus = TUR_positions_for_protection6
+		}
+		x = 55
+		y = 3
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+		
+	completion_reward = {
+	TUR = { country_event = TurkeyF.17}
+    custom_effect_tooltip = TUR_nato_industrialization
+	hidden_effect = {
+	GRE = { country_event = TurkeyF.17}
+	ROM = { country_event = TurkeyF.17}
+	BUL = { country_event = TurkeyF.17}
+	ALB = { country_event = TurkeyF.17}
+	HUN = { country_event = TurkeyF.17}
+	CRO = { country_event = TurkeyF.17}
+	SLV = { country_event = TurkeyF.17}
+	SLO = { country_event = TurkeyF.17}
+	CZE = { country_event = TurkeyF.17}
+	POL = { country_event = TurkeyF.17}
+	LIT = { country_event = TurkeyF.17}
+	LAT = { country_event = TurkeyF.17}
+	EST = { country_event = TurkeyF.17}
+	FRA = { country_event = TurkeyF.17}
+	GER = { country_event = TurkeyF.17}
+	ENG = { country_event = TurkeyF.17}
+	ITA = { country_event = TurkeyF.17}
+	SPR = { country_event = TurkeyF.17}
+	POR = { country_event = TurkeyF.17}
+	LUX = { country_event = TurkeyF.17}
+	BEL = { country_event = TurkeyF.17}
+	HOL = { country_event = TurkeyF.17}
+	DEN = { country_event = TurkeyF.17}
+	NOR = { country_event = TurkeyF.17}
+	USA = { country_event = TurkeyF.17}
+	CAN = { country_event = TurkeyF.17}
+	ICE = { country_event = TurkeyF.17}
+			
+		}  } 
+	}
+	focus = {
+		id = TUR_international_military_factories6
+		icon = un_pko
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_industrialization_program6
+		}
+		x = 55
+		y = 4
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+	completion_reward = {
+	TUR = { country_event = TurkeyF.18}
+    custom_effect_tooltip = TUR_nato_armaments
+	hidden_effect = {
+	GRE = { country_event = TurkeyF.18}
+	ROM = { country_event = TurkeyF.18}
+	BUL = { country_event = TurkeyF.18}
+	ALB = { country_event = TurkeyF.18}
+	HUN = { country_event = TurkeyF.18}
+	CRO = { country_event = TurkeyF.18}
+	SLV = { country_event = TurkeyF.18}
+	SLO = { country_event = TurkeyF.18}
+	CZE = { country_event = TurkeyF.18}
+	POL = { country_event = TurkeyF.18}
+	LIT = { country_event = TurkeyF.18}
+	LAT = { country_event = TurkeyF.18}
+	EST = { country_event = TurkeyF.18}
+	FRA = { country_event = TurkeyF.18}
+	GER = { country_event = TurkeyF.18}
+	ENG = { country_event = TurkeyF.18}
+	ITA = { country_event = TurkeyF.18}
+	SPR = { country_event = TurkeyF.18}
+	POR = { country_event = TurkeyF.18}
+	LUX = { country_event = TurkeyF.18}
+	BEL = { country_event = TurkeyF.18}
+	HOL = { country_event = TurkeyF.18}
+	DEN = { country_event = TurkeyF.18}
+	NOR = { country_event = TurkeyF.18}
+	USA = { country_event = TurkeyF.18}
+	CAN = { country_event = TurkeyF.18}
+	ICE = { country_event = TurkeyF.18}
+			
+		}  } 
+	}
+	focus = {
+		id = TUR_bor6
+		icon = b-5
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_strong_state6
+			focus = TUR_international_military_factories6
+		}
+		x = 52
+		y = 5
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+					search_filters = {FOCUS_FILTER_RESOURCE}
+					
+	completion_reward = {
+add_ideas = laws_of_bor
+}
+	}		
+
+
+##############################
+###	Start of Turkic Focus Tree ###	x = 75 y = 55
+##############################
+
+shared_focus = TR_policies
+
+############################
+### End of Turkic Focus Tree ###
+############################
+
+
+##############################
+###	Start of Cypriot Tree ###	x = 13 y = 10
+##############################
+
+shared_focus = TUR_greek_issues
+
+############################
+### End of Cypriot Focus Tree ###
+############################
+
+
+##############################
+###	Start of EU Focus Tree ###	x = 3 y = 45
+##############################
+
+	shared_focus = USoE001
+	shared_focus = POTEF001
+
+############################
+### End of EU Focus Tree ###
+############################
+}

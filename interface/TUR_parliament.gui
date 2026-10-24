@@ -1,0 +1,216 @@
+@STATUS_X = -10
+@HEADER_X = 10
+
+guiTypes = {
+	containerWindowType = {
+		name = "parliament_tur_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 925 }
+
+		instantTextBoxType = {
+			name ="TUR_parliament"
+			position = { x = 3 y = 0 }
+			font = "hoi_16mbs"
+			text = "TUR_parliaments_desc"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume1"
+			position = { x = 3 y = 200 }
+			font = "hoi_16mbs"
+			text = "[Western_Autocracy_L] [?TUR_par_dp] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume2"
+			position = { x = 3 y = 225 }
+			font = "hoi_16mbs"
+			text = "[Neutral_Muslim_Brotherhood_L] [?TUR_par_akp] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume3"
+			position = { x = 3 y = 250 }
+			font = "hoi_16mbs"
+			text = "[TUR.liberalism_L] [?TUR_par_ldp] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume4"
+			position = { x = 3 y = 275 }
+			font = "hoi_16mbs"
+			text = "[socialism_L] [?TUR_par_chp] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume5"
+			position = { x = 3 y = 300 }
+			font = "hoi_16mbs"
+			text = "[Nat_Populism_L] [?TUR_par_mhp] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume6"
+			position = { x = 3 y = 325 }
+			font = "hoi_16mbs"
+			text = "[Communist-State_L] [?TUR_par_tkp] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume7"
+			position = { x = 3 y = 350 }
+			font = "hoi_16mbs"
+			text = "[Neutral_Libertarian_L] [?TUR_par_good] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume8"
+			position = { x = 3 y = 375 }
+			font = "hoi_16mbs"
+			text = "[Neutral_green_L] [?TUR_par_green] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume9"
+			position = { x = 3 y = 175 }
+			font = "hoi_16mbs"
+			text = "[conservatism_L] [?TUR_par_anap] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume14"
+			position = { x = 3 y = 150 }
+			font = "hoi_16mbs"
+			text = "[TUR.Conservative_L] [?TUR_par_fp] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume15"
+			position = { x = 5 y = 400 }
+			font = "hoi_16mbs"
+			text = "[TUR.liberalism_L] [?TUR_par_ldp] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume16"
+			position = { x = 5 y = 425 }
+			font = "hoi_16mbs"
+			text = "[TUR.Neutral_Autocracy_L] [?TUR_par_gencparti] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume17"
+			position = { x = 5 y = 450 }
+			font = "hoi_16mbs"
+			text = "[TUR.anarchist_communism_L] [?TUR_par_odp] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume18"
+			position = { x = 5 y = 475 }
+			font = "hoi_16mbs"
+			text = "[TUR.Neutral_conservatism_L] [?TUR_par_mp] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume19"
+			position = { x = 5 y = 500 }
+			font = "hoi_16mbs"
+			text = "[TUR.oligarchism_L] [?TUR_par_bbp] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume20"
+			position = { x = 5 y = 525 }
+			font = "hoi_16mbs"
+			text = "[TUR.neutral_Social_L] [?TUR_par_socdem ] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume21"
+			position = { x = 5 y = 550 }
+			font = "hoi_16mbs"
+			text = "[TUR.Neutral_Communism_L] [?TUR_par_tip] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume22"
+			position = { x = 5 y = 575 }
+			font = "hoi_16mbs"
+			text = "[TUR.Autocracy_L] [?TUR_par_emep] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume10"
+			position = { x = 5 y = 600 }
+			font = "hoi_16mbs"
+			text = "Independents [?TUR_par_independent] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume11"
+			position = { x = 5 y = 625 }
+			font = "hoi_16mbs"
+			text = "Empty [?TUR_par_empty] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume12"
+			position = { x = 5 y = 650 }
+			font = "hoi_16mbs"
+			text = "Total [?TUR_par_total] - Seats"
+			format = left
+			maxWidth = 497
+		}
+
+		background = {
+			name = "turkey_map_gfx"
+			quadTextureSprite = "GFX_tbmms"
+			position = { x = 90 y = 723 }
+		}
+		
+
+	}
+}

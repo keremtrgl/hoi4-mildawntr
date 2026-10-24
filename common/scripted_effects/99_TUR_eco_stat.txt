@@ -1,0 +1,10 @@
+TUR_startup = {
+	set_variable = { TUR_eco_acceptance = 40}
+}
+TUR_eco_acceptance = {
+	clamp_variable = {
+		var = TUR_eco_acceptance
+		min = 0
+		max = 100
+	}
+}

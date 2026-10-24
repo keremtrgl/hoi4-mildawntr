@@ -1,0 +1,17 @@
+TUR_startup = {
+	set_variable = { TUR_counter_pkk_measures = 15 }
+}
+pkk_presence = {
+	clamp_variable = {
+		var = pkk_presence
+		min = 0
+		max = 100
+	}
+}
+TUR_counter_pkk_measures = {
+	clamp_variable = {
+		var = TUR_counter_pkk_measures
+		min = 0
+		max = 100
+	}
+}

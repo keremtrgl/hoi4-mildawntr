@@ -1,0 +1,172 @@
+TUR_startup = {
+	set_variable = { rel_akp = -35 }
+	set_variable = { rel_chp = +23 }
+	set_variable = { rel_dp = -38 }
+	set_variable = { rel_hdp = -27 }
+	set_variable = { rel_mhp = -21 }
+	set_variable = { rel_tkp = -12 }
+	set_variable = { rel_good = 4 }
+	set_variable = { rel_green = 11 }
+	set_variable = { rel_gencparti = 9 }
+	set_variable = { rel_ldp = 3 }
+	set_variable = { rel_anap = -23 }
+
+	set_variable = { rel_odp = -7 }
+	set_variable = { rel_fp = -61}
+	set_variable = { rel_emep = -22}
+	set_variable = { rel_ibda_c = -98}
+	set_variable = { rel_mp = 10}
+	set_variable = { rel_bbp = 47 }
+	set_variable = { rel_socdem = 31 }
+	set_variable = { rel_tip = -16 }
+	set_variable = { rel_bozkurtlar = -29 }
+	set_variable = { rel_ottoman = -68 }
+}
+TUR_rel_akp = {
+	clamp_variable = {
+		var = hap_akp
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_chp = {
+	clamp_variable = {
+		var = hap_chp
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_dp = {
+	clamp_variable = {
+		var = hap_dp
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_hdp = {
+	clamp_variable = {
+		var = hap_hdp
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_mhp = {
+	clamp_variable = {
+		var = TUR_rel_mhp
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_tkp = {
+	clamp_variable = {
+		var = TUR_rel_tkp
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_good = {
+	clamp_variable = {
+		var = TUR_rel_good
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_green = {
+	clamp_variable = {
+		var = TUR_rel_green
+		min = 0
+		max = 100
+	}
+}
+
+TUR_rel_gencparti = {
+	clamp_variable = {
+		var = TUR_rel_gencparti
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_ldp = {
+	clamp_variable = {
+		var = TUR_rel_ldp
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_anap = {
+	clamp_variable = {
+		var = TUR_rel_anap
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_odp = {
+	clamp_variable = {
+		var = TUR_rel_odp
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_fp = {
+	clamp_variable = {
+		var = TUR_rel_fp
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_emep = {
+	clamp_variable = {
+		var = TUR_rel_emep
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_ibda_c = {
+	clamp_variable = {
+		var = TUR_rel_ibda_c
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_mp = {
+	clamp_variable = {
+		var = TUR_rel_mp
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_bbp = {
+	clamp_variable = {
+		var = TUR_rel_bbp
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_socdem = {
+	clamp_variable = {
+		var = TUR_rel_socdem
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_tip = {
+	clamp_variable = {
+		var = TUR_rel_tip
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_bozkurtlar = {
+	clamp_variable = {
+		var = TUR_rel_bozkurtlar
+		min = 0
+		max = 100
+	}
+}
+TUR_rel_ottoman = {
+	clamp_variable = {
+		var = TUR_rel_ottoman
+		min = 0
+		max = 100
+	}
+}

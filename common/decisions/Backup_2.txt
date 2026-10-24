@@ -1,0 +1,476 @@
+
+TUR_municipality_race = { 
+	
+	the_local_propaganda = {
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		fire_only_once = no
+
+		available = {
+		}
+
+		visible = {
+			original_tag = TUR
+			has_global_flag = BLOCK_THE_MAYOR_ELECTIONS	  
+		}
+
+		cost = 15
+		days_remove = 15
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			political_power_cost = 0.15
+		}
+
+		remove_effect = {
+	random_list = {	
+	8 = {
+				156 = { set_state_flag = TUR_mun_take_over }
+	            156 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               }
+	8 = {
+				934 = { set_state_flag = TUR_mun_take_over }
+				934 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				157 = { set_state_flag = TUR_mun_take_over }
+	            157 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				161 = { set_state_flag = TUR_mun_take_over }
+	            161 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				158 = { set_state_flag = TUR_mun_take_over }
+	            158 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				159 = { set_state_flag = TUR_mun_take_over }
+	            159 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				160 = { set_state_flag = TUR_mun_take_over }
+	            160 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				1032 = { set_state_flag = TUR_mun_take_over }
+	            1032 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				163 = { set_state_flag = TUR_mun_take_over }
+	            163 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				992 = { set_state_flag = TUR_mun_take_over }
+	            992 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				162 = { set_state_flag = TUR_mun_take_over }
+	            162 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				935 = { set_state_flag = TUR_mun_take_over }
+	            935 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	4 = {
+            add_political_power = -25
+               } }
+		}
+	}
+
+	attach_local_leaders = {
+
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		fire_only_once = no
+
+		available = {
+		}
+
+		visible = {
+			original_tag = TUR
+			has_global_flag = BLOCK_THE_MAYOR_ELECTIONS	  
+		}
+
+		cost = 15
+		days_remove = 15
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			political_power_cost = 0.15
+		}
+
+		remove_effect = {
+	random_list = {	
+	8 = {
+				156 = { set_state_flag = TUR_mun_take_over }
+	            156 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               }
+	8 = {
+				934 = { set_state_flag = TUR_mun_take_over }
+				934 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				157 = { set_state_flag = TUR_mun_take_over }
+	            157 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				161 = { set_state_flag = TUR_mun_take_over }
+	            161 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				158 = { set_state_flag = TUR_mun_take_over }
+	            158 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				159 = { set_state_flag = TUR_mun_take_over }
+	            159 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				160 = { set_state_flag = TUR_mun_take_over }
+	            160 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				1032 = { set_state_flag = TUR_mun_take_over }
+	            1032 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				163 = { set_state_flag = TUR_mun_take_over }
+	            163 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				992 = { set_state_flag = TUR_mun_take_over }
+	            992 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				162 = { set_state_flag = TUR_mun_take_over }
+	            162 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				935 = { set_state_flag = TUR_mun_take_over }
+	            935 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	4 = {
+            add_political_power = -25
+               } }
+		}
+	}
+
+	progressive_actions = {
+
+		icon = GFX_decision_generic_speech
+
+		fire_only_once = no
+
+		available = {
+		}
+
+		visible = {
+			original_tag = TUR
+			has_global_flag = BLOCK_THE_MAYOR_ELECTIONS	  
+			OR = {
+            has_country_flag = CHP_government
+            has_country_flag = DSP_government
+            has_country_flag = MHP_government
+            has_country_flag = MIL_government
+            has_country_flag = GEN_government
+            has_country_flag = HEP_government
+            has_country_flag = TKP_government
+            has_country_flag = LDP_government
+            has_country_flag = MAF_government
+            has_country_flag = AYM_government
+            has_country_flag = ATA_government
+            has_country_flag = TECH_government
+            has_country_flag = MIT_government	  
+			} 
+		}
+
+		cost = 15
+		days_remove = 15
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			political_power_cost = 0.15
+		}
+
+		remove_effect = {
+	random_list = {	
+	25 = {
+				934 = { set_state_flag = TUR_mun_take_over }
+	            934 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               }
+	25 = {
+				155 = { set_state_flag = TUR_mun_take_over }
+				155 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	25 = {
+				157 = { set_state_flag = TUR_mun_take_over }
+	            157 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	25 = {
+				156 = { set_state_flag = TUR_mun_take_over }
+	            156 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	} } }
+
+
+	traditionalist_actions = {
+
+		icon = GFX_decision_generic_speech
+
+		fire_only_once = no
+
+		available = {
+		}
+
+		visible = {
+			original_tag = TUR
+		has_global_flag = BLOCK_THE_MAYOR_ELECTIONS	  
+		    OR = {
+            has_country_flag = AKP_government
+            has_country_flag = SAA_government
+            has_country_flag = ANA_government
+            has_country_flag = OTT_government
+			}
+		}
+
+		cost = 15
+		days_remove = 15
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			political_power_cost = 0.15
+		}
+
+		remove_effect = {
+	random_list = {	
+	25 = {
+				159 = { set_state_flag = TUR_mun_take_over }
+	            159 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               }
+	25 = {
+				160 = { set_state_flag = TUR_mun_take_over }
+				160 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	25 = {
+				1032 = { set_state_flag = TUR_mun_take_over }
+	            1032 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	25 = {
+				163 = { set_state_flag = TUR_mun_take_over }
+	            163 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	} } }
+
+    opposition_mn_campaign = {    
+          icon = GFX_zsr_parlament
+          allowed = { tag = TUR }                 
+          available = {   
+        has_global_flag = Inevitable              
+          }
+          activation = { 
+		has_global_flag = BLOCK_THE_MAYOR_ELECTIONS	     	       
+         }
+          is_good = no        
+		fire_only_once = no	  
+          selectable_mission = yes                
+          days_mission_timeout = 15            
+          timeout_effect = {    
+	random_list = {	
+	8 = {
+				156 = { clr_state_flag = TUR_mun_take_over }
+	            156 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               }
+	8 = {
+				934 = { clr_state_flag = TUR_mun_take_over }
+				934 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				157 = { clr_state_flag = TUR_mun_take_over }
+	            157 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				161 = { clr_state_flag = TUR_mun_take_over }
+	            161 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				158 = { clr_state_flag = TUR_mun_take_over }
+	            158 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				159 = { clr_state_flag = TUR_mun_take_over }
+	            159 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				160 = { clr_state_flag = TUR_mun_take_over }
+	            160 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				1032 = { clr_state_flag = TUR_mun_take_over }
+	            1032 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				163 = { clr_state_flag = TUR_mun_take_over }
+	            163 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				992 = { clr_state_flag = TUR_mun_take_over }
+	            992 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				162 = { clr_state_flag = TUR_mun_take_over }
+	            162 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	8 = {
+				935 = { clr_state_flag = TUR_mun_take_over }
+	            935 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	}             
+          }
+     }
+
+
+    opposition_mn_campaign_2 = {    
+          icon = GFX_decision_generic_political_rally
+          allowed = { tag = TUR }                 
+          available = {   
+        has_global_flag = Inevitable              
+          }
+          activation = {  
+		has_global_flag = BLOCK_THE_MAYOR_ELECTIONS	    
+		    OR = {
+            has_country_flag = AKP_government
+            has_country_flag = SAA_government
+            has_country_flag = ANA_government
+            has_country_flag = OTT_government
+			}    
+         }
+          is_good = no        
+		fire_only_once = no	  
+          selectable_mission = yes                
+          days_mission_timeout = 25            
+          timeout_effect = {  
+	25 = {
+				934 = { clr_state_flag = TUR_mun_take_over }
+	            934 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               }                   
+	random_list = {	
+	33 = {
+				155 = { clr_state_flag = TUR_mun_take_over }
+				155 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	33 = {
+				157 = { clr_state_flag = TUR_mun_take_over }
+	            157 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	33 = {
+				156 = { clr_state_flag = TUR_mun_take_over }
+	            156 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	}             
+          }
+     }
+	
+
+    opposition_mn_campaign_3 = {    
+          icon = GFX_decision_generic_political_rally
+          allowed = { tag = TUR }                 
+          available = {   
+        has_global_flag = Inevitable              
+          }
+          activation = {    	
+		has_global_flag = BLOCK_THE_MAYOR_ELECTIONS	         
+			OR = {
+            has_country_flag = CHP_government
+            has_country_flag = DSP_government
+            has_country_flag = MHP_government
+            has_country_flag = MIL_government
+            has_country_flag = GEN_government
+            has_country_flag = HEP_government
+            has_country_flag = TKP_government
+            has_country_flag = LDP_government
+            has_country_flag = MAF_government
+            has_country_flag = AYM_government
+            has_country_flag = ATA_government
+            has_country_flag = TECH_government
+            has_country_flag = MIT_government	  
+			} 
+		}
+          is_good = no        
+		fire_only_once = no	  
+          selectable_mission = yes                
+          days_mission_timeout = 25            
+          timeout_effect = {                      
+	random_list = {	
+	25 = {
+				159 = { clr_state_flag = TUR_mun_take_over }
+	            159 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               }
+	25 = {
+				160 = { clr_state_flag = TUR_mun_take_over }
+				160 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	25 = {
+				1032 = { clr_state_flag = TUR_mun_take_over }
+	            1032 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	25 = {
+				163 = { clr_state_flag = TUR_mun_take_over }
+	            163 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+               } 
+	}             
+          }
+     }
+
+    election_management_four_years = {    
+          icon = GFX_decision_generic_operation
+          allowed = { tag = TUR }                 
+          available = {   
+        has_global_flag = Inevitable              
+          }
+          activation = {   
+		  NOT = {
+		has_global_flag = BLOCK_THE_MAYOR_ELECTIONS	  
+		  } 	       
+         }
+          is_good = no        
+		fire_only_once = no	  
+          selectable_mission = yes                
+          days_mission_timeout = 1825            
+          timeout_effect = {                      
+          add_political_power = 100
+          }
+     }
+
+    the_election_campaign = {    
+          icon = GFX_decision_category_usa_congress
+          allowed = { tag = TUR }                 
+          available = {   
+        has_global_flag = Inevitable              
+          }
+          activation = {    	
+		has_global_flag = BLOCK_THE_MAYOR_ELECTIONS	     
+         }
+          is_good = no        
+		fire_only_once = no	  
+          selectable_mission = yes                
+          days_mission_timeout = 125            
+          timeout_effect = {                      
+          add_political_power = 10
+		  clr_global_flag = BLOCK_THE_MAYOR_ELECTIONS
+		  custom_effect_tooltip = END_OF_THE_ELECTION_MAYOR
+          }
+     }

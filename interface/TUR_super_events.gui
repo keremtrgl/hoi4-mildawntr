@@ -1,0 +1,753 @@
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_1"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "2023_background"
+			spriteType = "GFX_2023ss"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_1_title"
+			position = { x = 65 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "SUPEREVENT_1_T"	
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_1_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_1_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_1_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+ }
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_2"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "turkic_unity_background"
+			spriteType = "GFX_turkic_unity"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_2_title"
+			position = { x = 75 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_2_T"	
+			format = centre
+						clicksound = weltkrieg_ratio
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_2_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_2_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_2_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+		}
+	}
+}
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_3"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "european_joining"
+			spriteType = "GFX_european_joining"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_3_title"
+			position = { x = 82 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_3_T"	
+			format = centre
+						clicksound = weltkrieg_ratio
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_3_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_3_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_3_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}
+
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_4"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "adalet_sarayi"
+			spriteType = "GFX_adalet_saray"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_4_title"
+			position = { x = 83 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_4_T"	
+			format = centre
+						clicksound = weltkrieg_ratio
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_4_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_4_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_4_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_5"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "GFX_erdogan_loses"
+			spriteType = "GFX_erdogan_loses"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_5_title"
+			position = { x = 80 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_5_T"	
+			format = centre
+						clicksound = weltkrieg_ratio
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_5_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_5_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_5_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_6"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "GFX_erdogan_victory"
+			spriteType = "GFX_erdogan_victory"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_6_title"
+			position = { x = 82 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_6_T"	
+			format = centre
+						clicksound = weltkrieg_ratio
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_6_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_6_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_6_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_7"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "GFX_canal_istanbul_projects"
+			spriteType = "GFX_canal_istanbul_projects"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_7_title"
+			position = { x = 85 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_7_T"	
+			format = centre
+						clicksound = weltkrieg_ratio
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_7_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_7_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_7_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}
+
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_8"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "GFX_NATO_leaves"
+			spriteType = "GFX_NATO_leaves"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_8_title"
+			position = { x = 76 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_8_T"	
+			format = centre
+						clicksound = weltkrieg_ratio
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_8_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_8_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_8_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_9"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "GFX_headscarves_crisis"
+			spriteType = "GFX_headscarves_crisis"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_9_title"
+			position = { x = 77 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_9_T"	
+			format = centre
+			
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_9_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_9_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_9_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}
+
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_10"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "GFX_kemalist_state"
+			spriteType = "GFX_kemalist_state"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_10_title"
+			position = { x = 85 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_10_T"	
+			format = centre
+			
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_10_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_10_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_10_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_11"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "GFX_turkish_unity"
+			spriteType = "GFX_turkish_unity"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_11_title"
+			position = { x = 85 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_11_T"	
+			format = centre
+			
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_11_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_11_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_11_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_12"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "GFX_turkish_air_force"
+			spriteType = "GFX_turkish_air_force"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_12_title"
+			position = { x = 85 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_12_T"	
+			format = centre
+			
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_12_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_12_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_12_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}
+
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_13"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "GFX_turkish_gate"
+			spriteType = "GFX_turkish_gate"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_13_title"
+			position = { x = 85 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_13_T"	
+			format = centre
+			
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_13_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_13_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_13_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_14"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "GFX_the_turkish_industries"
+			spriteType = "GFX_the_turkish_industries"
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_14_title"
+			position = { x = 85 y = 38 }
+			font = "hoi_30header"
+			maxWidth = 420
+			maxHeight = 20
+			text = "SUPEREVENT_14_T"	
+			format = centre
+			
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_14_desc"
+			position = { x = 200 y = 350 }
+			font = "hoi_18mbs"
+			maxWidth = 370
+			maxHeight = 70
+			text = "SUPEREVENT_14_DESC"	
+			format = centre
+		}
+		
+		buttonType = {
+			name = "super_event_14_close_button"
+			position = { x = 230 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "Ok"
+			format = center
+			pdx_tooltip = "FACTION_JOINING_CLOSE"
+			shortcut = "ESCAPE"
+			clicksound = weltkrieg_ratio
+		}
+	}
+}

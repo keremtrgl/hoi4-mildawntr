@@ -1,0 +1,333 @@
+TUR_TMSF = {
+
+
+    TUR_tmsf_intervene_7 = {
+		icon = GFX_decision_gre_paying_ifc_debt
+           
+          fire_only_once = yes
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+            date < 2004.1.1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 100
+	
+          remove_effect = {
+        			custom_effect_tooltip = TUR_bddk_boost
+		subtract_from_variable = { bddk_level = -1 }
+          }
+          complete_effect = { 
+
+          }
+		remove_effect = {
+  decrease_centralization = yes 
+  decrease_social_spending = yes 
+  decrease_education_budget = yes 
+  decrease_policing_budget = yes 
+	}   }
+
+    TUR_tmsf_intervene_1 = {
+		icon = GFX_decision_eng_trade_unions_demand
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+            date < 2004.1.1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 15
+		days_re_enable = 150
+	
+          modifier = {
+	            corporate_tax_income_multiplier_modifier = 0.1        
+          }
+          remove_effect = {
+        			custom_effect_tooltip = TUR_bddk_boost
+		subtract_from_variable = { bddk_level = -1 }
+          }
+          complete_effect = {
+			934 = {	
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = -1
+				} 
+            }	           
+          }
+		remove_effect = {
+			934 = {	
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} 
+	}   }  }
+
+
+    TUR_tmsf_intervene_4 = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+            date < 2004.1.1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 15
+		days_re_enable = 150
+	
+          modifier = {
+	            consumer_goods_factor = -0.08     
+          }
+          remove_effect = {
+        			custom_effect_tooltip = TUR_bddk_boost
+		subtract_from_variable = { bddk_level = -1 }
+          }
+          complete_effect = {
+			934 = {	
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = -1
+				} 
+            }	           
+          }
+		remove_effect = {
+			add_political_power = -75
+	}   }  
+
+
+    TUR_tmsf_intervene_5 = {
+		icon = GFX_decision_london_bridge
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+            date < 2004.1.1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 15
+		days_re_enable = 150
+	
+          modifier = {
+          tax_gain_multiplier_modifier = 0.1
+          productivity_growth_modifier = -0.15
+          }
+          remove_effect = {
+        			custom_effect_tooltip = TUR_bddk_boost
+		subtract_from_variable = { bddk_level = -1 }
+          }
+          complete_effect = {        
+          }
+		remove_effect = {
+	}   }
+
+
+    TUR_tmsf_intervene_6 = {
+		icon = GFX_decision_international_bankers
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+            date < 2004.1.1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 15
+		days_re_enable = 150
+	
+          modifier = {
+          political_power_cost = -2.0
+          }
+          remove_effect = {
+        			custom_effect_tooltip = TUR_bddk_boost
+		subtract_from_variable = { bddk_level = -1 }
+          }
+          complete_effect = {        
+          }
+		remove_effect = {
+			934 = {	
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = -1
+				} 
+               }
+	}   }
+
+    TUR_tmsf_intervene_2 = {
+		icon = GFX_decision_politic_oppression
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+            date < 2004.1.1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 15
+		days_re_enable = 150
+	
+          remove_effect = {
+        			custom_effect_tooltip = TUR_bddk_boost
+		subtract_from_variable = { bddk_level = -1 }
+          }
+          modifier = {
+	            corporate_tax_income_multiplier_modifier = 0.1
+                offices_worker_requirement_modifier = 0.1         
+          }
+	}   
+
+
+    TUR_tmsf_intervene_3_imf_loyalty = {
+		icon = GFX_decision_bancru_ass_imf_button
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+            date < 2004.1.1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 15
+		days_re_enable = 150
+	
+          remove_effect = {
+        			custom_effect_tooltip = TUR_bddk_boost
+		subtract_from_variable = { bddk_level = -1 }
+          }
+          modifier = {
+				interest_rate_multiplier_modifier = -2  
+          }
+	}   
+
+TUR_tmsf_overshooting_signs = {    
+     icon = GFX_decision_bancru_collapse_button
+     allowed = { tag = TUR }                 
+     available = {   
+           has_global_flag = Inevitable   
+     }
+     activation = {  
+           has_idea = turkish_2001_crisis
+     }
+     is_good = no     
+     fire_only_once = yes		  
+     selectable_mission = no           
+     days_mission_timeout = 25   
+         days_re_enable = 450                
+     timeout_effect = {                      
+add_timed_idea = { idea = TMSF_overshooting days = 1460 }
+     }
+   }
+
+
+TUR_redoubt_2010_hit_hard = {    
+     icon = GFX_decision_ger_mefo_bills
+     allowed = { tag = TUR }                 
+     available = {   
+           has_global_flag = Inevitable   
+     }
+     activation = {  
+        date > 2010.1.1
+    check_variable = { var = bddk_level value = 13 compare = greater_than }  
+     }
+     is_good = no     
+     fire_only_once = yes		  
+     selectable_mission = no           
+     days_mission_timeout = 25   
+         days_re_enable = 450                
+     timeout_effect = {                      
+add_timed_idea = { idea = TMSF_hard days = 600 }
+     }
+   }
+
+
+TUR_redoubt_2010_hit_ease = {    
+     icon = GFX_decision_ger_mefo_bills
+     allowed = { tag = TUR }                 
+     available = {   
+           has_global_flag = Inevitable   
+     }
+     activation = {  
+        date > 2010.1.1
+    check_variable = { var = bddk_level value = 9 compare = less_than }    
+     }
+     is_good = no     
+     fire_only_once = yes		  
+     selectable_mission = no           
+     days_mission_timeout = 25   
+         days_re_enable = 450                
+     timeout_effect = {                      
+add_timed_idea = { idea = TMSF_ease days = 600 }
+     }
+   }
+
+
+TUR_redoubt_2010_hit_normal = {    
+     icon = GFX_decision_ger_mefo_bills
+     allowed = { tag = TUR }                 
+     available = {   
+           has_global_flag = Inevitable   
+     }
+     activation = { 
+        date > 2010.1.1 
+    check_variable = { var = bddk_level value = 13 compare = less_than }  
+    check_variable = { var = bddk_level value = 9 compare = greater_than }  
+     }
+     is_good = no     
+     fire_only_once = yes		  
+     selectable_mission = no           
+     days_mission_timeout = 25   
+         days_re_enable = 450                
+     timeout_effect = {                      
+add_timed_idea = { idea = TMSF_normal days = 600 }
+     }
+   }
+

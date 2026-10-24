@@ -1,0 +1,414 @@
+TUR_robbing = {	
+
+	TUR_target_pentagon = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+		has_global_flag = MAF_HACKER_GROUP_CREATED
+		has_global_flag = MAF_COLLECTED_CRIMINALS
+		USA = {
+		influence_higher_30 = yes
+		}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MAF_weaken_pentagon
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			subtract_from_variable = { treasury = -50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+			USA = { 
+			add_stability = -0.1
+			add_war_support = -0.1
+			add_manpower = -10000
+			}
+	} }
+
+	TUR_target_f35_program = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+		has_global_flag = MAF_HACKER_GROUP_CREATED
+		has_global_flag = MAF_COLLECTED_CRIMINALS
+		USA = {
+		influence_higher_30 = yes
+		}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MAF_target_f35_program
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			subtract_from_variable = { treasury = -250.0 }
+			custom_effect_tooltip = 250_billion_revenue_tt
+			USA = { 
+			add_stability = -0.1
+			add_war_support = -0.1
+			add_manpower = -10000
+			}
+	} }	
+
+	TUR_target_european_weaponary_program = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+		has_global_flag = MAF_HACKER_GROUP_CREATED
+		has_global_flag = MAF_COLLECTED_CRIMINALS
+		GER = {
+		influence_higher_30 = yes
+		}
+		FRA = {
+		influence_higher_30 = yes
+		}
+		SPR = {
+		influence_higher_30 = yes
+		}
+		ITA = {
+		influence_higher_30 = yes
+		}		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MAF_target_european_army_documents
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			subtract_from_variable = { treasury = -50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+			GER = { 
+			add_stability = -0.1
+			add_war_support = -0.1
+			add_manpower = -10000
+			}
+			FRA = { 
+			add_stability = -0.1
+			add_war_support = -0.1
+			add_manpower = -10000
+			}
+			ITA = { 
+			add_stability = -0.1
+			add_war_support = -0.1
+			add_manpower = -10000
+			}
+			SPR = { 
+			add_stability = -0.1
+			add_war_support = -0.1
+			add_manpower = -10000
+			}
+	} }	
+
+
+	TUR_target_russian_weaponary_program = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+		has_global_flag = MAF_HACKER_GROUP_CREATED
+		has_global_flag = MAF_COLLECTED_CRIMINALS
+		SOV = {
+		influence_higher_30 = yes
+		}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MAF_target_the_russian_weaponary
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			subtract_from_variable = { treasury = -50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+			SOV = { 
+			add_stability = -0.1
+			add_war_support = -0.1
+			add_manpower = -10000
+			}
+	} }	
+
+
+	TUR_target_russian_chemical_program = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+		has_global_flag = MAF_HACKER_GROUP_CREATED
+		has_global_flag = MAF_COLLECTED_CRIMINALS
+		SOV = {
+		influence_higher_30 = yes
+		}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MAF_target_russian_biological_tests
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			subtract_from_variable = { treasury = -250.0 }
+			custom_effect_tooltip = 250_billion_revenue_tt
+			SOV = { 
+			add_stability = -0.1
+			add_war_support = -0.1
+			add_manpower = -10000
+			}
+	} }	
+	TUR_spot_light = {
+		icon = GFX_
+
+		available = {
+		always = no
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_global_flag = MAF_COLLECTED_CRIMINALS
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+	} 
+
+	TUR_raid_FED = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+		has_global_flag = MAF_HACKER_GROUP_CREATED
+		has_global_flag = MAF_COLLECTED_CRIMINALS
+		USA = {
+		influence_higher_30 = yes
+		}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MAF_mission_to_FED
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		
+		modifier = {
+		political_power_cost = 0.1
+		}
+		remove_effect = {
+			subtract_from_variable = { treasury = -250.0 }
+			custom_effect_tooltip = 250_billion_revenue_tt
+			USA = { 
+			subtract_from_variable = { treasury = 250.0 }
+			custom_effect_tooltip = 250_billion_expense_tt
+			}
+	} }
+
+	TUR_raid_FCB = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+		has_global_flag = MAF_HACKER_GROUP_CREATED
+		has_global_flag = MAF_COLLECTED_CRIMINALS
+		FRA = {
+		influence_higher_30 = yes
+		}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MAF_mission_to_FRA
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		
+		modifier = {
+		political_power_cost = 0.1
+		}
+		remove_effect = {
+			subtract_from_variable = { treasury = -250.0 }
+			custom_effect_tooltip = 250_billion_revenue_tt
+			FRA = { 
+			subtract_from_variable = { treasury = 250.0 }
+			custom_effect_tooltip = 250_billion_expense_tt
+			}
+	} }
+
+	TUR_raid_ECB = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+		has_global_flag = MAF_HACKER_GROUP_CREATED
+		has_global_flag = MAF_COLLECTED_CRIMINALS
+		GER = {
+		influence_higher_30 = yes
+		}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MAF_mission_to_ECB
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		
+		modifier = {
+		political_power_cost = 0.1
+		}
+		remove_effect = {
+			subtract_from_variable = { treasury = -250.0 }
+			custom_effect_tooltip = 250_billion_revenue_tt
+			GER = { 
+			subtract_from_variable = { treasury = 250.0 }
+			custom_effect_tooltip = 250_billion_expense_tt
+			}
+	} }	
+
+
+	TUR_raid_UKB = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+		has_global_flag = MAF_HACKER_GROUP_CREATED
+		has_global_flag = MAF_COLLECTED_CRIMINALS
+		ENG = {
+		influence_higher_30 = yes
+		}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MAF_mission_to_UK
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		
+		modifier = {
+		political_power_cost = 0.1
+		}
+		remove_effect = {
+			subtract_from_variable = { treasury = -250.0 }
+			custom_effect_tooltip = 250_billion_revenue_tt
+			ENG = { 
+			subtract_from_variable = { treasury = 250.0 }
+			custom_effect_tooltip = 250_billion_expense_tt
+			}
+	} }
+
+	TUR_raid_PCOB = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+		has_global_flag = MAF_HACKER_GROUP_CREATED
+		has_global_flag = MAF_COLLECTED_CRIMINALS
+		CHI = {
+		influence_higher_30 = yes
+		}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MAF_mission_to_PRC
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		political_power_cost = 0.1
+		}
+		remove_effect = {
+			subtract_from_variable = { treasury = -250.0 }
+			custom_effect_tooltip = 250_billion_revenue_tt
+			CHI = { 
+			subtract_from_variable = { treasury = 250.0 }
+			custom_effect_tooltip = 250_billion_expense_tt
+			}
+	} }
+
+}

@@ -1,0 +1,1800 @@
+characters={
+	TUR_hulusi_akar={
+		name="Hulusi Akar"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/gen_Hulusi_Akar_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/gen_Hulusi_Akar.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = hulusi_akar
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_commando_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	 
+	TUR_zeki_colak={
+		name="Zeki Colak"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/gen_Zeki_Colak_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/gen_Zeki_Colak.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = zeki_colak
+			ledger = air
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				air_air_combat_training_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TUR_ergin_celalsin ={
+		name="Ergin Celalsin"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/engin_celalsin.png"
+			}
+			army={
+				large="gfx/leaders/TUR/ergin_celalsin.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = ergin_celalsin
+			ledger = air
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				air_chief_ground_support_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TUR_cumhur_asparuk ={
+		name="Cumhur Asparuk"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/cumhur_asparuk.png"
+			}
+			army={
+				large="gfx/leaders/TUR/cumhur_asparuk.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = cumhur_asparuk
+			ledger = air
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				air_chief_safety_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TUR_huseyin_kivriklioglu ={
+		name="Hüseyin Kıvrıkoğlu"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/general_staff/huseyin_kivrikoglu.png"
+			}
+			army={
+				large="gfx/leaders/TUR/huseyin_kivnikoglu.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+			army_artillery_1	
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	TUR_hilmi_ozkok ={
+		name="Hilmi Özkök"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/general_staff/hilmi_ozkoks.png"
+			}
+			army={
+				large="gfx/leaders/TUR/hilmi_ozkok.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = hilmi_ozkok
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+			army_artillery_1	
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TUR_yasar_buyukanit ={
+		name="Yaşar Büyükanıt"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/general_staff/yasar_buyukanit.png"
+			}
+			army={
+				large="gfx/leaders/TUR/buyukanit.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = yasar_buyukanit
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+	TUR_ilker_basbug ={
+		name="İlker Başbuğ"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/general_staff/ilker_basbug.png"
+			}
+			army={
+				large="gfx/leaders/TUR/ktu.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ilker_basbug
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}		
+	TUR_isik_kosaner ={
+		name="Işık Koşaner"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/general_staff/isik_kosaner.png"
+			}
+			army={
+				large="gfx/leaders/TUR/kosaner.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = isik_kosaner
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_logistics_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}		
+	TUR_necdet_ozel ={
+		name="Necdet Özel"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/general_staff/necdet_ozel.png"
+			}
+			army={
+				large="gfx/leaders/TUR/necdet_ozel.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = necdet_ozel
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+	TUR_yasar_guler ={
+		name="Yaşar Güler"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/general_staff/yasar_guler.png"
+			}
+			army={
+				large="gfx/leaders/TUR/guler.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = necdet_ozel
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_regrouping_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}		
+	
+	ilhan_tolu ={
+		name="Ilhan Talu"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/ilhan_tolu.png"
+			}
+			army={
+				large="gfx/leaders/TUR/ilhan_tolu.dds"
+			}
+		}
+		corps_commander={
+		traits = { trait_TUR_gulen_champion }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 2
+		}
+     }		
+
+	erdal_ceylanoglu ={
+		name="Erdal Ceylanoğlu"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small//MD_specials/erdal_ceylanoglu.png"
+			}
+			army={
+				large="gfx/leaders/TUR/erdal_ceylanoglu.dds"
+			}
+		}
+		corps_commander={
+		traits = { panzer_leader skilled_staffer infantry_leader  }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 4
+		logistics_skill = 2
+		}
+     }	
+	ismail_kocman ={
+		name="İsmail Koçman"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small//MD_specials/ismail_kocman.png"
+			}
+			army={
+				large="gfx/leaders/TUR/ismail_kocman.dds"
+			}
+		}
+		corps_commander={
+		traits = { invader organizer trickster}
+		skill = 4
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 5
+		logistics_skill = 4
+		}
+     }	
+	orhan_yoney ={
+		name="Orhan Yöney"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small//MD_specials/orhan_yoney.png"
+			}
+			army={
+				large="gfx/leaders/TUR/orhan_yoney.dds"
+			}
+		}
+		corps_commander={
+		traits = { tsk_nato_officer fast_planner skilled_staffer trickster }
+		skill = 5
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+		}
+     }	
+
+	mustafa_ozsoy ={
+		name="Mustafa Özsoy"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/mustafa_ozsoy.png"
+			}
+			army={
+				large="gfx/leaders/TUR/mustafa_ozsoy.dds"
+			}
+		}
+		corps_commander={
+		traits = { trait_TUR_gulen_champion }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 3
+		}
+     }
+	 
+	aslan_guner ={
+		name="Aslan Güner"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/aslan_guner.png"
+			}
+			army={
+				large="gfx/leaders/TUR/aslan_guner.dds"
+			}
+		}
+		corps_commander ={
+		traits = { artillery_leader }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 4
+		}
+     }	
+	 
+	bekir_kalyoncu ={
+		name="Bekir Kalyoncu"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/bekir_kalyoncu.png"
+			}
+			army={
+				large="gfx/leaders/TUR/bekir_kalyoncu.dds"
+			}
+		}
+		corps_commander ={
+		traits = { skilled_staffer trickster}
+		skill = 4
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 4
+		}
+     }		 
+	 
+	ihsan_uyar ={
+		name="İhsan Uyar"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/ihsan_uyar.png"
+			}
+			army={
+				large="gfx/leaders/TUR/ihsan_uyar.dds"
+			}
+		}
+		corps_commander ={
+		traits = { artillery_leader }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 3
+		}
+     }		 
+	 
+	kamil_basoglu ={
+		name="Kamil Başoğlu"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/kamil_basoglu.png"
+			}
+			army={
+				large="gfx/leaders/TUR/kamil_basoglu.dds"
+			}
+		}
+		corps_commander ={
+		traits = { skilled_staffer ranger tsk_ustun_hizmet_madalyonu}
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 4
+		}
+     }			 
+	 
+	metin_gurak ={
+		name="Metin Gürak"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/metin_gurak.png"
+			}
+			army={
+				large="gfx/leaders/TUR/metin_gurak.dds"
+			}
+		}
+		corps_commander ={
+		traits = { air_cavalry_expert special_forces_expert tsk_ustun_hizmet_madalyonu}
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 4
+		}
+     }		 
+	 
+	seref_ongay ={
+		name="Şeref Öngay"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/seref_ongay.png"
+			}
+			army={
+				large="gfx/leaders/TUR/seref_ongay.dds"
+			}
+		}
+		corps_commander ={
+		traits = { organizer }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+		}
+     }			 
+	 
+	yavuz_turkgenci ={
+		name="Yavuz Türkgenci"
+		portraits={
+			army={
+				small="gfx/leaders/small/MD_specials/yavuz_turkgenci.png"
+			}
+			army={
+				large="gfx/leaders/TUR/yavuz_turkgenci.dds"
+			}
+		}
+		corps_commander ={
+		traits = { panzer_expert combined_arms_expert tsk_nato_officer}
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 4
+		}
+     }		 
+	 
+	hursit_tolon ={
+		name="Hurşit Tolon"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/hursit_tolon.png"
+			}
+			army={
+				large="gfx/leaders/TUR/hursit_tolon.dds"
+			}
+		}
+		field_marshal={
+		traits = { logistics_wizard trait_TUR_kemalist_champion}
+		skill = 4
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 4
+		}
+     }		
+	 
+	sener_eruygur ={
+		name="Sener Eruygur"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/sener_eruygur.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/sener_eruygur.dds"
+			}
+		}
+		field_marshal={
+		traits = { tsk_ustun_hizmet_madalyonu ambusher artillery_leader trait_TUR_kemalist_champion }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+		}
+     }		
+
+	osman_pamukoglu ={
+		name = "Osman Pamukoğlu"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/osman_pamukoglu.png"
+			}
+			army={
+				large="gfx/leaders/TUR/osman_pamukoglu.dds"
+			}
+		}
+        corps_commander = {
+		traits = { tsk_ustun_cesaret_madalyonu offensive_doctrine winter_expert tsk_nato_officer trait_TUR_kemalist_champion}
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 4
+		}
+	}
+
+	bulent_alpkaya={
+		name="Bülent Alpkaya"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/bulent_alpkaya.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/bulent_alpkaya.dds"
+			}
+		}
+		navy_leader={
+			traits={ blue_water_expert ironside lancer}
+			skill=4
+			attack_skill=5
+			defense_skill=5
+			maneuvering_skill= 6
+			coordination_skill=4
+		}
+	}
+
+
+	ozden_ordek ={
+		name="Özden Örnek"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/ozden_ordek.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/ozden_ordek.dds"
+			}
+		}
+		navy_leader={
+			traits={ tsk_nato_officer screen_captain}
+			skill=4
+			attack_skill=3
+			defense_skill=6
+			maneuvering_skill=2
+			coordination_skill=2
+		}
+	}
+
+	TUR_musa_avsever={
+		name="Musa Avsever"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Musa_Avsever_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Musa_Avsever.dds"
+			}
+		}
+		field_marshal={
+			traits={ fast_planner }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=2
+		}
+	}
+	TUR_abdullah_recep={
+		name="Abdullah Recep"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Abdullah_Recep_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Abdullah_Recep.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard logistics_wizard }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=5
+		}
+		advisor={
+			slot = army_chief
+			idea_token = abdullah_recep
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_chief_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TUR_galip_mendi={
+		name="Galip Mendi"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Galip_Mendi_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Galip_Mendi.dds"
+			}
+		}
+		field_marshal={
+			traits={ organisational_leader tsk_ustun_cesaret_madalyonu tsk_basari_madalyonu}
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	TUR_hakan_atinc={
+		name="Hakan Atınç"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Hakan_Atinc_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Hakan_Atinc.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	TUR_izzet_cetingoz={
+		name="Izzet Çetingöz"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Izzet_Cetingoz_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Izzet_Cetingoz.dds"
+			}
+		}
+		corps_commander={
+			traits={ organizer adaptable trickster trait_TUR_kemalist_champion}
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=4
+		}
+	}
+	TUR_erdal_ozturk={
+		name="Erdal Öztürk"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Erdal_Ozturk_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Erdal_Ozturk.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=2
+		}
+	}
+	TUR_mehmet_faruk_sengun={
+		name="Mehmet Faruk Şengün"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Mehmet_Faruk_Sengun_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Mehmet_Faruk_Sengun.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	TUR_ali_sivri={
+		name="Ali Sivri"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Ali_Sivri_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Ali_Sivri.dds"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=4
+		}
+	}
+	TUR_yilmaz_uyar={
+		name="Yılmaz Uyar"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Yilmaz_Uyar_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Yilmaz_Uyar.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = yilmaz_uyar
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_CombinedArms_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TUR_levent_kose={
+		name="Levent Köse"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Levent_Kose_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Levent_Kose.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando trait_mountaineer }
+			skill=5
+			attack_skill=2
+			defense_skill=5
+			planning_skill=6
+			logistics_skill=3
+		}
+	}
+	TUR_abidin_unal={
+		name="Abidin Ünal"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Abidin_Unal_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Abidin_Unal.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando ranger tsk_seref_madalyonu tsk_ustun_cesaret_madalyonu tsk_ustun_hizmet_madalyonu tsk_nato_officer trait_TUR_kemalist_champion }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+	TUR_akin_ozturk={
+		name="Akın Öztürk"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Akin_Ozturk_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Akin_Ozturk.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = akin_ozturk
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_entrenchment_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TUR_mehmet_sanver={
+		name="Mehmet Şanver"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Mehmet_Sanver_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Mehmet_Sanver.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = mehmet_sanver
+			ledger = army
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TUR_adnan_ozbal={
+		name="Adnan Özbal"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Adnan_Ozbal_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Adnan_Ozbal.dds"
+			}
+		}
+		navy_leader={
+			traits={ ironside }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			maneuvering_skill=2
+			coordination_skill=2
+		}
+	}
+	TUR_veysel_kosele={
+		name="Veysel Kösele"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Veysel_Kosele_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Veysel_Kosele.dds"
+			}
+		}
+		navy_leader={
+			traits={ spotter }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=4
+			coordination_skill=5
+		}
+	}
+	TUR_hasan_usaklioglu={
+		name="Hasan Uşaklıoğlu"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Hasan_Usaklioglu_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Hasan_Usaklioglu.dds"
+			}
+		}
+		navy_leader={
+			traits={ seawolf }
+			skill=5
+			attack_skill=6
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=2
+		}
+	}
+	TUR_ercument_tatlioglu={
+		name="Ercüment Tatlıoğlu"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/Portrait_Ercument_Tatlioglu_small.dds"
+			}
+			army={
+				large="gfx/leaders/TUR/Portrait_Ercument_Tatlioglu.dds"
+			}
+		}
+		navy_leader={
+			traits={ fly_swatter }
+			skill=4
+			attack_skill=2
+			defense_skill=6
+			maneuvering_skill=3
+			coordination_skill=2
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ercument_tatlioglu
+			ledger = navy
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		} }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################### Mafias ##################################
+
+
+	sedat_peker ={
+		name = "Reis Sedat Peker"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/sedat_peker.png"
+			}
+			army={
+				large="gfx/leaders/TUR/sedat_peker.dds"
+			}
+		}
+        field_marshal = {
+		traits = { scavanger infantry_expert urban_assault_specialist skilled_staffer}
+		skill = 4
+		attack_skill = 5
+		defense_skill = 2
+		planning_skill = 4
+		logistics_skill = 2
+		}
+	}
+	
+	alattin_cakici ={
+		name = "Alaattin Çakıcı"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/alattin_cakici.png"
+			}
+			army={
+				large="gfx/leaders/TUR/alattin_cakici.dds"
+			}
+		}
+        field_marshal = {
+		traits = { expert_delegetor adaptable charismatic }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 5
+		planning_skill = 3
+		logistics_skill = 2
+		}
+	}	
+	
+	celal_han_peker ={
+		name = "Celal Han Peker"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/celal_han_peker.png"
+			}
+			army={
+				large="gfx/leaders/TUR/celal_han_peker.dds"
+			}
+		}
+        field_marshal = {
+		traits = { fast_planner skilled_staffer }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 5
+		}
+	}
+	
+	huseyin_basbasin ={
+		name = "Hüseyin Baybaşin"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/huseyin_basbasin.png"
+			}
+			army={
+				large="gfx/leaders/TUR/huseyin_basbasin.dds"
+			}
+		}
+        field_marshal = {
+		traits = { camouflage_expert adaptable fast_planner guerilla_fighter }
+		skill = 4
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 5
+		logistics_skill = 3
+		}
+	}
+	
+	kurt_idris ={
+		name = "Namı Değer Kürt Idris"
+		portraits={
+			army={
+				small="gfx/leaders/TUR/small/MD_specials/nami_deger_kurt_idris.png"
+			}
+			army={
+				large="gfx/leaders/TUR/nami_deger_kurt_idris.dds"
+			}
+		}
+        field_marshal = {
+		traits = { ambusher logistics_wizard expert_delegetor }
+		skill = 4
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 5
+		logistics_skill = 3
+		}
+	}
+	
+############################## Others ##############################
+
+	AZE_zakir_hasanov={
+		name="Zakir Hasanov"
+		portraits={
+			army={
+				small="gfx/leaders/AZE/small/Zakir_Hasanov_small.dds"
+				large="gfx/leaders/AZE/Zakir_Hasanov.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard organisational_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	AZE_najmeddin_sadikov={
+		name="Najmeddin Sadikov"
+		portraits={
+			army={
+				small="gfx/leaders/AZE/small/Najmeddin_Sadikov_small.dds"
+				large="gfx/leaders/AZE/Najmeddin_Sadikov.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+		advisor={
+			slot = high_command
+			idea_token = najmeddin_sadikov
+			ledger = army
+			allowed = {
+				original_tag = AZE
+			}
+			traits = {
+				army_CombinedArms_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	AZE_elchin_guliyev={
+		name="Elchin Guliyev"
+		portraits={
+			army={
+				small="gfx/leaders/AZE/small/Elchin_Guliyev_small.dds"
+				large="gfx/leaders/AZE/Elchin_Guliyev.dds"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+	AZE_shahin_sultanov={
+		name="Shahin Sultanov"
+		portraits={
+			army={
+				small="gfx/leaders/AZE/small/Shahin_Sultanov_small.dds"
+				large="gfx/leaders/AZE/Shahin_Sultanov.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=1
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = shahin_sultanov
+			allowed = {
+				original_tag = AZE
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	AZE_anwar_efendiev={
+		name="Anwar Efendiev"
+		portraits={
+			army={
+				small="gfx/leaders/AZE/small/Anwar_Efendiev_small.dds"
+				large="gfx/leaders/AZE/Anwar_Efendiev.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = anwar_efendiev
+			allowed = {
+				original_tag = AZE
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	AZE_ilham_mehdiyev={
+		name="Ilham Mehdiyev"
+		portraits={
+			army={
+				small="gfx/leaders/AZE/small/Ilham_Mehdiyev_small.dds"
+				large="gfx/leaders/AZE/Ilham_Mehdiyev.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ilham_mehdiyev
+			allowed = {
+				original_tag = AZE
+			}
+			traits = {
+				army_chief_entrenchment_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	AZE_rail_rzayev={
+		name="Rail Rzayev"
+		portraits={
+			army={
+				small="gfx/leaders/AZE/small/Rail_Rzayev_small.dds"
+				large="gfx/leaders/AZE/Rail_Rzayev.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = rail_rzayev
+			allowed = {
+				original_tag = AZE
+			}
+			traits = {
+				air_chief_reform_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	AZE_altay_mehdiyev={
+		name="Altay Mehdiyev"
+		portraits={
+			army={
+				small="gfx/leaders/AZE/small/Altay_Mehdiyev_small.dds"
+				large="gfx/leaders/AZE/Altay_Mehdiyev.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = altay_mehdiyev
+			allowed = {
+				original_tag = AZE
+			}
+			traits = {
+				air_chief_safety_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	AZE_ramiz_tahirov={
+		name="Ramiz Tahirov"
+		portraits={
+			army={
+				small="gfx/leaders/AZE/small/Ramiz_Tahirov_small.dds"
+				large="gfx/leaders/AZE/Ramiz_Tahirov.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = ramiz_tahirov
+			allowed = {
+				original_tag = AZE
+			}
+			traits = {
+				air_bomber_interception_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	AZE_rovshan_akbaron={
+		name="Rovshan Akbarov"
+		portraits={
+			army={
+				small="gfx/leaders/AZE/small/Rovshan_Akbarov_small.dds"
+				large="gfx/leaders/AZE/Rovshan_Akbarov.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = rovshan_akbaron
+			ledger = army
+			allowed = {
+				original_tag = AZE
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KAZ_murat_maykeev={
+		name="Murat Maykeev"
+		portraits={
+			army={
+				small="gfx/leaders/KAZ/small/Portrait_Murat_Maykeev_small.dd"
+				large="gfx/leaders/KAZ/Portrait_Murat_Maykeev.dds"
+			}
+		}
+		corps_commander={
+			traits={ urban_assault_specialist }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+		}
+		advisor={
+			slot = high_command
+			idea_token = murat_maykeev
+			ledger = army
+			allowed = {
+				original_tag = KAZ
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KAZ_saken_zhasuzakov={
+		name="Saken Zhasuzakov"
+		portraits={
+			army={
+				small="gfx/leaders/KAZ/small/Portrait_Saken_Zhasuzakov_small.dds"
+				large="gfx/leaders/KAZ/Portrait_Saken_Zhasuzakov.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = saken_zhasuzakov
+			allowed = {
+				original_tag = KAZ
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KAZ_murat_bektanov={
+		name="Murat Bektanov"
+		portraits={
+			army={
+				small="gfx/leaders/KAZ/small/Portrait_Murat_Bektanov_small.dds"
+				large="gfx/leaders/KAZ/Portrait_Murat_Bektanov.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = murat_bektanov
+			allowed = {
+				original_tag = KAZ
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KAZ_zhandarbek_zhanzakov={
+		name="Zhandarbek Zhanzakov"
+		portraits={
+			army={
+				small="gfx/leaders/KAZ/small/Portrait_Zhandarbek_Zhanzakov_small.dds"
+				large="gfx/leaders/KAZ/Portrait_Zhandarbek_Zhanzakov.dds"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = zhandarbek_zhanzakov
+			allowed = {
+				original_tag = KAZ
+			}
+			traits = {
+				navy_chief_maneuver_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KAZ_nurlan_ormanbetov={
+		name="Nurlan Ormanbetov"
+		portraits={
+			army={
+				small="gfx/leaders/KAZ/small/Portrait_Nurlan_Ormanbetov_small.dds"
+				large="gfx/leaders/KAZ/Portrait_Nurlan_Ormanbetov.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = nurlan_ormanbetov
+			allowed = {
+				original_tag = KAZ
+			}
+			traits = {
+				air_pilot_training_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KAZ_okas_saparov={
+		name="Okas Saparov"
+		portraits={
+			army={
+				small="gfx/leaders/KAZ/small/Portrait_Okas_Saparov_small.dds"
+				large="gfx/leaders/KAZ/Portrait_Okas_Saparov.dds"
+			}
+		}
+		field_marshal={
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	KAZ_talgat_zhanzhumenov={
+		name="Talgat Zhanzhumenov"
+		portraits={
+			army={
+				small="gfx/leaders/KAZ/small/Portrait_Talgat_Zhanszhumenov_small.dds"
+				large="gfx/leaders/KAZ/Portrait_Talgat_Zhanszhumenov.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	KAZ_daulet_ospanov={
+		name="Daulet Ospanov"
+		portraits={
+			army={
+				small="gfx/leaders/KAZ/small/Portrait_Daulet_Ospanov_small.dds"
+				large="gfx/leaders/KAZ/Portrait_Daulet_Ospanov.dds"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+		}
+	}
+	TRK_yaylym_berdiev={
+		name="Yaylym Berdiev"
+		portraits={
+			army={
+				small="gfx/leaders/TRK/small/Yaylym_Berdiev_small.dds"
+			}
+			army={
+				large="gfx/leaders/TRK/Yaylym_Berdiev.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = yaylym_berdiev
+			ledger = army
+			allowed = {
+				original_tag = TRK
+			}
+			traits = {
+				army_chief_morale_1 
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TRK_agageldy_mammetgeldiyew={
+		name="Agageldy Mämmetgeldiyew"
+		portraits={
+			army={
+				small="gfx/leaders/TRK/small/Agageldy_Mammetgeldiyew_small.dds"
+			}
+			army={
+				large="gfx/leaders/TRK/Agageldy_Mammetgeldiyew.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	TRK_air_chief={
+		portraits={
+			army={
+				small="gfx/leaders/TRK/small/TRK_air_chief_small.dds"
+			}
+			army={
+				large="gfx/leaders/TRK/TRK_air_chief.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = TRK_air_chief
+			ledger = air
+			allowed = {
+				original_tag = TRK
+			}
+			traits = {
+				air_chief_ground_support_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	UZB_tulkun_kasimov={
+		name="Tulkun Kasimov"
+		portraits={
+			army={
+				small="gfx/leaders/UZB/small/Tulkun_Kasimov_small.dds"
+			}
+			army={
+				large="gfx/leaders/UZB/Tulkun_Kasimov.dds"
+			}
+		}
+		field_marshal={
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+		}
+		advisor={
+			slot = army_chief
+			idea_token = tulkun_kasimov
+			ledger = army
+			allowed = {
+				original_tag = UZB
+			}
+			traits = {
+				army_chief_planning_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	UZB_ismail_ergashev={
+		name="Ismail Ergashev"
+		portraits={
+			army={
+				small="gfx/leaders/UZB/small/Ismail_Ergashev_small.dds"
+			}
+			army={
+				large="gfx/leaders/UZB/Ismail_Ergashev.dds"
+			}
+		}
+		corps_commander={
+			traits={ adaptable }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+	UZB_pavel_ergashev={
+		name="Pavel Ergashev"
+		portraits={
+			army={
+				small="gfx/leaders/UZB/small/Pavel_Ergashev_small.dds"
+			}
+			army={
+				large="gfx/leaders/UZB/Pavel_Ergashev.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	UZB_abdulla_xolmuhamedov={
+		name="Abdulla Xolmuhamedov"
+		portraits={
+			army={
+				small="gfx/leaders/UZB/small/Abdulla_Xolmuhamedov_small.dds"
+			}
+			army={
+				large="gfx/leaders/UZB/Abdulla_Xolmuhamedov.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = abdulla_xolmuhamedov
+			ledger = air
+			allowed = {
+				original_tag = UZB
+			}
+			traits = {
+				air_air_superiority_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KYR_erlis_terdikbaev={
+		name="Erlis Terdikbaev"
+		portraits={
+			army={
+				small="gfx/leaders/KYR/small/Erlis_Terdikbaev_small.dds"
+				large="gfx/leaders/KYR/Erlis_Terdikbaev.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = erlis_terdikbaev
+			allowed = {
+				original_tag = KYR
+			}
+			traits = {
+				army_chief_entrenchment_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={ armoured_cavalry_officer unyielding_defender }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	KYR_kylychbek_aidaraliev={
+		name="Kylychbek Aidaraliev"
+		portraits={
+			army={
+				small="gfx/leaders/KYR/small/Kylychbek_Aidaraliev_small.dds"
+				large="gfx/leaders/KYR/Kylychbek_Aidaraliev.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = kylychbek_aidaraliev
+			allowed = {
+				original_tag = KYR
+			}
+			traits = {
+				air_chief_reform_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KYR_kubanychbek_orozmatov={
+		name="Kubanychbek Orozmatov"
+		portraits={
+			army={
+				small="gfx/leaders/KYR/small/Kubanychbek_Orozmatov_small.dds"
+				large="gfx/leaders/KYR/Kubanychbek_Orozmatov.dds"
+			}
+		}
+		corps_commander={
+			traits={ artillery_officer organizer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=1
+		}
+	}
+	KYR_asanbek_alymkozhoev={
+		name="Asanbek Alymkozhoev"
+		portraits={
+			army={
+				small="gfx/leaders/KYR/small/Asanbek_Alymkozhoev_small.dds"
+				large="gfx/leaders/KYR/Asanbek_Alymkozhoev.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = asanbek_alymkozhoev
+			allowed = {
+				original_tag = KYR
+			}
+			traits = {
+				army_commando_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ old_guard commando special_forces_trait trait_mountaineer }
+			skill=4
+			attack_skill=2
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+}

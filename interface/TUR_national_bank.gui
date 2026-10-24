@@ -1,0 +1,70 @@
+@STATUS_X = -10
+@HEADER_X = 10
+
+guiTypes = {
+	containerWindowType = {
+		name = "tur_national_bank_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 350 }
+
+		instantTextBoxType = {
+			name ="TUR_lira_amount_against_dollar"
+			position = { x = 15 y = 25 }
+			font = "hoi_16mbs"
+			text = "Dollar: [?TUR_amount_lira_dollar] Liras"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_lira_amount_against_euro"
+			position = { x = 15 y = 45 }
+			font = "hoi_16mbs"
+			text = "Euro: [?TUR_lira_amount_against_euro] Liras"
+			format = left
+			maxWidth = 497
+		}	
+
+		instantTextBoxType = {
+			name ="TUR_lira_amount_against_bitcoin"
+			position = { x = 15 y = 65 }
+			font = "hoi_16mbs"
+			text = "Bitcoin: [?TUR_lira_amount_against_bitcoin] Liras"
+			format = left
+			maxWidth = 497
+		}			
+
+		instantTextBoxType = {
+			name ="TUR_lira_amount_against_sterlin"
+			position = { x = 15 y = 85 }
+			font = "hoi_16mbs"
+			text = "Sterlin: [?TUR_lira_amount_against_sterlin] Liras"
+			format = left
+			maxWidth = 497
+		}	
+
+		instantTextBoxType = {
+			name ="TUR_interest_rate"
+			position = { x = 15 y = 105 }
+			font = "hoi_16mbs"
+			text = "Interest Rate: %[?TUR_interest_rate]"
+			format = left
+			maxWidth = 497
+		}
+
+		background = {
+			name = "tcbm_gfx"
+			quadTextureSprite = "GFX_state_bank"
+			position = { x = 100 y = 140 }
+		}
+
+		instantTextBoxType = {
+			name ="TUR_bank"
+			position = { x = 150 y = 300 }
+			font = "hoi_16mbs"
+			text = "Photo Of The Turkish Central Bank"
+			format = left
+			maxWidth = 497
+		}
+	}
+}

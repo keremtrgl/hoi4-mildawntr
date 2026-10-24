@@ -1,0 +1,34 @@
+@STATUS_X = -10
+@HEADER_X = 10
+
+guiTypes = {
+	containerWindowType = {
+		name = "tur_earthquake_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 850 }
+
+		instantTextBoxType = {
+			name ="TUR_earthquake_description"
+			position = { x = 3 y = -08 }
+			font = "hoi_16mbs"
+			text = "TUR_earthquake_description_desc"
+			format = left
+			maxWidth = 497
+		}
+
+		background = {
+			name = "turkish_earthquake_map_gfx"
+			quadTextureSprite = "GFX_turkish_earthquake_map"
+			position = { x = 100 y = 330 }
+		}
+
+		instantTextBoxType = {
+			name ="TUR_earth_description"
+			position = { x = 150 y = 490 }
+			font = "hoi_16mbs"
+			text = "TUR_earthquake_map_desc"
+			format = left
+			maxWidth = 497
+		}
+	}
+}

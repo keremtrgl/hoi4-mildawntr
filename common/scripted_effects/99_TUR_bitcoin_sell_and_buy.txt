@@ -1,0 +1,10 @@
+TUR_startup = {
+	set_variable = { TUR_deposit_bitcoin = 0 }
+}
+TUR_amount_lira_dollar = {
+	clamp_variable = {
+		var = TUR_deposit_bitcoin
+		min = 0
+		max = 5000000
+	}
+}

@@ -1,0 +1,10 @@
+TUR_startup = {
+	set_variable = { bddk_level = 5 }
+}
+bddk_level = {
+	clamp_variable = {
+		var = bddk_level
+		min = 0
+		max = 30
+	}
+}

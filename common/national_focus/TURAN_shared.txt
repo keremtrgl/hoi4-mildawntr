@@ -1,0 +1,1763 @@
+shared_focus = {
+		id = TR_policies
+		icon = align_to_turkic_council
+		cost = 10,00
+		x = 11
+		y = 0
+
+		offset = {
+			x = 20 #15
+			y = 20 #15
+			trigger = {
+				tag = KAZ
+			}
+		}
+		offset = {
+	    	x = 50 #15
+			y = 10 #15
+			trigger = {
+				tag = KYR
+			}
+		}
+		offset = {
+		    x = 0 #15
+			y = 30 #15 
+			trigger = {
+				tag = AZE
+			}
+		}
+		offset = {
+			x = 20 #15
+			y = 20 #15
+			trigger = {
+				tag = UZB
+			}
+		}
+		offset = {
+		    x = -20 #15
+			y = 10 #15 
+			trigger = {
+				tag = HUN
+			}
+		}
+		offset = {
+		    x = 0 #15
+			y = 10 #15 
+			trigger = {
+				tag = FIN
+			}
+		}
+		offset = {
+		    x = 0 #15
+			y = 10 #15 
+			trigger = {
+				tag = UKR
+			}
+		}
+		offset = {
+		    x = 0 #15
+			y = 10 #15 
+			trigger = {
+				tag = TRK
+			}
+		}
+		offset = {
+		    x = 0 #15
+			y = 10 #15 
+			trigger = {
+				tag = NCY
+			}
+		}
+		offset = {
+		    x = 67
+		    y = 80
+			trigger = {
+				tag = TUR
+			NOT = {
+has_country_flag = AKP_LIB_FOCUS_LOCATION
+has_country_flag = AYM_FOCUS_LOCATION
+has_country_flag = DSP_FOCUS_LOCATION
+has_country_flag = GENC_FOCUS_LOCATION
+has_country_flag = AKP_LIB_FOCUS_LOCATION
+has_country_flag = CHP_FOCUS_LOCATION
+has_country_flag = ANAP_FOCUS_LOCATION
+has_country_flag = HEPAR_FOCUS_LOCATION
+has_country_flag = TSK_FOCUS_LOCATION
+has_country_flag = MHP_FOCUS_LOCATION
+has_country_flag = MIT_FOCUS_LOCATION
+has_country_flag = TECH_FOCUS_LOCATION
+			}
+		} }
+		offset = {#Y
+		    x = 60 #-20
+		    y = 45
+			trigger = { tag = TUR has_country_flag = AKP_LIB_FOCUS_LOCATION}
+		}
+		offset = {#Y
+		    x = 75 #-20
+		    y = 30
+			trigger = { tag = TUR has_country_flag = AYM_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+		    x = 25 #-20
+		    y = -55
+			trigger = { tag = TUR has_country_flag = ATA_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+			x = 70 #15   #-20
+			y = 40 #20
+			trigger = { tag = TUR has_country_flag = DSP_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+			x = 65 #15   #-20
+			y = 30 #20
+			trigger = { tag = TUR has_country_flag = GENC_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+			x = 70 #15   #-20
+			y = 50 #20
+			trigger = { tag = TUR has_country_flag = CHP_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+			x = 60 #15   #-20
+			y = 35 #20
+			trigger = { tag = TUR has_country_flag = ANAP_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+			x = 4 #15   #-20
+			y = 20 #20
+			trigger = { tag = TUR has_country_flag = TSK_FOCUS_LOCATION}
+		}
+
+		offset = {
+		    x = 16 #-20
+		    y = 40
+			trigger = { tag = TUR has_country_flag = HEPAR_FOCUS_LOCATION }
+		}
+
+		offset = {
+		    x = 45 #-20
+		    y = 10
+			trigger = { tag = TUR has_country_flag = MHP_FOCUS_LOCATION }
+		}
+
+		offset = {
+		    x = 95 #-20
+		    y = 22
+			trigger = { tag = TUR has_country_flag = MIT_FOCUS_LOCATION }
+		}
+
+		offset = {
+		    x = 90 #-20
+		    y = 27
+			trigger = { tag = TUR has_country_flag = TECH_FOCUS_LOCATION }
+		}
+
+	allow_branch = {
+		OR = {
+			original_tag = TUR
+			original_tag = KAZ
+			original_tag = AZE
+			original_tag = KYR
+			original_tag = HUN 
+			original_tag = FIN
+			original_tag = UZB 
+			original_tag = UKR 
+			original_tag = TRK
+			original_tag = NCY 
+		}
+	}
+
+    available = { 	
+	OR = {
+	has_global_flag = TURKIC_CREATED
+	date > 2009.10.3
+	 }
+	}
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_political_power = 150
+			custom_effect_tooltip = DRAFT_FORMAL_1
+			}
+	}
+	shared_focus = {
+		id = TR_reforms
+		icon = TR_engineering
+		cost = 10,00
+		prerequisite = {
+			focus = TR_policies
+		}
+		x = -4
+		y = 1
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = DRAFT_FORMAL_2
+			}
+	}
+	shared_focus = {
+		id = TR_center_of_nomidaic_civilizations
+		icon = align_to_turkic_council
+		cost = 10,00
+		prerequisite = {
+			focus = TR_reforms
+		}
+		x = -5
+		y = 2
+		relative_position_id = TR_policies
+		
+	available = {
+	KAZ = {
+	has_completed_focus = TR_reforms
+    }
+	AZE = {
+	has_completed_focus = TR_reforms
+	}
+	KYR = {
+	has_completed_focus = TR_reforms
+	} }
+	
+	
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = center_of_nomidaic_civizilations
+			}
+	}
+	shared_focus = {
+		id = TR_united_university
+		icon = TR_science
+		cost = 10,00
+		prerequisite = {
+			focus = TR_center_of_nomidaic_civilizations
+		}
+		x = -5
+		y = 3
+		relative_position_id = TR_policies
+
+		
+	available = {
+	KAZ = {
+	has_completed_focus = TR_center_of_nomidaic_civilizations
+    }
+	AZE = {
+	has_completed_focus = TR_center_of_nomidaic_civilizations
+	}
+	KYR = {
+	has_completed_focus = TR_center_of_nomidaic_civilizations
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_research_slot = 1
+			}
+	}
+	shared_focus = {
+		id = TR_nationalist_education_laws
+		icon = TR_science
+		cost = 10,00
+		prerequisite = {
+			focus = TR_united_university
+		}
+		x = -5
+		y = 4
+		relative_position_id = TR_policies
+
+				
+	available = {
+	KAZ = {
+	has_completed_focus = TR_united_university
+    }
+	AZE = {
+	has_completed_focus = TR_united_university
+	}
+	KYR = {
+	has_completed_focus = TR_united_university
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = nationalistic_education_laws
+			}
+	}
+	shared_focus = {
+		id = TR_TURKSOY
+		icon = TR_engineering
+		cost = 10,00
+		prerequisite = {
+			focus = TR_policies
+		}
+		x = -1
+		y = 1
+		relative_position_id = TR_policies
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	
+	completion_reward = {
+			add_ideas = turksoy
+			}
+	}
+	shared_focus = {
+		id = TR_turkic_heritage_council
+		icon = TR_engineering
+		cost = 10,00
+		prerequisite = {
+			focus = TR_reforms
+		}
+		prerequisite = {
+			focus = TR_TURKSOY
+		}
+		x = -3
+		y = 2
+		relative_position_id = TR_policies
+
+		
+	available = {
+	KAZ = {
+	has_completed_focus = TR_reforms
+    }
+	AZE = {
+	has_completed_focus = TR_reforms
+	}
+	KYR = {
+	has_completed_focus = TR_reforms
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = turkic_heritage_council
+			}
+	}
+	shared_focus = {
+		id = TR_turkpa
+		icon = TR_engineering
+		cost = 10,00
+		prerequisite = {
+			focus = TR_policies
+		}
+		x = 1
+		y = 1
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}	
+	completion_reward = {
+			add_ideas = turkpa
+			}
+	}
+	shared_focus = {
+		id = TR_turkic_tv
+		icon = TR_engineering
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkpa
+		}
+		prerequisite = {
+			focus = TR_TURKSOY
+		}
+		x = 0
+		y = 2
+		relative_position_id = TR_policies
+
+	
+	available = {
+	KAZ = {
+	has_completed_focus = TR_turkpa
+	has_completed_focus = TR_TURKSOY
+    }
+	AZE = {
+	has_completed_focus = TR_turkpa
+	has_completed_focus = TR_TURKSOY
+	}
+	KYR = {
+	has_completed_focus = TR_turkpa
+	has_completed_focus = TR_TURKSOY
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			    country_event = TurkeyF.12 
+			}
+	}
+	shared_focus = {
+		id = TR_protest_uyghur_situation
+		icon = TR_iron_fist
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkic_heritage_council
+		}
+		prerequisite = {
+			focus = TR_turkic_tv
+		}
+		x = -3
+		y = 3
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_turkic_tv
+	has_completed_focus = TR_turkic_heritage_council
+    }
+	AZE = {
+	has_completed_focus = TR_turkic_tv
+	has_completed_focus = TR_turkic_heritage_council
+	}
+	KYR = {
+	has_completed_focus = TR_turkic_tv
+	has_completed_focus = TR_turkic_heritage_council
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POTEF503"
+		every_country = {
+			limit = { has_idea = turkic_media }
+			set_temp_variable = { percent_change = -5 }
+			set_temp_variable = { tag_index = CHI.id }
+			set_temp_variable = { influence_target = THIS.id }
+			change_influence_percentage = yes
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+	shared_focus = {
+		id = TR_unitary_speeches
+		icon = TR_unity
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkic_tv
+		}
+		prerequisite = {
+			focus = TR_turkic_heritage_council
+		}
+		x = -1
+		y = 3
+		relative_position_id = TR_policies
+		
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_turkic_tv
+	has_completed_focus = TR_turkic_heritage_council
+    }
+	AZE = {
+	has_completed_focus = TR_turkic_tv
+	has_completed_focus = TR_turkic_heritage_council
+	}
+	KYR = {
+	has_completed_focus = TR_turkic_tv
+	has_completed_focus = TR_turkic_heritage_council
+	} }
+	
+	
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = unitary_speeches
+			}
+	}
+	shared_focus = {
+		id = TR_ergenekon_memories
+		icon = TR_legacy_of_ergenekon
+		cost = 10,00
+		prerequisite = {
+			focus = TR_unitary_speeches
+		}
+		prerequisite = {
+			focus = TR_united_university
+		}
+		x = -2
+		y = 4
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_unitary_speeches
+	has_completed_focus = TR_united_university
+    }
+	AZE = {
+	has_completed_focus = TR_unitary_speeches
+	has_completed_focus = TR_united_university
+	}
+	KYR = {
+	has_completed_focus = TR_unitary_speeches
+	has_completed_focus = TR_united_university
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = turkic_state_federalized
+			}
+	}
+	shared_focus = {
+		id = TR_turkic_media
+		icon = TR_media
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkic_tv
+		}
+		x = 1
+		y = 3
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_turkic_tv
+    }
+	AZE = {
+	has_completed_focus = TR_turkic_tv
+	}
+	KYR = {
+	has_completed_focus = TR_turkic_tv
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = turkic_media
+			}
+	}
+	shared_focus = {
+		id = TR_turkic_parties
+		icon = TR_parties
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkic_media
+		}
+		x = 1
+		y = 4
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_turkic_media
+    }
+	AZE = {
+	has_completed_focus = TR_turkic_media
+	}
+	KYR = {
+	has_completed_focus = TR_turkic_media
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = bureocratic_unification
+			custom_effect_tooltip = DRAFT_FORMAL_6
+			}
+	}
+	shared_focus = {
+		id = TR_turkic_business_council
+		icon = TR_engineering
+		cost = 10,00
+		prerequisite = {
+			focus = TR_policies
+		}
+		x = 4
+		y = 1
+		relative_position_id = TR_policies
+
+	
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = turkic_business_council
+			}
+	}
+	shared_focus = {
+		id = TR_asian_economic_observer_status
+		icon = TR_engineering
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkpa
+		}
+		prerequisite = {
+			focus = TR_turkic_business_council
+		}
+		x = 2
+		y = 2
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_turkic_business_council
+	has_completed_focus = TR_turkpa
+    }
+	AZE = {
+	has_completed_focus = TR_turkic_business_council
+	has_completed_focus = TR_turkpa
+	}
+	KYR = {
+	has_completed_focus = TR_turkic_business_council
+	has_completed_focus = TR_turkpa
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = asian_economic_observer 
+			}
+	}
+	shared_focus = {
+		id = TR_gdp_program
+		icon = TR_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkic_business_council
+		}
+		x = 4
+		y = 2
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_turkic_business_council
+    }
+	AZE = {
+	has_completed_focus = TR_turkic_business_council
+	}
+	KYR = {
+	has_completed_focus = TR_turkic_business_council
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = gdp_program
+			}
+	}
+	shared_focus = {
+		id = TR_low_debt_program
+		icon = TR_debts
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkic_business_council
+		}
+		x = 6
+		y = 2
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_turkic_business_council
+    }
+	AZE = {
+	has_completed_focus = TR_turkic_business_council
+	}
+	KYR = {
+	has_completed_focus = TR_turkic_business_council
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = low_debts_program
+			}
+	}
+	shared_focus = {
+		id = TR_resource_union
+		icon = TR_resource
+		cost = 10,00
+		prerequisite = {
+			focus = TR_gdp_program
+		}
+		prerequisite = {
+			focus = TR_low_debt_program
+		}
+		x = 3
+		y = 3
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_gdp_program
+	has_completed_focus = TR_low_debt_program
+    }
+	AZE = {
+	has_completed_focus = TR_gdp_program
+	has_completed_focus = TR_low_debt_program
+	}
+	KYR = {
+	has_completed_focus = TR_gdp_program
+	has_completed_focus = TR_low_debt_program
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = turkic_resource_commision
+			}
+	}
+	shared_focus = {
+		id = TR_banking_union
+		icon = TR_bank
+		cost = 10,00
+		prerequisite = {
+			focus = TR_low_debt_program
+		}
+		prerequisite = {
+			focus = TR_gdp_program
+		}
+		x = 5
+		y = 3
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_gdp_program
+	has_completed_focus = TR_low_debt_program
+    }
+	AZE = {
+	has_completed_focus = TR_gdp_program
+	has_completed_focus = TR_low_debt_program
+	}
+	KYR = {
+	has_completed_focus = TR_gdp_program
+	has_completed_focus = TR_low_debt_program
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = turkic_bankers_union
+			}
+	}
+	shared_focus = {
+		id = TR_united_economic_movement
+		icon = TR_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TR_banking_union
+		}
+		prerequisite = {
+			focus = TR_resource_union
+		}
+		x = 4
+		y = 4
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_banking_union
+	has_completed_focus = TR_resource_union
+    }
+	AZE = {
+	has_completed_focus = TR_banking_union
+	has_completed_focus = TR_resource_union
+	}
+	KYR = {
+	has_completed_focus = TR_banking_union
+	has_completed_focus = TR_resource_union
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = turkic_economic_movement 
+			}
+	}
+	shared_focus = {
+		id = TR_turkic_ministers
+		icon = TR_bank
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkic_parties
+		}
+		prerequisite = {
+			focus = TR_united_economic_movement
+		}
+		prerequisite = {
+			focus = TR_ergenekon_memories
+		}
+		x = 1
+		y = 5
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_turkic_parties
+	has_completed_focus = TR_united_economic_movement
+	has_completed_focus = TR_ergenekon_memories
+    }
+	AZE = {
+	has_completed_focus = TR_turkic_parties
+	has_completed_focus = TR_united_economic_movement
+	has_completed_focus = TR_ergenekon_memories
+	}
+	KYR = {
+	has_completed_focus = TR_turkic_parties
+	has_completed_focus = TR_united_economic_movement
+	has_completed_focus = TR_ergenekon_memories
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = turkic_ministry
+			custom_effect_tooltip = DRAFT_FORMAL_3
+			}
+	}
+	shared_focus = {
+		id = TR_defence_forces
+		icon = TR_chief
+		cost = 10,00
+		prerequisite = {
+			focus = TR_policies
+		}
+		x = 8
+		y = 1
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}	
+	completion_reward = {
+			add_ideas = turkic_armed_forces
+			}
+	}
+	shared_focus = {
+		id = TR_military_acceptance
+		icon = TR_army
+		cost = 10,00
+		prerequisite = {
+			focus = TR_defence_forces
+		}
+		x = 8
+		y = 2
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_defence_forces
+    }
+	AZE = {
+	has_completed_focus = TR_defence_forces
+	}
+	KYR = {
+	has_completed_focus = TR_defence_forces
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}	
+	completion_reward = {
+	        swap_ideas = {
+			add_idea = turkic_armed_forces_2
+			remove_idea = turkic_armed_forces
+			 }
+			}
+	}
+	shared_focus = {
+		id = TR_turkic_blood
+		icon = TR_army
+		cost = 10,00
+		prerequisite = {
+			focus = TR_military_acceptance
+		}
+		x = 7
+		y = 3
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_military_acceptance
+    }
+	AZE = {
+	has_completed_focus = TR_military_acceptance
+	}
+	KYR = {
+	has_completed_focus = TR_military_acceptance
+	} }
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}	
+	completion_reward = {
+			add_ideas = turkic_blood
+			}
+	}
+	shared_focus = {
+		id = TR_contact_to_military_traditions
+		icon = TR_army
+		cost = 10,00
+		prerequisite = {
+			focus = TR_military_acceptance
+		}
+		x = 9
+		y = 3
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_military_acceptance
+    }
+	AZE = {
+	has_completed_focus = TR_military_acceptance
+	}
+	KYR = {
+	has_completed_focus = TR_military_acceptance
+	} }
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}	
+	completion_reward = {
+			add_ideas = contacting_old_traditions
+			}
+	}
+	shared_focus = {
+		id = TR_regain_war_spirit
+		icon = TR_army
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkic_blood
+		}
+		prerequisite = {
+			focus = TR_contact_to_military_traditions
+		}
+		x = 8
+		y = 4
+		relative_position_id = TR_policies
+
+
+	available = {
+	KAZ = {
+	has_completed_focus = TR_turkic_blood
+	has_completed_focus = TR_contact_to_military_traditions
+    }
+	AZE = {
+	has_completed_focus = TR_turkic_blood
+	has_completed_focus = TR_contact_to_military_traditions
+	}
+	KYR = {
+	has_completed_focus = TR_turkic_blood
+	has_completed_focus = TR_contact_to_military_traditions
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+			add_ideas = war_spirit_of_turkic
+			}
+	}
+	shared_focus	= {
+		id = TR_the_turkic_union
+		icon = TR_union_completed
+		cost = 15,00
+		prerequisite = {
+			focus = TR_turkic_ministers
+		}
+		x = 1
+		y = 6
+		relative_position_id = TR_policies
+
+
+	available = {
+	tag = TUR
+		NOT = {
+		has_idea = NATO_member
+		has_idea = EU_member
+		 }  
+has_country_flag = TURKIC_DEFENSIVE_ALLIANCE
+has_country_flag = TURKIC_MARKETS
+has_country_flag = TURKIC_CURRENCY	
+	NCY = {
+	has_idea = turkic_state
+	}
+	TRK = {
+	has_idea = turkic_state
+	}
+	HUN = {
+	has_idea = turkic_state
+	}
+	KAZ = {
+	has_completed_focus = TR_turkic_ministers
+    }
+	AZE = {
+	has_completed_focus = TR_turkic_ministers
+	}
+	KYR = {
+	has_completed_focus = TR_turkic_ministers
+	} }
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		set_global_flag = TUR_turkic_unification
+		clr_global_flag = NO_TURKIC
+		set_cosmetic_tag = TRU
+			hidden_effect = { country_event = Turkey_news.14 } 
+		add_political_power = -25
+		KAZ = {
+		country_event = TurkeyF.19
+		}
+		UZB = {
+		country_event = TurkeyF.20
+		}
+		AZE = {
+		country_event = TurkeyF.21       
+        }
+		KYR = {
+		country_event = TurkeyF.22
+		}
+        TRK = {
+		country_event = TurkeyF.23		
+		} 
+        HUN = {
+		country_event = TurkeyF.43		
+		} 
+        NCY = {
+		country_event = TurkeyF.44		
+		} 
+		custom_effect_tooltip = DRAFT_FORMAL_13
+hidden_Effect = {
+KAZ = {
+remove_ideas = turkic_heritage_council
+remove_ideas = center_of_nomidaic_civizilations
+remove_ideas = nationalistic_education_laws
+remove_ideas = war_spirit_of_turkic
+remove_ideas = contacting_old_traditions
+remove_ideas = turkic_blood
+remove_ideas = turkic_armed_forces_2
+remove_ideas = turkic_armed_forces
+remove_ideas = turkic_ministry
+remove_ideas = turkic_economic_movement
+remove_ideas = turkic_bankers_union
+remove_ideas = turkic_resource_commision
+remove_ideas = low_debts_program
+remove_ideas = gdp_program
+remove_ideas = asian_economic_observer
+remove_ideas = turkic_business_council
+remove_ideas = bureocratic_unification
+remove_ideas = turkic_media
+remove_ideas = unitary_speeches
+remove_ideas = turkpa
+remove_ideas = turksoy
+remove_ideas = turkic_tv
+remove_ideas = turkic_state_federalized
+remove_ideas = turkic_state	
+	} 
+KYR = {
+remove_ideas = turkic_heritage_council
+remove_ideas = center_of_nomidaic_civizilations
+remove_ideas = nationalistic_education_laws
+remove_ideas = war_spirit_of_turkic
+remove_ideas = contacting_old_traditions
+remove_ideas = turkic_blood
+remove_ideas = turkic_armed_forces_2
+remove_ideas = turkic_armed_forces
+remove_ideas = turkic_ministry
+remove_ideas = turkic_economic_movement
+remove_ideas = turkic_bankers_union
+remove_ideas = turkic_resource_commision
+remove_ideas = low_debts_program
+remove_ideas = gdp_program
+remove_ideas = asian_economic_observer
+remove_ideas = turkic_business_council
+remove_ideas = bureocratic_unification
+remove_ideas = turkic_media
+remove_ideas = unitary_speeches
+remove_ideas = turkpa
+remove_ideas = turksoy
+remove_ideas = turkic_tv
+remove_ideas = turkic_state_federalized
+remove_ideas = turkic_state	
+	} 
+TUR = {
+remove_ideas = turkic_heritage_council
+remove_ideas = center_of_nomidaic_civizilations
+remove_ideas = nationalistic_education_laws
+remove_ideas = war_spirit_of_turkic
+remove_ideas = contacting_old_traditions
+remove_ideas = turkic_blood
+remove_ideas = turkic_armed_forces_2
+remove_ideas = turkic_armed_forces
+remove_ideas = turkic_ministry
+remove_ideas = turkic_economic_movement
+remove_ideas = turkic_bankers_union
+remove_ideas = turkic_resource_commision
+remove_ideas = low_debts_program
+remove_ideas = gdp_program
+remove_ideas = asian_economic_observer
+remove_ideas = turkic_business_council
+remove_ideas = bureocratic_unification
+remove_ideas = turkic_media
+remove_ideas = unitary_speeches
+remove_ideas = turkpa
+remove_ideas = turksoy
+remove_ideas = turkic_tv
+remove_ideas = turkic_state_federalized
+remove_ideas = turkic_state	
+	} 
+AZE = {
+remove_ideas = turkic_heritage_council
+remove_ideas = center_of_nomidaic_civizilations
+remove_ideas = nationalistic_education_laws
+remove_ideas = war_spirit_of_turkic
+remove_ideas = contacting_old_traditions
+remove_ideas = turkic_blood
+remove_ideas = turkic_armed_forces_2
+remove_ideas = turkic_armed_forces
+remove_ideas = turkic_ministry
+remove_ideas = turkic_economic_movement
+remove_ideas = turkic_bankers_union
+remove_ideas = turkic_resource_commision
+remove_ideas = low_debts_program
+remove_ideas = gdp_program
+remove_ideas = asian_economic_observer
+remove_ideas = turkic_business_council
+remove_ideas = bureocratic_unification
+remove_ideas = turkic_media
+remove_ideas = unitary_speeches
+remove_ideas = turkpa
+remove_ideas = turksoy
+remove_ideas = turkic_tv
+remove_ideas = turkic_state_federalized
+remove_ideas = turkic_state	
+	} 
+NCY = {
+remove_ideas = turkic_state	
+	} 
+HUN = {
+remove_ideas = turkic_state	
+	}
+TRK = {
+remove_ideas = turkic_state	
+	} 	
+UZB = {
+remove_ideas = turkic_state	
+	} 
+	} 
+} }
+	shared_focus = {
+		id = TR_nationalism
+		icon = TR_iron_fist
+		cost = 10,00
+		prerequisite = {
+			focus = TR_the_turkic_union
+		}
+		x = 0
+		y = 7
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+     add_political_power = 75
+	 add_war_support = 0.07
+			}
+	}
+	shared_focus = {
+		id = TR_democratic_movement
+		icon = TR_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = TR_nationalism
+		}
+		mutually_exclusive = {
+			focus = TR_return_of_the_monarchy
+			focus = TR_launch_a_coup
+		}
+		x = -8
+		y = 8
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.30
+		}
+		custom_effect_tooltip = tooltip_USoE_conservatism_rise_10
+		add_to_variable = { party_pop_array^1 = 0.10 }
+		custom_effect_tooltip = tooltip_USoE_liberalism_rise_10
+		add_to_variable = { party_pop_array^2 = 0.10 }
+		custom_effect_tooltip = tooltip_USoE_socialism_rise_10
+		add_to_variable = { party_pop_array^3 = 0.10 }
+		recalculate_party = yes
+	}
+	}
+	shared_focus = {
+		id = TR_return_of_the_monarchy
+		icon = TR_khan
+		cost = 10,00
+		prerequisite = {
+			focus = TR_nationalism
+		}
+		mutually_exclusive = {
+			focus = TR_launch_a_coup
+			focus = TR_democratic_movement
+		}
+		x = -5
+		y = 8
+		relative_position_id = TR_policies
+	
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}	
+	completion_reward = {
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.20
+		}
+		custom_effect_tooltip = tooltip_USoE_Nat_Autocracy_rise_10
+		add_to_variable = { party_pop_array^22 = 0.10 }
+		custom_effect_tooltip = tooltip_USoE_Monarchist_rise_10
+		add_to_variable = { party_pop_array^23 = 0.10 }
+		recalculate_party = yes
+		add_war_support = 0.1
+	custom_effect_tooltip = DRAFT_FORMAL_7
+     	}
+	}
+	shared_focus = {
+		id = TR_elect_a_turkic_khan
+		icon = TR_elections
+		cost = 10,00
+		prerequisite = {
+			focus = TR_return_of_the_monarchy
+		}
+		x = -5
+		y = 9
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}	
+	completion_reward = {
+			    country_event = TurkeyF.46
+			}
+	}
+	shared_focus = {
+		id = TR_continuation_with_islam
+		icon = islam
+		cost = 10,00
+		prerequisite = {
+			focus = TR_elect_a_turkic_khan
+		}
+		mutually_exclusive = {
+			focus = TR_traditional_religion_first
+		}
+		x = -4
+		y = 10
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+     add_political_power = 100
+			}
+	}
+	shared_focus = {
+		id = TR_traditional_religion_first
+		icon = TR_tengri
+		cost = 10,00
+		prerequisite = {
+			focus = TR_elect_a_turkic_khan
+		}
+		mutually_exclusive = {
+			focus = TR_continuation_with_islam
+		}
+		x = -6
+		y = 10
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+	remove_ideas = sunni
+	remove_ideas = christian
+	remove_ideas = orthodox_christian
+	add_ideas = tengri_sponsored_country
+				    country_event = TurkeyF.45
+			}
+	}
+	shared_focus = {
+		id = TR_expansionism
+		icon = TR_time_has_come
+		cost = 10,00
+		prerequisite = {
+			focus = TR_the_turkic_union
+		}
+		x = 2
+		y = 7
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+add_ideas = turkic_expansionism
+			}
+	}
+	shared_focus = {
+		id = TR_tengri_flags
+		icon = TR_tengri
+		cost = 10,00
+		prerequisite = {
+			focus = TR_traditional_religion_first
+		}
+		x = -6
+		y = 11
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+	swap_ideas = {
+     add_idea = official_tengri_state
+     remove_idea = tengri_sponsored_country
+                }
+			}
+	}
+	shared_focus = {
+		id = TR_rise_of_islam
+		icon = islamist_gov2
+		cost = 10,00
+		prerequisite = {
+			focus = TR_continuation_with_islam
+		}
+		x = -4
+		y = 11
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+     add_ideas = leader_of_the_second_islamic_golden_age
+			}
+	}
+	shared_focus = {
+		id = TR_greater_turkic_regime
+		icon = TR_union_completed
+		cost = 10,00
+		prerequisite = {
+			focus = TR_rise_of_islam
+			focus = TR_tengri_flags
+		}
+		x = -5
+		y = 12
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+        completion_reward = {
+		        add_political_power = 75
+				add_war_support = 0.05
+				set_temp_variable = { temp_opinion = -15 }	
+            change_the_military_opinion = yes	
+				set_temp_variable = { temp_opinion = 20 }	
+            change_the_ulema_opinion = yes
+	} } 
+	shared_focus = {
+		id = TR_launch_a_coup
+		icon = TR_knifes
+		cost = 10,00
+		prerequisite = {
+			focus = TR_nationalism
+		}
+		mutually_exclusive = {
+			focus = TR_return_of_the_monarchy
+			focus = TR_democratic_movement
+		}
+		x = -1
+		y = 8
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+
+	completion_reward = {
+		add_war_support = 0.2
+		add_stability = -0.1
+		set_temp_variable = { rul_party_temp = 22 }
+		set_temp_variable = { enable_elections = 1 }
+		change_ruling_party_effect = yes
+		set_temp_variable = { party_index = 22 }
+		set_temp_variable = { party_popularity_increase = 0.30 }
+		set_temp_variable = { temp_outlook_increase = 0.30 }
+		add_relative_party_popularity = yes
+	}
+	}
+	shared_focus = {
+		id = TR_coup_traditions
+		icon = TR_army
+		cost = 10,00
+		prerequisite = {
+			focus = TR_launch_a_coup
+		}
+		x = -2
+		y = 9
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		add_ideas = coup_traditions
+			}
+	}
+	shared_focus = {
+		id = TR_power_is_prosper
+		icon = TR_army
+		cost = 10,00
+		prerequisite = {
+			focus = TR_launch_a_coup
+		}
+		x = 0
+		y = 9
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		add_ideas = power_is_prosper
+			}
+	}
+	shared_focus = {
+		id = TR_turkic_empire
+		icon = TR_union_completed
+		cost = 10,00
+		prerequisite = {
+			focus = TR_united_chiefs
+		}
+		x = -1
+		y = 11
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+        completion_reward = {
+		        add_political_power = 75
+				add_war_support = 0.05
+				set_temp_variable = { temp_opinion = 15 }	
+            change_the_military_opinion = yes	
+				set_temp_variable = { temp_opinion = -20 }	
+            change_the_ulema_opinion = yes	
+	} } 
+	shared_focus = {
+		id = TR_united_chiefs
+		icon = TR_chief
+		cost = 10,00
+		prerequisite = {
+			focus = TR_power_is_prosper
+		}
+		prerequisite = {
+			focus = TR_coup_traditions
+		}
+		x = -1
+		y = 10
+		relative_position_id = TR_policies
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		add_ideas = united_chiefs_turkic
+			}
+	}
+	shared_focus = {
+		id = TR_took_over_azerbaijani_corridor
+		icon = attack_armenia
+		cost = 10,00
+		prerequisite = {
+			focus = TR_expansionism
+		}
+		x = 4
+		y = 8
+		relative_position_id = TR_policies
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = ARM
+		}
+			}
+	}
+	shared_focus = {
+		id = TR_save_turks_in_china
+		icon = attack_china
+		cost = 10,00
+		prerequisite = {
+			focus = TR_expansionism
+		}
+		x = 6
+		y = 8
+		relative_position_id = TR_policies
+
+	
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = CHI
+		}
+			}
+	}
+	shared_focus = {
+		id = TR_assimalation_of_armenia
+		icon = TR_azerbaijan_gateway
+		cost = 10,00
+		prerequisite = {
+			focus = TR_took_over_azerbaijani_corridor
+		}
+		x = 4
+		y = 9
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}	
+	completion_reward = {
+		add_state_core = 709
+		add_state_core = 1035
+		add_state_core = 1034
+		add_state_core = 1036
+		add_state_core = 710
+		add_state_core = 1037
+		add_stability = -0.05 
+			}
+	}
+	shared_focus = {
+		id = TR_confidence_of_fireoverload
+		icon = TR_constution
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkic_empire
+		}
+		x = -1
+		y = 12
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+        completion_reward = {
+		        add_war_support = 0.2
+				army_experience = 200
+	} } 
+	shared_focus = {
+		id = TR_democracy_at_lasts
+		icon = blue_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = TR_democratic_movement
+		}
+		x = -8
+		y = 9
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+		
+		completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+		custom_effect_tooltip = tooltip_USoE_conservatism_rise_5
+		add_to_variable = { party_pop_array^1 = 0.05 }
+		custom_effect_tooltip = tooltip_USoE_liberalism_rise_5
+		add_to_variable = { party_pop_array^2 = 0.05 }
+		custom_effect_tooltip = tooltip_USoE_socialism_rise_5
+		add_to_variable = { party_pop_array^3 = 0.05 }
+		recalculate_party = yes
+		add_ideas = USoE_digital_democracy
+		}
+	}
+	shared_focus = {
+		id = TR_rebuild_turkic_east
+		icon = TR_uyguristan
+		cost = 10,00
+		prerequisite = {
+			focus = TR_save_turks_in_china
+		}
+		x = 6
+		y = 9
+		relative_position_id = TR_policies
+
+	
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		add_state_core = 592
+			592 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}	
+          }				
+			}
+	}
+	shared_focus = {
+		id = TR_save_turks_in_russia
+		icon = attack_russia
+		cost = 10,00
+		prerequisite = {
+			focus = TR_expansionism
+		}
+		x = 8
+		y = 8
+		relative_position_id = TR_policies
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = SOV
+		}
+			}
+	}
+	shared_focus = {
+		id = TR_turkic_rebellions
+		icon = TR_yakutistan
+		cost = 10,00
+		prerequisite = {
+			focus = TR_save_turks_in_russia
+		}
+		x = 8
+		y = 9
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		add_state_core = 688
+		add_state_core = 671
+		add_state_core = 669
+			}
+	}
+	shared_focus = {
+		id = TR_crimea_take_over
+		icon = TR_crimea
+		cost = 10,00
+		prerequisite = {
+			focus = TR_launch_ukraine
+		}
+		x = 10
+		y = 9
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		add_state_core = 669
+			}
+	}
+	shared_focus = {
+		id = TR_launch_ukraine
+		icon = attack_ukraine
+		cost = 10,00
+		prerequisite = {
+			focus = TR_expansionism
+		}
+		x = 10
+		y = 8
+		relative_position_id = TR_policies
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = UKR
+		}
+			}
+	}
+	shared_focus = {
+		id = TR_save_turks_in_iran
+		icon = attack_iran
+		cost = 10,00
+		prerequisite = {
+			focus = TR_expansionism
+		}
+		x = 12
+		y = 8
+		relative_position_id = TR_policies
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = PER
+		}
+			}
+	}
+	shared_focus = {
+		id = TR_launch_an_invasion
+		icon = TR_south_azerbaijan
+		cost = 10,00
+		prerequisite = {
+			focus = TR_save_turks_in_iran
+		}
+		x = 12
+		y = 9
+		relative_position_id = TR_policies
+
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+		add_state_core = 979
+		add_state_core = 407
+		add_state_core = 1073
+		add_state_core = 1039
+			}
+	}
+	shared_focus = {
+		id = TR_the_greater_turkic_empire
+		icon = TR_union_completed
+		cost = 10,00
+		prerequisite = {
+			focus = TR_turkic_rebellions
+		}
+		prerequisite = {
+			focus = TR_crimea_take_over
+		}
+		prerequisite = {
+			focus = TR_launch_an_invasion
+		}
+		prerequisite = {
+			focus = TR_rebuild_turkic_east
+		}
+		prerequisite = {
+			focus = TR_assimalation_of_armenia
+		}
+		x = 8
+		y = 10
+		relative_position_id = TR_policies
+
+			search_filters = {FOCUS_FILTER_TURKIC_UNION}
+	completion_reward = {
+	set_cosmetic_tag = TURKIC_FLX
+	add_stability = 0.1
+	}
+}

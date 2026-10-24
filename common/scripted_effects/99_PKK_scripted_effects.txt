@@ -1,0 +1,62 @@
+
+TUR_remove_pkk = {
+	custom_effect_tooltip = NOT_PREPARED
+    custom_effect_tooltip = CORE_THE_SOUTH
+	hidden_effect = {
+	remove_ideas = pkk_terror_idea
+	remove_ideas = TUR_PKK_insurgency_ceasefire
+	remove_ideas = TUR_PKK_insurgency_active
+	remove_ideas = TUR_PKK_active_foreign
+
+	remove_ideas = TUR_kurdish_trouble
+	remove_ideas = TUR_kurdish_trouble2
+	remove_ideas = TUR_kurdish_trouble3
+	remove_ideas = TUR_kurdish_trouble4
+	remove_ideas = TUR_kurdish_trouble5
+	remove_ideas = TUR_kurdish_trouble6
+	remove_ideas = TUR_kurdish_trouble7
+	set_country_flag = TUR_PKK_tamed
+	clear_variable = TUR_PKK_aggro_increase
+	clear_variable = TUR_PKK_min_strength
+	clear_variable = TUR_PKK_aggro
+	clear_variable = TUR_PKK_max_aggro
+	clear_variable = TUR_PKK_strength
+	clear_variable = TUR_event_counter_1_pkk
+	clear_variable = TUR_event_counter_2_pkk
+	clear_variable = TUR_event_counter_3_pkk
+	SYR = {
+	remove_ideas = TUR_PKK_active_foreign
+	}
+
+	935 = { remove_dynamic_modifier = { modifier = kurdish_resistance_dynamic_modifier } }
+	162 = { remove_dynamic_modifier = { modifier = kurdish_resistance_dynamic_modifier } }
+
+	935 = {
+	    reset_resistance = yes
+		disable_resistance = yes
+		remove_resistance = yes
+		start_resistance = yes 
+		cancel_resistance = yes 
+		set_resistance = 0
+	}
+
+	162 = {
+	    reset_resistance = yes
+		disable_resistance = yes
+		remove_resistance = yes
+		start_resistance = yes 
+		cancel_resistance = yes 
+		set_resistance = 0
+	}
+
+	162 = { set_demilitarized_zone = no }
+	935 = { set_demilitarized_zone = no }
+
+	add_state_core = 162
+	add_state_core = 935	
+	}
+}
+
+
+#935 = { add_dynamic_modifier = { modifier = cored_by_the_turkish_state } }
+#162 = { add_dynamic_modifier = { modifier = cored_by_the_turkish_state } }

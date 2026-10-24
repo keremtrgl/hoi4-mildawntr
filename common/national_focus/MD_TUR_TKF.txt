@@ -1,0 +1,9679 @@
+focus_tree = {
+	id = MD_TUR_TKP
+	default = no
+	
+	focus = {
+		id = TKF_vote_time
+		icon = Focus_Socialist_Propaganda
+		cost = 10,00
+		x = 43
+		y = 0
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			            add_political_power = 75
+						add_stability = -0.02
+						add_popularity = {
+							ideology = communism
+							popularity = 0.07
+						}	}
+		}
+	focus = {
+		id = TKF_countrywide_propaganda
+		icon = communist_propaganda
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_vote_time
+		}
+		x = 42
+		y = 1
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			            add_political_power = 100
+						add_popularity = {
+							ideology = communism
+							popularity = 0.03
+						}	}
+		}
+	focus = {
+		id = TKF_majority_propaganda
+		icon = generic_communism_focus
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_vote_time
+		}
+		x = 44
+		y = 1
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			            add_political_power = 100
+						add_popularity = {
+							ideology = communism
+							popularity = 0.03
+						}	}
+		}
+	focus = {
+		id = TKF_create_anti_right_movement
+		icon = MEX_Left_wing_radicals
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_countrywide_propaganda
+		}
+		prerequisite = {
+			focus = TKF_majority_propaganda
+		}
+		x = 43
+		y = 2
+
+		completion_reward = {
+						add_ideas = anti_right_movement
+		}
+		}
+	focus = {
+		id = TKF_workers_and_peasents
+		icon = left_Propaganda
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_create_anti_right_movement
+		}
+		x = 41
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			custom_effect_tooltip = WORKERS_DAS_RADIKAL
+						add_stability = -0.05
+						army_experience = 25
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}
+		}
+	focus = {
+		id = TKF_take_over_the_majority
+		icon = major_alliance2
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_create_anti_right_movement
+		}
+		x = 43
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+						add_stability = 0.03
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}
+		}
+	focus = {
+		id = TKF_burocratic_changes
+		icon = roads_extend_plan
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_create_anti_right_movement
+		}
+		x = 45
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			custom_effect_tooltip = BUREOCRATIC_DAS_RADIKAL
+						add_stability = -0.1
+						add_popularity = {
+							ideology = communism
+							popularity = 0.1
+						}	}
+		}
+	focus = {
+		id = TKF_the_elections..
+		icon = election2
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_take_over_the_majority
+		}
+		prerequisite = {
+			focus = TKF_burocratic_changes
+		}
+		prerequisite = {
+			focus = TKF_workers_and_peasents
+		}
+		x = 43
+		y = 4
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+						add_stability = 0.05
+country_event = MD4_election_campaign.0
+		}
+		}
+	focus = {
+		id = TKF_kick_the_ulkists
+		icon = nationalist_education
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_the_elections..
+		}
+		x = 42
+		y = 5
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+						add_stability = -0.03
+						add_popularity = {
+							ideology = nationalist
+							popularity = -0.1
+						}	}
+		}
+	focus = {
+		id = TKF_cooparete_with_not_right
+		icon = communism11
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_the_elections..
+		}
+		x = 44
+		y = 5
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = anti_right_movement_2
+                remove_idea = anti_right_movement
+	} } }
+	focus = {
+		id = TKF_national_rebellion
+		icon = Focus_Down_in_Flames
+		cost = 15,00
+		prerequisite = {
+			focus = TKF_cooparete_with_not_right
+		}
+		prerequisite = {
+			focus = TKF_kick_the_ulkists
+		}
+		x = 43
+		y = 6
+
+
+		completion_reward = {
+    country_event = TurkeyU.1
+	} } 
+	focus = {
+		id = TKF_disk_cooperations
+		icon = industry_communism
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_national_rebellion
+		}
+		x = 43
+		y = 7
+
+		completion_reward = {
+        add_ideas = disk_cooperationism
+		remove_ideas = reformed_2001_crisis
+	} } 
+	focus = {
+		id = TKF_peace_land_bread
+		icon = anti_communism2
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_national_rebellion
+		}
+		x = 45
+		y = 7
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_ideas = peace_land_bread
+	} } 
+	focus = {
+		id = TKF_repair_stuff
+		icon = continuous_repairments
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_disk_cooperations
+		}
+		prerequisite = {
+			focus = TKF_peace_land_bread
+		}
+		x = 44
+		y = 8
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+        add_ideas = repair_stuff
+	} } 
+	focus = {
+		id = TKF_meet_the_unions
+		icon = labor_unions
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_national_rebellion
+		}
+		x = 41
+		y = 7
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_ideas = unions_agreed_each_other
+	} } 
+	focus = {
+		id = TKF_militarized_workers
+		icon = army_officers_communist
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_meet_the_unions
+		}
+		prerequisite = {
+			focus = TKF_disk_cooperations
+		}
+		prerequisite = {
+			focus = TKF_peace_land_bread
+		}
+		x = 42
+		y = 8
+
+		completion_reward = {
+        add_ideas = militarize_the_workers
+	} } 
+	focus = {
+		id = TKF_a_new_kind_of_society
+		icon = french_communism
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_repair_stuff
+		}
+		prerequisite = {
+			focus = TKF_militarized_workers
+		}
+		x = 43
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+						add_stability = 0.1
+				custom_effect_tooltip = PRESS_HAS_CONTROLLED
+				set_global_flag = PRESS_HAS_MANAGED
+set_global_flag = DISABLE_WAR_SYSTEM_PAR
+custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU			
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+}
+						}	
+		}
+	focus = {
+		id = TKF_close_nato_bases
+		icon = renounce_nato
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_a_new_kind_of_society
+		}
+		x = 41
+		y = 10
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_NATO}
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+	completion_reward = {
+	                add_stability = -0.02
+					add_war_support = 0.02
+					reverse_add_opinion_modifier = { target = USA modifier = insult }
+					}
+				}
+	focus = {
+		id = TKF_finish_the_gladio
+		icon = nato_nation
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_a_new_kind_of_society
+		}
+		x = 43
+		y = 10
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_NATO}
+		
+		completion_reward = {
+			    add_stability = 0.05
+				army_experience = 75
+                remove_ideas = counter_guerillas
+	} } 
+	focus = {
+		id = TKF_united_left_against_US
+		icon = USA_nationalistic_sentiment
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_a_new_kind_of_society
+		}
+		x = 45
+		y = 10
+
+		completion_reward = {
+                add_ideas = united_left_against_USA
+	} } 
+	focus = {
+		id = TKF_ban_the_right
+		icon = sanation_right
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_united_left_against_US
+		}
+		prerequisite = {
+			focus = TKF_finish_the_gladio
+		}
+		prerequisite = {
+			focus = TKF_close_nato_bases
+		}
+		x = 43
+		y = 11
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = anti_right_movement_3
+                remove_idea = anti_right_movement_2
+	} } }
+	focus = {
+		id = TKF_main_congress
+		icon = Focus_Liberationist
+		cost = 15,00
+		prerequisite = {
+			focus = TKF_ban_the_right
+		}
+		x = 43
+		y = 12
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		available = {
+		NOT = {
+		country_exists = UTU
+		}
+		}
+
+		completion_reward = {
+    country_event = TurkeyF.171
+	} }
+	focus = {
+		id = TKF_vatan_victory
+		icon = vatan_partisi
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_main_congress
+		}
+		mutually_exclusive = {
+			focus = TKF_odp_victory
+			focus = TKF_tkp_victory
+			focus = TKF_emep_victory
+		}
+		x = 25
+		y = 13
+
+		available = {
+		has_global_flag = VATAN_GREEN_LIGHT
+		}
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			CHI = {
+			country_event = TurkeyForeign.18
+			}
+			custom_effect_tooltip = VATAN_normal
+			hidden_effect = {
+				add_to_variable = { party_pop_array^4 = 0.03 }
+				recalculate_party = yes
+			}	
+	} }
+	focus = {
+		id = TKF_emep_victory
+		icon = emep
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_main_congress
+		}
+		mutually_exclusive = {
+			focus = TKF_vatan_victory
+			focus = TKF_tkp_victory
+			focus = TKF_odp_victory
+		}
+		x = 61
+		y = 13
+
+		available = {
+		has_global_flag = EMEP_GREEN_LIGHT
+		}
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+            custom_effect_tooltip = EMEP_ACTION_2
+			hidden_effect = {
+				add_to_variable = { party_pop_array^7 = 0.03 }
+				recalculate_party = yes
+			}	
+	} }
+	focus = {
+		id = TKF_odp_victory
+		icon = sol_parti
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_main_congress
+		}
+		mutually_exclusive = {
+			focus = TKF_vatan_victory
+			focus = TKF_emep_victory
+			focus = TKF_tkp_victory
+		}
+		x = 37
+		y = 13
+
+		available = {
+		has_global_flag = ODP_GREEN_LIGHT
+		}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+            custom_effect_tooltip = ODP_ACTION_1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^5 = 0.03 }
+				recalculate_party = yes
+			}	
+	} }
+	focus = {
+		id = TKF_tkp_victory
+		icon = tkp
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_main_congress
+		}
+		mutually_exclusive = {
+			focus = TKF_vatan_victory
+			focus = TKF_emep_victory
+			focus = TKF_odp_victory
+		}
+		x = 49
+		y = 13
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		available = {
+		has_global_flag = TKP_GREEN_LIGHT
+		}
+
+		completion_reward = {
+            custom_effect_tooltip = TKP_ACTION_2
+			hidden_effect = {
+				add_to_variable = { party_pop_array^6 = 0.03 }
+				recalculate_party = yes
+			}	
+	} }
+	focus = {
+		id = TKF_fast_construction_movement
+		icon = construction3
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_vatan_victory
+		}
+		x = 25
+		y = 14
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+    add_ideas = fast_construction_movement
+	} } 
+	focus = {
+		id = TKF_kemalist_socialism
+		icon = kemalarrows
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_fast_construction_movement
+		}
+		x = 25
+		y = 15
+
+
+		completion_reward = {
+    add_ideas = kemalist_socialism
+reverse_add_opinion_modifier = { target = CHI modifier = perincek_and_china }
+					add_opinion_modifier = { target = CHI modifier = perincek_and_china }
+	} } 
+	focus = {
+		id = TKF_neutral_positioning
+		icon = neutrality
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_perinceks_wisdom
+		}
+		prerequisite = {
+			focus = TKF_perinceks_powers
+		}
+		x = 25
+		y = 17
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		available = {
+		emerging_communist_state_are_in_power = yes
+		}
+
+		completion_reward = {
+    add_ideas = neutral_positioning
+	hidden_effect = {
+			create_country_leader = {
+				name = "Doğu Perinçek"
+				picture = "Dogu_Perincek.dds"
+				ideology = Communist-State
+				traits = {
+					emerging_Communist-State
+					writer
+					lawyer
+					pro_china
+				}
+			}
+	}
+	} } 
+	focus = {
+		id = TKF_perinceks_powers
+		icon = position_armies
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_kemalist_socialism
+		}
+		x = 24
+		y = 16
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+    add_ideas = perincek_powers
+	} } 
+	focus = {
+		id = TKF_perinceks_wisdom
+		icon = research
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_kemalist_socialism
+		}
+		x = 26
+		y = 16
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+    add_ideas = perincek_wisdom
+	} } 
+	focus = {
+		id = TKF_crush_the_western_infulence
+		icon = western_alignment
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_neutral_positioning
+		}
+		x = 25
+		y = 18
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+		add_stability = 0.05
+			TUR = {
+				set_temp_variable = { percent_change = -3 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+			TUR = {
+				set_temp_variable = { percent_change = -2 }
+				set_temp_variable = { tag_index = ENG.id }
+				change_influence_percentage = yes
+			}
+			TUR = {
+				set_temp_variable = { percent_change = -4 }
+				set_temp_variable = { tag_index = GER.id }
+				change_influence_percentage = yes
+			}				
+	  } 
+	}
+	focus = {
+		id = TKF_new_cakmak_line
+		icon = coastal_fort
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_neutral_positioning
+		}
+		x = 23
+		y = 18
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+    available = {
+	controls_state = 934
+	}
+
+	completion_reward = {
+            934 = {
+                if = {
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 849
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 3893
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 11842
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 922
+                            instant_build = yes
+                        }
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+                    }
+                }
+			} }
+	focus = {
+		id = TKF_aegean_wall
+		icon = military_fort2
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_neutral_positioning
+		}
+		x = 27
+		y = 18
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 934
+	}
+
+	completion_reward = {
+            934 = {
+                if = {
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 6864
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 11848
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 4112
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 7130
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 10038
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 9941
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 10122
+                            instant_build = yes
+                        }
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+                    }
+                }
+			} }
+	focus = {
+		id = TKF_crush_the_financing_system
+		icon = american_christianity
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_crush_the_western_infulence
+		}
+		x = 24
+		y = 19
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+		add_war_support = 0.03
+					TUR = {
+				set_temp_variable = { percent_change = -3 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+		reverse_add_opinion_modifier = { target = USA modifier = broke_off_diplomatic_relations}
+	    USA = {
+reverse_add_opinion_modifier = { target = TUR modifier= attacks_on_our_economy}					
+		}					
+	  } 
+	}
+	focus = {
+		id = TKF_hang_out_investors
+		icon = plastic_ban
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_crush_the_western_infulence
+		}
+		x = 26
+		y = 19
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+	add_ideas = crush_local_investors
+					}
+				}
+	focus = {
+		id = TKF_national_vision
+		icon = the_last_purge
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_hang_out_investors
+		}
+		prerequisite = {
+			focus = TKF_crush_the_financing_system
+		}
+		x = 25
+		y = 20
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+	add_political_power = 100
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}	
+	retire_character = ilhan_tolu
+	retire_character = mustafa_ozsoy
+	retire_character = TUR_akin_ozturk
+	TUR_remove_pkk = yes	
+					}
+				}
+	focus = {
+		id = TKF_first_term_YAK_deal
+		icon = rapprochement_with_russia
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_new_friendships_in_north
+		}
+		x = 21
+		y = 22
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }
+	
+	completion_reward = {
+	 add_equipment_to_stockpile = {	type = AS_Fighter1 amount = 500 }
+			create_production_license = {
+				target = SOV
+				equipment = {
+					type = AS_Fighter1
+				}
+				cost_factor = 0
+			}
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TKF_buy_s400
+		icon = trade_with_russia
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_new_friendships_in_north
+		}
+		x = 23
+		y = 22
+
+
+        available = {
+        country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = SOV
+		NOT = {
+        country_exists = SOV
+        } } }
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		
+			completion_reward = {
+			        add_political_power = 50
+					reverse_add_opinion_modifier = { target = SOV modifier =  trade_mission }
+				 	hidden_effect = {
+	 add_equipment_to_stockpile = {	type = artillery_0 amount = 500 } 
+	 add_equipment_to_stockpile = {	type = SP_arty_0 amount = 500 }
+			} 
+				} 
+
+	}
+	focus = {
+		id = TKF_glory_of_soviet_communism
+		icon = s125pechora
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_new_friendships_in_north
+		}
+		prerequisite = {
+			focus = TKF_new_friendships_in_ally
+		}
+		x = 25
+		y = 22
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_ideas = glory_of_the_soviet_past
+		} } 
+	focus = {
+		id = TKF_csto_observer_state
+		icon = aplly_to_join_csto
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_buy_s400
+		}
+		x = 23
+		y = 23
+
+        available = {
+        country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = SOV
+		NOT = {
+        country_exists = SOV
+        } } }
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+	search_filters = {FOCUS_FILTER_POLITICAL}		
+		completion_reward = {
+		    add_political_power = 25
+            reverse_add_opinion_modifier = {
+                  target = SOV modifier = csto_observer
+            }					
+            reverse_add_opinion_modifier = {
+                  target = TUR modifier = csto_observer
+            }	
+		} } 
+	focus = {
+		id = TKF_communist_militiants
+		icon = communism3
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_glory_of_soviet_communism
+		}
+		x = 25
+		y = 23
+
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			            AZE = {
+						army_experience = 25
+						add_popularity = {
+							ideology = communism
+							popularity = 0.03
+						} 	} 
+			            KAZ = {
+						army_experience = 25
+						add_popularity = {
+							ideology = communism
+							popularity = 0.03
+						} 	} 
+			            TRK = {
+						army_experience = 25
+						add_popularity = {
+							ideology = communism
+							popularity = 0.03
+						} 	} 
+			            UZB = {
+						army_experience = 25
+						add_popularity = {
+							ideology = communism
+							popularity = 0.03
+						} 	} 
+			            TAJ = {
+						army_experience = 25
+						add_popularity = {
+							ideology = communism
+							popularity = 0.03
+						} 	} 
+		} }
+	focus = {
+		id = TKF_new_university
+		icon = university
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_first_term_YAK_deal
+		}
+		x = 20
+		y = 23
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 934
+	}
+
+		completion_reward = {
+		    add_research_slot = 1
+			934 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} }
+	focus = {
+		id = TKF_export_communism_in_turkic
+		icon = align_to_turkic_council
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_communist_militiants
+		}
+		x = 25
+		y = 24
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_political_power = -100
+			            AZE = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.07
+						} 	} 
+			            KAZ = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.07
+						} 	} 
+			            TRK = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.07
+						} 	} 
+			            UZB = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.07
+						} 	} 
+			            TAJ = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.07
+						} 	} 
+		} }
+	focus = {
+		id = TKF_perincek_fundementalis
+		icon = catholicism_new
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_new_university
+		}
+		x = 21
+		y = 24
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_ideas = perincek_fundementalis
+		} } 
+	focus = {
+		id = TKF_russian_guarantee_first
+		icon = russian_elections
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_csto_observer_state
+		}
+		x = 23
+		y = 24
+
+        available = {
+        country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = SOV
+		NOT = {
+        country_exists = SOV
+        } } }
+
+		completion_reward = {
+					give_guarantee = SOV
+		    SOV = {
+			give_guarantee = TUR
+		} } }
+	focus = {
+		id = TKF_new_friendships_in_north
+		icon = reinforce_northern_naval_bases
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_national_vision
+		}
+		x = 22
+		y = 21
+
+	completion_reward = {
+		reverse_add_opinion_modifier = { target = SOV modifier = large_commercial_relations}
+	    SOV = {
+reverse_add_opinion_modifier = { target = TUR modifier = declaration_of_friendship}					
+		}					
+	  } 
+	}
+	focus = {
+		id = TKF_new_friendships_in_ally
+		icon = us_non_nato_ally
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_national_vision
+		}
+		x = 28
+		y = 21
+
+
+	completion_reward = {
+		reverse_add_opinion_modifier = { target = CHI modifier = large_commercial_relations}
+	    CHI = {
+reverse_add_opinion_modifier = { target = TUR modifier = declaration_of_friendship}					
+		}					
+	  } 
+	}
+	focus = {
+		id = TKF_integrate_trade_wars
+		icon = Trade_with_the_east
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_new_friendships_in_ally
+		}
+		x = 29
+		y = 22
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+		completion_reward = {
+		add_ideas = chinese_marketplace_act_1
+		} } 
+	focus = {
+		id = TKF_chinese_markets
+		icon = communist_china
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_integrate_trade_wars
+		}
+		x = 30
+		y = 23
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = chinese_marketplace_act_2
+                remove_idea = chinese_marketplace_act_1
+	} } }
+	focus = {
+		id = TKF_chinese_economics
+		icon = peoples_liberation_army
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_chinese_markets
+		}
+		x = 29
+		y = 24
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = chinese_marketplace_act_3
+                remove_idea = chinese_marketplace_act_2
+	} } }
+	focus = {
+		id = TKF_chinese_turkish_military_cooperationism
+		icon = dragon
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_new_friendships_in_ally
+		}
+		x = 27
+		y = 22
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+		completion_reward = {
+					army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			} }
+		    CHI = {
+					army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+		} } 
+	focus = {
+		id = TKF_chinese_guarantees
+		icon = peoples_republic_of_china
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_turkish_military_cooperationism
+		}
+		x = 27
+		y = 23
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+		completion_reward = {
+					give_guarantee = CHI
+		    CHI = {
+			give_guarantee = TUR
+		} } }
+	focus = {
+		id = TKF_withdrawal_recogniation
+		icon = attack_taiwan
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_guarantees
+		}
+		x = 27
+		y = 24
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+		reverse_add_opinion_modifier = { target = TAI modifier = revoked_recognize_taiwan}
+	    CHI = {
+reverse_add_opinion_modifier = { target = TUR modifier = one_china_policy}					
+		}					
+	  } 
+	}
+	focus = {
+		id = TKF_join_shangai_pact
+		icon = one_china_policy
+		cost = 15,00
+		prerequisite = {
+			focus = TKF_export_communism_in_turkic
+		}
+		prerequisite = {
+			focus = TKF_withdrawal_recogniation
+		}
+		prerequisite = {
+			focus = TKF_chinese_economics
+		}
+		prerequisite = {
+			focus = TKF_russian_guarantee_first
+		}
+		prerequisite = {
+			focus = TKF_perincek_fundementalis
+		}
+		x = 25
+		y = 25
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+		completion_reward = {
+    add_ideas = sco_member
+	} } 
+	focus = {
+		id = TKF_visit_shangai
+		icon = focus_xi_jinping
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_join_shangai_pact
+		}
+		x = 24
+		y = 26
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+		reverse_add_opinion_modifier = { target = CHI modifier = state_visists }
+	    CHI = {
+reverse_add_opinion_modifier = { target = TUR modifier = state_visists}					
+		}	
+
+			set_temp_variable = { target_nation = CHI.id }
+			set_temp_variable = { adding_nation = TUR.id }
+			change_permanent_investment_target = yes
+			set_temp_variable = { target_nation = TUR }
+			set_temp_variable = { adding_nation = CHI }
+			change_permanent_investment_target = yes
+				
+	  } 
+	}
+	focus = {
+		id = TKF_china_is_right
+		icon = great_firewall_china
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_join_shangai_pact
+		}
+		x = 26
+		y = 26
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+		completion_reward = {
+       add_ideas = china_is_a_right_state
+	} } 
+	focus = {
+		id = TKF_national_economic_development
+		icon = pearl_river_megacity
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_china_is_right
+		}
+		prerequisite = {
+			focus = TKF_visit_shangai
+		}
+		x = 25
+		y = 27
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+    available = {
+	controls_state = 161
+	controls_state = 1032
+	}
+
+	completion_reward = {
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TKF_open_bosphorus_for_china
+		icon = communist_navy
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_national_economic_development
+		}
+		x = 23
+		y = 28
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+		navy_experience = 75
+			} }	
+	focus = {
+		id = TKF_chinese_investments
+		icon = xiaomi
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_national_economic_development
+		}
+		x = 25
+		y = 28
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			add_stability = 0.03
+			} }	
+	focus = {
+		id = TKF_replace_US_investors_with_chinese
+		icon = BRA_investigate_pt
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_national_economic_development
+		}
+		x = 27
+		y = 28
+
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+					TUR = {
+				set_temp_variable = { percent_change = -2 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+			} }	
+	focus = {
+		id = TKF_investment_time
+		icon = MEX_Social_investments
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_replace_US_investors_with_chinese
+		}
+		prerequisite = {
+			focus = TKF_chinese_investments
+		}
+		prerequisite = {
+			focus = TKF_open_bosphorus_for_china
+		}
+		x = 25
+		y = 29
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_political_power = 125
+			} }	
+	focus = {
+		id = TKF_chinese_investment_of_inf
+		icon = mandate_of_heaven
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_investment_time
+		}
+		x = 23
+		y = 30
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+    available = {
+	controls_state = 161
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			159 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+set_temp_variable = { int_investment_change = 15.0 }
+				modify_international_investment_effect = yes
+            CHI = {
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+			}
+					}
+				}
+	focus = {
+		id = TKF_turn_to_yuan
+		icon = chinese_rmb
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_investment_time
+		}
+		x = 25
+		y = 30
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+custom_effect_tooltip = PERINCEK_POLICY_LIRA
+					TUR = {
+				set_temp_variable = { percent_change = 10 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}	
+	hidden_effect = {
+	remove_ideas = lira_1
+	remove_ideas = lira_2
+	remove_ideas = lira_3
+	remove_ideas = lira_4
+	remove_ideas = lira_5			
+	  } 
+	} }
+	focus = {
+		id = TKF_chinese_money
+		icon = money
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_turn_to_yuan
+		}
+		x = 25
+		y = 31
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_EXPENDITURE}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 10 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}	
+subtract_from_variable = { treasury = -100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+	} }
+	focus = {
+		id = TKF_chinese_investment_of_inf_2
+		icon = infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_investment_of_inf
+		}
+		x = 21
+		y = 31
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+    available = {
+	controls_state = 934
+	controls_state = 155
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			155 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+set_temp_variable = { int_investment_change = 15.0 }
+				modify_international_investment_effect = yes
+            CHI = {
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+			}
+			} }	}
+	focus = {
+		id = TKF_road_iniatitive
+		icon = the_road_of_life
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_chinese_investment_of_inf
+		}
+		x = 23
+		y = 31
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+    available = {
+	controls_state = 162
+	controls_state = 1032
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+set_temp_variable = { int_investment_change = 15.0 }
+				modify_international_investment_effect = yes
+            CHI = {
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+			}
+			} }	}	
+	focus = {
+		id = TKF_chinese_investment_of_arms
+		icon = army_reform
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_investment_time
+		}
+		x = 27
+		y = 30
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+    available = {
+	controls_state = 162
+	controls_state = 1032
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 7 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+set_temp_variable = { int_investment_change = 15.0 }
+				modify_international_investment_effect = yes
+            CHI = {
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+			}
+			} }	}	
+	focus = {
+		id = TKF_chinese_military_stocks
+		icon = industry_military
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_chinese_investment_of_arms
+		}
+		x = 27
+		y = 31
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+    available = {
+	controls_state = 160
+	controls_state = 159
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 7 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			160 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+set_temp_variable = { int_investment_change = 15.0 }
+				modify_international_investment_effect = yes
+            CHI = {
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+			}
+			} }	}	
+	focus = {
+		id = TKF_chinese_investment_of_arms_2
+		icon = industry4
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_investment_of_arms
+		}
+		x = 29
+		y = 31
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+    available = {
+	controls_state = 155
+	controls_state = 157
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 7 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			157 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+set_temp_variable = { int_investment_change = 15.0 }
+				modify_international_investment_effect = yes
+            CHI = {
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+			}
+			} }	}	
+	focus = {
+		id = TKF_chinese_dockyards
+		icon = naval_industry
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_road_iniatitive
+		}
+		prerequisite = {
+			focus = TKF_chinese_investment_of_inf_2
+		}
+		prerequisite = {
+			focus = TKF_chinese_money
+		}
+		x = 24
+		y = 32
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+    available = {
+	controls_state = 161
+	controls_state = 157
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 7 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			157 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+set_temp_variable = { int_investment_change = 25.0 }
+				modify_international_investment_effect = yes
+            CHI = {
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			}
+			} }	}	
+	focus = {
+		id = TKF_lisences
+		icon = chinese_licenses
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_military_stocks
+		}
+		prerequisite = {
+			focus = TKF_chinese_investment_of_arms_2
+		}
+		prerequisite = {
+			focus = TKF_chinese_money
+		}
+		x = 26
+		y = 32
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 7 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			add_ideas = chinese_licensing_program
+			}
+			} 
+	focus = {
+		id = TKF_chinese_trade_facilities
+		icon = maoism2
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_dockyards
+		}
+		prerequisite = {
+			focus = TKF_lisences
+		}
+		x = 25
+		y = 33
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = chinese_marketplace_act_4
+                remove_idea = chinese_marketplace_act_3
+	} } }
+	focus = {
+		id = TKF_sell_companies_to_china
+		icon = communist_party_of_china
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_trade_facilities
+		}
+		x = 23
+		y = 34
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = chinese_marketplace_act_5
+                remove_idea = chinese_marketplace_act_4
+	} } }
+	focus = {
+		id = TKF_chinese_trade_facilities1
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_trade_facilities
+		}
+		x = 25
+		y = 34
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+		reverse_add_opinion_modifier = { target = CHI modifier = trade_mission}
+	    CHI = {
+reverse_add_opinion_modifier = { target = TUR modifier = trade_mission}					
+		}					
+	  } 
+	}
+	focus = {
+		id = TKF_chinese_happiness
+		icon = family
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_trade_facilities
+		}
+		x = 27
+		y = 34
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 10 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+		add_stability = 0.1
+			} }	
+	focus = {
+		id = TKF_chinese_sun_and_the_protection
+		icon = land_of_the_rising_sun
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_happiness
+		}
+		prerequisite = {
+			focus = TKF_chinese_trade_facilities1
+		}
+		prerequisite = {
+			focus = TKF_sell_companies_to_china
+		}
+		x = 25
+		y = 35
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+    available = {
+	controls_state = 155
+	controls_state = 157
+	controls_state = 161
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 10 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			157 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			} }	}	
+	focus = {
+		id = TKF_emergency_powers_of_the_state
+		icon = BRA_limit_congress_power
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_odp_victory
+		}
+		x = 36
+		y = 14
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_ideas = emergency_powers_of_the_state
+				}
+			}
+	focus = {
+		id = TKF_odp_socialism
+		icon = left_socialism
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_odp_victory
+		}
+		x = 38
+		y = 14
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			custom_effect_tooltip = ODP_ACTION_1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^5 = 0.03 }
+				recalculate_party = yes
+			}
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = TKF_social_democratic_values
+		icon = social_democracy_industry
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_odp_socialism
+		}
+		prerequisite = {
+			focus = TKF_emergency_powers_of_the_state
+		}
+		x = 37
+		y = 15
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_ideas = social_06
+			custom_effect_tooltip = ODP_ACTION_2
+			hidden_effect = {
+				add_to_variable = { party_pop_array^5 = 0.02 }
+				recalculate_party = yes
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = TKF_stabilized_states
+		icon = stability
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_social_democratic_values
+		}
+		x = 37
+		y = 16
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+		add_stability = 0.05
+			} } 
+	focus = {
+		id = TKF_state_of_function
+		icon = warsaw_main_station
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_stabilized_states
+		}
+		x = 37
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		available = {
+			emerging_anarchist_communism_are_not_in_power = yes
+		}
+
+		completion_reward = {
+        add_ideas = state_of_function
+				}
+			}
+	focus = {
+		id = TKF_zero_adjective
+		icon = the_zero
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_state_of_function
+		}
+		x = 35
+		y = 18
+
+
+		completion_reward = {
+						add_equipment_to_stockpile = {
+				type = kamikaze_drone_1
+				amount = 1000
+			}
+			hidden_effect = {
+				set_rule = {
+					can_use_kamikaze_pilots = yes
+				}
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+			if = { 
+				limit = {
+					has_dlc = "Waking the Tiger"
+				}
+				custom_effect_tooltip = cost_reduced_last_stand 
+			}
+		}
+	}
+	focus = {
+		id = TKF_war_propaganda
+		icon = Generic_Communist_Propaganda02
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_state_of_function
+		}
+		x = 39
+		y = 18
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = TKF_extensive_war_structure
+		icon = Bolivian_Army
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_state_of_function
+		}
+		x = 37
+		y = 18
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+	subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} } 
+	focus = {
+		id = TKF_military_secment_1
+		icon = industry_military
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_extensive_war_structure
+		}
+		x = 36
+		y = 19
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 159
+	controls_state = 160
+	}
+
+	completion_reward = {
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			160 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+	subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} } } 
+	focus = {
+		id = TKF_military_secment_2
+		icon = industry_military
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_extensive_war_structure
+		}
+		x = 38
+		y = 19
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 1032
+	}
+
+	completion_reward = {
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+	subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} } } 
+	focus = {
+		id = TKF_happy_ties_with_unions
+		icon = communist_army
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_military_secment_1
+		}
+		prerequisite = {
+			focus = TKF_military_secment_2
+		}
+		x = 37
+		y = 20
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+        add_ideas = unions_in_cooperation
+				}
+		}
+	focus = {
+		id = TKF_trade_action
+		icon = communism10
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_happy_ties_with_unions
+		}
+		x = 35
+		y = 21
+
+		completion_reward = {
+        add_ideas = action_of_trade
+				}
+		}
+	focus = {
+		id = TKF_support_the_investors
+		icon = champagne_purple
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_happy_ties_with_unions
+		}
+		x = 39
+		y = 21
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	completion_reward = {
+			add_stability = 0.03
+	subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} } 
+	focus = {
+		id = TKF_happiness_ACTED
+		icon = communism10
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_trade_action
+		}
+		prerequisite = {
+			focus = TKF_support_the_investors
+		}
+		prerequisite = {
+			focus = TKF_first_tought_right
+		}
+		x = 37
+		y = 22
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+  add_stability = 0.1
+	}
+	}
+	focus = {
+		id = TKF_european_trade
+		icon = trade_with_europe
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_trade_action
+		}
+		x = 34
+		y = 22
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+reverse_add_opinion_modifier = { target = GER modifier = improve_trade }
+					reverse_add_opinion_modifier = { target = FRA modifier = improve_trade }				
+					reverse_add_opinion_modifier = { target = ENG modifier = improve_trade }
+					reverse_add_opinion_modifier = { target = SPR modifier = improve_trade }
+					reverse_add_opinion_modifier = { target = POR modifier = improve_trade }
+					reverse_add_opinion_modifier = { target = ITA modifier = improve_trade }
+					reverse_add_opinion_modifier = { target = USA modifier = improve_trade }				
+	  }  
+	}
+	focus = {
+		id = TKF_new_science_law
+		icon = fusion_science
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_happiness_ACTED
+		}
+		x = 36
+		y = 23
+
+	search_filters = {FOCUS_FILTER_RESEARCH}
+
+	completion_reward = {
+  add_ideas = science_law
+	}
+	}
+	focus = {
+		id = TKF_support_the_scientists
+		icon = money
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_happiness_ACTED
+		}
+		x = 38
+		y = 23
+
+	search_filters = {FOCUS_FILTER_RESEARCH}
+
+	completion_reward = {
+  add_ideas = supporting_the_scientists
+	}
+	}
+	focus = {
+		id = TKF_the_goods
+		icon = maritime_trade
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_eastern_trade
+		}
+		x = 35
+		y = 24
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+	search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = action_of_trade
+  add_idea = action_of_goods_trade
+}
+      }
+	
+	}
+	focus = {
+		id = TKF_eastern_trade
+		icon = Trade_with_the_east
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_european_trade
+		}
+		x = 34
+		y = 23
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+reverse_add_opinion_modifier = { target = SOV modifier = major_improve_trade }
+					reverse_add_opinion_modifier = { target = CHI modifier = major_improve_trade }				
+	  }  
+	}
+	focus = {
+		id = TKF_happinized_union
+		icon = pressure_unions
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_support_the_scientists
+		}
+		prerequisite = {
+			focus = TKF_new_science_law
+		}
+		x = 37
+		y = 24
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+            add_stability = 0.02	
+swap_ideas = { 
+  remove_idea = unions_in_cooperation
+  add_idea = unions_in_cooperation_2
+}
+      }
+	
+	}
+	focus = {
+		id = TKF_industrial_complexes_1
+		icon = industry
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_support_the_investors
+		}
+		x = 40
+		y = 22
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 161
+	}
+
+	completion_reward = {
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} } } 
+	focus = {
+		id = TKF_industrial_complexes_2
+		icon = industry2
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_industrial_complexes_1
+		}
+		x = 40
+		y = 23
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 159
+	}
+
+	completion_reward = {
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} } } 
+	focus = {
+		id = TKF_mixed_industries
+		icon = industry3
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_industrial_complexes_2
+		}
+		x = 39
+		y = 24
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 159
+	controls_state = 161
+	}
+
+	completion_reward = {
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+	subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} } } 
+	focus = {
+		id = TKF_the_alliance_policies
+		icon = MEX_Allign_the_government
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_land_of_world
+		}
+		x = 37
+		y = 33
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 125
+			create_faction = MIDDLE_EASTERN_COMPACT
+		}
+	}
+	focus = {
+		id = TKF_peace_unified_union
+		icon = white_peace
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_the_alliance_policies
+		}
+		x = 36
+		y = 34
+
+	completion_reward = {
+		add_ideas = peace_unified_unions
+	}
+	}
+	focus = {
+		id = TKF_economic_cooperative_union
+		icon = free_economic_zones
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_the_alliance_policies
+		}
+		x = 38
+		y = 34
+
+
+	completion_reward = {
+		add_ideas = economic_cooperative_unions
+	}
+	}
+	focus = {
+		id = TKF_invite_greece
+		icon = align_to_greece
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_peace_unified_union
+		}
+		prerequisite = {
+			focus = TKF_economic_cooperative_union
+		}
+		x = 34
+		y = 35
+
+        available = {
+        country_exists = GRE
+		is_puppet = no
+		GRE = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = GRE
+		NOT = {
+        country_exists = GRE
+        } } }
+
+		completion_reward = {
+			GRE = {
+country_event = TurkeyF.172
+		} }
+		}
+	focus = {
+		id = TKF_invite_syria
+		icon = align_to_syria
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_peace_unified_union
+		}
+		prerequisite = {
+			focus = TKF_economic_cooperative_union
+		}
+		x = 36
+		y = 35
+
+        available = {
+        country_exists = SYR
+		is_puppet = no
+		KAZ = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = SYR
+		NOT = {
+        country_exists = SYR
+        } } }
+
+		completion_reward = {
+			SYR = {
+country_event = TurkeyF.174
+		} }
+		}
+	focus = {
+		id = TKF_invite_bulgaria
+		icon = align_to_bulgaria
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_peace_unified_union
+		}
+		prerequisite = {
+			focus = TKF_economic_cooperative_union
+		}
+		x = 38
+		y = 35
+
+        available = {
+        country_exists = BUL
+		is_puppet = no
+		BUL = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = BUL
+		NOT = {
+        country_exists = BUL
+        } } }
+
+		completion_reward = {
+			BUL = {
+country_event = TurkeyF.176
+		} }
+		}
+	focus = {
+		id = TKF_invite_iraq
+		icon = align_to_iraq
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_peace_unified_union
+		}
+		prerequisite = {
+			focus = TKF_economic_cooperative_union
+		}
+		x = 40
+		y = 35
+
+        available = {
+        country_exists = IRQ
+		is_puppet = no
+		IRQ = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = IRQ
+		NOT = {
+        country_exists = IRQ
+        } } }
+
+		completion_reward = {
+			IRQ = {
+country_event = TurkeyF.178
+		} }
+		}
+	focus = {
+		id = TKF_death_of_neutrality
+		icon = neutrality
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_invite_iraq
+		}
+		prerequisite = {
+			focus = TKF_invite_bulgaria
+		}
+		prerequisite = {
+			focus = TKF_invite_syria
+		}
+		prerequisite = {
+			focus = TKF_invite_greece
+		}
+		x = 37
+		y = 36
+
+	completion_reward = {
+			add_ideas = intervention_global_interventionism
+			} }	
+	focus = {
+		id = TKF_globalism_action
+		icon = skull
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_death_of_neutrality
+		}
+		x = 36
+		y = 37
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			every_country = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.03
+							}
+		}   }
+	}
+	focus = {
+		id = TKF_create_world_cpommunes
+		icon = major_alliance3
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_death_of_neutrality
+		}
+		x = 38
+		y = 37
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			every_country = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.03
+							}
+		}   }
+	}
+	focus = {
+		id = TKF_a_new_born
+		icon = NATO_squad_doctrine
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_mixed_industries
+		}
+		prerequisite = {
+			focus = TKF_the_goods
+		}
+		prerequisite = {
+			focus = TKF_happinized_union
+		}
+		x = 37
+		y = 25
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+	TUR_remove_pkk = yes
+			custom_effect_tooltip = ODP_ACTION_2
+			add_stability = 0.03
+			hidden_effect = {
+				add_to_variable = { party_pop_array^5 = 0.03 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = TKF_odp_positivism
+		icon = party_of_socialists
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_colourful_state
+		}
+		x = 34
+		y = 27
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+  add_ideas = odp_possitivism
+	}
+	}
+	focus = {
+		id = TKF_encourage_populism
+		icon = adressing_the_nation
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_reform_the_counter_books
+		}
+		x = 40
+		y = 27
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+  add_ideas = new_kind_of_populism
+	}
+	}
+	focus = {
+		id = TKF_national_ressirictism
+		icon = national_unity
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_odp_positivism
+		}
+		prerequisite = {
+			focus = TKF_encourage_populism
+		}
+		prerequisite = {
+			focus = TKF_available_art 
+		}
+		prerequisite = {
+			focus = TKF_labour_culture_of_happiness
+		}
+		x = 37
+		y = 28
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+	retire_character = ilhan_tolu
+	retire_character = mustafa_ozsoy
+	retire_character = TUR_akin_ozturk
+			custom_effect_tooltip = ODP_ACTION_1
+			add_stability = -0.03
+			hidden_effect = {
+				add_to_variable = { party_pop_array^5 = 0.03 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = TKF_world_visionalism
+		icon = USA_ministry_for_art_and_national_culture
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_odp_positivism
+		}
+		x = 35
+		y = 28
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+  add_ideas = world_visionalism
+	}
+	}
+	focus = {
+		id = TKF_disband_classical_populism
+		icon = organizaciones_populares
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_encourage_populism
+		}
+		x = 39
+		y = 28
+
+search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+		swap_ideas = {
+  add_idea = new_kind_of_populism_2
+  remove_idea = new_kind_of_populism
+	} }
+	}
+	focus = {
+		id = TKF_reform_the_counter_books
+		icon = parlamentary_reform
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_a_new_born
+		}
+		x = 38
+		y = 26
+
+search_filters = {FOCUS_FILTER_RESEARCH}
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+
+	completion_reward = {
+  add_ideas = reformed_counter_books
+	}
+	}
+	focus = {
+		id = TKF_colourful_state
+		icon = pro_lgbt
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_a_new_born
+		}
+		x = 36
+		y = 26
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			custom_effect_tooltip = ODP_ACTION_3
+			add_stability = -0.03
+			hidden_effect = {
+				add_to_variable = { party_pop_array^5 = 0.05 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = TKF_available_art 
+		icon = education_reform
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_reform_the_counter_books
+		}
+		prerequisite = {
+			focus = TKF_colourful_state
+		}
+		x = 36
+		y = 27
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+  add_ideas = state_of_arts
+	}
+	}
+	focus = {
+		id = TKF_labour_culture_of_happiness
+		icon = communism4
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_reform_the_counter_books
+		}
+		x = 38
+		y = 27
+
+search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+  add_ideas = labour_happiness
+	}
+	}
+	focus = {
+		id = TKF_disband_the_limitis
+		icon = MEX_Repeal_the_1977_reform
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_national_ressirictism
+		}
+		prerequisite = {
+			focus = TKF_world_visionalism
+		}
+		x = 36
+		y = 29
+
+
+	completion_reward = {
+		add_ideas = disbanding_the_limits
+	}
+	}
+	focus = {
+		id = TKF_national_reformation_works
+		icon = MEX_Economic_reform
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_national_ressirictism
+		}
+		prerequisite = {
+			focus = TKF_disband_classical_populism
+		}
+		x = 38
+		y = 29
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+		add_ideas = reformation_institutions
+	}
+	}
+	focus = {
+		id = TKF_scientific_community_achievement
+		icon = rocketry
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_disband_classical_populism
+		}
+		x = 40
+		y = 29
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+	completion_reward = {
+		add_ideas = scientific_community_back
+	}
+	}
+	focus = {
+		id = TKF_freedom_objection
+		icon = Fight_for_Freedom
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_world_visionalism
+		}
+		x = 34
+		y = 29
+
+search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+		add_ideas = objection_freedom
+	}
+	}
+	focus = {
+		id = TKF_land_of_wisdom
+		icon = research4
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_scientific_community_achievement
+		}
+		x = 39
+		y = 30
+
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_ideas = land_of_wisdom
+		}
+	}
+	focus = {
+		id = TKF_no_more_tough_communism
+		icon = anti_communism
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_disband_the_limitis
+		}
+		prerequisite = {
+			focus = TKF_national_reformation_works
+		}
+		x = 37
+		y = 30
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			custom_effect_tooltip = ODP_ACTION_1
+			add_stability = 0.05
+			hidden_effect = {
+				add_to_variable = { party_pop_array^5 = 0.03 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = TKF_build_national_theathre
+		icon = radar2
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_freedom_objection
+		}
+		x = 35
+		y = 30
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+		add_ideas = national_theathre
+	}
+	}
+	focus = {
+		id = TKF_land_of_world
+		icon = research3
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_turning_to_echology
+		}
+		prerequisite = {
+			focus = TKF_most_free_communism
+		}
+		x = 37
+		y = 32
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			custom_effect_tooltip = ODP_ACTION_2
+			hidden_effect = {
+				add_to_variable = { party_pop_array^5 = 0.02 }
+				recalculate_party = yes
+			}
+			add_stability = 0.07
+		}
+	}
+	focus = {
+		id = TKF_turning_to_echology
+		icon = green_world
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_no_more_tough_communism
+		}
+		prerequisite = {
+			focus = TKF_land_of_wisdom
+		}
+		x = 38
+		y = 31
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+			add_ideas = echological_laws
+			}
+			} 
+	focus = {
+		id = TKF_most_free_communism
+		icon = free_chechens
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_build_national_theathre
+		}
+		prerequisite = {
+			focus = TKF_no_more_tough_communism
+		}
+		x = 36
+		y = 31
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			custom_effect_tooltip = ODP_ACTION_2
+			hidden_effect = {
+				add_to_variable = { party_pop_array^5 = 0.02 }
+				recalculate_party = yes
+			}
+			add_stability = 0.03
+						add_popularity = {
+							ideology = communism
+							popularity = 0.1
+							}
+		}
+	}
+	focus = {
+		id = TKF_first_tought_right
+		icon = firstartsakhwar_analysis
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_happy_ties_with_unions
+		}
+		x = 37
+		y = 21
+
+		completion_reward = {
+			custom_effect_tooltip = ODP_ACTION_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^5 = 0.05 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = TKF_counter_BOP
+		icon = befriend_middle_east
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_create_world_cpommunes
+		}
+		prerequisite = {
+			focus = TKF_globalism_action
+		}
+		x = 37
+		y = 38
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+		completion_reward = {
+        add_war_support = 0.1
+		add_political_power = 75
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}	
+		}
+	}
+	focus = {
+		id = TKF_guarantee_the_middle_east
+		icon = major_alliance2
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_counter_BOP
+		}
+		x = 37
+		y = 39
+
+	
+    completion_reward = {
+			give_guarantee = HOU
+			give_guarantee = SAU
+			give_guarantee = YEM
+			give_guarantee = AQY
+			give_guarantee = OMA
+			give_guarantee = UAE
+			give_guarantee = QAT
+			give_guarantee = BHR
+			give_guarantee = PER
+			give_guarantee = AZE
+			give_guarantee = MAU
+			give_guarantee = SHA
+			give_guarantee = MOR
+			give_guarantee = GNC
+			give_guarantee = TUA
+			give_guarantee = ALG
+			give_guarantee = GNA
+			give_guarantee = HOR
+			give_guarantee = EGY
+			give_guarantee = NCY
+			give_guarantee = TAL
+			give_guarantee = PAK
+			}
+		}
+	focus = {
+		id = TKF_working_cooperations_of_BOP
+		icon = worker_paradise
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_counter_BOP
+		}
+		x = 35
+		y = 39
+
+	completion_reward = {
+		swap_ideas = {
+  add_idea = economic_working_cooperative_unions
+  remove_idea = economic_cooperative_unions
+	} }
+	}
+	focus = {
+		id = TKF_formalize_the_BOP
+		icon = major_alliance3
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_counter_BOP
+		}
+		x = 39
+		y = 39
+
+		completion_reward = {
+		add_to_faction = PAL
+		add_to_faction = BHR
+		add_to_faction = QAT		
+		}
+	}
+	focus = {
+		id = TKF_anti_usa
+		icon = focus_usaid
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_working_cooperations_of_BOP
+		}
+		x = 34
+		y = 40
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = USA
+		}
+	} }
+	focus = {
+		id = TKF_turkish_agency
+		icon = mit
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_guarantee_the_middle_east
+		}
+		x = 37
+		y = 40
+
+	
+    completion_reward = {
+			if = {
+				limit = { has_intelligence_agency = no }
+				add_stability = 0.05
+				create_intelligence_agency = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_done_agency_upgrade = upgrade_passive_defense
+					}
+				}
+				upgrade_intelligence_agency = upgrade_passive_defense
+			}
+			add_ideas = mit
+			}
+		}
+	focus = {
+		id = TKF_pentagon_bombardment
+		icon = USA_political_revolution
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_anti_usa
+		}
+		x = 33
+		y = 41
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+        has_war = yes
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    completion_reward = {
+		772 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		772 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		772 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		772 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		772 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	 USA = {			
+	 add_war_support = -0.02
+	 }
+	} } 
+	focus = {
+		id = TKF_adjective_europe
+		icon = attack_europe
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_formalize_the_BOP
+		}
+		x = 40
+		y = 40
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = GER
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FRA
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ENG
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SPR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = POR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = GRE
+		}
+	} }
+	focus = {
+		id = TKF_non_agression_with_russia
+		icon = align_to_russia
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_adjective_europe
+		}
+		x = 41
+		y = 41
+
+		
+        available = {
+        country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = SOV
+		NOT = {
+        country_exists = SOV
+        } } }
+
+			completion_reward = {
+		diplomatic_relation = { country = SOV relation = non_aggression_pact }
+					reverse_add_opinion_modifier = { target = SOV modifier = diplomatic_support }
+				
+				}
+
+	}
+	focus = {
+		id = TKF_usage_of_united_front
+		icon = united_states_marine_corps
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_turkish_agency
+		}
+		x = 37
+		y = 41
+
+	completion_reward = {
+			every_country = {
+country_event = TurkeyF.180
+		} 		
+	} }
+	focus = {
+		id = TKF_victory
+		icon = MEX_The_three_powers
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_islamic_take_overs
+		}
+		prerequisite = {
+			focus = TKF_bomb_new_york
+		}
+		prerequisite = {
+			focus = TKF_deals_with_russia_and_china
+		}
+		x = 37
+		y = 43
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+        available = {
+        is_puppet = no
+		has_war = no
+        }
+
+       completion_reward = {
+		add_war_support = 0.1
+	} }
+	focus = {
+		id = TKF_the_originals
+		icon = Russian_civil_war
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_tkp_victory
+		}
+		x = 49
+		y = 14
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+	TUR_remove_pkk = yes    
+    hidden_effect = {
+	create_country_leader = {
+		name = "Kemal Okuyan"
+		picture = "TUR_Kemal_Okuyan.dds"
+		expire = ""
+		ideology = Communist-State
+		traits = {
+		emerging_Communist-State
+		writer 
+		} } }
+			custom_effect_tooltip = TKP_ACTION_3
+			add_political_power = 100
+			hidden_effect = {
+				add_to_variable = { party_pop_array^6 = 0.05 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = TKF_talks_with_THKPC
+		icon = TotSoc_Focus
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_the_originals
+		}
+		x = 48
+		y = 15
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+        add_ideas = THKPC_cooperation
+	retire_character = ilhan_tolu
+	retire_character = mustafa_ozsoy
+	retire_character = TUR_akin_ozturk
+				}
+			}
+	focus = {
+		id = TKF_loyalties_of_unions
+		icon = union_negotiations
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_the_originals
+		}
+		x = 50
+		y = 15
+
+		completion_reward = {
+        add_ideas = unions_in_loyalty
+				}
+			}
+	focus = {
+		id = TKF_turkish_communism
+		icon = turkish_authoritarianism
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_loyalties_of_unions
+		}
+		prerequisite = {
+			focus = TKF_talks_with_THKPC
+		}
+		x = 49
+		y = 16
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.03
+			custom_effect_tooltip = TKP_ACTION_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^6 = 0.05 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = TKF_for_a_moment
+		icon = powerplant
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_turkish_communism
+		}
+		x = 49
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		available = {
+	    emerging_conservative_are_in_power= yes	
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = TKP_ACTION_1
+			add_stability = 0.03
+			hidden_effect = {
+				add_to_variable = { party_pop_array^6 = 0.02 }
+				recalculate_party = yes
+			}
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	
+		}
+	}
+	focus = {
+		id = TKF_stabilzation_act
+		icon = stability
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_for_a_moment
+		}
+		x = 47
+		y = 18
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+        completion_reward = {
+	add_timed_idea = { idea = stabilization_of_TUR days = 365 }
+	} }
+	focus = {
+		id = TKF_peace_upon_us
+		icon = peace
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_for_a_moment
+		}
+		x = 51
+		y = 18
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+        completion_reward = {
+		add_ideas = peace_solution
+	} }
+	focus = {
+		id = TKF_three_elements
+		icon = improve_relations_red
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_for_a_moment
+		}
+		x = 49
+		y = 18
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+        completion_reward = {
+		add_political_power = 125
+	} }
+	focus = {
+		id = TKF_the_workers
+		icon = workers_of_iberia
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_three_elements
+		}
+		x = 46
+		y = 19
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+        add_ideas = workers_in_action
+				}
+			}
+	focus = {
+		id = TKF_peasents
+		icon = agriculture
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_three_elements
+		}
+		x = 49
+		y = 19
+
+
+		completion_reward = {
+        add_ideas = peasenets_in_action
+				}
+			}
+	focus = {
+		id = TKF_farmers
+		icon = agriculture2
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_three_elements
+		}
+		x = 52
+		y = 19
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+			search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+        add_ideas = farmers_in_action
+				}
+			}
+	focus = {
+		id = TKF_anti_coup_policy
+		icon = masters_of_our_own_fate
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_farmers
+		}
+		prerequisite = {
+			focus = TKF_peasents
+		}
+		prerequisite = {
+			focus = TKF_the_workers
+		}
+		x = 49
+		y = 20
+
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+        add_political_power = 100
+		add_war_support = 0.03
+				}
+			}
+	focus = {
+		id = TKF_disband_armys_structual_things
+		icon = army_reform
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_anti_coup_policy
+		}
+		x = 47
+		y = 21
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+        add_stability = -0.03
+		army_experience = -50
+		add_war_support = -0.03
+				}
+			}
+	focus = {
+		id = TKF_beat_the_EMEPs_coup
+		icon = builder_of_the_red_army
+		cost = 15,00
+		prerequisite = {
+			focus = TKF_disband_military_institutions
+		}
+		prerequisite = {
+			focus = TKF_disband_armys_structual_things
+		}
+		prerequisite = {
+			focus = TKF_military_secularism
+		}
+		x = 49
+		y = 22
+
+search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+    available = {
+    NOT = {
+	has_global_flag = TUR_TKP_GET_DESTROYED
+	}
+	}
+
+	completion_reward = {
+			country_event = TurkeyF.181
+			custom_effect_tooltip = IF_NOT_ACHIEVED_6_YEARS
+			}
+			} 
+	focus = {
+		id = TKF_disband_military_institutions
+		icon = Andorran_Army
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_anti_coup_policy
+		}
+		x = 49
+		y = 21
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+        add_stability = -0.07
+		army_experience = -75
+				}
+			}
+	focus = {
+		id = TKF_military_secularism
+		icon = focus_secular
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_anti_coup_policy
+		}
+		x = 51
+		y = 21
+
+			search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+        add_ideas = military_secularism_achieved
+				}
+			}
+	focus = {
+		id = TKF_diyanet_reform
+		icon = sunni_government
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_beat_the_EMEPs_coup
+		}
+		x = 51
+		y = 23
+
+       search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+
+		completion_reward = {
+				set_temp_variable = { temp_opinion = -20 }	
+            change_the_ulema_opinion = yes
+swap_ideas = {
+                add_idea = pluralist
+                remove_idea = sunni
+	} } }
+	focus = {
+		id = TKF_clash_with_ulema
+		icon = revolutionize_ulema
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_diyanet_reform
+		}
+		x = 50
+		y = 24
+
+       search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+
+		completion_reward = {
+				set_temp_variable = { temp_opinion = -20 }	
+            change_the_ulema_opinion = yes
+swap_ideas = {
+                add_idea = labour_unions
+                remove_idea = The_Ulema
+	} } }
+	focus = {
+		id = TKF_deal_with_sharia
+		icon = sharia_law
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_diyanet_reform
+		}
+		x = 52
+		y = 24
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+       search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+
+        completion_reward = {
+		        add_stability = 0.05
+				add_political_power = -75
+				set_temp_variable = { temp_opinion = 5}	
+            change_the_military_opinion = yes	
+				set_temp_variable = { temp_opinion = 5 }	
+            change_the_ulema_opinion = yes
+	} } 
+	focus = {
+		id = TKF_communist_colleges
+		icon = Laurel_Slovakia
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_beat_the_EMEPs_coup
+		}
+		x = 47
+		y = 23
+
+search_filters = {FOCUS_FILTER_RESEARCH}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+        add_ideas = communist_colleges
+				}
+			}
+	focus = {
+		id = TKF_collective_society
+		icon = industry_united_states
+		cost = 15,00
+		prerequisite = {
+			focus = TKF_deal_with_sharia
+		}
+		prerequisite = {
+			focus = TKF_clash_with_ulema
+		}
+		prerequisite = {
+			focus = TKF_communist_scientific_community
+		}
+		prerequisite = {
+			focus = TKF_communist_science
+		}
+		x = 49
+		y = 25
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_ideas = collective_society_TKP
+				}
+			}
+	focus = {
+		id = TKF_communist_science
+		icon = lunar_launch
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_communist_colleges
+		}
+		x = 46
+		y = 24
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_stability = 0.03
+			custom_effect_tooltip = TKP_ACTION_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^6 = 0.05 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = TKF_communist_scientific_community
+		icon = mechanized_agriculture
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_communist_colleges
+		}
+		x = 48
+		y = 24
+
+search_filters = {FOCUS_FILTER_RESEARCH}
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_ideas = communistic_science_community
+				}
+			}
+	focus = {
+		id = TKF_agricultural_act
+		icon = mechanized_agriculture
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_collective_society
+		}
+		x = 48
+		y = 26
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_ideas = agricultural_action_plan
+				}
+			}
+	focus = {
+		id = TKF_buy_animals
+		icon = Canned_Fish
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_agricultural_act
+		}
+		x = 45
+		y = 27
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+        add_stability = 0.03
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt		
+				}
+			}
+	focus = {
+		id = TKF_tractor_expansion
+		icon = Farm_national_movement
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_agricultural_act
+		}
+		x = 47
+		y = 27
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = agricultural_action_plan_2
+                remove_idea = agricultural_action_plan
+	} } }
+	focus = {
+		id = TKF_modern_tractors
+		icon = wheat_field
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_tractor_expansion
+		}
+		prerequisite = {
+			focus = TKF_buy_animals
+		}
+		x = 47
+		y = 28
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = agricultural_action_plan_3
+                remove_idea = agricultural_action_plan_2
+	} } }
+	focus = {
+		id = TKF_the_union_culture
+		icon = communist_factories
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_collective_society
+		}
+		x = 50
+		y = 26
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = unions_in_loyalty_culturized
+                remove_idea = unions_in_loyalty
+	} } }
+	focus = {
+		id = TKF_freedom_for_unions
+		icon = communist_slums
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_the_union_culture
+		}
+		x = 51
+		y = 27
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = unions_in_loyalty_culturized_freedom
+                remove_idea = unions_in_loyalty_culturized
+	} } }
+	focus = {
+		id = TKF_unions_in_parliament
+		icon = parliament_box
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_the_union_culture
+		}
+		x = 53
+		y = 27
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_stability = 0.03
+			custom_effect_tooltip = TKP_ACTION_2
+			hidden_effect = {
+				add_to_variable = { party_pop_array^6 = 0.03 }
+				recalculate_party = yes
+			}
+				}
+			}
+	focus = {
+		id = TKF_8_hours_work
+		icon = overrule
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_unions_in_parliament
+		}
+		prerequisite = {
+			focus = TKF_freedom_for_unions
+		}
+		x = 51
+		y = 28
+
+		completion_reward = {
+    add_ideas = eight_hours_for_work
+	} } 
+	focus = {
+		id = TKF_weekend_culture
+		icon = stolen_papers
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_the_union_culture
+		}
+		prerequisite = {
+			focus = TKF_agricultural_act
+		}
+		x = 49
+		y = 27
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+    add_ideas = weekend_vacation_culture
+	} } 
+	focus = {
+		id = TKF_free_workers
+		icon = social_paternalism
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_weekend_culture
+		}
+		x = 49
+		y = 28
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+        completion_reward = {
+		add_stability = 0.05
+	} }
+	focus = {
+		id = TKF_finish_of_the_reforms
+		icon = MEX_Economic_reform
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_8_hours_work
+		}
+		prerequisite = {
+			focus = TKF_modern_tractors
+		}
+		prerequisite = {
+			focus = TKF_free_workers
+		}
+		x = 49
+		y = 29
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+       completion_reward = {
+		add_political_power = 125
+	} }
+	focus = {
+		id = TKF_usage_of_industries
+		icon = Generic_Socialist_Industry
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_finish_of_the_reforms
+		}
+		x = 49
+		y = 30
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_political_power = 125
+		add_stability = 0.03
+				set_temp_variable = { temp_opinion = 10 }	
+            change_industrial_conglomerates_opinion = yes		
+				}
+			}
+	focus = {
+		id = TKF_civilian_industries
+		icon = radical_tax_reform
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_usage_of_industries
+		}
+		x = 46
+		y = 31
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 156
+	}
+
+	completion_reward = {
+			156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_military_industries
+		icon = military_sphere
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_usage_of_industries
+		}
+		x = 52
+		y = 31
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 155
+	}
+
+	completion_reward = {
+			155 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_industrial_culture
+		icon = decentralized_economy
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_civilian_industries
+		}
+		x = 46
+		y = 32
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 934
+	}
+
+	completion_reward = {
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_industrial_takings_1
+		icon = industry
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_civilian_industries
+		}
+		x = 44
+		y = 32
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 159
+	}
+
+	completion_reward = {
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}	
+	focus = {
+		id = TKF_industrial_takings_2
+		icon = industry
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_civilian_industries
+		}
+		x = 48
+		y = 32
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 1032
+	}
+
+	completion_reward = {
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	} 
+	focus = {
+		id = TKF_industrial_takings_3
+		icon = industry2
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_industrial_takings_2
+		}
+		prerequisite = {
+			focus = TKF_industrial_culture
+		}
+		prerequisite = {
+			focus = TKF_industrial_takings_1
+		}
+		x = 45
+		y = 33
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 161
+	}
+
+	completion_reward = {
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}	
+	focus = {
+		id = TKF_industrial_takings_4
+		icon = industry2
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_industrial_takings_2
+		}
+		prerequisite = {
+			focus = TKF_industrial_culture
+		}
+		prerequisite = {
+			focus = TKF_industrial_takings_1
+		}
+		x = 47
+		y = 33
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 162
+	}
+
+	completion_reward = {
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}	
+	focus = {
+		id = TKF_civilian_development
+		icon = industry3
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_industrial_takings_4
+		}
+		prerequisite = {
+			focus = TKF_industrial_takings_3
+		}
+		x = 46
+		y = 34
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	available = {
+	controls_state = 934
+	controls_state = 159
+	controls_state = 157
+	}
+
+	completion_reward = {
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			157 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 1
+				category = CAT_fuel_oil
+			}
+		subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_the_great_collectivism
+		icon = construction4
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_civilian_development
+		}
+		prerequisite = {
+			focus = TKF_military_development
+		}
+		x = 49
+		y = 35
+
+search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = collectivism_FULL_TKP
+                remove_idea = collective_society_TKP
+	} 
+	} }
+	focus = {
+		id = TKF_military_takings_1
+		icon = industry_tanks
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_military_industries
+		}
+		x = 50
+		y = 32
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+    available = {
+	controls_state = 161
+	}
+
+	completion_reward = {
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_military_takings_2
+		icon = air_industry
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_military_industries
+		}
+		x = 54
+		y = 32
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+    available = {
+	controls_state = 156
+	}
+
+	completion_reward = {
+			156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_military_takings_3
+		icon = industry_communist2
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_military_takings_1
+		}
+		prerequisite = {
+			focus = TKF_military_culture
+		}
+		x = 51
+		y = 33
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+    available = {
+	controls_state = 934
+	}
+
+	completion_reward = {
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_military_takings_4
+		icon = industry_communism
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_military_takings_2
+		}
+		prerequisite = {
+			focus = TKF_military_culture
+		}
+		x = 53
+		y = 33
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+    available = {
+	controls_state = 160
+	}
+
+	completion_reward = {
+			160 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			160 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_military_development
+		icon = red_industry
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_military_takings_4
+		}
+		prerequisite = {
+			focus = TKF_military_takings_3
+		}
+		x = 52
+		y = 34
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+    available = {
+	controls_state = 934
+	controls_state = 159
+	controls_state = 157
+	}
+
+	completion_reward = {
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			157 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = Cat_ARTILLERY
+				bonus = 0.5
+				uses = 1
+				category = Cat_ARTILLERY
+			}
+		subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} }	}	
+	focus = {
+		id = TKF_military_culture
+		icon = air_production
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_military_industries
+		}
+		x = 52
+		y = 32
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 157
+	}
+
+	completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		subtract_from_variable = { treasury = 75 }
+			custom_effect_tooltip = 75_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_war_preparatation
+		icon = anti_war_with_big_gun
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_the_great_collectivism
+		}
+		x = 49
+		y = 36
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+	completion_reward = {
+			add_war_support = 0.05
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}	
+			} }	
+	focus = {
+		id = TKF_disband_neutrality
+		icon = brain_power
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_war_preparatation
+		}
+		x = 47
+		y = 37
+
+	completion_reward = {
+			add_ideas = intervention_global_interventionism
+			} }	
+	focus = {
+		id = TKF_power_of_comareds
+		icon = the_glory_of_the_red_army_communism
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_war_preparatation
+		}
+		x = 49
+		y = 37
+
+	completion_reward = {
+			add_manpower = 250000
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+			} }	
+	focus = {
+		id = TKF_violance_time
+		icon = border_war
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_war_preparatation
+		}
+		x = 51
+		y = 37
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+	completion_reward = {
+			add_ideas = drafted_women
+			} }	
+	focus = {
+		id = TKF_crush_the_kurdistan
+		icon = attack_kurdistan2
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_violance_time
+		}
+		prerequisite = {
+			focus = TKF_power_of_comareds
+		}
+		prerequisite = {
+			focus = TKF_disband_neutrality
+		}
+		x = 49
+		y = 38
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = KUR
+		NOT = {
+		has_war_with = KUR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = KUR
+    NOT = {
+	country_exists = KUR
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KUR
+		}
+	} }
+	focus = {
+		id = TKF_bulwark_against_capitalism
+		icon = great_red_menace
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_crush_the_kurdistan
+		}
+		x = 48
+		y = 39
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+    add_ideas = bulwark_against_capitalism
+	} } 
+	focus = {
+		id = TKF_reds_in_middle_east
+		icon = Emirate_of_Afghanistan 
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_communist_marathon
+		}
+		x = 45
+		y = 41
+
+search_filters = {FOCUS_FILTER_INFLUENCE}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+		IRQ = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}
+		
+		SYR = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}
+		
+			SYR = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			IRQ = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}				
+	  } 
+	}
+	focus = {
+		id = TKF_invade_iraq
+		icon = militarized_iraq
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_reds_in_middle_east
+		}
+		x = 44
+		y = 42
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = IRQ
+		NOT = {
+		has_war_with = IRQ
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = IRQ
+    NOT = {
+	country_exists = IRQ
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = IRQ
+		}
+	} }
+	focus = {
+		id = TKF_invade_syria
+		icon = attack_syria
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_reds_in_middle_east
+		}
+		x = 46
+		y = 42
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = SYR
+		NOT = {
+		has_war_with = SYR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SYR
+    NOT = {
+	country_exists = SYR
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = SYR
+		}
+	} }
+	focus = {
+		id = TKF_establish_south_SSR
+		icon = befriend_middle_east
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_invade_syria
+		}
+		prerequisite = {
+			focus = TKF_invade_iraq
+		}
+		x = 45
+		y = 43
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		controls_state = 186
+		controls_state = 557
+		NOT = {
+		country_exists = SYR
+		country_exists = IRQ
+		}
+		}
+
+        completion_reward = {
+		SYR = {
+			set_cosmetic_tag = MID_COM
+
+		transfer_state = 1122
+		transfer_state = 1124
+		transfer_state = 1123
+		transfer_state = 1142
+		transfer_state = 1141
+		transfer_state = 1143
+		transfer_state = 575
+		transfer_state = 571
+		transfer_state = 193
+		transfer_state = 566
+		transfer_state = 994
+		transfer_state = 191
+		transfer_state = 995
+		transfer_state = 190
+		transfer_state = 189
+		transfer_state = 188
+		transfer_state = 192
+		transfer_state = 561
+		transfer_state = 186	
+		transfer_state = 185
+		transfer_state = 184
+		transfer_state = 641
+		transfer_state = 166
+		transfer_state = 165
+		transfer_state = 167
+		transfer_state = 170
+		transfer_state = 168
+		transfer_state = 557
+		transfer_state = 171
+		transfer_state = 164
+		transfer_state = 633
+		transfer_state = 630
+		transfer_state = 169
+
+		add_state_core = 1122
+		add_state_core = 1124
+		add_state_core = 1123
+		add_state_core = 1142
+		add_state_core = 1141
+		add_state_core = 1143
+		add_state_core = 575
+		add_state_core = 571
+		add_state_core = 193
+		add_state_core = 566
+		add_state_core = 994
+		add_state_core = 191
+		add_state_core = 995
+		add_state_core = 190
+		add_state_core = 189
+		add_state_core = 188
+		add_state_core = 192
+		add_state_core = 561
+		add_state_core = 186	
+		add_state_core = 185
+		add_state_core = 184
+		add_state_core = 641
+		add_state_core = 166
+		add_state_core = 165
+		add_state_core = 167
+		add_state_core = 170
+		add_state_core = 168
+		add_state_core = 557
+		add_state_core = 171
+		add_state_core = 164
+		add_state_core = 633
+		add_state_core = 630
+		add_state_core = 169
+		}
+	set_autonomy = {
+		target = SYR
+		autonomous_state = autonomy_special_administrative_region
+	}
+	} }
+	focus = {
+		id = TKF_reds_in_balkans
+		icon = balkan_conflict
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_communist_marathon
+		}
+		x = 49
+		y = 41
+
+search_filters = {FOCUS_FILTER_INFLUENCE}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			GRE = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}
+			BUL = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}
+			MAC = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}
+			SER = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}	
+			ALB = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}	
+			ROM = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}
+			BOS = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}
+			SLV = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}
+			CRO = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}	}
+
+			GRE = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			BUL = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			MAC = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			SER = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}		
+			ALB = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}	
+			ROM = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}	
+			BOS = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}	
+			CRO = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}	
+			SLV = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}				
+	  } 
+	}
+	focus = {
+		id = TKF_phase_1
+		icon = balkan_federation_of_socialist_republics
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_reds_in_balkans
+		}
+		x = 48
+		y = 42
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+        available = {
+		country_exists = SER
+		country_exists = BUL
+		NOT = {
+		has_war_with = SER
+		has_war_with = BUL
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SER
+	has_war_with = BUL
+    NOT = {
+	country_exists = SER
+	country_exists = BUL
+	 }
+	} }
+	
+
+        completion_reward = {
+		SER = {
+		country_event = TurkeyF.183
+	}
+		BUL = {
+		country_event = TurkeyF.183
+	}  } }
+	focus = {
+		id = TKF_phase_2
+		icon = the_unification_of_the_balkans
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_reds_in_balkans
+		}
+		x = 50
+		y = 42
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+        available = {
+		country_exists = GRE
+		country_exists = ROM
+		NOT = {
+		has_war_with = SER
+		has_war_with = ROM
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GRE
+	has_war_with = ROM
+    NOT = {
+	country_exists = GRE
+	country_exists = ROM
+	 }
+	} }
+
+        completion_reward = {
+		GRE = {
+		country_event = TurkeyF.182
+	}
+		ROM = {
+		country_event = TurkeyF.182
+	}  } }
+	focus = {
+		id = TKF_establish_balkan_SSR
+		icon = communist_balkans
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_phase_2
+		}
+		prerequisite = {
+			focus = TKF_phase_1
+		}
+		x = 49
+		y = 43
+
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		controls_state = 131
+		controls_state = 153
+		controls_state = 141
+		controls_state = 150
+		NOT = {
+		country_exists = BUL
+		country_exists = SER
+		country_exists = GRE 
+		country_exists = ROM 
+		}
+		}
+
+        completion_reward = {
+		BUL = {
+			set_cosmetic_tag = BAL_COM
+		transfer_state = 143
+		transfer_state = 144
+		transfer_state = 142
+		transfer_state = 141
+		transfer_state = 139
+		transfer_state = 140
+		transfer_state = 974
+		transfer_state = 153
+		transfer_state = 154
+		transfer_state = 996
+		transfer_state = 150
+		transfer_state = 284
+		transfer_state = 152
+		transfer_state = 151
+		transfer_state = 909
+		transfer_state = 910
+		transfer_state = 130
+		transfer_state = 998
+		transfer_state = 131
+		transfer_state = 132
+		transfer_state = 133
+		transfer_state = 134
+
+		add_state_core = 143
+		add_state_core = 144
+		add_state_core = 142
+		add_state_core = 141
+		add_state_core = 139
+		add_state_core = 140
+		add_state_core = 974
+		add_state_core = 153
+		add_state_core = 154
+		add_state_core = 996
+		add_state_core = 150
+		add_state_core = 284
+		add_state_core = 152
+		add_state_core = 151
+		add_state_core = 909
+		add_state_core = 910
+		add_state_core = 130
+		add_state_core = 998
+		add_state_core = 131
+		add_state_core = 132
+		add_state_core = 133
+		add_state_core = 134
+		add_state_core = 974
+		add_state_core = 135
+		add_state_core = 137
+		add_state_core = 138
+		}
+	set_autonomy = {
+		target = BUL
+		autonomous_state = autonomy_special_administrative_region
+	}
+	} }
+	focus = {
+		id = TKF_reds_in_trancaucasia
+		icon = communist_navy
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_communist_marathon
+		}
+		x = 53
+		y = 41
+
+search_filters = {FOCUS_FILTER_INFLUENCE}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+		ARM = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.07
+						}	}
+		
+		AZE = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.07
+						}	}
+		GEO = {
+						add_popularity = {
+							ideology = communism
+							popularity = 0.07
+						}	}		
+			AZE = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			ARM = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}	
+			GEO = {
+				set_temp_variable = { percent_change = 4 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}				
+	  } 
+	}
+	focus = {
+		id = TKF_georgia
+		icon = attack_georgia
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_reds_in_trancaucasia
+		}
+		x = 52
+		y = 42
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = GEO
+		NOT = {
+		has_war_with = GEO
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GEO
+    NOT = {
+	country_exists = GEO
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = GEO
+		}
+	} }
+	focus = {
+		id = TKF_armenia_and_azerbaijan
+		icon = focus_armeniageorgiaeat
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_reds_in_trancaucasia
+		}
+		x = 54
+		y = 42
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = ARM
+		country_exists = AZE
+		NOT = {
+		has_war_with = ARM
+		has_war_with = AZE
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ARM
+	has_war_with = AZE
+    NOT = {
+	country_exists = ARM
+		country_exists = AZE
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = ARM
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = AZE 
+		}
+	} 
+	} 
+	focus = {
+		id = TKF_establish_trankasus_SSR
+		icon = demand_northern_caucasus
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_armenia_and_azerbaijan
+		}
+		prerequisite = {
+			focus = TKF_georgia
+		}
+		x = 53
+		y = 43
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+
+        available = {
+		controls_state = 1033
+		controls_state = 713
+		controls_state = 709
+		NOT = {
+		country_exists = GEO
+		country_exists = ARM
+		country_exists = AZE
+		}
+		}
+
+        completion_reward = {
+		GEO = {
+			set_cosmetic_tag = TRA_COM
+		transfer_state = 1206
+		transfer_state = 706
+		transfer_state = 707
+		transfer_state = 466
+		transfer_state = 1033
+		transfer_state = 709
+		transfer_state = 708
+		transfer_state = 1034
+		transfer_state = 1035
+		transfer_state = 711
+		transfer_state = 1037
+		transfer_state = 1036
+		transfer_state = 710
+		transfer_state = 712
+		transfer_state = 713
+		transfer_state = 1038
+
+		add_state_core = 1206
+		add_state_core = 706
+		add_state_core = 707
+		add_state_core = 466
+		add_state_core = 1033
+		add_state_core = 709
+		add_state_core = 708
+		add_state_core = 1034
+		add_state_core = 1035
+		add_state_core = 711
+		add_state_core = 1037
+		add_state_core = 1036
+		add_state_core = 710
+		add_state_core = 712	
+		add_state_core = 713
+		add_state_core = 1038
+		add_state_core = 705
+		}
+	set_autonomy = {
+		target = GEO
+		autonomous_state = autonomy_special_administrative_region
+	}
+	} }
+	focus = {
+		id = TKF_unite_the_three_head
+		icon = BeNeLux
+		cost = 15,00
+		prerequisite = {
+			focus = TKF_establish_trankasus_SSR
+		}
+		prerequisite = {
+			focus = TKF_establish_balkan_SSR
+		}
+		prerequisite = {
+			focus = TKF_establish_south_SSR
+		}
+		x = 49
+		y = 44
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = SYR
+		country_exists = BUL
+		country_exists = GEO
+		}
+
+        completion_reward = {
+   TUR = {
+	annex_country = { target = GEO transfer_troops = yes}
+   } 
+   TUR = {
+	annex_country = { target = BUL transfer_troops = yes}
+   } 
+  TUR = {
+	annex_country = { target = SYR transfer_troops = yes}
+   } 
+   set_cosmetic_tag = TKP_TUR_REL
+
+
+		add_state_core = 1122
+		add_state_core = 1124
+		add_state_core = 1123
+		add_state_core = 1142
+		add_state_core = 1141
+		add_state_core = 1143
+		add_state_core = 1206
+
+		add_state_core = 706
+		add_state_core = 707
+		add_state_core = 466
+		add_state_core = 1033
+		add_state_core = 709
+		add_state_core = 708
+		add_state_core = 1034
+		add_state_core = 1035
+		add_state_core = 711
+		add_state_core = 1037
+		add_state_core = 1036
+		add_state_core = 710
+		add_state_core = 712	
+		add_state_core = 713
+		add_state_core = 1038
+		add_state_core = 705  
+		add_state_core = 143
+		add_state_core = 144
+		add_state_core = 142
+		add_state_core = 141
+		add_state_core = 139
+		add_state_core = 140
+		add_state_core = 974
+		add_state_core = 153
+		add_state_core = 154
+		add_state_core = 996
+		add_state_core = 150
+		add_state_core = 284
+		add_state_core = 152
+		add_state_core = 151
+		add_state_core = 909
+		add_state_core = 910
+		add_state_core = 130
+		add_state_core = 998
+		add_state_core = 131
+		add_state_core = 132
+		add_state_core = 133
+		add_state_core = 134
+		add_state_core = 974
+		add_state_core = 135
+		add_state_core = 137
+		add_state_core = 138
+		add_state_core = 575
+		add_state_core = 571
+		add_state_core = 193
+		add_state_core = 566
+		add_state_core = 994
+		add_state_core = 191
+		add_state_core = 995
+		add_state_core = 190
+		add_state_core = 189
+		add_state_core = 188
+		add_state_core = 192
+		add_state_core = 561
+		add_state_core = 186	
+		add_state_core = 185
+		add_state_core = 184
+		add_state_core = 641
+		add_state_core = 166
+		add_state_core = 165
+		add_state_core = 167
+		add_state_core = 170
+		add_state_core = 168
+		add_state_core = 557
+		add_state_core = 171
+		add_state_core = 164
+		add_state_core = 633
+		add_state_core = 630
+		add_state_core = 169
+   } }
+	focus = {
+		id = TKF_disband_turkic_relations
+		icon = align_to_turkic_council
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_crush_the_kurdistan
+		}
+		x = 50
+		y = 39
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+    
+	completion_reward = {
+reverse_add_opinion_modifier = { target = AZE modifier = broke_off_diplomatic_relations }
+					reverse_add_opinion_modifier = { target = KAZ modifier = broke_off_diplomatic_relations }
+					reverse_add_opinion_modifier = { target = TRK modifier = broke_off_diplomatic_relations }
+					reverse_add_opinion_modifier = { target = UZB modifier = broke_off_diplomatic_relations }
+					reverse_add_opinion_modifier = { target = KYR modifier = broke_off_diplomatic_relations }
+		} } 
+	focus = {
+		id = TKF_euroasian_call
+		icon = revolutionary_government
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_unite_the_three_head
+		}
+		prerequisite = {
+			focus = TKF_princes_strike
+		}
+		prerequisite = {
+			focus = TKF_peninsular_wars
+		}
+		x = 49
+		y = 45
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        completion_reward = {
+			every_country = {
+		country_event = TurkeyF.184
+	}  } }
+	focus = {
+		id = TKF_communist_marathon
+		icon = the_supreme_soviet
+		cost = 15,00
+		prerequisite = {
+			focus = TKF_disband_turkic_relations
+		}
+		prerequisite = {
+			focus = TKF_bulwark_against_capitalism
+		}
+		x = 49
+		y = 40
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_stability = 0.05
+		    custom_effect_tooltip = TUR_united_state
+					        				subtract_from_variable = { TUR_pop_KEM = 6 }
+								        				subtract_from_variable = { TUR_pop_KUR = 3 }
+	        				subtract_from_variable = { TUR_pop_ISL = 3 }
+			set_global_flag = TUR_UNITE_DIASPORA
+			TUR_remove_state_modifier_effects = yes
+			} }	
+	focus = {
+		id = TKF_princes_strike
+		icon = ethiopia_royal_symbol
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_establish_south_SSR
+		}
+		x = 46
+		y = 44
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+		country_exists = PER
+		NOT = {
+		has_war_with = PER
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = PER
+    NOT = {
+	country_exists = PER
+	 }
+	} }
+
+        completion_reward = {
+		add_war_support = 0.05
+		create_wargoal = {
+			type = annex_everything
+			target = PER
+		}
+	} }
+	focus = {
+		id = TKF_peninsular_wars
+		icon = class_war
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_establish_trankasus_SSR
+		}
+		x = 52
+		y = 44
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = ITA
+		NOT = {
+		has_war_with = ITA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ITA
+    NOT = {
+	country_exists = ITA
+	 }
+	} }
+
+        completion_reward = {
+		add_war_support = 0.05
+		create_wargoal = {
+			type = annex_everything
+			target = ITA
+		}
+	} }
+	focus = {
+		id = TKF_bomb_new_york
+		icon = USA_attack_the_financial_system
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_pentagon_bombardment
+		}
+		prerequisite = {
+			focus = TKF_communistic_interventions
+		}
+		x = 34
+		y = 42
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+        has_war = yes
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    completion_reward = {
+		769 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		769 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		769 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		769 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	 USA = {			
+	 add_stability = -0.02
+	 }
+	} } 
+	focus = {
+		id = TKF_islamic_take_overs
+		icon = islamist_gov2
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_power_of_eurospectism
+		}
+		prerequisite = {
+			focus = TKF_non_agression_with_russia
+		}
+		x = 40
+		y = 42
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+        available = {
+        has_war = yes
+        }
+
+		available = {
+		GER = {
+		influence_higher_30 = yes
+		}
+		FRA = {
+		influence_higher_30 = yes
+		}
+		ENG = {
+		influence_higher_30 = yes
+		}
+		SPR = {
+		influence_higher_30 = yes
+		}
+		POR = {
+		influence_higher_30 = yes
+		}
+		GRE = {
+		influence_higher_30 = yes
+		}
+		}
+
+    completion_reward = {
+	 GER = {	
+		        add_stability = -0.02		
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.02
+				}	 
+	 }
+	 ENG = {
+		        add_stability = -0.02				
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.02
+				}	 
+	 }
+	 FRA = {
+		        add_stability = -0.02				
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.02
+				}	 
+	 }
+	 SPR = {	
+		        add_stability = -0.02			
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.02
+				}	 
+	 } }
+	}
+	focus = {
+		id = TKF_power_of_eurospectism
+		icon = stage_europe
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_adjective_europe
+		}
+		x = 39
+		y = 41
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+        available = {
+        has_war = yes
+        }
+
+		available = {
+		GER = {
+		influence_higher_30 = yes
+		}
+		FRA = {
+		influence_higher_30 = yes
+		}
+		ENG = {
+		influence_higher_30 = yes
+		}
+		SPR = {
+		influence_higher_30 = yes
+		}
+		POR = {
+		influence_higher_30 = yes
+		}
+		GRE = {
+		influence_higher_30 = yes
+		}
+		}
+
+    completion_reward = {
+		45 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		41 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		56 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		86 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		91 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		13 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	GER = {
+			set_temp_variable = { modify_eurosceptic = 0.02 }
+			eurosceptic_change = yes	
+	}
+	ENG = {
+			set_temp_variable = { modify_eurosceptic = 0.02 }
+			eurosceptic_change = yes	
+	}
+	FRA = {
+			set_temp_variable = { modify_eurosceptic = 0.02 }
+			eurosceptic_change = yes	
+	}
+	SPR = {
+            set_temp_variable = { modify_eurosceptic = 0.02 }
+			eurosceptic_change = yes	
+	}
+	 GER = {			
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	 
+	 }
+	 ENG = {			
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	 
+	 }
+	 FRA = {			
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	 
+	 }
+	 SPR = {			
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	 
+	 }
+	} } 
+	focus = {
+		id = TKF_communistic_interventions
+		icon = Generic_Partisan
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_anti_usa
+		}
+		x = 35
+		y = 41
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+        has_war = yes
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    completion_reward = {
+	 USA = {			
+		811 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		811 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		800 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		795 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		772 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		768 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+			USA = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	 
+	 } }
+	} }
+	focus = {
+		id = TKF_deals_with_russia_and_china
+		icon = tsarist_russia
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_usage_of_united_front
+		}
+		x = 37
+		y = 42
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		
+        available = {
+        country_exists = SOV
+        country_exists = CHI
+		is_puppet = no
+		SOV = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = SOV
+		has_war_with = CHI
+		NOT = {
+        country_exists = SOV
+        } } }
+
+		completion_reward = {
+diplomatic_relation = { 
+	country = SOV 
+	relation = non_aggression_pact 
+}  
+
+diplomatic_relation = { 
+	country = CHI 
+	relation = non_aggression_pact 
+} } } 
+	focus = {
+		id = TKF_stabilization_mood
+		icon = stability
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_victory
+		}
+		x = 37
+		y = 44
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+       completion_reward = {
+		add_stability = 0.05
+	} }
+	focus = {
+		id = TKF_safity_powerhood
+		icon = Generic_Barricade
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_stabilization_mood
+		}
+		x = 37
+		y = 45
+
+       completion_reward = {
+		    custom_effect_tooltip = TUR_united_state
+					        				subtract_from_variable = { TUR_pop_KEM = 6 }
+								        				subtract_from_variable = { TUR_pop_KUR = 3 }
+	        				subtract_from_variable = { TUR_pop_ISL = 3 }
+			set_global_flag = TUR_UNITE_DIASPORA
+						TUR_remove_state_modifier_effect = yes
+	} }
+	focus = {
+		id = TKF_preserve_the_nation
+		icon = blr_soviet_academy_of_sciences
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_emep_victory
+		}
+		x = 61
+		y = 14
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+        completion_reward = {
+		add_stability = 0.1
+	} }
+	focus = {
+		id = TKF_communistic_nationalism
+		icon = focus_generic_national_security
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_preserve_the_nation
+		}
+		x = 60
+		y = 15
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+        add_ideas = nationalistic_communism
+				}
+			}
+	focus = {
+		id = TKF_quarrel_with_terror
+		icon = ultranationalist_volunteers
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_overreacting_actions
+		}
+		prerequisite = {
+			focus = TKF_merge_ulkist_principles
+		}
+		prerequisite = {
+			focus = TKF_arm_THKPC
+		}
+		x = 61
+		y = 17
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+search_filters = {FOCUS_FILTER_MANPOWER}
+
+		available = {
+				emerging_autocracy_are_in_power = yes
+		}
+
+		completion_reward = {
+                add_war_support = 0.05
+				add_manpower = 225000
+	} } 
+	focus = {
+		id = TKF_legalize_THKPC
+		icon = TotSoc_Focus
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_preserve_the_nation
+		}
+		x = 62
+		y = 15
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+                add_ideas = THKPC_cooperation
+	} } 
+	focus = {
+		id = TKF_ibda_c_crackdown
+		icon = islamic_militarism
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_quarrel_with_terror
+		}
+		x = 59
+		y = 18
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+                    completion_reward = {
+				custom_effect_tooltip = radicalism_weaking_generally
+						subtract_from_variable = { radicalization = 5 }
+					add_popularity = {
+					ideology = fascism
+					popularity = -0.03
+				}					
+		}
+	}
+	focus = {
+		id = TKF_atheist_state
+		icon = islamophobia2
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_quarrel_with_terror
+		}
+		x = 63
+		y = 18
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+       search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+	   
+		completion_reward = {
+				custom_effect_tooltip = every_neighbour_country_effects
+				set_temp_variable = { temp_opinion = -20 }	
+            change_the_ulema_opinion = yes
+swap_ideas = {
+                add_idea = pluralist
+                remove_idea = sunni
+	} } }
+	focus = {
+		id = TKF_overreacting_actions
+		icon = union_representation_act
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_legalize_THKPC
+		}
+		prerequisite = {
+			focus = TKF_communistic_nationalism
+		}
+		x = 61
+		y = 16
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+        completion_reward = {
+		add_war_support = 0.1
+	} }
+	focus = {
+		id = TKF_hard_prisons
+		icon = attack_democracy3
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_quarrel_with_terror
+		}
+		x = 61
+		y = 18
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+                    completion_reward = {
+				custom_effect_tooltip = TUR_westernize
+						subtract_from_variable = { radicalization = 5 }
+			subtract_from_variable = { social_conservatism_government = 10 }
+			subtract_from_variable = { social_conservatism_society = 15 }
+		}
+	}
+	focus = {
+		id = TKF_kill_the_corrupteds
+		icon = anti_corruption
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_hard_prisons
+		}
+		x = 61
+		y = 19
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+	   add_stability = 0.05
+	   add_political_power = -275
+			decrease_corruption = yes
+	} } 
+	focus = {
+		id = TKF_war_with_PKK
+		icon = focus_attack_pkk
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_kill_the_corrupteds
+		}
+		x = 61
+		y = 20
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+                    completion_reward = {
+						add_war_support = 0.1				
+		}
+	}
+	focus = {
+		id = TKF_burn_the_villages
+		icon = money_on_fire
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_war_with_PKK
+		}
+		x = 59
+		y = 21
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		available = {
+		has_idea = TUR_PKK_insurgency_active
+		}
+
+    completion_reward = {
+		add_stability = -0.05
+custom_effect_tooltip = DEC_5_PKK_POINT
+subtract_from_variable = { var = pkk_presence value = 5 }
+			add_to_variable = { TUR_PKK_aggro = -5 }
+			add_to_variable = { TUR_PKK_strength = -5 }			
+		162 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		162 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		935 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	} } 
+	focus = {
+		id = TKF_accept_or_die
+		icon = attack_democracy2
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_war_with_PKK
+		}
+		x = 63
+		y = 21
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		available = {
+		has_idea = TUR_PKK_insurgency_active
+		}
+
+    completion_reward = {
+		add_stability = -0.1
+custom_effect_tooltip = DEC_5_PKK_POINT
+subtract_from_variable = { var = pkk_presence value = 5 }
+			add_to_variable = { TUR_PKK_aggro = -5 }
+			add_to_variable = { TUR_PKK_strength = -5 }		
+	} } 
+	focus = {
+		id = TKF_strategic_bombardment_of_north
+		icon = Jet_Fighters
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_war_with_PKK
+		}
+		x = 61
+		y = 21
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		available = {
+		has_idea = TUR_PKK_insurgency_active
+		}
+		
+    completion_reward = {
+		army_experience = 75
+custom_effect_tooltip = DEC_5_PKK_POINT
+subtract_from_variable = { var = pkk_presence value = 5 }
+			add_to_variable = { TUR_PKK_aggro = -5 }
+			add_to_variable = { TUR_PKK_strength = -5 }		
+		193 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		571 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		575 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		190 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1.0
+			} }
+		633 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		633 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1.0
+			} }
+		164 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	} } 
+	focus = {
+		id = TKF_enter_north_iraq
+		icon = attack_kurdistan2
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_arrest_the_terrorists
+		}
+		prerequisite = {
+			focus = TKF_burn_the_villages
+		}
+		prerequisite = {
+			focus = TKF_strategic_bombardment_of_north
+		}
+		prerequisite = {
+			focus = TKF_accept_or_die
+		}
+		prerequisite = {
+			focus = TKF_impede_further_nationalist
+		}
+		x = 61
+		y = 22
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+
+        available = {
+		country_exists = KUR
+		NOT = {
+		has_war_with = KUR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = KUR
+    NOT = {
+	country_exists = KUR
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KUR
+		}
+	} }
+	focus = {
+		id = TKF_finish_of_the_gulenists
+		icon = islamophobia
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_kill_the_corrupteds
+		}
+		x = 59
+		y = 20
+
+	search_filters = {FOCUS_FILTER_NAME}
+
+		completion_reward = {
+			swap_ideas = {
+			add_idea = betrayal_from_FETO3 
+			remove_idea = betrayal_from_FETO1
+			}
+	} }
+	focus = {
+		id = TKF_arrest_the_terrorists
+		icon = political_arrests2
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_finish_of_the_gulenists
+		}
+		x = 57
+		y = 21
+
+	search_filters = {FOCUS_FILTER_NAME}
+
+		completion_reward = {
+			remove_ideas = betrayal_from_FETO3 
+	retire_character = ilhan_tolu
+	retire_character = mustafa_ozsoy
+	retire_character = TUR_akin_ozturk
+	} }
+	focus = {
+		id = TKF_communistic_authorities
+		icon = communist_spies2
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_kill_the_corrupteds
+		}
+		x = 63
+		y = 20
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+                    completion_reward = {
+					add_war_support = 0.05
+					add_popularity = {
+					ideology = communism
+					popularity = 0.03
+				}					
+		}
+	}
+	focus = {
+		id = TKF_impede_further_nationalist
+		icon = french_communist_party
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_communistic_authorities
+		}
+		x = 65
+		y = 21
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+                    completion_reward = {
+						add_war_support = 0.03
+					add_popularity = {
+					ideology = nationalist
+					popularity = -0.03
+				}					
+		}
+	}
+	focus = {
+		id = TKF_end_of_PKK
+		icon = demand_territory3
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_enter_north_iraq
+		}
+		x = 61
+		y = 23
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+        completion_reward = {
+			add_stability = 0.05
+	TUR_remove_pkk = yes
+	} }
+	focus = {
+		id = TKF_harsh_quotas
+		icon = dangerous_laws
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_end_of_PKK
+		}
+		x = 61
+		y = 24
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_ideas = harsh_quotas_of_industrialism
+				}
+			}
+	focus = {
+		id = TKF_merge_ulkist_principles
+		icon = lion
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_communistic_nationalism
+		}
+		x = 59
+		y = 16
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = nationalistic_communism_2
+                remove_idea = nationalistic_communism
+	} } }
+	focus = {
+		id = TKF_arm_THKPC
+		icon = Generic_Socialist_Machine_Gun
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_legalize_THKPC
+		}
+		x = 63
+		y = 16
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = THKPC_cooperation
+                remove_idea = THKPC_cooperation_2
+	} } }
+	focus = {
+		id = TKF_civilian_factors
+		icon = industry_civilian
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_harsh_quotas
+		}
+		x = 60
+		y = 25
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 156
+	}
+
+	completion_reward = {
+			156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_military_factors
+		icon = industry_military
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_harsh_quotas
+		}
+		x = 62
+		y = 25
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 155
+	}
+
+	completion_reward = {
+			155 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_civilian_1
+		icon = industry
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_civilian_factors
+		}
+		x = 59
+		y = 26
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+    available = {
+	controls_state = 163
+	}
+
+	completion_reward = {
+			163 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_civilian_2
+		icon = industry4
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_civilian_factors
+		}
+		prerequisite = {
+			focus = TKF_military_factors
+		}
+		x = 61
+		y = 26
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 156
+	controls_state = 155
+	}
+
+	completion_reward = {
+			156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			155 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} }	}	
+	focus = {
+		id = TKF_civilian_3
+		icon = industry2
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_civilian_1
+		}
+		x = 59
+		y = 27
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 162
+	}
+
+	completion_reward = {
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_civilian_4
+		icon = industrial_complexes
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_civilian_2
+		}
+		x = 61
+		y = 27
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 934
+	controls_state = 159
+	controls_state = 157
+	}
+
+	completion_reward = {
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} }	}	
+	focus = {
+		id = TKF_civilian_5
+		icon = industry2
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_civilian_1
+		}
+		x = 57
+		y = 27
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 163
+	}
+
+	completion_reward = {
+			163 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_militaries_1
+		icon = industry
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_military_factors
+		}
+		x = 63
+		y = 26
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 1032
+	}
+
+	completion_reward = {
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_militaries_2
+		icon = industry2
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_militaries_1
+		}
+		x = 63
+		y = 27
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 158
+	}
+
+	completion_reward = {
+			158 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_militaries_3
+		icon = industry2
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_militaries_1
+		}
+		x = 65
+		y = 27
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 1032
+	}
+
+	completion_reward = {
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				} 
+		subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_civilianism
+		icon = industry3
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_civilian_3
+		}
+		prerequisite = {
+			focus = TKF_civilian_5
+		}
+		x = 58
+		y = 28
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 162
+	controls_state = 163
+	}
+
+	completion_reward = {
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			163 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		add_tech_bonus = {
+			name = industry
+			bonus = 0.5
+			uses = 1
+			category = industry
+		}	
+		subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} }	}	
+	focus = {
+		id = TKF_militarism
+		icon = industry3
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_militaries_2
+		}
+		prerequisite = {
+			focus = TKF_militaries_3
+		}
+		x = 64
+		y = 28
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+    available = {
+	controls_state = 1032
+	controls_state = 158
+	controls_state = 157
+	}
+
+	completion_reward = {
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			157 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = Cat_ARTILLERY
+				bonus = 0.5
+				uses = 1
+				category = Cat_ARTILLERY
+			}
+		subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			} }	}	
+	focus = {
+		id = TKF_pax_industrialism
+		icon = economic_comitee
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_militarism
+		}
+		prerequisite = {
+			focus = TKF_civilianism
+		}
+		prerequisite = {
+			focus = TKF_economic_boom
+		}
+		x = 61
+		y = 29
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = pax_industrialism
+                remove_idea = harsh_quotas_of_industrialism
+	} 
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}	
+		add_tech_bonus = {
+			name = industry
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}		
+	} }
+	focus = {
+		id = TKF_economic_boom
+		icon = focus_trade_republic
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_civilian_4
+		}
+		x = 61
+		y = 28
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+	add_ideas = economic_boom
+			} }	
+	focus = {
+		id = TKF_eight_years_of_development
+		icon = construction4
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_pax_industrialism
+		}
+		x = 61
+		y = 30
+
+
+       completion_reward = {
+		    custom_effect_tooltip = TUR_united_state
+					        				subtract_from_variable = { TUR_pop_KEM = 6 }
+								        				subtract_from_variable = { TUR_pop_KUR = 3 }
+	        				subtract_from_variable = { TUR_pop_ISL = 3 }
+			set_global_flag = TUR_UNITE_DIASPORA
+						TUR_remove_state_modifier_effect = yes
+	} }
+	focus = {
+		id = TKF_internet_reform
+		icon = internet_censorship
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_eight_years_of_development
+		}
+		x = 60
+		y = 31
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_ideas = internet_reform
+				}
+			}
+	focus = {
+		id = TKF_unification_works
+		icon = walfare_state
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_eight_years_of_development
+		}
+		x = 62
+		y = 31
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_ideas = peoples_unification_action
+				}
+			}
+	focus = {
+		id = TKF_no_more_comprasion
+		icon = political_arrests
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_unification_works
+		}
+		prerequisite = {
+			focus = TKF_internet_reform
+		}
+		x = 61
+		y = 32
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = -0.05
+			custom_effect_tooltip = EMEP_ACTION_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^7 = 0.05 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = TKF_early_go_as_it_was
+		icon = gamble_cards
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_no_more_comprasion
+		}
+		x = 61
+		y = 33
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = EMEP_ACTION_2
+			hidden_effect = {
+				add_to_variable = { party_pop_array^7 = 0.03 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = TKF_invade_greece
+		icon = attack_greece
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_balkan_invasions
+		}
+		x = 58
+		y = 35
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = GRE
+		NOT = {
+		has_war_with = GRE
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GRE
+    NOT = {
+	country_exists = GRE
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = GRE
+		}
+	} }
+	focus = {
+		id = TKF_invade_bulgaria
+		icon = attack_bulgaria
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_balkan_invasions
+		}
+		x = 60
+		y = 35
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = BUL
+		NOT = {
+		has_war_with = BUL
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = BUL
+    NOT = {
+	country_exists = BUL
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = BUL
+		}
+	} }
+	focus = {
+		id = TKF_balkan_invasions
+		icon = balkan_conflict
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_early_go_as_it_was
+		}
+		x = 59
+		y = 34
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+        completion_reward = {
+			add_political_power = 125
+			add_war_support = 0.03
+	} }
+	focus = {
+		id = TKF_middle_eastern_invasions
+		icon = befriend_middle_east
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_early_go_as_it_was
+		}
+		x = 63
+		y = 34
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        completion_reward = {
+			add_political_power = 125
+			add_war_support = 0.03
+	} }
+	focus = {
+		id = TKF_invade_syria1
+		icon = attack_syria
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_middle_eastern_invasions
+		}
+		x = 62
+		y = 35
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = SYR
+		NOT = {
+		has_war_with = SYR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SYR
+    NOT = {
+	country_exists = SYR
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = SYR
+		}
+	} }
+	focus = {
+		id = TKF_invade_iraq1
+		icon = militarized_iraq
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_middle_eastern_invasions
+		}
+		x = 64
+		y = 35
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+
+        available = {
+		country_exists = IRQ
+		NOT = {
+		has_war_with = IRQ
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = IRQ
+    NOT = {
+	country_exists = IRQ
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = IRQ
+		}
+	} }
+	focus = {
+		id = TKF_muh_for_communism
+		icon = free_balkan_states
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_invade_bulgaria
+		}
+		prerequisite = {
+			focus = TKF_invade_greece
+		}
+		x = 59
+		y = 36
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+
+    available = {
+	controls_state = 141
+	controls_state = 140
+	controls_state = 974
+	controls_state = 153
+	controls_state = 154
+	}
+
+	completion_reward = {
+		add_stability = 0.05
+		141 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} } 
+		140 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}  }
+		974 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}  }
+		153 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}  }
+		154 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} 
+		subtract_from_variable = { treasury = 100 }
+			custom_effect_tooltip = 100_billion_expense_tt
+			} }	}
+	focus = {
+		id = TKF_trancaucasian_turnout
+		icon = georgian_bagratuni
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_muh_for_communism
+		}
+		prerequisite = {
+			focus = TKF_atheism_in_middle_east
+		}
+		x = 61
+		y = 37
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+			add_state_claim = 711
+			add_state_claim = 709
+			add_state_claim = 1035
+			add_state_claim = 1034
+			add_state_claim = 1037
+			add_state_claim = 710
+			add_state_claim = 1036
+			add_state_claim = 712	
+			add_state_claim = 713
+			add_state_claim = 1038	
+			add_state_claim = 466
+			add_state_claim = 707	
+			add_state_claim = 1033
+			add_state_claim = 708	
+			add_state_claim = 706
+			add_state_claim = 705
+			add_war_support = 0.05				
+	} } 
+	focus = {
+		id = TKF_atheism_in_middle_east
+		icon = buddhism
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_invade_iraq1
+		}
+		prerequisite = {
+			focus = TKF_invade_syria1
+		}
+		x = 63
+		y = 36
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+			add_stability = -0.05
+			SYR = {
+swap_ideas = {
+                add_idea = pluralist
+                remove_idea = sunni
+	} }
+			IRQ = {
+swap_ideas = {
+                add_idea = pluralist
+                remove_idea = sunni
+	} } } }
+	focus = {
+		id = TKF_no_deals_with_russia
+		icon = war_against_russia
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_trancaucasian_turnout
+		}
+		x = 61
+		y = 38
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }
+
+        completion_reward = {
+			add_war_support = 0.05
+		create_wargoal = {
+			type = annex_everything
+			target = SOV
+		}
+	} }
+	focus = {
+		id = TKF_invade_georgia
+		icon = attack_georgia
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_no_deals_with_russia
+		}
+		x = 59
+		y = 39
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+
+        available = {
+		country_exists = GEO
+		NOT = {
+		has_war_with = GEO
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GEO
+    NOT = {
+	country_exists = GEO
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = GEO
+		}
+	} }
+	focus = {
+		id = TKF_invade_azerbaijan_2
+		icon = attack_azerbaijan
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_no_deals_with_russia
+		}
+		x = 63
+		y = 39
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = AZE
+		NOT = {
+		has_war_with = AZE
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = AZE
+    NOT = {
+	country_exists = AZE
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = AZE
+		}
+	} }
+	focus = {
+		id = TKF_invade_armenia
+		icon = attack_armenia
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_no_deals_with_russia
+		}
+		x = 61
+		y = 39
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = ARM
+		NOT = {
+		has_war_with = ARM
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ARM
+    NOT = {
+	country_exists = ARM
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = ARM
+		}
+	} }
+	focus = {
+		id = TKF_knock_russia_out_of_war
+		icon = tsarist_russia
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_invade_georgia
+		}
+		prerequisite = {
+			focus = TKF_invade_armenia
+		}
+		prerequisite = {
+			focus = TKF_invade_azerbaijan_2
+		}
+		x = 61
+		y = 40
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+        has_war_with = SOV
+        }
+
+	completion_reward = {
+		add_war_support = 0.03
+    SOV = {
+	add_war_support = -0.07
+	}
+	  }  
+	}
+	focus = {
+		id = TKF_mission_europe
+		icon = europe
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_knock_russia_out_of_war
+		}
+		x = 58
+		y = 41
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = GER
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FRA
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ENG
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SPR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = POR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ITA
+		}
+	} }
+	focus = {
+		id = TKF_mission_usa
+		icon = USA_diplomatic_corps
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_knock_russia_out_of_war
+		}
+		x = 64
+		y = 41
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = USA
+		}
+	} }
+	focus = {
+		id = TKF_treaty_of_moscow
+		icon = Links_to_moscow
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_knock_russia_out_of_war
+		}
+		x = 61
+		y = 41
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+        has_war_with = SOV
+		controls_state = 671 
+		controls_state = 673
+		controls_state = 672
+		controls_state = 674
+        }
+
+		completion_reward = {
+			SOV = {
+    country_event = TurkeyF.185
+	} } }
+	focus = {
+		id = TKF_united_against_imperialism
+		icon = united_nations
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_mission_usa
+		}
+		prerequisite = {
+			focus = TKF_mission_europe
+		}
+		prerequisite = {
+			focus = TKF_treaty_of_moscow
+		}
+		x = 61
+		y = 42
+
+		completion_reward = {
+        add_ideas = united_forces_of_counter_imperialism
+				}
+			}
+	focus = {
+		id = TKF_call_the_eurospectism
+		icon = euroscepticism
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_mission_europe
+		}
+		x = 59
+		y = 42
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		has_war = yes
+        }
+
+		available = {
+		GER = {
+		influence_higher_30 = yes
+		}
+		FRA = {
+		influence_higher_30 = yes
+		}
+		ENG = {
+		influence_higher_30 = yes
+		}
+		SPR = {
+		influence_higher_30 = yes
+		}
+		POR = {
+		influence_higher_30 = yes
+		}
+		GRE = {
+		influence_higher_30 = yes
+		}
+		}
+
+    completion_reward = {
+		45 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		41 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		56 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		86 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		91 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		13 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	GER = {
+			set_temp_variable = { modify_eurosceptic = 0.02 }
+			eurosceptic_change = yes	
+	}
+	ENG = {
+			set_temp_variable = { modify_eurosceptic = 0.02 }
+			eurosceptic_change = yes	
+	}
+	FRA = {
+			set_temp_variable = { modify_eurosceptic = 0.02 }
+			eurosceptic_change = yes	
+	}
+	SPR = {
+            set_temp_variable = { modify_eurosceptic = 0.02 }
+			eurosceptic_change = yes	
+	}
+	 GER = {			
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	 
+	 }
+	 ENG = {			
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	 
+	 }
+	 FRA = {			
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	 
+	 }
+	 SPR = {			
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	 
+	 }
+	} } 
+	focus = {
+		id = TKF_compliance_joint_forces
+		icon = brothers_in_arms
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_united_against_imperialism
+		}
+		x = 60
+		y = 43
+
+
+		completion_reward = {
+        add_ideas = compliance_forces
+				}
+			}
+	focus = {
+		id = TKF_the_victory_against_imperialists
+		icon = counter
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_workers_no_borders
+		}
+		x = 61
+		y = 45
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+        completion_reward = {
+		add_stability = 0.1
+	} }
+	focus = {
+		id = TKF_counter_pentagon_doctrine_2
+		icon = pentagon
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_mission_usa
+		}
+		x = 63
+		y = 42
+
+
+        available = {
+		country_exists = USA
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = USA
+	} } 
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		has_war = yes
+        }
+
+    completion_reward = {
+	army_experience = 25
+	navy_experience = 45
+	air_experience = 45
+	} } 
+	focus = {
+		id = TKF_workers_no_borders
+		icon = international_union_of_soviet_republics
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_usa_knock_out
+		}
+		prerequisite = {
+			focus = TKF_russia_knock_out
+		}
+		prerequisite = {
+			focus = TKF_compliance_joint_forces
+		}
+		prerequisite = {
+			focus = TKF_morale_boom
+		}
+		x = 61
+		y = 44
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+        completion_reward = {
+		add_war_support = 0.1
+		add_command_power = 125
+	} }
+	focus = {
+		id = TKF_usa_knock_out
+		icon = USoE635
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_call_the_eurospectism
+		}
+		x = 58
+		y = 43
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		has_war = yes
+        }
+
+		available = {
+		GER = {
+		influence_higher_30 = yes
+		}
+		FRA = {
+		influence_higher_30 = yes
+		}
+		ENG = {
+		influence_higher_30 = yes
+		}
+		SPR = {
+		influence_higher_30 = yes
+		}
+		POR = {
+		influence_higher_30 = yes
+		}
+		GRE = {
+		influence_higher_30 = yes
+		}
+		}
+
+    completion_reward = {
+		45 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		41 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		56 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		86 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		91 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		13 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	 GER = {			
+	 add_stability = -0.1
+	 }
+	 ENG = {			
+	 add_stability = -0.1
+	 }
+	 FRA = {			
+	 add_stability = -0.1
+	 }
+	 SPR = {			
+	 add_stability = -0.1
+	 }
+	} } 
+	focus = {
+		id = TKF_russia_knock_out
+		icon = USA_attack_the_financial_system
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_counter_pentagon_doctrine_2
+		}
+		x = 64
+		y = 43
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		has_war = yes
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    completion_reward = {
+		769 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		769 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		769 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		769 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	 USA = {			
+	 add_stability = -0.02
+	 }
+	} } 
+	focus = {
+		id = TKF_morale_boom
+		icon = medicine2
+		cost = 7.2
+		prerequisite = {
+			focus = TKF_united_against_imperialism
+		}
+		x = 62
+		y = 43
+
+
+		completion_reward = {
+        add_ideas = boom_of_morale
+				}
+			}
+	focus = {
+		id = TKF_advices_of_china
+		icon = align_to_china
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_sun_and_the_protection
+		}
+		x = 25
+		y = 36
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = chinese_marketplace_act_6
+                remove_idea = chinese_marketplace_act_5
+	} } }
+	focus = {
+		id = TKF_china_enters_the_war
+		icon = blr_china_type88
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_save_chinese_zones
+		}
+		prerequisite = {
+			focus = TKF_last_phase_of_chinese_investments
+		}
+		x = 25
+		y = 38
+
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+
+        available = {
+        country_exists = CHI
+		CHI = {
+		has_war_with = USA
+		}
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+	add_war_support = 0.1
+		} }
+	focus = {
+		id = TKF_save_chinese_zones
+		icon = enemy_of_china
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_advices_of_china
+		}
+		x = 24
+		y = 37
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+		add_stability = 0.05
+			} }	
+	focus = {
+		id = TKF_last_phase_of_chinese_investments
+		icon = BRA_investigate_pt
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_advices_of_china
+		}
+		x = 26
+		y = 37
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+		completion_reward = {
+swap_ideas = {
+                add_idea = chinese_marketplace_act_7
+                remove_idea = chinese_marketplace_act_6
+	} } }
+	focus = {
+		id = TKF_world_war_three_arming
+		icon = border_conflict_bunker
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_china_enters_the_war
+		}
+		x = 23
+		y = 39
+
+	completion_reward = {
+	add_ideas = defence_09
+		} } 
+	focus = {
+		id = TKF_russian_help
+		icon = align_to_russia2
+		cost = 5,00
+		prerequisite = {
+			focus = TKF_china_enters_the_war
+		}
+		x = 27
+		y = 39
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }
+
+	completion_reward = {
+	SOV = {     
+	add_political_power = 175
+	add_war_support = 0.03
+	}
+		} } 
+	focus = {
+		id = TKF_mass_mobilization
+		icon = mobilization_plan
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_russian_help
+		}
+		prerequisite = {
+			focus = TKF_world_war_three_arming
+		}
+		prerequisite = {
+			focus = TKF_shock_invasion
+		}
+		x = 25
+		y = 40
+
+
+search_filters = {FOCUS_FILTER_MANPOWER}
+
+	completion_reward = {
+	add_manpower = 1000000
+		} } 
+	focus = {
+		id = TKF_russian_army_relocation
+		icon = RussianArms
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_russian_help
+		}
+		x = 28
+		y = 40
+
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }
+
+	completion_reward = {
+		            army_experience = 75
+
+					TUR = {
+						army_experience = 25
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = SOV.id }
+				change_influence_percentage = yes
+			}
+			} }	
+	focus = {
+		id = TKF_expanditionary_chinese_forces
+		icon = air_defense
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_world_war_three_arming
+		}
+		x = 22
+		y = 40
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_MANPOWER}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }
+
+	completion_reward = {
+					CHI = {
+						add_manpower = -200000
+					}
+						add_manpower = 200000
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			}
+	focus = {
+		id = TKF_land_forting_stuff
+		icon = military_fort
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_mass_mobilization
+		}
+		x = 24
+		y = 41
+
+	completion_reward = {
+	add_ideas = land_fort_planting
+		} } 
+	focus = {
+		id = TKF_chinese_experimentals
+		icon = tank_t62
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_expanditionary_chinese_forces
+		}
+		x = 22
+		y = 41
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }
+
+	completion_reward = {
+		            army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			} }
+					TUR = {
+						army_experience = 25
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			} 
+	focus = {
+		id = TKF_guerilla_warfare
+		icon = Generic_Tank_through_Wall
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_experimentals
+		}
+		prerequisite = {
+			focus = TKF_new_tankagrad
+		}
+		prerequisite = {
+			focus = TKF_nuclear_systems
+		}
+		prerequisite = {
+			focus = TKF_land_forting_stuff
+		}
+		x = 25
+		y = 42
+
+
+	completion_reward = {
+	add_ideas = guerilla_warfare
+		} } 
+	focus = {
+		id = TKF_new_tankagrad
+		icon = centralization_question
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_russian_army_relocation
+		}
+		x = 28
+		y = 41
+
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }
+
+    available = {
+	controls_state = 1032
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 10 }
+				set_temp_variable = { tag_index = SOV.id }
+				change_influence_percentage = yes
+			}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			} }	} 
+	focus = {
+		id = TKF_nuclear_systems
+		icon = nuclear_energy
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_mass_mobilization
+		}
+		x = 26
+		y = 41
+
+		available = {
+		controls_state = 161
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+	completion_reward = {
+			934 = { 
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				} 
+			161 = { 
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_expense_tt
+		} } }
+	focus = {
+		id = TKF_end_of_war_partition
+		icon = draw_up_war_plans
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_guerilla_warfare
+		}
+		x = 25
+		y = 43
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+	available = {
+		            controls_state = 974
+		            controls_state = 143
+		            controls_state = 144		
+	}
+
+	completion_reward = {
+		            transfer_state = 974
+		            transfer_state = 143
+		            transfer_state = 144	
+		            add_state_claim = 974
+		            add_state_claim = 143
+		            add_state_claim = 144	
+					add_stability = 0.1			
+			} }	
+	focus = {
+		id = TKF_finish_silk_road
+		icon = infrastructure1
+		cost = 15,00
+		prerequisite = {
+			focus = TKF_supreme_maoism
+		}
+		x = 25
+		y = 45
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }
+
+    available = {
+	controls_state = 1032
+	controls_state = 162
+	controls_state = 934
+	controls_state = 155
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 10 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			155 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			} }	} } }	
+	focus = {
+		id = TKF_supreme_maoism
+		icon = maoism
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_end_of_war_partition
+		}
+		x = 25
+		y = 44
+
+search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }
+
+	completion_reward = {
+		            add_political_power = 125
+		    custom_effect_tooltip = TUR_united_state
+					        				subtract_from_variable = { TUR_pop_KEM = 6 }
+								        				subtract_from_variable = { TUR_pop_KUR = 3 }
+	        				subtract_from_variable = { TUR_pop_ISL = 3 }
+			set_global_flag = TUR_UNITE_DIASPORA
+						TUR_remove_state_modifier_effect = yes
+					TUR = {
+						add_political_power = 25
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			} }	
+	focus = {
+		id = TKF_shock_invasion
+		icon = coalition_army
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_china_enters_the_war
+		}
+		x = 25
+		y = 39
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = GRE
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = BUL
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = CYP
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ENG
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = USA
+		}
+	} }
+	focus = {
+		id = TKF_maksimize_the_tankagroad
+		icon = tank_production
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_new_tankagrad
+		}
+		x = 29
+		y = 42
+
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }
+
+    available = {
+	controls_state = 1032
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 10 }
+				set_temp_variable = { tag_index = SOV.id }
+				change_influence_percentage = yes
+			}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			1032 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			} }	} 
+	focus = {
+		id = TKF_chinese_experiment_globally
+		icon = chinese_social_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = TKF_chinese_experimentals
+		}
+		x = 21
+		y = 42
+
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }
+
+	completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+					add_war_support = 0.05
+					CHI = {
+		            army_experience = 25
+		            navy_experience = 25
+		            air_experience = 25
+					}
+								TUR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			} }	
+
+
+
+	focus = {
+		id = TUR_covid-19_pandemic16
+		icon = generic_healthcare
+		cost = 10,00
+		x = 55
+		y = 0
+
+        available = {
+        has_idea = covid_19
+        }
+	
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+		completion_reward = {
+        add_political_power = 75
+	block_health_decrease = yes
+		} }
+		
+	focus = {
+		id = TUR_covid-19_preparations16
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_pandemic16
+		}
+		x = 55
+		y = 1
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19
+  add_idea = covid_19_prepared
+}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TUR_build_up_hospitals16
+		icon = generic_hospital2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations16
+		}
+		x = 53
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}			
+	completion_reward = {
+			subtract_from_variable = { treasury = 20.0 }
+			add_stability = 0.03
+			custom_effect_tooltip = 20_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_turn_airports_to_hospital16
+		icon = generic_hospital
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_build_up_hospitals16
+		}
+		x = 53
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+			subtract_from_variable = { treasury = 5.0 }
+			add_stability = 0.02
+			custom_effect_tooltip = 5_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_start_up_vaccine_program18
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations16
+		}
+		x = 55
+		y = 2
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		
+		
+	completion_reward = {
+	        add_stability = -0.05
+			add_political_power = -75
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			custom_effect_tooltip = COV_DECISION_OPENING_VAC
+			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
+			} 
+	}
+	focus = {
+		id = TUR_buy_german_vaccines18
+		icon = trade_with_germany
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_start_up_vaccine_program18
+		}
+		x = 55
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_increase_funds_to_science16
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations16
+		}
+		x = 57
+		y = 2
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+increase_healthcare_budget = yes
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_medicines16
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_funds_to_science16
+		}                                         
+		prerequisite = {                          
+			focus = TUR_increase_funds_to_science16
+		}
+		x = 57
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_prepared
+  add_idea = covid_19_medicined
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_chinese_vaccines16
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turn_airports_to_hospital16
+		}
+		prerequisite = {
+			focus = TUR_buy_german_vaccines18
+		}
+		prerequisite = {
+			focus = TUR_buy_medicines16
+		}
+		x = 55
+		y = 4
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_normalisation_from_covid16
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_buy_chinese_vaccines16
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
+		} }
+		x = 55
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_medicined
+  add_idea = covid_19_normalised
+} 
+	custom_effect_tooltip = COV_AVAILABLE_1
+}
+	}
+	focus = {
+		id = TUR_end_of_covid16
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_normalisation_from_covid16
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
+		} }
+		x = 55
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+remove_ideas = covid_19_normalised
+	custom_effect_tooltip = COV_AVAILABLE_2
+}
+	} 
+
+
+##############################
+###	Start of Cypriot Tree ###	x = 13 y = 10
+##############################
+
+shared_focus = TUR_greek_issues
+
+############################
+### End of Cypriot Focus Tree ###
+############################
+}

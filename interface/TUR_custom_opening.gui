@@ -1,0 +1,642 @@
+guiTypes = {
+	containerWindowType = {
+		name = "custom_opening_1"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+		
+		instantTextBoxType = {
+			name = "X_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "X_T"	
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_1_desc"
+			position = { x = 22 y = 92 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "MOD_OPENING_DESC"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "FAQ_button2"
+			position = { x = 350 y = 260 }
+			spriteType = "GFX_ideas_icon"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+
+		buttonType = {
+			name = "MD_another_check_button"
+			position = { x = 120 y = 355 }
+			spriteType = "GFX_button_221x34"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "BITCOIN_DESC"	
+			format = center
+		}
+
+
+		buttonType = {
+			name = "MD_close_button"
+			position = { x = 170 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "MD_GO"
+			format = center
+			shortcut = "ESCAPE"
+		}
+
+		ButtonType = {
+			name = "id_steam_tr"
+			position = { x=130 y=470 }
+			quadTextureSprite ="GFX_steam_MDTURK"
+			clicksound = click_default
+			web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=2451505966"
+		}
+		ButtonType = {
+			name = "id_discord_tr"
+			position = { x=310 y=470 }
+			quadTextureSprite ="GFX_discord_MDTURK"
+			clicksound = click_default
+			web_link = "https://discord.gg/ggQwp7R8WG"
+		}
+	}
+}
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "custom_opening_2"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+		
+		instantTextBoxType = {
+			name = "FAQ_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "FAQ_S"	
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_1_desc"
+			position = { x = 22 y = 92 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "FAQ_1_DESC"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "come_on_button"
+			position = { x = 300 y = 478 }
+			spriteType = "GFX_naval_increase_amount"
+			frame = 1
+			font = "hoi_18mbs"
+			format = center
+		}
+	
+		buttonType = {
+			name = "return_1_button"
+			position = { x = 160 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "RETURN_TO_MENU_MD_DESC"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+ }
+
+ 
+guiTypes = {
+	containerWindowType = {
+		name = "custom_opening_3"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+		
+		instantTextBoxType = {
+			name = "FAQ_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "FAQ_S_2"	
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_1_desc"
+			position = { x = 22 y = 92 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "FAQ_2_DESC"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "come_on_button_neg"
+			position = { x = 300 y = 478 }
+			spriteType = "GFX_naval_increase_amount"
+			frame = 1
+			font = "hoi_18mbs"
+			format = center
+		}
+
+		buttonType = {
+			name = "come_on_button_pos"
+			position = { x = 125 y = 478 }
+			spriteType = "GFX_naval_decrease_amount"
+			frame = 1
+			font = "hoi_18mbs"
+			format = center
+		}
+
+		buttonType = {
+			name = "return_2_button"
+			position = { x = 160 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "RETURN_TO_MENU_MD_DESC"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+ }
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "custom_opening_4"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+		
+		instantTextBoxType = {
+			name = "FAQ_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "FAQ_S_3"	
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_1_desc"
+			position = { x = 22 y = 92 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "FAQ_3_DESC"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "come_on_button_pos2"
+			position = { x = 125 y = 478 }
+			spriteType = "GFX_naval_decrease_amount"
+			frame = 1
+			font = "hoi_18mbs"
+			format = center
+		 }
+
+		buttonType = {
+			name = "come_on_button_neg2"
+			position = { x = 300 y = 478 }
+			spriteType = "GFX_naval_increase_amount"
+			frame = 1
+			font = "hoi_18mbs"
+			format = center
+			shortcut = "ESCAPE"
+		}
+
+		buttonType = {
+			name = "return_4_button"
+			position = { x = 160 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "RETURN_TO_MENU_MD_DESC"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+ }
+
+
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "custom_opening_5"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+		
+		instantTextBoxType = {
+			name = "FAQ_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "FAQ_S_4"	
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "super_event_3_desc"
+			position = { x = 22 y = 92 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "FAQ_4_DESC"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "come_on_button_pos3"
+			position = { x = 125 y = 478 }
+			spriteType = "GFX_naval_decrease_amount"
+			frame = 1
+			font = "hoi_18mbs"
+			format = center
+		 }
+
+		#buttonType = {
+		#	name = "come_on_button_neg3"
+		#	position = { x = 300 y = 478 }
+		#	spriteType = "GFX_naval_increase_amount"
+		#	frame = 1
+		#	font = "hoi_18mbs"
+		#	format = center
+		#	shortcut = "ESCAPE"
+		# }
+
+		buttonType = {
+			name = "return_5_button"
+			position = { x = 160 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "RETURN_TO_MENU_MD_DESC"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "settings_page"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+		
+		instantTextBoxType = {
+			name = "settings_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "SETTINGS_G"	
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "BTC_title"
+			position = { x = -100 y = 160 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "BTC_title"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "accept_bitcoin_button"
+			position = { x = 200 y = 155 }
+			spriteType = "GFX_checkbox_small_green"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+		buttonType = {
+			name = "reject_bitcoin_button"
+			position = { x = 230 y = 155 }
+			spriteType = "GFX_checkbox_small_red"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "GREENS_title"
+			position = { x = 100 y = 160 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "Greens:"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "accept_greens_button"
+			position = { x = 350 y = 155 }
+			spriteType = "GFX_checkbox_small_green"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+		buttonType = {
+			name = "reject_greens_button"
+			position = { x = 380 y = 155 }
+			spriteType = "GFX_checkbox_small_red"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "SUPER_event_title"
+			position = { x = -100 y = 210 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "SUPER_event_title"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "accept_super_event_button"
+			position = { x = 200 y = 205 }
+			spriteType = "GFX_checkbox_small_green"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+		buttonType = {
+			name = "reject_super_event_button"
+			position = { x = 230 y = 205 }
+			spriteType = "GFX_checkbox_small_red"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "SOUNDS_event_title"
+			position = { x = -100 y = 260 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "SOUNDS_event_title"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "accept_sounds_button"
+			position = { x = 200 y = 255 }
+			spriteType = "GFX_checkbox_small_green"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+		buttonType = {
+			name = "reject_sounds_button"
+			position = { x = 230 y = 255 }
+			spriteType = "GFX_checkbox_small_red"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+
+		instantTextBoxType = {
+			name = "WORLD_ACT_title"
+			position = { x = -100 y = 360 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "WORLD_ACT_title"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "accept_world_act_button"
+			position = { x = 200 y = 355 }
+			spriteType = "GFX_checkbox_small_green"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+		buttonType = {
+			name = "reject_world_act_button"
+			position = { x = 230 y = 355 }
+			spriteType = "GFX_checkbox_small_red"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+
+
+		instantTextBoxType = {
+			name = "FN_title"
+			position = { x = -100 y = 310 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "FN_title"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "fictional_agree_button"
+			position = { x = 200 y = 305 }
+			spriteType = "GFX_checkbox_small_green"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+		buttonType = {
+			name = "fictional_reject_button"
+			position = { x = 230 y = 305 }
+			spriteType = "GFX_checkbox_small_red"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "WORLD_ACT_title"
+			position = { x = -100 y = 310 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "WORLD_ACT_title"	
+			format = centre
+		}
+
+
+
+		instantTextBoxType = {
+			name = "REFRESH_title"
+			position = { x = -75 y = 410 }
+			font = "hoi_18mbs"
+			maxWidth = 425
+			maxHeight = 70
+			text = "REFRESH_DESC"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "refresh_button"
+			position = { x = 240 y = 400 }
+			spriteType = "GFX_browser_refresh"
+			frame = 1
+			font = "hoi_16mbs"
+			format = center
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		instantTextBoxType = {
+			name = "settings_desc"
+			position = { x = 30 y = 100 }
+			font = "hoi_18mbs"
+			maxWidth = 400
+			maxHeight = 70
+			text = "settings_desc"	
+			format = centre
+		}
+
+		buttonType = {
+			name = "return_settings_button"
+			position = { x = 160 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "RETURN_TO_MENU_MD_DESC"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+ }

@@ -1,0 +1,835 @@
+focus_tree = {
+	id = MD_TUR_MIL
+	default = no
+
+	focus = {
+		id = TUR_military_take_over
+		icon = armed_forces_of_turkey
+		cost = 5,00
+		x = 14
+		y = 0
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+    add_command_power = 5
+	add_political_power = 50
+custom_effect_tooltip = BIG_TIME_YEAH
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_good_happy_everyone
+}
+} } 
+	focus = {
+		id = TUR_nationalist_state
+		icon = turkish_flag
+		cost = 6.5
+		prerequisite = {
+			focus = TUR_military_take_over
+		}
+		x = 8
+		y = 1
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+        available = {
+        has_government = nationalist
+		is_puppet = no
+        }
+		
+		completion_reward = {
+    add_stability = 0.03
+} } 
+	focus = {
+		id = TUR_kemalist_military
+		icon = small_arms3
+		cost = 7,00
+		prerequisite = {
+			focus = TUR_nationalist_state
+		}
+		x = 8
+		y = 2
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_TURKISH_KEMALISM}
+		
+		completion_reward = {
+	swap_ideas = {
+	add_idea = turkish_military_infulence_armed
+	remove_idea = turkish_military_infulence_coup
+	 } }
+	}
+	focus = {
+		id = TUR_get_rid_of_kurds
+		icon = conscription
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_kemalist_military
+		}
+		x = 6
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+		
+	completion_reward = {
+				set_temp_variable = { temp_opinion = 15 }	
+            change_the_military_opinion = yes	
+			}
+	}
+	focus = {
+		id = TUR_new_constitution
+		icon = nationalist_constiution
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_kemalist_military
+		}
+		x = 8
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+        add_political_power = 100
+	 } 
+	}
+	focus = {
+		id = TUR_dismantle_all_parties
+		icon = elections_banned
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_new_constitution
+		}
+		x = 8
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+        add_political_power = 25
+		add_stability = -0.07
+		custom_effect_tooltip = TUR_MIL_dismantle
+		add_ideas = political_parties_banned
+	 } 
+	}
+	focus = {
+		id = TUR_bans_of_kurdish_language
+		icon = kurdistan
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_get_rid_of_kurds
+		}
+		x = 6
+		y = 4
+
+		completion_reward = {
+        add_ideas = kurdish_language_solutions_1
+		hidden_effect = {
+        remove_ideas = kurdish_language_solutions_5
+        remove_ideas = kurdish_language_solutions_3	
+        remove_ideas = kurdish_language_solutions_2
+        remove_ideas = kurdish_language_solutions_4		
+			}
+		} }
+	focus = {
+		id = TUR_reorganize_miltary
+		icon = military_women
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_kemalist_military
+		}
+		x = 10
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+		completion_reward = {
+        add_command_power = 15
+	 } 
+	}
+	focus = {
+		id = TUR_turkish_ranking_shift
+		icon = military_planning
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_reorganize_miltary
+		}
+		x = 10
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_command_power = 5
+		add_stability = 0.02
+	 } 
+	}
+	focus = {
+		id = TUR_push_economic_reforms
+		icon = decentralized_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turkish_ranking_shift
+		}
+		prerequisite = {
+			focus = TUR_dismantle_all_parties
+		}
+		prerequisite = {
+			focus = TUR_bans_of_kurdish_language
+		}
+		x = 8
+		y = 5
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+		completion_reward = {
+	swap_ideas = {
+	add_idea = reforms_for_2001_crisis
+	remove_idea = reformed_2001_crisis
+	 } 
+swap_ideas = { 
+  remove_idea = lira_1
+  add_idea = lira_2
+}
+      }
+	}
+	focus = {
+		id = TUR_increase_foreign_investments
+		icon = business_man2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_push_economic_reforms
+		}
+		x = 10
+		y = 6
+
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			} }
+		}
+	focus = {
+		id = TUR_connections_of_the_usa
+		icon = trump_agenda
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_military_take_over
+		}
+		x = 14
+		y = 1
+
+       available = {
+	   country_exists = USA
+	   is_puppet = no
+	   NOT = {
+	   has_war_with = USA
+	    }
+       }
+
+        bypass = {
+		OR = {
+		has_war_with = USA
+		NOT = {
+        country_exists = USA
+        } } }
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+		completion_reward = {
+reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
+	add_political_power = 75
+    USA = {
+	add_political_power = 75
+	}
+} } 
+	focus = {
+		id = TUR_take_american_aid
+		icon = american_military_agreement
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_connections_of_the_usa
+		}
+		x = 13
+		y = 2
+
+       available = {
+	   country_exists = USA
+	   is_puppet = no
+	   NOT = {
+	   has_war_with = USA
+	    }
+       }
+
+        bypass = {
+		OR = {
+		has_war_with = USA
+		NOT = {
+        country_exists = USA
+        } } }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+		completion_reward = {
+    add_ideas = foreign_aid_us_tur
+} } 
+	focus = {
+		id = TUR_feed_anti_communistic_organizations
+		icon = american_partnerships
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_connections_of_the_usa
+		}
+		x = 15
+		y = 2
+
+       available = {
+	   country_exists = USA
+	   has_government = nationalist
+	   NOT = {
+	   has_war_with = USA
+	    }
+       }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+        bypass = {
+		OR = {
+		has_war_with = USA
+		NOT = {
+        country_exists = USA
+        } } }
+		completion_reward = {
+						add_popularity = {
+							ideology = communism
+							popularity = -0.02
+						}	
+} } 
+	focus = {
+		id = TUR_new_american_bases_for_usa
+		icon = american_shield
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_take_american_aid
+		}
+		prerequisite = {
+			focus = TUR_feed_anti_communistic_organizations
+		}
+		x = 14
+		y = 3
+
+       available = {
+	   country_exists = USA
+	   has_idea = Nato_Member
+	   NOT = {
+	   has_war_with = USA
+	    }
+       }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+        bypass = {
+		OR = {
+		NOT = {
+		has_idea = Nato_Member
+		}
+		has_war_with = USA
+		NOT = {
+        country_exists = USA
+        } } }
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		add_stability = -0.02
+		    USA = { add_political_power = 25 } 
+			161 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_petrol_ofisi_connection
+		icon = american_dream
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_new_american_bases_for_usa
+		}
+		x = 14
+		y = 4
+
+       available = {
+	   country_exists = USA
+	   NOT = {
+	   has_war_with = USA
+	    }
+       }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+        bypass = {
+		OR = {
+		has_war_with = USA
+		NOT = {
+        country_exists = USA
+        } } }
+		
+		completion_reward = {
+    add_ideas = usa_turkish_deal
+		add_tech_bonus = {
+			name = BOT_the_energy_debate
+			bonus = 0.5
+			uses = 2
+			category = synth_resources
+		}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				#add_extra_state_shared_building_slots = 1
+				#add_building_construction = {
+				#	type = fossil_powerplant 
+				#	level = 1
+				#	instant_build = yes
+				#}
+			} 
+    USA = {
+	add_ideas = usa_turkish_deal
+	}
+} } 
+	focus = {
+		id = TUR_mission_of_iraq
+		icon = legacy_of_marines
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_military_take_over
+		}
+		x = 20
+		y = 1
+
+       available = {
+	   country_exists = IRQ
+	   is_puppet = no
+       }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		
+        completion_reward = {
+        add_war_support = 0.03
+		add_command_power = 10
+		}
+	}
+	focus = {
+		id = TUR_join_usa_invasion
+		icon = american_air_supremacy
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_mission_of_iraq
+		}
+		x = 20
+		y = 2
+
+       available = {
+	   USA = { has_war_with = IRQ }
+	   country_exists = IRQ
+	   is_puppet = no
+       }
+       
+	   bypass = {
+	   has_war_with = IRQ
+	   }
+	   
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+  
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = IRQ
+		}
+	} }
+	focus = {
+		id = TUR_withdrawl
+		icon = peace
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_join_usa_invasion
+		}
+		mutually_exclusive = {
+			focus = TUR_enter_kerkuk
+		}
+		x = 19
+		y = 3
+
+       available = {
+	   country_exists = IRQ
+	   is_puppet = no
+       }
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}		
+        completion_reward = {
+        white_peace = IRQ
+		add_stability = 0.02
+		add_war_support = -0.03
+		}
+	} 
+	focus = {
+		id = TUR_economic_grants
+		icon = industrialization
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_push_economic_reforms
+		}
+		x = 6
+		y = 6
+
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			}
+		}
+	focus = {
+		id = TUR_medium_taxes
+		icon = radical_tax_reform
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_push_economic_reforms
+		}
+		x = 8
+		y = 6
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+	swap_ideas = {
+	add_idea = reformss_for_2001_crisis
+	remove_idea = reforms_for_2001_crisis
+	 } 
+		custom_effect_tooltip = LOW_TAX_ACTION
+			subtract_from_variable = { corporate_tax_rate = 2 }
+			subtract_from_variable = { population_tax_rate = 2 }	 
+	 }
+	}
+	focus = {
+		id = TUR_end_of_crisis
+		icon = money
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_foreign_investments
+		}
+		prerequisite = {
+			focus = TUR_medium_taxes
+		}
+		prerequisite = {
+			focus = TUR_economic_grants
+		}
+		x = 8
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+
+		completion_reward = {
+	remove_ideas = reformss_for_2001_crisis
+	 }  }
+	
+	focus = {
+		id = TUR_arrested_people
+		icon = political_arrests
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_end_of_crisis
+		}
+		x = 8
+		y = 8
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+	add_stability = -0.03
+	add_political_power = 50
+	 }  }
+	focus = {
+		id = TUR_stabilize_the_regime
+		icon = stability
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_arrested_people
+		}
+		x = 7
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+       add_timed_idea = { idea = stabilization_of_TUR  days = 90 }
+      }
+	}
+	focus = {
+		id = TUR_open_elections
+		icon = blue_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_stabilize_the_regime
+		}
+		prerequisite = {
+			focus = TUR_peace_propagandas
+		}
+		x = 8
+		y = 10
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+        available = {
+        has_government = nationalist
+		is_puppet = no
+        }
+		
+		completion_reward = {
+                set_politics = {
+                ruling_party = nationalist
+                elections_allowed = yes
+	 }  }
+}
+	focus = {
+		id = TUR_peace_propagandas
+		icon = bread_and_peace
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_arrested_people
+		}
+		x = 9
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		
+		completion_reward = {
+     add_war_support = -0.07
+	 add_stability = 0.01
+	 }  }
+	focus = {
+		id = TUR_enter_kerkuk
+		icon = tanks5
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_join_usa_invasion
+		}
+		mutually_exclusive = {
+			focus = TUR_withdrawl
+		}
+		x = 21
+		y = 3
+
+       available = {
+       controls_state = 166
+       }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		
+		completion_reward = {
+		                add_war_support = 0.02
+						add_popularity = {
+							ideology = ROOT
+							popularity = 0.03
+						}	
+            } 
+		}
+	focus = {
+		id = TUR_integrate_kerkuk
+		icon = volunteers
+		cost = 5,00
+		prerequisite = {
+			focus = TUR_enter_kerkuk
+		}
+		x = 21
+		y = 4
+
+       available = {
+       controls_state = 641
+       controls_state = 633
+       controls_state = 164
+       controls_state = 166
+       controls_state = 165
+       }
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+		completion_reward = {
+		add_political_power = -75
+		add_stability = -0.05
+		add_state_core = 641
+		add_state_core = 633
+		add_state_core = 164
+		add_state_core = 166
+		add_state_core = 165
+            } 
+		}
+	focus = {
+		id = TUR_lift_political_party_ban
+		icon = elections4 
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_open_elections
+		}
+		x = 8
+		y = 11
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+       available = {
+       has_idea = political_parties_banned
+       }
+		completion_reward = {
+        add_political_power = -75
+		add_stability = 0.03
+		remove_ideas = political_parties_banned
+	 } 
+	}
+	focus = {
+		id = TUR_organize_a_military_coup
+		icon = focus_tur_izmir
+		cost = 15,00
+		prerequisite = {
+			focus = TUR_lift_political_party_ban
+		}
+		mutually_exclusive = {
+			focus = TUR_elections_of_the_state
+		}
+		x = 9
+		y = 12
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+     add_stability = -0.07
+	 add_ideas = NATO_officers
+	 set_country_flag = TSK_FOCUS_LOCATION
+			load_focus_tree = MD_TUR_TSK
+
+			create_country_leader = {
+				name = "Abidin Ünal"
+				picture = "abidin_unal.dds"
+				ideology = Nat_Autocracy
+				traits = {
+nationalist_Nat_Autocracy
+				military_career
+				}
+    } } }
+	focus = {
+		id = TUR_elections_of_the_state
+		icon = election2
+		cost = 15,00
+		prerequisite = {
+			focus = TUR_lift_political_party_ban
+		}
+		mutually_exclusive = {
+			focus = TUR_organize_a_military_coup
+		}
+		x = 7
+		y = 12
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+     add_stability = 0.02
+	     country_event = MD4_election_campaign.0
+			load_focus_tree = MD_TUR_DEM
+		complete_national_focus = TUR_economic_fail
+	 set_country_flag = MIL_ACTION
+							custom_effect_tooltip = WAR_PARLIAMENT_RETURNAL
+
+	hidden_effect = {
+	swap_ideas = {
+	add_idea = turkish_military_infulence_armed
+	remove_idea = turkish_military_infulence
+	 } } } 
+			hidden_effect = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.3
+				}
+			}
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.10 }
+				recalculate_party = yes
+			}
+			
+				complete_national_focus = TUR_legacy
+				complete_national_focus = TUR_reforms
+				complete_national_focus = TUR_awake_the_industry
+				set_country_flag = MIL_ACTION
+	 }  }

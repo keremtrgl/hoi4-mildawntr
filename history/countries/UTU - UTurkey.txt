@@ -1,0 +1,742 @@
+capital = 934
+2000.1.1 = {
+	add_ideas = {
+		#pop_050
+		systematic_corruption
+		gdp_4
+		sunni
+		multi_ethnic_state_idea
+		stable_growth
+		defence_06
+		edu_01
+		health_01
+		social_02
+		bureau_05
+		police_01
+		volunteer_army
+		no_women_in_military
+		intervention_isolation
+		intelligence_community
+		defense_industry
+		the_military
+		pkk_terror_idea
+		mit
+	}
+
+
+	set_technology = {
+		COMSAT1 = 1
+
+		SPYSAT1 = 1
+
+		nuclear_technology = 1
+		reactor1 = 1
+		reactor2 = 1
+		integrated_transportation_system = 1
+		post_conventional_rail = 1
+		early_freight_locomotive = 1
+
+		legacy_doctrines = 1
+		infantry_mass_assault = 1
+
+		#Infantry weapons, only licensed G3A3
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		infantry_weapons3 = 1
+		support_weapons = 1
+		tandem_charge_warheads = 1
+		squad_automatic_weapon = 1
+		night_vision_1 = 1
+		night_vision_2 = 1
+		special_forces = 1
+		special_forces2 = 1
+
+		#C&C equipment, 1995
+		command_control_equipment = 1
+		command_control_equipment1 = 1
+
+		combat_eng_equipment = 1
+
+		#TAI TURNA
+		land_Drone_equipment = 1
+
+		Anti_tank_0 = 1
+		Heavy_Anti_tank_0 = 1
+		AT_upgrade_1 = 1
+		Anti_tank_1 = 1
+		Heavy_Anti_tank_1 = 1
+
+		combat_eng_equipment = 1
+
+		util_vehicle_0 = 1
+		util_vehicle_1 = 1
+		util_vehicle_2 = 1
+		util_vehicle_3 = 1	#Otokar Cobra
+
+		night_vision_1 = 1
+		night_vision_2 = 1
+
+		body_armor_1980 = 1
+
+		camouflage = 1
+
+		#MBTs for templates
+		#Otokar Akrep & Cobra
+
+		#Panter
+
+		#Firtina & Kasirga
+
+		#AT for templates and soon to be released Mizrat
+		Anti_tank_0 = 1
+		Heavy_Anti_tank_0 = 1
+		AT_upgrade_1 = 1
+
+		#AA for templates
+
+		#Mainframe computing
+		basic_computing = 1
+		integrated_circuit = 1
+		computing1 = 1
+		decryption1 = 1
+		encryption1 = 1
+		microprocessors = 1
+
+		radar = 1
+		internet1 = 1
+		internet2 = 1
+		fuel_silos = 1
+
+		industrial_electrospun_polymeric_nanofibers = 1
+		multiwalled_carbon_nanotubes = 1
+		stereolitography = 1
+		early_3D_printers = 1
+		DNA_fingerprinting = 1
+		fuel_refining = 1
+		fuel_refining2 = 1
+		energy_efficiency = 1
+		energy_efficiency2 = 1
+		fuel_efficiency = 1
+		early_renewables = 1
+		renewables = 1
+		electrification_1 = 1
+		construction1 = 1
+
+
+
+		transport_helicopter1 = 1
+		nsb_transport_helicopter1 = 1
+		transport_helicopter2 = 1
+		nsb_transport_helicopter2 = 1
+	}
+
+	complete_special_project = sp:sp_helicopter_project
+
+	if = { limit = { has_dlc = "Gotterdammerung" }
+		set_technology = {
+			ballistic_missile = 1
+
+			IRBM = 1
+			IRBM1 = 1
+
+			cruise_missile = 1
+
+			GLCM = 1
+			GLCM1 = 1
+
+			TEL_launched_missiles = 1
+			TEL_3 = 1
+			TEL_4 = 1
+
+			air_defense = 1
+
+			SAM = 1
+			SAM0 = 1
+			SAM1 = 1
+
+			hid_tech_missile_1 = 1
+			hid_tech_missile_2 = 1
+			hid_tech_missile_3 = 1
+			hid_tech_missile_4 = 1
+			hid_tech_missile_5 = 1
+			hid_tech_missile_6 = 1
+		}
+
+		complete_special_project = sp:sp_space_program_gdm
+		complete_special_project = sp:sp_missile_project
+
+		set_variable = { num_launchers_set = 6 }
+
+		else = {
+			complete_special_project = sp:sp_space_program_non_gdm
+		}
+	}
+
+	if = {
+		limit = { has_dlc = "No Step Back" }
+
+
+		set_technology = {
+			mbt_tech_ops = 1
+            mbt_tech = 1
+			mbt_tech_1 = 1
+			early_cold_war_ammo = 1
+			defensive_systems = 1
+			nsb_gun_technology_1 = 1
+			nsb_artillery_ammo_1 = 1
+			nsb_special_ammo_0 = 1
+			nsb_AA_autocannon_0 = 1
+			nsb_SHORAD_missile_0 = 1
+
+
+			diesel_engine_tech = 1
+			diesel_engine_tech_2 = 1
+			tank_components_tech = 1
+			tank_components_tech_2 = 1
+			small_autocannon_tech = 1
+
+				#M52T
+			nsb_artillery_0 = 1
+			nsb_Arty_upgrade_1 = 1
+			nsb_Anti_Air_0 = 1
+			nsb_Anti_Air_1 = 1
+			nsb_AA_upgrade_1 = 1
+
+			 #Altigan PMADS
+			nsb_Anti_Air_0 = 1
+
+			helo_ops_tech = 1
+			nsb_attack_helicopter_tech_1 = 1
+			nsb_engine_tech_1 = 1
+			nsb_atgm_tech_1 = 1
+			nsb_multiple_atgm_tech_1 = 1
+			nsb_heavy_atgm_tech_1 = 1
+			nsb_rocket_pods_tech_1 = 1
+			nsb_gun_pods_tech_1 = 1
+			nsb_light_nose_gun_tech_1 = 1
+
+
+			nsb_defense_tech_1 = 1
+
+
+
+
+		}
+
+		create_equipment_variant = {
+			name = "AAPC"
+			type = medium_tank_amphibious_chassis_1
+			parent_version = 1
+			modules = {
+				main_armament_slot = afv_machine_gun
+			   reload_type_slot = automatic_loading
+			   ammunition_load_slot = machine_gun_ammo_1
+				turret_type_slot = tank_no_turret
+				suspension_type_slot = tank_torsion_bar_suspension_medium
+				engine_type_slot = tank_diesel_engine_gen2
+				armor_type_slot = afv_alum_armor_gen2
+				special_type_slot_1 = afv_gun_ports
+				special_type_slot_2 = smoke_launchers_2
+				special_type_slot_3 = afv_troop_capacity
+				special_type_slot_4 = tank_battlestation_1
+				special_type_slot_5 = afv_reverse_doors
+				special_type_slot_6 = spaced_armor_gen1
+			}
+			upgrades = {
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "gfx/interface/technologies/TUR/LAND/APC2.dds"
+		}
+		create_equipment_variant = {
+			name = "AIFV"
+			type = medium_tank_amphibious_chassis_1
+			parent_version = 2
+			modules = {
+				main_armament_slot = small_autocannon_2
+			   ammunition_load_slot = mixed_autocannon_ammo_1
+				turret_type_slot = tank_base_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension_medium
+				engine_type_slot = tank_diesel_engine_gen2
+				armor_type_slot = afv_alum_armor_gen2
+				special_type_slot_1 = afv_gun_ports
+				special_type_slot_2 = smoke_launchers_2
+				special_type_slot_3 = afv_troop_capacity
+				special_type_slot_4 = tank_battlestation_1
+				special_type_slot_5 = afv_reverse_doors
+				special_type_slot_6 = spaced_armor_gen1
+			}
+			upgrades = {
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "gfx/interface/technologies/TUR/LAND/APC3.dds"
+		}
+
+		create_equipment_variant = {
+			name = "M52T"
+			type = medium_tank_artillery_chassis_0
+			parent_version = 0
+			modules = {
+				main_armament_slot = art_med_gun_gen1
+			   reload_type_slot = automatic_loading
+			   ammunition_load_slot = artillery_medium_ammo_1
+			   turret_type_slot = tank_base_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension_medium
+				engine_type_slot = tank_diesel_engine_gen1
+
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_fire_upgrade = 0
+			}
+			obsolete = yes
+			icon = "GFX_USA_medium_tank_artillery_chassis_1_a"
+		}
+
+		complete_special_project = sp:sp_armoured_vehicle_project
+
+		else = {
+			set_technology = {
+				MBT_1 = 1
+				Early_APC = 1
+				IFV_1 = 1
+				IFV_2 = 1
+				APC_1 = 1
+				APC_2 = 1
+				APC_3 = 1
+				SP_arty_0 = 1
+				SP_arty_1 = 1	#M52T
+				artillery_0 = 1
+				Arty_upgrade_1 = 1
+				SP_R_arty_0 = 1
+				SP_R_arty_1 = 1	#T-122 Sakariya
+				Anti_Air_0 = 1
+				Anti_Air_1 = 1
+				AA_upgrade_1 = 1
+				SP_Anti_Air_0 = 1
+				SP_Anti_Air_1 = 1 #Altigan PMADS
+				Anti_Air_0 = 1
+				SP_Anti_Air_0 = 1
+				attack_helicopter1 = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			corvette_hull_1 = 1
+			corvette_hull_2 = 1
+			corvette_hull_3 = 1
+
+			frigate_hull_1 = 1
+			frigate_hull_2 = 1
+			frigate_hull_3 = 1
+
+			destroyer_hull_1 = 1
+			destroyer_hull_2 = 1
+
+			attack_submarine_hull_1 = 1
+			attack_submarine_hull_2 = 1
+
+			aircraft_carrier_engineering = 1
+			aircraft_heli_engineering_1 = 1
+
+			tech_submarine_engineering = 1
+
+			tech_naval_systems_engineering = 1
+			tech_power_systems = 1
+			tech_power_systems_1 = 1
+
+			tech_combat_support_systems = 1
+			tech_fire_control = 1
+			tech_fire_control_1 = 1
+			tech_combat_radar = 1
+			tech_combat_radar_1 = 1
+			tech_combat_radar_2 = 1
+			tech_combat_sonar = 1
+			tech_combat_sonar_1 = 1
+			tech_combat_sonar_2 = 1
+
+			tech_early_naval_weapon_systems = 1
+			tech_naval_weapon_systems = 1
+			tech_light_guns = 1
+			tech_light_guns_1 = 1
+
+			tech_point_defense_system = 1
+			tech_point_defense_system_1 = 1
+			tech_point_defense_system_2 = 1
+			tech_point_defense_system_3 = 1
+
+			tech_turret_missiles_surface = 1
+			tech_turret_missiles_surface_1 = 1
+
+			tech_turret_missiles_aa = 1
+			tech_turret_missiles_aa_1 = 1
+
+			tech_vls_surface = 1
+			tech_vls_surface_1 = 1
+
+			tech_vls_aa = 1
+			tech_vls_aa_1 = 1
+
+			tech_torpedoes = 1
+			tech_torpedoes_1 = 1
+
+			tech_mtg_landing_craft = 1
+		}
+
+		#Tepe Class #Taiwan use this
+		create_equipment_variant = {
+			name = "Tepe Class"
+			type = frigate_hull_1
+			#name_group = TURKISH
+			parent_version = 0
+			modules = {
+				fixed_ship_engine_slot = module_light_surface_diesel_power
+				fixed_ship_fire_control_system_slot = module_analog_fire_control
+				fixed_ship_radar_slot = module_sonar_1
+				fixed_ship_auxillary_slot_2 = module_anti_submarine_mortar
+				fixed_ship_auxillary_slot_1 = module_aa_missiles_1
+				fixed_ship_auxillary_slot = module_fuel_tank
+				fixed_ship_battery_slot = module_76mm_battery
+				front_1_custom_slot = module_torpedoes_1
+				rear_1_custom_slot = module_light_helipad_1
+			}
+		}
+		#Gabya Class
+		create_equipment_variant = {
+			name = "Gabya Class"
+			type = frigate_hull_2
+			#name_group = TURKISH
+			parent_version = 0
+			modules = {
+				fixed_ship_engine_slot = module_light_surface_diesel_power
+				fixed_ship_fire_control_system_slot = module_analog_fire_control
+				fixed_ship_radar_slot = module_sonar_2
+				fixed_ship_auxillary_slot_2 = module_anti_submarine_mortar
+				fixed_ship_auxillary_slot_1 = module_aa_missiles_2
+				fixed_ship_auxillary_slot = module_fuel_tank
+				fixed_ship_battery_slot = module_127mm_battery
+				front_1_custom_slot = module_ciws_2
+				rear_1_custom_slot = module_asm_1
+			}
+		}
+		#Barbaros Class
+		create_equipment_variant = {
+			name = "Barbaros Class"
+			type = frigate_hull_3
+			#name_group = TURKISH
+			parent_version = 0
+			modules = {
+				fixed_ship_engine_slot = module_light_surface_diesel_power
+				fixed_ship_fire_control_system_slot = module_digital_integrated_fire_control
+				fixed_ship_radar_slot = module_radar_3
+				fixed_ship_auxillary_slot_2 = module_vls_sam_1
+				fixed_ship_auxillary_slot_1 = module_torpedoes_2
+				fixed_ship_auxillary_slot = module_ciws_2
+				fixed_ship_battery_slot = module_76mm_gun_1
+				front_1_custom_slot = module_asm_2
+				rear_1_custom_slot = module_light_helipad_1
+			}
+		}
+		#Salihreis Class
+		create_equipment_variant = {
+			name = "Barbaros Class - Salihreis Subclass"
+			type = frigate_hull_3
+			#name_group = TURKISH
+			parent_version = 1
+			modules = {
+				fixed_ship_engine_slot = module_light_surface_diesel_power
+				fixed_ship_fire_control_system_slot = module_digital_integrated_fire_control
+				fixed_ship_radar_slot = module_radar_4
+				fixed_ship_auxillary_slot_2 = module_vls_sam_2
+				fixed_ship_auxillary_slot_1 = module_torpedoes_2
+				fixed_ship_auxillary_slot = module_ciws_2
+				fixed_ship_battery_slot = module_76mm_gun_1
+				front_1_custom_slot = module_asm_2
+				rear_1_custom_slot = module_light_helipad_1
+			}
+		}
+
+		complete_special_project = sp:sp_naval_vessel_project
+
+		else = {
+			set_technology = {
+				#Navy templates
+				corvette_1 = 1
+				frigate_1 = 1
+				submarine_1 = 1
+				diesel_attack_submarine_1 = 1
+				landing_craft = 1
+			}
+		}
+	}
+
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+
+		set_technology = {
+
+			early_airframe_designs = 1
+			gen_3_light = 1
+			gen_4_light = 1
+			gen_3_medium = 1
+
+			flying_wing_design = 1
+
+			engines_2 = 1
+
+			refueling_1 = 1
+
+			avionics_1 = 1
+
+			awacs_1 = 1
+
+			redundant_1 = 1
+
+			early_weapons = 1
+			air_weapons_1 = 1
+			countermeasures_1 = 1
+
+			ag_weapons_1 = 1
+
+			naval_weapons_1 = 1
+			special_mad_1 = 1
+
+			tgp_recon_1 = 1
+		}
+
+		else = {
+
+			set_technology = {
+
+				early_fighter = 1
+				CV_MR_Fighter1 = 1
+				CV_MR_Fighter2 = 1
+
+				AS_Fighter1 = 1
+				AS_Fighter2 = 1
+
+				MR_Fighter1 = 1
+				MR_Fighter2 = 1
+				MR_upgrade_1 = 1
+
+				Strike_fighter1 = 1
+				Strike_fighter2 = 1
+
+				L_Strike_fighter1 = 1
+
+				early_bomber = 1
+				strategic_bomber1 = 1
+
+				transport_plane1 = 1
+				transport_plane2 = 1
+
+				naval_plane1 = 1
+				naval_plane2 = 1
+			}
+		}
+
+	}
+	#Influence
+	init_influence = yes
+	add_to_array = { influence_array = AZE.id }
+	add_to_array = { influence_array_val = 20 }
+	add_to_array = { influence_array = KAZ.id }
+	add_to_array = { influence_array_val = 8 }
+	add_to_array = { influence_array = USA.id }
+	add_to_array = { influence_array_val = 2 }
+	set_variable = { domestic_influence_amount = 70 }
+	startup_influence = yes
+
+	set_popularities = {
+		democratic = 0.0
+		communism = 0.0
+		fascism = 0.0
+		neutrality = 0.0
+		nationalist = 100.0
+	}
+	set_politics = {
+		ruling_party = nationalist
+		last_election = "2016.7.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	#Politics
+	start_politics_input = yes
+	### Party Popularities
+	set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+	set_variable = { party_pop_array^1 = 0 } #conservatism
+	set_variable = { party_pop_array^2 = 0 } #liberalism
+	set_variable = { party_pop_array^3 = 0 } #socialism
+	set_variable = { party_pop_array^4 = 0.1 } #Communist-State
+	set_variable = { party_pop_array^5 = 0.2 } #anarchist_communism
+	set_variable = { party_pop_array^6 = 0.3 } #Conservative
+	set_variable = { party_pop_array^7 = 0.2 } #Autocracy
+	set_variable = { party_pop_array^8 = 0.1 } #Mod_Vilayat_e_Faqih
+	set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+	set_variable = { party_pop_array^10 = 0 } #Kingdom
+	set_variable = { party_pop_array^11 = 0 } #Caliphate
+	set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+	set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+	set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+	set_variable = { party_pop_array^15 = 0 } #oligarchism
+	set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+	set_variable = { party_pop_array^17 = 0 } #Neutral_green
+	set_variable = { party_pop_array^18 = 0 } #neutral_Social
+	set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+	set_variable = { party_pop_array^20 = 0.6 } #Nat_Populism
+	set_variable = { party_pop_array^21 = 0.3 } #Nat_Fascism
+	set_variable = { party_pop_array^22 = 0 } #Nat_Autocracy
+	set_variable = { party_pop_array^23 = 0 } #Monarchist
+
+	### Economy
+	set_variable = { var = debt value = 108 }
+	set_variable = { var = treasury value = 73 }
+	set_variable = { var = int_investments value = 1 }
+	set_variable = { var = corporate_tax_rate value = 41 }
+	set_variable = { var = population_tax_rate value = 35 }
+
+	### Ruling Party
+	add_to_array = { ruling_party = 20 }
+	startup_politics = yes
+
+			create_country_leader = {
+				name = "Devlet Bahçeli"
+				picture = "Devlet_Bahceli.dds"
+				ideology = Nat_Populism
+				traits = {
+					career_politician
+					nationalist_Nat_Populism
+				}
+			}
+
+
+	create_corps_commander = {
+		name = "Mehmet Gürsoy"
+		picture = "unknown_general.dds"
+		traits = { invader artillery_expert }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 3
+	}
+	create_corps_commander = {
+		name = "Ismail Karaosmanoğlu"
+		picture = "unknown_general.dds"
+		traits = { artillery_expert }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_corps_commander = {
+		name = "Şevket Yerimdar"
+		picture = "unknown_general.dds"
+		traits = { adaptable infantry_leader panzer_expert expert_organizer artillery_expert }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_field_marshal = {
+		name = "Muhterem Safa"
+		picture = "unknown_general.dds"
+		traits = { fast_planner logistics_wizard}
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_field_marshal = {
+		name = "Semih Gündoğan"
+		picture = "unknown_general.dds"
+		traits = { old_guard defensive_doctrine trickster}
+		skill = 4
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Mehmet Ülkü"
+		picture = "unknown_general.dds"
+		traits = { trait_engineer }
+		skill = 1
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Necdet Millet"
+		picture = "unknown_general.dds"
+		traits = { trait_engineer }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Ali Türkmen"
+		picture = "unknown_general.dds"
+		traits = { commando }
+		skill = 3
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Ahmet Vatansevdi"
+		picture = "unknown_general.dds"
+		traits = { desert_fox }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+}
+2017.1.1 = {
+	set_technology = {
+		legacy_doctrines = 1
+		modern_blitzkrieg = 1
+		forward_defense = 1
+		encourage_nco_iniative = 1
+		air_land_battle = 1
+
+
+		#No army, but let's give them some basic tech in case they change their mind
+		infantry_weapons = 1
+		command_control_equipment = 1
+		Anti_tank_0 = 1
+		Anti_Air_0 = 1
+		util_vehicle_0 = 1
+
+		night_vision_1 = 1
+
+		microprocessors = 1
+		computing2 = 1
+		decryption2 = 1
+		encryption2 = 1
+		computing3 = 1
+		decryption3 = 1
+		encryption3 = 1
+		DNA_fingerprinting = 1
+		internet2 = 1
+	}
+}

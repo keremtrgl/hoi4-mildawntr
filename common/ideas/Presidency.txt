@@ -1,0 +1,104 @@
+ideas = {
+	country = {
+ 		pr_demirel = {
+			picture = 
+			allowed_civil_war = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = DEMIREL_KA
+                
+				hidden_modifier = {
+			        political_power_cost = -0.05
+			        stability_factor = 0.03
+					democratic_acceptance = 10
+					democratic_drift = 0.02
+		            production_speed_buildings_factor = 0.1
+				}
+			}
+		}  
+	
+ 		pr_necdet = {
+			picture = 
+			allowed_civil_war = { always = yes }
+			modifier = { 
+                custom_modifier_tooltip = NECDET_KA
+
+				hidden_modifier = {
+			        political_power_cost = -0.1
+			        stability_factor = 0.03
+				}
+			}
+		}
+
+ 		pr_gul = {
+			picture = 
+			allowed_civil_war = { always = yes }
+			modifier = { 
+                custom_modifier_tooltip = GUL_KA
+
+				hidden_modifier = {
+			        political_power_cost = -0.05
+					neutrality_drift = 0.03
+			        tax_gain_multiplier_modifier = 0.05
+			        economic_cycles_cost_factor = -0.05
+			        receiving_investment_cost_modifier = -0.05
+			        investment_duration_modifier = -0.05
+				}
+			}
+		}
+
+ 		pr_erdogan = {
+			picture = 
+			allowed_civil_war = { always = yes }
+			modifier = { 
+                custom_modifier_tooltip = ERDOGAN_KA
+
+				hidden_modifier = {
+			political_power_cost = -0.1
+			stability_factor = 0.05 
+			neutrality_drift = 0.05 
+			}
+		} 
+		} 
+          
+ 		pr_nevzat = {
+			picture = 
+			allowed_civil_war = { always = yes }
+			modifier = { 
+           custom_modifier_tooltip = NEVZAT_KA
+
+				hidden_modifier = {
+			foreign_influence_defense_modifier = 0.05
+			political_power_cost = -0.05
+			tax_gain_multiplier_modifier = 0.05
+			economic_cycles_cost_factor = -0.05
+			receiving_investment_cost_modifier = -0.05
+			investment_duration_modifier = -0.05
+			}
+			}
+		}		
+          
+ 		pr_sabahattin = {
+			picture = 
+			allowed_civil_war = { always = yes }
+			modifier = { 
+           custom_modifier_tooltip = SABAHATTIN_KA
+
+				hidden_modifier = {
+			political_power_cost = -0.1
+			bureocracy_cost_multiplier_modifier = -0.05
+				}
+			}
+		}		
+          
+ 		pr_ekmeleddin = {
+			picture = 
+			allowed_civil_war = { always = yes }
+			modifier = { 
+           custom_modifier_tooltip = EKMELEDDIN_KA
+
+				hidden_modifier = {
+			stability_factor = 0.07 
+				education_cost_multiplier_modifier = -0.05
+			    }
+			
+		}	 }

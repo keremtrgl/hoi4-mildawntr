@@ -1,0 +1,282 @@
+scripted_gui = {
+
+	##############Super Event#########
+	
+	super_event_1_window = {
+		context_type = player_context
+
+		window_name = "super_event_1"
+
+		visible = {
+			is_ai = no
+			has_global_flag = FIRE_SUPEREVENT_1
+		NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_1_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_1
+			}
+		} }
+
+	
+	super_event_2_window = {
+		context_type = player_context
+
+		window_name = "super_event_2"
+
+		visible = {
+			is_ai = no
+			has_global_flag = FIRE_SUPEREVENT_2
+		NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_2_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_2
+			}
+		} }
+
+	
+	super_event_3_window = {
+		context_type = player_context
+
+		window_name = "super_event_3"
+
+		visible = {
+			is_ai = no
+			has_global_flag = FIRE_SUPEREVENT_3
+		NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_3_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_3
+			}
+		} }
+
+	
+	super_event_4_window = {
+		context_type = player_context
+
+		window_name = "super_event_4"
+
+		visible = {
+			is_ai = no
+			has_global_flag = FIRE_SUPEREVENT_4
+		NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_4_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_4
+			}
+		} }
+
+
+	super_event_5_window = {
+		context_type = player_context
+
+		window_name = "super_event_5"
+
+		visible = {
+			is_ai = no
+			has_global_flag = FIRE_SUPEREVENT_5
+		NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_5_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_5
+			}
+		} }
+
+
+	super_event_6_window = {
+		context_type = player_context
+
+		window_name = "super_event_6"
+
+		visible = {
+			is_ai = no
+				has_global_flag = FIRE_SUPEREVENT_6
+		NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_6_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_6
+			}
+		} }
+
+
+	super_event_7_window = {
+		context_type = player_context
+
+		window_name = "super_event_7"
+
+		visible = {
+			is_ai = no
+				has_global_flag = FIRE_SUPEREVENT_7
+			NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_7_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_7
+			}
+		} }
+
+
+	super_event_8_window = {
+		context_type = player_context
+
+		window_name = "super_event_8"
+
+		visible = {
+			is_ai = no
+			has_global_flag = FIRE_SUPEREVENT_8
+			NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_8_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_8
+			}
+		} }
+
+	super_event_9_window = {
+		context_type = player_context
+
+		window_name = "super_event_9"
+
+		visible = {
+			is_ai = no
+			has_global_flag = FIRE_SUPEREVENT_9
+			NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_9_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_9
+			}
+		} }
+
+	super_event_10_window = {
+		context_type = player_context
+
+		window_name = "super_event_10"
+
+		visible = {
+			is_ai = no
+				has_global_flag = FIRE_SUPEREVENT_10
+				NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_10_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_10
+			}
+		} }
+
+
+	super_event_11_window = {
+		context_type = player_context
+
+		window_name = "super_event_11"
+
+		visible = {
+			is_ai = no
+						has_global_flag = FIRE_SUPEREVENT_11
+					NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_11_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_11
+			}
+		} }
+
+
+
+
+	super_event_12_window = {
+		context_type = player_context
+
+		window_name = "super_event_12"
+
+		visible = {
+			is_ai = no
+						has_global_flag = FIRE_SUPEREVENT_12
+					NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_12_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_12
+			}
+		} }
+
+
+	super_event_13_window = {
+		context_type = player_context
+
+		window_name = "super_event_13"
+
+		visible = {
+			is_ai = no
+						has_global_flag = FIRE_SUPEREVENT_13
+					NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_13_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_13
+			}
+		} }
+
+
+	super_event_14_window = {
+		context_type = player_context
+
+		window_name = "super_event_14"
+
+		visible = {
+			is_ai = no
+						has_global_flag = FIRE_SUPEREVENT_14
+					NOT = {
+		has_global_flag = BLOCKED_SUPER_EVENTS
+		}
+		}
+
+		effects = {
+		    super_event_14_close_button_click = {
+				clr_global_flag = FIRE_SUPEREVENT_14
+			}
+		} }

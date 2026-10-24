@@ -1,0 +1,42 @@
+TUR_startup = {
+	set_variable = { united_aym = -35 }
+	set_variable = { politicized_aym = +23 }
+	set_variable = { soft_group = -38 }
+	set_variable = { precision_group = -27 }
+	set_variable = { transparent_group = -27 }
+}
+TUR_united_aym = {
+	clamp_variable = {
+		var = united_aym
+		min = 0
+		max = 500
+	}
+}
+TUR_politicized_aym = {
+	clamp_variable = {
+		var = politicized_aym
+		min = 0
+		max = 500
+	}
+}
+TUR_soft_group = {
+	clamp_variable = {
+		var = soft_group
+		min = 0
+		max = 500
+	}
+}
+TUR_precision_group = {
+	clamp_variable = {
+		var = precision_group
+		min = 0
+		max = 500
+	}
+}
+TUR_transparent_group = {
+	clamp_variable = {
+		var = transparent_group
+		min = 0
+		max = 500
+	}
+}

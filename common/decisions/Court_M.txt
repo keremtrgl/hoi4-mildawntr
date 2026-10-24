@@ -1,0 +1,561 @@
+TUR_court_rule = {
+
+	abandon_echr = {
+		icon = GFX_decision_generic_eurozone
+
+		fire_only_once = no
+
+		available = {
+			has_government = nationalist		
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		days_remove = 70
+        cost = 200
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		political_power_cost = -0.1
+		}
+		complete_effect = {
+		} 
+		remove_effect = {
+		add_war_support = 0.1
+		}
+	}
+
+	shut_down_the_court = {
+		icon = GFX_decision_generic_military
+
+
+		available = {
+		has_government = nationalist
+		}
+
+		visible = {
+			original_tag = TUR
+		}
+
+		days_remove = 5
+        cost = 125
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+	  stability_weekly = 0.001
+	  }
+		complete_effect = {
+	  set_global_flag = TUR_court_gone
+	  }
+	}
+
+     a_military_drama = {    
+          icon = GFX_decision_category_border_conflicts
+          allowed = { tag = TUR }                 
+          available = {   
+check_variable = { var = TUR_politicized_aym value = 75 compare = less_than_or_equals }			                               
+          }
+          activation = {  
+		has_idea = turkish_military_infulence   
+		NOT = {
+		has_global_flag = COURT_RULES_AYM
+		} 
+check_variable = { var = TUR_politicized_aym value = 75 compare = greater_than }	       
+         }
+          is_good = no        
+		fire_only_once = no	  
+          selectable_mission = yes                
+          days_mission_timeout = 225            
+          timeout_effect = {                      
+               country_event = TurkeyF.202	
+	set_variable = { var = TUR_united_aym value = 100 }
+	set_variable = { var = TUR_politicized_aym value = 0 }
+    add_political_power = -250
+			   custom_effect_tooltip = GRADUAL_PATH_WARNING_COURT	
+			   custom_effect_tooltip = GRADUAL_PATH_WARNING_COURT_2	   
+          }
+          complete_effect = {            
+               add_political_power = 125
+          }
+     }
+
+	push_a_reshuffle = {
+		icon = GFX_decision_generic_political_discourse
+
+		fire_only_once = no
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		days_remove = 70
+		days_re_enable = 365
+        cost = 150
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		political_power_cost = 0.1
+		}
+		complete_effect = {
+		} 
+		remove_effect = {
+            custom_effect_tooltip = GOV_POL_3	
+	        subtract_from_variable = { TUR_united_aym = -15 }
+	        subtract_from_variable = { TUR_politicized_aym = 15 }	
+		}
+	}
+	
+	raise_political_questions = {
+		icon = GFX_decision_generic_speech
+
+		fire_only_once = no
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		days_remove = 70
+		days_re_enable = 120
+        cost = 25
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		political_power_cost = 0.1
+		}
+		complete_effect = {
+		} 
+		remove_effect = {
+			hidden_effect = {
+			random_list = {
+			75 = {
+			country_event = TurkeyCourt.8
+			}
+			25 = {
+			country_event = TurkeyCourt.7
+			} } }
+
+            custom_effect_tooltip = GOV_POL_1
+			custom_effect_tooltip = COURT_CHANCES_2	
+	        subtract_from_variable = { TUR_united_aym = 5 }
+	        subtract_from_variable = { TUR_politicized_aym = -5 }		
+		}
+	}
+
+	investigate_the_government = {
+		icon = GFX_decision_generic_intelligence_operation
+
+		fire_only_once = no
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		days_remove = 70
+		days_re_enable = 120
+        cost = 125
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		political_power_cost = 0.1
+		}
+		complete_effect = {
+		} 
+		remove_effect = {
+			hidden_effect = {
+			random_list = {
+			50 = {
+			country_event = TurkeyCourt.5
+			}
+			50 = {
+			country_event = TurkeyCourt.6
+			} } }
+
+            custom_effect_tooltip = GOV_POL_2
+			custom_effect_tooltip = COURT_CHANCES_3
+	        subtract_from_variable = { TUR_united_aym = 10 }
+	        subtract_from_variable = { TUR_politicized_aym = -10 }
+		}
+	}
+
+	investigate_the_opposition = {
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = no
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		days_remove = 70
+		days_re_enable = 120
+        cost = 125
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		political_power_cost = 0.1
+		}
+		complete_effect = {
+		} 
+		remove_effect = {
+			hidden_effect = {
+			random_list = {
+			60 = {
+			country_event = TurkeyCourt.6
+			}
+			40 = {
+			country_event = TurkeyCourt.5
+			} } }
+
+            custom_effect_tooltip = GOV_POL_2
+			custom_effect_tooltip = COURT_CHANCES_1
+	        subtract_from_variable = { TUR_united_aym = 10 }
+	        subtract_from_variable = { TUR_politicized_aym = -10 }
+		}
+	}
+
+	over_turn_elections = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		fire_only_once = no
+
+		available = {
+			has_elections = yes
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		days_remove = 70
+		days_re_enable = 720
+
+        cost = 75
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		political_power_cost = 0.1
+		}
+		complete_effect = {
+		} 
+		remove_effect = {
+			hidden_effect = {
+			random_list = {
+			45 = {
+			country_event = TurkeyCourt.1
+			}
+			55 = {
+			country_event = TurkeyCourt.2
+			} } }
+
+            custom_effect_tooltip = GOV_POL_2
+			custom_effect_tooltip = COURT_CHANCES_4
+
+	        subtract_from_variable = { TUR_united_aym = 10 }
+	        subtract_from_variable = { TUR_politicized_aym = -10 }
+        }
+	}
+
+	precision_group_action = {
+		icon = GFX_decision_generic_form_nation
+
+		fire_only_once = no
+
+
+        available = {
+			check_variable = { var = TUR_precision_group value = 7 compare = greater_than }
+		}
+
+		visible = {
+			original_tag = TUR
+				has_global_flag = COURT_RULES_AYM
+		}
+
+		days_remove = 70
+		days_re_enable = 1
+
+        cost = 25
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		political_power_cost = -0.25
+		opinion_gain_monthly_factor = 0.1
+	    monthly_population = 0.1
+		neutrality_drift = 0.03
+	                intelligence_agency_defense = 0.1	
+					enemy_spy_negative_status_factor = 1	
+						decryption_power = 15		
+		}
+		complete_effect = {
+					custom_effect_tooltip = PRECISION_GROUP_ND	
+		} 
+		remove_effect = {
+        }
+	}
+
+
+	soft_group_action = {
+		icon = GFX_decision_hol_war_on_pacifism
+
+		fire_only_once = no
+
+		available = {
+check_variable = { var = TUR_soft_group value = 7 compare = greater_than }
+		} 
+
+		visible = {
+			original_tag = TUR
+				has_global_flag = COURT_RULES_AYM
+		}
+
+		days_remove = 70
+		days_re_enable = 1
+
+        cost = 25
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		political_power_cost = -0.1
+        stability_weekly = 0.001
+		neutrality_drift = -0.03
+		min_export = -0.05	
+	    trade_opinion_factor = 0.1
+		}
+		complete_effect = {
+					custom_effect_tooltip = SOFT_GROUP_ND	
+		} 
+		remove_effect = {
+        }
+	}
+
+	transparent_group_action = {
+		icon = GFX_decision_generic_research
+
+		fire_only_once = no
+
+		available = {
+check_variable = { var = TUR_transparent_group value = 7 compare = greater_than }
+		} 
+
+		visible = {
+			original_tag = TUR
+				has_global_flag = COURT_RULES_AYM
+		}
+
+		days_remove = 70
+		days_re_enable = 1
+
+        cost = 25
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		political_power_cost = 0.15
+        economic_cycles_cost_factor = -0.15
+				corruption_cost_factor = -0.15
+		research_speed_factor = 0.07
+		industrial_capacity_factory = 0.1
+		production_speed_buildings_factor = 0.1
+		consumer_goods_factor = 0.01
+		}
+		complete_effect = {
+					custom_effect_tooltip = TRANSPARENT_GROUP_ND	
+		} 
+		remove_effect = {
+        }
+	}
+
+	precision_technocratic_regime = {
+		icon = GFX_decision_category_debt_payments
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = AYM_shut_the_congress_type_elections
+			has_completed_focus = AYM_mutual_government	
+		} 
+
+		visible = {
+			original_tag = TUR
+				has_global_flag = COURT_RULES_AYM
+		}
+
+        cost = 150
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		}
+		complete_effect = {
+			add_stability = 0.1
+		} 
+		remove_effect = {
+        }
+	}
+}
+
+TUR_shut_down_the_last_court = {
+
+	TUR_par_votings12_X  = {
+		icon = GFX_decision_generic_military
+
+
+		available = {
+			OR = {
+		has_government = nationalist
+		has_government = communism 
+		has_government = fascism
+		has_war_support > 0.99
+			}
+		}
+
+		visible = {
+			original_tag = TUR
+		NOT = {
+	    has_global_flag = TUR_par
+        has_global_flag = DISABLE_WAR_SYSTEM_PAR
+		}
+		}
+
+		days_remove = 5
+        cost = 125
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+	  stability_weekly = 0.001
+	  }
+		complete_effect = {
+	  set_global_flag = TUR_par
+set_global_flag = DISABLE_WAR_SYSTEM_PAR
+custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU	
+hidden_effect = {
+remove_ideas = limits_of_the_parliament_main_target
+}
+	  }
+	}
+
+	TUR_military_returnal_X = {    
+		icon = GFX_decision_generic_political_discourse 
+		allowed = { tag = TUR }                 
+		available = {  
+		  NOT = {
+	   has_idea = limits_of_the_parliament_main_target	
+		  } 
+		NOT = {
+	    has_global_flag = TUR_par
+        has_global_flag = DISABLE_WAR_SYSTEM_PAR
+		}                             
+		  }    
+		activation = {
+		  NOT = {
+	   has_idea = limits_of_the_parliament_main_target	
+		  }     
+		NOT = {
+	    has_global_flag = TUR_par
+        has_global_flag = DISABLE_WAR_SYSTEM_PAR
+		}               
+		}
+		is_good = no     
+	  fire_only_once = yes		  
+		selectable_mission = yes                
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			 add_political_power = -5
+					 add_ideas = limits_of_the_parliament_main_target	   	   			   
+		}
+		complete_effect = {            
+			 add_political_power = 75
+			 add_ideas = limits_of_the_parliament_main_target	   					   
+		}
+	  }
+
+	  TUR_par_votings13_X  = {
+		icon = GFX_decision_generic_speech
+
+
+		available = {
+		}
+
+		visible = {
+			original_tag = TUR
+		NOT = {
+	    has_global_flag = TUR_par
+        has_global_flag = DISABLE_WAR_SYSTEM_PAR
+		}
+		}
+
+		days_remove = 5
+		days_re_enable = 50
+        cost = 25
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+	  war_support_factor = 0.03
+	  custom_modifier_tooltip = DESTROY_THE_LIMIT
+	  custom_modifier_tooltip = DESTROY_THE_LIMIT_RD  
+	  }
+
+		complete_effect = {
+		custom_effect_tooltip = TUR_votings
+		hidden_effect = {
+		random_list = {
+		65 = {
+        country_event = TurkeyT.18
+		}
+        35 = {
+        remove_ideas = limits_of_the_parliament_main_target
+	  } } } } 
+	}

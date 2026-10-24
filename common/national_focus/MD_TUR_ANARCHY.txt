@@ -1,0 +1,7383 @@
+focus_tree = {
+	id = MD_TUR_ANARCHY
+	default = no
+
+	focus = {
+		id = ANA_preparations
+		icon = focus_generic_fascist_outrage
+		cost = 5,00
+		x = 36
+		y = 0
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.02
+			custom_effect_tooltip = ANA_RISE_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.03 }
+				recalculate_party = yes
+			}	
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = ANA_wait_for_the_results
+		icon = masters_of_our_own_fate
+		cost = 15,00
+		x = 83
+		y = 0
+
+    available = {
+    has_completed_focus = ANA_the_commitee_elections
+	}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 125
+remove_ideas = reformss_for_2001_crisis
+		}
+	}
+	focus = {
+		id = ANA_termic_waters
+		icon = hydroelectric
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_start_the_country_echologies
+		}
+		prerequisite = {
+			focus = ANA_deindustrialization
+		}
+		prerequisite = {
+			focus = ANA_trash_act
+		}
+		x = 60
+		y = 13
+
+
+		completion_reward = {
+		    add_ideas = termic_waters
+			random_owned_state = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery 
+					level = 1
+					instant_build = yes
+				}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+			}
+		}
+	}
+	focus = {
+		id = ANA_bored_of_the_state
+		icon = BRA_labor_laws
+		cost = 2.8
+		prerequisite = {
+			focus = ANA_preparations
+		}
+		x = 36
+		y = 1
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			add_stability = -0.1
+			custom_effect_tooltip = ANA_RISE_5
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.05 }
+				recalculate_party = yes
+			}	
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ANA_anti_economic_program_propaganda
+		icon = focus_drinks_peace
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_bored_of_the_state
+		}
+		x = 35
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			custom_effect_tooltip = ANA_RISE_1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.01 }
+				recalculate_party = yes
+			}	
+			add_stability = -0.03
+		}
+	}
+	focus = {
+		id = ANA_arm_the_economical_victims
+		icon = focus_generic_buy_guns
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_anti_economic_program_propaganda
+		}
+		x = 34
+		y = 3
+
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			add_stability = -0.05
+			add_manpower = -1000
+			add_war_support = 0.05
+			custom_effect_tooltip = ANA_RISE_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.03 }
+				recalculate_party = yes
+			}	
+		}
+	}
+	focus = {
+		id = ANA_anti_job_propaganda
+		icon = gunpoint_diplomacy
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_bored_of_the_state
+		}
+		x = 37
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			custom_effect_tooltip = ANA_RISE_1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.01 }
+				recalculate_party = yes
+			}	
+			add_stability = -0.03
+		}
+	}
+	focus = {
+		id = ANA_create_an_anarchist_congress
+		icon = BRA_appease_the_congress
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_anti_job_propaganda
+		}
+		prerequisite = {
+			focus = ANA_anti_economic_program_propaganda
+		}
+		x = 36
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_ideas = anarchist_congress_assambled
+			custom_effect_tooltip = ANA_RISE_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.03 }
+				recalculate_party = yes
+			}	
+			add_stability = -0.01
+		}
+	}
+	focus = {
+		id = ANA_arm_the_unemployment
+		icon = M16
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_anti_job_propaganda
+		}
+		x = 38
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			custom_effect_tooltip = ANA_RISE_1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.01 }
+				recalculate_party = yes
+			}	
+			add_stability = -0.03
+		}
+	}
+	focus = {
+		id = ANA_start_anarchist_militarization
+		icon = focus_generic_infiltration
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_arm_the_unemployment
+		}
+		prerequisite = {
+			focus = ANA_create_an_anarchist_congress
+		}
+		prerequisite = {
+			focus = ANA_arm_the_economical_victims
+		}
+		x = 36
+		y = 4
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_ideas = anarchist_militarization
+			custom_effect_tooltip = ANA_RISE_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.03 }
+				recalculate_party = yes
+			}	
+			add_stability = -0.01
+		}
+	}
+	focus = {
+		id = ANA_connect_the_new_generals
+		icon = anti_war_with_big_gun
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_start_anarchist_militarization
+		}
+		x = 38
+		y = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.03 }
+				recalculate_party = yes
+			}	
+			custom_effect_tooltip = ANA_RISE_2
+			add_political_power = 100
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = ANA_keep_talks_with_military_groups
+		icon = Focus_Infantry_Equipment
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_connect_the_new_generals
+		}
+		x = 37
+		y = 6
+
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.02 }
+				recalculate_party = yes
+			}	
+			add_manpower = -100000
+			add_war_support = 0.03
+			custom_effect_tooltip = ANA_RISE_2
+		}
+	}
+	focus = {
+		id = ANA_appoint_new_generals_to_command
+		icon = general_staff
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_connect_the_new_generals
+		}
+		x = 39
+		y = 6
+
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.01 }
+				recalculate_party = yes
+			}	
+			add_manpower = -5
+			add_war_support = 0.01
+			custom_effect_tooltip = ANA_RISE_1
+		}
+	}
+	focus = {
+		id = ANA_anarchist_planning
+		icon = military_women
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_connect_the_new_generals
+		}
+		x = 41
+		y = 6
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.03 }
+				recalculate_party = yes
+			}	
+			add_manpower = -2500
+			add_political_power = 25
+			add_war_support = 0.03
+			custom_effect_tooltip = ANA_RISE_3
+		}
+	}
+	focus = {
+		id = ANA_formalized_war_system
+		icon = small_arms5
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_appoint_new_generals_to_command
+		}
+		prerequisite = {
+			focus = ANA_keep_talks_with_military_groups
+		}
+		prerequisite = {
+			focus = ANA_anarchist_planning
+		}
+		x = 38
+		y = 7
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+		    add_ideas = defence_07
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.03 }
+				recalculate_party = yes
+			}	
+			add_war_support = 0.03
+			custom_effect_tooltip = ANA_RISE_3
+		}
+	}
+	focus = {
+		id = ANA_termic_water_trade
+		icon = hydroelectric2
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_termic_waters
+		}
+		x = 59
+		y = 14
+
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = termic_waters_large
+			remove_idea = termic_waters
+			}
+		}
+	}
+	focus = {
+		id = ANA_control_the_electiricity
+		icon = electricity
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_wait_for_the_results
+		}
+		x = 82
+		y = 1
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_ideas = electiricy_controlled
+		}
+	}
+	focus = {
+		id = ANA_prevent_the_rigging
+		icon = elections_rigged
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_wait_for_the_results
+		}
+		x = 84
+		y = 1
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = ANA_start_of_congress_elections
+		icon = election2
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_prevent_the_rigging
+		}
+		prerequisite = {
+			focus = ANA_control_the_electiricity
+		}
+		x = 83
+		y = 2
+
+		available = {
+neutrality_Neutral_social_are_in_power = yes	
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 125
+		}
+	}
+	focus = {
+		id = ANA_victory_for_green_anarchists
+		icon = anarchist_green
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_start_of_congress_elections
+		}
+        mutually_exclusive = { 
+			focus = ANA_victory_of_anarcho_socialists
+			focus = ANA_anarcho_capitalist_victory
+		}
+		x = 70
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.02
+				set_cosmetic_tag = ANARCH_GREEN
+			custom_effect_tooltip = ANA_greens_3
+			hidden_effect = {
+			create_country_leader = {
+				name = "Anarchist Emergency Council"
+				picture = "anarcho_neutrality.dds"
+				ideology = Neutral_social
+				traits = {
+				neutrality_neutral_Social	
+				} }
+	
+				add_to_variable = { party_pop_array^17 = 0.03 }
+				recalculate_party = yes
+			}	
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = ANA_victory_of_anarcho_socialists
+		icon = anarchist_reds
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_start_of_congress_elections
+		}
+        mutually_exclusive = { 
+			focus = ANA_victory_for_green_anarchists
+			focus = ANA_anarcho_capitalist_victory
+		}
+		x = 83
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.02
+			set_cosmetic_tag = ANARCH_COM
+			custom_effect_tooltip = ANA_socialists_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^19 = 0.03 }
+				recalculate_party = yes
+			}	
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = ANA_destroy_the_capitalists
+		icon = market_socialism
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_victory_of_anarcho_socialists
+		}
+		x = 83
+		y = 4
+
+		completion_reward = {
+			add_ideas = capitalism_looting
+		}
+	}
+	focus = {
+		id = ANA_cleanize_pro_americans
+		icon = USA_political_revolution
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_destroy_the_capitalists
+		}
+		x = 82
+		y = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			USA = {
+			add_stability = -0.03
+			add_political_power = -75
+			}
+			custom_effect_tooltip = ANA_socialists_5
+			hidden_effect = {
+				add_to_variable = { party_pop_array^19 = 0.05 }
+				recalculate_party = yes
+			}	
+		}
+	}
+	focus = {
+		id = ANA_marxs_manifesto
+		icon = left_socialism
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_destroy_the_capitalists
+		}
+		x = 84
+		y = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			custom_effect_tooltip = ANA_socialists_5
+			hidden_effect = {
+				add_to_variable = { party_pop_array^19 = 0.05 }
+				recalculate_party = yes
+			}	
+		}
+	}
+	focus = {
+		id = ANA_create_a_socialist_front
+		icon = communism11
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_marxs_manifesto
+		}
+		prerequisite = {
+			focus = ANA_cleanize_pro_americans
+		}
+		x = 83
+		y = 6
+
+		available = {
+				neutrality_Neutral_communism_are_in_power = yes
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			create_country_leader = {
+				name = "Anarcho Communists"
+				picture = "anarcho_commune.dds"
+				ideology = Neutral_Communism
+				traits = {
+					neutrality_Neutral_Communism
+				}
+			}
+			add_ideas = create_a_socialist_front
+		}
+	}
+	focus = {
+		id = ANA_eliminate_rich
+		icon = communism4
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_create_a_socialist_front
+		}
+		x = 81
+		y = 7
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			add_stability = -0.05
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_prison_the_rich
+		icon = money_on_fire
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_eliminate_rich
+		}
+		x = 80
+		y = 8
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			add_stability = -0.05
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_increase_the_income_of_low_and_medium
+		icon = money
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_create_a_socialist_front
+		}
+		x = 83
+		y = 7
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			add_stability = -0.05
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_push_work_propagandas
+		icon = workers_party
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_increase_the_income_of_low_and_medium
+		}
+		x = 83
+		y = 8
+
+
+		completion_reward = {
+			add_ideas = work_propaganda
+		}
+	}
+	focus = {
+		id = ANA_create_labour_culture
+		icon = workers_of_iberia
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_create_a_socialist_front
+		}
+		x = 85
+		y = 7
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = labour_culture
+		}
+	}
+	focus = {
+		id = ANA_let_child_labour_live
+		icon = Generic_Child_Soldiers
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_create_labour_culture
+		}
+		x = 86
+		y = 8
+
+		completion_reward = {
+			add_ideas = child_labour_culture
+		}
+	}
+	focus = {
+		id = ANA_use_the_effects_of_collevization_society
+		icon = worker_paradise
+		cost = 15
+		prerequisite = {
+			focus = ANA_push_work_propagandas
+		}
+		prerequisite = {
+			focus = ANA_prison_the_rich
+		}
+		prerequisite = {
+			focus = ANA_let_child_labour_live
+		}
+		x = 83
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = anarchist_collectivization_systematic_culture
+			remove_idea = anarchist_collectivization_systematic
+			}
+		}
+	}
+	focus = {
+		id = ANA_working_teams
+		icon = industry_communism
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_use_the_effects_of_collevization_society
+		}
+		x = 84
+		y = 10
+
+		completion_reward = {
+		    add_ideas = working_teams_working
+		}
+	}
+	focus = {
+		id = ANA_anarcho_capitalist_victory
+		icon = anarchist_capitalist
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_start_of_congress_elections
+		}
+        mutually_exclusive = { 
+			focus = ANA_victory_of_anarcho_socialists
+			focus = ANA_victory_for_green_anarchists
+		}
+		x = 95
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.02
+						set_cosmetic_tag = ANARCH_CAP
+			custom_effect_tooltip = ANA_capitalists_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16 = 0.03 }
+				recalculate_party = yes
+			}	
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = ANA_the_money_law
+		icon = maritime_trade
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_anarcho_capitalist_victory
+		}
+		x = 95
+		y = 4
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = the_money_law
+		}
+	}
+	focus = {
+		id = ANA_kill_the_commies
+		icon = ban_communism
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_the_money_law
+		}
+		x = 94
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = -0.05
+			custom_effect_tooltip = ANA_capitalists_5
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16 = 0.05 }
+				recalculate_party = yes
+			}	
+		}
+	}
+	focus = {
+		id = ANA_anti_communist_law
+		icon = anti_communism2
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_the_money_law
+		}
+		x = 96
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = -0.05
+			custom_effect_tooltip = ANA_capitalists_5
+			hidden_effect = {
+				add_to_variable = { party_pop_array^16 = 0.05 }
+				recalculate_party = yes
+			}	
+		}
+	}
+	focus = {
+		id = ANA_reorganize_the_sitution
+		icon = organize_wreckers
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_anti_communist_law
+		}
+		prerequisite = {
+			focus = ANA_kill_the_commies
+		}
+		x = 95
+		y = 6
+
+
+		available = {
+		NOT = {
+	neutrality_Neutral_communism_are_in_power = yes	
+neutrality_Neutral_green_are_in_power = yes
+neutrality_Neutral_social_are_in_power = yes	
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			create_country_leader = {
+				name = "Anarcho Capitalists"
+				picture = "anarcho_cap.dds"
+				ideology = Neutral_Libertarian
+				traits = {
+					neutral_Neutral_Libertarian
+				}
+			}
+			add_stability = 0.15
+			custom_effect_tooltip = REORGANIZED_SITUATION_ANA
+		}
+	}
+	focus = {
+		id = ANA_create_anarchist_units
+		icon = border_conflict_bunker
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_start_anarchist_militarization
+		}
+		x = 34
+		y = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.03 }
+				recalculate_party = yes
+			}	
+			custom_effect_tooltip = ANA_RISE_2
+			add_political_power = 100
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = ANA_istanbul_anarchist_group
+		icon = Generic_Crouched_Soldier
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_create_anarchist_units
+		}
+		x = 31
+		y = 6
+
+
+        available = {
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.01 }
+				recalculate_party = yes
+			}	
+			add_manpower = -10000
+			add_political_power = -75
+			add_war_support = 0.02
+			custom_effect_tooltip = ANA_RISE_1
+			custom_effect_tooltip = ANA_organizationing
+		}
+	}
+	focus = {
+		id = ANA_izmir_anarchist_group
+		icon = Generic_Partisan
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_create_anarchist_units
+		}
+		x = 33
+		y = 6
+
+
+        available = {
+		controls_state = 156
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.01 }
+				recalculate_party = yes
+			}	
+			add_manpower = -10000
+			add_political_power = -75
+			add_war_support = 0.02
+			custom_effect_tooltip = ANA_RISE_1
+			custom_effect_tooltip = ANA_organizationing_2
+		}
+	}
+	focus = {
+		id = ANA_ankara_anarchist_group
+		icon = focus_generic_women_in_military
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_create_anarchist_units
+		}
+		x = 35
+		y = 6
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.01 }
+				recalculate_party = yes
+			}	
+			add_manpower = -10000
+			add_political_power = -75
+			add_war_support = 0.02
+			custom_effect_tooltip = ANA_RISE_1
+			custom_effect_tooltip = ANA_organizationing_3
+		}
+	}
+	focus = {
+		id = ANA_formalize_western_anarchist_group
+		icon = NATO_squad_doctrine
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_ankara_anarchist_group
+		}
+		prerequisite = {
+			focus = ANA_izmir_anarchist_group
+		}
+		prerequisite = {
+			focus = ANA_istanbul_anarchist_group
+		}
+		x = 34
+		y = 7
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.05 }
+				recalculate_party = yes
+			}	
+			add_manpower = -50000
+			add_political_power = -125
+			add_war_support = 0.05
+			custom_effect_tooltip = ANA_RISE_5
+		}
+	}
+	focus = {
+		id = ANA_start_the_anarchist_revolution
+		icon = crush_the_revolution
+		cost = 15,00
+		prerequisite = {
+			focus = ANA_formalize_western_anarchist_group
+		}
+		prerequisite = {
+			focus = ANA_formalized_war_system
+		}
+		x = 36
+		y = 8
+
+
+		completion_reward = {
+		   country_event = TurkeyX.1
+	hidden_effect = {
+    news_event = Turkey_news.32
+				}
+		}
+	}
+	focus = {
+		id = ANA_control_the_highways
+		icon = infrastructure1
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_start_the_anarchist_revolution
+		}
+		x = 35
+		y = 9
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+		completion_reward = {
+			add_war_support = 0.03
+		   KTU = {
+		   add_stability = -0.05
+		   add_war_support = -0.07
+		   add_political_power = -75
+		   }
+		}
+	}
+	focus = {
+		id = ANA_spirit_of_rebellion
+		icon = reactionary
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_start_the_anarchist_revolution
+		}
+		x = 37
+		y = 9
+
+
+
+		completion_reward = {
+		    add_ideas = spirit_of_rebellion
+		}
+	}
+	focus = {
+		id = ANA_positivism
+		icon = internationalism
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_spirit_of_rebellion
+		}
+		prerequisite = {
+			focus = ANA_control_the_highways
+		}
+		x = 36
+		y = 10
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = anarchist_positivism
+		}
+	}
+	focus = {
+		id = ANA_the_mother_committee
+		icon = parliament_box
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_positivism
+		}
+		x = 36
+		y = 11
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = motherland_committee
+		}
+	}
+	focus = {
+		id = ANA_guerilla_tactics
+		icon = soldiers2
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_positivism
+		}
+		x = 34
+		y = 11
+
+
+		completion_reward = {
+		    add_ideas = guerilla_tactics
+		}
+	}
+	focus = {
+		id = ANA_a_new_kind_of_modern_movement
+		icon = research3
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_positivism
+		}
+		x = 38
+		y = 11
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_ideas = a_new_kind_of_modern_movement
+		}
+	}
+	focus = {
+		id = ANA_victory_of_anarchism
+		icon = USA_fight_nationalistic_factions
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_a_new_kind_of_modern_movement
+		}
+		prerequisite = {
+			focus = ANA_the_mother_committee
+		}
+		prerequisite = {
+			focus = ANA_guerilla_tactics
+		}
+		x = 36
+		y = 12
+
+        available = {
+		NOT = {
+		KTU = {
+		country_exists = yes
+		}
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ANA_anarchist_repairing
+		icon = industry4
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_victory_of_anarchism
+		}
+		x = 35
+		y = 13
+
+
+		completion_reward = {
+		    add_ideas = anarchist_repairing_stuff
+		}
+	}
+	focus = {
+		id = ANA_workout_propagandas
+		icon = construction2
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_victory_of_anarchism
+		}
+		x = 37
+		y = 13
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = workout_propaganda
+		}
+	}
+	focus = {
+		id = ANA_start_the_working_engine
+		icon = red_industry
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_workout_propagandas
+		}
+		prerequisite = {
+			focus = ANA_anarchist_repairing
+		}
+		x = 36
+		y = 14
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+		    add_ideas = anarchist_working_engine
+swap_ideas = { 
+  remove_idea = turkish_2001_crisis
+  add_idea = reforms_for_2001_crisis
+}
+		}
+	}
+	focus = {
+		id = ANA_the_commitee_elections
+		icon = anarchist_pacifists
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_prevent_the_second_blood
+		}
+		x = 36
+		y = 24
+
+
+        available = {
+		has_war = no
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_stability = 0.03	
+		country_event = MD4_election_campaign.0
+		}
+	}
+	focus = {
+		id = ANA_anarchist_collectivization
+		icon = USA_political_revolution
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_anarchist_economy
+		}
+		x = 29
+		y = 16
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_ideas = anarchist_collectivization
+		}
+	}
+	focus = {
+		id = ANA_anarchist_economy
+		icon = industry_communism
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_start_the_working_engine
+		}
+		x = 29
+		y = 15
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+		    add_political_power = 125
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 2
+				category = CAT_industry
+			}
+			newline = yes
+			add_tech_bonus = {
+				name = CAT_Civilian
+				bonus = 0.5
+				uses = 2
+				category = CAT_Civilian
+			}
+			newline = yes
+			add_tech_bonus = {
+				name = CAT_agriculture_tech
+				bonus = 0.5
+				uses = 2
+				category = CAT_agriculture_tech
+			}
+
+		}
+	}
+	focus = {
+		id = ANA_declare_the_ineffective_regime
+		icon = blr_soviet_academy_of_sciences
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_start_the_working_engine
+		}
+		x = 36
+		y = 15
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = 0.05
+		swap_ideas = {
+		add_idea = TUR_legacy_of_ataturk_defiled
+		remove_idea = TUR_legacy_of_ataturk_preserved
+		}
+swap_ideas = { 
+  remove_idea = reforms_for_2001_crisis
+  add_idea = reformss_for_2001_crisis
+}
+		}
+	}
+	focus = {
+		id = ANA_declare_neutrality
+		icon = neutrality
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_declare_the_ineffective_regime
+		}
+		x = 35
+		y = 16
+
+
+		completion_reward = {
+		    add_ideas = anarcho_neutrality
+		}
+	}
+	focus = {
+		id = ANA_building_a_new_society
+		icon = Generic_Communist_Propaganda02
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_declare_neutrality
+		}
+		prerequisite = {
+			focus = ANA_brain_cleaning
+		}
+		x = 36
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = a_new_society_of_anarchism
+		}
+	}
+	focus = {
+		id = ANA_brain_cleaning
+		icon = science2
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_declare_the_ineffective_regime
+		}
+		x = 37
+		y = 16
+
+
+		completion_reward = {
+		    add_ideas = brain_cleaning
+		}
+	}
+	focus = {
+		id = ANA_science
+		icon = tech_sharing
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_start_the_working_engine
+		}
+		x = 43
+		y = 15
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_political_power = 125
+		}
+	}
+	focus = {
+		id = ANA_stabilize_the_locals
+		icon = left_socialism
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_building_a_new_society
+		}
+		x = 34
+		y = 18
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		   add_stability = 0.05
+		   custom_effect_tooltip = local_happiness_description
+	}   }
+	focus = {
+		id = ANA_mother_state
+		icon = women_issues
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_building_a_new_society
+		}
+		x = 36
+		y = 18
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		   add_stability = 0.05
+		   custom_effect_tooltip = mother_state_description
+	}   }
+	focus = {
+		id = ANA_encourage_happiness
+		icon = family
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_building_a_new_society
+		}
+		x = 38
+		y = 18
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		   add_stability = 0.05
+		   custom_effect_tooltip = encouraged_happiness_description
+	}   }
+	focus = {
+		id = ANA_anarcho_neutralism
+		icon = stability
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_encourage_happiness
+		}
+		prerequisite = {
+			focus = ANA_mother_state
+		}
+		prerequisite = {
+			focus = ANA_stabilize_the_locals
+		}
+		x = 36
+		y = 19
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = 0.02
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = ANA_fully_removal_of_bureocracy
+		icon = diplomacy
+		cost = 5
+		prerequisite = {
+			focus = ANA_anarcho_neutralism
+		}
+		x = 36
+		y = 20
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = -0.07
+			custom_effect_tooltip = bureocracratic_removal
+		}
+	}
+	focus = {
+		id = ANA_respective_anarchism
+		icon = accept_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_maintain_tores
+		}
+		prerequisite = {
+			focus = ANA_fully_removal_of_bureocracy
+		}
+		x = 36
+		y = 21
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = 0.1
+		}
+	}
+	focus = {
+		id = ANA_torchbearers_of_the_country
+		icon = torchbearers_of_tomorrow
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_science
+		}
+		x = 43
+		y = 16
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_ideas = torchbearers_of_state
+		}
+	}
+	focus = {
+		id = ANA_create_the_university_of_anarchism
+		icon = continuous_research
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_torchbearers_of_the_country
+		}
+		x = 42
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_research_slot = 1
+	}   }
+	focus = {
+		id = ANA_disband_systematic_education
+		icon = education_reform
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_torchbearers_of_the_country
+		}
+		x = 44
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_ideas = edu_01
+	}   }
+	focus = {
+		id = ANA_free_education_free_land
+		icon = land_reform
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_disband_systematic_education
+		}
+		prerequisite = {
+			focus = ANA_create_the_university_of_anarchism
+		}
+		x = 43
+		y = 18
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_ideas = free_education_free_land
+	}   }
+	focus = {
+		id = ANA_protect_academies
+		icon = BLR_National_Library
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_create_the_university_of_anarchism
+		}
+		x = 41
+		y = 18
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_ideas = protect_academies
+	}   }
+	focus = {
+		id = ANA_create_hacker_group
+		icon = radar
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_free_education_free_land
+		}
+		prerequisite = {
+			focus = ANA_protect_academies
+		}
+		prerequisite = {
+			focus = ANA_wanted_education
+		}
+		x = 43
+		y = 19
+
+
+		completion_reward = {
+		    add_ideas = a_hacker_group
+	}   }
+	focus = {
+		id = ANA_wanted_education
+		icon = radar2
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_disband_systematic_education
+		}
+		x = 45
+		y = 18
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_ideas = education_WANTED
+	}   }
+	focus = {
+		id = ANA_appoint_technicans
+		icon = walfare_state
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_anarchist_collectivization
+		}
+		x = 30
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_ideas = appoint_technicans
+		}
+	}
+	focus = {
+		id = ANA_divided_construction_plans
+		icon = industry_communist2
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_appoint_technicans
+		}
+		prerequisite = {
+			focus = ANA_disband_the_national_money
+		}
+		x = 29
+		y = 18
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_ideas = divided_construction
+		}
+	}
+	focus = {
+		id = ANA_denounce_state_interventionism
+		icon = two_language_state
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_appoint_technicans
+		}
+		x = 31
+		y = 18
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+		    add_war_support = -0.07
+			custom_effect_tooltip = denounce_interventionism_job_def
+	}   }
+	focus = {
+		id = ANA_disband_the_national_money
+		icon = money_on_fire
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_anarchist_collectivization
+		}
+		x = 28
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+		   add_stability = -0.03
+  			subtract_from_variable = { treasury = -100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+	}   }
+	focus = {
+		id = ANA_create_elective_systems
+		icon = elections_rigged
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_respective_anarchism
+		}
+		prerequisite = {
+			focus = ANA_systematize_the_collectivization
+		}
+		x = 35
+		y = 22
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		   add_stability = 0.03
+		   add_political_power = 75
+	}   }
+	focus = {
+		id = ANA_peoples_money_peoples_job
+		icon = chinese_licenses
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_disband_the_national_money
+		}
+		x = 27
+		y = 18
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = 0.07
+			custom_effect_tooltip = peoples_money_job_def
+	}   }
+	focus = {
+		id = ANA_silence_of_construction
+		icon = Focus_Shut_the_Fuck_Up
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_denounce_state_interventionism
+		}
+		prerequisite = {
+			focus = ANA_divided_construction_plans
+		}
+		prerequisite = {
+			focus = ANA_peoples_money_peoples_job
+		}
+		x = 29
+		y = 19
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = plans_of_construction
+			remove_idea = divided_construction
+			}
+		}
+	}
+	focus = {
+		id = ANA_anarchist_born_economy
+		icon = black_market
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_silence_of_construction
+		}
+		x = 30
+		y = 20
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+		    add_ideas = anarchist_born_economy
+		}
+	}
+	focus = {
+		id = ANA_delete_the_consumer_goods
+		icon = Focus_Down_in_Flames
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_silence_of_construction
+		}
+		x = 28
+		y = 20
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+		    add_ideas = consumer_goods_lowering_for_anarchism
+		}
+	}
+	focus = {
+		id = ANA_systematize_the_collectivization
+		icon = mining_truck
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_anarchist_born_economy
+		}
+		prerequisite = {
+			focus = ANA_delete_the_consumer_goods
+		}
+		x = 29
+		y = 21
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = anarchist_collectivization_systematic
+			remove_idea = anarchist_collectivization
+			}
+		}
+	}
+	focus = {
+		id = ANA_different_kind_of_elections
+		icon = election3
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_respective_anarchism
+		}
+		prerequisite = {
+			focus = ANA_personel_innovationism
+		}
+		x = 37
+		y = 22
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		   add_stability = 0.05
+	}   }
+	focus = {
+		id = ANA_prevent_the_second_blood
+		icon = bloody_purge
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_create_elective_systems
+		}
+		prerequisite = {
+			focus = ANA_different_kind_of_elections
+		}
+		x = 36
+		y = 23
+
+
+		completion_reward = {
+		   add_ideas = blooded_eyes
+					custom_effect_tooltip = PRESS_HAS_CONTROLLED
+				set_global_flag = PRESS_HAS_MANAGED
+set_global_flag = DISABLE_WAR_SYSTEM_PAR
+custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU			
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+}
+	}   }
+	focus = {
+		id = ANA_coding_classes
+		icon = cryptography
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_create_hacker_group
+		}
+		x = 42
+		y = 20
+
+
+		completion_reward = {
+		    add_ideas = coding_classes
+		}
+	}
+	focus = {
+		id = ANA_AI_technologies
+		icon = examine_foreign_science
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_create_hacker_group
+		}
+		x = 44
+		y = 20
+
+
+		completion_reward = {
+		    add_ideas = AI_technologies
+		}
+	}
+	focus = {
+		id = ANA_personel_innovationism
+		icon = electric_car
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_AI_technologies
+		}
+		prerequisite = {
+			focus = ANA_coding_classes
+		}
+		x = 43
+		y = 21
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_ideas = personel_innovationalism
+		}
+	}
+	focus = {
+		id = ANA_embrace_the_new_system
+		icon = organizaciones_populares
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_victory_for_green_anarchists
+		}
+		x = 70
+		y = 4
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+		    add_stability = 0.05
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = ANA_green_act
+		icon = improve_relations_green
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_embrace_the_new_system
+		}
+		x = 69
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.02
+			custom_effect_tooltip = ANA_greens_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^17 = 0.03 }
+				recalculate_party = yes
+			}	
+		}
+	}
+	focus = {
+		id = ANA_green_propagandas
+		icon = BRA_reforest_amazon
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_embrace_the_new_system
+		}
+		x = 71
+		y = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = ANA_greens_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^17 = 0.03 }
+				recalculate_party = yes
+			}	
+		}
+	}
+	focus = {
+		id = ANA_long_live_the_modern_echologist_movement
+		icon = goal_JAP_environmentalism
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_green_propagandas
+		}
+		prerequisite = {
+			focus = ANA_green_act
+		}
+		x = 70
+		y = 6
+
+		available = {
+				neutrality_Neutral_green_are_in_power = yes
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_ideas = modern_echologist_movement
+			create_country_leader = {
+				name = "Anarcho Greens"
+				picture = "anarcho_greens.dds"
+				ideology = Neutral_green
+				traits = {
+					neutral_Neutral_green
+				}
+			}			
+			custom_effect_tooltip = ANA_greens_1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^17 = 0.01 }
+				recalculate_party = yes
+			}	
+		}
+	}
+	focus = {
+		id = ANA_get_support_of_scientists
+		icon = research
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_long_live_the_modern_echologist_movement
+		}
+		x = 68
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_ideas = support_from_scientists	
+		}
+	}
+	focus = {
+		id = ANA_get_support_of_academics
+		icon = goal_JAP_protect_science
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_long_live_the_modern_echologist_movement
+		}
+		x = 70
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_ideas = support_from_academicians	
+		}
+	}
+	focus = {
+		id = ANA_normalize_with_the_greenpeace
+		icon = green_projects
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_get_support_of_academics
+		}
+		prerequisite = {
+			focus = ANA_get_support_of_scientists
+		}
+		prerequisite = {
+			focus = ANA_hunt_the_richs_money
+		}
+		x = 70
+		y = 8
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = ANA_greens_2
+			hidden_effect = {
+				add_to_variable = { party_pop_array^17 = 0.02 }
+				recalculate_party = yes
+			}	
+		}
+	}
+	focus = {
+		id = ANA_hunt_the_richs_money
+		icon = coins
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_long_live_the_modern_echologist_movement
+		}
+		x = 72
+		y = 7
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			add_stability = -0.02
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_plant_some_trees
+		icon = lumber_industry
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_normalize_with_the_greenpeace
+		}
+		x = 70
+		y = 9
+
+
+		completion_reward = {
+			add_ideas = planted_trees
+		}
+	}
+	focus = {
+		id = ANA_create_sanction_community
+		icon = embargo
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_normalize_with_the_greenpeace
+		}
+		x = 68
+		y = 9
+
+
+		completion_reward = {
+			add_ideas = sanction_community_of_greens
+		}
+	}
+	focus = {
+		id = ANA_worldwide_propaganda
+		icon = global_community
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_normalize_with_the_greenpeace
+		}
+		x = 72
+		y = 9
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = ANA_greens_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^17 = 0.03 }
+				recalculate_party = yes
+			}	
+		}
+	}
+	focus = {
+		id = ANA_strong_in_political_fields
+		icon = goal_generic_support_progressive
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_worldwide_propaganda
+		}
+		prerequisite = {
+			focus = ANA_plant_some_trees
+		}
+		prerequisite = {
+			focus = ANA_create_sanction_community
+		}
+		x = 70
+		y = 10
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = ANA_stop_globalization_folder
+		icon = global_falangism
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_strong_in_political_fields
+		}
+		x = 69
+		y = 11
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.03
+			add_ideas = semi_consumption_economy
+		}
+	}
+	focus = {
+		id = ANA_blame_USA_against_wall_street
+		icon = USA_green_party
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_strong_in_political_fields
+		}
+		x = 71
+		y = 11
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.05
+			USA = {
+			add_stability = -0.07
+			add_ideas = recession 
+			}
+		}
+	}
+	focus = {
+		id = ANA_start_the_country_echologies
+		icon = enviroment_tax
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_focus_on_state
+		}
+		x = 62
+		y = 12
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = ANA_greens_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^17 = 0.03 }
+				recalculate_party = yes
+			}	
+		}
+	}
+	focus = {
+		id = ANA_windmills
+		icon = windmills
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_start_the_country_echologies
+		}
+		x = 62
+		y = 13
+
+
+		completion_reward = {
+			add_ideas = windmills
+			random_owned_state = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+			}
+		}
+	}
+	focus = {
+		id = ANA_hydroelectiricty
+		icon = water_dam
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_start_the_country_echologies
+		}
+		x = 64
+		y = 13
+
+
+		completion_reward = {
+			add_ideas = hydroelectiricty
+				random_owned_state = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+			}
+		}
+	}
+	focus = {
+		id = ANA_alliance_with_scientists
+		icon = scientific_exchange
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_get_support_of_scientists
+		}
+		x = 67
+		y = 8
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = alliance_with_scientists
+			remove_idea = support_from_scientists
+			}
+		}
+	}
+	focus = {
+		id = ANA_fully_destroy_the_up_wages
+		icon = money
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_hunt_the_richs_money
+		}
+		x = 73
+		y = 8
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			add_stability = 0.02
+			add_political_power = -175
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_became_the_leader_of_un
+		icon = align_to_united_nations
+		cost = 15,00
+		prerequisite = {
+			focus = ANA_cooperae_with_FDO
+		}
+		prerequisite = {
+			focus = ANA_cooperate_with_WFP
+		}
+		prerequisite = {
+			focus = ANA_cooperate_with_IFAD
+		}
+		x = 70
+		y = 14
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		        add_ideas = p5_member
+			every_country = {
+        country_event = TurkeyF.165
+		}  
+		}
+	}
+	focus = {
+		id = ANA_unesco_state
+		icon = united_nations
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_blame_USA_against_wall_street
+		}
+		prerequisite = {
+			focus = ANA_stop_globalization_folder
+		}
+		x = 70
+		y = 12
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = ANA_cooperae_with_FDO
+		icon = united_nations
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_unesco_state
+		}
+		x = 68
+		y = 13
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = action_of_FDO
+		}
+	}
+	focus = {
+		id = ANA_cooperate_with_IFAD
+		icon = IFAD
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_unesco_state
+		}
+		x = 70
+		y = 13
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = action_of_IFAD
+		}
+	}
+	focus = {
+		id = ANA_cooperate_with_WFP
+		icon = WFP
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_unesco_state
+		}
+		x = 72
+		y = 13
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = action_of_WFP
+		}
+	}
+	focus = {
+		id = ANA_sun_energy
+		icon = generic_solar
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_termic_water_trade
+		}
+		prerequisite = {
+			focus = ANA_bird_habitat_zones
+		}
+		prerequisite = {
+			focus = ANA_wind_mill_zones
+		}
+		prerequisite = {
+			focus = ANA_fish_act
+		}
+		x = 63
+		y = 15
+
+
+		completion_reward = {
+		    add_ideas = the_energy_of_sun
+			random_owned_state = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+			}
+		}
+	}
+	focus = {
+		id = ANA_deindustrialization
+		icon = modern_refinery_industry
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_focus_on_state
+		}
+		x = 58
+		y = 12
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		     add_timed_idea = { idea = deindustriaization_program  days = 365 }
+		}
+	}
+	focus = {
+		id = ANA_focus_on_state
+		icon = eco_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_strong_in_political_fields
+		}
+		x = 60
+		y = 11
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = ANA_fish_act
+		icon = Canned_Fish
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_hydroelectiricty
+		}
+		x = 65
+		y = 14
+
+		completion_reward = {
+			add_ideas = fishing_sites
+		}
+	}
+	focus = {
+		id = ANA_destroy_kaz_daglari_action
+		icon = a_land_of_mountains
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_deindustrialization
+		}
+		x = 56
+		y = 13
+
+
+        available = {
+		controls_state = 161
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_stability = 0.03
+			161 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = -1
+				} }
+			161 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = -1
+				} }
+			161 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = -1
+				} }
+		} } 
+	focus = {
+		id = ANA_deindustrialize_adana
+		icon = war2_green
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_deindustrialization
+		}
+		prerequisite = {
+			focus = ANA_start_the_country_echologies
+		}
+		x = 58
+		y = 13
+
+
+        available = {
+		controls_state = 161
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_stability = 0.03
+			161 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				} }
+			161 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				} }
+			161 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				} }
+			161 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				} }
+		} } 
+	focus = {
+		id = ANA_bird_habitat_zones
+		icon = protect_parks
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_windmills
+		}
+		prerequisite = {
+			focus = ANA_hydroelectiricty
+		}
+		prerequisite = {
+			focus = ANA_termic_waters
+		}
+		x = 61
+		y = 14
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ANA_support_agriculture_in_adana
+		icon = agriculture2
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_destroy_the_active_pollution
+		}
+		prerequisite = {
+			focus = ANA_expand_village_culture
+		}
+		prerequisite = {
+			focus = ANA_termic_water_trade
+		}
+		x = 57
+		y = 15
+
+
+		completion_reward = {
+		   add_ideas = agriculture_increase_1
+		}
+	}
+	focus = {
+		id = ANA_destroy_the_active_pollution
+		icon = carbon_neutral
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_deindustrialize_adana
+		}
+		prerequisite = {
+			focus = ANA_termic_waters
+		}
+		x = 57
+		y = 14
+
+
+        available = {
+		controls_state = 161
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.05
+			161 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				} }
+			161 = { 	
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				} }
+			161 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				} }
+			161 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				} }
+		} } 
+	focus = {
+		id = ANA_expand_village_culture
+		icon = tree_focus
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_destroy_kaz_daglari_action
+		}
+		prerequisite = {
+			focus = ANA_deindustrialize_adana
+		}
+		x = 55
+		y = 14
+
+
+
+        available = {
+		controls_state = 161
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = -0.03
+			161 = { 
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = -1
+				} }
+			161 = { 
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = -1
+				} }
+			161 = { 
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = -1
+				} }
+		} } 
+	focus = {
+		id = ANA_wind_mill_zones
+		icon = windmill
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_windmills
+		}
+		x = 63
+		y = 14
+
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = windmills_place
+			remove_idea = windmills
+			}
+			random_owned_state = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery 
+					level = 1
+					instant_build = yes
+				}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+			}
+		}
+	}
+	focus = {
+		id = ANA_sun_energy_places
+		icon = BRA_renewable_energy_funds
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_sun_energy
+		}
+		x = 62
+		y = 16
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = the_energy_of_sun_2
+			remove_idea = the_energy_of_sun
+			}
+		}
+	}
+	focus = {
+		id = ANA_antalya_energy_fields
+		icon = oil_trade
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_sun_energy
+		}
+		x = 64
+		y = 16
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 13
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 17
+				}
+			}
+	  			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt	
+}   }
+	focus = {
+		id = ANA_agricultural_places
+		icon = house
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_support_agriculture_in_adana
+		}
+		x = 56
+		y = 16
+
+
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = agriculture_increase_2
+			remove_idea = agriculture_increase_1
+			}
+		}
+	}
+	focus = {
+		id = ANA_animals_law
+		icon = eaf_elephant
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_support_agriculture_in_adana
+		}
+		x = 58
+		y = 16
+
+		completion_reward = {
+		   add_ideas = protection_for_animals
+		}
+	}
+	focus = {
+		id = ANA_ban_coal
+		icon = coal_mining
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_animals_law
+		}
+		prerequisite = {
+			focus = ANA_agricultural_places
+		}
+		x = 57
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_ideas = coal_ban
+		}
+	}
+	focus = {
+		id = ANA_save_the_water
+		icon = water_conservation
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_sun_energy_places
+		}
+		prerequisite = {
+			focus = ANA_antalya_energy_fields
+		}
+		x = 63
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		   add_ideas = healthy_water
+		}
+	}
+	focus = {
+		id = ANA_ban_fossil_oil
+		icon = oil_sands
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_ban_coal
+		}
+		x = 58
+		y = 18
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = coal_and_oil_ban
+			remove_idea = coal_ban
+			}
+		}
+	}
+	focus = {
+		id = ANA_importance_to_carbon_levels
+		icon = oil_green
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_save_the_water
+		}
+		x = 62
+		y = 18
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ANA_renewable_state
+		icon = powerplant
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_ban_fossil_oil
+		}
+		prerequisite = {
+			focus = ANA_importance_to_carbon_levels
+		}
+		prerequisite = {
+			focus = ANA_charge_converting
+		}
+		x = 60
+		y = 19
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+	focus = {
+		id = ANA_ban_nuclear_power
+		icon = nuclear_science
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_bird_habitat_zones
+		}
+		prerequisite = {
+			focus = ANA_termic_water_trade
+		}
+		x = 60
+		y = 15
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = nuclear_energy_ban
+		}
+	}
+	focus = {
+		id = ANA_world_deserve_breath
+		icon = recycle_waste
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_ban_nuclear_power
+		}
+		x = 60
+		y = 16
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = nuclear_energy_ban_2
+			remove_idea = nuclear_energy_ban
+			}
+		}
+	}
+	focus = {
+		id = ANA_destroy_the_nukes
+		icon = nuclear_energy
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_world_deserve_breath
+		}
+		x = 60
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = nuclear_energy_ban_3
+			remove_idea = nuclear_energy_ban_2
+			}
+		}
+	}
+	focus = {
+		id = ANA_trash_act
+		icon = generic_machinery
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_focus_on_state
+		}
+		x = 60
+		y = 12
+
+
+		completion_reward = {
+			add_ideas = laws_of_bin
+		}
+	}
+	focus = {
+		id = ANA_charge_converting
+		icon = Eu_nuclear_power
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_destroy_the_nukes
+		}
+		x = 60
+		y = 18
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = nuclear_energy_ban_4
+			remove_idea = nuclear_energy_ban_3
+			}
+		}
+	}
+	focus = {
+		id = ANA_condemn_usa
+		icon = usa
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_became_the_leader_of_un
+		}
+		x = 69
+		y = 15
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        completion_reward = {
+		USA = {                   
+        country_event = TurkeyF.163
+		}  }
+	}
+	focus = {
+		id = ANA_condemn_china
+		icon = attack_china
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_became_the_leader_of_un
+		}
+		x = 71
+		y = 15
+
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }
+
+        completion_reward = {
+		CHI = {                   
+        country_event = TurkeyF.164
+		}  }
+	}
+	focus = {
+		id = ANA_blood_eyed_revenge
+		icon = bloody_purge
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_condemn_china
+		}
+		prerequisite = {
+			focus = ANA_condemn_usa
+		}
+		x = 70
+		y = 16
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+		   add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = ANA_collect_pro_ecologist_usa
+		icon = USA_glorify_the_military
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_condemn_usa
+		}
+		x = 68
+		y = 16
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+
+		completion_reward = {
+			USA = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			            USA = {
+						add_popularity = {
+							ideology = nationalist
+							popularity = 0.15
+						}	}
+		}
+	}
+	focus = {
+		id = ANA_collect_pro_ecologist_china
+		icon = trade_with_china
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_condemn_china
+		}
+		x = 72
+		y = 16
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }
+
+		completion_reward = {
+			CHI = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			            CHI = {
+						add_popularity = {
+							ideology = nationalist
+							popularity = 0.15
+						}	}
+		}
+	}
+	focus = {
+		id = ANA_invite_greta
+		icon = greta_proposal
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_collect_pro_ecologist_china
+		}
+		prerequisite = {
+			focus = ANA_blood_eyed_revenge
+		}
+		prerequisite = {
+			focus = ANA_collect_pro_ecologist_usa
+		}
+		x = 70
+		y = 17
+
+        completion_reward = {                
+        country_event = TurkeyF.166
+		}  
+	}
+	focus = {
+		id = ANA_the_ecologist_imperialism
+		icon = luso_tropicalism
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_protect_animals
+		}
+		prerequisite = {
+			focus = ANA_protect_humans
+		}
+		x = 70
+		y = 23
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		    add_ideas = ecoogical_imperialism
+		}
+	}
+	focus = {
+		id = ANA_armed_ecologists
+		icon = un_peace_keeping
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_invite_greta
+		}
+		x = 70
+		y = 18
+
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+
+		completion_reward = {
+        add_manpower = 100000
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}
+		}
+	}
+	focus = {
+		id = ANA_ecologist_tanks
+		icon = tank_t62
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_armed_ecologists
+		}
+		x = 70
+		y = 19
+
+		search_filters = {FOCUS_FILTER_EQUIPMENT}
+	
+		completion_reward = {
+		    add_ideas = ecologist_tanks
+		}
+	}
+	focus = {
+		id = ANA_invent_rock_cannon
+		icon = artillery2
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_ecologist_tanks
+		}
+		x = 70
+		y = 20
+
+		search_filters = {FOCUS_FILTER_EQUIPMENT}
+
+		completion_reward = {
+			swap_ideas = {
+		    add_idea = ecologist_tanks_buffed
+            remove_idea = ecologist_tanks
+			}
+		}
+	}
+	focus = {
+		id = ANA_ban_the_bombing_planes
+		icon = flying_tigers
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_armed_ecologists
+		}
+		x = 72
+		y = 19
+
+		search_filters = {FOCUS_FILTER_EQUIPMENT}
+
+		completion_reward = {
+		    add_ideas = banned_flying_wings
+		}
+	}
+	focus = {
+		id = ANA_invent_ecologist_weapons
+		icon = bombs3
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_armed_ecologists
+		}
+		x = 68
+		y = 19
+
+		search_filters = {FOCUS_FILTER_EQUIPMENT}
+
+		completion_reward = {
+		    add_ideas = ecologist_weapons
+		}
+	}
+	focus = {
+		id = ANA_the_water_planes
+		icon = escort_fighters
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_ban_the_bombing_planes
+		}
+		x = 73
+		y = 20
+		search_filters = {FOCUS_FILTER_EQUIPMENT}
+
+		completion_reward = {
+		    add_ideas = water_planes
+		}
+	}
+	focus = {
+		id = ANA_special_killing_forces
+		icon = M16
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_invent_ecologist_weapons
+		}
+		x = 67
+		y = 20
+
+		search_filters = {FOCUS_FILTER_EQUIPMENT}
+
+		completion_reward = {
+			swap_ideas = {
+		    add_idea = special_ecologist_armies
+            remove_idea = ecologist_weapons
+			}
+		}
+	}
+	focus = {
+		id = ANA_new_kind_of_war
+		icon = close_air_support
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_invent_rock_cannon
+		}
+		prerequisite = {
+			focus = ANA_the_water_planes
+		}
+		prerequisite = {
+			focus = ANA_special_killing_forces
+		}
+		x = 70
+		y = 21
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = ANA_protect_humans
+		icon = family
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_new_kind_of_war
+		}
+		x = 69
+		y = 22
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = protection_for_humans
+		}
+	}
+	focus = {
+		id = ANA_protect_animals
+		icon = eaf_giraffe
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_new_kind_of_war
+		}
+		x = 71
+		y = 22
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = protection_for_animals
+		}
+	}
+	focus = {
+		id = ANA_target_europe
+		icon = europe
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_the_ecologist_imperialism
+		}
+		x = 67
+		y = 24
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_political_power = 75
+			add_command_power = 5
+		}
+	}
+	focus = {
+		id = ANA_target_middle_east
+		icon = war_in_asia
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_the_ecologist_imperialism
+		}
+		x = 73
+		y = 24
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_political_power = 75
+			add_command_power = 5
+		}
+	}
+	focus = {
+		id = ANA_target_majors
+		icon = alliance_USA_CHI
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_clean_afganistan_and_pakistan
+		}
+		prerequisite = {
+			focus = ANA_climate_meetings
+		}
+		x = 70
+		y = 28
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_political_power = 125
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = ANA_attack_iran
+		icon = dominion_in_the_gulf
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_attack_fossil_reserves
+		}
+		x = 73
+		y = 26
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+		country_exists = PER
+		NOT = {
+		has_war_with = PER
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = PER
+    NOT = {
+	country_exists = PER
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = PER
+		}
+	} }
+	focus = {
+		id = ANA_attack_fossil_reserves
+		icon = oil_red
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_target_middle_east
+		}
+		x = 73
+		y = 25
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+	    add_war_support = 0.05
+		} } 
+	focus = {
+		id = ANA_attack_south_posititons
+		icon = South_Africa_ger
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_attack_fossil_reserves
+		}
+		x = 71
+		y = 26
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+
+        available = {
+		country_exists = SYR
+		NOT = {
+		has_war_with = SYR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SYR
+    NOT = {
+	country_exists = SYR
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = SYR
+		}
+	} }
+	focus = {
+		id = ANA_destroy_the_israel
+		icon = attack_israel
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_attack_fossil_reserves
+		}
+		x = 75
+		y = 26
+
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+		country_exists = ISR
+		NOT = {
+		has_war_with = ISR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ISR
+    NOT = {
+	country_exists = ISR
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = ISR
+		}
+	} }
+	focus = {
+		id = ANA_clean_afganistan_and_pakistan
+		icon = attack_pakistan2
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_destroy_the_israel
+		}
+		prerequisite = {
+			focus = ANA_attack_iran
+		}
+		prerequisite = {
+			focus = ANA_attack_south_posititons
+		}
+		x = 73
+		y = 27
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = AFG
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = PAK
+		}
+	} }
+	focus = {
+		id = ANA_call_europe_for_cease
+		icon = align_to_europe
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_target_europe
+		}
+		x = 66
+		y = 25
+
+search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		AUS = {
+        country_event = TurkeyF.167
+		}                         
+		BEL = {                   
+        country_event = TurkeyF.167
+		}                         
+		DEN = {                   
+        country_event = TurkeyF.167
+		}                         
+		ENG = {                   
+        country_event = TurkeyF.167
+		}                         
+		FIN = {                   
+        country_event = TurkeyF.167
+		}                         
+		FRA = {                   
+        country_event = TurkeyF.167
+		}                         
+		GER = {                   
+        country_event = TurkeyF.167
+		}                        
+		GRE = {                  
+        country_event = TurkeyF.167
+		}                        
+		HOL = {                  
+        country_event = TurkeyF.167
+		}                        
+		IRE = {                  
+        country_event = TurkeyF.167
+		}                        
+		ITA = {                  
+        country_event = TurkeyF.167
+		}                       
+		LUX = {                 
+        country_event = TurkeyF.167
+		}                       
+		POR = {                 
+        country_event = TurkeyF.167
+		}                        
+		SPR = {                  
+        country_event = TurkeyF.167
+		}                        
+		SWE = {                  
+        country_event = TurkeyF.167
+		}                         
+		BUL = {                   
+        country_event = TurkeyF.167
+		}                         
+		CRO = {                   
+        country_event = TurkeyF.167
+		}                         
+		CYP = {                   
+        country_event = TurkeyF.167
+		}                         
+		CZE = {                   
+        country_event = TurkeyF.167
+		}                         
+		EST = {                   
+        country_event = TurkeyF.167
+		}                         
+		HUN = {                   
+        country_event = TurkeyF.167
+		}                         
+		LAT = {                   
+        country_event = TurkeyF.167
+		}                         
+		LIT = {                   
+        country_event = TurkeyF.167
+		}                         
+		MLT = {                   
+        country_event = TurkeyF.167
+		}                         
+		POL = {                   
+        country_event = TurkeyF.167
+		}		                  
+		ROM = {                   
+        country_event = TurkeyF.167
+		}                         
+		SLO = {                   
+        country_event = TurkeyF.167
+		}                         
+		SLV = {                   
+        country_event = TurkeyF.167
+		} }
+	}
+	focus = {
+		id = ANA_peace_solution
+		icon = peace
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_target_europe
+		}
+		x = 68
+		y = 25
+
+search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_ideas = peace_solution
+		}
+	}
+	focus = {
+		id = ANA_join_european_union
+		icon = EU_TUR
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_peace_solution
+		}
+		prerequisite = {
+			focus = ANA_call_europe_for_cease
+		}
+		x = 67
+		y = 26
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = green_world_projection
+			add_ideas = EU_member
+
+		AUS = {
+        country_event = TurkeyF.170
+		}                         
+		BEL = {                   
+        country_event = TurkeyF.170
+		}                         
+		DEN = {                   
+        country_event = TurkeyF.170
+		}                         
+		ENG = {                   
+        country_event = TurkeyF.170
+		}                         
+		FIN = {                   
+        country_event = TurkeyF.170
+		}                         
+		FRA = {                   
+        country_event = TurkeyF.170
+		}                         
+		GER = {                   
+        country_event = TurkeyF.170
+		}                        
+		GRE = {                  
+        country_event = TurkeyF.170
+		}                        
+		HOL = {                  
+        country_event = TurkeyF.170
+		}                        
+		IRE = {                  
+        country_event = TurkeyF.170
+		}                        
+		ITA = {                  
+        country_event = TurkeyF.170
+		}                       
+		LUX = {                 
+        country_event = TurkeyF.170
+		}                       
+		POR = {                 
+        country_event = TurkeyF.170
+		}                        
+		SPR = {                  
+        country_event = TurkeyF.170
+		}                        
+		SWE = {                  
+        country_event = TurkeyF.170
+		}                         
+		BUL = {                   
+        country_event = TurkeyF.170
+		}                         
+		CRO = {                   
+        country_event = TurkeyF.170
+		}                         
+		CYP = {                   
+        country_event = TurkeyF.170
+		}                         
+		CZE = {                   
+        country_event = TurkeyF.170
+		}                         
+		EST = {                   
+        country_event = TurkeyF.170
+		}                         
+		HUN = {                   
+        country_event = TurkeyF.170
+		}                         
+		LAT = {                   
+        country_event = TurkeyF.170
+		}                         
+		LIT = {                   
+        country_event = TurkeyF.170
+		}                         
+		MLT = {                   
+        country_event = TurkeyF.170
+		}                         
+		POL = {                   
+        country_event = TurkeyF.170
+		}		                  
+		ROM = {                   
+        country_event = TurkeyF.170
+		}                         
+		SLO = {                   
+        country_event = TurkeyF.170
+		}                         
+		SLV = {                   
+        country_event = TurkeyF.170
+		} 
+		}
+	}
+	focus = {
+		id = ANA_climate_meetings
+		icon = social_democracy_industry
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_join_european_union
+		}
+		prerequisite = {
+			focus = ANA_peace_forever
+		}
+		prerequisite = {
+			focus = ANA_genius_europe
+		}
+		x = 67
+		y = 27
+
+search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			every_country = {
+        country_event = TurkeyF.168
+		}   }
+	}    
+	focus = {
+		id = ANA_call_europe_for_unification
+		icon = EU_reform
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_climate_meetings
+		}
+		x = 66
+		y = 28
+
+search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		AUS = {
+        country_event = TurkeyF.169
+		}                         
+		BEL = {                   
+        country_event = TurkeyF.169
+		}                         
+		DEN = {                   
+        country_event = TurkeyF.169
+		}                         
+		ENG = {                   
+        country_event = TurkeyF.169
+		}                         
+		FIN = {                   
+        country_event = TurkeyF.169
+		}                         
+		FRA = {                   
+        country_event = TurkeyF.169
+		}                         
+		GER = {                   
+        country_event = TurkeyF.169
+		}                        
+		GRE = {                  
+        country_event = TurkeyF.169
+		}                        
+		HOL = {                  
+        country_event = TurkeyF.169
+		}                        
+		IRE = {                  
+        country_event = TurkeyF.169
+		}                        
+		ITA = {                  
+        country_event = TurkeyF.169
+		}                       
+		LUX = {                 
+        country_event = TurkeyF.169
+		}                       
+		POR = {                 
+        country_event = TurkeyF.169
+		}                        
+		SPR = {                  
+        country_event = TurkeyF.169
+		}                        
+		SWE = {                  
+        country_event = TurkeyF.169
+		}                         
+		BUL = {                   
+        country_event = TurkeyF.169
+		}                         
+		CRO = {                   
+        country_event = TurkeyF.169
+		}                         
+		CYP = {                   
+        country_event = TurkeyF.169
+		}                         
+		CZE = {                   
+        country_event = TurkeyF.169
+		}                         
+		EST = {                   
+        country_event = TurkeyF.169
+		}                         
+		HUN = {                   
+        country_event = TurkeyF.169
+		}                         
+		LAT = {                   
+        country_event = TurkeyF.169
+		}                         
+		LIT = {                   
+        country_event = TurkeyF.169
+		}                         
+		MLT = {                   
+        country_event = TurkeyF.169
+		}                         
+		POL = {                   
+        country_event = TurkeyF.169
+		}		                  
+		ROM = {                   
+        country_event = TurkeyF.169
+		}                         
+		SLO = {                   
+        country_event = TurkeyF.169
+		}                         
+		SLV = {                   
+        country_event = TurkeyF.169
+		} }
+	}
+	focus = {
+		id = ANA_peace_forever
+		icon = peaceduuude
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_peace_solution
+		}
+		x = 69
+		y = 26
+
+search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			swap_ideas = {
+		    add_idea = peace_forever
+            remove_idea = peace_solution
+			}
+		}
+	}
+	focus = {
+		id = ANA_genius_europe
+		icon = EDA_icon
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_call_europe_for_cease
+		}
+		x = 65
+		y = 26
+
+search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_ideas = genius_europe
+		}
+	}
+	focus = {
+		id = ANA_ecologist_middle_east
+		icon = befriend_middle_east
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_clean_afganistan_and_pakistan
+		}
+		x = 74
+		y = 28
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			remove_ideas = anarcho_neutrality 
+		}
+	}
+	focus = {
+		id = ANA_target_usa
+		icon = usa
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_target_majors
+		}
+		x = 69
+		y = 29
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = USA
+		}
+	} }
+	focus = {
+		id = ANA_target_china
+		icon = attack_china
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_target_majors
+		}
+		x = 71
+		y = 29
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = CHI
+		}
+	} }
+	focus = {
+		id = ANA_the_last_round
+		icon = USA_new_foreign_policy
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_target_china
+		}
+		prerequisite = {
+			focus = ANA_target_usa
+		}
+		x = 70
+		y = 30
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		    custom_effect_tooltip = TUR_united_state
+			set_global_flag = TUR_UNITE_DIASPORA
+			TUR_remove_state_modifier_effects = yes
+					every_country = {
+		create_wargoal = {
+			type = annex_everything
+			target = TUR
+		} }
+		} }
+	focus = {
+		id = ANA_ecologist_anarchist_utopia
+		icon = political_pressure_dark_green
+		cost = 15,00
+		prerequisite = {
+			focus = ANA_the_last_round
+		}
+		x = 70
+		y = 31
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		    add_political_power = 50
+			set_cosmetic_tag = ANARCH_UTOPIA_G
+		}
+	}
+	focus = {
+		id = ANA_fast_construction
+		icon = factory_complex
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_use_the_effects_of_collevization_society
+		}
+		x = 82
+		y = 10
+
+
+		completion_reward = {
+		    add_ideas = fast_construction
+		}
+	}
+	focus = {
+		id = ANA_start_the_industrialization_forge
+		icon = Generic_Bakuninist_Collectivism
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_state_bureocracy
+		}
+		x = 79
+		y = 12
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+		    add_political_power = 125
+			custom_effect_tooltip = ANA_socialists_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^19 = 0.03 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = ANA_state_bureocracy
+		icon = industry_united_states
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_fast_construction
+		}
+		prerequisite = {
+			focus = ANA_working_teams
+		}
+		x = 83
+		y = 11
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = -0.1
+			custom_effect_tooltip = BUREOCRACY_RETURN
+		}
+	}
+	focus = {
+		id = ANA_sivas_factory
+		icon = industry4
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_start_the_industrialization_forge
+		}
+		x = 78
+		y = 13
+
+
+        available = {
+		controls_state = 159
+        }
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+				
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = ANA_kayseri_factory
+		icon = MEX_Industrialize_the_north
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_start_the_industrialization_forge
+		}
+		x = 80
+		y = 13
+
+
+        available = {
+		controls_state = 159
+        }
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+			159 = {
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+				
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = ANA_turkish_factory_culture
+		icon = vineyard
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_kayseri_factory
+		}
+		prerequisite = {
+			focus = ANA_sivas_factory
+		}
+		x = 79
+		y = 14
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+        add_ideas = the_turkish_industrial_culture
+		}
+	}
+	focus = {
+		id = ANA_adana_arms_factory
+		icon = aviation_industry
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_sivas_factory
+		}
+		x = 77
+		y = 14
+
+
+        available = {
+		controls_state = 161
+        }
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			161 = { 
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+			161 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+				
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = ANA_diyarbakir_factory
+		icon = tank_production
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_kayseri_factory
+		}
+		x = 81
+		y = 14
+
+
+        available = {
+		controls_state = 162
+        }
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			162 = {
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+			162 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+				
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = ANA_create_modern_offices
+		icon = romanian_economic_development_plan
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_turkish_railway_projections
+		}
+		prerequisite = {
+			focus = ANA_turkish_network_project
+		}
+		x = 79
+		y = 16
+
+
+        available = {
+		controls_state = 934
+		controls_state = 161
+        }
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			934 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+			161 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = ANA_turkish_railway_projections
+		icon = great_railway_incident
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_diyarbakir_factory
+		}
+		prerequisite = {
+			focus = ANA_turkish_factory_culture
+		}
+		prerequisite = {
+			focus = ANA_adana_arms_factory
+		}
+		x = 78
+		y = 15
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+		    add_ideas = the_turkish_railway_culture
+		}
+	}
+	focus = {
+		id = ANA_socialist_innovationism
+		icon = socialist_science
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_state_bureocracy
+		}
+		x = 87
+		y = 12
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_stability = 0.03
+			add_political_power = 75
+			custom_effect_tooltip = ANA_socialists_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^19 = 0.03 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = ANA_atheist_state
+		icon = blr_state_atheism
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_preserve_secularism
+		}
+		x = 82
+		y = 13
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = pluralist
+			remove_idea = sunni 
+			}
+		}
+	}
+	focus = {
+		id = ANA_turkish_network_project
+		icon = radio_communications
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_diyarbakir_factory
+		}
+		prerequisite = {
+			focus = ANA_turkish_factory_culture
+		}
+		prerequisite = {
+			focus = ANA_adana_arms_factory
+		}
+		x = 80
+		y = 15
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+		    add_ideas = the_turkish_radar_culture
+		}
+	}
+	focus = {
+		id = ANA_build_schools
+		icon = russian_military_oficier_school
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_socialist_innovationism
+		}
+		x = 88
+		y = 13
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ANA_innovation_first
+		icon = tech_sharing
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_socialist_innovationism
+		}
+		x = 86
+		y = 13
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_ideas = innovation_first
+		}
+	}
+	focus = {
+		id = ANA_preserve_secularism
+		icon = focus_secular
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_state_bureocracy
+		}
+		x = 83
+		y = 12
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = 0.05
+			custom_effect_tooltip = ANA_socialists_3
+			hidden_effect = {
+				add_to_variable = { party_pop_array^19 = 0.03 }
+				recalculate_party = yes
+			}
+		}
+	}
+	focus = {
+		id = ANA_sciente_tourmaments
+		icon = examine_foreign_science
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_innovation_first
+		}
+		prerequisite = {
+			focus = ANA_build_schools
+		}
+		x = 85
+		y = 14
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_ideas = science_tourmaments
+		}
+	}
+	focus = {
+		id = ANA_science_exhibitions
+		icon = nuclear_science
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_innovation_first
+		}
+		prerequisite = {
+			focus = ANA_build_schools
+		}
+		x = 87
+		y = 14
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = science_exhabitions
+		}
+	}
+	focus = {
+		id = ANA_invention_founder_society
+		icon = gamble_cards
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_build_schools
+		}
+		prerequisite = {
+			focus = ANA_innovation_first
+		}
+		x = 89
+		y = 14
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		    add_ideas = invention_founder_society
+		}
+	}
+	focus = {
+		id = ANA_upward_academics
+		icon = parlamentary_reform
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_science_exhibitions
+		}
+		prerequisite = {
+			focus = ANA_sciente_tourmaments
+		}
+		prerequisite = {
+			focus = ANA_invention_founder_society
+		}
+		x = 86
+		y = 15
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = upward_academicians
+		}
+	}
+	focus = {
+		id = ANA_clothing_intervention
+		icon = angel
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_preserve_secularism
+		}
+		x = 84
+		y = 13
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = non_religious_interventionism
+		}
+	}
+	focus = {
+		id = ANA_anarchist_guardian
+		icon = soliger_plain
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_clothing_intervention
+		}
+		prerequisite = {
+			focus = ANA_atheist_state
+		}
+		x = 83
+		y = 14
+
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+
+		completion_reward = {
+		    add_manpower = 100000
+		}
+	}
+	focus = {
+		id = ANA_unhealthy_state
+		icon = grey_market_sheep
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_anarchist_guardian
+		}
+		x = 83
+		y = 15
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = -0.05
+			remove_ideas = The_Ulema
+		}
+	}
+	focus = {
+		id = ANA_send_academicans_to_world
+		icon = BRA_cutting_the_red_tape
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_invention_founder_society
+		}
+		prerequisite = {
+			focus = ANA_science_exhibitions
+		}
+		x = 88
+		y = 15
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = academicians_in_the_world
+		}
+	}
+	focus = {
+		id = ANA_the_great_anarchist_science
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_upward_academics
+		}
+		prerequisite = {
+			focus = ANA_send_academicans_to_world
+		}
+		x = 87
+		y = 16
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+				search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    remove_ideas = innovation_first
+		    remove_ideas = science_tourmaments
+		    remove_ideas = science_exhabitions
+		    remove_ideas = academicians_in_the_world
+		    remove_ideas = invention_founder_society
+		    add_ideas = anarchist_science_power
+		}
+	}
+	focus = {
+		id = ANA_intervening_the_spiritual
+		icon = MEX_The_three_powers
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_unhealthy_state
+		}
+		x = 83
+		y = 16
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = non_religious_interventionism_2
+			remove_idea = non_religious_interventionism
+			}
+		}
+	}
+	focus = {
+		id = ANA_efficent_anarchy_system
+		icon = cyberwarfare
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_the_great_anarchist_science
+		}
+		prerequisite = {
+			focus = ANA_intervening_the_spiritual
+		}
+		prerequisite = {
+			focus = ANA_create_modern_offices
+		}
+		x = 83
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = 0.1
+			custom_effect_tooltip = ORDER_REPAIR_ANSOC
+		}
+	}
+	focus = {
+		id = ANA_create_the_socialist_anarchist_forces
+		icon = MEX_El_nuevo_Cardenismo
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_efficent_anarchy_system
+		}
+		x = 83
+		y = 18
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+		    add_stability = 0.02
+			add_war_support = 0.05
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}
+		}
+	}
+	focus = {
+		id = ANA_seize_buses
+		icon = city_bus
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_create_the_socialist_anarchist_forces
+		}
+		x = 81
+		y = 19
+
+
+		completion_reward = {
+		    add_ideas = anarchist_transportation
+		}
+	}
+	focus = {
+		id = ANA_anarchist_otomobiles
+		icon = electric_car
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_seize_buses
+		}
+		x = 80
+		y = 20
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = anarchist_transportation_2
+			remove_idea = anarchist_transportation
+			}
+		}
+	}
+	focus = {
+		id = ANA_call_the_arms
+		icon = old_new_doctrine
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_create_the_socialist_anarchist_forces
+		}
+		x = 83
+		y = 19
+
+
+		completion_reward = {
+			increase_military_spending = yes
+block_defence_decrease = yes
+		}
+	}
+	focus = {
+		id = ANA_prepare_human_waves
+		icon = soldiers
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_call_the_arms
+		}
+		x = 82
+		y = 20
+
+		search_filters = {FOCUS_FILTER_MANPOWER}
+
+		completion_reward = {
+		    add_ideas = human_waves_tactics
+		}
+	}
+	focus = {
+		id = ANA_incomes_from_early_military
+		icon = Generic_Revanchism02
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_call_the_arms
+		}
+		x = 84
+		y = 20
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_create_the_arms_industry
+		icon = industry_tanks
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_create_the_socialist_anarchist_forces
+		}
+		x = 85
+		y = 19
+
+    available = {
+	controls_state = 161
+	}
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			161 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+			161 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+				
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = ANA_boost_the_military_industrials
+		icon = industry_military
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_create_the_arms_industry
+		}
+		x = 86
+		y = 20
+
+
+    available = {
+	controls_state = 161
+	controls_state = 156
+	controls_state = 934
+	}
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			934 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+			156 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+			161 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }				
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = ANA_learn_guerilla_warfare
+		icon = communist_spies2
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_boost_the_military_industrials
+		}
+		prerequisite = {
+			focus = ANA_incomes_from_early_military
+		}
+		prerequisite = {
+			focus = ANA_prepare_human_waves
+		}
+		prerequisite = {
+			focus = ANA_anarchist_otomobiles
+		}
+		x = 83
+		y = 21
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = guerilla_warfare
+			remove_idea = guerilla_tactics
+			}
+		}
+	}
+	focus = {
+		id = ANA_create_socialist_elites
+		icon = a_new_international
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_learn_guerilla_warfare
+		}
+		x = 82
+		y = 22
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = -0.1
+			add_ideas = the_socialist_elites
+		}
+	}
+	focus = {
+		id = ANA_push_the_worldwide_utopia_ideas
+		icon = Generic_Cottonmouth
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_learn_guerilla_warfare
+		}
+		x = 84
+		y = 22
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_stability = 0.03
+			remove_ideas = anarcho_neutrality 
+		}
+	}
+	focus = {
+		id = ANA_start_the_socialist_utopia_plans
+		icon = global_hegemony
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_push_the_worldwide_utopia_ideas
+		}
+		prerequisite = {
+			focus = ANA_create_socialist_elites
+		}
+		x = 83
+		y = 23
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_political_power = 125
+		}
+	}
+	focus = {
+		id = ANA_the_north_planning
+		icon = nato_nation
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_start_the_socialist_utopia_plans
+		}
+		x = 79
+		y = 24
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		    add_political_power = 75
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ANA_collect_trancaucasia
+		icon = RUS_caucasus
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_the_north_planning
+		}
+		x = 78
+		y = 25
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = ARM
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = GEO
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = AZE
+		}
+	} }
+	focus = {
+		id = ANA_wreckle_ukraine
+		icon = attack_ukraine
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_the_north_planning
+		}
+		x = 80
+		y = 25
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+        available = {
+		country_exists = UKR
+		NOT = {
+		has_war_with = UKR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = UKR
+    NOT = {
+	country_exists = UKR
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = UKR
+		}
+	} }
+	focus = {
+		id = ANA_attack_the_old_socialist
+		icon = focus_SOV_third_rome
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_wreckle_ukraine
+		}
+		prerequisite = {
+			focus = ANA_collect_trancaucasia
+		}
+		x = 79
+		y = 26
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }
+
+       completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = SOV
+		}
+	} }
+	focus = {
+		id = ANA_the_turkish_control
+		icon = turkish_authoritarianism
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_attack_the_old_socialist
+		}
+		x = 79
+		y = 27
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+       completion_reward = {
+		add_war_support = 0.05
+		create_wargoal = {
+			type = annex_everything
+			target = TRK
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = KAZ
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = UZB
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = KYR
+		}
+	} }
+	focus = {
+		id = ANA_the_new_kind_of_cores
+		icon = annex_country_2
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_the_turkish_control
+		}
+		prerequisite = {
+			focus = ANA_harsh_quotas_of_secularism
+		}
+		prerequisite = {
+			focus = ANA_united_counter_forces
+		}
+		x = 83
+		y = 28
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+				custom_effect_tooltip = GENERAL_CORE_SYSTEM
+		} } 
+	focus = {
+		id = ANA_joint_forces_of_anarchism
+		icon = condemn_macedonian_organizations
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_the_new_kind_of_cores
+		}
+		x = 82
+		y = 29
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+       completion_reward = {
+		add_ideas = joint_forces_of_military
+	} }
+	focus = {
+		id = ANA_systematic_forces
+		icon = support_macedonian_organizations
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_the_new_kind_of_cores
+		}
+		x = 84
+		y = 29
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+       completion_reward = {
+		add_ideas = systematic_forces_of_anarchism
+	} }
+	focus = {
+		id = ANA_the_utopia_declaration
+		icon = organization_centralization_discipline
+		cost = 15,00
+		prerequisite = {
+			focus = ANA_systematic_forces
+		}
+		prerequisite = {
+			focus = ANA_joint_forces_of_anarchism
+		}
+		x = 83
+		y = 30
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		    add_political_power = 50
+			set_cosmetic_tag = ANARCH_UTOPIA_R
+		}
+	}
+	focus = {
+		id = ANA_manage_the_victory
+		icon = irredentism
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_the_utopia_declaration
+		}
+		x = 83
+		y = 31
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        completion_reward = {
+		add_stability = 0.1
+		    custom_effect_tooltip = TUR_united_state
+			set_global_flag = TUR_UNITE_DIASPORA
+						TUR_remove_state_modifier_effects = yes
+	} }
+	focus = {
+		id = ANA_the_south_planning
+		icon = befriend_middle_east
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_start_the_socialist_utopia_plans
+		}
+		x = 87
+		y = 24
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		    add_political_power = 75
+			add_war_support = 0.01
+		}
+	}
+	focus = {
+		id = ANA_direction_west
+		icon = BRA_the_european_social_democrat_model
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_start_the_socialist_utopia_plans
+		}
+		x = 83
+		y = 24
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_NATO}
+search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		    add_political_power = 75
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = ANA_the_traditional_borders
+		icon = focus_spr_anarchism_knows_no_borders
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_the_south_planning
+		}
+		x = 86
+		y = 25
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+					every_country = {
+		create_wargoal = {
+			type = annex_everything
+			target = TUR
+		} }
+		} }
+	focus = {
+		id = ANA_crush_the_unconfident_komsi
+		icon = metaxas
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_the_south_planning
+		}
+		x = 88
+		y = 25
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+		country_exists = GRE
+		NOT = {
+		has_war_with = GRE
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GRE
+    NOT = {
+	country_exists = GRE
+	 }
+	} }
+	
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = GRE
+		}
+	} }
+	focus = {
+		id = ANA_force_unification_of_islam_world
+		icon = islamophobia
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_crush_the_unconfident_komsi
+		}
+		prerequisite = {
+			focus = ANA_the_traditional_borders
+		}
+		x = 87
+		y = 26
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	
+        completion_reward = {
+		custom_effect_tooltip = ISLAMIC_WORLD_UNITE
+	} }
+	focus = {
+		id = ANA_harsh_quotas_of_secularism
+		icon = communism4
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_force_unification_of_islam_world
+		}
+		x = 87
+		y = 27
+
+	
+        completion_reward = {
+		custom_effect_tooltip = SET_SECULAR_HECK
+	} }
+	focus = {
+		id = ANA_plan_NATO
+		icon = end_of_nato
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_direction_west
+		}
+		x = 83
+		y = 25
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_NATO}
+
+		completion_reward = {
+		    add_political_power = 100
+			remove_ideas = NATO_member
+		}
+	}
+	focus = {
+		id = ANA_counter_nato_defense
+		icon = nato3
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_plan_NATO
+		}
+		x = 82
+		y = 26
+
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_ideas = arms_of_nato_against_defence
+		}
+	}
+	focus = {
+		id = ANA_counter_nato_attack
+		icon = strike_nato
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_plan_NATO
+		}
+		x = 84
+		y = 26
+
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_ideas = arms_of_nato_against_attack
+		}
+	}
+	focus = {
+		id = ANA_united_counter_forces
+		icon = NATO_squad_doctrine
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_counter_nato_attack
+		}
+		prerequisite = {
+			focus = ANA_counter_nato_defense
+		}
+		x = 83
+		y = 27
+
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			remove_ideas = arms_of_nato_against_attack
+			remove_ideas = arms_of_nato_against_defence
+			add_ideas = attack_and_defense_combined_force
+		}
+	}
+	focus = {
+		id = ANA_meeting_with_the_financial_freedom
+		icon = luxury_goods
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_reorganize_the_sitution
+		}
+		x = 93
+		y = 7
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = financial_freedom_action
+		}
+	}
+	focus = {
+		id = ANA_the_credit_house
+		icon = money
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_meeting_with_the_financial_freedom
+		}
+		x = 92
+		y = 8
+
+
+		completion_reward = {
+		    add_ideas = the_credit_house
+		}
+	}
+	focus = {
+		id = ANA_free_robbing
+		icon = black_market
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_reorganize_the_sitution
+		}
+		x = 95
+		y = 7
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_ideas = free_robbing 
+		}
+	}
+	focus = {
+		id = ANA_disband_the_counter_money_laws
+		icon = expand_finance_ministry
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_free_robbing
+		}
+		x = 95
+		y = 8
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = the_money_law_2
+			remove_idea = the_money_law
+			}
+		}
+	}
+	focus = {
+		id = ANA_freedom_for_banks
+		icon = coins
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_disband_the_counter_money_laws
+		}
+		x = 94
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = freedom_for_banks
+		}
+	}
+	focus = {
+		id = ANA_freedom_for_gun_sellers
+		icon = thompson_submachine_gun
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_disband_the_counter_money_laws
+		}
+		x = 96
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_ideas = freedom_for_gunselers
+		}
+	}
+	focus = {
+		id = ANA_restore_the_politics
+		icon = Skull_Focus
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_freedom_for_gun_sellers
+		}
+		prerequisite = {
+			focus = ANA_freedom_for_banks
+		}
+		x = 95
+		y = 10
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_stability = 0.05
+			add_political_power = 150
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}
+		}
+	}
+	focus = {
+		id = ANA_judgement_financing
+		icon = BRA_mensalao_new
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_restore_the_politics
+		}
+		x = 96
+		y = 11
+
+		completion_reward = {
+		    add_ideas = the_finance_state_1
+		}
+	}
+	focus = {
+		id = ANA_pacifist_globalization
+		icon = BRA_libertarian_economics
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_restore_the_politics
+		}
+		x = 94
+		y = 11
+
+
+		completion_reward = {
+		    add_ideas = export_economy
+		}
+	}
+	focus = {
+		id = ANA_heard_of_money
+		icon = BLR_Taler_ruble
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_judgement_financing
+		}
+		prerequisite = {
+			focus = ANA_pacifist_globalization
+		}
+		x = 95
+		y = 12
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			add_stability = 0.05
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_print_money
+		icon = money_on_fire
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_heard_of_money
+		}
+		x = 93
+		y = 13
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			add_stability = -0.03
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_encourage_inflation
+		icon = better_money
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_heard_of_money
+		}
+		x = 95
+		y = 13
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+ add_timed_idea = { idea = minor_inflation  days = 365 }
+subtract_from_variable = { treasury = 250.0 }
+			custom_effect_tooltip = 250_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_money_maximum
+		icon = champagne_purple
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_heard_of_money
+		}
+		x = 97
+		y = 13
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = the_finance_state_2
+			remove_idea = the_finance_state_1
+			}
+subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_talks_with_IMF
+		icon = gamble_cards
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_money_maximum
+		}
+		prerequisite = {
+			focus = ANA_encourage_inflation
+		}
+		prerequisite = {
+			focus = ANA_print_money
+		}
+		x = 95
+		y = 14
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = ANA_USA_richness
+		icon = usa_investments
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_talks_with_IMF
+		}
+		x = 94
+		y = 15
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 2 }
+		}
+	}
+	focus = {
+		id = ANA_european_richness
+		icon = EU_reform
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_talks_with_IMF
+		}
+		x = 96
+		y = 15
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 2 }
+		}
+	}
+	focus = {
+		id = ANA_general_money_deposits
+		icon = meeting
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_USA_richness
+		}
+		prerequisite = {
+			focus = ANA_european_richness
+		}
+		x = 95
+		y = 16
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			add_stability = -0.02
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_buy_ECB
+		icon = ECB_intervention
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_european_richness
+		}
+		x = 97
+		y = 16
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_stability = 0.02
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			GER = {
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+			}
+		}
+	}
+	focus = {
+		id = ANA_buy_FED
+		icon = federal_reserve
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_USA_richness
+		}
+		x = 93
+		y = 16
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_stability = 0.02
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			USA = {
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+			}
+		}
+	}
+	focus = {
+		id = ANA_empower_golds
+		icon = gold_standard
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_buy_ECB
+		}
+		prerequisite = {
+			focus = ANA_general_money_deposits
+		}
+		prerequisite = {
+			focus = ANA_buy_FED
+		}
+		x = 95
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			add_stability = 0.07
+			subtract_from_variable = { treasury = -100.0 }
+			custom_effect_tooltip = 100_billion_expense_tt
+		}
+	}
+	focus = {
+		id = ANA_we_are_the_stocks
+		icon = goal_JAP_valueup
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_empower_golds
+		}
+		x = 95
+		y = 18
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = the_finance_state_3
+			remove_idea = the_finance_state_2
+			}
+		}
+	}
+	focus = {
+		id = ANA_bank_investments
+		icon = generic_banks
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_we_are_the_stocks
+		}
+		x = 95
+		y = 19
+
+
+		completion_reward = {
+		     add_timed_idea = { idea = bank_investments  days = 125 }
+		}
+	}
+	focus = {
+		id = ANA_banking_engine
+		icon = eac_bank
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_bank_investments
+		}
+		x = 95
+		y = 20
+
+        available = {
+	    NOT = {
+		has_idea = bank_investments
+		}
+		}
+
+		completion_reward = {
+		     add_timed_idea = { idea = bank_investments_return  days = 730 }
+		}
+	}
+	focus = {
+		id = ANA_money_digging
+		icon = Generic_Loadsamoney
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_reorganize_the_sitution
+		}
+		x = 97
+		y = 7
+
+		completion_reward = {
+		    add_ideas = money_digging
+		}
+	}
+	focus = {
+		id = ANA_corporation_investments
+		icon = economic_comitee
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_we_are_the_stocks
+		}
+		x = 97
+		y = 19
+
+
+		completion_reward = {
+		     add_timed_idea = { idea = corporation_investments  days = 125 }
+		}
+	}
+	focus = {
+		id = ANA_bitcoin_miners
+		icon = bitcoins
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_money_digging
+		}
+		x = 98 
+		y = 8
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = money_digging_2
+			remove_idea = money_digging
+			}
+		}
+	}
+	focus = {
+		id = ANA_corporations_stuff
+		icon = business_man2
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_corporation_investments
+		}
+		x = 98
+		y = 20
+
+
+        available = {
+	    NOT = {
+		has_idea = corporation_investments
+		}
+		}
+
+		completion_reward = {
+		     add_timed_idea = { idea = corporation_investments_return  days = 730 }
+		}
+	}
+	focus = {
+		id = ANA_resource_working
+		icon = resource_extraction
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_restore_the_politics
+		}
+		x = 106
+		y = 11
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		    add_political_power = 125
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 2
+				category = CAT_fuel_oil
+			}
+		}
+	}
+	focus = {
+		id = ANA_natural_gas
+		icon = generic_gas
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_resource_working
+		}
+		x = 104
+		y = 12
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 13
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 17
+				}
+			}
+	  			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt	
+}   }
+	focus = {
+		id = ANA_natural_gas_plants
+		icon = barrels
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_natural_gas
+		}
+		x = 102
+		y = 13
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 13
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 27
+				}
+			}
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+}   }
+	focus = {
+		id = ANA_novus_petrolium
+		icon = oil_companies
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_resource_working
+		}
+		x = 106
+		y = 12
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 18
+				}
+				}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 16
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1 
+					instant_build = yes
+				}
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 2
+				category = CAT_fuel_oil
+			}
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+			}
+			}
+	}
+	focus = {
+		id = ANA_oil_customization
+		icon = oil_trade
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_novus_petrolium
+		}
+		x = 104
+		y = 13
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 11
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 7
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 2
+				category = CAT_fuel_oil
+			}
+	  			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt	
+			}
+}   }
+	focus = {
+		id = ANA_mixed_plants
+		icon = oil_red
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_oil_customization
+		}
+		prerequisite = {
+			focus = ANA_natural_gas_plants
+		}
+		x = 104
+		y = 14
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 19
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 7
+				}
+			}
+	  			subtract_from_variable = { treasury = 70.0 }
+			custom_effect_tooltip = 70_billion_expense_tt	
+}   }
+	focus = {
+		id = ANA_build_petrol_plants
+		icon = oil_production2
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_novus_petrolium
+		}
+		x = 106
+		y = 13
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 11
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 17
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 2
+				category = CAT_fuel_oil
+			}
+	  			subtract_from_variable = { treasury = 30.0 }
+			custom_effect_tooltip = 30_billion_expense_tt	
+			}
+}   }
+	focus = {
+		id = ANA_material_activity
+		icon = oil_green
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_build_petrol_plants
+		}
+		x = 106
+		y = 14
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = aluminium
+					amount = 13
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = iron
+					amount = 13
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 17
+				}
+			}
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+}   }
+	focus = {
+		id = ANA_boron_facilities
+		icon = b-5
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_resource_working
+		}
+		x = 108
+		y = 12
+
+
+		completion_reward = {
+		     add_ideas = laws_of_bor
+		}
+	}
+	focus = {
+		id = ANA_petrol_jack
+		icon = oil
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_novus_petrolium
+		}
+		x = 108
+		y = 13
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 11
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 9
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 2
+				category = CAT_fuel_oil
+			}
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+		}
+}   }
+	focus = {
+		id = ANA_boron_time
+		icon = bor_mining
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_boron_facilities
+		}
+		x = 110
+		y = 13
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = bor_mining_facilities
+			remove_idea = laws_of_bor
+			}
+		}
+	}
+	focus = {
+		id = ANA_mixed_plants_2
+		icon = oil_red
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_petrol_jack
+		}
+		prerequisite = {
+			focus = ANA_boron_time
+		}
+		x = 108
+		y = 14
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = metal
+					amount = 17
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 17
+				}
+			}
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+}   }
+	focus = {
+		id = ANA_iron_world
+		icon = powerplant
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_mixed_plants
+		}
+		prerequisite = {
+			focus = ANA_mixed_plants_2
+		}
+		prerequisite = {
+			focus = ANA_material_activity
+		}
+		x = 106
+		y = 15
+
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = chromium
+					amount = 14
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = iron
+					amount = 17
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = iron
+					amount = 11
+				}
+			}
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+}   }
+	focus = {
+		id = ANA_gun_shops
+		icon = rearmament
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_iron_world
+		}
+		x = 104
+		y = 16
+
+		completion_reward = {
+add_ideas = gun_shops
+}   }
+	focus = {
+		id = ANA_gun_dealers
+		icon = grenade
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_gun_shops
+		}
+		x = 103
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+add_ideas = gun_dealers
+}   }
+	focus = {
+		id = ANA_gun_world
+		icon = soldiers2
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_gun_shops
+		}
+		x = 105
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+		completion_reward = {
+add_ideas = world_of_guns
+}   }
+	focus = {
+		id = ANA_export_stuff
+		icon = export_economy
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_iron_world
+		}
+		x = 108
+		y = 16
+
+		completion_reward = {
+			add_ideas = globalized_trade_economy
+		}
+	}
+	focus = {
+		id = ANA_money_world
+		icon = internationalism
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_export_stuff
+		}
+		x = 107
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			add_stability = 0.05
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_bankery_works
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_export_stuff
+		}
+		x = 109
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+
+		completion_reward = {
+			add_stability = 0.05
+				set_temp_variable = { temp_international_bankers_opinion = -15 }	
+            change_the_international_bankers_opinion = yes			
+		}
+	}
+	focus = {
+		id = ANA_gold_investments
+		icon = lion_economy
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_we_are_the_stocks
+		}
+		x = 93
+		y = 19
+
+
+		completion_reward = {
+		     add_timed_idea = { idea = gold_investments  days = 125 }
+		}
+	}
+	focus = {
+		id = ANA_gold_works_as_fast
+		icon = gold_standard2
+		cost = 7.2
+		prerequisite = {
+			focus = ANA_gold_investments
+		}
+		x = 92
+		y = 20
+
+        available = {
+	    NOT = {
+		has_idea = gold_investments
+		}
+		}
+
+		completion_reward = {
+		     add_timed_idea = { idea = gold_investments_return  days = 730 }
+		}
+	}
+	focus = {
+		id = ANA_disband_economic_policies
+		icon = focus_trade_republic
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_corporations_stuff
+		}
+		prerequisite = {
+			focus = ANA_banking_engine
+		}
+		prerequisite = {
+			focus = ANA_gold_works_as_fast
+		}
+		x = 95
+		y = 21
+
+
+		completion_reward = {
+		     add_ideas = economic_boom
+		}
+	}
+	focus = {
+		id = ANA_philips_theory
+		icon = turk_skulls_guns_fire
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_disband_economic_policies
+		}
+		x = 94
+		y = 22
+
+
+
+		completion_reward = {
+		     add_research_slot = 1
+			remove_ideas = anarcho_neutrality 
+		}
+	}
+	focus = {
+		id = ANA_economic_anarchism
+		icon = sing_on_rise
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_philips_theory
+		}
+		prerequisite = {
+			focus = ANA_work_work_work
+		}
+		x = 95
+		y = 23
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		     add_stability = 0.1
+		}
+	}
+	focus = {
+		id = ANA_work_work_work
+		icon = GENERIC_austerity_measures
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_disband_economic_policies
+		}
+		x = 96
+		y = 22
+
+		completion_reward = {
+		    swap_ideas = {
+		    add_idea = the_finance_state_4
+			remove_idea = the_finance_state_3
+			}
+		}
+	}
+	focus = {
+		id = ANA_target_crisis
+		icon = economic_crisis
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_economic_anarchism
+		}
+		x = 92
+		y = 24
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		    add_war_support = 0.05
+			add_command_power = 25
+		}
+	}
+	focus = {
+		id = ANA_target_usa_2
+		icon = usa
+		cost = 5,00
+		prerequisite = {
+			focus = ANA_economic_anarchism
+		}
+		x = 98
+		y = 24
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		    add_war_support = 0.03
+			add_command_power = 75
+		}
+	}
+	focus = {
+		id = ANA_invade_greece
+		icon = focus_GRE_byzantine_themata
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_target_crisis
+		}
+		x = 91
+		y = 25
+
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+		country_exists = GRE
+		NOT = {
+		has_war_with = GRE
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GRE
+    NOT = {
+	country_exists = GRE
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = GRE
+		}
+	} }
+	focus = {
+		id = ANA_default_their_debts
+		icon = better_money
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_invade_greece
+		}
+		x = 90
+		y = 26
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_EXPENDITURE}	
+
+		completion_reward = {
+			add_stability = 0.03
+			subtract_from_variable = { treasury = 500.0 }
+			custom_effect_tooltip = 500_billion_revenue_tt
+		}
+	}
+	focus = {
+		id = ANA_invade_venezuela
+		icon = attack_venezuela
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_target_crisis
+		}
+		x = 93
+		y = 25
+
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+		country_exists = VEN
+		NOT = {
+		has_war_with = VEN
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = VEN
+    NOT = {
+	country_exists = VEN
+	 }
+	} }
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = VEN
+		}
+	} }
+	focus = {
+		id = ANA_solve_inflation
+		icon = better_money_on_fire
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_invade_venezuela
+		}
+		x = 94
+		y = 26
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+        completion_reward = {
+		remove_ideas = minor_inflation
+		add_stability = 0.02
+	} }
+	focus = {
+		id = ANA_control_the_banks
+		icon = EU_Banking
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_target_usa_2
+		}
+		x = 98
+		y = 25
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        completion_reward = {
+		add_political_power = 125
+		add_stability = -0.03
+	reverse_add_opinion_modifier = { target = USA modifier = anarchist_american_aid }
+	} }
+	focus = {
+		id = ANA_FED_solvation
+		icon = federal_reserve
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_control_the_banks
+		}
+		x = 98
+		y = 26
+
+
+       available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = USA
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_stability = 0.03
+		    USA = {
+			add_stability = 0.1
+			}
+		}
+	}
+	focus = {
+		id = ANA_bank_designing_system
+		icon = literacy_rate_improvment2
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_control_the_banks
+		}
+		x = 96
+		y = 26
+
+       available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = USA
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_stability = 0.03
+		    USA = {
+			add_ideas = anarchized_us_banks
+			}
+		}
+	}
+	focus = {
+		id = ANA_recession_solves
+		icon = liberalization_policies
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_control_the_banks
+		}
+		x = 100
+		y = 26
+
+
+       available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+		USA = {
+		influence_higher_30 = yes
+		OR = {
+		has_idea = recession
+		has_idea = depression
+		 }
+		}
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = USA
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_stability = 0.03
+		    USA = {
+			add_ideas = stable_growth
+			}
+		}
+	}
+	focus = {
+		id = ANA_consumer_good_deficit
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_invade_venezuela
+		}
+		prerequisite = {
+			focus = ANA_invade_greece
+		}
+		x = 92
+		y = 26
+
+		completion_reward = {
+			add_ideas = consumer_goods_lowered
+		}
+	}
+	focus = {
+		id = ANA_safe_us_economy
+		icon = USA_joe_bidome
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_recession_solves
+		}
+		prerequisite = {
+			focus = ANA_FED_solvation
+		}
+		prerequisite = {
+			focus = ANA_bank_designing_system
+		}
+		x = 98
+		y = 27
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+        
+		available = {
+		USA = {
+		influence_higher_30 = yes
+		}
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+		    USA = {
+			add_ideas = economic_boom
+			}
+		}
+	}
+	focus = {
+		id = ANA_economic_meetings
+		icon = economic_prosperity
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_solve_inflation
+		}
+		prerequisite = {
+			focus = ANA_consumer_good_deficit
+		}
+		prerequisite = {
+			focus = ANA_default_their_debts
+		}
+		x = 92
+		y = 27
+
+
+        completion_reward = {
+		add_ideas = economic_boom
+	} }
+	focus = {
+		id = ANA_IMF_talks
+		icon = imf
+		cost = 15,00
+		prerequisite = {
+			focus = ANA_safe_us_economy
+		}
+		prerequisite = {
+			focus = ANA_economic_meetings
+		}
+		x = 95
+		y = 28
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		    add_political_power = 50
+			set_cosmetic_tag = IMF
+			#	create_country_leader = {
+			#	name = "Asrin Tok"
+			#	picture = "asrin_tok.dds"
+			#	ideology = Neutral_green
+			#	traits = {
+			#		neutral_Neutral_green
+			#		business_man
+			#	}
+			#}	
+	hidden_effect = {
+    news_event = Turkey_news.28
+				}
+		}
+	}
+	focus = {
+		id = ANA_invade_south
+		icon = seize_oil
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_IMF_talks
+		}
+		x = 94
+		y = 29
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = IRQ
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = KUW
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SYR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = LEB
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SAU
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = JOR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ISR
+		}
+	} }
+	focus = {
+		id = ANA_solve_petrodollar_crisis
+		icon = united_states_dollar
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_invade_south
+		}
+		prerequisite = {
+			focus = ANA_invade_iran
+		}
+		x = 95
+		y = 30
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		    add_ideas = solved_petrodolar_crisis
+		}
+	}
+	focus = {
+		id = ANA_invade_iran
+		icon = attack_iran2
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_IMF_talks
+		}
+		x = 96
+		y = 29
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+		country_exists = PER
+		NOT = {
+		has_war_with = PER
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = PER
+    NOT = {
+	country_exists = PER
+	 }
+	} }
+	
+
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = PER
+		}
+	} }
+	focus = {
+		id = ANA_trade_trade_trade
+		icon = ExpandTrade
+		cost = 10,00
+		prerequisite = {
+			focus = ANA_solve_petrodollar_crisis
+		}
+		x = 95
+		y = 31
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		    add_ideas = trade_trade_trade
+		    custom_effect_tooltip = TUR_united_state
+			set_global_flag = TUR_UNITE_DIASPORA
+						TUR_remove_state_modifier_effects = yes
+		}
+	}
+
+
+	focus = {
+		id = TUR_covid-19_pandemic14
+		icon = generic_healthcare
+		cost = 10,00
+		x = 106
+		y = 0
+
+        available = {
+        has_idea = covid_19
+        }
+	
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+		completion_reward = {
+        add_political_power = 75
+	block_health_decrease = yes
+		} }
+		
+	focus = {
+		id = TUR_covid-19_preparations14
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_pandemic14
+		}
+		x = 106
+		y = 1
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19
+  add_idea = covid_19_prepared
+}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TUR_build_up_hospitals14
+		icon = generic_hospital2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations14
+		}
+		x = 104
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}			
+	completion_reward = {
+			subtract_from_variable = { treasury = 20.0 }
+			add_stability = 0.03
+			custom_effect_tooltip = 20_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_turn_airports_to_hospital14
+		icon = generic_hospital
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_build_up_hospitals14
+		}
+		x = 104
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+			subtract_from_variable = { treasury = 5.0 }
+			add_stability = 0.02
+			custom_effect_tooltip = 5_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_start_up_vaccine_program2
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations14
+		}
+		x = 106
+		y = 2
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		
+		
+	completion_reward = {
+	        add_stability = -0.05
+			add_political_power = -75
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			custom_effect_tooltip = COV_DECISION_OPENING_VAC
+			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
+			} 
+	}
+	focus = {
+		id = TUR_buy_german_vaccines2
+		icon = trade_with_germany
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_start_up_vaccine_program2
+		}
+		x = 106
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_increase_funds_to_science14
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations14
+		}
+		x = 108
+		y = 2
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+increase_healthcare_budget = yes
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_medicines14
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_funds_to_science14
+		}                                         
+		prerequisite = {                          
+			focus = TUR_increase_funds_to_science14
+		}
+		x = 108
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_prepared
+  add_idea = covid_19_medicined
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_chinese_vaccines14
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turn_airports_to_hospital14
+		}
+		prerequisite = {
+			focus = TUR_buy_german_vaccines2
+		}
+		prerequisite = {
+			focus = TUR_buy_medicines14
+		}
+		x = 106
+		y = 4
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_normalisation_from_covid14
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_buy_chinese_vaccines14
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
+		} }
+		x = 106
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_medicined
+  add_idea = covid_19_normalised
+} 
+	custom_effect_tooltip = COV_AVAILABLE_1
+}
+	}
+	focus = {
+		id = TUR_end_of_covid14
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_normalisation_from_covid14
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
+		} }
+		x = 106
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+remove_ideas = covid_19_normalised
+	custom_effect_tooltip = COV_AVAILABLE_2
+}
+	}
+
+
+
+##############################
+###	Start of Cypriot Tree ###	x = 13 y = 10
+##############################
+
+shared_focus = TUR_greek_issues
+
+############################
+### End of Cypriot Focus Tree ###
+############################
+
+}
+

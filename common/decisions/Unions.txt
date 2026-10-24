@@ -1,0 +1,1809 @@
+TUR_union_situation = {
+
+
+    TUR_union_cobalt_v1 = {
+		icon = GFX_decision_eng_trade_unions_demand
+
+		available = {
+   check_variable = { var = TUR_union_acceptance value = 95 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 0 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 2 compare = less_than }       
+		} 
+
+		visible = {
+			original_tag = TUR
+  check_variable = { var = TUR_union_acceptance value = 95 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 0 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 2 compare = less_than }
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 75
+		days_re_enable = 150
+	
+          modifier = {
+          communism_drift = 0.15
+		custom_modifier_tooltip = PREREQUISITE_95
+          }
+		remove_effect = {
+               custom_effect_tooltip = UNION_SHIFT_LEVEL
+               custom_effect_tooltip = NEW_UNION_STATE
+               custom_effect_tooltip = WARN_FOR_LEVEL_ELEVIATION
+               subtract_from_variable = { TUR_union_political_level = 1 }
+               subtract_from_variable = { TUR_union_uneasiness = 5 }
+	          set_variable = { TUR_union_acceptance = 55 }
+               add_stability = -0.1
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}			
+	}   } 
+     
+
+    TUR_union_cobalt_v2 = {
+		icon = GFX_decision_eng_trade_unions_demand
+
+		available = {
+  check_variable = { var = TUR_union_acceptance value = 95 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 1 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 3 compare = less_than }       
+		} 
+
+		visible = {
+ check_variable = { var = TUR_union_acceptance value = 95 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 1 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 3 compare = less_than }       
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 75
+		days_re_enable = 150
+	
+          modifier = {
+          communism_drift = 0.1
+		custom_modifier_tooltip = PREREQUISITE_95
+          }
+		remove_effect = {
+               custom_effect_tooltip = UNION_SHIFT_LEVEL
+               custom_effect_tooltip = WARN_FOR_LEVEL_ELEVIATION
+               subtract_from_variable = { TUR_union_political_level = 1 }
+               subtract_from_variable = { TUR_union_uneasiness = 5 }
+	          set_variable = { TUR_union_acceptance = 55 }
+               add_stability = -0.1
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	
+          }		
+          }
+
+
+    TUR_union_cobalt_v3 = {
+		icon = GFX_decision_eng_trade_unions_demand
+
+		available = {
+  check_variable = { var = TUR_union_acceptance value = 95 compare = greater_than } 
+  check_variable = { var = TUR_union_political_level value = 2 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 4 compare = less_than }       
+		} 
+
+		visible = {
+ check_variable = { var = TUR_union_acceptance value = 95 compare = greater_than } 
+  check_variable = { var = TUR_union_political_level value = 2 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 4 compare = less_than }       
+			original_tag = TUR 
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 75
+		days_re_enable = 150
+	
+
+          modifier = {
+          communism_drift = 0.05
+		custom_modifier_tooltip = PREREQUISITE_95
+          }
+		remove_effect = {
+               custom_effect_tooltip = UNION_SHIFT_LEVEL
+               custom_effect_tooltip = WARN_FOR_LEVEL_ELEVIATION
+               subtract_from_variable = { TUR_union_political_level = 1 }
+               subtract_from_variable = { TUR_union_uneasiness = 5 }
+	          set_variable = { TUR_union_acceptance = 55 }
+               add_stability = -0.1
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	
+          }		
+          }
+
+
+    TUR_open_the_emergency_panel = {
+		icon = GFX_decision_category_SOV_paranoia
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 25
+          
+		days_re_enable = 365
+	
+		remove_effect = {
+		custom_effect_tooltip = MIND_CLICKING_THESE_IN_UNEMPLOYMENT_ISSUES
+		}
+		complete_effect = {
+               set_global_flag = EMERGENCY_CONTROL_PANEL_IS_HERE
+			custom_effect_tooltip = OPEN_THE_EMERGENCY_PANEL
+	}   } 
+
+
+    TUR_cut_the_employment = {
+		icon = GFX_decision_category_SOV_permanent_revolution
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+               has_global_flag = EMERGENCY_CONTROL_PANEL_IS_HERE
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 25
+ 		days_remove = 100         
+	
+		modifier = {
+mil_facs_worker_requirement_modifier = 0.2
+civ_facs_worker_requirement_modifier = 0.2
+offices_worker_requirement_modifier = 0.2
+				total_workforce_modifier = -0.2
+	}   } 
+
+
+    TUR_increase_the_employment = {
+		icon = GFX_decision_category_SOV_permanent_revolution
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+               has_global_flag = EMERGENCY_CONTROL_PANEL_IS_HERE
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 25
+ 		days_remove = 100         
+	
+		modifier = {
+mil_facs_worker_requirement_modifier = -0.2
+civ_facs_worker_requirement_modifier = -0.2
+offices_worker_requirement_modifier = -0.2
+				total_workforce_modifier = 0.2
+	}   } 
+
+    TUR_political_union_talks = {
+		icon = GFX_decision_SOV_place_hq
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 35
+		cost = 50
+		days_re_enable = 50
+	
+		modifier = {
+          communism_drift = 0.05
+		}
+		remove_effect = {
+			custom_effect_tooltip = UNION_POLITICS
+		subtract_from_variable = { TUR_union_uneasiness = -2 }
+          custom_effect_tooltip =  UNION_DECREASE_3
+		subtract_from_variable = { TUR_union_acceptance = 3 }
+          custom_effect_tooltip =  UNION_POLITICS_1
+	}   } 
+
+    TUR_promises_for_industrial_fund = {
+		icon = GFX_decision_money_dec
+
+		available = {
+			NOT = {
+			has_global_flag = WORK_OF_THE_HAMMER
+			has_global_flag = CHECKING_THE_INDUSTRIAL_WORKPLACES
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+			num_of_factories < 75
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 75
+		days_re_enable = 150
+	
+		modifier = {
+				stability_factor = 0.03
+		}
+		complete_effect = {
+		set_global_flag = INDUSTRIAL_FUND_PROMISE
+		}
+		remove_effect = {
+		clr_global_flag = INDUSTRIAL_FUND_PROMISE
+			custom_effect_tooltip = UNION_INCREASE_3
+		subtract_from_variable = { TUR_union_acceptance = -3 }
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+	}   } 
+
+
+    TUR_promises_for_industrial_fund_2 = {
+		icon = GFX_decision_money_dec
+
+		available = {
+			NOT = {
+			has_global_flag = WORK_OF_THE_HAMMER
+			has_global_flag = CHECKING_THE_INDUSTRIAL_WORKPLACES		
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+			num_of_factories > 75
+        	num_of_factories < 150
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 75
+		days_re_enable = 150
+	
+		modifier = {
+				stability_factor = 0.03
+		}
+		complete_effect = {
+		set_global_flag = INDUSTRIAL_FUND_PROMISE
+		}
+		remove_effect = {
+		clr_global_flag = INDUSTRIAL_FUND_PROMISE		
+			custom_effect_tooltip = UNION_INCREASE_3
+		subtract_from_variable = { TUR_union_acceptance = -3 }
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+	}   } 
+
+
+    TUR_promises_for_industrial_fund_3 = {
+		icon = GFX_decision_money_dec
+
+		available = {
+			NOT = {
+			has_global_flag = WORK_OF_THE_HAMMER
+			has_global_flag = CHECKING_THE_INDUSTRIAL_WORKPLACES			
+			}
+		} 
+
+		visible = {
+		original_tag = TUR
+        	num_of_factories > 150
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 75
+		days_re_enable = 150
+	
+		modifier = {
+				stability_factor = 0.03
+		}
+		complete_effect = {
+		set_global_flag = INDUSTRIAL_FUND_PROMISE
+		}
+		remove_effect = {
+		clr_global_flag = INDUSTRIAL_FUND_PROMISE		
+			custom_effect_tooltip = UNION_INCREASE_3
+		subtract_from_variable = { TUR_union_acceptance = -3 }
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_expense_tt
+	}   } 
+
+   TUR_check_the_industrial_workplaces = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			NOT = {
+			has_global_flag = INDUSTRIAL_FUND_PROMISE
+			has_global_flag = WORK_OF_THE_HAMMER			
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 125
+		cost = 100
+		days_re_enable = 175
+	
+		modifier = {
+				political_power_cost = 0.1
+		}
+		complete_effect = {
+		set_global_flag = CHECKING_THE_INDUSTRIAL_WORKPLACES
+		}
+		remove_effect = {
+		clr_global_flag = CHECKING_THE_INDUSTRIAL_WORKPLACES		
+			custom_effect_tooltip = UNION_INCREASE_5
+		subtract_from_variable = { TUR_union_acceptance = -5 }
+        add_stability = 0.01
+	}   } 
+
+   TUR_the_work_of_hammer = {
+		icon = GFX_decision_negotiate_icon
+
+		available = {
+			NOT = {
+			has_global_flag = CHECKING_THE_INDUSTRIAL_WORKPLACES 
+			has_global_flag = INDUSTRIAL_FUND_PROMISE			
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 50
+		days_re_enable = 75
+	
+		modifier = {
+				production_speed_buildings_factor = 0.03
+                communism_drift = 0.02
+		}
+		complete_effect = {
+		set_global_flag = WORK_OF_THE_HAMMER
+		}
+		remove_effect = {
+		clr_global_flag = WORK_OF_THE_HAMMER
+			custom_effect_tooltip = UNION_INCREASE_3
+		subtract_from_variable = { TUR_union_acceptance = -3 }
+            add_political_power = 25
+	}   } 
+
+   TUR_industrial_concessions = {
+		icon = GFX_decision_combatinfl_button
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 100
+		cost = 50
+		days_re_enable = 75
+	
+		modifier = {
+          consumer_goods_factor = 0.02
+		}
+		remove_effect = {
+			custom_effect_tooltip = UNION_INCREASE_3
+		subtract_from_variable = { TUR_union_acceptance = -3 }	     
+	}   } 
+
+########################### Opposition Side ###########################
+
+
+   TUR_leash_new_industries = {
+		icon = GFX_decision_generic_construction
+
+		available = {
+			NOT = {
+			has_global_flag = ENCOURAGED_CHEAP_INDUSTRIES
+			has_global_flag = BENEFIT_THE_MAXIMIZATION			
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 150
+		cost = 50
+		days_re_enable = 100
+	
+		modifier = {
+            political_power_cost = -0.05
+		}
+		complete_effect = {
+		set_global_flag = LEASHED_NEW_INDUSTRIES
+		}
+		remove_effect = {
+		clr_global_flag = LEASHED_NEW_INDUSTRIES		
+			custom_effect_tooltip = UNION_DECREASE_5
+		subtract_from_variable = { TUR_union_acceptance = 5 }
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+        add_offsite_building = { type = industrial_complex level = 1 }
+	}   } 
+
+  TUR_encourage_the_cheap_industries = {
+		icon = GFX_decision_generic_scorched_earth
+
+		available = {
+			NOT = {
+			has_global_flag = LEASHED_NEW_INDUSTRIES
+			has_global_flag = BENEFIT_THE_MAXIMIZATION			
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 365
+		cost = 100
+		days_re_enable = 225
+	
+		modifier = {
+				production_speed_buildings_factor = 0.1
+		}
+		complete_effect = {
+		set_global_flag = ENCOURAGED_CHEAP_INDUSTRIES
+		}
+		remove_effect = {
+		clr_global_flag = ENCOURAGED_CHEAP_INDUSTRIES		
+			custom_effect_tooltip = UNION_DECREASE_5
+		subtract_from_variable = { TUR_union_acceptance = 5 }
+        add_stability = -0.01
+	}   }
+
+ TUR_benefit_maximization = {
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		available = {
+			NOT = {
+			has_global_flag = ENCOURAGED_CHEAP_INDUSTRIES
+			has_global_flag = LEASHED_NEW_INDUSTRIES			
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 365
+		cost = 150
+		days_re_enable = 365
+	
+		modifier = {
+custom_modifier_tooltip = AD_025
+		}
+		complete_effect = {
+		set_global_flag = BENEFIT_THE_MAXIMIZATION
+		}
+		remove_effect = {
+		clr_global_flag = BENEFIT_THE_MAXIMIZATION		
+			custom_effect_tooltip = UNION_DECREASE_3
+		subtract_from_variable = { TUR_union_acceptance = 3 }
+        			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+	}   }
+
+
+   TUR_sell_war_bonds = {
+		icon = GFX_decision_eng_support_imperialist_coup
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_war = yes
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		days_remove = 125
+		cost = 75
+		days_re_enable = 75
+	
+		modifier = {
+				consumer_goods_factor = -0.02
+		}
+		remove_effect = {
+			custom_effect_tooltip = UNION_INCREASE_3
+		subtract_from_variable = { TUR_union_acceptance = -3 }
+	}   } 
+
+########################### Integration Side ###########################
+
+
+     TUR_office_sector_50 = {    
+          icon = GFX_decision_hol_inundate_water_lines	 
+          allowed = { tag = TUR }                 
+          available = {   
+			has_global_flag = Inevitable                                  
+          }
+          activation = {    
+            offices > 49        
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_office_sector_100 = {    
+          icon = GFX_decision_hol_inundate_water_lines	 
+          allowed = { tag = TUR }                 
+          available = {
+			has_global_flag = Inevitable                                          
+          }
+          activation = { 
+          offices > 99                
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_office_sector_150 = {    
+          icon = GFX_decision_hol_inundate_water_lines	 
+          allowed = { tag = TUR }                 
+          available = {
+			has_global_flag = Inevitable                                          
+          }
+          activation = { 
+          offices > 149                
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_office_sector_200 = {    
+          icon = GFX_decision_hol_inundate_water_lines	 
+          allowed = { tag = TUR }                 
+          available = {
+			has_global_flag = Inevitable                                          
+          }
+          activation = { 
+          offices > 199                
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_office_sector_250 = {    
+          icon = GFX_decision_hol_inundate_water_lines	 
+          allowed = { tag = TUR }                 
+          available = {
+			has_global_flag = Inevitable                                          
+          }
+          activation = { 
+          offices > 249                
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_office_sector_300 = {    
+          icon = GFX_decision_hol_inundate_water_lines	 
+          allowed = { tag = TUR }                 
+          available = {
+			has_global_flag = Inevitable                                          
+          }
+          activation = { 
+          offices > 299                
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+     TUR_industrial_complex_sector_50 = {    
+          icon = GFX_decision_czechia_build_civ_dec	  
+          allowed = { tag = TUR }                 
+          available = {   
+			has_global_flag = Inevitable                                       
+          }
+          activation = {     
+          industrial_complex > 49             
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_industrial_complex_sector_100 = {    
+          icon = GFX_decision_czechia_build_civ_dec	 
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = { 
+           industrial_complex > 99                   
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }	   
+          }
+        }
+
+
+     TUR_industrial_complex_sector_150 = {    
+          icon = GFX_decision_czechia_build_civ_dec	 
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = { 
+           industrial_complex > 149                   
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }	   
+          }
+        }
+
+
+     TUR_industrial_complex_sector_200 = {    
+          icon = GFX_decision_czechia_build_civ_dec	 
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = { 
+           industrial_complex > 199                   
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }	   
+          }
+        }
+
+
+     TUR_industrial_complex_sector_250 = {    
+          icon = GFX_decision_czechia_build_civ_dec	 
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = { 
+           industrial_complex > 249                   
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }	   
+          }
+        }
+
+
+     TUR_industrial_complex_sector_300 = {    
+          icon = GFX_decision_czechia_build_civ_dec	 
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = { 
+           industrial_complex > 299                   
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }	   
+          }
+        }
+
+     TUR_arms_factory_sector_50 = {    
+          icon = GFX_decision_generic_factory
+          allowed = { tag = TUR }                 
+          available = {  
+			has_global_flag = Inevitable                                        
+          }
+          activation = {       
+          arms_factory > 49             
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_arms_factory_sector_100 = {    
+          icon = GFX_decision_generic_factory
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = {   
+           arms_factory > 99               
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+				custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_arms_factory_sector_150 = {    
+          icon = GFX_decision_generic_factory
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = {   
+           arms_factory > 149               
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+				custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_arms_factory_sector_200 = {    
+          icon = GFX_decision_generic_factory
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = {   
+           arms_factory > 199               
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+				custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+     TUR_arms_factory_sector_250 = {    
+          icon = GFX_decision_generic_factory
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = {   
+           arms_factory > 249               
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+				custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+     TUR_arms_factory_sector_300 = {    
+          icon = GFX_decision_generic_factory
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = {   
+           arms_factory > 299             
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+				custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_green_energy_sector_50 = {    
+          icon = GFX_decision_3si_dec
+          allowed = { tag = TUR }                 
+          available = {  
+			has_global_flag = Inevitable                                        
+          }
+          activation = {       
+           synthetic_refinery > 49             
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_green_energy_sector_100 = {    
+          icon = GFX_decision_3si_dec
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = {   
+           synthetic_refinery > 99               
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+				custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_fossil_powerplant_sector_50 = {    
+          icon = GFX_decision_oil
+          allowed = { tag = TUR }                 
+          available = {  
+			has_global_flag = Inevitable                                        
+          }
+          activation = {       
+          fossil_powerplant > 49             
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_fossil_powerplant_sector_100 = {    
+          icon = GFX_decision_oil
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = {   
+           fossil_powerplant > 99               
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+				custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_nuclear_sector_10 = {    
+          icon = GFX_decision_reactor_dec
+          allowed = { tag = TUR }                 
+          available = {  
+			has_global_flag = Inevitable                                        
+          }
+          activation = {       
+          nuclear_reactor > 9             
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+
+
+     TUR_nuclear_sector_20 = {    
+          icon = GFX_decision_reactor_dec
+          allowed = { tag = TUR }                 
+          available = { 
+			has_global_flag = Inevitable                                         
+          }
+          activation = {   
+           nuclear_reactor > 19               
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 75              
+          timeout_effect = {                      
+				custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_acceptance = 10 }
+          }
+        }
+########################### Others ###########################
+
+
+	TUR_integrate_the_unions = {
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+            has_completed_focus = TUR_tkp
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		fire_only_once = yes
+		cost = 100
+		
+		complete_effect = {
+                        add_stability = 0.05
+                        custom_effect_tooltip = UNIONS_GONE_2
+                        set_global_flag = CLOSE_THE_UNIONS
+	}   }
+
+
+	TUR_shut_down_the_unions = {
+		icon = GFX_decision_generic_intelligence_operation
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+            OR = {
+            		western_liberals_are_in_power = yes
+            nationalist_right_wing_populists_are_in_power = yes
+			nationalist_monarchists_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+			nationalist_fascist_are_in_power = yes
+				emerging_reactionaries_are_in_power = yes
+				neutrality_neutral_communism_are_in_power = yes
+				neutrality_neutral_libertarians_are_in_power = yes
+				neutrality_neutral_green_are_in_power = yes
+				neutrality_neutral_social_are_in_power = yes
+				neutrality_neutral_conservatism_are_in_power = yes
+                has_completed_focus = TUR_another_military_plot
+            }
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		fire_only_once = yes
+		cost = 100
+		
+		complete_effect = {
+            add_stability = -0.05
+                             custom_effect_tooltip = UNIONS_GONE
+                            set_global_flag = CLOSE_THE_UNIONS
+	}   }
+
+
+
+########################### ALLEVIATE Organizations ###########################
+
+     TUR_adjust_the_alleviation = {    
+          icon = GFX_decision_generic_political_rally  
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+  check_variable = { var = TUR_union_acceptance value = 35 compare = less_than }    
+  NOT = {
+ check_variable = { var = TUR_union_political_level value = 3 compare = greater_than } 
+  } 
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75   
+    		days_re_enable = 15 
+
+          timeout_effect = {                      
+               subtract_from_variable = { TUR_union_political_level = -1 }
+	          set_variable = { TUR_union_acceptance = 55 }
+
+               add_stability = -0.05
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	
+          }
+        }
+
+###########################  Emergency Control Panel Check  ###########################
+
+     TUR_emergency_closure = {    
+          icon = GFX_decision_generic_political_rally  
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+          has_global_flag = EMERGENCY_CONTROL_PANEL_IS_HERE
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 125    
+
+          timeout_effect = {                      
+               clr_global_flag = EMERGENCY_CONTROL_PANEL_IS_HERE	
+          }
+        }
+
+########################### Politics ###########################
+
+
+    TUR_ally_with_DISK = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		available = {
+   check_variable = { var = TUR_union_uneasiness value = 10 compare = greater_than }     
+		} 
+
+		visible = {
+			original_tag = TUR
+  check_variable = { var = TUR_union_uneasiness value = 10 compare = greater_than }     
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 100
+		days_re_enable = 365
+	
+		complete_effect = {
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_uneasiness = 10 }              
+           add_timed_idea = { idea = alliance_with_DISK days = 365}   
+	}   } 
+     
+
+    TUR_ally_with_TURK_IS = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		available = {
+  check_variable = { var = TUR_union_uneasiness value = 10 compare = greater_than }         
+		} 
+
+		visible = {
+			original_tag = TUR
+  check_variable = { var = TUR_union_uneasiness value = 10 compare = greater_than }     
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 100
+		days_re_enable = 365
+	
+		complete_effect = {
+			custom_effect_tooltip = UNION_DECREASE_10
+		subtract_from_variable = { TUR_union_uneasiness = 10 }
+           add_timed_idea = { idea = alliance_with_TURK_IS days = 365}   
+	}   } 
+
+########################### Strikes! ALLEVIATE (1) ###########################
+
+     TUR_strikes_recovery = {    
+          icon = GFX_decisions_category_internal_factions
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+   check_variable = { var = TUR_union_political_level value = 0 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 2 compare = less_than }  
+          has_global_flag = TUR_IN_STRIKE_RECOVERY  
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 300   
+    		days_re_enable = 15                
+          timeout_effect = {                      
+          clr_global_flag = TUR_IN_STRIKE_RECOVERY
+		  custom_effect_tooltip = END_OF_THE_STRIKE_RECOVERY
+          }
+        }
+
+
+TUR_strikes_1 = {    
+     icon = GFX_decision_generic_civil_support	  
+     allowed = { tag = TUR }                 
+     available = {   
+           has_global_flag = Inevitable   
+     }
+     activation = {  
+   check_variable = { var = TUR_union_political_level value = 0 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 2 compare = less_than }   
+       has_war = yes   
+       has_stability < 0.45   
+               NOT = {
+           check_variable = { var = TUR_union_acceptance value = 100 compare = greater_than }
+               has_idea = turkish_2001_crisis
+               has_idea = reformed_2001_crisis  
+               has_idea = strikes_in_turkey    
+                    has_global_flag = TUR_IN_STRIKE_RECOVERY            
+               }   
+     }
+     is_good = no     
+     fire_only_once = no		  
+     selectable_mission = no           
+     days_mission_timeout = 25   
+         days_re_enable = 450                
+     timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey  days = 125 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+     }
+   }
+
+     TUR_strikes_2 = {    
+          icon = GFX_decision_generic_civil_support	  
+          allowed = { tag = TUR }                 
+          available = {  
+            has_global_flag = Inevitable                            
+          }
+          activation = { 
+   check_variable = { var = TUR_union_political_level value = 0 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 2 compare = less_than }  
+                    has_stability < 0.2
+                    has_stability > 0.1
+                    NOT = {
+                check_variable = { var = TUR_union_acceptance value = 85 compare = greater_than }
+                    has_idea = depression
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis    
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY    
+                    has_war = yes          
+                    }                
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25  
+    		days_re_enable = 450                 
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey  days = 250 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }
+
+
+     TUR_strikes_3 = {    
+          icon = GFX_decision_generic_civil_support	 
+          allowed = { tag = TUR }                 
+          available = {   
+            has_global_flag = Inevitable                            
+          }
+          activation = {
+   check_variable = { var = TUR_union_political_level value = 0 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 2 compare = less_than }    
+                    has_stability < 0.1
+                    NOT = {
+            check_variable = { var = TUR_union_acceptance value = 95 compare = greater_than }
+                    has_idea = depression
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY  
+                    has_war = yes                  
+                    }                    
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25   
+    		days_re_enable = 450           
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey  days = 365 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }
+
+
+     TUR_strikes_4 = {    
+          icon = GFX_decision_generic_civil_support	 
+          allowed = { tag = TUR }                 
+          available = {   
+            has_global_flag = Inevitable                            
+          }
+          activation = {  
+   check_variable = { var = TUR_union_political_level value = 0 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 2 compare = less_than }  
+                    has_idea = depression
+                    NOT = {
+            check_variable = { var = TUR_union_acceptance value = 85 compare = greater_than }
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY  
+                    has_war = yes                  
+                    }                    
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25   
+    		days_re_enable = 450           
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey  days = 425 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }
+
+
+     TUR_strikes_5 = {    
+          icon = GFX_decision_generic_civil_support	 
+          allowed = { tag = TUR }                 
+          available = {   
+            has_global_flag = Inevitable                            
+          }
+          activation = {  
+   check_variable = { var = TUR_union_political_level value = 0 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 2 compare = less_than }  
+                         has_stability > 0.2
+			check_variable = { var = TUR_union_acceptance value = 35 compare = less_than_or_equals }
+                    NOT = {
+                    has_idea = depression
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY  
+                    has_war = yes                  
+                    }                    
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25   
+    		days_re_enable = 450           
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey  days = 125 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }
+
+
+    unions_acceptance_alt = {    
+          icon = GFX_decision_generic_political_rally
+          allowed = { tag = TUR }                 
+          activation = {  
+check_variable = { var = TUR_union_acceptance value = 100 compare = greater_than }
+         }          
+		 available = {   
+        has_global_flag = Inevitable   
+          }
+          is_good = no        
+		fire_only_once = no	  
+          selectable_mission = yes                
+          days_mission_timeout = 5            
+          timeout_effect = {                             
+                add_stability = 0.01
+				subtract_from_variable = { TUR_union_acceptance = 5}
+				custom_effect_tooltip = UNION_ALT_BALANCE
+          }
+     }
+
+
+########################### Strikes! ALLEVIATE (2) ###########################
+
+     TUR_strikes_recovery_ALV_2 = {    
+          icon = GFX_decisions_category_internal_factions	  
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+  check_variable = { var = TUR_union_political_level value = 1 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 3 compare = less_than }       
+          has_global_flag = TUR_IN_STRIKE_RECOVERY  
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 300   
+    		days_re_enable = 15                
+          timeout_effect = {                      
+          clr_global_flag = TUR_IN_STRIKE_RECOVERY
+		  custom_effect_tooltip = END_OF_THE_STRIKE_RECOVERY
+          }
+        }
+
+
+TUR_strikes_1_ALV_2 = {    
+     icon = GFX_decision_generic_civil_support	  
+     allowed = { tag = TUR }                 
+     available = {   
+           has_global_flag = Inevitable   
+     }
+     activation = {   
+  check_variable = { var = TUR_union_political_level value = 1 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 3 compare = less_than }       
+       has_war = yes   
+       has_stability < 0.45   
+               NOT = {
+           check_variable = { var = TUR_union_acceptance value = 100 compare = greater_than }
+               has_idea = turkish_2001_crisis
+               has_idea = reformed_2001_crisis  
+               has_idea = strikes_in_turkey    
+                    has_global_flag = TUR_IN_STRIKE_RECOVERY            
+               }   
+     }
+     is_good = no     
+     fire_only_once = no		  
+     selectable_mission = no           
+     days_mission_timeout = 25   
+         days_re_enable = 450                
+     timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey_2  days = 125 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+     }
+   }
+
+     TUR_strikes_2_ALV_2 = {    
+          icon = GFX_decision_generic_civil_support	  
+          allowed = { tag = TUR }                 
+          available = {  
+            has_global_flag = Inevitable                            
+          }
+          activation = { 
+  check_variable = { var = TUR_union_political_level value = 1 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 3 compare = less_than }       
+                    has_stability < 0.2
+                    has_stability > 0.1
+                    NOT = {
+                check_variable = { var = TUR_union_acceptance value = 85 compare = greater_than }
+                    has_idea = depression
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis    
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY    
+                    has_war = yes          
+                    }                
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25  
+    		days_re_enable = 450                 
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey_2  days = 250 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }
+
+
+     TUR_strikes_3_ALV_2 = {    
+          icon = GFX_decision_generic_civil_support	 
+          allowed = { tag = TUR }                 
+          available = {   
+            has_global_flag = Inevitable                            
+          }
+          activation = {  
+  check_variable = { var = TUR_union_political_level value = 1 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 3 compare = less_than }       
+                    has_stability < 0.1
+                    NOT = {
+            check_variable = { var = TUR_union_acceptance value = 95 compare = greater_than }
+                    has_idea = depression
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY  
+                    has_war = yes                  
+                    }                    
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25   
+    		days_re_enable = 450           
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey_2  days = 365 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }
+
+
+     TUR_strikes_4_ALV_2 = {    
+          icon = GFX_decision_generic_civil_support	 
+          allowed = { tag = TUR }                 
+          available = {   
+            has_global_flag = Inevitable                            
+          }
+          activation = {  
+  check_variable = { var = TUR_union_political_level value = 1 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 3 compare = less_than }       
+                    has_idea = depression
+                    NOT = {
+            check_variable = { var = TUR_union_acceptance value = 85 compare = greater_than }
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY  
+                    has_war = yes                  
+                    }                    
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25   
+    		days_re_enable = 450           
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey_2  days = 425 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }
+
+
+     TUR_strikes_5_ALV_2 = {    
+          icon = GFX_decision_generic_civil_support	 
+          allowed = { tag = TUR }                 
+          available = {   
+            has_global_flag = Inevitable                            
+          }
+          activation = {  
+  check_variable = { var = TUR_union_political_level value = 1 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 3 compare = less_than }       
+                         has_stability > 0.2
+			check_variable = { var = TUR_union_acceptance value = 35 compare = less_than_or_equals }
+                    NOT = {
+                    has_idea = depression
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY  
+                    has_war = yes                  
+                    }                    
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25   
+    		days_re_enable = 450           
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey_2  days = 125 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }
+
+
+########################### Strikes! ALLEVIATE (2) ###########################
+
+     TUR_strikes_recovery_ALV_3 = {    
+          icon = GFX_decisions_category_internal_factions	  
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+          has_global_flag = TUR_IN_STRIKE_RECOVERY 
+ check_variable = { var = TUR_union_political_level value = 2 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 4 compare = less_than }   
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 300   
+    		days_re_enable = 15                
+          timeout_effect = {                      
+          clr_global_flag = TUR_IN_STRIKE_RECOVERY
+		  custom_effect_tooltip = END_OF_THE_STRIKE_RECOVERY
+          }
+        }
+
+
+TUR_strikes_1_ALV_3 = {    
+     icon = GFX_decision_generic_civil_support	  
+     allowed = { tag = TUR }                 
+     available = {   
+           has_global_flag = Inevitable   
+     }
+     activation = {   
+ check_variable = { var = TUR_union_political_level value = 2 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 4 compare = less_than }  
+       has_war = yes   
+       has_stability < 0.45   
+               NOT = {
+           check_variable = { var = TUR_union_acceptance value = 100 compare = greater_than }
+               has_idea = turkish_2001_crisis
+               has_idea = reformed_2001_crisis  
+               has_idea = strikes_in_turkey    
+                    has_global_flag = TUR_IN_STRIKE_RECOVERY            
+               }   
+     }
+     is_good = no     
+     fire_only_once = no		  
+     selectable_mission = no           
+     days_mission_timeout = 25   
+         days_re_enable = 450                
+     timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey_3  days = 125 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+     }
+   }
+
+     TUR_strikes_2_ALV_3 = {    
+          icon = GFX_decision_generic_civil_support	  
+          allowed = { tag = TUR }                 
+          available = {  
+            has_global_flag = Inevitable                            
+          }
+          activation = { 
+ check_variable = { var = TUR_union_political_level value = 2 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 4 compare = less_than }  
+                    has_stability < 0.2
+                    has_stability > 0.1
+                    NOT = {
+                check_variable = { var = TUR_union_acceptance value = 85 compare = greater_than }
+                    has_idea = depression
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis    
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY    
+                    has_war = yes          
+                    }                
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25  
+    		days_re_enable = 450                 
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey_3  days = 250 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }
+
+
+     TUR_strikes_3_ALV_3 = {    
+          icon = GFX_decision_generic_civil_support	 
+          allowed = { tag = TUR }                 
+          available = {   
+            has_global_flag = Inevitable                            
+          }
+          activation = {  
+ check_variable = { var = TUR_union_political_level value = 2 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 4 compare = less_than }  
+                    has_stability < 0.1
+                    NOT = {
+            check_variable = { var = TUR_union_acceptance value = 95 compare = greater_than }
+                    has_idea = depression
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY  
+                    has_war = yes                  
+                    }                    
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25   
+    		days_re_enable = 450           
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey_3  days = 365 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }
+
+
+     TUR_strikes_4_ALV_3 = {    
+          icon = GFX_decision_generic_civil_support	 
+          allowed = { tag = TUR }                 
+          available = {   
+            has_global_flag = Inevitable                            
+          }
+          activation = {  
+ check_variable = { var = TUR_union_political_level value = 2 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 4 compare = less_than }  
+                    has_idea = depression
+                    NOT = {
+            check_variable = { var = TUR_union_acceptance value = 85 compare = greater_than }
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY  
+                    has_war = yes                  
+                    }                    
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25   
+    		days_re_enable = 450           
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey_3  days = 425 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }
+
+
+     TUR_strikes_5_ALV_3 = {    
+          icon = GFX_decision_generic_civil_support	 
+          allowed = { tag = TUR }                 
+          available = {   
+            has_global_flag = Inevitable                            
+          }
+          activation = {  
+ check_variable = { var = TUR_union_political_level value = 2 compare = greater_than } 
+   check_variable = { var = TUR_union_political_level value = 4 compare = less_than }       
+                         has_stability > 0.2
+			check_variable = { var = TUR_union_acceptance value = 35 compare = less_than_or_equals }
+                    NOT = {
+                    has_idea = depression
+                    has_idea = turkish_2001_crisis
+                    has_idea = reformed_2001_crisis
+                    has_idea = strikes_in_turkey  
+					has_global_flag = TUR_IN_STRIKE_RECOVERY  
+                    has_war = yes                  
+                    }                    
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no              
+          days_mission_timeout = 25   
+    		days_re_enable = 450           
+          timeout_effect = {                      
+add_timed_idea = { idea = strikes_in_turkey_3  days = 125 }
+set_global_flag = TUR_IN_STRIKE_RECOVERY
+          }
+        }

@@ -1,0 +1,7978 @@
+focus_tree = {
+	id = MD_TUR_AYM
+	default = no
+
+	focus = {
+		id = AYM_the_great_take_over
+		icon = generic_government
+		cost = 10,00
+		x = 21
+		y = 0
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+	    add_political_power = 100
+		} } 
+	focus = {
+		id = AYM_european_union_strategy
+		icon = EU_GDPR
+		cost = 10,00
+		x = 21
+		y = 17
+
+
+        available = {
+		has_completed_focus = AYM_question_of_regime
+        }
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		add_political_power = 100
+}   }
+	focus = {
+		id = AYM_mutual_government
+		icon = MEX_Allign_the_government
+		cost = 10,00
+		mutually_exclusive = {
+			focus = AYM_enforced_law
+		}
+		x = 44
+		y = 0
+
+
+        available = {
+		has_completed_focus = AYM_question_of_regime
+        }
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+	    add_stability = 0.03
+		custom_effect_tooltip = CONS_CORRECTION_1
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.02
+				}
+		} } 
+	focus = {
+		id = AYM_enforced_law
+		icon = USA_new_foreign_policy
+		cost = 10,00
+		mutually_exclusive = {
+			focus = AYM_mutual_government
+		}
+		x = 51
+		y = 0
+
+
+        available = {
+		has_completed_focus = AYM_question_of_regime
+        }
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+	    add_stability = 0.05
+		custom_effect_tooltip = CONS_CORRECTION_2
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14 = 0.05 }
+				recalculate_party = yes
+			}	
+		}  }
+	focus = {
+		id = AYM_foreign_policy
+		icon = USA_new_foreign_policy
+		cost = 10,00
+		x = 48
+		y = 16
+
+
+        available = {
+		has_completed_focus = AYM_question_of_regime
+        }
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		add_war_support = 0.05
+}   }
+	focus = {
+		id = AYM_terror_policy
+		icon = anti_immigration1
+		cost = 10,00
+		x = 54
+		y = 23
+
+
+        available = {
+		has_completed_focus = AYM_democracy_and_the_order
+        }
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 100	
+			add_war_support = 0.03
+		} }
+	focus = {
+		id = AYM_interventionary_guarantees
+		icon = border_conflict_bunker
+		cost = 10,00
+		x = 42
+		y = 23
+
+
+        available = {
+		has_completed_focus = AYM_democracy_and_the_order
+        }
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+					add_war_support = 0.07
+                    }
+	}
+	focus = {
+		id = AYM_the_great_division
+		icon = Focus_Dice_Roll
+		cost = 5,00
+		x = 67
+		y = 0
+
+
+        available = {
+			OR = {
+		has_completed_focus = AYM_mutual_government
+		has_completed_focus = AYM_enforced_law
+        } }
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+	completion_reward = {
+		add_political_power = 150
+		custom_effect_tooltip = TIME_GO_PLS
+                    }
+	}
+	focus = {
+		id = AYM_industrial_rise_up
+		icon = modern_refinery_industry
+		cost = 10,00
+		x = 67
+		y = 16
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 1
+				category = CAT_fuel_oil
+			}
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 2
+				category = CAT_industry
+			}
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = AYM_compromise_focused_eu_policies
+		icon = EU_policies
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_european_union_strategy
+		}
+		x = 16
+		y = 18
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+	    add_political_power = 125
+		} } 
+	focus = {
+		id = AYM_compromise_kurds
+		icon = align_to_kurdistan
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_compromise_focused_eu_policies
+		}
+		x = 14
+		y = 19
+
+
+        available = {
+		country_exists = KUR
+		NOT = {
+		has_war_with = KUR
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = KUR
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = KUR modifier = aligned_kurds }
+					}
+				}
+	focus = {
+		id = AYM_kurdish_unregulationism
+		icon = crush_fanatics_turk
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_compromise_kurds
+		}
+		x = 14
+		y = 20
+
+
+        available = {
+		country_exists = KUR
+		NOT = {
+		has_war_with = KUR
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = KUR
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = KUR modifier = attainable_kurdish_policies }
+	                add_ideas = attainable_kurdish_policies
+	 				}
+				}
+	focus = {
+		id = AYM_german_relations
+		icon = german_confederation
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_compromise_focused_eu_policies
+		}
+		x = 16
+		y = 19
+
+
+        available = {
+		country_exists = GER
+		NOT = {
+		has_war_with = GER
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = GER
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = state_visists }
+	                add_opinion_modifier = { target = GER modifier = state_visists }
+					}
+				}
+	focus = {
+		id = AYM_german_law_deal
+		icon = expand_finance_ministry
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_german_relations
+		}
+		x = 16
+		y = 20
+
+
+        available = {
+		country_exists = GER
+		NOT = {
+		has_war_with = GER
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = GER
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = large_commercial_relations }
+					TUR = {
+					add_ideas = expat_credits
+					}
+					}
+				}
+	focus = {
+		id = AYM_military_relations
+		icon = Generic_Colonial_Army
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_the_great_take_over
+		}
+		x = 19
+		y = 1
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+	    army_experience = 75
+		} } 
+	focus = {
+		id = AYM_meet_HQ
+		icon = Generic_Morale_Bonus_Focus
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_military_relations
+		}
+		x = 18
+		y = 2
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.01
+			army_experience = 25
+custom_effect_tooltip = TUR_MIL_relations_25	
+			subtract_from_variable = { TUR_rel_hepar = -3 }
+		} } 
+	focus = {
+		id = AYM_normalize_with_greece
+		icon = Greece_republic2
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_compromise_focused_eu_policies
+		}
+		x = 18
+		y = 19
+
+
+        available = {
+		country_exists = GRE
+		NOT = {
+		has_war_with = GRE
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = GRE
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GRE modifier = old_rival }
+					}
+				}
+	focus = {
+		id = AYM_EEZ_deal
+		icon = Democratic_Greece
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_normalize_with_greece
+		}
+		x = 18
+		y = 20
+
+
+        available = {
+		country_exists = GRE
+		NOT = {
+		has_war_with = GRE
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = GRE
+	 }
+	}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GRE modifier = eez_settlement }
+                    add_opinion_modifier = { target = GRE modifier = eez_settlement }
+					143 = {
+					set_demilitarized_zone = yes
+					}
+					GRE = {
+									add_ideas = EEZ_settled
+					}
+					TUR = {
+					remove_state_claim = 143
+					add_ideas = EEZ_settled
+					}
+					}
+				}
+	focus = {
+		id = AYM_first_level_acceptance
+		icon = USoE001
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_EEZ_deal
+		}
+		prerequisite = {
+			focus = AYM_german_law_deal
+		}
+		prerequisite = {
+			focus = AYM_kurdish_unregulationism
+		}
+		x = 16
+		y = 21
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.03 }
+			eurosceptic_change = yes
+					country_event = TurkeyF.193
+	}
+	} 
+	focus = {
+		id = AYM_armenian_deal
+		icon = ARM_united_and_ready
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_first_level_acceptance
+		}
+		x = 14
+		y = 22
+
+
+
+        available = {
+		country_exists = ARM
+		NOT = {
+		has_war_with = ARM
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = ARM
+	 }
+	} 
+	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GRE modifier = old_rival }
+					add_political_power = -50
+					}
+				}
+	focus = {
+		id = AYM_syrian_way
+		icon = unitary_republic_of_syria
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_first_level_acceptance
+		}
+		x = 18
+		y = 22
+
+
+        available = {
+		country_exists = SYR
+		NOT = {
+		has_war_with = SYR
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = SYR
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+					reverse_add_opinion_modifier = { target = SYR modifier = declaration_of_hostility }
+		} } 
+	focus = {
+		id = AYM_build_a_wall
+		icon = anti_immigration3
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_syrian_way
+		}
+		x = 18
+		y = 23
+
+
+        available = {
+		country_exists = SYR
+		NOT = {
+		has_war_with = SYR
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = SYR
+	 }
+	} 
+	
+
+		available = {
+		controls_state = 162
+		controls_state = 992
+		controls_state = 158
+		}
+	
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				
+	completion_reward = {
+	  			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+            992 = {
+                if = {
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 12029
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 3889
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 9893
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 9823
+                            instant_build = yes
+                        }
+                    } }
+            162 = {
+                if = {
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 11871
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 12416
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 12387
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 7350
+                            instant_build = yes
+                        }
+                   
+			} } } 		
+	}
+	focus = {
+		id = AYM_laws_above
+		icon = military_deal
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_the_great_take_over
+		}
+		x = 21
+		y = 1
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+
+		completion_reward = {
+	    add_ideas = power_of_the_law
+		} } 
+	focus = {
+		id = AYM_law_unity
+		icon = diplomatic_treaty
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_laws_above
+		}
+		x = 21
+		y = 2
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+		add_political_power = 25
+swap_ideas = { 
+  remove_idea = power_of_the_law
+  add_idea = power_and_unity_of_the_law
+}
+      
+}   }
+	focus = {
+		id = AYM_appoint_lawmakers
+		icon = diplomacy
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_law_unity
+		}
+		x = 20
+		y = 3
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+		custom_effect_tooltip = CONS_CORRECTION_1
+        add_political_power = 50
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14 = 0.02 }
+				recalculate_party = yes
+			}	
+}   }
+	focus = {
+		id = AYM_control_the_municipality
+		icon = position_armies
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_law_unity
+		}
+		x = 22
+		y = 3
+
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+
+		completion_reward = {
+	    add_ideas = working_municipilites
+		} } 
+	focus = {
+		id = AYM_constitution_amedment
+		icon = treaty2
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_control_the_municipality
+		}
+		prerequisite = {
+			focus = AYM_appoint_lawmakers
+		}
+		x = 21
+		y = 4
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+	    add_political_power = 125
+		add_stability = 0.03
+		} } 
+	focus = {
+		id = AYM_mass_reformation
+		icon = treaty3
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_constitution_amedment
+		}
+		x = 21
+		y = 5
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = power_and_unity_of_the_law
+  add_idea = power_and_unity_of_the_law_2
+} } }
+	focus = {
+		id = AYM_scientific_law
+		icon = science
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_mass_reformation
+		}
+		x = 17
+		y = 6
+
+
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+
+		completion_reward = {
+	    add_ideas = act_of_copyright
+		} } 
+	focus = {
+		id = AYM_forced_university
+		icon = volunteer_alliance
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_scientific_law
+		}
+		x = 15
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+	    add_ideas = university_coercion
+		} } 
+	focus = {
+		id = AYM_european_colleges
+		icon = align_to_europe
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_forced_university
+		}
+		x = 13
+		y = 8
+
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+
+		completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.03 }
+			eurosceptic_change = yes
+	    add_ideas = european_colleges_for_turkey
+		} } 
+	focus = {
+		id = AYM_social_law
+		icon = BRA_the_european_social_democrat_model
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_mass_reformation
+		}
+		x = 21
+		y = 6
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+		add_stability = 0.05
+}   }
+	focus = {
+		id = AYM_organized_bureocracy
+		icon = autonomy
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_social_law
+		}
+		x = 20
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+
+		completion_reward = {
+	    add_ideas = bureocratic_reorganization
+		} } 
+	focus = {
+		id = AYM_social_critics
+		icon = break_free
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_social_law
+		}
+		x = 22
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+	    add_ideas = social_critiction
+		} } 
+	focus = {
+		id = AYM_depoliticization
+		icon = democratic_stability
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_organized_bureocracy
+		}
+		prerequisite = {
+			focus = AYM_social_critics
+		}
+		x = 21
+		y = 8
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+	    add_ideas = rise_of_depoliticalization
+		} } 
+	focus = {
+		id = AYM_a_political_laws
+		icon = Generic_Factionalism
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_organized_bureocracy
+		}
+		x = 19
+		y = 8
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+		add_stability = 0.02
+		custom_effect_tooltip = CONS_CORRECTION_1
+						add_popularity = {
+					ideology = neutrality
+					popularity = -0.03
+				}
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14 = 0.02 }
+				recalculate_party = yes
+			}	
+}   }
+	focus = {
+		id = AYM_social_defence
+		icon = social_democracy_industry
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_social_critics
+		}
+		x = 23
+		y = 8
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+		add_stability = 0.03
+						add_popularity = {
+					ideology = neutrality
+					popularity = 0.02
+				}
+}   }
+	focus = {
+		id = AYM_task_the_armed_forces
+		icon = Polish_army
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_social_defence
+		}
+		prerequisite = {
+			focus = AYM_depoliticization
+		}
+		prerequisite = {
+			focus = AYM_a_political_laws
+		}
+		x = 21
+		y = 9
+
+	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+		completion_reward = {
+		add_stability = -0.05
+		army_experience = -25
+						add_popularity = {
+					ideology = neutrality
+					popularity = 0.07
+				}
+}   }
+	focus = {
+		id = AYM_question_the_system
+		icon = Generic_Ripping_Papers
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_the_great_take_over
+		}
+		x = 23
+		y = 1
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+	    add_stability = -0.03
+		custom_effect_tooltip = CONS_RESERVE_1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14 = -0.02 }
+				recalculate_party = yes
+			}
+		} } 
+	focus = {
+		id = AYM_party_cleaning
+		icon = Generic_Political_Killing
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_question_the_system
+		}
+		x = 24
+		y = 2
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+	    add_stability = 0.02
+		custom_effect_tooltip = CONS_CORRECTION_1
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.02
+				}
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14 = 0.02 }
+				recalculate_party = yes
+			}	
+		} } 
+	focus = {
+		id = AYM_relation_on_invest
+		icon = central_planned_economy
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_european_union_strategy
+		}
+		x = 26
+		y = 18
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+	    add_political_power = 125
+		} } 
+	focus = {
+		id = AYM_romania_invest
+		icon = align_to_romania
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_relation_on_invest
+		}
+		x = 24
+		y = 19
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+        available = {
+		country_exists = ROM
+		NOT = {
+		has_war_with = ROM
+		 }
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = ROM
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = ROM modifier = eur_investment_by_turkey }
+			150 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			ROM = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = AYM_romania_invest_2
+		icon = romanian_investements
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_romania_invest
+		}
+		x = 24
+		y = 20
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+        available = {
+		country_exists = ROM
+		NOT = {
+		has_war_with = ROM
+		 }
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = ROM
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = ROM modifier = eur_investment_by_turkey_2 }
+			150 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			ROM = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = AYM_military_law
+		icon = bosnian_army_officer2
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_mass_reformation
+		}
+		x = 25
+		y = 6
+
+        search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+        search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.02
+			army_experience = 25
+			custom_effect_tooltip = TUR_MIL_relations_58
+subtract_from_variable = { TUR_rel_hepar = 3 }
+			}
+		}
+	focus = {
+		id = AYM_suspend_military_actions
+		icon = Generic_Urban_Partisans
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_military_law
+		}
+		x = 25
+		y = 7
+
+        search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+        search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = -75
+			army_experience = -25
+			custom_effect_tooltip = TUR_MIL_relations_58
+			subtract_from_variable = { TUR_rel_hepar = 3 }
+			}
+		}
+	focus = {
+		id = AYM_military_courts
+		icon = dangerous_laws
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_suspend_military_actions
+		}
+		x = 25
+		y = 8
+
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
+        search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = -25
+			army_experience = -25
+				set_temp_variable = { temp_opinion = -15 }	
+            change_the_military_opinion = yes
+			subtract_from_variable = { TUR_rel_hepar = 3 }
+			}
+		}
+	focus = {
+		id = AYM_bulgaria_invest
+		icon = align_to_bulgaria
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_relation_on_invest
+		}
+		x = 26
+		y = 19
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+        available = {
+		country_exists = BUL
+		NOT = {
+		has_war_with = BUL
+		 }
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = BUL
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = BUL modifier = eur_investment_by_turkey }
+			153 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			BUL = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = AYM_bulgaria_invest_2
+		icon = consolidate_the_third_bulgarian_state
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_bulgaria_invest
+		}
+		x = 26
+		y = 20
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+        available = {
+		country_exists = BUL
+		NOT = {
+		has_war_with = BUL
+		 }
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = BUL
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = BUL modifier = eur_investment_by_turkey_2 }
+			153 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			BUL = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = AYM_clean_the_generals
+		icon = gunpoint_diplomacy
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_military_law
+		}
+		x = 27
+		y = 7
+
+
+		completion_reward = {
+	retire_character = ilhan_tolu
+	retire_character = mustafa_ozsoy
+	retire_character = TUR_akin_ozturk
+	add_stability = 0.03
+			}
+		}
+	focus = {
+		id = AYM_lower_the_military_budget
+		icon = license_production
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_clean_the_generals
+		}
+		prerequisite = {
+			focus = AYM_suspend_military_actions
+		}
+		x = 27
+		y = 8
+
+
+		completion_reward = {
+	    add_ideas = defence_01
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt		
+		} } 
+	focus = {
+		id = AYM_hungary_invest
+		icon = hungarian_monarchism
+		cost = 0,00
+		prerequisite = {
+			focus = AYM_relation_on_invest
+		}
+		x = 28
+		y = 19
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = HUN
+		NOT = {
+		has_war_with = HUN
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = HUN
+    NOT = {
+	country_exists = HUN
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = HUN modifier = eur_investment_by_turkey }
+			121 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			HUN = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = AYM_hungary_invest_2
+		icon = slo_hun_war
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_hungary_invest
+		}
+		x = 28
+		y = 20
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+        available = {
+		country_exists = HUN
+		NOT = {
+		has_war_with = HUN
+		 }
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = HUN
+	} }
+	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = HUN modifier = eur_investment_by_turkey_2 }
+			121 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			HUN = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+	}
+	focus = {
+		id = AYM_hungary_invest
+		icon = hungarian_monarchism
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_relation_on_invest
+		}
+		x = 28
+		y = 19
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+        available = {
+		country_exists = HUN
+		NOT = {
+		has_war_with = HUN
+		 }
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = HUN
+	} }
+	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = HUN modifier = eur_investment_by_turkey }
+			121 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			HUN = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+	}
+	focus = {
+		id = AYM_joint_infulencer_of_eu
+		icon = hans_eichel_euro
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_romania_invest_2
+		}
+		prerequisite = {
+			focus = AYM_bulgaria_invest_2
+		}
+		prerequisite = {
+			focus = AYM_hungary_invest_2
+		}
+		x = 26
+		y = 21
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+        available = {
+		NOT = {
+		has_war_with = HUN
+		has_war_with = ROM
+		has_war_with = BUL
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			ROM = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			HUN = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			BUL = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+	}
+	focus = {
+		id = AYM_austria_invest
+		icon = align_to_austria
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_joint_infulencer_of_eu
+		}
+		x = 24
+		y = 22
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION} 	
+
+
+        available = {
+		country_exists = AUS
+		NOT = {
+		has_war_with = AUS
+		 }
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = AUS
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = AUS modifier = eur_investment_by_turkey }
+			76 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			AUS = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = AYM_france_invest
+		icon = align_to_france
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_joint_infulencer_of_eu
+		}
+		x = 28
+		y = 22
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	 	
+
+
+        available = {
+		country_exists = FRA
+		NOT = {
+		has_war_with = FRA
+		 }
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = FRA
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = FRA modifier = eur_investment_by_turkey }
+			56 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			FRA = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+	}
+	focus = {
+		id = AYM_france_invest_2
+		icon = socialist_government_france
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_france_invest
+		}
+		x = 28
+		y = 23
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+        available = {
+		country_exists = FRA
+		NOT = {
+		has_war_with = FRA
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = FRA
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = FRA modifier = eur_investment_by_turkey_2 }
+			56 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			FRA = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+	}
+	focus = {
+		id = AYM_military_prisons
+		icon = armoured_fist
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_clean_the_generals
+		}
+		x = 29
+		y = 8
+
+		completion_reward = {
+	add_ideas = militarys_prisons
+			}
+		}
+	focus = {
+		id = AYM_safe_military
+		icon = brothers_in_arms
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_military_prisons
+		}
+		prerequisite = {
+			focus = AYM_lower_the_military_budget
+		}
+		prerequisite = {
+			focus = AYM_military_courts
+		}
+		x = 25
+		y = 9
+
+
+		completion_reward = {
+	    army_experience = 25
+		custom_effect_tooltip = TUR_MIL_relations_25
+			subtract_from_variable = { TUR_rel_hepar = -3 }
+		} } 
+	focus = {
+		id = AYM_collabrative_members
+		icon = conscription
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_european_union_strategy
+		}
+		x = 31
+		y = 18
+
+		search_filters = {FOCUS_FILTER_POLITICAL}				 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+	completion_reward = {
+					add_political_power = 75
+                    }
+	}
+	focus = {
+		id = AYM_reach_out_hungary
+		icon = slo_hun_war
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_collabrative_members
+		}
+		x = 31
+		y = 19
+
+
+        available = {
+		country_exists = HUN
+		NOT = {
+		has_war_with = HUN
+		 }
+        }
+		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = HUN modifier = declaration_of_friendship }
+                    }
+	}
+	focus = {
+		id = AYM_turkic_partnership
+		icon = align_to_turkic_council
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_reach_out_hungary
+		}
+		x = 31
+		y = 20
+
+
+        available = {
+		country_exists = HUN
+		NOT = {
+		has_war_with = HUN
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = HUN modifier = turkic_relations_with_hungary }
+                    }
+	}
+	focus = {
+		id = AYM_hungarian_alliance
+		icon = major_alliance3
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_hungary_invest_2
+		}
+		prerequisite = {
+			focus = AYM_turkic_partnership
+		}
+		mutually_exclusive = {
+			focus = AYM_leave_european_council
+		}
+		x = 30
+		y = 21
+
+
+        available = {
+		country_exists = HUN
+		NOT = {
+		has_war_with = HUN
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+	completion_reward = {
+		HUN = {
+					country_event = TurkeyF.190
+	}
+	} }
+	focus = {
+		id = AYM_leave_european_council
+		icon = euroscepticism
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_turkic_partnership
+		}
+		mutually_exclusive = {
+			focus = AYM_hungarian_alliance
+		}
+		x = 32
+		y = 21
+
+
+        available = {
+		country_exists = HUN
+		NOT = {
+		has_war_with = HUN
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+	completion_reward = {
+		HUN = {
+					country_event = TurkeyF.189
+	}
+	} }
+	focus = {
+		id = AYM_turkic_union_orientation
+		icon = TR_union_completed
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_leave_european_council
+		}
+		x = 32
+		y = 22
+
+
+        available = {
+		country_exists = HUN
+		NOT = {
+		has_war_with = HUN
+		 }
+		has_global_flag = HUN_TURKIC_UNITY
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+		completion_reward = {
+			HUN = {
+			add_political_power = 100
+			}
+			every_other_country = {
+				limit = { has_idea = turkic_state }
+
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = HUN }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = AYM_gur_syr
+		icon = unitary_republic_of_syria
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_interventionary_guarantees
+		}
+		x = 38
+		y = 24
+
+
+        available = {
+		country_exists = FSA
+		NOT = {
+		has_war_with = FSA
+		 }
+        }
+
+    bypass = {
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_ANNEXATION}	
+
+	completion_reward = {
+	give_guarantee = FSA
+			} 
+	}
+	focus = {
+		id = AYM_immediate_intervention_syr
+		icon = syrianandrojava
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_gur_syr
+		}
+		x = 37
+		y = 25
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+	
+        available = {
+		country_exists = SYR
+        }
+	
+	completion_reward = {
+	    add_war_support = 0.02
+		transfer_state = 571
+		transfer_state = 566
+		transfer_state = 190		
+		SYR = {
+		create_wargoal = {
+			type = annex_everything
+			target = TUR
+		}
+		}
+		571 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			}
+			}
+		566 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			}
+			}
+		190 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			}
+			}
+	} }
+	focus = {
+		id = AYM_bombardment_of_syria
+		icon = bombers
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_gur_syr
+		}
+		x = 39
+		y = 25
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+	
+        available = {
+		country_exists = SYR
+        }
+	
+	completion_reward = {
+	    add_war_support = 0.02
+		SYR = {
+		create_wargoal = {
+			type = annex_everything
+			target = TUR
+		}
+		}
+		186 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1.0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			}
+		188 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1.0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			}
+		192 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1.0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			}
+	} }
+	focus = {
+		id = AYM_new_parliament
+		icon = champagne_bribes2
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_mutual_government
+		}
+		x = 42
+		y = 1
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+		add_stability = 0.07
+                    }
+	}
+	focus = {
+		id = AYM_withdrawal_law_makers
+		icon = deadly_deal
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_mutual_government
+		}
+		x = 44
+		y = 1
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+		add_stability = -0.03
+		custom_effect_tooltip = CONS_RESERVE_1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14 = -0.02 }
+				recalculate_party = yes
+			}
+                    }
+	}
+	focus = {
+		id = AYM_appoint_technocrats
+		icon = tech_sharing
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_withdrawal_law_makers
+		}
+		prerequisite = {
+			focus = AYM_new_parliament
+		}
+		x = 43
+		y = 2
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+		add_stability = 0.05
+		add_ideas = bureau_05
+		custom_effect_tooltip = CONS_CORRECTION_1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14 = 0.02 }
+				recalculate_party = yes
+			}	
+                    }
+	}
+	focus = {
+		id = AYM_economist_council
+		icon = GEO_beria_economy
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_appoint_technocrats
+		}
+		x = 41
+		y = 3
+
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+ add_ideas = economist_s_council
+                    }
+	}
+	focus = {
+		id = AYM_political_council
+		icon = anti_establishment
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_appoint_technocrats
+		}
+		x = 43
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+ add_ideas = policy_maker_s_council
+                    }
+	}
+	focus = {
+		id = AYM_arms_council
+		icon = turk_militia
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_appoint_technocrats
+		}
+		x = 45
+		y = 3
+
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+ add_ideas = military_s_council
+                    }
+	}
+	focus = {
+		id = AYM_collect_the_powers_united
+		icon = molotov_ribbentrop_pact
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_arms_council
+		}
+		prerequisite = {
+			focus = AYM_political_council
+		}
+		prerequisite = {
+			focus = AYM_economist_council
+		}
+		x = 43
+		y = 4
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+ add_ideas = collected_powers
+                    }
+	}
+	focus = {
+		id = AYM_anti_corruption_workout
+		icon = MEX_Purge_corrupt_judges
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_collect_the_powers_united
+		}
+		x = 40
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+
+	completion_reward = {
+			add_ideas = modest_corruption
+                    }
+	}
+	focus = {
+		id = AYM_overly_military_confidence
+		icon = military_bases
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_collect_the_powers_united
+		}
+		x = 42
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+		add_stability = -0.02
+
+			add_ideas = intervention_neo_imperialism
+                    }
+	}
+	focus = {
+		id = AYM_media_control
+		icon = media_awareness
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_collect_the_powers_united
+		}
+		x = 44
+		y = 5
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    add_ideas = controlled_media 
+				custom_effect_tooltip = PRESS_HAS_CONTROLLED
+				set_global_flag = PRESS_HAS_MANAGED
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+}
+	} }
+	focus = {
+		id = AYM_divine_management
+		icon = war4
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_media_control
+		}
+		prerequisite = {
+			focus = AYM_overly_military_confidence
+		}
+		x = 43
+		y = 6
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			army_experience = -100
+			add_political_power = 75
+                    }
+	}
+	focus = {
+		id = AYM_root_out_the_corruption
+		icon = MEX_Political_corruption
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_anti_corruption_workout
+		}
+		x = 41
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = modest_corruption
+  add_idea = slight_corruption
+}
+                    }
+	}
+	focus = {
+		id = AYM_the_solid_system
+		icon = military_mission2
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_collect_the_powers_united
+		}
+		x = 46
+		y = 5
+
+
+	completion_reward = {
+			add_ideas = harmony_of_workers
+                    }
+	}
+	focus = {
+		id = AYM_connection_with_labours
+		icon = red_industry
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_the_solid_system
+		}
+		x = 45
+		y = 6
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = harmony_of_workers
+  add_idea = harmony_of_workers_2
+}
+                    }
+	}
+	focus = {
+		id = AYM_social_sciences
+		icon = socialist_science
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_connection_with_labours
+		}
+		prerequisite = {
+			focus = AYM_root_out_the_corruption
+		}
+		prerequisite = {
+			focus = AYM_divine_management
+		}
+		x = 43
+		y = 7
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_ideas = art_of_social_sciences
+                    }
+	}
+	focus = {
+		id = AYM_northern_politics
+		icon = nato_nation
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_foreign_policy
+		}
+		x = 46
+		y = 17
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_political_power = 100
+}   }
+	focus = {
+		id = AYM_us_relations
+		icon = politcal_unrest_usa
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_northern_politics
+		}
+		x = 45
+		y = 18
+
+
+        available = {
+        country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = USA
+        } } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+		completion_reward = {
+						        add_political_power = -75
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+			USA = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			
+		}
+	}
+	focus = {
+		id = AYM_nato_protectionism
+		icon = NATO_squad_doctrine
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_us_relations
+		}
+		x = 46
+		y = 19
+
+
+        available = {
+        country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = USA
+        } } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+			add_ideas = guarded_under_the_NATO
+                    }
+	}
+	focus = {
+		id = AYM_gur_azerbaijan
+		icon = Azerbaijani_Army
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_interventionary_guarantees
+		}
+		x = 46
+		y = 24
+
+
+        available = {
+		country_exists = AZE
+		NOT = {
+		has_war_with = AZE
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = AZE
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+	completion_reward = {
+			give_guarantee = AZE
+                    }
+	}
+	focus = {
+		id = AYM_northern_expansion
+		icon = Focus_Northern_Expedition
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_gur_azerbaijan
+		}
+		x = 47
+		y = 25
+
+        available = {
+		country_exists = AZE
+		NOT = {
+		has_war_with = AZE
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = AZE
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = AZE modifier = military_aid }
+                713 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 2
+				} 
+	} }
+	}
+	focus = {
+		id = AYM_middle_type_politics
+		icon = Focus_Rationing
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_foreign_policy
+		}
+		x = 48
+		y = 17
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+	completion_reward = {
+					add_war_support = 0.02
+					add_stability = 0.02
+					add_political_power = 75
+					}
+				}
+	focus = {
+		id = AYM_national_stabilization
+		icon = stability
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_middle_type_politics
+		}
+		x = 48
+		y = 18
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+    completion_reward = {
+       add_timed_idea = { idea = stabilization_of_TUR  days = 365 }
+	 }
+	}
+	focus = {
+		id = AYM_trancaucasian_deal
+		icon = GEO_Transcaucasian_Union
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_national_stabilization
+		}
+		x = 48
+		y = 19
+
+
+        available = {
+		NOT = {
+		has_war_with = ARM
+		has_war_with = AZE
+		has_war_with = GEO
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_RESOURCE}
+
+	completion_reward = {
+		ARM = {
+					country_event = TurkeyF.196
+	}
+		AZE = {
+					country_event = TurkeyF.196
+	}
+		GEO = {
+					country_event = TurkeyF.196
+	}
+	} }
+	focus = {
+		id = AYM_oil_deals
+		icon = oil_trade
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_trancaucasian_deal
+		}
+		x = 48
+		y = 20
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_RESOURCE}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+			712 = { 
+				add_resource = {
+					type = oil
+					amount = 13
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+			}
+			1035 = { 
+				add_resource = {
+					type = oil
+					amount = 9
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+			}
+			1033 = { 
+				add_resource = {
+					type = oil
+					amount = 11
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+			}
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+		} } 
+	focus = {
+		id = AYM_and_of_peace
+		icon = white_peace
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_oil_deals
+		}
+		x = 48
+		y = 21
+
+
+        available = {
+		NOT = {
+		has_war_with = ARM
+		has_war_with = AZE
+		has_war_with = GEO
+		 }
+        }
+			
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+GEO = {
+diplomatic_relation = { 
+	country = AZE 
+	relation = non_aggression_pact 
+} 
+diplomatic_relation = { 
+	country = ARM 
+	relation = non_aggression_pact 
+} } 
+AZE = {
+diplomatic_relation = { 
+	country = ARM 
+	relation = non_aggression_pact 
+}
+		}		}
+				}
+	focus = {
+		id = AYM_absolute_power
+		icon = meeting
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_enforced_law
+		}
+		x = 51
+		y = 1
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_ideas = rise_of_absolutism
+                    }
+	}
+	focus = {
+		id = AYM_lawful_restoration
+		icon = examine_foreign_laws
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_enforced_law
+		}
+		x = 53
+		y = 1
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_political_power = 100
+			add_stability = 0.02
+                    }
+	}
+	focus = {
+		id = AYM_lawful_stability
+		icon = celtic_army
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_lawful_restoration
+		}
+		prerequisite = {
+			focus = AYM_absolute_power
+		}
+		x = 52
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+			add_stability = 0.1
+                    }
+	}
+	focus = {
+		id = AYM_political_laws
+		icon = parliament_box
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_lawful_stability
+		}
+		x = 50
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = rise_of_absolutism
+  add_idea = rise_of_absolutism_2
+}
+                    }
+	}
+	focus = {
+		id = AYM_restore_military_ambitions
+		icon = military_planning
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_lawful_stability
+		}
+		x = 52
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+			add_political_power = -75	
+                    }
+	}
+	focus = {
+		id = AYM_law_ensurance
+		icon = pass_legislation
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_lawful_stability
+		}
+		x = 54
+		y = 3
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+
+	completion_reward = {
+			add_ideas = law_cyclation
+                    }
+	}
+	focus = {
+		id = AYM_das_statik
+		icon = static_defense
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_political_laws
+		}
+		prerequisite = {
+			focus = AYM_restore_military_ambitions
+		}
+		prerequisite = {
+			focus = AYM_law_ensurance
+		}
+		x = 52
+		y = 4
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_ideas = engine_of_statistics
+                    }
+	}
+	focus = {
+		id = AYM_dissolution_of_senate
+		icon = focus_ETH_re-convene_the_parliament
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_das_statik
+		}
+		x = 49
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = uncontrolled_senate
+  add_idea = controlled_and_opened_senate
+}
+                    }
+	}
+	focus = {
+		id = AYM_kickstart_the_military
+		icon = anti_war_with_big_gun
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_das_statik
+		}
+		x = 51
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+            add_timed_idea = { idea = kickstart_of_the_militarization days = 720 }
+			}
+	}
+	focus = {
+		id = AYM_boosted_media
+		icon = liberal_press
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_das_statik
+		}
+		x = 53
+		y = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+            add_timed_idea = { idea = media_independence_bolstering days = 720 }
+			}
+	}
+	focus = {
+		id = AYM_the_kemalist_state
+		icon = chp
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_boosted_media
+		}
+		prerequisite = {
+			focus = AYM_kickstart_the_military
+		}
+		x = 52
+		y = 6
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+		add_stability = 0.05
+			add_ideas = turkish_military_infulence
+                    }
+	}
+	focus = {
+		id = AYM_political_ensurance
+		icon = education_reform
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_dissolution_of_senate
+		}
+		x = 50
+		y = 6
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = controlled_and_opened_senate
+  add_idea = absorbation_of_controlled_and_opened_senate
+}
+                    }
+	}
+	focus = {
+		id = AYM_quality_control
+		icon = focus_generic_national_security
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_das_statik
+		}
+		x = 55
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+add_ideas = quality_audits
+                    }
+	}
+	focus = {
+		id = AYM_persevance_of_european_syt
+		icon = EDA_icon
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_quality_control
+		}
+		x = 54
+		y = 6
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+add_ideas = european_quality_life_standarts
+                    }
+	}
+	focus = {
+		id = AYM_the_managing_autonomy
+		icon = autonomy
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_political_ensurance
+		}
+		prerequisite = {
+			focus = AYM_persevance_of_european_syt
+		}
+		prerequisite = {
+			focus = AYM_the_kemalist_state
+		}
+		x = 52
+		y = 7
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_ideas = managed_bureocracy
+                    }
+	}
+	focus = {
+		id = AYM_cautions_for_feto
+		icon = islamic_militia_03
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_terror_policy
+		}
+		x = 55
+		y = 24
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+		add_ideas = cautions_against_the_gulenist_movement
+			}
+	}
+	focus = {
+		id = AYM_agents_for_pennyslvia
+		icon = usa_republic
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_cautions_for_feto
+		}
+		x = 55
+		y = 25
+
+		
+			search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = cautions_against_the_gulenist_movement
+  add_idea = cautions_against_the_gulenist_movement_2
+} 
+			}
+	}
+	focus = {
+		id = AYM_violent_clash_with_feto
+		icon = war2
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_terror_policy
+		}
+		x = 58
+		y = 24
+
+		search_filters = {FOCUS_FILTER_NAME}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+custom_effect_tooltip = WARN_GULEN
+			set_power_balance = {
+					id = TRGX_power_balance
+					left_side = TRGX_default_left_side 
+					right_side = TRGX_default_right_side 
+					set_value = -0.05
+				}
+swap_ideas = { 
+  remove_idea = betrayal_from_FETO
+  add_idea = betrayal_from_FETO1
+}
+      }
+	}
+	focus = {
+		id = AYM_shut_down_gulen_institutions
+		icon = islamophobia
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_violent_clash_with_feto
+		}
+		x = 57
+		y = 25
+
+		search_filters = {FOCUS_FILTER_NAME}
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		
+		
+		available = {
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_left_side_range  
+			}
+		}
+
+
+	completion_reward = {
+TRGX_bop_very_low_decrease_effect = yes
+swap_ideas = { 
+  remove_idea = betrayal_from_FETO1
+  add_idea = betrayal_from_FETO2
+}
+      }
+	}
+	focus = {
+		id = AYM_civilian_projects
+		icon = industrial_complexes
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_industrial_rise_up
+		}
+		x = 64
+		y = 17
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_political_power = 125
+		} } 
+	focus = {
+		id = AYM_military_development
+		icon = industry4
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_civilian_projects
+		}
+		mutually_exclusive = {
+			focus = AYM_completely_civilian_develop
+		}
+		x = 60
+		y = 18
+
+
+    available = {
+	controls_state = 155
+	}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+			155 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = AYM_new_generation_of_militaries
+		icon = industry_military
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_military_development
+		}
+		x = 59
+		y = 19
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_ideas = fifth_generation_military_industries
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}
+		} } 
+	focus = {
+		id = AYM_tank_factories
+		icon = industry_tanks
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_new_generation_of_militaries
+		}
+		x = 59
+		y = 20
+
+
+    available = {
+	controls_state = 159
+	}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} }
+	focus = {
+		id = AYM_plane_factory_build_up
+		icon = air_industry
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_military_development
+		}
+		x = 61
+		y = 19
+
+
+    available = {
+	controls_state = 159
+	}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			159 = {
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} }
+	focus = {
+		id = AYM_military_deposits
+		icon = Generic_Military_Equipment
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_plane_factory_build_up
+		}
+		x = 61
+		y = 20
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+				add_equipment_to_stockpile = {
+					type = MBT_1
+					amount = 500
+					producer = TUR
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_weapons1
+					amount = 2000
+					producer = TUR
+				}
+		} } 
+	focus = {
+		id = AYM_general_military_initative
+		icon = military_women
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_military_deposits
+		}
+		prerequisite = {
+			focus = AYM_tank_factories
+		}
+		x = 60
+		y = 21
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 2
+				category = CAT_industry
+			}
+			
+		} }
+	focus = {
+		id = AYM_hardcore_regime
+		icon = USA_political_revolution
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_the_great_division
+		}
+		mutually_exclusive = {
+			focus = AYM_soften_regime
+		}
+		x = 66
+		y = 1
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_INCREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_DECREASE_1
+	        subtract_from_variable = { TUR_precision_group = -1 }		
+			subtract_from_variable = { TUR_transparent_group = 1}
+                    }
+	}
+	focus = {
+		id = AYM_position_the_wingers
+		icon = focus_generic_spread_fascism
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_hardcore_regime
+		}
+		x = 65
+		y = 2
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_INCREASE_2
+		custom_effect_tooltip = SOFT_GROUP_DECREASE_2
+	        subtract_from_variable = { TUR_precision_group = -2 }		
+			subtract_from_variable = { TUR_soft_group = 2}
+                    }
+	}
+	focus = {
+		id = AYM_agreement_with_the_wingers
+		icon = Generic_Pawns
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_position_the_wingers
+		}
+		x = 64
+		y = 3
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_INCREASE_1
+		custom_effect_tooltip = SOFT_GROUP_DECREASE_1
+	        subtract_from_variable = { TUR_precision_group = -1 }		
+			subtract_from_variable = { TUR_soft_group = 1}
+                    }
+	}
+	focus = {
+		id = AYM_soften_regime
+		icon = stolen_papers2
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_the_great_division
+		}
+		mutually_exclusive = {
+			focus = AYM_hardcore_regime
+		}
+		x = 68
+		y = 1
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = SOFT_GROUP_INCREASE_2
+		custom_effect_tooltip = TRANSPARENT_GROUP_DECREASE_1
+	        subtract_from_variable = { TUR_precision_group = 1 }		
+			subtract_from_variable = { TUR_soft_group = -2}
+			subtract_from_variable = { TUR_transparent_group = 1}
+                    }
+	}
+	focus = {
+		id = AYM_appoint_orderers
+		icon = Generic_Colonial_Soldiers
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_soften_regime
+			focus = AYM_hardcore_regime
+		}
+		x = 67
+		y = 2
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_2
+		custom_effect_tooltip = SOFT_GROUP_INCREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_1
+	        subtract_from_variable = { TUR_precision_group = 2 }		
+			subtract_from_variable = { TUR_soft_group = -1}
+			subtract_from_variable = { TUR_transparent_group = -1}
+                    }
+	}
+	focus = {
+		id = AYM_order_change_of_2004
+		icon = focus_generic_improve_the_administration
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_appoint_orderers
+		}
+		x = 67
+		y = 3
+
+    available = {
+	has_global_flag = ORDER_CHANGE_OF_2004
+	date < 2008.7.1
+	}
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+        search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+	add_political_power = 125
+	}
+	}
+	focus = {
+		id = AYM_change_in_need
+		icon = Generic_Enough
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_order_change_of_2004
+		}
+		prerequisite = {
+			focus = AYM_agreement_with_the_wingers
+		}
+		mutually_exclusive = {
+			focus = AYM_stay_with_the_course
+		}
+		x = 66
+		y = 4
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		add_stability = 0.05
+	create_country_leader = {
+		name = "Ahmet Necdet Sezer"
+		picture = "ahmet_necdet_sezer.dds"
+		ideology = Neutral_conservatism
+		traits = {
+			neutrality_Neutral_conservatism
+			staunch_constitutionalist
+			lawyer
+		}
+	} } }
+	focus = {
+		id = AYM_criticize_itself
+		icon = refuse_treaty
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_soften_regime
+		}
+		x = 69
+		y = 2
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = SOFT_GROUP_INCREASE_2
+		custom_effect_tooltip = TRANSPARENT_GROUP_DECREASE_1
+	        subtract_from_variable = { TUR_precision_group = 1 }		
+			subtract_from_variable = { TUR_soft_group = -2}
+			subtract_from_variable = { TUR_transparent_group = 1}
+                    }
+	}
+	focus = {
+		id = AYM_union_deals
+		icon = labor_unions
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_criticize_itself
+		}
+		x = 70
+		y = 3
+
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = SOFT_GROUP_DECREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_2
+	        subtract_from_variable = { TUR_precision_group = 1 }		
+			subtract_from_variable = { TUR_soft_group = 1}
+			subtract_from_variable = { TUR_transparent_group = -2}
+                    }
+	}
+	focus = {
+		id = AYM_stay_with_the_course
+		icon = treaty
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_order_change_of_2004
+		}
+		prerequisite = {
+			focus = AYM_union_deals
+		}
+		mutually_exclusive = {
+			focus = AYM_change_in_need
+		}
+		x = 68
+		y = 4
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		add_political_power = 75
+	create_country_leader = {
+		name = "Yekta Güngör Özden"
+		picture = "yekta_gungor.dds"
+		ideology = Neutral_conservatism
+		traits = {
+			neutrality_Neutral_conservatism
+			cautious
+			lawyer
+		}
+	} } }
+	focus = {
+		id = AYM_reinstate_the_order
+		icon = home_defense
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_stay_with_the_course
+			focus = AYM_change_in_need
+		}
+		x = 67
+		y = 5
+
+
+    available = {
+	has_global_flag = ORDER_CHANGE_OF_2008
+	date < 2010.3.4
+	}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+	add_stability = 0.05
+	}
+	}
+	focus = {
+		id = AYM_order_of_self_bureocracy
+		icon = goverment_building_sheep
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_reinstate_the_order
+		}
+		mutually_exclusive = {
+			focus = AYM_definitive_regime
+			focus = AYM_soft_regime
+			focus = AYM_definitive_regime
+		}
+		x = 65
+		y = 6
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_1
+	        subtract_from_variable = { TUR_precision_group = 1 }		
+			subtract_from_variable = { TUR_transparent_group = -1}
+                    }
+	}
+	focus = {
+		id = AYM_mix_of_law
+		icon = Andorran_Army
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_order_of_self_bureocracy
+		}
+		x = 63
+		y = 7
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = SOFT_GROUP_DECREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_2
+	        subtract_from_variable = { TUR_precision_group = 1 }
+	        subtract_from_variable = { TUR_soft_group = 1 }		
+			subtract_from_variable = { TUR_transparent_group = -2}
+                    }
+	}
+	focus = {
+		id = AYM_soft_regime
+		icon = BRA_appease_the_congress
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_reinstate_the_order
+		}
+		mutually_exclusive = {
+			focus = AYM_order_of_self_bureocracy
+			focus = AYM_definitive_regime
+		}
+		x = 69
+		y = 6
+
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = SOFT_GROUP_INCREASE_1
+	        subtract_from_variable = { TUR_precision_group = 1 }
+	        subtract_from_variable = { TUR_soft_group = -1 }		
+                    }
+	}
+	focus = {
+		id = AYM_investment_flow
+		icon = construction4
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_industrial_rise_up
+		}
+		x = 70
+		y = 17
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+			add_political_power = 125
+		} } 
+	focus = {
+		id = AYM_reach_out_the_west
+		icon = western_alignment
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_investment_flow
+		}
+		mutually_exclusive = {
+			focus = AYM_reach_out_the_east
+		}
+		x = 70
+		y = 18
+
+
+        available = {
+		NOT = {
+		has_war_with = USA
+		has_war_with = GER
+		has_war_with = ENG
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+			    TUR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+			    TUR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = GER.id }
+				change_influence_percentage = yes
+			}
+			    TUR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = ENG.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = AYM_new_scandals
+		icon = conservative
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_soft_regime
+		}
+		x = 71
+		y = 7
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_1
+		custom_effect_tooltip = SOFT_GROUP_DECREASE_1
+	        subtract_from_variable = { TUR_soft_group = 1 }		
+			subtract_from_variable = { TUR_transparent_group = -1}
+                    }
+	}
+	focus = {
+		id = AYM_reach_out_the_east
+		icon = eastern_alignment
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_investment_flow
+		}
+		mutually_exclusive = {
+			focus = AYM_reach_out_the_west
+		}
+		x = 74
+		y = 18
+
+
+        available = {
+		NOT = {
+		has_war_with = SOV
+		has_war_with = CHI
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+			    TUR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = SOV.id }
+				change_influence_percentage = yes
+			}
+			    TUR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = AYM_chinese_investments
+		icon = trade_with_china
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_reach_out_the_east
+		}
+		x = 73
+		y = 19
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = CHI
+        } } 
+
+    available = {
+	controls_state = 157
+	controls_state = 934
+	}
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+			157 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			934 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+					TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			CHI = {
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+			set_temp_variable = { int_investment_change = 25.0 }
+			modify_international_investment_effect = yes			
+			}
+					}
+				}
+	focus = {
+		id = AYM_chinese_investing_land
+		icon = enemy_of_china
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_chinese_investments
+		}
+		x = 73
+		y = 20
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = CHI
+        } } 
+
+    available = {
+	controls_state = 157
+	controls_state = 934
+	}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+			156 = {
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			934 = {
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+					TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			CHI= {
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+			set_temp_variable = { int_investment_change = 25.0 }
+			modify_international_investment_effect = yes			
+			}
+					}
+				}
+	focus = {
+		id = AYM_expand_faculties
+		icon = research2
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_scientific_law
+		}
+		x = 17
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+
+		completion_reward = {
+	    add_ideas = expanded_faculties
+		} } 
+	focus = {
+		id = AYM_meet_the_new_tech
+		icon = tech_sharing
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_expand_faculties
+		}
+		prerequisite = {
+			focus = AYM_forced_university
+		}
+		x = 15
+		y = 8
+
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	completion_reward = {
+                156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = internet_station
+					instant_build = yes
+					level = 1
+				} 
+			add_stability = 0.02
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } }
+	focus = {
+		id = AYM_fund_the_sciences
+		icon = examine_foreign_science
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_expand_faculties
+		}
+		x = 17
+		y = 8
+
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+			add_political_power = -25
+			add_stability = -0.01
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			}
+		}
+	focus = {
+		id = AYM_create_the_house_of_technology
+		icon = research3
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_fund_the_sciences
+		}
+		prerequisite = {
+			focus = AYM_meet_the_new_tech
+		}
+		prerequisite = {
+			focus = AYM_european_colleges
+		}
+		x = 17
+		y = 9
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_research_slot = 1
+		add_political_power = 15
+}   }
+	focus = {
+		id = AYM_task_the_general_council
+		icon = general_staff
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_task_the_armed_forces
+		}
+		prerequisite = {
+			focus = AYM_safe_military
+		}
+		prerequisite = {
+			focus = AYM_create_the_house_of_technology
+		}
+		x = 21
+		y = 10
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+		add_stability = -0.03
+		add_political_power = 75
+set_global_flag = DISABLE_WAR_SYSTEM_PAR
+custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU			
+}   }
+	focus = {
+		id = AYM_accordance_with_AIHM
+		icon = EFSF_icon
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_european_union_strategy
+		}
+		x = 21
+		y = 18
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+		add_ideas = full_accordance_with_AIHM
+}   }
+	focus = {
+		id = AYM_taarif_laws
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_accordance_with_AIHM
+		}
+		x = 20
+		y = 19
+
+
+        available = {
+		NOT = {
+		has_war_with = POL
+		has_war_with = GER
+		has_war_with = SPR
+		has_war_with = FRA
+		has_war_with = ITA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+					reverse_add_opinion_modifier = { target = POL modifier = trade_mission }
+	reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+	reverse_add_opinion_modifier = { target = SPR modifier = trade_mission }
+	reverse_add_opinion_modifier = { target = FRA modifier = trade_mission }
+	reverse_add_opinion_modifier = { target = ITA modifier = trade_mission }
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = AYM_europeanize_the_constitution
+		icon = EU_reform
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_accordance_with_AIHM
+		}
+		x = 22
+		y = 19
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_KEMALISM}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+
+                    completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+				custom_effect_tooltip = TUR_westernize
+						subtract_from_variable = { radicalization = 5 }
+			subtract_from_variable = { social_conservatism_government = 10 }
+			subtract_from_variable = { social_conservatism_society = 15 }
+		}
+	}
+	focus = {
+		id = AYM_create_the_senate
+		icon = parlamentary_reform
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_task_the_general_council
+		}
+		x = 20
+		y = 11
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}		
+
+		completion_reward = {
+	    add_ideas = uncontrolled_senate
+		} } 
+	focus = {
+		id = AYM_guarentee_the_council
+		icon = MEX_Mexican_government
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_task_the_general_council
+		}
+		x = 22
+		y = 11
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_stability = 0.01
+			army_experience = 25
+	    custom_effect_tooltip = TUR_MIL_relations_25
+			subtract_from_variable = { TUR_rel_hepar = -3 }
+		} } 
+	focus = {
+		id = AYM_weaken_the_presidency
+		icon = turkish_movement
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_guarentee_the_council
+		}
+		prerequisite = {
+			focus = AYM_create_the_senate
+		}
+		x = 21
+		y = 12
+
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}		
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}	
+
+		completion_reward = {
+	    add_ideas = turkish_presidency_weakened
+		add_political_power = 100
+		} } 
+	focus = {
+		id = AYM_leash_kemalist_guardians
+		icon = coup
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_guarentee_the_council
+		}
+		x = 23
+		y = 12
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+	    remove_ideas = turkish_military_infulence
+		army_experience = -50
+		add_stability = -0.05
+		} } 
+	focus = {
+		id = AYM_semi_federalization_of_states
+		icon = TUR_military_regime
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_create_the_senate
+		}
+		x = 19
+		y = 12
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+
+		completion_reward = {
+	    add_ideas = turkish_federalization
+		} } 
+	focus = {
+		id = AYM_built_in_4_laws
+		icon = pass_legislation
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_leash_kemalist_guardians
+		}
+		prerequisite = {
+			focus = AYM_weaken_the_presidency
+		}
+		prerequisite = {
+			focus = AYM_semi_federalization_of_states
+		}
+		x = 21
+		y = 13
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+
+		completion_reward = {
+	    add_political_power = 200
+		} } 
+	focus = {
+		id = AYM_question_of_regime
+		icon = Generic_Liberalism
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_built_in_4_laws
+		}
+		x = 21
+		y = 14
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+	    add_stability = -0.05
+					        				subtract_from_variable = { TUR_pop_KEM = -5 }
+	        				subtract_from_variable = { TUR_pop_ISL = 5 }
+			set_global_flag = TUR_UNITE_DIASPORA
+		    custom_effect_tooltip = TUR_united_state
+						TUR_remove_state_modifier_effects = yes
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
+}
+		} } 
+	focus = {
+		id = AYM_lisbon_adoption
+		icon = EEAS_icon
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_europeanize_the_constitution
+		}
+		prerequisite = {
+			focus = AYM_taarif_laws
+		}
+		x = 21
+		y = 20
+
+        available = {
+		has_completed_focus = AYM_first_level_acceptance
+		has_completed_focus = AYM_joint_infulencer_of_eu
+        }
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+            completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.03 }
+			eurosceptic_change = yes
+			add_political_power = 75
+			add_stability = 0.02
+			} 
+		}
+	focus = {
+		id = AYM_frontex_partition
+		icon = EU_frontex
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_syrian_way
+		}
+		prerequisite = {
+			focus = AYM_gain_frontex_status
+		}
+		x = 21
+		y = 23
+
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+		add_ideas = frontex
+}   }
+	focus = {
+		id = AYM_open_the_borders
+		icon = Generic_Redraw_Borders
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_armenian_deal
+		}
+		x = 14
+		y = 23
+
+
+        available = {
+		country_exists = ARM
+		NOT = {
+		has_war_with = ARM
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = ARM
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = ARM modifier = opened_the_borders_with_the_armenia }
+					add_political_power = -75
+					add_stability = -0.02
+					}
+				}
+	focus = {
+		id = AYM_kosova_aid
+		icon = protect_kosovo
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_first_level_acceptance
+		}
+		x = 16
+		y = 22
+
+
+        available = {
+		country_exists = KOS
+		NOT = {
+		has_war_with = KOS
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = KOS
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = KOS modifier = military_aid }
+	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -3000 }
+	 KOS = {
+	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+			} }
+	}
+	focus = {
+		id = AYM_denounce_russia
+		icon = attack_russia_chechnya
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_kosova_aid
+		}
+		x = 16
+		y = 23
+
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = SOV
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = SOV modifier = declaration_of_hostility }
+	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -6000 }
+	 GEO = {
+	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+			} 
+	 UKR = {
+	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+			}			
+			
+			}
+	}
+	focus = {
+		id = AYM_reach_the_second_level
+		icon = USoE001
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_build_a_wall
+		}
+		prerequisite = {
+			focus = AYM_denounce_russia
+		}
+		prerequisite = {
+			focus = AYM_open_the_borders
+		}
+		x = 16
+		y = 24
+
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.03 }
+			eurosceptic_change = yes
+					country_event = TurkeyF.194
+	}
+	} 
+	focus = {
+		id = AYM_gain_frontex_status
+		icon = EU_salute_frontex
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_new_homeland
+		}
+		x = 21
+		y = 22
+
+
+        available = {
+		has_completed_focus = AYM_open_the_borders
+		has_completed_focus = AYM_build_a_wall
+        }
+
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}	
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+		add_ideas = observer_of_the_frontex
+}   }
+	focus = {
+		id = AYM_new_homeland
+		icon = EU_UNSC
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_lisbon_adoption
+		}
+		x = 21
+		y = 21
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+            completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+			add_stability = 0.1
+			} 
+		}
+	focus = {
+		id = AYM_european_status
+		icon = EU_constitution
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_reach_the_second_level
+		}
+		prerequisite = {
+			focus = AYM_new_legislations
+		}
+		prerequisite = {
+			focus = AYM_oriented_of_european_council
+		}
+		prerequisite = {
+			focus = AYM_eu_reconstruction_state
+		}
+		x = 21
+		y = 25
+
+        available = {
+		has_completed_focus = AYM_reach_the_second_level
+		has_completed_focus = AYM_eu_reconstruction_state
+        }
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.03 }
+			eurosceptic_change = yes
+		add_ideas = passive_european_membership
+}   }
+	focus = {
+		id = AYM_adopt_the_bureocracy
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_european_status
+		}
+		x = 21
+		y = 26
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+	    add_stability = 0.05
+	hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas = media_opinion_towards_good_happy_everyone
+}
+		} } 
+	focus = {
+		id = AYM_oriented_of_european_council
+		icon = focus_SWI_dissolve_the_federal_council
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_frontex_partition
+		}
+		x = 20
+		y = 24
+
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.03 }
+			eurosceptic_change = yes
+		add_ideas = european_parliament_membership
+}   }
+	focus = {
+		id = AYM_new_legislations
+		icon = support_the_left_right
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_frontex_partition
+		}
+		x = 22
+		y = 24
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.03 }
+			eurosceptic_change = yes
+		add_ideas = eu_style_legislative
+}   }
+	focus = {
+		id = AYM_ease_the_tensions
+		icon = focus_generic_national_security
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_EEZ_deal
+		}
+		prerequisite = {
+			focus = AYM_lisbon_adoption
+		}
+		x = 19
+		y = 21
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+
+		completion_reward = {
+add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
+		} }
+	focus = {
+		id = AYM_balkan_finance
+		icon = free_balkan_states
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_lisbon_adoption
+		}
+		prerequisite = {
+			focus = AYM_romania_invest_2
+		}
+		x = 23
+		y = 21
+
+
+        available = {
+		NOT = {
+		has_war_with = BUL
+		has_war_with = ROM
+		has_war_with = GRE
+		has_war_with = HUN
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_INFLUENCE}		
+
+	completion_reward = {
+			BUL = {
+				add_ideas = financed_balkans
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			ROM = {
+				add_ideas = financed_balkans
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			GRE = {
+				add_ideas = financed_balkans
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			YUG = {
+				add_ideas = financed_balkans
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			HUN = {
+				add_ideas = financed_balkans
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+					}
+	}
+	focus = {
+		id = AYM_austria_invest_2
+		icon = Generic_Austria_Friend
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_austria_invest
+		}
+		x = 24
+		y = 23
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION} 	
+
+
+        available = {
+		country_exists = AUS
+		NOT = {
+		has_war_with = AUS
+		 }
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = AUS
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = AUS modifier = eur_investment_by_turkey_2 }
+			76 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			AUS = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = AYM_eu_reconstruction_state
+		icon = eu_investments
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_austria_invest_2
+		}
+		prerequisite = {
+			focus = AYM_france_invest_2
+		}
+		prerequisite = {
+			focus = AYM_germany_invest_2
+		}
+		x = 26
+		y = 24
+
+
+        available = {
+		NOT = {
+		has_war_with = GER
+		has_war_with = FRA
+		has_war_with = AUS
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+	completion_reward = {
+			GER = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			FRA = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			AUS = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+	}
+	focus = {
+		id = AYM_germany_invest
+		icon = align_to_germany
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_joint_infulencer_of_eu
+		}
+		x = 26
+		y = 22
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION} 	
+
+
+        available = {
+		country_exists = GER
+		NOT = {
+		has_war_with = GER
+		 }
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = GER
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = eur_investment_by_turkey }
+			45 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = internet_station
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = internet_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			GER = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+	}
+	focus = {
+		id = AYM_germany_invest_2
+		icon = germany_republic
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_germany_invest
+		}
+		x = 26
+		y = 23
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION} 	
+
+
+        available = {
+		country_exists = GER
+		NOT = {
+		has_war_with = GER
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = GER
+	} }
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = eur_investment_by_turkey_2 }
+			41 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			GER = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+	}
+	focus = {
+		id = AYM_manupulation_pre
+		icon = industry_united_states
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_social_sciences
+		}
+		x = 43
+		y = 8
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+	completion_reward = {
+			add_ideas = politics_of_recovery_and_revision
+                    }
+	}
+	focus = {
+		id = AYM_phyo_war
+		icon = war2
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_manupulation_pre
+		}
+		x = 42
+		y = 9
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+
+	completion_reward = {
+    add_ideas = negligible_corruption
+                    }
+	}
+	focus = {
+		id = AYM_phyo_edu
+		icon = nationalist_education
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_manupulation_pre
+		}
+		x = 44
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+			add_ideas = edu_04
+			add_stability = 0.05
+                    }
+	}
+	focus = {
+		id = AYM_diversification
+		icon = focus_generic_infiltration
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_phyo_edu
+		}
+		prerequisite = {
+			focus = AYM_phyo_war
+		}
+		x = 43
+		y = 10
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+			add_ideas = diversification_of_economy
+                    }
+	}
+	focus = {
+		id = AYM_SGK_signatory
+		icon = sgk
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_diversification
+		}
+		x = 42
+		y = 11
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	completion_reward = {
+			add_ideas = working_sgk
+                    }
+	}
+	focus = {
+		id = AYM_konjoktur_politik
+		icon = concessions
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_diversification
+		}
+		x = 44
+		y = 11
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+			add_ideas = conjuctur_politik
+                    }
+	}
+	focus = {
+		id = AYM_new_faith
+		icon = Focus_Socialist_Worker
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_konjoktur_politik
+		}
+		prerequisite = {
+			focus = AYM_SGK_signatory
+		}
+		x = 43
+		y = 12
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_ideas = a_new_faith_has_risen
+                    }
+	}
+	focus = {
+		id = AYM_research_sgy
+		icon = ahmadi_research
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_SGK_signatory
+		}
+		x = 41
+		y = 12
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_ideas = supported_academicians
+                    }
+	}
+	focus = {
+		id = AYM_innovation_house
+		icon = research_minstry
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_konjoktur_politik
+		}
+		x = 45
+		y = 12
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+			add_ideas = gems_of_innovation
+                    }
+	}
+	focus = {
+		id = AYM_governmental_confirigation
+		icon = MEX_Allign_the_government
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_innovation_house
+		}
+		prerequisite = {
+			focus = AYM_new_faith
+		}
+		prerequisite = {
+			focus = AYM_research_sgy
+		}
+		x = 43
+		y = 13
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = CONS_CORRECTION_1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14 = 0.02 }
+				recalculate_party = yes
+			}	
+                    }
+	}
+	focus = {
+		id = AYM_desired_state
+		icon = two_language_state
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_governmental_confirigation
+		}
+		x = 43
+		y = 14
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+			add_ideas = land_of_innovational_technocracy
+                    }
+	}
+	focus = {
+		id = AYM_open_house_of_innovationalists
+		icon = cryptography
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_the_managing_autonomy
+		}
+		x = 52
+		y = 8
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_ideas = open_innovationalism
+                    }
+	}
+	focus = {
+		id = AYM_anti_corruption_protocol
+		icon = money_on_fire
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_open_house_of_innovationalists
+		}
+		x = 51
+		y = 9
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+
+	completion_reward = {
+			decrease_corruption = yes
+                    }
+	}
+	focus = {
+		id = AYM_fraud_cleanizing
+		icon = better_money
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_anti_corruption_protocol
+		}
+		prerequisite = {
+			focus = AYM_smaller_police_state
+		}
+		x = 52
+		y = 10
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_political_power = 25
+        decrese_corruption = yes
+      
+}   }
+	focus = {
+		id = AYM_smaller_police_state
+		icon = secret_police
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_open_house_of_innovationalists
+		}
+		x = 53
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_stability = 0.05
+swap_ideas = { 
+  remove_idea = police_05
+  add_idea = police_02
+}
+      
+}   }
+	focus = {
+		id = AYM_new_is_beyond
+		icon = reviving_the_spartan_warrior_spirit
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_war_documents
+		}
+		x = 52
+		y = 14
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+		add_political_power = 25
+swap_ideas = { 
+  remove_idea = foreseeing_the_future
+  add_idea = foreseeing_the_future_2
+}
+      
+}   }
+	focus = {
+		id = AYM_war_documents
+		icon = chemical_warfare
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_solve_the_mixture
+		}
+		prerequisite = {
+			focus = AYM_scientific_approach
+		}
+		prerequisite = {
+			focus = AYM_scientific_brilliance
+		}
+		x = 52
+		y = 13
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+	completion_reward = {
+    add_ideas = defence_02
+	add_war_support = -0.1
+	add_stability = 0.05
+                    }
+	}
+	focus = {
+		id = AYM_regulationary
+		icon = women_issues
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_fraud_cleanizing
+		}
+		x = 51
+		y = 11
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_ideas = regulation_machine
+                    }
+	}
+	focus = {
+		id = AYM_solve_the_mixture
+		icon = play_our_hand
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_regulationary
+		}
+		prerequisite = {
+			focus = AYM_happy_family
+		}
+		x = 52
+		y = 12
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_ideas = foreseeing_the_future
+                    }
+	}
+	focus = {
+		id = AYM_happy_family
+		icon = Generic_Working_Class_Family
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_fraud_cleanizing
+		}
+		x = 53
+		y = 11
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_stability = 0.05
+		custom_effect_tooltip = CONS_CORRECTION_1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14 = 0.02 }
+				recalculate_party = yes
+			}	
+		} } 
+	focus = {
+		id = AYM_scientific_approach
+		icon = continuous_research
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_regulationary
+		}
+		x = 50
+		y = 12
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+	completion_reward = {
+			add_ideas = scientific_approachment_of_generations
+                    }
+	}
+	focus = {
+		id = AYM_scientific_brilliance
+		icon = fusion_science
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_happy_family
+		}
+		x = 54
+		y = 12
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+			add_ideas = sores_in_human_brilliance
+                    }
+	}
+	focus = {
+		id = AYM_middle_eastern_railways
+		icon = befriend_middle_east
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_arms_deals
+		}
+		prerequisite = {
+			focus = AYM_saudi_deal
+		}
+		x = 51
+		y = 20
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+			build_railway = {
+				path = { 11747 804 3862 3807 921 961 6888 886 6813 9893 6374 3053 3942 6312 1493 2013 6229 3272 12046 11266 2097 11208 829 10774 9060 9059 9045 11178 8085 10850 7995 3403 3378 5024 10791 8051 3738}
+				level = 1
+			}
+			subtract_from_variable = { treasury = 100 }
+			custom_effect_tooltip = 100_billion_expense_tt
+					}
+				}
+	focus = {
+		id = AYM_excellence_with_us
+		icon = USA_american_mandate_iniative
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_us_relations
+		}
+		x = 44
+		y = 19
+
+
+        available = {
+        country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = USA
+        } } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+	completion_reward = {
+					add_war_support = 0.02
+					reverse_add_opinion_modifier = { target = USA modifier = the_new_us_bases_in_action}
+					}
+				}
+	focus = {
+		id = AYM_arms_deals
+		icon = USA_revive_the_pact_of_atlantica
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_qatar_non_agression
+		}
+		x = 50
+		y = 19
+
+
+        available = {
+        country_exists = QAT
+		NOT = {
+		has_war_with = QAT
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = QAT
+		NOT = {
+        country_exists = QAT
+        } } }
+
+    available = {
+	controls_state = 157
+	controls_state = 934
+	}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	
+
+	completion_reward = {
+			157 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			934 = {
+				
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+					TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = QAT.id }
+				change_influence_percentage = yes
+			}
+			USA= {
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+			set_temp_variable = { int_investment_change = 25.0 }
+			modify_international_investment_effect = yes			
+			}
+					}
+				}
+	focus = {
+		id = AYM_qatar_non_agression
+		icon = topple_qatar
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_southern_politics
+		}
+		x = 51
+		y = 18
+
+        available = {
+        country_exists = QAT
+		NOT = {
+		has_war_with = QAT
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = QAT
+        } } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = QAT modifier = declaration_of_friendship}
+diplomatic_relation = { 
+	country = TUR 
+	relation = non_aggression_pact 
+}
+QAT = {
+diplomatic_relation = { 
+	country = TUR 
+	relation = non_aggression_pact 
+} } 
+					}
+				}
+	focus = {
+		id = AYM_us_guarantee
+		icon = USA_diplomatic_corps
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_nato_protectionism
+		}
+		prerequisite = {
+			focus = AYM_excellence_with_us
+		}
+		x = 45
+		y = 20
+
+
+        available = {
+			controls_state = 161
+        country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = USA
+        } } 
+
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			161 = { 
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				}  
+				add_building_construction = {
+					type = naval_base
+					instant_build = yes
+					level = 1
+				} 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 1
+				} 
+            USA = {
+			give_guarantee = TUR
+			}
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+			add_stability = 0.03
+		} } }
+	focus = {
+		id = AYM_approachment_with_eu
+		icon = closer_ties_with_eu
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_northern_politics
+		}
+		x = 43
+		y = 18
+
+
+        available = {
+		NOT = {
+		has_war_with = ITA
+		has_war_with = GER
+		has_war_with = SPR
+		has_war_with = FRA
+		has_war_with = AUS
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+		completion_reward = {
+			every_other_country = {
+				limit = { has_idea = EU_member }
+
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = AYM_cold_war_stable
+		icon = war_in_europe
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_saudi_deal
+		}
+		prerequisite = {
+			focus = AYM_destroy_the_hezbollah
+		}
+		x = 53
+		y = 20
+
+	
+        available = {
+		NOT = {
+		has_war_with = PER
+		has_war_with = GEO
+		has_war_with = ARM
+		has_war_with = AZE
+		has_war_with = SYR
+		has_war_with = IRQ
+		has_war_with = SAU
+		 }
+        }
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		PER = {
+		add_stability = 0.05
+		}
+		GEO = {
+		add_stability = 0.05		
+		}
+		ARM = {
+		add_stability = 0.05		
+		}
+		AZE = {
+		add_stability = 0.05			
+		}
+		SYR = {
+		add_stability = 0.05			
+		}
+		IRQ = {
+		add_stability = 0.05			
+		}
+		SAU = {
+		add_stability = 0.05			
+		}
+}   }
+	focus = {
+		id = AYM_southern_politics
+		icon = iran_dominance
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_foreign_policy
+		}
+		x = 50
+		y = 17
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_political_power = 100
+}   }
+	focus = {
+		id = AYM_iranian_deal
+		icon = Compromise_military_iran
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_southern_politics
+		}
+		x = 53
+		y = 18
+
+
+        available = {
+        country_exists = PER
+		NOT = {
+		has_war_with = PER
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = PER
+        } } 
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = PER modifier = declaration_of_friendship}
+diplomatic_relation = { 
+	country = TUR 
+	relation = non_aggression_pact 
+}
+PER = {
+diplomatic_relation = { 
+	country = TUR 
+	relation = non_aggression_pact 
+} } 
+					}
+				}
+	focus = {
+		id = AYM_saudi_deal
+		icon = align_to_saudi_arabia
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_qatar_non_agression
+		}
+		x = 52
+		y = 19
+
+	
+        available = {
+        country_exists = SAU
+		NOT = {
+		has_war_with = SAU
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = SAU
+        } } 
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = SAU modifier = declaration_of_friendship}
+diplomatic_relation = { 
+	country = SAU 
+	relation = non_aggression_pact 
+}
+SAU = {
+diplomatic_relation = { 
+	country = TUR 
+	relation = non_aggression_pact 
+} } 
+					}
+				}
+	focus = {
+		id = AYM_try_to_join_eu
+		icon = dangerous_deal2
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_approachment_with_eu
+		}
+		x = 42
+		y = 19
+
+
+        available = {
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+	completion_reward = {
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+			add_ideas = protective_EU_membership
+                    }
+	}
+	focus = {
+		id = AYM_perm_eu_membership
+		icon = EU_TUR
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_try_to_join_eu
+		}
+		prerequisite = {
+			focus = AYM_excellence_with_us
+		}
+		x = 43
+		y = 20
+
+
+        available = {
+			has_idea = passive_european_membership
+        }
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+		completion_reward = {
+			add_stability = 0.03
+swap_ideas = { 
+  remove_idea = passive_european_membership
+  add_idea = EU_member
+}
+             }				
+		}
+	focus = {
+		id = AYM_gur_iraq
+		icon = align_to_iraq3
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_interventionary_guarantees
+		}
+		x = 41
+		y = 24
+
+
+        available = {
+		country_exists = IRQ
+		NOT = {
+		has_war_with = IRQ
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = IRQ
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+			give_guarantee = IRQ
+                    }
+	}
+	focus = {
+		id = AYM_immediate_intervention_irq
+		icon = militarized_iraq
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_gur_iraq
+		}
+		x = 41
+		y = 25
+
+
+
+        available = {
+		country_exists = IRQ
+		NOT = {
+		has_war_with = IRQ
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = IRQ
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        completion_reward = {
+			add_political_power = 75
+		create_wargoal = {
+			type = annex_everything
+			target = IRQ
+		}
+	} }
+	focus = {
+		id = AYM_gur_georgia
+		icon = align_to_georgia
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_interventionary_guarantees
+		}
+		x = 43
+		y = 24
+
+
+        available = {
+		country_exists = GEO
+		NOT = {
+		has_war_with = GEO
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = GEO
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+			give_guarantee = GEO
+                    }
+	}
+	focus = {
+		id = AYM_peace_and_the_order
+		icon = Generic_Tank_through_Wall
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_bombardment_of_syria
+		}
+		prerequisite = {
+			focus = AYM_immediate_intervention_syr
+		}
+		x = 38
+		y = 26
+
+            available = {
+		country_exists = SYR
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+        completion_reward = {
+			add_political_power = 75
+		create_wargoal = {
+			type = annex_everything
+			target = SYR
+		}
+	} }
+	focus = {
+		id = AYM_isis_cleanizing
+		icon = attack_isis
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_immediate_intervention_irq
+		}
+		x = 41
+		y = 26
+
+
+        available = {
+		country_exists = ISI
+		NOT = {
+		has_war_with = ISI
+		 }
+        }
+
+    bypass = {
+    has_war_with = ISI
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        completion_reward = {
+			add_war_support = 0.03
+		create_wargoal = {
+			type = annex_everything
+			target = ISI
+		}
+	} }
+	focus = {
+		id = AYM_gur_hungary
+		icon = hungarian_monarchism
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_gur_azerbaijan
+		}
+		x = 45
+		y = 25
+
+
+        available = {
+		country_exists = HUN
+		NOT = {
+		has_war_with = HUN
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = HUN
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+			give_guarantee = HUN
+                    }
+	}
+	focus = {
+		id = AYM_war_preparation_against_russia
+		icon = MON_we_dont_need_russia
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_gur_georgia
+		}
+		x = 43
+		y = 25
+
+
+        available = {
+		country_exists = GEO
+		NOT = {
+		has_war_with = GEO
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = GEO
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GEO modifier = military_aid }
+                1033 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} 
+	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -3000 }
+	 GEO = {
+	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 3000 }
+			} }
+	}
+	}
+	focus = {
+		id = AYM_nato_clashes
+		icon = strike_nato
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_war_preparation_against_russia
+		}
+		x = 43
+		y = 26
+
+
+
+        available = {
+		country_exists = GEO
+		NOT = {
+		has_war_with = GEO
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = GEO
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+
+	completion_reward = {
+					country_event = TurkeyF.195
+	}
+	}
+	focus = {
+		id = AYM_european_brotherhood
+		icon = European_Society
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_northern_expansion
+		}
+		prerequisite = {
+			focus = AYM_gur_hungary
+		}
+		x = 46
+		y = 26
+
+
+        available = {
+		NOT = {
+		has_war_with = POL
+		has_war_with = HUN
+		has_war_with = SLO
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+
+	completion_reward = {
+		POL = {
+					country_event = TurkeyF.201
+	}
+		HUN = {
+					country_event = TurkeyF.201
+	}
+		SLO = {
+					country_event = TurkeyF.201
+	}
+	} }
+	focus = {
+		id = AYM_destroy_the_hezbollah
+		icon = attack_hezbollah
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_iranian_deal
+		}
+		x = 54
+		y = 19
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_ideas = war_with_hezbollah
+}   }
+	focus = {
+		id = AYM_US_saviour
+		icon = USA_authoritarian_financial_control
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_us_guarantee
+		}
+		prerequisite = {
+			focus = AYM_perm_eu_membership
+		}
+		x = 46
+		y = 21
+
+
+        available = {
+        country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = USA
+        } } 
+		
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = USA modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = AYM_arabic_saviour
+		icon = arabunion
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_cold_war_stable
+		}
+		prerequisite = {
+			focus = AYM_middle_eastern_railways
+		}
+		x = 50
+		y = 21
+
+       available = {
+        country_exists = SAU
+		NOT = {
+		has_war_with = SAU
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = SAU
+        } } 
+				
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = SAU modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = AYM_democracy_and_the_order
+		icon = RUS_State_Construction
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_US_saviour
+		}
+		prerequisite = {
+			focus = AYM_and_of_peace
+		}
+		prerequisite = {
+			focus = AYM_arabic_saviour
+		}
+		x = 48
+		y = 22
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+			add_stability = 0.1
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas = media_opinion_towards_bad_1_left_wing_sad
+}
+			} 
+	}
+	focus = {
+		id = AYM_violent_clash_with_pkk
+		icon = Generic_Tank_through_Wall
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_terror_policy
+		}
+		x = 50
+		y = 24
+
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+
+	completion_reward = {
+    add_command_power = 50
+	add_manpower = 100000
+	add_war_support = 0.03
+        }  
+	}
+	focus = {
+		id = AYM_witchunt_on_feto
+		icon = fallen_soldiers
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_violent_clash_with_feto
+		}
+		x = 59
+		y = 25
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		
+		available = {
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_left_side_range  
+			}
+		}
+
+	completion_reward = {
+	    add_war_support = 0.03
+	retire_character = ilhan_tolu
+	retire_character = mustafa_ozsoy
+	retire_character = TUR_akin_ozturk
+TRGX_bop_very_low_decrease_effect = yes
+		771 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			}
+		} }
+	}
+	focus = {
+		id = AYM_offical_cleanization_act
+		icon = champagne_purple
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_shut_down_gulen_institutions
+		}
+		prerequisite = {
+			focus = AYM_witchunt_on_feto
+		}
+		prerequisite = {
+			focus = AYM_agents_for_pennyslvia
+		}
+		x = 58
+		y = 26
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+			search_filters = {FOCUS_FILTER_NAME}	
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+		
+	completion_reward = {
+				set_temp_variable = { temp_opinion = 20 }	
+            change_the_military_opinion = yes		
+			army_experience = -75
+			remove_ideas = betrayal_from_FETO2
+			}
+	}
+	focus = {
+		id = AYM_cautions_for_pkk
+		icon = focus_generic_military_dictatorship
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_terror_policy
+		}
+		x = 53
+		y = 24
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+		add_ideas = cautions_against_the_pkk_movement
+			}
+	}
+	focus = {
+		id = AYM_strike_on_global_presence
+		icon = kurd_mountainwarafre
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_cautions_for_pkk
+		}
+		x = 53
+		y = 25
+
+		
+			search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = cautions_against_the_pkk_movement
+  add_idea = cautions_against_the_pkk_movement_2
+} 
+			}
+	}
+	focus = {
+		id = AYM_truth_in_order
+		icon = turk_militia
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_agents_for_pennyslvia
+		}
+		x = 55
+		y = 26
+
+			search_filters = {FOCUS_FILTER_INDUSTRY}
+			search_filters = {FOCUS_FILTER_POLITICAL}
+
+		available = {
+			is_power_balance_in_range = {
+				id = TRG_power_balance
+				range < TRG_middle_left_side_range  
+			}
+		}
+
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = cautions_against_the_gulenist_movement_2
+  add_idea = satisfied_regional_order
+} 
+			}
+	}
+	focus = {
+		id = AYM_kurdish_resolution
+		icon = attack_kurdistan2
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_strike_on_global_presence
+		}
+		x = 53
+		y = 26
+
+			search_filters = {FOCUS_FILTER_INDUSTRY}
+			search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = cautions_against_the_pkk_movement_2
+  add_idea = kurdish_approval
+} 
+			}
+	}
+	focus = {
+		id = AYM_end_of_pkk
+		icon = turk_flags
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_militarize_the_borders
+		}
+		prerequisite = {
+			focus = AYM_order_and_establishment
+		}
+		x = 50
+		y = 26
+
+
+
+        available = {
+		OR = {
+		has_idea = TUR_PKK_insurgency_active
+		has_idea = TUR_PKK_insurgency_ceasefire
+		}
+        }
+
+    bypass = {
+	NOT = {
+		OR = {
+		has_idea = TUR_PKK_insurgency_active
+		has_idea = TUR_PKK_insurgency_ceasefire
+		}
+	has_idea = pkk_terror_idea
+	 }
+	}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+    add_command_power = 15
+	TUR_remove_pkk = yes
+        }  
+	}
+	focus = {
+		id = AYM_militarize_the_borders
+		icon = rearmament
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_violent_clash_with_pkk
+		}
+		prerequisite = {
+			focus = AYM_cautions_for_pkk
+		}
+		x = 51
+		y = 25
+
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_MANPOWER}
+
+		available = {
+		has_idea = TUR_PKK_insurgency_active
+		}
+
+    completion_reward = {
+       army_experience = 75
+	   add_war_support = 0.03
+	   add_manpower = 100000
+custom_effect_tooltip = DEC_5_PKK_POINT
+subtract_from_variable = { var = pkk_presence value = 5 }
+			add_to_variable = { TUR_PKK_aggro = -5 }
+			add_to_variable = { TUR_PKK_strength = -5 }		
+	 }
+	}
+	focus = {
+		id = AYM_order_and_establishment
+		icon = reactionary
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_violent_clash_with_pkk
+		}
+		x = 49
+		y = 25
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		available = {
+		has_idea = TUR_PKK_insurgency_active
+		}
+		
+	completion_reward = {
+    add_stability = 0.05
+custom_effect_tooltip = DEC_5_PKK_POINT
+subtract_from_variable = { var = pkk_presence value = 5 }
+			add_to_variable = { TUR_PKK_aggro = -5 }
+			add_to_variable = { TUR_PKK_strength = -5 }		
+        }  
+	}
+	focus = {
+		id = AYM_definitive_regime
+		icon = MEX_Defend_the_constitution
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_reinstate_the_order
+		}
+		mutually_exclusive = {
+			focus = AYM_order_of_self_bureocracy
+			focus = AYM_soft_regime
+			focus = AYM_order_of_self_bureocracy
+		}
+		x = 67
+		y = 6
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_2
+		custom_effect_tooltip = SOFT_GROUP_INCREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_1
+	        subtract_from_variable = { TUR_soft_group = -1 }		
+			subtract_from_variable = { TUR_transparent_group = 2}
+			subtract_from_variable = { TUR_precision_group = -1}
+                    }
+	}
+	focus = {
+		id = AYM_call_bureocrats
+		icon = continuous_def_against_influence
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_order_of_self_bureocracy
+		}
+		x = 65
+		y = 7
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_1	
+			subtract_from_variable = { TUR_transparent_group = -1}
+			subtract_from_variable = { TUR_precision_group = 1}
+                    }
+	}
+	focus = {
+		id = AYM_plans_for_take_over
+		icon = crucial_contribution
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_call_bureocrats
+		}
+		prerequisite = {
+			focus = AYM_mix_of_law
+		}
+		x = 65
+		y = 8
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_2
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_2
+			subtract_from_variable = { TUR_transparent_group = -2}
+			subtract_from_variable = { TUR_precision_group = 2}
+                    }
+	}
+	focus = {
+		id = AYM_clash_with_the_bureocratic_front
+		icon = air_defense
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_definitive_regime
+		}
+		x = 67
+		y = 7
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_INCREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_DECREASE_1
+			subtract_from_variable = { TUR_transparent_group = 1}
+			subtract_from_variable = { TUR_precision_group = -1}
+                    }
+	}
+	focus = {
+		id = AYM_shut_the_softeners
+		icon = Generic_Liberation
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_clash_with_the_bureocratic_front
+		}
+		x = 67
+		y = 8
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_INCREASE_1
+		custom_effect_tooltip = SOFT_GROUP_DECREASE_1
+			subtract_from_variable = { TUR_soft_group = 1}
+			subtract_from_variable = { TUR_precision_group = -1}
+                    }
+	}
+	focus = {
+		id = AYM_reorder_from_loss
+		icon = Generic_Command_Power
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_soft_regime
+		}
+		x = 69
+		y = 7
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_DECREASE_1
+		custom_effect_tooltip = SOFT_GROUP_INCREASE_2
+			subtract_from_variable = { TUR_soft_group = -2}
+			subtract_from_variable = { TUR_precision_group = 1}
+			subtract_from_variable = { TUR_transparent_group = 1}
+                    }
+	}
+	focus = {
+		id = AYM_not_this_time
+		icon = skull
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_reorder_from_loss
+		}
+		prerequisite = {
+			focus = AYM_new_scandals
+		}
+		x = 69
+		y = 8
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = TRANSPARENT_GROUP_DECREASE_1
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = SOFT_GROUP_INCREASE_2
+			subtract_from_variable = { TUR_soft_group = -2}
+			subtract_from_variable = { TUR_precision_group = 1}
+			subtract_from_variable = { TUR_transparent_group = 1}
+                    }
+	}
+	focus = {
+		id = AYM_order_change_of_2012
+		icon = focus_generic_improve_the_administration
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_not_this_time
+			focus = AYM_shut_the_softeners
+			focus = AYM_plans_for_take_over
+		}
+		x = 67
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		add_stability = 0.02
+	create_country_leader = {
+		name = "Mustafa Bumin"
+		picture = "mustafa_bumin.dds"
+		ideology = Neutral_conservatism
+		traits = {
+			neutrality_Neutral_conservatism
+			staunch_constitutionalist
+	        rational 
+			lawyer
+		}
+	} } }
+	focus = {
+		id = AYM_publish_the_democratic_order
+		icon = election3
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_order_change_of_2012
+		}
+		x = 67
+		y = 10
+
+    available = {
+	has_global_flag = ORDER_CHANGE_OF_2012
+		date < 2014.5.4
+	}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+	add_political_power = 125
+	}
+	}
+	focus = {
+		id = AYM_issue_the_mutual_unity
+		icon = national_unity_red
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_publish_the_democratic_order
+		}
+		mutually_exclusive = {
+			focus = AYM_bureocratic_state
+			focus = AYM_the_rise_of_soft
+		}
+		x = 67
+		y = 11
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_INCREASE_1
+		custom_effect_tooltip = SOFT_GROUP_DECREASE_1
+			subtract_from_variable = { TUR_precision_group = -1}
+			subtract_from_variable = { TUR_soft_group = 1}
+                    }
+	}
+	focus = {
+		id = AYM_bureocratic_state
+		icon = one_language_state
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_publish_the_democratic_order
+		}
+		mutually_exclusive = {
+			focus = AYM_issue_the_mutual_unity
+			focus = AYM_the_rise_of_soft
+		}
+		x = 65
+		y = 11
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_1
+		custom_effect_tooltip = SOFT_GROUP_DECREASE_1
+			subtract_from_variable = { TUR_transparent_group = -1}
+			subtract_from_variable = { TUR_soft_group = 1}
+                    }
+	}
+	focus = {
+		id = AYM_the_rise_of_soft
+		icon = Generic_Bell_Tolls
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_publish_the_democratic_order
+		}
+		mutually_exclusive = {
+			focus = AYM_bureocratic_state
+			focus = AYM_issue_the_mutual_unity
+		}
+		x = 69
+		y = 11
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = TRANSPARENT_GROUP_DECREASE_1
+		custom_effect_tooltip = SOFT_GROUP_INCREASE_1
+			subtract_from_variable = { TUR_transparent_group = 1}
+			subtract_from_variable = { TUR_soft_group = -1}
+                    }
+	}
+	focus = {
+		id = AYM_appoint_the_general_governance
+		icon = angel
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_issue_the_mutual_unity
+		}
+		x = 67
+		y = 12
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_INCREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_DECREASE_1
+			subtract_from_variable = { TUR_transparent_group = 1}
+			subtract_from_variable = { TUR_precision_group = -1}
+                    }
+	}
+	focus = {
+		id = AYM_shut_the_congress_type_elections
+		icon = elections_rigged
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_appoint_the_general_governance
+		}
+		x = 67
+		y = 13
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_TAKE_OVER
+	set_variable = { var = TUR_soft_group value = 0 }
+	set_variable = { var = TUR_precision_group value = 15 }
+	set_variable = { var = TUR_transparent_group value = 0 }
+	create_country_leader = {
+		name = "Zühtü Arslan"
+		picture = "zuhtu_arslan.dds"
+		ideology = Neutral_conservatism
+		traits = {
+			neutrality_Neutral_conservatism
+			staunch_constitutionalist
+			lawyer
+		}
+	}   
+                    }
+	}
+	focus = {
+		id = AYM_new_forces_from_outside
+		icon = reconfigure_turkish_foreign_policy
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_bureocratic_state
+		}
+		x = 65
+		y = 12
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_1
+			subtract_from_variable = { TUR_transparent_group = -1}
+			subtract_from_variable = { TUR_precision_group = 1}
+                    }
+	}
+	focus = {
+		id = AYM_grand_front
+		icon = BRA_a_promise_to_keep
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_new_forces_from_outside
+		}
+		prerequisite = {
+			focus = AYM_call_the_professors
+		}
+		x = 65
+		y = 13
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = TRANSPARENT_GROUP_TAKE_OVER
+	set_variable = { var = TUR_soft_group value = 0 }
+	set_variable = { var = TUR_precision_group value = 0 }
+	set_variable = { var = TUR_transparent_group value = 15 }
+	create_country_leader = {
+		name = "Haşim Kılıç"
+		picture = "hasim_kilic.dds"
+		ideology = Neutral_conservatism
+		traits = {
+			neutrality_Neutral_conservatism
+			staunch_constitutionalist
+			lawyer
+		}
+	} 
+                    }
+	}
+	focus = {
+		id = AYM_call_the_professors
+		icon = torchbearers_of_tomorrow
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_bureocratic_state
+		}
+		x = 63
+		y = 12
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = SOFT_GROUP_DECREASE_1
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_2
+			subtract_from_variable = { TUR_transparent_group = -2}
+			subtract_from_variable = { TUR_precision_group = 1}
+			subtract_from_variable = { TUR_soft_group = 1}
+                    }
+	}
+	focus = {
+		id = AYM_the_systematic_rule_out
+		icon = BRA_simplify_the_tax_system
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_grand_front
+			focus = AYM_shut_the_congress_type_elections
+			focus = AYM_contest_the_party_control
+		}
+		x = 67
+		y = 14
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		add_stability = 0.1
+                    }
+	}
+	focus = {
+		id = AYM_step_down_the_leadership
+		icon = Laurel_Slovakia
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_the_rise_of_soft
+		}
+		x = 69
+		y = 12
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_INCREASE_1
+		custom_effect_tooltip = SOFT_GROUP_DECREASE_2
+		custom_effect_tooltip = TRANSPARENT_GROUP_INCREASE_1
+			subtract_from_variable = { TUR_transparent_group = -1}
+			subtract_from_variable = { TUR_precision_group = -1}
+			subtract_from_variable = { TUR_soft_group = 2}
+                    }
+	}
+	focus = {
+		id = AYM_contest_the_party_control
+		icon = Generic_Corporatism
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_step_down_the_leadership
+		}
+		prerequisite = {
+			focus = AYM_happiness_ratios
+		}
+		x = 69
+		y = 13
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = SOFT_GROUP_TAKE_OVER
+	set_variable = { var = TUR_soft_group value = 10 }
+	set_variable = { var = TUR_precision_group value = 2 }
+	set_variable = { var = TUR_transparent_group value = 3 }
+	create_country_leader = {
+		name = "Tülay Tuğcu"
+		picture = "tulay_tugcu.dds"
+		ideology = Neutral_conservatism
+		traits = {
+			neutrality_Neutral_conservatism
+			staunch_constitutionalist
+			lawyer
+		}
+	}   
+                    }
+	}
+	focus = {
+		id = AYM_happiness_ratios
+		icon = family
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_the_rise_of_soft
+		}
+		x = 71
+		y = 12
+
+        search_filters = {FOCUS_FILTER_COURT_DIVISION}
+
+	completion_reward = {
+		custom_effect_tooltip = PRECISION_GROUP_DECREASE_1
+		custom_effect_tooltip = SOFT_GROUP_INCREASE_1
+			subtract_from_variable = { TUR_precision_group = 1}
+			subtract_from_variable = { TUR_soft_group = -1}
+                    }
+	}
+	focus = {
+		id = AYM_credit_law
+		icon = Generic_Loadsamoney
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_industrial_rise_up
+		}
+		x = 67
+		y = 17
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+			add_ideas = credit_law
+					}
+				}
+	focus = {
+		id = AYM_us_investment_program
+		icon = house
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_reach_out_the_west
+		}
+		x = 69
+		y = 19
+
+
+        available = {
+        country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = USA
+        } } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	completion_reward = {
+			subtract_from_variable = { treasury = -100 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+			    TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+			USA= {
+			subtract_from_variable = { treasury = 100 }
+			custom_effect_tooltip = 100_billion_expense_tt	
+			set_temp_variable = { int_investment_change = 100.0 }
+			modify_international_investment_effect = yes			
+			}
+					}
+				}
+	focus = {
+		id = AYM_german_trading
+		icon = trade_with_germany
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_reach_out_the_west
+		}
+		x = 71
+		y = 19
+
+        available = {
+        country_exists = GER
+		NOT = {
+		has_war_with = GER
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = GER
+        } } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = AYM_gazprom_deal
+		icon = RUS_gazprom
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_reach_out_the_east
+		}
+		x = 75
+		y = 19
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		controls_state = 1032
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = SOV
+	 }
+	} 
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_RESOURCE}
+
+	completion_reward = {
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = SOV.id }
+				change_influence_percentage = yes
+			}
+			1032 = {
+				add_resource = {
+					type = oil
+					amount = 11
+				}
+			}
+					}
+				}
+	focus = {
+		id = AYM_car_factories
+		icon = western_investments
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_us_investment_program
+		}
+		x = 69
+		y = 20
+
+
+        available = {
+        country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = USA
+        } } 
+
+    available = {
+	controls_state = 157
+	controls_state = 934
+	}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+	completion_reward = {
+			157 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			934 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+					TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = AYM_german_universities
+		icon = burgfrieden
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_german_trading
+		}
+		x = 71
+		y = 20
+
+        available = {
+        country_exists = GER
+		NOT = {
+		has_war_with = GER
+		 }
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = GER
+        } } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = german_universities_in_turkey }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			add_ideas = german_universities
+			} 
+	}
+	focus = {
+		id = AYM_gazprom_hub
+		icon = gazprom_yakutia
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_gazprom_deal
+		}
+		x = 75
+		y = 20
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = SOV
+		controls_state = 1032
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = SOV
+	 }
+	} 
+	
+	completion_reward = {
+			TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = SOV.id }
+				change_influence_percentage = yes
+			}
+			1032 = {
+				add_resource = {
+					type = oil
+					amount = 17
+				}
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+				}
+			}
+					}
+				}
+	focus = {
+		id = AYM_limitize_the_loss
+		icon = fallen_goverment_1
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_credit_law
+		}
+		x = 67
+		y = 18
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+
+available = {
+has_idea = lira_2
+}
+
+	completion_reward = {
+			subtract_from_variable = { treasury = -100 }
+			custom_effect_tooltip = 100_billion_revenue_tt
+ swap_ideas = { 
+  remove_idea = lira_2
+  add_idea = lira_3
+}     
+					}
+				}
+	focus = {
+		id = AYM_completely_civilian_develop
+		icon = accept_treaty
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_civilian_projects
+		}
+		mutually_exclusive = {
+			focus = AYM_military_development
+		}
+		x = 64
+		y = 18
+
+    available = {
+	controls_state = 156
+	}
+
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+			156 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = AYM_kayseri_industries
+		icon = industrial_complexes
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_completely_civilian_develop
+		}
+		x = 65
+		y = 19
+
+
+    available = {
+	controls_state = 159
+	}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = AYM_local_fund
+		icon = production2
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_completely_civilian_develop
+		}
+		x = 63
+		y = 19
+
+
+    available = {
+	controls_state = 159
+	}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = AYM_sivas_industrial_zone
+		icon = construction
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_kayseri_industries
+		}
+		x = 65
+		y = 20
+
+
+    available = {
+	controls_state = 1032
+	}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+			1032 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = AYM_glass_factories
+		icon = Focus_Generic_Consumer_Goods
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_local_fund
+		}
+		x = 63
+		y = 20
+
+
+    available = {
+	controls_state = 155
+	}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+			155 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 30.0 }
+			custom_effect_tooltip = 30_billion_expense_tt
+		} } 
+	focus = {
+		id = AYM_perfection_of_industrials
+		icon = factory_complex
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_sivas_industrial_zone
+		}
+		prerequisite = {
+			focus = AYM_glass_factories
+		}
+		x = 64
+		y = 21
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_ideas = revenue_driven_industry
+		} } 
+	focus = {
+		id = AYM_reach_out_global_world
+		icon = global_community
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_limitize_the_loss
+		}
+		x = 67
+		y = 19
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+available = {
+has_idea = reformed_2001_crisis
+}
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = reformed_2001_crisis
+  add_idea = reforms_for_2001_crisis
+}
+ swap_ideas = { 
+  remove_idea = lira_1
+  add_idea = lira_2
+}     
+  add_ideas = globalized_trade_economy    
+}   }
+	focus = {
+		id = AYM_us_eastern_defence_doctrine
+		icon = USA_american_militias
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_german_universities
+		}
+		prerequisite = {
+			focus = AYM_car_factories
+		}
+		x = 70
+		y = 21
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+			controls_state = 162
+			controls_state = 935
+			controls_state = 1032
+			controls_state = 162		
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = USA
+	 }
+	} 
+	
+	completion_reward = {
+			TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+			162 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			935 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			1032 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			162 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+					}
+				}
+	focus = {
+		id = AYM_gate_type_relations
+		icon = roads_extend_plan
+		cost = 5,00
+		prerequisite = {
+			focus = AYM_gazprom_hub
+		}
+		prerequisite = {
+			focus = AYM_chinese_investing_land
+		}
+		x = 74
+		y = 21
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+
+	completion_reward = {
+			add_ideas = gateway_projection_status
+					}
+				}
+	focus = {
+		id = AYM_reach_out_expensive_resources
+		icon = resource_extraction
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_reach_out_global_world
+		}
+		x = 67
+		y = 20
+
+    available = {
+	controls_state = 159
+	controls_state = 160
+	controls_state = 161
+	}
+
+		search_filters = {FOCUS_FILTER_RESOURCE}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+			159 = { 
+				add_resource = {
+					type = metal
+					amount = 13
+				}
+			160 = { 
+				add_resource = {
+					type = iron
+					amount = 9
+				}
+			161 = { 
+				add_resource = {
+					type = oil
+					amount = 11
+				}
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+		} } } } }
+	focus = {
+		id = AYM_harmony_of_progress
+		icon = goal_generic_support_progressive
+		cost = 7.2
+		prerequisite = {
+			focus = AYM_reach_out_expensive_resources
+		}
+		x = 67
+		y = 21
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = reforms_for_2001_crisis
+  add_idea = reformss_for_2001_crisis
+}
+ swap_ideas = { 
+  remove_idea = lira_3
+  add_idea = lira_4
+}     
+             }				
+		}
+	focus = {
+		id = AYM_finish_the_build_up
+		icon = expand_finance_ministry
+		cost = 10,00
+		prerequisite = {
+			focus = AYM_harmony_of_progress
+		}
+		prerequisite = {
+			focus = AYM_us_eastern_defence_doctrine
+			focus = AYM_gate_type_relations
+		}
+		prerequisite = {
+			focus = AYM_perfection_of_industrials
+			focus = AYM_general_military_initative
+		}
+		x = 67
+		y = 22
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+		completion_reward = {
+        remove_ideas = reformss_for_2001_crisis
+				}
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = TUR_covid-19_pandemic22
+		icon = generic_healthcare
+		cost = 10,00
+		x = 80
+		y = 0
+
+        available = {
+        has_idea = covid_19
+        }
+	
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+		completion_reward = {
+        add_political_power = 75
+		block_health_decrease = yes
+		} }
+		
+	focus = {
+		id = TUR_covid-19_preparations22
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_pandemic22
+		}
+		x = 80
+		y = 1
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19
+  add_idea = covid_19_prepared
+}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TUR_build_up_hospitals22
+		icon = generic_hospital2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations22
+		}
+		x = 78
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}			
+	completion_reward = {
+			subtract_from_variable = { treasury = 20.0 }
+			add_stability = 0.03
+			custom_effect_tooltip = 20_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_turn_airports_to_hospital22
+		icon = generic_hospital
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_build_up_hospitals22
+		}
+		x = 78
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+			subtract_from_variable = { treasury = 5.0 }
+			add_stability = 0.02
+			custom_effect_tooltip = 5_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_start_up_vaccine_program22
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations22
+		}
+		x = 80
+		y = 2
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		
+		
+	completion_reward = {
+	        add_stability = -0.05
+			add_political_power = -75
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			custom_effect_tooltip = COV_DECISION_OPENING_VAC
+			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
+			} 
+	}
+	focus = {
+		id = TUR_buy_german_vaccines22
+		icon = trade_with_germany
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_start_up_vaccine_program22
+		}
+		x = 80
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_increase_funds_to_science22
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations22
+		}
+		x = 82
+		y = 2
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = health_04
+  add_idea = health_05
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_medicines22
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_funds_to_science22
+		}                                         
+		prerequisite = {                          
+			focus = TUR_increase_funds_to_science22
+		}
+		x = 82
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_prepared
+  add_idea = covid_19_medicined
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_chinese_vaccines22
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turn_airports_to_hospital22
+		}
+		prerequisite = {
+			focus = TUR_buy_german_vaccines22
+		}
+		prerequisite = {
+			focus = TUR_buy_medicines22
+		}
+		x = 80
+		y = 4
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_normalisation_from_covid22
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_buy_chinese_vaccines22
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
+		} }
+		x = 80
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_medicined
+  add_idea = covid_19_normalised
+} 
+	custom_effect_tooltip = COV_AVAILABLE_1
+}
+	}
+	focus = {
+		id = TUR_end_of_covid22
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_normalisation_from_covid22
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
+		} }
+		x = 80
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+remove_ideas = covid_19_normalised
+	custom_effect_tooltip = COV_AVAILABLE_2
+}
+	} 
+
+##############################
+###	Start of Turkic Focus Tree ###	x = 75 y = 55
+##############################
+
+shared_focus = TR_policies
+
+############################
+### End of Turkic Focus Tree ###
+############################
+
+
+##############################
+###	Start of Cypriot Tree ###	x = 13 y = 10
+##############################
+
+shared_focus = TUR_greek_issues
+
+############################
+### End of Cypriot Focus Tree ###
+############################
+
+
+##############################
+###	Start of EU Focus Tree ###	x = 3 y = 45
+##############################
+
+	shared_focus = USoE001
+	shared_focus = POTEF001
+
+############################
+### End of EU Focus Tree ###
+############################
+}

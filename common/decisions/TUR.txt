@@ -1,0 +1,249 @@
+
+TUR_the_constitutional_arrows_category = { 
+
+	TUR_republicanism_decision = {
+	
+		icon = tur_the_constitutional_arrows
+
+		allowed = { 
+			original_tag = TUR
+		}
+		
+		fire_only_once = no
+		fixed_random_seed = yes
+		
+		visible = {
+		has_global_flag = UNLOCK_REPUBLICANISM
+		}
+		
+		available = {
+		}
+
+		days_remove = 14
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 5
+			}
+		}
+
+		complete_effect = {
+			add_ideas = TUR_republicanism
+		}
+
+		remove_effect = {
+			remove_ideas = TUR_republicanism
+			hidden_effect = {
+				set_country_flag = { flag = TUR_stoked_republicanism_flag value = 1 days = 60 }
+			}
+		}
+	}
+
+	TUR_secularism_decision = {
+	
+		icon = tur_the_constitutional_arrows
+
+		allowed = { 
+			original_tag = TUR
+		}
+		
+		fire_only_once = no
+		
+		visible = {
+			has_global_flag = UNLOCK_SECULARISM
+		}
+		
+		available = {
+		}
+
+		cost = 50
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		complete_effect = {
+				set_temp_variable = { temp_opinion = -3 }	
+            change_the_ulema_opinion = yes	
+		}
+
+		remove_effect = {
+			add_political_power = 175
+			hidden_effect = {
+				set_country_flag = { flag = TUR_stoked_populism_flag value = 1 days = 80 }
+			}
+		}
+	}
+
+	TUR_populism_decision = {
+	
+		icon = tur_the_constitutional_arrows
+
+		allowed = { 
+			original_tag = TUR
+		}
+		
+		fire_only_once = no
+		
+		visible = {
+				has_global_flag = UNLOCK_POPULISM
+		}
+		
+		available = {
+		}
+
+		days_remove = 60
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		complete_effect = {
+			add_ideas = TUR_populism
+		}
+
+		remove_effect = {
+			remove_ideas = TUR_populism
+			hidden_effect = {
+				set_country_flag = { flag = TUR_stoked_populism_flag value = 1 days = 80 }
+			}
+		}
+	}
+
+	TUR_nationalism_decision = {
+	
+		icon = tur_the_constitutional_arrows
+
+		allowed = { 
+			original_tag = TUR
+		}
+		
+		fire_only_once = no
+		
+		visible = {
+				has_global_flag = UNLOCK_NATIONALISM
+		}
+		
+		available = {
+		}
+
+		days_remove = 30
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		complete_effect = {
+			add_ideas = TUR_nationalism
+		}
+
+		remove_effect = {
+			remove_ideas = TUR_nationalism
+			hidden_effect = {
+				set_country_flag = { flag = TUR_stoked_nationalism_flag value = 1 days = 120 }
+			}
+		}
+	}
+
+	TUR_reformism_decision = {
+	
+		icon = tur_the_constitutional_arrows
+
+		allowed = { 
+			original_tag = TUR
+		}
+		
+		fire_only_once = no
+		
+		visible = {
+				has_global_flag = UNLOCK_REFORMISM
+		}
+		
+		available = {
+		}
+
+		days_remove = 60
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		complete_effect = {
+			add_ideas = TUR_reformism
+		}
+
+		remove_effect = {
+			remove_ideas = TUR_reformism
+			hidden_effect = {
+				set_country_flag = { flag = TUR_stoked_reformism_flag value = 1 days = 60 }
+			}
+		}
+	}
+
+	TUR_revolutionism_decision = {
+	
+		icon = tur_the_constitutional_arrows
+
+		allowed = { 
+			original_tag = TUR
+		}
+		
+		fire_only_once = no
+		
+		visible = {
+				has_global_flag = UNLOCK_REVOLUTIONISM
+		}
+		
+		available = {
+		}
+
+		days_remove = 60
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		complete_effect = {
+			add_ideas = TUR_revolutionism
+		}
+
+		remove_effect = {
+			remove_ideas = TUR_revolutionism
+			hidden_effect = {
+				set_country_flag = { flag = TUR_stoked_revolutionism_flag value = 1 days = 60 }
+			}
+		}
+	}

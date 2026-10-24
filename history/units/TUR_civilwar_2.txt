@@ -1,0 +1,677 @@
+division_template = {
+	name = "Mechanized Brigade"
+
+	regiments = {
+		Mech_Inf_Bat = { x = 0 y = 0 }
+		Mech_Inf_Bat = { x = 0 y = 1 }
+		Mech_Inf_Bat = { x = 1 y = 0 }
+		Mech_Inf_Bat = { x = 1 y = 1 }
+		SP_Arty_Bat = { x = 1 y = 2 }
+		L_Engi_Bat = { x = 2 y = 0 }
+	}
+
+}
+division_template = {
+	name = "Armored Brigade"
+
+	regiments = {
+		Arm_Inf_Bat = { x = 0 y = 0 }
+		armor_Bat = { x = 0 y = 1 }
+		Arm_Inf_Bat = { x = 1 y = 0 }
+		armor_Bat = { x = 1 y = 1 }
+		SP_Arty_Bat = { x = 1 y = 2 }
+		H_Engi_Bat = { x = 2 y = 0 }
+	}
+
+}
+division_template = {
+	name = "Motorized Brigade"
+
+	regiments = {
+		Mot_Inf_Bat = { x = 0 y = 0 }
+		Mot_Inf_Bat = { x = 0 y = 1 }
+		Mot_Inf_Bat = { x = 1 y = 0 }
+		Mot_Inf_Bat = { x = 1 y = 1 }
+		SP_Arty_Bat = { x = 1 y = 2 }
+		L_Engi_Bat = { x = 2 y = 0 }
+	}
+
+}
+division_template = {
+	name = "Commando Brigade"
+
+	regiments = {
+		Special_Forces = { x = 0 y = 0 }
+		Special_Forces = { x = 0 y = 1 }
+		Special_Forces = { x = 1 y = 0 }
+		Special_Forces = { x = 1 y = 1 }
+		Arty_Bat = { x = 1 y = 2 }
+		L_Engi_Bat = { x = 2 y = 0 }
+	}
+
+	priority = 2
+}
+division_template = {
+	name = "Marine Brigade"
+
+	regiments = {
+		Mech_Marine_Bat = { x = 0 y = 0 }
+		Mech_Marine_Bat = { x = 0 y = 1 }
+		Mech_Marine_Bat = { x = 1 y = 0 }
+		armor_Bat = { x = 1 y = 0 }
+		Arty_Bat = { x = 2 y = 0 }
+	}
+
+}
+division_template = {
+	name = "SF Regiment"
+
+	regiments = {
+		Special_Forces = { x = 0 y = 0 }
+		Special_Forces = { x = 0 y = 1 }
+		Arty_Bat = { x = 1 y = 0 }
+		L_Engi_Bat = { x = 2 y = 0 }
+	}
+
+}
+division_template = {
+	name = "Infantry Brigade"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 1 y = 0 }
+		L_Inf_Bat = { x = 1 y = 1 }
+		Arty_Bat = { x = 1 y = 2 }
+		L_Engi_Bat = { x = 2 y = 0 }
+	}
+
+}
+division_template = {
+	name = "Motorized Division"
+
+	regiments = {
+		Mot_Inf_Bat = { x = 0 y = 0 }
+		Mot_Inf_Bat = { x = 0 y = 1 }
+		Mot_Inf_Bat = { x = 1 y = 0 }
+		Mot_Inf_Bat = { x = 1 y = 1 }
+		Mot_Inf_Bat = { x = 2 y = 0 }
+		Mot_Inf_Bat = { x = 2 y = 1 }
+		L_Engi_Bat = { x = 2 y = 2 }
+		SP_Arty_Bat = { x = 3 y = 0 }
+		SP_Arty_Bat = { x = 3 y = 1 }
+	}
+
+}
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 0 y = 3 }
+		Arty_Bat = { x = 0 y = 4 }
+		L_Inf_Bat = { x = 1 y = 0 }
+		L_Inf_Bat = { x = 1 y = 1 }
+		L_Inf_Bat = { x = 1 y = 2 }
+		L_Inf_Bat = { x = 01 y = 3 }
+		Arty_Bat = { x = 1 y = 4 }
+		L_Inf_Bat = { x = 2 y = 0 }
+		L_Inf_Bat = { x = 2 y = 1 }
+		L_Inf_Bat = { x = 2 y = 2 }
+		L_Inf_Bat = { x = 2 y = 3 }
+		Arty_Bat = { x = 2 y = 4 }
+		L_Engi_Bat = { x = 2 y = 4 }
+	}
+
+}
+division_template = {
+	name = "Tactical Armored Division"
+
+	regiments = {
+		Arm_Inf_Bat = { x = 0 y = 0 }
+		Arm_Inf_Bat = { x = 0 y = 1 }
+		armor_Bat = { x = 0 y = 2 }
+		armor_Bat = { x = 0 y = 3 }
+		SP_Arty_Bat = { x = 0 y = 4 }
+		Arm_Inf_Bat = { x = 1 y = 0 }
+		Arm_Inf_Bat = { x = 1 y = 1 }
+		armor_Bat = { x = 1 y = 2 }
+		armor_Bat = { x = 1 y = 3 }
+		SP_Arty_Bat = { x = 1 y = 4 }
+		Mech_Inf_Bat = { x = 2 y = 0 }
+		Mech_Inf_Bat = { x = 2 y = 1 }
+		Mech_Inf_Bat = { x = 2 y = 2 }
+		Mech_Inf_Bat = { x = 2 y = 3 }
+		SP_Arty_Bat = { x = 2 y = 4 }
+		H_Engi_Bat = { x = 2 y = 2 }
+	}
+
+}
+division_template = {
+	name = "Infantry Regiment"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		Arty_Bat = { x = 0 y = 0 }
+		L_Engi_Bat = { x = 0 y = 1 }
+	}
+
+}
+
+units = {
+
+	###Ship Index###
+	#corvette_2 = Burak-Class
+	#missile_corvette_2 = Ada-class
+	#frigate_2 = Oliver Hazard Perry-Class
+	#missile_frigate_1 = Barbaros-Class
+	#diesel_attack_submarine_2 = Type 209 Atlay-Class
+
+
+
+	###1st Army###
+
+	##2nd Corps##
+	division = {
+		name = "Mekanize Birlik"
+		location = 10041
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Mekanize Birlik"
+		location = 10041
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		name = "Mekanize Birlik"
+		location = 11796
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 928
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+
+	##3rd Corps##
+	#52nd Tactical Armored Division
+	division = {
+		name = "Zırhlı Taktiksel Birlik"
+		location = 11848
+		division_template = "Tactical Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	#23rd Tactical Motorized Infantry Division
+	division = {
+		name = "Motorize Edilmiş Tümen"
+		location = 9887
+		division_template = "Motorized Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Mekanize Birlik"
+		location = 3856
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 3983
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Taktiksel Birlik"
+		location = 10041
+		division_template = "Tactical Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	#23rd Tactical Motorized Infantry Division
+	division = {
+		name = "Motorize Edilmiş Tümen"
+		location = 4112
+		division_template = "Motorized Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Taktiksel Birlik"
+		location = 1149
+		division_template = "Tactical Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	#23rd Tactical Motorized Infantry Division
+	division = {
+		name = "Motorize Edilmiş Tümen"
+		location = 1149
+		division_template = "Motorized Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Mekanize Birlik"
+		location = 4112
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 4112
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Mekanize Birlik"
+		location = 9878
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Mekanize Birlik"
+		location = 3876
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Mekanize Birlik"
+		location = 3788
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 3788
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+
+	division = {
+		name = "Mekanize Birlik"
+		location = 7143
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 7143
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Mekanize Birlik"
+		location = 10056
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Mekanize Birlik"
+		location = 10056
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		name = "Mekanize Birlik"
+		location = 10056
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 11810
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+
+	division = {
+		name = "Mekanize Birlik"
+		location = 11810
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Mekanize Birlik"
+		location = 6888
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+
+	division = {
+		name = "Mekanize Birlik"
+		location = 10056
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 11810
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+
+	division = {
+		name = "Mekanize Birlik"
+		location = 11810
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Mekanize Birlik"
+		location = 6888
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		name = "Mekanize Birlik"
+		location = 6888
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 6888
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 886
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 886
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 6813
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+
+	division = {
+		name = "Mekanize Birlik"
+		location = 806
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 806
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 6956
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+
+	division = {
+		name = "Mekanize Birlik"
+		location = 6956
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 6956
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 11746
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Zırhlı Birlik"
+		location = 11746
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "17. Piyade Tugayı"
+		location = 9954
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "9. Piyade Tugayı"
+		location = 6991
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+	}
+
+	##4 Commando Brigades
+	division = {
+		name = "Kemalist Misil Birlikleri"
+		location = 1122
+		division_template = "Commando Brigade"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "Kemalist Misil Birlikleri"
+		location = 7130
+		division_template = "Commando Brigade"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "Kemalist Misil Birlikleri"
+		location = 9941
+		division_template = "Commando Brigade"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "Kemalist Misil Birlikleri"
+		location = 11784
+		division_template = "Commando Brigade"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "Kemalist Misil Birlikleri"
+		location = 6925
+		division_template = "Commando Brigade"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "Kemalist Misil Birlikleri"
+		location = 804
+		division_template = "Commando Brigade"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.01
+	}
+}
+
+instant_effect = {
+
+	add_equipment_to_stockpile = {
+		type = infantry_weapons
+		amount = 12200 #HK33 - majority
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = command_control_equipment2
+		amount = 2200
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_0 #M72 LAW
+		amount = 1540
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = Heavy_Anti_tank_1 #TOW
+		amount = 680
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1
+		amount = 1700
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_0	 #
+		amount = 3000
+		producer = TUR
+	}
+
+	add_equipment_to_stockpile = {
+		type = MBT_1	 #M48
+		#version_name = "M48A5"
+		amount = 2876
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = MBT_1	 #60
+		#version_name = "M60A3"
+		amount = 932
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = MBT_2	 #Leopard 1A1
+		#version_name = "Leopard 1A1"
+		amount = 397
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_2	 #Akrep
+		amount = 200
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_3	 #Cobra
+		amount = 200
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = IFV_2		 #AIFV
+		amount = 650
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = APC_2		 #AAPC
+		amount = 830
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = APC_2		 #M113
+		amount = 2813
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_0		 #M114
+		#version_name = "M114"
+		amount = 517
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = SP_arty_0		 #M108T
+		amount = 26
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = SP_arty_0		 #M110
+		#version_name = "M110"
+		amount = 219
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = SP_arty_1		 #M52T
+		amount = 365
+		producer = TUR
+	}
+
+	add_equipment_to_stockpile = {
+		type = attack_helicopter1 #AH-1
+		amount = 37
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = transport_helicopter1 #UH-1
+		amount = 114
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {
+		type = MR_Fighter1 #F-5
+		amount = 87
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = MR_Fighter3 #F-16C
+		amount = 120
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = AS_Fighter1 #F-4
+		amount = 178
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = transport_plane1 #C-130
+		amount = 13
+		producer = USA
+	}
+}

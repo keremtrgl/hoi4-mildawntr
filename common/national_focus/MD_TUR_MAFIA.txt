@@ -1,0 +1,5231 @@
+focus_tree = {
+	id = MD_TUR_MAFIA
+	default = no
+		
+	focus = {
+		id = MAF_begin_the_first_congress
+		icon = examine_foreign_laws
+		cost = 10,00
+		x = 21
+		y = 0
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+	add_stability = -0.02
+	add_political_power = 35
+	set_global_flag = TUR_MAFIATIC_TR
+	clr_global_flag = NO_TUR_MAFIATIC_TR
+	set_global_flag = YES_TUR_MAFIATIC_TR
+	clr_global_flag = muhsin
+	custom_effect_tooltip = MAFIA_CONTROL
+	} } 
+	focus = {
+		id = MAF_time_for_steal
+		icon = espionage3
+		cost = 10,00
+		x = 37
+		y = 16
+
+	
+		completion_reward = {
+		    custom_effect_tooltip = ROB_MAF
+		} } 
+	focus = {
+		id = MAF_peace_meetings_around_mafias
+		icon = Generic_Secret_Meeting
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_begin_the_first_congress
+		}
+		x = 21
+		y = 1
+
+
+    completion_reward = {
+	add_stability = 0.07
+	} } 
+	focus = {
+		id = MAF_publish_the_mafia_congress_law
+		icon = bloody_purge
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_peace_meetings_around_mafias
+		}
+		x = 19
+		y = 2
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+				
+    completion_reward = {
+	add_stability = 0.03
+	add_political_power = -50
+	} } 
+	focus = {
+		id = MAF_expert_in_datamining
+		icon = home_defense
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_publish_the_mafia_congress_law
+		}
+		x = 18
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+	add_ideas = datamining_group
+	} }
+	focus = {
+		id = MAF_open_the_base_on_ankara
+		icon = focus_ETH_addressing_the_league_of_nations
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_peace_meetings_around_mafias
+		}
+		x = 21
+		y = 2
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+	add_ideas = mafia_underground_base
+	} } 
+	focus = {
+		id = MAF_collect_the_mafias
+		icon = blr_migrant_crisis
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_peace_meetings_around_mafias
+		}
+		x = 23
+		y = 2
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+	add_stability = 0.03
+	add_political_power = -50
+	} } 
+	focus = {
+		id = MAF_organize_the_second_congress
+		icon = focus_generic_league_of_nations
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_collect_the_mafias
+		}
+		prerequisite = {
+			focus = MAF_publish_the_mafia_congress_law
+		}
+		prerequisite = {
+			focus = MAF_open_the_base_on_ankara
+		}
+		x = 21
+		y = 3
+
+
+    completion_reward = {
+	country_event = TurkeyF.83
+	} } 
+	focus = {
+		id = MAF_seize_security_channels
+		icon = espionage
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_organize_the_second_congress
+		}
+		prerequisite = {
+			focus = MAF_expert_in_datamining
+		}
+		x = 19
+		y = 4
+
+
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		
+    completion_reward = {
+	add_ideas = controlling_the_security_channels
+	} }
+	focus = {
+		id = MAF_mafia_relocations
+		icon = smuggle_truck
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_organize_the_second_congress
+		}
+		x = 21
+		y = 4
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+	set_global_flag = MAF_ORGANIZATION_RELOCATION_START
+	add_timed_idea = { idea = relocation_of_mafias days = 365 }
+	} }
+	focus = {
+		id = MAF_code_breakers
+		icon = cctv
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_collect_the_mafias
+		}
+		x = 24
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+	add_ideas = code_breaker_group
+	} }
+	focus = {
+		id = MAF_seize_banks
+		icon = EU_Banking
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_organize_the_second_congress
+		}
+		prerequisite = {
+			focus = MAF_code_breakers
+		}
+		x = 23
+		y = 4
+
+
+    completion_reward = {
+	add_ideas = controlling_the_banks
+	} }
+	focus = {
+		id = MAF_finish_the_attack_plan
+		icon = focus_generic_infiltration
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_mafia_relocations
+		}
+		prerequisite = {
+			focus = MAF_seize_banks
+		}
+		prerequisite = {
+			focus = MAF_seize_security_channels
+		}
+		x = 21
+		y = 5
+
+
+    completion_reward = {
+	army_experience = 35
+	add_command_power = 10
+    set_global_flag = TUR_mafias_organized
+	} }
+	focus = {
+		id = MAF_build_a_corruption_in_a_state
+		icon = gamble_cards
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_finish_the_attack_plan
+		}
+		x = 23
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+	add_stability = -0.03
+	add_ideas = paralyzing_corruption
+	} }
+	focus = {
+		id = MAF_intervene_in_the_politics
+		icon = Generic_Cottonmouth
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_build_a_corruption_in_a_state
+		}
+		x = 22
+		y = 7
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+				
+		completion_reward = {
+            add_political_power = -75
+			add_stability = -0.05
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.05
+				}	
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}					
+			}
+		}
+	focus = {
+		id = MAF_increase_general_instability
+		icon = fallen_soldiers
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_build_a_corruption_in_a_state
+		}
+		x = 24
+		y = 7
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+					
+		completion_reward = {
+            add_political_power = 75
+			add_stability = -0.05
+			custom_effect_tooltip = MAFIA_JOINT_AUTHORITY				
+			}
+		}
+	focus = {
+		id = MAF_cooperate_with_ulkists
+		icon = bozkurt
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_finish_the_attack_plan
+		}
+		x = 19
+		y = 6
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+					
+		completion_reward = {
+            add_political_power = -25
+			add_stability = 0.02
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.05
+				}
+			custom_effect_tooltip = MAFIA_JOINT_ULKISTS				
+			}
+		}
+	focus = {
+		id = MAF_get_anti_kurdish_equipment
+		icon = lend_lease
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_cooperate_with_ulkists
+		}
+		x = 18
+		y = 7
+
+
+
+    completion_reward = {
+    add_war_support = 0.05
+	} } 
+	focus = {
+		id = MAF_create_new_bases_in_adana
+		icon = military_bases
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_cooperate_with_ulkists
+		}
+		x = 20
+		y = 7
+
+
+    completion_reward = {
+	swap_ideas = {
+	add_idea = mafia_underground_base_2
+	remove_idea = mafia_underground_base
+	 }
+	} } 
+	focus = {
+		id = MAF_became_the_government
+		icon = turkish_flag
+		cost = 15,00
+		prerequisite = {
+			focus = MAF_create_new_bases_in_adana
+		}
+		prerequisite = {
+			focus = MAF_intervene_in_the_politics
+		}
+		x = 21
+		y = 8
+
+    available = {
+	has_global_flag = TUR_mafias_organized
+	}
+	
+    completion_reward = {
+	country_event = TurkeyF.84
+	hidden_effect = {
+    news_event = Turkey_news.26
+				}
+	} } 
+	focus = {
+		id = MAF_stability_programs
+		icon = Focus_Generic_Labour_Camps
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_became_the_government
+		}
+		x = 21
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		
+    completion_reward = {
+	 add_war_support = 0.07
+	 add_stability = -0.05
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}	
+	} } 
+	focus = {
+		id = MAF_arrest_politicians
+		icon = political_arrests
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_stability_programs
+		}
+		prerequisite = {
+			focus = MAF_one_and_supporters
+		}
+		x = 20
+		y = 10
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+	            add_stability = -0.05
+                add_popularity = {
+                ideology = democratic
+                popularity = -0.1
+				}
+                add_popularity = {
+                ideology = communism
+                popularity = -0.1
+				}
+                add_popularity = {
+                ideology = nationalist
+                popularity = -0.1
+				}
+				custom_effect_tooltip = MAFIA_ARREST_POLITICAL
+	} } 
+	focus = {
+		id = MAF_destroy_parties
+		icon = anti_democracy
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_stability_programs
+		}
+		prerequisite = {
+			focus = MAF_single_party_state
+		}
+		x = 22
+		y = 10
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+	            add_stability = -0.03
+				custom_effect_tooltip = MAFIA_ARREST_POLITICAL_PARTIES
+	} } 
+	focus = {
+		id = MAF_take_over_juidacary
+		icon = deadly_deal
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_arrest_politicians
+		}
+		prerequisite = {
+			focus = MAF_destroy_parties
+		}
+		x = 21
+		y = 11
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = one_man_state_strong
+	remove_idea = one_man_state
+	 }
+	} } 
+	focus = {
+		id = MAF_add_tores_to_the_law
+		icon = territor_disputes_neg
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_take_over_juidacary
+		}
+		x = 18
+		y = 12
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    add_ideas = tores_in_the_law
+	} } 
+	focus = {
+		id = MAF_make_legal_to_have_guns
+		icon = gunpoint_diplomacy
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_take_over_juidacary
+		}
+		x = 22
+		y = 12
+
+
+    completion_reward = {
+	add_ideas = gun_studies_1
+	 }
+	} 
+	focus = {
+		id = MAF_crush_social_justice
+		icon = social_democracy_purge
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_take_over_juidacary
+		}
+		x = 24
+		y = 12
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+				
+    completion_reward = {
+    add_stability = -0.05
+	add_political_power = 75
+	} }
+	focus = {
+		id = MAF_send_telegram_to_big_families
+		icon = family
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_add_tores_to_the_law
+		}
+		x = 17
+		y = 13
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = controlled_tores
+	remove_idea = tores_in_the_law
+	 }
+	} }
+	focus = {
+		id = MAF_gun_studies
+		icon = M16
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_make_legal_to_have_guns
+		}
+		x = 22
+		y = 13
+
+
+    completion_reward = {
+    swap_ideas = {
+	add_idea = gun_studies_25
+	remove_idea = gun_studies_1
+	 }
+	} }
+	focus = {
+		id = MAF_new_hyrearchy
+		icon = focus_spr_anarchism_knows_no_borders
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_crush_social_justice
+		}
+		x = 25
+		y = 13
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+    completion_reward = {
+    add_ideas = the_new_hyrarchy
+	} }
+	focus = {
+		id = MAF_finish_the_juidicary_reforms
+		icon = Skull_Focus
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_send_telegram_to_big_families
+		}
+		prerequisite = {
+			focus = MAF_new_hyrearchy
+		}
+		prerequisite = {
+			focus = MAF_gun_studies
+		}
+		prerequisite = {
+			focus = MAF_build_casinos
+		}
+		x = 21
+		y = 14
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    add_ideas = state_of_criminals
+set_global_flag = DISABLE_WAR_SYSTEM_PAR
+custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
+		swap_ideas = {
+		add_idea = TUR_legacy_of_ataturk_defiled
+		remove_idea = TUR_legacy_of_ataturk_preserved
+		}			
+	} }
+	focus = {
+		id = MAF_single_party_state
+		icon = focus_generic_fascist_uprising
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_became_the_government
+		}
+		x = 23
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+	            add_stability = -0.03
+                set_politics = {
+                ruling_party = neutrality
+                elections_allowed = no
+				}
+	} } 
+	focus = {
+		id = MAF_one_and_supporters
+		icon = Generic_Ultranationalist_Monarchy
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_became_the_government
+		}
+		x = 19
+		y = 9
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+                add_ideas = one_man_state
+	} } 
+	focus = {
+		id = MAF_economic_program
+		icon = central_planned_economy3
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_became_the_government
+		}
+		x = 37
+		y = 9
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+	add_political_power = -75
+swap_ideas = { 
+  remove_idea = turkish_2001_crisis
+  add_idea = reformed_2001_crisis
+}
+      }
+	}
+	focus = {
+		id = MAF_education_of_loyalty
+		icon = Generic_Factionalism
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_arrest_the_corrupt
+		}
+		prerequisite = {
+			focus = MAF_destroy_the_emotion
+		}
+		x = 16
+		y = 18
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    add_ideas = education_of_loyalty
+	} }
+	focus = {
+		id = MAF_ensure_the_loyalty
+		icon = government_beu
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_finish_the_juidicary_reforms
+		}
+		x = 18
+		y = 15
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    add_stability = 0.05
+	} }
+	focus = {
+		id = MAF_nationalism
+		icon = new_ministry_of_foreign
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_finish_the_juidicary_reforms
+		}
+		x = 24
+		y = 15
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		
+    completion_reward = {
+	            add_war_support = 0.03
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.05
+				}			
+	} }
+	focus = {
+		id = MAF_crush_the_leftist_ideas
+		icon = ban_communism
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_nationalism
+		}
+		x = 22
+		y = 16
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		
+    completion_reward = {
+	            add_stability = -0.03
+				add_popularity = {
+					ideology = communism
+					popularity = -0.05
+				}		
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.02
+				}						
+	} }
+	focus = {
+		id = MAF_prison_leftists
+		icon = BLR_Communistst_clean
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_nationalism
+		}
+		x = 24
+		y = 16
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		
+    completion_reward = {
+	            add_stability = -0.02
+				add_popularity = {
+					ideology = communism
+					popularity = -0.03
+				}	
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.01
+				}					
+	} }
+	focus = {
+		id = MAF_cancel_leftist_books
+		icon = Focus_Down_in_Flames
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_nationalism
+		}
+		x = 26
+		y = 16
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		
+    completion_reward = {
+	            add_stability = -0.07
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}	
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.03
+				}					
+	} }
+	focus = {
+		id = MAF_right_wing_books
+		icon = fascist_liberty
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_prison_leftists
+		}
+		prerequisite = {
+			focus = MAF_cancel_leftist_books
+		}
+		prerequisite = {
+			focus = MAF_crush_the_leftist_ideas
+		}
+		x = 23
+		y = 17
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+	            add_ideas = right_wing_supremacy				
+	} }
+	focus = {
+		id = MAF_return_to_religion
+		icon = islamist_gov
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_prison_leftists
+		}
+		prerequisite = {
+			focus = MAF_cancel_leftist_books
+		}
+		x = 27
+		y = 17
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+	            add_ideas = return_to_islam				
+	} }
+	focus = {
+		id = MAF_cancel_the_atheists
+		icon = religious_unity
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_return_to_religion
+		}
+		prerequisite = {
+			focus = MAF_construct_new_prisions
+		}
+		x = 28
+		y = 18
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = return_to_islam_2
+	remove_idea = return_to_islam
+	 }
+	} }
+	focus = {
+		id = MAF_construct_new_prisions
+		icon = warsaw_main_station
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_prison_leftists
+		}
+		prerequisite = {
+			focus = MAF_cancel_leftist_books
+		}
+		prerequisite = {
+			focus = MAF_crush_the_leftist_ideas
+		}
+		x = 25
+		y = 17
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+completion_reward = {
+add_ideas = new_prisons
+}
+    }	
+	focus = {
+		id = MAF_control_the_twitter
+		icon = social_media
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_right_wing_books
+		}
+		prerequisite = {
+			focus = MAF_construct_new_prisions
+		}
+		x = 22
+		y = 18
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    add_ideas = controlled_media 
+				custom_effect_tooltip = PRESS_HAS_CONTROLLED
+				set_global_flag = PRESS_HAS_MANAGED
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+}
+	} }
+	focus = {
+		id = MAF_seize_foreign_media
+		icon = generic_controlled_press
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_construct_new_prisions
+		}
+		x = 26
+		y = 18
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_STABILITY}
+						search_filters = {FOCUS_FILTER_EXPENDITURE}
+						
+completion_reward = {
+add_stability = -0.02
+	  			subtract_from_variable = { treasury = -100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt	
+}
+    }	
+	focus = {
+		id = MAF_all_to_TRT
+		icon = press_censorship
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_seize_foreign_media
+		}
+		prerequisite = {
+			focus = MAF_control_the_twitter
+		}
+		prerequisite = {
+			focus = MAF_right_wing_education
+		}
+		prerequisite = {
+			focus = MAF_cancel_the_atheists
+		}
+		x = 25
+		y = 19
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}		
+completion_reward = {
+add_ideas = all_power_to_TRT
+}
+    }	
+	focus = {
+		id = MAF_right_wing_education
+		icon = nationalist_constiution
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_right_wing_books
+		}
+		x = 24
+		y = 18
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = right_wing_supremacy_2
+	remove_idea = right_wing_supremacy
+	 }
+	} }
+	focus = {
+		id = MAF_crush_the_provacative
+		icon = USA_fight_nationalistic_factions
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_ensure_the_loyalty
+		}
+		x = 20
+		y = 16
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		
+    completion_reward = {
+    add_stability = 0.07
+	add_war_support = 0.03
+	 }
+	}
+	focus = {
+		id = MAF_prison_rebellious
+		icon = Focus_Communist_Spy02
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_ensure_the_loyalty
+		}
+		x = 18
+		y = 16
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+				
+    completion_reward = {
+    add_stability = 0.03
+	add_political_power = 75
+	 }
+	}
+	focus = {
+		id = MAF_harsh_loyalty_rules
+		icon = executions
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_ensure_the_loyalty
+		}
+		x = 16
+		y = 16
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    add_ideas = harsh_loyaly_laws
+	 }
+	} 
+	focus = {
+		id = MAF_destroy_the_emotion
+		icon = secret_police
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_prison_rebellious
+		}
+		prerequisite = {
+			focus = MAF_harsh_loyalty_rules
+		}
+		prerequisite = {
+			focus = MAF_crush_the_provacative
+		}
+		x = 17
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    add_ideas = weaken_emotion
+	 }
+	}
+	focus = {
+		id = MAF_DNA_interventions
+		icon = research3
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_crush_the_provacative
+		}
+		prerequisite = {
+			focus = MAF_prison_rebellious
+		}
+		prerequisite = {
+			focus = MAF_harsh_loyalty_rules
+		}
+		x = 19
+		y = 17
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+completion_reward = {
+add_ideas = secret_DNA_interventions_1
+}
+    }	
+	focus = {
+		id = MAF_arrest_the_corrupt
+		icon = Generic_Political_Killing
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_harsh_loyalty_rules
+		}
+		x = 15
+		y = 17
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    add_ideas = arrest_the_unemployment
+	 }
+	} 
+	focus = {
+		id = MAF_invest_in_DNA_modifications
+		icon = business_man
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_DNA_interventions
+		}
+		x = 20
+		y = 18
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = secret_DNA_interventions_2
+	remove_idea = secret_DNA_interventions_1
+	 }
+	} }
+	focus = {
+		id = MAF_acceptable_violance
+		icon = Generic_Enough
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_destroy_the_emotion
+		}
+		prerequisite = {
+			focus = MAF_DNA_interventions
+		}
+		x = 18
+		y = 18
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    add_ideas = acceptable_violance
+	 }
+	} 
+	focus = {
+		id = MAF_information_bureau
+		icon = polish_intelligence
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_arrest_the_corrupt
+		}
+		x = 14
+		y = 18
+
+
+    completion_reward = {
+    add_ideas = create_state_information_bureau
+	 }
+	} 
+	focus = {
+		id = MAF_save_state
+		icon = champagne_bribes
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_invest_in_DNA_modifications
+		}
+		prerequisite = {
+			focus = MAF_acceptable_violance
+		}
+		prerequisite = {
+			focus = MAF_education_of_loyalty
+		}
+		prerequisite = {
+			focus = MAF_information_bureau
+		}
+		x = 17
+		y = 19
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		
+    completion_reward = {
+    add_stability = 0.03
+	add_war_support = 0.03
+	add_political_power = 100
+	 }
+	}
+	focus = {
+		id = MAF_education_reforms
+		icon = education_reform
+		cost = 10.0
+		prerequisite = {
+			focus = MAF_all_to_TRT
+		}
+		prerequisite = {
+			focus = MAF_save_state
+		}
+		x = 21
+		y = 20
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+	add_political_power = -25
+	swap_ideas = {
+	add_idea = edu_01
+	remove_idea = edu_02
+	 }
+	} }
+	focus = {
+		id = MAF_destroy_old_curriculum
+		icon = legislation
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_education_reforms
+		}
+		x = 20
+		y = 21
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		
+    completion_reward = {
+	add_political_power = -25
+	add_war_support = 0.02
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.03
+				}	
+	} }
+	focus = {
+		id = MAF_emotional_effective_education
+		icon = Generic_Gunslinger
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_education_reforms
+		}
+		x = 22
+		y = 21
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		
+    completion_reward = {
+	add_political_power = -25
+	add_war_support = 0.05
+	add_stability = -0.02
+	} }
+	focus = {
+		id = MAF_all_subjects_stand_under_gun
+		icon = restrictive_gun_laws
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_emotional_effective_education
+		}
+		prerequisite = {
+			focus = MAF_destroy_old_curriculum
+		}
+		x = 21
+		y = 22
+
+
+    completion_reward = {
+    swap_ideas = {
+	add_idea = gun_studies_3
+	remove_idea = gun_studies_25
+	 }
+	} }
+	focus = {
+		id = MAF_fund_emotional_effective_guns
+		icon = machine_gun
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_emotional_effective_education
+		}
+		x = 23
+		y = 22
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = weaken_emotion_2
+	remove_idea = weaken_emotion
+	 }
+	} }
+	focus = {
+		id = MAF_national_unity_education
+		icon = focus_generic_fascist_propaganda
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_destroy_old_curriculum
+		}
+		x = 19
+		y = 22
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    add_ideas = national_unity_lessons
+	} }
+	focus = {
+		id = MAF_traders_union
+		icon = vineyard
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_economic_program
+		}
+		x = 35
+		y = 10
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+	   add_ideas = mafia_trade_union
+      }
+	}
+	focus = {
+		id = MAF_new_taxation_system
+		icon = radical_tax_reform
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_economic_program
+		}
+		x = 33
+		y = 10
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		add_ideas = new_taxation_system
+		custom_effect_tooltip = HIGH_TAX_ACTION
+			subtract_from_variable = { corporate_tax_rate = -2 }
+			subtract_from_variable = { population_tax_rate = -2 }	 
+              }				
+		}
+	focus = {
+		id = MAF_mafia_gold
+		icon = gold_standard
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_central_bank_reserves
+		}
+		x = 36
+		y = 12
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+	   add_ideas = mafia_gold
+      }
+	}
+	focus = {
+		id = MAF_central_bank_reserves
+		icon = expand_finance_ministry
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_traders_union
+		}
+		prerequisite = {
+			focus = MAF_fund_mafia_capitol
+		}
+		x = 35
+		y = 11
+
+
+		available = {
+			has_idea = fast_growth
+			}
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = fast_growth
+  add_idea = economic_boom
+}
+             }				
+		}
+	focus = {
+		id = MAF_tax_the_weak_and_rich
+		icon = Focus_delerlict_property_tax
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_new_taxation_system
+		}
+		x = 33
+		y = 11
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		add_ideas = general_tax
+              }				
+		}
+	focus = {
+		id = MAF_tax_foreigners
+		icon = blr_migrant_crisis
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_new_taxation_system
+		}
+		x = 31
+		y = 11
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		add_ideas = taxing_immigrants
+              }				
+		}
+	focus = {
+		id = MAF_limit_the_tourism
+		icon = business_man2
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_tax_the_weak_and_rich
+		}
+		prerequisite = {
+			focus = MAF_tax_foreigners
+		}
+		x = 32
+		y = 12
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		add_ideas = tourism_power
+              }				
+		}
+	focus = {
+		id = MAF_national_economy
+		icon = national_protectionism
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_industrial_power_house
+		}
+		prerequisite = {
+			focus = MAF_mafia_gold
+		}
+		x = 37
+		y = 13
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		
+	completion_reward = {
+	   add_political_power = 25
+	   swap_ideas = {
+	   add_idea = md_closed_economy
+	   remove_idea = consumption_economy
+	   }
+      }
+	}
+	focus = {
+		id = MAF_fund_mafia_capitol
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_economic_program
+		}
+		x = 37
+		y = 10
+
+						search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+			completion_reward = {
+			add_ideas = mafia_capitol
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt					
+				}
+	}
+	focus = {
+		id = MAF_military_trade
+		icon = ExpandTrade
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_limit_the_tourism
+		}
+		x = 31
+		y = 13
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+					add_ideas = military_trade
+			}
+	}
+	focus = {
+		id = MAF_gold_mines_in_izmir
+		icon = coal_mining
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_mafia_gold
+		}
+		x = 35
+		y = 13
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = mafia_gold_2
+	remove_idea = mafia_gold
+	 }
+	} }
+	focus = {
+		id = MAF_capitol_reliability
+		icon = balance_buget 
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_fund_mafia_capitol
+		}
+		x = 37
+		y = 11
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+	   add_political_power = 25
+	   swap_ideas = {
+	   add_idea = increased_mafia_capitol
+	   remove_idea = mafia_capitol
+	   }
+      }
+	}
+	focus = {
+		id = MAF_industrial_powerize
+		icon = MEX_Social_investments
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_economic_program
+		}
+		x = 41
+		y = 10
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+	completion_reward = {
+					add_ideas = powerized_industry
+
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 2
+				category = CAT_industry
+			}	
+			}
+	}
+	focus = {
+		id = MAF_supply_trade
+		icon = import_economy
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_limit_the_tourism
+		}
+		x = 33
+		y = 13
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+					add_ideas = supply_trade
+			}
+	}
+	focus = {
+		id = MAF_expand_the_KDV
+		icon = BRA_simplify_the_tax_system
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_tax_the_weak_and_rich
+		}
+		x = 34
+		y = 12
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		add_ideas = expanded_KDV
+              }				
+		}
+	focus = {
+		id = MAF_goldyard_and_rentier_state
+		icon = raw_materials
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_gold_mines_in_izmir
+		}
+		x = 35
+		y = 14
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = mafia_gold_3
+	remove_idea = mafia_gold_2
+	 }
+	} }
+	focus = {
+		id = MAF_investments
+		icon = cash_grap
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_industrial_parks
+		}
+		prerequisite = {
+			focus = MAF_industrialize_the_anatolia
+		}
+		x = 41
+		y = 13
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+				
+		completion_reward = {
+		    add_political_power = 125
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 1
+				category = CAT_fuel_oil
+			}
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 2
+				category = CAT_industry
+			}
+		} } 
+	focus = {
+		id = MAF_treaties_with_mafias
+		icon = focus_trade_republic
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_build_roads
+		}
+		x = 44
+		y = 12
+
+
+        available = {
+		controls_state = 155
+		controls_state = 156
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+		completion_reward = {
+			156 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+				}
+			
+		} } 
+	focus = {
+		id = MAF_investments_2
+		icon = anarchist_economy
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_treaties_with_mafias
+		}
+		x = 43
+		y = 13
+
+
+        available = {
+		controls_state = 155
+		controls_state = 156
+		controls_state = 935
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+		completion_reward = {
+			155 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				}
+			935 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			
+		} } } 
+	focus = {
+		id = MAF_build_roads
+		icon = infrastructure1
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_industrial_powerize
+		}
+		x = 43
+		y = 11
+
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		
+		available = {
+		controls_state = 934
+		controls_state = 156
+		controls_state = 157
+		controls_state = 159
+		controls_state = 160
+		controls_state = 161
+		controls_state = 163
+		controls_state = 935
+		controls_state = 158
+		}
+		
+		
+		completion_reward = {
+                934 = {
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} }
+                947 = {
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} } 
+                156 = {
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} } 
+                157 = {
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} } 
+                159 = {
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} } 
+                160 = {
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} }
+                161 = {
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} }
+                163 = {
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} }
+                935 = {
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} }
+                158 = {
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} }
+			add_stability = 0.02
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MAF_civilian_power
+		icon = factory_complex
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_industrial_powerize
+		}
+		x = 41
+		y = 11
+
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+	completion_reward = {
+					add_ideas = true_civilian_power
+			}
+	}
+	focus = {
+		id = MAF_investments_3
+		icon = industry_democratic
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_investments
+		}
+		prerequisite = {
+			focus = MAF_investments_2
+		}
+		x = 42
+		y = 14
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+			add_stability = 0.1
+		} } 
+	focus = {
+		id = MAF_industrial_parks
+		icon = MEX_Industrialize_the_north
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_build_roads
+		}
+		prerequisite = {
+			focus = MAF_civilian_power
+		}
+		x = 40
+		y = 12
+
+        available = {
+		controls_state = 155
+		controls_state = 156
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}				
+		completion_reward = {
+			156 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = MAF_market_kickstart
+		icon = decentralized_economy
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_fund_mafia_capitol
+		}
+		prerequisite = {
+			focus = MAF_new_markets
+		}
+		prerequisite = {
+			focus = MAF_industrial_powerize
+		}
+		x = 39
+		y = 11
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+				
+	completion_reward = {
+	add_stability = -0.03
+swap_ideas = { 
+  remove_idea = reformed_2001_crisis
+  add_idea = reforms_for_2001_crisis
+}
+      }
+	}
+	focus = {
+		id = MAF_industrialize_the_anatolia
+		icon = construction4
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_build_roads
+		}
+		x = 42
+		y = 12
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}				
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = MAF_industrial_power_house
+		icon = liberalization_policies
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_capitol_reliability
+		}
+		prerequisite = {
+			focus = MAF_market_kickstart
+		}
+		x = 38
+		y = 12
+
+
+		available = {
+			num_of_factories > 75
+			}
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+					add_ideas = industrial_powerhouse
+			}
+	}
+	focus = {
+		id = MAF_fix_the_economy
+		icon = resource_extraction
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_national_economy
+		}
+		prerequisite = {
+			focus = MAF_control_economy
+		}
+		x = 38
+		y = 14
+	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+		completion_reward = {
+        remove_ideas = reformss_for_2001_crisis
+				}
+			}
+	focus = {
+		id = MAF_new_markets
+		icon = BRA_libertarian_economics
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_economic_program
+		}
+		x = 39
+		y = 10
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+	   add_ideas = mafia_marketplaces
+      }
+	}
+	focus = {
+		id = MAF_redzyne_the_armed_forces
+		icon = focus_LIT_organize_the_iron_wolf
+		cost = 10,00
+		x = 21
+		y = 23
+
+    available = {
+	has_idea = military_traditions_problematic
+	}
+
+    completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+	} }
+	focus = {
+		id = MAF_general_training
+		icon = Focus_Infantry_Equipment
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_redzyne_the_armed_forces
+		}
+		x = 18
+		y = 24
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+    swap_ideas = {
+	add_idea = military_traditions_problematic_2
+	remove_idea = military_traditions_problematic
+	 }
+	} }
+	focus = {
+		id = MAF_new_military_law
+		icon = helmet_knife
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_redzyne_the_armed_forces
+		}
+		x = 24
+		y = 24
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+	army_experience = 25
+	} }
+	focus = {
+		id = MAF_mafia_mobilization
+		icon = small_arms5
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_general_training
+		}
+		x = 18
+		y = 25
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+				
+    completion_reward = {
+	add_political_power = -25
+    swap_ideas = {
+	add_idea = partial_draft_army
+	remove_idea = draft_army
+	 }
+	} }
+	focus = {
+		id = MAF_teach_mafias_general_war_tactics
+		icon = brothers_in_arms
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_general_training
+		}
+		x = 16
+		y = 25
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = military_traditions_problematic_3
+	remove_idea = military_traditions_problematic_2
+	 }
+	} }
+	focus = {
+		id = MAF_war_academies
+		icon = gentleman_officers
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_general_training
+		}
+		x = 20
+		y = 25
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+	add_ideas = war_academies
+	} }
+	focus = {
+		id = MAF_create_mafia_defence_organization
+		icon = mass_assault
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_war_academies
+		}
+		prerequisite = {
+			focus = MAF_mafia_mobilization
+		}
+		prerequisite = {
+			focus = MAF_teach_mafias_general_war_tactics
+		}
+		x = 18
+		y = 26
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+    add_ideas = mafia_defence_organization
+	} }
+	focus = {
+		id = MAF_teach_guerilla_tactics
+		icon = inundation_lines
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_teach_mafias_general_war_tactics
+		}
+		x = 15
+		y = 26
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = military_traditions_problematic_4
+	remove_idea = military_traditions_problematic_3
+	 }
+	} }
+	focus = {
+		id = MAF_appoint_generals
+		icon = infantry_axis2
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_create_mafia_defence_organization
+		}
+		prerequisite = {
+			focus = MAF_return_the_mafias_from_PKK_fight
+		}
+		prerequisite = {
+			focus = MAF_teach_guerilla_tactics
+		}
+		x = 18
+		y = 27
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+    recruit_character = sedat_peker
+    recruit_character = alattin_cakici
+    recruit_character = celal_han_peker
+    recruit_character = huseyin_basbasin	
+    recruit_character = kurt_idris	
+	} }
+	focus = {
+		id = MAF_return_the_mafias_from_PKK_fight
+		icon = Generic_Revanchism02
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_war_academies
+		}
+		x = 21
+		y = 26
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+    add_ideas = experimental_PKK_war
+	} }
+	focus = {
+		id = MAF_solve_military_problem
+		icon = focus_generic_self_propelled_gun
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_appoint_generals
+		}
+		prerequisite = {
+			focus = MAF_modern_tactics
+		}
+		prerequisite = {
+			focus = MAF_fight_with_pkk_experiments
+		}
+		x = 18
+		y = 28
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+    remove_ideas = military_traditions_problematic_5
+	} }
+	focus = {
+		id = MAF_modern_tactics
+		icon = GEO_Artillery_Tactics
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_teach_guerilla_tactics
+		}
+		x = 16
+		y = 27
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = military_traditions_problematic_5
+	remove_idea = military_traditions_problematic_4
+	 }
+	} }
+	focus = {
+		id = MAF_fight_with_pkk_experiments
+		icon = Focus_Rifle_Production
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_return_the_mafias_from_PKK_fight
+		}
+		x = 20
+		y = 27
+
+
+ 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+		completion_reward = {
+    swap_ideas = {
+	add_idea = experimental_PKK_war_2
+	remove_idea = experimental_PKK_war
+	 }
+	} }
+	focus = {
+		id = MAF_gun_tests
+		icon = Focus_Study_Submachineguns
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_new_military_law
+		}
+		x = 23
+		y = 25
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+    add_ideas = gun_tests
+	} }
+	focus = {
+		id = MAF_increase_the_spead
+		icon = bob_semple
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_new_military_law
+		}
+		x = 25
+		y = 25
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+    add_ideas = speedful_forces
+	} }
+	focus = {
+		id = MAF_mobilization_law
+		icon = MEX_War_on_corruption
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_gun_tests
+		}
+		prerequisite = {
+			focus = MAF_increase_the_spead
+		}
+		x = 24
+		y = 26
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+    add_ideas = withdrawal_law
+	} }
+	focus = {
+		id = MAF_increase_the_military_expending
+		icon = zh05
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_mobilization_law
+		}
+		x = 23
+		y = 27
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+    add_ideas = defence_09
+	} }
+	focus = {
+		id = MAF_use_the_stocks
+		icon = license_production
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_mobilization_law
+		}
+		x = 25
+		y = 27
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_EQUIPMENT}	
+		
+     completion_reward = {
+	 add_war_support = 0.02
+	 add_equipment_to_stockpile = {	type = APC_1 amount = 150 }
+	 add_equipment_to_stockpile = {	type = IFV_1 amount = 150 }
+	 add_equipment_to_stockpile = {	type = Rec_tank_1 amount = 150 }
+	 add_equipment_to_stockpile = {	type = SP_R_arty_1 amount = 150 }
+	 add_equipment_to_stockpile = {	type = AS_Fighter1 amount = 150 }
+	 add_equipment_to_stockpile = {	type = CV_MR_Fighter1 amount = 150 }	 
+	 } }
+	focus = {
+		id = MAF_finish_the_army
+		icon = aggressive_diplomacy
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_solve_military_problem
+		}
+		prerequisite = {
+			focus = MAF_adopt_the_new_guns
+		}
+		x = 21
+		y = 29
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+    army_experience = 50
+	add_command_power = 5
+	} }
+	focus = {
+		id = MAF_adopt_the_new_guns
+		icon = fighter_plane
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_increase_the_military_expending
+		}
+		prerequisite = {
+			focus = MAF_use_the_stocks
+		}
+		x = 24
+		y = 28
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+    completion_reward = {
+    remove_ideas = tanks_and_airplanes_what
+	} }
+	focus = {
+		id = MAF_question_of_protection_of_borders
+		icon = military_fort2
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_finish_the_army
+		}
+		x = 18
+		y = 30
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+				
+	completion_reward = {
+					add_political_power = 50
+					add_manpower = 10000
+					add_war_support = 0.01
+			}
+	}
+	focus = {
+		id = MAF_plant_border_mafias
+		icon = static_defense
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_question_of_protection_of_borders
+		}
+		x = 17
+		y = 31
+
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+    add_ideas = border_mafias_in_action
+	} }
+	focus = {
+		id = MAF_border_land_mines
+		icon = land_mine_issue
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_question_of_protection_of_borders
+		}
+		x = 19
+		y = 31
+
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+				
+    completion_reward = {
+    add_ideas = conducted_border_mines
+	} }
+	focus = {
+		id = MAF_shut_down_all_borders
+		icon = war4
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_border_land_mines
+		}
+		prerequisite = {
+			focus = MAF_plant_border_mafias
+		}
+		x = 18
+		y = 32
+
+
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+				
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = SYR modifier = shut_down_the_borders }
+					reverse_add_opinion_modifier = { target = KUR modifier = shut_down_the_borders }
+					reverse_add_opinion_modifier = { target = IRQ modifier = shut_down_the_borders }
+					reverse_add_opinion_modifier = { target = PER modifier = shut_down_the_borders }
+					reverse_add_opinion_modifier = { target = AZE modifier = shut_down_the_borders }
+					reverse_add_opinion_modifier = { target = ARM modifier = shut_down_the_borders }
+					reverse_add_opinion_modifier = { target = GEO modifier = shut_down_the_borders }
+					reverse_add_opinion_modifier = { target = GRE modifier = shut_down_the_borders }
+					reverse_add_opinion_modifier = { target = BUL modifier = shut_down_the_borders }
+				custom_effect_tooltip = TUR_CLOSING_BORDERS_ALL
+			}
+	}
+	focus = {
+		id = MAF_isolated_state
+		icon = Generic_Invasion
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_shut_down_all_borders
+		}
+		prerequisite = {
+			focus = MAF_build_the_great_wall
+		}
+		prerequisite = {
+			focus = MAF_strenghen_border_mafias
+		}
+		x = 18
+		y = 33
+
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+	completion_reward = {
+					add_ideas = pretty_isolated_state
+			}
+	}
+	focus = {
+		id = MAF_build_the_great_wall
+		icon = lion
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_border_land_mines
+		}
+		x = 20
+		y = 32
+
+
+		available = {
+		controls_state = 162
+		controls_state = 992
+		controls_state = 158
+		}
+	
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+				
+	completion_reward = {
+	  			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+            992 = {
+                if = {
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 12029
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 3889
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 9893
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 9823
+                            instant_build = yes
+                        }
+                    } }
+            162 = {
+                if = {
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 11871
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 12416
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 12387
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 2
+                            province = 7350
+                            instant_build = yes
+                        }
+                   
+			} } } 		
+	}
+	focus = {
+		id = MAF_strenghen_border_mafias
+		icon = Generic_Russian_Partisan
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_plant_border_mafias
+		}
+		x = 16
+		y = 32
+
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = border_mafias_in_action_2
+	remove_idea = border_mafias_in_action
+	 }
+	} }
+	focus = {
+		id = MAF_clash_with_the_PKK
+		icon = Focus_Mobile_Warfare_Doctrine
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_finish_the_army
+		}
+		x = 24
+		y = 30
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+				
+	completion_reward = {
+					add_political_power = 50
+					add_manpower = 10000
+					add_war_support = 0.01
+			}
+	}
+	focus = {
+		id = MAF_assistance_from_ulkists
+		icon = mhp
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_clash_with_the_PKK
+		}
+		x = 24
+		y = 31
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		
+	completion_reward = {
+					add_ideas = assistance_from_ulkists
+			}
+	}
+	focus = {
+		id = MAF_armed_ulkists
+		icon = Generic_Colonial_Army
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_assistance_from_ulkists
+		}
+		prerequisite = {
+			focus = MAF_end_the_PKK
+		}
+		x = 23
+		y = 32
+
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+				
+	completion_reward = {
+	add_war_support = 0.02
+	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 1500 }
+	 } } 
+	focus = {
+		id = MAF_defence_zones_against_PKK
+		icon = city_fort
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_assistance_from_ulkists
+		}
+		prerequisite = {
+			focus = MAF_fund_hezbollah
+		}
+		x = 25
+		y = 32
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		
+	completion_reward = {
+            162 = {
+                if = {
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 4512
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 7530
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 9823
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 1463
+                            instant_build = yes
+                        }
+                    }
+                }
+			} }
+	focus = {
+		id = MAF_fund_hezbollah
+		icon = hez_gun1
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_clash_with_the_PKK
+		}
+		x = 26
+		y = 31
+
+
+        available = {
+		country_exists = HEZ
+		NOT = {
+		has_war_with = HEZ
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = HEZ
+    NOT = {
+	country_exists = HEZ
+	 }
+	} }
+	
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+				
+	completion_reward = {
+					add_ideas = fund_hezbollah
+			}
+	}
+	focus = {
+		id = MAF_finish_the_PKK
+		icon = focus_attack_pkk
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_defence_zones_against_PKK
+		}
+		prerequisite = {
+			focus = MAF_armed_ulkists
+		}
+		x = 24
+		y = 33
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+				
+	completion_reward = {
+	TUR_remove_pkk = yes
+			}
+	}
+	focus = {
+		id = MAF_end_the_PKK
+		icon = Focus_Study_Submachineguns
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_clash_with_the_PKK
+		}
+		x = 22
+		y = 31
+	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+				
+	completion_reward = {
+					add_ideas = counter_pkk_arming
+			}
+	}
+	focus = {
+		id = MAF_create_foreign_policy_commisers
+		icon = infilitration
+		cost = 10,00
+		x = 21
+		y = 34
+
+        available = {
+		has_completed_focus = MAF_became_the_government
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+	completion_reward = {
+					add_political_power = 100
+			}
+	}
+	focus = {
+		id = MAF_control_economy
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_industrial_parks
+		}
+		prerequisite = {
+			focus = MAF_industrial_power_house
+		}
+		prerequisite = {
+			focus = MAF_mafia_gold
+		}
+		x = 39
+		y = 13
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+completion_reward = {
+swap_ideas = { 
+  remove_idea = reforms_for_2001_crisis
+  add_idea = reformss_for_2001_crisis
+}
+      } }
+	focus = {
+		id = MAF_land_of_illegals
+		icon = legalize_it
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_supply_trade
+		}
+		prerequisite = {
+			focus = MAF_military_trade
+		}
+		x = 32
+		y = 14
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+	                remove_ideas = supply_trade
+	                remove_ideas = military_trade
+					add_ideas = land_of_criminality
+			}
+	}
+	focus = {
+		id = MAF_with_italian_mafia
+		icon = anti_mafia
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_create_foreign_policy_commisers
+		}
+		x = 17
+		y = 35
+
+
+        available = {
+		country_exists = ITA
+		NOT = {
+		has_war_with = ITA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ITA
+    NOT = {
+	country_exists = ITA
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = ITA modifier = cooperation_with_italian_mafia }			
+				}
+	}
+	focus = {
+		id = MAF_with_mexican_mafia
+		icon = Generic_Mexican_Empire
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_create_foreign_policy_commisers
+		}
+		x = 25
+		y = 35
+
+
+        available = {
+		country_exists = MEX
+		NOT = {
+		has_war_with = MEX
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = MEX
+    NOT = {
+	country_exists = MEX
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = MEX modifier = cooperation_with_mexican_mafia }			
+				}
+	}
+	focus = {
+		id = MAF_legalize_casinos
+		icon = goal_JAP_casinoland
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_take_over_juidacary
+		}
+		x = 20
+		y = 12
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		
+    completion_reward = {
+    add_ideas = casinos_1
+	} }
+	focus = {
+		id = MAF_build_casinos
+		icon = authoritarian_democracy
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_legalize_casinos
+		}
+		x = 20
+		y = 13
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = casinos_2
+	remove_idea = casinos_1
+	 }
+	} }
+	focus = {
+		id = MAF_legalize_drug_trade
+		icon = legalize_all_drugs
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_create_foreign_policy_commisers
+		}
+		x = 21
+		y = 35
+		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+	completion_reward = {
+					add_ideas = legalized_world_drug_trade
+			}
+	}
+	focus = {
+		id = MAF_sicilia_antalya_trade_routine
+		icon = adriatic_sea
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_with_italian_mafia
+		}
+		prerequisite = {
+			focus = MAF_legalize_drug_trade
+		}
+		x = 18
+		y = 36
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+						search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+		country_exists = ITA
+		NOT = {
+		has_war_with = ITA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ITA
+    NOT = {
+	country_exists = ITA
+	 }
+	} }
+	
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = ITA modifier = drug_trade }
+			subtract_from_variable = { treasury = -50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt					
+				}
+	}
+	focus = {
+		id = MAF_drug_convoys
+		icon = anti_submarine
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_legalize_drug_trade
+		}
+		x = 21
+		y = 36
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = legalized_world_drug_trade_convoys
+	remove_idea = legalized_world_drug_trade
+	 }
+	} }
+	focus = {
+		id = MAF_trade_deals_with_mexican_mafia
+		icon = align_to_mexico
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_with_mexican_mafia
+		}
+		prerequisite = {
+			focus = MAF_legalize_drug_trade
+		}
+		x = 24
+		y = 36
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+						search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+		country_exists = MEX
+		NOT = {
+		has_war_with = MEX
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = MEX
+    NOT = {
+	country_exists = MEX
+	 }
+	} }
+	
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = MEX modifier = drug_trade }
+			subtract_from_variable = { treasury = -50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt					
+				}
+	}
+	focus = {
+		id = MAF_feed_the_italian_mafia
+		icon = italian_investments
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_with_italian_mafia
+		}
+		x = 16
+		y = 36
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+						search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+						
+        available = {
+		country_exists = ITA
+		NOT = {
+		has_war_with = ITA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ITA
+    NOT = {
+	country_exists = ITA
+	 }
+	} }
+	
+			completion_reward = {
+			ITA = {
+            add_stability = -0.07
+            }			
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt					
+				}
+	}
+	focus = {
+		id = MAF_feed_the_mexican_mafia
+		icon = caudillo_armies
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_with_mexican_mafia
+		}
+		x = 26
+		y = 36
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+						search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+		country_exists = MEX
+		NOT = {
+		has_war_with = MEX
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = MEX
+    NOT = {
+	country_exists = MEX
+	 }
+	} }
+	
+	
+			completion_reward = {
+			MEX = {
+            add_stability = -0.07
+            }							
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt					
+				}
+	}
+	focus = {
+		id = MAF_send_military_aid_to_italy
+		icon = focus_ITA_strengthen_ascari_corps
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_feed_the_italian_mafia
+		}
+		prerequisite = {
+			focus = MAF_sicilia_antalya_trade_routine
+		}
+		x = 17
+		y = 37
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+		country_exists = ITA
+		NOT = {
+		has_war_with = ITA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ITA
+    NOT = {
+	country_exists = ITA
+	 }
+	} }
+	
+    completion_reward = {
+	 ITA = {
+	 add_equipment_to_stockpile = {	type = APC_1 amount = 100 }
+	 add_equipment_to_stockpile = {	type = APC_3 amount = 100 }
+	 }
+	 add_equipment_to_stockpile = {	type = APC_1 amount = -100 }
+	 add_equipment_to_stockpile = {	type = APC_2 amount = -20 }
+	 add_equipment_to_stockpile = {	type = APC_3 amount = -20 }
+	 add_equipment_to_stockpile = {	type = IFV_1 amount = -100 }
+	 add_equipment_to_stockpile = {	type = IFV_2 amount = -20 }
+	 add_equipment_to_stockpile = {	type = IFV_3 amount = -20 }
+	 add_equipment_to_stockpile = {	type = Rec_tank_1 amount = -20 }
+	 add_equipment_to_stockpile = {	type = Rec_tank_2 amount = -20 }
+	 add_equipment_to_stockpile = {	type = Rec_tank_3 amount = -20 }
+	} } 
+	focus = {
+		id = MAF_raid_italian_prisions
+		icon = italy_first
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_send_military_aid_to_italy
+		}
+		prerequisite = {
+			focus = MAF_make_italian_mafias_learn_real_war
+		}
+		x = 16
+		y = 38
+
+
+        available = {
+		country_exists = ITA
+		ITA = {
+		influence_higher_20 = yes
+		}
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = ITA
+	} } 
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+		83 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		956 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		957 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	 ITA = {			
+	 add_stability = -0.1
+	 }
+	} } 
+	focus = {
+		id = MAF_european_drug_trade
+		icon = trade_with_europe
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_drug_convoys
+		}
+		prerequisite = {
+			focus = MAF_sicilia_antalya_trade_routine
+		}
+		x = 20
+		y = 37
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+						search_filters = {FOCUS_FILTER_EXPENDITURE}
+		
+        available = {
+		country_exists = GER
+		country_exists = FRA
+		country_exists = POL
+		country_exists = ENG
+		NOT = { 
+		has_war_with = GER
+		has_war_with = FRA
+		has_war_with = POL
+		has_war_with = ENG
+		 }
+        }
+		
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = drug_trade }
+					reverse_add_opinion_modifier = { target = FRA modifier = drug_trade }
+					reverse_add_opinion_modifier = { target = POL modifier = drug_trade }
+					reverse_add_opinion_modifier = { target = ENG modifier = drug_trade }
+			subtract_from_variable = { treasury = -50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt					
+				}
+	}
+	focus = {
+		id = MAF_american_drug_trade
+		icon = trade_with_america
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_drug_convoys
+		}
+		prerequisite = {
+			focus = MAF_trade_deals_with_mexican_mafia
+		}
+		x = 22
+		y = 37
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+						search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+	
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = USA modifier = drug_trade }
+			subtract_from_variable = { treasury = -50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt					
+				}
+	}
+	focus = {
+		id = MAF_make_italian_mafias_learn_real_war
+		icon = focus_ITA_italian_hegemony
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_feed_the_italian_mafia
+		}
+		x = 15
+		y = 37
+
+
+        available = {
+		country_exists = ITA
+		NOT = {
+		has_war_with = ITA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ITA
+    NOT = {
+	country_exists = ITA
+	 }
+	} }			
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+	 ITA = {
+	 army_experience = 75
+	 }
+	 army_experience = 25
+	 add_command_power = 10
+	} } 
+	focus = {
+		id = MAF_mafia_takeover_in_italy
+		icon = italian_fascism
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_raid_italian_prisions
+		}
+		prerequisite = {
+			focus = MAF_turkish_interventionary_groups_1
+		}
+		x = 16
+		y = 39
+
+
+        available = {
+		country_exists = ITA
+		ITA = {
+		influence_higher_30 = yes
+		}
+        }
+
+
+    bypass = {
+	NOT = {
+	country_exists = ITA
+	} } 
+
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+			ITA = {
+				set_temp_variable = { percent_change = 10 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+
+	} } 
+	focus = {
+		id = MAF_make_mexicon_mafias_learn_real_war
+		icon = ethiopia_italy_war
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_feed_the_mexican_mafia
+		}
+		prerequisite = {
+			focus = MAF_trade_deals_with_mexican_mafia
+		}
+		x = 27
+		y = 37
+
+
+        available = {
+		country_exists = MEX
+		NOT = {
+		has_war_with = MEX
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = MEX
+    NOT = {
+	country_exists = MEX
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+	 MEX = {
+	 army_experience = 75
+	 }
+	 army_experience = 25
+	 add_command_power = 10
+	} } 
+	focus = {
+		id = MAF_send_military_aid_to_mexico
+		icon = Focus_Callistas
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_trade_deals_with_mexican_mafia
+		}
+		prerequisite = {
+			focus = MAF_feed_the_mexican_mafia
+		}
+		x = 25
+		y = 37
+
+
+        available = {
+		country_exists = MEX
+		NOT = {
+		has_war_with = MEX
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = MEX
+    NOT = {
+	country_exists = MEX
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+	 MEX = {
+	 add_equipment_to_stockpile = {	type = APC_1 amount = 100 }
+	 add_equipment_to_stockpile = {	type = APC_3 amount = 100 }
+	 }
+	 add_equipment_to_stockpile = {	type = APC_1 amount = -100 }
+	 add_equipment_to_stockpile = {	type = APC_2 amount = -20 }
+	 add_equipment_to_stockpile = {	type = APC_3 amount = -20 }
+	 add_equipment_to_stockpile = {	type = IFV_1 amount = -100 }
+	 add_equipment_to_stockpile = {	type = IFV_2 amount = -20 }
+	 add_equipment_to_stockpile = {	type = IFV_3 amount = -20 }
+	 add_equipment_to_stockpile = {	type = Rec_tank_1 amount = -20 }
+	 add_equipment_to_stockpile = {	type = Rec_tank_2 amount = -20 }
+	 add_equipment_to_stockpile = {	type = Rec_tank_3 amount = -20 }
+	} } 
+	focus = {
+		id = MAF_mexican_takeover
+		icon = MEX_Federal_government_of_Mexico
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_raid_mexican_prisions
+		}
+		prerequisite = {
+			focus = MAF_turkish_interventionary_groups
+		}
+		x = 26
+		y = 39
+
+
+        available = {
+		country_exists = MEX
+		MEX = {
+		influence_higher_30 = yes
+		}
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = MEX
+	} } 
+
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+			MEX = {
+				set_temp_variable = { percent_change = 10 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+
+	} } 
+	focus = {
+		id = MAF_raid_mexican_prisions
+		icon = MEX_A_narco_state
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_send_military_aid_to_mexico
+		}
+		prerequisite = {
+			focus = MAF_make_mexicon_mafias_learn_real_war
+		}
+		x = 26
+		y = 38
+
+
+        available = {
+		country_exists = MEX
+		MEX = {
+		influence_higher_20 = yes
+		}
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = MEX
+	} } 
+	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+		835 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		836 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		837 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	 MEX = {			
+	 add_stability = -0.1
+	 }
+	} } 
+	focus = {
+		id = MAF_prepare_for_the_war_with_usa
+		icon = usa
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_feed_the_mexican_mafia
+		}
+		x = 30
+		y = 37
+
+
+        available = {
+		country_exists = USA
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = USA
+	} } 
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+	} } 
+	focus = {
+		id = MAF_ask_help_from_local_commies
+		icon = communism5
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_prepare_for_the_war_with_usa
+		}
+		x = 29
+		y = 38
+
+
+        available = {
+		country_exists = USA
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = USA
+	} } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+       add_timed_idea = { idea = local_american_communists_help days = 825 }
+	 }
+	}
+	focus = {
+		id = MAF_mafia_south_africa
+		icon = south_america
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_prepare_for_the_war_with_usa
+		}
+		x = 31
+		y = 38
+
+
+        available = {
+		country_exists = COL
+		NOT = {
+		has_war_with = COL
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = COL
+    NOT = {
+	country_exists = COL
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+       add_timed_idea = { idea = south_american_help days = 825 }
+	 }
+	}
+	focus = {
+		id = MAF_raid_american_prisions
+		icon = central_intelligence_agency
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_ask_help_from_local_commies
+		}
+		prerequisite = {
+			focus = MAF_mafia_south_africa
+		}
+		x = 30
+		y = 39
+
+
+        available = {
+		country_exists = USA
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = USA
+	} } 
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+		811 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		811 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		800 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		795 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		772 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		768 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	 USA = {			
+	 add_stability = -0.1
+	 }
+	} } 
+	focus = {
+		id = MAF_war_with_usa
+		icon = USA_political_revolution
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_raid_american_prisions
+		}
+		prerequisite = {
+			focus = MAF_mexican_takeover
+		}
+		x = 28
+		y = 40
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+		army_experience = 35
+		add_war_support = 0.05
+		create_wargoal = {
+			type = annex_everything
+			target = USA
+		}
+		} } 
+	focus = {
+		id = MAF_world_drug_trade
+		icon = liberalization
+		cost = 15,00
+		prerequisite = {
+			focus = MAF_camuflage_convoys
+		}
+		x = 21
+		y = 39
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = legalized_world_drug_trade_specialized_max
+	remove_idea = legalized_world_drug_trade_specialized
+	 }
+	} }
+	focus = {
+		id = MAF_camuflage_convoys
+		icon = coastal_fort
+		cost = 7.2
+		prerequisite = {
+			focus = MAF_european_drug_trade
+		}
+		prerequisite = {
+			focus = MAF_american_drug_trade
+		}
+		x = 21
+		y = 38
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+    swap_ideas = {
+	add_idea = legalized_world_drug_trade_specialized
+	remove_idea = legalized_world_drug_trade_convoys
+	 }
+	} }
+	focus = {
+		id = MAF_turkish_interventionary_groups
+		icon = turkish_authoritarianism
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_send_military_aid_to_mexico
+		}
+		x = 24
+		y = 38
+
+
+        available = {
+		country_exists = MEX
+		NOT = {
+		has_war_with = MEX
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = MEX
+    NOT = {
+	country_exists = MEX
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+	 MEX = {
+	 add_ideas = turkish_interventionary_group
+	 }
+	} } 
+	focus = {
+		id = MAF_turkish_interventionary_groups_1
+		icon = turkish_authoritarianism
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_send_military_aid_to_italy
+		}
+		x = 18
+		y = 38
+
+        available = {
+		country_exists = ITA
+		NOT = {
+		has_war_with = ITA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ITA
+    NOT = {
+	country_exists = ITA
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+	 ITA = {
+	 add_ideas = turkish_interventionary_group
+	 }
+	} } 
+	focus = {
+		id = MAF_plan_north
+		icon = tsarist_russia
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_mexican_takeover
+		}
+		prerequisite = {
+			focus = MAF_mafia_takeover_in_italy
+		}
+		x = 21
+		y = 40
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+	} } 
+	focus = {
+		id = MAF_prepare_a_war_with_europe
+		icon = war_in_europe
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_feed_the_italian_mafia
+		}
+		x = 12
+		y = 37
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+	} } 
+	focus = {
+		id = MAF_ask_help_from_local_muslims
+		icon = muslim_expansionism
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_prepare_a_war_with_europe
+		}
+		x = 11
+		y = 38
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+       add_timed_idea = { idea = local_muslims_help days = 825 }
+	 }
+	}
+	focus = {
+		id = MAF_get_along_well_with_pakistani_mafia
+		icon = align_to_pakistan
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_prepare_a_war_with_europe
+		}
+		x = 13
+		y = 38
+
+
+        available = {
+		country_exists = PAK
+		NOT = {
+		has_war_with = PAK
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = PAK
+    NOT = {
+	country_exists = PAK
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+       add_timed_idea = { idea = pakistani_help days = 825 }
+	 }
+	}
+	focus = {
+		id = MAF_raid_touristic_destinations
+		icon = USoE635
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_get_along_well_with_pakistani_mafia
+		}
+		prerequisite = {
+			focus = MAF_ask_help_from_local_muslims
+		}
+		x = 12
+		y = 39
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		available = {
+		GER = {
+		influence_higher_30 = yes
+		}
+		FRA = {
+		influence_higher_30 = yes
+		}
+		ENG = {
+		influence_higher_30 = yes
+		}
+		SPR = {
+		influence_higher_30 = yes
+		}
+		POR = {
+		influence_higher_30 = yes
+		}
+		GRE = {
+		influence_higher_30 = yes
+		}
+		}
+
+    completion_reward = {
+		45 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		41 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		56 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		86 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		91 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		13 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+			GER = {
+					set_temp_variable = { modify_eurosceptic = 0.02 }
+					eurosceptic_change = yes	
+			}
+			ENG = {
+					set_temp_variable = { modify_eurosceptic = 0.02 }
+					eurosceptic_change = yes	
+			}
+			FRA = {
+					set_temp_variable = { modify_eurosceptic = 0.02 }
+					eurosceptic_change = yes	
+			}
+			SPR = {
+					set_temp_variable = { modify_eurosceptic = 0.02 }
+					eurosceptic_change = yes	
+			}
+	 GER = {			
+	 add_stability = -0.1
+	 }
+	 ENG = {			
+	 add_stability = -0.1
+	 }
+	 FRA = {			
+	 add_stability = -0.1
+	 }
+	 SPR = {			
+	 add_stability = -0.1
+	 }
+	} } 
+	focus = {
+		id = MAF_war_with_europe
+		icon = United_States_of_Europe
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_mafia_takeover_in_italy
+		}
+		prerequisite = {
+			focus = MAF_raid_touristic_destinations
+		}
+		x = 14
+		y = 40
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+		army_experience = 35
+		add_war_support = 0.05
+		create_wargoal = {
+			type = annex_everything
+			target = GER
+		}		
+		create_wargoal = {
+			type = annex_everything
+			target = FRA
+		}		
+		create_wargoal = {
+			type = annex_everything
+			target = ENG
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SPR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = POR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = GRE
+		}
+		} } 
+	focus = {
+		id = MAF_get_exiled_russian_oligarchs
+		icon = putin2
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_plan_north
+		}
+		x = 21
+		y = 41
+
+	
+        available = {
+		country_exists = SOV
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = SOV
+	} } 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = SOV modifier = brought_oligarchs }
+					add_political_power = 25
+			}
+	}
+	focus = {
+		id = MAF_russian_investments
+		icon = russian_ruble
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_get_exiled_russian_oligarchs
+		}
+		prerequisite = {
+			focus = MAF_damage_strong_bureocracy
+		}
+		x = 20
+		y = 42
+
+
+        available = {
+		country_exists = SOV
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = SOV
+	} } 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+						search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+			add_political_power = 50
+			subtract_from_variable = { treasury = -100.0 }
+			custom_effect_tooltip = 100_billion_revenue_tt		
+		} } 
+	focus = {
+		id = MAF_russian_factories
+		icon = russian_investements
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_get_exiled_russian_oligarchs
+		}
+		prerequisite = {
+			focus = MAF_poison_army
+		}
+		x = 22
+		y = 42
+
+
+        available = {
+		controls_state = 155
+		controls_state = 156
+		controls_state = 935
+		}
+
+
+        available = {
+		country_exists = SOV
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = SOV
+	} } 
+	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+			155 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				}
+			156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				}
+			935 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			
+		} } } 
+	focus = {
+		id = MAF_damage_strong_bureocracy
+		icon = russia
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_plan_north
+		}
+		x = 19
+		y = 41
+
+
+        available = {
+		country_exists = SOV
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = SOV
+	} } 
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+		SOV = {
+		add_stability = -0.05
+		}
+			add_political_power = 50
+		} } 
+	focus = {
+		id = MAF_poison_army
+		icon = t14_armata
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_plan_north
+		}
+		x = 23
+		y = 41
+
+
+        available = {
+		country_exists = SOV
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = SOV
+	} } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+		add_ideas = poisoned_russians
+		} } 
+	focus = {
+		id = MAF_war_with_russia
+		icon = russia2
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_russian_factories
+		}
+		prerequisite = {
+			focus = MAF_russian_investments
+		}
+		x = 21
+		y = 43
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+		army_experience = 35
+		add_war_support = 0.05
+		create_wargoal = {
+			type = annex_everything
+			target = SOV
+		}
+		} } 
+	focus = {
+		id = MAF_poision_europeans
+		icon = attack_europe
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_war_with_europe
+		}
+		x = 13
+		y = 41
+
+    available = {
+	has_war = yes
+	}
+
+		available = {
+		GER = {
+		influence_higher_30 = yes
+		}
+		FRA = {
+		influence_higher_30 = yes
+		}
+		ENG = {
+		influence_higher_30 = yes
+		}
+		SPR = {
+		influence_higher_30 = yes
+		}
+		POR = {
+		influence_higher_30 = yes
+		}
+		GRE = {
+		influence_higher_30 = yes
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+       add_timed_idea = { idea = poisoned_europeans days = 125 }
+	 }
+	}
+	focus = {
+		id = MAF_biological_warfare
+		icon = chemical_warfare
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_war_with_europe
+		}
+		x = 15
+		y = 41
+
+
+    available = {
+	has_war = yes
+	}
+		available = {
+		GER = {
+		influence_higher_30 = yes
+		}
+		FRA = {
+		influence_higher_30 = yes
+		}
+		ENG = {
+		influence_higher_30 = yes
+		}
+		SPR = {
+		influence_higher_30 = yes
+		}
+		POR = {
+		influence_higher_30 = yes
+		}
+		GRE = {
+		influence_higher_30 = yes
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+       add_timed_idea = { idea = chemical_weapons_on_europeans days = 125 }
+	 }
+	}
+	focus = {
+		id = MAF_poision_modified_cigarettes
+		icon = american_nationalism
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_war_with_usa
+		}
+		x = 27
+		y = 41
+
+
+        available = {
+	    has_war_with = USA
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    bypass = {
+	OR = {
+    NOT = {
+	has_war_with = USA
+	country_exists = USA
+	 } }
+	} 
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+       add_timed_idea = { idea = poison_modified_cigarettes  days = 365 }
+	 }
+	}
+	focus = {
+		id = MAF_declare_the_great_mafian_confederation
+		icon = mafias_united
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_war_with_russia
+		}
+		prerequisite = {
+			focus = MAF_assasinate_the_us_president
+		}
+		prerequisite = {
+			focus = MAF_feed_with_chaos
+		}
+		x = 21
+		y = 44
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+      set_cosmetic_tag = GLO_MAF
+		    custom_effect_tooltip = TUR_united_state
+					        				subtract_from_variable = { TUR_pop_KEM = 2 }
+								        				subtract_from_variable = { TUR_pop_KUR = 3 }
+	        				subtract_from_variable = { TUR_pop_ISL = -5 }
+			set_global_flag = TUR_UNITE_DIASPORA
+						TUR_remove_state_modifier_effects = yes
+	  add_stability = 0.25
+	 }
+	}
+	focus = {
+		id = MAF_strike_on_religious_community_in_europe
+		icon = christianity
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_biological_warfare
+		}
+		prerequisite = {
+			focus = MAF_poision_europeans
+		}
+		x = 14
+		y = 42
+
+
+    available = {
+	has_war = yes
+	}
+
+		available = {
+		GER = {
+		influence_higher_30 = yes
+		}
+		FRA = {
+		influence_higher_30 = yes
+		}
+		ENG = {
+		influence_higher_30 = yes
+		}
+		SPR = {
+		influence_higher_30 = yes
+		}
+		POR = {
+		influence_higher_30 = yes
+		}
+		GRE = {
+		influence_higher_30 = yes
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+	 GER = {			
+	 country_event = TurkeyF.88
+	 }
+	 GRE = {			
+	 country_event = TurkeyF.88
+	 }
+	 ENG = {			
+	 country_event = TurkeyF.88
+	 }
+	 FRA = {			
+	 country_event = TurkeyF.88
+	 }
+	 SPR = {			
+	 country_event = TurkeyF.88
+	 }
+	 POR = {			
+	 country_event = TurkeyF.88
+	 }
+	} }
+	focus = {
+		id = MAF_weaken_pentagon
+		icon = pentagon
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_war_with_usa
+		}
+		x = 29
+		y = 41
+
+
+        available = {
+	    has_war_with = USA
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    bypass = {
+	OR = {
+    NOT = {
+	has_war_with = USA
+	country_exists = USA
+	 } }
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+       add_timed_idea = { idea = weakened_pentagon  days = 125 }
+	 }
+	}
+	focus = {
+		id = MAF_divide_california
+		icon = USA_attack_the_financial_system
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_weaken_pentagon
+		}
+		prerequisite = {
+			focus = MAF_poision_modified_cigarettes
+		}
+		x = 28
+		y = 42
+
+
+        available = {
+	    has_war_with = USA
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    bypass = {
+	OR = {
+    NOT = {
+	has_war_with = USA
+	country_exists = USA
+	 } }
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+       USA = {
+	   country_event = TurkeyF.90
+	   }
+	 }
+	}
+	focus = {
+		id = MAF_assasinate_the_us_president
+		icon = USA_break_the_establishment
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_divide_california
+		}
+		x = 28
+		y = 43
+
+
+        available = {
+	    has_war_with = USA
+		USA = {
+		influence_higher_30 = yes
+		}
+        }
+
+    bypass = {
+	OR = {
+    NOT = {
+	has_war_with = USA
+	country_exists = USA
+	 } }
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+	country_event = TurkeyF.87
+	} } 
+	focus = {
+		id = MAF_feed_with_chaos
+		icon = USA_new_foreign_policy
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_strike_on_religious_community_in_europe
+		}
+		x = 14
+		y = 43
+
+
+    available = {
+	has_war = yes
+	}
+
+		available = {
+		GER = {
+		influence_higher_30 = yes
+		}
+		FRA = {
+		influence_higher_30 = yes
+		}
+		ENG = {
+		influence_higher_30 = yes
+		}
+		SPR = {
+		influence_higher_30 = yes
+		}
+		POR = {
+		influence_higher_30 = yes
+		}
+		GRE = {
+		influence_higher_30 = yes
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+    completion_reward = {
+	 GER = {			
+	 country_event = TurkeyF.89
+	 }
+	 GRE = {			
+	 country_event = TurkeyF.89
+	 }
+	 ENG = {			
+	 country_event = TurkeyF.89
+	 }
+	 FRA = {			
+	 country_event = TurkeyF.89
+	 }
+	 SPR = {			
+	 country_event = TurkeyF.89
+	 }
+	 POR = {			
+	 country_event = TurkeyF.89
+	 }
+	} }
+	focus = {
+		id = MAF_hacker_group
+		icon = cryptography
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_time_for_steal
+		}
+		x = 36
+		y = 17
+
+	
+		completion_reward = {
+		    custom_effect_tooltip = ROB_MAF_PRE1
+			set_global_flag = MAF_HACKER_GROUP_CREATED
+		} } 
+	focus = {
+		id = MAF_collect_the_criminals
+		icon = violent_coup
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_time_for_steal
+		}
+		x = 38
+		y = 17
+
+
+		completion_reward = {
+		    custom_effect_tooltip = ROB_MAF_PRE2
+			set_global_flag = MAF_COLLECTED_CRIMINALS
+		} } 
+	focus = {
+		id = MAF_look_for_the_target
+		icon = sniper
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_collect_the_criminals
+		}
+		prerequisite = {
+			focus = MAF_hacker_group
+		}
+		x = 37
+		y = 18
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		
+		completion_reward = {
+		    add_command_power = 10
+			add_war_support = 0.02
+		} } 
+	focus = {
+		id = MAF_focus_on_banks
+		icon = EU_Banking
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_look_for_the_target
+		}
+		x = 34
+		y = 19
+
+
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_PRE3
+		    add_command_power = 10
+		} } 
+	focus = {
+		id = MAF_focus_on_data
+		icon = cryptologic_bomb
+		cost = 10,00
+		prerequisite = {
+			focus = MAF_look_for_the_target
+		}
+		x = 40
+		y = 19
+
+
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_PRE4
+		    add_command_power = 10
+		} } 
+	focus = {
+		id = MAF_mission_to_FED
+		icon = american_republic
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_focus_on_banks
+		}
+		x = 32
+		y = 20
+
+	
+        available = {
+		country_exists = USA
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = USA
+	} } 
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_BANK1
+		} } 
+	focus = {
+		id = MAF_mission_to_ECB
+		icon = ECB_intervention
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_focus_on_banks
+		}
+		x = 36
+		y = 20
+
+	
+        available = {
+		country_exists = GER
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = GER
+	} } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_BANK2
+		} } 
+	focus = {
+		id = MAF_target_pentagon_documents
+		icon = american_free_corps
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_focus_on_data
+		}
+		x = 38
+		y = 20
+
+	
+        available = {
+		country_exists = USA
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = USA
+	} } 
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_DATA1
+		} } 
+	focus = {
+		id = MAF_target_the_russian_weaponary
+		icon = t90
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_focus_on_data
+		}
+		x = 42
+		y = 20
+
+	
+        available = {
+		country_exists = SOV
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = SOV
+	} } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_DATA2
+		} } 
+	focus = {
+		id = MAF_target_european_army_documents
+		icon = EU_salute_frontex
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_focus_on_data
+		}
+		x = 40
+		y = 20
+
+	
+        available = {
+		country_exists = FRA
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = FRA
+	} } 
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_DATA3
+		} } 
+	focus = {
+		id = MAF_target_f35_program
+		icon = fighter_plane
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_target_pentagon_documents
+		}
+		prerequisite = {
+			focus = MAF_target_european_army_documents
+		}
+		x = 39
+		y = 21
+
+	
+        available = {
+		country_exists = USA
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = USA
+	} } 
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_DATA4
+		} } 
+	focus = {
+		id = MAF_target_russian_biological_tests
+		icon = examine_foreign_science
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_target_european_army_documents
+		}
+		prerequisite = {
+			focus = MAF_target_the_russian_weaponary
+		}
+		x = 41
+		y = 21
+
+	
+        available = {
+		country_exists = USA
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = USA
+	} } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_DATA5
+		} } 
+	focus = {
+		id = MAF_mission_to_FRA
+		icon = liberty
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_focus_on_banks
+		}
+		x = 34
+		y = 20
+
+	
+        available = {
+		country_exists = FRA
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = FRA
+	} } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_BANK3
+		} } 
+	focus = {
+		id = MAF_mission_to_PRC
+		icon = peoples_republic_of_china
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_mission_to_FRA
+		}
+		prerequisite = {
+			focus = MAF_mission_to_FED
+		}
+		x = 33
+		y = 21
+
+	
+        available = {
+		country_exists = CHI
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = CHI
+	} } 
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_BANK4
+		} } 
+	focus = {
+		id = MAF_mission_to_UK
+		icon = british_nationalism
+		cost = 5,00
+		prerequisite = {
+			focus = MAF_mission_to_ECB
+		}
+		prerequisite = {
+			focus = MAF_mission_to_FRA
+		}
+		x = 35
+		y = 21
+
+	
+        available = {
+		country_exists = ENG
+        }
+
+    bypass = {
+	NOT = {
+	country_exists = ENG
+	} } 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = ROB_MAF_BANK5
+		} } 
+
+	focus = {
+		id = TUR_covid-19_pandemic15
+		icon = generic_healthcare
+		cost = 10,00
+		x = 37
+		y = 0
+
+        available = {
+        has_idea = covid_19
+        }
+	
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+		completion_reward = {
+        add_political_power = 75
+		block_health_decrease = yes
+		} }
+		
+	focus = {
+		id = TUR_covid-19_preparations15
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_pandemic15
+		}
+		x = 37
+		y = 1
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19
+  add_idea = covid_19_prepared
+}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TUR_build_up_hospitals15
+		icon = generic_hospital2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations15
+		}
+		x = 35
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}			
+	completion_reward = {
+			subtract_from_variable = { treasury = 20.0 }
+			add_stability = 0.03
+			custom_effect_tooltip = 20_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_turn_airports_to_hospital15
+		icon = generic_hospital
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_build_up_hospitals15
+		}
+		x = 35
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+			subtract_from_variable = { treasury = 5.0 }
+			add_stability = 0.02
+			custom_effect_tooltip = 5_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_start_up_vaccine_program17
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations15
+		}
+		x = 37
+		y = 2
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		
+		
+	completion_reward = {
+	        add_stability = -0.05
+			add_political_power = -75
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			custom_effect_tooltip = COV_DECISION_OPENING_VAC
+			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
+			} 
+	}
+	focus = {
+		id = TUR_buy_german_vaccines17
+		icon = trade_with_germany
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_start_up_vaccine_program17
+		}
+		x = 37
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_increase_funds_to_science15
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations15
+		}
+		x = 39
+		y = 2
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = health_04
+  add_idea = health_05
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_medicines15
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_funds_to_science15
+		}                                         
+		prerequisite = {                          
+			focus = TUR_increase_funds_to_science15
+		}
+		x = 39
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_prepared
+  add_idea = covid_19_medicined
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_chinese_vaccines15
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turn_airports_to_hospital15
+		}
+		prerequisite = {
+			focus = TUR_buy_german_vaccines17
+		}
+		prerequisite = {
+			focus = TUR_buy_medicines15
+		}
+		x = 37
+		y = 4
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_normalisation_from_covid15
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_buy_chinese_vaccines15
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
+		} }
+		x = 37
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_medicined
+  add_idea = covid_19_normalised
+} 
+	custom_effect_tooltip = COV_AVAILABLE_1
+}
+	}
+	focus = {
+		id = TUR_end_of_covid15
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_normalisation_from_covid15
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
+		} }
+		x = 37
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+remove_ideas = covid_19_normalised
+	custom_effect_tooltip = COV_AVAILABLE_2
+}
+	}
+
+
+##############################
+###	Start of Cypriot Tree ###	x = 13 y = 10
+##############################
+
+shared_focus = TUR_greek_issues
+
+############################
+### End of Cypriot Focus Tree ###
+############################
+}

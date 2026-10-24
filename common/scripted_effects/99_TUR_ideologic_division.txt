@@ -1,0 +1,26 @@
+TUR_startup = {
+	set_variable = { kur_pop = 21 }
+	set_variable = { isl_pop = 40 }
+	set_variable = { kem_pop = 39 }
+}
+TUR_pop_KUR = {
+	clamp_variable = {
+		var = kur_pop
+		min = 0
+		max = 100
+	}
+}
+TUR_pop_ISL = {
+	clamp_variable = {
+		var = isl_pop
+		min = 0
+		max = 100
+	}
+}
+TUR_pop_KEM = {
+	clamp_variable = {
+		var = kem_pop
+		min = 0
+		max = 100
+	}
+}

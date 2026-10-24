@@ -1,0 +1,7332 @@
+focus_tree = {
+	id = MD_TUR_MIT
+	default = no
+
+	focus = {
+		id = MIT_organize_a_new_plot
+		icon = anti_war_with_big_gun
+		cost = 7.2
+		x = 48
+		y = 0
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+	completion_reward = {
+       add_war_support = 0.1
+				}
+      
+	}
+	focus = {
+		id = MIT_turkish_economics
+		icon = balance_buget
+		cost = 10,00
+		x = 48
+		y = 11
+
+
+	search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		available = {
+		has_completed_focus = MIT_declare_the_new_regime
+		}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = reforms_for_2001_crisis
+  add_idea = reformss_for_2001_crisis
+} } }
+	focus = {
+		id = MIT_government_policies
+		icon = generic_government
+		cost = 10,00
+		x = 70
+		y = 0
+
+	
+		available = {
+		has_completed_focus = MIT_declare_the_new_regime
+		}
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+   add_war_support = 0.03
+} } 
+	focus = {
+		id = MIT_foreign_policies
+		icon = TUR_military_regime
+		cost = 10,00
+		x = 95
+		y = 0
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		available = {
+		has_completed_focus = MIT_declare_the_new_regime
+		}
+
+		completion_reward = {
+   add_political_power = 100
+} } 
+	focus = {
+		id = MIT_hakan_fidans_regime
+		icon = hakan_fidan
+		cost = 10,00
+		x = 125
+		y = 0
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		available = {
+		has_completed_focus = MIT_declare_the_new_regime
+		}
+
+		completion_reward = {
+        add_political_power = 100
+		} } 
+	focus = {
+		id = MIT_destroy_the_terrorist_organizations
+		icon = focus_generic_tankette
+		cost = 10,00
+		x = 95
+		y = 15
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		available = {
+		has_completed_focus = MIT_declare_the_new_regime
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = MIT_databreaking_group
+		icon = Generic_Intelligence_Gathering
+		cost = 10,00
+		x = 120
+		y = 12
+
+		available = {
+		has_completed_focus = MIT_declare_the_new_regime
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+	completion_reward = {
+       add_ideas = datamining_group
+      }
+	}
+	focus = {
+		id = MIT_secret_jewish_take_over
+		icon = menorah
+		cost = 10,00
+		x = 130
+		y = 12
+
+				available = {
+		has_global_flag = DARK_PARALYSIS
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+	    add_political_power = 100
+		}
+	}
+	focus = {
+		id = MIT_push_oligarchs
+		icon = central_planned_economy2
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_turkish_economics
+		}
+		mutually_exclusive = {
+			focus = MIT_local_industrialization
+		}
+		x = 47
+		y = 12
+
+	search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+       add_ideas = oligarchic_economic_model
+swap_ideas = { 
+  remove_idea = the_ulema
+  add_idea = oligarchs
+}    
+swap_ideas = { 
+  remove_idea = lira_1
+  add_idea = lira_2
+}  	
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 1
+				category = CAT_fuel_oil
+			}
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 2
+				category = CAT_industry
+			}
+      }
+	}
+	focus = {
+		id = MIT_agreement_with_sabanci_group
+		icon = sabanci
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_push_oligarchs
+		}
+		x = 36
+		y = 13
+
+	search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+   add_ideas = sabanci_group
+} } 
+	focus = {
+		id = MIT_sabanci_industries
+		icon = goal_JAP_newspaper_nowar
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_agreement_with_sabanci_group
+		}
+		x = 35
+		y = 14
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 1032
+		}
+
+		completion_reward = {
+                1032 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_sabanci_civilian_industries
+		icon = Generic_State_Socialism
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_sabanci_industries
+		}
+		x = 35
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
+
+        available = {
+		controls_state = 159
+		controls_state = 161
+		}
+
+		completion_reward = {
+                159 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+                161 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_AS_industries
+		icon = Generic_Public_Works
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_agreement_with_sabanci_group
+		}
+		x = 37
+		y = 14
+
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 159
+		controls_state = 161
+		}
+
+		completion_reward = {
+                159 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+                161 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_finance_the_millitary_products
+		icon = Generic_Underground_Factories
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_AS_industries
+		}
+		x = 37
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 161
+		}
+
+		completion_reward = {
+                161 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_partnership_with_sabanci_group
+		icon = protectionism
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_finance_the_millitary_products
+		}
+		prerequisite = {
+			focus = MIT_sabanci_civilian_industries
+		}
+		x = 36
+		y = 16
+
+	search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = sabanci_group
+  add_idea = full_partnership_with_sabanci_group
+} } }
+	focus = {
+		id = MIT_agreement_with_koc_group
+		icon = koc
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_push_oligarchs
+		}
+		x = 40
+		y = 13
+
+	search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+   add_ideas = koc_group
+} } 
+	focus = {
+		id = MIT_koc_finance
+		icon = goal_JAP_budget_check
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_agreement_with_koc_group
+		}
+		x = 39
+		y = 14
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 934
+		controls_state = 155
+		}
+
+		completion_reward = {
+                934 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+				add_extra_state_shared_building_slots = 1
+                155 = {
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_koc_university
+		icon = university
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_koc_finance
+		}
+		x = 39
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 934
+		}
+
+		completion_reward = {
+                add_research_slot = 1
+                934 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = -15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_koc_banks
+		icon = lion_economy
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_agreement_with_koc_group
+		}
+		x = 41
+		y = 14
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 155
+		}
+
+		completion_reward = {
+                155 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_koc_stocks
+		icon = goal_JAP_valueup
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_koc_banks
+		}
+		x = 41
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 934
+		controls_state = 155
+		}
+
+		completion_reward = {
+                934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+                155 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = -50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+		} } 
+	focus = {
+		id = MIT_partnership_with_koc_group
+		icon = union_negotiations
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_koc_stocks
+		}
+		prerequisite = {
+			focus = MIT_koc_university
+		}
+		x = 40
+		y = 16
+
+	search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = koc_group
+  add_idea = full_partnership_with_koc_group
+} } }
+	focus = {
+		id = MIT_start_of_national_resistance
+		icon = ARM_seize_stockpiles
+		cost = 15,00
+		prerequisite = {
+			focus = MIT_organize_a_new_plot
+		}
+		x = 48
+		y = 1
+
+
+		completion_reward = {
+        country_event = TurkeyM.1
+	  }
+	}
+	focus = {
+		id = MIT_call_people_for_war
+		icon = align_to_turkey
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_start_of_national_resistance
+		}
+		x = 46
+		y = 2
+
+	
+		available = {
+		has_war_with = WTU
+		}
+	
+		completion_reward = {
+        add_manpower = 75000
+		} }
+	focus = {
+		id = MITs_emergency_government
+		icon = Generic_Morale_Bonus_Focus
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_start_of_national_resistance
+		}
+		x = 48
+		y = 2
+
+
+		available = {
+		has_war_with = WTU
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+		set_cosmetic_flag = TUR
+			if = {
+				limit = { has_intelligence_agency = no }
+				add_stability = 0.05
+				create_intelligence_agency = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_done_agency_upgrade = upgrade_passive_defense
+					}
+				}
+				upgrade_intelligence_agency = upgrade_passive_defense
+			}
+			else = {
+				add_stability = 0.05
+				add_political_power = 150
+			}
+              
+			add_ideas = mit_empowered
+			create_country_leader = {
+				name = "Hakan Fidan"
+				picture = "hakan_fidan.dds"
+				ideology = oligarchism
+				traits = {
+					neutral_oligarchism
+					spy
+				}
+			}
+		}  }
+	focus = {
+		id = MIT_open_armed_kemalists
+		icon = kemalists
+		cost = 7.2
+		prerequisite = {
+			focus = MITs_emergency_government
+		}
+		x = 48
+		y = 3
+
+
+		available = {
+		has_war_with = WTU
+		}
+
+		search_filters = {FOCUS_FILTER_TURKISH_KEMALISM}
+
+		completion_reward = {
+		army_experience = 25
+		swap_ideas = {
+		add_idea = turkish_military_infulence_armed
+		remove_idea = turkish_military_infulence
+		}
+	  }
+	}
+	focus = {
+		id = MIT_regional_defence
+		icon = Generic_Partisan
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_open_armed_kemalists
+		}
+		x = 48
+		y = 4
+
+
+		available = {
+		has_war_with = WTU
+		}
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+		army_experience = 75
+        WTU ={
+		add_stability = -0.1
+		add_war_support = -0.1
+		}
+	  }
+	}
+	focus = {
+		id = MIT_offer_help_from_SADAT
+		icon = sadat_group
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_regional_defence
+		}
+		x = 44
+		y = 5
+          
+		available = {
+		has_war_with = WTU
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+			add_stability = -0.03
+			set_power_balance = {
+					id = TUR_mit_balance
+					left_side = MIT_default_left_side 
+					right_side = MIT_default_right_side 
+					set_value = 0.1
+				}
+				}
+	}
+	focus = {
+		id = MIT_SADAT_himars
+		icon = GEO_Artillery_Tactics
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_offer_help_from_SADAT
+		}
+		x = 43
+		y = 6
+
+		
+		available = {
+			is_power_balance_in_range = {
+				id = TUR_mit_balance
+				range > MIT_right_side_range  
+			}
+		}
+		available = {
+		has_war_with = WTU
+		}
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1 #M72 LAW
+		amount = 500
+		producer = USA
+	}
+		} }
+	focus = {
+		id = MIT_SADAT_military_equipment
+		icon = blr_scr_1200
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_offer_help_from_SADAT
+		}
+		x = 45
+		y = 6
+
+		
+		available = {
+			is_power_balance_in_range = {
+				id = TUR_mit_balance
+				range > MIT_right_side_range  
+			}
+		}
+		available = {
+		has_war_with = WTU
+		}
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_2 #M72 LAW
+		amount = 500
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_weapons #M72 LAW
+		amount = 500
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = command_control_equipment2 #M72 LAW
+		amount = 500
+		producer = USA
+	}
+		} }
+	focus = {
+		id = MIT_izmir_offensive
+		icon = border_conflict_bunker
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_regional_defence
+		}
+		x = 48
+		y = 5
+
+
+		available = {
+		has_war_with = WTU
+		}
+
+		bypass = {
+		NOT = {
+		country_exists = WTU
+		}
+		}
+
+	completion_reward = {
+       add_timed_idea = { idea = izmir_offensive  days = 70 }
+      }
+	}
+	focus = {
+		id = MIT_restore_ankara
+		icon = draw_up_war_plans
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_izmir_offensive
+		}
+		x = 47
+		y = 6
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 159
+		}
+
+		available = {
+		has_war_with = WTU
+		}
+
+		bypass = {
+		NOT = {
+		country_exists = WTU
+		}
+		}
+
+		completion_reward = {
+                159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} 
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } }
+	focus = {
+		id = MIT_restore_antalya
+		icon = examine_foreign_small_arms
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_izmir_offensive
+		}
+		x = 49
+		y = 6
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 157
+		}
+
+
+		available = {
+		has_war_with = WTU
+		}
+
+		bypass = {
+		NOT = {
+		country_exists = WTU
+		}
+		}
+
+
+		completion_reward = {
+                157 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} 
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } }
+	focus = {
+		id = MIT_second_offensive
+		icon = armoured_fist
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_restore_antalya
+		}
+		prerequisite = {
+			focus = MIT_restore_ankara
+		}
+		x = 48
+		y = 7
+
+
+		available = {
+		has_war_with = WTU
+		}
+
+		bypass = {
+		NOT = {
+		country_exists = WTU
+		}
+		}
+
+	completion_reward = {
+       add_timed_idea = { idea = second_offensive  days = 70 }
+      }
+	}
+	focus = {
+		id = MIT_restore_the_order
+		icon = Generic_Redraw_Borders
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_second_offensive
+		}
+		x = 49
+		y = 8
+
+		available = {
+		NOT = {
+		country_exists = WTU
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+                add_stability = 0.05
+		} } 
+	focus = {
+		id = MIT_open_mafias_prisons
+		icon = krunk
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_second_offensive
+		}
+		x = 47
+		y = 8
+
+		available = {
+		NOT = {
+		country_exists = WTU
+		}
+		}
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+                add_stability = 0.05
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_declare_the_new_regime
+		icon = licensiarszo
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_restore_the_order
+		}
+		prerequisite = {
+			focus = MIT_open_mafias_prisons
+		}
+		x = 48
+		y = 9
+
+		available = {
+		NOT = {
+		country_exists = WTU
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+                add_stability = 0.1
+		    custom_effect_tooltip = TUR_united_state
+					        				subtract_from_variable = { TUR_pop_KEM = 2 }
+								        				subtract_from_variable = { TUR_pop_KUR = 3 }
+	        				subtract_from_variable = { TUR_pop_ISL = -5 }
+			set_global_flag = TUR_UNITE_DIASPORA
+						TUR_remove_state_modifier_effects = yes
+set_global_flag = DISABLE_WAR_SYSTEM_PAR
+custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU			
+ hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_bad_3_right_left_neutral_wing_sad
+} 
+		} } 
+	focus = {
+		id = MIT_local_industrialization
+		icon = anarchist_economy
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_turkish_economics
+		}
+		mutually_exclusive = {
+			focus = MIT_push_oligarchs
+		}
+		x = 49
+		y = 12
+
+	search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+   add_ideas = local_industrialization_campaign
+				set_temp_variable = { temp_opinion = 10 }	
+            change_industrial_conglomerates_opinion = yes	
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 1
+				category = CAT_fuel_oil
+			}
+swap_ideas = { 
+  remove_idea = lira_1
+  add_idea = lira_2
+}  		
+} } 
+
+          focus = {
+               id = MIT_new_tax_policies
+               icon = radical_tax_reform
+               cost = 10,00
+               prerequisite = {
+                    focus = MIT_push_oligarchs
+                    focus = MIT_local_industrialization
+               }
+               x = 48
+               y = 13
+     
+          search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+     
+               completion_reward = {
+     swap_ideas = { 
+       remove_idea = reformed_2001_crisis
+       add_idea = reformss_for_2001_crisis
+     }
+     swap_ideas = { 
+       remove_idea = lira_2
+       add_idea = lira_3
+     }  	
+			   } }
+	focus = {
+		id = MIT_restore_the_economy
+		icon = BRA_simplify_the_tax_system
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_new_tax_policies
+		}
+		x = 48
+		y = 14
+
+	search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+    remove_ideas = reformss_for_2001_crisis
+swap_ideas = { 
+  remove_idea = lira_3
+  add_idea = lira_4
+}  	
+} } 
+	focus = {
+		id = MIT_copenhagen_membership
+		icon = BRA_the_european_social_democrat_model
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_restore_the_economy
+		}
+		x = 48
+		y = 15
+
+		
+		available = {
+		has_global_flag = COPENHAGEN_CRITERIA_PASS
+             date > 2006.1.1
+		}
+	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+		    add_stability = -0.07
+			add_ideas = copenhagen_criterias
+			
+		} } 
+	focus = {
+		id = MIT_local_focused_economy
+		icon = MEX_Economic_reform
+		cost = 15,00
+		prerequisite = {
+			focus = MIT_copenhagen_membership
+		}
+		x = 49
+		y = 16
+
+
+	search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+available = {
+has_idea = government_boosted_civilian_sector
+has_idea = government_boosted_military_sector
+has_idea = government_boosted_financial_sector
+}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = local_industrialization_campaign
+  add_idea = full_industrialization_campaign
+} 
+remove_ideas = government_boosted_civilian_sector
+remove_ideas = government_boosted_military_sector
+remove_ideas = government_boosted_financial_sector
+} }
+	focus = {
+		id = MIT_send_arms_to_kurds
+		icon = align_to_kurdistan
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_start_of_national_resistance
+		}
+		x = 50
+		y = 2
+
+	
+		available = {
+		has_war_with = WTU
+		}
+	
+		search_filters = {FOCUS_FILTER_MANPOWER}
+
+		completion_reward = {
+        add_manpower = 75000
+		} }
+	focus = {
+		id = MIT_offer_help_from_westerners
+		icon = BLR_pro_russian_army_experince
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_regional_defence
+		}
+		x = 52
+		y = 5
+
+		available = {
+		has_war_with = WTU
+		}
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+		army_experience = 25
+		air_experience = 25
+		navy_experience = 25
+	  }
+	}
+	focus = {
+		id = MIT_USA_equipment
+		icon = usa_aircraft_advancements
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_offer_help_from_westerners
+		}
+		x = 51
+		y = 6
+
+		available = {
+		has_war_with = WTU
+		}
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		USA = {
+        country_event = TurkeyF.228		
+		}
+	  }
+	}
+	focus = {
+		id = MIT_french_equipment
+		icon = France_Army
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_offer_help_from_westerners
+		}
+		x = 51
+		y = 7
+
+		available = {
+		has_war_with = WTU
+		}
+
+        available = {
+		country_exists = FRA
+		NOT = {
+		has_war_with = FRA
+		 }
+        }
+
+	search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		FRA = {
+        country_event = TurkeyF.232	
+		}
+	  }
+	}
+	focus = {
+		id = MIT_boost_the_finance_sector
+		icon = expand_finance_ministry
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_local_industrialization
+		}
+		x = 52
+		y = 13
+
+
+		completion_reward = {
+   add_ideas = government_boosted_financial_sector
+} } 
+	focus = {
+		id = MIT_istanbul_offices
+		icon = BRA_mensalao_new
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_boost_the_finance_sector
+		}
+		x = 51
+		y = 14
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 934
+		}
+
+		completion_reward = {
+                934 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_restore_the_media_offices
+		icon = crane_and_tower
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_istanbul_offices
+		}
+		x = 51
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 934
+		}
+
+		completion_reward = {
+                934 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_russian_equipment
+		icon = RussianArms
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_offer_help_from_westerners
+		}
+		x = 53
+		y = 6
+
+		available = {
+		has_war_with = WTU
+		}
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+	search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		SOV = {
+        country_event = TurkeyF.230
+		}
+	  }
+	}
+	focus = {
+		id = MIT_german_equipment
+		icon = Germany_Wehrmacht
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_offer_help_from_westerners
+		}
+		x = 53
+		y = 7
+
+		available = {
+		has_war_with = WTU
+		}
+
+        available = {
+		country_exists = GER
+		NOT = {
+		has_war_with = GER
+		 }
+        }
+
+	search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		GER = {
+        country_event = TurkeyF.234
+		}
+	  }
+	}
+	focus = {
+		id = MIT_ankara_offices
+		icon = empty_coffers
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_boost_the_finance_sector
+		}
+		x = 53
+		y = 14
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 159
+		}
+
+		completion_reward = {
+                159 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_service_economics
+		icon = focus_trade_republic
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_ankara_offices
+		}
+		x = 53
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 156
+		}
+
+		completion_reward = {
+                156 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_turkish_office_build-up
+		icon = BRA_public_housing_programs
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_restore_the_media_offices
+		}
+		prerequisite = {
+			focus = MIT_service_economics
+		}
+		x = 52
+		y = 16
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 156
+		controls_state = 934
+		}
+
+		completion_reward = {
+                156 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+                934 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_boost_civilian_sector
+		icon = factory_planning
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_local_industrialization
+		}
+		x = 56
+		y = 13
+
+
+		completion_reward = {
+   add_ideas = government_boosted_civilian_sector
+} } 
+	focus = {
+		id = MIT_kayseri_civilian_factory
+		icon = industry
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_boost_civilian_sector
+		}
+		x = 55
+		y = 14
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+        available = {
+		controls_state = 159
+		}
+
+		completion_reward = {
+                159 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_sivas_civilian_factory
+		icon = industry2
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_kayseri_civilian_factory
+		}
+		x = 55
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+        available = {
+		controls_state = 1032
+		}
+
+		completion_reward = {
+                1032 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_trabzon_civilian_factory
+		icon = industry
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_boost_civilian_sector
+		}
+		x = 57
+		y = 14
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+        available = {
+		controls_state = 163
+		}
+
+		completion_reward = {
+                163 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_ankara_civilian_factory
+		icon = industry2
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_trabzon_civilian_factory
+		}
+		x = 57
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+        available = {
+		controls_state = 159
+		}
+
+		completion_reward = {
+                159 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_general_resource-industry
+		icon = construction_engineering
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_ankara_civilian_factory
+		}
+		prerequisite = {
+			focus = MIT_sivas_civilian_factory
+		}
+		x = 56
+		y = 16
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+        available = {
+		controls_state = 162
+		controls_state = 159
+		}
+
+		completion_reward = {
+                162 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+                159 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 75.0 }
+			custom_effect_tooltip = 75_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_boost_military_sector
+		icon = industry_tanks
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_local_industrialization
+		}
+		x = 60
+		y = 13
+
+
+		completion_reward = {
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}
+   add_ideas = government_boosted_military_sector
+} } 
+	focus = {
+		id = MIT_SADAT_factories
+		icon = industrial_complexes
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_boost_military_sector
+		}
+		x = 59
+		y = 14
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+		
+		
+		available = {
+			is_power_balance_in_range = {
+				id = TUR_mit_balance
+				range > MIT_right_side_range  
+			}
+			controls_state = 1032
+			controls_state = 160
+		}
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.1
+	}
+		
+                1032 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+                160 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_drone_factories
+		icon = drone
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_SADAT_factories
+		}
+		x = 59
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 161
+		}
+
+		completion_reward = {
+                161 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_APC_factories
+		icon = apc_sheep
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_extra_military_build_up
+		}
+		x = 61
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+        available = {
+		controls_state = 159
+		}
+
+		completion_reward = {
+                159 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_altay_tank_factory
+		icon = tanks4
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_APC_factories
+		}
+		prerequisite = {
+			focus = MIT_drone_factories
+		}
+		x = 60
+		y = 16
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+        available = {
+		controls_state = 160
+		}
+
+		completion_reward = {
+                160 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} 
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_extra_military_build_up
+		icon = highway_repairs
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_boost_military_sector
+		}
+		x = 61
+		y = 14
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+        available = {
+		controls_state = 161
+		}
+
+		completion_reward = {
+                161 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_healthcare_policies
+		icon = generic_healthcare
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_government_policies
+		}
+		x = 66
+		y = 1
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+   add_political_power = 125
+} } 
+	focus = {
+		id = MIT_healthcare_basis
+		icon = social_dem_est_alt_dds_file
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_healthcare_policies
+		}
+		x = 63
+		y = 2
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_political_power = 25
+increase_healthcare_budget = yes
+      
+}   }
+	focus = {
+		id = MIT_social_society
+		icon = Focus_Socialist_Worker
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_healthcare_basis
+		}
+		x = 62
+		y = 3
+
+	search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+   add_ideas = social_society
+} } 
+	focus = {
+		id = MIT_respect_the_retired
+		icon = cash_grap
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_healthcare_policies
+		}
+		x = 65
+		y = 2
+
+				search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+		add_stability = 0.05      
+}   }
+	focus = {
+		id = MIT_expand_the_welfare
+		icon = welfare
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_respect_the_retired
+		}
+		prerequisite = {
+			focus = MIT_healthcare_basis
+		}
+		x = 64
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_political_power = 25
+increase_social_spending = yes
+      block_social_decrease = yes
+}   }
+	focus = {
+		id = MIT_limit_the_police
+		icon = Generic_Policeman
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_respect_the_retired
+		}
+		x = 65
+		y = 4
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+       		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+		add_political_power = 25
+		add_stability = 0.02
+decrease_policing_budget = yes
+			block_police_increase = yes      
+}   }
+	focus = {
+		id = MIT_education_policies
+		icon = blr_russian_education
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_government_policies
+		}
+		x = 70
+		y = 1
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+   add_political_power = 125
+} } 
+	focus = {
+		id = MIT_reform_the_curriculum
+		icon = education_reform
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_education_policies
+		}
+		x = 70
+		y = 2
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+increase_education_budget = yes
+      block_edu_decrease = yes
+}   }
+	focus = {
+		id = MIT_espionage_schools
+		icon = Generic_Espionage02
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_reform_the_curriculum
+		}
+		x = 68
+		y = 3
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+   add_ideas = espionage_schools
+} } 
+	focus = {
+		id = MIT_economy_schools
+		icon = coins
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_reform_the_curriculum
+		}
+		x = 70
+		y = 3
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+	search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+   add_ideas = economy_schools
+} } 
+	focus = {
+		id = MIT_religion_schools
+		icon = Generic_Religious_Unity
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_reform_the_curriculum
+		}
+		x = 72
+		y = 3
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+   add_ideas = religion_schools
+} } 
+	focus = {
+		id = MIT_diversified_education
+		icon = free_higher_education
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_religion_schools
+		}
+		prerequisite = {
+			focus = MIT_economy_schools
+		}
+		prerequisite = {
+			focus = MIT_espionage_schools
+		}
+		x = 70
+		y = 4
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+	search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+   add_ideas = diversified_education
+} } 
+	focus = {
+		id = MIT_open_new_labratories
+		icon = goal_JAP_education_rebuilding
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_diversified_education
+		}
+		x = 69
+		y = 5
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+			
+		completion_reward = {
+add_research_slot = 1
+}   }
+	focus = {
+		id = MIT_focus_on_the_educational_improvement
+		icon = nationalist_education
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_diversified_education
+		}
+		x = 71
+		y = 5
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+increase_education_budget = yes
+      block_edu_decrease = yes
+      
+} } 
+	focus = {
+		id = MIT_military_policies
+		icon = Generic_Command_Power
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_government_policies
+		}
+		x = 74
+		y = 1
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+   add_political_power = 125
+} } 
+	focus = {
+		id = MIT_MKEK
+		icon = MKE
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_military_policies
+		}
+		x = 74
+		y = 2
+
+
+		
+		completion_reward = {
+			mio:TUR_mkek_infantry_weapon_company = {
+				add_mio_funds = 1000
+			}
+army_experience = 75
+}   }
+	focus = {
+		id = MIT_global_interventionism
+		icon = focus_ETH_scavenging_tactics
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_MKEK
+		}
+		x = 74
+		y = 4
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+add_war_support = 0.05
+increase_intervention_law_effect = yes
+} } 
+	focus = {
+		id = MIT_draft_women
+		icon = women_army
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_military_policies
+		}
+		x = 76
+		y = 2
+
+		
+		completion_reward = {
+set_drafted_women_effect = yes
+} } 
+	focus = {
+		id = MIT_budget_reform_2
+		icon = money
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_draft_women
+		}
+		prerequisite = {
+			focus = MIT_MKEK
+		}
+		x = 75
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+   add_ideas = the_budget_relief
+} } 
+	focus = {
+		id = MIT_modern_espionage
+		icon = espionage3
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_draft_women
+		}
+		x = 77
+		y = 3
+
+
+
+		completion_reward = {
+   add_ideas = modern_espionage
+} } 
+	focus = {
+		id = MIT_new_MSIT
+		icon = mit
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_modern_espionage
+		}
+		prerequisite = {
+			focus = MIT_budget_reform_2
+		}
+		x = 77
+		y = 4
+
+		
+		completion_reward = {
+
+swap_ideas = { 
+  remove_idea = mit_empowered
+  add_idea = MIST_int
+}
+swap_ideas = { 
+  remove_idea = mit_empowered
+  add_idea = MIDST_int
+} } }
+
+	focus = {
+		id = MIT_military_youth
+		icon = officer_purge
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_global_interventionism
+		}
+		prerequisite = {
+			focus = MIT_new_MSIT
+		}
+		x = 75
+		y = 5
+
+		search_filters = {FOCUS_FILTER_MANPOWER}
+
+		completion_reward = {
+add_manpower = 75000
+} } 
+	focus = {
+		id = MIT_fidanist_out_reach
+		icon = protest_zloi
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_foreign_policies
+		}
+		x = 95
+		y = 1
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+add_ideas = mit_interventionism
+} } 
+	focus = {
+		id = MIT_influence_defense
+		icon = home_defense
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_fidanist_out_reach
+		}
+		x = 93
+		y = 2
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+		completion_reward = {
+   add_ideas = influence_defence_project
+} } 
+	focus = {
+		id = MIT_embrace_interventionist_policies
+		icon = intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_fidanist_out_reach
+		}
+		x = 95
+		y = 2
+
+	
+		available = {
+		has_completed_focus = MIT_global_interventionism
+		}
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+add_war_support = 0.05
+increase_intervention_law_effect = yes
+} } 
+	focus = {
+		id = MIT_invade_kurdistan
+		icon = attack_kurdistan2
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_embrace_interventionist_policies
+		}
+		x = 95
+		y = 3
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		country_exists = KUR
+		NOT = {
+		has_war_with = KUR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = KUR
+    NOT = {
+	country_exists = KUR
+	 }
+	} }
+	
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KUR
+		}
+			}
+	}
+	focus = {
+		id = MIT_turkish_lobbying
+		icon = espionage
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_invade_kurdistan
+		}
+		x = 94
+		y = 4
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+   add_ideas = turkish_lobbying
+} } 
+	focus = {
+		id = MIT_counter_jewish_lobbying
+		icon = goal_ISR_israeli_air_force
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_turkish_lobbying
+		}
+		x = 93
+		y = 5
+
+				search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = turkish_lobbying
+  add_idea = turkish_lobbying_2
+} } }
+	focus = {
+		id = MIT_counter_embargo_policies
+		icon = embargo
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_invade_kurdistan
+		}
+		x = 96
+		y = 4
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+   add_ideas = counter_embargo_policies
+} } 
+	focus = {
+		id = MIT_mind_games
+		icon = brain_power
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_counter_embargo_policies
+		}
+		prerequisite = {
+			focus = MIT_turkish_lobbying
+		}
+		x = 95
+		y = 5
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+   add_ideas = mind_games_mit
+} } 
+	focus = {
+		id = MIT_turkish_jeopolitics
+		icon = russian_defence_strategy
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_counter_embargo_policies
+		}
+		x = 97
+		y = 5
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+   add_ideas = turkish_geopolitics
+} } 
+	focus = {
+		id = MIT_general_influence_project
+		icon = investigation
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_mind_games
+		}
+		prerequisite = {
+			focus = MIT_counter_jewish_lobbying
+		}
+		prerequisite = {
+			focus = MIT_turkish_jeopolitics
+		}
+		x = 95
+		y = 6
+
+				available = {
+		has_completed_focus = MIT_new_MSIT
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = mind_games_mit
+  add_idea = mind_games_2_mit
+} } }
+	focus = {
+		id = MIT_asian_program
+		icon = asia
+		cost = 10.0
+		prerequisite = {
+			focus = MIT_general_influence_project
+		}
+		x = 84
+		y = 7
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 175
+		}
+	}
+	focus = {
+		id = MIT_middle_eastern_influence
+		icon = befriend_middle_east
+		cost = 10.0
+		prerequisite = {
+			focus = MIT_asian_program
+		}
+		x = 81
+		y = 8
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			PER = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			SAU = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			ISR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			SYR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			IRQ = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			EGY = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_middle_eastern_cold_war
+		icon = levant_and_anatolia
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_middle_eastern_influence
+		}
+		x = 79
+		y = 9
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+        		search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+			add_stability = -0.05
+			PER = {
+				set_temp_variable = { percent_change = 7 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			SAU = {
+				set_temp_variable = { percent_change = 7 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_saudi_arabia
+		icon = saudi_royalty
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_middle_eastern_cold_war
+		}
+		x = 78
+		y = 10
+
+
+		available = {
+			network_strength = {
+				target = SAU
+				value > 35
+			}
+		}
+
+        bypass = {
+			is_in_faction_with = SAU
+		NOT = {
+		country_exists = SAU
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = SAU
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = SAU
+				token = token_civilian
+			}
+			add_decryption = {
+				target = SAU
+				ratio = 1.0
+			}
+			SAU = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_iran
+		icon = iran_map_light
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_middle_eastern_cold_war
+		}
+		x = 80
+		y = 10
+
+
+		available = {
+			network_strength = {
+				target = PER
+				value > 35
+			}
+		}
+
+        bypass = {
+		is_in_faction_with = PER
+		NOT = {
+		country_exists = PER
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = PER
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = PER
+				token = token_civilian
+			}
+			add_decryption = {
+				target = PER
+				ratio = 1.0
+			}
+			PER = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_middle_eastern_northern_intervention
+		icon = iranian_islamic_army_helmet
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_middle_eastern_influence
+		}
+		x = 83
+		y = 9
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_war_support = 0.1
+			SYR = {
+				set_temp_variable = { percent_change = 7 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			IRQ = {
+				set_temp_variable = { percent_change = 7 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			KUR = {
+				set_temp_variable = { percent_change = 7 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_invade_northern_syria
+		icon = syrian_soldier2
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_middle_eastern_northern_intervention
+		}
+		x = 82
+		y = 10
+
+
+        available = {
+		country_exists = SYR
+		NOT = {
+		has_war_with = SYR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SYR
+    NOT = {
+	country_exists = SYR
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = FSA
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SYR
+		}
+ }
+}
+	focus = {
+		id = MIT_central_asian_influence
+		icon = RUS_central_asia
+		cost = 10.0
+		prerequisite = {
+			focus = MIT_asian_program
+		}
+		x = 87
+		y = 8
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			AZE = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			KAZ = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			TRK = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			UZB = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			KYR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_kazakhs
+		icon = align_to_kazakhstan
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_central_asian_influence
+		}
+		x = 85
+		y = 9
+
+
+		available = {
+			network_strength = {
+				target = KAZ
+				value > 35
+			}
+		}
+
+        bypass = {
+		is_in_faction_with = KAZ
+		NOT = {
+		country_exists = KAZ
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = KAZ
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = KAZ
+				token = token_civilian
+			}
+			add_decryption = {
+				target = KAZ
+				ratio = 1.0
+			}
+			KAZ = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_azerbaijanis
+		icon = flag_azerbaijan
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_central_asian_influence
+		}
+		x = 89
+		y = 9
+
+		available = {
+			network_strength = {
+				target = AZE
+				value > 35
+			}
+		}
+
+
+        bypass = {
+			is_in_faction_with = AZE
+		NOT = {
+		country_exists = AZE
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = AZE
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = AZE
+				token = token_civilian
+			}
+			add_decryption = {
+				target = AZE
+				ratio = 1.0
+			}
+			AZE = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_the_major_powers
+		icon = Generic_Major_City
+		cost = 10.0
+		prerequisite = {
+			focus = MIT_general_influence_project
+		}
+		x = 95
+		y = 7
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			USA = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			SOV = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			CHI = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_asian_zones
+		icon = major_alliance2
+		cost = 10.0
+		prerequisite = {
+			focus = MIT_influence_the_major_powers
+		}
+		x = 95
+		y = 8
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 175
+		}
+	}
+	focus = {
+		id = MIT_reach_out_china
+		icon = one_china_policy
+		cost = 10
+		prerequisite = {
+			focus = MIT_asian_zones
+		}
+		x = 92
+		y = 9
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+
+		completion_reward = {
+reverse_add_opinion_modifier = { target = CHI modifier = reached_out_a_major_power }
+        add_opinion_modifier = { target = CHI modifier = reached_out_a_major_power }
+} } 
+	focus = {
+		id = MIT_reach_out_russia
+		icon = tsarist_russia
+		cost = 10
+		prerequisite = {
+			focus = MIT_asian_zones
+		}
+		x = 95
+		y = 9
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+
+		completion_reward = {
+reverse_add_opinion_modifier = { target = SOV modifier = reached_out_a_major_power }
+        add_opinion_modifier = { target = SOV modifier = reached_out_a_major_power }
+} } 
+	focus = {
+		id = MIT_finance_azerbaijan
+		icon = rely_on_mil_naz_az
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_reach_out_russia
+		}
+		x = 96
+		y = 10
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+
+        available = {
+		country_exists = AZE
+		NOT = {
+		has_war_with = AZE
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = AZE
+    NOT = {
+	country_exists = AZE
+	 }
+	} }
+	
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = AZE modifier = military_cooperation }
+			131 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			AZE = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+				}
+	focus = {
+		id = MIT_georgian_submit
+		icon = Georgia_Flag_icon
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_reach_out_russia
+		}
+		x = 94
+		y = 10
+
+
+        available = {
+		country_exists = GEO
+		NOT = {
+		has_war_with = GEO
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GEO
+    NOT = {
+	country_exists = GEO
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+	completion_reward = {
+	                TUR = {
+					give_guarantee = GEO
+					}
+					}
+				}
+	focus = {
+		id = MIT_russian_investments
+		icon = russian_investements
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_finance_azerbaijan
+		}
+		prerequisite = {
+			focus = MIT_georgian_submit
+		}
+		x = 95
+		y = 11
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+			add_opinion_modifier = { target = SOV modifier = invested_in_country }
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			935 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+			}
+            set_temp_variable = { int_investment_change = 15.0 }
+			modify_international_investment_effect = yes
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = SOV.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = MIT_cleanize_the_pkk
+		icon = GEO_Artillery_Tactics
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_destroy_the_terrorist_organizations
+		}
+		x = 97
+		y = 16
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		available = {
+		has_idea = TUR_PKK_insurgency_active
+		}
+
+    completion_reward = {
+		add_stability = -0.05
+custom_effect_tooltip = DEC_5_PKK_POINT
+subtract_from_variable = { var = pkk_presence value = 5 }
+			add_to_variable = { TUR_PKK_aggro = -5 }
+			add_to_variable = { TUR_PKK_strength = -5 }		
+		162 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		162 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		935 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	} } 
+	focus = {
+		id = MIT_intelligence_works_against_pkk
+		icon = Generic_Intelligence_Gathering
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_cleanize_the_pkk
+		}
+		x = 96
+		y = 17
+
+
+		completion_reward = {
+   add_ideas = agency_on_kandil
+} } 
+	focus = {
+		id = MIT_relations_committee
+		icon = gunpoint_diplomacy
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_fidanist_out_reach
+		}
+		x = 97
+		y = 2
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+		completion_reward = {
+   add_ideas = relations_commitee
+} } 
+	focus = {
+		id = MIT_reach_out_usa
+		icon = USA_glorify_the_military
+		cost = 10
+		prerequisite = {
+			focus = MIT_asian_zones
+		}
+		x = 98
+		y = 9
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+reverse_add_opinion_modifier = { target = USA modifier = reached_out_a_major_power }
+        add_opinion_modifier = { target = USA modifier = reached_out_a_major_power }
+} } 
+	focus = {
+		id = MIT_american_militaries
+		icon = focus_usaid
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_reach_out_usa
+		}
+		x = 98
+		y = 10
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+		completion_reward = {
+	  			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+			USA = {
+	  			subtract_from_variable = { treasury = -25.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt	
+			}
+create_production_license = {
+    target = USA
+    equipment = {
+        type = artillery_2
+        version = 0
+        new_prioritised = no
+    }
+    cost_factor = 0
+}
+create_production_license = {
+    target = USA
+    equipment = {
+        type = SP_arty_3
+        version = 0
+        new_prioritised = no
+    }
+    cost_factor = 0
+}
+	 add_equipment_to_stockpile = {	type = artillery_2 amount = 500 } 
+	 add_equipment_to_stockpile = {	type = SP_arty_3 amount = 500 }
+			
+		} } 
+	focus = {
+		id = MIT_american_investments
+		icon = usa_investments
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_american_militaries
+		}
+		x = 97
+		y = 11
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+	completion_reward = {
+			add_opinion_modifier = { target = USA modifier = invested_in_country }
+			156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+			}
+            set_temp_variable = { int_investment_change = 15.0 }
+			modify_international_investment_effect = yes
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = MIT_bomb_the_pkk_bases
+		icon = Generic_Jungle_Insurgency
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_cleanize_the_pkk
+		}
+		x = 98
+		y = 17
+
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		available = {
+		has_idea = TUR_PKK_insurgency_active
+		}
+		
+    completion_reward = {
+		army_experience = 75
+custom_effect_tooltip = DEC_5_PKK_POINT
+subtract_from_variable = { var = pkk_presence value = 5 }
+			add_to_variable = { TUR_PKK_aggro = -5 }
+			add_to_variable = { TUR_PKK_strength = -5 }		
+		193 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		571 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		575 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		190 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1.0
+			} }
+		633 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+		633 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1.0
+			} }
+		164 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			} }
+	} } 
+	focus = {
+		id = MIT_modern_incirlik
+		icon = usa_aircraft_advancements
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_american_militaries
+		}
+		x = 99
+		y = 11
+
+
+       available = {
+		controls_state = 161
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+		completion_reward = {
+			161 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 5
+				}
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 2
+				}
+				add_building_construction = {
+					type = fuel_silo
+					instant_build = yes
+					level = 2
+				}
+				add_building_construction = {
+					type = radar_station
+					instant_build = yes
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}  }
+			TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+		} } 
+	focus = {
+		id = MIT_european_program
+		icon = europe
+		cost = 10.0
+		prerequisite = {
+			focus = MIT_general_influence_project
+		}
+		x = 107
+		y = 7
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 175
+		}
+	}
+	focus = {
+		id = MIT_balkan_inluence_program
+		icon = free_balkan_states
+		cost = 0,00
+		prerequisite = {
+			focus = MIT_european_program
+		}
+		x = 104
+		y = 8
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			GRE = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			BUL = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			ROM = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			SER = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			GRE = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			CYP = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_greece_policies
+		icon = Democratic_Greece
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_balkan_inluence_program
+		}
+		x = 103
+		y = 9
+
+
+		available = {
+			network_strength = {
+				target = GRE
+				value > 35
+			}
+		}
+
+        bypass = {
+		is_in_faction_with = GRE
+		NOT = {
+		country_exists = GRE
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = GRE
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = GRE
+				token = token_civilian
+			}
+			add_decryption = {
+				target = GRE
+				ratio = 1.0
+			}
+			GRE = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_greece
+		icon = Kill_Greece
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_greece_policies
+		}
+		x = 101
+		y = 10
+
+
+
+        available = {
+		country_exists = GRE
+		NOT = {
+		has_war_with = GRE
+		 }
+        }
+
+	 bypass = {
+	OR = {
+	has_war_with = GRE
+    NOT = {
+	country_exists = GRE
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			set_temp_variable = { receiver_nation = GRE.id }
+			set_temp_variable = { sender_nation = TUR.id }
+			set_improved_trade_agreement = yes
+
+			set_temp_variable = { target_nation = GRE.id }
+			set_temp_variable = { adding_nation = TUR.id }
+			change_permanent_investment_target = yes
+			set_temp_variable = { target_nation = TUR }
+			set_temp_variable = { adding_nation = GRE }
+			change_permanent_investment_target = yes
+		}
+	}
+	focus = {
+		id = MIT_bulgaria_influence
+		icon = focus_ROM_puppet_bulgaria
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_balkan_inluence_program
+		}
+		x = 105
+		y = 9
+
+
+		available = {
+			network_strength = {
+				target = BUL
+				value > 35
+			}
+		}
+
+        bypass = {
+		is_in_faction_with = BUL
+		NOT = {
+		country_exists = BUL
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+		completion_reward = {
+			add_intel = {
+				target = BUL
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = BUL
+				token = token_civilian
+			}
+			add_decryption = {
+				target = BUL
+				ratio = 1.0
+			}
+			BUL = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_romanian_influence
+		icon = focus_rom_preserve_romania
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_bulgaria_influence
+		}
+		x = 105
+		y = 10
+
+
+		available = {
+			network_strength = {
+				target = ROM
+				value > 35
+			}
+		}
+
+        bypass = {
+		is_in_faction_with = ROM
+		NOT = {
+		country_exists = ROM
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = BUL
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = ROM
+				token = token_civilian
+			}
+			add_decryption = {
+				target = ROM
+				ratio = 1.0
+			}
+			ROM = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_serbian_influence
+		icon = SER_Goverment_building
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_bulgaria_influence
+		}
+		x = 107
+		y = 10
+
+
+		available = {
+			network_strength = {
+				target = SER
+				value > 35
+			}
+		}
+
+
+        bypass = {
+		is_in_faction_with = SER
+		NOT = {
+		country_exists = SER
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = SER
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = SER
+				token = token_civilian
+			}
+			add_decryption = {
+				target = SER
+				ratio = 1.0
+			}
+			SER = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_hungarian_influence
+		icon = attack_hungary
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_serbian_influence
+		}
+		prerequisite = {
+			focus = MIT_romanian_influence
+		}
+		x = 106
+		y = 11
+
+
+		available = {
+			network_strength = {
+				target = HUN
+				value > 35
+			}
+		}
+
+        bypass = {
+		is_in_faction_with = HUN
+		NOT = {
+		country_exists = HUN
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = HUN
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = HUN
+				token = token_civilian
+			}
+			add_decryption = {
+				target = HUN
+				ratio = 1.0
+			}
+			HUN = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_western_european_influence_program
+		icon = Western_Europe
+		cost = 0,00
+		prerequisite = {
+			focus = MIT_european_program
+		}
+		x = 110
+		y = 8
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			PER = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			SAU = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			ISR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			SYR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			IRQ = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			EGY = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_french
+		icon = france
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_western_european_influence_program
+		}
+		x = 108
+		y = 9
+
+
+		available = {
+			network_strength = {
+				target = FRA
+				value > 35
+			}
+		}
+
+
+        bypass = {
+		is_in_faction_with = FRA
+		NOT = {
+		country_exists = FRA
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = FRA
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = FRA
+				token = token_civilian
+			}
+			add_decryption = {
+				target = FRA
+				ratio = 1.0
+			}
+			FRA = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_germans
+		icon = germany_republic
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_western_european_influence_program
+		}
+		x = 110
+		y = 9
+
+
+		available = {
+			network_strength = {
+				target = GER
+				value > 35
+			}
+		}
+
+        bypass = {
+		is_in_faction_with = GER
+		NOT = {
+		country_exists = GER
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = GER
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = GER
+				token = token_civilian
+			}
+			add_decryption = {
+				target = GER
+				ratio = 1.0
+			}
+			GER = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_italians
+		icon = focus_generic_italy_propaganda
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_influence_germans
+		}
+		prerequisite = {
+			focus = MIT_influence_french
+		}
+		x = 109
+		y = 10
+
+
+		available = {
+			network_strength = {
+				target = ITA
+				value > 35
+			}
+		}
+
+
+        bypass = {
+		is_in_faction_with = ITA
+		NOT = {
+		country_exists = ITA
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = ITA
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = ITA
+				token = token_civilian
+			}
+			add_decryption = {
+				target = ITA
+				ratio = 1.0
+			}
+			ITA = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_english
+		icon = PB_ENG_Haig_Initial
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_western_european_influence_program
+		}
+		x = 112
+		y = 9
+
+
+		available = {
+			network_strength = {
+				target = ENG
+				value > 35
+			}
+		}
+
+
+        bypass = {
+		is_in_faction_with = ENG
+		NOT = {
+		country_exists = ENG
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = ENG
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = ENG
+				token = token_civilian
+			}
+			add_decryption = {
+				target = ENG
+				ratio = 1.0
+			}
+			ENG = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_spanish
+		icon = people_of_spain
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_influence_english
+		}
+		prerequisite = {
+			focus = MIT_influence_germans
+		}
+		x = 111
+		y = 10
+
+
+		available = {
+			network_strength = {
+				target = SPR
+				value > 35
+			}
+		}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+     bypass = {
+		is_in_faction_with = SPR
+		NOT = {
+		country_exists = SPR
+		}
+		}
+
+		completion_reward = {
+			add_intel = {
+				target = SPR
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = SPR
+				token = token_civilian
+			}
+			add_decryption = {
+				target = SPR
+				ratio = 1.0
+			}
+			SPR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_european_deal
+		icon = EU_reform
+		cost = 10
+		prerequisite = {
+			focus = MIT_influence_spanish
+		}
+		prerequisite = {
+			focus = MIT_influence_italians
+		}
+		x = 110
+		y = 11
+
+
+        available = {
+        country_exists = GER
+        country_exists = FRA
+        country_exists = ENG
+        country_exists = SPR
+        country_exists = POR
+        country_exists = ITA
+        country_exists = USA
+		NOT = {
+        has_war_with = GER
+        has_war_with = FRA
+        has_war_with = ENG
+        has_war_with = SPR
+        has_war_with = POR
+        has_war_with = ITA
+        has_war_with = USA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+
+		completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = TUR_westernism }
+					reverse_add_opinion_modifier = { target = FRA modifier = TUR_westernism }				
+					reverse_add_opinion_modifier = { target = ENG modifier = TUR_westernism }
+					reverse_add_opinion_modifier = { target = SPR modifier = TUR_westernism }
+					reverse_add_opinion_modifier = { target = POR modifier = TUR_westernism }
+					reverse_add_opinion_modifier = { target = ITA modifier = TUR_westernism }
+					reverse_add_opinion_modifier = { target = USA modifier = TUR_westernism }
+				}
+			}
+	focus = {
+		id = MIT_target_world_documents
+		icon = backstab
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_databreaking_group
+		}
+		x = 120
+		y = 13
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+		    add_command_power = 10
+			add_war_support = 0.02
+		} } 
+	focus = {
+		id = MIT_target_pentagon_files
+		icon = CIAinvolvement
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_target_world_documents
+		}
+		x = 117
+		y = 14
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+		     custon_effect_tooltip = MIT_DATA6
+		    add_command_power = 10
+			add_war_support = 0.02
+		} } 
+	focus = {
+		id = MIT_prime_ministry
+		icon = turkish_republic
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_hakan_fidans_regime
+		}
+		x = 125
+		y = 1
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+        add_political_power = 100
+		add_stability = 0.02
+		} } 
+	focus = {
+		id = MIT_governmental_group
+		icon = turkish_authoritarianism
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_prime_ministry
+		}
+		mutually_exclusive = {
+			focus = MIT_sudden_SADAT_attack
+		}
+		x = 124
+		y = 2
+
+		available = {
+			is_power_balance_in_range = {
+				id = TUR_mit_balance
+				range < MIT_middle_left_side_range  
+			}
+		}
+        
+		available = {
+		NOT = {
+		has_global_flag = DARK_PARALYSIS
+		} }
+
+		completion_reward = {
+    custom_effect_tooltip = GOVERNMENTAL_GROUP_DCS
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.05
+	}
+		} }
+	focus = {
+		id = MIT_powers_to_fahrettin_altun
+		icon = fahrettin_altun
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_governmental_group
+		}
+		x = 122
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.05
+	}
+			add_ideas = powers_to_fahrettin_altun
+		}
+	}
+	focus = {
+		id = MIT_new_media_group
+		icon = media_awareness
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_powers_to_fahrettin_altun
+		}
+		x = 120
+		y = 4
+
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.05
+	}
+				custom_effect_tooltip = PRESS_HAS_CONTROLLED
+				set_global_flag = PRESS_HAS_MANAGED
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+}
+add_ideas = fahrettin_altuns_media_group
+} } 
+	focus = {
+		id = MIT_strenghten_bureocracy
+		icon = MEX_Corrupt_government
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_powers_to_fahrettin_altun
+		}
+		x = 124
+		y = 4
+
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.05
+	}
+   add_ideas = strenghten_the_bureaucracy
+} } 
+	focus = {
+		id = MIT_sudden_SADAT_attack
+		icon = sadat_group
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_prime_ministry
+		}
+		mutually_exclusive = {
+			focus = MIT_governmental_group
+		}
+		x = 126
+		y = 2
+
+		
+		available = {
+			is_power_balance_in_range = {
+				id = TUR_mit_balance
+				range > MIT_middle_right_side_range  
+			}
+		}
+
+		available = {
+		NOT = {
+		has_global_flag = DARK_PARALYSIS
+		} }
+
+		completion_reward = {
+    custom_effect_tooltip = SADAT_GROUP_DCS
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	}
+		} }
+	focus = {
+		id = MIT_powers_to_military_leader
+		icon = melih_tanriverdi
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_sudden_SADAT_attack
+		}
+		x = 128
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_ideas = powers_to_melih_tanriverdi
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	}
+		}
+	}
+	focus = {
+		id = MIT_fund_the_SADAT_group
+		icon = MEX_War_on_corruption
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_powers_to_military_leader
+		}
+		x = 126
+		y = 4
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+
+		completion_reward = {
+
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	}
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt	
+	 }
+	}
+	focus = {
+		id = MIT_strenghten_the_military_factions
+		icon = focus_fidayin
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_powers_to_military_leader
+		}
+		x = 128
+		y = 4
+
+       search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+
+		completion_reward = {
+				set_temp_variable = { temp_opinion = 5 }	
+            change_the_oligarchs_opinion = yes	
+				set_temp_variable = { temp_opinion = 5}	
+            change_the_military_opinion = yes	
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	} }
+	}
+	focus = {
+		id = MIT_strenghten_the_oligarchy
+		icon = oligarchs
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_strenghten_the_military_factions
+		}
+		prerequisite = {
+			focus = MIT_fund_the_SADAT_group
+		}
+		x = 127
+		y = 5
+
+       search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+
+		completion_reward = {
+			set_temp_variable = { temp_opinion = 10 }
+			change_oligarchs_opinion = yes
+    add_ideas = controlled_media 
+				custom_effect_tooltip = PRESS_HAS_CONTROLLED
+				set_global_flag = PRESS_HAS_MANAGED
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	} }
+	}
+	focus = {
+		id = MIT_open_private_factories
+		icon = MEX_Corruption_deal
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_powers_to_military_leader
+		}
+		x = 130
+		y = 4
+
+           completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	}
+add_offsite_building = { type = arms_factory level = 1 }
+add_offsite_building = { type = arms_factory level = 1 }
+					}
+	}
+	focus = {
+		id = MIT_strenghten_the_sectoral_campaign
+		icon = farming_sector
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_open_private_factories
+		}
+		prerequisite = {
+			focus = MIT_strenghten_the_military_factions
+		}
+		x = 129
+		y = 5
+
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	}
+			add_ideas = the_sectoral_campaign
+		}
+	}
+	focus = {
+		id = MIT_abandon_the_military_sector
+		icon = Focus_Study_Submachineguns
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_strenghten_the_sectoral_campaign
+		}
+		prerequisite = {
+			focus = MIT_strenghten_the_oligarchy
+		}
+		x = 128
+		y = 6
+
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.03
+	}
+			add_ideas = abandon_military_sector
+		}
+	}
+	focus = {
+		id = MIT_overthrown_The_government
+		icon = Generic_Revanchism02
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_abandon_the_military_sector
+		}
+		mutually_exclusive = {
+			focus = MIT_governmental_powers_powered
+		}
+		x = 126
+		y = 7
+
+		
+
+		completion_reward = {
+			remove_ideas = mit
+				remove_power_balance = {
+					id = TUR_mit_balance
+				}
+swap_ideas = { 
+  remove_idea = powers_to_melih_tanriverdi
+  add_idea = powers_to_melih_tanriverdi_2
+} } }
+	focus = {
+		id = MIT_the_great_march
+		icon = the_road_of_life
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_overthrown_The_government
+		}
+		x = 127
+		y = 8
+
+	search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+       add_timed_idea = { idea = the_great_march  days = 100 }
+		custom_effect_tooltip = MIT_MARCH_SADAT
+}   } 
+	focus = {
+		id = MIT_the_betrayal
+		icon = iran_take_down_the_nation
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_secret_jewish_take_over
+		}
+		x = 130
+		y = 13
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+	    add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = MIT_jewish_gold
+		icon = star2_isr
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_the_betrayal
+		}
+		x = 129
+		y = 14
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+add_ideas = jewish_gold
+} } 
+	focus = {
+		id = MIT_restore_MIT
+		icon = mit
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_overthrown_The_government
+		}
+		x = 131
+		y = 8
+
+
+		completion_reward = {
+			add_ideas = mit
+		}
+	}
+	focus = {
+		id = MIT_new_bureocracy
+		icon = x55
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_restore_MIT
+		}
+		x = 130
+		y = 9
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+   add_ideas = new_bureaucracy
+} } 
+	focus = {
+		id = MIT_arrest_the_espionage_officals
+		icon = whiteflagtanklol
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_restore_MIT
+		}
+		x = 132
+		y = 9
+
+
+		completion_reward = {
+                add_manpower = 100000
+		} } 
+	focus = {
+		id = MIT_SADAT_governed_turkey
+		icon = sadat_group
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_arrest_the_espionage_officals
+		}
+		prerequisite = {
+			focus = MIT_new_bureocracy
+		}
+		x = 131
+		y = 10
+
+		completion_reward = {
+                add_war_support = 0.1
+		} } 
+	focus = {
+		id = MIT_armedegon_thoughts
+		icon = Jews_In_Space
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_the_betrayal
+		}
+		x = 131
+		y = 14
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+add_ideas = armedegon_thoughts
+} } 
+	focus = {
+		id = MIT_works_on_arms
+		icon = isr_drone_attack
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_the_betrayal
+		}
+		x = 133
+		y = 14
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+		        search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+		controls_state = 159
+		controls_state = 160
+		}
+
+		completion_reward = {
+			army_experience = 25
+                159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+                160 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_prepare_for_the_last_moment
+		icon = goal_ISR_jew_state
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_armedegon_thoughts
+		}
+		prerequisite = {
+			focus = MIT_works_on_arms
+		}
+		x = 132
+		y = 15
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+   add_ideas = for_the_last_moment
+} } 
+	focus = {
+		id = MIT_SADAT_APCs
+		icon = apc
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_offer_help_from_SADAT
+		}
+		x = 45
+		y = 7
+
+		
+		available = {
+			is_power_balance_in_range = {
+				id = TUR_mit_balance
+				range > MIT_right_side_range  
+			}
+		}
+		available = {
+		has_war_with = WTU
+		}
+		
+			search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	}
+	add_equipment_to_stockpile = {
+		type = APC_2		 #M113
+		amount = 500
+		producer = USA
+	}
+		} }
+	focus = {
+		id = MIT_SADAT_MBTs
+		icon = Focus_Examine_Foreign_Tanks
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_offer_help_from_SADAT
+		}
+		x = 43
+		y = 7
+
+		
+		available = {
+			is_power_balance_in_range = {
+				id = TUR_mit_balance
+				range > MIT_right_side_range  
+			}
+		}
+		available = {
+		has_war_with = WTU
+		}
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	}
+	add_equipment_to_stockpile = {
+		type = MBT_2		 #M113
+		amount = 450
+		producer = GER
+	}
+		} }
+	focus = {
+		id = MIT_agreement_with_cem_uzan
+		icon = uzan_group
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_push_oligarchs
+		}
+		x = 44
+		y = 13
+
+	search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+   add_ideas = cem_uzan_group
+} } 
+	focus = {
+		id = MIT_dominate_the_technology_sector
+		icon = goal_JAP_tech_university
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_agreement_with_cem_uzan
+		}
+		x = 43
+		y = 14
+
+
+        available = {
+		controls_state = 157
+		controls_state = 156
+		}
+
+		completion_reward = {
+                157 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = internet_station
+					instant_build = yes
+					level = 1
+				} }
+                156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = internet_station
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_telsim
+		icon = goal_JAP_tablet_computer
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_agreement_with_cem_uzan
+		}
+		x = 45
+		y = 14
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+        available = {
+		controls_state = 934
+		}
+
+		completion_reward = {
+                934 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} 
+				add_building_construction = {
+					type = internet_station
+					instant_build = yes
+					level = 1
+				} 
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } }
+	focus = {
+		id = MIT_national_tecnology_investments
+		icon = tech_sharing
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_telsim
+		}
+		x = 45
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+        available = {
+		controls_state = 159
+		controls_state = 160
+		}
+
+		completion_reward = {
+                159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = internet_station
+					instant_build = yes
+					level = 1
+				} }
+                160 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = internet_station
+					instant_build = yes
+					level = 1
+				} }
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_new_media
+		icon = liberal_press
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_dominate_the_technology_sector
+		}
+		x = 43
+		y = 15
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+
+        available = {
+		controls_state = 934
+		}
+
+		completion_reward = {
+                934 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+                934 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} }
+
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = MIT_partnership_with_uzan
+		icon = strait_messina_bridge
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_national_tecnology_investments
+		}
+		prerequisite = {
+			focus = MIT_new_media
+		}
+		x = 44
+		y = 16
+
+	search_filters = {FOCUS_FILTER_INDUSTRY}		
+			
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = cem_uzan_group
+  add_idea = full_partnership_with_cem_uzan_group
+} } }
+	focus = {
+		id = MIT_oligarchic_government
+		icon = oligarchs
+		cost = 15,00
+		prerequisite = {
+			focus = MIT_copenhagen_membership
+		}
+		x = 47
+		y = 16
+
+	search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+available = {
+		has_idea = full_partnership_with_cem_uzan_group
+		has_idea = full_partnership_with_koc_group
+		has_idea = full_partnership_with_sabanci_group
+}
+
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = oligarchic_economic_model
+  add_idea = oligarchic_economic_model_2
+} 
+		remove_ideas = full_partnership_with_cem_uzan_group
+		remove_ideas = full_partnership_with_koc_group
+		remove_ideas = full_partnership_with_sabanci_group
+		} }
+      
+	focus = {
+		id = MIT_happy_family_policies
+		icon = family
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_expand_the_welfare
+		}
+		prerequisite = {
+			focus = MIT_social_society
+		}
+		x = 62
+		y = 4
+
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+   add_ideas = happy_family_policies
+} } 
+	focus = {
+		id = MIT_old_and_young_bank
+		icon = Generic_Working_Class_Family
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_limit_the_police
+		}
+		prerequisite = {
+			focus = MIT_happy_family_policies
+		}
+		x = 63
+		y = 5
+
+		
+		completion_reward = {
+		add_ideas = family_and_youth_bank
+}   }
+	focus = {
+		id = MIT_influence_egypt
+		icon = egypt_map
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_influence_iran
+		}
+		prerequisite = {
+			focus = MIT_influence_saudi_arabia
+		}
+		x = 79
+		y = 11
+
+
+		available = {
+			network_strength = {
+				target = EGY
+				value > 35
+			}
+		}
+        bypass = {
+			is_in_faction_with = EGY
+		NOT = {
+		country_exists = EGY
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = EGY
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = EGY
+				token = token_civilian
+			}
+			add_decryption = {
+				target = EGY
+				ratio = 1.0
+			}
+			EGY = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_intervene_in_the_syrian_civilwar
+		icon = syria_resistance
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_middle_eastern_northern_intervention
+		}
+		x = 84
+		y = 10
+
+
+		available = {
+			network_strength = {
+				target = SYR
+				value > 35
+			}
+		}
+
+        bypass = {
+		is_in_faction_with = SYR
+		NOT = {
+		country_exists = SYR
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+			add_intel = {
+				target = SYR
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = SYR
+				token = token_civilian
+			}
+			add_decryption = {
+				target = SYR
+				ratio = 1.0
+			}
+			SYR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_turkmens
+		icon = turkmen
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_central_asian_influence
+		}
+		x = 87
+		y = 9
+
+
+		available = {
+			network_strength = {
+				target = TRK
+				value > 35
+			}
+		}
+
+        bypass = {
+		is_in_faction_with = TRK
+		NOT = {
+		country_exists = TRK
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+		completion_reward = {
+			add_intel = {
+				target = TRK
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = TRK
+				token = token_civilian
+			}
+			add_decryption = {
+				target = TRK
+				ratio = 1.0
+			}
+			TRK = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_uzbeksitan
+		icon = align_to_uzbekistan
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_influence_turkmens
+		}
+		prerequisite = {
+			focus = MIT_influence_kazakhs
+		}
+		x = 86
+		y = 10
+
+
+		available = {
+			network_strength = {
+				target = UZB
+				value > 35
+			}
+		}
+
+        bypass = {
+			is_in_faction_with = UZB
+		NOT = {
+		country_exists = UZB
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+		completion_reward = {
+			add_intel = {
+				target = UZB
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = UZB
+				token = token_civilian
+			}
+			add_decryption = {
+				target = UZB
+				ratio = 1.0
+			}
+			UZB = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+	focus = {
+		id = MIT_influence_kyrgzstan
+		icon = align_to_kyrgyzstan
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_influence_azerbaijanis
+		}
+		prerequisite = {
+			focus = MIT_influence_turkmens
+		}
+		x = 88
+		y = 10
+
+
+		available = {
+			network_strength = {
+				target = KYR
+				value > 35
+			}
+		}
+
+        bypass = {
+			is_in_faction_with = KYR
+		NOT = {
+		country_exists = KYR
+		}
+		}
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+		completion_reward = {
+			add_intel = {
+				target = KYR
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			add_operation_token = {
+				tag = KYR
+				token = token_civilian
+			}
+			add_decryption = {
+				target = KYR
+				ratio = 1.0
+			}
+			KYR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+		}
+	}
+
+     focus = {
+		id = MIT_greek_island_crisis
+		icon = focus_ROM_secure_greece
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_greece_policies
+		}
+		x = 103
+		y = 10
+
+	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+
+        available = {
+		country_exists = GRE
+		NOT = {
+		has_war_with = GRE
+		 }
+		GRE = {
+		influence_higher_30 = yes
+		}
+        }
+
+        id = ATA_send_forces_to_islands
+        icon = anti_war_with_big_gun
+        cost = 7.2
+        prerequisite = {
+             focus = ATA_force_UN_recognition
+        }
+        x = 41
+        y = 7
+
+        search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+        search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+
+
+      available = {
+        country_exists = GRE
+        NOT = {
+        has_war_with = GRE
+         }
+      }
+
+  bypass = {
+   OR = {
+   has_war_with = GRE
+   has_faction_with = GRE
+  NOT = {
+   country_exists = GRE
+    }
+   } }
+	
+	completion_reward = {
+				TUR = { leave_faction = yes }
+				GRE = { leave_faction = yes }
+		GRE=  {
+		create_wargoal = {
+			type = annex_everything
+			target = GRE
+		}
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = GRE
+		}
+			}
+	}
+
+	focus = {
+		id = MIT_turkic_politics
+		icon = align_to_turkic_council
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_influence_kyrgzstan
+		}
+		prerequisite = {
+			focus = MIT_influence_uzbeksitan
+		}
+		x = 87
+		y = 11
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+        
+        available = {
+        country_exists = AZE
+        country_exists = KAZ
+        country_exists = TRK
+        country_exists = UZB
+        country_exists = KYR
+		NOT = {
+        has_war_with = AZE
+        has_war_with = KAZ
+        has_war_with = TRK
+        has_war_with = UZB
+        has_war_with = KYR
+		 }
+        }
+            completion_reward = {
+				add_political_power = 25
+					reverse_add_opinion_modifier = { target = AZE modifier = turkic_united_front }
+					reverse_add_opinion_modifier = { target = KAZ modifier = turkic_united_front }
+					reverse_add_opinion_modifier = { target = TRK modifier = turkic_united_front }
+	                reverse_add_opinion_modifier = { target = UZB modifier = turkic_united_front }
+	                reverse_add_opinion_modifier = { target = KYR modifier = turkic_united_front }
+			}
+	}
+	focus = {
+		id = MIT_reach_out_israel
+		icon = align_to_israel
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_achieve_peace_in_the_region
+		}
+		prerequisite = {
+			focus = MIT_influence_egypt
+		}
+		x = 81
+		y = 12
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+
+		completion_reward = {
+reverse_add_opinion_modifier = { target = ISR modifier = reached_out_a_major_power }
+        add_opinion_modifier = { target = ISR modifier = reached_out_a_major_power }
+} } 
+	focus = {
+		id = MIT_israel_palestine_peace_deal
+		icon = two_state_solution
+		cost = 10.0
+		prerequisite = {
+			focus = MIT_reach_out_israel
+		}
+		x = 81
+		y = 13
+
+
+        available = {
+		country_exists = ISR
+		country_exists = PAL
+		NOT = {
+		has_war_with = ISR 
+		has_war_with = PAL
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = PAL
+	has_war_with = ISR
+	 }
+	 NOT = {
+	 country_exists = PAL
+	 country_exists = ISR
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+            completion_reward = {
+					reverse_add_opinion_modifier = { target = ISR modifier = peace_in_the_levant }
+					reverse_add_opinion_modifier = { target = PAL modifier = peace_in_the_levant }
+                    give_guarantee = PAL
+                    give_guarantee = ISR					
+
+					ISR = {
+add_offsite_building = { type = arms_factory level = 1 }
+					}
+					PAL = {
+add_offsite_building = { type = industrial_complex level = 1 }
+					}
+					TUR = {
+add_offsite_building = { type = arms_factory level = 1 }
+					}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+
+			ISR = {
+					set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+					}
+
+			TUR = {
+					set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = ISR.id }
+				change_influence_percentage = yes
+					}			
+	}	}
+	focus = {
+		id = MIT_united_turkic_intelligence
+		icon = wolfinsheepsskin
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_turkic_politics
+		}
+		x = 87
+		y = 12
+
+		        available = {
+        country_exists = AZE
+        country_exists = KAZ
+        country_exists = TRK
+        country_exists = UZB
+        country_exists = KYR
+		NOT = {
+        has_war_with = AZE
+        has_war_with = KAZ
+        has_war_with = TRK
+        has_war_with = UZB
+        has_war_with = KYR
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		add_ideas = united_turkic_espionage
+}   }
+	focus = {
+		id = MIT_achieve_peace_in_the_region
+		icon = syrian_soldier
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_intervene_in_the_syrian_civilwar
+		}
+		prerequisite = {
+			focus = MIT_invade_northern_syria
+		}
+		x = 83
+		y = 11
+
+
+        available = {
+		country_exists = IRQ
+		NOT = {
+		has_war_with = IRQ
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = IRQ
+    NOT = {
+	country_exists = IRQ
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = IRQ
+		}
+ }
+}
+	focus = {
+		id = MIT_new_TURKSAT
+		icon = international_space_station
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_united_turkic_intelligence
+		}
+		x = 87
+		y = 13
+
+        available = {
+        country_exists = AZE
+        country_exists = KAZ
+        country_exists = TRK
+        country_exists = UZB
+        country_exists = KYR
+		NOT = {
+        has_war_with = AZE
+        has_war_with = KAZ
+        has_war_with = TRK
+        has_war_with = UZB
+        has_war_with = KYR
+		 }
+        }
+		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = united_turkic_espionage
+  add_idea = united_turkic_TURKSAT
+}
+      
+}   }
+	focus = {
+		id = MIT_invade_cyprus
+		icon = attack_cyprus
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_greek_island_crisis
+		}
+		prerequisite = {
+			focus = MIT_influence_greece
+		}
+		x = 102
+		y = 11
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+
+
+        available = {
+		country_exists = CYP
+		NOT = {
+		has_war_with = CYP
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CYP
+    NOT = {
+	country_exists = CYP
+	 }
+	} }
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = CYP
+		}
+			}
+	}
+	focus = {
+		id = MIT_reach_out_yugoslavia
+		icon = Horse_serbia
+		cost = 0,00
+		prerequisite = {
+			focus = MIT_hungarian_influence
+		}
+		prerequisite = {
+			focus = MIT_invade_cyprus
+		}
+		x = 104
+		y = 12
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+reverse_add_opinion_modifier = { target = SER modifier = reached_out_a_major_power }
+        add_opinion_modifier = { target = SER modifier = reached_out_a_major_power }
+} } 
+	focus = {
+		id = MIT_balkan_peae_deal
+		icon = Balkan_War10
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_reach_out_yugoslavia
+		}
+		x = 104
+		y = 13
+
+	
+        available = {
+        NOT = {
+        has_war_with = BUL
+        has_war_with = GRE
+        has_war_with = TUR
+         }		
+        }
+		
+		bypass = {
+		controls_state = 974
+		}
+		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+custom_effect_tooltip = BALKAN_MEDIATOR	
+hidden_effect = {
+SER = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = FYR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+KOS = {
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = FYR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+FYR = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+BOS = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = FYR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+CRO = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MAC 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+SLV = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = FYR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MNT 
+	relation = non_aggression_pact 
+} }
+MNT = {
+diplomatic_relation = { 
+	country = KOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = MAC 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BOS 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = CRO 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SLV 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SER 
+	relation = non_aggression_pact 
+} } }
+hidden_effect = {	
+BUL = {
+diplomatic_relation = { 
+	country = TUR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = GRE 
+	relation = non_aggression_pact 
+} }
+GRE = {
+diplomatic_relation = { 
+	country = TUR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = BUL 
+	relation = non_aggression_pact 
+} }
+TUR = {
+diplomatic_relation = { 
+	country = BUL 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = GRE 
+	relation = non_aggression_pact 
+} } } } } 
+	focus = {
+		id = MIT_schengen_visa_deal
+		icon = EU_constitution
+		cost = 10
+		prerequisite = {
+			focus = MIT_european_deal
+		}
+		x = 110
+		y = 12
+
+
+
+        available = {
+        country_exists = GER
+        country_exists = FRA
+        country_exists = ENG
+        country_exists = SPR
+        country_exists = POR
+        country_exists = ITA
+        country_exists = USA
+		NOT = {
+        has_war_with = GER
+        has_war_with = FRA
+        has_war_with = ENG
+        has_war_with = SPR
+        has_war_with = POR
+        has_war_with = ITA
+        has_war_with = USA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+add_ideas = free_eu_visa_deal  
+}   }
+	focus = {
+		id = MIT_eu_espionage_deal
+		icon = EU_GDPR
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_schengen_visa_deal
+		}
+		x = 110
+		y = 13
+
+
+
+        available = {
+        country_exists = GER
+        country_exists = FRA
+        country_exists = ENG
+        country_exists = SPR
+        country_exists = POR
+        country_exists = ITA
+        country_exists = USA
+		NOT = {
+        has_war_with = GER
+        has_war_with = FRA
+        has_war_with = ENG
+        has_war_with = SPR
+        has_war_with = POR
+        has_war_with = ITA
+        has_war_with = USA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+
+		completion_reward = {
+add_ideas = eu_espionage_deal
+}   }
+	focus = {
+		id = MIT_chinese_investments
+		icon = chinese_rmb
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_chinese_road_iniative
+		}
+		x = 93
+		y = 11
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+			add_opinion_modifier = { target = CHI modifier = invested_in_country }
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			935 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			}
+            set_temp_variable = { int_investment_change = 25.0 }
+			modify_international_investment_effect = yes		
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = MIT_turkey_investor_dream
+		icon = man_the_factories
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_american_investments
+			focus = MIT_russian_investments
+			focus = MIT_chinese_investments
+		}
+		x = 95
+		y = 12
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+   add_ideas = turkish_investor_dream
+} } 
+	focus = {
+		id = MIT_turkish_investment_program
+		icon = turkish_republic
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_turkey_investor_dream
+		}
+		x = 95
+		y = 13
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+				
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = turkish_investor_dream
+  add_idea = turkish_investor_dream_2
+}
+      
+}   }
+	focus = {
+		id = MIT_chinese_road_iniative
+		icon = blr_china_modernisation_railtrain
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_reach_out_china
+		}
+		x = 92
+		y = 10
+
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+    available = {
+	controls_state = 161
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			159 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			}
+            set_temp_variable = { int_investment_change = 25.0 }
+			modify_international_investment_effect = yes		
+					}
+				}
+	focus = {
+		id = MIT_strenghtened_silkway
+		icon = mandate_of_heaven
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_chinese_road_iniative
+		}
+		x = 91
+		y = 11
+
+
+search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_INFLUENCE}
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+
+    available = {
+	controls_state = 934
+	controls_state = 155
+	}
+
+	completion_reward = {
+					TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			155 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+			}
+            set_temp_variable = { int_investment_change = 15.0 }
+			modify_international_investment_effect = yes
+			} }	}
+	focus = {
+		id = MIT_strenghten_CIMERw
+		icon = the_cimer_focus
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_powers_to_fahrettin_altun
+		}
+		x = 122
+		y = 4
+
+
+
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.05
+	}
+add_ideas = cimer_mit
+} } 
+	focus = {
+		id = MIT_media_censorship
+		icon = internet_censorship
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_strenghten_CIMERw
+		}
+		prerequisite = {
+			focus = MIT_new_media_group
+		}
+		x = 121
+		y = 5
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+    completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.05
+	}
+    add_ideas = controlled_media 
+				custom_effect_tooltip = PRESS_HAS_CONTROLLED
+				set_global_flag = PRESS_HAS_MANAGED
+	} }
+	focus = {
+		id = MIT_reform_the_corruption
+		icon = MEX_Purge_corrupt_judges
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_strenghten_bureocracy
+		}
+		prerequisite = {
+			focus = MIT_strenghten_CIMERw
+		}
+		x = 123
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.05
+	}
+			decrease_corruption = yes
+		}
+	}
+	focus = {
+		id = MIT_turkish_genom_project
+		icon = war2_green
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_reform_the_corruption
+		}
+		prerequisite = {
+			focus = MIT_media_censorship
+		}
+		x = 122
+		y = 6
+
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.03
+	}
+			add_ideas = turkish_genom_project
+		}
+	}
+	focus = {
+		id = MIT_governmental_powers_powered
+		icon = goverment_building_sheep
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_turkish_genom_project
+		}
+		mutually_exclusive = {
+			focus = MIT_overthrown_The_government
+		}
+		x = 124
+		y = 7
+
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.03
+	}
+		}
+	}
+	focus = {
+		id = MIT_request_support_from_USA
+		icon = politcal_unrest_usa
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_the_great_march
+		}
+		x = 128
+		y = 9
+
+	search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		remove_ideas = the_great_march
+       add_timed_idea = { idea = the_great_march  days = 150 }
+       custom_effect_tooltip = MIT_MARCH_SADAT_TIME
+}   } 
+	focus = {
+		id = MIT_fahrettin_altun_and_his_power
+		icon = fahrettin_altun_2
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_governmental_powers_powered
+		}
+		x = 123
+		y = 8
+
+		
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.03
+	}
+swap_ideas = { 
+  remove_idea = powers_to_fahrettin_altun
+  add_idea = powers_to_fahrettin_altun_2
+} } }
+	focus = {
+		id = MIT_request_support_from_kurdistan
+		icon = maquis
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_the_great_march
+		}
+		x = 126
+		y = 9
+
+	search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+		completion_reward = {
+		remove_ideas = the_great_march
+       add_timed_idea = { idea = the_great_march  days = 150 }
+       custom_effect_tooltip = MIT_MARCH_SADAT_TIME
+}   } 
+	focus = {
+		id = MIT_declare_the_new_government
+		icon = turk_militia
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_request_support_from_USA
+		}
+		prerequisite = {
+			focus = MIT_request_support_from_kurdistan
+		}
+		x = 127
+		y = 10
+
+	search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+		remove_ideas = the_great_march
+        country_event = TurkeyF.225
+       custom_effect_tooltip = MIT_MARCH_SADAT_MOVE
+}   } 
+	focus = {
+		id = MIT_front_of_presidencys
+		icon = powers_of_turkish_presidency
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_the_loyalty
+		}
+		prerequisite = {
+			focus = MIT_strenghten_CIMERs
+		}
+		x = 123
+		y = 10
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+				remove_power_balance = {
+					id = TUR_mit_balance
+				}
+       add_ideas = the_national_front
+      }
+	}
+	focus = {
+		id = MIT_the_loyalty
+		icon = turk_flags
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_fahrettin_altun_and_his_power
+		}
+		x = 124
+		y = 9
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.03
+	}
+		}
+	}
+	focus = {
+		id = MIT_strenghten_CIMERs
+		icon = the_cimer_focus
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_fahrettin_altun_and_his_power
+		}
+		x = 122
+		y = 9
+
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.03
+	}
+			swap_ideas = {
+			add_idea = cimer_mit2
+			remove_idea = cimer_mit
+			}
+		}
+	}
+	focus = {
+		id = MIT_skynet_investments
+		icon = cctv
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_governmental_powers_powered
+		}
+		x = 119
+		y = 8
+
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.03
+	}
+   add_ideas = skynet_investments
+} } 
+	focus = {
+		id = MIT_ask_loyalty_to_SADAT
+		icon = sadat_group
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_skynet_investments
+		}
+		x = 120
+		y = 9
+
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.05
+	}
+} } 
+	focus = {
+		id = MIT_ask_loyalty_to_kemalists
+		icon = protection_wall_of_kemalism
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_skynet_investments
+		}
+		x = 118
+		y = 9
+
+		search_filters = {FOCUS_FILTER_TURKISH_KEMALISM}
+
+		completion_reward = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.05
+	}
+} } 
+	focus = {
+		id = MIT_destroy_the_terrorists
+		icon = Generic_Execute_Dissidents02
+		cost = 7.2
+		prerequisite = {
+			focus = MIT_ask_loyalty_to_SADAT
+		}
+		prerequisite = {
+			focus = MIT_ask_loyalty_to_kemalists
+		}
+		x = 119
+		y = 10
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+		add_war_support = 0.03
+		army_experience = 25
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.02
+	}
+} } 
+	focus = {
+		id = MIT_cleanize_the_gulenist_movement
+		icon = fallen_goverment_1
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_destroy_the_terrorist_organizations
+		}
+		x = 93
+		y = 16
+
+
+		search_filters = {FOCUS_FILTER_NAME}
+		
+		completion_reward = {
+        add_ideas = betrayal_from_FETO
+custom_effect_tooltip = WARN_GULEN
+		custom_effect_tooltip = RECOGNIZE_TKPS_THOUGHTS
+			set_power_balance = {
+					id = TRGX_power_balance
+					left_side = TRGX_default_left_side 
+					right_side = TRGX_default_right_side 
+					set_value = -0.25
+				}
+				}
+			}
+	focus = {
+		id = MIT_pentagon_intelligence
+		icon = USA_weaken_the_house
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_cleanize_the_gulenist_movement
+		}
+		x = 94
+		y = 17
+
+		search_filters = {FOCUS_FILTER_NAME}
+
+		completion_reward = {
+   add_ideas = agency_on_pensylvania
+} } 
+	focus = {
+		id = MIT_control_mosques
+		icon = loosen_secularism_laws
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_cleanize_the_gulenist_movement
+		}
+		x = 92
+		y = 17
+
+
+		search_filters = {FOCUS_FILTER_NAME}
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		available = {
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_left_side_range  
+			}
+		}
+	
+		completion_reward = {
+			TRGX_bop_very_low_decrease_effect = yes
+swap_ideas = {
+                add_idea = betrayal_from_FETO1
+                remove_idea = betrayal_from_FETO
+				}
+				
+		        add_stability = 0.03
+				add_political_power = -75
+				set_temp_variable = { temp_opinion = -10 }	
+            change_the_military_opinion = yes	
+				set_temp_variable = { temp_opinion = 15 }	
+            change_the_ulema_opinion = yes
+			add_ideas = mosque_law
+				}
+			}
+	focus = {
+		id = MIT_suicide_the_gulen
+		icon = spec-ops
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_united_front_against_gulenism
+		}
+		x = 93
+		y = 19
+
+
+		search_filters = {FOCUS_FILTER_NAME}
+
+		completion_reward = {
+	set_global_flag = UNLOCK_GULEN_DEC
+	custom_effect_tooltip = UNLOCK_AS_GULEN
+				 }		
+	}
+	focus = {
+		id = MIT_united_front_against_gulenism
+		icon = ummah
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_pentagon_intelligence
+		}
+		prerequisite = {
+			focus = MIT_control_mosques
+		}
+		x = 93
+		y = 18
+	
+		search_filters = {FOCUS_FILTER_NAME}
+
+			
+		available = {
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_middle_left_side_range  
+			}
+		}
+
+
+		completion_reward = {
+	retire_character = ilhan_tolu
+	retire_character = mustafa_ozsoy
+	retire_character = TUR_akin_ozturk
+		        swap_ideas = {
+                add_idea = betrayal_from_FETO2
+                remove_idea = betrayal_from_FETO1 
+				 }
+				}
+			
+	}
+	focus = {
+		id = MIT_industrialize_the_eastern_region
+		icon = industry2
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_bomb_the_pkk_bases
+		}
+		prerequisite = {
+			focus = MIT_intelligence_works_against_pkk
+		}
+		x = 97
+		y = 18
+
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+
+        available = {
+		controls_state = 935
+		controls_state = 162
+		}
+
+		completion_reward = {
+custom_effect_tooltip = DEC_5_PKK_POINT
+subtract_from_variable = { var = pkk_presence value = 5 }
+			add_to_variable = { TUR_PKK_aggro = -5 }
+			add_to_variable = { TUR_PKK_strength = -5 }		
+                935 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+                162 = {
+					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}  }
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } }
+	focus = {
+		id = MIT_end_of_the_pkk
+		icon = blr_t72_bme
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_industrialize_the_eastern_region
+		}
+		x = 97
+		y = 19
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+        completion_reward = {
+			add_stability = 0.05
+	TUR_remove_pkk = yes
+	} }
+	focus = {
+		id = MIT_target_russian_files
+		icon = attack_russia_chechnya
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_target_world_documents
+		}
+		x = 119
+		y = 14
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+				    custom_effect_tooltip = MIT_DATA5
+		    add_command_power = 10
+		} } 
+	focus = {
+		id = MIT_target_bitcoic_files
+		icon = bitcoins
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_target_world_documents
+		}
+		x = 121
+		y = 14
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = MIT_DATA4
+		    add_command_power = 10
+		} } 
+	focus = {
+		id = MIT_target_M16_files
+		icon = big_ben_gay
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_target_world_documents
+		}
+		x = 123
+		y = 14
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = MIT_DATA1
+		    add_command_power = 10
+		} } 
+	focus = {
+		id = MIT_target_saudi_arabian_files
+		icon = attack_saudi_arabia
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_target_russian_files
+		}
+		prerequisite = {
+			focus = MIT_target_pentagon_files
+		}
+		x = 118
+		y = 15
+
+
+		completion_reward = {
+				    custom_effect_tooltip = MIT_DATA2
+		    add_command_power = 10
+		} } 
+	focus = {
+		id = MIT_target_iranian_files
+		icon = iran_flag_man
+		cost = 5,00
+		prerequisite = {
+			focus = MIT_target_bitcoic_files
+		}
+		prerequisite = {
+			focus = MIT_target_M16_files
+		}
+		x = 122
+		y = 15
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+				    custom_effect_tooltip = MIT_DATA3
+		    add_command_power = 10
+		} } 
+	focus = {
+		id = MIT_jewish_investments
+		icon = star1_isr
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_the_betrayal
+		}
+		x = 127
+		y = 14
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+        available = {
+		country_exists = ISR
+		NOT = {
+		has_war_with = ISR
+		 }
+        }
+
+		available = {
+		controls_state = 156
+		controls_state = 934
+		controls_state = 159
+		}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = ISR modifier = invested_in_country }
+			156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} }
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = ISR.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = MIT_alliance_with_israel
+		icon = one_state_solution
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_jewish_gold
+		}
+		prerequisite = {
+			focus = MIT_jewish_investments
+		}
+		x = 128
+		y = 15
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+	completion_reward = {
+       ISR = {
+	   country_event = TurkeyF.226
+	   }
+      }
+	}
+	focus = {
+		id = MIT_strike_on_iran
+		icon = attack_iran2
+		cost = 10,00
+		prerequisite = {
+			focus = MIT_prepare_for_the_last_moment
+		}
+		prerequisite = {
+			focus = MIT_alliance_with_israel
+		}
+		x = 130
+		y = 16
+
+
+        available = {
+		country_exists = PER
+		NOT = {
+		has_war_with = PER
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = PER
+    NOT = {
+	country_exists = PER
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = PER
+		}
+ }
+}
+	focus = {
+		id = MIT_space_intelligence
+		icon = spacex2
+		cost = 15,00
+		prerequisite = {
+			focus = MIT_target_iranian_files
+		}
+		prerequisite = {
+			focus = MIT_target_saudi_arabian_files
+		}
+		x = 120
+		y = 16
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+	completion_reward = {
+       add_ideas = space_intelligence
+      }
+	}
+
+
+	focus = {
+		id = TUR_covid-19_pandemic26
+		icon = generic_healthcare
+		cost = 10,00
+		x = 137
+		y = 0
+
+        available = {
+        has_idea = covid_19
+        }
+	
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+		completion_reward = {
+        add_political_power = 75
+	block_health_decrease = yes
+		} }
+		
+	focus = {
+		id = TUR_covid-19_preparations26
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_pandemic26
+		}
+		x = 137
+		y = 1
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19
+  add_idea = covid_19_prepared
+}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TUR_build_up_hospitals26
+		icon = generic_hospital2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations26
+		}
+		x = 135
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}			
+	completion_reward = {
+			subtract_from_variable = { treasury = 20.0 }
+			add_stability = 0.03
+			custom_effect_tooltip = 20_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_turn_airports_to_hospital26
+		icon = generic_hospital
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_build_up_hospitals26
+		}
+		x = 135
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+			subtract_from_variable = { treasury = 5.0 }
+			add_stability = 0.02
+			custom_effect_tooltip = 5_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_start_up_vaccine_program26
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations26
+		}
+		x = 137
+		y = 2
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		
+		
+	completion_reward = {
+	        add_stability = -0.05
+			add_political_power = -75
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			custom_effect_tooltip = COV_DECISION_OPENING_VAC
+			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
+			} 
+	}
+	focus = {
+		id = TUR_buy_german_vaccines26
+		icon = trade_with_germany
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_start_up_vaccine_program26
+		}
+		x = 137
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_increase_funds_to_science26
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations26
+		}
+		x = 139
+		y = 2
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = health_04
+  add_idea = health_05
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_medicines26
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_funds_to_science26
+		}                                         
+		prerequisite = {                          
+			focus = TUR_increase_funds_to_science26
+		}
+		x = 139
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_prepared
+  add_idea = covid_19_medicined
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_chinese_vaccines26
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turn_airports_to_hospital26
+		}
+		prerequisite = {
+			focus = TUR_buy_german_vaccines26
+		}
+		prerequisite = {
+			focus = TUR_buy_medicines26
+		}
+		x = 137
+		y = 4
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_normalisation_from_covid26
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_buy_chinese_vaccines26
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
+		} }
+		x = 137
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_medicined
+  add_idea = covid_19_normalised
+} 
+	custom_effect_tooltip = COV_AVAILABLE_1
+}
+	}
+	focus = {
+		id = TUR_end_of_covid26
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_normalisation_from_covid26
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
+		} }
+		x = 137
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+remove_ideas = covid_19_normalised
+	custom_effect_tooltip = COV_AVAILABLE_2
+}
+	} 
+
+	focus = {
+		id = TUR_covid-19_pandemic26
+		icon = generic_healthcare
+		cost = 10,00
+		x = 137
+		y = 0
+
+        available = {
+        has_idea = covid_19
+        }
+	
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+		completion_reward = {
+        add_political_power = 75
+		} }
+		
+	focus = {
+		id = TUR_covid-19_preparations26
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_pandemic26
+		}
+		x = 137
+		y = 1
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19
+  add_idea = covid_19_prepared
+}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TUR_build_up_hospitals26
+		icon = generic_hospital2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations26
+		}
+		x = 135
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}			
+	completion_reward = {
+			subtract_from_variable = { treasury = 20.0 }
+			add_stability = 0.03
+			custom_effect_tooltip = 20_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_turn_airports_to_hospital26
+		icon = generic_hospital
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_build_up_hospitals26
+		}
+		x = 135
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+			subtract_from_variable = { treasury = 5.0 }
+			add_stability = 0.02
+			custom_effect_tooltip = 5_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_start_up_vaccine_program26
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations26
+		}
+		x = 137
+		y = 2
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		
+		
+	completion_reward = {
+	        add_stability = -0.05
+			add_political_power = -75
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			custom_effect_tooltip = COV_DECISION_OPENING_VAC
+			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
+			} 
+	}
+	focus = {
+		id = TUR_buy_german_vaccines26
+		icon = trade_with_germany
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_start_up_vaccine_program26
+		}
+		x = 137
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_increase_funds_to_science26
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations26
+		}
+		x = 139
+		y = 2
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = health_04
+  add_idea = health_05
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_medicines26
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_funds_to_science26
+		}                                         
+		prerequisite = {                          
+			focus = TUR_increase_funds_to_science26
+		}
+		x = 139
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_prepared
+  add_idea = covid_19_medicined
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_chinese_vaccines26
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turn_airports_to_hospital26
+		}
+		prerequisite = {
+			focus = TUR_buy_german_vaccines26
+		}
+		prerequisite = {
+			focus = TUR_buy_medicines26
+		}
+		x = 137
+		y = 4
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_normalisation_from_covid26
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_buy_chinese_vaccines26
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
+		} }
+		x = 137
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_medicined
+  add_idea = covid_19_normalised
+} 
+	custom_effect_tooltip = COV_AVAILABLE_1
+}
+	}
+	focus = {
+		id = TUR_end_of_covid26
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_normalisation_from_covid26
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
+		} }
+		x = 137
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+remove_ideas = covid_19_normalised
+	custom_effect_tooltip = COV_AVAILABLE_2
+}
+	} 
+
+##############################
+###	Start of Turkic Focus Tree ###	x = 75 y = 55
+##############################
+
+shared_focus = TR_policies
+
+############################
+### End of Turkic Focus Tree ###
+############################
+
+
+##############################
+###	Start of Cypriot Tree ###	x = 13 y = 10
+##############################
+
+shared_focus = TUR_greek_issues
+
+############################
+### End of Cypriot Focus Tree ###
+############################
+
+
+##############################
+###	Start of EU Focus Tree ###	x = 3 y = 45
+##############################
+
+	shared_focus = USoE001
+	shared_focus = POTEF001
+
+############################
+### End of EU Focus Tree ###
+############################
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

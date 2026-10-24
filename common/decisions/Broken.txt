@@ -1,0 +1,137 @@
+
+
+TUR_azerbaijani_policies = {
+
+	TUR_terrorize_the_armenia_border = {
+		icon = GFX_decision_category_border_conflicts
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 100
+		days_remove = 25
+		fire_only_once = yes
+		
+		complete_effect = {
+            custom_effect_tooltip = TUR_WAR_ON_BORDER_3
+      start_border_war = {
+    attacker = {
+        state = 163
+        num_provinces = 2
+        on_win = 709 = { set_demilitarized_zone = yes 
+        on_lose = add_political_power = -25 add_war_support = -0.03
+        on_cancel = add_war_support = -0.03
+    }
+				
+    defender = {
+        state = 709
+        num_provinces = 2
+        on_win = add_political_power = 75 add_war_support = 0.03
+        on_lose = add_political_power = -75 add_stability = -0.05 
+        on_cancel = add_political_power = -50 add_stability = -0.03
+    }
+		}  } }
+	
+	TUR_azerbaijani_military_aid = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 25
+		fire_only_once = no
+		
+		complete_effect = {
+	 add_equipment_to_stockpile = {	type = infantry_weapons amount = -1000 }
+	 AZE = {
+	 add_equipment_to_stockpile = {	type = infantry_weapons amount = 1000 }
+	 }
+	}
+	}
+
+	TUR_nakchivan_achievement = {
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+		ARM = {
+        controls_state = 711
+		}
+		} 
+
+		visible = {
+			original_tag = TUR	
+			}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			transfer_state = 711
+			add_state_core = 711
+		}  
+	}
+
+	nakchivan_safe_call = {
+		icon = GFX_decision_generic_military
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 100
+		days_remove = 75
+		fire_only_once = yes
+		
+		complete_effect = {
+			army_experience = 25
+		1036 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			}
+		1035 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			}
+		1034 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			}
+		1037 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			}
+		}  
+	}}
+		}} }

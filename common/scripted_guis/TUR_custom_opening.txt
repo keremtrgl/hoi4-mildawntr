@@ -1,0 +1,264 @@
+scripted_gui = {
+
+	##############Super Event#########
+	
+	custom_opening_1_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_1"
+
+		visible = {
+			is_ai = no
+			has_country_flag = MENU_OUTLOOK_TRIGGERED
+			tag = TUR
+		}
+
+		effects = {
+		    MD_close_button_click = {
+				clr_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    FAQ_button2_click = {
+				set_country_flag = FAQ_1
+	            clr_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    MD_another_check_button_click = {
+			set_global_flag = TRIGGER_SETTINGS
+			 clr_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    accept_bitcoin_button_click = {
+				set_global_flag = BLOCKED_BITCOIN_SELL_BUY
+			}
+		    reject_bitcoin_button_click = {
+	            clr_global_flag = BLOCKED_BITCOIN_SELL_BUY
+			}
+		} 
+	
+   triggers = {
+     accept_bitcoin_button_click_enabled = {
+     NOT = { has_global_flag = BLOCKED_BITCOIN_SELL_BUY }
+	 }
+     reject_bitcoin_button_click_enabled = {
+     has_global_flag = BLOCKED_BITCOIN_SELL_BUY 
+	 }
+   }
+}
+
+
+
+	settings_page_window = {
+		context_type = player_context
+
+		window_name = "settings_page"
+
+		visible = {
+			is_ai = no
+			has_global_flag = TRIGGER_SETTINGS
+			tag = TUR
+		}
+
+		effects = {
+		    return_settings_button_click = {
+				  set_country_flag = MENU_OUTLOOK_TRIGGERED
+				  clr_global_flag = TRIGGER_SETTINGS
+			}
+			refresh_button_click = {
+			set_global_flag = BLOCKED_BITCOIN_SELL_BUY
+			set_global_flag = BLOCKED_SUPER_EVENTS
+			set_global_flag = BLOCKED_WORLD_ACT
+		    set_global_flag = BLOCKED_FICTIONAL_REALITY
+		    set_global_flag = BLOCKED_SOUNDS
+			clr_global_flag = BLOCKED_GREENS
+			}
+		    accept_bitcoin_button_click = {
+				set_global_flag = BLOCKED_BITCOIN_SELL_BUY
+			}
+		    reject_bitcoin_button_click = {
+	            clr_global_flag = BLOCKED_BITCOIN_SELL_BUY
+			}
+		    accept_super_event_button_click = {
+				set_global_flag = BLOCKED_SUPER_EVENTS
+			}
+		    reject_super_event_button_click = {
+	            clr_global_flag = BLOCKED_SUPER_EVENTS
+			}
+		    accept_sounds_button_click = {
+				set_global_flag = BLOCKED_SOUNDS
+			}
+		    reject_sounds_button_click = {
+	            clr_global_flag = BLOCKED_SOUNDS
+			}
+		    accept_world_act_button_click = {
+				set_global_flag = BLOCKED_WORLD_ACT
+			}
+		    reject_world_act_button_click = {
+	            clr_global_flag = BLOCKED_WORLD_ACT
+			}
+		    fictional_agree_button_click = {
+				set_global_flag = BLOCKED_FICTIONAL_REALITY
+			}
+		    fictional_reject_button_click = {
+	            clr_global_flag = BLOCKED_FICTIONAL_REALITY
+			}
+			reject_greens_button_click = {
+	            clr_global_flag = BLOCKED_GREENS	
+			}
+			accept_greens_button_click = {
+	            set_global_flag = BLOCKED_GREENS		
+			}
+		} 
+	
+   triggers = {
+     accept_bitcoin_button_click_enabled = {
+     NOT = { has_global_flag = BLOCKED_BITCOIN_SELL_BUY }
+	 }
+     reject_bitcoin_button_click_enabled = {
+     has_global_flag = BLOCKED_BITCOIN_SELL_BUY 
+	 }
+
+     accept_super_event_button_click_enabled = {
+     NOT = { has_global_flag = BLOCKED_SUPER_EVENTS }
+	 }
+     reject_super_event_button_click_enabled = {
+     has_global_flag = BLOCKED_SUPER_EVENTS 
+	 }
+
+     accept_sounds_button_click_enabled = {
+     NOT = { has_global_flag = BLOCKED_SOUNDS }
+	 }
+     reject_sounds_button_click_enabled = {
+     has_global_flag = BLOCKED_SOUNDS 
+	 }
+
+     accept_world_act_button_click_enabled = {
+     NOT = { has_global_flag = BLOCKED_WORLD_ACT }
+	 }
+     reject_world_act_button_click_enabled = {
+     has_global_flag = BLOCKED_WORLD_ACT 
+	 }
+
+     fictional_agree_button_click_enabled = {
+     NOT = { has_global_flag = BLOCKED_FICTIONAL_REALITY }
+	 }
+     fictional_reject_button_click_enabled = {
+     has_global_flag = BLOCKED_FICTIONAL_REALITY 
+	 }
+
+     reject_greens_button_click_enabled = {
+     has_global_flag = BLOCKED_GREENS
+	 }
+     accept_greens_button_click_enabled = {
+     NOT = { has_global_flag = BLOCKED_GREENS }
+	 }
+   }
+}
+
+
+
+	custom_opening_2_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_2"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_1
+			tag = TUR
+		}
+
+		effects = {
+		    return_1_button_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2 
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+	            set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    come_on_button_click = {
+				clr_country_flag = FAQ_1
+				set_country_flag = FAQ_2
+			}
+		} }
+	
+	custom_opening_3_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_3"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_2
+			tag = TUR
+		}
+
+		effects = {
+		    return_2_button_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2 
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+	            set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    come_on_button_pos_click = {
+				set_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+			}
+		    come_on_button_neg_click = {
+				clr_country_flag = FAQ_2
+				set_country_flag = FAQ_3
+			}
+		} }
+
+	custom_opening_4_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_4"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_3
+			tag = TUR
+		}
+
+		effects = {
+		    return_4_button_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2 
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+	            set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    come_on_button_pos2_click = {
+				clr_country_flag = FAQ_3
+				set_country_flag = FAQ_2
+			}
+		    come_on_button_neg2_click = {
+				clr_country_flag = FAQ_3
+				set_country_flag = FAQ_4
+			}
+		} }
+
+
+	custom_opening_5_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_5"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_4
+			tag = TUR
+		}
+
+		effects = {
+		    return_5_button_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2 
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+	            set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    come_on_button_pos3_click = {
+				set_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+			}
+		} }

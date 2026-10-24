@@ -1,0 +1,10 @@
+TUR_startup = {
+	set_variable = { TUR_the_power_of_covid = 35 }
+}
+TUR_the_power_of_covid = {
+	clamp_variable = {
+		var = TUR_the_power_of_covid
+		min = 0
+		max = 100
+	}
+}

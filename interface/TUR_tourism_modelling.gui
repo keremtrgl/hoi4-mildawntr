@@ -1,0 +1,44 @@
+@STATUS_X = -10
+@HEADER_X = 10
+
+guiTypes = {
+	containerWindowType = {
+		name = "tur_tourism_management_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 270 }
+
+
+		background = {
+			name = "tur_cesme_gfx"
+			quadTextureSprite = "GFX_tur_cesme"
+			position = { x = 100 y = 80 }
+		}
+
+		instantTextBoxType = {
+			name ="TUR_tourism_text"
+			position = { x = 13 y = 25 }
+			font = "hoi_16mbs"
+			text = "Tourism By Good Quality: [?TUR_tourism_quality] Percentage"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_tourism_text_2"
+			position = { x = 13 y = 45 }
+			font = "hoi_16mbs"
+			text = "Tourism By Good Quantity: [?TUR_tourism_quantity] Percentage"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_tourism_text_3"
+			position = { x = 195 y = 245 }
+			font = "hoi_16mbs"
+			text = "CESME_X"
+			format = left
+			maxWidth = 497
+		}
+	}
+}

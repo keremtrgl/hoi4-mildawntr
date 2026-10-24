@@ -1,0 +1,1367 @@
+﻿add_namespace = TUR_pkk
+add_namespace = Turkish_mafia
+add_namespace = TurkeyMD
+add_namespace = TurkeyFocusEvents
+
+country_event = { # Turkish Mafia cause a scene!
+	id = Turkish_mafia.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.1" }
+
+	title = Turkish_mafia.1.t
+	desc = Turkish_mafia.1.d
+	picture = GFX_report_event_Gun_1
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = TUR_mafia_gone }
+	}
+	option = { #Damn!
+		name = Turkish_mafia.1.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.1.a executed"
+		set_variable = { TUR_event_counter_1_mafia = 2 }
+		add_to_variable = { TUR_mafia_influence = 1 }
+		add_political_power = 50
+		custom_effect_tooltip = TUR_mafia_increase_1
+		ai_chance = { factor = 5 }
+	}
+	option = { #Launch a full investigation
+		name = Turkish_mafia.1.b
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.1.b executed"
+		set_variable = { TUR_event_counter_1_mafia = 2 }
+		custom_effect_tooltip = TUR_mafia_warn
+		random_list = {
+			40 = {
+				ROOT = {
+					country_event = {
+						id = Turkish_mafia.11
+						days = 2
+					}
+				}
+			}
+			60 = {
+				ROOT = {
+					country_event = {
+						id = Turkish_mafia.12
+						days = 2
+					}
+				}
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+	option = { #Launch a full investigation
+	name = Turkish_mafia.1.c
+	log = "[GetDateText]: [This.GetName]: Turkish_mafia.1.b executed"
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt		
+		add_political_power = -25
+	set_variable = { TUR_event_counter_1_mafia = 2 }
+	custom_effect_tooltip = TUR_mafia_warn
+	random_list = {
+		10 = {
+			ROOT = {
+				country_event = {
+					id = Turkish_mafia.11
+					days = 2
+				}
+			}
+		}
+		90 = {
+			ROOT = {
+				country_event = {
+					id = Turkish_mafia.12
+					days = 2
+				}
+			}
+		}
+	}
+	ai_chance = { factor = 5 }
+}
+}
+#
+country_event = { # Investigation leads to nowhere
+	id = Turkish_mafia.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.11" }
+
+	title = Turkish_mafia.11.t
+	desc = Turkish_mafia.11.d
+	picture = GFX_report_event_Gun_1
+	is_triggered_only = yes
+
+	option = { #Damn!
+		name = Turkish_mafia.11.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.11.a executed"
+		add_to_variable = { TUR_mafia_influence = 2 }
+		custom_effect_tooltip = TUR_mafia_increase_2
+		ai_chance = { factor = 5 }
+	}
+}
+#
+country_event = { # Investigation leads to criminals
+	id = Turkish_mafia.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.12" }
+
+	title = Turkish_mafia.12.t
+	desc = Turkish_mafia.12.d
+	picture = GFX_report_event_Gun_1
+	is_triggered_only = yes
+
+	option = { #Damn!
+		name = Turkish_mafia.12.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.12.a executed"
+		add_to_variable = { TUR_mafia_influence = -1 }
+		custom_effect_tooltip = TUR_mafia_decrease_1
+		ai_chance = { factor = 5 }
+	}
+}
+##
+country_event = { # Mafia hideout discovered by police
+	id = Turkish_mafia.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.2" }
+
+	title = Turkish_mafia.2.t
+	desc = Turkish_mafia.2.d
+	picture = GFX_report_event_Hideout
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = TUR_mafia_gone }
+	}
+	option = { #Damn!
+		name = Turkish_mafia.2.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.2.a executed"
+		set_variable = { TUR_event_counter_1_mafia = 2 }
+		add_to_variable = { TUR_mafia_influence = 1 }
+		add_stability = -0.01
+		add_political_power = 50
+		custom_effect_tooltip = TUR_mafia_increase_1
+		ai_chance = { factor = 5 }
+	}
+	option = { #Send in the police
+		name = Turkish_mafia.2.b
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.2.b executed"
+		set_variable = { TUR_event_counter_1_mafia = 2 }
+		custom_effect_tooltip = TUR_mafia_warn
+		random_list = {
+			60 = {
+				ROOT = {
+					country_event = {
+						id = Turkish_mafia.22
+						days = 2
+					}
+				}
+			}
+			40 = {
+				ROOT = {
+					country_event = {
+						id = Turkish_mafia.21
+						days = 2
+					}
+				}
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+	option = { #Send in the police
+		name = Turkish_mafia.2.c
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.2.b executed"
+		add_political_power = -25
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		set_variable = { TUR_event_counter_1_mafia = 2 }
+		custom_effect_tooltip = TUR_mafia_warn
+		random_list = {
+			90 = {
+				ROOT = {
+					country_event = {
+						id = Turkish_mafia.22
+						days = 2
+					}
+				}
+			}
+			10 = {
+				ROOT = {
+					country_event = {
+						id = Turkish_mafia.21
+						days = 2
+					}
+				}
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+}
+#
+country_event = { # Police Lose
+	id = Turkish_mafia.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.21" }
+
+	title = Turkish_mafia.21.t
+	desc = Turkish_mafia.21.d
+	picture = GFX_report_event_Gun_2
+	is_triggered_only = yes
+
+	option = { #Damn!
+		name = Turkish_mafia.21.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.21.a executed"
+		add_manpower = -40
+		add_to_variable = { TUR_mafia_influence = 2 }
+		custom_effect_tooltip = TUR_mafia_increase_2
+		ai_chance = { factor = 5 }
+	}
+}
+#
+country_event = { # Suspects taken out
+	id = Turkish_mafia.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.22" }
+
+	title = Turkish_mafia.22.t
+	desc = Turkish_mafia.22.d
+	picture = GFX_report_event_Gun_2
+	is_triggered_only = yes
+
+	option = { #Good!
+		name = Turkish_mafia.22.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.22.a executed"
+		add_to_variable = { TUR_mafia_influence = -1 }
+		custom_effect_tooltip = TUR_mafia_decrease_1
+		ai_chance = { factor = 5 }
+	}
+}
+###
+country_event = { # Turkish mafia weapon cache discovered
+	id = Turkish_mafia.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.3" }
+
+	title = Turkish_mafia.3.t
+	desc = Turkish_mafia.3.d
+	picture = GFX_guns
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = TUR_mafia_gone }
+	}
+	option = { #Take the guns..
+		name = Turkish_mafia.3.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.3.a executed"
+		add_equipment_to_stockpile = {
+			type = infantry_weapons1
+			amount = 300
+			producer = TUR
+		}
+		add_political_power = 25
+		set_variable = { TUR_event_counter_1_mafia = 2 }
+		add_to_variable = { TUR_mafia_influence = 2 }
+		custom_effect_tooltip = TUR_mafia_increase_2
+		ai_chance = { factor = 5 }
+	}
+	option = { #Send in the police
+		name = Turkish_mafia.3.b
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.3.b executed"
+		set_variable = { TUR_event_counter_1_mafia = 2 }
+		custom_effect_tooltip = TUR_mafia_warn
+		random_list = {
+			40 = {
+				ROOT = {
+					country_event = {
+						id = Turkish_mafia.31
+						days = 2
+					}
+				}
+			}
+			60 = {
+				ROOT = {
+					country_event = {
+						id = Turkish_mafia.32
+						days = 2
+					}
+				}
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+	option = { #Send in the police
+	name = Turkish_mafia.3.c
+	log = "[GetDateText]: [This.GetName]: Turkish_mafia.3.b executed"
+	add_political_power = -25
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+	set_variable = { TUR_event_counter_1_mafia = 2 }
+	custom_effect_tooltip = TUR_mafia_warn
+	random_list = {
+		10 = {
+			ROOT = {
+				country_event = {
+					id = Turkish_mafia.31
+					days = 2
+				}
+			}
+		}
+		90 = {
+			ROOT = {
+				country_event = {
+					id = Turkish_mafia.32
+					days = 2
+				}
+			}
+		}
+	}
+	ai_chance = { factor = 5 }
+}
+}
+#
+country_event = { # Police Lose
+	id = Turkish_mafia.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.31" }
+
+	title = Turkish_mafia.31.t
+	desc = Turkish_mafia.31.d
+	picture = GFX_report_event_Gun_3
+	is_triggered_only = yes
+
+	option = { #Damn!
+		name = Turkish_mafia.31.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.31.a executed"
+		add_equipment_to_stockpile = {
+			type = infantry_weapons1
+			amount = -100
+			producer = TUR
+		}
+		add_to_variable = { TUR_mafia_influence = 2 }
+		custom_effect_tooltip = TUR_mafia_increase_2
+		ai_chance = { factor = 5 }
+	}
+}
+#
+country_event = { # Police Win
+	id = Turkish_mafia.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.32" }
+
+	title = Turkish_mafia.32.t
+	desc = Turkish_mafia.32.d
+	picture = GFX_report_event_Gun_2
+	is_triggered_only = yes
+
+	option = { #Damn!
+		name = Turkish_mafia.32.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.32.a executed"
+		add_to_variable = { TUR_mafia_influence = -1 }
+		custom_effect_tooltip = TUR_mafia_decrease_1
+		ai_chance = { factor = 5 }
+	}
+}
+#
+country_event = { # Turkish mafia caught smuggling drugs
+	id = Turkish_mafia.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.3" }
+
+	title = Turkish_mafia.4.t
+	desc = Turkish_mafia.4.d
+	picture = GFX_report_event_Cigarette_Smuggling_2
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = TUR_mafia_gone }
+	}
+	option = { #Take the cash..
+		name = Turkish_mafia.4.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.4.a executed"
+		set_temp_variable = { treasury_change = 15.00 }
+		add_political_power = 5
+		modify_treasury_effect = yes
+		set_variable = { TUR_event_counter_1_mafia = 2 }
+		add_to_variable = { TUR_mafia_influence = 2 }
+		custom_effect_tooltip = TUR_mafia_increase_2
+		ai_chance = { factor = 5 }
+	}
+	option = { #Send in the police
+		name = Turkish_mafia.4.b
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.4.b executed"
+		set_variable = { TUR_event_counter_1_mafia = 2 }
+		custom_effect_tooltip = TUR_mafia_warn
+		random_list = {
+			60 = {
+				ROOT = {
+					country_event = {
+						id = Turkish_mafia.41
+						days = 2
+					}
+				}
+			}
+			40 = {
+				ROOT = {
+					country_event = {
+						id = Turkish_mafia.42
+						days = 2
+					}
+				}
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+	option = { #Send in the police
+	name = Turkish_mafia.4.c
+	log = "[GetDateText]: [This.GetName]: Turkish_mafia.4.b executed"
+	add_political_power = -25
+	set_variable = { TUR_event_counter_1_mafia = 2 }
+	custom_effect_tooltip = TUR_mafia_warn
+	random_list = {
+		90 = {
+			ROOT = {
+				country_event = {
+					id = Turkish_mafia.41
+					days = 2
+				}
+			}
+		}
+		20 = {
+			ROOT = {
+				country_event = {
+					id = Turkish_mafia.42
+					days = 2
+				}
+			}
+		}
+	}
+	ai_chance = { factor = 5 }
+}
+}
+#
+country_event = { # Police arrest dealers
+	id = Turkish_mafia.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.41" }
+
+	title = Turkish_mafia.41.t
+	desc = Turkish_mafia.41.d
+	picture = GFX_report_event_Arrest_3
+	is_triggered_only = yes
+
+	option = { #Damn!
+		name = Turkish_mafia.41.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.41.a executed"
+		add_to_variable = { TUR_mafia_influence = -1 }
+		custom_effect_tooltip = TUR_mafia_decrease_1
+		ai_chance = { factor = 5 }
+	}
+}
+#
+country_event = { # Police fail to arrest dealers
+	id = Turkish_mafia.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.42" }
+
+	title = Turkish_mafia.42.t
+	desc = Turkish_mafia.42.d
+	picture = GFX_report_event_Gun_2
+	is_triggered_only = yes
+
+	option = { #Damn!
+		name = Turkish_mafia.42.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.42.a executed"
+		add_to_variable = { TUR_mafia_influence = 2 }
+		custom_effect_tooltip = TUR_mafia_increase_2
+		ai_chance = { factor = 5 }
+	}
+}
+############
+country_event = { #assasination attempt by the Mafia
+	id = Turkish_mafia.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.5" }
+
+	title = Turkish_mafia.5.t
+	desc = Turkish_mafia.5.d
+	picture = GFX_report_event_Gun_2
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = TUR_mafia_gone }
+	}
+	option = { #Close one
+		name = Turkish_mafia.5.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.5.a executed"
+		add_stability = -0.02
+		set_party_index_to_ruling_party = yes
+		set_temp_variable = { party_popularity_increase = -0.03 }
+		set_temp_variable = { temp_outlook_increase = -0.03 }
+		add_relative_party_popularity = yes
+		ai_chance = { factor = 5 }
+	}
+}
+#
+country_event = { #Heist by the Mafia
+	id = Turkish_mafia.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.6" }
+	trigger = {
+		NOT = { has_country_flag = TUR_mafia_gone }
+	}
+	title = Turkish_mafia.6.t
+	desc = Turkish_mafia.6.d
+	picture = GFX_report_event_Gun_2
+	is_triggered_only = yes
+
+	option = { #Damn
+		name = Turkish_mafia.6.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.6.a executed"
+		set_temp_variable = { treasury_change = -15.50 }
+		modify_treasury_effect = yes
+		ai_chance = { factor = 5 }
+	}
+}
+#
+country_event = { #Attack on commercial center
+	id = Turkish_mafia.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.7" }
+	trigger = {
+		NOT = { has_country_flag = TUR_mafia_gone }
+	}
+	title = Turkish_mafia.7.t
+	desc = Turkish_mafia.7.d
+	picture = GFX_report_event_Gun_2
+	is_triggered_only = yes
+
+	option = { #Damn
+		name = Turkish_mafia.7.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.7.a executed"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = -1
+			add_building_construction = {
+				type = offices
+				level = -1
+				instant_build = yes
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+}
+#
+country_event = { #Attack on commercial center
+	id = Turkish_mafia.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.8" }
+	trigger = {
+		NOT = { has_country_flag = TUR_mafia_gone }
+	}
+	title = Turkish_mafia.8.t
+	desc = Turkish_mafia.8.d
+	picture = GFX_report_event_Gun_2
+	is_triggered_only = yes
+
+	option = { #Damn
+		name = Turkish_mafia.8.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.8.a executed"
+		add_stability = -0.02
+		add_manpower = -200
+		ai_chance = { factor = 5 }
+	}
+}
+#
+country_event = { #The rise of the Mafia
+	id = Turkish_mafia.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkish_mafia.9" }
+
+	title = Turkish_mafia.9.t
+	desc = Turkish_mafia.9.d
+	picture = GFX_turkishmafia
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # The fight will continue!
+		name = Turkish_mafia.9.a
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.9.a executed"
+		ai_chance = { factor = 5 }
+	}
+	option = { # We give up
+		name = Turkish_mafia.9.b
+		log = "[GetDateText]: [This.GetName]: Turkish_mafia.9.b executed"
+		clr_country_flag = TUR_turkishMafia
+			set_country_flag = TUR_mafia_gone
+			clear_variable = TUR_mafia_influence_min
+			clear_variable = TUR_mafia_influence_max
+			clear_variable = TUR_mafia_influence
+			clear_variable = TUR_mafia_influence_gain
+			clear_variable = TUR_event_counter_1_mafia
+			IF = {
+				limit = { has_idea = TUR_mafia_active}
+				remove_ideas = TUR_mafia_active
+			}
+			IF = {
+				limit = { has_idea = TUR_mafia_active2 }
+				remove_ideas = TUR_mafia_active2
+			}
+			IF = {
+				limit = { has_idea = TUR_mafia_weak}
+				remove_ideas = TUR_mafia_weak
+			}
+			IF = {
+				limit = { has_idea = TUR_mafia_weakened }
+				remove_ideas = TUR_mafia_weakened
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+###
+country_event = { #PKK Uprising
+	id = TUR_pkk.4
+	title = TUR_pkk.4.t
+	desc = TUR_pkk.4.d
+	picture = GFX_raiding_pkk
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #To WAR
+		name = TUR_pkk.4.a
+		log = "[GetDateText]: [This.GetName]:TUR_pkk.4.a executed"
+		set_variable = { TUR_PKK_aggro_increase = 0 }
+		clr_country_flag = TUR_pkk_strong
+		add_political_power = -200
+		hidden_effect = {
+			clear_variable = TUR_PKK_aggro_increase
+			clear_variable = TUR_PKK_min_strength
+			clear_variable = TUR_PKK_aggro
+			clear_variable = TUR_PKK_max_aggro
+			clear_variable = TUR_PKK_strength
+			clear_variable = TUR_event_counter_1_pkk
+			clear_variable = TUR_event_counter_2_pkk
+			clear_variable = TUR_event_counter_3_pkk
+			162 = { remove_dynamic_modifier = { modifier = kurdish_resistance_dynamic_modifier } }
+			935 = { remove_dynamic_modifier = { modifier = kurdish_resistance_dynamic_modifier } }
+			162 = { add_dynamic_modifier = { modifier = pkk_static_modifier } }
+			935 = { add_dynamic_modifier = { modifier = pkk_static_modifier } }
+			remove_ideas = TUR_PKK_insurgency_active
+			remove_ideas = TUR_PKK_insurgency_ceasefire
+			set_country_flag = TUR_pkk_rebellion_started
+			162 = {
+				transfer_state_to = PKK
+			}
+			935 = {
+				transfer_state_to = PKK
+			}
+			935 = { add_core_of = PKK }
+			162 = { add_core_of = PKK }
+			935 = { remove_core_of = TUR }
+			162 = { remove_core_of = TUR }
+			PKK = {
+				division_template = {
+					name = "PKK Militia"
+					regiments = {
+						Militia_Bat = { x = 0 y = 0 }
+						Militia_Bat = { x = 0 y = 1 }
+						Militia_Bat = { x = 0 y = 2 }
+						Militia_Bat = { x = 0 y = 3 }
+						Militia_Bat = { x = 1 y = 0 }
+						Militia_Bat = { x = 1 y = 1 }
+						Militia_Bat = { x = 1 y = 2 }
+						Militia_Bat = { x = 1 y = 3 }
+						Militia_Bat = { x = 2 y = 0 }
+						Militia_Bat = { x = 2 y = 1 }
+						Militia_Bat = { x = 2 y = 2 }
+					}
+					priority = 2
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name =\"PKK Militia\" division_template = \"PKK Militia\" start_experience_factor =  1.0"
+						owner = PKK
+						count = 14
+					}
+				}
+			}
+			}
+			TUR = {
+				declare_war_on = {
+					target = PKK
+					type = puppet_wargoal_focus
+				}
+			}
+			ai_chance = {
+				factor = 10
+			}
+		}
+		option = { #Whatever
+		name = TUR_pkk.4.b
+		log = "[GetDateText]: [This.GetName]:TUR_pkk.4.b executed"
+		set_variable = { TUR_PKK_aggro_increase = 0 }
+		clr_country_flag = TUR_pkk_strong
+		hidden_effect = {
+			clear_variable = TUR_PKK_aggro_increase
+			clear_variable = TUR_PKK_min_strength
+			clear_variable = TUR_PKK_aggro
+			clear_variable = TUR_PKK_max_aggro
+			clear_variable = TUR_PKK_strength
+			clear_variable = TUR_event_counter_1_pkk
+			clear_variable = TUR_event_counter_2_pkk
+			clear_variable = TUR_event_counter_3_pkk
+			remove_ideas = TUR_PKK_insurgency_active
+			remove_ideas = TUR_PKK_insurgency_ceasefire
+			162 = { remove_dynamic_modifier = { modifier = kurdish_resistance_dynamic_modifier } }
+			935 = { remove_dynamic_modifier = { modifier = kurdish_resistance_dynamic_modifier } }
+			162 = { add_dynamic_modifier = { modifier = pkk_static_modifier } }
+			935 = { add_dynamic_modifier = { modifier = pkk_static_modifier } }
+			set_country_flag = TUR_pkk_rebellion_started
+			162 = {
+				transfer_state_to = PKK
+			}
+			935 = {
+				transfer_state_to = PKK
+			}
+			935 = { add_core_of = PKK }
+			162 = { add_core_of = PKK }
+			935 = { remove_core_of = TUR }
+			162 = { remove_core_of = TUR }
+			PKK = {
+				division_template = {
+					name = "PKK Militia"
+					regiments = {
+						Militia_Bat = { x = 0 y = 0 }
+						Militia_Bat = { x = 0 y = 1 }
+						Militia_Bat = { x = 0 y = 2 }
+						Militia_Bat = { x = 0 y = 3 }
+						Militia_Bat = { x = 1 y = 0 }
+						Militia_Bat = { x = 1 y = 1 }
+						Militia_Bat = { x = 1 y = 2 }
+						Militia_Bat = { x = 1 y = 3 }
+						Militia_Bat = { x = 2 y = 0 }
+						Militia_Bat = { x = 2 y = 1 }
+						Militia_Bat = { x = 2 y = 2 }
+					}
+					priority = 2
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name =\"PKK Militia\" division_template = \"PKK Militia\" start_experience_factor =  1.0"
+						owner = PKK
+						count = 14
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+##
+###################################################### PKK EVENTS
+country_event = { #How do we appraoch our operation
+	id = TUR_pkk.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TUR_pkk.1" }
+	title = TUR_pkk.1.t
+	desc = TUR_pkk.1.d
+	picture = GFX_raiding_pkk
+	is_triggered_only = yes
+
+	option = {
+		name = TUR_pkk.1.a #High chance
+		log = "[GetDateText]: [This.GetName]: TUR_pkk.1.a executed"
+		add_political_power = -100
+		set_temp_variable = { treasury_change = -10.00 }
+		modify_treasury_effect = yes
+		random_list = {
+		65 = { #Success
+			ROOT = {
+				country_event = {
+					id = TUR_pkk.2
+					days = 1
+				}
+			}
+		}
+		35 = { #Fail
+			ROOT = {
+				country_event = {
+					id = TUR_pkk.3
+					days = 1
+				}
+			}
+		}
+	}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = {
+		name = TUR_pkk.1.b #Medium Chance
+		log = "[GetDateText]: [This.GetName]: TUR_pkk.1.b executed"
+		add_political_power = -50
+		set_temp_variable = { treasury_change = -5.00 }
+		modify_treasury_effect = yes
+		random_list = {
+			50 = { #Success
+				ROOT = {
+					country_event = {
+						id = TUR_pkk.2
+						days = 1
+					}
+				}
+			}
+			50 = { #Fail
+				ROOT = {
+					country_event = {
+						id = TUR_pkk.3
+						days = 1
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = {
+		name = TUR_pkk.1.c #Low Chance
+		log = "[GetDateText]: [This.GetName]: TUR_pkk.1.c executed"
+		set_temp_variable = { treasury_change = -2.00 }
+		modify_treasury_effect = yes
+		random_list = {
+			35 = { #Success
+				ROOT = {
+					country_event = {
+						id = TUR_pkk.2
+					}
+				}
+			}
+			65 = { #Fail
+				ROOT = {
+					country_event = {
+						id = TUR_pkk.3
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+#
+country_event = { #Operation completed successfully
+	id = TUR_pkk.2
+	title = TUR_pkk.2.t
+	desc = TUR_pkk.2.d
+	picture = GFX_raiding_pkk
+	is_triggered_only = yes
+	option = { #Good
+		name = TUR_pkk.2.a
+		log = "[GetDateText]: [This.GetName]:TUR_pkk.2.a executed"
+		add_to_variable = { TUR_PKK_aggro = 2 }
+		custom_effect_tooltip = TUR_INCREASE_PKK_AGGRO_2
+		custom_effect_tooltip = TUR_DECREASE_PKK_STRENGTH_3
+		add_to_variable = { TUR_PKK_strength = -3 }
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+#
+country_event = { #Operation Failed
+	id = TUR_pkk.3
+	title = TUR_pkk.3.t
+	desc = TUR_pkk.3.d
+	picture = GFX_raiding_pkk
+	is_triggered_only = yes
+	option = { #Theres always tomorrow
+		name = TUR_pkk.3.a
+		log = "[GetDateText]: [This.GetName]:TUR_pkk.3.a executed"
+		custom_effect_tooltip = TUR_INCREASE_PKK_AGGRO_2
+		add_to_variable = { TUR_PKK_aggro = 2 }
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+#
+#
+country_event = { #Random PKK Attack
+	id = TUR_pkk.5
+	title = TUR_pkk.5.t
+	desc = TUR_pkk.5.d
+	picture = GFX_raiding_pkk
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_idea = TUR_PKK_insurgency_ceasefire
+			has_idea = TUR_PKK_insurgency_active
+		}
+	}
+	option = { #Damn
+		name = TUR_pkk.5.a
+		log = "[GetDateText]: [This.GetName]:TUR_pkk.5.a executed"
+		add_to_variable = { TUR_PKK_aggro = -3 }
+		custom_effect_tooltip = TUR_DECREASE_PKK_AGGRO_3
+		custom_effect_tooltip = TUR_INCREASE_PKK_STRENGTH_2
+		add_to_variable = { TUR_PKK_strength = 2 }
+		###
+		IF = {
+			limit = { check_variable = { TUR_PKK_aggro < 45 } }
+			custom_effect_tooltip = TUR_damage_abit
+			hidden_effect = {
+				random_list = {
+					40 = {
+					}
+					10 = {
+						add_stability = -0.02
+					}
+					10 = {
+						set_party_index_to_ruling_party = yes
+						set_temp_variable = { party_popularity_increase = -0.03 }
+						set_temp_variable = { temp_outlook_increase = -0.03 }
+						add_relative_party_popularity = yes
+					}
+					10 = {
+						add_war_support = -0.10
+					}
+					10 = {
+						add_political_power = -50
+					}
+					10 = {
+						add_manpower = -500
+					}
+					10 = {
+						add_command_power = -20
+					}
+				}
+			}
+		}
+		IF = { #Medium Intensity Attacks
+			limit = {
+				check_variable = { TUR_PKK_aggro > 45 }
+				check_variable = { TUR_PKK_aggro < 75 }
+			}
+			custom_effect_tooltip = TUR_damage_medium
+			hidden_effect = {
+				random_list = {
+					40 = {
+					}
+					10 = {
+						add_stability = -0.03
+					}
+					10 = {
+						set_party_index_to_ruling_party = yes
+						set_temp_variable = { party_popularity_increase = -0.05 }
+						set_temp_variable = { temp_outlook_increase = -0.05 }
+						add_relative_party_popularity = yes
+					}
+					10 = {
+						add_war_support = -0.15
+					}
+					10 = {
+						add_political_power = -100
+					}
+					10 = {
+						add_manpower = -1000
+					}
+					10 = {
+						add_command_power = -40
+					}
+				}
+			}
+		}
+	#
+	IF = { #High Intensity Attacks
+		limit = { check_variable = { TUR_PKK_aggro > 75 } }
+		custom_effect_tooltip = TUR_damage_alot
+		hidden_effect = {
+			random_list = {
+				40 = {
+				}
+				10 = {
+					add_stability = -0.05
+				}
+				10 = {
+					set_party_index_to_ruling_party = yes
+					set_temp_variable = { party_popularity_increase = -0.10 }
+					set_temp_variable = { temp_outlook_increase = -0.10 }
+					add_relative_party_popularity = yes
+				}
+				10 = {
+					random_owned_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = -1
+							instant_build = yes
+						}
+					}
+				}
+				10 = {
+					add_political_power = -200
+				}
+				10 = {
+					random_owned_state = {
+						add_building_construction = {
+							type = infrastructure
+							level = -1
+							instant_build = yes
+						}
+					}
+				}
+				10 = {
+					random_owned_state = {
+						add_building_construction = {
+							type = arms_factory
+							level = -1
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+		###
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = { #Counter Attack
+	name = TUR_pkk.5.b
+		log = "[GetDateText]: [This.GetName]:TUR_pkk.5.a executed"
+		add_equipment_to_stockpile = {
+			type = INF_equipment
+			amount = -750
+			producer = TUR
+		}
+		add_equipment_to_stockpile = {
+			type = util_vehicle_equipment
+			amount = -200
+			producer = TUR
+		}
+		add_to_variable = { TUR_PKK_aggro = 10 }
+		add_political_power = -25
+		custom_effect_tooltip = TUR_INCREASE_PKK_AGGRO_10
+		custom_effect_tooltip = TUR_DECREASE_PKK_STRENGTH_1
+		add_to_variable = { TUR_PKK_strength = -1 }
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+######################################################
+#
+news_event = { #Cyprus Unifies under NCY
+	id = TurkeyMD.77
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkey.77" }
+
+	title = TurkeyMD.77.t
+	desc = TurkeyMD.77.d
+	picture = GFX_trade_agreement
+	major = yes
+	is_triggered_only = yes
+
+	option = { #Good!
+		name = TurkeyMD.77.a
+		log = "[GetDateText]: [This.GetName]: Turkey.77.a executed"
+		ai_chance = { factor = 5 }
+	}
+}
+#
+news_event = { #Cyprus Unifies under SCY
+	id = TurkeyMD.88
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkey.88" }
+
+	title = TurkeyMD.88.t
+	desc = TurkeyMD.88.d
+	picture = GFX_trade_agreement
+	major = yes
+	is_triggered_only = yes
+
+	option = { #Good!
+		name = TurkeyMD.88.a
+		log = "[GetDateText]: [This.GetName]: Turkey.88.a executed"
+		ai_chance = { factor = 5 }
+	}
+}
+
+# Cypriot Issues
+country_event = { #Greece event
+	id = TurkeyFocusEvents.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TurkeyFocusEvents.10" }
+
+	title = TurkeyFocusEvents.10.t
+	desc = TurkeyFocusEvents.10.d
+	picture = GFX_political_deal
+
+	is_triggered_only = yes
+
+	option = {
+		name = TurkeyFocusEvents.10.a
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.10.a executed"
+		set_country_flag = GRE_TUR_CYP
+		set_country_flag = GRE_Enosis_In_Progress
+		custom_effect_tooltip = GRE_north_50_TT
+		custom_effect_tooltip = GRE_south_50_TT
+		add_to_variable = { 145.GRE_SUPPORT = 55 }
+		add_to_variable = { 146.GRE_SUPPORT = 45 }
+		clamp_variable = {
+			var = 146.GRE_SUPPORT
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = 145.GRE_SUPPORT
+			min = 0
+			max = 100
+		}
+		ai_chance = { factor = 10 }
+	}
+}
+#
+country_event = { #Turkey Event
+	id = TurkeyFocusEvents.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TurkeyFocusEvents.11" }
+
+	title = TurkeyFocusEvents.11.t
+	desc = TurkeyFocusEvents.11.d
+	picture = GFX_political_deal
+
+	is_triggered_only = yes
+
+	option = {
+		name = TurkeyFocusEvents.11.a
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.11.a executed"
+		set_country_flag = GRE_TUR_CYP
+		ai_chance = { factor = 10 }
+	}
+}
+#
+country_event = { #Turkey asks us to invade Southern Cyprus
+	id = TurkeyFocusEvents.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TurkeyFocusEvents.12" }
+
+	title = TurkeyFocusEvents.12.t
+	desc = TurkeyFocusEvents.12.d
+	picture = GFX_political_deal
+
+	is_triggered_only = yes
+
+	option = {
+		name = TurkeyFocusEvents.12.a
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.12.a executed"
+		NCY = {
+			declare_war_on = {
+				target = CYP
+				type = annex_everything
+			}
+		}
+		ai_chance = { factor = 10 }
+	}
+	option = {
+		name = TurkeyFocusEvents.12.b
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.12.b executed"
+		create_wargoal = {
+			type = annex_everything
+			target = NCY
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+#
+country_event = { #Turkey asks us to withdraw from Cyprus
+	id = TurkeyFocusEvents.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TurkeyFocusEvents.14" }
+
+	title = TurkeyFocusEvents.14.t
+	desc = TurkeyFocusEvents.14.d
+	picture = GFX_political_deal
+
+	is_triggered_only = yes
+
+	option = {
+		name = TurkeyFocusEvents.14.a
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.14.a executed"
+		812 = { transfer_state_to = NCY }
+		ai_chance = { factor = 4 }
+	}
+	option = {
+		name = TurkeyFocusEvents.14.b
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.14.b executed"
+		add_opinion_modifier = {
+			modifier = declaration_of_hostility
+			target = ENG
+		}
+		reverse_add_opinion_modifier = {
+			modifier = declaration_of_hostility
+			target = ENG
+		}
+		ai_chance = { factor = 6 }
+	}
+}
+#
+country_event = { #Turkey asks us to join them
+	id = TurkeyFocusEvents.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TurkeyFocusEvents.15" }
+
+	title = TurkeyFocusEvents.15.t
+	desc = TurkeyFocusEvents.15.d
+	picture = GFX_political_deal
+
+	is_triggered_only = yes
+
+	option = {
+		name = TurkeyFocusEvents.15.a
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.15.a executed"
+		NCY = {
+			every_owned_state = {
+				transfer_state_to = TUR
+			}
+		}
+		ai_chance = { factor = 10 }
+	}
+	option = {
+		name = TurkeyFocusEvents.15.b
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.15.b executed"
+		create_wargoal = {
+			type = annex_everything
+			target = NCY
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+#
+country_event = { #Turkey asks us to join Cyprus
+	id = TurkeyFocusEvents.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TurkeyFocusEvents.16" }
+
+	title = TurkeyFocusEvents.16.t
+	desc = TurkeyFocusEvents.16.d
+	picture = GFX_political_deal
+
+	is_triggered_only = yes
+
+	option = {
+		name = TurkeyFocusEvents.16.a
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.16.a executed"
+		NCY = {
+			every_owned_state = {
+				transfer_state_to = CYP
+			}
+		}
+		ai_chance = { factor = 10 }
+	}
+	option = {
+		name = TurkeyFocusEvents.16.b
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.16.b executed"
+		CYP = {
+			create_wargoal = {
+				type = annex_everything
+				target = NCY
+			}
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+#
+country_event = { #Turkey asks for the Aegean
+	id = TurkeyFocusEvents.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TurkeyFocusEvents.17" }
+
+	title = TurkeyFocusEvents.17.t
+	desc = TurkeyFocusEvents.17.d
+	picture = GFX_political_deal
+
+	is_triggered_only = yes
+
+	option = {
+		name = TurkeyFocusEvents.17.a #Sure
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.17.a executed"
+		TUR = {
+			country_event = {
+				id = TurkeyFocusEvents.171
+			}
+		}
+		143 = { transfer_state_to = TUR }
+		ai_chance = { factor = 10 }
+	}
+	option = {
+		name = TurkeyFocusEvents.17.b #No (Will let Turkey go down aggressive approach path)
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.17.b executed"
+		TUR = {
+			country_event = {
+				id = TurkeyFocusEvents.172
+			}
+		}
+		TUR = {
+			complete_national_focus = TUR_aggressive_approach
+			complete_national_focus = TUR_path_of_no_return
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+#
+country_event = { #Greece gives the Aegean!
+	id = TurkeyFocusEvents.171
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TurkeyFocusEvents.171" }
+
+	title = TurkeyFocusEvents.171.t
+	desc = TurkeyFocusEvents.171.d
+	picture = GFX_political_deal
+
+	is_triggered_only = yes
+
+	option = {
+		name = TurkeyFocusEvents.171.a #Sure
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.171.a executed"
+		ai_chance = { factor = 10 }
+	}
+}
+#
+country_event = { #Greece doesnt give the Aegean!
+	id = TurkeyFocusEvents.172
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TurkeyFocusEvents.172" }
+
+	title = TurkeyFocusEvents.172.t
+	desc = TurkeyFocusEvents.172.d
+	picture = GFX_treaty_rejected
+
+	is_triggered_only = yes
+
+	option = {
+		name = TurkeyFocusEvents.172.a #Sure
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.172.a executed"
+		ai_chance = { factor = 10 }
+	}
+}
+#
+country_event = { #Greece doesnt give the Aegean!
+	id = TurkeyFocusEvents.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TurkeyFocusEvents.18" }
+
+	title = TurkeyFocusEvents.18.t
+	desc = TurkeyFocusEvents.18.d
+	picture = GFX_political_deal
+
+	is_triggered_only = yes
+
+	option = {
+		name = TurkeyFocusEvents.18.a #Sure
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.18.a executed"
+		ai_chance = { factor = 10 }
+	}
+}
+#
+country_event = { #Turkey demands we establish buffer zones
+	id = TurkeyFocusEvents.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TurkeyFocusEvents.18" }
+
+	title = TurkeyFocusEvents.19.t
+	desc = TurkeyFocusEvents.19.d
+	picture = GFX_SYR_rojava
+
+	is_triggered_only = yes
+
+	option = {
+		name = TurkeyFocusEvents.19.a #Sure
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.19.a executed"
+		TUR = {
+			country_event = {
+				id = TurkeyFocusEvents.191
+			}
+		}
+		193 = { set_demilitarized_zone = yes }
+		571 = { set_demilitarized_zone = yes }
+		575 = { set_demilitarized_zone = yes }
+		190 = { set_demilitarized_zone = yes }
+		189 = { set_demilitarized_zone = yes }
+		ai_chance = { factor = 10 }
+	}
+	option = {
+		name = TurkeyFocusEvents.19.b #No!
+		log = "[GetDateText]: [This.GetName]: TurkeyFocusEvents.19.b executed"
+		TUR = {
+			country_event = {
+				id = TurkeyFocusEvents.192
+			}
+		}
+		ai_chance = { factor = 10 }
+	}
+}
+#

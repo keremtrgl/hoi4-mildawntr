@@ -1,0 +1,295 @@
+@STATUS_X = -10
+@HEADER_X = 10
+
+guiTypes = {
+	containerWindowType = {
+		name = "ideological_division_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 605 }
+
+		instantTextBoxType = {
+			name ="TUR_ideolist_first"
+			position = { x = 130 y = -08 }
+			font = "hoi_16mbs"
+			text = "TUR_kemalists"
+			format = left
+			maxWidth = 497
+		}
+		
+		instantTextBoxType = {
+			name ="TUR_ideolist"
+			position = { x = 300 y = -08 }
+			font = "hoi_16mbs"
+			text = "%[?TUR_pop_KEM]"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_ideolist_second"
+			position = { x = 130 y = 25 }
+			font = "hoi_16mbs"
+			text = "TUR_islamists"
+			format = left
+			maxWidth = 497
+		}
+		
+		instantTextBoxType = {
+			name ="TUR_ideolist_2"
+			position = { x = 300 y = 25 }
+			font = "hoi_16mbs"
+			text = "%[?TUR_pop_ISL]"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_ideolist_third"
+			position = { x = 130 y = 51 }
+			font = "hoi_16mbs"
+			text = "TUR_kurds"
+			format = left
+			maxWidth = 497
+		}
+		
+		instantTextBoxType = {
+			name ="TUR_ideolist_3"
+			position = { x = 353 y = 51 }
+			font = "hoi_16mbs"
+			text = "%[?TUR_pop_KUR]"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_ideolist_4"
+			position = { x = 5 y = 85 }
+			font = "hoi_16mbs"
+			text = "TUR_desc_ideology"
+			format = left
+			maxWidth = 497
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		iconType = {
+			name = "GFX_middle_eastern_anatolia_green"
+			spriteType = "GFX_middle_eastern_anatolia_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_middle_eastern_anatolia_red"
+			spriteType = "GFX_middle_eastern_anatolia_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_middle_eastern_anatolia_yellow"
+			spriteType = "GFX_middle_eastern_anatolia_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_van_region_red"
+			spriteType = "GFX_van_region_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_van_region_green"
+			spriteType = "GFX_van_region_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_van_region_yellow"
+			spriteType = "GFX_van_region_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_kurdish_region_green"
+			spriteType = "GFX_kurdish_region_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_kurdish_region_red"
+			spriteType = "GFX_kurdish_region_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_kurdish_region_yellow"
+			spriteType = "GFX_kurdish_region_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_aegean_region_green"
+			spriteType = "GFX_aegean_region_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_aegean_region_red"
+			spriteType = "GFX_aegean_region_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_aegean_region_yellow"
+			spriteType = "GFX_aegean_region_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_western_anatolia_red"
+			spriteType = "GFX_western_anatolia_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_western_anatolia_yellow"
+			spriteType = "GFX_western_anatolia_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_western_anatolia_green"
+			spriteType = "GFX_western_anatolia_green"
+			position = { x = 65  y = 325 }
+		}
+		
+		iconType = {
+			name = "GFX_middle_anatolia_green"
+			spriteType = "GFX_middle_anatolia_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_middle_anatolia_red"
+			spriteType = "GFX_middle_anatolia_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_middle_anatolia_yellow"
+			spriteType = "GFX_middle_anatolia_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_bursa_region_green"
+			spriteType = "GFX_bursa_region_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_bursa_region_red"
+			spriteType = "GFX_bursa_region_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_bursa_region_yellow"
+			spriteType = "GFX_bursa_region_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_the_blacksea_green"
+			spriteType = "GFX_the_blacksea_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_the_blacksea_red"
+			spriteType = "GFX_the_blacksea_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_the_blacksea_yellow"
+			spriteType = "GFX_the_blacksea_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_edirne_region_green"
+			spriteType = "GFX_edirne_region_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_edirne_region_red"
+			spriteType = "GFX_edirne_region_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_edirne_region_yellow"
+			spriteType = "GFX_edirne_region_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_northern_hatay_green"
+			spriteType = "GFX_northern_hatay_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_northern_hatay_red"
+			spriteType = "GFX_northern_hatay_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_northern_hatay_yellow"
+			spriteType = "GFX_northern_hatay_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_eastern_med_red"
+			spriteType = "GFX_eastern_med_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_eastern_med_green"
+			spriteType = "GFX_eastern_med_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_eastern_med_yellow"
+			spriteType = "GFX_eastern_med_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_eastern_blacksea_red"
+			spriteType = "GFX_eastern_blacksea_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_eastern_blacksea_green"
+			spriteType = "GFX_eastern_blacksea_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_eastern_blacksea_yellow"
+			spriteType = "GFX_eastern_blacksea_yellow"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_hatay_red"
+			spriteType = "GFX_hatay_red"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_hatay_green"
+			spriteType = "GFX_hatay_green"
+			position = { x = 65 y = 325 }
+		}
+		iconType = {
+			name = "GFX_hatay_yellow"
+			spriteType = "GFX_hatay_yellow"
+			position = { x = 65 y = 325 }
+		}
+	}
+	}
+}

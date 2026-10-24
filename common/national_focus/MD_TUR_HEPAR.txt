@@ -1,0 +1,6551 @@
+focus_tree = {
+	id = MD_TUR_HEPAR
+	default = no
+	
+	focus = {
+		id = HEPAR_victory_of_anatolian_eagle
+		icon = hepar_becomes_government
+		cost = 10,00
+		x = 32
+		y = 0
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	completion_reward = {
+add_stability = 0.03
+add_political_power = 75
+            custom_effect_tooltip = HEPAR_normal
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14= 0.03}
+				recalculate_party = yes
+			}
+}
+	}
+	focus = {
+		id = HEPAR_usage_of_weltpolitik
+		icon = diplomacy
+		cost = 10,00
+		x = 54
+		y = 10
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+        add_political_power = 100
+		} }
+	focus = {
+		id = HEPAR_healthy_relations_with_military
+		icon = blr_nato_cooperation
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_victory_of_anatolian_eagle
+		}
+		x = 32
+		y = 1
+
+
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+		
+	completion_reward = {
+custom_effect_tooltip = TUR_MIL_relations_24
+				set_temp_variable = { temp_opinion = 15 }	
+            change_the_military_opinion = yes		
+			subtract_from_variable = { TUR_rel_hepar = -10 }
+}
+	}
+	focus = {
+		id = HEPAR_kick_opposing_generals
+		icon = GEO_Loyalty_or_Fear
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_healthy_relations_with_military
+		}
+		x = 30
+		y = 2
+
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+custom_effect_tooltip = TUR_MIL_relations_25	
+			subtract_from_variable = { TUR_rel_hepar = -3 }	
+		        add_stability = -0.03
+				add_political_power = -75
+				}
+			}
+	focus = {
+		id = HEPAR_ensure_general_staff_loyalty
+		icon = military_planning
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_healthy_relations_with_military
+		}
+		x = 32
+		y = 2
+
+		
+		completion_reward = {
+custom_effect_tooltip = TUR_MIL_relations_25	
+			subtract_from_variable = { TUR_rel_hepar = -3 }
+		        add_stability = 0.02
+				army_experience = 5
+				}
+			}
+	focus = {
+		id = HEPAR_takeover_propaganda_radios
+		icon = radio_communications
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_healthy_relations_with_military
+		}
+		x = 34
+		y = 2
+
+	
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		completion_reward = {
+            custom_effect_tooltip = HEPAR_normal
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14= 0.03}
+				recalculate_party = yes
+			}
+custom_effect_tooltip = TUR_MIL_relations_25	
+			subtract_from_variable = { TUR_rel_hepar = -3 }
+		        add_political_power = 75
+				}
+			}
+	focus = {
+		id = HEPAR_cooperative_with_army
+		icon = small_arms4
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_kick_opposing_generals
+		}
+		prerequisite = {
+			focus = HEPAR_ensure_general_staff_loyalty
+		}
+		prerequisite = {
+			focus = HEPAR_takeover_propaganda_radios
+		}
+		x = 32
+		y = 3
+
+
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+		
+	completion_reward = {
+custom_effect_tooltip = TUR_MIL_relations_24
+				set_temp_variable = { temp_opinion = 15 }	
+            change_the_military_opinion = yes	
+			subtract_from_variable = { TUR_rel_hepar = -10 }
+			army_experience = 35
+}
+	}
+	focus = {
+		id = HEPAR_clash_with_gulenists
+		icon = islamophobia
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_cooperative_with_army
+		}
+		x = 24
+		y = 4
+		
+		search_filters = {FOCUS_FILTER_NAME}
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	
+completion_reward = {
+    add_ideas = betrayal_from_FETO
+	custom_effect_tooltip = WARNING_HEPAR_GULENISTS
+			set_power_balance = {
+					id = TRGX_power_balance
+					left_side = TRGX_default_left_side 
+					right_side = TRGX_default_right_side 
+					set_value = -0.15
+				}
+	} }
+	focus = {
+		id = HEPAR_shut_down_gulen_dormotories
+		icon = political_arrests2
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_clash_with_gulenists
+		}
+		x = 23
+		y = 5
+
+		search_filters = {FOCUS_FILTER_NAME}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+completion_reward = {
+add_political_power = 25
+add_stability = -0.03
+swap_ideas = {
+                add_idea = betrayal_from_FETO1
+                remove_idea = betrayal_from_FETO
+	} } }
+	focus = {
+		id = HEPAR_control_the_collagoes
+		icon = military_women
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_shut_down_gulen_dormotories
+		}
+		x = 22
+		y = 6
+
+		search_filters = {FOCUS_FILTER_NAME}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	
+		completion_reward = {
+	    add_ideas = collegues_against_gulenists			
+		} }
+	focus = {
+		id = HEPAR_use_scientific_community_as_a_weapon
+		icon = research3
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_control_the_collagoes
+		}
+		x = 21
+		y = 7
+
+		search_filters = {FOCUS_FILTER_NAME}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	
+		completion_reward = {
+		swap_ideas = {
+	    add_idea = scientific_community_against_gulenists		
+        remove_idea = collegues_against_gulenists
+             }		
+		} }
+	focus = {
+		id = HEPAR_shut_down_gulen_schools
+		icon = political_arrests
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_clash_with_gulenists
+		}
+		x = 25
+		y = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_NAME}
+		
+completion_reward = {
+add_political_power = 100
+add_stability = -0.03
+	} } 
+	focus = {
+		id = HEPAR_control_the_television
+		icon = television
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_shut_down_gulen_schools
+		}
+		x = 26
+		y = 6
+
+		search_filters = {FOCUS_FILTER_NAME}
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	search_filters = {FOCUS_FILTER_STABILITY}	
+	
+		completion_reward = {
+	    add_ideas = controlled_television	
+				custom_effect_tooltip = PRESS_HAS_CONTROLLED
+				set_global_flag = PRESS_HAS_MANAGED		
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+}
+		} }
+	focus = {
+		id = HEPAR_counter_fetwa
+		icon = islamist_gov
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_control_the_television
+		}
+		x = 27
+		y = 7
+
+		search_filters = {FOCUS_FILTER_NAME}
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	search_filters = {FOCUS_FILTER_STABILITY}	
+	
+		completion_reward = {
+	    add_ideas = counter_fetwa			
+		} }
+	focus = {
+		id = HEPAR_kemalist_doctrine
+		icon = chp
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_cooperative_with_army
+		}
+		x = 32
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_KEMALISM}
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	
+		completion_reward = {
+			add_ideas = kemalist_doctrine
+		} } 
+	focus = {
+		id = HEPAR_embrace_revolutionism
+		icon = militant_socialism
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_kemalist_doctrine
+		}
+		x = 31
+		y = 5
+
+					
+		completion_reward = {
+			add_ideas = revolutionism_TR
+		} } 
+	focus = {
+		id = HEPAR_strike_rights
+		icon = Generic_Socialist_Industry
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_embrace_revolutionism
+		}
+		x = 29
+		y = 6
+
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_STABILITY}
+	
+		completion_reward = {
+			add_ideas = strike_law
+		} }
+	focus = {
+		id = HEPAR_classical_nationalism
+		icon = Generic_Ultranationalist_Government
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_kemalist_doctrine
+		}
+		x = 33
+		y = 5
+
+	search_filters = {FOCUS_FILTER_STABILITY}
+	
+		completion_reward = {
+			add_ideas = turkish_nationalism
+		} } 
+	focus = {
+		id = HEPAR_increase_political_quality
+		icon = focus_ETH_re-convene_the_parliament
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_classical_nationalism
+		}
+		prerequisite = {
+			focus = HEPAR_embrace_revolutionism
+		}
+		x = 32
+		y = 6
+
+
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_STABILITY}
+	
+		completion_reward = {
+			add_ideas = quality_politics
+		} }
+	focus = {
+		id = HEPAR_elective_state
+		icon = election2
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_increase_political_quality
+		}
+		prerequisite = {
+			focus = HEPAR_strike_rights
+		}
+		x = 30
+		y = 7
+
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_STABILITY}
+	
+		completion_reward = {
+			add_ideas = elective_state
+		} }
+	focus = {
+		id = HEPAR_powerize_AYM
+		icon = parliament_box
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_increase_political_quality
+		}
+		x = 32
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		
+		completion_reward = {
+		add_political_power = 125
+}   }
+	focus = {
+		id = HEPAR_push_military_out_of_politics
+		icon = the_road_of_life
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_classical_nationalism
+		}
+		x = 35
+		y = 6
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		remove_ideas = turkish_military_infulence 
+        add_stability = 0.02
+		custom_effect_tooltip = TUR_ARMED_FORCES_HEPAR_loyalty		
+}   }
+	focus = {
+		id = HEPAR_intervene_in_threshold
+		icon = blue_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_increase_political_quality
+		}
+		prerequisite = {
+			focus = HEPAR_push_military_out_of_politics
+		}
+		x = 34
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		completion_reward = {
+		add_stability = 0.03
+ 	set_variable = { election_threshold = 0.07 }
+        custom_effect_tooltip = THRESHOLD_7_TUR_TURN	
+}   }
+	focus = {
+		id = HEPAR_multi_democrat
+		icon = Election
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_intervene_in_threshold
+		}
+		prerequisite = {
+			focus = HEPAR_powerize_AYM
+		}
+		prerequisite = {
+			focus = HEPAR_elective_state
+		}
+		x = 32
+		y = 8
+
+
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_STABILITY}
+	
+		completion_reward = {
+			swap_ideas = {
+			add_idea = multi_party_elective_state
+			remove_idea = quality_politics
+			 }
+		} }
+	focus = {
+		id = HEPAR_clash_with_PKK
+		icon = FRA_Reform_Military_Mass_Mobilization_Volksturm
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_cooperative_with_army
+		}
+		x = 40
+		y = 4
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	completion_reward = {
+army_experience = 25
+add_political_power = 75
+}
+	}
+	focus = {
+		id = HEPAR_voluntairly_army
+		icon = focus_fidayin
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_clash_with_PKK
+		}
+		x = 39
+		y = 5
+
+
+	completion_reward = {
+add_ideas = volunteer_efficent_force
+}
+	}
+	focus = {
+		id = HEPAR_feed_the_revenge
+		icon = ethiopia_italy_war
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_voluntairly_army
+		}
+		x = 38
+		y = 6
+
+
+	completion_reward = {
+add_ideas = feeded_the_military_revenge
+}
+	}
+	focus = {
+		id = HEPAR_revenge_the_outthermost
+		icon = focus_ETH_scavenging_tactics
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_feed_the_revenge
+		}
+		x = 37
+		y = 7
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+	completion_reward = {
+	swap_ideas = {
+remove_idea = feeded_the_military_revenge
+add_idea = feeded_the_military_revenge_extreme
+} 
+ }
+	}
+	focus = {
+		id = HEPAR_defence_organizations
+		icon = coup
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_clash_with_PKK
+		}
+		x = 41
+		y = 5
+
+
+	completion_reward = {
+add_ideas = national_defence_organizations
+}
+	}
+	focus = {
+		id = HEPAR_rocket_missles
+		icon = rocketry
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_voluntairly_army
+		}
+		prerequisite = {
+			focus = HEPAR_defence_organizations
+		}
+		x = 40
+		y = 6
+
+		
+		
+		available = {
+		controls_state = 162
+		controls_state = 935
+		} 
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		completion_reward = {
+			162 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				} }
+			935 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = HEPAR_new_barricats
+		icon = city_fort
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_rocket_missles
+		}
+		x = 39
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		
+		available = {
+		controls_state = 162
+		} 
+		
+	completion_reward = {
+            162 = {
+                if = {
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 4512
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 7530
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 9823
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 1463
+                            instant_build = yes
+                        }
+                    }
+                }
+			} }
+	focus = {
+		id = HEPAR_new_railways
+		icon = Generic_Train
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_rocket_missles
+		}
+		x = 41
+		y = 7
+
+		
+		available = {
+		controls_state = 162
+		controls_state = 935
+		} 
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		
+		completion_reward = {
+			build_railway = {
+				path = { 9833 11829 890 3905 6908 11747 804 3862 3807 921 6977 3921 3890 9860 11759 4512}
+				level = 1
+			}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = HEPAR_seek_help_from_anti_communists
+		icon = USA_american_militias
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_defence_organizations
+		}
+		x = 42
+		y = 6
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+	completion_reward = {
+add_ideas = crusade_against_pkk
+}
+	}
+	focus = {
+		id = HEPAR_readiness_for_madness
+		icon = Focus_Machine_Gun
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_seek_help_from_anti_communists
+		}
+		x = 43
+		y = 7
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		available = {
+		has_idea = TUR_PKK_insurgency_active
+		}
+
+	completion_reward = {
+army_experience = 75
+add_war_support = 0.05
+custom_effect_tooltip = DEC_5_PKK_POINT
+subtract_from_variable = { var = pkk_presence value = 5 }
+			add_to_variable = { TUR_PKK_aggro = -5 }
+			add_to_variable = { TUR_PKK_strength = -5 }		
+}
+	}
+	focus = {
+		id = HEPAR_put_an_end_to_pkk
+		icon = focus_attack_pkk
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_revenge_the_outthermost
+		}
+		prerequisite = {
+			focus = HEPAR_readiness_for_madness
+		}
+		x = 40
+		y = 8
+
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}		
+		
+		completion_reward = {
+	TUR_remove_pkk = yes
+			add_war_support = -0.1
+		} } 
+	focus = {
+		id = HEPAR_economy_resolvation_project
+		icon = balance_buget
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_victory_of_anatolian_eagle
+		}
+		x = 54
+		y = 1
+
+		
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+			completion_reward = {
+					add_ideas = economy_resolvation_project
+swap_ideas = { 
+  remove_idea = lira_1
+  add_idea = lira_2
+}  	
+				}
+
+	} 
+	focus = {
+		id = HEPAR_economist_meetings
+		icon = business_man
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_economy_resolvation_project
+		}
+		x = 53
+		y = 2
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+			completion_reward = {
+					add_political_power = 25
+					add_stability = 0.03
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 2
+				category = CAT_industry
+			}
+			subtract_from_variable = { treasury = -10.0 }
+			custom_effect_tooltip = 10_billion_revenue_tt
+				}
+	} 
+	focus = {
+		id = HEPAR_trade_with_EU
+		icon = trade_with_europe
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_economist_meetings
+		}
+		x = 52
+		y = 3
+
+
+        available = {
+        country_exists = GER
+        country_exists = FRA
+        country_exists = ITA
+        country_exists = ENG
+		NOT = {
+        has_war_with = GER
+        has_war_with = FRA
+        has_war_with = ITA
+        has_war_with = ENG
+		 }
+        }
+		
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier =  mutual_trade_agreement }
+					reverse_add_opinion_modifier = { target = FRA modifier =  mutual_trade_agreement }
+					reverse_add_opinion_modifier = { target = ITA modifier =  mutual_trade_agreement }
+					reverse_add_opinion_modifier = { target = ENG modifier =  mutual_trade_agreement }
+			subtract_from_variable = { treasury = -20.0 }
+			custom_effect_tooltip = 20_billion_revenue_tt					
+				}
+	}
+	focus = {
+		id = HEPAR_visit_IMF
+		icon = imf
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_economy_resolvation_project
+		}
+		x = 55
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+			completion_reward = {
+					add_political_power = 75
+					add_stability = -0.02
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 2
+				category = CAT_industry
+			}
+			subtract_from_variable = { treasury = -10.0 }
+			custom_effect_tooltip = 10_billion_revenue_tt
+				}
+
+	} 
+	focus = {
+		id = HEPAR_finish_the_economy_plan
+		icon = liberalization_policies
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_economist_meetings
+		}
+		prerequisite = {
+			focus = HEPAR_visit_IMF
+		}
+		x = 54
+		y = 3
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+			completion_reward = {
+			add_stability = 0.05
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		swap_ideas = { 
+  remove_idea = lira_2
+  add_idea = lira_3
+}  						
+				}
+	}
+	focus = {
+		id = HEPAR_agriculture_projection
+		icon = farming
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_finish_the_economy_plan
+		}
+		x = 49
+		y = 4
+
+		
+			completion_reward = {
+			add_ideas = agriculture_projection				
+				}
+	}
+	focus = {
+		id = HEPAR_trade_with_USA
+		icon = trade_with_america
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_visit_IMF
+		}
+		x = 56
+		y = 3
+
+
+        available = {
+        country_exists = USA
+		NOT = {
+        has_war_with = USA
+		 }
+        }
+		
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = USA modifier =  mutual_trade_agreement }
+			subtract_from_variable = { treasury = -10.0 }
+			custom_effect_tooltip = 10_billion_revenue_tt					
+				}
+	}
+	focus = {
+		id = HEPAR_investments_agreements
+		icon = business_man2
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_finish_the_economy_plan
+		}
+		prerequisite = {
+			focus = HEPAR_trade_with_USA
+		}
+		prerequisite = {
+			focus = HEPAR_trade_with_EU
+		}
+		x = 54
+		y = 4
+
+
+        available = {
+		controls_state = 155
+		controls_state = 156
+		controls_state = 935
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+		completion_reward = {
+				get_random_investment_targets = yes 
+			155 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				}
+			156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				}
+			935 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			
+		} } } 
+	focus = {
+		id = HEPAR_open_recovery_group
+		icon = cash_grap
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_investments_agreements
+		}
+		x = 53
+		y = 5
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = reformed_2001_crisis
+  add_idea = reforms_for_2001_crisis
+}
+      }
+	}
+	focus = {
+		id = HEPAR_limited_intervention_on_central_bank
+		icon = central_planned_economy2
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_investments_agreements
+		}
+		x = 55
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}		
+			completion_reward = {
+			add_ideas = economic_interventionary			
+				}
+	}
+	focus = {
+		id = HEPAR_new_istanbul_borsa_base
+		icon = istanbul_borsa
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_open_recovery_group
+		}
+		prerequisite = {
+			focus = HEPAR_limited_intervention_on_central_bank
+		}
+		x = 54
+		y = 6
+
+
+        available = {
+        controls_state = 934
+        }
+	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+			completion_reward = {
+			add_stability = 0.03
+			add_political_power = 50
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt	
+			934 = {
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				 } 	
+				} }
+	}
+	focus = {
+		id = HEPAR_minimize_debt
+		icon = better_money_on_fire
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_open_recovery_group
+		}
+		x = 52
+		y = 6
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_STABILITY}
+			completion_reward = {
+			add_stability = -0.1
+			set_temp_variable = { debt_change = -50 }
+			modify_debt_effect = yes					
+				}
+	}
+	focus = {
+		id = HEPAR_interventionary_rules
+		icon = BRA_simplify_the_tax_system
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_limited_intervention_on_central_bank
+		}
+		x = 56
+		y = 6
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}		
+			completion_reward = {
+			swap_ideas = {
+			add_idea = economic_interventionary_organized	
+            remove_idea = economic_interventionary
+         }			
+				}
+	}
+	focus = {
+		id = HEPAR_industrialization
+		icon = RUS_State_Construction
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_finish_the_economy_plan
+		}
+		x = 59
+		y = 4
+
+		
+			completion_reward = {
+			add_ideas = industrialization_concept	
+         }			
+	}
+	focus = {
+		id = HEPAR_workers_law
+		icon = Generic_Socialist_Man
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_industrialization
+		}
+		x = 59
+		y = 5
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+			completion_reward = {
+			add_ideas = workers_administration	
+         }			
+	}
+	focus = {
+		id = HEPAR_work_propaganda
+		icon = Generic_Socialist_Propaganda
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_workers_law
+		}
+		x = 59
+		y = 6
+
+	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+			completion_reward = {
+			add_ideas = work_propaganda	
+         }			
+	}
+	focus = {
+		id = HEPAR_save_industry_from_privatization
+		icon = Labourist
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_work_propaganda
+		}
+		x = 59
+		y = 7
+
+		
+			completion_reward = {
+			add_ideas = anti_privatization	
+         }			
+	}
+	focus = {
+		id = HEPAR_crack_down_foreign_controllers
+		icon = GEO_Enforce_Wealth_Distribution
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_save_industry_from_privatization
+		}
+		x = 58
+		y = 8
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_STABILITY}
+			completion_reward = {
+			add_stability = 0.03
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt					
+				}
+	}
+	focus = {
+		id = HEPAR_diplomats_working
+		icon = generic_government
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_usage_of_weltpolitik
+		}
+		x = 54
+		y = 11
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+		completion_reward = {
+        add_ideas = diplomatic_coverage
+		} }
+	focus = {
+		id = HEPAR_mission_to_europe
+		icon = align_to_europe
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_diplomats_working
+		}
+		x = 59
+		y = 12
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier =  large_commercial_relations }
+					reverse_add_opinion_modifier = { target = ENG modifier =  large_commercial_relations }
+					reverse_add_opinion_modifier = { target = FRA modifier =  large_commercial_relations }
+				}
+
+	} 
+	focus = {
+		id = HEPAR_ask_for_guarantee_from_germany
+		icon = align_to_germany
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_mission_to_europe
+		}
+		mutually_exclusive = {
+			focus = HEPAR_ask_for_guarantee_from_uk
+		}
+		x = 57
+		y = 13
+
+        available = {
+        country_exists = GER
+		NOT = {
+		has_war_with = GER
+		 }
+        }
+		
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+	completion_reward = {
+	                GER = {
+					give_guarantee = TUR
+					}
+					}
+				}
+	focus = {
+		id = HEPAR_ask_for_guarantee_from_uk
+		icon = align_to_britain
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_mission_to_europe
+		}
+		mutually_exclusive = {
+			focus = HEPAR_ask_for_guarantee_from_germany
+			focus = HEPAR_ask_for_guarantee_from_france
+		}
+		x = 59
+		y = 13
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+        available = {
+        country_exists = ENG
+		NOT = {
+		has_war_with = ENG
+		 }
+        }
+		
+	completion_reward = {
+	                ENG = {
+					give_guarantee = TUR
+					}
+					}
+				}
+	focus = {
+		id = HEPAR_crack_down_national_priviate
+		icon = communist_propaganda
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_save_industry_from_privatization
+		}
+		x = 60
+		y = 8
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_STABILITY}
+			completion_reward = {
+			add_stability = 0.03
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt					
+				}
+	}
+	focus = {
+		id = HEPAR_began_to_hunt_corruption
+		icon = focus_generic_buy_guns
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_multi_democrat
+		}
+		x = 32
+		y = 9
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_political_power = -25
+			decrease_corruption = yes
+}   }
+	focus = {
+		id = HEPAR_began_the_movement_of_improvement
+		icon = focus_drinks_peace
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_began_to_hunt_corruption
+		}
+		x = 32
+		y = 10
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		add_political_power = -125
+        add_stability = 0.03
+}   }
+	focus = {
+		id = HEPAR_new_generation_rights
+		icon = protectionism
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_began_the_movement_of_improvement
+		}
+		x = 32
+		y = 11
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+			completion_reward = {
+			add_stability = 0.02
+            add_political_power = 50			
+				}
+	}
+	focus = {
+		id = HEPAR_hard_justice_rules
+		icon = deadly_deal
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_began_the_movement_of_improvement
+		}
+		x = 27
+		y = 11
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+			completion_reward = {
+			add_stability = -0.03
+			add_political_power = 25				
+				}
+	}
+	focus = {
+		id = HEPAR_ethics_committee
+		icon = dangerous_deal3
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_began_the_movement_of_improvement
+		}
+		x = 37
+		y = 11
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+		add_ideas = ethics_committee
+}   }
+	focus = {
+		id = HEPAR_guarantee_the_4_elements
+		icon = Focus_Parliament_Constitution
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_hard_justice_rules
+		}
+		x = 28
+		y = 12
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+		add_ideas = four_elements_under_protection
+}   }
+	focus = {
+		id = HEPAR_give_rules_under_protection_of_arms
+		icon = goal_JAP_defend_constitution
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_hard_justice_rules
+		}
+		x = 26
+		y = 12
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+		add_ideas = constitution_protection_under_arms
+}   }
+	focus = {
+		id = HEPAR_anti_prisioners_law
+		icon = snitch
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_give_rules_under_protection_of_arms
+		}
+		prerequisite = {
+			focus = HEPAR_guarantee_the_4_elements
+		}
+		x = 27
+		y = 13
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+		add_ideas = prisoner_law
+}   }
+	focus = {
+		id = HEPAR_hunt_wild_corruption
+		icon = bloody_purge
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_anti_prisioners_law
+		}
+		prerequisite = {
+			focus = HEPAR_improve_the_women_laws
+		}
+		prerequisite = {
+			focus = HEPAR_club_rules
+		}
+		x = 27
+		y = 14
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_political_power = -25
+			decrease_corruption = yes
+      
+}   }
+	focus = {
+		id = HEPAR_improve_the_women_laws
+		icon = women_issues
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_guarantee_the_4_elements
+		}
+		x = 29
+		y = 13
+
+
+	search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	
+		completion_reward = {
+		add_ideas = improve_the_women_laws
+}   }
+	focus = {
+		id = HEPAR_look_for_casino
+		icon = investigation
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_ethics_committee
+		}
+		x = 36
+		y = 12
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		completion_reward = {
+             add_stability = 0.03
+			 add_political_power = 50
+			subtract_from_variable = { treasury = -5.0 }
+			custom_effect_tooltip = 5_billion_revenue_tt
+		} } 
+	focus = {
+		id = HEPAR_club_rules
+		icon = grey_market_sheep
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_give_rules_under_protection_of_arms
+		}
+		x = 25
+		y = 13
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		completion_reward = {
+             add_stability = -0.02
+			 add_political_power = 25
+		} } 
+	focus = {
+		id = HEPAR_destroy_the_slums
+		icon = construction2
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_ethics_committee
+		}
+		x = 38
+		y = 12
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE }	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		
+		available = {
+		controls_state = 934
+		controls_state = 156
+		controls_state = 155
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		completion_reward = {
+                159 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                155 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                934 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                156 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = HEPAR_control_the_fun_clubs
+		icon = MEX_Purge_corrupt_judges
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_ethics_committee
+		}
+		prerequisite = {
+			focus = HEPAR_look_for_casino
+		}
+		prerequisite = {
+			focus = HEPAR_destroy_the_slums
+		}
+		x = 37
+		y = 13
+
+
+	search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_ideas = controlled_pro_western_clubs
+}   }
+	focus = {
+		id = HEPAR_not_too_westernized_nor_easternized
+		icon = MEX_Mexican_government
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_control_the_fun_clubs
+		}
+		prerequisite = {
+			focus = HEPAR_control_over_illegal_facilities
+		}
+		prerequisite = {
+			focus = HEPAR_state_searchs
+		}
+		x = 37
+		y = 14
+
+
+	search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+	
+		completion_reward = {
+		add_war_support = -0.1
+		add_ideas = neutral_power_of_realm
+}   }
+	focus = {
+		id = HEPAR_protect_informals
+		icon = protectionist_economics
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_anti_prisioners_law
+		}
+		x = 25
+		y = 14
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+		add_ideas = protect_informals
+}   }
+	focus = {
+		id = HEPAR_17_year_politiche
+		icon = government_beu
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_new_generation_rights
+		}
+		x = 33
+		y = 12
+
+
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_STABILITY}
+	
+		completion_reward = {
+		add_ideas = 17_year_politiche
+}   }
+	focus = {
+		id = HEPAR_control_over_illegal_facilities
+		icon = Generic_Policeman
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_look_for_casino
+		}
+		x = 35
+		y = 13
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		search_filters = {FOCUS_FILTER_POLITICAL}			
+			completion_reward = {
+			add_political_power = 75
+            add_stability = 0.03			
+				}
+	}
+	focus = {
+		id = HEPAR_state_searchs
+		icon = espionage2
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_destroy_the_slums
+		}
+		x = 39
+		y = 13
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+		add_ideas = state_search_group
+}   }
+	focus = {
+		id = HEPAR_education_reforms
+		icon = education_reform
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_17_year_politiche
+		}
+		prerequisite = {
+			focus = HEPAR_volunteer_force
+		}
+		x = 32
+		y = 13
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_STABILITY}
+			
+		completion_reward = {
+		add_ideas = village_institutions
+		add_research_slot = 1
+}   }
+	focus = {
+		id = HEPAR_crush_datamining
+		icon = Generic_Espionage02
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_anti_prisioners_law
+		}
+		x = 29
+		y = 14
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+		add_ideas = datamining_crush
+}   }
+	focus = {
+		id = HEPAR_improve_general_culture
+		icon = Fight_for_Freedom
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_education_reforms
+		}
+		x = 32
+		y = 14
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+	search_filters = {FOCUS_FILTER_STABILITY}
+			
+		completion_reward = {
+		add_ideas = improvement_of_general_culture
+}   }
+	focus = {
+		id = HEPAR_volunteer_force
+		icon = focus_generic_fascist_militarism
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_new_generation_rights
+		}
+		x = 31
+		y = 12
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+		add_ideas = militaristic_education
+}   }
+	focus = {
+		id = HEPAR_turkish_theathers
+		icon = television
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_improve_general_culture
+		}
+		x = 31
+		y = 15
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+		add_ideas = turkish_theathers
+}   }
+	focus = {
+		id = HEPAR_turkish_films
+		icon = film_industry
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_improve_general_culture
+		}
+		x = 33
+		y = 15
+
+
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	search_filters = {FOCUS_FILTER_STABILITY}
+	
+		completion_reward = {
+		add_ideas = turkish_films
+}   }
+	focus = {
+		id = HEPAR_hunt_the_illegal_mafia
+		icon = volunteers
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_hunt_wild_corruption
+		}
+		prerequisite = {
+			focus = HEPAR_protect_informals
+		}
+		prerequisite = {
+			focus = HEPAR_crush_datamining
+		}
+		x = 27
+		y = 15
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}		
+			completion_reward = {
+			add_stability = 0.05
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt					
+				}
+	}
+	focus = {
+		id = HEPAR_TTK_works
+		icon = TTK
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_not_too_westernized_nor_easternized
+		}
+		x = 37
+		y = 15
+
+
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	
+		completion_reward = {
+		add_ideas = TTK_progress
+}   }
+	focus = {
+		id = HEPAR_push_new_books
+		icon = Generic_Major_City
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_support_writers
+		}
+		x = 32
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+	search_filters = {FOCUS_FILTER_POLITICAL}
+			
+		completion_reward = {
+		swap_ideas = {
+		add_idea = turkish_books_level_2
+		remove_idea = turkish_books_level_1
+		}
+}   }
+	focus = {
+		id = HEPAR_support_writers
+		icon = BLR_High_quality_education
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_turkish_theathers
+		}
+		prerequisite = {
+			focus = HEPAR_turkish_films
+		}
+		x = 32
+		y = 16
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+	search_filters = {FOCUS_FILTER_POLITICAL}
+	
+		completion_reward = {
+		add_ideas = turkish_books_level_1
+}   }
+	focus = {
+		id = HEPAR_museums
+		icon = free_higher_education
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_turkish_films
+		}
+		prerequisite = {
+			focus = HEPAR_TTK_works
+		}
+		prerequisite = {
+			focus = HEPAR_turkish_theathers
+		}
+		x = 34
+		y = 16
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+	search_filters = {FOCUS_FILTER_STABILITY}
+	
+		completion_reward = {
+		add_ideas = quality_museums
+}   }
+	focus = {
+		id = HEPAR_culture_protection_inst
+		icon = meeting
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_turkish_theathers
+		}
+		prerequisite = {
+			focus = HEPAR_hunt_the_illegal_mafia
+		}
+		x = 30
+		y = 16
+
+	search_filters = {FOCUS_FILTER_STABILITY}
+	
+		completion_reward = {
+		add_ideas = general_culture_protection_institutions
+}   }
+	focus = {
+		id = HEPAR_fund_kemalist_organizations
+		icon = ataturkcu_dusunce_dernegi
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_crusade_against_gulenists
+		}
+		x = 23
+		y = 7
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_NAME}
+		
+			
+		available = {
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_middle_left_side_range  
+			}
+		}
+
+	completion_reward = {
+     swap_ideas = {
+	 add_idea = betrayal_from_FETO3
+	 remove_idea = betrayal_from_FETO2
+	  }
+			TRGX_bop_very_low_decrease_effect = yes
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+      }
+	}
+	focus = {
+		id = HEPAR_crusade_against_gulenists
+		icon = infiltration
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_shut_down_gulen_dormotories
+		}
+		prerequisite = {
+			focus = HEPAR_shut_down_gulen_schools
+		}
+		x = 24
+		y = 6
+
+		search_filters = {FOCUS_FILTER_NAME}
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	search_filters = {FOCUS_FILTER_STABILITY}	
+
+		available = {
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_left_side_range  
+			}
+		}
+
+completion_reward = {
+	retire_character = ilhan_tolu
+	retire_character = mustafa_ozsoy
+	retire_character = TUR_akin_ozturk
+			TRGX_bop_very_low_decrease_effect = yes
+swap_ideas = {
+                add_idea = betrayal_from_FETO2
+                remove_idea = betrayal_from_FETO1
+	} } }
+	focus = {
+		id = HEPAR_fund_nationalists
+		icon = counter
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_crusade_against_gulenists
+		}
+		x = 25
+		y = 7
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_NAME}
+
+			
+		available = {
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_middle_left_side_range  
+			}
+		}
+
+		completion_reward = {
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+			TRGX_bop_very_low_decrease_effect = yes
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.05
+				}			
+			}
+		}
+	focus = {
+		id = HEPAR_reform_bureocracy
+		icon = bureau
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_fund_nationalists
+		}
+		prerequisite = {
+			focus = HEPAR_fund_kemalist_organizations
+		}
+		prerequisite = {
+			focus = HEPAR_use_scientific_community_as_a_weapon
+		}
+		prerequisite = {
+			focus = HEPAR_counter_fetwa
+		}
+		x = 24
+		y = 8
+
+		search_filters = {FOCUS_FILTER_NAME}
+
+			
+		available = {
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_far_left_side_range  
+			}
+		}
+
+completion_reward = {
+    remove_ideas = betrayal_from_FETO3
+  				remove_power_balance = {
+					id = TRGX_power_balance
+				}   
+	} }
+	focus = {
+		id = HEPAR_turkish_market_enlargement
+		icon = BRA_libertarian_economics
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_minimize_debt
+		}
+		prerequisite = {
+			focus = HEPAR_new_istanbul_borsa_base
+		}
+		prerequisite = {
+			focus = HEPAR_interventionary_rules
+		}
+		prerequisite = {
+			focus = HEPAR_support_the_agriculture
+		}
+		prerequisite = {
+			focus = HEPAR_work_propaganda
+		}
+		x = 54
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = reforms_for_2001_crisis
+  add_idea = reformss_for_2001_crisis
+}
+swap_ideas = { 
+  remove_idea = lira_3
+  add_idea = lira_4
+}  	
+      }
+	}
+	focus = {
+		id = HEPAR_fluent_economy
+		icon = vineyard
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_turkish_market_enlargement
+		}
+		x = 54
+		y = 8
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+		completion_reward = {
+        remove_ideas = reformss_for_2001_crisis
+				}
+			}
+	focus = {
+		id = HEPAR_support_the_agriculture
+		icon = agriculture
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_cheap_fertilizer
+		}
+		x = 49
+		y = 6
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+        swap_ideas = {
+		add_idea = agriculture_supporteds
+		remove_idea = agriculture_projection
+		}
+				}
+			}
+	focus = {
+		id = HEPAR_cheap_fertilizer
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_agriculture_projection
+		}
+		x = 49
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+						search_filters = {FOCUS_FILTER_EXPENDITURE}
+						
+completion_reward = {
+add_stability = 0.03
+	  			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt	
+}
+    }	
+	focus = {
+		id = HEPAR_move_industries_to_central
+		icon = merge_plants
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_support_the_agriculture
+		}
+		x = 49
+		y = 7
+
+
+        available = {
+		controls_state = 159
+		controls_state = 934
+		controls_state = 156		
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_STABILITY}		
+		completion_reward = {
+		    add_stability = 0.02
+			159 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			934 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+			}
+			156 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = HEPAR_adana_agriculture_projects
+		icon = lumber_industry
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_move_industries_to_central
+		}
+		x = 48
+		y = 8
+
+	
+
+        available = {
+        controls_state = 161
+        }
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+					add_ideas = adana_agriculture_basis
+			161 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			} 
+	}
+	focus = {
+		id = HEPAR_wheat_power
+		icon = agriculture2
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_move_industries_to_central
+		}
+		x = 50
+		y = 8
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+					add_ideas = wheat_fields
+			} 
+	}
+	focus = {
+		id = HEPAR_finish_the_general_improvement_reforms
+		icon = stolen_papers2
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_push_new_books
+		}
+		x = 32
+		y = 18
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+	completion_reward = {
+add_stability = 0.02
+add_political_power = 25
+}
+	}
+	focus = {
+		id = HEPAR_follow_perincek
+		icon = perincek_deal_with_HEPAR
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_political_changement
+		}
+		mutually_exclusive = {
+			focus = HEPAR_nation_mighty_nation
+		}
+		x = 29
+		y = 20
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+	
+	completion_reward = {
+add_stability = -0.03
+add_political_power = -75
+add_war_support = 0.03
+            custom_effect_tooltip = VATAN_normal
+			hidden_effect = {
+				add_to_variable = { party_pop_array^05= 0.03}
+				recalculate_party = yes
+			}
+}
+	}
+	focus = {
+		id = HEPAR_nation_mighty_nation
+		icon = turk_pistol
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_political_changement
+		}
+		mutually_exclusive = {
+			focus = HEPAR_follow_perincek
+		}
+		x = 35
+		y = 20
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+	completion_reward = {
+add_stability = 0.01
+add_political_power = 25
+            custom_effect_tooltip = HEPAR_normal
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14= 0.03}
+				recalculate_party = yes
+			}
+}
+	}
+	focus = {
+		id = HEPAR_political_changement
+		icon = focus_generic_improve_the_administration
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_finish_the_general_improvement_reforms
+		}
+		x = 32
+		y = 19
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		completion_reward = {
+		add_political_power = 100
+		    custom_effect_tooltip = TUR_united_state
+					        				subtract_from_variable = { TUR_pop_KEM = -6 }
+								        				subtract_from_variable = { TUR_pop_KUR = 3 }
+	        				subtract_from_variable = { TUR_pop_ISL = 3 }
+			set_global_flag = TUR_UNITE_DIASPORA
+						TUR_remove_state_modifier_effects = yes
+}   }
+	focus = {
+		id = HEPAR_went_out_NATO
+		icon = renounce_nato
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_follow_perincek
+		}
+		x = 29
+		y = 21
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+    bypass = {
+	NOT = { 
+	has_idea = NATO_member
+	} }
+	
+	completion_reward = {
+    remove_ideas = NATO_member
+	add_stability = 0.03
+			} 
+	}
+	focus = {
+		id = HEPAR_denounce_the_trade_with_usa_and_its_allies
+		icon = us_non_nato_ally
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_follow_perincek
+		}
+		x = 27
+		y = 21
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+	completion_reward = {
+	                add_war_support = 0.02
+					reverse_add_opinion_modifier = { target = GER modifier =  broke_trade_agreement }
+					reverse_add_opinion_modifier = { target = FRA modifier =  broke_trade_agreement }
+					reverse_add_opinion_modifier = { target = ITA modifier =  broke_trade_agreement }
+					reverse_add_opinion_modifier = { target = ENG modifier =  broke_trade_agreement }
+					reverse_add_opinion_modifier = { target = USA modifier =  broke_trade_agreement }
+			} 
+	}
+	focus = {
+		id = HEPAR_kick_NATO_generals_from_country
+		icon = end_of_nato
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_went_out_NATO
+		}
+		prerequisite = {
+			focus = HEPAR_denounce_the_trade_with_usa_and_its_allies
+		}
+		x = 28
+		y = 22
+
+
+        available = {
+		NOT = {
+        has_idea = NATO_member
+        } }
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+		completion_reward = {
+retire_unit_leader = yavuz_turkgenci
+		        add_stability = -0.03
+				add_political_power = -75
+				set_temp_variable = { temp_opinion = -15 }	
+            change_the_military_opinion = yes	
+custom_effect_tooltip = NATO_GENERALS_KICKED
+				}
+			}
+	focus = {
+		id = HEPAR_withdrew_from_NATO_operations
+		icon = nato_nation
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_went_out_NATO
+		}
+		x = 30
+		y = 22
+
+
+        available = {
+		NOT = {
+        has_idea = NATO_member
+        } }
+
+		search_filters = {FOCUS_FILTER_STABILITY}		
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+		
+	completion_reward = {
+	        add_command_power = -25
+			add_manpower = 10000
+			add_stability = 0.02
+			} 
+	}
+	focus = {
+		id = HEPAR_trade_with_china_and_russia
+		icon = trade_with_russia
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_denounce_the_trade_with_usa_and_its_allies
+		}
+		x = 26
+		y = 22
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+        available = {
+        country_exists = CHI
+        country_exists = SOV
+		NOT = {
+        has_war_with = CHI
+        has_war_with = SOV
+		 }
+        }
+		
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = SOV modifier =  mutual_trade_agreement }
+					reverse_add_opinion_modifier = { target = CHI modifier =  mutual_trade_agreement }
+			subtract_from_variable = { treasury = -20.0 }
+			custom_effect_tooltip = 20_billion_revenue_tt					
+				}
+	}
+	focus = {
+		id = HEPAR_use_socialists_as_a_shield
+		icon = Generic_Socialist_Machine_Gun
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_withdrew_from_NATO_operations
+		}
+		prerequisite = {
+			focus = HEPAR_kick_NATO_generals_from_country
+		}
+		x = 29
+		y = 23
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+	completion_reward = {
+    add_ideas = socialists_shield
+      }
+	}
+	focus = {
+		id = HEPAR_chinese_investments
+		icon = chinese_rmb
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_kick_NATO_generals_from_country
+		}
+		prerequisite = {
+			focus = HEPAR_trade_with_china_and_russia
+		}
+		x = 27
+		y = 23
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }
+	
+	completion_reward = {
+			TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			CHI = {
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt			
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = HEPAR_let_the_russian_ships_pass
+		icon = focus_rus_oceangoing
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_trade_with_china_and_russia
+		}
+		x = 25
+		y = 23
+
+
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }	
+	
+	completion_reward = {
+					add_war_support = 0.03
+					reverse_add_opinion_modifier = { target = SOV modifier = russian_bases }
+					SOV = {
+					navy_experience = 75
+					 }
+					}
+				}
+	focus = {
+		id = HEPAR_socialist_defenders
+		icon = communist_spies2
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_use_socialists_as_a_shield
+		}
+		x = 30
+		y = 24
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+		completion_reward = {
+	    add_ideas = socialist_defenders			
+		} }
+	focus = {
+		id = HEPAR_chinese_cheap_equipments
+		icon = blr_china_type88
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_use_socialists_as_a_shield
+		}
+		prerequisite = {
+			focus = HEPAR_chinese_investments
+		}
+		x = 28
+		y = 24
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+        has_war_with = CHI
+		 }
+        }
+
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }	
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_EQUIPMENT}	
+		
+     completion_reward = {
+	 add_war_support = 0.02
+	 add_equipment_to_stockpile = {	type = mbt_tech_1 amount = 2000 }
+	 } }
+	focus = {
+		id = HEPAR_peking_accords
+		icon = communist_china
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_chinese_investments
+		}
+		prerequisite = {
+			focus = HEPAR_let_the_russian_ships_pass
+		}
+		x = 26
+		y = 24
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+        has_war_with = CHI
+		 }
+        }
+
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }	
+	
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+		completion_reward = {
+					add_ideas = sco_member
+		    add_political_power = 25
+            reverse_add_opinion_modifier = {
+                  target = CHI modifier = peking_accords
+            }					
+		    CHI = {
+			give_guarantee = TUR
+            reverse_add_opinion_modifier = {
+                  target = TUR modifier = peking_accords
+            }	
+		} } }
+	focus = {
+		id = HEPAR_turkish_joinment_of_shangai_alliance
+		icon = aplly_to_join_csto
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_socialist_defenders
+		}
+		prerequisite = {
+			focus = HEPAR_chinese_cheap_equipments
+		}
+		prerequisite = {
+			focus = HEPAR_peking_accords
+		}
+		x = 28
+		y = 25
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+        has_war_with = CHI
+		 }
+        }
+
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }	
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+	search_filters = {FOCUS_FILTER_POLITICAL}		
+		completion_reward = {
+		    add_political_power = 25
+            reverse_add_opinion_modifier = {
+                  target = SOV modifier = csto_observer
+            }	
+set_global_flag = DISABLE_WAR_SYSTEM_PAR
+custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU				
+		    SOV = {
+			give_guarantee = TUR
+            reverse_add_opinion_modifier = {
+                  target = TUR modifier = csto_observer
+            }		
+		} } }
+	focus = {
+		id = HEPAR_in_a_NATO_as_a_guaranteed_force
+		icon = USA_american_mandate_iniative
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_nation_mighty_nation
+		}
+		x = 37
+		y = 21
+
+
+        available = {
+        country_exists = USA
+		NOT = {
+        has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }	
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+	completion_reward = {
+	add_war_support = -0.02
+	add_stability = -0.02
+    USA = {
+	give_guarantee = TUR
+	   }
+      }
+	}
+	focus = {
+		id = HEPAR_deals_on_autarky
+		icon = trade_with_america
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_nation_mighty_nation
+		}
+		x = 35
+		y = 21
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+	completion_reward = {
+    add_ideas = turkish_autarky
+				add_fuel = 15000
+			every_military_industrial_organization = {
+				add_mio_funds = 250
+			}	
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 1
+				category = CAT_fuel_oil
+			}
+			}
+      }
+	}
+	focus = {
+		id = HEPAR_fresh_NATO_investments
+		icon = usa_investments
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_in_a_NATO_as_a_guaranteed_force
+		}
+		prerequisite = {
+			focus = HEPAR_deals_on_autarky
+		}
+		x = 36
+		y = 22
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+	
+	completion_reward = {
+			TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			USA = {
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt			
+			}
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+	focus = {
+		id = HEPAR_put_more_NATO_generals
+		icon = arm_nato_defence
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_deals_on_autarky
+		}
+		prerequisite = {
+			focus = HEPAR_in_a_NATO_as_a_guaranteed_force
+		}
+		x = 34
+		y = 22
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+	completion_reward = {
+	add_stability = -0.02
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			} 
+	USA = {
+	army_experience = 25
+      } 
+	ENG = {
+	army_experience = 25
+      }
+	GER = {
+	army_experience = 25
+      }
+	ITA = {
+	army_experience = 25
+      }
+	FRA = {
+	army_experience = 25
+      }	  
+	  }
+	}
+	focus = {
+		id = HEPAR_great_operator
+		icon = legacy_of_marines
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_in_a_NATO_as_a_guaranteed_force
+		}
+		x = 38
+		y = 22
+
+		
+	completion_reward = {
+	        add_ideas = great_power_projection 
+			} 
+	}
+	focus = {
+		id = HEPAR_istanbul_tatbikat
+		icon = blr_kaiman
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_put_more_NATO_generals
+		}
+		prerequisite = {
+			focus = HEPAR_fresh_NATO_investments
+		}
+		prerequisite = {
+			focus = HEPAR_great_operator
+		}
+		x = 37
+		y = 23
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+	completion_reward = {
+	        army_experience = 75
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+			add_command_power = 25
+			} 
+	}
+	focus = {
+		id = HEPAR_nationalist_coverage
+		icon = turkish_republic
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_great_operator
+		}
+		prerequisite = {
+			focus = HEPAR_fresh_NATO_investments
+		}
+		prerequisite = {
+			focus = HEPAR_put_more_NATO_generals
+		}
+		x = 39
+		y = 23
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		
+	completion_reward = {
+	        add_ideas = nationalist_coverage
+			} 
+	}
+	focus = {
+		id = HEPAR_US_ships_in_blacksea
+		icon = 350_ship_navy
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_put_more_NATO_generals
+		}
+		x = 35
+		y = 23
+
+
+       available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+				
+	completion_reward = {
+	add_stability = -0.05
+	USA = {
+	navy_experience = 100
+      } }
+	}
+	focus = {
+		id = HEPAR_infulence_the_turkic_nations
+		icon = align_to_turkic_council
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_US_ships_in_blacksea
+		}
+		prerequisite = {
+			focus = HEPAR_istanbul_tatbikat
+		}
+		prerequisite = {
+			focus = HEPAR_nationalist_coverage
+		}
+		x = 34
+		y = 24
+
+
+        available = {
+        country_exists = AZE
+        country_exists = KAZ
+        country_exists = UZB
+        country_exists = KYR
+		NOT = {
+        has_war_with = AZE
+        has_war_with = KAZ
+        has_war_with = UZB
+        has_war_with = KYR
+		 }
+        }
+
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+completion_reward = {
+add_political_power = -25
+    AZE = {
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.07
+				}
+			}
+    KAZ = {
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.07
+				}
+			}
+    UZB = {
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.07
+				}
+			}
+    KYR = {
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.07
+				}
+	}	} }
+	focus = {
+		id = HEPAR_leave_the_NATO
+		icon = end_of_nato
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_infulence_the_turkic_nations
+		}
+		prerequisite = {
+			focus = HEPAR_US_solid_equipments
+		}
+		prerequisite = {
+			focus = HEPAR_licensed_equipments
+		}
+		x = 36
+		y = 25
+
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+    bypass = {
+	NOT = { 
+	has_idea = NATO_member
+	} }
+	
+	completion_reward = {
+    remove_ideas = NATO_member
+	add_stability = 0.05
+set_global_flag = DISABLE_WAR_SYSTEM_PAR
+custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU	
+			} 
+	}
+	focus = {
+		id = HEPAR_US_solid_equipments
+		icon = US_licences
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_istanbul_tatbikat
+		}
+		prerequisite = {
+			focus = HEPAR_nationalist_coverage
+		}
+		x = 36
+		y = 24
+
+
+        available = {
+        country_exists = USA
+		NOT = {
+        has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }	
+	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_EQUIPMENT}	
+		
+     completion_reward = {
+	 add_war_support = 0.02
+	 add_equipment_to_stockpile = {	type = APC_1 amount = 100 }
+	 add_equipment_to_stockpile = {	type = APC_2 amount = 100 }
+	 add_equipment_to_stockpile = {	type = APC_3 amount = 100 }
+	 add_equipment_to_stockpile = {	type = IFV_1 amount = 100 }
+	 add_equipment_to_stockpile = {	type = IFV_2 amount = 100 }
+	 add_equipment_to_stockpile = {	type = IFV_3 amount = 100 }
+	 add_equipment_to_stockpile = {	type = Rec_tank_1 amount = 100 }
+	 add_equipment_to_stockpile = {	type = Rec_tank_2 amount = 100 }
+	 add_equipment_to_stockpile = {	type = Rec_tank_3 amount = 100 }
+	 } }
+	focus = {
+		id = HEPAR_licensed_equipments
+		icon = nato_protect_geo
+		cost = 7.2
+		prerequisite = {
+			focus = HEPAR_nationalist_coverage
+		}
+		x = 38
+		y = 24
+
+
+        available = {
+        country_exists = USA
+		NOT = {
+        has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }	
+	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_EQUIPMENT}	
+		
+     completion_reward = {
+			create_production_license = {
+				target = USA
+				equipment = {
+					type = AS_Fighter1
+				}
+				cost_factor = 0
+			}
+			create_production_license = {
+				target = USA
+				equipment = {
+					type = APC_3
+				}
+				cost_factor = 0
+			}
+			create_production_license = {
+				target = USA
+				equipment = {
+					type = IFV_3
+				}
+				cost_factor = 0
+			}
+			create_production_license = {
+				target = USA
+				equipment = {
+					type = Rec_tank_3
+				}
+				cost_factor = 0
+			}
+	 } }
+	focus = {
+		id = HEPAR_start_the_turkish_nuclear_program
+		icon = nuclear_bomb
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_turkish_joinment_of_shangai_alliance
+		}
+		x = 28
+		y = 26
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+		set_global_flag = START_NC_JOINT
+		custom_effect_tooltip = DEC_OPEN_NUCLEAR_PROGRAM
+		} } 
+	focus = {
+		id = HEPAR_time_for_agressivism
+		icon = 2023
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_leave_the_NATO
+		}
+		x = 42
+		y = 26
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		
+	completion_reward = {
+	add_war_support = 0.03
+    add_state_claim = 633
+    add_state_claim = 641
+    add_state_claim = 166
+    add_state_claim = 164
+    add_state_claim = 165
+    add_state_claim = 630
+    add_state_claim = 193
+    add_state_claim = 571
+    add_state_claim = 575
+    add_state_claim = 466
+    add_state_claim = 143
+    add_state_claim = 974
+    add_state_claim = 466
+			} 
+	}
+	focus = {
+		id = HEPAR_create_the_alliance_of_mutual_asian_pact
+		icon = territor_disputes_neg
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_leave_the_NATO
+		}
+		x = 49
+		y = 26
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+		completion_reward = {
+		    create_faction = MUTUAL_AS 		
+		} }
+	focus = {
+		id = HEPAR_demand_unification_with_azerbaijan
+		icon = align_to_azerbaijan
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_create_the_alliance_of_mutual_asian_pact
+		}
+		x = 48
+		y = 27
+
+
+        available = {
+        country_exists = AZE
+		is_puppet = no
+		AZE = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = AZE
+		NOT = {
+        country_exists = AZE
+        } } }
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+	AZE = {
+    country_event = TurkeyF.10
+        } } 
+	}
+	focus = {
+		id = HEPAR_invite_turkmenistan
+		icon = align_to_turkmenistan
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_create_the_alliance_of_mutual_asian_pact
+		}
+		x = 50
+		y = 27
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+        country_exists = TRK
+		is_puppet = no
+		TRK = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = TRK
+		NOT = {
+        country_exists = TRK
+        } } }
+		
+	completion_reward = {
+	 TRK = { country_event = TurkeyF.60 }   
+			}
+	}
+	focus = {
+		id = HEPAR_invite_uzbekistan
+		icon = align_to_uzbekistan
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_invite_turkmenistan
+		}
+		prerequisite = {
+			focus = HEPAR_demand_unification_with_azerbaijan
+		}
+		x = 49
+		y = 28
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+        country_exists = UZB
+		is_puppet = no
+		UZB = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = UZB
+		NOT = {
+        country_exists = UZB
+        } } }
+		
+	completion_reward = {
+	 UZB = { country_event = TurkeyF.64 }   
+			}
+	}
+	focus = {
+		id = HEPAR_invite_kazakhstan
+		icon = align_to_kazakhstan
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_demand_unification_with_azerbaijan
+		}
+		prerequisite = {
+			focus = HEPAR_invite_turkmenistan
+		}
+		x = 47
+		y = 28
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+        country_exists = KAZ
+		is_puppet = no
+		KAZ = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = KAZ
+		NOT = {
+        country_exists = KAZ
+        } } }
+		
+	completion_reward = {
+	 KAZ = { country_event = TurkeyF.62 }   
+			}
+	} 
+	focus = {
+		id = HEPAR_invite_israel
+		icon = align_to_israel
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_persuade_israel_against_NATO
+		}
+		x = 53
+		y = 29
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+        country_exists = ISR
+		is_puppet = no
+		ISR = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = ISR
+		NOT = {
+        country_exists = ISR
+        } } }
+		
+	completion_reward = {
+	 ISR = { country_event = TurkeyF.70 }   
+			}
+	} 
+	focus = {
+		id = HEPAR_invite_cairo
+		icon = align_to_egypt
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_withdrawal_recognization_from_israel
+		}
+		x = 55
+		y = 29
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+        country_exists = EGY
+		is_puppet = no
+		EGY = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = EGY
+		NOT = {
+        country_exists = EGY
+        } } }
+		
+	completion_reward = {
+	 EGY = { country_event = TurkeyF.72 }   
+			}
+	} 
+	focus = {
+		id = HEPAR_persuade_israel_against_NATO
+		icon = attack_nato
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_question_of_suez_protection
+		}
+		mutually_exclusive = {
+			focus = HEPAR_withdrawal_recognization_from_israel
+		}
+		x = 53
+		y = 28
+
+
+        available = {
+        country_exists = ISR
+		NOT = {
+        has_war_with = ISR
+		 }
+        }
+
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+		    add_political_power = 25
+            reverse_add_opinion_modifier = {
+                  target = ISR modifier = diplomatic_support
+            }		
+            reverse_add_opinion_modifier = {
+                  target = EGY modifier = diplomatic_distance
+            }				
+		    ISR = {
+            add_war_support = 0.02
+			remove_ideas = Major_Non_NATO_ally
+		} } }
+	focus = {
+		id = HEPAR_invite_kyrgztan
+		icon = align_to_kyrgyzstan
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_invite_turkmenistan
+		}
+		x = 51
+		y = 28
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+        country_exists = KYR
+		is_puppet = no
+		KYR = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = KYR
+		NOT = {
+        country_exists = KYR
+        } } }
+		
+	completion_reward = {
+	 KYR = { country_event = TurkeyF.66 }   
+			}
+	}
+	focus = {
+		id = HEPAR_withdrawal_recognization_from_israel
+		icon = muslim_expansionism
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_question_of_suez_protection
+		}
+		mutually_exclusive = {
+			focus = HEPAR_persuade_israel_against_NATO
+		}
+		x = 55
+		y = 28
+
+
+        available = {
+        country_exists = EGY
+		NOT = {
+        has_war_with = EGY
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+	
+		completion_reward = {
+		    add_war_support = 0.02
+            reverse_add_opinion_modifier = {
+                  target = ISR modifier = hostile_status
+            }		
+            reverse_add_opinion_modifier = {
+                  target = EGY modifier = declaration_of_friendship
+            }				
+		    ISR = {
+            add_political_power = -100
+		} } }
+	focus = {
+		id = HEPAR_question_of_suez_protection
+		icon = egypt_map
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_create_the_alliance_of_mutual_asian_pact
+		}
+		x = 54
+		y = 27
+		
+
+        available = {
+		NOT = {
+        has_war_with = EGY
+        has_war_with = ISR
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+	
+		completion_reward = {
+		    add_political_power = 50
+			add_command_power = 15
+		    EGY = {
+            add_war_support = 0.03
+            }			
+		    ISR = {
+            add_war_support = 0.03
+		} } }
+	focus = {
+		id = HEPAR_invite_qatar
+		icon = align_to_iraq3
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_invite_uzbekistan
+		}
+		prerequisite = {
+			focus = HEPAR_invite_kyrgztan
+		}
+		prerequisite = {
+			focus = HEPAR_invite_kazakhstan
+		}
+		x = 49
+		y = 29
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+        country_exists = QAT
+		is_puppet = no
+		QAT = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = QAT
+		NOT = {
+        country_exists = QAT
+        } } }
+		
+	completion_reward = {
+	 QAT = { country_event = TurkeyF.68 }   
+			}
+	}
+	focus = {
+		id = HEPAR_nationalization_of_equipments
+		icon = ARM_seize_stockpiles
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_leave_the_NATO
+		}
+		x = 36
+		y = 26
+
+		
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 5
+				bonus = 1.0
+				category = Cat_ARMOR
+				category = Cat_INF_WEP
+				category = Cat_ARTY
+			}
+			} 
+		}
+	focus = {
+		id = HEPAR_fastern_production
+		icon = aviation_industry
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_nationalization_of_equipments
+		}
+		x = 35
+		y = 27
+
+	completion_reward = {
+    add_ideas = faster_production
+			} 
+	}
+	focus = {
+		id = HEPAR_stimulated_industries
+		icon = factory_complex
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_nationalization_of_equipments
+		}
+		x = 37
+		y = 27
+
+
+	completion_reward = {
+    add_ideas = growing_industries
+			} 
+	}
+	focus = {
+		id = HEPAR_total_war_economy
+		icon = POL_twardy
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_stimulated_industries
+		}
+		prerequisite = {
+			focus = HEPAR_fastern_production
+		}
+		x = 36
+		y = 28
+
+
+	completion_reward = {
+    add_ideas = total_war_economy
+			} 
+	}
+	focus = {
+		id = HEPAR_put_limitation_to_changes
+		icon = Generic_Volunteer_Corps
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_total_war_economy
+		}
+		x = 36
+		y = 29
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+	
+	completion_reward = {
+    add_stability = -0.03
+	add_war_support = 0.07
+			} 
+	}
+	focus = {
+		id = HEPAR_eastwards
+		icon = small_arms_east
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_time_for_agressivism
+		}
+		x = 44
+		y = 27
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+		
+	completion_reward = {
+					add_command_power = 25
+					add_war_support = 0.02
+					add_manpower = 10000
+			} 
+	}
+	focus = {
+		id = HEPAR_southwards
+		icon = small_arms_west
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_time_for_agressivism
+		}
+		x = 40
+		y = 27
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+		
+	completion_reward = {
+					add_command_power = 25
+					add_war_support = 0.02
+					add_manpower = 10000
+			} 
+	}
+	focus = {
+		id = HEPAR_slain_the_armenia
+		icon = attack_armenia
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_eastwards
+		}
+		prerequisite = {
+			focus = HEPAR_demand_unification_with_azerbaijan
+		}
+		x = 44
+		y = 28
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+        available = {
+		country_exists = ARM
+		NOT = {
+		has_war_with = ARM
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ARM
+    NOT = {
+	country_exists = ARM
+	 }
+	} }
+	
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = ARM
+		}
+			}
+	}
+	focus = {
+		id = HEPAR_ask_for_guarantee_from_china
+		icon = align_to_china
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_mission_to_majors
+		}
+		mutually_exclusive = {
+			focus = HEPAR_ask_for_guarantee_from_russia
+			focus = HEPAR_ask_for_guarantee_from_usa
+		}
+		x = 49
+		y = 13
+
+
+        available = {
+        country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+	completion_reward = {
+	                CHI = {
+					give_guarantee = TUR
+					}
+					}
+				}
+	focus = {
+		id = HEPAR_ask_for_guarantee_from_russia
+		icon = align_to_russia
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_mission_to_majors
+		}
+		mutually_exclusive = {
+			focus = HEPAR_ask_for_guarantee_from_china
+		}
+		x = 51
+		y = 13
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+        available = {
+        country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+		
+	completion_reward = {
+	                SOV = {
+					give_guarantee = TUR
+					}
+					}
+				}
+	focus = {
+		id = HEPAR_ask_for_guarantee_from_usa
+		icon = align_to_america
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_mission_to_majors
+		}
+		mutually_exclusive = {
+			focus = HEPAR_ask_for_guarantee_from_china
+		}
+		x = 47
+		y = 13
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+        available = {
+        country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+		
+	completion_reward = {
+	                USA = {
+					give_guarantee = TUR
+					}
+					}
+				}
+	focus = {
+		id = HEPAR_ask_for_guarantee_from_france
+		icon = align_to_france
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_mission_to_europe
+		}
+		mutually_exclusive = {
+			focus = HEPAR_ask_for_guarantee_from_uk
+		}
+		x = 61
+		y = 13
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+        available = {
+        country_exists = FRA
+		NOT = {
+		has_war_with = FRA
+		 }
+        }
+		
+	completion_reward = {
+	                FRA = {
+					give_guarantee = TUR
+					}
+					}
+				}
+	focus = {
+		id = HEPAR_mission_to_majors
+		icon = alliance_USA_CHI
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_diplomats_working
+		}
+		x = 49
+		y = 12
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier =  large_commercial_relations }
+					reverse_add_opinion_modifier = { target = SOV modifier =  large_commercial_relations }
+					reverse_add_opinion_modifier = { target = USA modifier =  large_commercial_relations }
+				}
+
+	} 
+	focus = {
+		id = HEPAR_mission_to_middle_east
+		icon = befriend_middle_east
+		cost = 5,00
+		prerequisite = {
+			focus = HEPAR_diplomats_working
+		}
+		x = 54
+		y = 12
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = PER modifier =  large_commercial_relations }
+					reverse_add_opinion_modifier = { target = SAU modifier =  large_commercial_relations }
+				}
+
+	} 
+	focus = {
+		id = HEPAR_ask_for_guarantee_from_iran
+		icon = align_to_iran
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_mission_to_middle_east
+		}
+		mutually_exclusive = {
+			focus = HEPAR_ask_for_guarantee_from_saudis
+		}
+		x = 53
+		y = 13
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+        available = {
+        country_exists = PER
+		NOT = {
+		has_war_with = PER
+		 }
+        }		
+		
+	completion_reward = {
+	                PER = {
+					give_guarantee = TUR
+					}
+					}
+				}
+	focus = {
+		id = HEPAR_ask_for_guarantee_from_saudis
+		icon = align_to_saudi_arabia
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_mission_to_middle_east
+		}
+		mutually_exclusive = {
+			focus = HEPAR_ask_for_guarantee_from_iran
+		}
+		x = 55
+		y = 13
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+        available = {
+        country_exists = SAU
+		NOT = {
+		has_war_with = SAU
+		 }
+        }
+		
+	completion_reward = {
+	                SAU = {
+					give_guarantee = TUR
+					}
+					}
+				}
+	focus = {
+		id = HEPAR_claims_on_tabriz
+		icon = attack_iran
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_slain_the_armenia
+		}
+		x = 43
+		y = 29
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+        available = {
+		country_exists = PER
+		NOT = {
+		has_war_with = PER
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = PER
+    NOT = {
+	country_exists = PER
+	 }
+	} }
+	
+	completion_reward = {
+	    add_state_claim = 407
+	    add_state_claim = 979
+	    add_state_claim = 1073
+	    add_state_claim = 1039
+		create_wargoal = {
+			type = annex_everything
+			target = PER
+		}
+			}
+	}
+	focus = {
+		id = HEPAR_intervene_in_georgia
+		icon = attack_georgia
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_slain_the_armenia
+		}
+		x = 45
+		y = 29
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+        available = {
+		country_exists = GEO
+		NOT = {
+		has_war_with = GEO
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GEO
+    NOT = {
+	country_exists = GEO
+	 }
+	} }
+	
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = GEO
+		}
+			}
+	}
+	focus = {
+		id = HEPAR_assistance_from_arabs
+		icon = align_to_saudi_arabia
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_claims_on_tabriz
+		}
+		prerequisite = {
+			focus = HEPAR_intervene_in_georgia
+		}
+		x = 44
+		y = 30
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+        available = {
+		country_exists = SAU
+		NOT = {
+		has_war_with = SAU
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SAU
+    NOT = {
+	country_exists = SAU
+	 }
+	} }
+	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+	
+	completion_reward = {
+	    add_stability = 0.02
+	    SAU = {
+		add_war_support = 0.03
+		create_wargoal = {
+			type = annex_everything
+			target = PER
+		}
+			}
+	} }
+	focus = {
+		id = HEPAR_finish_the_conquesta_in_east
+		icon = consolidation
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_assistance_from_arabs
+		}
+		x = 44
+		y = 31
+
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+	search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+	search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+	completion_reward = {
+					add_war_support = 0.03
+					add_political_power = 75
+			} 
+	}
+	focus = {
+		id = HEPAR_push_greece_for_nationalism
+		icon = byzantium
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_plan_for_west
+		}
+		x = 40
+		y = 33
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+        available = {
+        country_exists = GRE
+		GRE = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		GRE = {
+		has_government = nationalist
+		}
+		NOT = {
+        country_exists = GRE
+        } } }
+		
+	completion_reward = {
+	        GRE = {
+            add_timed_idea = { idea = rise_of_greek_nationalism days = 525}
+			} 
+	} }
+	focus = {
+		id = HEPAR_push_protests_in_greece
+		icon = KKE
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_push_greece_for_nationalism
+		}
+		x = 39
+		y = 34
+
+
+        available = {
+        country_exists = GRE
+		GRE = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		GRE = {
+		has_government = nationalist
+		}
+		NOT = {
+        country_exists = GRE
+        } } }
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+	
+		completion_reward = {
+		    add_political_power = -25
+			GRE = {
+            add_political_power = -100
+			add_war_support = 0.02
+			add_stability = -0.05
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+             }				
+		} }
+	focus = {
+		id = HEPAR_secretly_arm_greek_nationalists
+		icon = Greece_friend
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_push_greece_for_nationalism
+		}
+		x = 41
+		y = 34
+
+
+        available = {
+        country_exists = GRE
+		GRE = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		GRE = {
+		has_government = nationalist
+		}
+		NOT = {
+        country_exists = GRE
+        } } }
+	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_EQUIPMENT}	
+		
+     completion_reward = {
+	 add_equipment_to_stockpile = {	type = APC_1 amount = -150 }
+	 add_equipment_to_stockpile = {	type = IFV_1 amount = -150 }
+     GRE = {
+	 add_equipment_to_stockpile = {	type = APC_1 amount = 150 }
+	 add_equipment_to_stockpile = {	type = IFV_1 amount = 150 }	
+ 				add_popularity = {
+					ideology = nationalist
+					popularity = 0.05
+				}	
+      add_stability = -0.05				
+	 } } }
+	focus = {
+		id = HEPAR_plan_for_west
+		icon = small_arms2
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_finish_the_conquesta_in_east
+		}
+		prerequisite = {
+			focus = HEPAR_compliance_forces_of_there
+		}
+		x = 42
+		y = 32
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+		
+	completion_reward = {
+					add_command_power = 25
+					add_war_support = 0.02
+					add_manpower = 10000
+			} 
+	}
+	focus = {
+		id = HEPAR_mission_for_mosul
+		icon = attack_kurdistan2
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_southwards
+		}
+		x = 40
+		y = 28
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+        available = {
+		country_exists = KUR
+		NOT = {
+		has_war_with = KUR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = KUR
+    NOT = {
+	country_exists = KUR
+	 }
+	} }
+	
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KUR
+		}
+			}
+	}
+	focus = {
+		id = HEPAR_core_the_mosul_and_the_round
+		icon = syrianandrojava
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_mission_for_mosul
+		}
+		x = 39
+		y = 29
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_ANNEXATION}
+	
+	completion_reward = {
+	    add_stability = -0.03
+	    add_state_core = 166
+	    add_state_core = 641
+	    add_state_core = 633
+	    add_state_core = 164
+	    add_state_core = 165
+	    add_state_core = 630
+	    remove_state_claim = 630
+	    remove_state_claim = 166
+	    remove_state_claim = 641
+	    remove_state_claim = 633
+	    remove_state_claim = 164
+	    remove_state_claim = 165
+			}
+	}
+	focus = {
+		id = HEPAR_demands_to_iraq
+		icon = align_to_iraq2
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_mission_for_mosul
+		}
+		x = 41
+		y = 29
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+        available = {
+		country_exists = IRQ
+		NOT = {
+		has_war_with = IRQ
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = IRQ
+    NOT = {
+	country_exists = IRQ
+	 }
+	} }
+	
+	completion_reward = {
+	 IRQ = { country_event = TurkeyF.74 }   
+			}
+	} 
+	focus = {
+		id = HEPAR_bomb_the_syria
+		icon = syria_resistance
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_demands_to_iraq
+		}
+		prerequisite = {
+			focus = HEPAR_core_the_mosul_and_the_round
+		}
+		x = 40
+		y = 30
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+	
+        available = {
+		country_exists = SYR
+		NOT = {
+		has_war_with = SYR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SYR
+    NOT = {
+	country_exists = SYR
+	 }
+	} }
+	
+	completion_reward = {
+	    add_war_support = 0.02
+declare_war_on = { type = annex_everything target = SYR }
+		186 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1.0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			}
+		188 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1.0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			}
+		192 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1.0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2.0
+			}
+			}
+	} }
+	focus = {
+		id = HEPAR_compliance_forces_of_there
+		icon = military_bases
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_bomb_the_syria
+		}
+		x = 40
+		y = 31
+
+
+	completion_reward = {
+    add_ideas = compliance_forces
+			} 
+	}
+	focus = {
+		id = HEPAR_coup_the_greece
+		icon = golden_dawn
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_push_protests_in_greece
+		}
+		prerequisite = {
+			focus = HEPAR_secretly_arm_greek_nationalists
+		}
+		x = 40
+		y = 35
+
+
+
+        available = {
+        country_exists = GRE
+		GRE = {
+        is_puppet = no
+		 }
+		GRE = {
+				influence_higher_30 = yes
+		}
+        }
+
+        bypass = {
+		OR = {
+		GRE = {
+		has_government = nationalist
+		}
+		NOT = {
+        country_exists = GRE
+        } } }
+		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+	completion_reward = {
+	 GRE = { country_event = TurkeyF.76 }   
+			}
+	} 
+	focus = {
+		id = HEPAR_fund_the_bulgarian_nationalists
+		icon = consolidate_the_third_bulgarian_state
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_plan_for_west
+		}
+		x = 44
+		y = 33
+
+
+        available = {
+        country_exists = BUL
+		BUL = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		BUL = {
+		has_government = nationalist
+		}
+		NOT = {
+        country_exists = BUL
+        } } }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+	completion_reward = {
+	        BUL = {
+            add_timed_idea = { idea = rise_of_bulgarian_nationalism days = 525}
+			} 
+	} }
+	focus = {
+		id = HEPAR_rig_the_elections
+		icon = elections_rigged
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_fund_the_bulgarian_nationalists
+		}
+		x = 43
+		y = 34
+
+
+        available = {
+        country_exists = BUL
+		BUL = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		BUL = {
+		has_government = nationalist
+		}
+		NOT = {
+        country_exists = BUL
+        } } }
+
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+	
+            add_political_power = -50
+			BUL = {
+			    country_event = MD4_election_campaign.0
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.1
+				}
+             }				
+		} }
+	focus = {
+		id = HEPAR_support_bulgarian_nationalists
+		icon = Bulgaria_Republic
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_fund_the_bulgarian_nationalists
+		}
+		x = 45
+		y = 34
+
+
+
+        available = {
+        country_exists = BUL
+		BUL = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		BUL = {
+		has_government = nationalist
+		}
+		NOT = {
+        country_exists = BUL
+        } } }
+	
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+            add_political_power = -25
+			BUL = {
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.07
+				}
+             }				
+		} }
+	focus = {
+		id = HEPAR_right_regime_in_bulgaria
+		icon = promote_bulgarian_nationalism
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_rig_the_elections
+		}
+		prerequisite = {
+			focus = HEPAR_support_bulgarian_nationalists
+		}
+		x = 44
+		y = 35
+
+
+        available = {
+        country_exists = BUL
+		BUL = {
+		has_government = nationalist
+        is_puppet = no
+		 }
+		BUL = {
+				influence_higher_30 = yes
+		}
+        }
+
+        bypass = {
+		NOT = {
+        country_exists = AZE
+        } } 
+	
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+		completion_reward = {
+            add_war_support = 0.02
+			BUL = {
+				add_stability = -0.07
+				add_war_support = -0.02
+             }				
+		} }
+	focus = {
+		id = HEPAR_invade_isolated
+		icon = balkan_conflict
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_coup_the_greece
+		}
+		prerequisite = {
+			focus = HEPAR_right_regime_in_bulgaria
+		}
+		x = 42
+		y = 36
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = GRE
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = BUL
+		}
+			}
+	}
+	focus = {
+		id = HEPAR_finish_the_great_misaki_milli
+		icon = turk_militia
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_invade_isolated
+		}
+		x = 42
+		y = 37
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		
+	completion_reward = {
+	add_war_support = 0.07
+	add_stability = -0.05
+    remove_state_claim = 633
+    remove_state_claim = 641
+    remove_state_claim = 166
+    remove_state_claim = 164
+    remove_state_claim = 165
+    remove_state_claim = 630
+    remove_state_claim = 193
+    remove_state_claim = 571
+    remove_state_claim = 575
+    remove_state_claim = 466
+    remove_state_claim = 143
+    remove_state_claim = 974
+    remove_state_claim = 466
+    remove_state_claim = 979
+    remove_state_claim = 407
+    add_state_core = 633
+    add_state_core = 641
+    add_state_core = 166
+    add_state_core = 164
+    add_state_core = 165
+    add_state_core = 630
+    add_state_core = 193
+    add_state_core = 571
+    add_state_core = 575
+    add_state_core = 466
+    add_state_core = 143
+    add_state_core = 974
+    add_state_core = 466
+    add_state_core = 979
+    add_state_core = 407
+			} 
+	}
+	focus = {
+		id = HEPAR_seek_russian_support
+		icon = rapprochement_with_russia
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_start_the_turkish_nuclear_program
+		}
+		x = 27
+		y = 27
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+        available = {
+        country_exists = SOV
+		NOT = {
+        has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }	
+	
+	completion_reward = {
+	 SOV = { country_event = TurkeyF.80 }   
+			}
+	}
+	focus = {
+		id = HEPAR_seek_iranian_support
+		icon = iran_guard
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_start_the_turkish_nuclear_program
+		}
+		x = 29
+		y = 27
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+        available = {
+        country_exists = PER
+		NOT = {
+        has_war_with = PER
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = PER
+    NOT = {
+	country_exists = PER
+	 }
+	} }	
+	
+	completion_reward = {
+	 PER = { country_event = TurkeyF.77 }   
+			}
+	}
+	focus = {
+		id = HEPAR_uranium_extractions
+		icon = uranium_processing
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_seek_iranian_support
+		}
+		prerequisite = {
+			focus = HEPAR_seek_russian_support
+		}
+		x = 28
+		y = 28
+
+		
+		completion_reward = {
+	    add_ideas = uranium_trade	
+			set_temp_variable = { change_resource = 1000 }
+			change_reactor_grade_material_effect = yes		
+		} }
+	focus = {
+		id = HEPAR_first_nuclear_tests
+		icon = nuclear_science
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_uranium_extractions
+		}
+		x = 28
+		y = 29
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+		available = {
+has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_6
+}
+		completion_reward = {
+	    add_ideas = PER_mastering_atom			
+		} }
+	focus = {
+		id = HEPAR_prepare_for_the_coming_war
+		icon = anti_war_with_big_gun
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_turkish_joinment_of_shangai_alliance
+		}
+		x = 22
+		y = 26
+
+
+		completion_reward = {
+		    army_experience = 35
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+		} } 
+	focus = {
+		id = HEPAR_build_shield_to_the_west
+		icon = SAM
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_prepare_for_the_coming_war
+		}
+		x = 24
+		y = 27
+
+
+        available = {
+		controls_state = 156
+		}
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+            156 = {
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 6884
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 4112
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 10122
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 9941
+                            instant_build = yes
+                        }					
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } }
+	focus = {
+		id = HEPAR_SAM_sites
+		icon = air_defense2
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_prepare_for_the_coming_war
+		}
+		x = 20
+		y = 27
+
+
+        available = {
+		controls_state = 934
+		controls_state = 155
+		controls_state = 156
+		controls_state = 157
+		controls_state = 159
+		controls_state = 160
+		controls_state = 161
+		}
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}				
+		completion_reward = {
+			934 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				} }
+			155 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			156 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			157 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			159 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			160 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			161 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = HEPAR_emergency_relocation_plan
+		icon = smuggle_truck
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_prepare_for_the_coming_war
+		}
+		x = 22
+		y = 27
+
+		
+			completion_reward = {
+			add_timed_idea = { idea = emergency_relocation_plan days = 30 } }			
+				}
+
+	focus = {
+		id = HEPAR_cakmak_plan
+		icon = Generic_Crouched_Soldier_German
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_emergency_relocation_plan
+		}
+		prerequisite = {
+			focus = HEPAR_SAM_sites
+		}
+		prerequisite = {
+			focus = HEPAR_build_shield_to_the_west
+		}
+		x = 22
+		y = 28
+
+
+        available = {
+		controls_state = 934
+		}
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}				
+		completion_reward = {
+            934 = {
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 849
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 3893
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 11842
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 922
+                            instant_build = yes
+                        }					
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } }
+	focus = {
+		id = HEPAR_cover_istanbul
+		icon = modern_fighter
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_cakmak_plan
+		}
+		prerequisite = {
+			focus = HEPAR_naval_defences
+		}
+		prerequisite = {
+			focus = HEPAR_version_A_missles
+		}
+		x = 22
+		y = 29
+
+
+        available = {
+		controls_state = 934
+		}
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}				
+		completion_reward = {
+            934 = {
+                        add_building_construction = {
+                            type = air_base
+                            level = 5
+                            province = 9833
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 5
+                            province = 922
+                            instant_build = yes
+                        }		
+                        add_building_construction = {
+                            type = bunker
+                            level = 5
+                            province = 6895
+                            instant_build = yes
+                        }								
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } }
+	focus = {
+		id = HEPAR_naval_defences
+		icon = carriers2
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_build_shield_to_the_west
+		}
+		x = 24
+		y = 28
+
+        available = {
+		controls_state = 934
+		}
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}				
+		completion_reward = {
+            934 = {
+                        add_building_construction = {
+                            type = naval_base
+                            level = 1
+                            province = 849
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 1
+                            province = 849
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = naval_base
+                            level = 1
+                            province = 6895
+                            instant_build = yes
+                        }		
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 1
+                            province = 6895
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = naval_base
+                            level = 1
+                            province = 934
+                            instant_build = yes
+                        }			
+                        add_building_construction = {
+                            type = coastal_bunker
+                            level = 1
+                            province = 934
+                            instant_build = yes
+                        }							
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } }
+	focus = {
+		id = HEPAR_version_A_missles
+		icon = focus_rocketry
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_SAM_sites
+		}
+		x = 20
+		y = 28
+
+
+        available = {
+		controls_state = 934
+		controls_state = 155
+		}
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}				
+		completion_reward = {
+			934 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 2
+				} }
+			155 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 2
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = HEPAR_cover_industries
+		icon = Generic_Jungle_Insurgency
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_cover_istanbul
+		}
+		x = 21
+		y = 30
+
+		
+		completion_reward = {
+	    add_ideas = covering_industries			
+		} }
+	focus = {
+		id = HEPAR_cover_people_in_shelters
+		icon = ukreplenia
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_cover_istanbul
+		}
+		x = 23
+		y = 30
+
+		
+		completion_reward = {
+		add_ideas = covering_people_in_shelters	
+		} }
+	focus = {
+		id = HEPAR_the_war_of_the_world
+		icon = t90
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_cover_industries
+		}
+		prerequisite = {
+			focus = HEPAR_cover_people_in_shelters
+		}
+		x = 22
+		y = 31
+
+		
+		available = {
+		SOV = {
+		has_war_with = USA
+		} }
+	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		completion_reward = {
+		add_war_support = 0.1
+declare_war_on = { type = annex_everything target = USA }
+		} }
+	focus = {
+		id = HEPAR_nationalist_propagandas
+		icon = nationalist_education
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_the_war_of_the_world
+		}
+		x = 19
+		y = 32
+
+	search_filters = {FOCUS_FILTER_POLITICAL}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}		
+		completion_reward = {
+		    add_political_power = 75
+			add_war_support = 0.07
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.05
+				}			
+		} }
+	focus = {
+		id = HEPAR_247_works
+		icon = forced_labour
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_the_war_of_the_world
+		}
+		x = 25
+		y = 32
+
+		
+		completion_reward = {
+		add_ideas = all_time_working_factories	
+		} }
+	focus = {
+		id = HEPAR_call_for_arms
+		icon = Paternal_Autocrat
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_the_war_of_the_world
+		}
+		x = 22
+		y = 32
+
+		
+		completion_reward = {
+		add_ideas = call_arms_for_war	
+		} }
+	focus = {
+		id = HEPAR_guerillas
+		icon = Generic_Partisan
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_call_for_arms
+		}
+		prerequisite = {
+			focus = HEPAR_247_works
+		}
+		prerequisite = {
+			focus = HEPAR_nationalist_propagandas
+		}
+		x = 22
+		y = 33
+
+		
+		completion_reward = {
+	    add_ideas = guerilla_warfare			
+		} }
+	focus = {
+		id = HEPAR_usage_of_old
+		icon = machine_gun
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_call_for_arms
+		}
+		x = 20
+		y = 33
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_EQUIPMENT}	
+     completion_reward = {
+	 add_war_support = 0.02
+	 add_equipment_to_stockpile = {	type = APC_1 amount = 150 }
+	 add_equipment_to_stockpile = {	type = IFV_1 amount = 150 }
+	 add_equipment_to_stockpile = {	type = Rec_tank_1 amount = 150 }
+	 add_equipment_to_stockpile = {	type = SP_R_arty_1 amount = 150 }
+	 add_equipment_to_stockpile = {	type = AS_Fighter1 amount = 150 }
+	 add_equipment_to_stockpile = {	type = CV_MR_Fighter1 amount = 150 }	 
+	 } }
+	focus = {
+		id = HEPAR_bought_new_guns
+		icon = t14_armata
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_call_for_arms
+		}
+		x = 24
+		y = 33
+
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_EQUIPMENT}	
+		
+     completion_reward = {
+	 add_war_support = 0.02		
+	 add_equipment_to_stockpile = {	type = APC_1 amount = 225 }
+	 add_equipment_to_stockpile = {	type = IFV_1 amount = 300 }
+	 add_equipment_to_stockpile = {	type = CV_MR_Fighter3 amount = 125 }
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	 
+	 SOV = {
+			subtract_from_variable = { treasury = -50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+     }	
+	 } }
+	focus = {
+		id = HEPAR_war_for_motherland
+		icon = turkish_authoritarianism
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_guerillas
+		}
+		prerequisite = {
+			focus = HEPAR_bought_new_guns
+		}
+		prerequisite = {
+			focus = HEPAR_usage_of_old
+		}
+		x = 22
+		y = 34
+
+		
+		completion_reward = {
+	    add_ideas = war_for_the_motherland			
+		} }
+	focus = {
+		id = HEPAR_russian_victory_in_europe
+		icon = russian_monarchy
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_war_for_motherland
+		}
+		x = 22
+		y = 35
+
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }
+	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+		completion_reward = {
+		add_war_support = 0.07
+	    SOV = {
+		add_ideas = russian_victory_sighted
+		 }
+		} }
+	focus = {
+		id = HEPAR_occupy_thrace
+		icon = coa
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_russian_victory_in_europe
+		}
+		x = 21
+		y = 36
+		
+
+        available = {
+		controls_state = 974
+		controls_state = 140		
+        }
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+			completion_reward = {
+	    transfer_state = 974
+	    transfer_state = 140
+        add_state_core = 974
+        add_state_core = 140		
+		} }	
+	focus = {
+		id = HEPAR_occupy_burgas
+		icon = focus_ROM_puppet_bulgaria
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_russian_victory_in_europe
+		}
+		x = 23
+		y = 36
+		
+
+        available = {
+		controls_state = 154
+		controls_state = 996		
+        }
+		
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+		completion_reward = {
+	    transfer_state = 154
+	    transfer_state = 996
+        add_state_core = 154
+        add_state_core = 996		
+		} }
+	focus = {
+		id = HEPAR_banner_of_victory
+		icon = turkish_flag
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_occupy_burgas
+		}
+		prerequisite = {
+			focus = HEPAR_occupy_thrace
+		}
+		x = 22
+		y = 37
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+		completion_reward = {
+	    add_ideas = banner_of_victory	
+		} }
+	focus = {
+		id = HEPAR_expansionism_towards_south
+		icon = crucial_contribution
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_turkish_joinment_of_shangai_alliance
+		}
+		x = 15
+		y = 26
+
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+		
+	completion_reward = {
+					add_command_power = 25
+					add_war_support = 0.02
+					add_manpower = 10000
+			} 
+	}
+	focus = {
+		id = HEPAR_clean_the_southern_problem
+		icon = attack_syria
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_expansionism_towards_south
+		}
+		x = 13
+		y = 27
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+        available = {
+		country_exists = SYR
+		NOT = {
+		has_war_with = SYR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SYR
+    NOT = {
+	country_exists = SYR
+	 }
+	} }
+	
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = SYR
+		}
+			}
+	}
+	focus = {
+		id = HEPAR_clean_the_kurds_in_the_border
+		icon = attack_kurdistan2
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_expansionism_towards_south
+		}
+		x = 17
+		y = 27
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+        available = {
+		country_exists = KUR
+		NOT = {
+		has_war_with = KUR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = KUR
+    NOT = {
+	country_exists = KUR
+	 }
+	} }
+	
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KUR
+		}
+			}
+	}
+	focus = {
+		id = HEPAR_interventionist_groups
+		icon = focus_ETH_freedom_at_gunpoint
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_clean_the_kurds_in_the_border
+		}
+		prerequisite = {
+			focus = HEPAR_clean_the_southern_problem
+		}
+		x = 15
+		y = 28
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+			completion_reward = {
+		add_ideas = militant_interventionism
+		} }	
+	focus = {
+		id = HEPAR_remove_the_american_coronies_in_iraq
+		icon = usa
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_clean_the_kurds_in_the_border
+		}
+		x = 17
+		y = 28
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+        available = {
+		country_exists = IRQ
+		NOT = {
+		has_war_with = IRQ
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = IRQ
+    NOT = {
+	country_exists = IRQ
+	 }
+	} }
+	
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = IRQ
+		}
+			}
+	}
+	focus = {
+		id = HEPAR_occupy_and_withdrawal
+		icon = federal_republic_of_syria
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_clean_the_southern_problem
+		}
+		x = 13
+		y = 28
+
+        available = {
+		country_exists = SYR
+		has_war_with = SYR
+		SYR = { surrender_progress > 0.5 }
+        }
+
+    bypass = {
+    NOT = {
+	country_exists = SYR
+	 }
+	} 		
+	
+		search_filters = {FOCUS_FILTER_STABILITY}
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+			completion_reward = {
+		white_peace = SYR
+		add_stability = -0.03
+	    transfer_state = 193
+	    transfer_state = 571
+	    transfer_state = 158
+	    transfer_state = 571		
+        add_state_claim = 193
+        add_state_claim = 571	
+        add_state_claim = 158
+        add_state_claim = 571		
+		} }	
+	focus = {
+		id = HEPAR_build_a_peace_miracle_in_middle_east
+		icon = peace
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_remove_the_american_coronies_in_iraq
+		}
+		prerequisite = {
+			focus = HEPAR_interventionist_groups
+		}
+		prerequisite = {
+			focus = HEPAR_occupy_and_withdrawal
+		}
+		x = 15
+		y = 29
+
+
+        available = {
+		has_war = no
+        }
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+			
+			completion_reward = {
+		add_stability = 0.1
+		} }	
+
+
+
+
+
+	focus = {
+		id = TUR_armed_forces7
+		icon = TUR_military_regime
+		cost = 10,00
+		prerequisite = {
+			focus = HEPAR_victory_of_anatolian_eagle
+		}
+		x = 11
+		y = 1
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+    ai_will_do = {
+    factor = 0
+    }
+	
+		completion_reward = {
+        army_experience = 35
+}   }
+	focus = {
+		id = TUR_give_more_power_to_army7
+		icon = dangerous_laws
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_armed_forces7
+		}
+		x = 11
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		
+		completion_reward = {
+		add_political_power = -75
+        add_stability = -0.02
+		add_manpower = 15000
+}   }
+	focus = {
+		id = TUR_army_funds7
+		icon = money
+		cost = 5
+		prerequisite = {
+			focus = TUR_give_more_power_to_army7
+		}
+		x = 10
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+		completion_reward = {
+		add_political_power = 75
+			increase_military_spending = yes
+block_defence_decrease = yes
+      
+}   }
+	focus = {
+		id = TUR_nationalization_of_armed_forces7
+		icon = levant_and_anatolia
+		cost = 5
+		prerequisite = {
+			focus = TUR_give_more_power_to_army7
+		}
+		x = 12
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		
+		completion_reward = {
+    add_manpower = 50000
+} } 
+	focus = {
+		id = TUR_act_of_military7
+		icon = armed_forces_of_turkey
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_nationalization_of_armed_forces7
+		}
+		prerequisite = {
+			focus = TUR_army_funds7
+		}
+		x = 11
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+	completion_reward = {
+            add_command_power = 10
+			}
+	}
+	focus = {
+		id = TUR_modernization_of_armed_forces7
+		icon = military_mission
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_act_of_military7
+		}
+		x = 6
+		y = 5
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+		completion_reward = {
+        army_experience = 75
+			}  
+		}
+	focus = {
+		id = TUR_tank_modernization7
+		icon = Generic_Refit_Tanks
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_modernization_of_armed_forces7
+		}
+		x = 5
+		y = 6
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 1
+				bonus = 0.5
+				category = Cat_ARMOR
+			} } 
+		}
+	focus = {
+		id = TUR_altay_tank_project7
+		icon = tanks5
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_tank_modernization7
+		}
+		x = 4
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_ARMOR
+			} } 
+		}
+	focus = {
+		id = TUR_gun_modernization7
+		icon = Generic_Military_Equipment
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_modernization_of_armed_forces7
+		}
+		x = 7
+		y = 6
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_INF_WEP
+			} }
+		}
+	focus = {
+		id = TUR_artillery_modernizetion7
+		icon = artillery3
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_gun_modernization7
+		}
+		x = 8
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_ideas = turkish_artillery
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_ARTY
+			} } 
+		}
+
+	focus = {
+		id = TUR_war_tactics7
+		icon = military_planning
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_act_of_military7
+		}
+		x = 11
+		y = 5
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			} }
+		}
+	focus = {
+		id = TUR_modern_art_of_war7
+		icon = infiltration_tactics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_war_tactics7
+		}
+		x = 11
+		y = 6
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			} } 
+		}
+	focus = {
+		id = TUR_med_trainings7
+		icon = inundation_lines
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_modern_art_of_war7
+		}
+		x = 11
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}  } 
+		}
+	focus = {
+		id = TUR_tuz_trainings7
+		icon = grand_battleplan
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_modern_art_of_war7
+		}
+		x = 13
+		y = 7
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+ 
+			}
+		}
+	focus = {
+		id = TUR_doctrine_of_war7
+		icon = static_defense
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_tuz_trainings7
+		}
+		prerequisite = {
+			focus = TUR_med_trainings7
+		}
+		x = 12
+		y = 8
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+  } 
+		}
+	focus = {
+		id = TUR_special_armed_forces7
+		icon = helmet_knife
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_act_of_military7
+		}
+		x = 15
+		y = 5
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		completion_reward = {
+        add_ideas = turk_ozel_kuvvetler
+			} 
+		}
+	focus = {
+		id = TUR_strenghen_combat7
+		icon = mass_assault
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_special_armed_forces7
+		}
+		x = 15
+		y = 6
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = turk_ozel_kuvvetler
+  add_idea = turk_ozel_kuvvetler1
+}
+      
+}   }
+	focus = {
+		id = TUR_strongest_special_armed_forces_in_NATO7
+		icon = nato3
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_strenghen_combat7
+		}
+		x = 15
+		y = 7
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = turk_ozel_kuvvetler1
+  add_idea = turk_ozel_kuvvetler2
+} } }
+      
+	focus = {
+		id = TUR_special_forces_for_turkish_state7
+		icon = align_to_turkey
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_strongest_special_armed_forces_in_NATO7
+		}
+		x = 15
+		y = 8
+		
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = turk_ozel_kuvvetler2
+  add_idea = turk_ozel_kuvvetler3
+} } }
+
+	focus = {
+		id = TUR_air_modernization7
+		icon = f35
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_gun_modernization7
+		}
+		prerequisite = {
+			focus = TUR_tank_modernization7
+		}
+		x = 6
+		y = 7
+
+		search_filters = {FOCUS_FILTER_AIRCRAFT}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+        air_experience = 75
+		add_ideas = thk_program
+			} 
+		}
+
+	focus = {
+		id = TUR_THK_program7
+		icon = fighter_plane
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_air_modernization7
+		}
+		x = 8
+		y = 8
+
+		search_filters = {FOCUS_FILTER_AIRCRAFT}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+		add_ideas = thk_program_2
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = CAT_FIXED_WING
+			} } 
+		}
+	focus = {
+		id = TUR_navy_modernizations7
+		icon = TUR_navy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_air_modernization7
+		}
+		x = 6
+		y = 8
+
+		search_filters = {FOCUS_FILTER_NAVY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			navy_experience = 75
+			} 
+		}
+	focus = {
+		id = TUR_turkish_destroyers7
+		icon = destroyers
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_navy_modernizations7
+		}
+		x = 5
+		y = 9
+
+		search_filters = {FOCUS_FILTER_NAVY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_ideas = turkish_destroyers
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 2
+				category = Cat_DESTROYER
+			} } 
+		}
+	focus = {
+		id = TUR_battleship7
+		icon = battleships
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_navy_modernizations7
+		}
+		x = 7
+		y = 9
+
+		search_filters = {FOCUS_FILTER_NAVY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+				add_ideas = turkish_battleships
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_SURFACE_SHIP
+			} } 
+		}
+	focus = {
+		id = TUR_creation_of_turkish_carriers7
+		icon = ship_bleur_point
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_battleship7
+		}
+		prerequisite = {
+			focus = TUR_turkish_destroyers7
+		}
+		x = 6
+		y = 10
+
+		search_filters = {FOCUS_FILTER_NAVY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+					add_ideas = turkish_carriers
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_CARRIER
+	        } }
+		}
+	focus = {
+		id = TUR_turkish_tank_weaponary7
+		icon = tanks4
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_altay_tank_project7
+		}
+		x = 4
+		y = 8
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+				add_ideas = turkish_tankery
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = Cat_ARMOR
+			} } 
+		}
+
+	focus = {
+		id = TUR_turkish_drones7
+		icon = turkish_drone
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_THK_program7
+		}
+		x = 9
+		y = 9
+
+		search_filters = {FOCUS_FILTER_AIRCRAFT}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+			add_ideas = turkish_drone_sector
+			add_tech_bonus = {
+				uses = 2
+				bonus = 1.0
+				category = Cat_L_DRONE
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				uses = 2
+				bonus = 2.0
+				category = Cat_A_UAV
+			
+			} }
+		}
+
+
+	focus = {
+		id = TUR_covid-19_pandemic10
+		icon = generic_healthcare
+		cost = 10,00
+		x = 67
+		y = 0
+
+        available = {
+        has_idea = covid_19
+        }
+	
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+		completion_reward = {
+        add_political_power = 75
+	block_health_decrease = yes
+		} }
+	focus = {
+		id = TUR_covid-19_preparations10
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_pandemic10
+		}
+		x = 67
+		y = 1
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19
+  add_idea = covid_19_prepared
+}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TUR_build_up_hospitals10
+		icon = generic_hospital2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations10
+		}
+		x = 65
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}			
+	completion_reward = {
+			subtract_from_variable = { treasury = 20.0 }
+			add_stability = 0.03
+			custom_effect_tooltip = 20_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_turn_airports_to_hospital10
+		icon = generic_hospital
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_build_up_hospitals10
+		}
+		x = 65
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+			subtract_from_variable = { treasury = 5.0 }
+			add_stability = 0.02
+			custom_effect_tooltip = 5_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_start_up_vaccine_program9
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations10
+		}
+		x = 67
+		y = 2
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		
+		
+	completion_reward = {
+	        add_stability = -0.05
+			add_political_power = -75
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			custom_effect_tooltip = COV_DECISION_OPENING_VAC
+			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
+			} 
+	}
+	focus = {
+		id = TUR_buy_german_vaccines9
+		icon = trade_with_germany
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_start_up_vaccine_program9
+		}
+		x = 67
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_increase_funds_to_science10
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations10
+		}
+		x = 69
+		y = 2
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+increase_healthcare_budget = yes
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_medicines10
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_funds_to_science10
+		}
+		prerequisite = {
+			focus = TUR_increase_funds_to_science10
+		}
+		x = 69
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_prepared
+  add_idea = covid_19_medicined
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_chinese_vaccines10
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turn_airports_to_hospital10
+		}
+		prerequisite = {
+			focus = TUR_buy_german_vaccines9
+		}
+		prerequisite = {
+			focus = TUR_buy_medicines10
+		}
+		x = 67
+		y = 4
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_normalisation_from_covid10
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_buy_chinese_vaccines10
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
+		} }
+		x = 67
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_medicined
+  add_idea = covid_19_normalised
+} 
+	custom_effect_tooltip = COV_AVAILABLE_1
+}
+	}
+	focus = {
+		id = TUR_end_of_covid10
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_normalisation_from_covid10
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
+		} }
+		x = 67
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+remove_ideas = covid_19_normalised
+	custom_effect_tooltip = COV_AVAILABLE_2
+}
+	}
+
+##############################
+###	Start of Turkic Focus Tree ###	x = 75 y = 55
+##############################
+
+shared_focus = TR_policies
+
+############################
+### End of Turkic Focus Tree ###
+############################
+
+
+##############################
+###	Start of Cypriot Tree ###	x = 13 y = 10
+##############################
+
+shared_focus = TUR_greek_issues
+
+############################
+### End of Cypriot Focus Tree ###
+############################
+
+}

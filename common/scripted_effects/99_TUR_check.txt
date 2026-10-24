@@ -1,0 +1,104 @@
+
+TUR_remove_state_modifier_effects = {
+	set_global_flag = BLOCK_SECTARIAN_ADDITIONS
+    hidden_effect = {
+	if = {
+		every_owned_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = kurdish_agitation }
+		}
+		remove_dynamic_modifier = { modifier = kurdish_agitation }
+		set_state_flag = TUR_kurdish_state_conquered
+        }
+	}
+	else_if = {
+		every_owned_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = kurdish_separatism }
+		}
+		remove_dynamic_modifier = { modifier = kurdish_separatism }
+		set_state_flag = TUR_kurdish_state_conquered
+        }
+	}
+	else_if = {
+        every_owned_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = kurdish_rebellion }
+		}
+		remove_dynamic_modifier = { modifier = kurdish_rebellion }
+		set_state_flag = TUR_kurdish_state_conquered
+                }
+	}
+	else_if = {
+        every_owned_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = separatist_fatigue }
+		}
+		remove_dynamic_modifier = { modifier = separatist_fatigue }
+		set_state_flag = TUR_kurdish_state_conquered
+        }
+	}
+	if = {
+        every_owned_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		remove_dynamic_modifier = { modifier = islamist_opposition }
+		set_state_flag = TUR_traditionalist_state_conquered
+        }
+	}
+	else_if = {
+        every_owned_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = islamist_sedition }
+		}
+		remove_dynamic_modifier = { modifier = islamist_sedition }
+		set_state_flag = TUR_traditionalist_state_conquered
+        }
+	}
+	else_if = {
+            every_owned_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = islamist_insurgency }
+		}
+		remove_dynamic_modifier = { modifier = islamist_insurgency }
+		set_state_flag = TUR_traditionalist_state_conquered
+            }
+	}
+	else_if = {
+        every_owned_state = {        
+		limit = {
+			has_dynamic_modifier = { modifier = islamists_placated }
+		}
+		remove_dynamic_modifier = { modifier = islamists_placated }
+		set_state_flag = TUR_traditionalist_state_conquered
+        }
+	}
+	if = {
+        every_owned_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = kemalist_loyalties }
+		}
+		remove_dynamic_modifier = { modifier = kemalist_loyalties }
+		set_state_flag = TUR_loyal_kemalist_state_conquered
+        }
+	}
+	if = {
+        every_owned_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = turanist_assimilation }
+		}
+		remove_dynamic_modifier = { modifier = turanist_assimilation }
+		set_state_flag = TUR_turanist_state_conquered
+        }
+	}
+	if = {
+        every_owned_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = kemalist_schemers }
+		}
+		remove_dynamic_modifier = { modifier = kemalist_schemers }
+        }
+	}
+	}
+}

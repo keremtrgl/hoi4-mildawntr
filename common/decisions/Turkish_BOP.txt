@@ -1,0 +1,922 @@
+TUR_ottoman_balance_category = {
+	TR_very_low_increase_effect = {
+
+		icon = GFX_decision_eng_trade_unions_demand
+		priority = 90
+		allowed = {
+			original_tag = TUR
+		}
+
+		cost = 25
+
+		days_re_enable = 100
+		days_remove = 50
+
+        modifier = {
+		political_power_cost = -0.1
+		stability_weekly = -0.001
+		}
+		remove_effect = {
+	add_power_balance_value = {
+		id = TUR_ottoman_balance
+		value = 0.03
+	}
+		} 
+
+		visible = { has_completed_focus = OTT_ibda_c_presence }
+		
+	}
+	
+	TR_low_increase_effect = {
+		priority = 90
+		icon = GFX_decision_generic_disband_irregulars
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		cost = 50
+
+		days_re_enable = 125
+		days_remove = 75
+
+        modifier = {
+		political_power_cost = 0.05
+		fascism_drift = 0.03
+		}
+		remove_effect = {
+	add_power_balance_value = {
+		id = TUR_ottoman_balance
+		value = 0.05
+	}
+		} 
+
+		visible = { has_completed_focus = OTT_ibda_c_presence }
+		
+	}
+	
+	TR_high_increase_effect = {
+		priority = 90
+		icon = GFX_decision_generic_intelligence_operation
+
+		allowed = {
+			original_tag = TUR
+		}
+
+       cost = 75
+
+		days_re_enable = 250
+		days_remove = 125
+
+        modifier = {
+		political_power_cost = 0.1
+		fascism_drift = 0.01
+		recruitable_population_factor = 0.03
+		}
+		remove_effect = {
+			add_manpower = 10000
+	add_power_balance_value = {
+		id = TUR_ottoman_balance
+		value = 0.05
+	}
+		} 
+
+		visible = { has_completed_focus = OTT_ibda_c_presence }
+		
+	}
+	
+	
+	TR_very_high_increase_effect = {
+		priority = 90
+		icon = GFX_decision_generic_arrest
+
+		allowed = {
+			original_tag = TUR
+		}
+
+       cost = 75
+
+
+		days_re_enable = 250
+		days_remove = 125
+
+        modifier = {
+		political_power_cost = 0.1
+		fascism_drift = 0.03
+		        experience_gain_army = 0.1
+		}
+		remove_effect = {
+			add_stability = -0.03
+	add_power_balance_value = {
+		id = TUR_ottoman_balance
+		value = 0.05
+	}
+		} 
+
+
+		visible = { has_completed_focus = OTT_ibda_c_presence }
+		
+	}
+
+#	GER_absurdly_high_increase_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = GER
+#		}
+#
+#		cost = 50
+#
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			GER_bop_absurdly_high_increase_effect = yes
+#		}
+#
+#		visible = { has_completed_focus = GER_rhineland }
+#		
+#	}
+	
+	TR_very_low_decrease_effect = {
+		priority = 90
+		icon = GFX_decision_generic_monarchy
+
+		allowed = {
+			original_tag = TUR
+			
+		}
+
+		cost = 25
+
+		days_re_enable = 100
+		days_remove = 50
+
+        modifier = {
+		political_power_cost = -0.05
+		nationalist_drift = 0.01
+		}
+		remove_effect = {
+	add_power_balance_value = {
+		id = TUR_ottoman_balance
+		value = -0.03
+	}
+		} 
+
+		visible = { has_completed_focus = OTT_returning_to_the_ottomans }
+		
+	}
+	
+	TR_low_decrease_effect = {
+		priority = 90
+		icon = GFX_decision_generic_army_support
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		cost = 50
+
+		days_re_enable = 250
+
+		days_remove = 125
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+	add_power_balance_value = {
+		id = TUR_ottoman_balance
+		value = -0.07
+		} 
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt	
+	}  
+		visible = { has_completed_focus = OTT_returning_to_the_ottomans }
+		
+	}
+	
+#	GER_medium_decrease_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = GER
+#		}
+#
+#		cost = 50
+#
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			GER_bop_medium_decrease_effect = yes
+#		}
+#
+#		visible = { has_completed_focus = GER_rhineland }
+#		
+#	}
+	
+	TR_high_decrease_effect = {
+		priority = 90
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		cost = 75
+				
+		days_re_enable = 250
+		days_remove = 125
+
+        modifier = {
+		political_power_cost = 0.1
+		nationalist_drift = 0.01
+		recruitable_population_factor = 0.03
+		}
+		remove_effect = {
+			add_manpower = 10000
+	add_power_balance_value = {
+		id = TUR_ottoman_balance
+		value = -0.05
+	}
+		} 
+
+		visible = { has_completed_focus = OTT_returning_to_the_ottomans }
+		
+	}
+
+    TR_islamists_reorganizing_1 = {    
+          icon = GFX_decision_POL_organize_strike_two 
+          allowed = { tag = TUR }                 
+          available = {                           
+          has_global_flag = Inevitable            
+          }
+          activation = { 
+			has_completed_focus = OTT_ibda_c_presence              
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no                
+          days_mission_timeout = 175           
+          timeout_effect = {                      
+	add_power_balance_value = {
+		id = TUR_ottoman_balance
+		value = 0.05
+	}  	   			   
+          }
+        }
+
+
+    TR_ottomanists_reorganizing_1 = {    
+          icon = GFX_decision_POL_organize_strike_two 
+          allowed = { tag = TUR }                 
+          available = {                           
+          has_global_flag = Inevitable            
+          }
+          activation = { 
+			has_completed_focus = OTT_returning_to_the_ottomans              
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no                
+          days_mission_timeout = 175           
+          timeout_effect = {                      
+	add_power_balance_value = {
+		id = TUR_ottoman_balance
+		value = -0.05
+	}  	   			   
+          }
+        }
+
+
+
+
+#	GER_absurdly_high_decrease_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = GER
+#		}
+#
+#		custom_cost_trigger = {
+#			command_power > 49
+#			has_political_power > 49
+#			has_army_experience > 14
+#		}
+#		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
+#		
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			GER_bop_absurdly_high_decrease_effect = yes
+#			hidden_effect = {
+#				add_command_power = -50
+#				add_political_power = -50
+#				army_experience = -15
+#			}
+#		}
+#
+#		visible = { has_completed_focus = GER_rhineland }
+#		
+#	}
+}
+
+
+
+TRGX_balance_of_power_category = {
+	TRGX_very_low_increase_effect = {
+
+		icon = GFX_decision_eng_propaganda_campaigns
+		priority = 90
+		allowed = {
+			original_tag = TUR
+		}
+
+		cost = 25
+
+		days_re_enable = 100
+		days_remove = 50
+
+        modifier = {
+		        experience_gain_army = 0.1
+		}
+		remove_effect = {
+			TRGX_bop_very_low_increase_effect = yes
+			army_experience = 15
+			air_experience = 15
+			navy_experience = 15
+		}
+
+		visible = {}
+		
+	}
+	
+	TRGX_low_increase_effect = {
+		priority = 90
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		cost = 50
+
+		days_re_enable = 100
+
+		complete_effect = {
+			TRGX_bop_low_increase_effect = yes
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+
+		visible = {}
+		
+	}
+	
+#	TRGX_medium_increase_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = GER
+#		}
+#
+#		cost = 50
+#
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			GER_bop_medium_increase_effect = yes
+#		}
+#
+#		visible = { has_completed_focus = GER_rhineland }
+#		
+#	}
+	
+	TRGX_high_increase_effect = {
+		priority = 90
+		icon = GFX_decision_eng_puppet_usa
+
+		allowed = {
+			original_tag = TUR
+		}
+
+       cost = 75
+
+		days_re_enable = 250
+
+		complete_effect = {
+			TRGX_bop_very_low_increase_effect = yes
+			add_command_power = 125
+			add_stability = -0.05
+			army_experience = 15
+			add_offsite_building = { type = arms_factory level = 1 }
+	}
+
+		visible = {}
+		
+	}
+	
+#	TRGX_absurdly_high_increase_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = GER
+#		}
+#
+#		cost = 50
+#
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			GER_bop_absurdly_high_increase_effect = yes
+#		}
+#
+#		visible = { has_completed_focus = GER_rhineland }
+#		
+#	}
+	
+	TRGX_very_low_decrease_effect = {
+		priority = 90
+		icon = GFX_decision_generic_speech
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		cost = 25
+
+		days_re_enable = 100
+		days_remove = 50
+
+        modifier = {
+		        experience_gain_army = 0.1
+		}
+		remove_effect = {
+			TRGX_bop_very_low_decrease_effect = yes
+			add_political_power = 50
+			army_experience = -5
+			add_war_support = -0.01
+		}
+
+		visible = {}
+		
+	}
+	
+	TRGX_low_decrease_effect = {
+		priority = 90
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		cost = 50
+
+		days_re_enable = 100
+
+		complete_effect = {
+			TRGX_bop_low_decrease_effect = yes
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			add_stability = -0.05
+		}
+
+		visible = {}
+		
+	}
+	
+#	TRGX_medium_decrease_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = GER
+#		}
+#
+#		cost = 50
+#
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			TRGX_bop_medium_decrease_effect = yes
+#		}
+#
+#		visible = { has_completed_focus = GER_rhineland }
+#		
+#	}
+	
+	TRGX_high_decrease_effect = {
+		priority = 90
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		cost = 75
+				
+		days_re_enable = 250
+		days_remove = 125
+
+        modifier = {
+		        experience_gain_army = -0.1
+		}
+		remove_effect = {
+			TRGX_bop_very_low_decrease_effect = yes
+			add_manpower = -10000
+				add_command_power = -50
+				army_experience = -50
+				add_war_support = -0.05
+				}
+	
+		
+
+		visible = {}
+	}
+
+    TRGX_15th_july_coup = {    
+          icon = GFX_decision_generic_merge_plant_tank
+          allowed = { tag = TUR }                 
+          available = {                           
+          has_global_flag = Inevitable            
+          }
+          activation = {   
+         tag = TUR
+		 country_exists = USA
+neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 }
+		 has_idea = betrayal_from_FETO2
+         AND = {
+             date > 2016.5.10
+	         date < 2016.6.10
+         }       
+          }
+          is_good = no     
+		fire_only_once = yes		  
+          selectable_mission = no                
+          days_mission_timeout = 60           
+          timeout_effect = {                      
+          country_event = Turkey.120
+				remove_power_balance = {
+					id = TRGX_power_balance
+				}		   	   			   
+          }
+        }
+
+
+    TRGX_gulenist_reorganization_1 = {    
+          icon = GFX_decision_generic_reorganize_irregulars
+          allowed = { tag = TUR }                 
+          available = {                           
+          has_global_flag = Inevitable            
+          }
+          activation = {      
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no                
+          days_mission_timeout = 225           
+          timeout_effect = {                      
+			GER_bop_very_low_increase_effect = yes	   
+          }
+	} } 
+
+
+TUR_mit_balance_category = {
+	MIT_very_low_increase_effect = {
+
+		icon = GFX_decision_generic_prepare_civil_war_new
+		priority = 90
+		allowed = {
+			original_tag = TUR
+		}
+
+		cost = 25
+
+		days_re_enable = 100
+		days_remove = 50
+
+        modifier = {
+		political_power_cost = -0.05
+		}
+		remove_effect = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.03
+	}
+	add_equipment_to_stockpile = {
+		type = APC_2		 #M113
+		amount = -125
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_weapons		 #M113
+		amount = -125
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = command_control_equipment	 #M113
+		amount = -125
+		producer = TUR
+	}
+		} 
+
+		visible = { has_completed_focus = MIT_offer_help_from_SADAT }
+		
+	}
+	
+	MIT_low_increase_effect = {
+		priority = 90
+		icon = GFX_decision_ger_mefo_bills
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		cost = 50
+
+		days_re_enable = 125
+		days_remove = 75
+
+        modifier = {
+		political_power_cost = 0.05
+		fascism_drift = 0.03
+		}
+		remove_effect = {
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	}
+			add_offsite_building = { type = arms_factory level = 1 }
+                random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				} }
+		} 
+
+		visible = { has_completed_focus = MIT_offer_help_from_SADAT }
+		
+	}
+	
+	MIT_high_increase_effect = {
+		priority = 90
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = TUR
+		}
+
+       cost = 75
+
+		days_re_enable = 250
+		days_remove = 125
+
+        modifier = {
+		political_power_cost = 0.1
+		}
+		remove_effect = {
+			add_manpower = 10000
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.03
+	}
+		} 
+		visible = { has_completed_focus = MIT_offer_help_from_SADAT }
+		
+	}
+	
+	
+	MIT_very_high_increase_effect = {
+		priority = 90
+		icon = GFX_decision_ger_mefo_bills
+
+		allowed = {
+			original_tag = TUR
+		}
+
+       cost = 75
+
+
+		days_re_enable = 250
+		days_remove = 125
+
+        modifier = {
+		political_power_cost = 0.1
+		fascism_drift = 0.03
+		        experience_gain_army = 0.1
+		}
+		remove_effect = {
+			add_stability = -0.03
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.05
+	}
+			add_offsite_building = { type = arms_factory level = -1 }
+                random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+		} 
+
+
+		visible = { has_completed_focus = MIT_offer_help_from_SADAT }
+		
+	}
+
+#	GER_absurdly_high_increase_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = GER
+#		}
+#
+#		cost = 50
+#
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			GER_bop_absurdly_high_increase_effect = yes
+#		}
+#
+#		visible = { has_completed_focus = GER_rhineland }
+#		
+#	}
+	
+#	GER_medium_decrease_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = GER
+#		}
+#
+#		cost = 50
+#
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			GER_bop_medium_decrease_effect = yes
+#		}
+#
+#		visible = { has_completed_focus = GER_rhineland }
+#		
+#	}
+
+
+    MIT_mit_reorganizing_1 = {    
+          icon = GFX_decision_generic_military
+          allowed = { tag = TUR }                 
+          available = {                           
+          has_global_flag = Inevitable            
+          }
+          activation = { 
+		has_completed_focus = MIT_sudden_SADAT_attack
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no                
+          days_mission_timeout = 175           
+          timeout_effect = {                      
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = 0.05
+	}  	   			   
+          }
+        }
+
+
+    MIT_sadat_reorganizing_1 = {    
+          icon = GFX_decision_generic_military
+          allowed = { tag = TUR }                 
+          available = {                           
+          has_global_flag = Inevitable            
+          }
+          activation = { 
+		has_completed_focus = MIT_governmental_group              
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no                
+          days_mission_timeout = 175           
+          timeout_effect = {                      
+	add_power_balance_value = {
+		id = TUR_mit_balance
+		value = -0.05
+	}  	   			   
+          }
+        }
+
+
+#	GER_absurdly_high_decrease_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = GER
+#		}
+#
+#		custom_cost_trigger = {
+#			command_power > 49
+#			has_political_power > 49
+#			has_army_experience > 14
+#		}
+#		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
+#		
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			GER_bop_absurdly_high_decrease_effect = yes
+#			hidden_effect = {
+#				add_command_power = -50
+#				add_political_power = -50
+#				army_experience = -15
+#			}
+#		}
+#
+#		visible = { has_completed_focus = GER_rhineland }
+#		
+#	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

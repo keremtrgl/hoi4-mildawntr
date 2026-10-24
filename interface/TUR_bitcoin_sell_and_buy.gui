@@ -1,0 +1,28 @@
+@STATUS_X = -10
+@HEADER_X = 10
+
+guiTypes = {
+	containerWindowType = {
+		name = "bitcoin_sell_and_buy_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 85 }
+
+		instantTextBoxType = {
+			name ="TUR_bitcoin_deposits"
+			position = { x = 180 y = 25 }
+			font = "hoi_16mbs"
+			text = "Bitcoin Deposits: [?TUR_deposit_bitcoin] Million"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_bitcoin_amount"
+			position = { x = 180 y = 45 }
+			font = "hoi_16mbs"
+			text = "Bitcoin: [?TUR_lira_amount_against_bitcoin] Liras"
+			format = left
+			maxWidth = 497
+		}
+	}
+}

@@ -1,0 +1,514 @@
+defined_text = {
+	name = Western_Autocracy_L
+
+	text = { trigger = { original_tag = TUR has_global_flag = dyp has_global_flag = NO_TURKIC} localization_key = TUR.Western_Autocracy }
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC has_global_flag = MEMLEKET_INCE} localization_key = TUR.Western_AutocracyMEM }
+	text = { trigger = { original_tag = TUR has_global_flag = dp has_global_flag = NO_TURKIC} localization_key = TUR.Western_AutocracyDP }
+	text = { trigger = { original_tag = TUR  has_global_flag = TUR_turkic_unification} localization_key = TURKIC.Western_AutocracyDP }
+	text = { trigger = { original_tag = TUR  has_global_flag = UNIFICATION_TRIGGERED} localization_key = generic.Western_Autocracy }
+	text = { trigger = { original_tag = NTU } localization_key = NTU.Western_Autocracy }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Western_Autocracy }
+}
+
+defined_text = {
+	name = conservatism_L
+	text = { trigger = { original_tag = TUR has_global_flag = noiyi } localization_key = TUR.conservatism }
+	text = { trigger = { original_tag = TUR has_global_flag = iyi } localization_key = TUR.conservatism_2017 }
+	text = { trigger = { original_tag = TUR } localization_key = generic.conservatism }
+}
+
+defined_text = {
+	name = liberalism_L
+	text = { trigger = { original_tag = TUR } localization_key = TUR.liberalism }
+	text = { trigger = { original_tag = TUR } localization_key = generic.liberalism }
+}
+
+defined_text = {
+	name = socialism_L
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC} localization_key = TUR.socialism }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification} localization_key = TURKIC.socialism }
+	text = { trigger = { original_tag = TUR } localization_key = generic.socialism }
+}
+
+defined_text = {
+	name = Communist-State_L
+	text = { trigger = { original_tag = TUR has_global_flag = perincek1 has_global_flag = NO_TURKIC} localization_key = TUR.Communist-State }
+	text = { trigger = { original_tag = TUR has_global_flag = perincek2 has_global_flag = NO_TURKIC} localization_key = TUR.Communist-StateP }
+    text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification} localization_key = TURKIC.Communist-State }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Communist-State }
+}
+
+defined_text = {
+	name = anarchist_communism_L
+	text = { trigger = { original_tag = TUR } localization_key = TUR.anarchist_communism }
+	text = { trigger = { original_tag = TUR } localization_key = generic.anarchist_communism}
+}
+
+defined_text = {
+	name = Conservative_L
+
+	text = { trigger = { original_tag = TUR has_global_flag = fpstrong } localization_key = TUR.Conservative }
+	text = { trigger = { original_tag = TUR has_global_flag = fpdead } localization_key = TUR.Conservative_saadet }
+	text = { trigger = { original_tag = TUR has_global_flag = tkpwhat } localization_key = TUR.TKPH }
+	text = { trigger = { original_tag = CTU } localization_key = CTU.Conservative }	
+	text = { trigger = { original_tag = TUR } localization_key = generic.Conservative}
+}
+
+defined_text = {
+	name = Autocracy_L
+	text = { trigger = { original_tag = TUR has_global_flag = EMEP_ACTIVE } localization_key = TUR.Autocracy }
+	text = { trigger = { original_tag = TUR has_global_flag = REFAH_TIME } localization_key = TUR.Autocracy_rfp }
+	text = { trigger = { original_tag = CTU } localization_key = CTU.Autocracy }	
+	text = { trigger = { original_tag = TUR } localization_key = generic.Autocracy}
+}
+
+defined_text = {
+	name = Vilayat_e_Faqih_L
+	text = { trigger = { original_tag = TUR has_global_flag = mustafaz_stands } localization_key = TUR.Vilayat_e_Faqih}
+	text = { trigger = { original_tag = TUR has_global_flag = mustafaz_closed} localization_key = TUR.Vilayat_e_Faqih_2 }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Vilayat_e_Faqih}
+}
+
+defined_text = {
+	name = Mod_Vilayat_e_Faqih_L
+
+	text = { trigger = { original_tag = TUR has_global_flag = ysp  } localization_key = TUR.Mod_Vilayat_e_Faqih_2023 }
+	text = { trigger = { original_tag = TUR has_global_flag = hdp  } localization_key = TUR.Mod_Vilayat_e_Faqih_2017 }
+	text = { trigger = { original_tag = TUR has_global_flag = hdps } localization_key = TUR.Mod_Vilayat_e_Faqih }
+	#text = { trigger = { original_tag = TUR date < 2016.1.1 } #localization_key = TUR.Mod_Vilayat_e_Faqih }
+	#text = { trigger = { original_tag = TUR date > 2016.1.1 } #localization_key = TUR.Mod_Vilayat_e_Faqih_2017 }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Mod_Vilayat_e_Faqih}
+}
+
+defined_text = {
+	name = Caliphate_L
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Caliphate }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Caliphate}
+}
+
+defined_text = {
+	name = Neutral_conservatism_L
+    text = { trigger = { original_tag = TUR has_country_flag = AYM_government } localization_key = TUR.JUC }
+	text = { trigger = { original_tag = TUR has_global_flag = MP_MOMENT } localization_key = TUR.Neutral_conservatism }
+	text = { trigger = { original_tag = TUR has_global_flag = OSMAN_PAMUKOGLU_CREATES_HIS_OWN_PARTY } localization_key = TUR.HEPAR }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_conservatism}
+}
+
+defined_text = {
+	name = oligarchism_L
+	text = { trigger = { original_tag = WTU } localization_key = MAF.oligarchism }
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC has_global_flag = NO_TUR_MAFIATIC_TR has_global_flag = NO_MIT NOT = { has_global_flag = TECHNOCRATIC_APPROACH }} localization_key = TUR.oligarchism }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification has_global_flag = NO_TUR_MAFIATIC_TR has_global_flag = NO_MIT NOT = { has_global_flag = TECHNOCRATIC_APPROACH }} localization_key = TURKIC.oligarchism }
+	text = { trigger = { original_tag = TUR has_global_flag = YES_MIT } localization_key = MIT.oligarchism }
+	text = { trigger = { original_tag = TUR has_global_flag = YES_MIT has_global_flag = SADAT } localization_key = SADAT.oligarchism }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_MAFIATIC_TR has_global_flag = NO_MIT } localization_key = MAF.oligarchism }
+	text = { trigger = { original_tag = TUR has_global_flag = TECHNOCRATIC_APPROACH has_global_flag = NO_TUR_MAFIATIC_TR } localization_key = TECH.oligarchism }
+	text = { trigger = { original_tag = TUR } localization_key = generic.oligarchism}
+}
+
+defined_text = {
+	name = Neutral_Libertarian_L
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Neutral_Libertarian }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Libertarian}
+}
+
+defined_text = {
+	name = Neutral_Autocracy_L
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Neutral_Autocracy }
+	text = { trigger = { original_tag = TUR has_global_flag = blast } localization_key = TUR.Neutral_Autocracy_Gelecek }
+	text = { trigger = { original_tag = TUR has_global_flag = cem_uzan } localization_key = TUR.Neutral_Autocracy }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Autocracy}
+}
+
+defined_text = {
+	name = Neutral_Communism_L
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Neutral_Communism }
+	text = { trigger = { original_tag = TUR has_global_flag = TIME_OF_TIP } localization_key = TUR.Neutral_Communism_TIP }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_NO } localization_key = TUR.Neutral_Communism }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_YEAH } localization_key = TUR.Anarchist_Communism }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Communism}
+}
+
+defined_text = {
+	name = Neutral_green_L
+	text = { trigger = { original_tag = TUR has_global_flag = blas has_global_flag = ANARCHIST_NO } localization_key = TUR.Neutral_green }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_YEAH } localization_key = TUR.Anarchist_Green }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_green}
+}
+
+defined_text = {
+	name = Neutral_Muslim_Brotherhood_L
+	text = { trigger = { original_tag = TUR has_global_flag = akp } localization_key = TUR.Neutral_Muslim_Brotherhood}
+	text = { trigger = { original_tag = TUR date > 2001.8.14 } localization_key = TUR.Neutral_Muslim_Brotherhood }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Muslim_Brotherhood}
+}
+
+defined_text = {
+	name = Nat_Populism_L
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC} localization_key = TUR.Nat_Populism }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification} localization_key = TURKIC.Nat_Populism }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Nat_Populism }
+}
+
+defined_text = {
+	name = Nat_Fascism_L
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Nat_Fascism }
+	text = { trigger = { original_tag = TUR has_global_flag = ULKISTS_IN_ACTION} localization_key = TUR.Nat_Fascism }
+	text = { trigger = { original_tag = TUR has_global_flag = ZAFERISTS_IN_ACTION} localization_key = TUR.Nat_Fascism_Zafer }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Nat_Fascism}
+}
+
+defined_text = {
+	name = Nat_Autocracy_L
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Nat_Autocracy }
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC} localization_key = TUR.Nat_Autocracy }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification} localization_key = TURKIC.Nat_Autocracy }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Nat_Autocracy}
+}
+
+defined_text = {
+	name = Monarchist_L
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Monarchist }
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC } localization_key = TUR.Monarchist }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification } localization_key = TURKIC.Monarchist }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Monarchist}
+}
+
+defined_text = {
+	name = Western_Autocracy_L_desc
+	text = { trigger = { original_tag = TUR } localization_key = generic.Western_Autocracy_desc }
+}
+
+defined_text = {
+	name = conservatism_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = noiyi } localization_key = TUR.conservatism_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = iyi } localization_key = TUR.conservatism_2017_desc}
+	text = { trigger = { original_tag = TUR } localization_key = generic.conservatism_desc }
+}
+
+defined_text = {
+	name = liberalism_L_desc
+	text = { trigger = { original_tag = TUR } localization_key = generic.liberalism_desc }
+}
+
+defined_text = {
+	name = socialism_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC} localization_key = TUR.socialism_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification} localization_key = TURKIC.socialism_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.socialism_desc }
+}
+
+defined_text = {
+	name = Communist-State_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC } localization_key = TUR.Communist-State_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification } localization_key = TURKIC.Communist-State_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Communist-State_desc }
+}
+
+defined_text = {
+	name = anarchist_communism_L_desc
+	text = { trigger = { original_tag = TUR } localization_key = generic.anarchist_communism_desc }
+}
+
+defined_text = {
+	name = Conservative_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = fpdead } localization_key = TUR.Conservative_saadet_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = tkpwhat } localization_key = TUR.TKPH_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Conservative_desc }
+}
+
+defined_text = {
+	name = Autocracy_L_desc
+	text = { trigger = { original_tag = TUR } localization_key = generic.Autocracy_desc }
+}
+
+defined_text = {
+	name = Mod_Vilayat_e_Faqih_L_desc
+
+	text = { trigger = { original_tag = TUR has_global_flag = hdps } localization_key = TUR.Mod_Vilayat_e_Faqih_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = hdp } localization_key = TUR.Mod_Vilayat_e_Faqih_2017_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = ysp } localization_key = TUR.Mod_Vilayat_e_Faqih_2023_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Mod_Vilayat_e_Faqih_desc }
+}	
+
+defined_text = {
+	name = Vilayat_e_Faqih_L_desc
+	text = { trigger = { original_tag = TUR } localization_key = generic.Vilayat_e_Faqih_desc }
+}
+
+defined_text = {
+	name = Kingdom_L_desc
+	text = { trigger = { original_tag = TUR } localization_key = generic.Vilayat_e_Faqih_desc }
+}
+
+defined_text = {
+	name = Caliphate_L_desc
+	text = { trigger = { original_tag = TUR } localization_key = generic.Caliphate_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Caliphate_desc }
+}
+
+defined_text = {
+	name = Neutral_conservatism_L_desc
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_conservatism_desc }
+}
+
+defined_text = {
+	name = oligarchism_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = TECHNOCRATIC_APPROACH has_global_flag = NO_TUR_MAFIATIC_TR } localization_key = TECH.oligarchism_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = YES_MIT } localization_key = MIT.oligarchism_desc}
+	text = { trigger = { original_tag = TUR has_global_flag = YES_MIT has_global_flag = SADAT } localization_key = SADAT.oligarchism_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.oligarchism_desc }
+}
+
+defined_text = {
+	name = neutral_Social_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = btp has_global_flag = ANARCHIST_NO } localization_key = TUR.neutral_Social_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_YEAH } localization_key = TUR.Anarchist_Social_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.neutral_Social_desc }
+}
+
+defined_text = {
+	name = Neutral_Libertarian_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_NO } localization_key = TUR.Neutral_Libertarian_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_YEAH } localization_key = TUR.Anarchist_Libertarian_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Libertarian_desc }
+}
+
+defined_text = {
+	name = Neutral_Autocracy_L_desc
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Autocracy_desc }
+}
+
+defined_text = {
+	name = Neutral_Communism_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = TIME_OF_TIP } localization_key = TUR.Neutral_Communism_desc_TIP }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_NO } localization_key = TUR.Neutral_Communism_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_YEAH } localization_key = TUR.Anarchist_Communism_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Communism_desc }
+}
+
+defined_text = {
+	name = Neutral_green_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = blas has_global_flag = ANARCHIST_NO } localization_key = TUR.Neutral_green_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_YEAH } localization_key = TUR.Anarchist_Green_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_green_desc }
+}
+
+defined_text = {
+	name = Neutral_Muslim_Brotherhood_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = akp } localization_key = TUR.Neutral_Muslim_Brotherhood_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Muslim_Brotherhood_desc }
+}
+
+defined_text = {
+	name = Nat_Populism_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC} localization_key = TUR.Nat_Populism_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification} localization_key = TURKIC.Nat_Populism_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Nat_Populism_desc }
+}
+
+defined_text = {
+	name = Nat_Fascism_desc
+	text = { trigger = { original_tag = TUR has_global_flag = ULKISTS_IN_ACTION} localization_key = TUR.Nat_Fascism_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = ZAFERISTS_IN_ACTION} localization_key = TUR.Nat_Fascism_Zafer_desc }
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Nat_Fascism_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Nat_Fascism_desc }
+}
+
+defined_text = {
+	name = Nat_Autocracy_L_desc
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC } localization_key = TUR.Nat_Autocracy_desc }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification} localization_key = TURKIC.Nat_Autocracy_desc }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Nat_Autocracy_desc }
+}
+
+defined_text = {
+	name = Monarchist_L_desc
+	text = { trigger = { original_tag = TUR } localization_key = generic.Monarchist_desc }
+}
+
+defined_text = {
+	name = Western_Autocracy_L_icon
+
+	text = { trigger = { original_tag = TUR has_global_flag = dyp has_global_flag = NO_TURKIC} localization_key = TUR.Western_Autocracy_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = MEMLEKET_INCE has_global_flag = NO_TURKIC} localization_key = TUR.Western_AutocracyMEM_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = dp has_global_flag = NO_TURKIC} localization_key = TUR.Western_AutocracyDP_icon }
+	text = { trigger = { original_tag = TUR  has_global_flag = TUR_turkic_unification} localization_key = TURKIC.Western_AutocracyDP_icon }
+	text = { trigger = { original_tag = TUR  has_global_flag = UNIFICATION_TRIGGERED} localization_key = generic.Western_Autocracy_icon }
+	text = { trigger = { original_tag = NTU } localization_key = NTU.Western_Autocracy_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Western_Autocracy_icon }
+}
+
+defined_text = {
+	name = conservatism_L_icon
+
+	text = { trigger = { original_tag = TUR date < 2017.1.1 } localization_key = TUR.conservatism_icon }
+	text = { trigger = { original_tag = TUR date > 2017.1.1 } localization_key = TUR.conservatism_2017_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = noiyi } localization_key = TUR.conservatism_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = iyi } localization_key = TUR.conservatism_2017_icon  }
+	text = { trigger = { original_tag = TUR } localization_key = generic.conservatism_icon }
+}
+
+defined_text = {
+	name = liberalism_L_icon
+
+	text = { trigger = { original_tag = TUR } localization_key = TUR.liberalism_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.liberalism_icon }
+}
+
+defined_text = {
+	name = socialism_L_icon
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC} localization_key = TUR.socialism_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification} localization_key = TURKIC.socialism_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.socialism_icon }
+}
+
+defined_text = {
+	name = Communist-State_L_icon
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Communist-State_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Communist-State_icon }
+}
+
+defined_text = {
+	name = Conservative_L_icon
+	text = { trigger = { original_tag = TUR has_global_flag = fpstrong } localization_key = TUR.Conservative_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = fpdead } localization_key = TUR.Conservative_saadet_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = tkpwhat } localization_key = TUR.TKPH_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Conservative_icon}
+}
+
+defined_text = {
+	name = Autocracy_L_icon
+	text = { trigger = { original_tag = TUR } localization_key = generic.Autocracy_icon}
+}
+
+defined_text = {
+	name = Vilayat_e_Faqih_L_icon
+
+	text = { trigger = { original_tag = TUR has_global_flag = mustafaz_stands } localization_key = TUR.Vilayat_e_Faqih_icon}
+	text = { trigger = { original_tag = TUR has_global_flag = mustafaz_closed} localization_key = TUR.Vilayat_e_Faqih_2_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = mustafaz_closed} localization_key = generic.Vilayat_e_Faqih_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Vilayat_e_Faqih_icon}
+}
+
+defined_text = {
+	name = Mod_Vilayat_e_Faqih_L_icon
+
+	text = { trigger = { original_tag = TUR has_global_flag = ysp  } localization_key = TUR.Mod_Vilayat_e_Faqih_2023_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = hdp  } localization_key = TUR.Mod_Vilayat_e_Faqih_2017_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = hdps } localization_key = TUR.Mod_Vilayat_e_Faqih_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Mod_Vilayat_e_Faqih_icon}
+}
+
+defined_text = {
+	name = anarchist_communism_L_icon
+
+	text = { trigger = { original_tag = TUR } localization_key = TUR.anarchist_communism_icon_2017 }
+	text = { trigger = { original_tag = TUR } localization_key = TUR.anarchist_communism_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.anarchist_communism_icon}
+}
+
+defined_text = {
+	name = Kingdom_L_icon
+	text = { trigger = { original_tag = TUR } localization_key = generic.Kingdom_icon}
+}
+
+defined_text = {
+	name = Caliphate_L_icon
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Caliphate_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Caliphate_icon}
+}
+
+defined_text = {
+	name = Neutral_conservatism_L_icon
+    text = { trigger = { original_tag = TUR has_global_flag = COURT_RULES_AYM } localization_key = TUR.JUC_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = MP_MOMENT } localization_key = TUR.Neutral_conservatism_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = OSMAN_PAMUKOGLU_CREATES_HIS_OWN_PARTY } localization_key = TUR.HEPAR_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_conservatism_icon}
+}
+
+defined_text = {
+	name = oligarchism_L_icon
+ 	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC has_global_flag = NO_TUR_MAFIATIC_TR has_global_flag = NO_MIT NOT = { has_global_flag = TECHNOCRATIC_APPROACH }} localization_key = TUR.oligarchism_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification has_global_flag = NO_TUR_MAFIATIC_TR has_global_flag = NO_MIT NOT = { has_global_flag = TECHNOCRATIC_APPROACH }} localization_key = TURKIC.oligarchism_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = YES_MIT } localization_key = MIT.oligarchism_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = YES_MIT has_global_flag = SADAT } localization_key = SADAT.oligarchism_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_MAFIATIC_TR has_global_flag = NO_MIT } localization_key = MAF.oligarchism_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = TECHNOCRATIC_APPROACH has_global_flag = NO_TUR_MAFIATIC_TR } localization_key = TECH.oligarchism_icon }
+	text = { trigger = { original_tag = WTU } localization_key = MAF.oligarchism_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.oligarchism_icon}
+}
+
+defined_text = {
+	name = neutral_Social_L_icon
+ 	text = { trigger = { original_tag = TUR has_global_flag = btp has_global_flag = ANARCHIST_NO } localization_key = TUR.neutral_Social_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_YEAH } localization_key = TUR.Anarchist_Social_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.neutral_Social_icon}
+}
+
+defined_text = {
+	name = Neutral_Libertarian_L_icon
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_NO } localization_key = TUR.Neutral_Libertarian_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_YEAH } localization_key = TUR.Anarchist_Libertarian_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Libertarian_icon}
+}
+
+defined_text = {
+	name = Neutral_Autocracy_L_icon
+	text = { trigger = { original_tag = TUR has_global_flag = blast } localization_key = TUR.Neutral_Autocracy_Gelecek_icon }
+    text = { trigger = { original_tag = TUR has_global_flag = cem_uzan } localization_key = TUR.Neutral_Autocracy_icon }
+    text = { trigger = { original_tag = TUR } localization_key = TUR.Technocratic_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Autocracy_icon}
+}
+
+defined_text = {
+	name = Neutral_Communism_L_icon
+	text = { trigger = { original_tag = TUR has_global_flag = TIME_OF_TIP } localization_key = TUR.Neutral_Communism_icon_TIP }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_NO } localization_key = TUR.Neutral_Communism_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_YEAH } localization_key = TUR.Anarchist_Communism_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Communism_icon}
+}
+
+defined_text = {
+	name = Neutral_green_L_icon
+	text = { trigger = { original_tag = TUR has_global_flag = blas has_global_flag = ANARCHIST_NO } localization_key = TUR.Neutral_green_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = ANARCHIST_YEAH } localization_key = TUR.Anarchist_Green_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_green_icon}
+}
+
+defined_text = {
+	name = Neutral_Muslim_Brotherhood_L_icon
+	text = { trigger = { original_tag = TUR has_global_flag = akp } localization_key = TUR.Neutral_Muslim_Brotherhood_2001_icon }
+	text = { trigger = { original_tag = TUR date > 2001.8.14 } localization_key = TUR.Neutral_Muslim_Brotherhood_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Muslim_Brotherhood_icon}
+}
+
+defined_text = {
+	name = Nat_Autocracy_L_icon
+	text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC} localization_key = TUR.Nat_Autocracy_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification} localization_key = TURKIC.Nat_Autocracy_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Nat_Autocracy_icon}
+}
+
+defined_text = {
+	name = Nat_Fascism_L_icon
+	text = { trigger = { original_tag = TUR has_global_flag = ULKISTS_IN_ACTION} localization_key = TUR.Nat_Fascism_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = ZAFERISTS_IN_ACTION} localization_key = TUR.Nat_Fascism_Zafer_icon }
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Nat_Fascism_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Nat_Fascism_icon}
+}
+
+defined_text = {
+	name = Nat_Populism_icon
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Nat_Populism_icon }
+    text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC} localization_key = TUR.Nat_Populism_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification} localization_key = TURKIC.Nat_Populism_icon }
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Nat_Fascism_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Nat_Populism_icon}
+}
+defined_text = {
+	name = Monarchist_L_icon
+    text = { trigger = { original_tag = TUR has_global_flag = NO_TURKIC } localization_key = TUR.Monarchist_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = TUR_turkic_unification } localization_key = TURKIC.Monarchist_icon }
+	text = { trigger = { original_tag = TUR } localization_key = generic.Monarchist_icon}
+}

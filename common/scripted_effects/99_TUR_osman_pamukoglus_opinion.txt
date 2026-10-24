@@ -1,0 +1,10 @@
+TUR_startup = {
+	set_variable = { TUR_osman_opinion = 75 }
+}
+TUR_amount_osman_opinion = {
+	clamp_variable = {
+		var = TUR_osman_opinion
+		min = 0
+		max = 100
+	}
+}

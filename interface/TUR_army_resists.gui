@@ -1,0 +1,233 @@
+@STATUS_X = -10
+@HEADER_X = 10
+
+guiTypes = {
+	containerWindowType = {
+		name = "tur_army_resists_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 860 }
+
+		instantTextBoxType = {
+			name ="TUR_armys"
+			position = { x = 3 y = -08 }
+			font = "hoi_16mbs"
+			text = "TUR_armys_resists_desc"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume1"
+			position = { x = 3 y = 200 }
+			font = "hoi_16mbs"
+			text = "[Neutral_Muslim_Brotherhood_L] [?TUR_rel_akp] Opinion"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume2"
+			position = { x = 3 y = 225 }
+			font = "hoi_16mbs"
+			text = "[socialism_L] [?TUR_rel_chp] Opinion"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume3"
+			position = { x = 3 y = 250 }
+			font = "hoi_16mbs"
+			text = "[Western_Autocracy_L] [?TUR_rel_dp] Opinion"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume4"
+			position = { x = 3 y = 275 }
+			font = "hoi_16mbs"
+			text = "[Mod_Vilayat_e_Faqih_L] [?TUR_rel_hdp] Opinion"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume5"
+			position = { x = 3 y = 300 }
+			font = "hoi_16mbs"
+			text = "[Nat_Populism_L] [?TUR_rel_mhp] Opinion"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume6"
+			position = { x = 3 y = 325 }
+			font = "hoi_16mbs"
+			text = "[Communist-State_L] [?TUR_rel_tkp] Opinion"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume7"
+			position = { x = 3 y = 350 }
+			font = "hoi_16mbs"
+			text = "[conservatism_L] [?TUR_rel_good] Opinion"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume8"
+			position = { x = 3 y = 375 }
+			font = "hoi_16mbs"
+			text = "[Neutral_green_L] [?TUR_rel_green] Opinion"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume9"
+			position = { x = 3 y = 400 }
+			font = "hoi_16mbs"
+			text = "[Neutral_Libertarian_L] [?TUR_rel_anap] Opinion"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume10"
+			position = { x = 3 y = 425 }
+			font = "hoi_16mbs"
+			text = "[Neutral_Autocracy_L] [?TUR_rel_gencparti] Opinion"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_consume11"
+			position = { x = 3 y = 450 }
+			font = "hoi_16mbs"
+			text = "[liberalism_L] [?TUR_rel_ldp] Opinion"
+			format = left
+			maxWidth = 497
+		}		
+
+
+		instantTextBoxType = {
+			name ="TUR_consume12"
+			position = { x = 3 y = 475 }
+			font = "hoi_16mbs"
+			text = "[Neutral_Libertarian_L] [?TUR_rel_anap] Opinion"
+			format = left
+			maxWidth = 497
+		}		
+		
+		instantTextBoxType = {
+			name ="TUR_consume13"
+			position = { x = 3 y = 500 }
+			font = "hoi_16mbs"
+			text = "[anarchist_communism_L] [?TUR_rel_odp] Opinion"
+			format = left
+			maxWidth = 497
+		}		
+		
+		instantTextBoxType = {
+			name ="TUR_consume14"
+			position = { x = 3 y = 525 }
+			font = "hoi_16mbs"
+			text = "[Conservative_L] [?TUR_rel_fp] Opinion"
+			format = left
+			maxWidth = 497
+		}		
+		
+		instantTextBoxType = {
+			name ="TUR_consume15"
+			position = { x = 3 y = 550 }
+			font = "hoi_16mbs"
+			text = "[Autocracy_L] [?TUR_rel_emep] Opinion"
+			format = left
+			maxWidth = 497
+		}		
+		
+		instantTextBoxType = {
+			name ="TUR_consume16"
+			position = { x = 3 y = 575 }
+			font = "hoi_16mbs"
+			text = "[Caliphate_L] [?TUR_rel_ibda_c] Opinion"
+			format = left
+			maxWidth = 497
+		}		
+		
+		instantTextBoxType = {
+			name ="TUR_consume17"
+			position = { x = 3 y = 600 }
+			font = "hoi_16mbs"
+			text = "[Neutral_conservatism_L] [?TUR_rel_mp] Opinion"
+			format = left
+			maxWidth = 497
+		}	
+		
+		instantTextBoxType = {
+			name ="TUR_consume18"
+			position = { x = 3 y = 625 }
+			font = "hoi_16mbs"
+			text = "[oligarchism_L] [?TUR_rel_bbp] Opinion"
+			format = left
+			maxWidth = 497
+		}	
+		
+		instantTextBoxType = {
+			name ="TUR_consume19"
+			position = { x = 3 y = 650 }
+			font = "hoi_16mbs"
+			text = "[neutral_Social_L] [?TUR_rel_socdem] Opinion"
+			format = left
+			maxWidth = 497
+		}			
+		
+		instantTextBoxType = {
+			name ="TUR_consume20"
+			position = { x = 3 y = 675 }
+			font = "hoi_16mbs"
+			text = "[Neutral_Communism_L] [?TUR_rel_tip] Opinion"
+			format = left
+			maxWidth = 497
+		}	
+		
+		instantTextBoxType = {
+			name ="TUR_consume21"
+			position = { x = 3 y = 700 }
+			font = "hoi_16mbs"
+			text = "[Nat_Fascism_L] [?TUR_rel_bozkurtlar] Opinion"
+			format = left
+			maxWidth = 497
+		}
+		
+		instantTextBoxType = {
+			name ="TUR_consume22"
+			position = { x = 3 y = 725 }
+			font = "hoi_16mbs"
+			text = "[Monarchist_L] [?TUR_rel_ottoman] Opinion"
+			format = left
+			maxWidth = 497
+		}
+
+		background = {
+			name = "turkey_map_gfx"
+			quadTextureSprite = "GFX_armed_forces"
+			position = { x = 320 y = 360 }
+		}
+		
+		instantTextBoxType = {
+			name ="go_down_cancel"
+			position = { x = 320 y = 503}
+			font = "hoi_18mbs"
+			text = "TSK_forces"
+			format = left
+			maxWidth = 150
+		}
+	}
+}

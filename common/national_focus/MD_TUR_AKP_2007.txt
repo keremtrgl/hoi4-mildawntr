@@ -1,0 +1,5050 @@
+focus_tree = {
+	id = MD_TUR_AK2007
+	default = no
+
+	focus = {
+		id = PKA_victory_of_akp
+		icon = akp
+		cost = 10,00
+		x = 20
+		y = 0
+
+		
+		completion_reward = {
+		add_political_power = 75
+		add_stability = 0.03
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.03 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_small_start1
+		}
+	}
+	focus = {
+		id = PKA_reorganize_the_army
+		icon = soldier_plain_white_flag
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_party_of_majority
+		}
+		prerequisite = {
+			focus = PKA_new_relations_with_military
+		}
+		x = 22
+		y = 28
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+			search_filters = {FOCUS_FILTER_NAME}	
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+		
+	completion_reward = {
+				set_temp_variable = { temp_opinion = 15 }	
+            change_the_military_opinion = yes		
+			army_experience = -75
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+			}
+	}
+	focus = {
+		id = PKA_support_for_institutionalization
+		icon = examine_foreign_laws
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_victory_of_akp
+		}
+		x = 19
+		y = 1
+
+		
+		completion_reward = {
+		add_political_power = 50
+        add_ideas = institutionalism
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.03 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_small_start1
+		}
+	}
+	focus = {
+		id = PKA_back_AYM
+		icon = focus_generic_court
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_support_for_institutionalization
+		}
+		x = 18
+		y = 2
+
+
+		completion_reward = {
+             add_political_power = 25
+			 add_stability = 0.03
+             }				
+		}
+	focus = {
+		id = PKA_support_kadro_movement
+		icon = champagne_green
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_victory_of_akp
+		}
+		x = 21
+		y = 1
+
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = -0.02 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_fall_small
+             add_political_power = -75
+			 add_stability = -0.02
+             }				
+		}
+	focus = {
+		id = PKA_continue_liberal_politicies
+		icon = liberalization
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_support_kadro_movement
+		}
+		prerequisite = {
+			focus = PKA_support_for_institutionalization
+		}
+		x = 20
+		y = 2
+
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.02 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_small_start
+            add_ideas = globalized_trade_economy
+             }				
+		}
+	focus = {
+		id = PKA_request_support_from_CHP
+		icon = chp
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_continue_liberal_politicies
+		}
+		x = 16
+		y = 3
+
+		
+        available = {
+neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+        }
+				
+		completion_reward = {
+        country_event = TurkeyF.93
+		} }
+	focus = {
+		id = PKA_finish_the_mission
+		icon = Farm_national_movement
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_support_kadro_movement
+		}
+		x = 22
+		y = 2
+
+		
+		completion_reward = {
+		add_political_power = 75
+		add_stability = 0.03
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.03 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_small_start1
+		}
+	}
+	focus = {
+		id = PKA_prepare_election_in_AKP
+		icon = Minority_syr_repres
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_continue_liberal_politicies
+		}
+		prerequisite = {
+			focus = PKA_back_AYM
+		}
+		prerequisite = {
+			focus = PKA_finish_the_mission
+		}
+		x = 20
+		y = 3
+
+		
+        available = {
+neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+        }
+		
+		completion_reward = {
+        country_event = TurkeyF.94
+		} }
+	focus = {
+		id = PKA_get_along_well_with_pms
+		icon = democracy4
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_prepare_election_in_AKP
+		}
+		x = 17
+		y = 4
+
+		
+		completion_reward = {
+		add_political_power = 25
+		add_stability = 0.01
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.03 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_small_start1
+		}
+	}
+	focus = {
+		id = PKA_kadro_protests
+		icon = focus_generic_national_security
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_prepare_election_in_AKP
+		}
+		x = 19
+		y = 4
+
+		
+		completion_reward = {
+		add_political_power = -75
+		add_stability = -0.03
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = -0.02 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_fall_small
+		}
+	}
+	focus = {
+		id = PKA_delegation_power
+		icon = autonomy
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_prepare_election_in_AKP
+		}
+		x = 23
+		y = 4
+
+		
+		completion_reward = {
+		add_political_power = 25
+		add_stability = 0.01
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.03 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_small_start1
+		}
+	}
+	focus = {
+		id = PKA_victim_advantages
+		icon = play_our_hand
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_prepare_election_in_AKP
+		}
+		x = 21
+		y = 4
+
+		
+		completion_reward = {
+		add_political_power = -75
+		add_stability = -0.03
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.03 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_small_start1
+		}
+	}
+	focus = {
+		id = PKA_abdullah_guls_revenge
+		icon = gul_takeover
+		cost = 15,00
+		prerequisite = {
+			focus = PKA_delegation_power
+		}
+		prerequisite = {
+			focus = PKA_get_along_well_with_pms
+		}
+		prerequisite = {
+			focus = PKA_kadro_protests
+		}
+		prerequisite = {
+			focus = PKA_victim_advantages
+		}
+		x = 20
+		y = 5
+
+		
+        available = {
+neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+        }
+				
+		completion_reward = {
+        country_event = TurkeyF.95
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_bad_2_neutral_right_wing_sad
+}
+		} }
+	focus = {
+		id = PKA_tradesman_support_package
+		icon = business_man
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_abdullah_guls_revenge
+		}
+		x = 19
+		y = 6
+
+			
+	completion_reward = {
+       add_ideas = tradesman_support_package
+      }
+	}
+	focus = {
+		id = PKA_protect_free_media
+		icon = liberal_press
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_abdullah_guls_revenge
+		}
+		x = 21
+		y = 6
+
+		
+	completion_reward = {
+	        add_ideas = free_media_sponsored_state
+			}
+	}
+	focus = {
+		id = PKA_lift_ban_from_headscarves
+		icon = muslim_women
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_tradesman_support_package
+		}
+		prerequisite = {
+			focus = PKA_protect_free_media
+		}
+		x = 20
+		y = 7
+
+
+		available = {
+	has_idea = The_Military
+	has_idea = The_Ulema
+        }
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+		
+	completion_reward = {
+	        add_stability = -0.05
+				       	set_global_flag = FIRE_SUPEREVENT_9
+						hidden_effect = { sound_effect = "superev_tsk_march" }
+				set_temp_variable = { temp_opinion = -15 }	
+            change_the_military_opinion = yes	
+	clr_country_flag = banned_head_scarf
+				set_temp_variable = { temp_opinion = 20 }	
+            change_the_ulema_opinion = yes	
+				custom_effect_tooltip = TUR_MIL_relations_11
+				subtract_from_variable = { TUR_rel_akp = 7 }
+				set_global_flag = TUR_false_removed
+			}
+	}
+	focus = {
+		id = PKA_put_liberal_infulences_abroad
+		icon = liberalism
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_lift_ban_from_headscarves
+		}
+		x = 18
+		y = 8
+
+		
+        available = {
+        has_government = neutrality
+		date > 2010.1.1
+        }
+		
+	completion_reward = {
+       add_ideas = liberal_brain
+	   add_research_slot = 1
+      }
+	}
+	focus = {
+		id = PKA_unatikan_babacan_economics
+		icon = babacan
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_lift_ban_from_headscarves
+		}
+		x = 20
+		y = 8
+
+
+					search_filters = {FOCUS_FILTER_INDUSTRY}
+search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+				search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		
+        available = {
+        controls_state = 159
+        }
+		
+	completion_reward = {
+
+			subtract_from_variable = { treasury = 1.0 }
+			custom_effect_tooltip = 1_billion_expense_tt
+			add_political_power = 75
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+swap_ideas = { 
+  remove_idea = reforms_for_2001_crisis
+  add_idea = reformss_for_2001_crisis
+}
+       
+	} }
+	focus = {
+		id = PKA_discard_6_zeros
+		icon = lira
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_unatikan_babacan_economics
+		}
+		x = 19
+		y = 9
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = lira_1
+  add_idea = lira_2
+}
+      }
+	}
+	focus = {
+		id = PKA_trading_possibilities
+		icon = ExpandTrade
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_unatikan_babacan_economics
+		}
+		x = 21
+		y = 9
+
+
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+						search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		
+        available = {
+		country_exists = GER
+		country_exists = FRA
+		country_exists = POL
+		country_exists = ENG
+		country_exists = USA
+		country_exists = ENG
+		country_exists = SOV
+		country_exists = CHI
+		NOT = { 
+		has_war_with = GER
+		has_war_with = FRA
+		has_war_with = POL
+		has_war_with = ENG
+		has_war_with = USA
+		has_war_with = ENG
+		has_war_with = SOV
+		has_war_with = CHI
+		 }
+        }
+		
+			completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = economic_mission }
+					reverse_add_opinion_modifier = { target = FRA modifier = economic_mission }
+					reverse_add_opinion_modifier = { target = POL modifier = economic_mission }
+					reverse_add_opinion_modifier = { target = ENG modifier = economic_mission }
+					reverse_add_opinion_modifier = { target = USA modifier = economic_mission }
+					reverse_add_opinion_modifier = { target = ENG modifier = economic_mission }
+					reverse_add_opinion_modifier = { target = SOV modifier = economic_mission }	
+					reverse_add_opinion_modifier = { target = CHI modifier = economic_mission }						
+				}
+	}
+	focus = {
+		id = PKA_liberal_islamic_state
+		icon = islam
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_discard_6_zeros
+		}
+		prerequisite = {
+			focus = PKA_trading_possibilities
+		}
+		x = 20
+		y = 10
+
+				
+	completion_reward = {
+    add_ideas = liberal_islamic_state
+	} }
+	focus = {
+		id = PKA_hold_meetings_with_other_parties
+		icon = Decentralization
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_discard_6_zeros
+		}
+		x = 18
+		y = 10
+
+		
+        available = {
+		is_puppet = no
+        }
+		
+		completion_reward = {
+        country_event = TurkeyF.97
+		} }
+	focus = {
+		id = PKA_organize_meetings_with_unions
+		icon = labor_unions
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_trading_possibilities
+		}
+		x = 22
+		y = 10
+
+		
+        available = {
+		is_puppet = no
+        }
+		
+		
+		completion_reward = {
+        country_event = TurkeyF.96
+		} }
+	focus = {
+		id = PKA_entering_the_2009
+		icon = akpicon
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_hold_meetings_with_other_parties
+		}
+		prerequisite = {
+			focus = PKA_liberal_islamic_state
+		}
+		prerequisite = {
+			focus = PKA_organize_meetings_with_unions
+		}
+		x = 20
+		y = 11
+		
+	completion_reward = {
+    add_stability = 0.03
+	add_political_power = 25
+get_random_investment_targets = yes
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_bad_1_right_wing_sad
+}
+	} }
+	focus = {
+		id = PKA_vision_of_europe
+		icon = United_States_of_Europe
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_entering_the_2009
+		}
+		x = 20
+		y = 12
+
+		
+	completion_reward = {
+	add_political_power = 175
+			set_temp_variable = { modify_eurosceptic = -0.03 }
+			eurosceptic_change = yes
+            add_timed_idea = { idea = vision_of_european_union days = 1025}   
+	} }
+	focus = {
+		id = PKA_2011_constitution_amedment
+		icon = BRA_the_european_social_democrat_model
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_vision_of_europe
+		}
+		x = 19
+		y = 13
+
+		
+	completion_reward = {
+    add_ideas = european_constitution
+			set_temp_variable = { modify_eurosceptic = -0.01 }
+			eurosceptic_change = yes
+	} }
+	focus = {
+		id = PKA_eu_law_origins
+		icon = EDA_icon
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_vision_of_europe
+		}
+		x = 21
+		y = 13
+
+		
+	completion_reward = {
+    add_ideas = adopted_european_laws
+			set_temp_variable = { modify_eurosceptic = -0.01 }
+			eurosceptic_change = yes
+	} }
+	focus = {
+		id = PKA_european_studies
+		icon = free_higher_education
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_2011_constitution_amedment
+		}
+		prerequisite = {
+			focus = PKA_eu_law_origins
+		}
+		x = 20
+		y = 14
+
+		
+	completion_reward = {
+    add_ideas = european_studies
+			set_temp_variable = { modify_eurosceptic = -0.01 }
+			eurosceptic_change = yes
+	} }
+	focus = {
+		id = PKA_protect_the_borders
+		icon = focus_generic_land_reclamation
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_2011_constitution_amedment
+		}
+		prerequisite = {
+			focus = PKA_eu_law_origins
+		}
+		x = 18
+		y = 14
+
+		
+	completion_reward = {
+    add_ideas = european_border_protection
+			set_temp_variable = { modify_eurosceptic = -0.01 }
+			eurosceptic_change = yes
+	} }
+	focus = {
+		id = PKA_create_peace_forces
+		icon = peace
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_eu_law_origins
+		}
+		x = 22
+		y = 14
+
+		
+	completion_reward = {
+    add_ideas = international_peace_forces
+			set_temp_variable = { modify_eurosceptic = -0.01 }
+			eurosceptic_change = yes
+	} }
+	focus = {
+		id = PKA_accordance_with_UN
+		icon = align_to_united_nations
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_european_studies
+		}
+		prerequisite = {
+			focus = PKA_protect_the_borders
+		}
+		prerequisite = {
+			focus = PKA_create_peace_forces
+		}
+		x = 20
+		y = 15
+
+		
+	completion_reward = {
+    add_ideas = full_accordance_with_UN
+	} }
+	focus = {
+		id = PKA_full_coordinance_with_AIHM
+		icon = EFSF_icon
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_accordance_with_UN
+		}
+		x = 20
+		y = 16
+
+		
+	completion_reward = {
+    add_ideas = full_accordance_with_AIHM
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+	} }
+	focus = {
+		id = PKA_european_cultural_sites
+		icon = EU_policies
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_full_coordinance_with_AIHM
+		}
+		x = 20
+		y = 17
+
+
+        available = {
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+		    add_research_slot = 1
+			set_temp_variable = { modify_eurosceptic = -0.03 }
+			eurosceptic_change = yes
+			934 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 2
+				}
+				} 
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_recovery_package_of_2008_crisis
+		icon = liberalization_policies
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_lift_ban_from_headscarves
+		}
+		x = 22
+		y = 8
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		
+        available = {
+        has_idea = recession
+		date > 2008.3.1
+        }
+		
+	completion_reward = {
+	add_stability = 0.03
+swap_ideas = { 
+  remove_idea = recession
+  add_idea = stable_growth
+}
+      }
+	}
+	focus = {
+		id = PKA_guaranteed_multi_party_state
+		icon = Generic_Pawns
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_entering_the_2009
+		}
+		x = 22
+		y = 12
+
+		
+		completion_reward = {
+        add_ideas = multi_party_state
+		} }
+	focus = {
+		id = PKA_question_of_kurdish_problem
+		icon = espionage
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_abdullah_guls_revenge
+		}
+		x = 24
+		y = 6
+
+		completion_reward = {
+			add_stability = -0.05
+		} } 
+	focus = {
+		id = PKA_trt_6_kurdish
+		icon = television
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_question_of_kurdish_problem
+		}
+		x = 23
+		y = 7
+
+
+        bypass = {
+        has_idea = kurdish_language_solutions_4
+        } 
+
+		completion_reward = {
+        add_ideas = kurdish_language_solutions_5
+		hidden_effect = {
+        remove_ideas = kurdish_language_solutions_4
+        remove_ideas = kurdish_language_solutions_3	
+        remove_ideas = kurdish_language_solutions_2
+        remove_ideas = kurdish_language_solutions_1			
+			}
+		} }
+	focus = {
+		id = PKA_control_the_inflation
+		icon = better_money_on_fire
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_vision_of_europe
+		}
+		x = 23
+		y = 13
+
+		
+	completion_reward = {
+       add_timed_idea = { idea = anti_inflation_program days = 825 }
+      }
+	}
+	focus = {
+		id = PKA_request_support_from_MHP
+		icon = mhp
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_finish_the_mission
+		}
+		x = 24
+		y = 3
+
+		
+        available = {
+neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+        }
+				
+		completion_reward = {
+        country_event = TurkeyF.92
+		} }
+	focus = {
+		id = PKA_keep_up_the_economic_boom
+		icon = economic_prosperity2
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_control_the_inflation
+		}
+		x = 24
+		y = 14
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+	completion_reward = {
+	add_stability = 0.01
+add_ideas = economic_boom
+      }
+	}
+	focus = {
+		id = PKA_withdrew_from_kurdish_places
+		icon = volunteers
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_question_of_kurdish_problem
+		}
+		x = 25
+		y = 7
+		
+		available = {
+		has_idea = TUR_PKK_insurgency_active
+		}
+		
+		completion_reward = {
+        add_manpower = 10000
+		add_war_support = -0.05
+		add_stability = -0.02
+custom_effect_tooltip = DEC_5_PKK_POINT
+subtract_from_variable = { var = pkk_presence value = 5 }
+			add_to_variable = { TUR_PKK_aggro = -5 }
+			add_to_variable = { TUR_PKK_strength = -5 }		
+		} }
+	focus = {
+		id = PKA_became_strong_economies
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_keep_up_the_economic_boom
+		}
+		x = 25
+		y = 15
+
+		
+		completion_reward = {
+        add_ideas = powerful_g20_member
+		} }
+	focus = {
+		id = PKA_pay_off_our_debts
+		icon = balance_buget
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_became_strong_economies
+		}
+		x = 23
+		y = 16
+
+		
+		completion_reward = {
+		    add_stability = 0.02
+			set_temp_variable = { debt_change = -50 }
+			modify_debt_effect = yes   
+		} }
+	focus = {
+		id = PKA_reserves_law
+		icon = gold_standard
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_became_strong_economies
+		}
+		x = 25
+		y = 16
+
+		
+		completion_reward = {
+        add_ideas = central_bank_reselves_law
+		} }
+	focus = {
+		id = PKA_secure_independence_of_central_bank
+		icon = expand_finance_ministry
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_became_strong_economies
+		}
+		x = 27
+		y = 16
+
+	completion_reward = {
+      add_political_power = 100
+	  add_stability = 0.03
+      } 
+	}
+	focus = {
+		id = PKA_prepare_for_joining_euro
+		icon = euro
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_pay_off_our_debts
+		}
+		prerequisite = {
+			focus = PKA_reserves_law
+		}
+		prerequisite = {
+			focus = PKA_secure_independence_of_central_bank
+		}
+		x = 25
+		y = 17
+		
+			completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = LIRA_ABANDONING_TO_EURO
+	hidden_effect = {
+	remove_ideas = lira_1
+	remove_ideas = lira_2
+	remove_ideas = lira_3
+	remove_ideas = lira_4
+	remove_ideas = lira_5		
+	      }
+				}
+	}
+	focus = {
+		id = PKA_change_the_industrialization_program
+		icon = romanian_economic_development_plan
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_victory_of_akp
+		}
+		x = 37
+		y = 1
+
+			
+	completion_reward = {
+       add_stability = 0.02
+	   add_political_power = 50
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 1
+				category = CAT_industry
+			}
+      }
+	}
+	focus = {
+		id = PKA_rule_for_warm_money
+		icon = BRA_mensalao_new
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_change_the_industrialization_program
+		}
+		x = 36
+		y = 2
+
+			
+	completion_reward = {
+       add_stability = 0.01
+	   add_political_power = 75
+	   custom_effect_tooltip = WARM_MONEY_CONTINUATION
+      }
+	}
+	focus = {
+		id = PKA_continue_the_investment_income
+		icon = economic_community
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_change_the_industrialization_program
+		}
+		x = 38
+		y = 2
+
+			
+	completion_reward = {
+       add_stability = 0.01
+	   add_political_power = 75
+	   custom_effect_tooltip = INVESTMENT_INCOME_CONTINUATION
+      }
+	}
+	focus = {
+		id = PKA_industrialization_of_the_state
+		icon = central_planned_economy
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_rule_for_warm_money
+		}
+		prerequisite = {
+			focus = PKA_continue_the_investment_income
+		}
+		x = 37
+		y = 3
+
+			
+	completion_reward = {
+       add_stability = 0.03
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 1
+				category = CAT_industry
+			}
+      }
+	}
+	focus = {
+		id = PKA_central_military_industries
+		icon = tank_production
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_industrialization_of_the_state
+		}
+		x = 33
+		y = 4
+
+		
+        completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}	
+		} 
+	}
+	focus = {
+		id = PKA_improve_kayseris_military_capabilities
+		icon = industry4
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_central_military_industries
+		}
+		x = 31
+		y = 5
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+			
+		completion_reward = {
+			159 = { 
+add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_dockyard_expansion
+		icon = naval_industry
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_industrialization_of_the_state
+		}
+		x = 37
+		y = 4
+
+		
+        completion_reward = {
+		navy_experience = 75
+		} 
+	}
+	focus = {
+		id = PKA_mersin_dockyards
+		icon = naval_dockyard
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_dockyard_expansion
+		}
+		x = 37
+		y = 5
+
+
+        available = {
+        controls_state = 161
+        }
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+		completion_reward = {
+			161 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}
+			161 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } }
+	focus = {
+		id = PKA_adana_dockyards
+		icon = civitavecchia_port
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_mersin_dockyards
+		}
+		x = 36
+		y = 6
+
+
+        available = {
+        controls_state = 161
+        }
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+		completion_reward = {
+			161 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_israeli_authorities
+		icon = align_to_israel
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_adana_dockyards
+		}
+		x = 35
+		y = 7
+
+
+        available = {
+		country_exists = ISR
+		NOT = {
+		has_war_with = ISR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ISR
+    NOT = {
+	country_exists = ISR
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+				set_temp_variable = { int_investment_change = 25.0 }
+				modify_international_investment_effect = yes
+					reverse_add_opinion_modifier = { target = ISR modifier = turkish_israeli_deal }
+
+			set_temp_variable = { receiver_nation = ISR.id }
+			set_temp_variable = { sender_nation = TUR.id }
+			set_improved_trade_agreement = yes
+
+			set_temp_variable = { target_nation = ISR.id }
+			set_temp_variable = { adding_nation = TUR.id }
+			change_permanent_investment_target = yes
+			set_temp_variable = { target_nation = TUR }
+			set_temp_variable = { adding_nation = ISR }
+			change_permanent_investment_target = yes
+
+			ISR = {
+				set_temp_variable = { int_investment_change = 25.0 }
+				modify_international_investment_effect = yes				
+			208 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				} 
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt				
+				}	}		
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+					}
+				} }
+	focus = {
+		id = PKA_antalya_dockyards
+		icon = Generic_Maritime
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_mersin_dockyards
+		}
+		x = 38
+		y = 6
+
+
+        available = {
+        controls_state = 161
+        }
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+		completion_reward = {
+			157 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_med_dzyned_dockyardship
+		icon = navy
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_antalya_dockyards
+		}
+		prerequisite = {
+			focus = PKA_adana_dockyards
+		}
+		x = 37
+		y = 7
+
+        available = {
+        controls_state = 161
+        }
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+		completion_reward = {
+			157 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}
+			157 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } }
+	focus = {
+		id = PKA_cyprus_naval_deployment
+		icon = torpedo
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_antalya_dockyards
+		}
+		x = 39
+		y = 7
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		
+        available = {
+		country_exists = NCY
+		NOT = {
+		has_war_with = NCY
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = NCY
+    NOT = {
+	country_exists = NCY
+	 }
+	} }
+	
+		completion_reward = {
+		    NCY = {
+			add_war_support = 0.03
+			157 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				} }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } }
+	focus = {
+		id = PKA_civilian_resolution_project
+		icon = industrial_complexes
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_industrialization_of_the_state
+		}
+		x = 41
+		y = 4
+
+
+        available = {
+        controls_state = 159
+        }
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+		completion_reward = {
+		    add_stability = 0.02
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_industrial_conservasion
+		icon = merge_plants
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_civilian_resolution_project
+		}
+		x = 41
+		y = 5
+
+
+        available = {
+        controls_state = 155
+        }
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+		completion_reward = {
+			155 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			155 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_reliable_mission
+		icon = mechanized_agriculture
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_industrial_conservasion
+		}
+		prerequisite = {
+			focus = PKA_mersin_dockyards
+		}
+		x = 40
+		y = 6
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE }	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		
+		available = {
+		controls_state = 934
+		controls_state = 156
+		controls_state = 157
+		controls_state = 159
+		controls_state = 160
+		controls_state = 161
+		controls_state = 163
+		controls_state = 935
+		controls_state = 158
+		}
+		
+		completion_reward = {
+                934 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                947 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                156 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                157 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                159 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                160 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                161 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                163 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                935 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                158 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_central_industrial_complexes
+		icon = MEX_Industrialize_the_north
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_civilian_resolution_project
+		}
+		x = 43
+		y = 5
+
+
+        available = {
+        controls_state = 159
+        }
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_civilian_investment_policies
+		icon = business_man2
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_central_industrial_complexes
+		}
+		x = 42
+		y = 6
+
+		
+	completion_reward = {
+	add_political_power = 125
+		} 
+	}
+	focus = {
+		id = PKA_investment_opurtinies_with_USA
+		icon = USA_authoritarian_financial_control
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_civilian_investment_policies
+		}
+		x = 41
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+	
+	completion_reward = {
+
+			set_temp_variable = { receiver_nation = USA.id }
+			set_temp_variable = { sender_nation = TUR.id }
+			set_improved_trade_agreement = yes
+
+			set_temp_variable = { target_nation = USA.id }
+			set_temp_variable = { adding_nation = TUR.id }
+			change_permanent_investment_target = yes
+			set_temp_variable = { target_nation = TUR }
+			set_temp_variable = { adding_nation = USA }
+			change_permanent_investment_target = yes
+
+			TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = USA.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			USA = {
+				set_temp_variable = { int_investment_change = 25.0 }
+				modify_international_investment_effect = yes
+			}
+					}
+				}
+	focus = {
+		id = PKA_industrialization_program_for_kayseri
+		icon = broadway
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_abdullah_guls_revenge
+		}
+		x = 16
+		y = 6
+
+		
+		completion_reward = {
+		add_stability = 0.02	
+			159 = {
+ 				add_state_modifier = {
+ 					modifier = {
+                    production_speed_infrastructure_factor = 0.05
+		            production_speed_buildings_factor = 0.05
+	                days = 730			
+ 					}
+ 				}
+			}	
+		}
+	}
+	focus = {
+		id = PKA_abdullah_gul_university
+		icon = university
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_industrialization_program_for_kayseri
+		}
+		x = 17
+		y = 7
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		
+		completion_reward = {
+		    add_research_slot = 1
+			159 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 2
+				}
+				} 
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_ankara_kayseri_railway
+		icon = infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_industrialization_program_for_kayseri
+		}
+		x = 15
+		y = 7
+
+
+        available = {
+		controls_state = 159
+		}
+		
+		completion_reward = {
+			159 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_question_of_gulenists
+		icon = islamophobia
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_coup_thoughts_of_2014
+		}
+		prerequisite = {
+			focus = PKA_coup_thoughts_of_2014
+		}
+		x = 20
+		y = 22
+
+
+
+		completion_reward = {
+		        custom_effect_tooltip = EARLY_AKP_FETO_DETECTION
+		        add_ideas = betrayal_from_FETO
+			set_power_balance = {
+					id = TRGX_power_balance
+					left_side = TRGX_default_left_side 
+					right_side = TRGX_default_right_side 
+					set_value = 0.15
+				}	
+		}
+	}
+	focus = {
+		id = PKA_help_greece
+		icon = align_to_greece
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_helping_our_allies
+		}
+		x = 13
+		y = 16
+
+
+        available = {
+		country_exists = GRE
+		NOT = {
+		has_war_with = GRE
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GRE
+    NOT = {
+	country_exists = GRE
+	 }
+	} }
+	
+	completion_reward = {
+		GRE = {
+		EU_money_for_influence = yes
+		}
+					reverse_add_opinion_modifier = { target = GRE modifier = helpout_greece }
+			GRE = {
+			subtract_from_variable = { treasury = 100 }
+			custom_effect_tooltip = 100_billion_revenue_tt			
+			}
+			TUR = {
+				set_temp_variable = { int_investment_change = 50.0 }
+				modify_international_investment_effect = yes
+			}
+			subtract_from_variable = { treasury = 100 }
+			custom_effect_tooltip = 100_billion_expense_tt
+					}
+				}
+	focus = {
+		id = PKA_elective_state
+		icon = meeting
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_entering_the_2009
+		}
+		x = 18
+		y = 12
+
+
+				
+	completion_reward = {
+    add_ideas = elective_state
+	} }
+	focus = {
+		id = PKA_invest_in_bulgaria
+		icon = align_to_bulgaria
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_helping_our_allies
+		}
+		x = 15
+		y = 16
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = BUL
+		NOT = {
+		has_war_with = BUL
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = BUL
+    NOT = {
+	country_exists = BUL
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+		BUL = {
+		invest_in_EU_single_market_cic = yes
+		}
+				BUL = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+			138 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+				set_temp_variable = { int_investment_change = 5.0 }
+				modify_international_investment_effect = yes
+			}
+			subtract_from_variable = { treasury = 5 }
+			custom_effect_tooltip = 5_billion_expense_tt
+					}
+				}
+			 
+	focus = {
+		id = PKA_co_assistance_with_yugoslavian_situation
+		icon = war_against_serbia
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_helping_our_allies
+		}
+		x = 17
+		y = 16
+
+        available = {
+		NOT = { 
+		has_war_with = KOS
+		has_war_with = BOS
+		has_war_with = CRO
+		 }
+        }
+				
+		completion_reward = {
+		        add_war_support = 0.03
+		        give_guarantee = KOS
+		        give_guarantee = BOS
+		        give_guarantee = CRO		
+		}
+	}
+	focus = {
+		id = PKA_helping_our_allies
+		icon = europe_tank
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_internation_helpout
+		}
+		x = 15
+		y = 15
+
+		
+			completion_reward = {
+			add_political_power = 25
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt					
+				}
+	}
+	focus = {
+		id = PKA_powerize_lira
+		icon = lira
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_vision_of_europe
+		}
+		x = 17
+		y = 13
+
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = lira_2
+  add_idea = lira_3
+}
+      }
+	}
+	focus = {
+		id = PKA_internation_helpout
+		icon = united_nations
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_powerize_lira
+		}
+		x = 16
+		y = 14
+
+		
+		completion_reward = {
+	    add_ideas = international_help_program			
+		} }
+	focus = {
+		id = PKA_european_mediator
+		icon = europe
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_co_assistance_with_yugoslavian_situation
+		}
+		prerequisite = {
+			focus = PKA_invest_in_bulgaria
+		}
+		prerequisite = {
+			focus = PKA_help_greece
+		}
+		x = 15
+		y = 17
+
+		
+		completion_reward = {
+	    add_political_power = 125
+        add_command_power = 5		
+		} }
+	focus = {
+		id = PKA_enterence_of_EU_membership
+		icon = align_to_europe
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_prepare_for_joining_euro
+		}
+		prerequisite = {
+			focus = PKA_european_mediator
+		}
+		prerequisite = {
+			focus = PKA_european_cultural_sites
+		}
+		x = 20
+		y = 18
+
+		
+        available = {
+		has_war = no
+		has_idea = EU_member
+        }
+		
+		completion_reward = {
+		#add_ideas = EU_member	
+		hidden_effect = {
+		log = "[GetDateText]: [Root.GetName]: Focus EU606"
+			custom_effect_tooltip = tooltip_focus_EU606
+			hidden_effect = {
+			clr_country_flag = focus_EU606_selected
+			set_temp_variable = { modify_eurosceptic = 0.05 }
+			EU_potential_eurosceptic_change = yes
+			if = {
+				limit = {
+					has_global_flag = european_federation
+				}
+			if = {
+				limit = { has_idea = EU_member }
+				set_country_flag = focus_EU606_QMV
+			}
+			else = {
+				random_country = { limit = { has_idea = EU_member }
+				set_country_flag = focus_EU606_QMV
+				}
+			}
+			}
+			else = {
+			if = {
+				limit = { has_idea = EU_member }
+					set_country_flag = focus_EU606
+			}
+			else = {
+				random_country = { limit = { has_idea = EU_member }
+					set_country_flag = focus_EU606
+				}
+			}
+			}
+			} }#hidden_effect
+  remove_ideas = reformss_for_2001_crisis
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_good_happy_everyone
+}
+				}
+	}
+	focus = {
+		id = PKA_fight_with_anti_liberal_thoughts
+		icon = crush_fanatics_turk
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_enterence_of_EU_membership
+		}
+		x = 19
+		y = 19
+        
+		available = {
+		has_idea = EU_member
+		}
+
+		completion_reward = {
+		        add_stability = -0.05
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+		}
+	}
+	focus = {
+		id = PKA_rival_with_MHP
+		icon = mhp 
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_enterence_of_EU_membership
+		}
+		x = 21
+		y = 19
+
+				available = {
+		has_idea = EU_member
+		}
+
+		completion_reward = {
+		        add_stability = -0.05
+			hidden_effect = {
+				add_to_variable = { party_pop_array^19 = -0.02 }
+				recalculate_party = yes
+			}
+			add_popularity = {
+					ideology = nationalist
+					popularity = -0.03
+				}
+			custom_effect_tooltip = TUR_MHP_small_decrease		
+		}
+	}
+	focus = {
+		id = PKA_collabrate_with_HDP
+		icon = democratic_stability
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_fight_with_anti_liberal_thoughts
+		}
+		prerequisite = {
+			focus = PKA_rival_with_MHP
+		}
+		x = 20
+		y = 20
+
+
+		completion_reward = {
+		        custom_effect_tooltip = HDP_collabrate_with_AKP	
+				set_temp_variable = { TUR_rel_akp = 20 }	
+		hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_bad_3_right_left_neutral_wing_sad
+}
+				set_temp_variable = { temp_opinion = -10 }	
+            change_the_military_opinion = yes	
+
+				custom_effect_tooltip = TUR_MIL_relations_13
+				subtract_from_variable = { TUR_rel_akp = 10 }				
+		}
+	}
+	focus = {
+		id = PKA_coup_thoughts_of_2014
+		icon = soldier2
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_collabrate_with_HDP
+		}
+		x = 20
+		y = 21
+
+
+        available = {
+neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+        has_idea = turkish_military_infulence
+        }
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+		
+	completion_reward = {
+	retire_character = hursit_tolon
+	retire_character = sener_eruygur
+	        	set_global_flag = FIRE_SUPEREVENT_4
+				hidden_effect = {sound_effect = "superev_sad_sounds"}
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.02 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_small_start
+	        add_stability = -0.05
+			add_political_power = 75
+				set_temp_variable = { TUR_rel_akp = 10 }	
+            change_the_military_opinion = yes	
+				custom_effect_tooltip = TUR_MIL_relations_13
+				subtract_from_variable = { TUR_rel_akp = 10 }			
+			}
+	}
+	focus = {
+		id = PKA_meet_barzani
+		icon = align_to_kurdistan
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_collabrate_with_HDP
+		}
+		x = 18
+		y = 21
+
+		
+        available = {
+		country_exists = KUR
+		NOT = {
+		has_war_with = KUR
+		 }
+        }
+	
+		completion_reward = {
+        country_event = TurkeyF.98
+		} }
+	focus = {
+		id = PKA_toki_sites
+		icon = factory_planning
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_collabrate_with_HDP
+		}
+		x = 22
+		y = 21
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE }	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		
+		available = {
+		controls_state = 934
+		controls_state = 156
+		controls_state = 157
+		controls_state = 159
+		controls_state = 160
+		controls_state = 161
+		controls_state = 163
+		controls_state = 935
+		controls_state = 158
+		}
+		
+		completion_reward = {
+		        add_ideas = TOKI_working_faster
+                934 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                947 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                156 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                157 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                159 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                160 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                161 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                163 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                935 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+                158 = {
+				add_extra_state_shared_building_slots = 1
+				} 
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_illegalize_gulen_institutions
+		icon = control_judiciary
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_question_of_gulenists
+		}
+		x = 18
+		y = 23
+
+		
+	completion_reward = {
+    add_stability = 0.07
+	add_political_power = -25
+	custom_effect_tooltip = BAN_GULENIST
+      }
+	}
+	focus = {
+		id = PKA_control_gulenist_schools
+		icon = islamist_gov2
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_question_of_gulenists
+		}
+		x = 20
+		y = 23
+
+
+		search_filters = {FOCUS_FILTER_NAME}
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = betrayal_from_FETO
+  add_idea = betrayal_from_FETO1
+}
+      }
+	}
+	focus = {
+		id = PKA_control_newspapers
+		icon = generic_controlled_press
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_question_of_gulenists
+		}
+		x = 22
+		y = 23
+
+		
+	completion_reward = {
+    add_stability = -0.05
+	add_political_power = 100
+	custom_effect_tooltip = BAN_NEWSPAPER
+      }
+	}
+	focus = {
+		id = PKA_surpress_august_revolt
+		icon = molotov_cocktail
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_limit_the_freedom
+		}
+		prerequisite = {
+			focus = PKA_call_the_communist_monster
+		}
+		x = 20
+		y = 25
+
+
+		search_filters = {FOCUS_FILTER_NAME}
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = betrayal_from_FETO2
+  add_idea = betrayal_from_FETO3
+}
+      }
+	}
+	focus = {
+		id = PKA_limit_the_freedom
+		icon = Focus_Rationing
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_illegalize_gulen_institutions
+		}
+		prerequisite = {
+			focus = PKA_control_gulenist_schools
+		}
+		x = 19
+		y = 24
+
+		search_filters = {FOCUS_FILTER_NAME}
+
+		available = {
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_left_side_range  
+			}
+		}
+
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = betrayal_from_FETO1
+  add_idea = betrayal_from_FETO2
+}
+TRGX_bop_very_low_decrease_effect = yes
+      }
+	}
+	focus = {
+		id = PKA_call_the_communist_monster
+		icon = blr_marks_school
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_control_gulenist_schools
+		}
+		prerequisite = {
+			focus = PKA_control_newspapers
+		}
+		x = 21
+		y = 24
+
+		available = {
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_left_side_range  
+			}
+		}
+
+		completion_reward = {
+		        add_stability = -0.03
+				custom_effect_tooltip = TUR_TKP_relations_1
+				add_popularity = {
+					ideology = communism
+					popularity = 0.03
+				}
+TRGX_bop_very_low_decrease_effect = yes
+		}
+	}
+	focus = {
+		id = PKA_recovering_from_the_revolt
+		icon = Generic_Tank_through_Wall
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_surpress_august_revolt
+		}
+		x = 20
+		y = 26
+
+		available = {
+		has_global_flag = AUGUST_PROTEST_BACK_UP
+		}
+		
+		completion_reward = {
+        country_event = TurkeyF.100
+		hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_bad_3_right_left_neutral_wing_sad
+}
+		} }
+	focus = {
+		id = PKA_build_new_mosques
+		icon = islamist_gov
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_recovering_from_the_revolt
+		}
+		x = 17
+		y = 27
+
+		completion_reward = {
+			add_ideas = mosque_industry
+             }				
+		}
+	focus = {
+		id = PKA_recover_the_trade_reliability
+		icon = embargo
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_recovering_from_the_revolt
+		}
+		x = 19
+		y = 27
+
+		completion_reward = {
+		    add_political_power = 75
+			subtract_from_variable = { treasury = -10.0 }
+			custom_effect_tooltip = 10_billion_revenue_tt
+increase_economic_growth = yes
+		} } 
+	focus = {
+		id = PKA_party_of_majority
+		icon = Election_graphics
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_recovering_from_the_revolt
+		}
+		x = 21
+		y = 27
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.03 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_small_start1	
+			add_political_power = 75
+             }				
+		}
+	focus = {
+		id = PKA_new_relations_with_military
+		icon = Generic_Soldier_Aiming
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_recovering_from_the_revolt
+		}
+		x = 23
+		y = 27
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+	completion_reward = {
+				set_temp_variable = { temp_opinion = 20 }	
+            change_the_military_opinion = yes		
+				custom_effect_tooltip = TUR_MIL_relations_2
+				subtract_from_variable = { TUR_rel_akp = 3 }
+			}
+	}
+	focus = {
+		id = PKA_stabilization
+		icon = stability
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_surpress_august_revolt
+		}
+		x = 18
+		y = 26
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+       add_timed_idea = { idea = stabilization_of_TUR  days = 90 }
+      }
+	}
+	focus = {
+		id = PKA_increase_reliability_of_president
+		icon = turkish_movement
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_surpress_august_revolt
+		}
+		x = 22
+		y = 26
+
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+       add_timed_idea = { idea = reliable_president  days = 1460 }
+      }
+	}
+	focus = {
+		id = PKA_MIT
+		icon = mit
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_new_relations_with_military
+		}
+		prerequisite = {
+			focus = PKA_party_of_majority
+		}
+		prerequisite = {
+			focus = PKA_recover_the_trade_reliability
+		}
+		prerequisite = {
+			focus = PKA_build_new_mosques
+		}
+		x = 20
+		y = 28
+
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = mit
+  add_idea = mit_empowered
+}
+      }
+	}
+	focus = {
+		id = PKA_early_coup_attempt
+		icon = coups_on_the_world
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_MIT
+		}
+		prerequisite = {
+			focus = PKA_reorganize_the_army
+		}
+		prerequisite = {
+			focus = PKA_med_tradeship
+		}
+		x = 20
+		y = 29
+
+		available = {
+		has_global_flag = TUR_coup_attempt_failed
+		}
+		
+		bypass = {
+				has_global_flag = GULEN_GONE_YE
+		}
+
+			
+		available = {
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRG_middle_left_side_range  
+			}
+		}
+		
+		completion_reward = {
+        add_war_support = 0.05
+		add_stability = 0.05
+  				remove_power_balance = {
+					id = TRGX_power_balance
+				}    
+		} }
+	focus = {
+		id = PKA_med_tradeship
+		icon = POTEF451
+		cost = 7.2
+		prerequisite = {
+			focus = PKA_recover_the_trade_reliability
+		}
+		prerequisite = {
+			focus = PKA_build_new_mosques
+		}
+		x = 18
+		y = 28
+		
+            completion_reward = {
+					reverse_add_opinion_modifier = { target = SYR modifier = med_trade }
+					reverse_add_opinion_modifier = { target = LEB modifier = med_trade }
+					reverse_add_opinion_modifier = { target = ISR modifier = med_trade }
+					reverse_add_opinion_modifier = { target = EGY modifier = med_trade }
+					reverse_add_opinion_modifier = { target = TUN modifier = med_trade }
+					reverse_add_opinion_modifier = { target = LBA modifier = med_trade }
+					reverse_add_opinion_modifier = { target = ALG modifier = med_trade }
+					reverse_add_opinion_modifier = { target = MOR modifier = med_trade }
+					reverse_add_opinion_modifier = { target = SPR modifier = med_trade }
+					reverse_add_opinion_modifier = { target = FRA modifier = med_trade }
+					reverse_add_opinion_modifier = { target = ITA modifier = med_trade }
+					reverse_add_opinion_modifier = { target = ALB modifier = med_trade }
+					reverse_add_opinion_modifier = { target = CRO modifier = med_trade }
+					reverse_add_opinion_modifier = { target = GRE modifier = med_trade }
+	} }
+	focus = {
+		id = PKA_condemn_usa
+		icon = usa
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_changes_in_political_undestandings
+		}
+		x = 17
+		y = 31
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+	
+		completion_reward = {
+       reverse_add_opinion_modifier = { target = USA modifier = condemned_usa }
+ 			add_political_power = 50   
+            add_war_support = 0.03			
+		} }
+	focus = {
+		id = PKA_towards_NATO
+		icon = nato
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_changes_in_political_undestandings
+		}
+		x = 23
+		y = 31
+
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+	
+		completion_reward = {
+       reverse_add_opinion_modifier = { target = USA modifier = bad_nato_opnion }   
+            add_war_support = 0.03	
+            custom_effect_tooltip = TOWARDS_NATO		
+		} }
+	focus = {
+		id = PKA_changes_in_political_undestandings
+		icon = goal_JAP_diet
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_early_coup_attempt
+		}
+		x = 20
+		y = 30
+		
+
+		
+            completion_reward = {
+			add_political_power = 100
+	} }
+	focus = {
+		id = PKA_demand_gulens_return
+		icon = american_territorial_demands
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_condemn_usa
+		}
+		x = 18
+		y = 32
+
+
+        available = {
+        has_idea = betrayal_from_FETO3
+        NOT = {
+        has_war_with = USA  
+         }		
+        }
+
+        bypass = {
+        has_war_with = USA  
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		
+	completion_reward = {
+	USA = {
+    country_event = TurkeyF.3
+				}
+			}
+		}
+	focus = {
+		id = PKA_european_army_thoughts
+		icon = EU_salute_frontex
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_towards_NATO
+		}
+		x = 22
+		y = 32
+
+		
+        available = {
+		has_idea = EU_member
+		has_army_manpower = { size > 399999 }
+        }
+		
+		completion_reward = {
+		AUS = {
+        country_event = TurkeyF.104
+		}                         
+		BEL = {                   
+        country_event = TurkeyF.104
+		}                         
+		DEN = {                   
+        country_event = TurkeyF.104
+		}                         
+		ENG = {                   
+        country_event = TurkeyF.104
+		}                         
+		FIN = {                   
+        country_event = TurkeyF.104
+		}                         
+		FRA = {                   
+        country_event = TurkeyF.104
+		}                         
+		GER = {                   
+        country_event = TurkeyF.104
+		}                        
+		GRE = {                  
+        country_event = TurkeyF.104
+		}                        
+		HOL = {                  
+        country_event = TurkeyF.104
+		}                        
+		IRE = {                  
+        country_event = TurkeyF.104
+		}                        
+		ITA = {                  
+        country_event = TurkeyF.104
+		}                       
+		LUX = {                 
+        country_event = TurkeyF.104
+		}                       
+		POR = {                 
+        country_event = TurkeyF.104
+		}                        
+		SPR = {                  
+        country_event = TurkeyF.104
+		}                        
+		SWE = {                  
+        country_event = TurkeyF.104
+		}                         
+		BUL = {                   
+        country_event = TurkeyF.104
+		}                         
+		CRO = {                   
+        country_event = TurkeyF.104
+		}                         
+		CYP = {                   
+        country_event = TurkeyF.104
+		}                         
+		CZE = {                   
+        country_event = TurkeyF.104
+		}                         
+		EST = {                   
+        country_event = TurkeyF.104
+		}                         
+		HUN = {                   
+        country_event = TurkeyF.104
+		}                         
+		LAT = {                   
+        country_event = TurkeyF.104
+		}                         
+		LIT = {                   
+        country_event = TurkeyF.104
+		}                         
+		MLT = {                   
+        country_event = TurkeyF.104
+		}                         
+		POL = {                   
+        country_event = TurkeyF.104
+		}		                  
+		ROM = {                   
+        country_event = TurkeyF.104
+		}                         
+		SLO = {                   
+        country_event = TurkeyF.104
+		}                         
+		SLV = {                   
+        country_event = TurkeyF.104
+		} }
+		}
+	focus = {
+		id = PKA_demand_financial_posibilities_first
+		icon = family
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_demand_gulens_return
+		}
+		prerequisite = {
+			focus = PKA_european_army_thoughts
+		}
+		x = 20
+		y = 33
+
+		
+		completion_reward = {
+		add_political_power = 75
+		add_stability = 0.03
+		hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
+}
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.03 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_AKP_small_start1
+		}
+	}
+	focus = {
+		id = PKA_default_usa_debts
+		icon = american_dream
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_condemn_usa
+		}
+		prerequisite = {
+			focus = PKA_european_usa_crisis
+		}
+		x = 16
+		y = 32
+
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+	
+		completion_reward = {
+       reverse_add_opinion_modifier = { target = USA modifier = defaulted_usa_debts }
+			set_temp_variable = { debt_change = -50 }
+			modify_debt_effect = yes    
+		} }
+	focus = {
+		id = PKA_european_usa_crisis
+		icon = trade_with_europe
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_changes_in_political_undestandings
+		}
+		x = 20
+		y = 31
+
+
+        available = {
+		has_idea = EU_member
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+	
+		completion_reward = {
+        country_event = TurkeyF.102
+		} }
+	focus = {
+		id = PKA_formalize_euro_defence
+		icon = hans_eichel_euro
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_towards_NATO
+		}
+		prerequisite = {
+			focus = PKA_european_usa_crisis
+		}
+		x = 24
+		y = 32
+
+		
+        available = {
+		has_idea = EU_member
+        }
+		
+		completion_reward = {
+        add_ideas = euro_defence
+		} }
+	focus = {
+		id = PKA_leave_the_dollar
+		icon = united_states_dollar
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_european_usa_crisis
+		}
+		x = 20
+		y = 32
+
+
+        available = {
+		has_idea = EU_member
+        }
+		
+		completion_reward = {
+		AUS = {
+        country_event = TurkeyF.103
+		}
+		BEL = {
+        country_event = TurkeyF.103
+		}
+		DEN = {
+        country_event = TurkeyF.103
+		}
+		ENG = {
+        country_event = TurkeyF.103
+		}
+		FIN = {
+        country_event = TurkeyF.103
+		}
+		FRA = {
+        country_event = TurkeyF.103
+		}
+		GER = {
+        country_event = TurkeyF.103
+		}
+		GRE = {
+        country_event = TurkeyF.103
+		}
+		HOL = {
+        country_event = TurkeyF.103
+		}
+		IRE = {
+        country_event = TurkeyF.103
+		}
+		ITA = {
+        country_event = TurkeyF.103
+		}
+		LUX = {
+        country_event = TurkeyF.103
+		}
+		POR = {
+        country_event = TurkeyF.103
+		}
+		SPR = {
+        country_event = TurkeyF.103
+		}
+		SWE = {
+        country_event = TurkeyF.103
+		}
+		BUL = {
+        country_event = TurkeyF.103
+		}
+		CRO = {
+        country_event = TurkeyF.103
+		}
+		CYP = {
+        country_event = TurkeyF.103
+		}
+		CZE = {
+        country_event = TurkeyF.103
+		}
+		EST = {
+        country_event = TurkeyF.103
+		}
+		HUN = {
+        country_event = TurkeyF.103
+		}
+		LAT = {
+        country_event = TurkeyF.103
+		}
+		LIT = {
+        country_event = TurkeyF.103
+		}
+		MLT = {
+        country_event = TurkeyF.103
+		}
+		POL = {
+        country_event = TurkeyF.103
+		}		
+		ROM = {
+        country_event = TurkeyF.103
+		}
+		SLO = {
+        country_event = TurkeyF.103
+		}
+		SLV = {
+        country_event = TurkeyF.103
+		} }
+		}
+	focus = {
+		id = PKA_support_european_expansionism
+		icon = attack_democracy4
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_default_usa_debts
+		}
+		prerequisite = {
+			focus = PKA_demand_gulens_return
+		}
+		x = 17
+		y = 33
+
+		
+		completion_reward = {
+		add_war_support = 0.03
+			custom_effect_tooltip = EUROPEAN_COUNTRIES_PRESSURE_INTERVENTIONISM
+		}
+	}
+	focus = {
+		id = PKA_expand_the_eu_army_power
+		icon = arms_treade_deals
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_european_army_thoughts
+		}
+		prerequisite = {
+			focus = PKA_formalize_euro_defence
+		}
+		x = 23
+		y = 33
+		
+		
+        available = {
+		has_idea = EU_member
+        }
+		
+		completion_reward = {
+		add_manpower = 25000
+		add_war_support = 0.03
+			custom_effect_tooltip = PRESSURE_EUROPEAN_ARMY_POWER
+		}
+	}
+	focus = {
+		id = PKA_echological_reforms
+		icon = improve_relations_green
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_demand_financial_posibilities_first
+		}
+		x = 20
+		y = 34
+
+		
+		completion_reward = {
+        add_ideas = echological_laws	
+		} }
+	focus = {
+		id = PKA_liberal_shield
+		icon = Laurel_Slovakia
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_support_european_expansionism
+		}
+		x = 16
+		y = 34
+
+		completion_reward = {
+		        add_stability = 0.02
+				GRE = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				} }
+				POL = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				} }
+				HUN = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				} }
+		}
+	}
+	focus = {
+		id = PKA_resolve_hungary
+		icon = ungarn
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_liberal_shield
+		}
+		x = 12
+		y = 35
+
+
+		completion_reward = {
+		HUN = {
+        add_ideas = democratic_pressure	
+		} } }
+	focus = {
+		id = PKA_resolve_poland
+		icon = Poland
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_liberal_shield
+		}
+		x = 14
+		y = 35
+
+
+		completion_reward = {
+		POL = {
+        add_ideas = democratic_pressure	
+		} } }
+	focus = {
+		id = PKA_resolve_greece
+		icon = Greece_republic1
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_liberal_shield
+		}
+		x = 16
+		y = 35
+
+		completion_reward = {
+		GRE = {
+        add_ideas = democratic_pressure	
+		} } }
+	focus = {
+		id = PKA_liberalized_war_economies
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_expand_the_eu_army_power
+		}
+		x = 24
+		y = 34
+
+		
+        available = {
+		has_war = yes
+        }
+		
+		completion_reward = {
+        add_ideas = liberal_war_economy	
+		} }
+	focus = {
+		id = PKA_increase_military_service
+		icon = generic_embrace_agrarian_society
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_liberalized_war_economies
+		}
+		x = 24
+		y = 35
+
+
+		
+        available = {
+		has_idea = EU_member
+		has_war_support > 0.5
+        }
+		
+		completion_reward = {
+		AUS = {
+        country_event = TurkeyF.105
+		}                         
+		BEL = {                   
+        country_event = TurkeyF.105
+		}                         
+		DEN = {                   
+        country_event = TurkeyF.105
+		}                         
+		ENG = {                   
+        country_event = TurkeyF.105
+		}                         
+		FIN = {                   
+        country_event = TurkeyF.105
+		}                         
+		FRA = {                   
+        country_event = TurkeyF.105
+		}                         
+		GER = {                   
+        country_event = TurkeyF.105
+		}                        
+		GRE = {                  
+        country_event = TurkeyF.105
+		}                        
+		HOL = {                  
+        country_event = TurkeyF.105
+		}                        
+		IRE = {                  
+        country_event = TurkeyF.105
+		}                        
+		ITA = {                  
+        country_event = TurkeyF.105
+		}                       
+		LUX = {                 
+        country_event = TurkeyF.105
+		}                       
+		POR = {                 
+        country_event = TurkeyF.105
+		}                        
+		SPR = {                  
+        country_event = TurkeyF.105
+		}                        
+		SWE = {                  
+        country_event = TurkeyF.105
+		}                         
+		BUL = {                   
+        country_event = TurkeyF.105
+		}                         
+		CRO = {                   
+        country_event = TurkeyF.105
+		}                         
+		CYP = {                   
+        country_event = TurkeyF.105
+		}                         
+		CZE = {                   
+        country_event = TurkeyF.105
+		}                         
+		EST = {                   
+        country_event = TurkeyF.105
+		}                         
+		HUN = {                   
+        country_event = TurkeyF.105
+		}                         
+		LAT = {                   
+        country_event = TurkeyF.105
+		}                         
+		LIT = {                   
+        country_event = TurkeyF.105
+		}                         
+		MLT = {                   
+        country_event = TurkeyF.105
+		}                         
+		POL = {                   
+        country_event = TurkeyF.105
+		}		                  
+		ROM = {                   
+        country_event = TurkeyF.105
+		}                         
+		SLO = {                   
+        country_event = TurkeyF.105
+		}                         
+		SLV = {                   
+        country_event = TurkeyF.105
+		} }
+	}
+	focus = {
+		id = PKA_fast_military_engine
+		icon = electric_car
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_liberalized_war_economies
+		}
+		x = 26
+		y = 35
+
+		
+		completion_reward = {
+        add_ideas = high_quality_engines	
+		} }
+	focus = {
+		id = PKA_reach_international_command_unity
+		icon = recruitment
+		cost = 5,00
+		prerequisite = {
+			focus = PKA_liberalized_war_economies
+		}
+		x = 28
+		y = 35
+
+		
+        available = {
+		
+		has_idea = EU_member
+        }
+		
+		completion_reward = {
+		AUS = {
+        country_event = TurkeyF.106
+		}                         
+		BEL = {                   
+        country_event = TurkeyF.106
+		}                         
+		DEN = {                   
+        country_event = TurkeyF.106
+		}                         
+		ENG = {                   
+        country_event = TurkeyF.106
+		}                         
+		FIN = {                   
+        country_event = TurkeyF.106
+		}                         
+		FRA = {                   
+        country_event = TurkeyF.106
+		}                         
+		GER = {                   
+        country_event = TurkeyF.106
+		}                        
+		GRE = {                  
+        country_event = TurkeyF.106
+		}                        
+		HOL = {                  
+        country_event = TurkeyF.106
+		}                        
+		IRE = {                  
+        country_event = TurkeyF.106
+		}                        
+		ITA = {                  
+        country_event = TurkeyF.106
+		}                       
+		LUX = {                 
+        country_event = TurkeyF.106
+		}                       
+		POR = {                 
+        country_event = TurkeyF.106
+		}                        
+		SPR = {                  
+        country_event = TurkeyF.106
+		}                        
+		SWE = {                  
+        country_event = TurkeyF.106
+		}                         
+		BUL = {                   
+        country_event = TurkeyF.106
+		}                         
+		CRO = {                   
+        country_event = TurkeyF.106
+		}                         
+		CYP = {                   
+        country_event = TurkeyF.106
+		}                         
+		CZE = {                   
+        country_event = TurkeyF.106
+		}                         
+		EST = {                   
+        country_event = TurkeyF.106
+		}                         
+		HUN = {                   
+        country_event = TurkeyF.106
+		}                         
+		LAT = {                   
+        country_event = TurkeyF.106
+		}                         
+		LIT = {                   
+        country_event = TurkeyF.106
+		}                         
+		MLT = {                   
+        country_event = TurkeyF.106
+		}                         
+		POL = {                   
+        country_event = TurkeyF.106
+		}		                  
+		ROM = {                   
+        country_event = TurkeyF.106
+		}                         
+		SLO = {                   
+        country_event = TurkeyF.106
+		}                         
+		SLV = {                   
+        country_event = TurkeyF.106
+		} }
+		}
+	focus = {
+		id = PKA_industrialization_law
+		icon = red_industry
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_echological_reforms
+		}
+		x = 19
+		y = 35
+
+		
+		completion_reward = {
+        add_ideas = industrialization_law	
+		} }
+	focus = {
+		id = PKA_filter_law
+		icon = war2_green
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_echological_reforms
+		}
+		x = 21
+		y = 35
+
+		
+		completion_reward = {
+        add_ideas = factory_filter_law	
+		} }
+	focus = {
+		id = PKA_echological_imperialism
+		icon = political_pressure_dark_green
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_strenghen_KDK
+		}
+		prerequisite = {
+			focus = PKA_liberal_studies
+		}
+		x = 20
+		y = 39
+
+		
+        available = {
+		has_war_support > 0.5
+		has_idea = EU_member
+        }
+		
+		completion_reward = {
+        add_ideas = holy_european_imperialism
+set_global_flag = DISABLE_WAR_SYSTEM_PAR
+custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU	
+		hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
+}	
+		} }
+	focus = {
+		id = PKA_embrace_military_interventionism
+		icon = US_licences
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_reach_international_command_unity
+		}
+		prerequisite = {
+			focus = PKA_fast_military_engine
+		}
+		prerequisite = {
+			focus = PKA_increase_military_service
+		}
+		x = 25
+		y = 36
+
+		
+        available = {
+		has_idea = EU_member
+		has_idea = intervention_regional_interventionism
+        }
+		
+		completion_reward = {
+		AUS = {
+        country_event = TurkeyF.107
+		}                         
+		BEL = {                   
+        country_event = TurkeyF.107
+		}                         
+		DEN = {                   
+        country_event = TurkeyF.107
+		}                         
+		ENG = {                   
+        country_event = TurkeyF.107
+		}                         
+		FIN = {                   
+        country_event = TurkeyF.107
+		}                         
+		FRA = {                   
+        country_event = TurkeyF.107
+		}                         
+		GER = {                   
+        country_event = TurkeyF.107
+		}                        
+		GRE = {                  
+        country_event = TurkeyF.107
+		}                        
+		HOL = {                  
+        country_event = TurkeyF.107
+		}                        
+		IRE = {                  
+        country_event = TurkeyF.107
+		}                        
+		ITA = {                  
+        country_event = TurkeyF.107
+		}                       
+		LUX = {                 
+        country_event = TurkeyF.107
+		}                       
+		POR = {                 
+        country_event = TurkeyF.107
+		}                        
+		SPR = {                  
+        country_event = TurkeyF.107
+		}                        
+		SWE = {                  
+        country_event = TurkeyF.107
+		}                         
+		BUL = {                   
+        country_event = TurkeyF.107
+		}                         
+		CRO = {                   
+        country_event = TurkeyF.107
+		}                         
+		CYP = {                   
+        country_event = TurkeyF.107
+		}                         
+		CZE = {                   
+        country_event = TurkeyF.107
+		}                         
+		EST = {                   
+        country_event = TurkeyF.107
+		}                         
+		HUN = {                   
+        country_event = TurkeyF.107
+		}                         
+		LAT = {                   
+        country_event = TurkeyF.107
+		}                         
+		LIT = {                   
+        country_event = TurkeyF.107
+		}                         
+		MLT = {                   
+        country_event = TurkeyF.107
+		}                         
+		POL = {                   
+        country_event = TurkeyF.107
+		}		                  
+		ROM = {                   
+        country_event = TurkeyF.107
+		}                         
+		SLO = {                   
+        country_event = TurkeyF.107
+		}                         
+		SLV = {                   
+        country_event = TurkeyF.107
+		} }
+		}
+	focus = {
+		id = PKA_restored_order
+		icon = military_mission2
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_resolve_greece
+		}
+		prerequisite = {
+			focus = PKA_resolve_poland
+		}
+		prerequisite = {
+			focus = PKA_resolve_hungary
+		}
+		x = 15
+		y = 36
+
+		
+		completion_reward = {
+        add_ideas = fulfilled_order
+		} }
+	focus = {
+		id = PKA_make_green_propaganda
+		icon = green_world
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_industrialization_law
+		}
+		prerequisite = {
+			focus = PKA_filter_law
+		}
+		x = 20
+		y = 36
+
+		
+		completion_reward = {
+		add_political_power = 25
+		add_stability = 0.01
+			hidden_effect = {
+				add_to_variable = { party_pop_array^17 = 0.03 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_green_support
+		}
+	}
+	focus = {
+		id = PKA_minors_mission
+		icon = dangerous_deal3
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_echological_imperialism
+		}
+		x = 16
+		y = 40
+
+			
+	completion_reward = {
+       add_command_power = 15
+	   add_political_power = 100
+      }
+	}
+	focus = {
+		id = PKA_majors_mission
+		icon = alliance_USA_CHI
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_echological_imperialism
+		}
+		x = 24
+		y = 40
+
+			
+	completion_reward = {
+       add_command_power = 15
+	   add_political_power = 100
+      }
+	}
+	focus = {
+		id = PKA_invade_UK
+		icon = british_nationalism
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_majors_mission
+		}
+		x = 22
+		y = 41
+
+        available = {
+		country_exists = BRA
+		NOT = {
+		has_war_with = BRA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = BRA
+    NOT = {
+	country_exists = BRA
+	 }
+	} }
+	
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = ENG
+		} }
+	}
+	focus = {
+		id = PKA_invade_russia
+		icon = russia
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_majors_mission
+		}
+		x = 24
+		y = 41
+
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }
+	
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = SOV
+		} }
+	}
+	focus = {
+		id = PKA_invade_china
+		icon = CHI_cpc_party
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_majors_mission
+		}
+		x = 26
+		y = 41
+
+		
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = CHI
+    NOT = {
+	country_exists = CHI
+	 }
+	} }
+	
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = CHI
+		} }
+	}
+	focus = {
+		id = PKA_clean_USA
+		icon = USA_american_militias
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_invade_UK
+		}
+		prerequisite = {
+			focus = PKA_invade_russia
+		}
+		prerequisite = {
+			focus = PKA_invade_china
+		}
+		x = 24
+		y = 42
+
+		
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = USA
+    NOT = {
+	country_exists = USA
+	 }
+	} }
+	
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = USA
+		} }
+	}
+	focus = {
+		id = PKA_ensure_echological_peace
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_clean_USA
+		}
+		prerequisite = {
+			focus = PKA_clean_saudis
+		}
+		x = 20
+		y = 43
+
+		
+        available = {
+		has_war = no
+        }
+		
+		completion_reward = {
+        add_stability = 0.1
+		hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas =	media_opinion_towards_bad_1_right_wing_sad
+}	
+		} }
+	focus = {
+		id = PKA_clean_saudis
+		icon = attack_saudi_arabia
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_invade_japan
+		}
+		prerequisite = {
+			focus = PKA_invade_india
+		}
+		prerequisite = {
+			focus = PKA_invade_brazil
+		}
+		x = 16
+		y = 42
+
+		
+        available = {
+		country_exists = SAU
+		NOT = {
+		has_war_with = SAU
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SAU
+    NOT = {
+	country_exists = SAU
+	 }
+	} }
+	
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = SAU
+		} }
+	}
+	focus = {
+		id = PKA_invade_japan
+		icon = attack_japan
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_minors_mission
+		}
+		x = 18
+		y = 41
+
+		
+        available = {
+		country_exists = JAP
+		NOT = {
+		has_war_with = JAP
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = JAP
+    NOT = {
+	country_exists = JAP
+	 }
+	} }
+	
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = JAP
+		} }
+	}
+	focus = {
+		id = PKA_invade_india
+		icon = india
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_minors_mission
+		}
+		x = 16
+		y = 41
+
+		
+        available = {
+		country_exists = RAJ
+		NOT = {
+		has_war_with = RAJ
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = RAJ
+    NOT = {
+	country_exists = RAJ
+	 }
+	} }
+	
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = RAJ
+		} }
+	}
+	focus = {
+		id = PKA_invade_brazil
+		icon = brazil_empire_large_flag
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_minors_mission
+		}
+		x = 14
+		y = 41
+
+		
+        available = {
+		country_exists = BRA
+		NOT = {
+		has_war_with = BRA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = BRA
+    NOT = {
+	country_exists = BRA
+	 }
+	} }		
+        completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = BRA
+		} }
+	}
+	focus = {
+		id = PKA_achievement_with_greta
+		icon = greta_proposal
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_echological_imperialism
+		}
+		x = 20
+		y = 40
+
+
+		
+        available = {
+		has_war = no
+		has_idea = EU_member
+        }
+		
+		completion_reward = {
+        country_event = TurkeyF.108
+		} }
+	focus = {
+		id = PKA_remove_the_changing_situations
+		icon = diplomacy
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_restored_order
+		}
+		prerequisite = {
+			focus = PKA_make_green_propaganda
+		}
+		prerequisite = {
+			focus = PKA_embrace_military_interventionism
+		}
+		x = 20
+		y = 37
+
+		
+		completion_reward = {
+        add_ideas = stopped_changing_of_the_liberalism	
+		    custom_effect_tooltip = TUR_united_state
+					        				subtract_from_variable = { TUR_pop_KEM = -1 }
+								        				subtract_from_variable = { TUR_pop_KUR = 3 }
+	        				subtract_from_variable = { TUR_pop_ISL = -2 }
+			set_global_flag = TUR_UNITE_DIASPORA
+			TUR_remove_state_modifier_effects = yes
+		} }
+	focus = {
+		id = PKA_strenghen_KDK
+		icon = pass_legislation
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_remove_the_changing_situations
+		}
+		x = 19
+		y = 38
+
+		
+		completion_reward = {
+        add_ideas = KDK_strenghened	
+		} }
+	focus = {
+		id = PKA_liberal_studies
+		icon = government_beu
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_remove_the_changing_situations
+		}
+		x = 21
+		y = 38
+
+		
+		completion_reward = {
+        add_ideas = liberal_studies	
+		} }
+	focus = {
+		id = PKA_sivas_military_bases
+		icon = GEO_Industrialize_the_Countryside
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_central_military_industries
+		}
+		x = 33
+		y = 5
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+			
+		completion_reward = {
+			159 = { 
+add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_dockyard_artilery_industries
+		icon = artillery
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_mersin_dockyards
+		}
+		prerequisite = {
+			focus = PKA_sivas_military_bases
+		}
+		x = 34
+		y = 6
+
+
+        available = {
+		controls_state = 161
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+			
+		completion_reward = {
+			161 = { 
+add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+			161 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}  }
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_improvement_of_arms_sector
+		icon = Generic_Underground_Factories
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_sivas_military_bases
+		}
+		prerequisite = {
+			focus = PKA_improve_kayseris_military_capabilities
+		}
+		x = 32
+		y = 6
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+			
+		completion_reward = {
+			159 = { 
+             add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+			162 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_dockyard_arms_facilitiies
+		icon = ship_bleur_point
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_improvement_of_arms_sector
+		}
+		x = 33
+		y = 7
+
+
+        available = {
+		controls_state = 156
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+			
+		completion_reward = {
+			156 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} }
+			156 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					instant_build = yes
+					level = 1
+				}  }
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = PKA_investment_opurtinies_with_ENG
+		icon = british_nationalism
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_civilian_investment_policies
+		}
+		x = 43
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = ENG
+		NOT = {
+		has_war_with = ENG
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = ENG
+    NOT = {
+	country_exists = ENG
+	 }
+	} }
+	
+	completion_reward = {
+			TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = ENG.id }
+				set_temp_variable = { influence_target = THIS.id }
+				change_influence_percentage = yes
+			}
+
+			set_temp_variable = { receiver_nation = ENG.id }
+			set_temp_variable = { sender_nation = TUR.id }
+			set_improved_trade_agreement = yes
+
+			set_temp_variable = { target_nation = ENG.id }
+			set_temp_variable = { adding_nation = TUR.id }
+			change_permanent_investment_target = yes
+			set_temp_variable = { target_nation = TUR }
+			set_temp_variable = { adding_nation = ENG }
+			change_permanent_investment_target = yes
+
+			935 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} }
+			ENG = {
+				set_temp_variable = { int_investment_change = 25.0 }
+				modify_international_investment_effect = yes
+			}
+					}
+				} 
+	focus = {
+		id = PKA_privatized_arms_sector
+		icon = helmet_knife
+		cost = 10,00
+		prerequisite = {
+			focus = PKA_improvement_of_arms_sector
+		}
+		x = 31
+		y = 7
+
+
+        available = {
+		controls_state = 156
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+			
+		completion_reward = {
+		    add_ideas = specialized_arms_industry
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				} 
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } }
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = TUR_covid-19_pandemic11
+		icon = generic_healthcare
+		cost = 10,00
+		x = 61
+		y = 0
+
+        available = {
+        has_idea = covid_19
+        }
+	
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+		completion_reward = {
+        add_political_power = 75
+	block_health_decrease = yes
+		} }
+	focus = {
+		id = TUR_covid-19_preparations11
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_pandemic11
+		}
+		x = 61
+		y = 1
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19
+  add_idea = covid_19_prepared
+}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TUR_build_up_hospitals11
+		icon = generic_hospital2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations11
+		}
+		x = 59
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}			
+	completion_reward = {
+			subtract_from_variable = { treasury = 20.0 }
+			add_stability = 0.03
+			custom_effect_tooltip = 20_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_turn_airports_to_hospital11
+		icon = generic_hospital
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_build_up_hospitals11
+		}
+		x = 59
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+			subtract_from_variable = { treasury = 5.0 }
+			add_stability = 0.02
+			custom_effect_tooltip = 5_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_start_up_vaccine_program1
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations11
+		}
+		x = 61
+		y = 2
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		
+		
+	completion_reward = {
+	        add_stability = -0.05
+			add_political_power = -75
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			custom_effect_tooltip = COV_DECISION_OPENING_VAC
+			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
+			} 
+	}
+	focus = {
+		id = TUR_buy_german_vaccines1
+		icon = trade_with_germany
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_start_up_vaccine_program1
+		}
+		x = 61
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_increase_funds_to_science11
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations11
+		}
+		x = 63
+		y = 2
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+increase_healthcare_budget = yes
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_medicines11
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_funds_to_science11
+		}
+		prerequisite = {
+			focus = TUR_increase_funds_to_science11
+		}
+		x = 63
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_prepared
+  add_idea = covid_19_medicined
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_chinese_vaccines11
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turn_airports_to_hospital11
+		}
+		prerequisite = {
+			focus = TUR_buy_german_vaccines1
+		}
+		prerequisite = {
+			focus = TUR_buy_medicines11
+		}
+		x = 61
+		y = 4
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_normalisation_from_covid11
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_buy_chinese_vaccines11
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
+		} }
+		x = 61
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_medicined
+  add_idea = covid_19_normalised
+} 
+	custom_effect_tooltip = COV_AVAILABLE_1
+}
+	}
+	focus = {
+		id = TUR_end_of_covid11
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_normalisation_from_covid11
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
+		} }
+		x = 61
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+remove_ideas = covid_19_normalised
+	custom_effect_tooltip = COV_AVAILABLE_2
+}
+	}
+
+	focus = {
+		id = TUR_hedef_20238
+		icon = 2023
+		cost = 10,00
+		mutually_exclusive = {
+			focus = TUR_peace_whatever_costs8
+		}
+		x = 50
+		y = 0
+		
+        available = {
+        date > 2023.1.1
+        is_puppet = no
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		
+	completion_reward = {
+add_war_support = 0.07
+add_named_threat = { threat = 1 name = 2023_tensions }
+}
+	}
+	focus = {
+		id = TUR_peace_whatever_costs8
+		icon = major_alliance3
+		cost = 10,00
+		mutually_exclusive = {
+			focus = TUR_hedef_20238
+		}
+		x = 53
+		y = 0
+
+        available = {
+        date > 2019.7.1
+		has_war = no
+        is_puppet = no
+        }
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+add_stability = 0.07
+add_named_threat = { threat = -1 name = peace_whatever_costs }
+}
+	}
+	focus = {
+		id = TUR_expansion_on_the_borders8
+		icon = entente
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_hedef_20238
+		}
+		x = 49
+		y = 1
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+			search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+	completion_reward = {
+add_war_support = 0.03
+add_political_power = 75
+}
+	}
+	focus = {
+		id = TUR_unification_with_azerbaijan8
+		icon = align_to_azerbaijan
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_expansion_on_the_borders8
+		}
+		x = 47
+		y = 2
+
+        available = {
+        country_exists = AZE
+		is_puppet = no
+		AZE = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = AZE
+		NOT = {
+        country_exists = AZE
+        } } }
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+	AZE = {
+    country_event = TurkeyF.10
+        } } 
+	}
+	focus = {
+		id = TUR_ultimatium_to_armenia8
+		icon = irredentism
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_unification_with_azerbaijan8
+		}
+		x = 47
+		y = 3
+
+        available = {
+        country_exists = ARM
+		is_puppet = no
+		ARM = {
+        is_puppet = no
+		 }
+        }
+
+        bypass = {
+		OR = {
+		has_war_with = ARM
+		NOT = {
+        country_exists = ARM
+        } } }
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+	ARM = {
+    country_event = TurkeyF.13
+        } } 
+	}
+	focus = {
+		id = TUR_money_for_batumi8
+		icon = liberalization_policies
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_expansion_on_the_borders8
+		}
+		x = 49
+		y = 2
+
+        available = {
+        country_exists = GEO
+		is_puppet = no
+		GEO = {
+        is_puppet = no
+        controls_state = 466
+		 }
+        }
+
+    bypass = {
+	controls_state = 466
+	}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+	GEO = {
+    country_event = TurkeyF.14
+        } } 
+	}
+	focus = {
+		id = TUR_integrate_batumi8
+		icon = small_arms5
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_money_for_batumi8
+		}
+		x = 49
+		y = 3
+
+        available = {
+        controls_state = 466
+        }
+
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}		
+	completion_reward = {
+add_state_claim = 466
+add_political_power = -75
+}
+	}
+	focus = {
+		id = TUR_PKK_attacks8
+		icon = focus_attack_pkk
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_expansion_on_the_borders8
+		}
+		x = 51
+		y = 2
+
+        available = {
+		OR = {
+		has_idea = TUR_PKK_insurgency_active
+		has_idea = TUR_PKK_insurgency_ceasefire
+		}
+        }
+
+    bypass = {
+	NOT = {
+		OR = {
+		has_idea = TUR_PKK_insurgency_active
+		has_idea = TUR_PKK_insurgency_ceasefire
+		}
+	has_idea = pkk_terror_idea
+	 }
+	}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+	completion_reward = {
+    add_command_power = 15
+	TUR_remove_pkk = yes
+        }  
+	}
+	focus = {
+		id = TUR_end_of_FETO8
+		icon = thompson_submachine_gun
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_PKK_attacks8
+		}
+		x = 51
+		y = 3
+
+
+        available = {
+        has_idea = betrayal_from_FETO3
+        }
+
+    bypass = {
+	NOT = {
+	has_idea = betrayal_from_FETO3
+	 }
+	}
+
+		search_filters = {FOCUS_FILTER_NAME}
+		
+	completion_reward = {
+	set_global_flag = UNLOCK_GULEN_DEC
+	custom_effect_tooltip = UNLOCK_AS_GULEN
+			}
+	}
+	focus = {
+		id = TUR_strong_state8
+		icon = military_mission2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_integrate_batumi8
+		}
+		prerequisite = {
+			focus = TUR_end_of_FETO8
+		}
+		prerequisite = {
+			focus = TUR_ultimatium_to_armenia8
+		}
+		x = 49
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}		
+	completion_reward = {
+add_war_support = 0.05
+add_stability = 0.1
+}
+	}
+	focus = {
+		id = TUR_NATO_mission8
+		icon = nato_membership_action_plan
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_peace_whatever_costs8
+		}
+		x = 54
+		y = 1
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		
+	completion_reward = {
+add_ideas = nato_turkey_missionary
+}
+	}
+	focus = {
+		id = TUR_join_NATO_equipmentary8
+		icon = GFX_nato_standarts
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_NATO_mission8
+		}
+		x = 54
+		y = 2
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_EQUIPMENT}			
+	completion_reward = {
+	TUR = { country_event = TurkeyF.16}
+    custom_effect_tooltip = TUR_nato_alliance
+	hidden_effect = {
+	GRE = { country_event = TurkeyF.16}
+	ROM = { country_event = TurkeyF.16}
+	BUL = { country_event = TurkeyF.16}
+	ALB = { country_event = TurkeyF.16}
+	HUN = { country_event = TurkeyF.16}
+	CRO = { country_event = TurkeyF.16}
+	SLV = { country_event = TurkeyF.16}
+	SLO = { country_event = TurkeyF.16}
+	CZE = { country_event = TurkeyF.16}
+	POL = { country_event = TurkeyF.16}
+	LIT = { country_event = TurkeyF.16}
+	LAT = { country_event = TurkeyF.16}
+	EST = { country_event = TurkeyF.16}
+	FRA = { country_event = TurkeyF.16}
+	GER = { country_event = TurkeyF.16}
+	ENG = { country_event = TurkeyF.16}
+	ITA = { country_event = TurkeyF.16}
+	SPR = { country_event = TurkeyF.16}
+	POR = { country_event = TurkeyF.16}
+	LUX = { country_event = TurkeyF.16}
+	BEL = { country_event = TurkeyF.16}
+	HOL = { country_event = TurkeyF.16}
+	DEN = { country_event = TurkeyF.16}
+	NOR = { country_event = TurkeyF.16}
+	USA = { country_event = TurkeyF.16}
+	CAN = { country_event = TurkeyF.16}
+	ICE = { country_event = TurkeyF.16}
+			
+		}  } 
+	}
+	focus = {
+		id = TUR_positions_for_protection8
+		icon = nato3
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_NATO_mission8
+		}
+		x = 56
+		y = 2
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = nato_turkey_missionary
+  add_idea = nato_turkey_missionary1
+} 
+			}
+	}
+
+	focus = {
+		id = TUR_industrialization_program8
+		icon = factory_planning
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_join_NATO_equipmentary8
+		}
+		prerequisite = {
+			focus = TUR_positions_for_protection8
+		}
+		x = 55
+		y = 3
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+		
+	completion_reward = {
+	TUR = { country_event = TurkeyF.17}
+    custom_effect_tooltip = TUR_nato_industrialization
+	hidden_effect = {
+	GRE = { country_event = TurkeyF.17}
+	ROM = { country_event = TurkeyF.17}
+	BUL = { country_event = TurkeyF.17}
+	ALB = { country_event = TurkeyF.17}
+	HUN = { country_event = TurkeyF.17}
+	CRO = { country_event = TurkeyF.17}
+	SLV = { country_event = TurkeyF.17}
+	SLO = { country_event = TurkeyF.17}
+	CZE = { country_event = TurkeyF.17}
+	POL = { country_event = TurkeyF.17}
+	LIT = { country_event = TurkeyF.17}
+	LAT = { country_event = TurkeyF.17}
+	EST = { country_event = TurkeyF.17}
+	FRA = { country_event = TurkeyF.17}
+	GER = { country_event = TurkeyF.17}
+	ENG = { country_event = TurkeyF.17}
+	ITA = { country_event = TurkeyF.17}
+	SPR = { country_event = TurkeyF.17}
+	POR = { country_event = TurkeyF.17}
+	LUX = { country_event = TurkeyF.17}
+	BEL = { country_event = TurkeyF.17}
+	HOL = { country_event = TurkeyF.17}
+	DEN = { country_event = TurkeyF.17}
+	NOR = { country_event = TurkeyF.17}
+	USA = { country_event = TurkeyF.17}
+	CAN = { country_event = TurkeyF.17}
+	ICE = { country_event = TurkeyF.17}
+			
+		}  } 
+	}
+	focus = {
+		id = TUR_international_military_factories8
+		icon = un_pko
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_industrialization_program8
+		}
+		x = 55
+		y = 4
+
+        available = {
+        has_idea = NATO_member
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_INDUSTRY}		
+	completion_reward = {
+	TUR = { country_event = TurkeyF.18}
+    custom_effect_tooltip = TUR_nato_armaments
+	hidden_effect = {
+	GRE = { country_event = TurkeyF.18}
+	ROM = { country_event = TurkeyF.18}
+	BUL = { country_event = TurkeyF.18}
+	ALB = { country_event = TurkeyF.18}
+	HUN = { country_event = TurkeyF.18}
+	CRO = { country_event = TurkeyF.18}
+	SLV = { country_event = TurkeyF.18}
+	SLO = { country_event = TurkeyF.18}
+	CZE = { country_event = TurkeyF.18}
+	POL = { country_event = TurkeyF.18}
+	LIT = { country_event = TurkeyF.18}
+	LAT = { country_event = TurkeyF.18}
+	EST = { country_event = TurkeyF.18}
+	FRA = { country_event = TurkeyF.18}
+	GER = { country_event = TurkeyF.18}
+	ENG = { country_event = TurkeyF.18}
+	ITA = { country_event = TurkeyF.18}
+	SPR = { country_event = TurkeyF.18}
+	POR = { country_event = TurkeyF.18}
+	LUX = { country_event = TurkeyF.18}
+	BEL = { country_event = TurkeyF.18}
+	HOL = { country_event = TurkeyF.18}
+	DEN = { country_event = TurkeyF.18}
+	NOR = { country_event = TurkeyF.18}
+	USA = { country_event = TurkeyF.18}
+	CAN = { country_event = TurkeyF.18}
+	ICE = { country_event = TurkeyF.18}
+			
+		}  } 
+	}
+	focus = {
+		id = TUR_bor8
+		icon = b-5
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_strong_state8
+			focus = TUR_international_military_factories8
+		}
+		x = 52
+		y = 5
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
+					search_filters = {FOCUS_FILTER_RESOURCE}
+					
+	completion_reward = {
+add_ideas = laws_of_bor
+}
+	}		
+
+##############################
+###	Start of Turkic Focus Tree ###	x = 75 y = 55
+##############################
+
+shared_focus = TR_policies
+
+############################
+### End of Turkic Focus Tree ###
+############################
+
+
+##############################
+###	Start of Cypriot Tree ###	x = 13 y = 10
+##############################
+
+shared_focus = TUR_greek_issues
+
+############################
+### End of Cypriot Focus Tree ###
+############################
+
+
+##############################
+###	Start of EU Focus Tree ###	x = 3 y = 45
+##############################
+
+	shared_focus = USoE001
+	shared_focus = POTEF001
+
+############################
+### End of EU Focus Tree ###
+############################
+}

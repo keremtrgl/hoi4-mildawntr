@@ -1,0 +1,26 @@
+TUR_startup = {
+	set_variable = { TUR_the_first_party = 0 }
+	set_variable = { TUR_the_second_party = 0 }
+	set_variable = { TUR_the_counting_votes = 0 }
+
+TUR_the_first_party = {
+	clamp_variable = {
+		var = TUR_the_first_party
+		min = 0
+		max = 100
+	}
+}
+TUR_the_second_party = {
+	clamp_variable = {
+		var = TUR_the_second_party
+		min = 0
+		max = 100
+	}
+}
+TUR_the_counting_votes = {
+	clamp_variable = {
+		var = TUR_the_counting_votes
+		min = 0
+		max = 100
+	}
+}

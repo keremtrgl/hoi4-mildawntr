@@ -1,0 +1,1283 @@
+
+TUR_tourism_sector_management = {
+	
+	open_touristic_sites_in_izmir = {
+
+		icon = GFX_decision_hol_inundate_water_lines
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 156
+		}
+
+		visible = {
+			original_tag = TUR
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_izmir_1
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_izmir_1
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        156 = {
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities }
+        }
+		}
+	}
+
+	
+	touristic_historical_sites_in_izmir = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 156
+		}
+
+		visible = {
+			original_tag = TUR
+			has_country_flag = TUR_touristic_facilities_izmir_1
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_izmir_2
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_izmir_2
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        156 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities }
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+        }
+		}
+	}
+
+	
+	enjoy_the_aegean = {
+
+		icon = GFX_decision_hol_drain_water_lines
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 156
+		}
+
+		visible = {
+			original_tag = TUR
+			has_country_flag = TUR_touristic_facilities_izmir_2
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_izmir_3
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_izmir_3
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        156 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities_3 }
+        }
+		}
+	}
+
+	open_touristic_sites_in_antalya = {
+
+		icon = GFX_decision_hol_inundate_water_lines
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 157
+		}
+
+		visible = {
+			original_tag = TUR
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_antalya_1
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_antalya_1
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        157 = {
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities }
+        }
+		}
+	}
+
+	
+	touristic_historical_sites_in_antalya = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 157
+		}
+
+		visible = {
+			original_tag = TUR
+			has_country_flag = TUR_touristic_facilities_antalya_1
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_antalya_2
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_antalya_2
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        157 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities }
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+        }
+		}
+	}
+
+	
+	russian_plazas_in_antalya = {
+
+		icon = GFX_decision_money_dec
+
+		fire_only_once = yes
+
+		available = {
+			controls_state = 157
+		}
+
+		visible = {
+			original_tag = TUR
+			has_country_flag = TUR_touristic_facilities_antalya_2
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+			157 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} 
+            }
+		}
+	}
+
+	antalya_diplomatic_center = {
+
+		icon = GFX_decisions_category_internal_factions
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 157
+		}
+
+		visible = {
+			original_tag = TUR
+			has_country_flag = TUR_touristic_facilities_antalya_2
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_antalya_3
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_antalya_3
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        157 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities_3 }
+        }
+		}
+	}
+
+
+
+	open_touristic_sites_in_adana = {
+
+		icon = GFX_decision_hol_inundate_water_lines
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 161
+		}
+
+		visible = {
+			original_tag = TUR
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_adana_1
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_adana_1
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        161 = {
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities }
+        }
+		}
+	}
+
+	
+	touristic_historical_sites_in_adana = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 161
+		}
+
+		visible = {
+			original_tag = TUR
+            has_country_flag = TUR_touristic_facilities_adana_1
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_adana_2
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_adana_2
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        161 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities }
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+        }
+		}
+	}
+
+	
+	cukurova_and_its_complex = {
+
+		icon = GFX_decision_bancru_ask_overlord_button
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 161
+		}
+
+		visible = {
+			original_tag = TUR
+            has_country_flag = TUR_touristic_facilities_adana_2
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_adana_3
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_adana_3
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        161 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities_3 }
+        }
+		}
+	}
+
+
+	antinoch_culture = {
+
+		icon = GFX_decision_infiltrate_state
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 158
+		}
+
+		visible = {
+			original_tag = TUR
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_antinoch
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+ 
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_antinoch
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        158 = {
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities }
+        }
+		}
+	}
+
+
+
+	search_for_touristic_possibilities_in_middle_of_anatolia = {
+
+		icon = GFX_decision_attract_foreign_investor
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 159
+		}
+
+		visible = {
+			original_tag = TUR
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_anatolia_1
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_anatolia_1
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        159 = {
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities }
+        }
+		}
+	}
+
+	
+	revitalize_the_cappodacia = {
+
+		icon = GFX_decision_gre_investment_decisions
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 159
+		}
+
+		visible = {
+			original_tag = TUR
+            has_country_flag = TUR_touristic_facilities_anatolia_1
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_anatolia_2
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_anatolia_2
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        159 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities }
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+        }
+		}
+	}
+
+	
+	push_ballons_in_cappodocia = {
+
+		icon = GFX_decision_eng_trade_unions_demand
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 159
+		}
+
+		visible = {
+			original_tag = TUR
+            has_country_flag = TUR_touristic_facilities_anatolia_2
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_anatolia_3
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        set_country_flag = TUR_touristic_facilities_anatolia_3
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        159 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities_3 }
+        }
+		}
+	}
+
+	tourism_in_istanbul = {
+
+		icon = GFX_decision_negotiate_icon
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 934
+		}
+
+		visible = {
+			original_tag = TUR
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_istanbul_1
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+         set_country_flag = TUR_touristic_facilities_istanbul_1
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        934 = {
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities }
+        }
+		}
+	}
+
+	
+	boost_the_tourism_in_istanbul = {
+
+		icon = GFX_decisions_wages_up_button
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 934
+		}
+
+		visible = {
+			original_tag = TUR
+            has_country_flag = TUR_touristic_facilities_istanbul_1
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_istanbul_2
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+         set_country_flag = TUR_touristic_facilities_istanbul_2
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        934 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities }
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+        }
+		}
+	}
+
+	
+	touristic_city_istanbul = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		fire_only_once = no
+
+		available = {
+			controls_state = 934
+		}
+
+		visible = {
+			original_tag = TUR
+            has_country_flag = TUR_touristic_facilities_istanbul_2
+            NOT = {
+            has_country_flag = TUR_touristic_facilities_istanbul_3
+            }
+		}
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_tourism_boost
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+         set_country_flag = TUR_touristic_facilities_istanbul_3
+			subtract_from_variable = { treasury = 15.0 }
+			custom_effect_tooltip = 15_billion_expense_tt
+        934 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+		add_dynamic_modifier = { modifier = TUR_touristic_facilities_3 }
+        }
+		}
+	}
+
+
+     TUR_tourism_adjust_1 = {    
+          icon = GFX_decision_fixes_button
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable   
+          }
+          activation = {   
+               check_variable = { var = TUR_tourism_quality value = 85 compare = less_than }  
+               check_variable = { var = TUR_tourism_quality value = 65 compare = greater_than }  
+
+               check_variable = { var = TUR_tourism_quantity value = 85 compare = less_than }  
+               check_variable = { var = TUR_tourism_quantity value = 65 compare = greater_than }            
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 10   
+    		days_re_enable = 10                
+          timeout_effect = {    
+		custom_effect_tooltip = ADJUST_REPORT_TOURISM          
+         hidden_effect = {
+        remove_ideas = turkish_tourism_sector_maxed
+        remove_ideas = turkish_tourism_sector_medium
+        remove_ideas = turkish_tourism_sector_low
+        remove_ideas = turkish_tourism_sector_very_low
+         }
+        add_ideas = turkish_tourism_sector_medium    
+          }
+        }
+
+
+     TUR_tourism_adjust_2 = {    
+          icon = GFX_decision_fixes_button	  
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable   
+          }
+          activation = {   
+               check_variable = { var = TUR_tourism_quality value = 85 compare = greater_than }  
+               check_variable = { var = TUR_tourism_quantity value = 85 compare = greater_than }  
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 10   
+    		days_re_enable = 10                   
+          timeout_effect = {  
+		custom_effect_tooltip = ADJUST_REPORT_TOURISM                    
+         hidden_effect = {
+        remove_ideas = turkish_tourism_sector_maxed
+        remove_ideas = turkish_tourism_sector_medium
+        remove_ideas = turkish_tourism_sector_low
+        remove_ideas = turkish_tourism_sector_very_low
+         }
+        add_ideas = turkish_tourism_sector_maxed       
+          }
+        }
+
+
+
+     TUR_tourism_adjust_3 = {    
+          icon = GFX_decision_fixes_button	  
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable   
+          }
+          activation = {   
+               check_variable = { var = TUR_tourism_quantity value = 40 compare = greater_than }        
+               check_variable = { var = TUR_tourism_quality value = 65 compare = less_than }  
+
+               check_variable = { var = TUR_tourism_quality value = 40 compare = greater_than }        
+               check_variable = { var = TUR_tourism_quantity value = 65 compare = less_than }  
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 10   
+    		days_re_enable = 10                    
+          timeout_effect = { 
+		custom_effect_tooltip = ADJUST_REPORT_TOURISM                      
+         hidden_effect = {
+        remove_ideas = turkish_tourism_sector_maxed
+        remove_ideas = turkish_tourism_sector_medium
+        remove_ideas = turkish_tourism_sector_low
+        remove_ideas = turkish_tourism_sector_very_low
+         }
+        add_ideas = turkish_tourism_sector_low    
+          }
+        }
+
+
+     TUR_tourism_adjust_4 = {    
+          icon = GFX_decision_fixes_button	  
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable   
+          }
+          activation = { 
+               check_variable = { var = TUR_tourism_quality value = 40 compare = less_than }     
+               check_variable = { var = TUR_tourism_quantity value = 40 compare = less_than }  
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 10   
+    		days_re_enable = 10                   
+          timeout_effect = {   
+		custom_effect_tooltip = ADJUST_REPORT_TOURISM                   
+         hidden_effect = {
+        remove_ideas = turkish_tourism_sector_maxed
+        remove_ideas = turkish_tourism_sector_medium
+        remove_ideas = turkish_tourism_sector_low
+        remove_ideas = turkish_tourism_sector_very_low
+         }
+        add_ideas = turkish_tourism_sector_very_low   
+          }
+        }
+
+     TUR_shake_and_destroy_the_process = {    
+          icon = GFX_decision_bancru_collapse_button
+          allowed = { tag = TUR }                 
+          available = {   
+          has_stability > 0.1
+          }
+          activation = {   
+          has_stability < 0.1
+          NOT = {
+          has_idea = turkish_tourism_sector_low 
+            }
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 365                 
+          timeout_effect = {  
+		custom_effect_tooltip = TOURISM_COLLAPSE
+        clr_country_flag = TUR_touristic_facilities_istanbul_3
+        clr_country_flag = TUR_touristic_facilities_istanbul_2
+        clr_country_flag = TUR_touristic_facilities_istanbul_1
+        clr_country_flag = TUR_touristic_facilities_antalya_3
+        clr_country_flag = TUR_touristic_facilities_antalya_2
+        clr_country_flag = TUR_touristic_facilities_antalya_1 
+
+        clr_country_flag = TUR_touristic_facilities_anatolia_1
+        clr_country_flag = TUR_touristic_facilities_anatolia_2
+        clr_country_flag = TUR_touristic_facilities_anatolia_3
+        clr_country_flag = TUR_touristic_facilities_antinoch
+
+        clr_country_flag = TUR_touristic_facilities_istanbul_1     
+        clr_country_flag = TUR_touristic_facilities_istanbul_2
+        clr_country_flag = TUR_touristic_facilities_istanbul_3
+         hidden_effect = {
+        934 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities }
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_3 }
+        }
+        156 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities }
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_3 }
+        }
+        157 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities }
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_3 }
+        }
+        161 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities }
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_3 }
+        }
+        159 = {
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities }
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_2 }
+		remove_dynamic_modifier = { modifier = TUR_touristic_facilities_3 }
+        }
+		 }
+        add_ideas = turkish_tourism_sector_low                    
+         hidden_effect = {
+        remove_ideas = turkish_tourism_sector_maxed
+        remove_ideas = turkish_tourism_sector_medium
+        remove_ideas = turkish_tourism_sector_low
+        remove_ideas = turkish_tourism_sector_very_low
+         }
+          }
+        }
+
+
+     TUR_peaceful_values_reached = {    
+          icon = GFX_decisions_promice_peace_button 
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+          has_war = no
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_small
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+        }
+	}
+
+
+     TUR_war_values_reached = {    
+          icon = GFX_decision_sprut_button
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+          has_war = yes
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {                    
+        			custom_effect_tooltip = TUR_tourism_boost_nerf
+		subtract_from_variable = { TUR_tourism_quality = 1 }
+		subtract_from_variable = { TUR_tourism_quantity = 1 }
+          }
+        }
+
+
+
+     TUR_government_democratic = {    
+          icon = GFX_decision_democracy 
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+          has_elections = yes
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_nerf_mix
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = 1 }
+          }
+        }
+
+
+     TUR_government_anti_democratic = {    
+          icon = GFX_decision_fascism 
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+          has_elections = no
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {             
+        			custom_effect_tooltip = TUR_tourism_boost_nerf_mix_opp
+		subtract_from_variable = { TUR_tourism_quality = 1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+          }
+        }
+
+
+     TUR_economy_facing_challenges = {    
+          icon = GFX_decision_ger_mefo_bills
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+          has_idea = depression
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_nerf_mix_opp
+		subtract_from_variable = { TUR_tourism_quality = 1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+          }
+        }
+
+
+     TUR_economy_facing_boom = {    
+          icon = GFX_decision_ger_mefo_bills	  
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+          has_idea = economic_boom
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_nerf_mix
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = 1 }
+          }
+        }
+
+
+     TUR_stable_nations = {    
+          icon = GFX_decision_civil_support
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+          has_stability > 0.5
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_small
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+          }
+        }
+
+
+     TUR_unstable_nations = {    
+          icon = GFX_decision_ignite_civil_war	  
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+          has_stability < 0.5
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_nerf
+		subtract_from_variable = { TUR_tourism_quality = 1 }
+		subtract_from_variable = { TUR_tourism_quantity = 1 }
+          }
+        }
+
+
+	TUR_stabilize_in_first_act = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = no
+
+		available = {
+		}
+
+		visible = {
+			original_tag = TUR
+		}
+
+		cost = 5
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			political_power_cost = 0.1
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_stabilize_in_first_act_tooltip
+		subtract_from_variable = { TUR_tourism_quality = -1 }
+		subtract_from_variable = { TUR_tourism_quantity = 1 }
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		}
+	}
+
+	TUR_stabilize_in_second_act = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = no
+
+		available = {
+		}
+
+		visible = {
+			original_tag = TUR
+		}
+
+		cost = 5
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			political_power_cost = 0.1
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TUR_stabilize_in_second_act_tooltip
+		subtract_from_variable = { TUR_tourism_quality = 1 }
+		subtract_from_variable = { TUR_tourism_quantity = -1 }
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		}
+	}
+
+     TUR_balancing_A = {    
+          icon = GFX_decision_spending_lower_button  
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+               check_variable = { var = TUR_tourism_quality value = 75 compare = greater_than } 
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_nerf_quality
+		subtract_from_variable = { TUR_tourism_quality = 1 }
+          }
+        }
+
+
+     TUR_balancing_B = {    
+          icon = GFX_decision_spending_lower_button	  
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+               check_variable = { var = TUR_tourism_quantity value = 75 compare = greater_than } 
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_nerf_quantity
+		subtract_from_variable = { TUR_tourism_quantity = 1 }
+          }
+        }
+
+     TUR_balancing_A_wault = {    
+          icon = GFX_decision_spending_lower_button
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+               check_variable = { var = TUR_tourism_quantity value = 100 compare = greater_than } 
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_nerf_quantity2
+		subtract_from_variable = { TUR_tourism_quantity = 2 }
+          }
+        }
+
+     TUR_balancing_B_wault = {    
+          icon = GFX_decision_spending_lower_button
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+               check_variable = { var = TUR_tourism_quality value = 100 compare = greater_than } 
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_nerf_quality2
+		subtract_from_variable = { TUR_tourism_quality = 2 }
+          }
+        }
+
+
+     TUR_balancing_A_wault_2 = {    
+          icon = GFX_decision_spending_lower_button
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+               check_variable = { var = TUR_tourism_quantity value = 110 compare = greater_than } 
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_nerf_quantity2
+		subtract_from_variable = { TUR_tourism_quantity = 10 }
+          }
+        }
+
+     TUR_balancing_B_wault_2 = {    
+          icon = GFX_decision_spending_lower_button
+          allowed = { tag = TUR }                 
+          available = {   
+                has_global_flag = Inevitable  
+          }
+          activation = {   
+               check_variable = { var = TUR_tourism_quality value = 110 compare = greater_than } 
+          }
+          is_good = no     
+		fire_only_once = no		  
+          selectable_mission = no           
+          days_mission_timeout = 75                 
+          timeout_effect = {  
+        			custom_effect_tooltip = TUR_tourism_boost_nerf_quality2
+		subtract_from_variable = { TUR_tourism_quality = 10 }
+          }
+        }

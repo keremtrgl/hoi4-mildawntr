@@ -1,0 +1,1188 @@
+set_leader_TUR = {
+
+	if = { limit = { has_country_flag = set_liberalism }
+
+		if = { limit = { check_variable = { liberalism_leader = 0 } }
+			add_to_variable = { liberalism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Besim Tibuk"
+				picture = "besim_tibuk.dds"
+				ideology = liberalism
+				traits = {
+					western_liberalism
+					businessman
+					career_politician
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { liberalism_leader = 1 } }
+			if = { limit = { has_country_flag = besimtibuk } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { liberalism_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { liberalism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Cem Toker"
+				picture = "cem_toker.dds"
+				ideology = liberalism
+				traits = {
+					businessman
+					western_liberalism
+					polished
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { liberalism_leader = 1 } }
+			set_temp_variable = { b = 1 }
+		}
+	}
+	else_if = { limit = { has_country_flag = set_Communist-State }
+		if = { limit = { check_variable = { Communist-State_leader = 0 } }
+			add_to_variable = { Communist-State_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Doğu Perinçek"
+				picture = "Dogu_Perincek.dds"
+				ideology = Communist-State
+				traits = {
+					emerging_Communist-State
+					writer
+					lawyer
+					pro_china
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Communist-State_leader = 1 } }
+			if = { limit = { date < 2016.1.2 } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+
+	else_if = { limit = { has_country_flag = set_Nat_Populism }
+		if = { limit = { check_variable = { Nat_Nat_Populism = 0 } }
+			add_to_variable = { Nat_Nat_Populism = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Devlet Bahçeli"
+				picture = "Devlet_Bahceli.dds"
+				ideology = Nat_Populism
+				traits = {
+					nationalist_Nat_Populism
+					actor_politician
+				}
+			}
+
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Populism_leader = 1 } }
+		}
+	}
+
+	else_if = { limit = { has_country_flag = set_conservatism }
+		if = { limit = { check_variable = { conservatism_leader = 0 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { conservatism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Masum Türker"
+				picture = "masum_turker.dds"
+				ideology = conservatism
+				traits = {
+					western_conservatism
+					economist
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { conservatism_leader = 1 } }
+			if = { limit = { has_global_flag = noiyi }  set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { conservatism_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { conservatism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Meral Aksener"
+				picture = "meral_aksener.dds"
+				ideology = conservatism
+				traits = {
+					western_conservatism
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { conservatism_leader = 1 } }
+			if = { limit = { has_global_flag = iyi } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+
+    }
+	else_if = { limit = { has_country_flag = set_socialism }
+		if = { limit = { check_variable = { socialism_leader = 0 } }
+			add_to_variable = { socialism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Deniz Baykal"
+				picture = "Deniz_Baykal.dds"
+				ideology = socialism
+				traits = {
+					western_socialism
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { socialism_leader = 1 } }
+			if = { limit = { has_global_flag = baykal } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { socialism_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { socialism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Kemal Kılıçdaroglu"
+				picture = "kilicdaroglu_young.dds"
+				ideology = socialism
+				id = 7800
+				traits = {
+					western_socialism
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { socialism_leader = 1 } }
+			if = { limit = { NOT = { has_global_flag = nocandidateofchp } } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { socialism_leader = 2 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { socialism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Ozgür Ozel"
+				picture = "ozel.dds"
+				ideology = socialism
+				traits = {
+					western_socialism
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { socialism_leader = 1 } }
+			if = { limit = { NOT = { has_global_flag = nocandidateofchp } } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { socialism_leader = 3 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { socialism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Muharrem Ince"
+				picture = "muharrem_ince.dds"
+				ideology = socialism
+				traits = {
+					western_socialism
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { socialism_leader = 1 } }
+			if = { limit = { has_global_flag = incechp } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+
+		if = { limit = { check_variable = { socialism_leader = 4 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { socialism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+	        create_country_leader = {
+		    name = "Mansur Yavas"
+		    picture = "mansur_yavas.dds"
+		    ideology = liberalism		
+			id = 7777
+	    }
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { socialism_leader = 1 } }
+			if = { limit = { has_global_flag = mansur }  set_temp_variable = { b = 1 } } #skip if 2017
+		}
+
+		if = { limit = { check_variable = { socialism_leader = 5 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { socialism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+	create_country_leader = {
+		name = "Ekrem İmamoglu"
+		picture = "ekrem_imamoglu.dds"
+		ideology = liberalism
+        } 
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { socialism_leader = 1 } }
+			if = { limit = { has_global_flag = ekrem }  set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+	
+	else_if = { limit = { has_country_flag = set_Communist-State }
+		if = { limit = { check_variable = { Communist-State_leader = 0 } }
+			add_to_variable = { Communist-State_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Dogu Perinçek"
+				picture = "Dogu_Perincek.dds"
+				ideology = Communist-State
+				traits = {
+					emerging_Communist-State
+					writer
+					lawyer
+					pro_china
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Communist-State_leader = 1 } }
+			if = { limit = { date < 2016.1.2 } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+	else_if = { limit = { has_country_flag = set_anarchist_communism }
+		if = { limit = { check_variable = { anarchist_communism_leader = 0 } }
+			add_to_variable = { anarchist_communism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Ufuk Aras"
+				picture = "Ufuk_Uras.dds"
+				ideology = anarchist_communism
+				traits = {
+					emerging_anarchist_communism
+					economist
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { anarchist_communism_leader = 1 } }
+			if = { limit = { has_global_flag = aras } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { anarchist_communism_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { anarchist_communism_leader = 1 } 
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Hayri Kazanoglu"
+				picture = "hayri_kazanoglu.dds"
+				ideology = anarchist_communism
+				traits = {
+					emerging_anarchist_communism
+					economist
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { anarchist_communism_leader = 1 } }
+			if = { limit = { has_global_flag = hayri } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { anarchist_communism_leader = 2 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { anarchist_communism_leader = 1 } 
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Co-Presidents"
+				picture = "mtu.dds"
+				ideology = anarchist_communism
+				traits = {
+					emerging_anarchist_communism
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { anarchist_communism_leader = 1 } }
+			set_temp_variable = { b = 1 }
+		}
+	}
+	else_if = { limit = { has_country_flag = set_Neutral_conservatism }
+		if = { limit = { check_variable = { Neutral_conservatism_leader = 0 } }
+			add_to_variable = { Neutral_conservatism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Aykut Edibali"
+				picture = "aykut_ebidali.dds"
+				ideology = Neutral_conservatism
+				traits = {
+					neutrality_Neutral_conservatism
+					lawyer
+				}
+			}
+
+			if = { limit = { has_global_flag = MP_MOMENT has_country_flag = do_not_retire } subtract_from_variable = { Neutral_conservatism_leader = 1 } }
+		}
+		if = { limit = { check_variable = { Neutral_conservatism_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Neutral_conservatism_leader = 1 } 
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Osman Pamukoglu"
+				picture = "osman_pamukoglu_civ.dds"
+				ideology = Neutral_conservatism
+				traits = {
+					neutrality_Neutral_conservatism
+					military_career
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_conservatism_leader = 1 } }
+			if = { limit = { has_global_flag = OSMAN_PAMUKOGLU_CREATES_HIS_OWN_PARTY } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+	else_if = { limit = { has_country_flag = set_Neutral_Muslim_Brotherhood }
+		if = { limit = { check_variable = { Neutral_Muslim_Brotherhood_leader = 0 } }
+			add_to_variable = { Neutral_Muslim_Brotherhood_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Recep Tayyip Erdogan"
+				picture = "Recep_Tayyip_Erdogan.dds"
+				ideology = Neutral_Muslim_Brotherhood
+				traits = {
+					neutrality_Neutral_Muslim_Brotherhood
+					career_politician
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Muslim_Brotherhood_leader = 1 } }
+			if = { limit = { date < 2016.1.2 } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Neutral_Muslim_Brotherhood_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Neutral_Muslim_Brotherhood_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Zekeriya Yapıcıoglu"
+				picture = "TUR_Zekeriya_Yapicioglu.dds"
+				ideology = Neutral_Muslim_Brotherhood
+				traits = {
+					neutrality_Neutral_Muslim_Brotherhood
+					lawyer
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Muslim_Brotherhood_leader = 1 } }
+			set_temp_variable = { b = 1 }
+		}
+		if = { limit = { check_variable = { Neutral_Muslim_Brotherhood_leader = 2 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Neutral_Muslim_Brotherhood_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Binali Yildirim"
+				picture = "binali_yildirim.dds"
+				ideology = Neutral_Muslim_Brotherhood
+				traits = {
+					neutrality_Neutral_Muslim_Brotherhood
+					engineer
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Muslim_Brotherhood_leader = 1 } }
+			set_temp_variable = { b = 1 }
+		}
+	}
+	else_if = { limit = { has_country_flag = set_Neutral_green }
+		if = { limit = { check_variable = { Neutral_green_leader = 0 } }
+			add_to_variable = { Neutral_green_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Ali Babacan"
+				picture = "babacan.dds"
+				ideology = Neutral_green
+				traits = {
+					neutrality_Neutral_green
+					engineer
+					economist
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_green_leader = 1 } }
+			if = { limit = { has_global_flag = blas has_global_flag = ANARCHIST_NO } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+	else_if = { limit = { has_country_flag = set_Neutral_social }
+		if = { limit = { check_variable = { Neutral_social_leader = 0 } }
+			add_to_variable = { Neutral_social_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Haydar Bas"
+				picture = "Haydar_Bas.dds"
+				ideology = Neutral_social
+				traits = {
+					neutrality_neutral_Social
+					businessman
+					writer
+					economist
+                    scientist
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_social_leader = 1 } }
+			if = { limit = { has_global_flag = ANARCHIST_NO } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+
+	else_if = { limit = { has_country_flag = set_Nat_Populism }
+		if = { limit = { check_variable = { Nat_Nat_Populism = 0 } }
+			add_to_variable = { Nat_Nat_Populism = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Devlet Bahçeli"
+				picture = "Devlet_Bahceli.dds"
+				ideology = Nat_Populism
+				traits = {
+					nationalist_Nat_Populism
+				}
+			}
+
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Populism_leader = 1 } }
+		}
+	}
+
+	else_if = { limit = { has_country_flag = set_Nat_Fascism }
+		if = { limit = { check_variable = { Nat_Fascism_leader = 0 } }
+			add_to_variable = { Nat_Fascism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Sinan Ateş"
+				picture = "sinan_ateş.dds"
+				ideology = Nat_Fascism
+				traits = {
+					nationalist_Nat_Fascism
+				}
+			}
+
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Fascism_leader = 1 } }
+			if = { limit = { has_global_flag = ULKISTS_IN_ACTION } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Neutral_Muslim_Brotherhood_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Neutral_Muslim_Brotherhood_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Ümit Özdağ"
+				picture = "ozdag.dds"
+				ideology = Nat_Fascism
+				traits = {
+					nationalist_Nat_Fascism
+                    writer
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Muslim_Brotherhood_leader = 1 } }
+			if = { limit = { has_global_flag = ZAFERISTS_IN_ACTION } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+	
+	else_if = { limit = { has_country_flag = set_Monarchist }
+		if = { limit = { check_variable = { Monarchist_leader = 0 } }
+			add_to_variable = { Monarchist_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Osman V"
+				picture = "osman_v.dds"
+				ideology = Monarchist
+				traits = {
+					nationalist_Monarchist
+					king
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Monarchist_leader = 1 } }
+			if = { limit = { has_global_flag = osmanv } set_temp_variable = { b = 1 } } #skip if 2017
+			set_temp_variable = { b = 1 }
+		}
+	}
+	
+	else_if = { limit = { has_country_flag = set_Nat_Autocracy }
+		if = { limit = { check_variable = { Nat_Autocracy_leader = 0 } }
+			add_to_variable = { Nat_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Hüseyin Kivirikoglu"
+				picture = "huseyin_kivnikoglu.dds"
+				ideology = Nat_Autocracy
+				traits = {
+					nationalist_Nat_Autocracy
+					military_career
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Autocracy_leader = 1 } }
+			if = { limit = { has_global_flag = kivirik } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Nat_Autocracy_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Nat_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Yasar Buyukanit"
+				picture = "buyukanit.dds"
+				ideology = Nat_Autocracy
+				traits = {
+					nationalist_Nat_Autocracy
+					military_career
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Populism_leader = 1 } }
+			if = { limit = { has_global_flag = yasar_buyukanit } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Nat_Autocracy_leader = 2 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Nat_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Ilker Basbug"
+				picture = "ktu.dds"
+				ideology = Nat_Autocracy
+				traits = {
+					nationalist_Nat_Autocracy
+					military_career
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Populism_leader = 1 } }
+			if = { limit = { has_global_flag = ilker_basbug } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Nat_Autocracy_leader = 3 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Nat_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Isık Kosaner"
+				picture = "kosaner.dds"
+				ideology = Nat_Autocracy
+				traits = {
+					nationalist_Nat_Autocracy
+					military_career
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Populism_leader = 1 } }
+			if = { limit = { has_global_flag = kosaner } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Nat_Autocracy_leader = 4 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Nat_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Necdet Ozel"
+				picture = "necdet_ozel.dds"
+				ideology = Nat_Autocracy
+				traits = {
+					nationalist_Nat_Autocracy
+					military_career
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Populism_leader = 1 } }
+			if = { limit = { has_global_flag = ozel } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	    if = { limit = { check_variable = { Nat_Autocracy_leader = 5 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Nat_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Hulusi Akar"
+				picture = "gen_Hulusi_Akar.dds"
+				ideology = Nat_Autocracy
+				traits = {
+					nationalist_Nat_Autocracy
+					military_career
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Populism_leader = 1 } }
+			if = { limit = { has_global_flag = akar } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	    if = { limit = { check_variable = { Nat_Autocracy_leader = 6 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Nat_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Yasar Guler"
+				picture = "guler.dds"
+				ideology = Nat_Autocracy
+				traits = {
+					nationalist_Nat_Autocracy
+					military_career
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Populism_leader = 1 } }
+            if = { limit = { has_global_flag = guler } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	    if = { limit = { check_variable = { Nat_Autocracy_leader = 7 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Nat_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Metin Gürak"
+				picture = "metin_gurak.dds"
+				ideology = Nat_Autocracy
+				traits = {
+					nationalist_Nat_Autocracy
+					military_career
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Populism_leader = 1 } }
+            if = { limit = { has_global_flag = guler } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+	else_if = { limit = { has_country_flag = set_Caliphate }
+		if = { limit = { check_variable = { Caliphate_leader = 0 } }
+			add_to_variable = { Caliphate_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Salih Mirzabeyoğlu"
+				picture = "salih_mirzabeyoglu.dds"
+				ideology = Caliphate
+				traits = {
+				salafist_Caliphate
+				writer
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Caliphate_leader = 1 } }
+			if = { limit = { date < 2016.1.2 } set_temp_variable = { b = 1 } } #skip if 2017
+		}		
+		if = { limit = { check_variable = { Caliphate_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Caliphate_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Ayman Al-Zawahiri"
+				picture = "Ayman_Al_Zawahiri.dds"
+				ideology = Caliphate
+				traits = {
+					salafist_Caliphate
+					pro_isis
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Caliphate_leader = 1 } }
+			if = { limit = { date < 2016.1.2 } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Caliphate_leader = 2 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Caliphate_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Abu Muslim Al-Turkmani"
+				picture = "Abu_Muslim_Al_Turkmani.dds"
+				ideology = Caliphate
+				traits = {
+					salafist_Caliphate
+					pro_isis
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Caliphate_leader = 1 } }
+			set_temp_variable = { b = 1 }
+		}
+		if = { limit = { check_variable = { Caliphate_leader = 3 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Caliphate_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Ebu Hanzala"
+				picture = "TUR_Ebu_Hanzala.dds"
+				ideology = Caliphate
+				traits = {
+					salafist_Caliphate
+					pro_isis
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Caliphate_leader = 1 } }
+			set_temp_variable = { b = 1 }
+		}
+	}
+
+	else_if = { limit = { has_country_flag = set_Neutral_Autocracy }
+		if = { limit = { check_variable = { Neutral_Autocracy_leader = 0 } }
+			add_to_variable = { Neutral_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Cem Uzan"
+				picture = "cem_uzan.dds"
+				ideology = Neutral_Autocracy
+				traits = {
+					neutrality_Neutral_Autocracy
+					businessman
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Autocracy_leader = 1 } }
+			if = { limit = { has_global_flag = cem_uzan } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Neutral_Autocracy_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Neutral_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Ahmet Davutoğlu"
+				picture = "davutoglu.dds"
+				ideology = Neutral_Autocracy
+				traits = {
+					neutrality_Neutral_Autocracy
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Autocracy_leader = 1 } }
+			if = { limit = { has_global_flag = blast } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+    }
+	else_if = { limit = { has_country_flag = set_Autocracy }
+		if = { limit = { check_variable = { Autocracy_leader = 0 } }
+			add_to_variable = { Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Ercüment Akdeniz"
+				picture = "ercument_akdeniz.dds"
+				ideology = Autocracy
+				traits = {
+					emerging_Autocracy
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Autocracy_leader = 1 } }
+			if = { limit = { date < 2016.1.2 } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+
+
+		if = { limit = { check_variable = { Autocracy_leader = 1 } }
+			add_to_variable = { Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Fatih Erbakan"
+				picture = "TUR_fatih_erbakan.dds"
+				ideology = Autocracy
+				traits = {
+					emerging_Autocracy
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Autocracy_leader = 1 } }
+			if = { limit = { has_global_flag = REFAH_TIME } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+
+
+	else_if = { limit = { has_country_flag = set_oligarchism }
+		if = { limit = { check_variable = { oligarchism_leader = 0 } }
+			add_to_variable = { oligarchism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Muhsin Yazıcıoğlu"
+				picture = "Muhsin_Yazicioglu.dds"
+				ideology = oligarchism
+				traits = {
+					neutral_oligarchism
+					doctor
+				}
+		}	
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { oligarchism_leader = 1 } }
+			if = { limit = { has_global_flag = muhsin } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { oligarchism_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { oligarchism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+		
+			create_country_leader = {
+				name = "Mafia Council"
+				picture = "mtu.dds"
+				ideology = oligarchism
+				traits = {
+					neutral_oligarchism
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { oligarchism_leader = 1 } }
+			if = { limit = { has_global_flag = TUR_MAFIATIC_TR } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { oligarchism_leader = 2 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { oligarchism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+		
+			create_country_leader = {
+				name = "Kudret Özersay"
+				picture = "kudret_ozersay.dds"
+				ideology = oligarchism
+				traits = {
+					neutral_oligarchism
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { oligarchism_leader = 1 } }
+			if = { limit = { has_global_flag = kudret_ozersay } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { oligarchism_leader = 3 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { oligarchism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+		
+			create_country_leader = {
+				name = "Kemal Derviş"
+				picture = "kemal_dervis.dds"
+				ideology = oligarchism
+				traits = {
+					neutral_oligarchism
+					economist
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { oligarchism_leader = 1 } }
+			if = { limit = { has_global_flag = kemal_dervis } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { oligarchism_leader = 4 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { oligarchism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Hakkı Oznur"
+				picture = "hakki_oznur.dds"
+				ideology = oligarchism
+				traits = {
+					neutral_oligarchism
+					writer
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { oligarchism_leader = 1 } }
+			if = { limit = { has_global_flag = oznur } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { oligarchism_leader = 5 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { oligarchism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Mustafa Destici"
+				picture = "Mustafa_Destici.dds"
+				ideology = oligarchism
+				traits = {
+					neutral_oligarchism
+				}
+			}
+			
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { oligarchism_leader = 1 } }
+			set_temp_variable = { b = 1 }
+		}
+	}
+
+
+	else_if = { limit = { has_country_flag = set_Neutral_Libertarian }
+		if = { limit = { check_variable = { Neutral_Libertarian_leader = 0 } }
+			add_to_variable = { Neutral_Libertarian_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Mesut Yilmaz"
+				picture = "Mesut_Yilmaz .dds"
+				ideology = Neutral_Libertarian
+				id = 7778
+				traits = {
+					neutrality_Neutral_Libertarian
+				}
+			}
+		
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Libertarian_leader = 1 } }
+			if = { limit = { has_global_flag = yilmaz has_global_flag = ANARCHIST_NO } set_temp_variable = { b = 1 } } #skip if 2017 #skip if 2017
+		}
+			
+
+		if = { limit = { check_variable = { Neutral_Libertarian_leader = 2 } }
+			add_to_variable = { Neutral_Libertarian_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Nesrin Nas"
+				picture = "nas.dds"
+				ideology = Neutral_Libertarian
+				traits = {
+					neutral_Neutral_Libertarian
+					economist
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Libertarian_leader = 1 } }
+			if = { limit = { has_global_flag = nas has_global_flag = ANARCHIST_NO } set_temp_variable = { b = 1 } } #skip if 2017 #skip if 2017
+		}
+
+		if = { limit = { check_variable = { Neutral_Libertarian_leader = 3 } }
+			add_to_variable = { Neutral_Libertarian_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Salih Uzun"
+				picture = "salih_uzun.dds"
+				ideology = Neutral_Libertarian
+				traits = {
+					neutral_Neutral_Libertarian
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Libertarian_leader = 1 } }
+		}
+	}
+
+
+	else_if = { limit = { has_country_flag = set_Mod_Vilayat_e_Faqih }
+		if = { limit = { check_variable = { Mod_Vilayat_e_Faqih_leader = 0 } }
+			add_to_variable = { Mod_Vilayat_e_Faqih_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Murat Bozlak"
+				picture = "murat_bozlak.dds"
+				ideology = Mod_Vilayat_e_Faqih
+				traits = {
+					emerging_Mod_Vilayat_e_Faqih
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Mod_Vilayat_e_Faqih_leader = 1 } }
+			if = { limit = { has_global_flag = hadep } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Mod_Vilayat_e_Faqih_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Mod_Vilayat_e_Faqih_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Selahattin Demirtas"
+				picture = "TUR_Selahattin_Demirtas.dds"
+				ideology = Mod_Vilayat_e_Faqih
+				traits = {
+					emerging_Mod_Vilayat_e_Faqih
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Mod_Vilayat_e_Faqih_leader = 1 } }
+			if = { limit = { has_global_flag = demirtas } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Mod_Vilayat_e_Faqih_leader = 2 } }
+			add_to_variable = { Mod_Vilayat_e_Faqih_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Sezai Temelli"
+				picture = "sezai_temelli.dds"
+				ideology = Mod_Vilayat_e_Faqih
+				traits = {
+					emerging_Mod_Vilayat_e_Faqih
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Mod_Vilayat_e_Faqih_leader = 1 } }
+			set_temp_variable = { b = 1 }
+		}
+	}
+
+
+	else_if = { limit = { has_country_flag = set_Vilayat_e_Faqih }
+		if = { limit = { check_variable = { Vilayat_e_Faqih_leader = 0 } }
+			add_to_variable = { Vilayat_e_Faqih_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Zekeriya Yapıcıoglu"
+				picture = "TUR_Zekeriya_Yapicioglu.dds"
+				ideology = Vilayat_e_Faqih
+				traits = {
+					emerging_Vilayat_e_Faqih
+					lawyer
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Vilayat_e_Faqih_leader = 1 } }
+			if = { limit = { has_global_flag = kivirik } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+
+
+	else_if = { limit = { has_country_flag = set_Western_Autocracy }
+		if = { limit = { check_variable = { Western_Autocracy_leader = 0 } }
+			add_to_variable = { Western_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Tansu Çiller"
+				picture = "tansu_ciller.dds"
+				ideology = Western_Autocracy
+				traits = {
+					western_Western_Autocracy
+					economist 
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Western_Autocracy_leader = 1 } }
+			if = { limit = { has_global_flag = ciler } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Western_Autocracy_leader = 1 } }
+			add_to_variable = { Western_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Süleyman Soylu"
+				picture = "soylu.dds"
+				ideology = Western_Autocracy
+				traits = {
+					western_Western_Autocracy
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Western_Autocracy_leader = 1 } }
+				if = { limit = { has_global_flag = sulo } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+
+		if = { limit = { check_variable = { Western_Autocracy_leader = 2 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Western_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Muharrem Ince"
+				picture = "muharrem_ince.dds"
+				ideology = socialism
+				traits = {
+					western_socialism
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Western_Autocracy_leader = 1 } }
+			if = { limit = { has_global_flag = MEMLEKET_INCE } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+
+		if = { limit = { check_variable = { Western_Autocracy_leader = 3 } }
+			add_to_variable = { Western_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Gültekin Uysal"
+				picture = "gultekin_uysal.dds"
+				ideology = Western_Autocracy
+				traits = {
+					western_Western_Autocracy
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Western_Autocracy_leader = 1 } }
+			set_temp_variable = { b = 1 }
+		}
+	}
+	else_if = { limit = { has_country_flag = set_Neutral_Communism }
+		if = { limit = { check_variable = { Neutral_Communism_leader = 0 } }
+			add_to_variable = { Neutral_Communism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Turgut Koçak"
+				picture = "turgut_kocak.dds"
+				ideology = Neutral_Communism
+				traits = {
+					neutrality_Neutral_Communism
+					union_man
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Communism_leader = 1 } }
+				if = { limit = { has_global_flag = ANARCHIST_NO  NOT = { has_global_flag = TIME_OF_TIP }} set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Neutral_Communism_leader = 1 } }
+			add_to_variable = { Neutral_Communism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Erkan Baş"
+				picture = "erkan_bas.dds"
+				ideology = Neutral_Communism
+				traits = {
+					writer
+					union_man
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Communism_leader = 1 } }
+				if = { limit = { has_global_flag = TIME_OF_TIP } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+
+	else_if = { limit = { has_country_flag = set_Conservative }
+		if = { limit = { check_variable = { Conservative_leader = 0 } }
+			add_to_variable = { Conservative_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Recai Kutan"
+				picture = "Recai_Kutan.dds"
+				ideology = Conservative
+				traits = {
+					emerging_Conservative
+					engineer
+				}
+			}
+			
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Conservative_leader = 1 } }
+			if = { limit = { has_global_flag = recai } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Conservative_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Conservative_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Necmeddin Erbakan"
+				picture = "Necmeddin_Erbakan.dds"
+				ideology = Conservative
+				traits = {
+					emerging_Conservative
+					engineer
+					scientist
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Conservative_leader = 1 } }
+			if = { limit = { has_global_flag = erbakan_return } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Conservative_leader = 2 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Conservative_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Fatih Erbakan"
+				picture = "TUR_fatih_erbakan.dds"
+				ideology = Conservative
+				traits = {
+					emerging_Conservative
+					engineer
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Conservative_leader = 1 } }
+			if = { limit = { has_global_flag = erbakans_son } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+		if = { limit = { check_variable = { Conservative_leader = 3 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { Conservative_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Temel Karamollaoglu"
+				picture = "karamoglu.dds"
+				ideology = Conservative
+				traits = {
+					emerging_Conservative
+					scientist
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Conservative_leader = 1 } }
+			 set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}

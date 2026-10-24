@@ -1,0 +1,1316 @@
+
+
+shared_focus = {
+		id = TUR_greek_issues
+		icon = attack_cyprus
+		cost = 10
+		x = 0#37
+		y = 45#11
+
+	##################################### CYPRUS BRANCH
+
+		offset = {
+			x = 11 #15
+			y = 10 #15
+			trigger = {
+				tag = TUR
+			}
+		}
+		offset = {
+		    x = 32
+		    y = -46
+			trigger = {
+				tag = TUR
+			NOT = {
+has_country_flag = AKP_LIB_FOCUS_LOCATION
+has_country_flag = AYM_FOCUS_LOCATION
+has_country_flag = DSP_FOCUS_LOCATION
+has_country_flag = GENC_FOCUS_LOCATION
+has_country_flag = ATA_FOCUS_LOCATION
+has_country_flag = CHP_FOCUS_LOCATION
+has_country_flag = ANAP_FOCUS_LOCATION
+has_country_flag = HEPAR_FOCUS_LOCATION
+has_country_flag = TSK_FOCUS_LOCATION
+has_country_flag = MHP_FOCUS_LOCATION
+has_country_flag = LDP_FOCUS_LOCATION
+has_country_flag = TECH_FOCUS_LOCATION
+has_country_flag = ANARCHY_FOCUS_LOCATION
+has_country_flag = MAFIA_FOCUS_LOCATION
+has_country_flag = SAADET_FOCUS_LOCATION
+has_country_flag = MIT_FOCUS_LOCATION
+has_country_flag = TKP_FOCUS_LOCATION
+has_country_flag = OTT_FOCUS_LOCATION
+			}
+		} }
+
+		offset = {#Y
+		    x = 20
+		    y = -45
+			trigger = { tag = TUR has_country_flag = ANAP_FOCUS_LOCATION}
+		}
+
+
+		offset = {#Y
+			x = 17 #15
+			y = 10 #15
+			trigger = { tag = TUR has_country_flag = OTT_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+		    x = 26
+		    y = -45
+			trigger = { tag = TUR has_country_flag = AKP_LIB_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+		    x = 84
+		    y = -48
+			trigger = { tag = TUR has_country_flag = ATA_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+		    x = 69
+		    y = -47
+			trigger = { tag = TUR has_country_flag = AYM_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+		    x = 37
+		    y = -40
+			trigger = { tag = TUR has_country_flag = DSP_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+		    x = 25
+		    y = -47
+			trigger = { tag = TUR has_country_flag = CHP_FOCUS_LOCATION}
+		}
+		
+		offset = {#Y
+		    x = 24
+		    y = -48
+			trigger = { tag = TUR has_country_flag = GENC_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+		    x = 4
+		    y = -45
+			trigger = { tag = TUR has_country_flag = HEPAR_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+		    x = 16
+		    y = -47
+			trigger = { tag = TUR has_country_flag = TSK_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+		    x = 70
+		    y = -47
+			trigger = { tag = TUR has_country_flag = MHP_FOCUS_LOCATION}
+		}
+		
+		offset = {#Y
+		    x = 28
+		    y = -47
+			trigger = { tag = TUR has_country_flag = LDP_FOCUS_LOCATION}
+		}
+		
+		offset = {#Y
+		    x = 64
+		    y = -40
+			trigger = { tag = TUR has_country_flag = TECH_FOCUS_LOCATION}
+		}
+		
+		offset = {#Y
+		    x = 39
+		    y = -55
+			trigger = { tag = TUR has_country_flag = ANARCHY_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+		    x = 26
+		    y = -33
+			trigger = { tag = TUR has_country_flag = MAFIA_FOCUS_LOCATION}
+		}
+
+		offset = {#Y
+		    x = 18
+		    y = -35
+			trigger = { tag = TUR has_country_flag = SAADET_FOCUS_LOCATION}
+		}
+		
+		offset = {#Y
+		    x = 59
+		    y = -47
+			trigger = { tag = TUR has_country_flag = MIT_FOCUS_LOCATION}
+		}
+		
+		offset = {#Y
+		    x = 17
+		    y = -55
+			trigger = { tag = TUR has_country_flag = TKP_FOCUS_LOCATION}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_through_troubles"
+			add_political_power = 125
+		}
+	}
+	#
+	shared_focus = {
+		id = TUR_cypriot_troubles
+		icon = align_to_northern_cyprus
+		cost = 10
+		prerequisite = {
+			focus = TUR_greek_issues
+		}
+		x = -1
+		y = 1
+		relative_position_id = TUR_greek_issues
+		available = {
+			country_exists = NCY
+			country_exists = CYP
+		}
+		ai_will_do = {
+			factor = 7.15
+		}
+		bypass = {
+			has_country_flag = TUR_greece_first
+		}
+		search_filters = { FOCUS_FILTER_DIPLOMACY FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_cypriot_troubles"
+			GRE = {
+				set_country_flag = TUR_turkey_first
+			}
+			country_event = {
+				id = TurkeyFocusEvents.11
+			}
+			GRE = {
+				country_event = {
+					id = TurkeyFocusEvents.10
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_aggressive_approach
+		icon = focus_ROM_secure_greece
+		cost = 10
+		prerequisite = {
+			focus = TUR_cypriot_troubles
+		}
+		mutually_exclusive = {
+			focus = TUR_path_of_compromise
+		}
+		available = {
+			country_exists = NCY
+			country_exists = CYP
+		}
+		x = -2
+		y = 1
+		relative_position_id = TUR_cypriot_troubles
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_aggressive_approach"
+			custom_effect_tooltip = TUR_AGGRESSIVE_CYPRUS_APPROACH_TT
+			set_country_flag = TUR_aggressive_policy
+		}
+
+	}
+	#CANT BE IN NATO AND DO THIS
+	shared_focus = {
+		id = TUR_direct_involvement
+		icon = war_against_greece
+		cost = 10
+		mutually_exclusive = { focus = TUR_indirect_involvement }
+		available = {
+			country_exists = NCY
+			country_exists = CYP
+			OR = {
+				emerging_communist_state_are_in_power = yes
+				emerging_anarchist_communism_are_in_power = yes
+				emerging_autocracy_are_in_power = yes
+				nationalist_right_wing_populists_are_in_power = yes
+				emerging_reactionaries_are_in_power = yes
+				nationalist_military_junta_are_in_power = yes
+				has_country_flag = TUR_rise_of_osman
+				emerging_hardline_shiite_are_in_power = yes
+				salafist_caliphate_are_in_power = yes
+			}
+		}
+		prerequisite = {
+			focus = TUR_aggressive_approach
+		}
+		x = -3
+		y = 2
+		relative_position_id = TUR_cypriot_troubles
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_direct_involvement"
+			clr_country_flag = GRE_TUR_CYP
+			custom_effect_tooltip = TUR_remove_CYP_gui
+		}
+
+	}
+	shared_focus = {
+		id = TUR_demand_british_withdrawal
+		icon = enemy_of_britain2
+		cost = 7.15
+		prerequisite = {
+			focus = TUR_direct_involvement
+		}
+		available = {
+			country_exists = NCY
+			country_exists = CYP
+			OR = {
+				emerging_communist_state_are_in_power = yes
+				emerging_anarchist_communism_are_in_power = yes
+				emerging_autocracy_are_in_power = yes
+				nationalist_right_wing_populists_are_in_power = yes
+				emerging_reactionaries_are_in_power = yes
+				nationalist_military_junta_are_in_power = yes
+				has_country_flag = TUR_rise_of_osman
+				emerging_hardline_shiite_are_in_power = yes
+				salafist_caliphate_are_in_power = yes
+			}
+		}
+		x = -3
+		y = 3
+		relative_position_id = TUR_cypriot_troubles
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_demand_british_withdrawal"
+			ENG = {
+				country_event = {
+					id = TurkeyFocusEvents.14
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_bring_the_north_to_fold
+		icon = Generic_Revanchism
+		cost = 7.15
+		prerequisite = {
+			focus = TUR_demand_british_withdrawal
+		}
+		available = {
+			country_exists = NCY
+			country_exists = CYP
+			OR = {
+				emerging_communist_state_are_in_power = yes
+				emerging_anarchist_communism_are_in_power = yes
+				emerging_autocracy_are_in_power = yes
+				nationalist_right_wing_populists_are_in_power = yes
+				emerging_reactionaries_are_in_power = yes
+				nationalist_military_junta_are_in_power = yes
+				has_country_flag = TUR_rise_of_osman
+				emerging_hardline_shiite_are_in_power = yes
+				salafist_caliphate_are_in_power = yes
+			}
+		}
+		x = -3
+		y = 4
+		relative_position_id = TUR_cypriot_troubles
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_bring_the_north_to_fold"
+			country_event = {
+				id = TurkeyFocusEvents.15
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_history_repeated
+		icon = Generic_Factionalism
+		cost = 7.15
+		prerequisite = {
+			focus = TUR_bring_the_north_to_fold
+		}
+		available = {
+			country_exists = NCY
+			country_exists = CYP
+			OR = {
+				emerging_communist_state_are_in_power = yes
+				emerging_anarchist_communism_are_in_power = yes
+				emerging_autocracy_are_in_power = yes
+				nationalist_right_wing_populists_are_in_power = yes
+				emerging_reactionaries_are_in_power = yes
+				nationalist_military_junta_are_in_power = yes
+				has_country_flag = TUR_rise_of_osman
+				emerging_hardline_shiite_are_in_power = yes
+				salafist_caliphate_are_in_power = yes
+			}
+		}
+		x = -3
+		y = 5
+		relative_position_id = TUR_cypriot_troubles
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		will_lead_to_war_with = CYP
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_history_repeated"
+			create_wargoal = {
+				type = annex_everything
+				target = CYP
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_indirect_involvement
+		icon = flames_of_rebellion
+		cost = 10
+		mutually_exclusive = { focus = TUR_direct_involvement }
+		available = {
+			NOT = {
+				has_war_with = NCY
+			}
+			country_exists = NCY
+			country_exists = CYP
+			OR = {
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_muslim_brotherhood_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+				neutrality_neutral_libertarians_are_in_power = yes
+			}
+		}
+		prerequisite = {
+			focus = TUR_aggressive_approach
+		}
+		x = -1
+		y = 2
+		relative_position_id = TUR_cypriot_troubles
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_DIPLOMACY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_indirect_involvement"
+			set_temp_variable = { percent_change = 4 }
+			set_temp_variable = { tag_index = TUR }
+			set_temp_variable = { influence_target = CYP }
+			change_influence_percentage = yes
+			set_temp_variable = { percent_change = 4 }
+			set_temp_variable = { tag_index = TUR }
+			set_temp_variable = { influence_target = NCY }
+			change_influence_percentage = yes
+		}
+
+	}
+	shared_focus = {
+		id = TUR_provide_military_training
+		icon = Generic_African_Soldier
+		cost = 7.15
+		prerequisite = {
+			focus = TUR_indirect_involvement
+		}
+		available = {
+			NOT = {
+				has_war_with = NCY
+			}
+			country_exists = NCY
+			country_exists = CYP
+			OR = {
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_muslim_brotherhood_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+				neutrality_neutral_libertarians_are_in_power = yes
+			}
+		}
+		x = -1
+		y = 3
+		relative_position_id = TUR_cypriot_troubles
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_DIPLOMACY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_provide_military_training"
+			set_temp_variable = { treasury_change = -7.50 }
+			modify_treasury_effect = yes
+			NCY = {
+				add_command_power = 20
+				army_experience = 30
+				146 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_fund_militias
+		icon = ARM_seize_stockpiles
+		cost = 7.15
+		prerequisite = {
+			focus = TUR_provide_military_training
+		}
+		available = {
+			NOT = {
+				has_war_with = NCY
+			}
+			country_exists = NCY
+			country_exists = CYP
+			OR = {
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_muslim_brotherhood_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+				neutrality_neutral_libertarians_are_in_power = yes
+			}
+		}
+		x = -1
+		y = 4
+		relative_position_id = TUR_cypriot_troubles
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_fund_militias"
+			add_equipment_to_stockpile = {
+				type = infantry_weapons1
+				amount = -800
+				producer = TUR
+			}
+			NCY = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons1
+					amount = 800
+					producer = TUR
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_great_uprising
+		icon = focus_generic_fascist_uprising
+		cost = 10
+		prerequisite = {
+			focus = TUR_fund_militias
+		}
+		available = {
+			NOT = {
+				has_war_with = NCY
+			}
+			country_exists = NCY
+			country_exists = CYP
+			OR = {
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_muslim_brotherhood_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+				neutrality_neutral_libertarians_are_in_power = yes
+			}
+		}
+		x = -1
+		y = 5
+		relative_position_id = TUR_cypriot_troubles
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_DIPLOMACY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_great_uprising"
+			give_guarantee = NCY
+			NCY = {
+				country_event = {
+					id = TurkeyFocusEvents.12
+				}
+			}
+			NCY = {
+				division_template = {
+					name = "Turkish Militias"
+					regiments = {
+						Militia_Bat = { x = 0 y = 0 }
+						Militia_Bat = { x = 0 y = 1 }
+						Militia_Bat = { x = 0 y = 2 }
+						Militia_Bat = { x = 0 y = 3 }
+						Militia_Bat = { x = 1 y = 0 }
+						Militia_Bat = { x = 1 y = 1 }
+						Militia_Bat = { x = 1 y = 2 }
+						Militia_Bat = { x = 1 y = 3 }
+						Militia_Bat = { x = 2 y = 0 }
+						Militia_Bat = { x = 2 y = 1 }
+					}
+					priority = 2
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name =\"Turkish-Cypriot Militia\" division_template = \"Turkish Militias\" start_experience_factor =  1.0"
+						owner = NCY
+						count = 3
+					}
+				}
+			}
+		}
+
+	}
+	#Aegean Dispute
+	shared_focus = {
+		id = TUR_aegan_dispute
+		icon = greek_thing
+		cost = 10
+		prerequisite = {
+			focus = TUR_greek_issues
+		}
+		x = 1
+		y = 1
+		relative_position_id = TUR_greek_issues
+		ai_will_do = {
+			factor = 7.15
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_DIPLOMACY }
+		completion_reward = {
+			add_political_power = 100
+			}
+		}
+
+	shared_focus = {
+		id = TUR_path_of_no_return #CANT BE IN NATO AND DO THIS!
+		icon = Kill_Greece
+		cost = 10
+		prerequisite = {
+			focus = TUR_aegan_dispute
+		}
+		mutually_exclusive = {
+			focus = TUR_path_of_compromise
+		}
+		available = {
+			NOT = {
+				has_idea = NATO_member
+			}
+			OR = {
+				emerging_communist_state_are_in_power = yes
+				emerging_anarchist_communism_are_in_power = yes
+				emerging_autocracy_are_in_power = yes
+				nationalist_right_wing_populists_are_in_power = yes
+				emerging_reactionaries_are_in_power = yes
+				nationalist_military_junta_are_in_power = yes
+				has_country_flag = TUR_rise_of_osman
+				emerging_hardline_shiite_are_in_power = yes
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_path_of_no_return"
+			GRE = {
+				country_event = {
+					id = TurkeyFocusEvents.18
+				}
+			}
+			GRE = {
+				add_opinion_modifier = {
+					target = TUR
+					modifier = declaration_of_hostility
+				}
+			}
+			TUR = {
+				add_opinion_modifier = {
+					target = GRE
+					modifier = declaration_of_hostility
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_fortify_coast
+		icon = coastal_fort
+		cost = 7.15
+		mutually_exclusive = { focus = TUR_crete_rebellion }
+		prerequisite = {
+			focus = TUR_path_of_no_return
+		}
+		available = {
+			GRE = {
+				influence_higher_30 = yes
+			}
+			OR = {
+				emerging_communist_state_are_in_power = yes
+				emerging_anarchist_communism_are_in_power = yes
+				emerging_autocracy_are_in_power = yes
+				nationalist_right_wing_populists_are_in_power = yes
+				emerging_reactionaries_are_in_power = yes
+				nationalist_military_junta_are_in_power = yes
+				has_country_flag = TUR_rise_of_osman
+				emerging_hardline_shiite_are_in_power = yes
+				salafist_caliphate_are_in_power = yes
+			}
+		}
+		x = 3
+		y = 2
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_fortify_coast"
+			GRE = {
+				add_stability = -0.05
+				set_temp_variable = { percent_change = -5 }
+				change_domestic_influence_percentage = yes
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_border_pictures
+		icon = Generic_Redraw_Borders
+		cost = 5.72
+		prerequisite = {
+			focus = TUR_fortify_coast
+		}
+		available = {
+			GRE = {
+				influence_higher_30 = yes
+			}
+			OR = {
+				emerging_communist_state_are_in_power = yes
+				emerging_anarchist_communism_are_in_power = yes
+				emerging_autocracy_are_in_power = yes
+				nationalist_right_wing_populists_are_in_power = yes
+				emerging_reactionaries_are_in_power = yes
+				nationalist_military_junta_are_in_power = yes
+				has_country_flag = TUR_rise_of_osman
+				emerging_hardline_shiite_are_in_power = yes
+				salafist_caliphate_are_in_power = yes
+			}
+		}
+		x = 3
+		y = 3
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_border_pictures"
+			GRE = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.10
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_last_second_upgrades
+		icon = military_fort2
+		cost = 7.15
+		prerequisite = {
+			focus = TUR_border_pictures
+		}
+		available = {
+			GRE = {
+				influence_higher_30 = yes
+			}
+			OR = {
+				emerging_communist_state_are_in_power = yes
+				emerging_anarchist_communism_are_in_power = yes
+				emerging_autocracy_are_in_power = yes
+				nationalist_right_wing_populists_are_in_power = yes
+				emerging_reactionaries_are_in_power = yes
+				nationalist_military_junta_are_in_power = yes
+				has_country_flag = TUR_rise_of_osman
+				emerging_hardline_shiite_are_in_power = yes
+				salafist_caliphate_are_in_power = yes
+			}
+		}
+		x = 3
+		y = 4
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_last_second_upgrades"
+			add_equipment_to_stockpile = {
+				type = infantry_weapons1
+				amount = -100
+				producer = TUR
+			}
+			GRE = {
+				if = {
+					limit = {
+						any_core_state = {
+							arms_factory > 1
+						}
+					}
+					random_core_state = {
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_siege_of_greece
+		icon = war
+		cost = 10
+		prerequisite = {
+			focus = TUR_last_second_upgrades
+		}
+		available = {
+			OR = {
+				emerging_communist_state_are_in_power = yes
+				emerging_anarchist_communism_are_in_power = yes
+				emerging_autocracy_are_in_power = yes
+				nationalist_right_wing_populists_are_in_power = yes
+				emerging_reactionaries_are_in_power = yes
+				nationalist_military_junta_are_in_power = yes
+				has_country_flag = TUR_rise_of_osman
+				emerging_hardline_shiite_are_in_power = yes
+				salafist_caliphate_are_in_power = yes
+			}
+		}
+		x = 3
+		y = 5
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		will_lead_to_war_with = GRE
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_siege_of_greece"
+			create_wargoal = {
+				type = annex_everything
+				target = GRE
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_crete_rebellion
+		icon = focus_GRE_byzantine_themata
+		cost = 5.72
+		mutually_exclusive = { focus = TUR_fortify_coast }
+		prerequisite = {
+			focus = TUR_path_of_no_return
+		}
+		available = {
+			GRE = {
+				influence_higher_30 = yes
+			}
+			OR = {
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_muslim_brotherhood_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+				neutrality_neutral_libertarians_are_in_power = yes
+			}
+		}
+		x = 1
+		y = 2
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_crete_rebellion"
+			144 = { set_demilitarized_zone = yes }
+		}
+
+	}
+	shared_focus = {
+		id = TUR_arm_crete_national_army
+		icon = soldier
+		cost = 7.15
+		prerequisite = {
+			focus = TUR_crete_rebellion
+		}
+		available = {
+			GRE = {
+				influence_higher_30 = yes
+			}
+			OR = {
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_muslim_brotherhood_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+				neutrality_neutral_libertarians_are_in_power = yes
+			}
+		}
+		x = 1
+		y = 3
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_arm_crete_national_army"
+			custom_effect_tooltip = TUR_crete_gets_guns
+			add_manpower = -15000
+			add_equipment_to_stockpile = {
+				type = infantry_weapons1
+				amount = -1000
+				producer = TUR
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -350
+				producer = TUR
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_smuggle_trucks
+		icon = smuggle_truck
+		cost = 5.72
+		prerequisite = {
+			focus = TUR_arm_crete_national_army
+		}
+		available = {
+			GRE = {
+				influence_higher_30 = yes
+			}
+			OR = {
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_muslim_brotherhood_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+				neutrality_neutral_libertarians_are_in_power = yes
+			}
+		}
+		x = 1
+		y = 4
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_smuggle_trucks"
+			custom_effect_tooltip = TUR_crete_gets_guns
+			add_equipment_to_stockpile = {
+				type = util_vehicle_equipment
+				amount = -100
+				producer = TUR
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_let_the_games_begin
+		icon = Generic_Violent_Coup
+		cost = 10
+		prerequisite = {
+			focus = TUR_smuggle_trucks
+		}
+		available = {
+			GRE = {
+				influence_higher_60 = yes
+			}
+			OR = {
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_muslim_brotherhood_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+				neutrality_neutral_libertarians_are_in_power = yes
+			}
+		}
+		x = 1
+		y = 5
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_let_the_games_begin"
+			144 = { set_demilitarized_zone = no }
+			144 = { transfer_state_to = CRE }
+			puppet = CRE
+			CRE = {
+				division_template = {
+					name = "Crete Infantry"
+					regiments = {
+						Militia_Bat = { x = 0 y = 0 }
+						Militia_Bat = { x = 0 y = 1 }
+						Militia_Bat = { x = 0 y = 2 }
+						Militia_Bat = { x = 0 y = 3 }
+						Militia_Bat = { x = 1 y = 0 }
+						Militia_Bat = { x = 1 y = 1 }
+						Militia_Bat = { x = 1 y = 2 }
+						Militia_Bat = { x = 1 y = 3 }
+						Militia_Bat = { x = 2 y = 0 }
+						Militia_Bat = { x = 2 y = 1 }
+					}
+					priority = 2
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name =\"Crete Infantry Unit\" division_template = \"Crete Infantry\" start_experience_factor =  1.0"
+						owner = CRE
+						count = 4
+					}
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_path_of_compromise
+		icon = goal_JAP_peace
+		cost = 10
+		prerequisite = { focus = TUR_aegan_dispute }
+		prerequisite = { focus = TUR_cypriot_troubles }
+		mutually_exclusive = {
+			focus = TUR_aggressive_approach
+		}
+		mutually_exclusive = {
+			focus = TUR_path_of_no_return
+		}
+		x = -1
+		y = 1
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			NOT = {
+				has_war_with = GRE
+			}
+			custom_trigger_tooltip = {
+				tooltip = TUR_no_nationalists_allowed
+				hidden_trigger = {
+					NOT = {
+						OR = {
+							emerging_communist_state_are_in_power = yes
+							emerging_anarchist_communism_are_in_power = yes
+							emerging_autocracy_are_in_power = yes
+							nationalist_right_wing_populists_are_in_power = yes
+							emerging_reactionaries_are_in_power = yes
+							nationalist_military_junta_are_in_power = yes
+							has_country_flag = TUR_rise_of_osman
+							emerging_hardline_shiite_are_in_power = yes
+						}
+					}
+				}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_DIPLOMACY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_path_of_compromise"
+			clr_country_flag = GRE_TUR_CYP
+			custom_effect_tooltip = TUR_remove_CYP_gui
+			GRE = {
+				add_opinion_modifier = {
+					target = TUR
+					modifier = supports_us
+				}
+			}
+			TUR = {
+				add_opinion_modifier = {
+					target = GRE
+					modifier = supports_us
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_withdraw_support_cyprus
+		icon = attack_northern_cyprus
+		cost = 5.72
+		prerequisite = { focus = TUR_path_of_compromise }
+		bypass = {
+			NOT = {
+				OR = {
+					country_exists = NCY
+					country_exists = CYP
+				}
+			}
+		}
+		available = {
+			NOT = {
+				has_war_with = CYP
+			}
+			country_exists = NCY
+			country_exists = CYP
+			custom_trigger_tooltip = {
+				tooltip = TUR_no_nationalists_allowed
+				hidden_trigger = {
+					NOT = {
+						OR = {
+							emerging_communist_state_are_in_power = yes
+							emerging_anarchist_communism_are_in_power = yes
+							emerging_autocracy_are_in_power = yes
+							nationalist_right_wing_populists_are_in_power = yes
+							emerging_reactionaries_are_in_power = yes
+							nationalist_military_junta_are_in_power = yes
+							has_country_flag = TUR_rise_of_osman
+							emerging_hardline_shiite_are_in_power = yes
+						}
+					}
+				}
+			}
+		}
+		x = -1
+		y = 2
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_DIPLOMACY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_withdraw_support_cyprus"
+			set_temp_variable = { percent_change = -4 }
+			set_temp_variable = { tag_index = TUR }
+			set_temp_variable = { influence_target = CYP }
+			change_influence_percentage = yes
+			set_temp_variable = { percent_change = 8 }
+			set_temp_variable = { tag_index = TUR }
+			set_temp_variable = { influence_target = NCY }
+			change_influence_percentage = yes
+		}
+
+	}
+	shared_focus = {
+		id = TUR_support_one_cyprus
+		icon = align_to_cyprus
+		cost = 7.15
+		prerequisite = { focus = TUR_withdraw_support_cyprus }
+		bypass = {
+			NOT = {
+				OR = {
+					country_exists = NCY
+					country_exists = CYP
+				}
+			}
+		}
+		available = {
+			NOT = {
+				has_war_with = CYP
+			}
+			country_exists = NCY
+			country_exists = CYP
+			custom_trigger_tooltip = {
+				tooltip = TUR_no_nationalists_allowed
+				hidden_trigger = {
+					NOT = {
+						OR = {
+							emerging_communist_state_are_in_power = yes
+							emerging_anarchist_communism_are_in_power = yes
+							emerging_autocracy_are_in_power = yes
+							nationalist_right_wing_populists_are_in_power = yes
+							emerging_reactionaries_are_in_power = yes
+							nationalist_military_junta_are_in_power = yes
+							has_country_flag = TUR_rise_of_osman
+							emerging_hardline_shiite_are_in_power = yes
+						}
+					}
+				}
+			}
+		}
+		x = -1
+		y = 3
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_DIPLOMACY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_support_one_cyprus"
+			give_guarantee = CYP
+			CYP = {
+				add_opinion_modifier = {
+					target = TUR
+					modifier = supports_us
+				}
+			}
+			TUR = {
+				add_opinion_modifier = {
+					target = CYP
+					modifier = supports_us
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_peaceful_unification
+		icon = coa
+		cost = 5
+		prerequisite = { focus = TUR_support_one_cyprus }
+		bypass = {
+			NOT = {
+				OR = {
+					country_exists = NCY
+					country_exists = CYP
+				}
+			}
+		}
+		available = {
+			NOT = {
+				has_war_with = GRE
+			}
+			country_exists = NCY
+			country_exists = CYP
+			custom_trigger_tooltip = {
+				tooltip = TUR_no_nationalists_allowed
+				hidden_trigger = {
+					NOT = {
+						OR = {
+							emerging_communist_state_are_in_power = yes
+							emerging_anarchist_communism_are_in_power = yes
+							emerging_autocracy_are_in_power = yes
+							nationalist_right_wing_populists_are_in_power = yes
+							emerging_reactionaries_are_in_power = yes
+							nationalist_military_junta_are_in_power = yes
+							has_country_flag = TUR_rise_of_osman
+							emerging_hardline_shiite_are_in_power = yes
+						}
+					}
+				}
+			}
+		}
+		x = -1
+		y = 4
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_DIPLOMACY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_peaceful_unification"
+			NCY = {
+				country_event = {
+					id = TurkeyFocusEvents.16
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = TUR_acquire_agean
+		icon = BRA_cutting_the_red_tape
+		cost = 10
+		prerequisite = { focus = TUR_peaceful_unification }
+		available = {
+			NOT = {
+				has_war_with = GRE
+			}
+			GRE = { has_opinion = { target = TUR value > 59 } }
+			custom_trigger_tooltip = {
+				tooltip = TUR_no_nationalists_allowed
+				hidden_trigger = {
+					NOT = {
+						OR = {
+							emerging_communist_state_are_in_power = yes
+							emerging_anarchist_communism_are_in_power = yes
+							emerging_autocracy_are_in_power = yes
+							nationalist_right_wing_populists_are_in_power = yes
+							emerging_reactionaries_are_in_power = yes
+							nationalist_military_junta_are_in_power = yes
+							has_country_flag = TUR_rise_of_osman
+							emerging_hardline_shiite_are_in_power = yes
+						}
+					}
+				}
+			}
+		}
+		x = -1
+		y = 5
+		relative_position_id = TUR_aegan_dispute
+		ai_will_do = {
+			factor = 1
+		}		search_filters = { FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_DIPLOMACY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_acquire_agean"
+			GRE = {
+				country_event = {
+					id = TurkeyFocusEvents.17
+				}
+			}
+		}
+
+	}

@@ -1,0 +1,780 @@
+
+################# Turkish Nuclear Program #########
+
+TUR_nuclear_program = {
+
+	TUR_nuclear_program_1 = {
+		icon = GFX_decision_hol_inundate_water_lines
+
+		available = {
+		has_completed_focus = HEPAR_start_the_turkish_nuclear_program
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 765
+		fire_only_once = yes
+		
+		complete_effect = {
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		}
+		remove_effect = {
+		        set_global_flag = TUR_NUCLEAR_PROGRAM_TEST_1
+                160 = {
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				} 
+		}  }
+	}
+
+	TUR_nuclear_program_2 = {
+		icon = GFX_decision_hol_inundate_water_lines
+
+		available = {
+		has_completed_focus = HEPAR_start_the_turkish_nuclear_program
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+
+		cost = 75
+		days_remove = 765
+		fire_only_once = yes
+		
+		complete_effect = {
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		}
+		remove_effect = {
+		        set_global_flag = TUR_NUCLEAR_PROGRAM_TEST_2
+                934 = {
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				} 
+		} }
+	}
+
+
+	TUR_nuclear_program_3 = {
+		icon = GFX_decision_generic_research
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+        has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_2
+        has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 765
+		fire_only_once = yes
+		
+		modifier = {
+			research_speed_factor = 0.05
+			consumer_goods_factor = 0.03
+		}
+		remove_effect = {
+        set_global_flag = TUR_NUCLEAR_PROGRAM_TEST_3
+        custom_effect_tooltip = NUCLEAR_RESEARCH_1
+		} 
+	}
+
+	TUR_nuclear_program_4 = {
+		icon = GFX_decision_generic_research
+
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+        has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_2
+        has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 765
+		fire_only_once = yes
+		
+		modifier = {
+			research_speed_factor = 0.05
+			consumer_goods_factor = 0.03
+		}
+		remove_effect = {
+        set_global_flag = TUR_NUCLEAR_PROGRAM_TEST_4
+        custom_effect_tooltip = NUCLEAR_RESEARCH_2
+		} 
+	}
+
+
+	TUR_nuclear_program_5 = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+        has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_3
+        has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_4
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 600
+		fire_only_once = yes
+		
+		modifier = {
+			research_speed_factor = -0.05
+			consumer_goods_factor = 0.03
+		}
+		remove_effect = {
+        set_global_flag = TUR_NUCLEAR_PROGRAM_TEST_5
+        custom_effect_tooltip = NUCLEAR_RESEARCH_3
+		} 
+	}
+
+	TUR_nuclear_program_6 = {
+		icon = GFX_decision_generic_construction
+
+		available = {
+        
+		} 
+
+		visible = {
+			original_tag = TUR
+		has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_5
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 185
+		fire_only_once = yes
+		
+		complete_effect = {
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		}
+		remove_effect = {
+        set_global_flag = TUR_NUCLEAR_PROGRAM_TEST_6
+        custom_effect_tooltip = NUCLEAR_RESEARCH_4
+		} 
+	}
+
+	#TUR_nuclear_program_7 = { #BONUS
+	#	icon = GFX_decision_generic_nationalism
+	#
+	#	available = {
+    #   has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_6
+	#	} 
+	#
+	#	visible = {
+	#		original_tag = TUR
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 15
+	#	}
+	#
+	#	cost = 75
+	#	days_remove = 75
+	#	fire_only_once = yes
+	#	
+	#	modifier = {
+	#		political_power_cost = -0.1
+	#	}
+	#	remove_effect = {
+    #   add_ideas = nuclear_power
+	#	} 
+	#}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+TUR_f35_program = {
+
+	TUR_send_money_usas = {
+		icon = GFX_decision_eng_trade_unions_demand
+
+		visible = {
+			original_tag = TUR
+		}
+		
+        available = {
+		}
+		
+        cost = 50
+		days_remove = 75	
+		days_re_enable = 35
+
+		ai_will_do = {
+			factor = 15
+		}
+
+      modifier = {
+	research_speed_factor = 0.05
+	  }
+      complete_effect = {
+			set_global_flag = AIDED_USA
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+            USA = {
+			subtract_from_variable = { treasury = -25.0 }
+			custom_effect_tooltip = 25_billion_revenue_tt			
+	  } }
+} 
+
+	TUR_send_money_eng = {
+		icon = GFX_decision_eng_trade_unions_demand
+
+		visible = {
+			original_tag = TUR
+		}
+		
+        available = {
+		}
+		
+        cost = 50
+		days_remove = 75		
+		days_re_enable = 35
+
+		ai_will_do = {
+			factor = 15
+		}
+
+      modifier = {
+	research_speed_factor = 0.05
+	  }
+      complete_effect = {
+			set_global_flag = AIDED_BRITAIN
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+            ENG = {
+			subtract_from_variable = { treasury = -25.0 }
+			custom_effect_tooltip = 25_billion_revenue_tt			
+	  } }
+} 
+
+	TUR_send_money_germany = {
+		icon = GFX_decision_eng_trade_unions_demand
+
+		visible = {
+			original_tag = TUR
+		}
+		
+        available = {
+		}
+		
+        cost = 50
+		days_remove = 75		
+		days_re_enable = 35
+				
+		ai_will_do = {
+			factor = 15
+		}
+
+      modifier = {
+	research_speed_factor = 0.05
+	  }
+      complete_effect = {
+			set_global_flag = AIDED_GERMANY	
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+            GER = {
+			subtract_from_variable = { treasury = -25.0 }
+			custom_effect_tooltip = 25_billion_revenue_tt			
+	  } }
+} 
+
+	TUR_get_f35 = {
+		icon = GFX_decision_generic_merge_plant_aircraft
+
+		visible = {
+			original_tag = TUR
+		}
+		
+        available = {
+			has_global_flag = AIDED_GERMANY
+			has_global_flag = AIDED_BRITAIN
+			has_global_flag = AIDED_USA		
+			OR = {
+			USA = {
+			has_tech = gen_5_medium
+			}
+			USA = {
+			has_tech = MR_Fighter4
+			}
+			GER = {
+			has_tech = gen_5_medium
+			}
+			GER = {
+			has_tech = MR_Fighter4
+			}
+			ENG = {
+			has_tech = gen_5_medium
+			}
+			ENG = {
+			has_tech = MR_Fighter4
+			}
+		} }
+		
+        cost = 125
+		
+		ai_will_do = {
+			factor = 15
+		}
+
+      complete_effect = {
+			remove_ideas = f-35_plan
+    army_experience = 65
+        #set_technology = {
+		#MR_Fighter4 = 1
+		#} 
+        set_technology = {
+		gen_5_medium = 1
+		} 
+	  }
+} 
+
+	TUR_leave_the_project = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		visible = {
+			original_tag = TUR
+		}
+		
+        available = {
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+
+      complete_effect = {
+			add_war_support = 0.03	
+			remove_ideas = f-35_plan
+	  } }
+} 
+
+
+TUR_media_management = {
+
+	TUR_media_left_sigh_I = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		available = {
+			NOT = {
+				has_global_flag = NO_FOR_THE_R_SIGH_1
+				has_global_flag = NO_FOR_THE_N_SIGH_1				
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_idea = media_opinion_towards_bad_3_right_left_neutral_wing_sad
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 50
+		days_remove = 75
+		fire_only_once = no
+		
+		complete_effect = {
+			set_global_flag = NO_FOR_THE_L_SIGH_1		
+		}
+		remove_effect = {
+			clr_global_flag = NO_FOR_THE_L_SIGH_1
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+swap_ideas = { 
+  remove_idea = media_opinion_towards_bad_3_right_left_neutral_wing_sad
+  add_idea = media_opinion_towards_bad_2_neutral_right_wing_sad
+}
+		}  }
+	
+	TUR_media_right_sigh_I = {
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			NOT = {
+				has_global_flag = NO_FOR_THE_L_SIGH_1
+				has_global_flag = NO_FOR_THE_N_SIGH_1				
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_idea = media_opinion_towards_bad_3_right_left_neutral_wing_sad
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 50
+		days_remove = 75
+		fire_only_once = no
+
+		complete_effect = {
+			set_global_flag = NO_FOR_THE_R_SIGH_1		
+		}		
+		remove_effect = {
+			clr_global_flag = NO_FOR_THE_R_SIGH_1
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+swap_ideas = { 
+  remove_idea = media_opinion_towards_bad_3_right_left_neutral_wing_sad
+  add_idea = media_opinion_towards_bad_2_neutral_left_wing_sad
+}
+		}  
+	}
+
+
+	TUR_media_neutral_sigh_I = {
+		icon = GFX_decision_generic_intelligence_operation
+
+		available = {
+			NOT = {
+				has_global_flag = NO_FOR_THE_L_SIGH_1
+				has_global_flag = NO_FOR_THE_R_SIGH_1				
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_idea = media_opinion_towards_bad_3_right_left_neutral_wing_sad
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 50
+		days_remove = 75
+		fire_only_once = no
+		
+		complete_effect = {
+			set_global_flag = NO_FOR_THE_N_SIGH_1		
+		}		
+		remove_effect = {
+			clr_global_flag = NO_FOR_THE_N_SIGH_1
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+swap_ideas = { 
+  remove_idea = media_opinion_towards_bad_3_right_left_neutral_wing_sad
+  add_idea = media_opinion_towards_bad_2_right_left_wing_sad
+}
+		}  
+	}
+
+	TUR_media_left_sigh_II_V = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		available = {
+			NOT = {
+				has_global_flag = NO_FOR_THE_N_SIGH_2
+				has_global_flag = NO_FOR_THE_R_SIGH_2				
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_idea = media_opinion_towards_bad_2_right_left_wing_sad
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 50
+		days_remove = 75
+		fire_only_once = no
+		
+		complete_effect = {
+			set_global_flag = NO_FOR_THE_L_SIGH_2		
+		}		
+		remove_effect = {
+			clr_global_flag = NO_FOR_THE_L_SIGH_2
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+swap_ideas = { 
+  remove_idea = media_opinion_towards_bad_2_right_left_wing_sad
+  add_idea = media_opinion_towards_bad_1_right_wing_sad
+}
+		}  
+	}
+
+
+	TUR_media_left_sigh_II_VI = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		available = {
+			NOT = {
+				has_global_flag = NO_FOR_THE_N_SIGH_2
+				has_global_flag = NO_FOR_THE_R_SIGH_2				
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_idea = media_opinion_towards_bad_2_neutral_left_wing_sad
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 50
+		days_remove = 75
+		fire_only_once = no
+		
+		complete_effect = {
+			set_global_flag = NO_FOR_THE_L_SIGH_2		
+		}		
+		remove_effect = {
+			clr_global_flag = NO_FOR_THE_L_SIGH_2
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+swap_ideas = { 
+  remove_idea = media_opinion_towards_bad_2_neutral_left_wing_sad
+  add_idea = media_opinion_towards_bad_1_neutral_wing_sad
+}
+		}  
+	}
+
+
+	TUR_media_right_sigh_II_V = {
+		icon = GFX_decision_generic_nationalism
+
+
+		available = {
+			NOT = {
+				has_global_flag = NO_FOR_THE_N_SIGH_2
+				has_global_flag = NO_FOR_THE_L_SIGH_2				
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_idea = media_opinion_towards_bad_2_right_left_wing_sad
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 50
+		days_remove = 75
+		fire_only_once = no
+		
+		complete_effect = {
+			set_global_flag = NO_FOR_THE_R_SIGH_2		
+		}		
+		remove_effect = {
+			clr_global_flag = NO_FOR_THE_R_SIGH_2
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+swap_ideas = { 
+  remove_idea = media_opinion_towards_bad_2_right_left_wing_sad
+  add_idea = media_opinion_towards_bad_1_left_wing_sad
+}
+		}  
+	}
+
+
+	TUR_media_right_sigh_II_VI = {
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			NOT = {
+				has_global_flag = NO_FOR_THE_N_SIGH_2
+				has_global_flag = NO_FOR_THE_L_SIGH_2				
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_idea = media_opinion_towards_bad_2_neutral_right_wing_sad
+		} 
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 50
+		days_remove = 75
+		fire_only_once = no
+		
+		complete_effect = {
+			set_global_flag = NO_FOR_THE_R_SIGH_2		
+		}		
+		remove_effect = {
+			clr_global_flag = NO_FOR_THE_R_SIGH_3
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+swap_ideas = { 
+  remove_idea = media_opinion_towards_bad_2_neutral_right_wing_sad
+  add_idea = media_opinion_towards_bad_1_neutral_wing_sad
+}
+		}  
+	}
+
+
+	TUR_media_neutral_sigh_II_V = {
+		icon = GFX_decision_generic_intelligence_operation
+
+		available = {
+			NOT = {
+				has_global_flag = NO_FOR_THE_R_SIGH_2
+				has_global_flag = NO_FOR_THE_L_SIGH_2				
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_idea = media_opinion_towards_bad_2_neutral_right_wing_sad
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 50
+		days_remove = 75
+		fire_only_once = no
+		
+		complete_effect = {
+			set_global_flag = NO_FOR_THE_N_SIGH_2		
+		}		
+		remove_effect = {
+			clr_global_flag = NO_FOR_THE_N_SIGH_2
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+swap_ideas = { 
+  remove_idea = media_opinion_towards_bad_2_neutral_right_wing_sad
+  add_idea = media_opinion_towards_bad_1_right_wing_sad
+}
+		}  
+	}
+
+
+	TUR_media_neutral_sigh_II_VI = {
+		icon = GFX_decision_generic_intelligence_operation
+
+		available = {
+			NOT = {
+				has_global_flag = NO_FOR_THE_R_SIGH_2
+				has_global_flag = NO_FOR_THE_L_SIGH_2				
+			}
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_idea = media_opinion_towards_bad_2_neutral_left_wing_sad
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 50
+		days_remove = 75
+		fire_only_once = no
+		
+		complete_effect = {
+			set_global_flag = NO_FOR_THE_N_SIGH_2	
+		}		
+		remove_effect = {
+			clr_global_flag = NO_FOR_THE_N_SIGH_2
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+swap_ideas = { 
+  remove_idea = media_opinion_towards_bad_2_neutral_left_wing_sad
+  add_idea = media_opinion_towards_bad_1_left_wing_sad
+}
+		}  
+	}
+
+	TUR_media_general_resolution = {
+		icon = GFX_decision_generic_brainwash
+
+		available = {
+		} 
+
+		visible = {
+			original_tag = TUR
+			OR = {
+			has_idea = media_opinion_towards_bad_1_right_wing_sad
+			has_idea = media_opinion_towards_bad_1_left_wing_sad
+			has_idea = media_opinion_towards_bad_1_neutral_wing_sad
+		} }
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 125
+		days_remove = 75
+		fire_only_once = no
+		
+		remove_effect = {
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+        add_ideas = media_opinion_towards_good_happy_everyone
+		hidden_effect = {
+		remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+		remove_ideas = media_opinion_towards_bad_1_right_wing_sad
+		remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+		remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad
+		remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad
+		remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad
+		remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
+		}  
+	} 
+	} } 

@@ -1,0 +1,10 @@
+TUR_startup = {
+	set_variable = { building_resistancy = -35 }
+}
+TUR_building_resistancy = {
+	clamp_variable = {
+		var = building_resistancy
+		min = 0
+		max = 100
+	}
+}

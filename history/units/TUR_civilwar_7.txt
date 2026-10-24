@@ -1,0 +1,352 @@
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		Mech_Inf_Bat = { x = 0 y = 0 }
+		armor_Bat = { x = 0 y = 1 }
+		armor_Bat = { x = 0 y = 2 }
+		SP_Arty_Bat = { x = 0 y = 3 }
+		Mech_Inf_Bat = { x = 0 y = 4 }
+
+		Mech_Inf_Bat = { x = 1 y = 0 }
+		armor_Bat = { x = 1 y = 1 }
+		armor_Bat = { x = 1 y = 2 }
+		SP_Arty_Bat = { x = 1 y = 3 }
+		armor_Bat = { x = 1 y = 4 }
+
+		Mech_Inf_Bat = { x = 2 y = 0 }
+		armor_Bat = { x = 2 y = 1 }
+		armor_Bat = { x = 2 y = 2 }
+		SP_Arty_Bat = { x = 2 y = 3 }
+		armor_Bat = { x = 2 y = 4 }
+
+		Mech_Inf_Bat = { x = 3 y = 0 }
+		armor_Bat = { x = 3 y = 1 }
+		armor_Bat = { x = 3 y = 2 }
+		SP_Arty_Bat = { x = 3 y = 3 }
+		SP_AA_Bat = { x = 3 y = 4 }
+	}
+	support = {
+		Mech_Recce_Comp = { x = 0 y = 0 }
+		SP_Arty_Battery = { x = 0 y = 1 }
+	}
+}
+
+
+division_template = {
+	name = "Turkish Militia"
+
+	regiments = {
+		Militia_Bat = { x = 0 y = 0 }
+		Militia_Bat = { x = 0 y = 1 }
+	}
+
+	support = {
+		L_Recce_Comp = { x = 0 y = 0 }
+		Arty_Battery = { x = 0 y = 1 }
+	}
+
+	priority = 0
+}
+
+division_template = {
+	name = "Airborne Division"
+
+	regiments = {
+		L_Air_Inf_Bat = { x = 0 y = 0 }
+		L_Air_Inf_Bat = { x = 0 y = 1 }
+		L_Air_Inf_Bat = { x = 0 y = 2 }
+
+		L_Air_Inf_Bat = { x = 1 y = 0 }
+		L_Air_Inf_Bat = { x = 1 y = 1 }
+		L_Air_Inf_Bat = { x = 1 y = 2 }
+
+		L_Air_Inf_Bat = { x = 2 y = 0 }
+		L_Air_Inf_Bat = { x = 2 y = 1 }
+		L_Air_Inf_Bat = { x = 2 y = 2 }
+		Arty_Bat = { x = 2 y = 3 }
+	}
+
+	priority = 2
+}
+
+units = {
+
+	division = {
+		name = "United States Defence Group"
+		location = 11829
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "United States Defence Group"
+		location = 11829
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "United States Defence Group"
+		location = 11829
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "United States Defence Group"
+		location = 9833
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "United States Defence Group"
+		location = 9833
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "United States Defence Group"
+		location = 6895
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "United States Defence Group"
+		location = 6895
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Israeli Telecoon Group"
+		location = 849
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "German Division"
+		location = 11842 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "French Division"
+		location = 11842
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Crusader A5"
+		location = 3893
+		division_template = "Airborne Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Crusader A5"
+		location = 3893
+		division_template = "Airborne Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Crusader A5"
+		location = 3893
+		division_template = "Airborne Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Crusader A5"
+		location = 6895
+		division_template = "Airborne Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Turkish Militias"
+		location = 6895
+		division_template = "Turkish Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Turkish Militias"
+		location = 9833
+		division_template = "Turkish Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Turkish Militias"
+		location = 9833
+		division_template = "Turkish Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Turkish Militias"
+		location = 9833
+		division_template = "Turkish Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Turkish Militias"
+		location = 9833
+		division_template = "Turkish Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Turkish Militias"
+		location = 9833
+		division_template = "Turkish Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+}
+
+
+
+
+
+
+instant_effect = {
+
+	add_equipment_to_stockpile = {
+		type = infantry_weapons
+		amount = 12200 #HK33 - majority
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = command_control_equipment2
+		amount = 2200
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_0 #M72 LAW
+		amount = 1540
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = Heavy_Anti_tank_1 #TOW
+		amount = 680
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1
+		amount = 1700
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_0	 #
+		amount = 3000
+		producer = TUR
+	}
+
+	add_equipment_to_stockpile = {
+		type = MBT_1	 #M48
+		#version_name = "M48A5"
+		amount = 2876
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = MBT_1	 #60
+		#version_name = "M60A3"
+		amount = 932
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = MBT_2	 #Leopard 1A1
+		#version_name = "Leopard 1A1"
+		amount = 397
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_2	 #Akrep
+		amount = 200
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_3	 #Cobra
+		amount = 200
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = IFV_2		 #AIFV
+		amount = 650
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = APC_2		 #AAPC
+		amount = 830
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = APC_2		 #M113
+		amount = 2813
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_0		 #M114
+		#version_name = "M114"
+		amount = 517
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = SP_arty_0		 #M108T
+		amount = 26
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = SP_arty_0		 #M110
+		#version_name = "M110"
+		amount = 219
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = SP_arty_1		 #M52T
+		amount = 365
+		producer = TUR
+	}
+
+	add_equipment_to_stockpile = {
+		type = attack_helicopter1 #AH-1
+		amount = 37
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = transport_helicopter1 #UH-1
+		amount = 114
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {
+		type = MR_Fighter1 #F-5
+		amount = 87
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = MR_Fighter3 #F-16C
+		amount = 720
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = AS_Fighter1 #F-4
+		amount = 178
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = transport_plane1 #C-130
+		amount = 13
+		producer = USA
+	}
+}

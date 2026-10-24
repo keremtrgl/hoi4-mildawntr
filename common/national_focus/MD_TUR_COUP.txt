@@ -1,0 +1,1080 @@
+focus_tree = {
+	id = MD_TUR_COUP
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MTU
+		}
+	}
+	default = no
+	focus = {
+		id = TURF_new_regime
+		icon = turkish_flag
+		cost = 10,00
+		x = 13
+		y = 0
+
+    available = {
+	is_puppet = no
+	has_war_with = TUR
+	} 
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+    add_stability = -0.02
+			} 
+	}
+	focus = {
+		id = TURF_reorganize_militias
+		icon = small_arms_west
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_new_regime
+		}
+		x = 13
+		y = 1
+
+		search_filters = {FOCUS_FILTER_MILITARY_LAWS}
+		
+	completion_reward = {
+    remove_ideas = unorganized_militias
+			} 
+	}
+	focus = {
+		id = TURF_russian_military_aid
+		icon = align_to_russia
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_reorganize_militias
+		}
+		x = 11
+		y = 2
+
+    available = {
+	is_puppet = no
+	country_exists = SOV
+	NOT = {
+	has_war_with = SOV
+	 }
+	} 
+
+        bypass = {
+		OR = {
+		has_war_with = SOV
+		NOT = {
+        country_exists = SOV
+        } } }
+		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+    add_ideas = foreign_aid_rus_tur
+		}
+	}
+	focus = {
+		id = TURF_new_ideals
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_reorganize_militias
+		}
+		x = 13
+		y = 2
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
+	completion_reward = {
+    add_political_power = 100
+			} 
+	}
+	focus = {
+		id = TURF_mission_of_ottomans
+		icon = regency
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_new_ideals
+		}
+		mutually_exclusive = {
+			focus = TURF_mission_of_gulen
+		}
+		x = 9
+		y = 3
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+    add_political_power = -75
+			ROOT = {
+				set_temp_variable = { percent_change = -3 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+			} 
+	}
+	focus = {
+		id = TURF_mission_of_gulen
+		icon = USA_american_militias
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_new_ideals
+		}
+		mutually_exclusive = {
+			focus = TURF_mission_of_ottomans
+		}
+		x = 17
+		y = 3
+
+    available = {
+	is_puppet = no
+	country_exists = USA
+	NOT = {
+	has_war_with = USA
+	 }
+	} 
+
+        bypass = {
+		OR = {
+		has_war_with = USA
+		NOT = {
+        country_exists = USA
+        } } }
+		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+			ROOT = {
+				set_temp_variable = { percent_change = 7 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+     USA = {  add_opinion_modifier ={ target = MTU modifier = has_expressed_loyalty } 
+	 }
+     USA = {  add_opinion_modifier ={ target = TUR modifier = declaration_of_hostility } 
+    add_political_power = -75
+	add_stability = -0.03
+			} 
+	}  }
+	focus = {
+		id = TURF_denounce_nato
+		icon = renounce_nato
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_mission_of_gulen
+			focus = TURF_mission_of_ottomans
+		}
+		x = 13
+		y = 4
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+    bypass = {
+	NOT = { 
+	has_idea = NATO_member
+	} }
+	
+	completion_reward = {
+    remove_ideas = NATO_member
+	add_stability = 0.02
+			} 
+	}
+	focus = {
+		id = TURF_denounce_constitution
+		icon = dangerous_laws
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_denounce_nato
+		}
+		x = 13
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+	add_stability = -0.07
+			} 
+	}
+	focus = {
+		id = TURF_chinese_military_aid
+		icon = peoples_republic_of_china
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_reorganize_militias
+		}
+		x = 15
+		y = 2
+
+    available = {
+	is_puppet = no
+	country_exists = CHI
+	NOT = {
+	has_war_with = CHI
+	 }
+	} 
+
+        bypass = {
+		OR = {
+		has_war_with = CHI
+		NOT = {
+        country_exists = CHI
+        } } }
+		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+    add_ideas = foreign_aid_prc_tur
+		}
+	} 
+	focus = {
+		id = TURF_corrupted_army
+		icon = infiltration
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_mission_of_gulen
+		}
+		x = 17
+		y = 4
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+		
+	completion_reward = {
+	swap_ideas = {
+    add_idea = army_of_the_corruption2
+	remove_idea = army_of_the_corruption
+	               } 
+			} 
+	}
+	focus = {
+		id = TURF_seek_help_from_kurds
+		icon = align_to_kurdistan
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_corrupted_army
+		}
+		x = 16
+		y = 5
+
+    available = {
+	is_puppet = no
+	country_exists = KUR
+	} 
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+     add_opinion_modifier ={ target = KUR modifier = diplomatic_support } 
+	 white_peace = KUR
+	add_stability = -0.02
+			} 
+	}  
+	focus = {
+		id = TURF_radicalization
+		icon = islamophobia
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_corrupted_army
+		}
+		x = 18
+		y = 5
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_RADICALIZATION}
+		
+	completion_reward = {
+    add_political_power = 75
+	add_stability = -0.05
+				add_popularity = {
+							ideology = fascism
+							popularity = 0.05
+						}	
+			} 
+	}  
+	focus = {
+		id = TURF_ban_social_rights
+		icon = attack_communism
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_radicalization
+		}
+		prerequisite = {
+			focus = TURF_seek_help_from_kurds
+		}
+		prerequisite = {
+			focus = TURF_denounce_constitution
+		}
+		x = 17
+		y = 6
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+	add_stability = -0.03
+				add_popularity = {
+							ideology = communism
+							popularity = -1.0
+						}	
+			} 
+	} 
+	focus = {
+		id = TURF_radicalized_iran_style_gov
+		icon = islamist_gov2
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_ban_social_rights
+		}
+		x = 17
+		y = 7
+
+		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
+			hidden_effect = { country_event = Turkey_news.16 } 
+	completion_reward = {
+    set_cosmetic_tag = IST
+			} 
+	}
+	focus = {
+		id = TURF_destroy_corruption
+		icon = construction4
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_mission_of_ottomans
+		}
+		x = 9
+		y = 4
+
+		search_filters = {FOCUS_FILTER_CORRUPTION}
+		
+	completion_reward = {
+	remove_ideas = army_of_the_corruption
+	swap_ideas = {
+    add_idea = rampant_corruption
+	remove_idea = paralyzing_corruption
+	               } 
+			} 
+	}
+	focus = {
+		id = TURF_organize_islamist_militaries
+		icon = islam
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_destroy_corruption
+		}
+		x = 8
+		y = 5
+
+		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
+		
+	completion_reward = {
+    add_ideas = islamist_militias
+			} 
+	}
+	focus = {
+		id = TURF_declaration_of_the_caliphate
+		icon = islamist_gov
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_organize_islamist_militaries
+		}
+		prerequisite = {
+			focus = TURF_denounce_constitution
+		}
+		prerequisite = {
+			focus = TURF_tradition_power
+		}
+		x = 9
+		y = 6
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
+		
+	completion_reward = {
+	swap_ideas = {
+    add_idea = power_of_the_caliph
+	remove_idea = sunni
+	               } 
+			} 
+	}
+	focus = {
+		id = TURF_tradition_power
+		icon = conservative
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_destroy_corruption
+		}
+		x = 10
+		y = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+add_10_nationalist_monarchists = yes
+    add_ideas = power_of_the_tradition
+			} 
+	}
+	focus = {
+		id = TURF_proclaim_the_new_ottomans
+		icon = irredentism
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_declaration_of_the_caliphate
+		}
+		x = 9
+		y = 7
+
+		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
+
+available = { nationalist_monarchists_are_in_power = yes }
+
+	completion_reward = {
+    set_cosmetic_tag = OTT
+
+			hidden_effect = { country_event = Turkey_news.15 } 
+hidden_effect = {
+	start_politics_input = yes
+	startup_politics = yes
+
+	add_to_array = { ruling_party = 23 }
+	
+		hidden_effect = {
+			clear_array = gov_coalition_array
+			clear_array = ruling_party
+			add_to_array = { ruling_party = max_index_1 }
+		}
+
+		meta_effect = {
+			text = {
+				set_country_flag = [META_SET_PARTY1]
+			}
+			META_SET_PARTY1 = "[meta_set_ideology1]"
+		}
+
+		set_leader = yes #set in desicion which party is selected
+		update_government_coalition_strength = yes
+		clear_coalition_count_ideas = yes
+
+			hidden_effect = {
+				add_to_variable = { party_pop_array^23 = 1.0 }
+				recalculate_party = yes
+			}
+			
+                set_politics = {
+                ruling_party = nationalist
+                elections_allowed = no
+            }						
+	    }				 } }
+	focus = {
+		id = TURF_winner_of_the_war
+		icon = align_to_turkey
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_radicalized_iran_style_gov
+			focus = TURF_proclaim_the_new_ottomans
+		}
+		x = 13
+		y = 8
+
+    available = {
+	is_puppet = no
+	NOT = {
+	country_exists = KTU
+	country_exists = TUR
+	 }
+	} 
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+	completion_reward = {
+	add_stability = 0.07
+			hidden_effect = { country_event = Turkey_news.12 } 
+			} 
+	} 
+	focus = {
+		id = TURF_for_unification_of_islam
+		icon = jihad
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_winner_of_the_war
+		}
+		x = 13
+		y = 9
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
+		
+	completion_reward = {
+	add_political_power = 100
+			} 
+	} 
+	focus = {
+		id = TURF_invade_1
+		icon = attack_armenia
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_for_unification_of_islam
+		}
+		x = 11
+		y = 10
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = ARM
+		}
+			} 
+	} 
+	focus = {
+		id = TURF_invade_2
+		icon = jihad_in_the_levant
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_for_unification_of_islam
+		}
+		x = 13
+		y = 10
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = ROJ
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = KUR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = IRQ
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SYR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ISI
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = NUS
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FSA
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = LEB
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = HEZ
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = JOR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ISR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = PAL
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = HAM
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = KUW
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = CYP
+		}
+			} 
+	} 
+	focus = {
+		id = TURF_invade_3
+		icon = attack_georgia
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_for_unification_of_islam
+		}
+		x = 15
+		y = 10
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = GEO
+		}
+			} 
+	} 
+	focus = {
+		id = TURF_invade_4
+		icon = jihad_in_the_maghreb
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_invade_2
+		}
+		prerequisite = {
+			focus = TURF_invade_1
+		}
+		x = 12
+		y = 11
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = EGY
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = HOR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = GNA
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ALG
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = TUA
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = GNC
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = TUN
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = MOR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SHA
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = MAU
+		}
+			} 
+	} 
+	focus = {
+		id = TURF_invade_5
+		icon = jihad_in_arabia
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_invade_3
+		}
+		prerequisite = {
+			focus = TURF_invade_2
+		}
+		x = 14
+		y = 11
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = SAU
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = HOU
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = YEM
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = AQY
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = OMA
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = UAE
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = QAT
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = BHR
+		}
+			} 
+	} 
+	focus = {
+		id = TURF_invade_6
+		icon = attack_iran
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_invade_4
+		}
+		x = 11
+		y = 12
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = PER
+		}
+			} 
+	} 
+	focus = {
+		id = TURF_invade_7
+		icon = attack_azerbaijan
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_invade_5
+		}
+		x = 15
+		y = 12
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = AZE
+		}
+			} 
+	} 
+	focus = {
+		id = TURF_new_ideals_of_the_state
+		icon = internationalism
+		cost = 10,00
+		prerequisite = {
+			focus = TURF_invade_7
+		}
+		prerequisite = {
+			focus = TURF_invade_6
+		}
+		x = 13
+		y = 13
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+    add_ideas = internationalism
+		}
+	} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = TUR_covid-19_pandemic6
+		icon = generic_healthcare
+		cost = 10,00
+		x = 26
+		y = 0
+
+        available = {
+        has_idea = covid_19
+        }
+	
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+		completion_reward = {
+        add_political_power = 75
+		block_health_decrease = yes
+		} }
+	focus = {
+		id = TUR_covid-19_preparations6
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_pandemic6
+		}
+		x = 26
+		y = 1
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19
+  add_idea = covid_19_prepared
+}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TUR_build_up_hospitals6
+		icon = generic_hospital2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations6
+		}
+		x = 24
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}			
+	completion_reward = {
+			subtract_from_variable = { treasury = 20.0 }
+			add_stability = 0.03
+			custom_effect_tooltip = 20_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_turn_airports_to_hospital6
+		icon = generic_hospital
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_build_up_hospitals6
+		}
+		x = 24
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+			subtract_from_variable = { treasury = 5.0 }
+			add_stability = 0.02
+			custom_effect_tooltip = 5_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_start_up_vaccine_program13
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations6
+		}
+		x = 26
+		y = 2
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		
+		
+	completion_reward = {
+	        add_stability = -0.05
+			add_political_power = -75
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			custom_effect_tooltip = COV_DECISION_OPENING_VAC
+			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
+			} 
+	}
+	focus = {
+		id = TUR_buy_german_vaccines13
+		icon = trade_with_germany
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_start_up_vaccine_program13
+		}
+		x = 26
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_increase_funds_to_science6
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations6
+		}
+		x = 28
+		y = 2
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = health_04
+  add_idea = health_05
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_medicines6
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_funds_to_science6
+		}
+		prerequisite = {
+			focus = TUR_increase_funds_to_science6
+		}
+		x = 28
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_prepared
+  add_idea = covid_19_medicined
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_chinese_vaccines6
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turn_airports_to_hospital6
+		}
+		prerequisite = {
+			focus = TUR_buy_german_vaccines13
+		}
+		prerequisite = {
+			focus = TUR_buy_medicines6
+		}
+		x = 26
+		y = 4
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_normalisation_from_covid6
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_buy_chinese_vaccines6
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
+		} }
+		x = 26
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_medicined
+  add_idea = covid_19_normalised
+} 
+	custom_effect_tooltip = COV_AVAILABLE_1
+}
+	}
+	focus = {
+		id = TUR_end_of_covid6
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_normalisation_from_covid6
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
+		} }
+		x = 26
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+remove_ideas = covid_19_normalised
+	custom_effect_tooltip = COV_AVAILABLE_2
+}
+	} }

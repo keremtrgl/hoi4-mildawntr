@@ -1,0 +1,66 @@
+
+# Turkish Kemalists Turn Hostile
+TUR_kemalist_turn_hostile_effect = {
+	custom_effect_tooltip = TUR_kemalist_turn_hostile_effect_tt
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				has_dynamic_modifier = { modifier = kemalist_loyalties }
+			}
+			remove_dynamic_modifier = { modifier = kemalist_loyalties }
+			add_dynamic_modifier = { modifier = kemalist_schemers }
+		}
+		#TUR_kemalist_officer_power_check_effect = yes
+		TUR_kemalist_loyalty_and_power_update_effect = yes
+	}
+}
+
+# Turkish Kemalists Realise You Aren't So Bad
+TUR_kemalist_turn_ally_effect = {
+	custom_effect_tooltip = TUR_kemalist_turn_ally_effect_tt
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				has_dynamic_modifier = { modifier = kemalist_schemers }
+			}
+			remove_dynamic_modifier = { modifier = kemalist_schemers }
+			add_dynamic_modifier = { modifier = kemalist_loyalties }
+		}
+		#TUR_kemalist_officer_power_check_effect = yes
+		TUR_kemalist_loyalty_and_power_update_effect = yes
+	}
+}
+
+
+# Turkish Kemalists Realise You Aren't So Bad
+TUR_traditionalists_turn_ally_effect = {
+	custom_effect_tooltip = TUR_traditionalists_turn_ally_effect_tt
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				has_dynamic_modifier = { modifier = islamist_opposition }
+			}
+			remove_dynamic_modifier = { modifier = islamist_opposition }
+			add_dynamic_modifier = { modifier = devout_islamists }
+		}
+		#TUR_kemalist_officer_power_check_effect = yes
+		TUR_kemalist_loyalty_and_power_update_effect = yes
+	}
+}
+
+
+# Turkish Kemalists Realise You Aren't So Bad
+TUR_traditionalists_turn_enemy_effect = {
+	custom_effect_tooltip = TUR_traditionalists_turn_enemy_effect_tt
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				has_dynamic_modifier = { modifier = devout_islamists }
+			}
+			remove_dynamic_modifier = { modifier = devout_islamists }
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		#TUR_kemalist_officer_power_check_effect = yes
+		TUR_kemalist_loyalty_and_power_update_effect = yes
+	}
+}

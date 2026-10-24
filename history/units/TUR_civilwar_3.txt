@@ -1,0 +1,92 @@
+division_template = {
+	name = "Kurdish Regiment"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 0 y = 3 }
+		Arty_Bat = { x = 0 y = 4 }
+		L_Inf_Bat = { x = 1 y = 0 }
+		L_Inf_Bat = { x = 1 y = 1 }
+		L_Inf_Bat = { x = 1 y = 2 }
+		L_Inf_Bat = { x = 01 y = 3 }
+		Arty_Bat = { x = 1 y = 4 }
+		L_Inf_Bat = { x = 2 y = 0 }
+		L_Inf_Bat = { x = 2 y = 1 }
+		L_Inf_Bat = { x = 2 y = 2 }
+		L_Inf_Bat = { x = 2 y = 3 }
+		Arty_Bat = { x = 2 y = 4 }
+		L_Engi_Bat = { x = 2 y = 4 }
+	}
+
+}
+
+units = {
+
+	division = {
+		name = "Independence Fighters"
+		location = 12387
+		division_template = "Kurdish Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Independence Fighters"
+		location = 12416
+		division_template = "Kurdish Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Independence Fighters"
+		location = 11759
+		division_template = "Kurdish Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Independence Fighters"
+		location = 11880
+		division_template = "Kurdish Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Independence Fighters"
+		location = 10497
+		division_template = "Kurdish Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Independence Fighters"
+		location = 657
+		division_template = "Kurdish Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Independence Fighters"
+		location = 864
+		division_template = "Kurdish Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Independence Fighters"
+		location = 864
+		division_template = "Kurdish Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+}
+
+instant_effect = {
+
+	add_equipment_to_stockpile = {
+		type = infantry_weapons
+		amount = 12200 #HK33 - majority
+		producer = TUR
+	}
+}

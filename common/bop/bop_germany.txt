@@ -1,0 +1,135 @@
+
+TRGX_power_balance = {
+	initial_value = 0
+	left_side = TRGX_default_left_side
+	right_side = TRGX_default_right_side
+	decision_category = TRGX_balance_of_power_category
+	range = {
+		id = TRGX_mid_range
+		min = -0.1
+		max = 0.1
+		modifier = {
+			political_power_cost = 0.2
+			command_power_gain_mult = 0.1
+		}
+	}
+	side = {
+		id = TRGX_default_left_side
+		icon = GFX_bop_GER_ss
+		range = {
+			id = TRGX_left_side_range
+			min = -0.5
+			max = -0.1
+			modifier = {
+				experience_gain_army_factor = -0.1
+				experience_gain_navy_factor = -0.1
+				experience_gain_air_factor = -0.1
+				compliance_growth = 0.05
+				resistance_decay = 0.05
+				unit_upkeep_attrition_factor = -0.05
+				conscription_factor = -0.05
+				intelligence_agency_defense = 0.25
+			}
+		}
+		range = {
+			id = TRGX_middle_left_side_range
+			min = -0.8
+			max = -0.5
+			modifier = {
+				experience_gain_army_factor = -0.05
+				experience_gain_navy_factor = -0.05
+				experience_gain_air_factor = -0.05
+				compliance_growth = 0.07
+				resistance_decay = 0.07
+				unit_upkeep_attrition_factor = -0.08
+				conscription_factor = -0.1
+				intelligence_agency_defense = 0.50
+			}
+		}
+		range = {
+			id = TRGX_far_left_side_range
+			min = -0.99
+			max = -0.8
+			modifier = {
+				experience_gain_army_factor = -0.02
+				experience_gain_navy_factor = -0.02
+				experience_gain_air_factor = -0.02
+				compliance_growth = 0.07
+				resistance_decay = 0.07
+				unit_upkeep_attrition_factor = -0.1
+				conscription_factor = -0.15
+				intelligence_agency_defense = 0.75
+			}	
+		}
+		range = {
+			id = TRGX_coup_left_side_range
+			min = -1
+			max = -0.99
+			on_activate = {
+				remove_power_balance = {
+					id = TRGX_power_balance
+				}
+				set_global_flag = GULEN_GONE_YE
+			}
+		}
+	}
+
+	side = {
+		id = TRGX_default_right_side
+		icon = GFX_bop_GER_bal
+		range = {
+			id = TRGX_right_side_range
+			min = 0.1
+			max = 0.5
+			modifier = {
+				experience_gain_army_factor = -0.1
+				experience_gain_navy_factor = -0.1
+				experience_gain_air_factor = -0.1
+				resistance_damage_to_garrison = 0.05
+				foreign_subversive_activites = 0.05
+				resistance_growth = 0.05
+			}
+		}
+		range = {
+			id = TRGX_middle_right_side_range
+			min = 0.5
+			max = 0.8
+			modifier = {
+				experience_gain_army_factor = -0.15
+				experience_gain_navy_factor = -0.15
+				experience_gain_air_factor = -0.15
+				resistance_damage_to_garrison = 0.08
+				foreign_subversive_activites = 0.08
+				resistance_growth = 0.08
+			}
+		}
+		range = {
+			id = TRGX_far_right_side_range
+			min = 0.8
+			max = 0.99
+			modifier = {					
+				experience_gain_army_factor = -0.2
+				experience_gain_navy_factor = -0.2
+				experience_gain_air_factor = -0.2
+				resistance_damage_to_garrison = 0.1
+				foreign_subversive_activites = 0.1
+				resistance_growth = 0.1
+			}
+		}
+		range = {
+			id = TRGX_coup_right_side_range
+			min = 0.99
+			max = 1
+			on_activate = {
+				country_event = {
+							id = TurkeyC.6
+						}
+				remove_power_balance = {
+					id = TRGX_power_balance
+				}
+			}
+		}
+	}
+	
+}
+

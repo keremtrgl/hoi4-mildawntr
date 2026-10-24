@@ -1,0 +1,119 @@
+
+TUR_presidential_elections = { 
+	
+	boost_the_first_party = {
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		fire_only_once = no
+
+		available = {
+		}
+
+		visible = {
+			original_tag = TUR
+		}
+
+		cost = 15
+		days_remove = 1
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+		}
+
+		remove_effect = {
+    	subtract_from_variable = { TUR_the_first_party = -1 }
+    	subtract_from_variable = { TUR_the_second_party = 1 }
+        custom_effect_tooltip = FIRST_PARTY_GAINS_POP
+        custom_effect_tooltip = SECOND_PARTY_LOSES_POP
+	    } }
+
+
+	boost_the_second_party = {
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		fire_only_once = no
+
+		available = {
+		}
+
+		visible = {
+			original_tag = TUR
+		}
+
+		cost = 15
+		days_remove = 1
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+		}
+
+		remove_effect = {
+    	subtract_from_variable = { TUR_the_first_party = 1 }
+    	subtract_from_variable = { TUR_the_second_party = -1 }
+        custom_effect_tooltip = FIRST_PARTY_LOSES_POP
+        custom_effect_tooltip = SECOND_PARTY_GAINS_POP
+	    } }
+
+
+    first_party_gains_votes = {    
+          icon = GFX_decision_generic_operation
+          allowed = { tag = TUR }                 
+          available = {   
+        has_global_flag = Inevitable              
+          }
+          activation = {   
+                  NOT = {
+        has_global_flag = END_THE_ELECTION_PR
+            } 
+         }
+          is_good = no        
+		fire_only_once = no	  
+          selectable_mission = yes                
+          days_mission_timeout = 3            
+          timeout_effect = {  
+      random_list = {
+        50 = {
+    	subtract_from_variable = { TUR_the_first_party = 2 }
+    	subtract_from_variable = { TUR_the_second_party = -2 }
+        custom_effect_tooltip = FIRST_PARTY_LOSES_POP_2
+        custom_effect_tooltip = SECOND_PARTY_GAINS_POP_2
+        }
+        50 = {
+    	subtract_from_variable = { TUR_the_first_party = -2 }
+    	subtract_from_variable = { TUR_the_second_party = 2 }
+        custom_effect_tooltip = FIRST_PARTY_GAINS_POP_2
+        custom_effect_tooltip = SECOND_PARTY_LOSES_POP_2
+          }
+      } }
+     }
+
+
+    end_of_the_election = {    
+          icon = GFX_decision_eng_trade_unions_demand
+          allowed = { tag = TUR }                 
+          available = {   
+        has_global_flag = Inevitable              
+          }
+          activation = {    
+            NOT = {
+        has_global_flag = END_THE_ELECTION_PR
+            }
+         }
+          is_good = no        
+		fire_only_once = no	  
+          selectable_mission = yes                
+          days_mission_timeout = 75            
+          timeout_effect = {  
+          set_global_flag = END_THE_ELECTION_PR
+          set_global_flag = ELECTION_RESULTS
+          custom_effect_tooltip = END_OF_THE_ELECTION_PRESIDENTIAL
+          }
+     }

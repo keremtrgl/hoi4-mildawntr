@@ -1,0 +1,127 @@
+scripted_gui = {
+	tur_ideological_gui = {
+		context_type = decision_category
+		window_name = "ideological_division_ui_window"
+		dirty = global.num_days
+
+		triggers = {
+			GFX_middle_eastern_anatolia_red_visible = { NOT = { 1032 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_middle_eastern_anatolia_green_visible = { 1032 = { has_state_flag = TUR_dometican_sway } }
+			GFX_middle_eastern_anatolia_yellow_visible = { 1032 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } }
+
+			GFX_van_region_red_visible = { NOT = { 935 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_van_region_green_visible = { 935 = { has_state_flag = TUR_dometican_sway } }
+			GFX_van_region_yellow_visible = { 935 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } } 
+
+			GFX_kurdish_region_red_visible = { NOT = { 162 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_kurdish_region_green_visible = { 162 = { has_state_flag = TUR_dometican_sway } }
+			GFX_kurdish_region_yellow_visible = { 162 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } } 
+
+			GFX_aegean_region_red_visible = { NOT = { 156 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_aegean_region_green_visible = { 156 = { has_state_flag = TUR_dometican_sway } }
+			GFX_aegean_region_yellow_visible = { 156 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } } 
+
+			GFX_western_anatolia_red_visible = { NOT = { 978 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_western_anatolia_green_visible = { 978 = { has_state_flag = TUR_dometican_sway } }
+			GFX_western_anatolia_yellow_visible = { 978 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } } 
+
+			GFX_middle_anatolia_red_visible = { NOT = { 159 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_middle_anatolia_green_visible = { 159 = { has_state_flag = TUR_dometican_sway } }
+			GFX_middle_anatolia_yellow_visible = { 159 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } }
+
+			GFX_bursa_region_red_visible = { NOT = { 155 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_bursa_region_green_visible = { 155 = { has_state_flag = TUR_dometican_sway } }
+	        GFX_bursa_region_yellow_visible = { 155 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } }
+
+			GFX_the_blacksea_red_visible = { NOT = { 160 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_the_blacksea_green_visible = { 160 = { has_state_flag = TUR_dometican_sway } }
+		    GFX_the_blacksea_yellow_visible = { 160 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } }
+
+			GFX_edirne_region_red_visible = { NOT = { 934 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_edirne_region_green_visible = { 934 = { has_state_flag = TUR_dometican_sway } }
+			GFX_edirne_region_yellow_visible = { 934 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } }
+
+			GFX_northern_hatay_red_visible = { NOT = { 992 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_northern_hatay_green_visible = { 992 = { has_state_flag = TUR_dometican_sway } }
+			GFX_northern_hatay_yellow_visible = { 992 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } }
+
+			GFX_eastern_med_red_visible = { NOT = { 161 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_eastern_med_green_visible = { 161 = { has_state_flag = TUR_dometican_sway } }
+			GFX_eastern_med_yellow_visible = { 161 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } }
+
+			GFX_eastern_blacksea_red_visible = { NOT = { 163 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_eastern_blacksea_green_visible = { 163 = { has_state_flag = TUR_dometican_sway } }
+			GFX_eastern_blacksea_yellow_visible = { 163 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } }
+
+		    GFX_hatay_red_visible = { NOT = { 158 = { has_state_flag = TUR_dometican_sway } } }
+			GFX_hatay_green_visible = { 158 = { has_state_flag = TUR_dometican_sway } }
+			GFX_hatay_yellow_visible = { 158 = { has_state_flag = TUR_yellow_state has_state_flag = TUR_dometican_sway } }
+		}
+	}
+}
+scripted_gui = {
+	turkey_municipiality_gui = {
+		context_type = decision_category
+		window_name = "municipality_decision_ui_window"
+		dirty = global.num_days
+
+		triggers = {
+			GFX_mn_aegean_region_red_visible = { NOT = { 156 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_aegean_region_green_visible = { 156 = { has_state_flag = TUR_mun_take_over } }
+
+			GFX_mn_bursa_region_red_visible = { NOT = { 155 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_bursa_region_green_visible = { 155 = { has_state_flag = TUR_mun_take_over } }
+
+			GFX_mn_eastern_blacksea_red_visible = { NOT = { 163 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_eastern_blacksea_green_visible = { 163 = { has_state_flag = TUR_mun_take_over } }
+
+			GFX_mn_eastern_med_red_visible = { NOT = { 161 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_eastern_med_green_visible = { 161 = { has_state_flag = TUR_mun_take_over } }
+
+			GFX_mn_edirne_region_red_visible = { NOT = { 934 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_edirne_region_green_visible = { 934 = { has_state_flag = TUR_mun_take_over } }
+
+			GFX_mn_kurdish_region_red_visible = { NOT = { 162 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_kurdish_region_green_visible = { 162 = { has_state_flag = TUR_mun_take_over } }
+
+			GFX_mn_middle_anatolia_red_visible = { NOT = { 159 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_middle_anatolia_green_visible = { 159 = { has_state_flag = TUR_mun_take_over } }
+
+			GFX_mn_middle_eastern_anatolia_red_visible = { NOT = { 1032 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_middle_eastern_anatolia_green_visible = { 1032 = { has_state_flag = TUR_mun_take_over } }
+
+			GFX_mn_northern_hatay_red_visible = { NOT = { 992 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_northern_hatay_green_visible = { 992 = { has_state_flag = TUR_mun_take_over } }
+
+			GFX_mn_the_blacksea_red_visible = { NOT = { 160 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_the_blacksea_green_visible = { 160 = { has_state_flag = TUR_mun_take_over } }
+
+			GFX_mn_van_region_red_visible = { NOT = { 935 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_van_region_green_visible = { 935 = { has_state_flag = TUR_mun_take_over } }
+			
+			GFX_mn_western_anatolia_red_visible = { NOT = { 978 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_western_anatolia_green_visible = { 978 = { has_state_flag = TUR_mun_take_over } }
+
+			GFX_mn_hatay_red_visible = { NOT = { 158 = { has_state_flag = TUR_mun_take_over } } }
+			GFX_mn_hatay_green_visible = { 158 = { has_state_flag = TUR_mun_take_over } }
+		}
+	}
+}
+scripted_gui = {
+	presidential_elections_gui = {
+		context_type = decision_category
+		window_name = "presidential_decision_ui_window"
+		dirty = global.num_days
+
+		triggers = {
+			GFX_recep_tayyip_erdogan_visible = { has_global_flag = RTE_make_visible }
+			GFX_ahmet_necdet_sezer_visible = { has_global_flag = NECDET_make_visible }
+			GFX_ekmeleddin_ihsanoglu_visible = { has_global_flag = EKMELEDDIN_make_visible }
+		    GFX_sabahattin_cakmakoglu_visible = { has_global_flag = SABAHATTIN_make_visible }
+			GFX_abdullah_gul_visible = { has_global_flag = ABDULLAH_GUL_make_visible }
+			GFX_nevzat_yalcintas_visible = { has_global_flag = NEVZAT_make_visible }
+		}
+	}
+}
+
+

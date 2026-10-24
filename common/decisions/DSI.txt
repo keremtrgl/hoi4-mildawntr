@@ -1,0 +1,580 @@
+
+############### DSI ######################
+
+functions_of_DSI = {
+	
+	ermenek_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 1032
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2002.1.1
+		}
+
+		days_remove = 2555
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			1032 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 9812
+					}
+				}
+			}
+		}
+	}
+	
+	koprubasi_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 160
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2002.1.1
+		}
+
+		days_remove = 365
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			160 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 3905
+					}
+				}
+			}
+		}
+	}
+
+	kargi_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 159
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		days_remove = 3285
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			159 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11784
+					}
+				}
+			}
+		}
+	}
+
+	yamula_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 159
+		} 
+
+		visible = {
+			original_tag = TUR
+		}
+
+		days_remove = 1825
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			159 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 921
+					}
+				}
+			}
+		}
+	}
+
+
+	yasmakli_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 159
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2007.1.1
+		}
+
+		days_remove = 1825
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			160 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11894
+					}
+				}
+			}
+		}
+	}
+
+	kavsakkaya_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 159
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2005.1.1
+		}
+
+		days_remove = 730
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			159 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 6925
+					}
+				}
+			}
+		}
+	}
+
+	gokcebel_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 160
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2008.1.1
+		}
+
+		days_remove = 1825
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			160 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11894
+					}
+				}
+			}
+		}
+	}
+
+
+	cakmak_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 160
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2007.1.1
+		}
+
+		days_remove = 1460
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			160 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11881
+					}
+				}
+			}
+		}
+	}
+
+
+	boyabat_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 160
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2008.1.1
+		}
+
+		days_remove = 1460
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			160 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 6995
+					}
+				}
+			}
+		}
+	}
+
+	aladerecam_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 160
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2008.1.1
+		}
+
+		days_remove = 1825
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			160 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11894
+					}
+				}
+			}
+		}
+	}
+
+
+	yedikapi_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 157
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2012.1.1
+		}
+
+		days_remove = 1095
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			157 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 3983
+					}
+				}
+			}
+		}
+	}
+
+
+	kutahya_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 155
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2010.1.1
+		}
+
+		days_remove = 1095
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			155 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11831
+					}
+				}
+			}
+		}
+	}
+
+	guvendik_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 156
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2013.1.1
+		}
+
+		days_remove = 1460
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			156 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 7130
+					}
+				}
+			}
+		}
+	}
+
+
+	19_may_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 160
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2014.1.1
+		}
+
+		days_remove = 1095
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			160 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11881
+					}
+				}
+			}
+		}
+	}
+
+
+	yusufeli_dam = {
+		icon = GFX_decision_compass
+
+		fire_only_once = no
+
+		available = {
+		controls_state = 160
+		} 
+
+		visible = {
+			original_tag = TUR
+			date > 2013.1.1
+		}
+
+		days_remove = 3285
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 15
+		}
+
+        modifier = {
+		consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			160 = {	
+				add_building_construction = {
+					type = dam
+					level = 2
+					instant_build = yes
+					province = {
+						id = 11753
+					}
+				}
+			}
+		}
+	}
+} 

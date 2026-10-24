@@ -1,0 +1,7594 @@
+focus_tree = {
+	id = MD_TUR_TECH
+	default = no
+
+	focus = {
+		id = TECH_the_order
+		icon = focus_generic_improve_the_administration
+		cost = 10,00
+		x = 19
+		y = 0
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+	add_political_power = 100
+ }
+}
+	focus = {
+		id = TECH_the_future
+		icon = legislative_palace
+		cost = 2.9
+		mutually_exclusive = {
+			focus = TECH_the_past
+		}
+		x = 45
+		y = 0
+
+available = {
+has_completed_focus = TECH_launch_the_new_government
+}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+	completion_reward = {
+	add_stability = 0.02
+    country_event = TurkeyF.222
+	custom_effect_tooltip = THE_FUTURE_PLAN
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.02 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TECH_INCREASE_5
+ }
+}
+	focus = {
+		id = TECH_the_past
+		icon = Generic_Pyramid
+		cost = 2.9
+		mutually_exclusive = {
+			focus = TECH_the_future
+		}
+		x = 47
+		y = 0
+
+available = {
+has_completed_focus = TECH_launch_the_new_government
+}
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+	add_stability = 0.02
+    country_event = TurkeyF.223
+	custom_effect_tooltip = THE_PAST_PLAN
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.02 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TECH_INCREASE_5
+			 }
+}
+	focus = {
+		id = TECH_education_reforms
+		icon = goal_JAP_education_rebuilding
+		cost = 10,00
+		x = 19
+		y = 13
+
+available = {
+has_completed_focus = TECH_launch_the_new_government
+}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+	completion_reward = {
+	add_political_power = 100
+ }
+}
+	focus = {
+		id = TECH_modern_economics
+		icon = cash_grap
+		cost = 10,00
+		x = 40
+		y = 6
+
+available = {
+has_completed_focus = TECH_launch_the_new_government
+}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+	completion_reward = {
+	add_political_power = 100
+ }
+}
+	focus = {
+		id = TECH_foreign_policies
+		icon = reconfigure_turkish_foreign_policy
+		cost = 10,00
+		x = 75
+		y = 0
+
+available = {
+has_completed_focus = TECH_launch_the_new_government
+}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		
+	completion_reward = {
+	add_political_power = 100
+ }
+}
+	focus = {
+		id = TECH_industrial_movements
+		icon = central_planned_economy
+		cost = 10,00
+		x = 114
+		y = 0
+
+
+available = {
+has_completed_focus = TECH_launch_the_new_government
+}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+	add_political_power = 100
+			add_tech_bonus = {
+				name = CAT_industry
+				bonus = 0.5
+				uses = 2
+				category = CAT_industry
+			}
+			newline = yes
+			add_tech_bonus = {
+				name = CAT_Civilian
+				bonus = 0.5
+				uses = 2
+				category = CAT_Civilian
+			}
+			newline = yes
+			add_tech_bonus = {
+				name = CAT_agriculture_tech
+				bonus = 0.5
+				uses = 2
+				category = CAT_agriculture_tech
+			}
+
+ }
+}
+	focus = {
+		id = TECH_high_technology_adminstration
+		icon = national_grid
+		cost = 10,00
+		x = 114
+		y = 8
+
+available = {
+OR = {
+has_completed_focus = TECH_space_understanding_of_education
+has_completed_focus = TECH_VR_boosted_education
+} }
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+	completion_reward = {
+	add_research_slot = 1
+ }
+}
+	focus = {
+		id = TECH_the_media
+		icon = liberal_press
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_education_reforms
+		}
+		x = 14
+		y = 14
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_ideas = reformed_media
+}   }
+	focus = {
+		id = TECH_grant_freedom_for_media
+		icon = social_media
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_the_media
+		}
+		x = 13
+		y = 15
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+	completion_reward = {
+		add_political_power = 75
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.02 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TECH_INCREASE_2
+ }
+}
+	focus = {
+		id = TECH_clean_the_media_bosses
+		icon = secret_weapons
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_the_media
+		}
+		x = 15
+		y = 15
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = reformed_media
+  add_idea = reformed_media_2
+}
+      
+}   }
+	focus = {
+		id = TECH_the_lies_and_fraud
+		icon = generic_controlled_press
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_clean_the_media_bosses
+		}
+		prerequisite = {
+			focus = TECH_grant_freedom_for_media
+		}
+		x = 14
+		y = 16
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = reformed_media_2
+  add_idea = reformed_media_3
+}
+      
+}   }
+	focus = {
+		id = TECH_linear_censorship
+		icon = internet_censorship
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_the_lies_and_fraud
+		}
+		x = 14
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = reformed_media_3
+  add_idea = reformed_media_4
+}
+    add_ideas = controlled_media 
+				custom_effect_tooltip = PRESS_HAS_CONTROLLED
+				set_global_flag = PRESS_HAS_MANAGED
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+}
+}   }
+	focus = {
+		id = TECH_reform_plan
+		icon = stolen_papers2
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_order
+		}
+		x = 19
+		y = 1
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+	add_political_power = 25
+	add_stability = 0.02
+ }
+}
+	focus = {
+		id = TECH_forums
+		icon = play_our_hand
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_reform_plan
+		}
+		x = 17
+		y = 2
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+	add_ideas = turkish_forums
+ }
+}
+	focus = {
+		id = TECH_create_chamber_of_innovation
+		icon = focus_generic_national_security
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_reform_plan
+		}
+		x = 19
+		y = 2
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+	add_ideas = chamber_of_innovation
+ }
+}
+	focus = {
+		id = TECH_the_propaganda
+		icon = propaganda
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_create_chamber_of_innovation
+		}
+		prerequisite = {
+			focus = TECH_forums
+		}
+		x = 18
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+	add_ideas = technocratic_propaganda
+ }
+}
+	focus = {
+		id = TECH_university_planning
+		icon = free_higher_education
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_reform_plan
+		}
+		x = 21
+		y = 2
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+	completion_reward = {
+	add_research_slot = 1
+ }
+}
+	focus = {
+		id = TECH_election_promises
+		icon = social_paternalism
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_create_chamber_of_innovation
+		}
+		prerequisite = {
+			focus = TECH_university_planning
+		}
+		x = 20
+		y = 3
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+		add_political_power = 50
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.02 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TECH_INCREASE_2
+ }
+}
+	focus = {
+		id = TECH_the_great_referandum
+		icon = government_beu
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_propaganda
+		}
+		prerequisite = {
+			focus = TECH_election_promises
+		}
+		x = 19
+		y = 4
+
+	completion_reward = {
+    country_event = TurkeyF.220
+		    custom_effect_tooltip = TUR_united_state
+					        				subtract_from_variable = { TUR_pop_KEM = 2 }
+								        				subtract_from_variable = { TUR_pop_KUR = 3 }
+	        				subtract_from_variable = { TUR_pop_ISL = -5 }
+			set_global_flag = TUR_UNITE_DIASPORA
+						TUR_remove_state_modifier_effects = yes
+        } 
+	}
+	focus = {
+		id = TECH_the_ecology
+		icon = eco_democracy
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_education_reforms
+		}
+		x = 24
+		y = 14
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_ideas = ecological_minds
+}   }
+	focus = {
+		id = TECH_cities_of_ecology
+		icon = shenzhen_night
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_the_ecology
+		}
+		x = 25
+		y = 15
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+	completion_reward = {
+		add_stability = 0.05
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.02 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TECH_INCREASE_2
+ }
+}
+	focus = {
+		id = TECH_the_human_nature
+		icon = green_projects
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_the_ecology
+		}
+		x = 23
+		y = 15
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = ecological_minds
+  add_idea = ecological_minds_2
+}
+      
+}   }
+	focus = {
+		id = TECH_eco_friendly_nation
+		icon = water_conservation
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_cities_of_ecology
+		}
+		prerequisite = {
+			focus = TECH_the_human_nature
+		}
+		x = 24
+		y = 16
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = ecological_minds_2
+  add_idea = ecological_minds_3
+}
+      
+}   }
+	focus = {
+		id = TECH_bright_futures
+		icon = torchbearers_of_tomorrow
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_eco_friendly_nation
+		}
+		x = 24
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = ecological_minds_3
+  add_idea = ecological_minds_4
+}
+      
+}   }
+	focus = {
+		id = TECH_victory_of_future_movement
+		icon = champagne_green
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_the_future
+		}
+		x = 44
+		y = 1
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+add_stability = 0.05
+}   }
+	focus = {
+		id = TECH_prioritize_MIT
+		icon = mit
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_victory_of_future_movement
+		}
+		x = 34
+		y = 2
+
+		completion_reward = {
+			if = {
+				limit = { has_intelligence_agency = no }
+				add_stability = 0.05
+				create_intelligence_agency = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_done_agency_upgrade = upgrade_passive_defense
+					}
+				}
+				upgrade_intelligence_agency = upgrade_passive_defense
+			}
+			else = {
+				add_stability = 0.05
+				add_political_power = 150
+			}
+add_ideas = mit
+}   }
+	focus = {
+		id = TECH_international_agency
+		icon = Focus_Roll_the_Dice
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_prioritize_MIT
+		}
+		x = 33
+		y = 3
+
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = mit
+  add_idea = mit_empowered
+}
+      }
+	}
+	focus = {
+		id = TECH_new_codes
+		icon = focus_generic_military_dictatorship
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_prioritize_MIT
+		}
+		x = 35
+		y = 3
+
+	
+	completion_reward = {
+	add_ideas = coding_classes
+      }
+	}
+	focus = {
+		id = TECH_the_weapons_of_cold_war
+		icon = focus_generic_secret_service_agency
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_new_codes
+		}
+		prerequisite = {
+			focus = TECH_international_agency
+		}
+		x = 34
+		y = 4
+
+
+		completion_reward = {
+	add_ideas = the_weapons_of_cold_war
+}   } 
+	focus = {
+		id = TECH_national_innovation_campaign
+		icon = czech_military_research_institute
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_victory_of_future_movement
+		}
+		x = 38
+		y = 2
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+       add_timed_idea = { idea = national_innovation_campaign  days = 365 }
+}   } 
+	focus = {
+		id = TECH_turkish_innovation_fund
+		icon = money
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_national_innovation_campaign
+		}
+		x = 37
+		y = 3
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+add_ideas = national_innovation_fund
+}   }
+	focus = {
+		id = TECH_darting_the_innovation
+		icon = champagne_bribes
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_national_innovation_campaign
+		}
+		x = 39
+		y = 3
+
+        available = {
+		has_idea = national_innovation_campaign
+		}
+
+        bypass = {
+			NOT = {
+		has_idea = national_innovation_campaign		
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		remove_ideas = national_innovation_campaign
+       add_timed_idea = { idea = national_innovation_campaign_darted  days = 365 }
+}   } 
+	focus = {
+		id = TECH_futuristic_state
+		icon = future_of_indonesia
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_darting_the_innovation
+		}
+		prerequisite = {
+			focus = TECH_turkish_innovation_fund
+		}
+		x = 38
+		y = 4
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+	add_ideas = the_land_of_futures
+}   } 
+	focus = {
+		id = TECH_financial_relief
+		icon = better_money_on_fire
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_modern_economics
+		}
+		x = 40
+		y = 7
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+       add_timed_idea = { idea = financial_relief_campaign  days = 365 }
+swap_ideas = { 
+  remove_idea = reformed_2001_crisis
+  add_idea = reforms_for_2001_crisis
+}
+}   } 
+	focus = {
+		id = TECH_the_belt
+		icon = forced_labour
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_financial_relief
+		}
+		x = 39
+		y = 8
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+add_ideas = bureau_01
+add_ideas = defence_01
+add_ideas = police_01
+add_ideas = edu_01
+add_ideas = health_01
+add_ideas = social_01
+
+block_police_increase = yes 
+block_edu_increase = yes
+block_health_increase = yes 
+block_social_increase = yes
+block_bureau_increase = yes
+block_defence_increase = yes
+
+custom_effect_tooltip = THE_BELT_POLICY
+}   }
+	focus = {
+		id = TECH_announce_the_missions
+		icon = Generic_Public_Works
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_the_belt
+		}
+		x = 38
+		y = 9
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = the_rational_policies
+  add_idea = the_rational_policies_2
+}
+      
+}   }
+	focus = {
+		id = TECH_look_for_investments
+		icon = vineyard
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_announce_the_missions
+		}
+		x = 37
+		y = 10
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+add_ideas = the_investment_campaign    
+}   }
+	focus = {
+		id = TECH_chinese_investments
+		icon = peoples_republic_of_china
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_look_for_investments
+		}
+		x = 36
+		y = 11
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+        available = {
+		country_exists = CHI
+		NOT = {
+		has_war_with = CHI
+		 }
+        }
+
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = USA modifier = invested_in_country }
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			935 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = CHI.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = TECH_economic_relief_budget
+		icon = GEO_beria_economy
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_victory_of_future_movement
+		}
+		x = 42
+		y = 2
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+add_ideas = economical_relief_budget
+}   }
+	focus = {
+		id = TECH_land_of_investments
+		icon = central_planned_economy3
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_economic_relief_budget
+		}
+		x = 41
+		y = 3
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+		completion_reward = {
+                159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} 
+add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} 
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } }
+	focus = {
+		id = TECH_innovation_parks
+		icon = continuous_research
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_land_of_investments
+		}
+		x = 40
+		y = 4
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_RESEARCH}		
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+			add_research_slot = 1
+                934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} 
+	subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } }
+	focus = {
+		id = TECH_rational_policies
+		icon = house
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_financial_relief
+		}
+		x = 41
+		y = 8
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+		add_ideas = the_rational_policies
+}   }
+	focus = {
+		id = TECH_launch_RK
+		icon = rekabet_kurumu
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_land_of_investments
+		}
+		x = 42
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+add_ideas = competetion_authority
+}   }
+	focus = {
+		id = TECH_economist_cabinet
+		icon = anarchist_economy
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_rational_policies
+		}
+		x = 42
+		y = 9
+
+
+available = {
+has_completed_focus = TECH_the_future
+}
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+add_ideas = the_economist_cabinet    
+}   }
+	focus = {
+		id = TECH_manage_the_BIST
+		icon = istanbul_borsa
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_economist_cabinet
+		}
+		x = 43
+		y = 10
+
+
+        available = {
+        controls_state = 934
+        }
+	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+			completion_reward = {
+			add_stability = 0.03
+			add_political_power = 50
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt	
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				 } 	
+				} }
+	}
+	focus = {
+		id = TECH_the_new_point_mechanism
+		icon = business_man
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_manage_the_BIST
+		}
+		x = 42
+		y = 11
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+    available = {
+	has_idea = stagnation
+	}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = stagnation
+  add_idea = fast_growth
+} 
+}   }
+	focus = {
+		id = TECH_emergency_civilian_industries
+		icon = decentralized_economy
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_economic_relief_budget
+		}
+		x = 43
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		
+		completion_reward = {
+			add_stability = -0.05
+                159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} 
+		} } }
+	focus = {
+		id = TECH_state_of_atheism
+		icon = anti_pacifism
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_victory_of_past_movement
+		}
+		x = 48
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+		add_stability = -0.05
+swap_ideas = { 
+  remove_idea = sunni
+  add_idea = pluralist
+}
+swap_ideas = { 
+  remove_idea = the_ulema
+  add_idea = defense_industry
+}  
+}   }
+	focus = {
+		id = TECH_new_SGK
+		icon = sgk
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_emergency_civilian_industries
+		}
+		prerequisite = {
+			focus = TECH_land_of_investments
+		}
+		x = 44
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+add_ideas = working_sgk
+}   }
+	focus = {
+		id = TECH_increase_the_financial_health
+		icon = business_man2
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_manage_the_BIST
+		}
+		x = 44
+		y = 11
+
+
+        available = {
+		has_idea = financial_relief_campaign
+		}
+
+        bypass = {
+			NOT = {
+		has_idea = financial_relief_campaign		
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+			remove_ideas = financial_relief_campaign
+       add_ideas = financial_relief_campaign
+}   } 
+	focus = {
+		id = TECH_nations_valleys
+		icon = blr_research_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_past
+			focus = TECH_the_future
+		}
+		x = 46
+		y = 1
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+	completion_reward = {
+	add_research_slot = 1
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.02 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TECH_INCREASE_2
+ }
+}
+	focus = {
+		id = TECH_victory_of_past_movement
+		icon = champagne_purple
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_the_past
+		}
+		x = 48
+		y = 1
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+add_stability = 0.05
+}   }
+	focus = {
+		id = TECH_state_of_pluralism
+		icon = angel
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_victory_of_future_movement
+		}
+		x = 44
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
+		
+		completion_reward = {
+		add_stability = 0.05
+swap_ideas = { 
+  remove_idea = sunni
+  add_idea = pluralist
+}  
+swap_ideas = { 
+  remove_idea = the_ulema
+  add_idea = international_bankers
+}        
+}   }
+	focus = {
+		id = TECH_arms_budget
+		icon = Generic_Morale_Bonus_Focus
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_victory_of_past_movement
+		}
+		x = 50
+		y = 2
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+		add_manpower = 25000
+swap_ideas = { 
+  remove_idea = defence_01
+  add_idea = defence_07
+}   
+}   }
+	focus = {
+		id = TECH_shadow_wars
+		icon = Generic_Secret_Meeting
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_arms_budget
+		}
+		x = 49
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+		add_ideas = shadow_wars
+}   } 
+	focus = {
+		id = TECH_shadow_planning
+		icon = Generic_Crouched_Soldier
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_shadow_wars
+		}
+		x = 48
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = shadow_wars
+  add_idea = shadow_planning
+}
+      
+}   }
+	focus = {
+		id = TECH_robotic_warfare
+		icon = Focus_Superior_Firepower_Doctrine
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_arms_budget
+		}
+		x = 51
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+add_ideas = robotic_warfare 
+}   }
+	focus = {
+		id = TECH_static_warfare
+		icon = grand_battleplan
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_robotic_warfare
+		}
+		prerequisite = {
+			focus = TECH_shadow_wars
+		}
+		x = 50
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+add_ideas = static_warfare    
+}   }
+	focus = {
+		id = TECH_positional_warfare
+		icon = Generic_Refit_Tanks
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_robotic_warfare
+		}
+		x = 52
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+add_ideas = positional_warfare    
+}   }
+	focus = {
+		id = TECH_the_manpower_draft
+		icon = Azerbaijani_Army
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_victory_of_past_movement
+		}
+		x = 54
+		y = 2
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+		add_ideas = manpower_drafts
+}   } 
+	focus = {
+		id = TECH_one_nations_army
+		icon = general_staff
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_the_manpower_draft
+		}
+		x = 53
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+		add_ideas = one_nations_army
+}   } 
+	focus = {
+		id = TECH_focus_on_the_speed
+		icon = apc
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_the_manpower_draft
+		}
+		x = 55
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+		add_ideas = speedy_forces
+}   } 
+	focus = {
+		id = TECH_army_of_profession
+		icon = Focus_Machine_Gun_Crew
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_one_nations_army
+		}
+		prerequisite = {
+			focus = TECH_focus_on_the_speed
+		}
+		x = 54
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+add_ideas = army_of_the_profession    
+}   }
+	focus = {
+		id = TECH_forces_against_rebels
+		icon = Generic_Pawns
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_victory_of_past_movement
+		}
+		x = 58
+		y = 2
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+add_war_support = 0.05 
+}   }
+	focus = {
+		id = TECH_clone_forces
+		icon = Focus_Rationing
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_forces_against_rebels
+		}
+		x = 57
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+add_ideas = cloning_the_force    
+}   }
+	focus = {
+		id = TECH_compliance_planning
+		icon = generic_embrace_agrarian_society
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_forces_against_rebels
+		}
+		x = 59
+		y = 3
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+add_ideas = compliance_forces    
+}   }
+	focus = {
+		id = TECH_weird_location_zones
+		icon = Generic_Cottonmouth
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_clone_forces
+		}
+		prerequisite = {
+			focus = TECH_compliance_planning
+		}
+		x = 58
+		y = 4
+
+		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
+
+		completion_reward = {
+add_ideas = emergency_relocation_plan    
+}   }
+	focus = {
+		id = TECH_federalization_campaign
+		icon = focus_SWI_dissolve_the_federal_council
+		cost = 15,00
+		prerequisite = {
+			focus = TECH_foreign_policies
+		}
+		x = 75
+		y = 1
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+            completion_reward = {
+			add_ideas = the_federal_states_of_turkey
+		set_country_flag = TUR_PKK_federalized
+	        TUR_remove_pkk = yes
+				}
+	}
+	focus = {
+		id = TECH_integrate_the_kurdish_state
+		icon = align_to_kurdistan
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_federalization_campaign
+		}
+		x = 73
+		y = 2
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+	completion_reward = {
+	add_state_core = 162
+	add_state_core = 935
+		create_wargoal = {
+			type = annex_everything
+			target = KUR
+		}
+ }
+}
+	focus = {
+		id = TECH_investments_in_the_region
+		icon = iraq_kurd_deal
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_integrate_the_kurdish_state
+		}
+		x = 71
+		y = 3
+
+
+        available = {
+		controls_state = 935
+		controls_state = 162
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+			935 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			162 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+custom_effect_tooltip = DEC_5_PKK_POINT
+subtract_from_variable = { var = pkk_presence value = 5 }
+			add_to_variable = { TUR_PKK_aggro = -5 }
+			add_to_variable = { TUR_PKK_strength = -5 }		
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_buy_batumi
+		icon = georgian_bagratuni
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_federalization_campaign
+		}
+		x = 75
+		y = 2
+
+
+        available = {
+        country_exists = GEO
+		is_puppet = no
+		GEO = {
+        is_puppet = no
+        controls_state = 466
+		 }
+        }
+
+    bypass = {
+	controls_state = 466
+	}
+
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+	GEO = {
+    country_event = TurkeyF.14
+        } } 
+	}
+	focus = {
+		id = TECH_integrate_the_cyprus_state
+		icon = align_to_northern_cyprus
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_federalization_campaign
+		}
+		x = 77
+		y = 2
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+	completion_reward = {
+	add_state_core = 146
+	add_state_core = 145
+	add_state_core = 812
+		create_wargoal = {
+			type = annex_everything
+			target = CYP
+		}
+ }
+}
+	focus = {
+		id = TECH_sacrifice_for_national_oppurtinities
+		icon = Generic_Command_Power
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_integrate_the_kurdish_state
+		}
+		prerequisite = {
+			focus = TECH_buy_batumi
+		}
+		prerequisite = {
+			focus = TECH_integrate_the_cyprus_state
+		}
+		x = 75
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+		add_stability = -0.02
+swap_ideas = { 
+  remove_idea = volunteer_women
+  add_idea = drafted_women
+}
+      
+}   }
+	focus = {
+		id = TECH_where_the_wind_blows
+		icon = kurd_mountainwarafre
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_sacrifice_for_national_oppurtinities
+		}
+		x = 75
+		y = 4
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+		add_war_support = 0.02
+swap_ideas = { 
+  remove_idea = intervention_regional_interventionism
+  add_idea = intervention_global_interventionism
+}
+      
+}   }
+	focus = {
+		id = TECH_arabic_spring
+		icon = syria_resistance
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_where_the_wind_blows
+		}
+		x = 75
+		y = 5
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+    available = {
+	date > 2011.1.1
+	}
+
+	completion_reward = {
+	add_war_support = 0.07
+	add_manpower = 10000
+ }
+}
+	focus = {
+		id = TECH_the_peace_operation
+		icon = focus_generic_self_propelled_gun
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_arabic_spring
+		}
+		x = 75
+		y = 6
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+	completion_reward = {
+	add_war_support = 0.02
+		create_wargoal = {
+			type = annex_everything
+			target = ISI
+		}
+ }
+}
+	focus = {
+		id = TECH_invade_syria
+		icon = syrian_soldier2
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_peace_operation
+		}
+		x = 74
+		y = 7
+
+
+        available = {
+		country_exists = SYR
+		NOT = {
+		has_war_with = SYR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SYR
+    NOT = {
+	country_exists = SYR
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = FSA
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SYR
+		}
+ }
+}
+	focus = {
+		id = TECH_invade_iraq
+		icon = militarized_iraq
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_peace_operation
+		}
+		x = 76
+		y = 7
+
+
+        available = {
+		country_exists = IRQ
+		NOT = {
+		has_war_with = IRQ
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = IRQ
+    NOT = {
+	country_exists = IRQ
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = IRQ
+		}
+ }
+}
+	focus = {
+		id = TECH_project_caucasus
+		icon = inter_with_cauc
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_invade_iraq
+		}
+		prerequisite = {
+			focus = TECH_invade_syria
+		}
+		x = 75
+		y = 8
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+	completion_reward = {
+		AZE = {
+		add_political_power = 25
+		}
+		CHE = {
+		add_political_power = 25
+		}
+		ARM = {
+		add_political_power = 25
+		}
+		GEO = {
+		add_political_power = 25
+		}
+		NGK = {
+		add_political_power = 25
+		}
+		SOO = {
+		add_political_power = 25
+		}
+		ABK = {
+		add_political_power = 25
+		}
+ }
+}
+	focus = {
+		id = TECH_guarantee_georgia
+		icon = Georgia_Flag_icon
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_project_caucasus
+		}
+		x = 74
+		y = 9
+
+
+        available = {
+		country_exists = GEO
+		NOT = {
+		has_war_with = GEO
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = GEO
+    NOT = {
+	country_exists = GEO
+	 }
+	} }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+	completion_reward = {
+	                TUR = {
+					give_guarantee = GEO
+					}
+					}
+				}
+	focus = {
+		id = TECH_arm_the_azeris
+		icon = Azerbaijani_Air_Force
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_project_caucasus
+		}
+		x = 76
+		y = 9
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+
+        available = {
+		country_exists = AZE
+		NOT = {
+		has_war_with = AZE
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = AZE
+    NOT = {
+	country_exists = AZE
+	 }
+	} }
+	
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = AZE modifier = military_cooperation }
+			131 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			AZE = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			subtract_from_variable = { treasury = 50 }
+			custom_effect_tooltip = 50_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TECH_root_out_the_immigrant_paths
+		icon = anti_immigration3
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_guarantee_georgia
+		}
+		prerequisite = {
+			focus = TECH_arm_the_azeris
+		}
+		x = 75
+		y = 10
+
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}	
+
+    completion_reward = {
+    add_ideas = blocked_immigrant_routes	
+	  }
+	}
+	focus = {
+		id = TECH_invest_in_the_cyprus
+		icon = align_to_cyprus
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_integrate_the_cyprus_state
+		}
+		x = 79
+		y = 3
+
+
+        available = {
+		controls_state = 146
+		controls_state = 145
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+			146 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			145 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_EU_policies
+		icon = closer_ties_with_eu
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_where_the_wind_blows
+		}
+		x = 79
+		y = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+			completion_reward = {
+			add_political_power = 125
+	}
+			}
+	focus = {
+		id = TECH_not_a_full_member
+		icon = generic_euroscepticism
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_EU_policies
+		}
+		x = 81
+		y = 6
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+	add_stability = -0.1
+	add_political_power = 50
+			set_temp_variable = { modify_eurosceptic = 0.03 }
+			eurosceptic_change = yes
+}   } 
+	focus = {
+		id = TECH_schengen_visa_deal
+		icon = EU_reform
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_not_a_full_member
+		}
+		x = 79
+		y = 7
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}		
+
+		completion_reward = {
+	add_ideas = free_eu_visa_deal
+				
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+}   } 
+	focus = {
+		id = TECH_industrial_integrity
+		icon = EU_Banking
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_not_a_full_member
+		}
+		x = 81
+		y = 7
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+                159 = {
+				add_extra_state_shared_building_slots = 5
+		     } 
+                934 = {
+				add_extra_state_shared_building_slots = 5
+            } 
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+		} }
+	focus = {
+		id = TECH_taarif_deal
+		icon = EU_policies
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_schengen_visa_deal
+		}
+		prerequisite = {
+			focus = TECH_industrial_integrity
+		}
+		x = 80
+		y = 8
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+             add_ideas = turkish_taarif_deal
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+		} }   
+	focus = {
+		id = TECH_destroy_the_eu_turkey_deal
+		icon = EU_no_deal_exit
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_not_a_full_member
+		}
+		x = 83
+		y = 7
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+	completion_reward = {
+	remove_ideas = EU_Turkey_deal
+	add_war_support = 0.02
+			set_temp_variable = { modify_eurosceptic = 0.02 }
+			eurosceptic_change = yes
+ }
+}
+	focus = {
+		id = TECH_market_union
+		icon = eu_investments
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_industrial_integrity
+		}
+		prerequisite = {
+			focus = TECH_destroy_the_eu_turkey_deal
+		}
+		x = 82
+		y = 8
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+             add_ideas = the_turkish_market_union
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+		} }  
+	focus = {
+		id = TECH_EU_industrial_parks
+		icon = industry4
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_taarif_deal
+		}
+		prerequisite = {
+			focus = TECH_market_union
+		}
+		x = 80
+		y = 9
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+				search_filters = {FOCUS_FILTER_FOREIGN_POLICY}			
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+
+		completion_reward = {
+		GER = {
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		}
+                156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				} 
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+			add_stability = 0.02
+		} } }
+	focus = {
+		id = TECH_EU_offices
+		icon = EU_lisbon_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_market_union
+		}
+		x = 82
+		y = 9
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+				search_filters = {FOCUS_FILTER_INDUSTRY}		
+				search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+
+		completion_reward = {
+		GER = {
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		}
+                159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} 
+			set_temp_variable = { modify_eurosceptic = -0.02 }
+			eurosceptic_change = yes
+			add_stability = 0.02
+		} } }
+	focus = {
+		id = TECH_reorganize_the_stability
+		icon = stability
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_EU_offices
+		}
+		prerequisite = {
+			focus = TECH_EU_industrial_parks
+		}
+		x = 81
+		y = 10
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+			add_stability = 0.1
+		} } 
+	focus = {
+		id = TECH_eu_and_turkic_policies
+		icon = trade_with_europe
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_EU_policies
+		}
+		x = 88
+		y = 6
+
+
+        available = {
+        country_exists = GER
+        country_exists = FRA
+        country_exists = ENG
+        country_exists = SPR
+        country_exists = POR
+        country_exists = ITA
+        country_exists = USA
+		NOT = {
+        has_war_with = GER
+        has_war_with = FRA
+        has_war_with = ENG
+        has_war_with = SPR
+        has_war_with = POR
+        has_war_with = ITA
+        has_war_with = USA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+
+		completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = TUR_westernism }
+					reverse_add_opinion_modifier = { target = FRA modifier = TUR_westernism }				
+					reverse_add_opinion_modifier = { target = ENG modifier = TUR_westernism }
+					reverse_add_opinion_modifier = { target = SPR modifier = TUR_westernism }
+					reverse_add_opinion_modifier = { target = POR modifier = TUR_westernism }
+					reverse_add_opinion_modifier = { target = ITA modifier = TUR_westernism }
+					reverse_add_opinion_modifier = { target = USA modifier = TUR_westernism }
+				}
+			}
+	focus = {
+		id = TECH_german_multi_investments
+		icon = german_confederation
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_eu_and_turkic_policies
+		}
+		x = 87
+		y = 7
+
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = GER
+		NOT = {
+		has_war_with = GER
+		 }
+        }
+	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = invested_in_country }
+					GER = {
+						reverse_add_opinion_modifier = { target = TUR modifier = invested_in_country }
+					}
+			45 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = GER.id }
+				change_influence_percentage = yes
+			}
+			GER = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TECH_german_influence_deal
+		icon = trade_with_germany
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_german_multi_investments
+		}
+		x = 87
+		y = 8
+
+	
+        available = {
+		country_exists = GER
+		NOT = {
+		has_war_with = GER
+		 }
+        }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = diplomatic_proximity }
+					GER = {
+						reverse_add_opinion_modifier = { target = TUR modifier = diplomatic_proximity }
+					}
+			TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = GER.id }
+				change_influence_percentage = yes
+			}
+			GER = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = TECH_german_friendship_deal
+		icon = align_to_germany
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_german_influence_deal
+		}
+		x = 87
+		y = 9
+
+	
+        available = {
+		country_exists = GER
+		NOT = {
+		has_war_with = GER
+		 }
+        }
+	
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = declaration_of_friendship }
+					GER = {
+						reverse_add_opinion_modifier = { target = TUR modifier = declaration_of_friendship }
+					}
+			TUR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = GER.id }
+				change_influence_percentage = yes
+			}
+			GER = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = TECH_french_multi_investments
+		icon = vive_la_france
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_eu_and_turkic_policies
+		}
+		x = 89
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = FRA
+		NOT = {
+		has_war_with = FRA
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = FRA
+    NOT = {
+	country_exists = FRA
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = FRA modifier = invested_in_country }
+					FRA = {
+						reverse_add_opinion_modifier = { target = TUR modifier = invested_in_country }
+					}
+			56 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = FRA.id }
+				change_influence_percentage = yes
+			}
+			FRA = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TECH_french_influence_deal
+		icon = trade_with_france
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_french_multi_investments
+		}
+		x = 89
+		y = 8
+
+	
+      available = {
+		country_exists = FRA
+		NOT = {
+		has_war_with = FRA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = FRA modifier = diplomatic_proximity }
+					FRA = {
+						reverse_add_opinion_modifier = { target = TUR modifier = diplomatic_proximity }
+					}
+			TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = FRA.id }
+				change_influence_percentage = yes
+			}
+			FRA = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = TECH_french_friendship_deal
+		icon = align_to_france
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_french_influence_deal
+		}
+		x = 89
+		y = 9
+
+      available = {
+		country_exists = FRA
+		NOT = {
+		has_war_with = FRA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = FRA modifier = declaration_of_friendship }
+					FRA = {
+						reverse_add_opinion_modifier = { target = TUR modifier = declaration_of_friendship }
+					}
+			TUR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = FRA.id }
+				change_influence_percentage = yes
+			}
+			FRA = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = TECH_spanish_multi_investments
+		icon = people_of_spain
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_eu_and_turkic_policies
+		}
+		x = 91
+		y = 7
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+
+
+        available = {
+		country_exists = SPR
+		NOT = {
+		has_war_with = SPR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SPR
+    NOT = {
+	country_exists = SPR
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = SPR modifier = invested_in_country }
+					SPR = {
+						reverse_add_opinion_modifier = { target = TUR modifier = invested_in_country }
+					}
+			91 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = SPR.id }
+				change_influence_percentage = yes
+			}
+			SPR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TECH_spanish_influence_deal
+		icon = befriend_republican_spain
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_spanish_multi_investments
+		}
+		x = 91
+		y = 8
+
+	
+
+        available = {
+		country_exists = SPR
+		NOT = {
+		has_war_with = SPR
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = SPR modifier = diplomatic_proximity }
+					SPR = {
+						reverse_add_opinion_modifier = { target = TUR modifier = diplomatic_proximity }
+					}
+			TUR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = SPR.id }
+				change_influence_percentage = yes
+			}
+			SPR = {
+				set_temp_variable = { percent_change = 3 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = TECH_spanish_friendship_deal
+		icon = align_to_spain
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_spanish_influence_deal
+		}
+		x = 91
+		y = 9
+
+
+
+        available = {
+		country_exists = SPR
+		NOT = {
+		has_war_with = SPR
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = SPR modifier = declaration_of_friendship }
+					SPR = {
+						reverse_add_opinion_modifier = { target = TUR modifier = declaration_of_friendship }
+					}
+			TUR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = SPR.id }
+				change_influence_percentage = yes
+			}
+			SPR = {
+				set_temp_variable = { percent_change = 1 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = TECH_finance_the_turkic_nations
+		icon = align_to_turkic_council
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_eu_and_turkic_policies
+		}
+		x = 93
+		y = 7
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+
+            completion_reward = {
+				add_political_power = 25
+					reverse_add_opinion_modifier = { target = AZE modifier = turkic_united_front }
+					reverse_add_opinion_modifier = { target = KAZ modifier = turkic_united_front }
+					reverse_add_opinion_modifier = { target = TRK modifier = turkic_united_front }
+	                reverse_add_opinion_modifier = { target = UZB modifier = turkic_united_front }
+	                reverse_add_opinion_modifier = { target = KYR modifier = turkic_united_front }
+			}
+	}
+	focus = {
+		id = TECH_investments_in_kazakhstan
+		icon = align_to_kazakhstan
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_finance_the_turkic_nations
+		}
+		x = 93
+		y = 8
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+
+        available = {
+		country_exists = KAZ
+		NOT = {
+		has_war_with = KAZ
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = KAZ
+    NOT = {
+	country_exists = KAZ
+	 }
+	} }
+	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = KAZ modifier = invested_in_country }
+					KAZ = {
+						reverse_add_opinion_modifier = { target = TUR modifier = invested_in_country }
+					}
+			716 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = KAZ.id }
+				change_influence_percentage = yes
+			}
+			KAZ = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TECH_investments_in_turkmenistan
+		icon = align_to_turkmenistan
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_investments_in_kazakhstan
+		}
+		x = 93
+		y = 9
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+
+        available = {
+		country_exists = TRK
+		NOT = {
+		has_war_with = TRK
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = TRK
+    NOT = {
+	country_exists = TRK
+	 }
+	} }
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = TRK modifier = invested_in_country }
+					TRK = {
+						reverse_add_opinion_modifier = { target = TUR modifier = invested_in_country }
+					}
+			729 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TRK.id }
+				change_influence_percentage = yes
+			}
+			TRK = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TECH_investments_in_uzbeksitan
+		icon = align_to_uzbekistan
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_finance_the_turkic_nations
+		}
+		x = 95
+		y = 8
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+
+        available = {
+		country_exists = UZB
+		NOT = {
+		has_war_with = UZB
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = UZB
+    NOT = {
+	country_exists = UZB
+	 }
+	} }
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = UZB modifier = invested_in_country }
+					UZB = {
+						reverse_add_opinion_modifier = { target = TUR modifier = invested_in_country }
+					}
+			725 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = UZB.id }
+				change_influence_percentage = yes
+			}
+			UZB = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TECH_investments_in_kyrgzstan
+		icon = align_to_kyrgyzstan
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_investments_in_uzbeksitan
+		}
+		x = 95
+		y = 9
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
+
+        available = {
+		country_exists = KYR
+		NOT = {
+		has_war_with = KYR
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = KYR
+    NOT = {
+	country_exists = KYR
+	 }
+	} }
+	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = KYR modifier = invested_in_country }
+					KYR = {
+						reverse_add_opinion_modifier = { target = TUR modifier = invested_in_country }
+					}
+			720 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = KYR.id }
+				change_influence_percentage = yes
+			}
+			KYR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TECH_the_agriculture
+		icon = mechanized_agriculture
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_industrial_movements
+		}
+		x = 105
+		y = 1
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+add_political_power = 100
+add_stability = 0.03
+}   }
+	focus = {
+		id = TECH_the_resource_planning
+		icon = resource_extraction
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_agriculture
+		}
+		x = 104
+		y = 2
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+add_political_power = 75
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 2
+				category = CAT_fuel_oil
+			}
+}   }
+	focus = {
+		id = TECH_batman_oil_sites
+		icon = oil
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_resource_planning
+		}
+		x = 102
+		y = 3
+
+	
+		available = {
+		controls_state = 162
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_RESOURCE}
+		
+		completion_reward = {
+	  			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+		162 = {
+				add_resource = {
+					type = oil
+					amount = 41
+				}
+		}
+		162 = {
+	  			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt	
+				add_resource = {
+					type = oil
+					amount = 23
+				    }
+			    }
+				add_fuel = 2500
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fossil_powerplant
+					level = 1
+					instant_build = yes
+				}
+			add_tech_bonus = {
+				name = CAT_fuel_oil
+				bonus = 0.5
+				uses = 1
+				category = CAT_fuel_oil
+			}
+				} } }
+	focus = {
+		id = TECH_wealth_irons
+		icon = PB_Generic_Mining_Industry
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_batman_oil_sites
+		}
+		x = 101
+		y = 4
+
+	
+		available = {
+		controls_state = 163
+		controls_state = 1032
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_RESOURCE}
+		
+		completion_reward = {
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+		163 = {
+				add_resource = {
+					type = tungsten
+					amount = 28
+				}
+			}
+		1032 = {
+				add_resource = {
+					type = tungsten
+					amount = 9
+				}
+			}
+		} }
+	focus = {
+		id = TECH_precious_steel_mines
+		icon = steel_production2
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_resource_planning
+		}
+		x = 104
+		y = 3
+
+	
+		available = {
+		controls_state = 163
+		controls_state = 1032
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_RESOURCE}
+		
+		completion_reward = {
+	  			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt	
+		163 = {
+				add_resource = {
+					type = chromium
+					amount = 32
+				}
+			}
+		1032 = {
+				add_resource = {
+					type = iron
+					amount = 11
+				}
+			}
+		} }
+	focus = {
+		id = TECH_boron
+		icon = bor_mining
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_precious_steel_mines
+		}
+		prerequisite = {
+			focus = TECH_batman_oil_sites
+		}
+		x = 103
+		y = 4
+
+		search_filters = {FOCUS_FILTER_RESOURCE}
+
+		completion_reward = {
+add_ideas = laws_of_bor
+}   }
+	focus = {
+		id = TECH_iron_mines
+		icon = steel_production
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_precious_steel_mines
+		}
+		x = 105
+		y = 4
+
+	
+		available = {
+		controls_state = 160
+		controls_state = 157
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_RESOURCE}
+		
+		completion_reward = {
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+		160 = {
+				add_resource = {
+					type = iron
+					amount = 19
+				}
+			}
+		157 = {
+				add_resource = {
+					type = chromium
+					amount = 11
+				}
+			}
+		} }
+	focus = {
+		id = TECH_anatolian_agriculture_sites
+		icon = coffee_plantation
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_agriculture
+		}
+		x = 106
+		y = 2
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+add_political_power = 75
+}   }
+	focus = {
+		id = TECH_villagers_committee
+		icon = farming
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_anatolian_agriculture_sites
+		}
+		x = 106
+		y = 3
+
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+						search_filters = {FOCUS_FILTER_EXPENDITURE}
+						
+completion_reward = {
+add_stability = 0.03
+	  			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt	
+}
+    }	
+	focus = {
+		id = TECH_konya_wheats
+		icon = wheat_field
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_anatolian_agriculture_sites
+		}
+		x = 108
+		y = 3
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+add_ideas = wheat_fields    
+}   }
+	focus = {
+		id = TECH_eastern_agriculture
+		icon = Generic_Tea_Farming
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_konya_wheats
+		}
+		prerequisite = {
+			focus = TECH_villagers_committee
+		}
+		x = 107
+		y = 4
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+add_ideas = agriculture_projection    
+}   }
+	focus = {
+		id = TECH_wood_industries
+		icon = lumber_industry
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_eastern_agriculture
+		}
+		x = 106
+		y = 5
+
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+		} }
+	focus = {
+		id = TECH_new_ways_of_fishing
+		icon = Generic_Veggies
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_eastern_agriculture
+		}
+		x = 108
+		y = 5
+
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_revenue_tt
+		} }
+	focus = {
+		id = TECH_the_industry
+		icon = centralization_question
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_industrial_movements
+		}
+		x = 114
+		y = 1
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			934 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_the_arms_industry
+		icon = industry4
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_industry
+		}
+		x = 113
+		y = 2
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_sivas_military_industries
+		icon = industry_military
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_arms_industry
+		}
+		x = 111
+		y = 3
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_eastern_arms_factories
+		icon = goal_JAP_military_business
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_sivas_military_industries
+		}
+		x = 110
+		y = 4
+
+
+        available = {
+		controls_state = 163
+		controls_state = 935
+		controls_state = 162
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			163 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			935 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			162 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_kayseri_hava_ikmal
+		icon = fighter_plane
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_arms_industry
+		}
+		x = 113
+		y = 3
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+       available = {
+		controls_state = 159
+        }
+
+		completion_reward = {
+			159 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 5
+				}
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 2
+				}
+				add_building_construction = {
+					type = fuel_silo
+					instant_build = yes
+					level = 2
+				}
+				add_building_construction = {
+					type = radar_station
+					instant_build = yes
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}  }
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_capital_investments
+		icon = IND_new_capital
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_kayseri_hava_ikmal
+		}
+		prerequisite = {
+			focus = TECH_sivas_military_industries
+		}
+		x = 112
+		y = 4
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_move_industries_to_istanbul
+		icon = MEX_Capitalismo_opresor
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_kayseri_hava_ikmal
+		}
+		x = 114
+		y = 4
+
+
+        available = {
+		controls_state = 934
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			934 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+			}
+			159 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_the_civilian_industry
+		icon = construction_engineering
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_industry
+		}
+		x = 115
+		y = 2
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_izmir_civilian_industries
+		icon = highway_repairs
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_civilian_industry
+		}
+		x = 115
+		y = 3
+
+
+        available = {
+		controls_state = 156
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			156 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_aegean_build_up
+		icon = construction2
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_civilian_industry
+		}
+		x = 117
+		y = 3
+
+
+        available = {
+		controls_state = 156
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			156 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_med_civilian_industries
+		icon = industrial_complexes
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_aegean_build_up
+		}
+		prerequisite = {
+			focus = TECH_izmir_civilian_industries
+		}
+		x = 116
+		y = 4
+
+
+        available = {
+		controls_state = 157
+		controls_state = 161
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			161 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			157 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_tourism_nation
+		icon = Generic_Maritime
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_med_civilian_industries
+		}
+		x = 115
+		y = 5
+
+		completion_reward = {
+add_ideas = tourism_power    
+}   }
+	focus = {
+		id = TECH_space_age
+		icon = generic_space
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_high_technology_adminstration
+		}
+		x = 116
+		y = 9
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+	   add_political_power = 200
+      }
+	}
+	focus = {
+		id = TECH_nation_in_space
+		icon = international_space_station
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_space_age
+		}
+		x = 116
+		y = 10
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+	completion_reward = {
+	   add_stability = 0.1
+			add_tech_bonus = {
+				name = Cat_satellite
+				bonus = 0.5
+				uses = 1
+				category = Cat_satellite
+			}
+      }
+	}
+	focus = {
+		id = TECH_together_with_auto
+		icon = asteroid_mining
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_nation_in_space
+		}
+		x = 117
+		y = 11
+
+    available = {
+	has_idea = ending_the_automazation_campaign
+	}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = ending_the_automazation_campaign
+  add_idea = space_automazation
+}
+      
+}   }
+	focus = {
+		id = TECH_thy_factories
+		icon = focus_airline
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_med_civilian_industries
+		}
+		x = 117
+		y = 5
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_funded_TUA
+		icon = TUA
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_space_age
+		}
+		x = 118
+		y = 10
+
+		search_filters = {FOCUS_FILTER_RESEARCH}	 
+
+            completion_reward = {
+			add_ideas = TUA_space_1
+			add_tech_bonus = {
+				name = Cat_satellite
+				bonus = 0.5
+				uses = 1
+				category = Cat_satellite
+			}
+				}
+	}
+	focus = {
+		id = TECH_the_service
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_industrial_movements
+		}
+		x = 123
+		y = 1
+
+
+        available = {
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			934 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_sectoral_planning
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_service
+		}
+		x = 122
+		y = 2
+
+
+        available = {
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			934 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_venus_offices
+		icon = film_industry2
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_sectoral_planning
+		}
+		x = 120
+		y = 3
+
+
+        available = {
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			add_extra_state_shared_building_slots = 1
+			934 = { 
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_finance_istanbul
+		icon = Generic_Major_City
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_venus_offices
+		}
+		x = 119
+		y = 4
+
+
+        available = {
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			934 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_turkcell_offices
+		icon = bmw_car
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_sectoral_planning
+		}
+		x = 122
+		y = 3
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_work_on_local_technologies
+		icon = tech_sharing
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_turkcell_offices
+		}
+		prerequisite = {
+			focus = TECH_venus_offices
+		}
+		x = 121
+		y = 4
+
+
+        available = {
+		controls_state = 159
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			add_research_slot = 1
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_bankery_offices
+		icon = eac_bank
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_turkcell_offices
+		}
+		x = 123
+		y = 4
+
+
+        available = {
+		controls_state = 159
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			934 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_the_infra_planning
+		icon = infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_service
+		}
+		x = 124
+		y = 2
+
+
+    available = {
+	controls_state = 1032
+	controls_state = 163
+	controls_state = 159
+	}
+	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+			1032 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} }
+			163 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} }
+			159 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				} }
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_solve_the_istanbul
+		icon = broadway
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_infra_planning
+		}
+		x = 124
+		y = 3
+
+
+    available = {
+	controls_state = 934
+	}
+	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+		    add_stability = 0.03
+		subtract_from_variable = { TUR_building_resistancy = -3}
+			custom_effect_tooltip = HOUSING_INCREASE_3
+			934 = { 
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					instant_build = yes
+					level = 1
+				}
+				} 
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_turkish_airports
+		icon = build_new_airports
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_infra_planning
+		}
+		x = 126
+		y = 3
+
+
+    available = {
+	controls_state = 1032
+	controls_state = 163
+	controls_state = 159
+	controls_state = 157
+	}
+	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+		
+		completion_reward = {
+			1032 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 2
+				} }
+			163 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 2
+				} }
+			159 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 2
+				} }
+			157 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 2
+				} }
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_turkish_railways
+		icon = construction_development
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_turkish_airports
+		}
+		prerequisite = {
+			focus = TECH_solve_the_istanbul
+		}
+		x = 125
+		y = 4
+
+
+            completion_reward = {
+			add_ideas = the_turkish_railway_culture
+				}
+	}
+	focus = {
+		id = TECH_izmir_ankara_railway
+		icon = Generic_Train
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_turkish_railways
+		}
+		x = 124
+		y = 5
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+			build_railway = {
+				path = { 4112 928 11898 981 11831 3951 6808 3907 9901 6925 11747 }
+				level = 1
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TECH_create_the_government
+		icon = generic_embrace_agrarian_society
+		cost = 15,00
+		prerequisite = {
+			focus = TECH_the_great_referandum
+		}
+		x = 19
+		y = 5
+
+    available = {
+	neutrality_neutral_oligarch_are_in_power = yes
+	}
+
+	completion_reward = {
+		add_stability = 0.03
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.05 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TECH_INCREASE_5
+        } 
+	}
+	focus = {
+		id = TECH_the_great_pain
+		icon = Generic_Factionalism
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_create_the_government
+		}
+		x = 19
+		y = 6
+
+	completion_reward = {
+    country_event = TurkeyF.221
+        } 
+	}
+	focus = {
+		id = TECH_ease_the_mechanism
+		icon = examine_foreign_laws
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_the_great_pain
+		}
+		x = 16
+		y = 7
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_political_power = 25
+swap_ideas = { 
+  remove_idea = pain_of_the_government
+  add_idea = pain_of_the_government_2
+}
+      
+}   }
+	focus = {
+		id = TECH_no_time_for_corruption
+		icon = focus_generic_buy_guns
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_ease_the_mechanism
+		}
+		x = 15
+		y = 8
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_political_power = 25
+        add_ideas = negligible_corruption
+      
+}   }
+	focus = {
+		id = TECH_integrate_AYM
+		icon = pass_legislation
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_the_great_pain
+		}
+		x = 19
+		y = 7
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_ideas = reorganized_AYM
+}   }
+	focus = {
+		id = TECH_modern_bureocracy
+		icon = democratic_stability
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_ease_the_mechanism
+		}
+		x = 17
+		y = 8
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_political_power = 25
+swap_ideas = { 
+  remove_idea = pain_of_the_government_2
+  add_idea = pain_of_the_government_3
+}
+      
+}   }
+	focus = {
+		id = TECH_adapt_parties_to_change
+		icon = autonomy
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_the_great_pain
+		}
+		x = 22
+		y = 7
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_political_power = 25
+swap_ideas = { 
+  remove_idea = pain_of_the_parties
+  add_idea = pain_of_the_parties_2
+}
+      
+}   }
+	focus = {
+		id = TECH_integrate_new_election_system
+		icon = break_free2 
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_integrate_AYM
+		}
+		x = 19
+		y = 8
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+	completion_reward = {
+		add_political_power = 100
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = 0.03 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TECH_INCREASE_3
+ }
+}
+	focus = {
+		id = TECH_the_senate
+		icon = Generic_Imperial_Eagle
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_integrate_new_election_system
+		}
+		prerequisite = {
+			focus = TECH_modern_bureocracy
+		}
+		prerequisite = {
+			focus = TECH_academician_MPs
+		}
+		x = 18
+		y = 9
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		remove_ideas = pain_of_the_government_3 
+}   }
+	focus = {
+		id = TECH_academician_MPs
+		icon = champagne_bribes2
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_adapt_parties_to_change
+		}
+		x = 21
+		y = 8
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_political_power = 25
+swap_ideas = { 
+  remove_idea = pain_of_the_parties_2
+  add_idea = pain_of_the_parties_3
+}
+      
+}   }
+	focus = {
+		id = TECH_the_council
+		icon = self_management
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_academician_MPs
+		}
+		prerequisite = {
+			focus = TECH_integrate_new_election_system
+		}
+		x = 20
+		y = 9
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		remove_ideas = pain_of_the_parties_3 
+}   }
+	focus = {
+		id = TECH_big_minded_parties
+		icon = Generic_Hedonism
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_adapt_parties_to_change
+		}
+		x = 23
+		y = 8
+
+		completion_reward = {
+        add_political_power = 200
+			hidden_effect = {
+				add_to_variable = { party_pop_array^15 = -0.02 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TECH_DECREASE_2
+	}       }
+	focus = {
+		id = TECH_launch_the_new_government
+		icon = parliament_box
+		cost = 15,00
+		prerequisite = {
+			focus = TECH_the_council
+		}
+		prerequisite = {
+			focus = TECH_the_senate
+		}
+		x = 19
+		y = 10
+
+		completion_reward = {
+			add_political_power = 25
+			custom_effect_tooltip = TECHNOCRAT_OPEN_FOCUSES
+set_global_flag = DISABLE_WAR_SYSTEM_PAR
+custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU		
+					        				subtract_from_variable = { TUR_pop_KEM = -5 }
+	        				subtract_from_variable = { TUR_pop_ISL = 5 }
+hidden_effect = {
+remove_ideas = media_opinion_towards_good_happy_everyone
+remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+remove_ideas = media_opinion_towards_bad_1_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad	
+remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
+remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
+add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
+}
+			set_global_flag = TUR_UNITE_DIASPORA
+		    custom_effect_tooltip = TUR_united_state
+	}       }
+	focus = {
+		id = TECH_millenial_media
+		icon = media_awareness
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_media_education
+		}
+		prerequisite = {
+			focus = TECH_linear_censorship
+		}
+		x = 14
+		y = 18
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = reformed_media_4
+  add_idea = reformed_media_5
+}
+      
+}   }
+	focus = {
+		id = TECH_the_education
+		icon = education_reform
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_education_reforms
+		}
+		x = 19
+		y = 14
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		add_ideas = new_turkish_education_policies
+}   }
+	focus = {
+		id = TECH_embrace_visuality
+		icon = research3
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_the_education
+		}
+		x = 17
+		y = 15
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		add_ideas = visual_learning
+}   }
+	focus = {
+		id = TECH_embrace_kinetic_learning
+		icon = goal_JAP_choose_research
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_the_education
+		}
+		x = 19
+		y = 15
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		add_ideas = kinetic_learning
+}   }
+	focus = {
+		id = TECH_vocal_learning
+		icon = goal_JAP_quake_research
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_the_education
+		}
+		x = 21
+		y = 15
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		add_ideas = vocal_learning
+}   }
+	focus = {
+		id = TECH_collective_education
+		icon = nationalist_education
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_vocal_learning
+		}
+		prerequisite = {
+			focus = TECH_embrace_kinetic_learning
+		}
+		prerequisite = {
+			focus = TECH_embrace_visuality
+		}
+		x = 19
+		y = 16
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = new_turkish_education_policies
+  add_idea = new_turkish_education_policies_2
+}
+      
+}   }
+	focus = {
+		id = TECH_the_death_of_coercion
+		icon = focus_SWE_institute_of_technology
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_modern_schools
+		}
+		x = 17
+		y = 18
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = motivational_teaching
+  add_idea = motivational_teaching_2
+}
+      
+}   }
+	focus = {
+		id = TECH_modern_schools
+		icon = goal_JAP_tech_university
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_collective_education
+		}
+		x = 18
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_ideas = motivational_teaching
+		 } }
+	focus = {
+		id = TECH_adaptive_technology
+		icon = blr_russian_education
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_collective_education
+		}
+		x = 20
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = technological_teaching
+		 } }
+	focus = {
+		id = TECH_iq_policies
+		icon = BLR_High_quality_education
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_adaptive_technology
+		}
+		prerequisite = {
+			focus = TECH_modern_schools
+		}
+		x = 19
+		y = 18
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = new_turkish_education_policies_2
+  add_idea = new_turkish_education_policies_3
+}
+      
+}   }
+	focus = {
+		id = TECH_interesting_teaching
+		icon = ahmadi_research
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_the_death_of_coercion
+		}
+		prerequisite = {
+			focus = TECH_millenial_media
+		}
+		x = 16
+		y = 19
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = motivational_teaching_2
+  add_idea = motivational_teaching_3
+}
+      
+}   }
+	focus = {
+		id = TECH_space_understanding_of_education
+		icon = orbit_moon
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_iq_policies
+		}
+		x = 19
+		y = 19
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = new_turkish_education_policies_3
+  add_idea = new_turkish_education_policies_4
+}
+      
+}   }
+	focus = {
+		id = TECH_VR_boosted_education
+		icon = economic_tech
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_adaptive_technology
+		}
+		x = 21
+		y = 18
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = technological_teaching
+  add_idea = technological_teaching_2
+}
+      
+}   }
+	focus = {
+		id = TECH_the_intelligence
+		icon = focus_TUR_the_sun_language_theory
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_space_understanding_of_education
+		}
+		prerequisite = {
+			focus = TECH_interesting_teaching
+		}
+		prerequisite = {
+			focus = TECH_technology_works
+		}
+		x = 19
+		y = 20
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = new_turkish_education_policies_4
+  add_idea = new_turkish_education_policies_5
+}
+	retire_character = ilhan_tolu
+	retire_character = mustafa_ozsoy
+	retire_character = TUR_akin_ozturk      
+}   }
+	focus = {
+		id = TECH_technology_works
+		icon = research4
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_VR_boosted_education
+		}
+		prerequisite = {
+			focus = TECH_turkish_ecology
+		}
+		x = 22
+		y = 19
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = technological_teaching_2
+  add_idea = technological_teaching_3
+}
+      
+}   }
+	focus = {
+		id = TECH_media_education
+		icon = german_greencard
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_collective_education
+		}
+		x = 16
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_ideas = media_education
+		 } }
+	focus = {
+		id = TECH_ecoogy_education
+		icon = improve_relations_green
+		cost = 5.8
+		prerequisite = {
+			focus = TECH_collective_education
+		}
+		x = 22
+		y = 17
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+add_ideas = ecology_education
+}   }
+	focus = {
+		id = TECH_turkish_ecology
+		icon = green_world
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_ecoogy_education
+		}
+		prerequisite = {
+			focus = TECH_bright_futures
+		}
+		x = 24
+		y = 18
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = ecological_minds_4
+  add_idea = ecological_minds_5
+}
+      
+}   }
+	focus = {
+		id = TECH_the_unions_deal
+		icon = Generic_Workers_Democracy
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_the_belt
+		}
+		prerequisite = {
+			focus = TECH_rational_policies
+		}
+		x = 40
+		y = 9
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+add_ideas = unions_deal    
+swap_ideas = { 
+  remove_idea = reforms_for_2001_crisis
+  add_idea = reformss_for_2001_crisis
+}
+}   }
+	focus = {
+		id = TECH_improve_the_unions
+		icon = industry_democratic3
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_the_unions_deal
+		}
+		x = 40
+		y = 10
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = unions_deal
+  add_idea = unions_deal_imp
+}
+      
+}   }
+	focus = {
+		id = TECH_american_investments
+		icon = align_to_america2
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_look_for_investments
+		}
+		x = 38
+		y = 11
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 	
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+        available = {
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = USA modifier = invested_in_country }
+			156 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			TUR = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+					}
+				}
+	focus = {
+		id = TECH_closure_of_the_belt
+		icon = Focus_Generic_Consumer_Goods
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_end_the_sickness
+		}
+		x = 40
+		y = 12
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+  increase_centralization = yes 
+  increase_social_spending = yes 
+  increase_education_budget = yes 
+  increase_healthcare_budget = yes 
+  increase_military_spending = yes 
+  increase_policing_budget = yes 
+}   }
+	focus = {
+		id = TECH_end_the_sickness
+		icon = economic_prosperity
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_improve_the_unions
+		}
+		x = 40
+		y = 11
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+remove_ideas = reformss_for_2001_crisis
+swap_ideas = { 
+  remove_idea = lira_1
+  add_idea = lira_3
+}
+}   }
+	focus = {
+		id = TECH_2008_budget_replanning
+		icon = economic_crisis
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_closure_of_the_belt
+		}
+		x = 40
+		y = 13
+
+        available = {
+		date > 2008.1.1
+		}
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+  increase_centralization = yes 
+  increase_social_spending = yes 
+  increase_education_budget = yes 
+  decrease_policing_budget = yes 
+  hidden_effect = {
+  decrease_policing_budget = yes 
+  decrease_policing_budget = yes 
+  }
+
+block_police_increase = yes 
+block_edu_increase = yes
+block_health_increase = yes 
+block_social_increase = yes
+block_bureau_increase = yes
+block_defence_increase = yes
+
+swap_ideas = { 
+  remove_idea = recession
+  add_idea = stagnation
+}
+}   }
+	focus = {
+		id = TECH_get_rid_of_military_factories
+		icon = factory_complex
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_2008_budget_replanning
+		}
+		x = 37
+		y = 14
+
+
+        available = {
+		controls_state = 159
+		controls_state = 157
+		controls_state = 156
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+			159 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			157 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			156 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			934 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_support_corporations
+		icon = generic_banks
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_2008_budget_replanning
+		}
+		x = 39
+		y = 14
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+add_ideas = corporation_boosting    
+}   }
+	focus = {
+		id = TECH_turkish_airways
+		icon = focus_airline
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_2008_budget_replanning
+		}
+		x = 41
+		y = 14
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+add_ideas = turkish_airforces    
+}   }
+	focus = {
+		id = TECH_new_taxation_policies
+		icon = Generic_State_Socialism
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_2008_budget_replanning
+		}
+		x = 43
+		y = 14
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			add_ideas = new_taxation_system
+		custom_effect_tooltip = HIGH_TAX_ACTION
+			subtract_from_variable = { corporate_tax_rate = -2 }
+			subtract_from_variable = { population_tax_rate = -2 }
+		} } 
+	focus = {
+		id = TECH_stock_the_money_for_bad_times
+		icon = Generic_Loadsamoney
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_support_corporations
+		}
+		prerequisite = {
+			focus = TECH_get_rid_of_military_factories
+		}
+		x = 39
+		y = 15
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+
+		completion_reward = {
+add_ideas = money_stocking_programme    
+}   }
+	focus = {
+		id = TECH_the_offices
+		icon = chiturmarganets
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_turkish_airways
+		}
+		prerequisite = {
+			focus = TECH_new_taxation_policies
+		}
+		x = 41
+		y = 15
+
+
+        available = {
+		controls_state = 156
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+			156 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			934 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_finalize_the_2008_crisis
+		icon = gold_standard2
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_the_offices
+		}
+		prerequisite = {
+			focus = TECH_stock_the_money_for_bad_times
+		}
+		x = 40
+		y = 16
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = recession
+  add_idea = fast_growth
+}
+swap_ideas = { 
+  remove_idea = lira_3
+  add_idea = lira_4
+}
+}   }
+	focus = {
+		id = TECH_the_auto_campaign
+		icon = industry_communist2
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_finalize_the_2008_crisis
+		}
+		x = 40
+		y = 17
+
+        available = {
+		date > 2016.1.1
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+add_ideas = automazation_campaign    
+}   }
+	focus = {
+		id = TECH_fourth_generation_military_industries
+		icon = industry_military
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_the_auto_campaign
+		}
+		x = 37
+		y = 18
+
+
+        available = {
+		controls_state = 159
+		controls_state = 157
+		controls_state = 156
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+			search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+		add_ideas = fifth_generation_military_industries
+			every_military_industrial_organization = {
+				add_mio_funds = 500
+			}
+			159 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			157 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			156 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			934 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = -1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_anti_unemployment_campaign
+		icon = production2
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_robotic_workforce
+		}
+		prerequisite = {
+			focus = TECH_fourth_generation_military_industries
+		}
+		x = 38
+		y = 19
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = robotic_workforces_auto
+  add_idea = anti_unemployment_campaign
+}
+      
+}   }
+	focus = {
+		id = TECH_the_sufficent_tax
+		icon = radical_tax_reform
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_the_auto_campaign
+		}
+		x = 41
+		y = 18
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+add_ideas = sufficent_tax    
+		custom_effect_tooltip = HIGH_TAX_ACTION
+			subtract_from_variable = { corporate_tax_rate = -2 }
+			subtract_from_variable = { population_tax_rate = -2 }
+}   }
+	focus = {
+		id = ECH_fourth_generation_civilian_industries
+		icon = sustainable_development
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_the_auto_campaign
+		}
+		x = 43
+		y = 18
+
+
+        available = {
+		controls_state = 159
+		controls_state = 157
+		controls_state = 156
+		controls_state = 934
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+		add_ideas = fourth_generation_civilian_industries
+			159 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+			}
+			157 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+			}
+			156 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+			}
+			934 = { 
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					instant_build = yes
+					level = -1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_robotic_workforce
+		icon = mining_truck
+		cost = 7.2
+		prerequisite = {
+			focus = TECH_the_auto_campaign
+		}
+		x = 39
+		y = 18
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = automazation_campaign
+  add_idea = robotic_workforces_auto
+}
+      
+}   }
+	focus = {
+		id = TECH_sufficent_based_economy
+		icon = women_in_the_economy
+		cost = 7.2
+		prerequisite = {
+			focus = ECH_fourth_generation_civilian_industries
+		}
+		prerequisite = {
+			focus = TECH_the_sufficent_tax
+		}
+		x = 42
+		y = 19
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = sufficent_tax
+  add_idea = sufficent_tax_economics
+}
+      
+}   }
+	focus = {
+		id = TECH_finalize_the_auto_campaign
+		icon = lion_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_sufficent_based_economy
+		}
+		prerequisite = {
+			focus = TECH_anti_unemployment_campaign
+		}
+		x = 40
+		y = 20
+
+		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = anti_unemployment_campaign
+  add_idea = ending_the_automazation_campaign
+}
+      
+}   }
+	focus = {
+		id = TECH_NATO_policies
+		icon = nato2
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_where_the_wind_blows
+		}
+		x = 71
+		y = 5
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+			completion_reward = {
+			add_political_power = 125
+	}
+			}
+	focus = {
+		id = TECH_prepare_for_world_war_three
+		icon = chemical_warfare
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_NATO_policies
+		}
+		x = 69
+		y = 6
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+			completion_reward = {
+
+			add_doctrine_cost_reduction = {
+				name = CAT_land_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = CAT_land_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+
+			add_doctrine_cost_reduction = {
+				name = CAT_navy_doctrine
+				cost_reduction = 1.0
+				uses = 1
+				category = CAT_air_doctrine
+			}
+	}
+			}
+	focus = {
+		id = TECH_operational_forces
+		icon = counter
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_NATO_policies
+		}
+		x = 62
+		y = 6
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+            completion_reward = {
+			add_ideas = operational_forces
+				}
+	}
+	focus = {
+		id = TECH_buy_patriot_missles
+		icon = katyusha
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_prepare_for_world_war_three
+		}
+		x = 69
+		y = 7
+
+
+        available = {
+		controls_state = 934
+		controls_state = 155
+		controls_state = 159
+        }
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+			934 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			155 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			159 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_land_fortification
+		icon = military_fort2
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_prepare_for_world_war_three
+		}
+		x = 67
+		y = 7
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+	completion_reward = {
+		add_ideas = land_fort_planting
+ }
+}
+	focus = {
+		id = TECH_fort_the_bulgarian_line
+		icon = promote_bulgarian_nationalism
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_prepare_for_world_war_three
+		}
+		x = 71
+		y = 7
+
+        available = {
+		controls_state = 934
+		}
+		
+		search_filters = {FOCUS_FILTER_EXPENDITURE}				
+		completion_reward = {
+            934 = {
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 849
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 3893
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 11842
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = bunker
+                            level = 3
+                            province = 922
+                            instant_build = yes
+                        }					
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } }
+	focus = {
+		id = TECH_missle_places
+		icon = rocketry
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_buy_patriot_missles
+		}
+		prerequisite = {
+			focus = TECH_land_fortification
+		}
+		x = 68
+		y = 8
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+
+
+        available = {
+		controls_state = 934
+		controls_state = 155
+		controls_state = 159
+        }
+
+		completion_reward = {
+			934 = { 
+				add_building_construction = {
+					type = missile_defense_station
+					instant_build = yes
+					level = 1
+				}
+			}
+			155 = { 
+				add_building_construction = {
+					type = missile_defense_station
+					instant_build = yes
+					level = 1
+				}
+			}
+			159 = { 
+				add_building_construction = {
+					type = missile_defense_station
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_professional_railways
+		icon = railways_shaaban
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_fort_the_bulgarian_line
+		}
+		prerequisite = {
+			focus = TECH_buy_patriot_missles
+		}
+		x = 70
+		y = 8
+
+
+        available = {
+		controls_state = 1032
+		controls_state = 157
+		controls_state = 159
+        }
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+			1032 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			159 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			157 = { 
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_new_airports
+		icon = nanjing_airport
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_professional_railways
+		}
+		prerequisite = {
+			focus = TECH_missle_places
+		}
+		x = 70
+		y = 9
+
+
+        available = {
+		controls_state = 159
+		controls_state = 162
+		controls_state = 935
+		controls_state = 156
+		controls_state = 163
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+			search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+			159 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 3
+				}
+				} 
+			162 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 3
+				}
+				} 
+			935 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 3
+				}
+				}
+			156 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 3
+				}
+				}  				
+			163 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 3
+				} 
+				
+			}
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_relocate_the_nuclear_reactors
+		icon = natanz_nuclear_facility
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_missle_places
+		}
+		x = 68
+		y = 9
+
+
+
+        available = {
+		controls_state = 934
+		controls_state = 161
+		controls_state = 163
+        }
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}				
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+			934 = { 
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				}
+			}
+			161 = { 
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				}
+			}
+			163 = { 
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				}
+			}
+			set_temp_variable = { change_resource = 1500 }
+			change_reactor_grade_material_effect = yes
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_open_bases_in_somaliland
+		icon = focus_generic_develop_somaliland
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_intervene_in_the_somaliland
+		}
+		x = 54
+		y = 8
+
+        available = {
+		SOM = {
+		has_war = yes
+		}
+		country_exists = SOM
+		NOT = {
+		has_war_with = SOM
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			SOM = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+	diplomatic_relation = {
+		country = SOM
+		relation = military_access
+		active = yes
+	}
+				}
+	}
+	focus = {
+		id = TECH_intervene_in_the_somaliland
+		icon = align_to_somalia
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_operational_forces
+		}
+		x = 54
+		y = 7
+
+        available = {
+		SOM = {
+		has_war = yes
+		}
+		country_exists = SOM
+		NOT = {
+		has_war_with = SOM
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+			completion_reward = {
+			SOM = {
+			add_war_support = 0.02
+	add_equipment_to_stockpile = {
+		type = infantry_weapons
+		amount = 1200 #HK33 - majority
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = command_control_equipment2
+		amount = 760
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_0
+		amount = 760
+		producer = TUR
+	}
+			} } }
+	focus = {
+		id = TECH_puppet_the_somali
+		icon = attack_somalia
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_open_bases_in_somaliland
+		}
+		x = 54
+		y = 9
+
+
+        available = {
+		SOM = {
+		has_war = yes
+		has_capitulated = no
+		surrender_progress > 0.85
+		}
+		SOM = {
+		influence_higher_30 = yes
+		}
+		country_exists = SOM
+		NOT = {
+		has_war_with = SOM
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			transfer_state = 593
+			TUR = { puppet = SOM }
+			SOM = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				}
+	}
+	focus = {
+		id = TECH_intervene_in_the_indonesia
+		icon = align_to_indonesia
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_operational_forces
+		}
+		x = 56
+		y = 7
+
+
+        available = {
+		IND = {
+		has_war = yes
+		}
+		country_exists = IND
+		NOT = {
+		has_war_with = IND
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+			completion_reward = {
+			IND = {
+			add_war_support = 0.02
+	add_equipment_to_stockpile = {
+		type = infantry_weapons
+		amount = 1200 #HK33 - majority
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = command_control_equipment2
+		amount = 760
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_0
+		amount = 760
+		producer = TUR
+	}
+			} } }
+	focus = {
+		id = TECH_open_bases_in_indonesia
+		icon = trade_with_indonesia
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_intervene_in_the_indonesia
+		}
+		x = 56
+		y = 8
+
+
+        available = {
+		IND = {
+		has_war = yes
+		}
+		country_exists = IND
+		NOT = {
+		has_war_with = IND
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			IND = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+	diplomatic_relation = {
+		country = IND
+		relation = military_access
+		active = yes
+	}
+				}
+	}
+	focus = {
+		id = TECH_puppet_the_indonesia
+		icon = attack_indonesia
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_open_bases_in_indonesia
+		}
+		x = 56
+		y = 9
+
+
+
+        available = {
+		IND = {
+		has_war = yes
+		has_capitulated = no
+		surrender_progress > 0.85
+		}
+		IND = {
+		influence_higher_30 = yes
+		}
+		country_exists = IND
+		NOT = {
+		has_war_with = IND
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			transfer_state = 637
+			transfer_state = 636
+			TUR = { puppet = IND }
+			IND = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				}
+	}
+	focus = {
+		id = TECH_intervene_in_the_yemen
+		icon = align_to_yemen
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_operational_forces
+		}
+		x = 58
+		y = 7
+
+
+        available = {
+		YEM = {
+		has_war = yes
+		}
+		country_exists = YEM
+		NOT = {
+		has_war_with = YEM
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+			completion_reward = {
+			YEM = {
+			add_war_support = 0.02
+	add_equipment_to_stockpile = {
+		type = infantry_weapons
+		amount = 1200 #HK33 - majority
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = command_control_equipment2
+		amount = 760
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_0
+		amount = 760
+		producer = TUR
+	}
+			} } }
+	focus = {
+		id = TECH_intervene_in_the_libya
+		icon = generic_entrenchment
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_operational_forces
+		}
+		x = 60
+		y = 7
+
+
+        available = {
+		LBA = {
+		has_war = yes
+		}
+		country_exists = LBA
+		NOT = {
+		has_war_with = LBA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+			completion_reward = {
+			LBA = {
+			add_war_support = 0.02
+	add_equipment_to_stockpile = {
+		type = infantry_weapons
+		amount = 1200 #HK33 - majority
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = command_control_equipment2
+		amount = 760
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_0
+		amount = 760
+		producer = TUR
+	}
+			} } }
+	focus = {
+		id = TECH_intervene_in_the_tunisia
+		icon = align_to_tunisia
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_operational_forces
+		}
+		x = 62
+		y = 7
+
+
+        available = {
+		TUN = {
+		has_war = yes
+		}
+		country_exists = TUN
+		NOT = {
+		has_war_with = TUN
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+			completion_reward = {
+			TUN = {
+			add_war_support = 0.02
+	add_equipment_to_stockpile = {
+		type = infantry_weapons
+		amount = 1200 #HK33 - majority
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = command_control_equipment2
+		amount = 760
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_0
+		amount = 760
+		producer = TUR
+	}
+			} } }
+	focus = {
+		id = TECH_intervene_in_the_mexico
+		icon = align_to_mexico
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_operational_forces
+		}
+		x = 64
+		y = 7
+
+
+
+        available = {
+		MEX = {
+		has_war = yes
+		}
+		country_exists = MEX
+		NOT = {
+		has_war_with = MEX
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+			completion_reward = {
+			MEX = {
+			add_war_support = 0.02
+	add_equipment_to_stockpile = {
+		type = infantry_weapons
+		amount = 1200 #HK33 - majority
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = command_control_equipment2
+		amount = 760
+		producer = TUR
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_0
+		amount = 760
+		producer = TUR
+	}
+			} } }
+	focus = {
+		id = TECH_open_bases_in_yemen
+		icon = houthi_yemen
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_intervene_in_the_yemen
+		}
+		x = 58
+		y = 8
+
+
+
+        available = {
+		YEM = {
+		has_war = yes
+		}
+		country_exists = YEM
+		NOT = {
+		has_war_with = YEM
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			YEM = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+	diplomatic_relation = {
+		country = YEM
+		relation = military_access
+		active = yes
+	}
+				}
+	}
+	focus = {
+		id = TECH_open_bases_in_libya
+		icon = focus_generic_develop_libya
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_intervene_in_the_libya
+		}
+		x = 60
+		y = 8
+
+
+        available = {
+		LBA = {
+		has_war = yes
+		}
+		country_exists = LBA
+		NOT = {
+		has_war_with = LBA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			LBA = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+	diplomatic_relation = {
+		country = LBA
+		relation = military_access
+		active = yes
+	}
+				}
+	}
+	focus = {
+		id = TECH_open_bases_in_tunisia
+		icon = develop_tunisia
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_intervene_in_the_tunisia
+		}
+		x = 62
+		y = 8
+
+
+        available = {
+		TUN = {
+		has_war = yes
+		}
+		country_exists = TUN
+		NOT = {
+		has_war_with = TUN
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			TUN = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+	diplomatic_relation = {
+		country = TUN
+		relation = military_access
+		active = yes
+	}
+				}
+	}
+	focus = {
+		id = TECH_open_bases_in_mexico
+		icon = MEX_Federal_government_of_Mexico
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_intervene_in_the_mexico
+		}
+		x = 64
+		y = 8
+
+
+        available = {
+		MEX = {
+		has_war = yes
+		}
+		country_exists = MEX
+		NOT = {
+		has_war_with = MEX
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			MEX = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+	diplomatic_relation = {
+		country = MEX
+		relation = military_access
+		active = yes
+	}
+				}
+	}
+	focus = {
+		id = TECH_puppet_the_yemen
+		icon = Generic_African_Soldier
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_open_bases_in_yemen
+		}
+		x = 58
+		y = 9
+
+
+        available = {
+		YEM = {
+		has_war = yes
+		has_capitulated = no
+		surrender_progress > 0.85
+		}
+		YEM = {
+		influence_higher_30 = yes
+		}
+		country_exists = YEM
+		NOT = {
+		has_war_with = YEM
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			transfer_state = 198
+			TUR = { puppet = YEM }
+			YEM = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				}
+	}
+	focus = {
+		id = TECH_puppet_the_libya
+		icon = Generic_Artillery_Barrel
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_open_bases_in_libya
+		}
+		x = 60
+		y = 9
+
+
+        available = {
+		LBA = {
+		has_war = yes
+		has_capitulated = no
+		surrender_progress > 0.85
+		}
+		LBA = {
+		influence_higher_30 = yes
+		}
+		country_exists = LBA
+		NOT = {
+		has_war_with = LBA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			transfer_state = 396
+			TUR = { puppet = LBA }
+			LBA = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				}
+	}
+	focus = {
+		id = TECH_puppet_the_tunisia
+		icon = attack_tunisia
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_open_bases_in_tunisia
+		}
+		x = 62
+		y = 9
+
+
+        available = {
+		TUN = {
+		has_war = yes
+		has_capitulated = no
+		surrender_progress > 0.85
+		}
+		TUN = {
+		influence_higher_30 = yes
+		}
+		country_exists = TUN
+		NOT = {
+		has_war_with = TUN
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			TUR = { puppet = TUN }
+			TUN = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				}
+	}
+	focus = {
+		id = TECH_puppet_the_mexico
+		icon = attack_mexico
+		cost = 5,00
+		prerequisite = {
+			focus = TECH_open_bases_in_mexico
+		}
+		x = 64
+		y = 9
+
+
+        available = {
+		MEX = {
+		has_war = yes
+		has_capitulated = no
+		surrender_progress > 0.85
+		}
+		MEX = {
+		influence_higher_30 = yes
+		}
+		country_exists = MEX
+		NOT = {
+		has_war_with = MEX
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_ANNEXATION}
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+			completion_reward = {
+			transfer_state = 840
+			TUR = { puppet = MEX }
+			MEX = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+				}
+	}
+	focus = {
+		id = TECH_world_war_three_declaration
+		icon = Generic_Tank_through_Wall
+		cost = 15,00
+		prerequisite = {
+			focus = TECH_reorganize_the_war_support
+		}
+		prerequisite = {
+			focus = TECH_reorganize_the_stability
+		}
+		prerequisite = {
+			focus = TECH_root_out_the_immigrant_paths
+		}
+		x = 75
+		y = 11
+
+
+        available = {
+		SOV = {
+		has_war_with = USA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+add_war_support = 0.1
+			TUR = {
+				set_temp_variable = { percent_change = 10 }
+				set_temp_variable = { tag_index = TUR.id }
+				change_influence_percentage = yes
+			}
+}   }
+	focus = {
+		id = TECH_reorganize_the_war_support
+		icon = anti_war_with_big_gun
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_new_airports
+		}
+		prerequisite = {
+			focus = TECH_relocate_the_nuclear_reactors
+		}
+		x = 69
+		y = 10
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
+
+		completion_reward = {
+			add_war_support = 0.1
+		} } 
+	focus = {
+		id = TECH_rubber_mines
+		icon = rubber_production
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_iron_mines
+		}
+		prerequisite = {
+			focus = TECH_boron
+		}
+		prerequisite = {
+			focus = TECH_wealth_irons
+		}
+		x = 103
+		y = 5
+
+	
+		available = {
+		controls_state = 159
+		controls_state = 1032
+		}
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_RESOURCE}
+		
+		completion_reward = {
+	  			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt	
+		159 = {
+				add_resource = {
+					type = rubber
+					amount = 28
+				}
+			}
+		1032 = {
+				add_resource = {
+					type = rubber
+					amount = 17
+				}
+			}
+		} }
+	focus = {
+		id = TECH_dozens_of_militaries
+		icon = Generic_Military_Equipment
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_move_industries_to_istanbul
+		}
+		prerequisite = {
+			focus = TECH_capital_investments
+		}
+		prerequisite = {
+			focus = TECH_eastern_arms_factories
+		}
+		x = 112
+		y = 5
+
+
+        available = {
+		controls_state = 1032
+		controls_state = 992
+		controls_state = 160
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			1032 = { 
+		add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			992 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			160 = { 
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_financial_state
+		icon = industry3
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_work_on_local_technologies
+		}
+		prerequisite = {
+			focus = TECH_finance_istanbul
+		}
+		prerequisite = {
+			focus = TECH_bankery_offices
+		}
+		x = 121
+		y = 5
+
+
+        available = {
+		controls_state = 159
+		controls_state = 934
+		controls_state = 1032
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		
+		completion_reward = {
+			159 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			934 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			1032 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				}
+			}
+			subtract_from_variable = { treasury = 75.0 }
+			custom_effect_tooltip = 75_billion_expense_tt
+		} }
+	focus = {
+		id = TECH_ankara_diyarbakir_railway
+		icon = Generic_Railroads
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_turkish_railways
+		}
+		x = 126
+		y = 5
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+	completion_reward = {
+			build_railway = {
+				path = { 11747 804 3862 3807 921 6977 3921 3890 9860 7620 11759 4512 }
+				level = 1
+			}
+			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt
+					}
+				}
+	focus = {
+		id = TECH_nuclear_energy
+		icon = BLR_promise_first_nuclear
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_high_technology_adminstration
+		}
+		x = 112
+		y = 9
+
+
+				search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+	completion_reward = {
+	   add_ideas = nuclear_energy_project
+			set_temp_variable = { change_resource = 500 }
+			change_reactor_grade_material_effect = yes
+      }
+	}
+	focus = {
+		id = TECH_seek_help_from_russia
+		icon = flag_russia
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_nuclear_energy
+		}
+		x = 112
+		y = 10
+
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
+
+        available = {
+		country_exists = SOV
+		NOT = {
+		has_war_with = SOV
+		 }
+        }
+
+    bypass = {
+	OR = {
+	has_war_with = SOV
+    NOT = {
+	country_exists = SOV
+	 }
+	} }
+
+            completion_reward = {
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+			SOV = {
+			add_political_power = 100
+			subtract_from_variable = { treasury = -25.0 }
+			custom_effect_tooltip = 25_billion_revenue_tt
+			}
+				}
+	}
+	focus = {
+		id = TECH_national_uranium_campaign
+		icon = Eu_nuclear_power
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_nuclear_energy
+		}
+		x = 110
+		y = 10
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_RESOURCE}
+
+       available = {
+		controls_state = 161 
+		controls_state = 934 
+		controls_state = 159 
+		controls_state = 158 
+        }
+
+		completion_reward = {
+	  			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_expense_tt	
+			set_temp_variable = { change_resource = 1500 }
+			change_reactor_grade_material_effect = yes
+			161 = {		
+				add_resource = {
+					type = chromium
+					amount = 24
+				}
+			934 = {		
+				add_resource = {
+					type = iron
+					amount = 25
+				}
+			159 = {		
+				add_resource = {
+					type = tungsten
+					amount = 27
+				}
+			158 = {		
+				add_resource = {
+					type = rubber
+					amount = 3
+				}
+			} } } 
+		} } }
+	focus = {
+		id = TECH_new_reactors
+		icon = nuclear_science
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_seek_help_from_russia
+		}
+		prerequisite = {
+			focus = TECH_national_uranium_campaign
+		}
+		x = 111
+		y = 11
+
+
+        available = {
+		controls_state = 163
+		}
+				search_filters = {FOCUS_FILTER_EXPENDITURE}			
+
+		completion_reward = {
+			163 = { 
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				}
+			}
+			set_temp_variable = { change_resource = 500 }
+			change_reactor_grade_material_effect = yes
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_new_reactors_2
+		icon = nuclear_science
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_seek_help_from_russia
+		}
+		x = 113
+		y = 11
+
+
+        available = {
+		controls_state = 156
+		}
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}			
+
+		completion_reward = {
+			156 = { 
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				}
+			}
+			set_temp_variable = { change_resource = 500 }
+			change_reactor_grade_material_effect = yes
+			subtract_from_variable = { treasury = 25.0 }
+			custom_effect_tooltip = 25_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_new_resources
+		icon = mining
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_national_uranium_campaign
+		}
+		x = 109
+		y = 11
+
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = {FOCUS_FILTER_RESOURCE}
+
+
+       available = {
+		controls_state = 161 
+		controls_state = 934 
+		controls_state = 159 
+		controls_state = 158 
+        }
+		
+		completion_reward = {
+	  			subtract_from_variable = { treasury = 200.0 }
+			custom_effect_tooltip = 200_billion_expense_tt	
+			161 = {		
+				add_resource = {
+					type = chromium
+					amount = 21
+				}
+			934 = {		
+				add_resource = {
+					type = iron
+					amount = 22
+				}
+			159 = {		
+				add_resource = {
+					type = tungsten
+					amount = 31
+				}
+			158 = {		
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			} } } 
+		} } }
+	focus = {
+		id = TECH_declare_the_project
+		icon = nuclear_bull
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_new_reactors_2
+		}
+		prerequisite = {
+			focus = TECH_new_reactors
+		}
+		x = 112
+		y = 12
+
+        available = {
+		controls_state = 155
+		controls_state = 934
+		}
+
+				search_filters = {FOCUS_FILTER_EXPENDITURE}			
+
+		completion_reward = {
+			155 = { 
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				}
+			}
+			934 = { 
+				add_building_construction = {
+					type = nuclear_reactor
+					instant_build = yes
+					level = 1
+				}
+			}
+			set_temp_variable = { change_resource = 1000 }
+			change_reactor_grade_material_effect = yes
+			subtract_from_variable = { treasury = 50.0 }
+			custom_effect_tooltip = 50_billion_expense_tt
+		} } 
+	focus = {
+		id = TECH_turkish_nuclear_power
+		icon = nuclear_energy
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_declare_the_project
+		}
+		x = 112
+		y = 13
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = nuclear_power
+			set_temp_variable = { change_resource = 500 }
+			change_reactor_grade_material_effect = yes
+		} } 
+	focus = {
+		id = TECH_national_investment_in_turkish_space
+		icon = MEX_Social_investments
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_nation_in_space
+		}
+		prerequisite = {
+			focus = TECH_funded_TUA
+		}
+		x = 115
+		y = 11
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+				search_filters = {FOCUS_FILTER_EXPENDITURE}			
+
+	completion_reward = {
+	   add_stability = 0.02
+			subtract_from_variable = { treasury = 100.0 }
+			custom_effect_tooltip = 100_billion_expense_tt
+      }
+	}
+	focus = {
+		id = TECH_reform_TUA
+		icon = polish_intelligence
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_funded_TUA
+		}
+		x = 119
+		y = 11
+
+		search_filters = {FOCUS_FILTER_RESEARCH}	 
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = TUA_space_1
+  add_idea = TUA_space_2
+}   
+			add_tech_bonus = {
+				name = Cat_satellite
+				bonus = 0.5
+				uses = 1
+				category = Cat_satellite
+			}
+}   }
+	focus = {
+		id = TECH_space_intelligence
+		icon = moon_relax
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_national_investment_in_turkish_space
+		}
+		prerequisite = {
+			focus = TECH_together_with_auto
+		}
+		x = 116
+		y = 12
+
+
+            completion_reward = {
+			add_ideas = space_intelligence
+				}
+	}
+	focus = {
+		id = TECH_new_secrets
+		icon = Jews_In_Space
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_space_intelligence
+		}
+		x = 116
+		y = 13
+
+		search_filters = {FOCUS_FILTER_STABILITY}	 
+		search_filters = {FOCUS_FILTER_RESEARCH}	 
+
+            completion_reward = {
+			add_ideas = expose_of_the_dark_secrets
+				}
+	}
+	focus = {
+		id = TECH_general_mobilization_campaign
+		icon = mobilization_plan
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_world_war_three_declaration
+		}
+		x = 74
+		y = 12
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+add_ideas = national_mobilization
+}   }
+	focus = {
+		id = TECH_world_war_budget
+		icon = Focus_Mobile_Warfare_Doctrine
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_world_war_three_declaration
+		}
+		x = 76
+		y = 12
+
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = defence_07
+  add_idea = defence_09
+}   
+}   }
+	focus = {
+		id = TECH_new_incirlik
+		icon = usa_aircraft_advancements
+		cost = 10,00
+		prerequisite = {
+			focus = TECH_world_war_budget
+		}
+		prerequisite = {
+			focus = TECH_general_mobilization_campaign
+		}
+		x = 75
+		y = 13
+
+
+       available = {
+		controls_state = 161
+		country_exists = USA
+		NOT = {
+		has_war_with = USA
+		 }
+        }
+
+		search_filters = {FOCUS_FILTER_NATO}
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
+		search_filters = {FOCUS_FILTER_INFLUENCE}	 
+
+		completion_reward = {
+			161 = { 
+				add_building_construction = {
+					type = air_base
+					instant_build = yes
+					level = 5
+				}
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 2
+				}
+				add_building_construction = {
+					type = fuel_silo
+					instant_build = yes
+					level = 2
+				}
+				add_building_construction = {
+					type = radar_station
+					instant_build = yes
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 1
+				}  }
+			TUR = {
+				set_temp_variable = { percent_change = 5 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+		} } 
+
+
+
+
+	focus = {
+		id = TUR_covid-19_pandemic25
+		icon = generic_healthcare
+		cost = 10,00
+		x = 132
+		y = 0
+
+        available = {
+        has_idea = covid_19
+        }
+	
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+		completion_reward = {
+        add_political_power = 75
+	block_health_decrease = yes
+		} }
+		
+	focus = {
+		id = TUR_covid-19_preparations25
+		icon = production2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_pandemic25
+		}
+		x = 132
+		y = 1
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}		
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19
+  add_idea = covid_19_prepared
+}
+			subtract_from_variable = { treasury = 10.0 }
+			custom_effect_tooltip = 10_billion_expense_tt
+		} } 
+	focus = {
+		id = TUR_build_up_hospitals25
+		icon = generic_hospital2
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations25
+		}
+		x = 130
+		y = 2
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}			
+	completion_reward = {
+			subtract_from_variable = { treasury = 20.0 }
+			add_stability = 0.03
+			custom_effect_tooltip = 20_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_turn_airports_to_hospital25
+		icon = generic_hospital
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_build_up_hospitals25
+		}
+		x = 130
+		y = 3
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+			subtract_from_variable = { treasury = 5.0 }
+			add_stability = 0.02
+			custom_effect_tooltip = 5_billion_expense_tt
+			}
+	}
+	focus = {
+		id = TUR_start_up_vaccine_program25
+		icon = brain_power
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations25
+		}
+		x = 132
+		y = 2
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_EXPENDITURE}			
+		
+		
+	completion_reward = {
+	        add_stability = -0.05
+			add_political_power = -75
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			custom_effect_tooltip = COV_DECISION_OPENING_VAC
+			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
+			} 
+	}
+	focus = {
+		id = TUR_buy_german_vaccines25
+		icon = trade_with_germany
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_start_up_vaccine_program25
+		}
+		x = 132
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_increase_funds_to_science25
+		icon = market_economy
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_covid-19_preparations25
+		}
+		x = 134
+		y = 2
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+increase_healthcare_budget = yes
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_medicines25
+		icon = protectionist_economics
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_increase_funds_to_science25
+		}                                         
+		prerequisite = {                          
+			focus = TUR_increase_funds_to_science25
+		}
+		x = 134
+		y = 3
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_prepared
+  add_idea = covid_19_medicined
+} 
+			subtract_from_variable = { treasury = 20.0 }
+			custom_effect_tooltip = 20_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_buy_chinese_vaccines25
+		icon = trade_with_china
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_turn_airports_to_hospital25
+		}
+		prerequisite = {
+			focus = TUR_buy_german_vaccines25
+		}
+		prerequisite = {
+			focus = TUR_buy_medicines25
+		}
+		x = 132
+		y = 4
+
+		search_filters = {FOCUS_FILTER_EXPENDITURE}		
+		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
+			subtract_from_variable = { treasury = 5.0 }
+			custom_effect_tooltip = 5_billion_expense_tt
+			} 
+	}
+	focus = {
+		id = TUR_normalisation_from_covid25
+		icon = consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_buy_chinese_vaccines25
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
+		} }
+		x = 132
+		y = 5
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+	completion_reward = {
+swap_ideas = { 
+  remove_idea = covid_19_medicined
+  add_idea = covid_19_normalised
+} 
+	custom_effect_tooltip = COV_AVAILABLE_1
+}
+	}
+	focus = {
+		id = TUR_end_of_covid25
+		icon = aristocratic_funding
+		cost = 10,00
+		prerequisite = {
+			focus = TUR_normalisation_from_covid25
+		}
+		available = {
+	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
+		} }
+		x = 132
+		y = 6
+
+		search_filters = {FOCUS_FILTER_CORONA}	
+		
+	completion_reward = {
+remove_ideas = covid_19_normalised
+	custom_effect_tooltip = COV_AVAILABLE_2
+}
+	} 
+
+##############################
+###	Start of Turkic Focus Tree ###	x = 75 y = 55
+##############################
+
+shared_focus = TR_policies
+
+############################
+### End of Turkic Focus Tree ###
+############################
+
+
+##############################
+###	Start of Cypriot Tree ###	x = 13 y = 10
+##############################
+
+shared_focus = TUR_greek_issues
+
+############################
+### End of Cypriot Focus Tree ###
+############################
+
+
+##############################
+###	Start of EU Focus Tree ###	x = 3 y = 45
+##############################
+
+	shared_focus = USoE001
+	shared_focus = POTEF001
+
+############################
+### End of EU Focus Tree ###
+############################
+}

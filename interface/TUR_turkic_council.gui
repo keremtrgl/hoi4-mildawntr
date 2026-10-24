@@ -1,0 +1,18 @@
+@STATUS_X = -10
+@HEADER_X = 10
+
+guiTypes = {
+	containerWindowType = {
+		name = "tur_turkic_council_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 0 }
+
+
+		background = {
+			name = "turkic_council_gfx"
+			quadTextureSprite = "GFX_turkic_council"
+			position = { x = 100 y = -240 }
+		}
+		
+	}
+}

@@ -1,0 +1,41 @@
+TUR_startup = {
+	set_variable = { TUR_amount_lira_dollar = 542703 }
+	set_variable = { TUR_lira_amount_against_euro = 544711 }
+	set_variable = { TUR_lira_amount_against_sterlin = 872501 }
+	set_variable = { TUR_interest_rate = 8.25 }
+}
+TUR_amount_lira_dollar = {
+	clamp_variable = {
+		var = TUR_amount_lira_dollar
+		min = 0
+		max = 5000000
+	}
+}
+TUR_lira_amount_against_euro = {
+	clamp_variable = {
+		var = TUR_lira_amount_against_euro
+		min = 0
+		max = 5000000
+	}
+}
+TUR_lira_amount_against_bitcoin = {
+	clamp_variable = {
+		var = TUR_lira_amount_against_bitcoin
+		min = 0
+		max = 5000000
+	}
+}
+TUR_lira_amount_against_sterlin = {
+	clamp_variable = {
+		var = TUR_lira_amount_against_sterlin
+		min = 0
+		max = 5000000
+	}
+}
+TUR_interest_rate = {
+	clamp_variable = {
+		var = TUR_interest_rate
+		min = 0
+		max = 5000000
+	}
+}

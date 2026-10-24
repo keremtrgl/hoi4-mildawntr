@@ -1,0 +1,34 @@
+@STATUS_X = -10
+@HEADER_X = 10
+
+guiTypes = {
+	containerWindowType = {
+		name = "tur_tmsf_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 165 }
+
+		background = {
+			name = "bddk_gfx"
+			quadTextureSprite = "GFX_bddk"
+			position = { x = 365 y = 10 }
+		}
+
+		instantTextBoxType = {
+			name ="TUR_tmsfi_desc"
+			position = { x = 15 y = 10 }
+			font = "hoi_16mbs"
+			text = "TUR_tmsfi_desc"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_tmsfi_number"
+			position = { x = 15 y = 125 }
+			font = "hoi_36header"
+			text = "[?bddk_level]"
+			format = left
+			maxWidth = 497
+		}
+	}
+}

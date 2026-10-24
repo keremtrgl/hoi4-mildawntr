@@ -1,0 +1,1932 @@
+﻿capital = 159
+set_research_slots = 5
+
+156 = { set_state_flag = TUR_mun_take_over }
+163 = { set_state_flag = TUR_mun_take_over }
+934 = { set_state_flag = TUR_mun_take_over }
+
+156 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+163 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+934 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+
+
+934 = { add_dynamic_modifier = { modifier = kemalist_loyalties } }
+156 = { add_dynamic_modifier = { modifier = kemalist_loyalties } }
+157 = { add_dynamic_modifier = { modifier = kemalist_loyalties } }
+161 = { add_dynamic_modifier = { modifier = kemalist_loyalties } }
+158 = { add_dynamic_modifier = { modifier = kemalist_loyalties } }
+
+1205 = { add_dynamic_modifier = { modifier = the_city_of_cultures } }
+
+159 = { add_dynamic_modifier = { modifier = islamist_opposition } }
+160 = { add_dynamic_modifier = { modifier = islamist_opposition } }
+1032 = { add_dynamic_modifier = { modifier = islamist_opposition } }
+163 = { add_dynamic_modifier = { modifier = islamist_opposition } }
+992 = { add_dynamic_modifier = { modifier = islamist_opposition } }
+
+162 = { add_dynamic_modifier = { modifier = conscription_exemptions_granted } }
+935 = { add_dynamic_modifier = { modifier = conscription_exemptions_granted } }
+
+155 = { set_state_flag = neutral_state }
+
+159 = { set_state_flag = TUR_dometican_sway }
+160 = { set_state_flag = TUR_dometican_sway }
+1032 = { set_state_flag = TUR_dometican_sway }
+992 = { set_state_flag = TUR_dometican_sway }
+163 = { set_state_flag = TUR_dometican_sway }
+155 = { set_state_flag = TUR_dometican_sway }
+
+162 = { set_state_flag = TUR_dometican_sway }
+935 = { set_state_flag = TUR_dometican_sway }
+162 = { set_state_flag = TUR_yellow_state } 
+935 = { set_state_flag = TUR_yellow_state } 
+
+934 = { add_dynamic_modifier = { modifier = earthquake_large_destroy } }
+
+2000.1.1 = {
+	if = {
+		limit = { has_dlc = "No Step Back" }
+
+		set_oob = "TUR_2000_nsb"
+		else = {
+			set_oob = "TUR_2000_nonnsb"
+		}
+	}
+	set_cosmetic_tag = TUR
+	set_country_flag = dynamic_flag
+	set_country_flag = dynamic_rebel_flag
+	set_variable = { gdp_per_capita = 15.223 }
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "TUR_2000_naval_mtg"
+		else = {
+			set_naval_oob = "TUR_2000_naval_legacy"
+		}
+	}
+
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "TUR_2000_bba"
+		else = {
+			set_air_oob = "TUR_2000_nonbba"
+		}
+	}
+
+set_country_flag = MENU_OUTLOOK_TRIGGERED
+set_global_flag = BLOCKED_BITCOIN_SELL_BUY
+set_global_flag = BLOCKED_SUPER_EVENTS
+set_global_flag = BLOCKED_WORLD_ACT
+set_global_flag = BLOCKED_FICTIONAL_REALITY
+set_global_flag = BLOCKED_SOUNDS
+
+set_global_flag = NO_MIT
+	#Political Leaders
+	set_global_flag = BLOCKED_FICTIONAL_REALITY
+    set_global_flag = END_THE_ELECTION_PR
+
+	set_global_flag = NO_MIT
+
+	set_country_flag = besimtibuk
+    set_global_flag = baykal
+	set_global_flag = aras
+	set_global_flag = osmanv
+	set_global_flag = kivirik
+	set_global_flag = recai
+    set_global_flag = muhsin
+	set_global_flag = cem_uzan
+    set_global_flag = yilmaz
+	set_global_flag = hadep
+	set_global_flag = ciler
+    set_global_flag = NO_TUR_MAFIATIC_TR
+	set_global_flag = ULKISTS_IN_ACTION
+	set_global_flag = EMEP_ACTIVE
+	#CT
+	set_country_flag = threat_level_moderate
+	set_global_flag = MP_MOMENT
+	set_global_flag = hdps
+	set_global_flag = noiyi
+	set_global_flag = fpstrong
+	set_global_flag = dyp
+	set_global_flag = perincek1
+	set_global_flag = NO_TURKIC
+	set_global_flag = ANARCHIST_NO
+	set_variable = { threat_level = 25 }
+	set_variable = { radicalization = 5 }
+	add_to_array = { global.ct_states = THIS }
+	set_variable = { ct_training = 7 }
+	#Islamism
+	set_variable = { social_conservatism_government = 15 }
+	set_variable = { social_conservatism_society = 15 }
+	set_country_flag = alcohol
+	set_country_flag = relaxed_dress_code
+	set_country_flag = banned_burqa
+	set_country_flag = banned_head_scarf
+	set_country_flag = TUR_turkishMafia
+	set_country_flag = same_sex_decriminalized
+
+	set_convoys = 90
+
+
+	#
+	set_variable = { TUR_mafia_influence_min = 40 } 	#Minimum Influence of the Mafia
+	set_variable = { TUR_mafia_influence_max = 100 }		#Maximum Mafia Influence
+	set_variable = { TUR_mafia_influence = 45 }			#Mafia Influence
+	set_variable = { TUR_mafia_influence_gain = 0 }	#Weekly increase, mainly constant
+	set_variable = { TUR_event_counter_1_mafia = 2 } #I don't even fucking know, I just copied it from Italy
+	#
+	#Inititate PKK resistance stuff
+	set_variable = { TUR_PKK_aggro_increase = -0.5 }	#Weekly decrease, mainly constant
+	set_variable = { TUR_PKK_min_strength = 30 } 	#Minimum strength of PKK, 15 x no of countries with PKK
+	set_variable = { TUR_PKK_aggro = 45 }			#PKK aggressiveness
+	set_variable = { TUR_PKK_max_aggro = 100 }		#Maximum PKK aggressiveness
+	set_variable = { TUR_PKK_strength = 35 }		#PKK strength
+	#
+	set_variable = { TUR_event_counter_1_pkk = 2 } #Meant for LOW intensity attacks
+	#
+	set_variable = { TUR_event_counter_2_pkk = 2 } #Meant for MEDIUM intensity attacks
+	#
+	set_variable = { TUR_event_counter_3_pkk = 2 } #Meant for HIGH intensity attacks
+	#
+
+	162 = {	#For Turkish Kurdistan state
+		start_resistance = yes
+		set_resistance = 10
+		set_compliance = 80
+		set_garrison_strength = 1.0
+		add_dynamic_modifier = { modifier = kurdish_resistance_dynamic_modifier }
+	}
+	935 = { #For Van state
+		start_resistance = yes
+		set_resistance = 10
+		set_compliance = 80
+		set_garrison_strength = 1.0
+		add_dynamic_modifier = { modifier = kurdish_resistance_dynamic_modifier }
+	}
+
+	set_variable = { industrial_conglomerates_opinion = 30 }
+	set_variable = { the_military_opinion = 60 }
+
+	give_guarantee = AZE
+	give_military_access = AZE
+	give_military_access = NCY
+	give_guarantee = NCY
+
+	#2000 relations
+	add_opinion_modifier = { target = CYP modifier = embargo }
+	reverse_add_opinion_modifier = { target = CYP modifier = embargo }
+
+	#2000 NATO Relations
+	add_opinion_modifier = { target = BEL modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = BEL modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = FRA modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = FRA modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = GER modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = GER modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = ITA modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = ITA modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = DEN modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = DEN modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = ENG modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = ENG modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = GRE modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = GRE modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = POR modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = POR modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = SPR modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = SPR modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = CZE modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = CZE modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = NOR modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = NOR modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = CAN modifier = NATO_member_modifier }
+	reverse_add_opinion_modifier = { target = CAN modifier = NATO_member_modifier }
+	add_opinion_modifier = { target = EGY modifier = historic_friends }
+	reverse_add_opinion_modifier = { target = EGY modifier = historic_friends }
+	reverse_add_opinion_modifier = { target = ARM modifier = refuse_to_apologize_for_warcrimes }
+	reverse_add_opinion_modifier = { target = KUR modifier = called_for_our_destruction }
+	add_opinion_modifier = { target = SYR modifier = historic_enemies }
+	reverse_add_opinion_modifier = { target = SYR modifier = historic_enemies }
+
+	set_technology = {
+		COMSAT1 = 1
+
+		SPYSAT1 = 1
+
+		nuclear_technology = 1
+		reactor1 = 1
+		reactor2 = 1
+		integrated_transportation_system = 1
+		post_conventional_rail = 1
+		early_freight_locomotive = 1
+
+		legacy_doctrines = 1
+		infantry_mass_assault = 1
+
+		#Infantry weapons, only licensed G3A3
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		infantry_weapons3 = 1
+		support_weapons = 1
+		tandem_charge_warheads = 1
+		squad_automatic_weapon = 1
+		night_vision_1 = 1
+		night_vision_2 = 1
+		special_forces = 1
+		special_forces2 = 1
+
+		#C&C equipment, 1995
+		command_control_equipment = 1
+		command_control_equipment1 = 1
+
+		combat_eng_equipment = 1
+
+		#TAI TURNA
+		land_Drone_equipment = 1
+
+		Anti_tank_0 = 1
+		Heavy_Anti_tank_0 = 1
+		AT_upgrade_1 = 1
+		Anti_tank_1 = 1
+		Heavy_Anti_tank_1 = 1
+
+		combat_eng_equipment = 1
+
+		util_vehicle_0 = 1
+		util_vehicle_1 = 1
+		util_vehicle_2 = 1
+		util_vehicle_3 = 1	#Otokar Cobra
+
+		night_vision_1 = 1
+		night_vision_2 = 1
+
+		body_armor_1980 = 1
+
+		camouflage = 1
+
+		#MBTs for templates
+		#Otokar Akrep & Cobra
+
+		#Panter
+
+		#Firtina & Kasirga
+
+		#AT for templates and soon to be released Mizrat
+		Anti_tank_0 = 1
+		Heavy_Anti_tank_0 = 1
+		AT_upgrade_1 = 1
+
+		#AA for templates
+
+		#Mainframe computing
+		basic_computing = 1
+		integrated_circuit = 1
+		computing1 = 1
+		decryption1 = 1
+		encryption1 = 1
+		microprocessors = 1
+
+		radar = 1
+		internet1 = 1
+		internet2 = 1
+		fuel_silos = 1
+
+		industrial_electrospun_polymeric_nanofibers = 1
+		multiwalled_carbon_nanotubes = 1
+		stereolitography = 1
+		early_3D_printers = 1
+		DNA_fingerprinting = 1
+		fuel_refining = 1
+		fuel_refining2 = 1
+		energy_efficiency = 1
+		energy_efficiency2 = 1
+		fuel_efficiency = 1
+		early_renewables = 1
+		renewables = 1
+		electrification_1 = 1
+		construction1 = 1
+
+
+
+		transport_helicopter1 = 1
+		nsb_transport_helicopter1 = 1
+		transport_helicopter2 = 1
+		nsb_transport_helicopter2 = 1
+	}
+
+	complete_special_project = sp:sp_helicopter_project
+
+	if = { limit = { has_dlc = "Gotterdammerung" }
+		set_technology = {
+			ballistic_missile = 1
+
+			IRBM = 1
+			IRBM1 = 1
+
+			cruise_missile = 1
+
+			GLCM = 1
+			GLCM1 = 1
+
+			TEL_launched_missiles = 1
+			TEL_3 = 1
+			TEL_4 = 1
+
+			air_defense = 1
+
+			SAM = 1
+			SAM0 = 1
+			SAM1 = 1
+
+			hid_tech_missile_1 = 1
+			hid_tech_missile_2 = 1
+			hid_tech_missile_3 = 1
+			hid_tech_missile_4 = 1
+			hid_tech_missile_5 = 1
+			hid_tech_missile_6 = 1
+		}
+
+		complete_special_project = sp:sp_space_program_gdm
+		complete_special_project = sp:sp_missile_project
+
+		set_variable = { num_launchers_set = 6 }
+
+		else = {
+			complete_special_project = sp:sp_space_program_non_gdm
+		}
+	}
+
+	if = {
+		limit = { has_dlc = "No Step Back" }
+
+
+		set_technology = {
+			mbt_tech_ops = 1
+            mbt_tech = 1
+			mbt_tech_1 = 1
+			early_cold_war_ammo = 1
+			defensive_systems = 1
+			nsb_gun_technology_1 = 1
+			nsb_artillery_ammo_1 = 1
+			nsb_special_ammo_0 = 1
+			nsb_AA_autocannon_0 = 1
+			nsb_SHORAD_missile_0 = 1
+
+
+			diesel_engine_tech = 1
+			diesel_engine_tech_2 = 1
+			tank_components_tech = 1
+			tank_components_tech_2 = 1
+			small_autocannon_tech = 1
+
+				#M52T
+			nsb_artillery_0 = 1
+			nsb_Arty_upgrade_1 = 1
+			nsb_Anti_Air_0 = 1
+			nsb_Anti_Air_1 = 1
+			nsb_AA_upgrade_1 = 1
+
+			 #Altigan PMADS
+			nsb_Anti_Air_0 = 1
+
+			helo_ops_tech = 1
+			nsb_attack_helicopter_tech_1 = 1
+			nsb_engine_tech_1 = 1
+			nsb_atgm_tech_1 = 1
+			nsb_multiple_atgm_tech_1 = 1
+			nsb_heavy_atgm_tech_1 = 1
+			nsb_rocket_pods_tech_1 = 1
+			nsb_gun_pods_tech_1 = 1
+			nsb_light_nose_gun_tech_1 = 1
+
+
+			nsb_defense_tech_1 = 1
+
+
+
+
+		}
+
+		create_equipment_variant = {
+			name = "AAPC"
+			type = medium_tank_amphibious_chassis_1
+			parent_version = 1
+			modules = {
+				main_armament_slot = afv_machine_gun
+			   reload_type_slot = automatic_loading
+			   ammunition_load_slot = machine_gun_ammo_1
+				turret_type_slot = tank_no_turret
+				suspension_type_slot = tank_torsion_bar_suspension_medium
+				engine_type_slot = tank_diesel_engine_gen2
+				armor_type_slot = afv_alum_armor_gen2
+				special_type_slot_1 = afv_gun_ports
+				special_type_slot_2 = smoke_launchers_2
+				special_type_slot_3 = afv_troop_capacity
+				special_type_slot_4 = tank_battlestation_1
+				special_type_slot_5 = afv_reverse_doors
+				special_type_slot_6 = spaced_armor_gen1
+			}
+			upgrades = {
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "gfx/interface/technologies/TUR/LAND/APC2.dds"
+		}
+		create_equipment_variant = {
+			name = "AIFV"
+			type = medium_tank_amphibious_chassis_1
+			parent_version = 2
+			modules = {
+				main_armament_slot = small_autocannon_2
+			   ammunition_load_slot = mixed_autocannon_ammo_1
+				turret_type_slot = tank_base_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension_medium
+				engine_type_slot = tank_diesel_engine_gen2
+				armor_type_slot = afv_alum_armor_gen2
+				special_type_slot_1 = afv_gun_ports
+				special_type_slot_2 = smoke_launchers_2
+				special_type_slot_3 = afv_troop_capacity
+				special_type_slot_4 = tank_battlestation_1
+				special_type_slot_5 = afv_reverse_doors
+				special_type_slot_6 = spaced_armor_gen1
+			}
+			upgrades = {
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "gfx/interface/technologies/TUR/LAND/APC3.dds"
+		}
+
+		create_equipment_variant = {
+			name = "M52T"
+			type = medium_tank_artillery_chassis_0
+			parent_version = 0
+			modules = {
+				main_armament_slot = art_med_gun_gen1
+			   reload_type_slot = automatic_loading
+			   ammunition_load_slot = artillery_medium_ammo_1
+			   turret_type_slot = tank_base_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension_medium
+				engine_type_slot = tank_diesel_engine_gen1
+
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_fire_upgrade = 0
+			}
+			obsolete = yes
+			icon = "GFX_USA_medium_tank_artillery_chassis_1_a"
+		}
+
+		complete_special_project = sp:sp_armoured_vehicle_project
+
+		else = {
+			set_technology = {
+				MBT_1 = 1
+				Early_APC = 1
+				IFV_1 = 1
+				IFV_2 = 1
+				APC_1 = 1
+				APC_2 = 1
+				APC_3 = 1
+				SP_arty_0 = 1
+				SP_arty_1 = 1	#M52T
+				artillery_0 = 1
+				Arty_upgrade_1 = 1
+				SP_R_arty_0 = 1
+				SP_R_arty_1 = 1	#T-122 Sakariya
+				Anti_Air_0 = 1
+				Anti_Air_1 = 1
+				AA_upgrade_1 = 1
+				SP_Anti_Air_0 = 1
+				SP_Anti_Air_1 = 1 #Altigan PMADS
+				Anti_Air_0 = 1
+				SP_Anti_Air_0 = 1
+				attack_helicopter1 = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			corvette_hull_1 = 1
+			corvette_hull_2 = 1
+			corvette_hull_3 = 1
+
+			frigate_hull_1 = 1
+			frigate_hull_2 = 1
+			frigate_hull_3 = 1
+
+			destroyer_hull_1 = 1
+			destroyer_hull_2 = 1
+
+			attack_submarine_hull_1 = 1
+			attack_submarine_hull_2 = 1
+
+			aircraft_carrier_engineering = 1
+			aircraft_heli_engineering_1 = 1
+
+			tech_submarine_engineering = 1
+
+			tech_naval_systems_engineering = 1
+			tech_power_systems = 1
+			tech_power_systems_1 = 1
+
+			tech_combat_support_systems = 1
+			tech_fire_control = 1
+			tech_fire_control_1 = 1
+			tech_combat_radar = 1
+			tech_combat_radar_1 = 1
+			tech_combat_radar_2 = 1
+			tech_combat_sonar = 1
+			tech_combat_sonar_1 = 1
+			tech_combat_sonar_2 = 1
+
+			tech_early_naval_weapon_systems = 1
+			tech_naval_weapon_systems = 1
+			tech_light_guns = 1
+			tech_light_guns_1 = 1
+
+			tech_point_defense_system = 1
+			tech_point_defense_system_1 = 1
+			tech_point_defense_system_2 = 1
+			tech_point_defense_system_3 = 1
+
+			tech_turret_missiles_surface = 1
+			tech_turret_missiles_surface_1 = 1
+
+			tech_turret_missiles_aa = 1
+			tech_turret_missiles_aa_1 = 1
+
+			tech_vls_surface = 1
+			tech_vls_surface_1 = 1
+
+			tech_vls_aa = 1
+			tech_vls_aa_1 = 1
+
+			tech_torpedoes = 1
+			tech_torpedoes_1 = 1
+
+			tech_mtg_landing_craft = 1
+		}
+
+		#Tepe Class #Taiwan use this
+		create_equipment_variant = {
+			name = "Tepe Class"
+			type = frigate_hull_1
+			#name_group = TURKISH
+			parent_version = 0
+			modules = {
+				fixed_ship_engine_slot = module_light_surface_diesel_power
+				fixed_ship_fire_control_system_slot = module_analog_fire_control
+				fixed_ship_radar_slot = module_sonar_1
+				fixed_ship_auxillary_slot_2 = module_anti_submarine_mortar
+				fixed_ship_auxillary_slot_1 = module_aa_missiles_1
+				fixed_ship_auxillary_slot = module_fuel_tank
+				fixed_ship_battery_slot = module_76mm_battery
+				front_1_custom_slot = module_torpedoes_1
+				rear_1_custom_slot = module_light_helipad_1
+			}
+		}
+		#Gabya Class
+		create_equipment_variant = {
+			name = "Gabya Class"
+			type = frigate_hull_2
+			#name_group = TURKISH
+			parent_version = 0
+			modules = {
+				fixed_ship_engine_slot = module_light_surface_diesel_power
+				fixed_ship_fire_control_system_slot = module_analog_fire_control
+				fixed_ship_radar_slot = module_sonar_2
+				fixed_ship_auxillary_slot_2 = module_anti_submarine_mortar
+				fixed_ship_auxillary_slot_1 = module_aa_missiles_2
+				fixed_ship_auxillary_slot = module_fuel_tank
+				fixed_ship_battery_slot = module_127mm_battery
+				front_1_custom_slot = module_ciws_2
+				rear_1_custom_slot = module_asm_1
+			}
+		}
+		#Barbaros Class
+		create_equipment_variant = {
+			name = "Barbaros Class"
+			type = frigate_hull_3
+			#name_group = TURKISH
+			parent_version = 0
+			modules = {
+				fixed_ship_engine_slot = module_light_surface_diesel_power
+				fixed_ship_fire_control_system_slot = module_digital_integrated_fire_control
+				fixed_ship_radar_slot = module_radar_3
+				fixed_ship_auxillary_slot_2 = module_vls_sam_1
+				fixed_ship_auxillary_slot_1 = module_torpedoes_2
+				fixed_ship_auxillary_slot = module_ciws_2
+				fixed_ship_battery_slot = module_76mm_gun_1
+				front_1_custom_slot = module_asm_2
+				rear_1_custom_slot = module_light_helipad_1
+			}
+		}
+		#Salihreis Class
+		create_equipment_variant = {
+			name = "Barbaros Class - Salihreis Subclass"
+			type = frigate_hull_3
+			#name_group = TURKISH
+			parent_version = 1
+			modules = {
+				fixed_ship_engine_slot = module_light_surface_diesel_power
+				fixed_ship_fire_control_system_slot = module_digital_integrated_fire_control
+				fixed_ship_radar_slot = module_radar_4
+				fixed_ship_auxillary_slot_2 = module_vls_sam_2
+				fixed_ship_auxillary_slot_1 = module_torpedoes_2
+				fixed_ship_auxillary_slot = module_ciws_2
+				fixed_ship_battery_slot = module_76mm_gun_1
+				front_1_custom_slot = module_asm_2
+				rear_1_custom_slot = module_light_helipad_1
+			}
+		}
+
+		complete_special_project = sp:sp_naval_vessel_project
+
+		else = {
+			set_technology = {
+				#Navy templates
+				corvette_1 = 1
+				frigate_1 = 1
+				submarine_1 = 1
+				diesel_attack_submarine_1 = 1
+				landing_craft = 1
+			}
+		}
+	}
+
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+
+		set_technology = {
+
+			early_airframe_designs = 1
+			gen_3_light = 1
+			gen_4_light = 1
+			gen_3_medium = 1
+
+			flying_wing_design = 1
+
+			engines_2 = 1
+
+			refueling_1 = 1
+
+			avionics_1 = 1
+
+			awacs_1 = 1
+
+			redundant_1 = 1
+
+			early_weapons = 1
+			air_weapons_1 = 1
+			countermeasures_1 = 1
+
+			ag_weapons_1 = 1
+
+			naval_weapons_1 = 1
+			special_mad_1 = 1
+
+			tgp_recon_1 = 1
+		}
+
+		else = {
+
+			set_technology = {
+
+				early_fighter = 1
+				CV_MR_Fighter1 = 1
+				CV_MR_Fighter2 = 1
+
+				AS_Fighter1 = 1
+				AS_Fighter2 = 1
+
+				MR_Fighter1 = 1
+				MR_Fighter2 = 1
+				MR_upgrade_1 = 1
+
+				Strike_fighter1 = 1
+				Strike_fighter2 = 1
+
+				L_Strike_fighter1 = 1
+
+				early_bomber = 1
+				strategic_bomber1 = 1
+
+				transport_plane1 = 1
+				transport_plane2 = 1
+
+				naval_plane1 = 1
+				naval_plane2 = 1
+			}
+		}
+
+	}
+
+	add_ideas = {
+
+		#pop_050
+		systematic_corruption
+		sunni
+		liberal_society
+		stagnation
+		defence_03
+		edu_02
+		health_03
+		social_03
+		bureau_02
+		police_04
+		#gerrymandering
+		#censored_press
+		draft_army
+		intervention_regional_interventionism
+		volunteer_women
+		NATO_member
+		industrial_conglomerates
+		The_Ulema
+		the_military
+		#civil_law
+		#tax_cost_19
+		TUR_kurdish_trouble
+		TUR_PKK_insurgency_ceasefire
+		outsides_problem_kurds
+		multi_ethnic_state_idea
+		officer_international_education
+	    turkish_military_infulence
+		general_staff_under_1
+		lira_1
+        pr_demirel
+        TUR_legacy_of_ataturk_preserved
+        TUR_sectarian_woes
+		tur_historical_confidence
+        power_on_bosporus
+		mafias_level_1
+        media_opinion_towards_bad_1_right_wing_sad
+		limits_of_the_parliament_main_target
+		the_turkish_housing
+		turkish_tourism_sector_low
+	}
+
+    add_timed_idea = { idea = turkeys_new_millennium  days = 991 }
+    add_timed_idea = { idea = turkish_IMF_reformation_1 days = 900 }
+	#Cyber
+	add_to_array = { cyber_targets = CHI }
+	add_to_array = { cyber_targets = PER }
+	add_to_array = { cyber_targets = ISR }
+	add_to_array = { cyber_targets = SOV }
+	add_to_array = { cyber_targets = SAU }
+
+	#Influence system
+	add_to_array = { TUR.influence_targets = TUN }
+	add_to_array = { TUR.influence_targets = SUD }
+	add_to_array = { TUR.influence_targets = JOR }
+	add_to_array = { TUR.influence_targets = IRQ }
+	add_to_array = { TUR.influence_targets = ISR }
+	add_to_array = { TUR.influence_targets = PAL }
+	add_to_array = { TUR.influence_targets = SYR }
+	add_to_array = { TUR.influence_targets = GEO }
+	add_to_array = { TUR.influence_targets = AZE }
+	add_to_array = { TUR.influence_targets = GRE }
+	add_to_array = { TUR.influence_targets = NCY }
+	add_to_array = { TUR.influence_targets = ALB }
+	add_to_array = { TUR.influence_targets = FYR }
+	add_to_array = { TUR.influence_targets = BUL }
+	add_to_array = { TUR.influence_targets = ROM }
+	add_to_array = { TUR.influence_targets = UKR }
+	add_to_array = { TUR.influence_targets = KAZ }
+	add_to_array = { TUR.influence_targets = UZB }
+	add_to_array = { TUR.influence_targets = TRK }
+	add_to_array = { TUR.influence_targets = KYR }
+	add_to_array = { TUR.influence_targets = TAJ }
+	add_to_array = { TUR.influence_targets = PAK }
+
+	init_influence = yes
+	set_variable = { domestic_influence_amount = 340 }
+	add_to_array = { influence_array = PER.id }
+	add_to_array = { influence_array_val = 11 }
+	add_to_array = { influence_array = ENG.id }
+	add_to_array = { influence_array_val = 8 }
+	add_to_array = { influence_array = GER.id }
+	add_to_array = { influence_array_val = 22 }
+	add_to_array = { influence_array = ISR.id }
+	add_to_array = { influence_array_val = 6 }
+	add_to_array = { influence_array = SOV.id }
+	add_to_array = { influence_array_val = 29 }
+	add_to_array = { influence_array = PAK.id }
+	add_to_array = { influence_array_val = 35 }
+	add_to_array = { influence_array = USA.id }
+	add_to_array = { influence_array_val = 40 }
+	startup_influence = yes
+
+	### Economy
+	set_variable = { var = debt value = 364.076 }
+	set_variable = { var = treasury value = 34 }
+	set_variable = { var = int_investments value = 1 }
+	set_variable = { var = corporate_tax_rate value = 33 }
+	set_variable = { var = population_tax_rate value = 40 }
+
+	### Covid/Ecology
+	set_variable = { var = TUR_eco_acceptance value = 85 }
+	set_variable = { var = TUR_the_power_of_covid value = 55 }
+
+	### Tourism
+	set_variable = { var = TUR_tourism_quality value = 46 }
+	set_variable = { var = TUR_tourism_quantity value = 46 }
+
+	### Kemalists system
+	set_variable = { var = TUR_rel_green value = 12 }
+	set_variable = { var = TUR_rel_chp value = 67 }
+	set_variable = { var = TUR_rel_hdp value = -42 }
+	set_variable = { var = TUR_rel_dp value = -9 }
+	set_variable = { var = TUR_rel_akp value = -23 }
+	set_variable = { var = TUR_rel_mhp value = -24 }
+	set_variable = { var = TUR_rel_good value = 12 }
+	set_variable = { var = TUR_rel_tkp value = -25 }
+	set_variable = { var = TUR_rel_anap value = -23 }
+	set_variable = { var = TUR_rel_ldp value = 3 }
+	set_variable = { var = TUR_rel_gencparti value = 11 }
+
+	set_variable = { var = TUR_rel_odp value = -7 }
+	set_variable = { var = TUR_rel_fp value = -61 }
+	set_variable = { var = TUR_rel_emep value = -22 }
+	set_variable = { var = TUR_rel_ibda_c value = -98 }
+	set_variable = { var = TUR_rel_mp value = 10 }
+	set_variable = { var = TUR_rel_bbp value = 27 }
+	set_variable = { var = TUR_rel_socdem value = 36 }
+	set_variable = { var = TUR_rel_tip value = -16 }
+	set_variable = { var = TUR_rel_bozkurtlar value = -26 }
+	set_variable = { var = TUR_rel_ottoman value = -68 }
+
+	### Sectarian Woes system
+	set_variable = { var = TUR_pop_KUR value = 21 }
+	set_variable = { var = TUR_pop_ISL value = 40 }
+	set_variable = { var = TUR_pop_KEM value = 39 }
+	
+    ### Grand National Assembly
+	set_variable = { var = TUR_par_akp value = 0 }
+	set_variable = { var = TUR_par_chp value = 49 }
+	set_variable = { var = TUR_par_dp value = 50 }
+	set_variable = { var = TUR_par_hdp value = 0 }
+	set_variable = { var = TUR_par_mhp value = 129 }
+	set_variable = { var = TUR_par_tkp value = 0 }
+	set_variable = { var = TUR_par_good value = 46 }
+	set_variable = { var = TUR_par_green value = 0 }
+	set_variable = { var = TUR_par_independent value = 27 }
+	set_variable = { var = TUR_par_empty value = 2 }
+	set_variable = { var = TUR_par_total value = 550 }
+	set_variable = { var = TUR_par_fp value = 111 }
+	set_variable = { var = TUR_par_anap value = 136 }
+	
+    # AYM Works
+	set_variable = { var = TUR_united_aym value = 95 }
+	set_variable = { var = TUR_politicized_aym value = 5 }
+	
+    # Unions
+	set_variable = { var = TUR_union_acceptance value = 96 }
+	set_variable = { var = TUR_union_political_level value = 3 }
+	set_variable = { var = TUR_union_uneasiness value = 4 }
+
+	### TCBM
+	set_variable = { TUR_interest_rate = 9.75 }
+	set_variable = { TUR_amount_lira_dollar = 623446 }
+	set_variable = { TUR_lira_amount_against_euro = 673942}
+	set_variable = { TUR_lira_amount_against_sterlin = 942157 }	
+
+    #Earthquake Resistancy 
+	set_variable = { TUR_building_resistancy = 17 }
+
+    #BDDK
+	set_variable = { bddk_level = 5 }
+
+	### Osman Pamukoğlu
+	set_variable = { TUR_osman_opinion = 25 }
+	
+	set_popularities = {
+		democratic = 39.06
+		communism = 26.31
+		fascism = 0
+		neutrality = 16.73
+		nationalist = 17.90
+	}
+	
+	set_politics = {
+
+		ruling_party = democratic
+		last_election = "1997.10.3" #to give correct future elections
+		election_frequency = 60
+		elections_allowed = yes
+	}
+
+	### Threshold
+	set_variable = { election_threshold = 0.10 } #world's highest
+
+	start_politics_input = yes
+
+	### Party Popularities
+	set_variable = { party_pop_array^0 = 0.0960 } #Western_Autocracy
+	set_variable = { party_pop_array^1 = 0.1948 } #conservatism
+	set_variable = { party_pop_array^2 = 0.0042 } #liberalism
+	set_variable = { party_pop_array^3 = 0.0950  } #socialism
+	
+	set_variable = { party_pop_array^4 = 0 } #Communist-State
+	set_variable = { party_pop_array^5 = 0.0079 } #anarchist_communism
+	set_variable = { party_pop_array^6 = 0.2041 } #Conservative
+	set_variable = { party_pop_array^7 = 0 } #Autocracy
+	set_variable = { party_pop_array^8 = 0.0505 } #Kurdish Minority
+	set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+	
+	set_variable = { party_pop_array^10 = 0 } #Kingdom
+	set_variable = { party_pop_array^11 = 0 } #Caliphate
+	
+	set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+	set_variable = { party_pop_array^13 = 0.0300 } #Neutral_Autocracy
+	set_variable = { party_pop_array^14 = 0.0020} #Neutral_conservatism
+	set_variable = { party_pop_array^15 = 0.0146 } #oligarchism
+	set_variable = { party_pop_array^16 = 0.1211 } #Neutral_Libertarian
+	set_variable = { party_pop_array^17 = 0 } #Neutral_green
+	set_variable = { party_pop_array^18 = 0 } #neutral_Social
+	set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+	
+	set_variable = { party_pop_array^20 = 0.1758 } #Nat_Populism
+	set_variable = { party_pop_array^21 = 0.0040 } #Nat_Fascism
+	set_variable = { party_pop_array^22 = 0 } #Nat_Autocracy
+	set_variable = { party_pop_array^23 = 0 } #Monarchist
+
+	### Ruling Party
+	add_to_array = { ruling_party = 1 }
+	add_to_array = { gov_coalition_array = 20 }
+	add_to_array = { gov_coalition_array = 16 }
+
+	#Previous elections (1999) - put all other politics info above
+	set_variable = { party_pop_array^0 = 0.1201 } #Western_Autocracy
+	set_variable = { party_pop_array^1 = 0.2218 } #conservatism
+	set_variable = { party_pop_array^2 = 0.0041 } #liberalism
+	set_variable = { party_pop_array^3 = 0.0871  } #socialism
+	set_variable = { party_pop_array^5 = 0.008 } #anarchist_communism
+	set_variable = { party_pop_array^6 = 0.1541 } #Conservative
+	set_variable = { party_pop_array^8 = 0.0475 } #Kurdish Minority
+	set_variable = { party_pop_array^14 = 0.0020} #Neutral_conservatism
+	set_variable = { party_pop_array^15 = 0.0146 } #oligarchism
+	set_variable = { party_pop_array^16 = 0.1322 } #Neutral_Libertarian
+	set_variable = { party_pop_array^20 = 0.1798 } #Nat_Populism
+
+	startup_politics = yes
+
+	create_country_leader = {
+		name = "Bülent Ecevit"
+		picture = "Bulent_Ecevit.dds"
+		ideology = socialism
+		traits = {
+			western_socialism
+			writer
+			honest
+		}
+	}
+
+	recruit_character = TUR_hulusi_akar
+	recruit_character = TUR_zeki_colak
+	recruit_character = TUR_abdullah_recep
+	recruit_character = TUR_galip_mendi
+	recruit_character = TUR_izzet_cetingoz
+	recruit_character = TUR_erdal_ozturk
+	recruit_character = TUR_mehmet_faruk_sengun
+	recruit_character = TUR_ali_sivri
+	recruit_character = TUR_yilmaz_uyar
+	recruit_character = TUR_abidin_unal
+	recruit_character = TUR_akin_ozturk
+	recruit_character = TUR_mehmet_sanver
+	recruit_character = TUR_veysel_kosele
+	recruit_character = TUR_hasan_usaklioglu
+	recruit_character = TUR_ercument_tatlioglu
+	recruit_character = erdal_ceylanoglu
+	recruit_character = ismail_kocman
+	recruit_character = orhan_yoney
+	
+	### MD Addings ###
+	recruit_character = ilhan_tolu
+	recruit_character = mustafa_ozsoy
+	recruit_character = hursit_tolon
+	recruit_character = sener_eruygur
+	
+	recruit_character = TUR_ergin_celalsin
+	recruit_character = TUR_cumhur_asparuk
+	recruit_character = aslan_guner
+	recruit_character = bekir_kalyoncu
+	recruit_character = ihsan_uyar
+	recruit_character = kamil_basoglu
+	recruit_character = metin_gurak
+	recruit_character = seref_ongay
+	recruit_character = yavuz_turkgenci
+
+	recruit_character = bulent_alpkaya
+	recruit_character = ozden_ordek
+
+	###Genel Staff###
+	recruit_character =	TUR_huseyin_kivriklioglu
+	recruit_character =	TUR_hilmi_ozkok
+	recruit_character =	TUR_yasar_buyukanit
+	recruit_character =	TUR_ilker_basbug
+	recruit_character =	TUR_isik_kosaner
+	recruit_character =	TUR_necdet_ozel
+	recruit_character =	TUR_yasar_guler
+
+	#productivity
+	set_variable = { overall_productivity =  619 }
+	934 = { set_variable = { productivity_state_var = 950 } }
+	155 = { set_variable = { productivity_state_var = 830 } }
+	156 = { set_variable = { productivity_state_var = 870 } }
+	157 = { set_variable = { productivity_state_var = 770 } }
+	160 = { set_variable = { productivity_state_var = 510 } }
+	159 = { set_variable = { productivity_state_var = 570 } }
+	161 = { set_variable = { productivity_state_var = 590 } }
+	992 = { set_variable = { productivity_state_var = 510 } }
+	158 = { set_variable = { productivity_state_var = 470 } }
+	1032 = { set_variable = { productivity_state_var = 540 } }
+	163 = { set_variable = { productivity_state_var = 660 } }
+	935 = { set_variable = { productivity_state_var = 410 } }
+	162 = { set_variable = { productivity_state_var = 370 } }
+	1205 = { set_variable = { productivity_state_var = 620 } }
+}
+2017.1.1 = {
+	capital = 159
+	if = {
+		limit = { has_dlc = "No Step Back" }
+
+		set_oob = "TUR_2017_nsb"
+		else = {
+			set_oob = "TUR_2017_nonnsb"
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "TUR_2017_naval_mtg"
+		else = {
+			set_naval_oob = "TUR_2017_naval_legacy"
+		}
+	}
+
+	remove_ideas = liberal_society
+	remove_ideas = media_opinion_towards_bad_1_right_wing_sad
+	remove_ideas = mafias_level_1
+	add_ideas = media_opinion_towards_bad_1_left_wing_sad
+	add_ideas = moderately_liberal_society
+
+
+934 = { add_dynamic_modifier = { modifier = kemalist_schemers } }
+156 = { add_dynamic_modifier = { modifier = kemalist_schemers } }
+157 = { add_dynamic_modifier = { modifier = kemalist_schemers } }
+161 = { add_dynamic_modifier = { modifier = kemalist_schemers } }
+158 = { add_dynamic_modifier = { modifier = kemalist_schemers } }
+
+
+159 = { add_dynamic_modifier = { modifier = devout_islamists } }
+160 = { add_dynamic_modifier = { modifier = devout_islamists } }
+1032 = { add_dynamic_modifier = { modifier = devout_islamists } }
+163 = { add_dynamic_modifier = { modifier = devout_islamists } }
+992 = { add_dynamic_modifier = { modifier = devout_islamists } }
+
+162 = { add_dynamic_modifier = { modifier = conscription_exemptions_granted } }
+935 = { add_dynamic_modifier = { modifier = conscription_exemptions_granted } }
+
+
+156 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+163 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+934 = { remove_dynamic_modifier = { modifier = governmental_municipality } }
+
+1032 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+160 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+159 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+992 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+161 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+158 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+155 = { add_dynamic_modifier = { modifier = governmental_municipality } }
+
+set_country_flag = MENU_OUTLOOK_TRIGGERED
+set_global_flag = BLOCKED_BITCOIN_SELL_BUY
+set_global_flag = BLOCKED_SUPER_EVENTS
+set_global_flag = BLOCKED_WORLD_ACT
+set_global_flag = BLOCKED_FICTIONAL_REALITY
+set_global_flag = BLOCKED_SOUNDS
+
+	#Political Leaders
+	clr_country_flag = besimtibuk
+    clr_global_flag = baykal
+	clr_global_flag = aras
+	clr_global_flag = osmanv
+	clr_global_flag = kivirik
+	clr_global_flag = recai
+    clr_global_flag = muhsin
+    clr_global_flag = yilmaz
+	clr_global_flag = hadep
+	clr_global_flag = ciler
+	clr_global_flag = cem_uzan
+	
+    #Turkish Politics
+	set_global_flag = hdp
+	set_global_flag = MP_MOMENT
+	clr_global_flag = hdps
+	set_global_flag = akp
+	set_global_flag = fpdead
+	clr_global_flag = fpstrong
+	set_global_flag = dp
+	clr_global_flag = dyp
+	set_global_flag = perincek2
+	clr_global_flag = perincek1
+	set_global_flag = btp
+	
+	set_global_flag = TUR_fire_15_july_event
+	set_country_flag = Major_Importer_US_Arms
+
+	set_country_flag = Major_Importer_US_Arms
+	set_country_flag = TUR_turkishMafia
+	set_country_flag = Kurds_phase1
+	set_country_flag = Kurds_phase2
+	set_country_flag = Kurds_phase3
+	set_country_flag = Kurds_phase4
+	#Inititate PKK resistance stuff
+	set_variable = { TUR_PKK_aggro_increase = 1 }	#Weekly increase, mainly constant
+	set_variable = { TUR_PKK_min_strength = 30 } 	#Minimum strength of PKK, 15 x no of countries with PKK
+	set_variable = { TUR_PKK_aggro = 70 }			#PKK aggressiveness
+	set_variable = { TUR_PKK_max_aggro = 100 }		#Maximum PKK aggressiveness
+	set_variable = { TUR_PKK_strength = 35 }		#PKK strength
+	set_variable = { kurdish_resistance_cap = TUR_PKK_strength }
+	multiply_variable = { kurdish_resistance_cap = 0.005 }
+	set_variable = { kurdish_resistance_garrison_requirement = TUR_PKK_strength }
+	multiply_variable = { kurdish_resistance_garrison_requirement = 0.06 }
+	set_variable = { kurdish_resistance_garrison_damage = TUR_PKK_strength }
+	multiply_variable = { kurdish_resistance_garrison_damage = 0.019 }
+	multiply_variable = { kurdish_resistance_garrison_damage = 0.019 }
+	subtract_from_variable = { kurdish_resistance_garrison_damage = 0.999 }
+	set_variable = { kurdish_resistance_garrison_penetration_chance = 0 }
+	subtract_from_variable = { kurdish_resistance_garrison_penetration_chance = 0.33 }
+
+	set_variable = { industrial_conglomerates_opinion = 70 }
+	set_variable = { the_military_opinion = 60 }
+
+	set_country_flag = military_advisors_QAT
+	QAT = { add_to_variable = { foreign_advisors = 1 } }
+	set_country_flag = military_advisors_AFG
+	AFG = { add_to_variable = { foreign_advisors = 1 } }
+
+	#Nat focus
+    set_global_flag = AKP_RULES_THE_STATE
+
+	#CT
+	set_global_flag = NO_TURKIC
+	clr_country_flag = threat_level_moderate
+	set_country_flag = threat_level_substantial
+	set_variable = { threat_level = 35 }
+	set_variable = { radicalization = 10 }
+	#Islamism
+	set_variable = { social_conservatism_government = 30 }
+	set_variable = { social_conservatism_society = 30 }
+	clr_country_flag = banned_burqa
+	clr_country_flag = banned_head_scarf
+    #Kemalism
+	### Kemalists system
+	set_variable = { var = TUR_rel_green value = 19 }
+	set_variable = { var = TUR_rel_chp value = 53 }
+	set_variable = { var = TUR_rel_hdp value = -42 }
+	set_variable = { var = TUR_rel_dp value = -11 }
+	set_variable = { var = TUR_rel_akp value = 22 }
+	set_variable = { var = TUR_rel_mhp value = -3 }
+	set_variable = { var = TUR_rel_good value = 23 }
+	set_variable = { var = TUR_rel_tkp value = -13 }
+	set_variable = { var = TUR_rel_anap value = 9 }
+	set_variable = { var = TUR_rel_ldp value = 1 }
+	set_variable = { var = TUR_rel_gencparti value = 14 }
+	set_variable = { var = TUR_rel_odp value = -11 }
+	set_variable = { var = TUR_rel_fp value = 5 }
+	set_variable = { var = TUR_rel_emep value = -29 }
+	set_variable = { var = TUR_rel_ibda_c value = -67 }
+	set_variable = { var = TUR_rel_mp value = 10 }
+	set_variable = { var = TUR_rel_bbp value = 27 }
+	set_variable = { var = TUR_rel_socdem value = 11 }
+	set_variable = { var = TUR_rel_tip value = -9 }
+	set_variable = { var = TUR_rel_bozkurtlar value = 24 }
+	set_variable = { var = TUR_rel_ottoman value = -32 }
+
+    ### Grand National Assembly
+	set_variable = { var = TUR_par_akp value = 317 }
+	set_variable = { var = TUR_par_chp value = 134 }
+	set_variable = { var = TUR_par_dp value = 0 }
+	set_variable = { var = TUR_par_hdp value = 59 }
+	set_variable = { var = TUR_par_mhp value = 40 }
+	set_variable = { var = TUR_par_tkp value = 0 }
+	set_variable = { var = TUR_par_good value = 0 }
+	set_variable = { var = TUR_par_green value = 0 }
+	set_variable = { var = TUR_par_independent value = 0 }
+	set_variable = { var = TUR_par_empty value = 0 }
+	set_variable = { var = TUR_par_total value = 550 }
+	set_variable = { var = TUR_par_fp value = 0 }
+	set_variable = { var = TUR_par_anap value = 0 }
+
+    # AYM Works
+	set_variable = { var = TUR_united_aym value = 95 }
+	set_variable = { var = TUR_politicized_aym value = 5 }
+	
+    # Unions
+	set_variable = { var = TUR_union_acceptance value = 79 }
+	set_variable = { var = TUR_union_political_level value = 2 }
+	set_variable = { var = TUR_union_uneasiness value = 5 }
+
+	### Covid/Ecology
+	set_variable = { var = TUR_eco_acceptance value = 45 }
+	set_variable = { var = TUR_the_power_of_covid value = 55 }
+
+	### Sectarian Woes system
+	set_variable = { var = TUR_pop_KUR value = 23 }
+	set_variable = { var = TUR_pop_ISL value = 37 }
+	set_variable = { var = TUR_pop_KEM value = 40 }
+	
+	### TCBM
+	set_variable = { TUR_interest_rate = 14.5 }
+	set_variable = { TUR_amount_lira_dollar = 3.49 }
+	set_variable = { TUR_lira_amount_against_euro = 3.97 }
+	set_variable = { TUR_lira_amount_against_sterlin = 4.5 }
+	set_variable = { TUR_lira_amount_against_bitcoin = 4703 }
+	
+    #Earthquake Resistancy 
+	set_variable = { TUR_building_resistancy = 51 }
+
+	diplomatic_relation = {
+		country = KUR
+		relation = military_access
+		active = yes
+	}
+
+	#NATO military access
+	diplomatic_relation = {
+		country = ALB
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = BEL
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = BUL
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = CAN
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = CRO
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = CZE
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = DEN
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = EST
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = FRA
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = GER
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = GRE
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = HUN
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = ICE
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = ITA
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = LAT
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = LIT
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = LUX
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = HOL
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = NOR
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = POL
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = POR
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = ROM
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = SLO
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = SLV
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = SPR
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = ENG
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = USA
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = GER
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = QAT #Tarik Ibn Zeyad Base
+		relation = military_access
+		active = yes
+	}
+
+	set_variable = { power_projection = 2 }
+
+	add_opinion_modifier = { target = KUR modifier = TUR_Dont_Support_Kurdish_Independence }
+	add_opinion_modifier = { target = ROJ modifier = TUR_Dont_Support_Kurdish_Independence }
+
+	add_ideas = {
+		#pop_050
+		systematic_corruption
+
+		sunni
+		stable_growth
+		defence_02
+		edu_02
+		health_03
+		social_04
+		bureau_02
+		police_04
+		#gerrymandering
+		#censored_press
+		draft_army
+		intervention_regional_interventionism
+		volunteer_women
+		NATO_member
+		industrial_conglomerates
+		The_Ulema
+		the_military
+		#civil_law
+		#tax_cost_25
+		sympathetic_professors_dealt_with
+		outposts_strenghtened_4
+		kurdish_language_solutions_3
+		outposts_problem
+		multi_ethnic_state_idea
+		limited_power_projection
+		silivri
+        lira_4
+        new_constitution_TUR
+        KHK_laws
+        betrayal_from_FETO3
+        turkic_tv
+        turkic_state
+        turkic_state_federalized
+        reformss_for_2001_crisis
+		mit
+        tur_historical_confidence
+        pro_seculars
+		general_staff_under_7
+		the_turkish_housing_2
+	}
+
+	remove_ideas = {
+		sympathetic_professors
+		kurdish_language_problem
+		#tax_cost_19
+		turkish_military_infulence
+		lira_1
+		stagnation
+		defence_02
+		pr_demirel
+		rise_of_fp
+		general_staff_under_1
+		the_turkish_housing
+	}
+
+		complete_national_focus = TUR_legacy
+		complete_national_focus = TUR_stabilization_of_turkey1
+	
+	set_technology = {
+		legacy_doctrines = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		infantry_weapons3 = 1
+		infantry_weapons4 = 1
+		support_weapons2 = 1
+		support_weapons3 = 1
+		support_weapons4 = 1
+		support_weapons5 = 1
+		night_vision_3 = 1
+		night_vision_4 = 1
+		special_forces3 = 1
+		special_forces4 = 1
+		special_forces5 = 1
+
+		#C&C equipment, 1995
+		command_control_equipment3 = 1
+
+		#Bayraktar Mini UAV
+		land_Drone_equipment2 = 1
+
+		body_armor_2010 = 1
+
+		camouflage3 = 1
+
+		#Altay
+		MBT_2 = 1
+		MBT_3 = 1
+		MBT_4 = 1
+		MBT_5 = 1
+
+		#Ejder & Pars
+		APC_4 = 1
+		APC_5 = 1
+
+		#Tulpar
+		IFV_5 = 1
+		IFV_6 = 1
+
+		#Kaplan MT
+		Rec_tank_0 = 1
+		Rec_tank_1 = 1
+		Rec_tank_2 = 1
+		Rec_tank_3 = 1
+
+		#BMC Kirpi
+		util_vehicle_5 = 1
+
+		#Mizrak
+		Anti_tank_1 = 1
+		Heavy_Anti_tank_1 = 1
+		Anti_tank_2 = 1
+		Heavy_Anti_tank_2 = 1
+
+		#PorSav & Hislan
+		Anti_Air_1 = 1
+		SP_Anti_Air_1 = 1
+		AA_upgrade_1 = 1
+		AA_upgrade_2 = 1
+		AA_upgrade_3 = 1
+
+		combat_eng_equipment = 1
+
+		util_vehicle_0 = 1
+		util_vehicle_1 = 1
+		util_vehicle_2 = 1
+		util_vehicle_3 = 1
+		util_vehicle_4 = 1 #BMC Kirpi
+
+		SP_arty_0 = 1
+		SP_arty_1 = 1
+		SP_arty_2 = 1 #T-155 Firtina
+
+		artillery_0 = 1
+		artillery_1 = 1
+		artillery_2 = 1 #Panter
+
+		Arty_upgrade_1 = 1
+		Arty_upgrade_2 = 1
+		Arty_upgrade_3 = 1
+
+		SP_R_arty_0 = 1
+		SP_R_arty_1 = 1
+		SP_R_arty_2 = 1 #TR-300
+
+		early_helicopter = 1
+		attack_helicopter1 = 1
+		attack_helicopter2 = 1
+		attack_helicopter3 = 1
+
+		#Bayraktar TB2
+		Air_UAV1 = 1
+		Air_UAV2 = 1
+
+		landing_craft = 1
+
+		#Advanced computing
+		computing2 = 1
+		decryption2 = 1
+		encryption2 = 1
+		computing3 = 1
+		decryption3 = 1
+		encryption3 = 1
+		computing4 = 1
+		decryption4 = 1
+		encryption4 = 1
+
+		gprs = 1
+		wifi = 1
+		internet3 = 1	#3G
+
+		neural_networks_revival = 1
+		data_mining = 1
+		industrial_electrospun_polymeric_nanofibers = 1
+		stereolitography = 1
+		DNA_fingerprinting = 1
+		modern_gmo = 1
+		gene_therapy = 1
+
+		fuel_refining2 = 1
+		fuel_refining3 = 1
+		fuel_refining4 = 1
+
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		construction5 = 1
+		excavation2 = 1
+		excavation3 = 1
+		excavation4 = 1
+	}
+	if = {
+		limit = { has_dlc = "No Step Back" }
+
+		set_technology = {
+			mbt_tech = 1
+			mbt_tech_1 = 1
+			mbt_tech_2 = 1
+			tank_components_tech = 1
+			tank_components_tech_2 = 1
+			tank_components_tech_3 = 1
+			small_medium_gun_tech = 1
+			small_medium_gun_tech_2 = 1
+			medium_gun_tech = 1
+			medium_gun_tech_2 = 1
+			armor_tech = 1
+			armor_tech_2 = 1
+			era_tech = 1
+			era_tech_2 = 1
+			diesel_engine_tech = 1
+			diesel_engine_tech_2 = 1
+			diesel_engine_tech_3 = 1
+			diesel_engine_tech_4 = 1
+			turbine_engine_tech = 1
+			turbine_engine_tech_2 = 1
+		}
+
+		else = {
+			set_technology = {
+				MBT_1 = 1
+				MBT_2 = 1
+				MBT_3 = 1
+				MBT_4 = 1
+				IFV_1 = 1
+				IFV_2 = 1
+				IFV_3 = 1
+				IFV_4 = 1
+				IFV_5 = 1
+				APC_1 = 1
+				APC_2 = 1
+				APC_3 = 1
+				APC_4 = 1
+				APC_5 = 1
+				APC_6 = 1 #Otokar Arma
+			}
+		}
+	}
+	if = {
+		limit = {
+			not = { has_dlc = "Man the Guns" }
+		}
+		set_technology = {
+			corvette_1 = 1
+			corvette_2 = 1
+			missile_corvette_1 = 1
+			missile_corvette_2 = 1
+			missile_corvette_3 = 1 #F-100-Class
+
+			frigate_1 = 1
+			frigate_2 = 1
+			missile_frigate_1 = 1
+			missile_frigate_2 = 1 #for TF-2000-Class which is missile_frigate_3
+
+			LPD_0 = 1
+			LPD_1 = 1
+			LPD_2 = 1 #TCG Anadolu
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			corvette_hull_1 = 1
+			corvette_hull_2 = 1
+			corvette_hull_3 = 1
+
+			frigate_hull_1 = 1
+			frigate_hull_2 = 1
+			frigate_hull_3 = 1
+
+			destroyer_hull_1 = 1
+			destroyer_hull_2 = 1
+
+			attack_submarine_hull_1 = 1
+			attack_submarine_hull_2 = 1
+			attack_submarine_hull_3 = 1
+
+			aircraft_carrier_engineering = 1
+
+			tech_submarine_engineering = 1
+
+			tech_naval_systems_engineering = 1
+			tech_power_systems = 1
+			tech_power_systems_1 = 1
+
+			tech_combat_support_systems = 1
+			tech_fire_control = 1
+			tech_fire_control_1 = 1
+			tech_fire_control_2 = 1
+			tech_combat_radar = 1
+			tech_combat_radar_1 = 1
+			tech_combat_radar_2 = 1
+			tech_combat_radar_3 = 1
+			tech_combat_sonar = 1
+			tech_combat_sonar_1 = 1
+			tech_combat_sonar_2 = 1
+			tech_combat_sonar_3 = 1
+
+			tech_naval_weapon_systems = 1
+			tech_light_guns = 1
+			tech_light_guns_1 = 1
+			tech_light_guns_2 = 1
+			tech_127mm_guns = 1
+			tech_127mm_guns_1 = 1
+
+			tech_point_defense_system = 1
+			tech_point_defense_system_1 = 1
+			tech_point_defense_system_2 = 1
+			tech_point_defense_system_3 = 1
+			tech_point_defense_system_4 = 1
+
+			tech_missile_systems = 1
+			tech_turret_missiles_surface = 1
+			tech_turret_missiles_surface_1 = 1
+			tech_turret_missiles_surface_2 = 1
+			tech_turret_missiles_surface_3 = 1
+
+			tech_turret_missiles_aa = 1
+			tech_turret_missiles_aa_1 = 1
+			tech_turret_missiles_aa_2 = 1
+			tech_turret_missiles_aa_3 = 1
+
+			tech_vls_surface = 1
+			tech_vls_surface_1 = 1
+			tech_vls_surface_2 = 1
+			tech_vls_surface_3 = 1
+
+			tech_vls_aa = 1
+			tech_vls_aa_1 = 1
+			tech_vls_aa_2 = 1
+			tech_vls_aa_3 = 1
+
+			tech_torpedoes = 1
+			tech_torpedoes_1 = 1
+			tech_torpedoes_2 = 1
+
+			tech_mtg_landing_craft = 1
+		}
+	}
+
+	### Economy
+	set_variable = { var = debt value = 451 }
+	set_variable = { var = int_investments value = 38 }
+	set_variable = { var = treasury value = 106 }
+	set_variable = { var = corporate_tax_rate value = 20 }
+	set_variable = { var = population_tax_rate value = 35 }
+
+
+	set_popularities = {
+		democratic = 32.6
+		communism = 12.3
+		fascism = 1.0
+		neutrality = 42.6
+		nationalist = 11.5
+	}
+	set_politics = {
+
+		ruling_party = neutrality
+		last_election = "2014.8.10"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+
+	start_politics_input = yes
+
+	### Party Popularities
+	set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+	set_variable = { party_pop_array^1 = 0.1 } #conservatism
+	set_variable = { party_pop_array^2 = 0.001 } #liberalism
+	set_variable = { party_pop_array^3 = 0.226 } #socialism
+	set_variable = { party_pop_array^4 = 0.001 } #Communist-State
+	set_variable = { party_pop_array^5 = 0.002 } #anarchist_communism
+	set_variable = { party_pop_array^6 = 0.001 } #Conservative
+	set_variable = { party_pop_array^7 = 0 } #Autocracy
+	set_variable = { party_pop_array^8 = 0.119 } #Kurdish Minority
+	set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+	set_variable = { party_pop_array^10 = 0 } #Kingdom
+	set_variable = { party_pop_array^11 = 0.01 } #Caliphate
+	set_variable = { party_pop_array^12 = 0.425 } #Neutral_Muslim_Brotherhood
+	set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+	set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+	set_variable = { party_pop_array^15 = 0.001 } #oligarchism
+	set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+	set_variable = { party_pop_array^17 = 0 } #Neutral_green
+	set_variable = { party_pop_array^18 = 0 } #neutral_Social
+	set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+	set_variable = { party_pop_array^20 = 0.115 } #Nat_Populism
+	set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+	set_variable = { party_pop_array^22 = 0 } #Nat_Autocracy
+	set_variable = { party_pop_array^23 = 0 } #Monarchist
+
+	### Ruling Party
+	add_to_array = { ruling_party = 12 }
+
+	#Previous elections (2015) - put all other politics info above
+	set_variable = { party_pop_elect_array^1 = 0 } #conservatism
+	set_variable = { party_pop_elect_array^3 = 0.253 } #liberalism
+	set_variable = { party_pop_elect_array^2 = 0 } #socialism
+	set_variable = { party_pop_elect_array^5 = 0.108 } #anarchist_communism
+	set_variable = { party_pop_elect_array^14 = 0.120 } #Neutral_conservatism
+	set_variable = { party_pop_elect_array^12 = 0.495 } #Neutral_Muslim_Brotherhood
+	set_variable = { party_pop_elect_array^20 = 0.119 } #Nat_Fascism
+
+	startup_politics = yes
+
+	create_country_leader = {
+		name = "Recep Tayyip Erdoğan"
+		picture = "Recep_Tayyip_Erdogan.dds"
+		ideology = Neutral_Muslim_Brotherhood
+		traits = {
+			neutrality_Neutral_Muslim_Brotherhood
+		}
+	}
+
+	recruit_character = TUR_musa_avsever
+	recruit_character = TUR_hakan_atinc
+	recruit_character = TUR_levent_kose
+	recruit_character = TUR_adnan_ozbal
+	retire_character = TUR_galip_mendi
+	retire_character = TUR_erdal_ozturk
+	retire_character = TUR_ali_sivri
+	retire_character = TUR_veysel_kosele
+
+	### MD Addings ###
+	retire_character = ilhan_tolu
+	retire_character = mustafa_ozsoy
+	retire_character = hursit_tolon
+	retire_character = sener_eruygur
+	retire_character = TUR_ergin_celalsin
+	retire_character = TUR_cumhur_asparuk
+	retire_character = aslan_guner
+	retire_character = bekir_kalyoncu
+	retire_character = ihsan_uyar
+	retire_character = kamil_basoglu
+	retire_character = erdal_ceylanoglu
+	retire_character = ismail_kocman
+	retire_character = orhan_yoney
+
+	recruit_character = metin_gurak
+	recruit_character = seref_ongay
+	recruit_character = yavuz_turkgenci
+
+	###Genel Staff###
+	retire_character =	TUR_huseyin_kivriklioglu
+	recruit_character =	TUR_hilmi_ozkok
+	recruit_character =	TUR_yasar_buyukanit
+	recruit_character =	TUR_ilker_basbug
+	recruit_character =	TUR_isik_kosaner
+	recruit_character =	TUR_necdet_ozel
+	recruit_character =	TUR_yasar_guler
+	
+934 = { remove_dynamic_modifier = { modifier = earthquake_large_destroy } }
+
+	#############################################
+	#MTG Variants
+	##############
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+
+		#Ada Class
+		create_equipment_variant = {
+			name = "Ada Class"
+			type = corvette_hull_4
+			#name_group = TURKISH
+			parent_version = 0
+			modules = {
+				fixed_ship_engine_slot = module_light_surface_jet_turbine_power
+				fixed_ship_fire_control_system_slot = module_digital_integrated_fire_control
+				fixed_ship_radar_slot = module_radar_4
+				fixed_ship_auxillary_slot_1 = module_ram_3
+				fixed_ship_auxillary_slot = module_torpedoes_3
+				fixed_ship_battery_slot = module_light_guns_4
+				front_1_custom_slot = module_asm_3
+
+			}
+		}
+
+		#Type 214 Class https://en.wikipedia.org/wiki/Type_214_submarine #israel use this too
+		create_equipment_variant = {
+			name = "Type 214 - Reis Class"
+			type = attack_submarine_hull_4
+			#name_group = TUR_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_engine_slot = module_sub_diesel_electric_power
+				fixed_ship_radar_slot = module_sonar_4
+				fixed_ship_auxillary_slot_2 = module_fuel_tank
+				fixed_ship_auxillary_slot_1 = module_torpedoes_2
+				fixed_ship_auxillary_slot = module_torpedoes_2
+				fixed_ship_battery_slot = module_torpedoes_2
+			}
+		}
+
+		#Anadolu Class
+		create_equipment_variant = {
+			name = "Anadolu Class"
+			type = helicopter_operator_hull_3
+			#name_group = TURKEY
+			parent_version = 0
+			modules = {
+				fixed_ship_engine_slot = module_surface_diesel_power
+				fixed_ship_fire_control_system_slot = module_digital_integrated_fire_control
+				fixed_ship_radar_slot = module_radar_3
+				fixed_ship_auxillary_slot_3 = module_fuel_tank
+				fixed_ship_auxillary_slot_2 = module_chain_gun_3
+				fixed_ship_auxillary_slot = module_chain_gun_3
+				fixed_ship_battery_slot = module_helipads_1
+				front_1_custom_slot = module_light_flight_deck_1
+				mid_1_custom_slot = module_light_flight_deck_1
+				rear_1_custom_slot = module_light_flight_deck_1
+			}
+		}
+	}
+}

@@ -1,0 +1,79 @@
+@STATUS_X = -10
+@HEADER_X = 10
+
+guiTypes = {
+	containerWindowType = {
+		name = "tur_court_m_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 430 }
+
+		instantTextBoxType = {
+			name ="TUR_court"
+			position = { x = 3 y = -08 }
+			font = "hoi_16mbs"
+			text = "TUR_court_desc"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_court_ruling_1"
+			position = { x = 3 y = 117 }
+			font = "hoi_16mbs"
+			text = "The Unity Rate Of AYM Members: [?TUR_united_aym]"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_court_ruling_2"
+			position = { x = 3 y = 137 }
+			font = "hoi_16mbs"
+			text = "The Politicization Rate Of AYM Members: [?TUR_politicized_aym]"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_court_ruling_3"
+			position = { x = 3 y = 205 }
+			font = "hoi_16mbs"
+			text = "The Soft Group Supporters: [?TUR_soft_group]"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_court_ruling_4"
+			position = { x = 3 y = 227 }
+			font = "hoi_16mbs"
+			text = "The Precision Group Supporters: [?TUR_precision_group]"
+			format = left
+			maxWidth = 497
+		}
+
+		instantTextBoxType = {
+			name ="TUR_court_ruling_5"
+			position = { x = 3 y = 248 }
+			font = "hoi_16mbs"
+			text = "The Transparent Group Supporters: [?TUR_transparent_group]"
+			format = left
+			maxWidth = 497
+		}
+
+		background = {
+			name = "aym_page_gfx"
+			quadTextureSprite = "GFX_aym"
+			position = { x = 320 y = 100 }
+		}
+		
+		instantTextBoxType = {
+			name ="go_down_cancel"
+			position = { x = 320 y = 503}
+			font = "hoi_18mbs"
+			text = "TSK_forces"
+			format = left
+			maxWidth = 150
+		}
+	}
+}

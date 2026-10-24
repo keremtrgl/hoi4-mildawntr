@@ -1,0 +1,833 @@
+################
+##### TUR ######
+################
+
+
+TUR_kurdish_problem_1 = {
+	priority = 1.90	
+	icon = GFX_decision_category_army_reform
+
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		OR = {
+		has_idea = TUR_PKK_insurgency_active
+		has_idea = TUR_PKK_insurgency_ceasefire
+		}
+	}
+}
+
+TUR_kurdish_problem_2 = {
+	priority = 1.90	
+	icon = GFX_decision_generic_civil_support
+
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		OR = {
+		has_idea = TUR_PKK_insurgency_active
+		has_idea = TUR_PKK_insurgency_ceasefire
+		}
+	}
+}
+	
+
+TUR_pkk_insurgency_category = {
+
+	icon = GFX_decision_category_army_reform
+
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = KUR
+		}
+	}
+
+	visible = {
+		original_tag = TUR
+		OR = {
+		has_idea = TUR_PKK_insurgency_active
+		has_idea = TUR_PKK_insurgency_ceasefire
+		}
+	}
+}
+
+	visible_when_empty = yes
+
+	priority = {
+		base = 1.90
+	}
+}
+
+TUR_turkmeneli_integration = {
+	icon = GFX_decision_oppression
+	priority = 11
+
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		controls_state = 641
+	}
+}
+
+
+TUR_the_constitutional_arrows_category = {
+	priority = 21
+	icon = GFX_zsr_parlament
+
+	picture = GFX_decision_cat_picture_constitutional_arrows
+
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		has_completed_focus = ATA_restrenghen_the_six_arrows
+	}
+}
+
+TUR_kurdish_independence = {
+	icon = GFX_ignite_civil_war
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		has_idea = kurds_want_independence
+	}
+}
+
+
+TUR_SYR = {
+	icon = GFX_decision_generic_army_support_new
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+}
+
+
+TUR_crush_the_pkks_world_presence = {
+	icon = GFX_decision_generic_form_nation
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		OR = {
+		has_idea = TUR_PKK_insurgency_active
+		has_idea = TUR_PKK_insurgency_ceasefire
+		}
+	}
+}
+
+TUR_harsh_foreign_policy = {
+	icon = GFX_decision_border_war
+		priority = -50
+		
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		NOT = {
+		has_government = democratic
+		}
+	}
+}
+
+TUR_toki = {
+	icon = GFX_decision_category_generic_industry
+		priority = 1000 #-17
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		has_global_flag = ACTIVATE_THE_TOKIS
+		date > 2004.1.1
+	}
+}
+
+TUR_earthquake_cautions = {
+	icon = GFX_decision_generic_scorched_earth
+		priority = 4 #-17
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+
+	scripted_gui = tur_earthquake_gui
+    }  
+
+TUR_union_situation = {
+	icon = GFX_decision_eng_trade_unions_support
+		priority = 30.1 #-17
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		NOT = {
+		has_global_flag = CLOSE_THE_UNIONS
+		}
+	}
+
+	scripted_gui = tur_union_situation_gui
+    } 
+
+
+TUR_azerbaijani_policies1 = {
+	icon = infiltration
+	priority = -16
+	
+	allowed = {
+		original_tag = TUR	
+		AZE = {
+		has_war_with = ARM
+		}
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+	
+}
+
+
+TUR_anti_chinese_reaction = {
+	icon = GFX_decision_jap_conquer_china
+		priority = -20
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		date > 2015.1.1
+	}
+}
+
+TUR_nationalized_weaponary = {
+	icon = GFX_decision_generic_speech
+		priority = -15
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		date > 2010.1.1
+	}
+}
+
+TUR_turkic_council = {
+	icon = GFX_decision_turkic_state
+		priority = -5
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		has_idea = turkic_state
+	}
+
+	scripted_gui = tur_turkic_council_gui
+	}
+} } }
+
+TUR_parliament = {
+	icon = GFX_decision_category_usa_congress
+	priority = 75
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		OR = {
+		neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
+		date < 2002.1.1
+		}
+		NOT = {
+		has_global_flag = TUR_par
+		}
+	}
+
+	scripted_gui = tur_parliament_gui
+    }
+} } }
+
+TUR_army_resists = {
+	icon = GFX_decision_turkish_guns
+	priority = 75
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+        has_idea = turkish_military_infulence
+	}
+
+	scripted_gui = tur_army_resists_gui
+    }
+} } }
+
+TUR_ideological_division = {
+	icon = GFX_decision_category_power_struggle
+	priority = 1
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		has_idea = TUR_sectarian_woes
+	}
+
+	scripted_gui = tur_ideological_gui
+    }
+} } }
+
+functions_of_DSI = {
+	icon = GFX_decision_generic_construction
+	priority = 5
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+
+	scripted_gui = tur_dsi_functions_gui
+    }
+} } }
+
+
+TUR_tourism_sector_management = {
+	icon = GFX_decision_bancru_ask_button
+	priority = 5
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		riginal_tag = TUR
+	}
+
+	scripted_gui = tur_tourism_management_gui
+    }
+} } }
+
+
+TUR_TMSF = {
+	icon = GFX_decision_bancru_ask_button
+	priority = 50
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+
+	scripted_gui = tur_tmsf_gui
+    }
+} } }
+
+TUR_municipality_race = {
+	icon = GFX_decision_eng_propaganda_campaigns
+	priority = 10
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+	
+	scripted_gui = turkey_municipiality_gui
+    }
+} } }
+
+
+TUR_presidential_elections = {
+	icon = GFX_decision_category_SWI_federal_council
+	priority = 1000000
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		NOT = {
+        has_global_flag = END_THE_ELECTION_PR
+		}
+	}
+	
+	scripted_gui = presidential_elections_gui
+    }
+} } }
+
+TUR_space_program = {
+	icon = GFX_decision_tua
+	priority = -100
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		has_global_flag = TUR_SPACE_PROGRAM
+	}
+	
+	scripted_gui = tur_space_plan_gui
+    }
+} } }
+
+TUR_state_bank = {
+	icon = GFX_decision_tcbms
+	priority = -75
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		NOT = { has_global_flag = TUR_disable_national_bank }
+	   date < 2023.1.1 
+	}
+	
+	scripted_gui = tur_national_bank_gui
+    }
+} } }
+
+TUR_bitcoin_sell_buy = {
+	icon = GFX_decision_gre_investment_decisions
+	priority = -75
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+	    original_tag = TUR
+	    date > 2009.1.1
+		NOT = {
+		has_global_flag = BLOCKED_BITCOIN_SELL_BUY
+		}
+	}
+	
+	scripted_gui = bitcoin_sell_and_buy_gui
+    }
+} } }
+
+TUR_ulkists = {
+	icon = GFX_decision_ulku_ocaklari
+	priority = -10000
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		has_global_flag = TUR_open_ulkist_decision
+	}
+	
+	scripted_gui = tur_ulkists_gui
+    }
+} } }
+
+TUR_cyprus_situation = {
+	icon = GFX_decision_generic_speech
+	priority = -100000
+	
+	allowed = {
+		original_tag = TUR
+		country_exists = NCY
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+	
+} 
+
+TUR_cure_the_ecevit = {
+	picture = GFX_decision_ecevits_bad_situation
+	icon = GFX_decision_category_eng_concessions_to_the_trade_unions
+	priority = 10
+	
+	allowed = {
+		original_tag = TUR
+		country_exists = NCY
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+	
+}  
+
+
+TUR_nuclear_program = {
+	icon = GFX_decision_reactor_dec
+	priority = 13
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		has_completed_focus = HEPAR_start_the_turkish_nuclear_program
+	}
+	
+} 
+
+TUR_osman_pamukoglu_question = {
+	icon = GFX_decision_category_generic_crisis
+	priority = 12
+	
+	allowed = {
+		original_tag = TUR
+		date < 2003.1.1
+	}
+	
+	scripted_gui = osman_pamukoglu_question_gui
+	
+	visible = {
+		original_tag = TUR
+		NOT = {
+		has_global_flag = BLOCK_THIS_DECISION_OSM
+		}
+	}
+	
+} 
+
+
+TUR_mafias = {
+	icon = GFX_decision_hol_draw_up_staff_plans
+	priority = 20
+	
+	allowed = {
+		original_tag = TUR
+		NOT = {
+		has_global_flag = AKP_RULES_THE_STATE
+		}
+	}
+	
+	scripted_gui = mafia_turkey_gui
+	
+	visible = {
+		original_tag = TUR
+		NOT = {
+		has_global_flag = AKP_RULES_THE_STATE
+		}
+	}
+	
+} 
+
+TUR_robbing = {
+	icon = GFX_decision_recruit_operative
+	priority = 13
+	
+	allowed = {
+		original_tag = TUR
+		
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+	
+} 
+
+
+TUR_robbing_2 = {
+	icon = GFX_decision_recruit_operative
+	priority = 13000
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+	
+} 
+
+
+TUR_suicide_gulen = {
+	icon = GFX_decision_recruit_operative
+	priority = 13000000
+	
+	allowed = {
+		original_tag = TUR
+		
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+	
+} 
+
+TUR_islamist_restorationists = {
+	icon = GFX_decision_hol_radio_oranje
+	priority = 13
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	scripted_gui = ottoman_restorationists_gui
+	
+	visible = {
+		original_tag = TUR
+		date < 2003.1.1
+		NOT = {
+		has_global_flag = SHUT_DOWN_THE_REORDER_EVENT
+		}
+	}
+	
+} 
+
+TUR_mafia_organization = {
+	icon = GFX_decision_cat_espionage
+	priority = 14
+	
+	allowed = {
+		original_tag = TUR
+		date < 2016.12.30	
+		NOT = {
+		has_global_flag = MAF_PUSH_FINISH_ORGANIZATION
+		}
+	}
+	
+	scripted_gui = mafia_organization_gui
+	
+	visible = {
+		original_tag = TUR
+		has_global_flag = MAF_ORGANIZATION_RELOCATION_START
+	}
+	
+}
+
+TUR_east_express = {
+	icon = GFX_decision_attract_foreign_investor
+	priority = -100
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	scripted_gui = tur_east_express_gui
+	
+	visible = {
+		original_tag = TUR
+		has_global_flag = TUR_eastern_express_allowed
+	}
+	
+} 
+
+
+TUR_f35_program = {
+	icon = GFX_decision_eng_puppet_usa
+	priority = 15
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	scripted_gui = tur_f35_gui
+	
+	visible = {
+		original_tag = TUR
+		has_idea = f-35_plan
+	}
+	
+} 
+
+TUR_court_rule = {
+	icon = GFX_decision_eng_trade_unions_demand
+	priority = 32
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	scripted_gui = tur_court_m_gui
+
+	visible = {
+		original_tag = TUR
+		NOT {
+		has_global_flag = KKY
+		has_global_flag = TUR_court_gone
+		}
+	}
+	
+} 
+
+TUR_media_management = {
+	icon = GFX_decision_eng_propaganda_campaigns
+	priority = 31
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	scripted_gui = media_managing_gui
+	
+	visible = {
+		original_tag = TUR
+		NOT {
+		has_global_flag = PRESS_HAS_MANAGED
+		}
+	}
+}
+
+TUR_shut_down_the_last_court = {
+	icon = GFX_decision_hol_draw_up_staff_plans
+	priority = 1000000
+	
+	allowed = {
+		original_tag = TUR
+	}
+	
+	visible = {
+		original_tag = TUR
+		date > 2007.1.1
+		NOT = {
+		neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes			
+		has_global_flag = TUR_par
+		}
+	}	
+} 
+
+TUR_azerbaijani_policies = {
+	icon = infiltration
+	priority = -16
+	
+	allowed = {
+		original_tag = TUR	
+	}
+	
+	visible = {
+		original_tag = TUR
+		AZE = {
+		has_war_with = ARM
+		}
+	}
+}
+
+#TUR_eco_acceptance
+TUR_relations_with_echologists = {
+	icon = GFX_decision_highway_dec
+	priority = 25
+	
+	allowed = {
+		original_tag = TUR	
+	    NOT = {
+		 has_global_flag = BLOCKED_GREENS
+		}
+	}
+	
+	scripted_gui = tur_relations_with_echologists_gui
+
+	visible = {
+		original_tag = TUR
+		has_global_flag = ECOLOGICAL_STAKES_START
+	} 
+}
+
+
+#TUR_the_power_of_covid
+TUR_the_covid = {
+	icon = GFX_decision_the_covid
+	priority = 1000
+	
+	allowed = {
+		original_tag = TUR	
+	}
+	
+	scripted_gui = tur_the_covid_gui
+
+	visible = {
+		original_tag = TUR
+		has_global_flag = GREEN_LIGHT_COVID_IN_TURKEY
+	}
+}
+
+
+TUR_the_brain_drain_problem = {
+	icon = GFX_decision_generic_brainwash
+	priority = 21
+	
+	allowed = {
+		original_tag = TUR	
+	}
+	
+	visible = {
+		original_tag = TUR
+		has_global_flag = BRAIN_DRAIN_START
+	}
+}
+
+
+TUR_modern_system = {
+	icon = GFX_decision_generic_brainwash
+	priority = 1000
+	
+	allowed = {
+		original_tag = TUR	
+	}
+	
+	visible = {
+		original_tag = TUR
+	}
+}

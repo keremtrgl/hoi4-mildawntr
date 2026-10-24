@@ -1,0 +1,44 @@
+
+TUR_mafia_category = {
+
+	icon = GFX_decision_generic_independence
+
+	allowed = {
+		original_tag = TUR
+	}
+
+	visible = {
+		original_tag = TUR
+		NOT = { has_country_flag = TUR_mafia_gone }
+	}
+
+	visible_when_empty = yes
+
+	priority = {
+		base = 45
+	}
+}
+#
+TUR_mafia_influence_mechanic = {
+
+	icon = political_actions
+	scripted_gui = Turkey_mafia_system
+	allowed = {
+		original_tag = TUR
+	}
+
+	visible = {
+		original_tag = TUR
+		has_country_flag = playing_mafia
+		NOT = {
+		has_global_flag = TUR_mafia_gone
+		}
+	}
+
+	visible_when_empty = yes
+
+	priority = {
+		base = 45
+	}
+}
+#

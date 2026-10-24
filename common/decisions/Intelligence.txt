@@ -1,0 +1,282 @@
+
+TUR_robbing_2 = {	
+
+
+	TUR_target_american_files = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+ 			network_strength = {
+				target = USA
+				value > 75
+			}       
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MIT_target_pentagon_files
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			add_intel = {
+				target = USA
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			USA = { 
+			add_stability = -0.05
+			add_war_support = -0.05
+			}
+	} }
+
+	TUR_target_iranian_programs = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+ 			network_strength = {
+				target = PER
+				value > 75
+			}   
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MIT_target_iranian_files
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			add_intel = {
+				target = PER
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			PER = { 
+			add_stability = -0.05
+			add_war_support = -0.05
+			}
+	} }	
+
+
+	TUR_target_saudi_programs = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+ 			network_strength = {
+				target = SAU
+				value > 75
+			}   
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MIT_target_saudi_arabian_files
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			add_intel = {
+				target = SAU
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			SAU = { 
+			add_stability = -0.05
+			add_war_support = -0.05
+			}
+	} }	
+
+	TUR_target_british_M16 = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+ 			network_strength = {
+				target = ENG
+				value > 75
+			}    
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MIT_target_M16_files
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			add_intel = {
+				target = ENG
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			ENG = { 
+			add_stability = -0.05
+			add_war_support = -0.05
+			}
+	} }	
+
+
+	TUR_target_russian_fsb_program = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+ 			network_strength = {
+				target = SOV
+				value > 75
+			}   
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MIT_target_russian_files
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			add_intel = {
+				target = SOV
+				civilian_intel = 80
+				army_intel = 80
+				airforce_intel = 80
+				navy_intel = 80
+			}
+			SOV = { 
+			add_stability = -0.05
+			add_war_support = -0.05
+			}
+	} }	
+
+
+	TUR_target_bitcoin_files = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+ 			network_strength = {
+				target = ELS
+				value > 75
+			}   
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_completed_focus = MIT_target_bitcoic_files
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			subtract_from_variable = { treasury = -150.0 }
+			custom_effect_tooltip = 150_billion_revenue_tt
+			ELS = { 
+			add_stability = -0.1
+			subtract_from_variable = { treasury = 150.0 }
+			custom_effect_tooltip = 150_billion_expense_tt
+			}
+	} }	
+}
+
+TUR_suicide_gulen = {	
+
+
+	TUR_assasinate_the_gulen = {
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+ 			network_strength = {
+				target = USA
+				value > 75
+			}       
+		} 
+
+		visible = {
+			original_tag = TUR
+			has_global_flag = UNLOCK_GULEN_DEC
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		cost = 75
+		days_remove = 70
+		fire_only_once = yes
+		
+		modifier = {
+		decryption = -15
+		}
+		remove_effect = {
+			USA = { 
+			add_stability = -0.05
+			add_war_support = -0.05
+			}
+            remove_ideas = betrayal_from_FETO3
+	hidden_effect = { news_event = Turkey_news.44 } 	
+	hidden_effect = { USA = { country_event = TurkeyF.214}} 
+	} }
