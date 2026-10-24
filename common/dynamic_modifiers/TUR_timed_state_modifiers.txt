@@ -1,0 +1,67 @@
+# Turkey submod: timed regional programmes (add_state_modifier has no duration, so these are dynamic modifiers)
+
+TUR_timed_state_modifier_1 = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	production_speed_infrastructure_factor = 0.05
+	production_speed_buildings_factor = 0.05
+}
+
+TUR_timed_state_modifier_2 = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	industry_free_repair_factor = 0.05
+	tech_air_damage_factor = -0.05
+}
+
+TUR_timed_state_modifier_3 = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	production_speed_infrastructure_factor = 0.05
+	production_speed_buildings_factor = 0.05
+}
+
+TUR_timed_state_modifier_4 = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	production_speed_buildings_factor = 0.05
+}
+
+TUR_timed_state_modifier_5 = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	monthly_population = -1.0
+}
+
+TUR_timed_state_modifier_6 = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	production_speed_industrial_complex_factor = 0.05
+	production_speed_arms_factory_factor = 0.05
+}
+
+TUR_timed_state_modifier_7 = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	production_speed_industrial_complex_factor = 0.05
+	production_speed_dockyard_factor = 0.05
+}
+
+TUR_timed_state_modifier_8 = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	production_speed_industrial_complex_factor = 0.1
+}
+
+TUR_timed_state_modifier_9 = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	production_speed_industrial_complex_factor = 0.1
+}
+
+TUR_timed_state_modifier_10 = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	production_speed_dockyard_factor = 0.07
+	production_speed_industrial_complex_factor = 0.03
+}

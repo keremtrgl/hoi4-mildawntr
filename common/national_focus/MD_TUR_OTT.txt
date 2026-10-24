@@ -1596,13 +1596,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 					level = 1
 				} }
 			934 = {
- 				add_state_modifier = {
- 					modifier = {
-	production_speed_industrial_complex_factor = 0.05
-production_speed_arms_factory_factor = 0.05
-	                days = 730			
- 					}
- 				}
+ 				add_dynamic_modifier = { modifier = TUR_timed_state_modifier_6 days = 730 }
 			}
 		} } } 
 	focus = {
@@ -1659,13 +1653,7 @@ production_speed_arms_factory_factor = 0.05
 					level = 2
 				} }
 			934 = {
- 				add_state_modifier = {
- 					modifier = {
-	production_speed_industrial_complex_factor = 0.05
-production_speed_dockyard_factor = 0.05
-	                days = 730			
- 					}
- 				}
+ 				add_dynamic_modifier = { modifier = TUR_timed_state_modifier_7 days = 730 }
 			}
 		} } } 
 	focus = {
@@ -1715,12 +1703,7 @@ production_speed_dockyard_factor = 0.05
 					level = 3
 				} }
 			934 = {
- 				add_state_modifier = {
- 					modifier = {
-	production_speed_industrial_complex_factor = 0.1
-	                days = 730			
- 					}
- 				}
+ 				add_dynamic_modifier = { modifier = TUR_timed_state_modifier_8 days = 730 }
 			}
 		} } } 
 	focus = {
@@ -1763,12 +1746,7 @@ production_speed_dockyard_factor = 0.05
 					level = 7
 				}
 			934 = {
- 				add_state_modifier = {
- 					modifier = {
-	production_speed_industrial_complex_factor = 0.1
-	                days = 730			
- 					}
- 				}
+ 				add_dynamic_modifier = { modifier = TUR_timed_state_modifier_9 days = 730 }
 			}
 		} } } 
 	focus = {
@@ -1825,13 +1803,7 @@ production_speed_dockyard_factor = 0.05
 					level = 3
 				} }
 			934 = {
- 				add_state_modifier = {
- 					modifier = {
-	production_speed_dockyard_factor = 0.07
-	production_speed_industrial_complex_factor = 0.03
-	                days = 730			
- 					}
- 				}
+ 				add_dynamic_modifier = { modifier = TUR_timed_state_modifier_10 days = 730 }
 			}
 		} } } 
 	focus = {

@@ -879,13 +879,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
 			934 = {
- 				add_state_modifier = {
- 					modifier = {
-				industry_free_repair_factor = 0.05
-					    tech_air_damage_factor = -0.05
-	                days = 730			
- 					}
- 				}
+ 				add_dynamic_modifier = { modifier = TUR_timed_state_modifier_2 days = 730 }
 			}
 		} } 
 	focus = {
@@ -4093,13 +4087,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 				} 
 			}
 			160 = {
- 				add_state_modifier = {
- 					modifier = {
-                    production_speed_infrastructure_factor = 0.05
-		            production_speed_buildings_factor = 0.05
-	                days = 730			
- 					}
- 				}
+ 				add_dynamic_modifier = { modifier = TUR_timed_state_modifier_3 days = 730 }
 			}
 			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt
@@ -4276,12 +4264,7 @@ swap_ideas = {
        add_stability = 0.03
 	   add_political_power = 25
 			934 = {
- 				add_state_modifier = {
- 					modifier = {
-production_speed_buildings_factor = 0.05
-	                days = 730			
- 					}
-				}
+ 				add_dynamic_modifier = { modifier = TUR_timed_state_modifier_4 days = 730 }
  				} 
                 add_popularity = {
                 ideology = ROOT
