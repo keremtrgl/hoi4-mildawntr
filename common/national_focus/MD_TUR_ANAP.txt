@@ -5,7 +5,7 @@ focus_tree = {
 	focus = {
 		id = ANAP_mesut_yilmaz_victory
 		icon = mesut_yilmaz
-		cost = 10,00
+		cost = 10.00
 		x = 14
 		y = 0
 
@@ -25,7 +25,7 @@ focus_tree = {
 	focus = {
 		id = ANAP_talks_with_dyp
 		icon = tansu_mesut
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_mesut_yilmaz_victory
 		}
@@ -41,7 +41,7 @@ focus_tree = {
 	focus = {
 		id = ANAP_side_the_unite
 		icon = treaty3
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_talks_with_dyp
 		}
@@ -66,7 +66,7 @@ focus_tree = {
 	focus = {
 		id = ANAP_fund_dyp
 		icon = focus_generic_horse_studs
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_side_the_unite
 		}
@@ -90,7 +90,7 @@ focus_tree = {
 	focus = {
 		id = ANAP_push_menderes_propagandas
 		icon = military_mission2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_side_the_unite
 		}
@@ -110,7 +110,7 @@ focus_tree = {
 	focus = {
 		id = ANAP_unification_of_the_parties
 		icon = accept_treaty
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_push_menderes_propagandas
 		}
@@ -128,7 +128,7 @@ focus_tree = {
 	focus = {
 		id = ANAP_unside_the_unite
 		icon = renounce_treaty
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_talks_with_dyp
 		}
@@ -154,7 +154,7 @@ focus_tree = {
 	focus = {
 		id = ANAP_reshape_the_resisting_kadro
 		icon = fallen_goverment_1
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_unside_the_unite
 		}
@@ -174,7 +174,7 @@ focus_tree = {
 	focus = {
 		id = ANAP_push_anti_dyp_news_in_the_news
 		icon = press_censorship
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_unside_the_unite
 		}
@@ -197,7 +197,7 @@ focus_tree = {
 	focus = {
 		id = ANAP_protecting_its_values
 		icon = refuse_treaty
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_reshape_the_resisting_kadro
 		}
@@ -217,7 +217,7 @@ focus_tree = {
 	focus = {
 		id = ANAP_end_the_political_question
 		icon = goal_JAP_defend_constitution
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_unification_of_the_parties
 			focus = ANAP_protecting_its_values
@@ -378,7 +378,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = ANAP_legacy_of_turgut_ozal
 		icon = turgut_ozal
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_mesut_yilmaz_victory
 		}
@@ -414,7 +414,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = ANAP_redesign_the_economy_policy
 		icon = economic_prosperity
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_legacy_of_turgut_ozal
 		}
@@ -430,7 +430,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_promises_on_the_economy
 		icon = central_planned_economy3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_redesign_the_economy_policy
 		}
@@ -451,7 +451,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_morale_in_the_markets
 		icon = business_man2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_redesign_the_economy_policy
 		}
@@ -468,7 +468,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_working_like_a_bee
 		icon = anap_bee
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_redesign_the_economy_policy
 		}
@@ -482,7 +482,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_cotton_industries
 		icon = mining_truck
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_working_like_a_bee
 		}
@@ -497,7 +497,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_textile_industry
 		icon = sustainable_development
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_working_like_a_bee
 		}
@@ -512,7 +512,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_build_up_centre_anatolia
 		icon = GEO_Industrialize_the_Countryside
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_redesign_the_economy_policy
 		}
@@ -552,7 +552,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_establish_military_factories_in_the_centre
 		icon = Generic_Underground_Factories
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_build_up_centre_anatolia
 		}
@@ -593,7 +593,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_upgrade_military_factories_generation_5
 		icon = factory_complex
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_establish_military_factories_in_the_centre
 		}
@@ -670,7 +670,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_blacksea_navy_project
 		icon = Naval_Upgrade
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_redesign_the_economy_policy
 		}
@@ -711,7 +711,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_industrialize_black_sea_borders
 		icon = industry2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_blacksea_navy_project
 		}
@@ -746,7 +746,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_build_up_the_istanbul
 		icon = broadway
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_redesign_the_economy_policy
 		}
@@ -782,7 +782,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_easier_transportation_in_istanbul
 		icon = centralization_question
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_build_up_the_istanbul
 		}
@@ -806,7 +806,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_connected_airports
 		icon = fighter_plane
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_establish_military_factories_in_the_centre
 		}
@@ -875,7 +875,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_countrywide_radios_iniative
 		icon = radio_communications
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_connected_airports
 		}
@@ -938,7 +938,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_countrywide_roads_iniative
 		icon = Payment_on_roads
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_connected_airports
 		}
@@ -1001,7 +1001,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_investment_policy
 		icon = business_man
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_redesign_the_economy_policy
 		}
@@ -1018,7 +1018,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_visits_to_usa_and_uk
 		icon = align_to_america2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_investment_policy
 		}
@@ -1052,7 +1052,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_receive_investments_civ
 		icon = industry_civilian
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_visits_to_usa_and_uk
 		}
@@ -1078,7 +1078,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_visits_to_nato
 		icon = arm_nato_defence
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_investment_policy
 		}
@@ -1103,7 +1103,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_investments_on_dockyard
 		icon = naval_dockyard
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_visits_to_usa_and_uk
 		}
@@ -1362,7 +1362,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = ANAP_plan_the_new_strategies_to_defeat_terrorists
 		icon = brothers_in_arms
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_protect_the_eight_law
 		}
@@ -1378,7 +1378,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = ANAP_put_military_to_the_second_plan
 		icon = draw_up_war_plans
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_plan_the_new_strategies_to_defeat_terrorists
 		}
@@ -1396,7 +1396,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = ANAP_expand_the_kurdish_rights
 		icon = autonomy
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_plan_the_new_strategies_to_defeat_terrorists
 		}
@@ -1422,7 +1422,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = ANAP_train_civilian_corps
 		icon = Focus_Superior_Firepower_Doctrine
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_put_military_to_the_second_plan
 		}
@@ -1440,7 +1440,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = ANAP_local_defence_forces_of_civilians
 		icon = generic_entrenchment
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_train_civilian_corps
 		}
@@ -1464,7 +1464,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = ANAP_border_security_first
 		icon = cctv2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_put_military_to_the_second_plan
 		}
@@ -1482,7 +1482,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = ANAP_open_the_kurdish_television
 		icon = support_the_left_right
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_expand_the_kurdish_rights
 		}
@@ -1508,7 +1508,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = ANAP_protect_the_eight_law
 		icon = stolen_papers
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_end_the_reforms_of_2006
 		}
@@ -1646,7 +1646,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = ANAP_end_the_reforms_of_2006
 		icon = roads_extend_plan
-		cost = 10,00
+		cost = 10.00
 		x = 14
 		y = 11
 
@@ -1663,7 +1663,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = ANAP_improve_the_lira_movement
 		icon = gold_standard
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_promises_on_the_economy
 		}
@@ -1680,7 +1680,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_remove_the_six_numbers
 		icon = lira
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_improve_the_lira_movement
 			focus = ANAP_establish_competition_authority
@@ -1698,7 +1698,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_create_the_automotive_industry
 		icon = ossetia_car
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_textile_industry
 		}
@@ -1725,7 +1725,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_invite_german_helpers
 		icon = volkswagen
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_create_the_automotive_industry
 		}
@@ -1751,7 +1751,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_fund_the_automative_industry
 		icon = coins
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_create_the_automotive_industry
 		}
@@ -1791,7 +1791,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_turkish_cars_on_the_field
 		icon = import_economy
-		cost = 0,00
+		cost = 0.00
 		prerequisite = {
 			focus = ANAP_invite_german_helpers
 		}
@@ -1811,7 +1811,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_increase_up_the_confidence_of_the_economy
 		icon = ExpandTrade
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_an_economy_that_can_adapt_to_extraordinary_situations
 		}
@@ -1831,7 +1831,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_establish_competition_authority
 		icon = rekabet_kurumu
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_morale_in_the_markets
 		}
@@ -1847,7 +1847,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_an_economy_that_can_adapt_to_extraordinary_situations
 		icon = economic_crisis
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_remove_the_six_numbers
 		}
@@ -1863,7 +1863,7 @@ swap_ideas = {
 	focus = {
 		id = ANAP_receive_investments_mil
 		icon = industry_military
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_visits_to_nato
 		}
@@ -1889,7 +1889,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_build_up_the_east
 		icon = Generic_Public_Works
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_connected_airports
 		}
@@ -1930,7 +1930,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_powerful_industry
 		icon = industrialization
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_countrywide_roads_iniative
 		}
@@ -1956,7 +1956,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_education_strategy
 		icon = goal_JAP_education_rebuilding
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_end_the_reforms_of_2006
 		}
@@ -1971,7 +1971,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_fund_the_science
 		icon = fusion_science
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_education_strategy
 		}
@@ -1988,7 +1988,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_one_university_for_every_state
 		icon = research2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_fund_the_science
 		}
@@ -2089,7 +2089,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_modernize_the_bogazici
 		icon = free_higher_education
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_fund_the_science
 		}
@@ -2119,7 +2119,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_modernize_the_marmara
 		icon = goal_JAP_protect_science
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_fund_the_science
 		}
@@ -2149,7 +2149,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_encouragement_instead_of_coercion
 		icon = goal_JAP_choose_research
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_one_university_for_every_state
 		}
@@ -2172,7 +2172,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_redzyne_the_exams
 		icon = literacy_rate_improvment2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_education_strategy
 		}
@@ -2190,7 +2190,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_power_of_the_education
 		icon = legislation
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ANAP_encouragement_instead_of_coercion
 		}
@@ -2208,7 +2208,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_washington_competitions
 		icon = trade_with_america
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_establish_competition_authority
 		}
@@ -2231,7 +2231,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_party_reorganization
 		icon = examine_foreign_laws
-		cost = 10,00
+		cost = 10.00
 		x = 14
 		y = 17
 
@@ -2254,7 +2254,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = ANAP_clamp_down_on_the_corruption
 		icon = focus_generic_buy_guns
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_party_reorganization
 		}
@@ -2271,7 +2271,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = ANAP_inside_visits
 		icon = BRA_cutting_the_red_tape
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_party_reorganization
 		}
@@ -2288,7 +2288,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = ANAP_changes_in_the_ministers
 		icon = Focus_Northern_Expedition
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_inside_visits
 		}
@@ -2310,7 +2310,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = ANAP_protect_the_party_from_changing
 		icon = Fight_for_Freedom
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_inside_visits
 		}
@@ -2336,7 +2336,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = ANAP_redzyne_the_party_program
 		icon = focus_consolidat
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_clamp_down_on_the_corruption
 		}
@@ -2359,7 +2359,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = ANAP_touring_the_turkey
 		icon = intelligence_exchange
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_protect_the_party_from_changing
 		}
@@ -2391,7 +2391,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = ANAP_immigration_law
 		icon = refugees
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_mind_games
 		}
@@ -2407,7 +2407,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = ANAP_mind_games
 		icon = play_our_hand
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_peace_state
 		}
@@ -2424,7 +2424,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = ANAP_infulence_politics
 		icon = enemy_of_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_mind_games
 		}
@@ -2442,7 +2442,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = ANAP_strenghen_national_infulence
 		icon = national_unity
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_mind_games
 		}
@@ -2467,7 +2467,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = ANAP_peace_state
 		icon = peace
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_touring_the_turkey
 		}
@@ -2484,7 +2484,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = ANAP_maximize_political_output
 		icon = generic_embrace_agrarian_society
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_political_maneuvers
 		}
@@ -2506,7 +2506,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = ANAP_political_maneuvers
 		icon = focus_drinks_peace
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_infulence_politics
 		}
@@ -2525,7 +2525,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = ANAP_ethuastic_speeches
 		icon = break_free2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_infulence_politics
 		}
@@ -2542,7 +2542,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = ANAP_infulence_drift_on_balkans
 		icon = balkan_conflict
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_maximize_political_output
 		}
@@ -2559,7 +2559,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = ANAP_investments_in_the_bulgaria
 		icon = align_to_bulgaria
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_infulence_drift_on_balkans
 		}
@@ -2622,7 +2622,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = ANAP_project_peace_in_greece
 		icon = focus_generic_befriend_greece
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_infulence_drift_on_balkans
 		}
@@ -2654,7 +2654,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = ANAP_thrace_mediator
 		icon = peace
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_project_peace_in_greece
 		}
@@ -2713,7 +2713,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_muslim_europe
 		icon = muslim_europe
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_infulence_drift_on_balkans
 		}
@@ -2729,7 +2729,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_build_up_sofia_athens_istanbul_railway
 		icon = support_rail
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_thrace_mediator
 		}
@@ -2752,7 +2752,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_investments_in_albania
 		icon = align_to_albania
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_muslim_europe
 		}
@@ -2813,7 +2813,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_investments_in_bosnia
 		icon = align_to_bosnia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_muslim_europe
 		}
@@ -2873,7 +2873,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_industrialize_romania_against_poorness
 		icon = align_to_romania
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_investments_in_the_bulgaria
 		}
@@ -2957,7 +2957,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_fund_romanian_institutions
 		icon = romania_republic
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_industrialize_romania_against_poorness
 		}
@@ -3001,7 +3001,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_expand_the_railways_to_the_bucharest
 		icon = great_railway_incident
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_build_up_sofia_athens_istanbul_railway
 		}
@@ -3027,7 +3027,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_investments_in_serbia
 		icon = align_to_serbia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_investments_in_albania
 		}
@@ -3089,7 +3089,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_mediator_in_yugoslavia
 		icon = bread_and_peace
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_investments_in_serbia
 		}
@@ -3294,7 +3294,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_expand_railways_to_the_yugoslavia
 		icon = ser_balkan_federation
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_expand_the_railways_to_the_bucharest
 		}
@@ -3320,7 +3320,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_infulence_drift_on_middle_east
 		icon = befriend_middle_east
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_maximize_political_output
 		}
@@ -3336,7 +3336,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_invest_in_iraq
 		icon = align_to_iraq
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_infulence_drift_on_middle_east
 		}
@@ -3395,7 +3395,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_plan_trancaucasia
 		icon = RUS_caucasus
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_maximize_political_output
 		}
@@ -3412,7 +3412,7 @@ diplomatic_relation = {
 	focus = {
 		id = ANAP_open_gas_tunel_betweem_russia
 		icon = trade_with_russia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_plan_trancaucasia
 		}
@@ -3468,7 +3468,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = ANAP_treaty_with_georgia
 		icon = align_to_georgia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_open_gas_tunel_betweem_russia
 		}
@@ -3527,7 +3527,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = ANAP_treaty_with_azerbaijan
 		icon = align_to_azerbaijan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_open_gas_tunel_betweem_russia
 		}
@@ -3586,7 +3586,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_baku_railway_to_ankara
 		icon = Generic_Railroads
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_treaty_with_azerbaijan
 		}
@@ -3612,7 +3612,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_anti_russian_aid
 		icon = attack_russia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_treaty_with_georgia
 		}
@@ -3671,7 +3671,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_anti_armenian_aid
 		icon = armenian_militarism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_treaty_with_azerbaijan
 		}
@@ -3730,7 +3730,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_destroy_the_armenian
 		icon = attack_armenia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_baku_railway_to_ankara
 		}
@@ -3768,7 +3768,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_expand_railways_to_the_world
 		icon = infrastructure1
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_deploy_the_armenia
 		}
@@ -3797,7 +3797,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_deploy_the_armenia
 		icon = mgu_in_armenia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_destroy_the_armenian
 		}
@@ -3824,7 +3824,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_improve_kurdish_relations
 		icon = align_to_kurdistan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_infulence_drift_on_middle_east
 		}
@@ -3856,7 +3856,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_push_referandum
 		icon = iraq_kurd_deal
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_improve_kurdish_relations
 		}
@@ -3893,7 +3893,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_invest_in_persia
 		icon = align_to_iran
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_infulence_drift_on_middle_east
 		}
@@ -3952,7 +3952,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_tehran_deals
 		icon = iran_emblem
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_invest_in_persia
 		}
@@ -3986,7 +3986,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_ensure_syrian_peace
 		icon = align_to_syria
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_oppose_rojava_situation
 		}
@@ -4021,7 +4021,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_egyptian_deal
 		icon = align_to_egypt
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_ensure_syrian_peace
 		}
@@ -4054,7 +4054,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_revive_baghadad_pact
 		icon = focus_TUR_treaty_of_saadabad
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_invest_in_iraq
 		}
@@ -4072,7 +4072,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_oppose_rojava_situation
 		icon = attack_kurdistan2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_push_referandum
 		}
@@ -4113,7 +4113,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_end_the_iniative
 		icon = enemy_of_china
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = ANAP_expand_railways_to_the_world
 		}
@@ -4138,7 +4138,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_block_the_syrian_border
 		icon = attack_syria
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_immigration_law
 		}
@@ -4156,7 +4156,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_block_the_iraq_border
 		icon = iraqi_soldier
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_immigration_law
 		}
@@ -4174,7 +4174,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_immigration_buying
 		icon = money
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_block_the_iraq_border
 		}
@@ -4193,7 +4193,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_attack_us_infulence
 		icon = attack_america
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_strenghen_national_infulence
 		}
@@ -4235,7 +4235,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_attack_chinese_infulence
 		icon = attack_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_strenghen_national_infulence
 		}
@@ -4277,7 +4277,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = ANAP_national_covarage
 		icon = parliament_box
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_attack_chinese_infulence
 		}
@@ -4307,7 +4307,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = TUR_armed_forces5
 		icon = TUR_military_regime
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ANAP_mesut_yilmaz_victory
 		}
@@ -4326,7 +4326,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = TUR_give_more_power_to_army5
 		icon = dangerous_laws
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_armed_forces5
 		}
@@ -4381,7 +4381,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_act_of_military5
 		icon = armed_forces_of_turkey
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_nationalization_of_armed_forces5
 		}
@@ -4400,7 +4400,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_modernization_of_armed_forces5
 		icon = military_mission
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_act_of_military5
 		}
@@ -4417,7 +4417,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_tank_modernization5
 		icon = Generic_Refit_Tanks
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_modernization_of_armed_forces5
 		}
@@ -4436,7 +4436,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_altay_tank_project5
 		icon = tanks5
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_tank_modernization5
 		}
@@ -4455,7 +4455,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_gun_modernization5
 		icon = Generic_Military_Equipment
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_modernization_of_armed_forces5
 		}
@@ -4474,7 +4474,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_artillery_modernizetion5
 		icon = artillery3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_gun_modernization5
 		}
@@ -4495,7 +4495,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_war_tactics5
 		icon = military_planning
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_act_of_military5
 		}
@@ -4515,7 +4515,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_modern_art_of_war5
 		icon = infiltration_tactics
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_war_tactics5
 		}
@@ -4535,7 +4535,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_med_trainings5
 		icon = inundation_lines
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_modern_art_of_war5
 		}
@@ -4555,7 +4555,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_tuz_trainings5
 		icon = grand_battleplan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_modern_art_of_war5
 		}
@@ -4585,7 +4585,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_doctrine_of_war5
 		icon = static_defense
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_tuz_trainings5
 		}
@@ -4624,7 +4624,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_special_armed_forces5
 		icon = helmet_knife
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_act_of_military5
 		}
@@ -4638,7 +4638,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_strenghen_combat5
 		icon = mass_assault
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_special_armed_forces5
 		}
@@ -4655,7 +4655,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_strongest_special_armed_forces_in_NATO5
 		icon = nato3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_strenghen_combat5
 		}
@@ -4678,7 +4678,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_special_forces_for_turkish_state5
 		icon = align_to_turkey
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_strongest_special_armed_forces_in_NATO5
 		}
@@ -4696,7 +4696,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_air_modernization5
 		icon = f35
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_gun_modernization5
 		}
@@ -4718,7 +4718,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_THK_program5
 		icon = fighter_plane
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_air_modernization5
 		}
@@ -4739,7 +4739,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_navy_modernizations5
 		icon = TUR_navy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_air_modernization5
 		}
@@ -4756,7 +4756,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkish_destroyers5
 		icon = destroyers
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_navy_modernizations5
 		}
@@ -4777,7 +4777,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_battleship5
 		icon = battleships
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_navy_modernizations5
 		}
@@ -4798,7 +4798,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_creation_of_turkish_carriers5
 		icon = ship_bleur_point
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_battleship5
 		}
@@ -4822,7 +4822,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkish_tank_weaponary5
 		icon = tanks4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_altay_tank_project5
 		}
@@ -4843,7 +4843,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkish_drones5
 		icon = turkish_drone
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_THK_program5
 		}
@@ -4873,7 +4873,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_covid-19_pandemic8
 		icon = generic_healthcare
-		cost = 10,00
+		cost = 10.00
 		x = 61
 		y = 0
 
@@ -4890,7 +4890,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_covid-19_preparations8
 		icon = production2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_pandemic8
 		}
@@ -4910,7 +4910,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_build_up_hospitals8
 		icon = generic_hospital2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations8
 		}
@@ -4929,7 +4929,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turn_airports_to_hospital8
 		icon = generic_hospital
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_build_up_hospitals8
 		}
@@ -4949,7 +4949,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_start_up_vaccine_program_x
 		icon = brain_power
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations8
 		}
@@ -4974,7 +4974,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_german_vaccines_x
 		icon = trade_with_germany
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program_x
 		}
@@ -4995,7 +4995,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_increase_funds_to_science8
 		icon = market_economy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations8
 		}
@@ -5014,7 +5014,7 @@ increase_healthcare_budget = yes
 	focus = {
 		id = TUR_buy_medicines8
 		icon = protectionist_economics
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_funds_to_science8
 		}
@@ -5039,7 +5039,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_chinese_vaccines8
 		icon = trade_with_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital8
 		}
@@ -5065,7 +5065,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_normalisation_from_covid8
 		icon = consumer_goods
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines8
 		}
@@ -5087,7 +5087,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_end_of_covid8
 		icon = aristocratic_funding
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_normalisation_from_covid8
 		}
@@ -5108,7 +5108,7 @@ remove_ideas = covid_19_normalised
 	focus = {
 		id = TUR_hedef_20236
 		icon = 2023
-		cost = 10,00
+		cost = 10.00
 		mutually_exclusive = {
 			focus = TUR_peace_whatever_costs6
 		}
@@ -5131,7 +5131,7 @@ add_named_threat = { threat = 1 name = 2023_tensions }
 	focus = {
 		id = TUR_peace_whatever_costs6
 		icon = major_alliance3
-		cost = 10,00
+		cost = 10.00
 		mutually_exclusive = {
 			focus = TUR_hedef_20236
 		}
@@ -5154,7 +5154,7 @@ add_named_threat = { threat = -1 name = peace_whatever_costs }
 	focus = {
 		id = TUR_expansion_on_the_borders6
 		icon = entente
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_hedef_20236
 		}
@@ -5173,7 +5173,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_unification_with_azerbaijan6
 		icon = align_to_azerbaijan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders6
 		}
@@ -5206,7 +5206,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_ultimatium_to_armenia6
 		icon = irredentism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_unification_with_azerbaijan6
 		}
@@ -5239,7 +5239,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_money_for_batumi6
 		icon = liberalization_policies
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders6
 		}
@@ -5270,7 +5270,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_integrate_batumi6
 		icon = small_arms5
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_money_for_batumi6
 		}
@@ -5291,7 +5291,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_PKK_attacks6
 		icon = focus_attack_pkk
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders6
 		}
@@ -5322,7 +5322,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_end_of_FETO6
 		icon = thompson_submachine_gun
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_PKK_attacks6
 		}
@@ -5350,7 +5350,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_strong_state6
 		icon = military_mission2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_integrate_batumi6
 		}
@@ -5374,7 +5374,7 @@ add_stability = 0.1
 	focus = {
 		id = TUR_NATO_mission6
 		icon = nato_membership_action_plan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_peace_whatever_costs6
 		}
@@ -5394,7 +5394,7 @@ add_ideas = nato_turkey_missionary
 	focus = {
 		id = TUR_join_NATO_equipmentary6
 		icon = GFX_nato_standarts
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_NATO_mission6
 		}
@@ -5444,7 +5444,7 @@ add_ideas = nato_turkey_missionary
 	focus = {
 		id = TUR_positions_for_protection6
 		icon = nato3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_NATO_mission6
 		}
@@ -5468,7 +5468,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_industrialization_program6
 		icon = factory_planning
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_join_NATO_equipmentary6
 		}
@@ -5522,7 +5522,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_international_military_factories6
 		icon = un_pko
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_industrialization_program6
 		}
@@ -5572,7 +5572,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_bor6
 		icon = b-5
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_strong_state6
 			focus = TUR_international_military_factories6

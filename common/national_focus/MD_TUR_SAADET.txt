@@ -5,7 +5,7 @@ focus_tree = {
 	focus = {
 		id = MSNL_islam_movement
 		icon = sunni_politics
-		cost = 10,00
+		cost = 10.00
 		x = 15
 		y = 0
 
@@ -29,7 +29,7 @@ reverse_add_opinion_modifier = { target = ISR modifier = general_serious_threat 
 	focus = {
 		id = MSNL_boost_saadet
 		icon = focus_RAJ_tryst_with_destiny_hand
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_islam_movement
 		}
@@ -54,7 +54,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_counter_fake_islamists
 		icon = islamic_focus_01
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_islam_movement
 		}
@@ -82,7 +82,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_approach_propagandas_against_akp
 		icon = flames_of_rebellion
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_boost_saadet
 		}
@@ -106,7 +106,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_victory_in_elections
 		icon = election3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_approach_propagandas_against_akp
 		}
@@ -126,7 +126,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_redzyne_party_program
 		icon = annex_country_2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_victory_in_elections
 		}
@@ -150,7 +150,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_industry_campaign
 		icon = modern_refinery_industry
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_redzyne_party_program
 		}
@@ -187,7 +187,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_work_for_better_situation
 		icon = industry_democratic3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_industry_campaign
 		}
@@ -203,7 +203,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_open_factories_in_sivas
 		icon = red_industry
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_industry_campaign
 		}
@@ -237,7 +237,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_open_factories_in_diyarbakir
 		icon = industrial_complexes
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_open_factories_in_sivas
 		}
@@ -271,7 +271,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_tensions_with_military
 		icon = soldier
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_redzyne_party_program
 		}
@@ -293,7 +293,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_military_purges
 		icon = bloody_purge
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_tensions_with_military
 		}
@@ -314,7 +314,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_new_prisons
 		icon = anti_immigration2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_tensions_with_military
 		}
@@ -337,7 +337,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_beat_the_coup_attempt
 		icon = focus_generic_self_propelled_gun
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_military_purges
 		}
@@ -364,7 +364,7 @@ block_defence_decrease = yes
 	focus = {
 		id = MSNL_war_against_westernization
 		icon = anti_democracy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_beat_the_coup_attempt
 		}
@@ -386,7 +386,7 @@ block_defence_decrease = yes
 	focus = {
 		id = MSNL_renew_constitution
 		icon = MEX_Defend_the_constitution
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_beat_the_coup_attempt
 		}
@@ -405,7 +405,7 @@ block_defence_decrease = yes
 	focus = {
 		id = MSNL_renew_juidacary
 		icon = control_judiciary
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_renew_constitution
 		}
@@ -424,7 +424,7 @@ block_defence_decrease = yes
 	focus = {
 		id = MSNL_exile_kemalists
 		icon = anti_immigration3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_war_against_westernization
 		}
@@ -441,7 +441,7 @@ block_defence_decrease = yes
 	focus = {
 		id = MSNL_turn_hagia_sophia_to_mosque
 		icon = islamist_gov
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_beat_the_coup_attempt
 		}
@@ -461,7 +461,7 @@ block_defence_decrease = yes
 	focus = {
 		id = MSNL_repair_mosques
 		icon = caliphate
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_turn_hagia_sophia_to_mosque
 		}
@@ -478,7 +478,7 @@ block_defence_decrease = yes
 	focus = {
 		id = MSNL_return_of_erbakan
 		icon = TUR_erbakan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_exile_kemalists
 		}
@@ -515,7 +515,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_islams_banner
 		icon = turkish_flag
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_return_of_erbakan
 		}
@@ -538,7 +538,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_olive_branch_with_kurds
 		icon = align_to_kurdistan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_return_of_erbakan
 		}
@@ -555,7 +555,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_common_things_with_kurds
 		icon = islam
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_olive_branch_with_kurds
 		}
@@ -574,7 +574,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_kurdish_universities
 		icon = brain_power
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_olive_branch_with_kurds
 		}
@@ -595,7 +595,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_kurdish_tv
 		icon = television
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_common_things_with_kurds
 		}
@@ -619,7 +619,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_NATO_policy
 		icon = nato_membership_action_plan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_redzyne_party_program
 		}
@@ -636,7 +636,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_continue_with_NATO
 		icon = align_to_nato
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_NATO_policy
 		}
@@ -690,7 +690,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_nato_islam_power
 		icon = nato3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_continue_with_NATO
 		}
@@ -712,7 +712,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_us_aid
 		icon = us_non_nato_ally
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_nato_islam_power
 		}
@@ -763,7 +763,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_uk_aid
 		icon = british_cooperation
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_nato_islam_power
 		}
@@ -814,7 +814,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_recognization_of_the_north
 		icon = align_to_northern_cyprus
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_us_aid
 		}
@@ -834,7 +834,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_leave_from_NATO
 		icon = attack_nato
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_NATO_policy
 		}
@@ -861,7 +861,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MNSL_crush_nato_organizations
 		icon = end_of_nato
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_leave_from_NATO
 		}
@@ -884,7 +884,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_block_us_bases
 		icon = USA_american_militias
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MNSL_crush_nato_organizations
 		}
@@ -919,7 +919,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_block_canale
 		icon = usa
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MNSL_crush_nato_organizations
 		}
@@ -952,7 +952,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = MSNL_cooperation_with_persia_and_russia
 		icon = align_to_russia2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_block_us_bases
 		}
@@ -1015,7 +1015,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = MSNL_researchs
 		icon = armed_forces_of_turkey
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_redzyne_party_program
 		}
@@ -1033,7 +1033,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_land
 		icon = military_mission
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_researchs
 		}
@@ -1050,7 +1050,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_altay_tank
 		icon = tanks5
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_land
 		}
@@ -1069,7 +1069,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_artilleries
 		icon = artillery3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_land
 		}
@@ -1089,7 +1089,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_equipments
 		icon = small_arms2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_land
 		}
@@ -1108,7 +1108,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_naval
 		icon = TUR_navy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_artilleries
 		}
@@ -1128,7 +1128,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_destroyer
 		icon = destroyers
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_naval
 		}
@@ -1149,7 +1149,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_submarines
 		icon = submarines
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_naval
 		}
@@ -1178,7 +1178,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_national_cruiser_project
 		icon = ship_bleur_point
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_submarines
 		}
@@ -1202,7 +1202,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_air
 		icon = f35
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_artilleries
 		}
@@ -1223,7 +1223,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_national_plane_program
 		icon = fighter_plane
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_air
 		}
@@ -1244,7 +1244,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_strategic
 		icon = modern_bomber
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_national_plane_program
 		}
@@ -1265,7 +1265,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_land_doctrine
 		icon = military_planning
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_researchs
 		}
@@ -1286,7 +1286,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_air_doctrine
 		icon = infiltration_tactics
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_land_doctrine
 		}
@@ -1308,7 +1308,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_jet_fighters
 		icon = modern_fighter
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_national_plane_program
 		}
@@ -1337,7 +1337,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_naval_doctrine
 		icon = inundation_lines
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_land_doctrine
 		}
@@ -1358,7 +1358,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_doctrine_of_war
 		icon = grand_battleplan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_naval_doctrine
 		}
@@ -1396,7 +1396,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_open_factories_in_kayseri
 		icon = industry_civilian
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_open_factories_in_sivas
 		}
@@ -1430,7 +1430,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_visit_industrials
 		icon = industry_united_states
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_industry_campaign
 		}
@@ -1451,7 +1451,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_sign_agreements_with_foreign
 		icon = business_man
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_visit_industrials
 		}
@@ -1497,7 +1497,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_work_policy
 		icon = coal_mining
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_visit_industrials
 		}
@@ -1517,7 +1517,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_reopen_kayseri_air_works
 		icon = infrastructure1
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_work_policy
 		}
@@ -1554,7 +1554,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_rebought_factories
 		icon = national_protectionism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_work_policy
 		}
@@ -1605,7 +1605,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_trading_with_others
 		icon = ExpandTrade
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_sign_agreements_with_foreign
 		}
@@ -1637,7 +1637,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_industrialized_east
 		icon = anarchist_economy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_open_factories_in_kayseri
 		}
@@ -1661,7 +1661,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_heavy_industry
 		icon = green_biomass_plant
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_rebought_factories
 		}
@@ -1695,7 +1695,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_tank_factories
 		icon = tank_production
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_heavy_industry
 		}
@@ -1729,7 +1729,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_air_factories
 		icon = fighter_plane
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_heavy_industry
 		}
@@ -1763,7 +1763,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_infantry_factories
 		icon = Generic_Military_Equipment
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_heavy_industry
 		}
@@ -1797,7 +1797,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_industrialized_state
 		icon = baku_supsa
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_air_factories
 		}
@@ -1818,7 +1818,7 @@ swap_ideas = {
 	focus = {
 		id = MSNL_adopt_intervention_policy
 		icon = military_bases
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_return_of_erbakan
 		}
@@ -1835,7 +1835,7 @@ increase_intervention_law_effect = yes
 	focus = {
 		id = MSNL_d-8
 		icon = ummah
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_islams_banner
 		}
@@ -1917,7 +1917,7 @@ increase_intervention_law_effect = yes
 	focus = {
 		id = MSNL_war_with_far_radicalism
 		icon = attack_isis
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_islams_banner
 		}
@@ -1942,7 +1942,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_medrese
 		icon = quaran_book
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_war_with_far_radicalism
 		}
@@ -1969,7 +1969,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_creation_of_the_volunteer_force
 		icon = general_staff
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_adopt_intervention_policy
 		}
@@ -1987,7 +1987,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_oil_cooperation
 		icon = oil_trade
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_d-8
 		}
@@ -2030,7 +2030,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_united_against_PKK
 		icon = small_arms2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_kurdish_universities
 		}
@@ -2082,7 +2082,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = MSNL_create_muslim_united_front
 		icon = muslim_expansionism
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = MSNL_medrese
 		}
@@ -2302,7 +2302,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_destroying_the_colony_system
 		icon = liberalism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_jihad_the_real
 			focus = MSNL_kadro_movement
@@ -2384,7 +2384,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_create_bases
 		icon = machine_gun
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_united_against_PKK
 		}
@@ -2424,7 +2424,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_oil_industries
 		icon = oil
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_oil_cooperation
 		}
@@ -2493,7 +2493,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_clean_iraq
 		icon = red_usa_plan_in_iraq
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_destroying_the_colony_system
 		}
@@ -2528,7 +2528,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_clean_syria
 		icon = attack_syria
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_destroying_the_colony_system
 		}
@@ -2562,7 +2562,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_lebanon
 		icon = attack_lebanon
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_clean_syria
 		}
@@ -2599,7 +2599,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_jordan
 		icon = Generic_Arabia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_lebanon
 		}
@@ -2633,7 +2633,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_arm_the_interventionism
 		icon = examine_foreign_small_arms
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_creation_of_the_volunteer_force
 		}
@@ -2652,7 +2652,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_destroy_isreal
 		icon = attack_israel
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_lebanon
 		}
@@ -2686,7 +2686,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_clean_the_saudis
 		icon = attack_saudi_arabia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_destroying_the_colony_system
 		}
@@ -2720,7 +2720,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_clean_egypt
 		icon = attack_egypt
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_destroying_the_colony_system
 		}
@@ -2754,7 +2754,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_clean_south_arabia
 		icon = seize_the_gulf
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_clean_the_saudis
 		}
@@ -2780,7 +2780,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_clean_east_arabia
 		icon = focus_ETH_an_arabic_base
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_clean_south_arabia
 		}
@@ -2844,7 +2844,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_advance_in_special_forces
 		icon = helmet_knife
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_researchs
 		}
@@ -2876,7 +2876,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_advance_in_special_forces_s
 		icon = mass_assault
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_advance_in_special_forces
 		}
@@ -2916,7 +2916,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_advance_in_special_forces_n
 		icon = align_to_turkey
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_advance_in_special_forces_s
 		}
@@ -2956,7 +2956,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = MSNL_altay_ii
 		icon = tanks4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MSNL_altay_tank
 		}
@@ -2977,7 +2977,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = TUR_covid-19_pandemic5
 		icon = generic_healthcare
-		cost = 10,00
+		cost = 10.00
 		x = 46
 		y = 0
 
@@ -2994,7 +2994,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = TUR_covid-19_preparations5
 		icon = production2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_pandemic5
 		}
@@ -3014,7 +3014,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_build_up_hospitals5
 		icon = generic_hospital2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations5
 		}
@@ -3033,7 +3033,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turn_airports_to_hospital5
 		icon = generic_hospital
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_build_up_hospitals5
 		}
@@ -3053,7 +3053,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_start_up_vaccine_program8
 		icon = brain_power
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations5
 		}
@@ -3078,7 +3078,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_german_vaccines8
 		icon = trade_with_germany
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program8
 		}
@@ -3098,7 +3098,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_increase_funds_to_science5
 		icon = market_economy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations5
 		}
@@ -3117,7 +3117,7 @@ increase_healthcare_budget = yes
 	focus = {
 		id = TUR_buy_medicines5
 		icon = protectionist_economics
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_funds_to_science5
 		}
@@ -3142,7 +3142,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_chinese_vaccines5
 		icon = trade_with_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital5
 		}
@@ -3168,7 +3168,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_normalisation_from_covid5
 		icon = consumer_goods
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines5
 		}
@@ -3190,7 +3190,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_end_of_covid5
 		icon = aristocratic_funding
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_normalisation_from_covid5
 		}
@@ -3211,7 +3211,7 @@ remove_ideas = covid_19_normalised
 	focus = {
 		id = TUR_hedef_20234
 		icon = 2023
-		cost = 10,00
+		cost = 10.00
 		mutually_exclusive = {
 			focus = TUR_peace_whatever_costs4
 		}
@@ -3234,7 +3234,7 @@ add_named_threat = { threat = 1 name = 2023_tensions }
 	focus = {
 		id = TUR_peace_whatever_costs4
 		icon = major_alliance3
-		cost = 10,00
+		cost = 10.00
 		mutually_exclusive = {
 			focus = TUR_hedef_20234
 		}
@@ -3257,7 +3257,7 @@ add_named_threat = { threat = -1 name = peace_whatever_costs }
 	focus = {
 		id = TUR_expansion_on_the_borders4
 		icon = entente
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_hedef_20234
 		}
@@ -3276,7 +3276,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_unification_with_azerbaijan4
 		icon = align_to_azerbaijan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders4
 		}
@@ -3309,7 +3309,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_ultimatium_to_armenia4
 		icon = irredentism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_unification_with_azerbaijan4
 		}
@@ -3342,7 +3342,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_money_for_batumi4
 		icon = liberalization_policies
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders4
 		}
@@ -3373,7 +3373,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_integrate_batumi4
 		icon = small_arms5
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_money_for_batumi4
 		}
@@ -3394,7 +3394,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_PKK_attacks4
 		icon = focus_attack_pkk
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders4
 		}
@@ -3425,7 +3425,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_end_of_FETO4
 		icon = thompson_submachine_gun
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_PKK_attacks4
 		}
@@ -3453,7 +3453,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_strong_state4
 		icon = military_mission2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_integrate_batumi4
 		}
@@ -3477,7 +3477,7 @@ add_stability = 0.1
 	focus = {
 		id = TUR_NATO_mission4
 		icon = nato_membership_action_plan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_peace_whatever_costs4
 		}
@@ -3497,7 +3497,7 @@ add_ideas = nato_turkey_missionary
 	focus = {
 		id = TUR_join_NATO_equipmentary4
 		icon = GFX_nato_standarts
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_NATO_mission4
 		}
@@ -3547,7 +3547,7 @@ add_ideas = nato_turkey_missionary
 	focus = {
 		id = TUR_positions_for_protection4
 		icon = nato3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_NATO_mission4
 		}
@@ -3571,7 +3571,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_industrialization_program4
 		icon = factory_planning
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_join_NATO_equipmentary4
 		}
@@ -3625,7 +3625,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_international_military_factories4
 		icon = un_pko
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_industrialization_program4
 		}
@@ -3675,7 +3675,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_bor4
 		icon = b-5
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_strong_state4
 			focus = TUR_international_military_factories4

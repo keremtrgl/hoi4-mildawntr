@@ -13,7 +13,7 @@ focus_tree = {
 	focus = {
 		id = TUR_covid-19_pandemic
 		icon = generic_healthcare
-		cost = 10,00
+		cost = 10.00
 		x = 68
 		y = 0
 
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = TUR_victory_against_corruption
 		icon = tripartite_pact
-		cost = 10,00 
+		cost = 10.00 
 		prerequisite = {
 			focus = TUR_operations_against_corruption
 		}
@@ -50,7 +50,7 @@ focus_tree = {
 	focus = {
 		id = TUR_hedef_2023
 		icon = 2023
-		cost = 10,00
+		cost = 10.00
 		mutually_exclusive = {
 			focus = TUR_peace_whatever_costs
 		}
@@ -73,7 +73,7 @@ add_named_threat = { threat = 1 name = 2023_tensions }
 	focus = {
 		id = TUR_peace_whatever_costs
 		icon = major_alliance3
-		cost = 10,00
+		cost = 10.00
 		mutually_exclusive = {
 			focus = TUR_hedef_2023
 		}
@@ -96,7 +96,7 @@ add_named_threat = { threat = -1 name = peace_whatever_costs }
 	focus = {
 		id = TUR_legacy
 		icon = turkish_flag
-		cost = 5,00
+		cost = 5.00
 		x = 24
 		y = 0
   
@@ -119,7 +119,7 @@ add_named_threat = { threat = -1 name = peace_whatever_costs }
 	focus = {
 		id = TUR_armed_forces
 		icon = TUR_military_regime
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_legacy
 		}
@@ -144,7 +144,7 @@ add_named_threat = { threat = -1 name = peace_whatever_costs }
 	focus = {
 		id = TUR_give_more_power_to_army
 		icon = dangerous_laws
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_armed_forces
 		}
@@ -198,7 +198,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_act_of_military
 		icon = armed_forces_of_turkey
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_nationalization_of_armed_forces
 		}
@@ -217,7 +217,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_modernization_of_armed_forces
 		icon = military_mission
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_act_of_military
 		}
@@ -234,7 +234,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_tank_modernization
 		icon = Generic_Refit_Tanks
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_modernization_of_armed_forces
 		}
@@ -253,7 +253,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_altay_tank_project
 		icon = tanks5
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_tank_modernization
 		}
@@ -272,7 +272,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_gun_modernization
 		icon = Generic_Military_Equipment
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_modernization_of_armed_forces
 		}
@@ -291,7 +291,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_artillery_modernizetion
 		icon = artillery3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_gun_modernization
 		}
@@ -312,7 +312,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_war_tactics
 		icon = military_planning
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_act_of_military
 		}
@@ -332,7 +332,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_modern_art_of_war
 		icon = infiltration_tactics
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_war_tactics
 		}
@@ -353,7 +353,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_med_trainings
 		icon = inundation_lines
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_modern_art_of_war
 		}
@@ -373,7 +373,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_tuz_trainings
 		icon = grand_battleplan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_modern_art_of_war
 		}
@@ -402,7 +402,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_doctrine_of_war
 		icon = static_defense
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_tuz_trainings
 		}
@@ -440,7 +440,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_special_armed_forces
 		icon = helmet_knife
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_act_of_military
 		}
@@ -454,7 +454,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_strenghen_combat
 		icon = mass_assault
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_special_armed_forces
 		}
@@ -471,7 +471,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_strongest_special_armed_forces_in_NATO
 		icon = nato3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_strenghen_combat
 		}
@@ -494,7 +494,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_special_forces_for_turkish_state
 		icon = align_to_turkey
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_strongest_special_armed_forces_in_NATO
 		}
@@ -537,7 +537,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_bank_operations
 		icon = focus_drinks_peace
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_begin_corruption_attacks
 		}
@@ -558,7 +558,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_government_operations
 		icon = focus_generic_court
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_begin_corruption_attacks
 		}
@@ -588,7 +588,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_constitutional_changes
 		icon = islamic_resistance
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_government_operations
 			focus = TUR_bank_operations
@@ -661,7 +661,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_forgive_some_people
 		icon = break_free2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_act_in_prisons
 		}
@@ -683,7 +683,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_stop_prisons
 		icon = ITA_Focus_Prisoners_Rights
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_act_in_prisons
 		}
@@ -724,7 +724,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_stop_riots
 		icon = communist_purge
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_small_increase_in_money
 		}
@@ -743,7 +743,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_entering_the_2001
 		icon = stolen_papers2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_stop_prisons
 		}
@@ -765,7 +765,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_economic_retreat
 		icon = goal_JAP_valuedown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_small_increase_in_money
 		}
@@ -796,7 +796,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_awake_the_industry
 		icon = factory_complex
-		cost = 10,00
+		cost = 10.00
 		x = 40
 		y = 1
 		prerequisite = {
@@ -827,7 +827,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_yap_islet_devret
 		icon = factory_planning
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_awake_the_industry
 		}
@@ -863,7 +863,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_recover_istanbul_from_earthquake
 		icon = strait_messina_bridge
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_yap_islet_devret
 		}
@@ -891,7 +891,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_istanbul_ports
 		icon = naval_industry
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_recover_istanbul_from_earthquake
 		}
@@ -936,7 +936,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_IMF_cooperation
 		icon = imf
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_yap_islet_devret
 		}
@@ -957,7 +957,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_kentsel_donusum
 		icon = broadway
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_recover_istanbul_from_earthquake
 		}
@@ -1031,7 +1031,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_new_houses
 		icon = crane_and_tower
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_kentsel_donusum
 		}
@@ -1069,7 +1069,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_izmir_european_area
 		icon = align_to_europe
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_IMF_cooperation
 		}
@@ -1113,7 +1113,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_digital_areas
 		icon = research4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_izmir_european_area
 		}
@@ -1150,7 +1150,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_istanbul_university
 		icon = university
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_IMF_cooperation
 		}
@@ -1181,7 +1181,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_copenhagen_criters
 		icon = EU_UNSC
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_yap_islet_devret
 		}
@@ -1205,7 +1205,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_rekabet_kurumu
 		icon = rekabet_kurumu
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_copenhagen_criters
 		}
@@ -1227,7 +1227,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_green_light_for_tubitak
 		icon = diplomacy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_rekabet_kurumu
 		}
@@ -1249,7 +1249,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_bank_law
 		icon = expand_finance_ministry
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_copenhagen_criters
 		}
@@ -1273,7 +1273,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_fund_new_companies
 		icon = money
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_rekabet_kurumu
 		}
@@ -1298,7 +1298,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_digital_universe
 		icon = literacy_rate_improvment2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_digital_areas
 		}
@@ -1350,7 +1350,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_tenmak
 		icon = tenmak
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_fund_new_companies
 		}
@@ -1373,7 +1373,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_investment_time
 		icon = business_man
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 		   focus = TUR_bank_law
 		}
@@ -1418,7 +1418,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_anatolian_industries
 		icon = agriculture
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_yap_islet_devret
 		}
@@ -1448,7 +1448,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_sivas_project
 		icon = industry2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_anatolian_industries
 		}
@@ -1482,7 +1482,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_kayseri_project
 		icon = industry2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_anatolian_industries
 		}
@@ -1516,7 +1516,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_expand_the_capital
 		icon = industry2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_sivas_project
 		}
@@ -1553,7 +1553,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_industrialize_agriculture
 		icon = mechanized_agriculture
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_expand_the_capital
 		}
@@ -1601,7 +1601,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_anatolian_military_industries
 		icon = industry_military
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_kayseri_project
 		}
@@ -1638,7 +1638,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_gun_factories
 		icon = thompson_submachine_gun
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_anatolian_military_industries
 		}
@@ -1667,7 +1667,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_redzyne_the_istanbul_metros
 		icon = roads_extend_plan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_istanbul_ports
 		}
@@ -1706,7 +1706,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_marmaray
 		icon = construct_infrastructure
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_redzyne_the_istanbul_metros
 		}
@@ -1735,7 +1735,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_tourist_industry
 		icon = business_man2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_redzyne_the_istanbul_metros
 		}
@@ -1762,7 +1762,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_summer_places
 		icon = production2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_tourist_industry
 		}
@@ -1777,7 +1777,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_winter_times
 		icon = winter_warfare
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_tourist_industry
 		}
@@ -1792,7 +1792,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_countryside_resource_search
 		icon = mining_truck
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_tenmak
 		}
@@ -1822,7 +1822,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_roads_fund
 		icon = Payment_on_roads
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_yap_islet_devret
 		}
@@ -1841,7 +1841,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_modernize_ataturk_culture_centre
 		icon = construction_engineering
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_digital_universe
 		}
@@ -1873,7 +1873,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_reliable_land
 		icon = construction4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_industrialize_agriculture
 		}
@@ -1931,7 +1931,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_batman_oil_deposits
 		icon = oil_production2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_tenmak
 		}
@@ -1980,7 +1980,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_all_to_roads
 		icon = infrastructure1
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_roads_fund
 		}
@@ -2067,7 +2067,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_drone_factories
 		icon = turkish_drone
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_gun_factories
 		}
@@ -2108,7 +2108,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_tank_factories
 		icon = tank_production
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_anatolian_military_industries
 		}
@@ -2137,7 +2137,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_artillery_factories
 		icon = artillery
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_tank_factories
 		}
@@ -2173,7 +2173,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_covid-19_preparations
 		icon = production2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_pandemic
 		}
@@ -2193,7 +2193,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_build_up_hospitals
 		icon = generic_hospital2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations
 		}
@@ -2212,7 +2212,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turn_airports_to_hospital
 		icon = generic_hospital
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_build_up_hospitals
 		}
@@ -2232,7 +2232,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_economic_sickness
 		icon = better_money
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations
 		}
@@ -2252,7 +2252,7 @@ custom_effect_tooltip = TUR_economic_sicknesss
 	focus = {
 		id = TUR_force_economic_ministers_resign
 		icon = central_planned_economy3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_sickness
 		}
@@ -2279,7 +2279,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_increase_funds_to_science
 		icon = market_economy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations
 		}
@@ -2298,7 +2298,7 @@ increase_healthcare_budget = yes
 	focus = {
 		id = TUR_buy_medicines
 		icon = protectionist_economics
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_funds_to_science
 		}
@@ -2320,7 +2320,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_chinese_vaccines
 		icon = trade_with_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital
 		}
@@ -2345,7 +2345,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_german_vaccines_r
 		icon = trade_with_germany
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines
 		}
@@ -2365,7 +2365,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_expansion_on_the_borders
 		icon = entente
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_hedef_2023
 		}
@@ -2384,7 +2384,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_unification_with_azerbaijan
 		icon = align_to_azerbaijan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders
 		}
@@ -2417,7 +2417,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_ultimatium_to_armenia
 		icon = irredentism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_unification_with_azerbaijan
 		}
@@ -2450,7 +2450,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_money_for_batumi
 		icon = liberalization_policies
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders
 		}
@@ -2481,7 +2481,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_integrate_batumi
 		icon = small_arms5
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_money_for_batumi
 		}
@@ -2502,7 +2502,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_PKK_attacks
 		icon = focus_attack_pkk
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders
 			focus = TUR_NATO_mission
@@ -2535,7 +2535,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_end_of_FETO
 		icon = thompson_submachine_gun
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_PKK_attacks
 		}
@@ -2563,7 +2563,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_strong_state
 		icon = military_mission2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_integrate_batumi
 		}
@@ -2587,7 +2587,7 @@ add_stability = 0.1
 	focus = {
 		id = TUR_bor
 		icon = b-5
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_strong_state
 			focus = TUR_international_military_factories
@@ -2605,7 +2605,7 @@ add_ideas = laws_of_bor
 	focus = {
 		id = TUR_NATO_mission
 		icon = nato_membership_action_plan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_peace_whatever_costs
 		}
@@ -2625,7 +2625,7 @@ add_ideas = nato_turkey_missionary
 	focus = {
 		id = TUR_join_NATO_equipmentary
 		icon = nato_standarts
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_NATO_mission
 		}
@@ -2675,7 +2675,7 @@ add_ideas = nato_turkey_missionary
 	focus = {
 		id = TUR_positions_for_protection
 		icon = nato3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_NATO_mission
 		}
@@ -2698,7 +2698,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_industrialization_program
 		icon = factory_planning
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_join_NATO_equipmentary
 		}
@@ -2752,7 +2752,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_international_military_factories
 		icon = un_pko
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_industrialization_program
 		}
@@ -2802,7 +2802,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_internationalize_sabiha_gokcen
 		icon = united_nations
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_entering_the_2001
 		}
@@ -2833,7 +2833,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_economic_fail
 		icon = better_money
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_internationalize_sabiha_gokcen
 		}
@@ -2874,7 +2874,7 @@ add_ideas =	media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TUR_movement_of_AKP
 		icon = akp
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_fail
 		}
@@ -2925,7 +2925,7 @@ TUR_kemalist_turn_hostile_effect = yes
 	focus = {
 		id = TUR_spring_of_CHP
 		icon = deniz_baykal_elections_2002
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_fail
 		}
@@ -2979,7 +2979,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	focus = {
 		id = TUR_another_military_plot
 		icon = coups_on_the_world
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_fail
 		}
@@ -3041,7 +3041,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	focus = {
 		id = TUR_ldp
 		icon = turkey_liberals
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_fail
 		}
@@ -3096,7 +3096,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	focus = {
 		id = TUR_techno
 		icon = research4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_fail
 		}
@@ -3134,7 +3134,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	focus = {
 		id = TUR_mhp
 		icon = bahceli
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_fail
 		}
@@ -3188,7 +3188,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	focus = {
 		id = TUR_tkp
 		icon = revolution_upmost
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_fail
 		}
@@ -3239,7 +3239,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	focus = {
 		id = TUR_erbakan_movement
 		icon = TUR_erbakan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_fail
 		}
@@ -3278,7 +3278,7 @@ TUR_kemalist_turn_hostile_effect = yes
 	focus = {
 		id = TUR_ecevit
 		icon = ecevit_continue
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_fail
 		}
@@ -3315,7 +3315,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	focus = {
 		id = TUR_gencparti
 		icon = golden_turks
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_fail
 		}
@@ -3357,7 +3357,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	focus = {
 		id = TUR_anap
 		icon = mesut_yilmaz
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_fail
 		}
@@ -3396,7 +3396,7 @@ TUR_kemalist_turn_hostile_effect = yes
 	focus = {
 		id = TUR_propaganda
 		icon = propaganda
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_movement_of_AKP
 		}
@@ -3504,7 +3504,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_abdullah_gul_gov
 		icon = abdullah_gul
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_take_over_regime
 		}
@@ -3550,7 +3550,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = TUR_headscarves_crisis
 		icon = islamophobia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_abdullah_gul_gov
 		}
@@ -3641,7 +3641,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_stable_relations_with_srmy
 		icon = iraqi_soldier
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_headscarves_crisis
 		}
@@ -3676,7 +3676,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_increase_army_payments
 		icon = tank_production
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_headscarves_crisis
 		}
@@ -3698,7 +3698,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_erdogan_regime
 		icon = erdogan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_votings_for_entering_iraq
 		}
@@ -3755,7 +3755,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_remove_6_zeros
 		icon = meeting
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_reforms
 		}
@@ -3779,7 +3779,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_increase_in_study
 		icon = university
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_reforms
 		}
@@ -3795,7 +3795,7 @@ completion_reward = {
 	focus = {
 		id = TUR_reorganize_high_command
 		icon = Generic_Soldier_Aiming
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_stable_relations_with_srmy
 		}
@@ -3818,7 +3818,7 @@ completion_reward = {
 	focus = {
 		id = TUR_warn_rule
 		icon = BRA_libertarian_economics
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_reforms
 		}
@@ -3835,7 +3835,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_eu_close
 		icon = closer_ties_with_eu
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_reforms
 		}
@@ -3892,7 +3892,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_another_elections
 		icon = election3
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_remove_6_zeros
 		}
@@ -4050,7 +4050,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_youtube_shot_down
 		icon = youtube
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_AKP_victory
 		}
@@ -4064,7 +4064,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_blacksea_industrialization
 		icon = central_planned_economy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_AKP_victory
 		}
@@ -4108,7 +4108,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_ban_tutuk
 		icon = vineyard
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_AKP_victory
 		}
@@ -4164,7 +4164,7 @@ has_global_flag = TUR_false_removed
 	focus = {
 		id = TUR_kurdish_opening
 		icon = kurdistan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_AKP_victory
 		}
@@ -4180,7 +4180,7 @@ has_global_flag = TUR_false_removed
 	focus = {
 		id = TUR_TRT6
 		icon = television
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_kurdish_opening
 		}
@@ -4203,7 +4203,7 @@ has_global_flag = TUR_false_removed
 	focus = {
 		id = TUR_changes_in_persons
 		icon = union_negotiations
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_attempt_to_lift_ban_from_headscarves
 		}
@@ -4244,7 +4244,7 @@ nationalist_right_wing_populists_are_in_power = yes
 	focus = {
 		id = TUR_change_to_TL
 		icon = radical_tax_reform
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_attempt_to_lift_ban_from_headscarves
 		}
@@ -4262,7 +4262,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_finish_up_blacksea_industrialization
 		icon = broadway
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_blacksea_industrialization
 		}
@@ -4291,7 +4291,7 @@ production_speed_buildings_factor = 0.05
 	focus = {
 		id = TUR_new_state_of_liberalism
 		icon = democracy4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_changes_in_persons
 		}
@@ -4436,7 +4436,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_september_coup_mission
 		icon = coup
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_of_FETO_infulence
 		}
@@ -4467,7 +4467,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_new_symbol_for_lira
 		icon = lira
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_september_coup_mission
 		}
@@ -4489,7 +4489,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_6_economic_regions
 		icon = accept_treaty
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_september_coup_mission
 		}
@@ -4521,7 +4521,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_elections_of_2014
 		icon = election3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_destroy_gezi_park
 		}
@@ -4607,7 +4607,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_massive_support_for_anti_terrorism
 		icon = soldier
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_elections_of_2014
 		}
@@ -4632,7 +4632,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_end_of_feto_alliance
 		icon = generic_embrace_agrarian_society
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_massive_support_for_anti_terrorism
 		}
@@ -4676,7 +4676,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_right_wing_sad
 	focus = {
 		id = TUR_shot_down_feto_schools
 		icon = Generic_Ripping_Papers
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_end_of_feto_alliance
 		}
@@ -4695,7 +4695,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_release_ilker_basbug
 		icon = break_free2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_end_of_feto_alliance
 		}
@@ -4726,7 +4726,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_operations_against_FETO_allies
 		icon = investigation
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_shot_down_feto_schools
 		}
@@ -4774,7 +4774,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_end_of_akp
 		icon = coups_on_the_world
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_coup_attempt
 		}
@@ -4800,7 +4800,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_victory_for_all_turkey
 		icon = concessions
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_coup_attempt
 		}
@@ -4832,7 +4832,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_ulku_ocaklari
 		icon = ulkists
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_victory_for_all_turkey
 		}
@@ -4850,7 +4850,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_speeches_of_victory
 		icon = turkish_authoritarianism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_victory_for_all_turkey
 			focus = TUR_end_of_akp
@@ -4979,7 +4979,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_dreams_of_2023
 		icon = 2023
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_threat_europe_with_immigrant_wave
 		}
@@ -5003,7 +5003,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_elections_of_2018
 		icon = election2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_operations_against_YPG
 		}
@@ -5052,7 +5052,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_continue_with_AKP
 		icon = akp
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_elections_of_2018
 		}
@@ -5091,7 +5091,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_continue_with_CHP
 		icon = chp
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_elections_of_2018
 		}
@@ -5150,7 +5150,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_law_of_bin
 		icon = resource_extraction
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_treaties_with_russia
 		}
@@ -5166,7 +5166,7 @@ add_ideas = laws_of_bin
 	focus = {
 		id = TUR_construction_of_istabul_airport
 		icon = air_production
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_treaties_with_russia
 		}
@@ -5196,7 +5196,7 @@ add_ideas = laws_of_bin
 	focus = {
 		id = TUR_talks_about_syrian_situation
 		icon = refugees
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_treaties_with_russia
 		}
@@ -5222,7 +5222,7 @@ add_ideas = laws_of_bin
 	focus = {
 		id = TUR_increase_armements
 		icon = volunteers
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_amounts_of_islamist_schools
 		}
@@ -5259,7 +5259,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_istabul_agreement_sign
 		icon = social_democracy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_victory_of_CHP
 		}
@@ -5278,7 +5278,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_laws_of_workers
 		icon = liberalized_socialism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_victory_of_CHP
 		}
@@ -5296,7 +5296,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_increase_secularism
 		icon = religious_unity
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_victory_of_CHP
 		}
@@ -5314,7 +5314,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_make_everyone_happy
 		icon = family
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_istabul_agreement_sign
 		}
@@ -5333,7 +5333,7 @@ increase_social_spending = yes
 	focus = {
 		id = TUR_state_control_of_mosques
 		icon = islamophobia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_laws_of_workers
 		}
@@ -5361,7 +5361,7 @@ increase_social_spending = yes
 	focus = {
 		id = TUR_economic_style
 		icon = economic_prosperity2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_make_everyone_happy
 		}
@@ -5380,7 +5380,7 @@ increase_social_spending = yes
 	focus = {
 		id = TUR_low_taxes
 		icon = liberalization_policies
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_style
 		}
@@ -5399,7 +5399,7 @@ increase_social_spending = yes
 	focus = {
 		id = TUR_kemalist_state
 		icon = chp
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_style
 		}
@@ -5419,7 +5419,7 @@ increase_social_spending = yes
 	focus = {
 		id = TUR_increase_of_army_loyalty
 		icon = national_unity
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_kemalist_state
 		}
@@ -5444,7 +5444,7 @@ increase_social_spending = yes
 	focus = {
 		id = TUR_left_armed_forces
 		icon = kemalists
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_kemalist_state
 		}
@@ -5465,7 +5465,7 @@ increase_social_spending = yes
 	focus = {
 		id = TUR_withdrawl_from_syria
 		icon = islamic_emirate_of_syria
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_low_taxes
 		}
@@ -5498,7 +5498,7 @@ increase_social_spending = yes
 	focus = {
 		id = TUR_send_syrians_to_home
 		icon = anti_immigration3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_low_taxes
 		}
@@ -5527,7 +5527,7 @@ increase_social_spending = yes
 	focus = {
 		id = TUR_new_constiution
 		icon = parliament_box
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_republic
 		}
@@ -5547,7 +5547,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_stop_lira_meltdown
 		icon = vineyard
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_new_constiution
 		}
@@ -5568,7 +5568,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_silivris
 		icon = blue_democracy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_new_constiution
 		}
@@ -5586,7 +5586,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_judge_non
 		icon = judiciary
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_new_constiution
 		}
@@ -5604,7 +5604,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_increase_amounts_of_islamist_schools
 		icon = sunni_politics
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_law_of_bin
 		}
@@ -5629,7 +5629,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_major_state
 		icon = Generic_War_Propaganda05
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_victory_of_turkey_backed_state
 		}
@@ -5646,7 +5646,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_act_of_syrian_immigrants
 		icon = black_market
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_threat_europe_with_immigrant_wave
 		}
@@ -5674,7 +5674,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_increase_military_interventionism
 		icon = conscription
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_armements
 		}
@@ -5697,7 +5697,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_give_weapons_to_libya
 		icon = ahmat_ifv
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_military_interventionism
 		}
@@ -5728,7 +5728,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_give_weapons_to_syria
 		icon = align_to_syrian_rebels
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_give_weapons_to_libya
 		}
@@ -5759,7 +5759,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_threat_europe_with_immigrant_wave
 		icon = stage_europe
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_talks_about_syrian_situation
 		}
@@ -5798,7 +5798,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_open_new_hospitals
 		icon = generic_hospital2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_construction_of_istabul_airport
 		}
@@ -5816,7 +5816,7 @@ increase_healthcare_budget = yes
 	focus = {
 		id = TUR_take_syrian_immigrations
 		icon = pro_immigration2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_stabilization_of_turkey1
 		}
@@ -5847,7 +5847,7 @@ increase_healthcare_budget = yes
 	focus = {
 		id = TUR_strengh_of_conservative_state
 		icon = giant_wakes
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_major_state
 		}
@@ -5907,7 +5907,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_normalisation_from_covid
 		icon = consumer_goods
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_buy_german_vaccines_r
 		}
@@ -5930,7 +5930,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkovac
 		icon = research3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_buy_german_vaccines_r
 		}
@@ -5950,7 +5950,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_vaccine_program_r
 		icon = brain_power
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_buy_german_vaccines_r
 		}
@@ -5973,7 +5973,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_end_of_covid
 		icon = aristocratic_funding
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_normalisation_from_covid
 		}
@@ -6080,7 +6080,7 @@ remove_ideas = covid_19_normalised
 	focus = {
 		id = TUR_shadow_women_rights
 		icon = Generic_Piety
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_a_party_of_majority
 		}
@@ -6109,7 +6109,7 @@ remove_ideas = covid_19_normalised
 	focus = {
 		id = TUR_open_islamist_schools
 		icon = islamist_gov2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_limited_ataturk_class
 		}
@@ -6180,7 +6180,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	focus = {
 		id = TUR_erdogan_dawn
 		icon = erdogan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_elections_of_2014
 		}
@@ -6210,7 +6210,7 @@ has_idea = pr_erdogan
 	focus = {
 		id = TUR_silivri
 		icon = control_judiciary
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_victory_against_corruption
 		}
@@ -6250,7 +6250,7 @@ has_idea = pr_erdogan
 	focus = {
 		id = TUR_operations_against_corruption
 		icon = Generic_Political_Purge
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_end_of_feto_alliance
 		}
@@ -6269,7 +6269,7 @@ has_idea = pr_erdogan
 	focus = {
 		id = TUR_release_anti_feto_leaders
 		icon = break_free
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_release_ilker_basbug
 		}
@@ -6311,7 +6311,7 @@ has_idea = pr_erdogan
 	focus = {
 		id = TUR_NATO_mission_in_afganistan
 		icon = nato3
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_understand_our_mistakes
 		}
@@ -6348,7 +6348,7 @@ has_idea = pr_erdogan
 	focus = {
 		id = TUR_afghan_immigrationism
 		icon = pro_immigration1
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_NATO_mission_in_afganistan
 		}
@@ -6381,7 +6381,7 @@ has_idea = pr_erdogan
 	focus = {
 		id = TUR_economic_failing
 		icon = economic_crisis
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_arrest_american_PKK_supporter
 		}
@@ -6414,7 +6414,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_arrest_american_PKK_supporter
 		icon = secret_police
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_victory_speech_of_AKP
 		}
@@ -6466,7 +6466,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_new_relations_with_west
 		icon = align_to_america
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_of_army_loyalty
 		}
@@ -6510,7 +6510,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_moderations_for_CHP_stations
 		icon = global_community
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_new_relations_with_west
 		}
@@ -6528,7 +6528,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_shot_down_islamist_schools
 		icon = MEX_Defend_the_constitution
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_new_relations_with_west
 		}
@@ -6544,7 +6544,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_shot_TRT6
 		icon = television
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_shot_down_islamist_schools
 		}
@@ -6562,7 +6562,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_republic
 		icon = elections4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_shot_TRT6
 		}
@@ -6598,7 +6598,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_ataturk_arrows
 		icon = focus_TUR_ratify_the_six_arrows
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_republic
 		}
@@ -6616,7 +6616,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_westernize_country
 		icon = association_agreement
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_republic
 		}
@@ -6639,7 +6639,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_green_industry
 		icon = oil_green
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_economic_style
 		}
@@ -6657,7 +6657,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_tech_1
 		icon = generic_solar
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_green_industry
 		}
@@ -6691,7 +6691,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_tech_2
 		icon = hydroelectric2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_green_industry
 		}
@@ -6723,7 +6723,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_tech_3
 		icon = powerplant
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_tech_2
 		}
@@ -6759,7 +6759,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_close_relations_with_germany
 		icon = align_to_germany
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_victory_speech_of_AKP
 		}
@@ -6790,7 +6790,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_contact_with_merkel
 		icon = merkel
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_close_relations_with_germany
 		}
@@ -6820,7 +6820,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_med_war
 		icon = torpedo
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_armements
 		}
@@ -6853,7 +6853,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_new_marines
 		icon = frigates
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_med_war
 		}
@@ -6867,7 +6867,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_drone_backed_systems
 		icon = drone
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_med_war
 		}
@@ -6883,7 +6883,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_search_oil
 		icon = oil_red
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_new_marines
 		}
@@ -6904,7 +6904,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_invisible_in_seas
 		icon = carriers2
-		cost = 25,00
+		cost = 25.00
 		prerequisite = {
 			focus = TUR_victory_of_turkey_backed_state
 		}
@@ -6923,7 +6923,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_victory_of_turkey_backed_state
 		icon = focus_generic_develop_libya
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_give_weapons_to_libya
 		}
@@ -6968,7 +6968,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_anti_american_propaganda
 		icon = war_against_the_united_states
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_economic_failing
 		}
@@ -6996,7 +6996,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_treaties_with_russia
 		icon = align_to_russia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_anti_american_propaganda
 		}
@@ -7027,7 +7027,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_air_modernization
 		icon = f35
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_gun_modernization
 		}
@@ -7049,7 +7049,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_THK_program
 		icon = fighter_plane
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_air_modernization
 		}
@@ -7070,7 +7070,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_navy_modernizations
 		icon = TUR_navy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_air_modernization
 		}
@@ -7087,7 +7087,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_turkish_destroyers
 		icon = destroyers
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_navy_modernizations
 		}
@@ -7108,7 +7108,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_battleship
 		icon = battleships
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_navy_modernizations
 		}
@@ -7129,7 +7129,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_creation_of_turkish_carriers
 		icon = ship_bleur_point
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_battleship
 		}
@@ -7153,7 +7153,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_turkish_tank_weaponary
 		icon = tanks4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_altay_tank_project
 		}
@@ -7174,7 +7174,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	focus = {
 		id = TUR_turkish_drones
 		icon = turkish_drone
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_THK_program
 		}
@@ -7224,7 +7224,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_MIT_strenghen
 		icon = mit
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_reforms
 		}
@@ -7253,7 +7253,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_2023_elections
 		icon = 2023_elections
-		cost = 15,00
+		cost = 15.00
 		x = 23
 		y = 64
 
@@ -7275,7 +7275,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_mv_sinan_ogan
 		icon = sinan_ogan_advantage
-		cost = 10,00
+		cost = 10.00
 		x = 23
 		y = 68
 
@@ -7310,7 +7310,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_victory_of_erdogan
 		icon = 2023_erdogan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_2023_elections
 		}
@@ -7346,7 +7346,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_erdogans_consolidation
 		icon = islamist_gov
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_victory_of_erdogan
 		}
@@ -7368,7 +7368,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	focus = {
 		id = TUR_death_of_turkishness
 		icon = aristocratic_funding
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_erdogans_consolidation
 		}
@@ -7400,7 +7400,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TUR_parliament_scheme
 		icon = parliament_box
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_erdogans_consolidation
 		}
@@ -7424,7 +7424,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_the_true_man
 		icon = erdogan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_parliament_scheme
 		}
@@ -7487,7 +7487,7 @@ neutrality_Neutral_Muslim_Brotherhood_are_in_power = yes
 	focus = {
 		id = TUR_we_are_in_space
 		icon = generic_space
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_the_true_man
 		}
@@ -7508,7 +7508,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TUR_expand_in_TURKSAT
 		icon = international_space_station
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_we_are_in_space
 		}
@@ -7525,7 +7525,7 @@ search_filters = {FOCUS_FILTER_RESEARCH}
 	focus = {
 		id = TUR_technology_house
 		icon = tech_sharing
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_we_are_in_space
 		}
@@ -7542,7 +7542,7 @@ search_filters = {FOCUS_FILTER_RESEARCH}
 	focus = {
 		id = TUR_improve_eximbank1
 		icon = GEO_beria_economy
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_the_true_man
 		}
@@ -7558,7 +7558,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_improve_the_wages
 		icon = money
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_improve_eximbank1
 		}
@@ -7576,7 +7576,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_family_and_youth_bank
 		icon = Generic_Working_Class_Family
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_improve_eximbank1
 		}
@@ -7592,7 +7592,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_the_man_of_ulema
 		icon = islamic_focus_01
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_the_true_man
 		}
@@ -7613,7 +7613,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
 	focus = {
 		id = TUR_the_national_jet
 		icon = jet_mig21
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_the_true_man
 		}
@@ -7632,7 +7632,7 @@ search_filters = {FOCUS_FILTER_RESEARCH}
 	focus = {
 		id = TUR_national_ships
 		icon = develop_polish_shipbuilding
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_the_national_jet
 		}
@@ -7651,7 +7651,7 @@ search_filters = {FOCUS_FILTER_RESEARCH}
 	focus = {
 		id = TUR_concessions_to_sinan_ogan
 		icon = sinan_ogans_bulb
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_mv_sinan_ogan
 			focus = TUR_the_true_man
@@ -7690,7 +7690,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_victory_of_muharrem_ince
 		icon = 2023_muharrem_ince
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_2023_elections
 		}
@@ -7724,7 +7724,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_immigrant_management
 		icon = Generic_Redraw_Borders
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_mv_sinan_ogan
 		}
@@ -7757,7 +7757,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_zafer_tourism
 		icon = zafer_tourism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_immigrant_management
 			focus = TUR_concessions_to_sinan_ogan
@@ -7775,7 +7775,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_slain_the_hudapar
 		icon = attack_hezbollah
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_zafer_tourism
 		}
@@ -7811,7 +7811,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_victory_of_sinan_ogan
 		icon = 2023_sinan_ogan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_2023_elections
 		}
@@ -7846,7 +7846,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_victory_of_kemal_kilicdaroglu
 		icon = 2023_kilicdaroglu
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_2023_elections
 		}
@@ -7880,7 +7880,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_the_regime_of_questions
 		icon = focus_ETH_re-convene_the_parliament
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_victory_of_kemal_kilicdaroglu
 		}
@@ -7898,7 +7898,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_pressure_on_parliament
 		icon = infiltration_tactics
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_the_regime_of_questions
 		}
@@ -7923,7 +7923,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_the_powers_of_anitkabir
 		icon = social_democracy_2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_the_regime_of_questions
 		}
@@ -7950,7 +7950,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TUR_symbole_of_love
 		icon = welfare
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_the_powers_of_anitkabir
 		}
@@ -8021,7 +8021,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TUR_concessions_to_sinan_ogan_2
 		icon = sinan_ogans_kemalism
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_symbole_of_love
 			focus = TUR_mv_sinan_ogan
@@ -8060,7 +8060,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_left_right_acceptance
 		icon = support_the_left_right
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_concessions_to_sinan_ogan_2
 			focus = TUR_immigrant_management
@@ -8077,7 +8077,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_zafer_mancinik
 		icon = the_zafer_catapult
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_zafer_tourism
 		}
@@ -8100,7 +8100,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_election_redesignation
 		icon = focus_generic_improve_the_administration
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_symbole_of_love
 		}
@@ -8116,7 +8116,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_lower_the_threshold
 		icon = Focus_Parliament_Constitution
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_election_redesignation
 		}
@@ -8135,7 +8135,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_political_white
 		icon = stolen_papers2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_election_redesignation
 		}
@@ -8154,7 +8154,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_anti_corruption_practices
 		icon = Generic_Tear_Paper
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_political_white
 		}
@@ -8179,7 +8179,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_syrian_peace_deal
 		icon = apc
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_symbole_of_love
 		}
@@ -8208,7 +8208,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TUR_immigrant_program
 		icon = anti_immigration3
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_syrian_peace_deal
 		}
@@ -8236,7 +8236,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_kick_the_immigrants
 		icon = anti_immigration1
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_immigrant_program
 		}
@@ -8269,7 +8269,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_improve_eximbank
 		icon = GEO_beria_economy
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_symbole_of_love
 		}
@@ -8285,7 +8285,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_grant_state_bank_independence
 		icon = angel
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_improve_eximbank
 		}
@@ -8303,7 +8303,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_improve_the_lira
 		icon = lira
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_improve_eximbank
 		}
@@ -8325,7 +8325,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_taxation_program
 		icon = MEX_Economic_reform
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_improve_the_lira
 		}
@@ -8345,7 +8345,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_remove_the_EU_procedures
 		icon = euroscepticism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_kick_the_immigrants
 		}
@@ -8369,7 +8369,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkish_style_silicon_valleys
 		icon = economic_community
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_symbole_of_love
 		}
@@ -8386,7 +8386,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_fast_growth_thoughts
 		icon = BRA_libertarian_economics
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_turkish_style_silicon_valleys
 		}
@@ -8402,7 +8402,7 @@ increase_economic_growth = yes
 	focus = {
 		id = TUR_turkish_startups
 		icon = romanian_economic_development_plan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_fast_growth_thoughts
 		}
@@ -8418,7 +8418,7 @@ increase_economic_growth = yes
 	focus = {
 		id = TUR_social_law_restorations
 		icon = kemalarrows
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_turkish_startups
 		}
@@ -8439,7 +8439,7 @@ increase_economic_growth = yes
 	focus = {
 		id = TUR_return_to_cankaya
 		icon = diplomacy
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_social_law_restorations
 		}
@@ -8458,7 +8458,7 @@ increase_economic_growth = yes
 	focus = {
 		id = TUR_shut_down_the_TVF
 		icon = the_focus_TWF
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_social_law_restorations
 		}
@@ -8479,7 +8479,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_curriculum_reform_chp
 		icon = champagne_bribes
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_social_law_restorations
 		}
@@ -8501,7 +8501,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_coding_classes
 		icon = goal_JAP_analogue_television
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_curriculum_reform_chp
 		}
@@ -8517,7 +8517,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_curriculum_change
 		icon = qadire_khom
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_reform_project
 		}
@@ -8539,7 +8539,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_justice_lessons
 		icon = Focus_Rationing
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_curriculum_change
 		}
@@ -8556,7 +8556,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_traditional_education
 		icon = prosperous_justice_party
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_curriculum_change
 		}
@@ -8573,7 +8573,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_turkish_genom_project
 		icon = focus_generic_land_reclamation
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_weaken_the_AYM
 		}
@@ -8589,7 +8589,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_crush_the_LGBTQ
 		icon = anti_lgbt
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_reform_project
 		}
@@ -8615,7 +8615,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_create_immigrant_assimilation
 		icon = migranti_geo
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_reform_project
 		}
@@ -8635,7 +8635,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_e-turquality
 		icon = focus_generic_national_security
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_weaken_the_AYM
 		}
@@ -8652,7 +8652,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_CIMER_reform
 		icon = the_cimer_focus
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_justice_lessons
 		}
@@ -8670,7 +8670,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_weaken_the_AYM
 		icon = dangerous_laws
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_reform_project
 		}
@@ -8687,7 +8687,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkish_axis
 		icon = reconfigure_turkish_foreign_policy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_islamic_dealership
 		}
@@ -8710,7 +8710,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_high_bayraktar_project
 		icon = drone2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_the_national_jet
 		}
@@ -8737,7 +8737,7 @@ search_filters = {FOCUS_FILTER_RESEARCH}
 	focus = {
 		id = TUR_nationalized_war_industries
 		icon = counter
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_national_ships
 		}
@@ -8756,7 +8756,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TUR_visit_islamic_countries
 		icon = united_islamic_republics_flag
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_the_man_of_ulema
 		}
@@ -8862,7 +8862,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
 	focus = {
 		id = TUR_islamic_dealership
 		icon = muslim_expansionism
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_visit_islamic_countries
 		}
@@ -8904,7 +8904,7 @@ search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 	focus = {
 		id = TUR_losing_the_economic_motivation
 		icon = economic_collapse_plain
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_family_and_youth_bank
 		}
@@ -8927,7 +8927,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_reform_project
 		icon = akpicon
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_strenghen_MIT
 		}
@@ -8946,7 +8946,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TUR_strenghen_MIT
 		icon = mit
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_technology_house
 		}
@@ -8965,7 +8965,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_national_front
 		icon = powers_of_turkish_presidency
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_turkic_brotherhood_connections
 		}
@@ -8985,7 +8985,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkic_brotherhood_connections
 		icon = align_to_turkic_council
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_turkish_axis
 		}
@@ -9009,7 +9009,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_the_great_isle
 		icon = Generic_Command_Power
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_turkish_axis
 		}
@@ -9030,7 +9030,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_remove_the_YOK
 		icon = examine_foreign_laws
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_curriculum_reform_chp
 		}
@@ -9049,7 +9049,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_investiable_state
 		icon = economic_prosperity2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_normalize_relations
 		}
@@ -9068,7 +9068,7 @@ get_random_investment_targets = yes
 	focus = {
 		id = TUR_strenghten_AYM
 		icon = white_peace
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_shut_down_the_TVF
 		}
@@ -9085,7 +9085,7 @@ get_random_investment_targets = yes
 	focus = {
 		id = TUR_block_canal_istanbul_project
 		icon = topple_qatar
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_social_law_restorations
 		}
@@ -9110,7 +9110,7 @@ get_random_investment_targets = yes
 	focus = {
 		id = TUR_westernization_and_silivri_shut
 		icon = western_alignment
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_shut_down_the_TVF
 		}
@@ -9131,7 +9131,7 @@ get_random_investment_targets = yes
 	focus = {
 		id = TUR_normalize_relations
 		icon = alliance_ARM_GRE
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_remove_the_EU_procedures
 		}
@@ -9152,7 +9152,7 @@ reverse_add_opinion_modifier = { target = CYP modifier = old_rival }
 	focus = {
 		id = TUR_slain_the_pkk
 		icon = attack_kurdistan2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_left_right_acceptance
 		}
@@ -9188,7 +9188,7 @@ reverse_add_opinion_modifier = { target = CYP modifier = old_rival }
 	focus = {
 		id = TUR_nations_economy
 		icon = central_planned_economy3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_zafer_mancinik
 		}
@@ -9210,7 +9210,7 @@ reverse_add_opinion_modifier = { target = CYP modifier = old_rival }
 	focus = {
 		id = TUR_national_investment
 		icon = infrastructure
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_nations_economy
 		}
@@ -9226,7 +9226,7 @@ reverse_add_opinion_modifier = { target = CYP modifier = old_rival }
 	focus = {
 		id = TUR_turkic_investment_road
 		icon = turk_flags
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_nations_economy
 		}
@@ -9291,7 +9291,7 @@ reverse_add_opinion_modifier = { target = CYP modifier = old_rival }
 	focus = {
 		id = TUR_the_constitution_change
 		icon = goal_JAP_golden_shield
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_coding_classes
 		}
@@ -9321,7 +9321,7 @@ swap_ideas = {
 	focus = {
 		id = TR_candidate
 		icon = align_to_turkic_council
-		cost = 10,00
+		cost = 10.00
 		x = 12
 		y = 0
 		relative_position_id = TR_policies
@@ -9339,7 +9339,7 @@ swap_ideas = {
 	focus = {
 		id = TR_enlargement
 		icon = align_to_turkic_council
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TR_policies
 		}
@@ -9360,7 +9360,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TR_turkmenistan
 		icon = TR_turkmenistan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TR_enlargement
 		}
@@ -9383,7 +9383,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TR_hungary
 		icon = TR_hungary
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TR_enlargement
 		}
@@ -9407,7 +9407,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TR_north_cyprus
 		icon = TR_north_cyprus
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TR_hungary
 		}
@@ -9433,7 +9433,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TR_enlargement_2
 		icon = align_to_turkic_council
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TR_north_cyprus
 		}
@@ -9454,7 +9454,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TR_finland
 		icon = TR_finland
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TR_enlargement_2
 		}
@@ -9478,7 +9478,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TR_ukraine
 		icon = TR_ukraine
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TR_enlargement_2
 		}
@@ -9502,7 +9502,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TR_leaving_the_turkic_union
 		icon = TR_legacy_of_ergenekon
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TR_policies
 		}
@@ -9541,7 +9541,7 @@ remove_ideas = turkic_state
 	focus = {
 		id = TR_rejoin
 		icon = align_to_turkic_council
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TR_leaving_the_turkic_union
 		}

@@ -5,7 +5,7 @@ focus_tree = {
 	focus = {
 		id = TUR_military_take_over
 		icon = armed_forces_of_turkey
-		cost = 5,00
+		cost = 5.00
 		x = 14
 		y = 0
 
@@ -52,7 +52,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = TUR_kemalist_military
 		icon = small_arms3
-		cost = 7,00
+		cost = 7.00
 		prerequisite = {
 			focus = TUR_nationalist_state
 		}
@@ -71,7 +71,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = TUR_get_rid_of_kurds
 		icon = conscription
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_kemalist_military
 		}
@@ -89,7 +89,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = TUR_new_constitution
 		icon = nationalist_constiution
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_kemalist_military
 		}
@@ -106,7 +106,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = TUR_dismantle_all_parties
 		icon = elections_banned
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_new_constitution
 		}
@@ -127,7 +127,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = TUR_bans_of_kurdish_language
 		icon = kurdistan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_get_rid_of_kurds
 		}
@@ -146,7 +146,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = TUR_reorganize_miltary
 		icon = military_women
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_kemalist_military
 		}
@@ -162,7 +162,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = TUR_turkish_ranking_shift
 		icon = military_planning
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_reorganize_miltary
 		}
@@ -180,7 +180,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = TUR_push_economic_reforms
 		icon = decentralized_economy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_turkish_ranking_shift
 		}
@@ -209,7 +209,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_increase_foreign_investments
 		icon = business_man2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_push_economic_reforms
 		}
@@ -240,7 +240,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_connections_of_the_usa
 		icon = trump_agenda
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_military_take_over
 		}
@@ -275,7 +275,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_take_american_aid
 		icon = american_military_agreement
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_connections_of_the_usa
 		}
@@ -305,7 +305,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_feed_anti_communistic_organizations
 		icon = american_partnerships
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_connections_of_the_usa
 		}
@@ -337,7 +337,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_new_american_bases_for_usa
 		icon = american_shield
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_take_american_aid
 		}
@@ -384,7 +384,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_petrol_ofisi_connection
 		icon = american_dream
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_new_american_bases_for_usa
 		}
@@ -442,7 +442,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_mission_of_iraq
 		icon = legacy_of_marines
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_military_take_over
 		}
@@ -465,7 +465,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_join_usa_invasion
 		icon = american_air_supremacy
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_mission_of_iraq
 		}
@@ -493,7 +493,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_withdrawl
 		icon = peace
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_join_usa_invasion
 		}
@@ -520,7 +520,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_economic_grants
 		icon = industrialization
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_push_economic_reforms
 		}
@@ -555,7 +555,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_medium_taxes
 		icon = radical_tax_reform
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_push_economic_reforms
 		}
@@ -578,7 +578,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_end_of_crisis
 		icon = money
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_foreign_investments
 		}
@@ -602,7 +602,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_arrested_people
 		icon = political_arrests
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_end_of_crisis
 		}
@@ -619,7 +619,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_stabilize_the_regime
 		icon = stability
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_arrested_people
 		}
@@ -635,7 +635,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_open_elections
 		icon = blue_democracy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_stabilize_the_regime
 		}
@@ -661,7 +661,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_peace_propagandas
 		icon = bread_and_peace
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_arrested_people
 		}
@@ -678,7 +678,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_enter_kerkuk
 		icon = tanks5
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_join_usa_invasion
 		}
@@ -706,7 +706,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_integrate_kerkuk
 		icon = volunteers
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TUR_enter_kerkuk
 		}
@@ -738,7 +738,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_lift_political_party_ban
 		icon = elections4 
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_open_elections
 		}
@@ -760,7 +760,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	focus = {
 		id = TUR_organize_a_military_coup
 		icon = focus_tur_izmir
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = TUR_lift_political_party_ban
 		}
@@ -791,7 +791,7 @@ nationalist_Nat_Autocracy
 	focus = {
 		id = TUR_elections_of_the_state
 		icon = election2
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = TUR_lift_political_party_ban
 		}

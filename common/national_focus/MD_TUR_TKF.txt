@@ -5,7 +5,7 @@ focus_tree = {
 	focus = {
 		id = TKF_vote_time
 		icon = Focus_Socialist_Propaganda
-		cost = 10,00
+		cost = 10.00
 		x = 43
 		y = 0
 
@@ -23,7 +23,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_countrywide_propaganda
 		icon = communist_propaganda
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_vote_time
 		}
@@ -42,7 +42,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_majority_propaganda
 		icon = generic_communism_focus
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_vote_time
 		}
@@ -61,7 +61,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_create_anti_right_movement
 		icon = MEX_Left_wing_radicals
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_countrywide_propaganda
 		}
@@ -78,7 +78,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_workers_and_peasents
 		icon = left_Propaganda
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_create_anti_right_movement
 		}
@@ -101,7 +101,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_take_over_the_majority
 		icon = major_alliance2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_create_anti_right_movement
 		}
@@ -121,7 +121,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_burocratic_changes
 		icon = roads_extend_plan
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_create_anti_right_movement
 		}
@@ -142,7 +142,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_the_elections..
 		icon = election2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_take_over_the_majority
 		}
@@ -165,7 +165,7 @@ country_event = MD4_election_campaign.0
 	focus = {
 		id = TKF_kick_the_ulkists
 		icon = nationalist_education
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_the_elections..
 		}
@@ -185,7 +185,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_cooparete_with_not_right
 		icon = communism11
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_the_elections..
 		}
@@ -202,7 +202,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_national_rebellion
 		icon = Focus_Down_in_Flames
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = TKF_cooparete_with_not_right
 		}
@@ -302,7 +302,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TKF_a_new_kind_of_society
 		icon = french_communism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_repair_stuff
 		}
@@ -335,7 +335,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TKF_close_nato_bases
 		icon = renounce_nato
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_a_new_kind_of_society
 		}
@@ -374,7 +374,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_finish_the_gladio
 		icon = nato_nation
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_a_new_kind_of_society
 		}
@@ -392,7 +392,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_united_left_against_US
 		icon = USA_nationalistic_sentiment
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_a_new_kind_of_society
 		}
@@ -405,7 +405,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_ban_the_right
 		icon = sanation_right
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_united_left_against_US
 		}
@@ -426,7 +426,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_main_congress
 		icon = Focus_Liberationist
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = TKF_ban_the_right
 		}
@@ -447,7 +447,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_vatan_victory
 		icon = vatan_partisi
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_main_congress
 		}
@@ -478,7 +478,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_emep_victory
 		icon = emep
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_main_congress
 		}
@@ -506,7 +506,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_odp_victory
 		icon = sol_parti
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_main_congress
 		}
@@ -533,7 +533,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_tkp_victory
 		icon = tkp
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_main_congress
 		}
@@ -561,7 +561,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_fast_construction_movement
 		icon = construction3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_vatan_victory
 		}
@@ -576,7 +576,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TKF_kemalist_socialism
 		icon = kemalarrows
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_fast_construction_movement
 		}
@@ -592,7 +592,7 @@ reverse_add_opinion_modifier = { target = CHI modifier = perincek_and_china }
 	focus = {
 		id = TKF_neutral_positioning
 		icon = neutrality
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_perinceks_wisdom
 		}
@@ -628,7 +628,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_perinceks_powers
 		icon = position_armies
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_kemalist_socialism
 		}
@@ -643,7 +643,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_perinceks_wisdom
 		icon = research
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_kemalist_socialism
 		}
@@ -658,7 +658,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_crush_the_western_infulence
 		icon = western_alignment
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_neutral_positioning
 		}
@@ -690,7 +690,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_new_cakmak_line
 		icon = coastal_fort
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_neutral_positioning
 		}
@@ -738,7 +738,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_aegean_wall
 		icon = military_fort2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_neutral_positioning
 		}
@@ -805,7 +805,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_crush_the_financing_system
 		icon = american_christianity
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_crush_the_western_infulence
 		}
@@ -832,7 +832,7 @@ reverse_add_opinion_modifier = { target = TUR modifier= attacks_on_our_economy}
 	focus = {
 		id = TKF_hang_out_investors
 		icon = plastic_ban
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_crush_the_western_infulence
 		}
@@ -848,7 +848,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	focus = {
 		id = TKF_national_vision
 		icon = the_last_purge
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_hang_out_investors
 		}
@@ -874,7 +874,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_first_term_YAK_deal
 		icon = rapprochement_with_russia
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_new_friendships_in_north
 		}
@@ -916,7 +916,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_buy_s400
 		icon = trade_with_russia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_new_friendships_in_north
 		}
@@ -954,7 +954,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_glory_of_soviet_communism
 		icon = s125pechora
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_new_friendships_in_north
 		}
@@ -973,7 +973,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_csto_observer_state
 		icon = aplly_to_join_csto
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_buy_s400
 		}
@@ -1008,7 +1008,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_communist_militiants
 		icon = communism3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_glory_of_soviet_communism
 		}
@@ -1054,7 +1054,7 @@ search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 	focus = {
 		id = TKF_new_university
 		icon = university
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_first_term_YAK_deal
 		}
@@ -1085,7 +1085,7 @@ search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 	focus = {
 		id = TKF_export_communism_in_turkic
 		icon = align_to_turkic_council
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_communist_militiants
 		}
@@ -1126,7 +1126,7 @@ search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 	focus = {
 		id = TKF_perincek_fundementalis
 		icon = catholicism_new
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_new_university
 		}
@@ -1142,7 +1142,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_russian_guarantee_first
 		icon = russian_elections
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_csto_observer_state
 		}
@@ -1171,7 +1171,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_new_friendships_in_north
 		icon = reinforce_northern_naval_bases
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_national_vision
 		}
@@ -1188,7 +1188,7 @@ reverse_add_opinion_modifier = { target = TUR modifier = declaration_of_friendsh
 	focus = {
 		id = TKF_new_friendships_in_ally
 		icon = us_non_nato_ally
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_national_vision
 		}
@@ -1206,7 +1206,7 @@ reverse_add_opinion_modifier = { target = TUR modifier = declaration_of_friendsh
 	focus = {
 		id = TKF_integrate_trade_wars
 		icon = Trade_with_the_east
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_new_friendships_in_ally
 		}
@@ -1234,7 +1234,7 @@ reverse_add_opinion_modifier = { target = TUR modifier = declaration_of_friendsh
 	focus = {
 		id = TKF_chinese_markets
 		icon = communist_china
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_integrate_trade_wars
 		}
@@ -1264,7 +1264,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_chinese_economics
 		icon = peoples_liberation_army
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_chinese_markets
 		}
@@ -1294,7 +1294,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_chinese_turkish_military_cooperationism
 		icon = dragon
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_new_friendships_in_ally
 		}
@@ -1335,7 +1335,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_chinese_guarantees
 		icon = peoples_republic_of_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_turkish_military_cooperationism
 		}
@@ -1365,7 +1365,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_withdrawal_recogniation
 		icon = attack_taiwan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_guarantees
 		}
@@ -1397,7 +1397,7 @@ reverse_add_opinion_modifier = { target = TUR modifier = one_china_policy}
 	focus = {
 		id = TKF_join_shangai_pact
 		icon = one_china_policy
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = TKF_export_communism_in_turkic
 		}
@@ -1437,7 +1437,7 @@ reverse_add_opinion_modifier = { target = TUR modifier = one_china_policy}
 	focus = {
 		id = TKF_visit_shangai
 		icon = focus_xi_jinping
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_join_shangai_pact
 		}
@@ -1477,7 +1477,7 @@ reverse_add_opinion_modifier = { target = TUR modifier = state_visists}
 	focus = {
 		id = TKF_china_is_right
 		icon = great_firewall_china
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_join_shangai_pact
 		}
@@ -1505,7 +1505,7 @@ reverse_add_opinion_modifier = { target = TUR modifier = state_visists}
 	focus = {
 		id = TKF_national_economic_development
 		icon = pearl_river_megacity
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_china_is_right
 		}
@@ -1575,7 +1575,7 @@ reverse_add_opinion_modifier = { target = TUR modifier = state_visists}
 	focus = {
 		id = TKF_open_bosphorus_for_china
 		icon = communist_navy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_national_economic_development
 		}
@@ -1611,7 +1611,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_chinese_investments
 		icon = xiaomi
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_national_economic_development
 		}
@@ -1648,7 +1648,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_replace_US_investors_with_chinese
 		icon = BRA_investigate_pt
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_national_economic_development
 		}
@@ -1687,7 +1687,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_investment_time
 		icon = MEX_Social_investments
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_replace_US_investors_with_chinese
 		}
@@ -1708,7 +1708,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_chinese_investment_of_inf
 		icon = mandate_of_heaven
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_investment_time
 		}
@@ -1768,7 +1768,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 	focus = {
 		id = TKF_turn_to_yuan
 		icon = chinese_rmb
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_investment_time
 		}
@@ -1811,7 +1811,7 @@ custom_effect_tooltip = PERINCEK_POLICY_LIRA
 	focus = {
 		id = TKF_chinese_money
 		icon = money
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_turn_to_yuan
 		}
@@ -1849,7 +1849,7 @@ subtract_from_variable = { treasury = -100.0 }
 	focus = {
 		id = TKF_chinese_investment_of_inf_2
 		icon = infrastructure
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_investment_of_inf
 		}
@@ -1911,7 +1911,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 	focus = {
 		id = TKF_road_iniatitive
 		icon = the_road_of_life
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_chinese_investment_of_inf
 		}
@@ -1973,7 +1973,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 	focus = {
 		id = TKF_chinese_investment_of_arms
 		icon = army_reform
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_investment_time
 		}
@@ -2035,7 +2035,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 	focus = {
 		id = TKF_chinese_military_stocks
 		icon = industry_military
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_chinese_investment_of_arms
 		}
@@ -2097,7 +2097,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 	focus = {
 		id = TKF_chinese_investment_of_arms_2
 		icon = industry4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_investment_of_arms
 		}
@@ -2159,7 +2159,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 	focus = {
 		id = TKF_chinese_dockyards
 		icon = naval_industry
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_road_iniatitive
 		}
@@ -2227,7 +2227,7 @@ set_temp_variable = { int_investment_change = 25.0 }
 	focus = {
 		id = TKF_lisences
 		icon = chinese_licenses
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_military_stocks
 		}
@@ -2270,7 +2270,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_chinese_trade_facilities
 		icon = maoism2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_dockyards
 		}
@@ -2303,7 +2303,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_sell_companies_to_china
 		icon = communist_party_of_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_trade_facilities
 		}
@@ -2333,7 +2333,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_chinese_trade_facilities1
 		icon = trade_with_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_trade_facilities
 		}
@@ -2365,7 +2365,7 @@ reverse_add_opinion_modifier = { target = TUR modifier = trade_mission}
 	focus = {
 		id = TKF_chinese_happiness
 		icon = family
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_trade_facilities
 		}
@@ -2401,7 +2401,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_chinese_sun_and_the_protection
 		icon = land_of_the_rising_sun
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_happiness
 		}
@@ -2472,7 +2472,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_emergency_powers_of_the_state
 		icon = BRA_limit_congress_power
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_odp_victory
 		}
@@ -2489,7 +2489,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_odp_socialism
 		icon = left_socialism
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_odp_victory
 		}
@@ -2510,7 +2510,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_social_democratic_values
 		icon = social_democracy_industry
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_odp_socialism
 		}
@@ -2535,7 +2535,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_stabilized_states
 		icon = stability
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_social_democratic_values
 		}
@@ -2550,7 +2550,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_state_of_function
 		icon = warsaw_main_station
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_stabilized_states
 		}
@@ -2711,7 +2711,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_happy_ties_with_unions
 		icon = communist_army
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_military_secment_1
 		}
@@ -2730,7 +2730,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_trade_action
 		icon = communism10
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_happy_ties_with_unions
 		}
@@ -2744,7 +2744,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_support_the_investors
 		icon = champagne_purple
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_happy_ties_with_unions
 		}
@@ -2763,7 +2763,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_happiness_ACTED
 		icon = communism10
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_trade_action
 		}
@@ -2785,7 +2785,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_european_trade
 		icon = trade_with_europe
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_trade_action
 		}
@@ -2807,7 +2807,7 @@ reverse_add_opinion_modifier = { target = GER modifier = improve_trade }
 	focus = {
 		id = TKF_new_science_law
 		icon = fusion_science
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_happiness_ACTED
 		}
@@ -2823,7 +2823,7 @@ reverse_add_opinion_modifier = { target = GER modifier = improve_trade }
 	focus = {
 		id = TKF_support_the_scientists
 		icon = money
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_happiness_ACTED
 		}
@@ -2839,7 +2839,7 @@ reverse_add_opinion_modifier = { target = GER modifier = improve_trade }
 	focus = {
 		id = TKF_the_goods
 		icon = maritime_trade
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_eastern_trade
 		}
@@ -2860,7 +2860,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_eastern_trade
 		icon = Trade_with_the_east
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_european_trade
 		}
@@ -2877,7 +2877,7 @@ reverse_add_opinion_modifier = { target = SOV modifier = major_improve_trade }
 	focus = {
 		id = TKF_happinized_union
 		icon = pressure_unions
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_support_the_scientists
 		}
@@ -2901,7 +2901,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_industrial_complexes_1
 		icon = industry
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_support_the_investors
 		}
@@ -2937,7 +2937,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_industrial_complexes_2
 		icon = industry2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_industrial_complexes_1
 		}
@@ -2973,7 +2973,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_mixed_industries
 		icon = industry3
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_industrial_complexes_2
 		}
@@ -3010,7 +3010,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_the_alliance_policies
 		icon = MEX_Allign_the_government
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_land_of_world
 		}
@@ -3027,7 +3027,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_peace_unified_union
 		icon = white_peace
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_the_alliance_policies
 		}
@@ -3041,7 +3041,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_economic_cooperative_union
 		icon = free_economic_zones
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_the_alliance_policies
 		}
@@ -3188,7 +3188,7 @@ country_event = TurkeyF.178
 	focus = {
 		id = TKF_death_of_neutrality
 		icon = neutrality
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_invite_iraq
 		}
@@ -3210,7 +3210,7 @@ country_event = TurkeyF.178
 	focus = {
 		id = TKF_globalism_action
 		icon = skull
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_death_of_neutrality
 		}
@@ -3230,7 +3230,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_create_world_cpommunes
 		icon = major_alliance3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_death_of_neutrality
 		}
@@ -3250,7 +3250,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_a_new_born
 		icon = NATO_squad_doctrine
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_mixed_industries
 		}
@@ -3379,7 +3379,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TKF_reform_the_counter_books
 		icon = parlamentary_reform
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_a_new_born
 		}
@@ -3398,7 +3398,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_colourful_state
 		icon = pro_lgbt
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_a_new_born
 		}
@@ -3584,7 +3584,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TKF_land_of_world
 		icon = research3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_turning_to_echology
 		}
@@ -3657,7 +3657,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_first_tought_right
 		icon = firstartsakhwar_analysis
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_happy_ties_with_unions
 		}
@@ -3675,7 +3675,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_counter_BOP
 		icon = befriend_middle_east
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_create_world_cpommunes
 		}
@@ -3699,7 +3699,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_guarantee_the_middle_east
 		icon = major_alliance2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_counter_BOP
 		}
@@ -3735,7 +3735,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_working_cooperations_of_BOP
 		icon = worker_paradise
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_counter_BOP
 		}
@@ -3751,7 +3751,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_formalize_the_BOP
 		icon = major_alliance3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_counter_BOP
 		}
@@ -3767,7 +3767,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_anti_usa
 		icon = focus_usaid
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_working_cooperations_of_BOP
 		}
@@ -3786,7 +3786,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_turkish_agency
 		icon = mit
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_guarantee_the_middle_east
 		}
@@ -3814,7 +3814,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_pentagon_bombardment
 		icon = USA_political_revolution
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_anti_usa
 		}
@@ -3864,7 +3864,7 @@ search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 	focus = {
 		id = TKF_adjective_europe
 		icon = attack_europe
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_formalize_the_BOP
 		}
@@ -3903,7 +3903,7 @@ search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 	focus = {
 		id = TKF_non_agression_with_russia
 		icon = align_to_russia
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_adjective_europe
 		}
@@ -3935,7 +3935,7 @@ search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 	focus = {
 		id = TKF_usage_of_united_front
 		icon = united_states_marine_corps
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_turkish_agency
 		}
@@ -3950,7 +3950,7 @@ country_event = TurkeyF.180
 	focus = {
 		id = TKF_victory
 		icon = MEX_The_three_powers
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_islamic_take_overs
 		}
@@ -3976,7 +3976,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_the_originals
 		icon = Russian_civil_war
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_tkp_victory
 		}
@@ -4008,7 +4008,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_talks_with_THKPC
 		icon = TotSoc_Focus
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_the_originals
 		}
@@ -4027,7 +4027,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_loyalties_of_unions
 		icon = union_negotiations
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_the_originals
 		}
@@ -4041,7 +4041,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_turkish_communism
 		icon = turkish_authoritarianism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_loyalties_of_unions
 		}
@@ -4065,7 +4065,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_for_a_moment
 		icon = powerplant
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_turkish_communism
 		}
@@ -4190,7 +4190,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_anti_coup_policy
 		icon = masters_of_our_own_fate
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_farmers
 		}
@@ -4216,7 +4216,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 	focus = {
 		id = TKF_disband_armys_structual_things
 		icon = army_reform
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_anti_coup_policy
 		}
@@ -4236,7 +4236,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 	focus = {
 		id = TKF_beat_the_EMEPs_coup
 		icon = builder_of_the_red_army
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = TKF_disband_military_institutions
 		}
@@ -4265,7 +4265,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 	focus = {
 		id = TKF_disband_military_institutions
 		icon = Andorran_Army
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_anti_coup_policy
 		}
@@ -4283,7 +4283,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 	focus = {
 		id = TKF_military_secularism
 		icon = focus_secular
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_anti_coup_policy
 		}
@@ -4300,7 +4300,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 	focus = {
 		id = TKF_diyanet_reform
 		icon = sunni_government
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_beat_the_EMEPs_coup
 		}
@@ -4319,7 +4319,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_clash_with_ulema
 		icon = revolutionize_ulema
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_diyanet_reform
 		}
@@ -4338,7 +4338,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_deal_with_sharia
 		icon = sharia_law
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_diyanet_reform
 		}
@@ -4360,7 +4360,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_communist_colleges
 		icon = Laurel_Slovakia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_beat_the_EMEPs_coup
 		}
@@ -4377,7 +4377,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_collective_society
 		icon = industry_united_states
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = TKF_deal_with_sharia
 		}
@@ -4403,7 +4403,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TKF_communist_science
 		icon = lunar_launch
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_communist_colleges
 		}
@@ -4425,7 +4425,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TKF_communist_scientific_community
 		icon = mechanized_agriculture
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_communist_colleges
 		}
@@ -4443,7 +4443,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TKF_agricultural_act
 		icon = mechanized_agriculture
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_collective_society
 		}
@@ -4518,7 +4518,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_the_union_culture
 		icon = communist_factories
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_collective_society
 		}
@@ -4625,7 +4625,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TKF_finish_of_the_reforms
 		icon = MEX_Economic_reform
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_8_hours_work
 		}
@@ -4646,7 +4646,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_usage_of_industries
 		icon = Generic_Socialist_Industry
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_finish_of_the_reforms
 		}
@@ -4666,7 +4666,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_civilian_industries
 		icon = radical_tax_reform
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_usage_of_industries
 		}
@@ -4694,7 +4694,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_military_industries
 		icon = military_sphere
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_usage_of_industries
 		}
@@ -4953,7 +4953,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_the_great_collectivism
 		icon = construction4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_civilian_development
 		}
@@ -5221,7 +5221,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_war_preparatation
 		icon = anti_war_with_big_gun
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_the_great_collectivism
 		}
@@ -5239,7 +5239,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_disband_neutrality
 		icon = brain_power
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_war_preparatation
 		}
@@ -5252,7 +5252,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_power_of_comareds
 		icon = the_glory_of_the_red_army_communism
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_war_preparatation
 		}
@@ -5285,7 +5285,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_violance_time
 		icon = border_war
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_war_preparatation
 		}
@@ -5300,7 +5300,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_crush_the_kurdistan
 		icon = attack_kurdistan2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_violance_time
 		}
@@ -5355,7 +5355,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_reds_in_middle_east
 		icon = Emirate_of_Afghanistan 
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_communist_marathon
 		}
@@ -5394,7 +5394,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_invade_iraq
 		icon = militarized_iraq
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_reds_in_middle_east
 		}
@@ -5428,7 +5428,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_invade_syria
 		icon = attack_syria
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_reds_in_middle_east
 		}
@@ -5462,7 +5462,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_establish_south_SSR
 		icon = befriend_middle_east
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_invade_syria
 		}
@@ -5564,7 +5564,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_reds_in_balkans
 		icon = balkan_conflict
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_communist_marathon
 		}
@@ -5672,7 +5672,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_phase_1
 		icon = balkan_federation_of_socialist_republics
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_reds_in_balkans
 		}
@@ -5712,7 +5712,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_phase_2
 		icon = the_unification_of_the_balkans
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_reds_in_balkans
 		}
@@ -5751,7 +5751,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_establish_balkan_SSR
 		icon = communist_balkans
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_phase_2
 		}
@@ -5839,7 +5839,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_reds_in_trancaucasia
 		icon = communist_navy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_communist_marathon
 		}
@@ -5887,7 +5887,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_georgia
 		icon = attack_georgia
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_reds_in_trancaucasia
 		}
@@ -5921,7 +5921,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_armenia_and_azerbaijan
 		icon = focus_armeniageorgiaeat
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_reds_in_trancaucasia
 		}
@@ -5964,7 +5964,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_establish_trankasus_SSR
 		icon = demand_northern_caucasus
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_armenia_and_azerbaijan
 		}
@@ -6035,7 +6035,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_unite_the_three_head
 		icon = BeNeLux
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = TKF_establish_trankasus_SSR
 		}
@@ -6170,7 +6170,7 @@ reverse_add_opinion_modifier = { target = AZE modifier = broke_off_diplomatic_re
 	focus = {
 		id = TKF_euroasian_call
 		icon = revolutionary_government
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_unite_the_three_head
 		}
@@ -6192,7 +6192,7 @@ reverse_add_opinion_modifier = { target = AZE modifier = broke_off_diplomatic_re
 	focus = {
 		id = TKF_communist_marathon
 		icon = the_supreme_soviet
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = TKF_disband_turkic_relations
 		}
@@ -6218,7 +6218,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_princes_strike
 		icon = ethiopia_royal_symbol
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_establish_south_SSR
 		}
@@ -6254,7 +6254,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_peninsular_wars
 		icon = class_war
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_establish_trankasus_SSR
 		}
@@ -6290,7 +6290,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_bomb_new_york
 		icon = USA_attack_the_financial_system
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_pentagon_bombardment
 		}
@@ -6338,7 +6338,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_islamic_take_overs
 		icon = islamist_gov2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_power_of_eurospectism
 		}
@@ -6410,7 +6410,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_power_of_eurospectism
 		icon = stage_europe
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_adjective_europe
 		}
@@ -6521,7 +6521,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_communistic_interventions
 		icon = Generic_Partisan
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_anti_usa
 		}
@@ -6580,7 +6580,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_deals_with_russia_and_china
 		icon = tsarist_russia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_usage_of_united_front
 		}
@@ -6620,7 +6620,7 @@ diplomatic_relation = {
 	focus = {
 		id = TKF_stabilization_mood
 		icon = stability
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_victory
 		}
@@ -6635,7 +6635,7 @@ diplomatic_relation = {
 	focus = {
 		id = TKF_safity_powerhood
 		icon = Generic_Barricade
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_stabilization_mood
 		}
@@ -6653,7 +6653,7 @@ diplomatic_relation = {
 	focus = {
 		id = TKF_preserve_the_nation
 		icon = blr_soviet_academy_of_sciences
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_emep_victory
 		}
@@ -6668,7 +6668,7 @@ diplomatic_relation = {
 	focus = {
 		id = TKF_communistic_nationalism
 		icon = focus_generic_national_security
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_preserve_the_nation
 		}
@@ -6684,7 +6684,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_quarrel_with_terror
 		icon = ultranationalist_volunteers
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_overreacting_actions
 		}
@@ -6711,7 +6711,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = TKF_legalize_THKPC
 		icon = TotSoc_Focus
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_preserve_the_nation
 		}
@@ -6726,7 +6726,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_ibda_c_crackdown
 		icon = islamic_militarism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_quarrel_with_terror
 		}
@@ -6747,7 +6747,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_atheist_state
 		icon = islamophobia2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_quarrel_with_terror
 		}
@@ -6768,7 +6768,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_overreacting_actions
 		icon = union_representation_act
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_legalize_THKPC
 		}
@@ -6786,7 +6786,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_hard_prisons
 		icon = attack_democracy3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_quarrel_with_terror
 		}
@@ -6805,7 +6805,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_kill_the_corrupteds
 		icon = anti_corruption
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_hard_prisons
 		}
@@ -6823,7 +6823,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_war_with_PKK
 		icon = focus_attack_pkk
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_kill_the_corrupteds
 		}
@@ -6839,7 +6839,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_burn_the_villages
 		icon = money_on_fire
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_war_with_PKK
 		}
@@ -6878,7 +6878,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TKF_accept_or_die
 		icon = attack_democracy2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_war_with_PKK
 		}
@@ -6901,7 +6901,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TKF_strategic_bombardment_of_north
 		icon = Jet_Fighters
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_war_with_PKK
 		}
@@ -6959,7 +6959,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TKF_enter_north_iraq
 		icon = attack_kurdistan2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_arrest_the_terrorists
 		}
@@ -7006,7 +7006,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TKF_finish_of_the_gulenists
 		icon = islamophobia
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_kill_the_corrupteds
 		}
@@ -7024,7 +7024,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TKF_arrest_the_terrorists
 		icon = political_arrests2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_finish_of_the_gulenists
 		}
@@ -7042,7 +7042,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TKF_communistic_authorities
 		icon = communist_spies2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_kill_the_corrupteds
 		}
@@ -7063,7 +7063,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_impede_further_nationalist
 		icon = french_communist_party
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_communistic_authorities
 		}
@@ -7084,7 +7084,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_end_of_PKK
 		icon = demand_territory3
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_enter_north_iraq
 		}
@@ -7101,7 +7101,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_harsh_quotas
 		icon = dangerous_laws
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_end_of_PKK
 		}
@@ -7118,7 +7118,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_merge_ulkist_principles
 		icon = lion
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_communistic_nationalism
 		}
@@ -7135,7 +7135,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_arm_THKPC
 		icon = Generic_Socialist_Machine_Gun
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_legalize_THKPC
 		}
@@ -7566,7 +7566,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_pax_industrialism
 		icon = economic_comitee
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_militarism
 		}
@@ -7614,7 +7614,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_eight_years_of_development
 		icon = construction4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_pax_industrialism
 		}
@@ -7633,7 +7633,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_internet_reform
 		icon = internet_censorship
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_eight_years_of_development
 		}
@@ -7650,7 +7650,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TKF_unification_works
 		icon = walfare_state
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_eight_years_of_development
 		}
@@ -7667,7 +7667,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TKF_no_more_comprasion
 		icon = political_arrests
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_unification_works
 		}
@@ -7691,7 +7691,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	focus = {
 		id = TKF_early_go_as_it_was
 		icon = gamble_cards
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_no_more_comprasion
 		}
@@ -7712,7 +7712,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_invade_greece
 		icon = attack_greece
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_balkan_invasions
 		}
@@ -7746,7 +7746,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_invade_bulgaria
 		icon = attack_bulgaria
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_balkan_invasions
 		}
@@ -7780,7 +7780,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = TKF_balkan_invasions
 		icon = balkan_conflict
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_early_go_as_it_was
 		}
@@ -7798,7 +7798,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_middle_eastern_invasions
 		icon = befriend_middle_east
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_early_go_as_it_was
 		}
@@ -7816,7 +7816,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_invade_syria1
 		icon = attack_syria
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_middle_eastern_invasions
 		}
@@ -7850,7 +7850,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_invade_iraq1
 		icon = militarized_iraq
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_middle_eastern_invasions
 		}
@@ -7885,7 +7885,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_muh_for_communism
 		icon = free_balkan_states
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_invade_bulgaria
 		}
@@ -7952,7 +7952,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_trancaucasian_turnout
 		icon = georgian_bagratuni
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_muh_for_communism
 		}
@@ -7987,7 +7987,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_atheism_in_middle_east
 		icon = buddhism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_invade_iraq1
 		}
@@ -8015,7 +8015,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_no_deals_with_russia
 		icon = war_against_russia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_trancaucasian_turnout
 		}
@@ -8052,7 +8052,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_invade_georgia
 		icon = attack_georgia
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_no_deals_with_russia
 		}
@@ -8087,7 +8087,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_invade_azerbaijan_2
 		icon = attack_azerbaijan
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_no_deals_with_russia
 		}
@@ -8121,7 +8121,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_invade_armenia
 		icon = attack_armenia
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_no_deals_with_russia
 		}
@@ -8155,7 +8155,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_knock_russia_out_of_war
 		icon = tsarist_russia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_invade_georgia
 		}
@@ -8641,7 +8641,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_advices_of_china
 		icon = align_to_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_sun_and_the_protection
 		}
@@ -8671,7 +8671,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_china_enters_the_war
 		icon = blr_china_type88
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_save_chinese_zones
 		}
@@ -8707,7 +8707,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_save_chinese_zones
 		icon = enemy_of_china
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_advices_of_china
 		}
@@ -8744,7 +8744,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_last_phase_of_chinese_investments
 		icon = BRA_investigate_pt
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_advices_of_china
 		}
@@ -8776,7 +8776,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_world_war_three_arming
 		icon = border_conflict_bunker
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_china_enters_the_war
 		}
@@ -8789,7 +8789,7 @@ swap_ideas = {
 	focus = {
 		id = TKF_russian_help
 		icon = align_to_russia2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = TKF_china_enters_the_war
 		}
@@ -8823,7 +8823,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 	focus = {
 		id = TKF_mass_mobilization
 		icon = mobilization_plan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_russian_help
 		}
@@ -8845,7 +8845,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	focus = {
 		id = TKF_russian_army_relocation
 		icon = RussianArms
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_russian_help
 		}
@@ -8885,7 +8885,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_expanditionary_chinese_forces
 		icon = air_defense
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_world_war_three_arming
 		}
@@ -8925,7 +8925,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_land_forting_stuff
 		icon = military_fort
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_mass_mobilization
 		}
@@ -8938,7 +8938,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_chinese_experimentals
 		icon = tank_t62
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_expanditionary_chinese_forces
 		}
@@ -8995,7 +8995,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_guerilla_warfare
 		icon = Generic_Tank_through_Wall
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_experimentals
 		}
@@ -9018,7 +9018,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_new_tankagrad
 		icon = centralization_question
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_russian_army_relocation
 		}
@@ -9082,7 +9082,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_nuclear_systems
 		icon = nuclear_energy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_mass_mobilization
 		}
@@ -9117,7 +9117,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_end_of_war_partition
 		icon = draw_up_war_plans
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_guerilla_warfare
 		}
@@ -9146,7 +9146,7 @@ search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 	focus = {
 		id = TKF_finish_silk_road
 		icon = infrastructure1
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = TKF_supreme_maoism
 		}
@@ -9218,7 +9218,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_supreme_maoism
 		icon = maoism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_end_of_war_partition
 		}
@@ -9261,7 +9261,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_shock_invasion
 		icon = coalition_army
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_china_enters_the_war
 		}
@@ -9296,7 +9296,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_maksimize_the_tankagroad
 		icon = tank_production
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_new_tankagrad
 		}
@@ -9368,7 +9368,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TKF_chinese_experiment_globally
 		icon = chinese_social_democracy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TKF_chinese_experimentals
 		}
@@ -9434,7 +9434,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TUR_covid-19_pandemic16
 		icon = generic_healthcare
-		cost = 10,00
+		cost = 10.00
 		x = 55
 		y = 0
 
@@ -9452,7 +9452,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	focus = {
 		id = TUR_covid-19_preparations16
 		icon = production2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_pandemic16
 		}
@@ -9472,7 +9472,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_build_up_hospitals16
 		icon = generic_hospital2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations16
 		}
@@ -9491,7 +9491,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turn_airports_to_hospital16
 		icon = generic_hospital
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_build_up_hospitals16
 		}
@@ -9511,7 +9511,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_start_up_vaccine_program18
 		icon = brain_power
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations16
 		}
@@ -9536,7 +9536,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_german_vaccines18
 		icon = trade_with_germany
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program18
 		}
@@ -9556,7 +9556,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_increase_funds_to_science16
 		icon = market_economy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations16
 		}
@@ -9575,7 +9575,7 @@ increase_healthcare_budget = yes
 	focus = {
 		id = TUR_buy_medicines16
 		icon = protectionist_economics
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_funds_to_science16
 		}                                         
@@ -9600,7 +9600,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_chinese_vaccines16
 		icon = trade_with_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital16
 		}
@@ -9626,7 +9626,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_normalisation_from_covid16
 		icon = consumer_goods
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines16
 		}
@@ -9648,7 +9648,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_end_of_covid16
 		icon = aristocratic_funding
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_normalisation_from_covid16
 		}

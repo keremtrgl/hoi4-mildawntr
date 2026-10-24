@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = TURF_new_regime
 		icon = turkish_flag
-		cost = 10,00
+		cost = 10.00
 		x = 13
 		y = 0
 
@@ -29,7 +29,7 @@ focus_tree = {
 	focus = {
 		id = TURF_reorganize_militias
 		icon = small_arms_west
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_new_regime
 		}
@@ -45,7 +45,7 @@ focus_tree = {
 	focus = {
 		id = TURF_russian_military_aid
 		icon = align_to_russia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_reorganize_militias
 		}
@@ -76,7 +76,7 @@ focus_tree = {
 	focus = {
 		id = TURF_new_ideals
 		icon = production2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_reorganize_militias
 		}
@@ -92,7 +92,7 @@ focus_tree = {
 	focus = {
 		id = TURF_mission_of_ottomans
 		icon = regency
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_new_ideals
 		}
@@ -117,7 +117,7 @@ focus_tree = {
 	focus = {
 		id = TURF_mission_of_gulen
 		icon = USA_american_militias
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_new_ideals
 		}
@@ -163,7 +163,7 @@ focus_tree = {
 	focus = {
 		id = TURF_denounce_nato
 		icon = renounce_nato
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_mission_of_gulen
 			focus = TURF_mission_of_ottomans
@@ -187,7 +187,7 @@ focus_tree = {
 	focus = {
 		id = TURF_denounce_constitution
 		icon = dangerous_laws
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_denounce_nato
 		}
@@ -203,7 +203,7 @@ focus_tree = {
 	focus = {
 		id = TURF_chinese_military_aid
 		icon = peoples_republic_of_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_reorganize_militias
 		}
@@ -234,7 +234,7 @@ focus_tree = {
 	focus = {
 		id = TURF_corrupted_army
 		icon = infiltration
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_mission_of_gulen
 		}
@@ -253,7 +253,7 @@ focus_tree = {
 	focus = {
 		id = TURF_seek_help_from_kurds
 		icon = align_to_kurdistan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_corrupted_army
 		}
@@ -277,7 +277,7 @@ focus_tree = {
 	focus = {
 		id = TURF_radicalization
 		icon = islamophobia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_corrupted_army
 		}
@@ -300,7 +300,7 @@ focus_tree = {
 	focus = {
 		id = TURF_ban_social_rights
 		icon = attack_communism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_radicalization
 		}
@@ -326,7 +326,7 @@ focus_tree = {
 	focus = {
 		id = TURF_radicalized_iran_style_gov
 		icon = islamist_gov2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_ban_social_rights
 		}
@@ -342,7 +342,7 @@ focus_tree = {
 	focus = {
 		id = TURF_destroy_corruption
 		icon = construction4
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_mission_of_ottomans
 		}
@@ -362,7 +362,7 @@ focus_tree = {
 	focus = {
 		id = TURF_organize_islamist_militaries
 		icon = islam
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_destroy_corruption
 		}
@@ -378,7 +378,7 @@ focus_tree = {
 	focus = {
 		id = TURF_declaration_of_the_caliphate
 		icon = islamist_gov
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_organize_islamist_militaries
 		}
@@ -404,7 +404,7 @@ focus_tree = {
 	focus = {
 		id = TURF_tradition_power
 		icon = conservative
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_destroy_corruption
 		}
@@ -422,7 +422,7 @@ add_10_nationalist_monarchists = yes
 	focus = {
 		id = TURF_proclaim_the_new_ottomans
 		icon = irredentism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_declaration_of_the_caliphate
 		}
@@ -473,7 +473,7 @@ hidden_effect = {
 	focus = {
 		id = TURF_winner_of_the_war
 		icon = align_to_turkey
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_radicalized_iran_style_gov
 			focus = TURF_proclaim_the_new_ottomans
@@ -499,7 +499,7 @@ hidden_effect = {
 	focus = {
 		id = TURF_for_unification_of_islam
 		icon = jihad
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_winner_of_the_war
 		}
@@ -517,7 +517,7 @@ hidden_effect = {
 	focus = {
 		id = TURF_invade_1
 		icon = attack_armenia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_for_unification_of_islam
 		}
@@ -537,7 +537,7 @@ hidden_effect = {
 	focus = {
 		id = TURF_invade_2
 		icon = jihad_in_the_levant
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_for_unification_of_islam
 		}
@@ -613,7 +613,7 @@ hidden_effect = {
 	focus = {
 		id = TURF_invade_3
 		icon = attack_georgia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_for_unification_of_islam
 		}
@@ -632,7 +632,7 @@ hidden_effect = {
 	focus = {
 		id = TURF_invade_4
 		icon = jihad_in_the_maghreb
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_invade_2
 		}
@@ -691,7 +691,7 @@ hidden_effect = {
 	focus = {
 		id = TURF_invade_5
 		icon = jihad_in_arabia
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_invade_3
 		}
@@ -742,7 +742,7 @@ hidden_effect = {
 	focus = {
 		id = TURF_invade_6
 		icon = attack_iran
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_invade_4
 		}
@@ -762,7 +762,7 @@ hidden_effect = {
 	focus = {
 		id = TURF_invade_7
 		icon = attack_azerbaijan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_invade_5
 		}
@@ -782,7 +782,7 @@ hidden_effect = {
 	focus = {
 		id = TURF_new_ideals_of_the_state
 		icon = internationalism
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TURF_invade_7
 		}
@@ -845,7 +845,7 @@ hidden_effect = {
 	focus = {
 		id = TUR_covid-19_pandemic6
 		icon = generic_healthcare
-		cost = 10,00
+		cost = 10.00
 		x = 26
 		y = 0
 
@@ -862,7 +862,7 @@ hidden_effect = {
 	focus = {
 		id = TUR_covid-19_preparations6
 		icon = production2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_pandemic6
 		}
@@ -882,7 +882,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_build_up_hospitals6
 		icon = generic_hospital2
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations6
 		}
@@ -901,7 +901,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turn_airports_to_hospital6
 		icon = generic_hospital
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_build_up_hospitals6
 		}
@@ -921,7 +921,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_start_up_vaccine_program13
 		icon = brain_power
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations6
 		}
@@ -946,7 +946,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_german_vaccines13
 		icon = trade_with_germany
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program13
 		}
@@ -966,7 +966,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_increase_funds_to_science6
 		icon = market_economy
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_covid-19_preparations6
 		}
@@ -988,7 +988,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_medicines6
 		icon = protectionist_economics
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_increase_funds_to_science6
 		}
@@ -1013,7 +1013,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_chinese_vaccines6
 		icon = trade_with_china
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital6
 		}
@@ -1039,7 +1039,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_normalisation_from_covid6
 		icon = consumer_goods
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines6
 		}
@@ -1061,7 +1061,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_end_of_covid6
 		icon = aristocratic_funding
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = TUR_normalisation_from_covid6
 		}
