@@ -29903,28 +29903,25 @@ country_event = {
 
 ##Event: Reach International Command Unity
 country_event = {
- id = TurkeyF.106
- title = TurkeyF.106.title
- desc = TurkeyF.106.desc
- picture = GFX_eu_naval_forces
- is_triggered_only = yes
-
-    trigger = {
+	id = TurkeyF.106
+	title = TurkeyF.106.title
+	desc = TurkeyF.106.desc
+	picture = GFX_eu_naval_forces
+	is_triggered_only = yes
+	trigger = {
     }
-
-    mean_time_to_happen = {days = 1}
-
-
+	mean_time_to_happen = {days = 1}
 	option = {
 		name = TurkeyF.106.a
 		ai_chance = { factor = 100}
 
                    add_war_support = 0.02
 				   add_ideas = defence_07
-				   }
-				   add_command_power = 25
-				   add_stability = -0.03
-} 
+				   
+		add_command_power = 25
+	
+		add_stability = -0.03
+	}
 	option = {
 		name = TurkeyF.106.b
 		ai_chance = { factor = 100}
@@ -29932,6 +29929,8 @@ country_event = {
                    add_war_support = -0.05
 				   add_stability = 0.02			
 }
+} 
+	
 
 
 
@@ -30677,7 +30676,6 @@ country_event = {
 			}
 		} }
 	}
-} 
 	option = {
 		name = TurkeyF.130.b
 		ai_chance = { factor = 100}
@@ -30689,6 +30687,8 @@ country_event = {
 		} 
 } 
 }
+} 
+	
 
 
 ##Event: Turkey Wants To Recreation Of Central Powers
@@ -37373,13 +37373,12 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 125}
 
 ##Event: Kemalist Question?
 country_event = {
- id = TurkeyC.2
- title = TurkeyC.2.title
- desc = TurkeyC.2.desc
- picture = GFX_kemalist_guards
- fire_only_once = yes
-
-    trigger = {
+	id = TurkeyC.2
+	title = TurkeyC.2.title
+	desc = TurkeyC.2.desc
+	picture = GFX_kemalist_guards
+	fire_only_once = yes
+	trigger = {
          tag = TUR
 		has_global_flag = TUR_CIVILWAR_BEGIN
 	TUR = {
@@ -37389,9 +37388,7 @@ country_event = {
 		 has_capitulated = yes
 		 }
     }
-
-    mean_time_to_happen = {days = 1}
-
+	mean_time_to_happen = {days = 1}
 	option = {
 		name = TurkeyC.2.a
 		ai_chance = { factor = 1}
@@ -37405,8 +37402,8 @@ country_event = {
 		MTU = {
 add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
 		}
-	} }
-	hidden_effect = {
+	} 
+		hidden_effect = {
 	remove_ideas = turkish_military_infulence
 	remove_ideas = turkish_military_infulence_coup
 	remove_ideas = turkish_military_infulence_armed
@@ -37436,14 +37433,14 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 125}
 	         declare_war_on = { target = MTU type = annex_everything }
     	         declare_war_on = { target = KTU type = annex_everything }
 	} }
-
+	}
 	option = {
 		name = TurkeyC.2.b
 		ai_chance = { factor = 1}
 
     add_stability = -0.03
 	add_war_support = 0.03
-	} 
+	}
 }
 
 ##Event: Military Question?
@@ -38027,21 +38024,22 @@ country_event = {
 
 ##Event: Earthquake Preparations Accepted
 country_event = {
- id = TurkeyT.5
- title = TurkeyT.5.title
- desc = TurkeyT.5.desc
- picture = GFX_tbmm
- is_triggered_only = yes
-
+	id = TurkeyT.5
+	title = TurkeyT.5.title
+	desc = TurkeyT.5.desc
+	picture = GFX_tbmm
+	is_triggered_only = yes
 	option = {
 		name = TurkeyT.5.a
 		ai_chance = { factor = 1}
 
 	    add_stability = 0.01
-		add_timed_idea = { idea = earthquake_preparations days = 30 } }
+		add_timed_idea = { idea = earthquake_preparations days = 30 } 
 		subtract_from_variable = { TUR_building_resistancy = -3}
-			custom_effect_tooltip = HOUSING_INCREASE_3
+	
+		custom_effect_tooltip = HOUSING_INCREASE_3
 	}
+}
 
 
 ##Event:  Earthquake Preparations Rejected
@@ -39483,7 +39481,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 					ruling_party = democratic
 				}
 			}
-			else = {
+			hidden_effect = {
 				set_leader = yes
 		}	}
 }
@@ -39531,7 +39529,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 					ruling_party = democratic
 				}
 			}
-			else = {
+			hidden_effect = {
 				set_leader = yes
 			}
 		}	
@@ -39675,7 +39673,7 @@ TUR_kemalist_turn_hostile_effect = yes
 					ruling_party = communism
 				}
 			}
-			else = {
+			hidden_effect = {
 				set_leader = yes
 			}
 		}
@@ -39722,7 +39720,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 					ruling_party = neutrality
 				}
 			}
-			else = {
+			hidden_effect = {
 				set_leader = yes
 			}
 		}
@@ -39878,7 +39876,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 					ruling_party = neutrality
 				}
 			}
-			else = {
+			hidden_effect = {
 				set_leader = yes
 			}
 		}
@@ -40159,7 +40157,7 @@ TUR_kemalist_turn_hostile_effect = yes
 					ruling_party = democratic
 				}
 			}
-			else = {
+			hidden_effect = {
 				set_leader = yes
 		}	}
 }
@@ -40348,7 +40346,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 					ruling_party = democratic
 				}
 			}
-			else = {
+			hidden_effect = {
 				set_leader = yes
 			}
 		}	
@@ -40376,7 +40374,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 					ruling_party = democratic
 				}
 			}
-			else = {
+			hidden_effect = {
 				set_leader = yes
 		}	}
 
@@ -40581,7 +40579,7 @@ TUR_kemalist_turn_hostile_effect = yes
 					ruling_party = neutrality
 				}
 			}
-			else = {
+			hidden_effect = {
 				set_leader = yes
 			}
 		}
@@ -40607,7 +40605,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 					ruling_party = neutrality
 				}
 			}
-			else = {
+			hidden_effect = {
 				set_leader = yes
 			}
 		}
@@ -40633,7 +40631,7 @@ set_country_flag = SAADET_FOCUS_LOCATION
 					ruling_party = communism
 				}
 			}
-			else = {
+			hidden_effect = {
 				set_leader = yes
 			}
 		}

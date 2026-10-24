@@ -1466,7 +1466,7 @@ TUR_counter_terrorism_mil = {
 				if = {
 					limit = { check_variable = { var = airstrike_prepare_odds value = 0.4 compare = greater_than_or_equals } }
 					add_to_variable = { var = air_strike_material value = 6 }
-					else = {
+					hidden_effect = {
 						add_to_variable = { var = air_strike_material value = 12 }
 					}
 				}
