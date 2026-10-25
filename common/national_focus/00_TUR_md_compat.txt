@@ -1,0 +1,13 @@
+### Compatibility focuses
+### Millennium Dawn scripts outside the Turkish tree still check these ids from MD's own Turkish tree,
+### which this submod replaces. They are never added to any tree, so they can never be completed.
+
+shared_focus = {
+	id = TUR_beacon_of_islam
+	icon = GFX_goal_generic_propaganda
+	cost = 10
+	x = 0
+	y = 0
+	available = { always = no }
+	completion_reward = { }
+}

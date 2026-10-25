@@ -91,96 +91,15 @@
 					nationalist_Nat_Populism
 				}
 			}
-	create_corps_commander = {
-		name = "Mehmet Gürsoy"
-		picture = "unknown_general.dds"
-		traits = { artillery_expert }
-		skill = 3
-		attack_skill = 3
-		defense_skill = 2
-		planning_skill = 1
-		logistics_skill = 3
-	}
-	create_corps_commander = {
-		name = "Ismail Karaosmanoğlu"
-		picture = "unknown_general.dds"
-		traits = { artillery_expert }
-		skill = 2
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	create_corps_commander = {
-		name = "Şevket Yerimdar"
-		picture = "unknown_general.dds"
-		traits = { adaptable infantry_leader panzer_expert organizer artillery_expert }
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	create_field_marshal = {
-		name = "Muhterem Safa"
-		picture = "unknown_general.dds"
-		traits = { fast_planner logistics_wizard}
-		skill = 4
-		attack_skill = 4
-		defense_skill = 4
-		planning_skill = 4
-		logistics_skill = 4
-	}
-	create_field_marshal = {
-		name = "Semih Gündoğan"
-		picture = "unknown_general.dds"
-		traits = { old_guard defensive_doctrine trickster}
-		skill = 4
-		attack_skill = 3
-		defense_skill = 4
-		planning_skill = 3
-		logistics_skill = 2
-	}
-	create_corps_commander = {
-		name = "Mehmet Ülkü"
-		picture = "unknown_general.dds"
-		traits = { trait_engineer }
-		skill = 1
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 2
-		logistics_skill = 1
-	}
-	create_corps_commander = {
-		name = "Necdet Millet"
-		picture = "unknown_general.dds"
-		traits = { trait_engineer }
-		skill = 2
-		attack_skill = 1
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 2
-	}
-	create_corps_commander = {
-		name = "Ali Türkmen"
-		picture = "unknown_general.dds"
-		traits = { commando }
-		skill = 3
-		attack_skill = 1
-		defense_skill = 1
-		planning_skill = 3
-		logistics_skill = 2
-	}
-	create_corps_commander = {
-		name = "Ahmet Vatansevdi"
-		picture = "unknown_general.dds"
-		traits = { desert_fox }
-		skill = 2
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-	}
+	recruit_character = UTU_mehmet_gursoy
+	recruit_character = UTU_ismail_karaosmanoglu
+	recruit_character = UTU_sevket_yerimdar
+	recruit_character = UTU_muhterem_safa
+	recruit_character = UTU_semih_gundogan
+	recruit_character = UTU_mehmet_ulku
+	recruit_character = UTU_necdet_millet
+	recruit_character = UTU_ali_turkmen
+	recruit_character = UTU_ahmet_vatansevdi
 
 	### Military and technology: Turkish Armed Forces state in 2000 (shared with TUR, MD 2.0.2)
 	complete_special_project = sp:sp_nuclear_energy

@@ -1894,9 +1894,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		}
 
 completion_reward = {
-	retire_character = ilhan_tolu
-	retire_character = mustafa_ozsoy
-	retire_character = TUR_akin_ozturk
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
 			TRGX_bop_very_low_decrease_effect = yes
 swap_ideas = {
                 add_idea = betrayal_from_FETO2
@@ -2356,7 +2356,7 @@ add_political_power = 25
 			search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
 			
 		completion_reward = {
-retire_character = yavuz_turkgenci
+remove_unit_leader_role = { character = yavuz_turkgenci }
 		        add_stability = -0.03
 				add_political_power = -75
 				set_temp_variable = { temp_opinion_change = -15 }	

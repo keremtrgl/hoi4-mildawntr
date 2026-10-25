@@ -2159,8 +2159,8 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 	completion_reward = {
-	retire_character = hursit_tolon
-	retire_character = sener_eruygur
+	remove_unit_leader_role = { character = hursit_tolon }
+	remove_unit_leader_role = { character = sener_eruygur }
 	        	set_global_flag = FIRE_SUPEREVENT_4
 				hidden_effect = {sound_effect = "superev_sad_sounds"}
 			hidden_effect = {

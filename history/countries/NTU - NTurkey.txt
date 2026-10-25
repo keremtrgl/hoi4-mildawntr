@@ -85,36 +85,9 @@
 		#
 		}
 	}
-	create_field_marshal = {
-		name = "Tod Wolters"
-		picture = "Tod_Wolters.dds"
-		traits = { ambusher tsk_nato_officer }
-		skill = 4
-		attack_skill = 4
-		defense_skill = 3
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	create_corps_commander = {
-		name = "Curtis Scaparrotti"
-		picture = "Curtis_Scaparrotti.dds"
-		traits = { commando ranger tsk_nato_officer}
-		skill = 4
-		attack_skill = 4
-		defense_skill = 4
-		planning_skill = 4
-		logistics_skill = 4
-	}
-	create_corps_commander = {
-		name = "Dany Fortin"
-		picture = "Dany_Fortin.dds"
-		traits = { panzer_leader tsk_nato_officer}
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
+	recruit_character = NTU_tod_wolters
+	recruit_character = NTU_curtis_scaparrotti
+	recruit_character = NTU_dany_fortin
 
 	### Military and technology: Turkish Armed Forces state in 2000 (shared with TUR, MD 2.0.2)
 	complete_special_project = sp:sp_nuclear_energy

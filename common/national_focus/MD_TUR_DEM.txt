@@ -4349,8 +4349,8 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	custom_effect_tooltip = TR_speechev_ergenekon
 	}
 
-retire_character = sener_eruygur
-retire_character = hursit_tolon
+remove_unit_leader_role = { character = sener_eruygur }
+remove_unit_leader_role = { character = hursit_tolon }
 	        	set_global_flag = FIRE_SUPEREVENT_4
 			hidden_effect = {
 				add_to_variable = { party_pop_array^12 = 0.02 }

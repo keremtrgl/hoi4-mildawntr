@@ -1,0 +1,104 @@
+﻿characters = {
+	KTU_hursit_tolon = {
+		name = "Hurşit Tolon"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KTU/hursit_tolon.dds"
+				small = "gfx/leaders/KTU/small/hursit_tolon_small.dds"
+			}
+		}
+		field_marshal = {
+			traits = { logistics_wizard trait_TUR_kemalist_champion}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	KTU_sener_eruygur = {
+		name = "Sener Eruygur"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KTU/sener_eruygur.dds"
+				small = "gfx/leaders/KTU/small/sener_eruygur_small.dds"
+			}
+		}
+		field_marshal = {
+			traits = { tsk_ustun_hizmet_madalyonu ambusher trait_TUR_kemalist_champion }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KTU_abidin_unal = {
+		name = "Abidin Ünal"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KTU/Portrait_Abidin_Unal.dds"
+				small = "gfx/leaders/KTU/small/Portrait_Abidin_Unal_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { commando ranger tsk_seref_madalyonu tsk_ustun_cesaret_madalyonu tsk_ustun_hizmet_madalyonu tsk_nato_officer trait_TUR_kemalist_champion}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	KTU_izzet_cetingoz = {
+		name = "Izzet Çetingöz"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KTU/Portrait_Izzet_Cetingoz.dds"
+				small = "gfx/leaders/KTU/small/Portrait_Izzet_Cetingoz_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { panzer_leader trait_TUR_kemalist_champion}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KTU_mehmet_daysal = {
+		name = "Mehmet Daysal"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KTU/Portrait_Mehmet_Daysal.dds"
+				small = "gfx/leaders/KTU/small/Portrait_Mehmet_Daysal_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_engineer trait_TUR_kemalist_champion}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KTU_mehmet_ozoglu = {
+		name = "Mehmet Özoğlu"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KTU/Portrait_Mehmet_Ozoglu.dds"
+				small = "gfx/leaders/KTU/small/Portrait_Mehmet_Ozoglu_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { ranger trait_TUR_kemalist_champion}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

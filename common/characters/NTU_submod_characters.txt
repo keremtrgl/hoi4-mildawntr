@@ -1,0 +1,53 @@
+﻿characters = {
+	NTU_tod_wolters = {
+		name = "Tod Wolters"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NTU/Tod_Wolters.dds"
+				small = "gfx/leaders/NTU/small/Tod_Wolters_small.dds"
+			}
+		}
+		field_marshal = {
+			traits = { ambusher tsk_nato_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	NTU_curtis_scaparrotti = {
+		name = "Curtis Scaparrotti"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NTU/Curtis_Scaparrotti.dds"
+				small = "gfx/leaders/NTU/small/Curtis_Scaparrotti_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { commando ranger tsk_nato_officer}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	NTU_dany_fortin = {
+		name = "Dany Fortin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NTU/Dany_Fortin.dds"
+				small = "gfx/leaders/NTU/small/Dany_Fortin_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { panzer_leader tsk_nato_officer}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

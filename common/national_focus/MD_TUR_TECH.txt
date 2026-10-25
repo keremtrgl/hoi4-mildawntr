@@ -4808,9 +4808,9 @@ swap_ideas = {
   remove_idea = new_turkish_education_policies_4
   add_idea = new_turkish_education_policies_5
 }
-	retire_character = ilhan_tolu
-	retire_character = mustafa_ozsoy
-	retire_character = TUR_akin_ozturk      
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
 }   }
 	focus = {
 		id = TECH_technology_works

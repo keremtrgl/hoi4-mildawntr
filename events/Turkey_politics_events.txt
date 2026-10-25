@@ -1,0 +1,3977 @@
+﻿### Domestic politics: presidency, courts, parties, coups, alliances
+
+add_namespace = TurkeyA
+add_namespace = TurkeyAge
+add_namespace = TurkeyAl
+add_namespace = TurkeyC
+add_namespace = TurkeyCo
+add_namespace = TurkeyCourt
+add_namespace = TurkeyM
+add_namespace = TurkeyO
+add_namespace = TurkeyPresidency
+add_namespace = TurkeyT
+add_namespace = TurkeyU
+add_namespace = TurkeyX
+add_namespace = Turkeys
+
+##Event: Agreement On The Early Elections
+country_event = {
+ id = Turkeys.9206
+ title = Turkeys.9206.title
+ desc = Turkeys.9206.desc
+ picture = GFX_tbmm
+  is_triggered_only = yes # disabled by the original author ("Blocked"), kept dormant
+  fire_only_once = yes
+
+    trigger = {
+         tag = TUR
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 } 
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
+         AND = {
+             date > 2022.1.1
+	         date < 2022.2.1
+         }
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = Turkeys.9206.a
+		ai_chance = { factor = 1}
+
+	add_political_power = 25
+    add_stability = 0.03	
+	}
+}
+
+ 
+
+##Event: Turkish Last Elections With Event
+country_event = {
+ id = Turkeys.9207
+ title = Turkeys.9207.title
+ desc = Turkeys.9207.desc
+ picture = GFX_election_day
+  is_triggered_only = yes # disabled by the original author ("Blocked"), kept dormant
+  fire_only_once = yes
+
+    trigger = {
+         tag = TUR
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 } 
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
+         AND = {
+             date > 2022.2.3
+	         date < 2022.3.2
+         }
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = Turkeys.9207.a
+		ai_chance = { factor = 1}
+
+	custom_effect_tooltip = 20_increase_12_TT
+	country_event = MD4_election_campaign.0
+						add_popularity = {
+							ideology = neutrality
+							popularity = 0.2
+						}	
+			hidden_effect = {
+				add_to_variable = { party_pop_array^12 = 0.2 }
+				recalculate_party = yes
+			}						
+	}
+
+	option = {
+		name = Turkeys.9207.b
+		ai_chance = { factor = 1}
+
+	custom_effect_tooltip = 20_increase_3_TT
+	country_event = MD4_election_campaign.0
+						add_popularity = {
+							ideology = democratic
+							popularity = 0.2
+						}	
+			hidden_effect = {
+				add_to_variable = { party_pop_array^3 = 0.2 }
+				recalculate_party = yes
+			}	
+	}
+}
+
+######################### Presidential Group ############################
+
+##Event: Trigger 2000 Elections
+country_event = {
+ id = TurkeyPresidency.1
+ title = TurkeyPresidency.1.title
+ desc = TurkeyPresidency.1.desc
+ picture = GFX_ahmet_necdet_sezer_vs_nevzat
+ fire_only_once = yes
+
+    trigger = {
+		tag = TUR
+         AND = {
+             date > 2000.2.7
+	         date < 2000.8.7
+         }
+		 		 has_elections = yes
+		 NOT = {
+		 has_global_flag = ATA_NO_PR_ALLOWED
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 } 
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyPresidency.1.a
+		ai_chance = { factor = 1}
+
+clr_global_flag = END_THE_ELECTION_PR
+	set_variable = { var = TUR_the_first_party value = 38 }
+	set_variable = { var = TUR_the_second_party value = 62 }
+
+	clr_global_flag = RTE_make_visible
+	clr_global_flag = NECDET_make_visible
+	clr_global_flag = EKMELEDDIN_make_visible
+	clr_global_flag = SABAHATTIN_make_visible
+	clr_global_flag = ABDULLAH_GUL_make_visible
+	clr_global_flag = NEVZAT_make_visible
+
+	set_global_flag = NEVZAT_make_visible
+	set_global_flag = NECDET_make_visible
+
+} }
+
+##Event: Trigger 2007 Elections 
+country_event = {
+ id = TurkeyPresidency.2
+ title = TurkeyPresidency.2.title
+ desc = TurkeyPresidency.2.desc
+ picture = GFX_gul_vs_sabahattin
+ fire_only_once = yes
+
+    trigger = {
+			tag = TUR
+         AND = {
+             date > 2007.8.28
+	         date < 2008.2.28
+         }
+		 		 has_elections = yes
+		 NOT = {
+		 has_global_flag = ATA_NO_PR_ALLOWED
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 } 
+	}
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyPresidency.2.a
+		ai_chance = { factor = 1}
+
+clr_global_flag = END_THE_ELECTION_PR
+	set_variable = { var = TUR_the_first_party value = 80 }
+	set_variable = { var = TUR_the_second_party value = 20 }
+
+
+	clr_global_flag = RTE_make_visible
+	clr_global_flag = NECDET_make_visible
+	clr_global_flag = EKMELEDDIN_make_visible
+	clr_global_flag = SABAHATTIN_make_visible
+	clr_global_flag = ABDULLAH_GUL_make_visible
+	clr_global_flag = NEVZAT_make_visible
+
+	set_global_flag = ABDULLAH_GUL_make_visible
+	set_global_flag = SABAHATTIN_make_visible
+} }
+
+##Event: Trigger 2014 Elections 
+country_event = {
+ id = TurkeyPresidency.3
+ title = TurkeyPresidency.3.title
+ desc = TurkeyPresidency.3.desc
+ picture = GFX_erdogan_vs_ekmeleddin
+ fire_only_once = yes
+
+    trigger = {
+			tag = TUR
+         AND = {
+             date > 2014.8.10
+	         date < 2015.2.10
+         }
+		 		 has_elections = yes
+		 NOT = {
+		 has_global_flag = ATA_NO_PR_ALLOWED
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 } 
+	}
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyPresidency.3.a
+		ai_chance = { factor = 1}
+
+clr_global_flag = END_THE_ELECTION_PR
+	set_variable = { var = TUR_the_first_party value = 55 }
+	set_variable = { var = TUR_the_second_party value = 45 }
+
+
+	clr_global_flag = RTE_make_visible
+	clr_global_flag = NECDET_make_visible
+	clr_global_flag = EKMELEDDIN_make_visible
+	clr_global_flag = SABAHATTIN_make_visible
+	clr_global_flag = ABDULLAH_GUL_make_visible
+	clr_global_flag = NEVZAT_make_visible
+
+	set_global_flag = EKMELEDDIN_make_visible
+	set_global_flag = RTE_make_visible
+} }
+
+##Event: Nevzat Yalcintas Victory
+country_event = {
+ id = TurkeyPresidency.4
+ title = TurkeyPresidency.4.title
+ desc = TurkeyPresidency.4.desc
+ picture = GFX_nevzat_victory_in_elections
+ fire_only_once = yes
+
+
+    trigger = {
+			tag = TUR
+         AND = {
+             date > 2000.2.7
+	         date < 2000.8.7
+         }
+		 		 has_elections = yes
+	check_variable = { var = TUR_the_first_party value = 50 compare = greater_than }	
+		 has_global_flag = ELECTION_RESULTS
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 } 
+	}
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyPresidency.4.a
+		ai_chance = { factor = 1}
+
+	add_ideas = pr_nevzat
+	clr_global_flag = ELECTION_RESULTS
+	hidden_effect = {
+	remove_ideas = pr_demirel
+	remove_ideas = pr_necdet
+	remove_ideas = pr_gul
+	remove_ideas = pr_erdogan
+	remove_ideas = pr_sabahattin
+	remove_ideas = pr_ekmeleddin
+	}
+} }
+
+##Event: Ahmet Necdet Sezer Victory
+country_event = {
+ id = TurkeyPresidency.5
+ title = TurkeyPresidency.5.title
+ desc = TurkeyPresidency.5.desc
+ picture = GFX_necdet_victory_in_elections
+ fire_only_once = yes
+
+    trigger = {
+			tag = TUR
+         AND = {
+             date > 2000.2.7
+	         date < 2000.8.7
+         }
+		 		 has_elections = yes
+		 has_global_flag = ELECTION_RESULTS
+	check_variable = { var = TUR_the_second_party value = 50 compare = greater_than }	
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 } 
+	}
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyPresidency.5.a
+		ai_chance = { factor = 1}
+
+	add_ideas = pr_necdet
+	clr_global_flag = ELECTION_RESULTS
+	hidden_effect = {
+	remove_ideas = pr_demirel
+	remove_ideas = pr_gul
+	remove_ideas = pr_nevzat
+	remove_ideas = pr_erdogan
+	remove_ideas = pr_sabahattin
+	remove_ideas = pr_ekmeleddin
+	}
+} }
+
+##Event: Abdullah Gul Victory
+country_event = {
+ id = TurkeyPresidency.6
+ title = TurkeyPresidency.6.title
+ desc = TurkeyPresidency.6.desc
+ picture = GFX_gul_victory_in_elections
+ fire_only_once = yes
+
+    trigger = {
+         AND = {
+			tag = TUR
+             date > 2007.8.28
+	         date < 2008.2.28
+         }
+		 		 has_elections = yes
+		 has_global_flag = ELECTION_RESULTS
+	check_variable = { var = TUR_the_first_party value = 50 compare = greater_than }	
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 } 
+	}
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyPresidency.6.a
+		ai_chance = { factor = 1}
+
+
+	add_ideas = pr_gul
+	clr_global_flag = ELECTION_RESULTS
+	hidden_effect = {
+	remove_ideas = pr_demirel
+	remove_ideas = pr_necdet
+	remove_ideas = pr_nevzat
+	remove_ideas = pr_erdogan
+	remove_ideas = pr_sabahattin
+	remove_ideas = pr_ekmeleddin
+	}
+} }
+
+##Event: Sabahattin Cakmakoglu Victory
+country_event = {
+ id = TurkeyPresidency.7
+ title = TurkeyPresidency.7.title
+ desc = TurkeyPresidency.7.desc
+ picture = GFX_sabahattin_victory_in_elections
+ fire_only_once = yes
+
+    trigger = {
+			tag = TUR
+         AND = {
+             date > 2007.8.28
+	         date < 2008.2.28
+         }
+		 		 has_elections = yes
+		 has_global_flag = ELECTION_RESULTS
+	check_variable = { var = TUR_the_second_party value = 50 compare = greater_than }	
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 } 
+	}
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyPresidency.7.a
+		ai_chance = { factor = 1}
+
+	add_ideas = pr_sabahattin
+	clr_global_flag = ELECTION_RESULTS
+	hidden_effect = {
+	remove_ideas = pr_demirel
+	remove_ideas = pr_necdet
+	remove_ideas = pr_gul
+	remove_ideas = pr_nevzat
+	remove_ideas = pr_erdogan
+	remove_ideas = pr_ekmeleddin
+	}
+} }
+
+##Event: Erdogan Victory
+country_event = {
+ id = TurkeyPresidency.8
+ title = TurkeyPresidency.8.title
+ desc = TurkeyPresidency.8.desc
+ picture = GFX_erdogan_victory_in_elections
+ fire_only_once = yes
+
+    trigger = {
+			tag = TUR
+         AND = {
+             date > 2014.8.10
+	         date < 2015.2.10
+         }
+		 has_elections = yes
+		 has_global_flag = ELECTION_RESULTS
+	check_variable = { var = TUR_the_first_party value = 50 compare = greater_than }
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 } 
+	}
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyPresidency.8.a
+		ai_chance = { factor = 1}
+
+
+	add_ideas = pr_erdogan
+	clr_global_flag = ELECTION_RESULTS
+	hidden_effect = {
+	remove_ideas = pr_demirel
+	remove_ideas = pr_necdet
+	remove_ideas = pr_gul
+	remove_ideas = pr_nevzat
+	remove_ideas = pr_sabahattin
+	remove_ideas = pr_ekmeleddin
+	}
+} }
+
+##Event: Ekmeleddin Victory
+country_event = {
+ id = TurkeyPresidency.9
+ title = TurkeyPresidency.9.title
+ desc = TurkeyPresidency.9.desc
+ picture = GFX_ekmeleddin_victory_in_elections
+ fire_only_once = yes
+
+    trigger = {
+		tag = TUR
+         AND = {
+             date > 2014.8.10
+	         date < 2015.2.10
+         }
+		 		 has_elections = yes
+		 has_global_flag = ELECTION_RESULTS
+	check_variable = { var = TUR_the_second_party value = 50 compare = greater_than }
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_capitulated = yes
+		 } 
+	}
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyPresidency.9.a
+		ai_chance = { factor = 1}
+
+
+	add_ideas = pr_ekmeleddin
+	clr_global_flag = ELECTION_RESULTS
+	hidden_effect = {
+	remove_ideas = pr_demirel
+	remove_ideas = pr_necdet
+	remove_ideas = pr_gul
+	remove_ideas = pr_nevzat
+	remove_ideas = pr_erdogan
+	remove_ideas = pr_sabahattin
+	}
+} }
+
+############################ Turkish Civil War (Ulkists) #########################
+
+##Event: The Great Turkish Civil War
+country_event = {
+ id = TurkeyU.1
+ title = TurkeyU.1.title
+ desc = TurkeyU.1.desc
+ picture = GFX_ulkists_are_rebelling
+ is_triggered_only = yes
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyU.1a
+		ai_chance = { factor = 1}
+
+        hidden_effect = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 315}   
+		UTU = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 315}   
+		} }
+        hidden_effect = {
+        UTU = {
+		transfer_state = 159
+		transfer_state = 161
+		transfer_state = 160
+		transfer_state = 163
+		transfer_state = 1032
+	    add_state_core = 934
+	    add_state_core = 155
+        add_state_core = 156
+        add_state_core = 157
+        add_state_core = 160
+        add_state_core = 159
+        add_state_core = 161
+        add_state_core = 163
+        add_state_core = 935
+        add_state_core = 162
+	    add_state_core = 934
+	    add_state_core = 155
+	    add_state_core = 992
+		    	load_OOB = TUR_civilwar_6
+                load_OOB = TUR_civilwar_1_air
+		}
+
+	hidden_effect = {
+    remove_ideas = reformed_2001_crisis
+	remove_ideas = lira_1
+	remove_ideas = lira_2
+	remove_ideas = lira_3
+	remove_ideas = lira_4
+	remove_ideas = lira_5
+	remove_ideas = turkish_military_infulence
+	remove_ideas = TUR_legacy_of_ataturk_preserved
+	remove_ideas = tur_historical_confidence 
+    }
+
+    set_global_flag = tkpwhat 
+	clr_global_flag = fpdead
+	clr_global_flag = fpstrong
+	set_global_flag = the_kurdish_escalation_mhp
+	set_global_flag = THE_TKP_QUAKING
+
+			log = "[GetDateText]: [Root.GetName]: Decision cheat_decisions_party_Conservative"
+			set_temp_variable = { rul_party_temp = 6 }
+			change_ruling_party_effect = yes
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			set_temp_variable = { party_index = 6 }
+			set_temp_variable = { party_popularity_increase = 0.15 }
+			set_temp_variable = { temp_outlook_increase = 0.5 }
+			change_relative_party_popularity = yes
+		}
+
+			hidden_effect = {
+				add_to_variable = { party_pop_array^5= 0.2 }
+				recalculate_party = yes
+			}	
+			hidden_effect = {
+				add_to_variable = { party_pop_array^4 = 0.2 }
+				recalculate_party = yes
+			}	
+			hidden_effect = {
+				add_to_variable = { party_pop_array^7 = 0.2 }
+				recalculate_party = yes
+			}	
+
+				add_popularity = {
+					ideology = communism
+					popularity = 0.25
+				}
+
+    news_event = Turkey_news.31
+add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_COM }
+	create_country_leader = {
+		name = "Kemal Okuyan"
+		picture = "TUR_Kemal_Okuyan.dds"
+		ideology = communist_state
+		traits = {
+		emerging_communist_state
+		writer 
+		}
+	}
+
+    	declare_war_on = { target = UTU type = annex_everything }
+	}  }
+
+ 
+
+############################ Turkish Civil War (Anarchists) #######################
+
+##Event: Anarchist Revolution
+country_event = {
+ id = TurkeyX.1
+ title = TurkeyX.1.title
+ desc = TurkeyX.1.desc
+ picture = GFX_anarchist_rebels
+ is_triggered_only = yes
+
+    trigger = {
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyX.1.a
+		ai_chance = { factor = 100}
+
+        hidden_effect = {
+	remove_ideas = pr_necdet
+
+	set_variable = { ruling_party = 15 }
+
+		hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = max_index_1 }
+		}
+
+		meta_effect = {
+			text = {
+				set_country_flag = [META_SET_PARTY1]
+			}
+			META_SET_PARTY1 = "[meta_set_ideology1]"
+		}
+
+		set_leader = yes #set in desicion which party is selected
+		update_government_coalition_strength = yes
+		clear_coalition_count_ideas = yes
+
+			hidden_effect = {
+				add_to_variable = { party_pop_array^18 = 1.0 }
+				recalculate_party = yes
+			}
+
+			create_country_leader = {
+				name = "Anarchist Emergency Council"
+				picture = "anarcho_neutrality.dds"
+				ideology = neutral_Social
+				traits = {
+				neutrality_neutral_Social	
+				} }
+
+	hidden_effect = {
+    remove_ideas = reformed_2001_crisis
+	remove_ideas = lira_1
+	remove_ideas = lira_2
+	remove_ideas = lira_3
+	remove_ideas = lira_4
+	remove_ideas = lira_5
+	remove_ideas = turkish_military_infulence
+	remove_ideas = TUR_legacy_of_ataturk_preserved
+	remove_ideas = tur_historical_confidence 
+    }
+
+
+	create_corps_commander = {
+		name = "Nursun Özyurt"
+		picture = "unknown_general.dds"
+		traits = { hill_fighter }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 3
+	}
+	create_corps_commander = {
+		name = "Burçak Hakkıoğulları"
+		picture = "unknown_general.dds"
+		traits = { aggressive_assaulter }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 4
+	}
+	create_corps_commander = {
+		name = "Çevik Hasgül"
+		picture = "unknown_general.dds"
+		traits = { hill_fighter }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 4
+	}
+	create_field_marshal = {
+		name = "Deniz Gülünç"
+		picture = "unknown_general.dds"
+		traits = { fast_planner skilled_staffer}
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_field_marshal = {
+		name = "Mert Can"
+		picture = "unknown_general.dds"
+		traits = { old_guard defensive_doctrine }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_corps_commander = {
+		name = "Arslan Gül"
+		picture = "unknown_general.dds"
+		traits = { trait_engineer trickster }
+		skill = 3
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 4
+	}
+
+	create_corps_commander = {
+		name = "Behçet Kemal"
+		picture = "unknown_general.dds"
+		traits = { trait_engineer }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Ali Nurhan"
+		picture = "unknown_general.dds"
+		traits = { commando offensive_doctrine }
+		skill = 3
+		attack_skill = 4
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 4
+	}
+
+	create_corps_commander = {
+		name = "Ahmet Gül"
+		picture = "unknown_general.dds"
+		traits = { desert_fox offensive_doctrine urban_assault_specialist }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 2
+	}
+
+
+add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_ANA }
+	TUR_remove_pkk = yes
+	set_cosmetic_tag = ANARCH_PASSIVE
+    set_global_flag = ANARCHIST_YEAH
+	clr_global_flag = ANARCHIST_NO
+
+       hidden_effect = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 215}   
+		KTU = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 215}   
+		} }
+	hidden_effect = {
+	KTU = {
+	transfer_state = 992
+	transfer_state = 157
+	transfer_state = 161
+	transfer_state = 158 
+	transfer_state = 162
+	transfer_state = 163
+	transfer_state = 935
+	transfer_state = 1032
+	transfer_state = 159
+	transfer_state = 1205
+
+	add_state_core = 156
+	add_state_core = 1205
+	add_state_core = 157
+	add_state_core = 161
+    add_state_core = 156
+    add_state_core = 157
+    add_state_core = 160
+    add_state_core = 159
+	add_state_core = 1205
+    add_state_core = 163
+    add_state_core = 935
+    add_state_core = 162
+	add_state_core = 934
+	add_state_core = 155	
+	add_state_core = 992
+	add_state_core = 1032
+    load_OOB = TUR_civilwar_5
+    load_OOB = TUR_civilwar_2_air
+	} 
+
+ declare_war_on = { target = KTU type = annex_everything }
+
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 18 } #neutral_Social
+			add_to_variable = { party_pop_array^18 = 0.5 } #neutral_Social
+			recalculate_party = yes
+			IF = {
+				limit = {
+					NOT = {
+						has_government = neutrality
+					}
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			else = {
+				set_leader = yes
+			}
+		}
+
+remove_advisor_role = { character = TUR_hulusi_akar slot = high_command }
+remove_advisor_role = { character = TUR_zeki_colak slot = air_chief }
+remove_advisor_role = { character = TUR_ergin_celalsin slot = air_chief }
+remove_advisor_role = { character = TUR_cumhur_asparuk slot = air_chief }
+remove_advisor_role = { character = TUR_huseyin_kivriklioglu slot = high_command }
+remove_advisor_role = { character = TUR_hilmi_ozkok slot = high_command }
+remove_advisor_role = { character = TUR_yasar_buyukanit slot = high_command }
+remove_advisor_role = { character = TUR_ilker_basbug slot = high_command }
+remove_advisor_role = { character = TUR_isik_kosaner slot = high_command }
+remove_advisor_role = { character = TUR_necdet_ozel slot = high_command }
+remove_advisor_role = { character = TUR_yasar_guler slot = high_command }
+remove_unit_leader_role = { character = ilhan_tolu }
+remove_unit_leader_role = { character = mustafa_ozsoy }
+remove_unit_leader_role = { character = aslan_guner }
+remove_unit_leader_role = { character = bekir_kalyoncu }
+remove_unit_leader_role = { character = ihsan_uyar }
+remove_unit_leader_role = { character = kamil_basoglu }
+remove_unit_leader_role = { character = metin_gurak }
+remove_unit_leader_role = { character = seref_ongay }
+remove_unit_leader_role = { character = yavuz_turkgenci }
+remove_unit_leader_role = { character = hursit_tolon }
+remove_unit_leader_role = { character = sener_eruygur }
+remove_unit_leader_role = { character = TUR_musa_avsever }
+remove_unit_leader_role = { character = TUR_abdullah_recep }
+remove_advisor_role = { character = TUR_abdullah_recep slot = army_chief }
+remove_unit_leader_role = { character = TUR_galip_mendi }
+remove_unit_leader_role = { character = TUR_hakan_atinc }
+remove_unit_leader_role = { character = TUR_izzet_cetingoz }
+remove_unit_leader_role = { character = TUR_erdal_ozturk }
+remove_unit_leader_role = { character = TUR_mehmet_faruk_sengun }
+remove_unit_leader_role = { character = TUR_ali_sivri }
+remove_advisor_role = { character = TUR_yilmaz_uyar slot = high_command }
+remove_unit_leader_role = { character = TUR_levent_kose }
+remove_unit_leader_role = { character = TUR_abidin_unal }
+remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
+remove_advisor_role = { character = TUR_mehmet_sanver slot = high_command }
+remove_unit_leader_role = { character = TUR_adnan_ozbal }
+remove_unit_leader_role = { character = TUR_veysel_kosele }
+remove_unit_leader_role = { character = TUR_hasan_usaklioglu }
+remove_unit_leader_role = { character = TUR_ercument_tatlioglu }
+remove_advisor_role = { character = TUR_ercument_tatlioglu slot = navy_chief }
+remove_unit_leader_role = { character = osman_pamukoglu }
+remove_unit_leader_role = { character = erdal_ceylanoglu }
+remove_unit_leader_role = { character = ismail_kocman }
+remove_unit_leader_role = { character = orhan_yoney }
+remove_unit_leader_role = { character = bulent_alpkaya }
+remove_unit_leader_role = { character = ozden_ordek }
+
+set_global_flag = ERDOGAN_NOT_ACHIEVED
+}}
+}
+
+ 
+
+############################ Turkish Civil War (Ottomans) #######################
+
+##Event: Ottoman Revolution
+country_event = {
+ id = TurkeyO.1
+ title = TurkeyO.1.title
+ desc = TurkeyO.1.desc
+ picture = GFX_republican_propaganda
+ is_triggered_only = yes
+
+    trigger = {
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyO.1.a
+		ai_chance = { factor = 100}
+
+        hidden_effect = {
+	remove_ideas = pr_necdet
+
+
+	set_variable = { ruling_party = 23 }
+
+		hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = max_index_1 }
+		}
+
+		meta_effect = {
+			text = {
+				set_country_flag = [META_SET_PARTY1]
+			}
+			META_SET_PARTY1 = "[meta_set_ideology1]"
+		}
+
+		set_leader = yes #set in desicion which party is selected
+		update_government_coalition_strength = yes
+		clear_coalition_count_ideas = yes
+
+			hidden_effect = {
+				add_to_variable = { party_pop_array^23 = 1.0 }
+				recalculate_party = yes
+			}
+
+add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_OTT }
+
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 23 } #Monarchist
+			add_to_variable = { party_pop_array^23 = 0.5 } #Monarchist
+			recalculate_party = yes
+			IF = {
+				limit = {
+					NOT = {
+						has_government = nationalist
+					}
+				}
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = nationalist
+				}
+			}
+			else = {
+				set_leader = yes
+			}
+
+
+                set_politics = {
+                ruling_party = nationalist
+                elections_allowed = no
+            }	
+
+	remove_unit_leader_role = { character = hursit_tolon }
+	remove_unit_leader_role = { character = TUR_izzet_cetingoz }
+	remove_unit_leader_role = { character = TUR_abidin_unal }
+	remove_unit_leader_role = { character = sener_eruygur }
+	set_global_flag = CIVILWAR_OF_OTTOMANS
+	hidden_effect = {
+	add_timed_idea = { idea = turkish_civil_war_modifier days = 215}   
+		KTU = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 215}   
+		}
+	}
+	hidden_effect = {
+	KTU = {
+	transfer_state = 156
+	transfer_state = 157
+	transfer_state = 161
+	add_state_core = 156
+	add_state_core = 157
+	add_state_core = 161
+
+    add_state_core = 156
+    add_state_core = 157
+    add_state_core = 160
+    add_state_core = 159
+	add_state_core = 1205
+    add_state_core = 163
+    add_state_core = 935
+    add_state_core = 162
+	add_state_core = 934
+	add_state_core = 155
+	add_state_core = 992
+	add_state_core = 1032
+
+	load_OOB = TUR_civilwar_2
+	load_OOB = TUR_civilwar_2_air
+	         declare_war_on = { target = MTU type = annex_everything }
+	} }
+    	         declare_war_on = { target = KTU type = annex_everything }
+			create_country_leader = {
+				name = "Ottoman Emergency Council"
+				picture = "ottoman_secret_council.dds"
+				ideology = Monarchist
+				traits = {
+					nationalist_Monarchist
+				}
+			}
+
+	}
+} }
+
+##Event: Collapse Of Kemalists
+country_event = {
+ id = TurkeyO.2
+ title = TurkeyO.2.title
+ desc = TurkeyO.2.desc
+ picture = GFX_execution_for_the_pkk_leader
+ fire_only_once = yes
+
+    trigger = {
+         tag = TUR
+		 OR = {
+         has_global_flag = CIVILWAR_OF_OTTOMANS
+		 has_global_flag = THE_MHP_QUAKING
+		 has_global_flag = THE_TKP_QUAKING
+		 has_global_flag = TUR_CIVILWAR_BEGIN
+		 has_global_flag = MIT_RISES_UP
+		 }
+		 NOT = {
+		 country_exists = KTU
+		 country_exists = MTU
+		 country_exists = NTU
+		 country_exists = CTU
+		 country_exists = WTU
+		 country_exists = UTU
+		 }
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyO.2.a
+		ai_chance = { factor = 1}
+
+	add_stability = 0.07
+	KTU = {
+	remove_state_core = 156
+	remove_state_core = 157
+	remove_state_core = 161
+    remove_state_core = 156
+    remove_state_core = 157
+    remove_state_core = 160
+    remove_state_core = 159
+	remove_state_core = 1205
+    remove_state_core = 163
+    remove_state_core = 935
+    remove_state_core = 162
+	remove_state_core = 934
+	remove_state_core = 155
+	}  
+	MTU = {
+	remove_state_core = 156
+	remove_state_core = 157
+	remove_state_core = 161
+    remove_state_core = 156
+    remove_state_core = 157
+    remove_state_core = 160
+    remove_state_core = 159
+	remove_state_core = 1205
+    remove_state_core = 163
+    remove_state_core = 935
+    remove_state_core = 162
+	remove_state_core = 934
+	remove_state_core = 155
+	} 
+	NTU = {
+	remove_state_core = 156
+	remove_state_core = 157
+	remove_state_core = 161
+    remove_state_core = 156
+    remove_state_core = 157
+    remove_state_core = 160
+    remove_state_core = 159
+	remove_state_core = 1205
+    remove_state_core = 163
+    remove_state_core = 935
+    remove_state_core = 162
+	remove_state_core = 934
+	remove_state_core = 155
+	} 
+	CTU = {
+	remove_state_core = 156
+	remove_state_core = 157
+	remove_state_core = 161
+    remove_state_core = 156
+    remove_state_core = 157
+    remove_state_core = 160
+    remove_state_core = 159
+	remove_state_core = 1205
+    remove_state_core = 163
+    remove_state_core = 935
+    remove_state_core = 162
+	remove_state_core = 934
+	remove_state_core = 155
+	} 
+	WTU = {
+	remove_state_core = 156
+	remove_state_core = 157
+	remove_state_core = 161
+    remove_state_core = 156
+    remove_state_core = 157
+    remove_state_core = 160
+    remove_state_core = 159
+	remove_state_core = 1205
+    remove_state_core = 163
+    remove_state_core = 935
+    remove_state_core = 162
+	remove_state_core = 934
+	remove_state_core = 155
+	} 
+} }
+
+############################ Turkish Civil War (Communist) #######################
+
+
+##Event: EMEP Supports The Actions
+country_event = {
+ id = TurkeyCo.2
+ title = TurkeyCo.2.title
+ desc = TurkeyCo.2.desc
+ picture = GFX_rise_of_emep
+ fire_only_once = yes
+
+    trigger = {
+         tag = TUR
+		 has_global_flag = TUR_government_attack
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyCo.2.a
+		ai_chance = { factor = 1}
+
+    add_stability = -0.05
+	add_political_power = -25    
+	}  
+}
+
+##Event: ÖDP Supports The Actions
+country_event = {
+ id = TurkeyCo.3
+ title = TurkeyCo.3.title
+ desc = TurkeyCo.3.desc
+ picture = GFX_rise_of_odp
+ fire_only_once = yes
+
+    trigger = {
+         tag = TUR
+		 has_global_flag = TUR_government_attack
+    }
+
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyCo.3.a
+		ai_chance = { factor = 1}
+
+    add_stability = -0.03
+	add_political_power = -25
+	}  
+}
+
+##Event: TKP Supports The Actions
+country_event = {
+ id = TurkeyCo.4
+ title = TurkeyCo.4.title
+ desc = TurkeyCo.4.desc
+ picture = GFX_tkp_propaganda
+ fire_only_once = yes
+
+    trigger = {
+         tag = TUR
+		 has_global_flag = TUR_government_attack
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyCo.4.a
+		ai_chance = { factor = 1}
+
+     add_stability = -0.07
+	add_political_power = -25   
+	} 
+}
+
+##Event: The Great Turkish Civil War
+country_event = {
+ id = TurkeyCo.5
+ title = TurkeyCo.5.title
+ desc = TurkeyCo.5.desc
+ picture = GFX_workers_rise
+ fire_only_once = yes
+
+    trigger = {
+         tag = TUR
+		 has_global_flag = TUR_government_attack
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyCo.5.a
+		ai_chance = { factor = 1}
+
+	set_global_flag = the_kurdish_escalation_mhp
+	set_global_flag = THE_MHP_QUAKING
+	hidden_effect = {
+	add_timed_idea = { idea = turkish_civil_war_modifier days = 315}   
+		CTU = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 315}   
+		}
+	}
+        hidden_effect = {
+add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_ULK }
+        CTU = {
+		transfer_state = 934
+		transfer_state = 156
+		transfer_state = 157
+		transfer_state = 155
+	    add_state_core = 934
+	    add_state_core = 155
+        add_state_core = 156
+        add_state_core = 157
+        add_state_core = 160
+        add_state_core = 159
+        add_state_core = 161
+     	add_state_core = 1205
+        add_state_core = 163
+        add_state_core = 935
+        add_state_core = 162
+	    add_state_core = 934
+	    add_state_core = 155
+	    add_state_core = 992
+	    add_state_core = 1032
+		    	load_OOB = TUR_civilwar_4
+                load_OOB = TUR_civilwar_2_air
+		}
+    	declare_war_on = { target = CTU type = annex_everything }
+	}  }
+}
+
+  
+
+##Event: TKP-ÖDP-EMEP Congress
+country_event = {
+ id = TurkeyCo.6
+ title = TurkeyCo.6.title
+ desc = TurkeyCo.6.desc
+ picture = GFX_tkp_building
+  is_triggered_only = yes
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyCo.6.a
+		ai_chance = { factor = 1}
+
+     add_stability = 0.02
+	add_political_power = -50  
+    set_global_flag = ODP_wins_the_congress
+	}  
+	option = {
+		name = TurkeyCo.6.b
+		ai_chance = { factor = 1}
+
+     add_stability = -0.02
+	add_political_power = 50  
+	set_global_flag = EMEP_wins_the_congress
+	}  
+	option = {
+		name = TurkeyCo.6.c
+		ai_chance = { factor = 1}
+
+     add_stability = -0.01
+	add_political_power = -25  
+    set_global_flag = PERINCEK_wins_the_congress	
+	}  
+	option = {
+		name = TurkeyCo.6.d
+		ai_chance = { factor = 1}
+
+     add_stability = -0.05
+	add_political_power = 50
+    set_global_flag = TKP_wins_the_congress	
+	}  
+}
+
+##Event: Leninism
+country_event = {
+ id = TurkeyCo.7
+ title = TurkeyCo.7.title
+ desc = TurkeyCo.7.desc
+ picture = GFX_5th_turkish_revolution
+  is_triggered_only = yes
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyCo.7.a
+		ai_chance = { factor = 1}
+
+     add_stability = 0.05
+	 add_political_power = 100
+	}  
+}
+
+##Event: 5th Congress
+country_event = {
+ id = TurkeyCo.8
+ title = TurkeyCo.8.title
+ desc = TurkeyCo.8.desc
+ picture = GFX_5th_communist_congress
+  is_triggered_only = yes
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyCo.8.a
+		ai_chance = { factor = 1}
+
+     add_stability = 0.05
+	}  
+}
+
+############################ Turkish Civil War (Gülen) #######################
+
+
+##Event: Turkish Civil War
+country_event = {
+ id = TurkeyC.6
+ title = TurkeyC.6.title
+ desc = TurkeyC.6.desc
+ picture = GFX_republican_propaganda
+ fire_only_once = yes
+
+    trigger = {
+         tag = TUR
+		 NOT = {
+		 has_capitulated = yes
+		 } 
+	has_global_flag = TUR_coup_attempt_success
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyC.6.a
+		ai_chance = { factor = 1}
+
+	hidden_effect = {
+	add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
+		MTU = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
+		}
+	}
+    hidden_effect = {
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
+	set_cosmetic_tag = ATU
+	set_global_flag = TUR_CIVILWAR_BEGIN
+add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
+			hidden_effect = { country_event = Turkey_news.8 } 
+	MTU = {
+	transfer_state = 934
+	transfer_state = 155
+	add_state_core = 934
+	add_state_core = 155
+
+    add_state_core = 156
+    add_state_core = 157
+    add_state_core = 160
+    add_state_core = 159
+    add_state_core = 161
+	add_state_core = 1205
+    add_state_core = 163
+    add_state_core = 935
+    add_state_core = 162
+	add_state_core = 934
+	add_state_core = 155
+	add_state_core = 992
+	add_state_core = 1032
+
+	create_field_marshal = {
+		name = "Akın Öztürk"
+		picture = "TUR_ozturk.dds"
+		traits = { tsk_nato_officer trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Mustafa Kaya"
+		picture = "TUR_mustafa_kaya.dds"
+		traits = { fortress_buster trait_TUR_gulen_champion}
+		skill = 1
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Murat Aygün"
+		picture = "TUR_murat_aygun.dds"
+		traits = { panzer_leader trait_TUR_gulen_champion}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Adem Huduti"
+		picture = "TUR_huduti.dds"
+		traits = { organizer trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Metin Akkaya"
+		picture = "TUR_akkaya.dds"
+		traits = { infantry_leader trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Alpaslan Çetin"
+		picture = "TUR_alpaslan.dds"
+		traits = { ambusher trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Ilhan Tolu"
+		picture = "ilhan_tolu.dds"
+		traits = { trait_TUR_gulen_champion }
+		id = 919990
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Mustafa Özsoy"
+		picture = "mustafa_ozsoy.dds"
+		traits = { trait_TUR_gulen_champion }
+		id = 909990
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_navy_leader = {
+		name = "Hasan Kulaç"
+		picture = "TUR_kulac.dds"
+		traits = { air_controller trait_TUR_gulen_champion}
+	}
+
+	load_OOB = TUR_civilwar_1
+        MTU = { change_tag_from = TUR }
+		TUR = {
+	         declare_war_on = { target = MTU type = annex_everything }
+	}  } } } 
+
+
+	option = {
+		name = TurkeyC.1.b
+		ai_chance = { factor = 1}
+
+    hidden_effect = {
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
+	set_cosmetic_tag = ATU
+	set_global_flag = TUR_CIVILWAR_BEGIN
+add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
+			hidden_effect = { country_event = Turkey_news.8 } 
+
+	hidden_effect = {
+	add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
+		MTU = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
+		}
+	}
+	MTU = {
+	transfer_state = 934
+	transfer_state = 155
+	add_state_core = 934
+	add_state_core = 155
+
+    add_state_core = 156
+    add_state_core = 157
+    add_state_core = 160
+    add_state_core = 159
+    add_state_core = 161
+	add_state_core = 1205
+    add_state_core = 163
+    add_state_core = 935
+    add_state_core = 162
+	add_state_core = 934
+	add_state_core = 155
+	add_state_core = 992
+	add_state_core = 1032
+
+	create_field_marshal = {
+		name = "Akın Öztürk"
+		picture = "TUR_ozturk.dds"
+		traits = { tsk_nato_officer trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Mustafa Kaya"
+		picture = "TUR_mustafa_kaya.dds"
+		traits = { fortress_buster trait_TUR_gulen_champion}
+		skill = 1
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Murat Aygün"
+		picture = "TUR_murat_aygun.dds"
+		traits = { panzer_leader trait_TUR_gulen_champion}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Adem Huduti"
+		picture = "TUR_huduti.dds"
+		traits = { organizer trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Metin Akkaya"
+		picture = "TUR_akkaya.dds"
+		traits = { infantry_leader trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Alpaslan Çetin"
+		picture = "TUR_alpaslan.dds"
+		traits = { ambusher trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Ilhan Tolu"
+		picture = "ilhan_tolu.dds"
+		traits = { trait_TUR_gulen_champion }
+		id = 919990
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Mustafa Özsoy"
+		picture = "mustafa_ozsoy.dds"
+		traits = { trait_TUR_gulen_champion }
+		id = 909990
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_navy_leader = {
+		name = "Hasan Kulaç"
+		picture = "TUR_kulac.dds"
+		traits = { air_controller trait_TUR_gulen_champion}
+	}
+
+	load_OOB = TUR_civilwar_1
+		TUR = {
+	         declare_war_on = { target = MTU type = annex_everything }
+	}  } } } 	
+	}
+
+ 
+
+##Event: Turkish Civil War
+country_event = {
+ id = TurkeyC.1
+ title = TurkeyC.1.title
+ desc = TurkeyC.1.desc
+ picture = GFX_republican_propaganda
+ fire_only_once = yes
+
+    trigger = {
+         tag = TUR
+		 NOT = {
+		 has_capitulated = yes
+		 } 
+	has_global_flag = TUR_coup_attempt_success
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyC.1.a
+		ai_chance = { factor = 1}
+
+	hidden_effect = {
+	add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
+		MTU = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
+		}
+	}
+    hidden_effect = {
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
+	set_cosmetic_tag = ATU
+	set_global_flag = TUR_CIVILWAR_BEGIN
+add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
+			hidden_effect = { country_event = Turkey_news.8 } 
+	MTU = {
+	transfer_state = 934
+	transfer_state = 155
+	add_state_core = 934
+	add_state_core = 155
+
+    add_state_core = 156
+    add_state_core = 157
+    add_state_core = 160
+    add_state_core = 159
+    add_state_core = 161
+	add_state_core = 1205
+    add_state_core = 163
+    add_state_core = 935
+    add_state_core = 162
+	add_state_core = 934
+	add_state_core = 155
+	add_state_core = 992
+	add_state_core = 1032
+
+	create_field_marshal = {
+		name = "Akın Öztürk"
+		picture = "TUR_ozturk.dds"
+		traits = { tsk_nato_officer trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Mustafa Kaya"
+		picture = "TUR_mustafa_kaya.dds"
+		traits = { fortress_buster trait_TUR_gulen_champion}
+		skill = 1
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Murat Aygün"
+		picture = "TUR_murat_aygun.dds"
+		traits = { panzer_leader trait_TUR_gulen_champion}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Adem Huduti"
+		picture = "TUR_huduti.dds"
+		traits = { organizer trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Metin Akkaya"
+		picture = "TUR_akkaya.dds"
+		traits = { infantry_leader trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Alpaslan Çetin"
+		picture = "TUR_alpaslan.dds"
+		traits = { ambusher trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Ilhan Tolu"
+		picture = "ilhan_tolu.dds"
+		traits = { trait_TUR_gulen_champion }
+		id = 919990
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Mustafa Özsoy"
+		picture = "mustafa_ozsoy.dds"
+		traits = { trait_TUR_gulen_champion }
+		id = 909990
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_navy_leader = {
+		name = "Hasan Kulaç"
+		picture = "TUR_kulac.dds"
+		traits = { air_controller trait_TUR_gulen_champion}
+	}
+
+	load_OOB = TUR_civilwar_1
+                load_OOB = TUR_civilwar_1_air
+        MTU = { change_tag_from = TUR }
+		TUR = {
+	         declare_war_on = { target = MTU type = annex_everything }
+	}  } } } 
+
+
+	option = {
+		name = TurkeyC.1.b
+		ai_chance = { factor = 1}
+
+    hidden_effect = {
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
+	set_cosmetic_tag = ATU
+	set_global_flag = TUR_CIVILWAR_BEGIN
+add_named_threat = { threat = 3 name = TURKISH_REVOLUTION_GUL }
+			hidden_effect = { country_event = Turkey_news.8 } 
+
+	hidden_effect = {
+	add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
+		MTU = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
+		}
+	}
+	MTU = {
+	transfer_state = 934
+	transfer_state = 155
+	add_state_core = 934
+	add_state_core = 155
+
+    add_state_core = 156
+    add_state_core = 157
+    add_state_core = 160
+    add_state_core = 159
+    add_state_core = 161
+	add_state_core = 1205
+    add_state_core = 163
+    add_state_core = 935
+    add_state_core = 162
+	add_state_core = 934
+	add_state_core = 155
+	add_state_core = 992
+	add_state_core = 1032
+
+	create_field_marshal = {
+		name = "Akın Öztürk"
+		picture = "TUR_ozturk.dds"
+		traits = { tsk_nato_officer trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Mustafa Kaya"
+		picture = "TUR_mustafa_kaya.dds"
+		traits = { fortress_buster trait_TUR_gulen_champion}
+		skill = 1
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Murat Aygün"
+		picture = "TUR_murat_aygun.dds"
+		traits = { panzer_leader trait_TUR_gulen_champion}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Adem Huduti"
+		picture = "TUR_huduti.dds"
+		traits = { organizer trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Metin Akkaya"
+		picture = "TUR_akkaya.dds"
+		traits = { infantry_leader trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Alpaslan Çetin"
+		picture = "TUR_alpaslan.dds"
+		traits = { ambusher trait_TUR_gulen_champion}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Ilhan Tolu"
+		picture = "ilhan_tolu.dds"
+		traits = { trait_TUR_gulen_champion }
+		id = 919990
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Mustafa Özsoy"
+		picture = "mustafa_ozsoy.dds"
+		traits = { trait_TUR_gulen_champion }
+		id = 909990
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_navy_leader = {
+		name = "Hasan Kulaç"
+		picture = "TUR_kulac.dds"
+		traits = { air_controller trait_TUR_gulen_champion}
+	}
+
+	load_OOB = TUR_civilwar_1
+		TUR = {
+	         declare_war_on = { target = MTU type = annex_everything }
+	}  } } } 	
+	}
+
+ 
+
+
+##Event: Kemalist Question?
+country_event = {
+	id = TurkeyC.2
+	title = TurkeyC.2.title
+	desc = TurkeyC.2.desc
+	picture = GFX_kemalist_guards
+	fire_only_once = yes
+	trigger = {
+         tag = TUR
+		has_global_flag = TUR_CIVILWAR_BEGIN
+	TUR = {
+	has_war_with = MTU
+	 }
+	NOT = {
+		 has_capitulated = yes
+		 }
+    }
+	mean_time_to_happen = {days = 1}
+	option = {
+		name = TurkeyC.2.a
+		ai_chance = { factor = 1}
+
+	remove_unit_leader_role = { character = hursit_tolon }
+	remove_unit_leader_role = { character = sener_eruygur }
+	remove_unit_leader_role = { character = TUR_abidin_unal }
+	set_global_flag = war_on_kemalists
+
+    hidden_effect = {
+		MTU = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 125}   
+		}
+	} 
+		hidden_effect = {
+	remove_ideas = turkish_military_infulence
+	remove_ideas = turkish_military_infulence_coup
+	remove_ideas = turkish_military_infulence_armed
+	KTU = {
+	transfer_state = 156
+	transfer_state = 157
+	transfer_state = 161
+	add_state_core = 156
+	add_state_core = 157
+	add_state_core = 161
+
+    add_state_core = 156
+    add_state_core = 157
+    add_state_core = 160
+    add_state_core = 159
+	add_state_core = 1205
+    add_state_core = 163
+    add_state_core = 935
+    add_state_core = 162
+	add_state_core = 934
+	add_state_core = 155
+	add_state_core = 992
+	add_state_core = 1032
+
+	load_OOB = TUR_civilwar_2
+                load_OOB = TUR_civilwar_1_air
+	         declare_war_on = { target = MTU type = annex_everything }
+    	         declare_war_on = { target = KTU type = annex_everything }
+	} }
+	}
+	option = {
+		name = TurkeyC.2.b
+		ai_chance = { factor = 1}
+
+    add_stability = -0.03
+	add_war_support = 0.03
+	}
+}
+
+##Event: Military Question?
+#country_event = {
+# id = TurkeyC.3
+# title = TurkeyC.3.title
+# desc = TurkeyC.3.desc
+# picture = GFX_military_stones
+# fire_only_once = yes
+# 
+#    trigger = {
+#        tag = TUR
+#	TUR = {
+#	has_war_with = MTU
+#	 }
+#	NOT = {
+#	     has_war_with = KTU
+#	has_global_flag = war_on_kemalists
+#		 has_capitulated = yes
+#		 }
+#    }
+#
+#    mean_time_to_happen = {days = 1}
+#
+#	option = {
+#		name = TurkeyC.3.a
+#		ai_chance = { factor = 1}
+#    
+#	add_stability = -0.03
+#	add_political_power = -75
+#swap_ideas = { 
+#  remove_idea = turkish_military_infulence
+#  add_idea = turkish_military_infulence_armed 
+#}
+#
+#           hidden_effect = {}
+##			clear_array = gov_coalition_array
+#			set_variable = { ruling_party = 22 } #Nat_Autocracy
+#			add_to_variable = { party_pop_array^22 = 0.5 } #Nat_Autocracy
+#			recalculate_party = yes
+#			IF = {
+#				limit = {
+#					NOT = {
+#						has_government = nationalist
+#					}
+#				}
+#				add_popularity = {
+#					ideology = nationalist
+#					popularity = 0.5
+#				}
+#				recalculate_party = yes
+#				set_politics = {
+#					ruling_party = nationalist
+#				}
+#			}
+#			else = {
+#				set_ruling_leader = yes
+#				set_leader = yes
+#			}
+#		} }
+#
+#			hidden_effect = {
+#				add_to_variable = { party_pop_array^22 = 1.0 }
+#				recalculate_party = yes
+#			}
+#		
+#	create_country_leader = {
+#		name = "Hulusi Akar"
+#		picture = "Portrait_Hulusi_Akar.dds"
+#		ideology = Nat_Autocracy
+#		traits = {
+#					nationalist_Nat_Autocracy
+#					military_career
+#		}
+#	}
+#		
+#						add_popularity = {
+#							ideology = nationalist
+#							popularity = 0.45
+#						}	
+#                set_politics = {
+#                ruling_party = nationalist
+#                elections_allowed = no
+#            }						
+#	    }				
+#	} } 
+#}
+
+##Event: Victorius Civil War
+#country_event = {
+# id = TurkeyC.4
+# title = TurkeyC.4.title
+# desc = TurkeyC.4.desc
+# picture = GFX_military_stones
+# fire_only_once = yes
+# 
+#    trigger = {
+#         tag = TUR
+#		 has_global_flag = MR_INSURENCE
+#		 has_global_flag = TUR_coup_attempt_success
+#	NOT = {
+#		 has_capitulated = yes
+#		 country_exists = MTU
+#		 country_exists = KTU
+#	has_global_flag = war_on_kemalists
+#		 }
+#    }
+#    mean_time_to_happen = {days = 1}
+#
+#	option = {
+#		name = TurkeyC.4.a
+#		ai_chance = { factor = 1}
+#
+#	create_country_leader = {
+#		name = "Recep Tayyip Erdoğan"
+#		picture = "Recep_Tayyip_Erdogan.dds"
+#		ideology = Neutral_Muslim_Brotherhood
+#		traits = {
+#			neutrality_Neutral_Muslim_Brotherhood
+#			career_politician
+#		}
+#	}
+#
+#
+#	add_stability = 0.05
+#	add_political_power = 150
+#
+#hidden_effect = {
+#	start_politics_input = yes
+#	startup_politics = yes
+#	set_variable = { ruling_party = 12 }
+#	
+#		hidden_effect = {
+#			clear_array = gov_coalition_array
+##			set_variable = { ruling_party = max_index_1 }
+#		}
+#
+#		meta_effect = {
+#			text = {
+#				set_country_flag = [META_SET_PARTY1]
+#			}
+#			META_SET_PARTY1 = "[meta_set_ideology12]"
+#		}
+#		
+#		set_leader = yes #set in desicion which party is selected
+#		update_government_coalition_strength = yes
+#		clear_coalition_count_ideas = yes
+#
+#			hidden_effect = {
+#				add_to_variable = { party_pop_array^12 = 0.3 }
+#				recalculate_party = yes
+#			}
+#		
+#						add_popularity = {
+#							ideology = neutrality
+#							popularity = 0.45
+#						}	
+#                set_politics = {
+#                ruling_party = neutrality
+#                elections_allowed = yes
+#            }	}					
+#	    }				
+#	}
+#}
+#}
+
+##Event: Kurdish Movement
+country_event = {
+ id = TurkeyC.5
+ title = TurkeyC.5.title
+ desc = TurkeyC.5.desc
+ picture = GFX_kirkuk
+  fire_only_once = yes
+
+    trigger = {
+	         tag = TUR
+    OR = {
+	has_global_flag = TUR_CIVILWAR_BEGIN
+    has_global_flag = ANARCHIST_YEAH
+	has_global_flag = CIVILWAR_OF_OTTOMANS
+	has_global_flag = the_kurdish_escalation_mhp
+	}
+	NOT = {
+		 has_capitulated = yes
+		 }
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyC.5.a
+		ai_chance = { factor = 1}
+
+	hidden_effect = {
+	         declare_war_on = { target = KUR type = annex_everything }
+	KUR = {
+    load_OOB = TUR_civilwar_3
+	         declare_war_on = { target = KUR type = annex_everything }
+	         declare_war_on = { target = KTU type = annex_everything }
+	         declare_war_on = { target = MTU type = annex_everything }
+	  }
+	}
+} }
+
+########################## MIT And Government #####################
+
+##Event: MIT Rebels
+country_event = {
+ id = TurkeyM.1
+ title = TurkeyM.1.title
+ desc = TurkeyM.1.desc
+ picture = GFX_republican_propaganda
+ is_triggered_only = yes
+
+    trigger = {
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyM.1.a
+		ai_chance = { factor = 100}
+
+        hidden_effect = {
+	remove_ideas = pr_necdet
+set_country_flag = MIT_FOCUS_LOCATION  
+	set_variable = { ruling_party = 14 }
+
+		hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = max_index_1 }
+		}
+
+		meta_effect = {
+			text = {
+				set_country_flag = [META_SET_PARTY1]
+			}
+			META_SET_PARTY1 = "[meta_set_ideology1]"
+		}
+
+		set_leader = yes #set in desicion which party is selected
+		update_government_coalition_strength = yes
+		clear_coalition_count_ideas = yes
+
+			hidden_effect = {
+				add_to_variable = { party_pop_array^14 = 1.0 }
+				recalculate_party = yes
+			}
+
+add_named_threat = { threat = 3 name = MIT_REVOLUTION_OTT }
+				hidden_effect = { news_event = Turkey_news.49 } 
+
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 15 } #Neutrality
+			add_to_variable = { party_pop_array^15 = 0.5 } #Neutrality
+			recalculate_party = yes
+			IF = {
+				limit = {
+					NOT = {
+						has_government = neutrality
+					}
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			else = {
+				set_leader = yes
+			}
+
+
+                set_politics = {
+                ruling_party = neutrality
+                elections_allowed = no
+            }	
+
+	set_global_flag = MIT_RISES_UP
+    clr_global_flag = NO_MIT
+    set_global_flag = YES_MIT
+	clr_global_flag = YES_TUR_MAFIATIC_TR
+	set_global_flag = NO_TUR_MAFIATIC_TR
+
+	create_country_leader = {
+		name = "Hakan Fidan"
+		picture = "hakan_fidan.dds"
+		ideology = oligarchism
+		traits = {
+			neutrality_oligarchism
+			spy
+		} 
+	} 
+
+
+    hidden_effect = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 365}   		
+		WTU = {
+add_timed_idea = { idea = turkish_civil_war_modifier days = 365}   
+		}
+	} }
+	hidden_effect = {
+	WTU = {
+    country_event = TurkeyAI.13
+    transfer_state = 160
+    transfer_state = 159
+    transfer_state = 163
+    transfer_state = 1032
+    transfer_state = 935
+    transfer_state = 162
+    transfer_state = 992
+    transfer_state = 158
+	transfer_state = 161
+	transfer_state = 157
+	transfer_state = 155
+	transfer_state = 934
+	transfer_state = 1205
+
+	add_state_core = 156
+    add_state_core = 160
+    add_state_core = 159
+    add_state_core = 163
+    add_state_core = 1032
+    add_state_core = 935
+    add_state_core = 162
+    add_state_core = 992
+    add_state_core = 158
+	add_state_core = 161
+	add_state_core = 1205
+	add_state_core = 157
+	add_state_core = 155
+	add_state_core = 934
+
+	load_OOB = TUR_civilwar_8
+	load_OOB = TUR_civilwar_2_air
+	} }
+    	         declare_war_on = { target = WTU type = annex_everything }
+	}
+}
+
+ 
+
+
+
+
+########################## Turkish Court Events ###################
+
+
+##Event: Court Returns The Elections
+country_event = {
+ id = TurkeyCourt.1
+ title = TurkeyCourt.1.title
+ desc = TurkeyCourt.1.desc
+ picture = GFX_aym_from_the_inside
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyCourt.1.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.03
+	custom_effect_tooltip = GOV_LOSS_POP_2
+    country_event = MD4_election_campaign.0
+
+			set_party_index_to_ruling_party = yes
+			set_temp_variable = { party_popularity_increase = -0.03 }
+			set_temp_variable = { temp_outlook_increase = -0.03 }
+			change_relative_party_popularity = yes
+
+	}
+}
+
+##Event: Court Doesn't Returns The Elections
+country_event = {
+ id = TurkeyCourt.2
+ title = TurkeyCourt.2.title
+ desc = TurkeyCourt.2.desc
+ picture = GFX_aym_from_the_inside
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyCourt.2.a
+		ai_chance = { factor = 1}
+
+	add_political_power = 125
+	custom_effect_tooltip = GOV_LOSS_POP_3
+
+			set_party_index_to_ruling_party = yes
+			set_temp_variable = { party_popularity_increase = 0.01 }
+			set_temp_variable = { party_popularity_increase = 0.01 }
+			change_relative_party_popularity = yes
+
+	}
+}
+
+##Event: Court Investigates The Opposition
+country_event = {
+ id = TurkeyCourt.3
+ title = TurkeyCourt.3.title
+ desc = TurkeyCourt.3.desc
+ picture = GFX_aym_from_the_inside
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyCourt.3.a
+		ai_chance = { factor = 1}
+
+	add_political_power = -25
+	custom_effect_tooltip = GOV_LOSS_POP_3
+
+			set_party_index_to_ruling_party = yes
+			set_temp_variable = { party_popularity_increase = 0.01 }
+			set_temp_variable = { party_popularity_increase = 0.01 }
+			change_relative_party_popularity = yes
+	}
+}
+
+##Event: Court Refuses To Investigate The Opposition
+country_event = {
+ id = TurkeyCourt.4
+ title = TurkeyCourt.4.title
+ desc = TurkeyCourt.4.desc
+ picture = GFX_aym_from_the_inside
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyCourt.4.a
+		ai_chance = { factor = 1}
+
+	add_stability = 0.03
+	}
+}
+
+##Event: Court Investigates The Government
+country_event = {
+ id = TurkeyCourt.5
+ title = TurkeyCourt.5.title
+ desc = TurkeyCourt.5.desc
+ picture = GFX_aym_from_the_inside
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyCourt.5.a
+		ai_chance = { factor = 1}
+
+	add_political_power = -25
+	custom_effect_tooltip = GOV_LOSS_POP_2
+
+			set_party_index_to_ruling_party = yes
+			set_temp_variable = { party_popularity_increase = -0.03 }
+			set_temp_variable = { temp_outlook_increase = -0.03 }
+			change_relative_party_popularity = yes
+	}
+}
+
+##Event: Court Refuses To Investigate The Government
+country_event = {
+ id = TurkeyCourt.6
+ title = TurkeyCourt.6.title
+ desc = TurkeyCourt.6.desc
+ picture = GFX_aym_from_the_inside
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyCourt.6.a
+		ai_chance = { factor = 1}
+
+	add_political_power = 75
+    add_stability = 0.02
+	}
+}
+
+##Event: Court Raises New Political Question
+country_event = {
+ id = TurkeyCourt.7
+ title = TurkeyCourt.7.title
+ desc = TurkeyCourt.7.desc
+ picture = GFX_aym_from_the_inside
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyCourt.7.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.01
+    add_political_power = 125
+	}
+}
+
+##Event: Court Doesn't Raises New Political Questions
+country_event = {
+ id = TurkeyCourt.8
+ title = TurkeyCourt.8.title
+ desc = TurkeyCourt.8.desc
+ picture = GFX_aym_from_the_inside
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyCourt.8.a
+		ai_chance = { factor = 1}
+
+	add_stability = 0.03
+	}
+}
+
+########################## Parliament ###################
+
+
+##Event: Teacher Problems Accepted
+country_event = {
+ id = TurkeyT.1
+ title = TurkeyT.1.title
+ desc = TurkeyT.1.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.1.a
+		ai_chance = { factor = 1}
+
+	add_stability = 0.03
+	}
+}
+
+##Event: Teacher Problems Rejected
+country_event = {
+ id = TurkeyT.2
+ title = TurkeyT.2.title
+ desc = TurkeyT.2.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.2.a
+		ai_chance = { factor = 1}
+
+	add_political_power = -75
+	}
+}
+
+##Event: Economy Problems Accepted
+country_event = {
+ id = TurkeyT.3
+ title = TurkeyT.3.title
+ desc = TurkeyT.3.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.3.a
+		ai_chance = { factor = 1}
+
+		add_timed_idea = { idea = economic_shifting_ease days = 365 }
+	}
+}
+
+##Event: Economy Problems Rejected
+country_event = {
+ id = TurkeyT.4
+ title = TurkeyT.4.title
+ desc = TurkeyT.4.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.4.a
+		ai_chance = { factor = 1}
+
+	add_political_power = -35
+	add_stability = -0.01
+	}
+}
+
+##Event: Earthquake Preparations Accepted
+country_event = {
+	id = TurkeyT.5
+	title = TurkeyT.5.title
+	desc = TurkeyT.5.desc
+	picture = GFX_tbmm
+	is_triggered_only = yes
+	option = {
+		name = TurkeyT.5.a
+		ai_chance = { factor = 1}
+
+	    add_stability = 0.01
+		add_timed_idea = { idea = earthquake_preparations days = 30 } 
+		subtract_from_variable = { TUR_building_resistancy = -3}
+
+		custom_effect_tooltip = HOUSING_INCREASE_3
+	}
+}
+
+##Event:  Earthquake Preparations Rejected
+country_event = {
+ id = TurkeyT.6
+ title = TurkeyT.6.title
+ desc = TurkeyT.6.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.6.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.01
+	}
+}
+
+##Event: Stability Problems Accepted
+country_event = {
+ id = TurkeyT.7
+ title = TurkeyT.7.title
+ desc = TurkeyT.7.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.7.a
+		ai_chance = { factor = 1}
+
+	    add_stability = 0.07
+	}
+}
+
+##Event: Stability Problems Rejected
+country_event = {
+ id = TurkeyT.8
+ title = TurkeyT.8.title
+ desc = TurkeyT.8.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.8.a
+		ai_chance = { factor = 1}
+
+	add_political_power = -10
+	}
+}
+
+##Event: Kardak Crisis Accepted
+country_event = {
+ id = TurkeyT.9
+ title = TurkeyT.9.title
+ desc = TurkeyT.9.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.9.a
+		ai_chance = { factor = 1}
+
+	    add_command_power = 10.0
+	}
+}
+
+##Event: Kardak Crisis Rejected
+country_event = {
+ id = TurkeyT.10
+ title = TurkeyT.10.title
+ desc = TurkeyT.10.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.10.a
+		ai_chance = { factor = 1}
+
+	add_political_power = -5
+	add_war_support = -0.01
+	}
+}
+
+##Event: Corruption Accepted
+country_event = {
+ id = TurkeyT.11
+ title = TurkeyT.11.title
+ desc = TurkeyT.11.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.11.a
+		ai_chance = { factor = 1}
+
+		add_timed_idea = { idea = corruption_change_ease days = 365 }
+	}
+}
+
+##Event: Corruption Rejected
+country_event = {
+ id = TurkeyT.12
+ title = TurkeyT.12.title
+ desc = TurkeyT.12.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.12.a
+		ai_chance = { factor = 1}
+
+	add_political_power = 50
+	add_stability = -0.02
+	}
+}
+
+##Event: Army Sickness Accepted
+country_event = {
+ id = TurkeyT.13
+ title = TurkeyT.13.title
+ desc = TurkeyT.13.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.13.a
+		ai_chance = { factor = 1}
+
+	    add_stability = 0.01
+	}
+}
+
+##Event: Army Sickness Rejected
+country_event = {
+ id = TurkeyT.14
+ title = TurkeyT.14.title
+ desc = TurkeyT.14.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.14.a
+		ai_chance = { factor = 1}
+
+	add_political_power = -10
+	}
+}
+
+##Event: Motion Of Kemalism Accepted
+country_event = {
+ id = TurkeyT.15
+ title = TurkeyT.15.title
+ desc = TurkeyT.15.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.15.a
+		ai_chance = { factor = 1}
+
+	    add_stability = 0.02
+	}
+}
+
+##Event: Motion Of Kemalism Rejected
+country_event = {
+ id = TurkeyT.16
+ title = TurkeyT.16.title
+ desc = TurkeyT.16.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.16.a
+		ai_chance = { factor = 1}
+
+	    add_political_power = -10
+	}
+}
+
+##Event: Taxes Rejected
+country_event = {
+ id = TurkeyT.17
+ title = TurkeyT.17.title
+ desc = TurkeyT.17.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.17.a
+		ai_chance = { factor = 1}
+
+	    add_political_power = 15
+	}
+}
+
+##Event: War Referandum Ends In Failure
+country_event = {
+ id = TurkeyT.18
+ title = TurkeyT.18.title
+ desc = TurkeyT.18.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.18.a
+		ai_chance = { factor = 1}
+
+	    add_political_power = 25
+		add_war_support = -0.03
+	}
+}
+
+ 
+
+########################## Turkish Armed Forces ###################
+
+##Event: We Are Hearing Whispers (AKP)
+country_event = {
+ id = TurkeyA.1
+ title = TurkeyA.1.title
+ desc = TurkeyA.1.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_akp value = 35 compare = less_than_or_equals }	
+		has_stability < 0.2	
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.1.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1
+} }
+
+##Event: We Are Hearing Whispers (ANAP)
+country_event = {
+ id = TurkeyA.2
+ title = TurkeyA.2.title
+ desc = TurkeyA.2.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_anap value = 35 compare = less_than_or_equals }	
+		has_stability < 0.2	
+			neutrality_neutral_libertarians_are_in_power = yes	
+		has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.2.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1   
+	}
+}
+
+##Event: We Are Hearing Whispers (Bozkurtlar)
+country_event = {
+ id = TurkeyA.4
+ title = TurkeyA.4.title
+ desc = TurkeyA.4.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_bozkurtlar value = 35 compare = less_than_or_equals }
+		has_stability < 0.2	
+			nationalist_fascist_are_in_power = yes
+		has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.4.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1   
+	}
+}
+
+##Event: We Are Hearing Whispers (DYP)
+country_event = {
+ id = TurkeyA.5
+ title = TurkeyA.5.title
+ desc = TurkeyA.5.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_dyp value = 35 compare = less_than_or_equals }
+		has_stability < 0.2	
+				western_autocrats_are_in_power = yes
+		has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.5.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1   
+	}
+}
+
+##Event: We Are Hearing Whispers (EMEP)
+country_event = {
+ id = TurkeyA.6
+ title = TurkeyA.6.title
+ desc = TurkeyA.6.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_emep value = 35 compare = less_than_or_equals }
+		has_stability < 0.2	
+				emerging_autocracy_are_in_power = yes
+		has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.6.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1   
+	}
+}
+
+##Event: We Are Hearing Whispers (FP)
+country_event = {
+ id = TurkeyA.7
+ title = TurkeyA.7.title
+ desc = TurkeyA.7.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_fp value = 35 compare = less_than_or_equals }
+		has_stability < 0.2	
+				emerging_reactionaries_are_in_power = yes
+		has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.6.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1    
+	}
+}
+
+##Event: We Are Hearing Whispers (Gencparty)
+country_event = {
+ id = TurkeyA.8
+ title = TurkeyA.8.title
+ desc = TurkeyA.8.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_gencparti value = 35 compare = less_than_or_equals }
+		has_stability < 0.2	
+				neutrality_neutral_autocracy_are_in_power = yes
+		has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.8.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1    
+	}
+}
+
+##Event: We Are Hearing Whispers (IBDAC)
+country_event = {
+ id = TurkeyA.10
+ title = TurkeyA.10.title
+ desc = TurkeyA.10.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_ibda_c value = 35 compare = less_than_or_equals }
+		has_stability < 0.2	
+		has_government = fascism
+		has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.10.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1    
+	}
+}
+
+##Event: We Are Hearing Whispers (MHP)
+country_event = {
+ id = TurkeyA.11
+ title = TurkeyA.11.title
+ desc = TurkeyA.11.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_mhp value = 35 compare = less_than_or_equals }
+		has_stability < 0.2	
+				nationalist_right_wing_populists_are_in_power = yes
+						has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.11.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1   
+	}
+}
+
+##Event: We Are Hearing Whispers (ODP)
+country_event = {
+ id = TurkeyA.12
+ title = TurkeyA.12.title
+ desc = TurkeyA.12.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_odp value = 35 compare = less_than_or_equals }
+		has_stability < 0.2	
+				emerging_anarchist_communism_are_in_power = yes
+						has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.12.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1    
+	}
+}
+
+##Event: We Are Hearing Whispers (SOCDEM)
+country_event = {
+ id = TurkeyA.13
+ title = TurkeyA.13.title
+ desc = TurkeyA.13.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_socdem value = 35 compare = less_than_or_equals }
+		has_stability < 0.2	
+		neutrality_neutral_social_are_in_power = yes
+				has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.13.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1    
+	}
+}
+
+##Event: We Are Hearing Whispers (TKP)
+country_event = {
+ id = TurkeyA.14
+ title = TurkeyA.14.title
+ desc = TurkeyA.14.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_tkp value = 35 compare = less_than_or_equals }
+		has_stability < 0.2	
+				emerging_communist_state_are_in_power = yes
+						has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.14.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1   
+	}
+}
+
+##Event: We Are Hearing Whispers (TIP)
+country_event = {
+ id = TurkeyA.15
+ title = TurkeyA.15.title
+ desc = TurkeyA.15.desc
+ picture = GFX_armed_forces_feels_bad
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_tkp value = 35 compare = less_than_or_equals }
+		has_stability < 0.2	
+				neutrality_neutral_communism_are_in_power = yes
+						has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.15.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.02
+	custom_effect_tooltip = MILITARY_TAKE_OVER_WARN_1   
+	}
+}
+
+######################################## Military Takeovers ###################################
+
+
+##Event: We Are Hearing Whispers (AKP)
+country_event = {
+ id = TurkeyA.16
+ title = TurkeyA.16.title
+ desc = TurkeyA.16.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_akp value = -25 compare = less_than_or_equals }	
+		has_stability < 0.2
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}	
+neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.16.a
+		ai_chance = { factor = 1}
+
+	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	  
+} }
+
+##Event: We Are Hearing Whispers (ANAP)
+country_event = {
+ id = TurkeyA.17
+ title = TurkeyA.17.title
+ desc = TurkeyA.17.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_anap value = -25 compare = less_than_or_equals }	
+		has_stability < 0.2	
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}	
+neutrality_neutral_libertarians_are_in_power = yes
+		has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.17.a
+		ai_chance = { factor = 1}
+
+	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	  
+	}
+}
+
+##Event: We Are Hearing Whispers (Bozkurtlar)
+country_event = {
+ id = TurkeyA.19
+ title = TurkeyA.19.title
+ desc = TurkeyA.19.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_bozkurtlar value = -25 compare = less_than_or_equals }
+		has_stability < 0.2
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}		
+			nationalist_fascist_are_in_power = yes
+					has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.19.a
+		ai_chance = { factor = 1}
+
+	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	    
+	}
+}
+
+##Event: We Are Hearing Whispers (DYP)
+country_event = {
+ id = TurkeyA.20
+ title = TurkeyA.20.title
+ desc = TurkeyA.20.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_dyp value = -25 compare = less_than_or_equals }
+		has_stability < 0.2	
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}	
+				western_autocrats_are_in_power = yes
+						has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.20.a
+		ai_chance = { factor = 1}
+
+	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	  
+	}
+}
+
+##Event: We Are Hearing Whispers (EMEP)
+country_event = {
+ id = TurkeyA.21
+ title = TurkeyA.21.title
+ desc = TurkeyA.21.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_emep value = -25 compare = less_than_or_equals }
+		has_stability < 0.2	
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}	
+				emerging_autocracy_are_in_power = yes
+						has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.21.a
+		ai_chance = { factor = 1}
+
+	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	    
+	}
+}
+
+##Event: We Are Hearing Whispers (FP)
+#country_event = {
+#id = TurkeyA.22
+#title = TurkeyA.22.title
+#desc = TurkeyA.22.desc
+#picture = GFX_whispers_are_finalyzing
+#fire_only_once = yes
+#
+# trigger = {
+#		check_variable = { var = TUR_rel_fp value = -25 compare = less_than_or_equals }
+#		has_stability < 0.2	
+#	emerging_reactionaries_are_in_power = yes
+#}
+#
+#	option = {
+#		name = TurkeyA.22.a
+#		ai_chance = { factor = 1}
+#
+# 	country_event = TurkeyF.1
+#        AZE = { change_tag_from = TUR }	   
+#	}
+#}
+
+
+##Event: We Are Hearing Whispers (Gencparty)
+country_event = {
+ id = TurkeyA.23
+ title = TurkeyA.23.title
+ desc = TurkeyA.23.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_gencparti value = -25 compare = less_than_or_equals }
+		has_stability < 0.2	
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}	
+	neutrality_neutral_autocracy_are_in_power = yes
+			has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.23.a
+		ai_chance = { factor = 1}
+
+ 	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	   
+	}
+}
+
+##Event: We Are Hearing Whispers (IBDAC)
+country_event = {
+ id = TurkeyA.25
+ title = TurkeyA.25.title
+ desc = TurkeyA.25.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_ibda_c value = -25 compare = less_than_or_equals }
+		has_stability < 0.2	
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}	
+		has_government = fascism
+				has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.25.a
+		ai_chance = { factor = 1}
+
+ 	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	   
+	}
+}
+
+##Event: We Are Hearing Whispers (MHP)
+country_event = {
+ id = TurkeyA.26
+ title = TurkeyA.26.title
+ desc = TurkeyA.26.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_mhp value = -25 compare = less_than_or_equals }
+		has_stability < 0.2	
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}	
+nationalist_right_wing_populists_are_in_power = yes
+		has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.26.a
+		ai_chance = { factor = 1}
+
+	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	    
+	}
+}
+
+##Event: We Are Hearing Whispers (ODP)
+country_event = {
+ id = TurkeyA.27
+ title = TurkeyA.27.title
+ desc = TurkeyA.27.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_odp value = -25 compare = less_than_or_equals }
+		has_stability < 0.2
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}		
+	emerging_anarchist_communism_are_in_power = yes
+			has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.27.a
+		ai_chance = { factor = 1}
+
+ 	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	   
+	}
+}
+
+##Event: We Are Hearing Whispers (SOCDEM)
+country_event = {
+ id = TurkeyA.28
+ title = TurkeyA.28.title
+ desc = TurkeyA.28.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_socdem value = -25 compare = less_than_or_equals }
+		has_stability < 0.2	
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}	
+		neutrality_neutral_social_are_in_power = yes
+				has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.28.a
+		ai_chance = { factor = 1}
+
+ 	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	   
+	}
+}
+
+##Event: We Are Hearing Whispers (TKP)
+country_event = {
+ id = TurkeyA.29
+ title = TurkeyA.29.title
+ desc = TurkeyA.29.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_tkp value = -25 compare = less_than_or_equals }
+		has_stability < 0.2	
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}	
+				emerging_communist_state_are_in_power = yes
+						has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.29.a
+		ai_chance = { factor = 1}
+
+	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	
+	}
+}
+
+##Event: We Are Hearing Whispers (TIP)
+country_event = {
+ id = TurkeyA.30
+ title = TurkeyA.30.title
+ desc = TurkeyA.30.desc
+ picture = GFX_whispers_are_finalyzing
+ fire_only_once = yes
+
+ trigger = {
+		check_variable = { var = TUR_rel_tkp value = -25 compare = less_than_or_equals }
+		has_stability < 0.2	
+		NOT = {
+		OR = {
+		has_idea = strikes_in_turkey
+		has_idea = strikes_in_turkey_2
+		has_idea = strikes_in_turkey_3
+		}
+		}	
+			neutrality_neutral_communism_are_in_power = yes
+					has_idea = turkish_military_infulence
+ }
+
+	option = {
+		name = TurkeyA.30.a
+		ai_chance = { factor = 1}
+
+	country_event = TurkeyF.1
+        AZE = { change_tag_from = TUR }	   
+	}
+}
+
+############ Alternatives ##############
+
+##Event: First Decision
+country_event = {
+ id = TurkeyAl.1
+ title = TurkeyAl.1.title
+ desc = TurkeyAl.1.desc
+  fire_only_once = yes
+
+    trigger = {
+         tag = PAN
+		 NOT = {
+         has_global_flag = BLOCKED_WORLD_ACT
+			TUR = {
+		has_war_with = SOV
+		has_war_with = CHI
+		has_war_with = ISR
+		has_war_with = USA
+		has_war_with = SER
+
+		is_in_faction_with = SOV
+		is_in_faction_with = CHI
+		is_in_faction_with = ISR
+		is_in_faction_with = USA
+		is_in_faction_with = SER		
+		 } 
+		 SOV = {
+		 is_ai = yes
+		 }
+		 CHI = {
+		 is_ai = yes
+		 }
+		 ISR = {
+		 is_ai = yes
+		 }
+		 PAN = {
+		 is_ai = yes
+		 }
+		 USA = {
+		 is_ai = yes
+		 }
+		 SER = {
+		 is_ai = yes
+		 } }
+         AND = {
+             date > 2016.1.1
+	         date < 2016.2.1
+         }
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = Turkey.112.a
+		ai_chance = { factor = 1}
+
+
+	random_list = {	
+	5 = {
+		SOV = {
+		set_global_flag = RUSSIA_IN_FAVOR
+		create_wargoal = {
+			type = annex_everything
+			target = UKR
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FIN
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SWE
+		}		
+		add_stability = 0.03
+		load_OOB = SOV_2000_nsb
+		load_OOB = SOV_2000_nsb
+			}
+		}	              
+	10 = {
+		ISR = {
+		create_wargoal = {
+			type = annex_everything
+			target = EGY
+		}	
+		load_OOB = ISR_2000_nsb
+		USA = {
+		create_wargoal = {
+			type = annex_everything
+			target = EGY
+		}
+		SOV = {
+		load_OOB = SOV_2000_nsb
+		}
+		}
+		}              
+	}
+
+	10 = {
+		SER = {
+		create_wargoal = {
+			type = annex_everything
+			target = FYR
+		}	
+		create_wargoal = {
+			type = annex_everything
+			target = CRO
+		}	
+		create_wargoal = {
+			type = annex_everything
+			target = BOS
+		}	
+		create_wargoal = {
+			type = annex_everything
+			target = SLV
+		}	
+		load_OOB = SER_2000_nsb
+		load_OOB = SER_2000_nsb
+ 		 } }
+
+	75 = {
+		} 
+	} } }
+
+##Event: Second Decision
+country_event = {
+ id = TurkeyAl.2
+ title = TurkeyAl.2.title
+ desc = TurkeyAl.2.desc
+  fire_only_once = yes
+
+   trigger = {
+         tag = PAN
+         AND = {
+             date > 2021.1.1
+	         date < 2021.2.1
+         }
+		 has_global_flag = RUSSIA_IN_FAVOR
+		 NOT = {
+         has_global_flag = BLOCKED_WORLD_ACT
+			TUR = {
+		has_war_with = SOV
+		has_war_with = CHI
+		has_war_with = SER
+		is_in_faction_with = SOV
+		is_in_faction_with = CHI
+		is_in_faction_with = SER
+		 }
+		 SOV = {
+		 is_ai = yes
+		 }
+		 PAN = {
+		 is_ai = yes
+		 }
+		 CHI = {
+		 is_ai = yes
+		 }
+		 SER = {
+		 is_ai = yes
+		 }
+		 } }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = Turkey.112.a
+		ai_chance = { factor = 1}
+
+		SOV = {
+			add_to_faction = CHI
+			add_to_faction = SER 
+		create_wargoal = {
+			type = annex_everything
+			target = POL
+		}		
+			}
+		}	
+	}
+
+##Event: Fifth And New Decision (IN RESERVES)
+country_event = {
+ id = TurkeyAl.5
+ title = TurkeyAl.5.title
+ desc = TurkeyAl.5.desc
+ is_triggered_only = yes
+
+    trigger = {
+         tag = PAN 
+			TUR = {
+		    NOT = {
+			has_war_with = ISR
+			}	
+		 } 
+		 TUR = {
+		 is_ai = no
+		 }
+		 ISR = {
+		 is_ai = yes
+		 }
+		 ISR = {
+		 OR = {
+		 NOT = {
+			is_puppet = no		 
+			controls_state = 207
+		 }
+		 }
+		 }
+         AND = {
+             date > 2010.1.1
+         }
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = Turkey.112.a
+		ai_chance = { factor = 1}
+
+		USA = {
+		give_guarantee = ISR
+		add_to_faction = ISR
+		}
+
+	    ISR = {
+		transfer_state = 771
+		transfer_state = 209
+		add_state_core = 771
+		add_manpower = 700000
+		load_OOB = USA_2000_nsb
+		load_OOB = USA_2000_nsb
+		load_OOB = USA_2000_nsb
+			add_offsite_building = { type = industrial_complex level = 100 }
+			add_offsite_building = { type = arms_factory level = 100 }
+			subtract_from_variable = { treasury = -75000.0 }
+			custom_effect_tooltip = 75000_billion_expense_tt
+		create_wargoal = {
+			type = annex_everything
+			target = TUR
+		}
+ 		 } 
+	} 
+}
+
+##Event: Sixth And New Decision (IN RESERVES)
+country_event = {
+ id = TurkeyAl.6
+ title = TurkeyAl.6.title
+ desc = TurkeyAl.6.desc
+ is_triggered_only = yes
+
+    trigger = {
+         tag = PAN 
+			TUR = {
+			has_war = yes
+		    NOT = {
+			has_war_with = SAU
+			}	
+		 } 
+		 SAU = {
+		 is_puppet = no
+		 }
+		 TUR = {
+		 is_ai = no
+		 }
+		 SAU = {
+		 is_ai = yes
+		 }
+         AND = {
+             date > 2010.1.1
+         }
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = Turkey.112.a
+		ai_chance = { factor = 1}
+
+		USA = {
+		give_guarantee = ISR
+		}
+
+	    SAU = {
+		add_manpower = 100000
+		add_ideas = USAID_backup
+		load_OOB = SAU_2000_nsb
+		load_OOB = SAU_2000_nsb
+		load_OOB = SAU_2000_nsb
+			add_offsite_building = { type = industrial_complex level = 25 }
+			add_offsite_building = { type = arms_factory level = 50 }
+			subtract_from_variable = { treasury = -75000.0 }
+			custom_effect_tooltip = 75000_billion_expense_tt
+		create_wargoal = {
+			type = annex_everything
+			target = TUR
+		}
+ 		 } 
+	}
+}
+
+ 
+
+
+##Event: Seventh And New Decision (IN RESERVES)
+country_event = {
+ id = TurkeyAl.7
+ title = TurkeyAl.7.title
+ desc = TurkeyAl.7.desc
+ is_triggered_only = yes
+
+    trigger = {
+         tag = PAN 
+			TUR = {
+		    NOT = {
+			has_war_with = CHI
+			}	
+		 } 
+		 TUR = {
+		 is_ai = no
+		 }
+		 CHI = {
+		 is_ai = yes
+		 }
+         AND = {
+             date > 2010.1.1
+         }
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = Turkey.112.a
+		ai_chance = { factor = 1}
+
+		USA = {
+		give_guarantee = ISR
+		}
+
+	    CHI = {
+		white_peace = USA
+		add_ideas = motherland_defence
+		add_ideas = USAID_backup
+		load_OOB = CHI_2000_nsb
+		load_OOB = CHI_2000_nsb
+		load_OOB = CHI_2000_nsb	
+		}	
+	CHI = {
+	set_autonomy = {
+		target = SOV
+		autonomous_state = autonomy_special_administrative_region
+	}
+	CHI = {
+	set_autonomy = {
+		target = RAJ
+		autonomous_state = autonomy_special_administrative_region
+	}
+			add_offsite_building = { type = industrial_complex level = 25 }
+			add_offsite_building = { type = arms_factory level = 50 }
+			subtract_from_variable = { treasury = -75000.0 }
+			custom_effect_tooltip = 75000_billion_expense_tt
+ 		 } } } }
+
+ 
+
+
+######################### Leader Aging #########################
+
+
+##Event: Our Leader Gets Older KK
+country_event = {
+ id = TurkeyAge.1
+ title = TurkeyAge.1.title
+ desc = TurkeyAge.1.desc
+ picture = GFX_our_leader_gets_older
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+         western_social_democrats_are_in_power = yes
+		 date > 2009.1.1
+		 has_country_leader = { id = 7800 }	
+ } 
+
+	option = {
+		name = TurkeyAge.1.a
+		ai_chance = { factor = 1}
+
+			   			retire_country_leader = yes
+			create_country_leader = {
+				name = "Kemal Kılıçdaroglu"
+				picture = "TUR_Kemal_Kilicdaroglu.dds"
+				ideology = socialism
+				traits = {
+					western_socialism
+				}
+			}		   
+	}
+}
+
+##Event: Our Leader Gets Older Mesut Yilmaz
+country_event = {
+ id = TurkeyAge.2
+ title = TurkeyAge.2.title
+ desc = TurkeyAge.2.desc
+ picture = GFX_our_leader_gets_older
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+		 has_country_leader = { id = 7778 }	
+			neutrality_neutral_libertarians_are_in_power = yes
+		 date > 2016.1.1
+ } 
+
+	option = {
+		name = TurkeyAge.2.a
+		ai_chance = { factor = 1}
+
+			   			retire_country_leader = yes
+			create_country_leader = {
+				name = "Mesut Yilmaz"
+				picture = "mesut_yilmaz_old.dds"
+				ideology = Neutral_Libertarian
+				traits = {
+					neutrality_Neutral_Libertarian
+				}
+			}	   
+	}
+}

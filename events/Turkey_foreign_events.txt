@@ -1,0 +1,2387 @@
+﻿### Foreign policy, NATO and arms deals
+
+add_namespace = TurkeyAI
+add_namespace = TurkeyArms
+add_namespace = TurkeyForeign
+add_namespace = TurkeyNATO
+
+############################ Turkey Arms ###########################
+
+##Event: Update General Staff
+country_event = {
+ id = TurkeyArms.1
+ title = TurkeyArms.1.title
+ desc = TurkeyArms.1.desc
+ picture = GFX_ozkok
+ fire_only_once = yes
+
+    trigger = {
+		tag = TUR
+         AND = {
+             date > 2002.8.28
+	         date < 2002.9.28
+         }
+		 has_idea = general_staff_under_1
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_global_flag = MAF_government
+		 has_global_flag = MIT_government
+		 has_global_flag = ANAS_government
+		 has_capitulated = yes
+		 } 
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyArms.1.a
+		ai_chance = { factor = 1}
+
+    add_political_power = 10
+	set_global_flag = kivirik
+	hidden_effect = {
+	swap_ideas = {
+	add_idea = general_staff_under_2
+	remove_idea = general_staff_under_1
+	  } }
+	}
+}
+
+##Event: Update General Staff
+country_event = {
+ id = TurkeyArms.2
+ title = TurkeyArms.2.title
+ desc = TurkeyArms.2.desc
+ picture = GFX_yasar_buyukanit
+ fire_only_once = yes
+
+    trigger = {
+		tag = TUR
+         AND = {
+             date > 2006.7.31
+	         date < 2006.8.31
+         }
+	
+	
+		 has_idea = general_staff_under_2
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_global_flag = MAF_government
+		 has_global_flag = MIT_government
+		 has_global_flag = ANAS_government
+		 has_capitulated = yes
+		 } 
+    }
+
+    mean_time_to_happen = {days = 1}
+
+
+	option = {
+		name = TurkeyArms.2.a
+		ai_chance = { factor = 1}
+
+    add_political_power = 10
+	hidden_effect = {
+	swap_ideas = {
+	add_idea = general_staff_under_3
+	remove_idea = general_staff_under_2
+	  } 
+	}
+	} 	immediate = { clr_global_flag = kivirik set_global_flag = yasar_buyukanit }
+}
+
+##Event: Update General Staff
+country_event = {
+ id = TurkeyArms.3
+ title = TurkeyArms.3.title
+ desc = TurkeyArms.3.desc
+ picture = GFX_ilker_basbug
+ fire_only_once = yes
+
+    trigger = {
+		tag = TUR
+         AND = {
+             date > 2008.8.28
+	         date < 2008.9.28
+         }
+	
+	
+		 has_idea = general_staff_under_3
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_global_flag = MAF_government
+		 has_global_flag = MIT_government
+		 has_global_flag = ANAS_government
+		 has_capitulated = yes
+		 } 
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyArms.3.a
+		ai_chance = { factor = 1}
+
+    add_political_power = 10
+	hidden_effect = {
+	swap_ideas = {
+	add_idea = general_staff_under_4
+	remove_idea = general_staff_under_3
+	  } }
+	}
+	immediate = { clr_global_flag = yasar_buyukanit set_global_flag = ilker_basbug }
+}
+
+##Event: Update General Staff
+country_event = {
+ id = TurkeyArms.4
+ title = TurkeyArms.4.title
+ desc = TurkeyArms.4.desc
+ picture = GFX_isik_kosaner
+ fire_only_once = yes
+
+    trigger = {
+		tag = TUR
+         AND = {
+             date > 2010.8.27
+	         date < 2010.9.27
+         }
+		 has_idea = general_staff_under_4
+	
+	
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_global_flag = MAF_government
+		 has_global_flag = MIT_government
+		 has_global_flag = ANAS_government
+		 has_capitulated = yes
+		 } 
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyArms.4.a
+		ai_chance = { factor = 1}
+
+
+    add_political_power = 10
+	hidden_effect = {
+	swap_ideas = {
+	add_idea = general_staff_under_5
+	remove_idea = general_staff_under_4
+	  } }
+	}
+	immediate = { clr_global_flag = ilker_basbug set_global_flag = kosaner }
+}
+
+##Event: Update General Staff
+country_event = {
+ id = TurkeyArms.5
+ title = TurkeyArms.5.title
+ desc = TurkeyArms.5.desc
+ picture = GFX_necdet_ozel
+ fire_only_once = yes
+
+    trigger = {
+		tag = TUR
+         AND = {
+             date > 2011.7.29
+	         date < 2011.7.29
+         }
+	
+	
+		 has_idea = general_staff_under_5
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_global_flag = MAF_government
+		 has_global_flag = MIT_government
+		 has_global_flag = ANAS_government
+		 has_capitulated = yes
+		 } 
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyArms.5.a
+		ai_chance = { factor = 1}
+
+
+    add_political_power = 10
+	hidden_effect = {
+	swap_ideas = {
+	add_idea = general_staff_under_6
+	remove_idea = general_staff_under_5
+	  } }
+	}
+	immediate = { clr_global_flag = kosaner set_global_flag = ozel }
+}
+
+##Event: Update General Staff
+country_event = {
+ id = TurkeyArms.6
+ title = TurkeyArms.6.title
+ desc = TurkeyArms.6.desc
+ picture = GFX_hulusi_akar
+ fire_only_once = yes
+
+    trigger = {
+		tag = TUR
+         AND = {
+             date > 2015.8.18
+	         date < 2015.9.18
+         }
+	
+	
+		 has_idea = general_staff_under_6
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_global_flag = MAF_government
+		 has_global_flag = MIT_government
+		 has_global_flag = ANAS_government
+		 has_capitulated = yes
+		 } 
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyArms.6.a
+		ai_chance = { factor = 1}
+
+
+    add_political_power = 10
+	hidden_effect = {
+	swap_ideas = {
+	add_idea = general_staff_under_7
+	remove_idea = general_staff_under_6
+	  } }
+	}
+	immediate = { clr_global_flag = ozel set_global_flag = akar }
+}
+
+##Event: Update General Staff
+country_event = {
+ id = TurkeyArms.7
+ title = TurkeyArms.7.title
+ desc = TurkeyArms.7.desc
+ picture = GFX_yasar_guler
+ fire_only_once = yes
+
+    trigger = {
+		tag = TUR
+         AND = {
+             date > 2018.8.9
+	         date < 2018.9.9
+         }
+	
+	
+		 has_idea = general_staff_under_7
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_global_flag = MAF_government
+		 has_global_flag = MIT_government
+		 has_global_flag = ANAS_government
+		 has_capitulated = yes
+		 } 
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyArms.7.a
+		ai_chance = { factor = 1}
+
+
+    add_political_power = 10
+	hidden_effect = {
+	swap_ideas = {
+	add_idea = general_staff_under_8
+	remove_idea = general_staff_under_7
+	  } }
+	}
+	immediate = { clr_global_flag = akar set_global_flag = guler }
+}
+
+##Event: Update General Staff
+country_event = {
+ id = TurkeyArms.8
+ title = TurkeyArms.8.title
+ desc = TurkeyArms.8.desc
+ picture = GFX_metin_gurak_leadership
+ fire_only_once = yes
+
+    trigger = {
+		tag = TUR
+         AND = {
+             date > 2023.8.16
+	         date < 2023.9.16
+         }
+		 has_idea = general_staff_under_8
+		 NOT = {
+		 has_government = fascism
+		 has_global_flag = TUR_MAFIATIC_TR
+		 has_global_flag = MAF_government
+		 has_global_flag = MIT_government
+		 has_global_flag = ANAS_government
+		 has_capitulated = yes
+		 } 
+    }
+
+    mean_time_to_happen = {days = 1}
+
+
+	option = {
+		name = TurkeyArms.8.a
+		ai_chance = { factor = 1}
+
+    add_political_power = 10
+		clr_global_flag = guler
+	hidden_effect = {
+	swap_ideas = {
+	add_idea = general_staff_under_9
+	remove_idea = general_staff_under_8
+	  } }
+	}
+}
+
+############################ Foreign Group #########################
+
+##Event: Turkish Growing Natural Gas Demand
+country_event = {
+ id = TurkeyForeign.1
+ title = TurkeyForeign.1.title
+ desc = TurkeyForeign.1.desc
+ picture = GFX_gass_lines
+ fire_only_once = yes
+
+    trigger = {
+	tag = SOV 
+	NOT = {
+	has_war_with = TUR
+	}
+         AND = {
+             date > 2014.12.1
+	         date < 2015.1.1
+         }
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyForeign.1.a
+		ai_chance = { factor = 1}
+
+	}
+
+	option = {
+		name = TurkeyForeign.1.b
+		ai_chance = { factor = 1}
+
+	TUR = {
+	country_event = TurkeyForeign.2
+	}
+} }
+
+  
+
+
+##Event: Russia Offers Turkish Streamline
+country_event = {
+ id = TurkeyForeign.2
+ title = TurkeyForeign.2.title
+ desc = TurkeyForeign.2.desc
+ picture = GFX_gass_lines
+ is_triggered_only = yes 
+
+	option = {
+		name = TurkeyForeign.2.a
+		ai_chance = { factor = 1}
+
+	set_global_flag = RUSSIA_SETS_THE_STREAMLINE
+	custom_effect_tooltip = RUSSIAN_STREAMLINE
+	add_opinion_modifier = { target = SOV modifier = turkish_streamline }
+	reverse_add_opinion_modifier = { target = SOV modifier = turkish_streamline }
+                SOV = {
+				set_temp_variable = { int_investment_change = 25.0 }
+				modify_international_investment_effect = yes
+				}
+	}
+
+	option = {
+		name = TurkeyForeign.2.b
+		ai_chance = { factor = 1}
+
+	add_political_power = -50
+} }
+
+  
+
+
+##Event: Turkey Makes A Deal With GAZPROM
+country_event = {
+ id = TurkeyForeign.3
+ title = TurkeyForeign.3.title
+ desc = TurkeyForeign.3.desc
+ picture = GFX_gazprom
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyForeign.3.a
+		ai_chance = { factor = 1}
+
+				set_temp_variable = { int_investment_change = 25.0 }
+				modify_international_investment_effect = yes 
+	}
+}
+
+##Event: Inviting Turkey to Join the Iraq War
+country_event = {
+ id = TurkeyForeign.4
+ title = TurkeyForeign.4.title
+ desc = TurkeyForeign.4.desc
+ picture = GFX_turkeys_afghan_operation
+ fire_only_once = yes
+
+    trigger = {
+	tag = USA 
+    has_war_with = IRQ 
+	is_in_faction_with = TUR
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyForeign.4.a
+		ai_chance = { factor = 1}
+
+	add_political_power = 25
+	}
+
+	option = {
+		name = TurkeyForeign.4.b
+		ai_chance = { factor = 1}
+
+	TUR = {
+	country_event = Turkey.13
+	}
+	custom_effect_tooltip = LOSE_6_BILLION	
+} }
+
+  
+
+
+##Event: Our Consulate In Turkey Has Attacked!
+country_event = {
+ id = TurkeyForeign.6
+ title = TurkeyForeign.6.title
+ desc = TurkeyForeign.6.desc
+ picture = GFX_turkish_armed_forces_possing_inf_of_anitkabir
+ is_triggered_only = yes 
+
+	option = {
+		name = TurkeyForeign.6.a
+		ai_chance = { factor = 1}
+
+	add_opinion_modifier = { target = TUR modifier = attack_in_consulate }	
+	}
+}
+
+  
+
+
+##Event: Turkish-Russian Crisis: The Downed Jet
+country_event = {
+ id = TurkeyForeign.7
+ title = TurkeyForeign.7.title
+ desc = TurkeyForeign.7.desc
+ picture = GFX_turkey_shuts_down_the_jet
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyForeign.7.a
+		ai_chance = { factor = 1}
+
+	SOV = {
+	country_event = TurkeyForeign.10
+	}	
+	custom_effect_tooltip = RUSSIA_MIGHT_ATTACK_US
+}  
+
+	option = {
+		name = TurkeyForeign.7.b
+		ai_chance = { factor = 1}
+
+	add_war_support = -0.05
+	add_political_power = -100
+} }
+
+ 
+
+##Event: Turkey Shuts Down Our Jet
+country_event = {
+ id = TurkeyForeign.8
+ title = TurkeyForeign.8.title
+ desc = TurkeyForeign.8.desc
+ picture = GFX_russian_plane_shut_down
+ is_triggered_only = yes
+
+
+	option = {
+		name = TurkeyForeign.8.a
+		ai_chance = { factor = 1}
+
+	add_opinion_modifier = { target = TUR modifier = turkey_shuts_down_our_jet }
+	TUR = {
+	country_event = TurkeyForeign.7 
+	}	
+		hidden_effect = { news_event = Turkey_news.50 } 
+	}
+}
+
+ 
+
+
+##Event: Russian Jet Violates Our Airspace
+country_event = {
+ id = TurkeyForeign.9
+ title = TurkeyForeign.9.title
+ desc = TurkeyForeign.9.desc
+ picture = GFX_turkey_shuts_down_the_jet
+ fire_only_once = yes
+
+    trigger = {
+	tag = TUR
+         AND = {
+             date > 2012.6.22
+	         date < 2012.7.22
+         }
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyForeign.9.a
+		ai_chance = { factor = 1}
+
+	SOV = {
+	country_event = TurkeyForeign.8 
+	}
+	}
+
+	option = {
+		name = TurkeyForeign.9.b
+		ai_chance = { factor = 1}
+
+	add_war_support = -0.1
+	add_political_power = -75
+} }
+
+  
+
+
+##Event: Turkey Asserts Its Position
+country_event = {
+ id = TurkeyForeign.10
+ title = TurkeyForeign.10.title
+ desc = TurkeyForeign.10.desc
+ picture = GFX_russian_plane_shut_down
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyForeign.10.a
+		ai_chance = { factor = 1}
+
+		create_wargoal = {
+			type = annex_everything
+			target = TUR
+		}
+	}
+
+	option = {
+		name = TurkeyForeign.10.b
+		ai_chance = { factor = 1}
+
+	add_political_power = -50
+} }
+
+  
+
+##Event: Should We Send Ships To Palestine
+country_event = {
+ id = TurkeyForeign.11
+ title = TurkeyForeign.11.title
+ desc = TurkeyForeign.11.desc
+ picture = GFX_mv_mavi_marmara_small
+ fire_only_once = yes
+
+    trigger = {
+	tag = TUR
+	ISR = {
+	country_exists = yes
+	}
+         AND = {
+             date > 2010.5.31
+	         date < 2010.6.31
+         }
+	}
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyForeign.11.a
+		ai_chance = { factor = 1}
+
+	add_opinion_modifier = { target = PAL modifier = turkey_solves_the_blockade }
+	ISR = {
+	country_event = TurkeyForeign.12
+	}
+	}
+
+	option = {
+		name = TurkeyForeign.11.b
+		ai_chance = { factor = 1}
+
+	add_political_power = -50
+} }
+
+  
+
+
+##Event: Response to Turkish Ships Sabotaging Blockade: Escalating Tensions
+country_event = {
+ id = TurkeyForeign.12
+ title = TurkeyForeign.12.title
+ desc = TurkeyForeign.12.desc
+ picture = GFX_mv_mavi_marmara_small
+ is_triggered_only = yes
+
+
+	option = {
+		name = TurkeyForeign.12.a
+		ai_chance = { factor = 1}
+
+	TUR = {
+	country_event = Turkey.64
+	}
+	navy_experience = 25
+	add_opinion_modifier = { target = ISR modifier = mavi_marmara_crisis }
+	reverse_add_opinion_modifier = { target = TUR modifier = mavi_marmara_crisis }
+	}
+
+	option = {
+		name = TurkeyForeign.12.b
+		ai_chance = { factor = 1}
+
+	add_war_support = -0.03
+} }
+
+  
+
+
+
+##Event: We Need To Buy SAM Sites
+country_event = {
+ id = TurkeyForeign.13
+ title = TurkeyForeign.13.title
+ desc = TurkeyForeign.13.desc
+ picture = GFX_s400_equipment
+ fire_only_once = yes
+
+    trigger = {
+	tag = TUR
+	NOT = {
+	has_war_with = USA
+	has_war_with = SOV
+	}
+	USA = {
+	country_exists = yes
+	}
+	SOV = {
+	country_exists = yes
+	}
+    AND = {
+             date > 2019.7.15
+	         date < 2019.8.15
+         }
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyForeign.13.a
+		ai_chance = { factor = 1}
+
+	USA = {
+	country_event = TurkeyForeign.16
+	}
+	custom_effect_tooltip = TO_BUY_S400
+	}
+
+	option = {
+		name = TurkeyForeign.13.b
+		ai_chance = { factor = 1}
+
+				set_temp_variable = { temp_opinion_change = -10 }	
+            change_the_military_opinion = yes			
+} }
+
+  
+
+
+##Event: United States Rejects
+country_event = {
+ id = TurkeyForeign.14
+ title = TurkeyForeign.14.title
+ desc = TurkeyForeign.14.desc
+ picture = GFX_s400_equipment
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyForeign.14.a
+		ai_chance = { factor = 1}
+
+	SOV = {
+	country_event = TurkeyForeign.17
+	}
+    custom_effect_tooltip = WARN_OF_THE_CONVENTION
+	}
+
+	option = {
+		name = TurkeyForeign.14.b
+		ai_chance = { factor = 1}
+
+				set_temp_variable = { temp_opinion_change = -5 }	
+            change_the_military_opinion = yes			
+} }
+
+  
+
+
+##Event: Russia Rejects
+country_event = {
+ id = TurkeyForeign.15
+ title = TurkeyForeign.15.title
+ desc = TurkeyForeign.15.desc
+ picture = GFX_s400_equipment
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyForeign.15.a
+		ai_chance = { factor = 1}
+
+		army_experience = -5	
+} }
+
+  
+
+
+
+##Event: United States: Turkish Offer
+country_event = {
+ id = TurkeyForeign.16
+ title = TurkeyForeign.16.title
+ desc = TurkeyForeign.16.desc
+ picture = GFX_s400_equipment
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyForeign.16.a
+		ai_chance = { factor = 1}
+
+	TUR = {
+			random_owned_state = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 3
+				} 
+			}
+reverse_add_opinion_modifier = { target = USA modifier =  trade_mission }
+	}
+			subtract_from_variable = { treasury = -25.0 }
+			custom_effect_tooltip = 25_billion_revenue_tt		
+	}
+
+	option = {
+		name = TurkeyForeign.16.b
+		ai_chance = { factor = 1}
+
+    add_political_power = 1
+	TUR = {
+	country_event = TurkeyForeign.14
+	}
+} }
+
+  
+
+
+##Event: Russia: Turkish Offer
+country_event = {
+ id = TurkeyForeign.17
+ title = TurkeyForeign.17.title
+ desc = TurkeyForeign.17.desc
+ picture = GFX_s400_equipment
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyForeign.16.a
+		ai_chance = { factor = 1}
+
+	TUR = {
+				country_event = Turkey.340
+			random_owned_state = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = anti_air_building
+					instant_build = yes
+					level = 3
+				} 
+			}
+					reverse_add_opinion_modifier = { target = SOV modifier =  trade_mission }
+ 			hidden_effect = { country_event = Turkey_news.3 } 
+	}
+			subtract_from_variable = { treasury = -25.0 }
+			custom_effect_tooltip = 25_billion_revenue_tt		
+	}
+
+	option = {
+		name = TurkeyForeign.17.b
+		ai_chance = { factor = 1}
+
+    add_political_power = 1
+	TUR = {
+	country_event = TurkeyForeign.15
+	}
+} }
+
+  
+
+
+##Event: Chinese Regime Of Turkey Established
+country_event = {
+ id = TurkeyForeign.18
+ title = TurkeyForeign.18.title
+ desc = TurkeyForeign.18.desc
+ picture = GFX_perincek
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyForeign.18.a
+		ai_chance = { factor = 1}
+
+	add_political_power = 100
+} }
+
+ 
+
+
+############################ NATO Group #########################
+
+##Event: The NATO Operations
+country_event = {
+ id = TurkeyNATO.1
+ title = TurkeyNATO.1.title
+ desc = TurkeyNATO.1.desc
+ picture = GFX_washington_dc_the_capital
+ fire_only_once = yes
+
+    trigger = {
+	tag = USA 
+	has_global_flag = CIVILWAR_OF_OTTOMANS	
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyNATO.1.a
+		ai_chance = { factor = 1}
+
+
+			TUR = {
+				set_temp_variable = { percent_change = -5 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+			TUR = {
+				set_temp_variable = { percent_change = -5 }
+				set_temp_variable = { tag_index = USA.id }
+				change_influence_percentage = yes
+			}
+        hidden_effect = { news_event = Turkey_news.45 }
+	add_opinion_modifier = { target = NTU modifier = historic_friends }
+	reverse_add_opinion_modifier = { target = NTU modifier = historic_friends }
+	diplomatic_relation = {
+		country = NTU
+		relation = military_access
+		active = yes
+	}
+	hidden_effect = {
+add_named_threat = { threat = 2 name = UNITED_STATES_INTERVENE_TURKEY }
+	NTU = {
+		add_offsite_building = { type = industrial_complex level = 12 }
+	diplomatic_relation = {
+		country = USA
+		relation = military_access
+		active = yes
+	}
+	transfer_state = 934
+	add_state_core = 156
+	add_state_core = 157
+	add_state_core = 161
+
+    add_state_core = 156
+    add_state_core = 157
+    add_state_core = 160
+    add_state_core = 159
+    add_state_core = 161
+    add_state_core = 163
+    add_state_core = 935
+    add_state_core = 162
+	add_state_core = 934
+	add_state_core = 155
+	add_state_core = 992
+	add_state_core = 1032
+
+	load_OOB = TUR_civilwar_7
+	load_OOB = TUR_civilwar_1_air
+	         declare_war_on = { target = KTU type = annex_everything }
+	} }
+	set_global_flag =  AMERICAN_DIRECT_INTERVENTION_TUR	
+	TUR = {
+    	         declare_war_on = { target = NTU type = annex_everything }
+	}
+	}
+
+	option = {
+		name = TurkeyNATO.1.b
+		ai_chance = { factor = 1}
+
+	add_political_power = 25
+	add_stability = 0.02
+} }
+
+  
+
+
+##Event: Military Aid?
+country_event = {
+ id = TurkeyNATO.2
+ title = TurkeyNATO.2.title
+ desc = TurkeyNATO.2.desc
+ picture = GFX_nato_equipment_to_turkish_civilwar
+ fire_only_once = yes
+
+    trigger = {
+	tag = USA 
+	has_global_flag = THE_MHP_QUAKING
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyNATO.2.a
+		ai_chance = { factor = 1}
+
+			subtract_from_variable = { treasury = 75.0 }
+			custom_effect_tooltip = 75_billion_expense_tt
+			add_stability = -0.02
+			add_war_support = -0.02
+   KUR = {
+		country_event = TurkeyNATO.5
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_type
+		amount = 1500 #HK33 - majority
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = cnc_equipment_2
+		amount = 250
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_1 #M72 LAW
+		amount = 100
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Heavy_Anti_tank_1 #TOW
+		amount = 60
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1
+		amount = 35
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_1	 #
+		amount = 600
+		producer = USA
+	}
+} }
+	option = {
+		name = TurkeyNATO.2.b
+		ai_chance = { factor = 1}
+
+
+			subtract_from_variable = { treasury = 75.0 }
+			custom_effect_tooltip = 75_billion_expense_tt
+			add_stability = -0.02
+			add_war_support = -0.02
+    UTU = {
+		country_event = TurkeyNATO.5
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_type
+		amount = 400 #HK33 - majority
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = cnc_equipment_2
+		amount = 250
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_1 #M72 LAW
+		amount = 50
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Heavy_Anti_tank_1 #TOW
+		amount = 200
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1
+		amount = 350
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_1	 #
+		amount = 1600
+		producer = USA
+	}
+} }
+	option = {
+		name = TurkeyNATO.2.c
+		ai_chance = { factor = 1}
+
+			subtract_from_variable = { treasury = 75.0 }
+			custom_effect_tooltip = 75_billion_expense_tt
+			add_stability = -0.02
+			add_war_support = -0.02
+    TUR = {
+		country_event = TurkeyNATO.5
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_type
+		amount = 400 #HK33 - majority
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = cnc_equipment_2
+		amount = 250
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_1 #M72 LAW
+		amount = 500
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Heavy_Anti_tank_1 #TOW
+		amount = 750
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1
+		amount = 350
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_1	 #
+		amount = 800
+		producer = USA
+	} } }
+	option = {
+		name = TurkeyNATO.2.d
+		ai_chance = { factor = 1}
+
+			add_stability = 0.02
+			add_war_support = 0.02
+	} }
+
+##Event: Military Aid?
+country_event = {
+ id = TurkeyNATO.3
+ title = TurkeyNATO.3.title
+ desc = TurkeyNATO.3.desc
+ picture = GFX_nato_equipment_to_turkish_civilwar
+ fire_only_once = yes
+
+    trigger = {
+	tag = USA 
+	has_global_flag = THE_TKP_QUAKING
+    }
+
+    mean_time_to_happen = {days = 1}
+
+
+	option = {
+		name = TurkeyNATO.3.a
+		ai_chance = { factor = 1}
+
+			subtract_from_variable = { treasury = 75.0 }
+			custom_effect_tooltip = 75_billion_expense_tt
+			add_stability = -0.02
+			add_war_support = -0.02
+   KUR = {
+		country_event = TurkeyNATO.5
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_type
+		amount = 1500 #HK33 - majority
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = cnc_equipment_2
+		amount = 250
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_1 #M72 LAW
+		amount = 100
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Heavy_Anti_tank_1 #TOW
+		amount = 60
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1
+		amount = 35
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_1	 #
+		amount = 600
+		producer = USA
+	}
+} }
+	option = {
+		name = TurkeyNATO.3.b
+		ai_chance = { factor = 1}
+
+
+			subtract_from_variable = { treasury = 75.0 }
+			custom_effect_tooltip = 75_billion_expense_tt
+			add_stability = -0.02
+			add_war_support = -0.02
+    CTU = {
+		country_event = TurkeyNATO.5
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_type
+		amount = 400 #HK33 - majority
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = cnc_equipment_2
+		amount = 250
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_1 #M72 LAW
+		amount = 50
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Heavy_Anti_tank_1 #TOW
+		amount = 200
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1
+		amount = 350
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_1	 #
+		amount = 1600
+		producer = USA
+	}
+} }
+	option = {
+		name = TurkeyNATO.3.c
+		ai_chance = { factor = 1}
+
+			subtract_from_variable = { treasury = 75.0 }
+			custom_effect_tooltip = 75_billion_expense_tt
+			add_stability = -0.02
+			add_war_support = -0.02
+    TUR = {
+		country_event = TurkeyNATO.5
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_type
+		amount = 400 #HK33 - majority
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = cnc_equipment_2
+		amount = 250
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_1 #M72 LAW
+		amount = 500
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Heavy_Anti_tank_1 #TOW
+		amount = 750
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1
+		amount = 350
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_1	 #
+		amount = 800
+		producer = USA
+	} } }
+	option = {
+		name = TurkeyNATO.3.d
+		ai_chance = { factor = 1}
+
+			add_stability = 0.02
+			add_war_support = 0.02
+	} }
+
+##Event: Military Aid?
+country_event = {
+ id = TurkeyNATO.4
+ title = TurkeyNATO.4.title
+ desc = TurkeyNATO.4.desc
+ picture = GFX_nato_equipment_to_turkish_civilwar
+ fire_only_once = yes
+
+    trigger = {
+	tag = USA 
+	has_global_flag = ANARCHIST_YEAH	
+    }
+
+    mean_time_to_happen = {days = 1}
+
+
+	option = {
+		name = TurkeyNATO.4.a
+		ai_chance = { factor = 1}
+
+			subtract_from_variable = { treasury = 75.0 }
+			custom_effect_tooltip = 75_billion_expense_tt
+			add_stability = -0.02
+			add_war_support = -0.02
+   KUR = {
+		country_event = TurkeyNATO.5
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_type
+		amount = 1500 #HK33 - majority
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = cnc_equipment_2
+		amount = 250
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_1 #M72 LAW
+		amount = 100
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Heavy_Anti_tank_1 #TOW
+		amount = 60
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1
+		amount = 35
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_1	 #
+		amount = 600
+		producer = USA
+	}
+} }
+	option = {
+		name = TurkeyNATO.4.b
+		ai_chance = { factor = 1}
+
+
+			subtract_from_variable = { treasury = 75.0 }
+			custom_effect_tooltip = 75_billion_expense_tt
+			add_stability = -0.02
+			add_war_support = -0.02
+    KTU = {
+		country_event = TurkeyNATO.5
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_type
+		amount = 400 #HK33 - majority
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = cnc_equipment_2
+		amount = 250
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_1 #M72 LAW
+		amount = 50
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Heavy_Anti_tank_1 #TOW
+		amount = 200
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1
+		amount = 350
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_1	 #
+		amount = 1600
+		producer = USA
+	}
+} }
+	option = {
+		name = TurkeyNATO.4.c
+		ai_chance = { factor = 1}
+
+			subtract_from_variable = { treasury = 75.0 }
+			custom_effect_tooltip = 75_billion_expense_tt
+			add_stability = -0.02
+			add_war_support = -0.02
+    TUR = {
+		country_event = TurkeyNATO.5
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_type
+		amount = 400 #HK33 - majority
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = cnc_equipment_2
+		amount = 250
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_tank_1 #M72 LAW
+		amount = 500
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Heavy_Anti_tank_1 #TOW
+		amount = 750
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = Anti_Air_1
+		amount = 350
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = util_vehicle_1	 #
+		amount = 800
+		producer = USA
+	} } }
+	option = {
+		name = TurkeyNATO.4.d
+		ai_chance = { factor = 1}
+
+			add_stability = 0.02
+			add_war_support = 0.02
+	} }
+
+##Event: The United States Backs Us
+country_event = {
+ id = TurkeyNATO.5
+ title = TurkeyNATO.5.title
+ desc = TurkeyNATO.5.desc
+ picture = GFX_washington_dc_the_capital
+ is_triggered_only = yes
+
+    trigger = {
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyNATO.5.a
+		ai_chance = { factor = 1}
+
+	add_political_power = 75
+	add_war_support = 0.02
+        add_opinion_modifier = { target = USA modifier = military_aid }
+} }
+
+##Event: Russian Reaction Against Americans
+country_event = {
+ id = TurkeyNATO.6
+ title = TurkeyNATO.6.title
+ desc = TurkeyNATO.6.desc
+ picture = GFX_russian_ships_over_the_straits
+ fire_only_once = yes
+
+    trigger = {
+	tag = SOV
+	has_global_flag = AMERICAN_DIRECT_INTERVENTION_TUR	
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyNATO.6.a
+		ai_chance = { factor = 1}
+
+	add_war_support = 0.05
+        hidden_effect = { news_event = Turkey_news.46 }
+add_named_threat = { threat = 2 name = RUSSIA_INTERVENE_TURKEY }
+		create_wargoal = {
+			type = annex_everything
+			target = NTU
+		}	
+    }
+
+	option = {
+		name = TurkeyNATO.6.b
+		ai_chance = { factor = 1}
+
+	add_political_power = -50
+	add_stability = -0.02
+    }
+}
+
+##Event: Unacceptable
+country_event = {
+ id = TurkeyNATO.7
+ title = TurkeyNATO.7.title
+ desc = TurkeyNATO.7.desc
+ picture = GFX_perinceks_anti_governmental_campaign
+ is_triggered_only = yes
+
+    trigger = {
+		has_war_with = CHI 
+		tag = TUR
+		 NOT = {
+		 has_government = fascism
+		 has_capitulated = yes
+		 has_global_flag = ERDOGAN_NOT_ACHIEVED
+		 } 
+    }
+
+    mean_time_to_happen = {days = 1}
+
+	option = {
+		name = TurkeyNATO.7.a
+		ai_chance = { factor = 1}
+
+	add_stability = -0.05
+	add_war_support = -0.05
+    }
+}
+
+######################### The Great AI Management #########################
+
+
+##Event: AI AKP REALISTIC
+country_event = {
+ id = TurkeyAI.1
+ title = TurkeyAI.1.title
+ desc = TurkeyAI.1.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+ has_game_rule = {
+ rule = TUR_submod_ai_behavior
+ option = CLASSIC_REGIME_OF_ERDOGAN
+ } }
+
+	option = {
+		name = TurkeyAI.1.a
+		ai_chance = { factor = 1}
+
+			add_ideas = AI_powerhold_4
+
+set_global_flag = TUR_AKP_2010_AMEDMENTS
+set_global_flag = TUR_AKP_2016_AMEDMENT  	
+			subtract_from_variable = { TUR_rel_akp = -20 }	
+        set_country_flag = AKP_government   
+TUR_traditionalists_turn_ally_effect = yes 
+TUR_kemalist_turn_hostile_effect = yes 
+	}
+}
+
+##Event: AI CHP
+country_event = {
+ id = TurkeyAI.2
+ title = TurkeyAI.2.title
+ desc = TurkeyAI.2.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = CHP_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.2.a
+		ai_chance = { factor = 1}
+
+		set_country_flag = CHP_FOCUS_LOCATION
+        set_country_flag = CHP_government
+			load_focus_tree = MD_TUR_CHP
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+				add_ideas = AI_powerhold_1
+	hidden_effect = { remove_ideas = pr_necdet }
+    hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 3 } #socialism
+			add_to_variable = { party_pop_array^3 = 0.5 } #socialism
+			recalculate_party = yes
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			hidden_effect = {
+				set_leader = yes
+		}	}
+}
+
+##Event: AI DSP
+country_event = {
+ id = TurkeyAI.3
+ title = TurkeyAI.3.title
+ desc = TurkeyAI.3.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = DSP_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.3.a
+		ai_chance = { factor = 1}
+
+
+		set_country_flag = DSP_FOCUS_LOCATION
+        set_country_flag = DSP_government
+			load_focus_tree = MD_TUR_DSP
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+				add_ideas = AI_powerhold_1
+	hidden_effect = { remove_ideas = pr_necdet }
+    hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 1 } #conservatism
+			add_to_variable = { party_pop_array^1 = 0.5 } #conservatism
+			recalculate_party = yes
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			hidden_effect = {
+				set_leader = yes
+			}
+		}	
+	}
+
+##Event: AI MHP
+country_event = {
+ id = TurkeyAI.4
+ title = TurkeyAI.4.title
+ desc = TurkeyAI.4.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = MHP_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.4.a
+		ai_chance = { factor = 1}
+
+			load_focus_tree = MD_TUR_MHF
+        set_country_flag = MHP_government
+			add_ideas = AI_powerhold_3
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+	hidden_effect = { remove_ideas = pr_necdet }
+    hidden_effect = {
+	clr_global_flag = recai
+	remove_ideas = pr_necdet 
+	        custom_effect_tooltip = FP_collapses
+	        custom_effect_tooltip = rise_of_HDP
+			hidden_effect = {
+				add_to_variable = { party_pop_array^6 = -0.2 }
+				recalculate_party = yes
+			}
+		hidden_effect = {
+				add_to_variable = { party_pop_array^8 = 0.1 }
+				recalculate_party = yes
+			}
+			  }
+} }
+
+##Event: AI JUNTA
+country_event = {
+ id = TurkeyAI.5
+ title = TurkeyAI.5.title
+ desc = TurkeyAI.5.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = JUNTA_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.5.a
+		ai_chance = { factor = 1}
+
+
+			load_focus_tree = MD_TUR_MIL
+        set_country_flag = MIL_government
+			add_ideas = AI_powerhold_3
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+	hidden_effect = { remove_ideas = pr_necdet }
+	set_global_flag = coup_installed
+	set_global_flag = COUP_TUR_NATO_NO_REACT
+	hidden_effect = {
+    country_event = TurkeyF.1
+				}
+
+    hidden_effect = {
+	clr_global_flag = recai
+	remove_ideas = pr_necdet
+	        custom_effect_tooltip = FP_collapses
+	        custom_effect_tooltip = rise_of_HDP
+			hidden_effect = {
+				add_to_variable = { party_pop_array^6 = -0.2 }
+				recalculate_party = yes
+			}
+		hidden_effect = {
+				add_to_variable = { party_pop_array^8 = 0.1 }
+				recalculate_party = yes
+			}
+			}
+		}
+}
+
+##Event: AI SAADET
+country_event = {
+ id = TurkeyAI.6
+ title = TurkeyAI.6.title
+ desc = TurkeyAI.6.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = SAADET_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.6.a
+		ai_chance = { factor = 1}
+
+			load_focus_tree = MD_TUR_SAADET
+set_country_flag = SAADET_FOCUS_LOCATION 
+        set_country_flag = SAA_government
+			add_ideas = AI_powerhold_4
+TUR_traditionalists_turn_ally_effect = yes 
+TUR_kemalist_turn_hostile_effect = yes 
+	hidden_effect = { remove_ideas = pr_necdet }
+    hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 6 } #Conservative
+			add_to_variable = { party_pop_array^6 = 0.5 } #Conservative
+			recalculate_party = yes
+				add_popularity = {
+					ideology = communism
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = communism
+				}
+			}
+			hidden_effect = {
+				set_leader = yes
+			}
+		}
+}
+
+##Event: AI GENCPARTY
+country_event = {
+ id = TurkeyAI.7
+ title = TurkeyAI.7.title
+ desc = TurkeyAI.7.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = GENC_TAKE_OVER
+      } 
+ }
+	option = {
+		name = TurkeyAI.7.a
+		ai_chance = { factor = 1}
+
+		set_country_flag = GENC_FOCUS_LOCATION
+        set_country_flag = GEN_government
+			load_focus_tree = MD_TUR_GENC
+			add_ideas = AI_powerhold_4
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+	hidden_effect = { remove_ideas = pr_necdet }
+    hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 13 } #Neutral_Autocracy
+			add_to_variable = { party_pop_array^13 = 0.5 } #Neutral_Autocracy
+			recalculate_party = yes
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			hidden_effect = {
+				set_leader = yes
+			}
+		}
+}
+
+##Event: AI HEPAR
+country_event = {
+ id = TurkeyAI.8
+ title = TurkeyAI.8.title
+ desc = TurkeyAI.8.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = HEPAR_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.8.a
+		ai_chance = { factor = 1}
+
+				add_ideas = AI_powerhold_4
+ set_country_flag = HEPAR_FOCUS_LOCATION
+         set_country_flag = HEP_government
+			load_focus_tree = MD_TUR_HEPAR
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+	hidden_effect = { remove_ideas = pr_necdet }
+
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 14 } #Neutral_conservatism
+			add_to_variable = { party_pop_array^14 = 0.5 } #Neutral_conservatism
+			recalculate_party = yes
+			IF = {
+				limit = {
+					NOT = {
+						has_government = neutrality
+					}
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			else = {
+				meta_effect = {
+					text = {
+						set_country_flag = [META_SET_RULING_PARTY]
+					}
+					META_SET_RULING_PARTY = "[meta_set_ruling_leader]"
+				}
+				set_leader = yes
+			}
+			}
+		}
+
+##Event: AI TKP
+country_event = {
+ id = TurkeyAI.9
+ title = TurkeyAI.9.title
+ desc = TurkeyAI.9.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = TKP_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.9.a
+		ai_chance = { factor = 1}
+
+			load_focus_tree = MD_TUR_TKP 
+	set_country_flag = TKP_FOCUS_LOCATION
+			add_ideas = AI_powerhold_2
+        set_country_flag = TKP_government
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+	hidden_effect = { remove_ideas = pr_necdet }
+    hidden_effect = {
+	clr_global_flag = recai
+	remove_ideas = pr_necdet 
+	        custom_effect_tooltip = FP_collapses
+	        custom_effect_tooltip = rise_of_HDP
+			hidden_effect = {
+				add_to_variable = { party_pop_array^6 = -0.2 }
+				recalculate_party = yes
+			}
+		hidden_effect = {
+				add_to_variable = { party_pop_array^8 = 0.1 }
+				recalculate_party = yes
+			}
+			  }
+
+		}
+}
+
+##Event: AI ANAP
+country_event = {
+ id = TurkeyAI.10
+ title = TurkeyAI.10.title
+ desc = TurkeyAI.10.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = ANAP_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.10.a
+		ai_chance = { factor = 1}
+
+		set_country_flag = ANAP_FOCUS_LOCATION
+        set_country_flag = ANA_government
+			load_focus_tree = MD_TUR_ANAP
+			add_ideas = AI_powerhold_4
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+	hidden_effect = { remove_ideas = pr_necdet }
+    hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 16 } #Neutral_Libertarian
+			add_to_variable = { party_pop_array^16 = 0.5 } #Neutral_Libertarian
+			recalculate_party = yes
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			hidden_effect = {
+				set_leader = yes
+			}
+		}
+
+}
+
+##Event: AI LDP
+country_event = {
+ id = TurkeyAI.11
+ title = TurkeyAI.11.title
+ desc = TurkeyAI.11.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = LDP_TAKE_OVER
+      } 
+ }
+	option = {
+		name = TurkeyAI.11.a
+		ai_chance = { factor = 1}
+
+		set_country_flag = LDP_FOCUS_LOCATION
+        set_country_flag = LDP_government
+			load_focus_tree = MD_TUR_LDP
+				add_ideas = AI_powerhold_1
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+	hidden_effect = { remove_ideas = pr_necdet }
+    hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 2 } #liberalism
+			add_to_variable = { party_pop_array^2 = 0.5 } #liberalism
+			recalculate_party = yes
+			IF = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			else = {
+				set_leader = yes
+			}
+		} } }
+
+##Event: AI ANARCHIST
+country_event = {
+ id = TurkeyAI.12
+ title = TurkeyAI.12.title
+ desc = TurkeyAI.12.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = ANARCHIST_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.12.a
+		ai_chance = { factor = 1}
+
+	load_focus_tree = MD_TUR_ANARCHY
+set_country_flag = ANARCHY_FOCUS_LOCATION  
+			add_ideas = AI_powerhold_4
+        set_country_flag = ANAS_government
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+	hidden_effect = { remove_ideas = pr_necdet } 
+	}
+}
+
+##Event: AI MAFIA
+country_event = {
+ id = TurkeyAI.13
+ title = TurkeyAI.13.title
+ desc = TurkeyAI.13.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = MAFIA_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.13.a
+		ai_chance = { factor = 1}
+
+	load_focus_tree = MD_TUR_MAFIA
+	set_global_flag = TUR_mafias_organized
+        set_country_flag = MAF_government
+set_country_flag = MAFIA_FOCUS_LOCATION  
+			add_ideas = AI_powerhold_4
+TUR_traditionalists_turn_ally_effect = yes 
+TUR_kemalist_turn_hostile_effect = yes 
+	hidden_effect = { remove_ideas = pr_necdet }
+	}
+}
+
+##Event: AI AYM
+country_event = {
+ id = TurkeyAI.14
+ title = TurkeyAI.14.title
+ desc = TurkeyAI.14.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = AYM_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.14.a
+		ai_chance = { factor = 1}
+
+   set_global_flag = COURT_RULES_AYM
+   clr_global_flag = MP_MOMENT
+        set_country_flag = AYM_government
+				add_ideas = AI_powerhold_4
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+	set_variable = { var = TUR_united_aym value = 55 }
+	set_variable = { var = TUR_politicized_aym value = 45 }
+	set_variable = { var = TUR_soft_group value = 3 }
+	set_variable = { var = TUR_precision_group value = 7 }
+	set_variable = { var = TUR_transparent_group value = 5 }
+		set_country_flag = AYM_FOCUS_LOCATION
+        hidden_effect = { news_event = Turkey_news.35 }
+	hidden_effect = { remove_ideas = pr_necdet }
+				load_focus_tree = MD_TUR_AYM
+
+	create_country_leader = {
+		name = "Constitutional Court"
+		picture = "aym_governance.dds"
+		ideology = Neutral_conservatism
+		traits = {
+			neutrality_Neutral_conservatism
+			staunch_constitutionalist
+		}
+	}
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 14 } #Neutral_conservatism
+			add_to_variable = { party_pop_array^14 = 0.5 } #Neutral_conservatism
+			recalculate_party = yes
+			IF = {
+				limit = {
+					NOT = {
+						has_government = neutrality
+					}
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			else = {
+				meta_effect = {
+					text = {
+						set_country_flag = [META_SET_RULING_PARTY]
+					}
+					META_SET_RULING_PARTY = "[meta_set_ruling_leader]"
+				}
+				set_leader = yes
+			}
+		}   
+	}
+
+##Event: AI OTTOMAN EMPIRE
+country_event = {
+ id = TurkeyAI.15
+ title = TurkeyAI.15.title
+ desc = TurkeyAI.15.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+ 	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = OSMAN_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.15.a
+		ai_chance = { factor = 1}
+
+			load_focus_tree = MD_TUR_OTT
+			add_ideas = AI_powerhold_3
+set_country_flag = OTT_FOCUS_LOCATION  
+	        set_country_flag = OTT_government
+TUR_traditionalists_turn_ally_effect = yes 
+TUR_kemalist_turn_hostile_effect = yes 
+	hidden_effect = { remove_ideas = pr_necdet }
+	} 
+}
+
+##Event: AI Ataturk
+country_event = {
+ id = TurkeyAI.16
+ title = TurkeyAI.16.title
+ desc = TurkeyAI.16.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = ATATURK_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.16.a
+		ai_chance = { factor = 1}
+
+add_named_threat = { threat = -2 name = RETURN_OF_ATATURK }
+    add_stability = 0.15
+	news_event = Turkey_news.42
+TUR_traditionalists_turn_ally_effect = yes 
+TUR_kemalist_turn_hostile_effect = yes 
+		set_country_flag = ATA_FOCUS_LOCATION
+        set_country_flag = ATA_government
+			load_focus_tree = MD_TUR_ATA_X
+    custom_effect_tooltip = MD_TUR_ATA_tooltip
+	add_ideas = political_troubles_caused_by_modernity
+
+				add_ideas = AI_powerhold_1
+	hidden_effect = { remove_ideas = pr_necdet }
+    hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 3 } #socialism
+			add_to_variable = { party_pop_array^3 = 0.5 } #socialism
+			recalculate_party = yes
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			hidden_effect = {
+				set_leader = yes
+		}	}
+}
+
+##Event: AI Technocracy
+country_event = {
+ id = TurkeyAI.17
+ title = TurkeyAI.17.title
+ desc = TurkeyAI.17.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = TECH_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.17.a
+		ai_chance = { factor = 1}
+
+set_global_flag = TECHNOCRATIC_APPROACH
+set_country_flag = TECH_FOCUS_LOCATION 
+        set_country_flag = TECH_government
+
+			load_focus_tree = MD_TUR_TECH
+    custom_effect_tooltip = MD_TUR_TECH_tooltip
+ TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+				add_ideas = AI_powerhold_4
+	hidden_effect = { remove_ideas = pr_necdet }
+   hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 15 } #Neutral_conservatism
+			add_to_variable = { party_pop_array^15 = 0.5 } #Neutral_conservatism
+			recalculate_party = yes
+			IF = {
+				limit = {
+					NOT = {
+						has_government = neutrality
+					}
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			else = {
+				meta_effect = {
+					text = {
+						set_country_flag = [META_SET_RULING_PARTY]
+					}
+					META_SET_RULING_PARTY = "[meta_set_ruling_leader]"
+				}
+				set_leader = yes
+			}
+		}   
+	}
+}
+
+##Event: AI MIT
+country_event = {
+ id = TurkeyAI.18
+ title = TurkeyAI.18.title
+ desc = TurkeyAI.18.desc
+ picture = GFX_the_great_ai
+ fire_only_once = yes
+
+ trigger = {
+ tag = TUR
+ is_ai = yes
+	 has_game_rule = {
+     rule = TUR_submod_ai_behavior
+     option = MIT_TAKE_OVER
+      } 
+ }
+
+	option = {
+		name = TurkeyAI.18.a
+		ai_chance = { factor = 1}
+
+		set_country_flag = MIT_FOCUS_LOCATION
+        set_country_flag = MIT_government
+
+clr_global_flag = NO_MIT
+set_global_flag = YES_MIT
+
+			load_focus_tree = MD_TUR_MIT
+    custom_effect_tooltip = MD_TUR_MIT_tooltip
+
+TUR_traditionalists_turn_ally_effect = yes 
+TUR_kemalist_turn_hostile_effect = yes 
+
+				add_ideas = AI_powerhold_4
+	hidden_effect = { remove_ideas = pr_necdet }
+    hidden_effect = {
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 15 } #Neutral_conservatism
+			add_to_variable = { party_pop_array^15 = 0.5 } #Neutral_conservatism
+			recalculate_party = yes
+			IF = {
+				limit = {
+					NOT = {
+						has_government = neutrality
+					}
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			else = {
+				meta_effect = {
+					text = {
+						set_country_flag = [META_SET_RULING_PARTY]
+					}
+					META_SET_RULING_PARTY = "[meta_set_ruling_leader]"
+				}
+				set_leader = yes
+			}
+		}   
+	}
+}

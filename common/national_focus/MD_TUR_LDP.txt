@@ -2267,9 +2267,9 @@ swap_ideas = {
 
 		completion_reward = {
 add_political_power = 100    
-	retire_character = ilhan_tolu
-	retire_character = mustafa_ozsoy
-	retire_character = TUR_akin_ozturk
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
 }   }
 
 

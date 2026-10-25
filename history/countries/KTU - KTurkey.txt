@@ -90,72 +90,12 @@
 		military_career
 		}
 	}
-	create_field_marshal = {
-		name = "Hurşit Tolon"
-		picture = "hursit_tolon.dds"
-		traits = { logistics_wizard trait_TUR_kemalist_champion}
-		id = 929990
-		skill = 4
-		attack_skill = 3
-		defense_skill = 3
-		planning_skill = 4
-		logistics_skill = 4
-	}
-	create_field_marshal = {
-		name = "Sener Eruygur"
-		picture = "sener_eruygur.dds"
-		traits = { tsk_ustun_hizmet_madalyonu ambusher trait_TUR_kemalist_champion }
-		id = 939990
-		skill = 4
-		attack_skill = 4
-		defense_skill = 3
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	create_corps_commander = {
-		name = "Abidin Ünal"
-		picture = "Portrait_Abidin_Unal.dds"
-		traits = { commando ranger tsk_seref_madalyonu tsk_ustun_cesaret_madalyonu tsk_ustun_hizmet_madalyonu tsk_nato_officer trait_TUR_kemalist_champion}
-		id = 66928
-		skill = 4
-		attack_skill = 4
-		defense_skill = 4
-		planning_skill = 4
-		logistics_skill = 4
-	}
-	create_corps_commander = {
-		name = "Izzet Çetingöz"
-		picture = "Portrait_Izzet_Cetingoz.dds"
-		traits = { panzer_leader trait_TUR_kemalist_champion}
-		id = 66912
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	create_corps_commander = {
-		name = "Mehmet Daysal"
-		picture = "Portrait_Mehmet_Daysal.dds"
-		traits = { trait_engineer trait_TUR_kemalist_champion}
-		id = 66918
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	create_corps_commander = {
-		name = "Mehmet Özoğlu"
-		picture = "Portrait_Mehmet_Ozoglu.dds"
-		traits = { ranger trait_TUR_kemalist_champion}
-		id = 66922
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
+	recruit_character = KTU_hursit_tolon
+	recruit_character = KTU_sener_eruygur
+	recruit_character = KTU_abidin_unal
+	recruit_character = KTU_izzet_cetingoz
+	recruit_character = KTU_mehmet_daysal
+	recruit_character = KTU_mehmet_ozoglu
 
 	### Military and technology: Turkish Armed Forces state in 2000 (shared with TUR, MD 2.0.2)
 	complete_special_project = sp:sp_nuclear_energy

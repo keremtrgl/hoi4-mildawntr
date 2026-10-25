@@ -2152,11 +2152,51 @@ swap_ideas = {
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 		
     completion_reward = {
-    recruit_character = sedat_peker
-    recruit_character = alattin_cakici
-    recruit_character = celal_han_peker
-    recruit_character = huseyin_basbasin	
-    recruit_character = kurt_idris	
+    add_field_marshal_role = {
+    	character = sedat_peker
+    	traits = { scavenger infantry_expert urban_assault_specialist skilled_staffer}
+    	skill = 4
+    	attack_skill = 5
+    	defense_skill = 2
+    	planning_skill = 4
+    	logistics_skill = 2
+    }
+    add_field_marshal_role = {
+    	character = alattin_cakici
+    	traits = { expert_delegator adaptable }
+    	skill = 4
+    	attack_skill = 4
+    	defense_skill = 5
+    	planning_skill = 3
+    	logistics_skill = 2
+    }
+    add_field_marshal_role = {
+    	character = celal_han_peker
+    	traits = { fast_planner skilled_staffer }
+    	skill = 4
+    	attack_skill = 3
+    	defense_skill = 3
+    	planning_skill = 4
+    	logistics_skill = 5
+    }
+    add_field_marshal_role = {
+    	character = huseyin_basbasin
+    	traits = { camouflage_expert adaptable fast_planner guerrilla_officer }
+    	skill = 4
+    	attack_skill = 2
+    	defense_skill = 4
+    	planning_skill = 5
+    	logistics_skill = 3
+    }
+    add_field_marshal_role = {
+    	character = kurt_idris
+    	traits = { ambusher logistics_wizard expert_delegator }
+    	skill = 4
+    	attack_skill = 2
+    	defense_skill = 4
+    	planning_skill = 5
+    	logistics_skill = 3
+    }
 	} }
 	focus = {
 		id = MAF_return_the_mafias_from_PKK_fight

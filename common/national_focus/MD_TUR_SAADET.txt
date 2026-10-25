@@ -2292,9 +2292,9 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 
 	completion_reward = {
 	add_political_power = 150
-	retire_character = ilhan_tolu
-	retire_character = mustafa_ozsoy
-	retire_character = TUR_akin_ozturk
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
 	remove_ideas = the_ulema
 	add_stability = -0.02
 	  }

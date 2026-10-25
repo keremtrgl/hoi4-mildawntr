@@ -865,9 +865,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			every_military_industrial_organization = {
 				add_mio_funds = 500
 			}	
-	retire_character = ilhan_tolu
-	retire_character = mustafa_ozsoy
-	retire_character = TUR_akin_ozturk
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
 	TUR_remove_pkk = yes	
 					}
 				}
@@ -3333,9 +3333,9 @@ search_filters = {FOCUS_FILTER_STABILITY}
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
-	retire_character = ilhan_tolu
-	retire_character = mustafa_ozsoy
-	retire_character = TUR_akin_ozturk
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
 			custom_effect_tooltip = ODP_ACTION_1
 			add_stability = -0.03
 			hidden_effect = {
@@ -4020,9 +4020,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
         add_ideas = THKPC_cooperation
-	retire_character = ilhan_tolu
-	retire_character = mustafa_ozsoy
-	retire_character = TUR_akin_ozturk
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
 				}
 			}
 	focus = {
@@ -7036,9 +7036,9 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 
 		completion_reward = {
 			remove_ideas = betrayal_from_FETO3 
-	retire_character = ilhan_tolu
-	retire_character = mustafa_ozsoy
-	retire_character = TUR_akin_ozturk
+	remove_unit_leader_role = { character = ilhan_tolu }
+	remove_unit_leader_role = { character = mustafa_ozsoy }
+	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
 	} }
 	focus = {
 		id = TKF_communistic_authorities

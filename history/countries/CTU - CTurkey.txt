@@ -91,96 +91,15 @@
 		writer 
 		}
 	}
-	create_corps_commander = {
-		name = "Şefik Özyurt"
-		picture = "unknown_general.dds"
-		traits = { }
-		skill = 3
-		attack_skill = 3
-		defense_skill = 2
-		planning_skill = 1
-		logistics_skill = 3
-	}
-	create_corps_commander = {
-		name = "Ismail Hakkıoğulları"
-		picture = "unknown_general.dds"
-		traits = { }
-		skill = 2
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	create_corps_commander = {
-		name = "Çevik Özmert"
-		picture = "unknown_general.dds"
-		traits = { }
-		skill = 2
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	create_field_marshal = {
-		name = "Deniz Şovalye"
-		picture = "unknown_general.dds"
-		traits = { fast_planner }
-		skill = 4
-		attack_skill = 4
-		defense_skill = 4
-		planning_skill = 4
-		logistics_skill = 4
-	}
-	create_field_marshal = {
-		name = "Mert Güvenç"
-		picture = "unknown_general.dds"
-		traits = { old_guard defensive_doctrine }
-		skill = 4
-		attack_skill = 4
-		defense_skill = 4
-		planning_skill = 4
-		logistics_skill = 4
-	}
-	create_corps_commander = {
-		name = "Mehmet Arslan"
-		picture = "unknown_general.dds"
-		traits = { trait_engineer }
-		skill = 1
-		attack_skill = 1
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-	}
-	create_corps_commander = {
-		name = "Necdet Üsküp"
-		picture = "unknown_general.dds"
-		traits = { trait_engineer }
-		skill = 2
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 3
-	}
-	create_corps_commander = {
-		name = "Ali Türkmen"
-		picture = "unknown_general.dds"
-		traits = { commando }
-		skill = 3
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 3
-		logistics_skill = 3
-	}
-	create_corps_commander = {
-		name = "Ahmnet Nesrin"
-		picture = "unknown_general.dds"
-		traits = { desert_fox }
-		skill = 2
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-	}
+	recruit_character = CTU_sefik_ozyurt
+	recruit_character = CTU_ismail_hakkiogullari
+	recruit_character = CTU_cevik_ozmert
+	recruit_character = CTU_deniz_sovalye
+	recruit_character = CTU_mert_guvenc
+	recruit_character = CTU_mehmet_arslan
+	recruit_character = CTU_necdet_uskup
+	recruit_character = CTU_ali_turkmen
+	recruit_character = CTU_ahmnet_nesrin
 
 	### Military and technology: Turkish Armed Forces state in 2000 (shared with TUR, MD 2.0.2)
 	complete_special_project = sp:sp_nuclear_energy
