@@ -3056,7 +3056,7 @@ reverse_add_opinion_modifier = { target = ISR modifier = ISR_tech_trade }
 	add_political_power = -25
 	give_guarantee = EGY
 add_opinion_modifier = { target = EGY modifier = state_visists }
-         EGY = {  add_opinion_modifier = { target = TUR modifier = state_visists give_guarantee = TUR} 
+         EGY = {  add_opinion_modifier = { target = TUR modifier = state_visists } give_guarantee = TUR 
       } }
 	}
 	focus = {
@@ -3464,13 +3464,13 @@ search_filters = {FOCUS_FILTER_EXPENDITURE}
 				} }
 			random_owned_state = {
 				add_resource = {
-					type = metal
+					type = steel
 					amount = 4
 				}
 			}
 			random_owned_state = {
 				add_resource = {
-					type = iron
+					type = steel
 					amount = 11
 				}
 				owner = { add_fuel = 15000 }
@@ -3654,7 +3654,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 				} }
 			random_owned_state = {			
 				add_resource = {
-					type = metal
+					type = steel
 					amount = 6
 				} }
 			random_owned_state = {			

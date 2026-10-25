@@ -1418,7 +1418,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 					}
 				}
 	focus = {
-		id = AYM_hungary_invest_2_2
+		id = AYM_hungary_invest_2
 		icon = slo_hun_war
 		cost = 7.2
 		prerequisite = {
@@ -1475,7 +1475,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 					}
 	}
 	focus = {
-		id = AYM_hungary_invest
+		id = AYM_hungary_invest_3
 		icon = hungarian_monarchism
 		cost = 7.2
 		prerequisite = {
@@ -7614,12 +7614,12 @@ swap_ideas = {
 		completion_reward = {
 			159 = { 
 				add_resource = {
-					type = metal
+					type = steel
 					amount = 13
 				}
 			160 = { 
 				add_resource = {
-					type = iron
+					type = steel
 					amount = 9
 				}
 			161 = { 

@@ -7670,13 +7670,13 @@ swap_ideas = {
 	completion_reward = {
 			random_owned_state = {
 				add_resource = {
-					type = metal
+					type = steel
 					amount = 18
 				}
 			}
 			random_owned_state = {
 				add_resource = {
-					type = metal
+					type = steel
 					amount = 9
 				}
 			}
@@ -7747,8 +7747,8 @@ swap_ideas = {
 					level = 1
 				} }
 			random_owned_state = {	
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					add_extra_state_shared_building_slots = 1
 					type = arms_factory
 					instant_build = yes
 					level = 1
