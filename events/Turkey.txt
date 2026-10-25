@@ -1,6 +1,7 @@
 #######################################################################################################
 ###     Created By Confederacy
 #######################################################################################################
+add_namespace = Turkeys
 add_namespace = pkk_attack
 add_namespace = pkk_increase
 add_namespace = pkk_no_more
@@ -7206,10 +7207,11 @@ country_event = {
 
 ##Event: Agreement On The Early Elections
 country_event = {
- id = Turkeys.206Blocked
- title = Turkeys.206Blocked.title
- desc = Turkeys.206Blocked.desc
+ id = Turkeys.9206
+ title = Turkeys.9206.title
+ desc = Turkeys.9206.desc
  picture = GFX_tbmm
+  is_triggered_only = yes # disabled by the original author ("Blocked"), kept dormant
   fire_only_once = yes
 
     trigger = {
@@ -7229,7 +7231,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
     mean_time_to_happen = {days = 1}
 
 	option = {
-		name = Turkey.206Blocked.a
+		name = Turkeys.9206.a
 		ai_chance = { factor = 1}
 
 	add_political_power = 25
@@ -7239,10 +7241,11 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 
 ##Event: Turkish Last Elections With Event
 country_event = {
- id = Turkeys.207Blocked
- title = Turkeys.207Blocked.title
- desc = Turkeys.207Blocked.desc
+ id = Turkeys.9207
+ title = Turkeys.9207.title
+ desc = Turkeys.9207.desc
  picture = GFX_election_day
+  is_triggered_only = yes # disabled by the original author ("Blocked"), kept dormant
   fire_only_once = yes
 
     trigger = {
@@ -7262,7 +7265,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
     mean_time_to_happen = {days = 1}
 
 	option = {
-		name = Turkey.207Blocked.a
+		name = Turkeys.9207.a
 		ai_chance = { factor = 1}
 
 	custom_effect_tooltip = 20_increase_12_TT
@@ -7278,7 +7281,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	}
 
 	option = {
-		name = Turkey.207.bBlocked
+		name = Turkeys.9207.b
 		ai_chance = { factor = 1}
 
 	custom_effect_tooltip = 20_increase_3_TT
@@ -34505,8 +34508,8 @@ country_event = {
              date > 2006.7.31
 	         date < 2006.8.31
          }
-	clr_global_flag = kivirik
-	set_global_flag = yasar_buyukanit
+	
+	
 		 has_idea = general_staff_under_2
 		 NOT = {
 		 has_government = fascism
@@ -34532,7 +34535,8 @@ country_event = {
 	remove_idea = general_staff_under_2
 	  } 
 	}
-	} }
+	} 	immediate = { clr_global_flag = kivirik set_global_flag = yasar_buyukanit }
+}
 
 
 ##Event: Update General Staff
@@ -34549,8 +34553,8 @@ country_event = {
              date > 2008.8.28
 	         date < 2008.9.28
          }
-	clr_global_flag = yasar_buyukanit
-	set_global_flag = ilker_basbug
+	
+	
 		 has_idea = general_staff_under_3
 		 NOT = {
 		 has_government = fascism
@@ -34575,6 +34579,7 @@ country_event = {
 	remove_idea = general_staff_under_3
 	  } }
 	}
+	immediate = { clr_global_flag = yasar_buyukanit set_global_flag = ilker_basbug }
 }
 
 
@@ -34593,8 +34598,8 @@ country_event = {
 	         date < 2010.9.27
          }
 		 has_idea = general_staff_under_4
-	clr_global_flag = ilker_basbug
-	set_global_flag = kosaner
+	
+	
 		 NOT = {
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
@@ -34619,6 +34624,7 @@ country_event = {
 	remove_idea = general_staff_under_4
 	  } }
 	}
+	immediate = { clr_global_flag = ilker_basbug set_global_flag = kosaner }
 }
 
 
@@ -34636,8 +34642,8 @@ country_event = {
              date > 2011.7.29
 	         date < 2011.7.29
          }
-	clr_global_flag = kosaner
-	set_global_flag = ozel
+	
+	
 		 has_idea = general_staff_under_5
 		 NOT = {
 		 has_government = fascism
@@ -34663,6 +34669,7 @@ country_event = {
 	remove_idea = general_staff_under_5
 	  } }
 	}
+	immediate = { clr_global_flag = kosaner set_global_flag = ozel }
 }
 
 
@@ -34680,8 +34687,8 @@ country_event = {
              date > 2015.8.18
 	         date < 2015.9.18
          }
-	clr_global_flag = ozel
-	set_global_flag = akar
+	
+	
 		 has_idea = general_staff_under_6
 		 NOT = {
 		 has_government = fascism
@@ -34707,6 +34714,7 @@ country_event = {
 	remove_idea = general_staff_under_6
 	  } }
 	}
+	immediate = { clr_global_flag = ozel set_global_flag = akar }
 }
 
 
@@ -34724,8 +34732,8 @@ country_event = {
              date > 2018.8.9
 	         date < 2018.9.9
          }
-	clr_global_flag = akar
-	set_global_flag = guler
+	
+	
 		 has_idea = general_staff_under_7
 		 NOT = {
 		 has_government = fascism
@@ -34751,6 +34759,7 @@ country_event = {
 	remove_idea = general_staff_under_7
 	  } }
 	}
+	immediate = { clr_global_flag = akar set_global_flag = guler }
 }
 
 
@@ -36171,7 +36180,7 @@ country_event = {
 	create_corps_commander = {
 		name = "Ali Nurhan"
 		picture = "unknown_general.dds"
-		traits = { commando army_commando_1 offensive_doctrine }
+		traits = { commando offensive_doctrine }
 		skill = 3
 		attack_skill = 4
 		defense_skill = 1

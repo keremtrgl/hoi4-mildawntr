@@ -475,7 +475,7 @@ TUR_mafia_category = {
 		fire_only_once = no
 		days_re_enable = 5
 		activation = { has_country_flag = TUR_mafia_war_start }
-		allowed = { original_tag = TUR has_country_flag = TUR_mafia_war_start }
+		allowed = { original_tag = TUR }
 		available = { has_global_flag = Inevitable hidden_trigger = { has_country_flag = heeeeeeeeeeeelll_nah } }
 
 		days_mission_timeout = 70
@@ -720,7 +720,7 @@ TUR_mafia_category = {
 	}
 
 	TUR_victory_over_mafia = {
-    icon = GFX_decision_eng_trade_unions_support civil_support
+    icon = GFX_decision_eng_trade_unions_support
 
 		available = {
 			has_idea = police_05

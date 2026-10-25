@@ -3104,6 +3104,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 			focus = TUR_spring_of_CHP
 			focus = TUR_mhp
 			focus = TUR_tkp
+			focus = TUR_ldp
 		}
 		x = 20
 		y = 10
@@ -3196,6 +3197,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 			focus = TUR_spring_of_CHP
 			focus = TUR_ldp
 			focus = TUR_techno
+			focus = TUR_mhp
 		}
 		x = 14
 		y = 10
@@ -6593,7 +6595,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 		search_filters = {FOCUS_FILTER_TURKISH_KEMALISM}
 		
                     completion_reward = {
-		add_ideas = 6_arrows
+		add_ideas = TUR_6_arrows
 	}  }
 
 	focus = {

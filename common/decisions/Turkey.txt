@@ -4114,10 +4114,7 @@ TUR_toki = {
 		icon = GFX_decision_generic_factory
 
 		available = {
-				add_popularity = {
-					ideology = ROOT
-					popularity = 0.01
-				}
+				
 		controls_state = 992
 		NOT = {
 		has_global_flag = TUR_diyarbakir_toki
@@ -4139,7 +4136,11 @@ TUR_toki = {
 		complete_effect = {
 		
 		set_global_flag = TUR_kilis_toki
-		}
+			add_popularity = {
+					ideology = ROOT
+					popularity = 0.01
+				}
+	}
 		remove_effect = {
 			custom_effect_tooltip = HOUSING_INCREASE_1
 				subtract_from_variable = { TUR_building_resistancy = 1 }

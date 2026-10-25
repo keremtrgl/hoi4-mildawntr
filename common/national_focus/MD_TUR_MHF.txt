@@ -2106,7 +2106,7 @@ change_state_after_war = yes
         num_provinces = 3
         on_lose = TUR_border_war.13
         on_cancel = TUR_border_war.14
-    } } 
+    }
 				
     defender = {
         state = 193
@@ -2116,7 +2116,8 @@ change_state_after_war = yes
         on_cancel = TUR_border_war.17
     }
 }  
-	}  
+	}
+	}
 	focus = {
 		id = MHF_ban_kurdish_freedom_activities
 		icon = anti_democracy
@@ -4067,7 +4068,7 @@ increase_military_spending = yes
 		KYR = {                    
 		has_government = nationalist
 		}		
-		set_global_flag = UNIFIED_EARLY
+		
 		NOT = {
         has_war_with = KAZ
         has_war_with = AZE
@@ -4087,7 +4088,8 @@ increase_military_spending = yes
 	country_event = TurkeyF.160
 	add_stability = 0.1
 	add_political_power = 75
-} }
+	set_global_flag = UNIFIED_EARLY
+	} }
 	focus = {
 		id = MHF_golden_wolf
 		icon = golden_wolf

@@ -705,7 +705,7 @@ TUR_court_rule = {
 
 	visible = {
 		original_tag = TUR
-		NOT {
+		NOT = {
 		has_global_flag = KKY
 		has_global_flag = TUR_court_gone
 		}
@@ -725,7 +725,7 @@ TUR_media_management = {
 
 	visible = {
 		original_tag = TUR
-		NOT {
+		NOT = {
 		has_global_flag = PRESS_HAS_MANAGED
 		}
 	}

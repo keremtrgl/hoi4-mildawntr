@@ -2562,7 +2562,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		available = {
-			emerging_anarchist_communism_are_not_in_power = yes
+			NOT = { emerging_anarchist_communism_are_in_power = yes }
 		}
 
 		completion_reward = {
