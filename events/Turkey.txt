@@ -37,7 +37,7 @@ country_event = {
 	title = pkk_attack.1.t
 	desc = pkk_attack.1.d
 	picture = GFX_pkk_ambush
-	is_triggered_only = yes
+	
 
 	trigger = {
 		tag = TUR
@@ -639,7 +639,7 @@ country_event = {
 country_event = { #pkk will increase by 3 every 2 month no matter what, because we need a dick move
 	id = pkk_increase.1
 	hidden = yes
-	is_triggered_only = yes
+	
 
 	trigger = {
 		has_idea = pkk_terror_idea
@@ -660,7 +660,7 @@ country_event = { #hidden event that increases pkk power if you haven't done 4 o
 
 	id = pkk_increase.2
 	hidden = yes
-	is_triggered_only = yes
+	
 
 	trigger = {
 		has_idea = pkk_terror_idea
@@ -688,7 +688,7 @@ country_event = { #hidden event that increases pkk power even more if you haven'
 	id = pkk_increase.3
 
 	hidden = yes
-	is_triggered_only = yes
+	
 
 	trigger = {
 		has_idea = pkk_terror_idea
@@ -12616,6 +12616,7 @@ country_event = {
  title = Turkey.365.title
  desc = Turkey.365.desc
  picture = GFX_covid-19
+ fire_only_once = yes
 
     trigger = {
 	     NOT = {
@@ -27290,7 +27291,7 @@ country_event = {
     trigger = {
     }
 
-    mean_time_to_happen = {days = 100}
+    
 
 	option = {
 		name = TurkeyF.22.a
