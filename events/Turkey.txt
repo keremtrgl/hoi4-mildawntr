@@ -37817,8 +37817,8 @@ country_event = {
     country_event = MD4_election_campaign.0
 
 			set_party_index_to_ruling_party = yes
-			set_temp_variable = { party_popularity_decrease = 0.03 }
-			set_temp_variable = { temp_outlook_decrease = 0.03 }
+			set_temp_variable = { party_popularity_increase = -0.03 }
+			set_temp_variable = { temp_outlook_increase = -0.03 }
 			change_relative_party_popularity = yes
 
 	}
@@ -37904,8 +37904,8 @@ country_event = {
 	custom_effect_tooltip = GOV_LOSS_POP_2
 
 			set_party_index_to_ruling_party = yes
-			set_temp_variable = { party_popularity_decrease = 0.03 }
-			set_temp_variable = { temp_outlook_decrease = 0.03 }
+			set_temp_variable = { party_popularity_increase = -0.03 }
+			set_temp_variable = { temp_outlook_increase = -0.03 }
 			change_relative_party_popularity = yes
 	}
 }

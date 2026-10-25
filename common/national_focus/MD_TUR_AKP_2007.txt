@@ -2118,7 +2118,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 
 		completion_reward = {
 		        custom_effect_tooltip = HDP_collabrate_with_AKP	
-				set_temp_variable = { TUR_rel_akp = 20 }	
+				add_to_variable = { TUR_rel_akp = 20 }	
 		hidden_effect = {
 remove_ideas = media_opinion_towards_good_happy_everyone
 remove_ideas = media_opinion_towards_bad_1_left_wing_sad
