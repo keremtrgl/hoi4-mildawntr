@@ -5195,26 +5195,6 @@ swap_ideas = {
 		}
         }
 
-        id = MIT_send_forces_to_islands
-        icon = anti_war_with_big_gun
-        cost = 7.2
-        prerequisite = {
-             focus = ATA_force_UN_recognition
-        }
-        x = 41
-        y = 7
-
-        search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
-        search_filters = {FOCUS_FILTER_TURKISH_NATIONALISM}
-
-
-      available = {
-        country_exists = GRE
-        NOT = {
-        has_war_with = GRE
-         }
-      }
-
   bypass = {
    OR = {
    has_war_with = GRE
