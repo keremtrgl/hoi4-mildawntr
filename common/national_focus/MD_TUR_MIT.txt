@@ -5195,7 +5195,7 @@ swap_ideas = {
 		}
         }
 
-        id = ATA_send_forces_to_islands
+        id = MIT_send_forces_to_islands
         icon = anti_war_with_big_gun
         cost = 7.2
         prerequisite = {
@@ -7045,242 +7045,18 @@ remove_ideas = covid_19_normalised
 }
 	} 
 
-	focus = {
-		id = TUR_covid-19_pandemic26
-		icon = generic_healthcare
-		cost = 10.00
-		x = 137
-		y = 0
-
-        available = {
-        has_idea = covid_19
-        }
 	
-		search_filters = {FOCUS_FILTER_CORONA}	
 		
-		completion_reward = {
-        add_political_power = 75
-		} }
-		
-	focus = {
-		id = TUR_covid-19_preparations26
-		icon = production2
-		cost = 10.00
-		prerequisite = {
-			focus = TUR_covid-19_pandemic26
-		}
-		x = 137
-		y = 1
-
-		search_filters = {FOCUS_FILTER_EXPENDITURE}		
-		search_filters = {FOCUS_FILTER_CORONA}		
-		completion_reward = {
-swap_ideas = { 
-  remove_idea = covid_19
-  add_idea = covid_19_prepared
-}
-			subtract_from_variable = { treasury = 10.0 }
-			custom_effect_tooltip = 10_billion_expense_tt
-		} } 
-	focus = {
-		id = TUR_build_up_hospitals26
-		icon = generic_hospital2
-		cost = 10.00
-		prerequisite = {
-			focus = TUR_covid-19_preparations26
-		}
-		x = 135
-		y = 2
-
-		search_filters = {FOCUS_FILTER_STABILITY}
-		search_filters = {FOCUS_FILTER_EXPENDITURE}		
-		search_filters = {FOCUS_FILTER_CORONA}			
-	completion_reward = {
-			subtract_from_variable = { treasury = 20.0 }
-			add_stability = 0.03
-			custom_effect_tooltip = 20_billion_expense_tt
-			}
-	}
-	focus = {
-		id = TUR_turn_airports_to_hospital26
-		icon = generic_hospital
-		cost = 10.00
-		prerequisite = {
-			focus = TUR_build_up_hospitals26
-		}
-		x = 135
-		y = 3
-
-		search_filters = {FOCUS_FILTER_STABILITY}
-		search_filters = {FOCUS_FILTER_EXPENDITURE}		
-		search_filters = {FOCUS_FILTER_CORONA}	
-		
-	completion_reward = {
-			subtract_from_variable = { treasury = 5.0 }
-			add_stability = 0.02
-			custom_effect_tooltip = 5_billion_expense_tt
-			}
-	}
-	focus = {
-		id = TUR_start_up_vaccine_program26
-		icon = brain_power
-		cost = 10.00
-		prerequisite = {
-			focus = TUR_covid-19_preparations26
-		}
-		x = 137
-		y = 2
-
-		search_filters = {FOCUS_FILTER_CORONA}	
-		search_filters = {FOCUS_FILTER_STABILITY}
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		search_filters = {FOCUS_FILTER_EXPENDITURE}			
-		
-		
-	completion_reward = {
-	        add_stability = -0.05
-			add_political_power = -75
-			subtract_from_variable = { treasury = 5.0 }
-			custom_effect_tooltip = 5_billion_expense_tt
-			custom_effect_tooltip = COV_DECISION_OPENING_VAC
-			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
-			} 
-	}
-	focus = {
-		id = TUR_buy_german_vaccines26
-		icon = trade_with_germany
-		cost = 10.00
-		prerequisite = {
-			focus = TUR_start_up_vaccine_program26
-		}
-		x = 137
-		y = 3
-
-		search_filters = {FOCUS_FILTER_EXPENDITURE}		
-		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
-		search_filters = {FOCUS_FILTER_CORONA}	
-		
-	completion_reward = {
-					reverse_add_opinion_modifier = { target = GER modifier = trade_mission }
-			subtract_from_variable = { treasury = 5.0 }
-			custom_effect_tooltip = 5_billion_expense_tt
-			} 
-	}
-	focus = {
-		id = TUR_increase_funds_to_science26
-		icon = market_economy
-		cost = 10.00
-		prerequisite = {
-			focus = TUR_covid-19_preparations26
-		}
-		x = 139
-		y = 2
-
-		search_filters = {FOCUS_FILTER_EXPENDITURE}		
-		search_filters = {FOCUS_FILTER_CORONA}	
-		
-	completion_reward = {
-swap_ideas = { 
-  remove_idea = health_04
-  add_idea = health_05
-} 
-			subtract_from_variable = { treasury = 20.0 }
-			custom_effect_tooltip = 20_billion_expense_tt
-			} 
-	}
-	focus = {
-		id = TUR_buy_medicines26
-		icon = protectionist_economics
-		cost = 10.00
-		prerequisite = {
-			focus = TUR_increase_funds_to_science26
-		}                                         
-		prerequisite = {                          
-			focus = TUR_increase_funds_to_science26
-		}
-		x = 139
-		y = 3
-
-		search_filters = {FOCUS_FILTER_EXPENDITURE}		
-		search_filters = {FOCUS_FILTER_CORONA}	
-		
-	completion_reward = {
-swap_ideas = { 
-  remove_idea = covid_19_prepared
-  add_idea = covid_19_medicined
-} 
-			subtract_from_variable = { treasury = 20.0 }
-			custom_effect_tooltip = 20_billion_expense_tt
-			} 
-	}
-	focus = {
-		id = TUR_buy_chinese_vaccines26
-		icon = trade_with_china
-		cost = 10.00
-		prerequisite = {
-			focus = TUR_turn_airports_to_hospital26
-		}
-		prerequisite = {
-			focus = TUR_buy_german_vaccines26
-		}
-		prerequisite = {
-			focus = TUR_buy_medicines26
-		}
-		x = 137
-		y = 4
-
-		search_filters = {FOCUS_FILTER_EXPENDITURE}		
-		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
-		search_filters = {FOCUS_FILTER_CORONA}	
-		
-	completion_reward = {
-					reverse_add_opinion_modifier = { target = CHI modifier = trade_mission }
-			subtract_from_variable = { treasury = 5.0 }
-			custom_effect_tooltip = 5_billion_expense_tt
-			} 
-	}
-	focus = {
-		id = TUR_normalisation_from_covid26
-		icon = consumer_goods
-		cost = 10.00
-		prerequisite = {
-			focus = TUR_buy_chinese_vaccines26
-		}
-		available = {
-	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
-		} }
-		x = 137
-		y = 5
-
-		search_filters = {FOCUS_FILTER_CORONA}	
-	completion_reward = {
-swap_ideas = { 
-  remove_idea = covid_19_medicined
-  add_idea = covid_19_normalised
-} 
-	custom_effect_tooltip = COV_AVAILABLE_1
-}
-	}
-	focus = {
-		id = TUR_end_of_covid26
-		icon = aristocratic_funding
-		cost = 10.00
-		prerequisite = {
-			focus = TUR_normalisation_from_covid26
-		}
-		available = {
-	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
-		} }
-		x = 137
-		y = 6
-
-		search_filters = {FOCUS_FILTER_CORONA}	
-		
-	completion_reward = {
-remove_ideas = covid_19_normalised
-	custom_effect_tooltip = COV_AVAILABLE_2
-}
-	} 
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	 
 
 ##############################
 ###	Start of Turkic Focus Tree ###	x = 75 y = 55
