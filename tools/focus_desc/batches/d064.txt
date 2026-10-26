@@ -1,0 +1,60 @@
+3840 ||| Invade Greece ||| TR: Yunanistan'ı İşgal Et ||| path: TKP communist ||| after: Balkan Invasions ||| does: war goal/war on GRE
+3841 ||| Balkan Invasions ||| TR: Balkan İşgalleri ||| path: TKP communist ||| after: General Invasion Plans ||| does: PP 125; war support 0.03
+3842 ||| Middle Eastern Invasions ||| TR: Orta Doğu İşgalleri ||| path: TKP communist ||| after: General Invasion Plans ||| does: PP 125; war support 0.03
+3843 ||| Balkan Welfare Project ||| TR: Balkan Refah Projesi ||| path: TKP communist ||| after: Invade Bulgaria / Invade Greece ||| does: stability 0.05; builds industrial_complex
+3844 ||| Transcaucasian Turnout ||| TR: Kafkasya Hamlesi ||| path: TKP communist ||| after: Balkan Welfare Project / Achieve Atheism in the Middle East ||| does: war support 0.05
+3845 ||| Achieve Atheism in the Middle East ||| TR: Orta Doğu'da Ateizmi Yerleştir ||| path: TKP communist ||| after: Invade Iraq / Invade Syria ||| does: stability -0.05
+3846 ||| No Deals with Russia ||| TR: Rusya ile Anlaşma Yok ||| path: TKP communist ||| after: Transcaucasian Turnout ||| does: war support 0.05; war goal/war on SOV
+3847 ||| Knock Russia out of Transcaucasia ||| TR: Rusya'yı Kafkasya'dan Çıkar ||| path: TKP communist ||| after: Invade Georgia / Invade Armenia ||| does: war support 0.03; war support -0.07
+3848 ||| Mission Europe ||| TR: Avrupa Görevi ||| path: TKP communist ||| after: Knock Russia out of Transcaucasia ||| does: war goal/war on GER; war goal/war on FRA; war goal/war on ENG; war goal/war on SPR; war goal/war on POR; war goal/war on ITA
+3849 ||| Mission USA ||| TR: ABD Görevi ||| path: TKP communist ||| after: Knock Russia out of Transcaucasia ||| does: war goal/war on USA
+3850 ||| Offer Russia a Peace Treaty ||| TR: Rusya'ya Barış Antlaşması Teklif Et ||| path: TKP communist ||| after: Knock Russia out of Transcaucasia ||| does: event "Turkey Proposes Peace"
+3851 ||| United Against Imperialism ||| TR: Emperyalizme Karşı Birlik ||| path: TKP communist ||| after: Mission USA / Mission Europe ||| does: spirit "The United Forces of Anti-Imperialism"
+3852 ||| Victory Against Imperialists ||| TR: Emperyalistlere Karşı Zafer ||| path: TKP communist ||| after: Communism Knows No Borders ||| does: stability 0.1
+3853 ||| Counter Pentagon Doctrine ||| TR: Pentagon Karşıtı Doktrin ||| path: TKP communist ||| after: Mission USA ||| does: -
+3854 ||| Communism Knows No Borders ||| TR: Komünizm Sınır Tanımaz ||| path: TKP communist ||| after: Attack Europe's Tourist Destinations / Attack New York ||| does: war support 0.1
+3855 ||| Attack Europe's Tourist Destinations ||| TR: Avrupa'nın Turistik Bölgelerine Saldır ||| path: TKP communist ||| after: Power of Euroscepticism ||| does: stability -0.1
+3856 ||| Attack New York ||| TR: New York'a Saldır ||| path: TKP communist ||| after: Counter Pentagon Doctrine ||| does: stability -0.02
+3857 ||| Boom Of Morale ||| TR: Moral Patlaması ||| path: TKP communist ||| after: United Against Imperialism ||| does: spirit "Boom Of Morale"
+3858 ||| China's Advice ||| TR: Çin'in Tavsiyeleri ||| path: TKP communist ||| after: The Chinese Sun and Its Protection ||| does: -
+3859 ||| China Enters the War ||| TR: Çin Savaşa Giriyor ||| path: TKP communist ||| after: Secure the Chinese-Built Zones / Chinese Investment Plan Phase II ||| does: war support 0.1
+3860 ||| Secure the Chinese-Built Zones ||| TR: Çin'in İnşa Ettiği Bölgeleri Güvenceye Al ||| path: TKP communist ||| after: China's Advice ||| does: stability 0.05
+3861 ||| Chinese Investment Plan Phase II ||| TR: Çin Yatırım Planı Aşama II ||| path: TKP communist ||| after: China's Advice ||| does: -
+3862 ||| World War Three Arming ||| TR: Üçüncü Dünya Savaşı İçin Silahlanma ||| path: TKP communist ||| after: China Enters the War ||| does: spirit "defence_09"
+3863 ||| Request Russian Aid ||| TR: Rus Yardımı İste ||| path: TKP communist ||| after: China Enters the War ||| does: PP 175; war support 0.03
+3864 ||| Mass Mobilization ||| TR: Kitlesel Seferberlik ||| path: TKP communist ||| after: Request Russian Aid / World War Three Arming ||| does: -
+3865 ||| Relocation of Russian Forces to Our Country ||| TR: Rus Kuvvetlerinin Ülkemize Konuşlanması ||| path: TKP communist ||| after: Request Russian Aid ||| does: -
+3866 ||| Chinese Expeditionary Forces ||| TR: Çin Sefer Kuvvetleri ||| path: TKP communist ||| after: World War Three Arming ||| does: -
+3867 ||| Land Fort Expansion ||| TR: Kara Tahkimatlarını Genişlet ||| path: TKP communist ||| after: Mass Mobilization ||| does: spirit "Experimental Land Fortifications"
+3868 ||| Chinese Experiments Phase I ||| TR: Çin Deneyleri Aşama I ||| path: TKP communist ||| after: Chinese Expeditionary Forces ||| does: -
+3869 ||| Guerrilla Warfare Tactics ||| TR: Gerilla Savaşı Taktikleri ||| path: TKP communist ||| after: Chinese Experiments Phase I / Build the Turkish Tankograd ||| does: spirit "guerilla_warfare"
+3870 ||| Build the Turkish Tankograd ||| TR: Türk Tankogradını İnşa Et ||| path: TKP communist ||| after: Relocation of Russian Forces to Our Country ||| does: builds arms_factory
+3871 ||| New Nuclear Systems ||| TR: Yeni Nükleer Sistemler ||| path: TKP communist ||| after: Mass Mobilization ||| does: builds nuclear_reactor
+3872 ||| The End-of-War Partitions ||| TR: Savaş Sonu Paylaşımları ||| path: TKP communist ||| after: Guerrilla Warfare Tactics ||| does: stability 0.1
+3873 ||| Finish the Silk Road ||| TR: İpek Yolunu Tamamla ||| path: TKP communist ||| after: Supreme Maoism ||| does: builds infrastructure
+3874 ||| Supreme Maoism ||| TR: Yüce Maoculuk ||| path: TKP communist ||| after: The End-of-War Partitions ||| does: PP 125; PP 25; tooltip: The country will be united and its sectarian woes can be overcome.
+3875 ||| Prepare for a Shock Invasion ||| TR: Şok İşgale Hazırlan ||| path: TKP communist ||| after: China Enters the War ||| does: war goal/war on GRE; war goal/war on BUL; war goal/war on CYP; war goal/war on ENG; war goal/war on USA
+3876 ||| Expand the Turkish Tankograd ||| TR: Türk Tankogradını Genişlet ||| path: TKP communist ||| after: Build the Turkish Tankograd ||| does: builds arms_factory
+3877 ||| Chinese Experiments Phase II ||| TR: Çin Deneyleri Aşama II ||| path: TKP communist ||| after: Chinese Experiments Phase I ||| does: war support 0.05
+3878 ||| EMEP ||| TR: EMEP ||| path: communist bloc ||| after: - ||| does: PP -100; stability 0.02; tooltip: Gains 15% Support (Relative Popularity).\n
+3879 ||| ÖDP ||| TR: ÖDP ||| path: communist bloc ||| after: - ||| does: PP -75; stability 0.07; tooltip: Gains 15% Support (Relative Popularity).\n
+3880 ||| Vatan Partisi ||| TR: Vatan Partisi ||| path: communist bloc ||| after: - ||| does: PP 75; stability -0.05; tooltip: Gains 15% Support (Relative Popularity).\n
+3881 ||| The Great Turkish Civil War ||| TR: Büyük Türk İç Savaşı ||| path: communist bloc ||| after: - ||| does: PP 100; stability 0.05
+3882 ||| Communist Armed Forces ||| TR: Komünist Silahlı Kuvvetler ||| path: communist bloc ||| after: EMEP ||| does: spirit "Left-Wing Military"
+3883 ||| End of Democracy ||| TR: Demokrasinin Sonu ||| path: communist bloc ||| after: EMEP ||| does: PP 100; stability -0.05
+3884 ||| Abolish the Elections ||| TR: Seçimleri Kaldır ||| path: communist bloc ||| after: End of Democracy ||| does: stability -0.07; war support 0.02
+3885 ||| Bomb the PKK Camps ||| TR: PKK Kamplarını Bombala ||| path: communist bloc ||| after: End of Democracy ||| does: -
+3886 ||| End of the Turkish Historical Confidence ||| TR: Türk Tarihî Özgüveninin Sonu ||| path: communist bloc ||| after: Bomb the PKK Camps ||| does: spirit "The Globalization of Turkey"; removes "Turkish Historical Pride"
+3887 ||| Crack Down on Nationalists ||| TR: Milliyetçileri Bastır ||| path: communist bloc ||| after: Bomb the PKK Camps ||| does: PP 75; stability -0.05
+3888 ||| Unite the State ||| TR: Devleti Birleştir ||| path: communist bloc ||| after: Bomb the PKK Camps ||| does: stability 0.1
+3889 ||| Militarize Workers ||| TR: İşçileri Silahlandır ||| path: communist bloc ||| after: Unite the State ||| does: spirit "Armed Workers"
+3890 ||| Prepare for War ||| TR: Savaşa Hazırlan ||| path: communist bloc ||| after: Unite the State ||| does: spirit "Preparing for War"
+3891 ||| Turkish Union Front ||| TR: Türk Birlik Cephesi ||| path: communist bloc ||| after: Prepare for War / Militarize Workers ||| does: spirit "The Union Front"
+3892 ||| Communist Radicalization ||| TR: Komünist Radikalleşme ||| path: communist bloc ||| after: ÖDP / EMEP ||| does: PP -25; stability -0.05; tooltip: Gains 4% Support (Relative Popularity).\n
+3893 ||| Anti-US Propaganda ||| TR: ABD Karşıtı Propaganda ||| path: communist bloc ||| after: Communist Radicalization ||| does: stability -0.03; war support 0.05
+3894 ||| New Relations with Russia ||| TR: Rusya ile Yeni İlişkiler ||| path: communist bloc ||| after: Communist Radicalization ||| does: stability -0.02; war support 0.02
+3895 ||| Shut Down the US Bases in Turkey ||| TR: Türkiye'deki ABD Üslerini Kapat ||| path: communist bloc ||| after: New Relations with Russia / Anti-US Propaganda ||| does: stability -0.02; war support 0.02
+3896 ||| Protect Human Rights ||| TR: İnsan Haklarını Koru ||| path: communist bloc ||| after: Create Trade Unions ||| does: stability 0.05; tooltip: Gains 2% Support (Relative Popularity).\n
+3897 ||| Ceasefire with the PKK ||| TR: PKK ile Ateşkes ||| path: communist bloc ||| after: Protect Human Rights ||| does: stability -0.1; war support -0.1
+3898 ||| Protect Workers' Rights ||| TR: İşçi Haklarını Koru ||| path: communist bloc ||| after: Create Trade Unions ||| does: stability 0.05; tooltip: Gains 2% Support (Relative Popularity).\n
+3899 ||| Law 8503 ||| TR: 8503 Sayılı Kanun ||| path: communist bloc ||| after: Protect Workers' Rights / Protect Human Rights ||| does: PP 75; stability 0.02; tooltip: Gains 2% Support (Relative Popularity).\n

@@ -1,0 +1,60 @@
+0 ||| Turkic Union Policies ||| TR: Türk Birliği Politikaları ||| path: TR_policies, MHP / Grey Wolves nationalist ||| after: Look to the World ||| does: PP 150; tooltip: With the establishment of the Turkic Union, a reform package will be presented to the Turkic parliament.
+1 ||| Turkic Union Reforms ||| TR: Türk Birliği Reformları ||| path: TR_reforms ||| after: Turkic Union Policies ||| does: PP 100; tooltip: If the reform package is officially adopted by the other Turkic states, the process of reforming the laws will begin.
+2 ||| Centre of the Nomadic Civilizations ||| TR: Göçebe Medeniyetlerinin Merkezi ||| path: TR_center_of_nomidaic_civilizations ||| after: Turkic Union Reforms ||| does: spirit "Centre of the Nomadic Civilizations"
+3 ||| International Turkic Academy ||| TR: Uluslararası Türk Akademisi ||| path: TR_united_university ||| after: Centre of the Nomadic Civilizations ||| does: -
+4 ||| Nationalist Turkic Education Laws ||| TR: Milliyetçi Türk Eğitim Yasaları ||| path: TR_nationalist_education_laws ||| after: International Turkic Academy ||| does: spirit "Nationalist Education Laws"
+5 ||| TURKSOY ||| TR: TÜRKSOY ||| path: TR_TURKSOY ||| after: Turkic Union Policies ||| does: spirit "TURKSOY"
+6 ||| Turkic Heritage Council ||| TR: Türk Mirası Konseyi ||| path: TR_turkic_heritage_council ||| after: Turkic Union Reforms / TURKSOY ||| does: spirit "Turkic Heritage Council"
+7 ||| TURKPA ||| TR: TÜRKPA ||| path: TR_turkpa ||| after: Turkic Union Policies ||| does: spirit "TURKPA"
+8 ||| Turkic TV ||| TR: Türk Dünyası Televizyonu ||| path: TR_turkic_tv ||| after: TURKPA / TURKSOY ||| does: event "The Founding of Turkic TV"
+9 ||| Protest to the PRC About the Uyghurs ||| TR: Uygurlar Konusunda ÇHC'yi Protesto Et ||| path: TR_protest_uyghur_situation ||| after: Turkic Heritage Council / Turkic TV ||| does: -
+10 ||| Unitary Turkic Speeches ||| TR: Birlikçi Türk Konuşmaları ||| path: TR_unitary_speeches ||| after: Turkic TV / Turkic Heritage Council ||| does: spirit "Unitary Turkic Speeches"
+11 ||| Memories of Ergenekon ||| TR: Ergenekon'un Hatıraları ||| path: TR_ergenekon_memories ||| after: Unitary Turkic Speeches / International Turkic Academy ||| does: spirit "Turkic Unity"
+12 ||| Turkic Media ||| TR: Türk Medyası ||| path: TR_turkic_media ||| after: Turkic TV ||| does: spirit "Turkic Media"
+13 ||| Turkic Parties ||| TR: Türk Partileri ||| path: TR_turkic_parties ||| after: Turkic Media ||| does: spirit "General Bureaucratic Unification"; tooltip: All party leaders begin to abandon their parties to found new parties of the new Turkic Union.
+14 ||| Turkic Business Council ||| TR: Türk İş Konseyi ||| path: TR_turkic_business_council ||| after: Turkic Union Policies ||| does: spirit "Turkic Business Council"
+15 ||| Gain Asian Economic Observer Status ||| TR: Asya Ekonomik Gözlemci Statüsü Kazan ||| path: TR_asian_economic_observer_status ||| after: TURKPA / Turkic Business Council ||| does: spirit "Observer of the Asian Economies"
+16 ||| GDP Program ||| TR: GSYİH Programı ||| path: TR_gdp_program ||| after: Turkic Business Council ||| does: spirit "The GDP Mission"
+17 ||| Low Debt Program ||| TR: Düşük Borç Programı ||| path: TR_low_debt_program ||| after: Turkic Business Council ||| does: spirit "Low Debt Program"
+18 ||| Turkic Resource Commission ||| TR: Türk Kaynak Komisyonu ||| path: TR_resource_union ||| after: GDP Program / Low Debt Program ||| does: spirit "The Turkic Resource Commission"
+19 ||| Turkic Bankers Union ||| TR: Türk Bankacılar Birliği ||| path: TR_banking_union ||| after: Low Debt Program / GDP Program ||| does: spirit "Turkic Bankers Union"
+20 ||| United Turkic Economic Movement ||| TR: Birleşik Türk Ekonomik Hareketi ||| path: TR_united_economic_movement ||| after: Turkic Bankers Union / Turkic Resource Commission ||| does: spirit "United Turkic Economic Movement"
+21 ||| Turkic Ministry ||| TR: Türk Bakanlığı ||| path: TR_turkic_ministers ||| after: Turkic Parties / United Turkic Economic Movement ||| does: spirit "The Turkic Ministries Directive"; tooltip: All Turkic countries will receive Turkic ministers for the coming unification.
+22 ||| Defence Forces of the Turkic Union ||| TR: Türk Birliği Savunma Kuvvetleri ||| path: TR_defence_forces ||| after: Turkic Union Policies ||| does: spirit "The Turkic Defense Forces"
+23 ||| Gain Military Acceptance ||| TR: Askeri Kabul Kazan ||| path: TR_military_acceptance ||| after: Defence Forces of the Turkic Union ||| does: -
+24 ||| Turkic Blood ||| TR: Türk Kanı ||| path: TR_turkic_blood ||| after: Gain Military Acceptance ||| does: spirit "Turkic Blood"
+25 ||| Reconnect with the Old Turkic Traditions ||| TR: Eski Türk Gelenekleriyle Yeniden Bağ Kur ||| path: TR_contact_to_military_traditions ||| after: Gain Military Acceptance ||| does: spirit "Reconnecting With Old Traditions"
+26 ||| Regain War Spirit ||| TR: Savaş Ruhunu Yeniden Kazan ||| path: TR_regain_war_spirit ||| after: Turkic Blood / Reconnect with the Old Turkic Traditions ||| does: spirit "The Realm of the War Spirit"
+27 ||| The Turkic Union ||| TR: Türk Birliği ||| path: TR_the_turkic_union ||| after: Turkic Ministry ||| does: removes "Turkic Heritage Council"; removes "Centre of the Nomadic Civilizations"; removes "Nationalist Education Laws"; removes "The Realm of the War Spirit"; removes "Reconnecting With Old Traditions"; removes "Turkic Blood"; removes "The Turkic Defense Forces"; removes "The Turkic Ministries Direc
+28 ||| Turkic Nationalism ||| TR: Türk Milliyetçiliği ||| path: TR_nationalism ||| after: The Turkic Union ||| does: PP 75; war support 0.07
+29 ||| Democratic Turkic Movement ||| TR: Demokratik Türk Hareketi ||| path: TR_democratic_movement ||| after: Turkic Nationalism ||| does: -
+30 ||| Return of the Turkic Monarchy ||| TR: Türk Monarşisinin Dönüşü ||| path: TR_return_of_the_monarchy ||| after: Turkic Nationalism ||| does: war support 0.1; tooltip: The monarchy will remain in second place until the Khan is elected.
+31 ||| Elect A Turkic Khan ||| TR: Bir Türk Hanı Seç ||| path: TR_elect_a_turkic_khan ||| after: Return of the Turkic Monarchy ||| does: event "Electing a Khan"
+32 ||| Continue with Islam ||| TR: İslam ile Devam Et ||| path: TR_continuation_with_islam ||| after: Elect A Turkic Khan ||| does: PP 100
+33 ||| Return to Tengrism... ||| TR: Tengricilik'e Dönüş... ||| path: TR_traditional_religion_first ||| after: Elect A Turkic Khan ||| does: spirit "A Tengrist-Sponsored State"; removes "sunni"; removes "christian"; removes "orthodox_christian"; event "A Return to Tengrism"
+34 ||| Turkic Expansionism ||| TR: Türk Yayılmacılığı ||| path: TR_expansionism ||| after: The Turkic Union ||| does: spirit "Turkic Expansionism"
+35 ||| Tengri Temples ||| TR: Tengri Tapınakları ||| path: TR_tengri_flags ||| after: Return to Tengrism... ||| does: -
+36 ||| Second Golden Age For Islam ||| TR: İslam İçin İkinci Altın Çağ ||| path: TR_rise_of_islam ||| after: Continue with Islam ||| does: spirit "Leader Of The Second Islamic Golden Age"
+37 ||| Greater Turkic Regime ||| TR: Büyük Türk Rejimi ||| path: TR_greater_turkic_regime ||| after: Second Golden Age For Islam / Tengri Temples ||| does: PP 75; war support 0.05
+38 ||| Launch a Military Coup ||| TR: Askeri Darbe Başlat ||| path: TR_launch_a_coup ||| after: Turkic Nationalism ||| does: stability -0.1; war support 0.2
+39 ||| Coup Traditions ||| TR: Darbe Gelenekleri ||| path: TR_coup_traditions ||| after: Launch a Military Coup ||| does: spirit "Coup Traditions"
+40 ||| Power Is Prosperity ||| TR: Güç Refahtır ||| path: TR_power_is_prosper ||| after: Launch a Military Coup ||| does: spirit "Power Is Prosperity"
+41 ||| Militarist Turkic State ||| TR: Militarist Türk Devleti ||| path: TR_turkic_empire ||| after: Chiefs and Officers... ||| does: PP 75; war support 0.05
+42 ||| Chiefs and Officers... ||| TR: Beyler ve Subaylar... ||| path: TR_united_chiefs ||| after: Power Is Prosperity / Coup Traditions ||| does: spirit "Chiefs of the State"
+43 ||| Full Control of the Azerbaijani Corridor ||| TR: Azerbaycan Koridorunun Tam Kontrolü ||| path: TR_took_over_azerbaijani_corridor ||| after: Turkic Expansionism ||| does: war goal/war on ARM
+44 ||| Save the Turks in China ||| TR: Çin'deki Türkleri Kurtar ||| path: TR_save_turks_in_china ||| after: Turkic Expansionism ||| does: war goal/war on CHI
+45 ||| Assimilation of Armenia ||| TR: Ermenistan'ın Asimilasyonu ||| path: TR_assimalation_of_armenia ||| after: Full Control of the Azerbaijani Corridor ||| does: stability -0.05
+46 ||| Confidence in War Traditions ||| TR: Savaş Geleneklerine Güven ||| path: TR_confidence_of_fireoverload ||| after: Militarist Turkic State ||| does: war support 0.2
+47 ||| Democracy at Last! ||| TR: Sonunda Demokrasi! ||| path: TR_democracy_at_lasts ||| after: Democratic Turkic Movement ||| does: spirit "USoE_digital_democracy"
+48 ||| Liberation of the Uyghur Turks ||| TR: Uygur Türklerinin Kurtuluşu ||| path: TR_rebuild_turkic_east ||| after: Save the Turks in China ||| does: builds industrial_complex, infrastructure
+49 ||| Save the Turks in Russia ||| TR: Rusya'daki Türkleri Kurtar ||| path: TR_save_turks_in_russia ||| after: Turkic Expansionism ||| does: war goal/war on SOV
+50 ||| Liberation of Yakutia and Others ||| TR: Yakutistan ve Diğerlerinin Kurtuluşu ||| path: TR_turkic_rebellions ||| after: Save the Turks in Russia ||| does: -
+51 ||| Liberation of Crimea ||| TR: Kırım'ın Kurtuluşu ||| path: TR_crimea_take_over ||| after: The Crimea Mission ||| does: -
+52 ||| The Crimea Mission ||| TR: Kırım Görevi ||| path: TR_launch_ukraine ||| after: Turkic Expansionism ||| does: war goal/war on UKR
+53 ||| Save the Turks in Iran ||| TR: İran'daki Türkleri Kurtar ||| path: TR_save_turks_in_iran, Ataturk returns (fiction) ||| after: Turkic Expansionism ||| does: war goal/war on PER
+54 ||| Liberation of South Azerbaijan ||| TR: Güney Azerbaycan'ın Kurtuluşu ||| path: TR_launch_an_invasion ||| after: Save the Turks in Iran ||| does: -
+55 ||| The Turkic Empire ||| TR: Türk İmparatorluğu ||| path: TR_the_greater_turkic_empire ||| after: Liberation of Yakutia and Others / Liberation of Crimea ||| does: stability 0.1
+56 ||| Liberal Reformation of the AKP ||| TR: AKP'nin Liberal Reformu ||| path: reformed AKP (2008) ||| after: - ||| does: PP 75; stability 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+57 ||| Spread Liberalism in the Military ||| TR: Orduda Liberalizmi Yay ||| path: reformed AKP (2008) ||| after: A Majority Party / Renew Relations with the Military ||| does: -
+58 ||| Support Institutionalization ||| TR: Kurumsallaşmayı Destekle ||| path: reformed AKP (2008) ||| after: Liberal Reformation of the AKP ||| does: spirit "Institutionalism"; PP 50; tooltip: Gains 3% Support (Relative Popularity).\n
+59 ||| Strengthen the AYM ||| TR: AYM'yi Güçlendir ||| path: reformed AKP (2008), Osman Pamukoglu's HEPAR ||| after: Support Institutionalization ||| does: PP 25; stability 0.03

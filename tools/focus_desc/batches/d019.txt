@@ -1,0 +1,60 @@
+1140 ||| A Bureaucratic Framework ||| TR: Bürokratik Bir Çerçeve ||| path: Constitutional Court rule ||| after: The New Court Elections ||| does: tooltip: Transparent Group Gains 1 Supporter.; tooltip: Soft Group Loses 1 Supporter.
+1141 ||| Rise of the Soft ||| TR: Yumuşakların Yükselişi ||| path: Constitutional Court rule ||| after: The New Court Elections ||| does: tooltip: Transparent Group Loses 1 Supporter.; tooltip: Soft Group Gains 1 Supporter.
+1142 ||| Influence the Speaker ||| TR: Meclis Başkanını Etkile ||| path: Constitutional Court rule ||| after: Unity of the Peoples ||| does: tooltip: Precision Group Gains 1 Supporter.; tooltip: Transparent Group Loses 1 Supporter.
+1143 ||| Storm the Court! ||| TR: Mahkemeyi Bas! ||| path: Constitutional Court rule ||| after: Influence the Speaker ||| does: tooltip: Precision Group takes over the court, disbanding other fronts.
+1144 ||| Win Support from Outside ||| TR: Dışarıdan Destek Kazan ||| path: Constitutional Court rule ||| after: A Bureaucratic Framework ||| does: tooltip: Precision Group Loses 1 Supporter.; tooltip: Transparent Group Gains 1 Supporter.
+1145 ||| The Front of Power ||| TR: Güç Cephesi ||| path: Constitutional Court rule ||| after: Win Support from Outside / Win the Professors' Support ||| does: tooltip: Transparent Group takes over the court and blocks the court changes.
+1146 ||| Win the Professors' Support ||| TR: Profesörlerin Desteğini Kazan ||| path: Constitutional Court rule ||| after: A Bureaucratic Framework ||| does: tooltip: Precision Group Loses 1 Supporter.; tooltip: Soft Group Loses 1 Supporter.; tooltip: Transparent Group Gains 2 Supporters.
+1147 ||| Put the Regime on Autopilot ||| TR: Rejimi Otomatik Pilota Bağla ||| path: Constitutional Court rule ||| after: The Front of Power / Storm the Court! ||| does: stability 0.1
+1148 ||| Step Down from the Leadership ||| TR: Liderlikten Çekil ||| path: Constitutional Court rule ||| after: Rise of the Soft ||| does: tooltip: Precision Group Gains 1 Supporter.; tooltip: Soft Group Loses 2 Supporters.; tooltip: Transparent Group Gains 1 Supporter.
+1149 ||| Destroy the Court's Factionalism ||| TR: Mahkemedeki Hizipleşmeyi Yok Et ||| path: Constitutional Court rule ||| after: Step Down from the Leadership / Increase Happiness ||| does: tooltip: Soft Group ends the factionalism in the court.
+1150 ||| Increase Happiness ||| TR: Mutluluğu Artır ||| path: Constitutional Court rule ||| after: Rise of the Soft ||| does: tooltip: Precision Group Loses 1 Supporter.; tooltip: Soft Group Gains 1 Supporter.
+1151 ||| Credit Law ||| TR: Kredi Kanunu ||| path: Constitutional Court rule ||| after: General Industrial Build-Up ||| does: spirit "Credit Law"
+1152 ||| Mini Marshall Plan 2.0 ||| TR: Mini Marshall Planı 2.0 ||| path: Constitutional Court rule ||| after: Reach Out to the West ||| does: -
+1153 ||| Trade with Germany ||| TR: Almanya ile Ticaret ||| path: Constitutional Court rule ||| after: Reach Out to the West ||| does: -
+1154 ||| Deals with Gazprom ||| TR: Gazprom ile Anlaşmalar ||| path: Constitutional Court rule ||| after: Reach Out to the East ||| does: -
+1155 ||| Open Ford Factories ||| TR: Ford Fabrikaları Aç ||| path: Constitutional Court rule ||| after: Mini Marshall Plan 2.0 ||| does: builds industrial_complex
+1156 ||| Open Modern German Universities ||| TR: Modern Alman Üniversiteleri Aç ||| path: Constitutional Court rule ||| after: Trade with Germany ||| does: spirit "German Universities"
+1157 ||| Open the Gazprom Hub ||| TR: Gazprom Merkezini Aç ||| path: Constitutional Court rule ||| after: Deals with Gazprom ||| does: builds fossil_powerplant, fuel_silo, supply_node
+1158 ||| Solve the Major Debt Problems ||| TR: Büyük Borç Sorunlarını Çöz ||| path: Constitutional Court rule ||| after: Credit Law ||| does: "Yeni Türk Lirası" -> "Türk Lirası"
+1159 ||| Focus on Civilian Industries ||| TR: Sivil Sanayilere Odaklan ||| path: Constitutional Court rule ||| after: Industrial Projects ||| does: builds industrial_complex
+1160 ||| Kayseri Civilian Industries ||| TR: Kayseri Sivil Sanayileri ||| path: Constitutional Court rule ||| after: Focus on Civilian Industries ||| does: builds industrial_complex
+1161 ||| Fund the Industrialists ||| TR: Sanayicileri Finanse Et ||| path: Constitutional Court rule ||| after: Focus on Civilian Industries ||| does: builds industrial_complex
+1162 ||| Sivas Civilian Industries ||| TR: Sivas Sivil Sanayileri ||| path: Constitutional Court rule ||| after: Kayseri Civilian Industries ||| does: builds industrial_complex
+1163 ||| Open Modern Glass Factories ||| TR: Modern Cam Fabrikaları Aç ||| path: Constitutional Court rule ||| after: Fund the Industrialists ||| does: builds industrial_complex
+1164 ||| Light Industry Revenue Projection ||| TR: Hafif Sanayi Gelir Projeksiyonu ||| path: Constitutional Court rule ||| after: Sivas Civilian Industries / Open Modern Glass Factories ||| does: spirit "Revenue-Driven Light Industry"
+1165 ||| Fully Capitalize on the Markets ||| TR: Piyasalardan Tam Olarak Yararlan ||| path: Constitutional Court rule ||| after: Solve the Major Debt Problems ||| does: spirit "globalized_trade_economy"; "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"; "Yeni Türk Lirası" -> "Yeni Türk Lirası"
+1166 ||| US Defences Against Iran ||| TR: İran'a Karşı ABD Savunmaları ||| path: Constitutional Court rule ||| after: Open Modern German Universities / Open Ford Factories ||| does: builds air_base, anti_air_building, infrastructure, radar_station
+1167 ||| Leverage the European-Asian Gateway ||| TR: Avrupa-Asya Geçidinin Kozunu Kullan ||| path: Constitutional Court rule ||| after: Open the Gazprom Hub / Chinese Investment in Offices ||| does: spirit "Gateway Project Revenues"
+1168 ||| Open Rich Resource Extractors ||| TR: Zengin Kaynak Çıkarma Tesisleri Aç ||| path: Constitutional Court rule ||| after: Fully Capitalize on the Markets ||| does: -
+1169 ||| Reach High Levels of Progress ||| TR: Yüksek Kalkınma Seviyelerine Ulaş ||| path: Constitutional Court rule ||| after: Open Rich Resource Extractors ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"; "Türk Lirası" -> "Türk Lirası"
+1170 ||| Finish the Industrial Build-Up ||| TR: Sanayi Yığınağını Tamamla ||| path: Constitutional Court rule ||| after: Reach High Levels of Progress / US Defences Against Iran ||| does: removes "The Turkish Economic Malaise"
+1171 ||| A New Start for Turkey ||| TR: Türkiye İçin Yeni Bir Başlangıç ||| path: CHP social democrat ||| after: - ||| does: stability 0.02; tooltip: Gains 3% Support (Relative Popularity).\n
+1172 ||| Resignation of Deniz Baykal ||| TR: Deniz Baykal'ın İstifası ||| path: CHP social democrat ||| after: - ||| does: PP -100; stability -0.1; tooltip: Loses 1% Support (Relative Popularity).\n
+1173 ||| Clean Politics Law ||| TR: Temiz Siyaset Yasası ||| path: CHP social democrat ||| after: A New Start for Turkey ||| does: PP -100; stability 0.03
+1174 ||| Begin the Reform Process ||| TR: Reform Sürecini Başlat ||| path: CHP social democrat ||| after: Clean Politics Law ||| does: PP 75
+1175 ||| Transparency of the Public Will ||| TR: Millî İradenin Şeffaflığı ||| path: CHP social democrat ||| after: Begin the Reform Process ||| does: PP -10; stability 0.03; tooltip: Gains 1% Support (Relative Popularity).\n
+1176 ||| Restore the Authority of the Public Will ||| TR: Millî İradenin Otoritesini Yeniden Tesis Et ||| path: CHP social democrat ||| after: Begin the Reform Process ||| does: PP 50; stability -0.02; tooltip: Loses 1% Support (Relative Popularity).\n
+1177 ||| Audit Foundations ||| TR: Vakıfları Denetle ||| path: CHP social democrat ||| after: Transparency of the Public Will / Restore the Authority of the Public Will ||| does: PP -25; stability 0.02
+1178 ||| Reform the Judiciary ||| TR: Yargıyı Reforme Et ||| path: CHP social democrat, Saadet / Milli Gorus, communist bloc ||| after: Begin the Reform Process ||| does: PP -50; stability 0.03; tooltip: Gains 1% Support (Relative Popularity).\n
+1179 ||| Attack Corruption Within the State ||| TR: Devlet İçindeki Yolsuzluğa Saldır ||| path: CHP social democrat ||| after: Reform the Judiciary / Reform the Judiciary ||| does: PP -25
+1180 ||| Attack Bank Corruption ||| TR: Banka Yolsuzluğuna Saldır ||| path: CHP social democrat ||| after: Transparency of the Public Will / Restore the Authority of the Public Will ||| does: PP 50
+1181 ||| Embrace Anti-Corruption Laws ||| TR: Yolsuzlukla Mücadele Yasalarını Benimse ||| path: CHP social democrat ||| after: Attack Corruption Within the State ||| does: PP -50; stability -0.03
+1182 ||| General Quality Inspection ||| TR: Genel Kalite Denetimi ||| path: CHP social democrat ||| after: Attack Bank Corruption / Audit Foundations ||| does: spirit "Quality Inspection"
+1183 ||| E-Devlet ||| TR: e-Devlet ||| path: CHP social democrat ||| after: Begin the Reform Process ||| does: spirit "E-Devlet"
+1184 ||| Reduce the Number of Ministries ||| TR: Bakanlık Sayısını Azalt ||| path: CHP social democrat ||| after: E-Devlet / Reform the Judiciary ||| does: spirit "Fewer Ministries"
+1185 ||| Strong Bureaucracy ||| TR: Güçlü Bürokrasi ||| path: CHP social democrat ||| after: Reform the Judiciary / E-Devlet ||| does: PP -25
+1186 ||| Strong Security Management ||| TR: Güçlü Güvenlik Yönetimi ||| path: CHP social democrat ||| after: Strong Bureaucracy / Reduce the Number of Ministries ||| does: war support 0.01
+1187 ||| New Bağ-Kur System ||| TR: Yeni Bağ-Kur Sistemi ||| path: CHP social democrat ||| after: Strong Security Management / Embrace Anti-Corruption Laws ||| does: spirit "The Bağ-Kur System Reworked"; PP -10
+1188 ||| Redesign the SYD ||| TR: SYD'yi Yeniden Tasarla ||| path: CHP social democrat ||| after: New Bağ-Kur System ||| does: spirit "The Perfected SYD"
+1189 ||| Sign Agreements with the Banks ||| TR: Bankalarla Anlaşmalar İmzala ||| path: CHP social democrat ||| after: Redesign the SYD ||| does: PP -75; stability -0.02
+1190 ||| Support the Disabled ||| TR: Engellileri Destekle ||| path: CHP social democrat, DSP (Ecevit) government ||| after: Redesign the SYD ||| does: spirit "Rehabilitating the Disabled"
+1191 ||| Inner City Law ||| TR: Şehir İçi Yasası ||| path: CHP social democrat ||| after: Redesign the SYD ||| does: spirit "Inner City Law"
+1192 ||| Virtual Learning ||| TR: Uzaktan Eğitim ||| path: CHP social democrat ||| after: Redesign the SYD ||| does: spirit "Virtual Learning"
+1193 ||| Ensure the People's Happiness ||| TR: Halkın Mutluluğunu Sağla ||| path: CHP social democrat ||| after: Sign Agreements with the Banks / Support the Disabled ||| does: PP -25; stability 0.02
+1194 ||| CHP's Economic Policy ||| TR: CHP'nin Ekonomi Politikası ||| path: CHP social democrat ||| after: Clean Politics Law ||| does: PP 100
+1195 ||| Create a Climate of Market Confidence ||| TR: Piyasada Güven Ortamı Oluştur ||| path: CHP social democrat ||| after: CHP's Economic Policy ||| does: -
+1196 ||| War on Inflation ||| TR: Enflasyonla Savaş ||| path: CHP social democrat ||| after: Create a Climate of Market Confidence ||| does: spirit "War on Inflation"
+1197 ||| Investment Cult ||| TR: Yatırım Kültü ||| path: CHP social democrat ||| after: CHP's Economic Policy ||| does: spirit "Investment Cult"
+1198 ||| Budget Discipline ||| TR: Bütçe Disiplini ||| path: CHP social democrat ||| after: Create a Climate of Market Confidence / Investment Cult ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"; "Yeni Türk Lirası" -> "Yeni Türk Lirası"
+1199 ||| Grant the Central Bank Independence ||| TR: Merkez Bankası'na Bağımsızlık Ver ||| path: CHP social democrat, AKP / democratic Turkey ||| after: Budget Discipline / War on Inflation ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"

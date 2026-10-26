@@ -1,0 +1,60 @@
+120 ||| Investment Policies ||| TR: Yatırım Politikaları ||| path: reformed AKP (2008), Constitutional Court rule ||| after: Central Anatolian Industries ||| does: PP 125
+121 ||| US Investment Opportunities ||| TR: ABD Yatırım Fırsatları ||| path: reformed AKP (2008) ||| after: Investment Policies ||| does: builds industrial_complex
+122 ||| Modernization Program for Kayseri ||| TR: Kayseri İçin Modernizasyon Programı ||| path: reformed AKP (2008) ||| after: Second Abdullah Gül Regime ||| does: stability 0.02
+123 ||| Found Abdullah Gül University ||| TR: Abdullah Gül Üniversitesi'ni Kur ||| path: reformed AKP (2008) ||| after: Modernization Program for Kayseri ||| does: builds infrastructure
+124 ||| Ankara-Kayseri Railway ||| TR: Ankara-Kayseri Demiryolu ||| path: reformed AKP (2008) ||| after: Modernization Program for Kayseri ||| does: builds infrastructure
+125 ||| The Gülenist Question ||| TR: Gülenist Meselesi ||| path: reformed AKP (2008), MHP / Grey Wolves nationalist ||| after: Intervene in the Armed Forces / Intervene in the Armed Forces ||| does: spirit "The Gülen Movement's Growing Influence Over the Republic"; tooltip: The Gülen movement is now out of control. We have to fight to bring it back under control. It is time to fight and to recognize our enemy.
+126 ||| Help Greece with Its Debt Crisis ||| TR: Yunanistan'a Borç Krizinde Yardım Et ||| path: reformed AKP (2008) ||| after: European Aid Mission ||| does: -
+127 ||| Elective State ||| TR: Seçimli Devlet ||| path: reformed AKP (2008), Osman Pamukoglu's HEPAR ||| after: Entering 2009... ||| does: spirit "Elective State"
+128 ||| Invest In Bulgaria ||| TR: Bulgaristan'a Yatırım Yap ||| path: reformed AKP (2008), ANAP liberal ||| after: European Aid Mission ||| does: builds industrial_complex, infrastructure
+129 ||| Cooperate with NATO Against Yugoslavia ||| TR: Yugoslavya'ya Karşı NATO ile İşbirliği ||| path: reformed AKP (2008) ||| after: European Aid Mission ||| does: war support 0.03
+130 ||| European Aid Mission ||| TR: Avrupa Yardım Görevi ||| path: reformed AKP (2008) ||| after: International Help Program ||| does: PP 25
+131 ||| Valuable Turkish Lira ||| TR: Değerli Türk Lirası ||| path: reformed AKP (2008) ||| after: Winds of the European Union ||| does: "Yeni Türk Lirası" -> "Türk Lirası"
+132 ||| International Help Program ||| TR: Uluslararası Yardım Programı ||| path: reformed AKP (2008) ||| after: Valuable Turkish Lira ||| does: spirit "International Aid Program Contributor"
+133 ||| European Mediator ||| TR: Avrupa Arabulucusu ||| path: reformed AKP (2008) ||| after: Cooperate with NATO Against Yugoslavia / Invest In Bulgaria ||| does: PP 125
+134 ||| Entry into the EU ||| TR: AB Üyeliğine Giriş ||| path: reformed AKP (2008) ||| after: Prepare to Join the Euro / European Mediator ||| does: spirit "The Turkish Media"; removes "The Turkish Economic Malaise"; removes "The Turkish Media"
+135 ||| Fight Anti-Liberal Ideas ||| TR: Liberal Karşıtı Fikirlerle Mücadele Et ||| path: reformed AKP (2008) ||| after: Entry into the EU ||| does: stability -0.05
+136 ||| Declare Rivalry with the MHP ||| TR: MHP ile Rekabet İlan Et ||| path: reformed AKP (2008) ||| after: Entry into the EU ||| does: stability -0.05; tooltip: Loses 2% Support (Relative Popularity).\n
+137 ||| Collaborate with the HDP ||| TR: HDP ile İşbirliği Yap ||| path: reformed AKP (2008) ||| after: Fight Anti-Liberal Ideas / Declare Rivalry with the MHP ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; tooltip: will cooperate with  instead of rebelling against it.; tooltip: 's opinion of  changes by -10%.\n
+138 ||| Intervene in the Armed Forces ||| TR: Silahlı Kuvvetlere Müdahale Et ||| path: reformed AKP (2008) ||| after: Collaborate with the HDP ||| does: PP 75; stability -0.05; tooltip: Gains 2% Support (Relative Popularity).\n; tooltip: 's opinion of  changes by -10%.\n
+139 ||| Meet Barzani ||| TR: Barzani ile Görüş ||| path: reformed AKP (2008) ||| after: Collaborate with the HDP ||| does: event "Meetings With Barzani"
+140 ||| TOKİ Sites ||| TR: TOKİ Siteleri ||| path: reformed AKP (2008) ||| after: Collaborate with the HDP ||| does: spirit "TOKİ Construction"
+141 ||| Ban Gülenist Institutions ||| TR: Gülenist Kurumları Yasakla ||| path: reformed AKP (2008) ||| after: The Gülenist Question ||| does: PP -25; stability 0.07; tooltip: Gülenist institutions will be officially outlawed.
+142 ||| Control Gülenist Schools ||| TR: Gülenist Okulları Denetle ||| path: reformed AKP (2008) ||| after: The Gülenist Question ||| does: "The Gülen Movement's Growing Influence Over the Republic" -> "The Gülen Movement's Partial Influence Over the Republic"
+143 ||| Control the Newspapers ||| TR: Gazeteleri Kontrol Altına Al ||| path: reformed AKP (2008) ||| after: The Gülenist Question ||| does: PP 100; stability -0.05; tooltip: The newspapers will be brought under control, leading to instability in the state.
+144 ||| Control The Situation ||| TR: Durumu Kontrol Altına Al ||| path: reformed AKP (2008) ||| after: Limit The Freedom / Summon the Communist Monster ||| does: "The Gülen Movement's Low Influence Over the Republic" -> "The Gülen Movement's Very Low Influence Over the Republic"
+145 ||| Limit The Freedom ||| TR: Özgürlüğü Sınırla ||| path: reformed AKP (2008) ||| after: Ban Gülenist Institutions / Control Gülenist Schools ||| does: "The Gülen Movement's Partial Influence Over the Republic" -> "The Gülen Movement's Low Influence Over the Republic"
+146 ||| Summon the Communist Monster ||| TR: Komünist Canavarı Çağır ||| path: reformed AKP (2008) ||| after: Control Gülenist Schools / Control the Newspapers ||| does: stability -0.03; tooltip: 's opinion of  changes by +7%.\n
+147 ||| Recovering from the August Revolt ||| TR: Ağustos İsyanından Toparlanma ||| path: reformed AKP (2008) ||| after: Control The Situation ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; event "The August Protests Begin to Calm"
+148 ||| Mosque Industries ||| TR: Cami Sanayii ||| path: reformed AKP (2008) ||| after: Recovering from the August Revolt ||| does: spirit "Mosque Industry"
+149 ||| Restore Trade Reliability ||| TR: Ticari Güvenilirliği Yeniden Kazan ||| path: reformed AKP (2008) ||| after: Recovering from the August Revolt ||| does: PP 75
+150 ||| A Majority Party ||| TR: Çoğunluk Partisi ||| path: reformed AKP (2008), AKP / democratic Turkey ||| after: Recovering from the August Revolt ||| does: PP 75; tooltip: Gains 3% Support (Relative Popularity).\n
+151 ||| Renew Relations with the Military ||| TR: Orduyla İlişkileri Yenile ||| path: reformed AKP (2008) ||| after: Recovering from the August Revolt ||| does: tooltip: 's opinion of  changes by +3%.\n
+152 ||| Stabilization of the State ||| TR: Devletin İstikrara Kavuşması ||| path: reformed AKP (2008), LDP libertarian ||| after: Control The Situation ||| does: spirit "The Stabilization of Turkey"
+153 ||| A Reliable President ||| TR: Güvenilir Cumhurbaşkanı ||| path: reformed AKP (2008) ||| after: Control The Situation ||| does: spirit "A Reliable President"
+154 ||| Strengthen the MİT ||| TR: MİT'i Güçlendir ||| path: reformed AKP (2008), Ataturk returns (fiction), AKP / democratic Turkey ||| after: Renew Relations with the Military / A Majority Party ||| does: "Milli İstihbarat Teşkilatı" -> "Milli İstihbarat Teşkilatı"
+155 ||| Failed Turkish Military Coup d'État ||| TR: Başarısız Türk Askeri Darbesi ||| path: reformed AKP (2008) ||| after: Strengthen the MİT / Spread Liberalism in the Military ||| does: stability 0.05; war support 0.05
+156 ||| Mediterranean Trade ||| TR: Akdeniz Ticareti ||| path: reformed AKP (2008) ||| after: Restore Trade Reliability / Mosque Industries ||| does: -
+157 ||| Condemn USA ||| TR: ABD'yi Kına ||| path: reformed AKP (2008) ||| after: Changes in Political Understanding ||| does: PP 50; war support 0.03
+158 ||| Stance Towards NATO ||| TR: NATO'ya Karşı Tutum ||| path: reformed AKP (2008) ||| after: Changes in Political Understanding ||| does: war support 0.03; tooltip: European countries will have a worse opinion of NATO.
+159 ||| Changes in Political Understanding ||| TR: Siyasi Anlayışta Değişimler ||| path: reformed AKP (2008) ||| after: Failed Turkish Military Coup d'État ||| does: PP 100
+160 ||| Demand Gülen's Return to Turkey ||| TR: Gülen'in Türkiye'ye İadesini Talep Et ||| path: reformed AKP (2008), AKP / democratic Turkey ||| after: Condemn USA ||| does: event "Turkey Wants Gülen Returned"
+161 ||| Ideas for a European Army ||| TR: Avrupa Ordusu Fikirleri ||| path: reformed AKP (2008) ||| after: Stance Towards NATO ||| does: event "A European Army?"
+162 ||| General Reform Package ||| TR: Genel Reform Paketi ||| path: reformed AKP (2008) ||| after: Demand Gülen's Return to Turkey / Ideas for a European Army ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; PP 75; stability 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+163 ||| Default on US Debts ||| TR: ABD Borçlarını Ödeme ||| path: reformed AKP (2008) ||| after: Condemn USA / Spark an EU-US Crisis ||| does: -
+164 ||| Spark an EU-US Crisis ||| TR: AB-ABD Krizini Tetikle ||| path: reformed AKP (2008) ||| after: Changes in Political Understanding ||| does: event "The EU-US Crisis"
+165 ||| Formalize European Defence ||| TR: Avrupa Savunmasını Resmîleştir ||| path: reformed AKP (2008) ||| after: Stance Towards NATO / Spark an EU-US Crisis ||| does: spirit "A Formalized Euro Defense"
+166 ||| Abandon the Dollar ||| TR: Dolardan Vazgeç ||| path: reformed AKP (2008) ||| after: Spark an EU-US Crisis ||| does: event "Abandoning the Dollar in Trade?"
+167 ||| Support European Expansionism ||| TR: Avrupa Yayılmacılığını Destekle ||| path: reformed AKP (2008) ||| after: Default on US Debts / Demand Gülen's Return to Turkey ||| does: war support 0.03; tooltip: European countries will be pressured to expand their militaries.
+168 ||| Press to Expand the EU's Military Power ||| TR: AB'nin Askeri Gücünü Genişletmek İçin Bastır ||| path: reformed AKP (2008) ||| after: Ideas for a European Army / Formalize European Defence ||| does: war support 0.03; tooltip: European Union countries will be pressured to increase their military strength.
+169 ||| Ecological Reforms ||| TR: Ekolojik Reformlar ||| path: reformed AKP (2008) ||| after: General Reform Package ||| does: spirit "Ecological Laws"
+170 ||| Return of Liberalism ||| TR: Liberalizmin Dönüşü ||| path: reformed AKP (2008) ||| after: Support European Expansionism ||| does: stability 0.02
+171 ||| Pressure Hungary ||| TR: Macaristan'a Baskı Yap ||| path: reformed AKP (2008) ||| after: Return of Liberalism ||| does: spirit "Western Pressure"
+172 ||| Pressure Poland ||| TR: Polonya'ya Baskı Yap ||| path: reformed AKP (2008) ||| after: Return of Liberalism ||| does: spirit "Western Pressure"
+173 ||| Pressure Greece ||| TR: Yunanistan'a Baskı Yap ||| path: reformed AKP (2008) ||| after: Return of Liberalism ||| does: spirit "Western Pressure"
+174 ||| Embrace Liberal War Economies ||| TR: Liberal Savaş Ekonomilerini Benimse ||| path: reformed AKP (2008) ||| after: Press to Expand the EU's Military Power ||| does: spirit "The Liberal War Economy"
+175 ||| Increase European Military Service ||| TR: Avrupa Askerlik Hizmetini Artır ||| path: reformed AKP (2008) ||| after: Embrace Liberal War Economies ||| does: event "Expanding European Military Service?"
+176 ||| High-Quality Engines ||| TR: Yüksek Kaliteli Motorlar ||| path: reformed AKP (2008) ||| after: Embrace Liberal War Economies ||| does: spirit "High-Quality Engines"
+177 ||| Achieve a Unified European Command ||| TR: Birleşik Avrupa Komutasına Ulaş ||| path: reformed AKP (2008) ||| after: Embrace Liberal War Economies ||| does: event "A Unified European Command?"
+178 ||| Industrialization Law ||| TR: Sanayileşme Kanunu ||| path: reformed AKP (2008) ||| after: Ecological Reforms ||| does: spirit "Industrialization Law"
+179 ||| Factory Filter Law ||| TR: Fabrika Filtresi Kanunu ||| path: reformed AKP (2008) ||| after: Ecological Reforms ||| does: spirit "Factory Filter Law"

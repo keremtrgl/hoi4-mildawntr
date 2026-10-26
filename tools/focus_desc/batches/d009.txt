@@ -1,0 +1,60 @@
+540 ||| Bring Chinese Ecologists Here ||| TR: Çinli Ekolojistleri Buraya Getir ||| path: anarchist ||| after: Ecological Condemnation of China ||| does: -
+541 ||| Invite Greta to the Country ||| TR: Greta'yı Ülkeye Davet Et ||| path: anarchist ||| after: Bring Chinese Ecologists Here / Revenge of Ecology ||| does: event "An Invitation to Greta"
+542 ||| Ecologist Imperialism ||| TR: Ekolojist Emperyalizm ||| path: anarchist ||| after: Protect Animals / Protect Humans ||| does: spirit "Ecological Imperialism"
+543 ||| Armed Ecologists ||| TR: Silahlı Ekolojistler ||| path: anarchist ||| after: Invite Greta to the Country ||| does: -
+544 ||| Ecologist Tanks ||| TR: Ekolojist Tanklar ||| path: anarchist ||| after: Armed Ecologists ||| does: spirit "Ecologist Tanks"
+545 ||| Invent the Deadly Rock Cannon ||| TR: Ölümcül Taş Topunu İcat Et ||| path: anarchist ||| after: Ecologist Tanks ||| does: -
+546 ||| Ban Bomber Aircraft ||| TR: Bombardıman Uçaklarını Yasakla ||| path: anarchist ||| after: Armed Ecologists ||| does: spirit "Flying Banned"
+547 ||| Invent Special Ecological Weapons ||| TR: Özel Ekolojik Silahlar İcat Et ||| path: anarchist ||| after: Armed Ecologists ||| does: spirit "Eco-Friendly Weapons"
+548 ||| Water Planes ||| TR: Su Uçakları ||| path: anarchist ||| after: Ban Bomber Aircraft ||| does: spirit "Seaplanes"
+549 ||| Special Killing Forces ||| TR: Özel Öldürme Kuvvetleri ||| path: anarchist ||| after: Invent Special Ecological Weapons ||| does: -
+550 ||| A New Kind of War ||| TR: Yeni Bir Savaş Türü ||| path: anarchist ||| after: Invent the Deadly Rock Cannon / Water Planes ||| does: war support 0.1
+551 ||| Protect Humans ||| TR: İnsanları Koru ||| path: anarchist ||| after: A New Kind of War ||| does: spirit "Protection for Humans"
+552 ||| Protect Animals ||| TR: Hayvanları Koru ||| path: anarchist ||| after: A New Kind of War ||| does: spirit "Protection for Animals"
+553 ||| Target Europe ||| TR: Avrupa'yı Hedef Al ||| path: anarchist ||| after: Ecologist Imperialism ||| does: PP 75
+554 ||| Target the Middle East ||| TR: Orta Doğu'yu Hedef Al ||| path: anarchist ||| after: Ecologist Imperialism ||| does: PP 75
+555 ||| Target the Major Powers ||| TR: Büyük Güçleri Hedef Al ||| path: anarchist ||| after: Take Control of the Muslim East / Climate Meetings ||| does: PP 125; war support 0.03
+556 ||| Attack Iran ||| TR: İran'a Saldır ||| path: anarchist ||| after: Attack the Fossil Reserves ||| does: war goal/war on PER
+557 ||| Attack the Fossil Reserves ||| TR: Fosil Rezervlerine Saldır ||| path: anarchist ||| after: Target the Middle East ||| does: war support 0.05
+558 ||| Invasions in the South ||| TR: Güney'de İşgaller ||| path: anarchist ||| after: Attack the Fossil Reserves ||| does: war goal/war on SYR
+559 ||| Destroy Israel ||| TR: İsrail'i Yok Et ||| path: anarchist ||| after: Attack the Fossil Reserves ||| does: war goal/war on ISR
+560 ||| Take Control of the Muslim East ||| TR: Müslüman Doğu'yu Kontrol Altına Al ||| path: anarchist ||| after: Destroy Israel / Attack Iran ||| does: war goal/war on AFG; war goal/war on PAK
+561 ||| Call on Europe for a Ceasefire ||| TR: Avrupa'yı Ateşkese Çağır ||| path: anarchist ||| after: Target Europe ||| does: event "A European Ceasefire"
+562 ||| A Peaceful Solution ||| TR: Barışçıl Çözüm ||| path: anarchist ||| after: Target Europe ||| does: spirit "A Peaceful Solution"
+563 ||| Green the European Union ||| TR: Avrupa Birliği'ni Yeşillendir ||| path: anarchist ||| after: A Peaceful Solution / Call on Europe for a Ceasefire ||| does: spirit "The Green World Projection"; spirit "EU_member"; event "An Ecologist Vision for the EU"
+564 ||| Climate Meetings ||| TR: İklim Toplantıları ||| path: anarchist ||| after: Green the European Union / Peace Forever ||| does: event "Climate Meetings"
+565 ||| Call on Europe to Unify ||| TR: Avrupa'yı Birleşmeye Çağır ||| path: anarchist ||| after: Climate Meetings ||| does: event "The Anarchists Urge Us to Unify the EU"
+566 ||| Peace Forever ||| TR: Sonsuza Dek Barış ||| path: anarchist ||| after: A Peaceful Solution ||| does: -
+567 ||| Genius Europe Vision ||| TR: Dâhi Avrupa Vizyonu ||| path: anarchist ||| after: Call on Europe for a Ceasefire ||| does: spirit "Genius Europe"
+568 ||| Time for an Ecologist Middle East ||| TR: Ekolojist Orta Doğu Zamanı ||| path: anarchist ||| after: Take Control of the Muslim East ||| does: removes "Anarchist Neutrality"
+569 ||| Target the USA ||| TR: ABD'yi Hedef Al ||| path: anarchist ||| after: Target the Major Powers ||| does: war goal/war on USA
+570 ||| Target China ||| TR: Çin'i Hedef Al ||| path: anarchist ||| after: Target the Major Powers ||| does: war goal/war on CHI
+571 ||| Prepare for the Last Round ||| TR: Son Raunda Hazırlan ||| path: anarchist ||| after: Target China / Target the USA ||| does: war goal/war on TUR; tooltip: The country will be united and its sectarian woes can be overcome.
+572 ||| Anarchist-Green Utopia ||| TR: Anarşist-Yeşil Ütopya ||| path: anarchist ||| after: Prepare for the Last Round ||| does: PP 50
+573 ||| Fast Construction ||| TR: Hızlı İnşaatçılık ||| path: anarchist ||| after: The Elements Of Collectivization ||| does: spirit "Fast Construction"
+574 ||| Start the Industrialization Forge ||| TR: Sanayileşme Ocağını Yak ||| path: anarchist ||| after: Effective Bureaucracy ||| does: PP 125; tooltip: Gains 3% Support (Relative Popularity).\n
+575 ||| Effective Bureaucracy ||| TR: Etkin Bürokrasi ||| path: anarchist ||| after: Fast Construction / Working Teams ||| does: stability -0.1; tooltip: The removed bureaucracy will return to work.
+576 ||| Sivas Workers' Factory ||| TR: Sivas İşçi Fabrikası ||| path: anarchist ||| after: Start the Industrialization Forge ||| does: builds industrial_complex
+577 ||| Kayseri Workers' Factory ||| TR: Kayseri İşçi Fabrikası ||| path: anarchist ||| after: Start the Industrialization Forge ||| does: builds industrial_complex
+578 ||| Turkish Factory Culture ||| TR: Türk Fabrika Kültürü ||| path: anarchist ||| after: Kayseri Workers' Factory / Sivas Workers' Factory ||| does: spirit "The Turkish Industrial Culture"
+579 ||| Adana Arms Factory ||| TR: Adana Silah Fabrikası ||| path: anarchist ||| after: Sivas Workers' Factory ||| does: builds arms_factory
+580 ||| Diyarbakır Workers' Factory ||| TR: Diyarbakır İşçi Fabrikası ||| path: anarchist ||| after: Kayseri Workers' Factory ||| does: builds industrial_complex
+581 ||| Create Modern Offices ||| TR: Modern Ofisler Kur ||| path: anarchist ||| after: Anarchist Railway Project / Anarchist Network Project ||| does: builds offices
+582 ||| Anarchist Railway Project ||| TR: Anarşist Demiryolu Projesi ||| path: anarchist ||| after: Diyarbakır Workers' Factory / Turkish Factory Culture ||| does: spirit "The Railway Culture"
+583 ||| Socialist Innovation ||| TR: Sosyalist Yenilikçilik ||| path: anarchist ||| after: Effective Bureaucracy ||| does: PP 75; stability 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+584 ||| An Atheist State ||| TR: Ateist Bir Devlet ||| path: anarchist, TKP communist ||| after: Preserve Communist Secularism ||| does: tooltip: Every neighboring Muslim country will see a rise in domestic radicalism.
+585 ||| Anarchist Network Project ||| TR: Anarşist Ağ Projesi ||| path: anarchist ||| after: Diyarbakır Workers' Factory / Turkish Factory Culture ||| does: spirit "The Radar Culture"
+586 ||| Build New Schools ||| TR: Yeni Okullar İnşa Et ||| path: anarchist ||| after: Socialist Innovation ||| does: -
+587 ||| Anarcho-Left Innovation ||| TR: Anarko-Sol Yenilikçilik ||| path: anarchist ||| after: Socialist Innovation ||| does: spirit "Innovation First"
+588 ||| Preserve Communist Secularism ||| TR: Komünist Laikliği Koru ||| path: anarchist ||| after: Effective Bureaucracy ||| does: stability 0.05; tooltip: Gains 3% Support (Relative Popularity).\n
+589 ||| Science Tournaments ||| TR: Bilim Turnuvaları ||| path: anarchist ||| after: Anarcho-Left Innovation / Build New Schools ||| does: spirit "Science Tournaments"
+590 ||| Science Exhibitions ||| TR: Bilim Fuarları ||| path: anarchist ||| after: Anarcho-Left Innovation / Build New Schools ||| does: spirit "Science Exhibitions"
+591 ||| Society of Inventors ||| TR: Mucitler Topluluğu ||| path: anarchist ||| after: Build New Schools / Anarcho-Left Innovation ||| does: spirit "Society of Inventors"
+592 ||| Elevate the Academics ||| TR: Akademisyenleri Yücelt ||| path: anarchist ||| after: Science Exhibitions / Science Tournaments ||| does: spirit "Rising Academics"
+593 ||| Clothing Interventionism ||| TR: Kıyafet Müdahaleciliği ||| path: anarchist ||| after: Preserve Communist Secularism ||| does: spirit "Atheist Interventions"
+594 ||| Anarchist Guardians ||| TR: Anarşist Muhafızlar ||| path: anarchist ||| after: Clothing Interventionism / An Atheist State ||| does: -
+595 ||| The Unhealthy State ||| TR: Sağlıksız Devlet ||| path: anarchist ||| after: Anarchist Guardians ||| does: removes "the_ulema"; stability -0.05
+596 ||| Send Academics to the World ||| TR: Akademisyenleri Dünyaya Gönder ||| path: anarchist ||| after: Society of Inventors / Science Exhibitions ||| does: spirit "Attracting Academics From Around the World"
+597 ||| The Great Anarchist Science ||| TR: Büyük Anarşist Bilim ||| path: anarchist ||| after: Elevate the Academics / Send Academics to the World ||| does: spirit "Anarchist Science"; removes "Innovation First"; removes "Science Tournaments"; removes "Science Exhibitions"; removes "Attracting Academics From Around the World"; removes "Society of Inventors"
+598 ||| Intervene in Spiritual Matters ||| TR: Manevi Konulara Müdahale Et ||| path: anarchist ||| after: The Unhealthy State ||| does: -
+599 ||| Efficient Anarchy System ||| TR: Verimli Anarşi Sistemi ||| path: anarchist ||| after: The Great Anarchist Science / Intervene in Spiritual Matters ||| does: stability 0.1; tooltip: Order finds its way into a country that had no order and a sick leadership.

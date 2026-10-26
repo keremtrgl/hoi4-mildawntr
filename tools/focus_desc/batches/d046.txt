@@ -1,0 +1,60 @@
+2760 ||| Trabzon Civilian Factory ||| TR: Trabzon Sivil Fabrikası ||| path: MIT intelligence state ||| after: Boost the Civilian Sector ||| does: builds industrial_complex
+2761 ||| Ankara Civilian Factory ||| TR: Ankara Sivil Fabrikası ||| path: MIT intelligence state ||| after: Trabzon Civilian Factory ||| does: builds industrial_complex
+2762 ||| General Resource Industry ||| TR: Genel Kaynak Sanayisi ||| path: MIT intelligence state ||| after: Ankara Civilian Factory / Sivas Civilian Factory ||| does: builds industrial_complex
+2763 ||| Boost the Military Sector ||| TR: Askeri Sektörü Destekle ||| path: MIT intelligence state ||| after: Local Industrialization Model ||| does: spirit "Government Boosted Arms Sector"
+2764 ||| SADAT Factories ||| TR: SADAT Fabrikaları ||| path: MIT intelligence state ||| after: Boost the Military Sector ||| does: builds arms_factory
+2765 ||| APC Factories ||| TR: Zırhlı Personel Taşıyıcı Fabrikaları ||| path: MIT intelligence state ||| after: Special Military Build-Up ||| does: builds arms_factory
+2766 ||| Special Military Build-Up ||| TR: Özel Askeri Yığınak ||| path: MIT intelligence state ||| after: Boost the Military Sector ||| does: builds arms_factory
+2767 ||| Healthcare Policies ||| TR: Sağlık Politikaları ||| path: MIT intelligence state ||| after: Government Policies ||| does: PP 125
+2768 ||| Achieve Basic Healthcare ||| TR: Temel Sağlık Hizmetini Sağla ||| path: MIT intelligence state ||| after: Healthcare Policies ||| does: PP 25
+2769 ||| Social Society ||| TR: Sosyal Toplum ||| path: MIT intelligence state ||| after: Achieve Basic Healthcare ||| does: spirit "Social Society"
+2770 ||| Respect for the Retired ||| TR: Emeklilere Saygı ||| path: MIT intelligence state ||| after: Healthcare Policies ||| does: stability 0.05
+2771 ||| Expand The Welfare ||| TR: Refahı Genişlet ||| path: MIT intelligence state ||| after: Respect for the Retired / Achieve Basic Healthcare ||| does: PP 25
+2772 ||| Limit the Police ||| TR: Polisi Sınırla ||| path: MIT intelligence state ||| after: Respect for the Retired ||| does: PP 25; stability 0.02
+2773 ||| Education Policies ||| TR: Eğitim Politikaları ||| path: MIT intelligence state ||| after: Government Policies ||| does: PP 125
+2774 ||| Reform the Curriculum ||| TR: Müfredatı Reforme Et ||| path: MIT intelligence state ||| after: Education Policies ||| does: -
+2775 ||| Espionage Schools ||| TR: Casusluk Okulları ||| path: MIT intelligence state ||| after: Reform the Curriculum ||| does: spirit "Espionage Schools"
+2776 ||| Economy Schools ||| TR: Ekonomi Okulları ||| path: MIT intelligence state ||| after: Reform the Curriculum ||| does: spirit "Economy Schools"
+2777 ||| Religion Schools ||| TR: Din Okulları ||| path: MIT intelligence state ||| after: Reform the Curriculum ||| does: spirit "Religion Schools"
+2778 ||| Diversified Education ||| TR: Çeşitlendirilmiş Eğitim ||| path: MIT intelligence state ||| after: Religion Schools / Economy Schools ||| does: spirit "Diversified Education"
+2779 ||| Open New Laboratories ||| TR: Yeni Laboratuvarlar Aç ||| path: MIT intelligence state ||| after: Diversified Education ||| does: -
+2780 ||| Focus on Educational Improvement ||| TR: Eğitimin Geliştirilmesine Odaklan ||| path: MIT intelligence state ||| after: Diversified Education ||| does: -
+2781 ||| Military Policies ||| TR: Askeri Politikalar ||| path: MIT intelligence state ||| after: Government Policies ||| does: PP 125
+2782 ||| MKEK ||| TR: MKEK ||| path: MIT intelligence state ||| after: Military Policies ||| does: -
+2783 ||| Global Interventionism ||| TR: Küresel Müdahalecilik ||| path: MIT intelligence state ||| after: MKEK ||| does: war support 0.05
+2784 ||| Draft Women ||| TR: Kadınları Askere Al ||| path: MIT intelligence state ||| after: Military Policies ||| does: -
+2785 ||| Extra Budget Reform ||| TR: Ek Bütçe Reformu ||| path: MIT intelligence state ||| after: Draft Women / MKEK ||| does: spirit "The Budget Relief"
+2786 ||| Modern Espionage ||| TR: Modern Casusluk ||| path: MIT intelligence state ||| after: Draft Women ||| does: spirit "Modern Espionage"
+2787 ||| MİST and MSİT ||| TR: MİST ve MSİT ||| path: MIT intelligence state ||| after: Modern Espionage / Extra Budget Reform ||| does: "Milli İstihbarat Teşkilatı" -> "Milli İstihbarat ve Savunma Teşkilatı"; "Milli İstihbarat Teşkilatı" -> "Milli İstihbarat ve Dış Siyaset Teşkilatı"
+2788 ||| Military Youth ||| TR: Askeri Gençlik ||| path: MIT intelligence state ||| after: Global Interventionism / MİST and MSİT ||| does: -
+2789 ||| Fidanist Foreign Relations ||| TR: Fidancı Dış İlişkiler ||| path: MIT intelligence state ||| after: Foreign Policies ||| does: spirit "Fidanist Interventionism"
+2790 ||| Influence Defence ||| TR: Etki Savunması ||| path: MIT intelligence state ||| after: Fidanist Foreign Relations ||| does: spirit "Influence Defence Project"
+2791 ||| Embrace Interventionist Policies ||| TR: Müdahaleci Politikaları Benimse ||| path: MIT intelligence state ||| after: Fidanist Foreign Relations ||| does: war support 0.05
+2792 ||| Invade Kurdistan ||| TR: Kürdistan'ı İşgal Et ||| path: MIT intelligence state ||| after: Embrace Interventionist Policies ||| does: war goal/war on KUR
+2793 ||| Turkish Lobbying ||| TR: Türk Lobiciliği ||| path: MIT intelligence state ||| after: Invade Kurdistan ||| does: spirit "Turkish Lobbying"
+2794 ||| Counter the Jewish Lobby ||| TR: Yahudi Lobisine Karşı Koy ||| path: MIT intelligence state ||| after: Turkish Lobbying ||| does: "Turkish Lobbying" -> "Turkish Lobbying"
+2795 ||| Counter the Classic Embargo Policies ||| TR: Klasik Ambargo Politikalarına Karşı Koy ||| path: MIT intelligence state ||| after: Invade Kurdistan ||| does: spirit "Anti-Embargo Policies"
+2796 ||| Turkish Geopolitical Thinking ||| TR: Türk Jeopolitik Düşüncesi ||| path: MIT intelligence state ||| after: Counter the Classic Embargo Policies ||| does: spirit "Geopolitical Mindset"
+2797 ||| Turkish Worldwide Intel Program ||| TR: Türk Dünya Çapında İstihbarat Programı ||| path: MIT intelligence state ||| after: Mind Games / Counter the Jewish Lobby ||| does: "Mind Games" -> "Mind Games"
+2798 ||| Asian Intel Program ||| TR: Asya İstihbarat Programı ||| path: MIT intelligence state ||| after: Turkish Worldwide Intel Program ||| does: PP 175
+2799 ||| Middle Eastern Intel Program ||| TR: Orta Doğu İstihbarat Programı ||| path: MIT intelligence state ||| after: Asian Intel Program ||| does: -
+2800 ||| Intervene in the Middle Eastern Cold War ||| TR: Orta Doğu Soğuk Savaşına Müdahale Et ||| path: MIT intelligence state ||| after: Middle Eastern Intel Program ||| does: stability -0.05
+2801 ||| Riyadh Intel ||| TR: Riyad İstihbaratı ||| path: MIT intelligence state ||| after: Intervene in the Middle Eastern Cold War ||| does: -
+2802 ||| Tehran Intel ||| TR: Tahran İstihbaratı ||| path: MIT intelligence state ||| after: Intervene in the Middle Eastern Cold War ||| does: -
+2803 ||| Smash the Sykes-Picot Agreement ||| TR: Sykes-Picot Anlaşmasını Parçala ||| path: MIT intelligence state ||| after: Middle Eastern Intel Program ||| does: war support 0.1
+2804 ||| Invade Northern Syria ||| TR: Kuzey Suriye'yi İşgal Et ||| path: MIT intelligence state ||| after: Smash the Sykes-Picot Agreement ||| does: war goal/war on FSA; war goal/war on SYR
+2805 ||| Central Asian Intel Program ||| TR: Orta Asya İstihbarat Programı ||| path: MIT intelligence state ||| after: Asian Intel Program ||| does: -
+2806 ||| Astana Intel ||| TR: Astana İstihbaratı ||| path: MIT intelligence state ||| after: Central Asian Intel Program ||| does: -
+2807 ||| Baku Intel ||| TR: Bakü İstihbaratı ||| path: MIT intelligence state ||| after: Central Asian Intel Program ||| does: -
+2808 ||| Major Nations Program ||| TR: Büyük Devletler Programı ||| path: MIT intelligence state ||| after: Turkish Worldwide Intel Program ||| does: -
+2809 ||| The Political Campaign ||| TR: Siyasi Kampanya ||| path: MIT intelligence state ||| after: Major Nations Program ||| does: PP 175
+2810 ||| Reach Out to China ||| TR: Çin'e El Uzat ||| path: MIT intelligence state ||| after: The Political Campaign ||| does: -
+2811 ||| Reach Out to Russia ||| TR: Rusya'ya El Uzat ||| path: MIT intelligence state ||| after: The Political Campaign ||| does: -
+2812 ||| Finance the Azerbaijani Military ||| TR: Azerbaycan Ordusunu Finanse Et ||| path: MIT intelligence state ||| after: Reach Out to Russia ||| does: builds arms_factory
+2813 ||| Georgian Defence Summit ||| TR: Gürcistan Savunma Zirvesi ||| path: MIT intelligence state ||| after: Reach Out to Russia ||| does: -
+2814 ||| Russian Investments ||| TR: Rus Yatırımları ||| path: MIT intelligence state ||| after: Finance the Azerbaijani Military / Georgian Defence Summit ||| does: builds industrial_complex, infrastructure
+2815 ||| Bomb the PKK Bases ||| TR: PKK Üslerini Bombala ||| path: MIT intelligence state ||| after: Counter-Terror Operations ||| does: stability -0.05; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+2816 ||| Kandil Intel ||| TR: Kandil İstihbaratı ||| path: MIT intelligence state ||| after: Bomb the PKK Bases ||| does: spirit "Agents On Kandil"
+2817 ||| Worldwide Relations Committee ||| TR: Dünya Çapında İlişkiler Komitesi ||| path: MIT intelligence state ||| after: Fidanist Foreign Relations ||| does: spirit "Worldwide Relations Committee"
+2818 ||| Reach Out to the USA ||| TR: ABD'ye El Uzat ||| path: MIT intelligence state ||| after: The Political Campaign ||| does: -
+2819 ||| American Equipment Campaign ||| TR: Amerikan Teçhizatı Kampanyası ||| path: MIT intelligence state ||| after: Reach Out to the USA ||| does: -

@@ -1,0 +1,60 @@
+300 ||| Boost Confidence in the Economy ||| TR: Ekonomiye Güveni Artır ||| path: ANAP liberal ||| after: Adapting to Extraordinary Situations ||| does: removes "The Turkish Economic Malaise"; "Türk Lirası" -> "Türk Lirası"
+301 ||| Competition Authority ||| TR: Rekabet Kurumu ||| path: ANAP liberal, AKP / democratic Turkey, technocratic HP ||| after: Boost Market Morale ||| does: spirit "The Turkish Competition Authority"
+302 ||| Adapting to Extraordinary Situations ||| TR: Olağanüstü Durumlara Uyum ||| path: ANAP liberal ||| after: Drop the 6 Zeros ||| does: spirit "An Adaptable Economy"
+303 ||| Investments in Arms Factories? ||| TR: Silah Fabrikalarına Yatırım mı? ||| path: ANAP liberal ||| after: Visit NATO Supreme Headquarters ||| does: builds arms_factory
+304 ||| Develop the East ||| TR: Doğu'yu Kalkındır ||| path: ANAP liberal ||| after: Connected Airports ||| does: builds industrial_complex, infrastructure
+305 ||| Powerful Industry ||| TR: Güçlü Sanayi ||| path: ANAP liberal ||| after: Countrywide Road Project / Develop the East ||| does: spirit "Turkish Economic Powerhouse"
+306 ||| Education Strategy ||| TR: Eğitim Stratejisi ||| path: ANAP liberal ||| after: End the National Reforms ||| does: stability 0.03
+307 ||| Fund Science ||| TR: Bilimi Finanse Et ||| path: ANAP liberal ||| after: Education Strategy ||| does: spirit "Funded Science"
+308 ||| A University in Every Province ||| TR: Her İle Bir Üniversite ||| path: ANAP liberal ||| after: Fund Science ||| does: builds infrastructure
+309 ||| Modernize Boğaziçi University ||| TR: Boğaziçi Üniversitesi'ni Modernleştir ||| path: ANAP liberal ||| after: Fund Science ||| does: builds infrastructure
+310 ||| Modernize Marmara University ||| TR: Marmara Üniversitesi'ni Modernleştir ||| path: ANAP liberal ||| after: Fund Science ||| does: builds infrastructure
+311 ||| Encouragement Instead of Coercion ||| TR: Zorlama Yerine Teşvik ||| path: ANAP liberal ||| after: A University in Every Province / Modernize Marmara University ||| does: spirit "Encouragement Instead of Coercion"
+312 ||| Redesign the Exams ||| TR: Sınavları Yeniden Tasarla ||| path: ANAP liberal ||| after: Education Strategy ||| does: spirit "Improved Exams"
+313 ||| The Power of Education ||| TR: Eğitimin Gücü ||| path: ANAP liberal ||| after: Encouragement Instead of Coercion ||| does: spirit "Believing in the Power of Education"
+314 ||| Compete with the Washington Markets ||| TR: Washington Piyasalarıyla Rekabet Et ||| path: ANAP liberal ||| after: Competition Authority ||| does: PP 75; stability 0.05; stability -0.03; war support 0.02
+315 ||| Party Reorganization ||| TR: Partinin Yeniden Yapılanması ||| path: ANAP liberal ||| after: - ||| does: PP -75; stability 0.01; tooltip: Gains 3% Support (Relative Popularity).\n
+316 ||| Clamp Down on Corruption ||| TR: Yolsuzluğu Bastır ||| path: ANAP liberal ||| after: Party Reorganization ||| does: PP -25
+317 ||| Internal Party Visits ||| TR: Parti İçi Ziyaretler ||| path: ANAP liberal ||| after: Party Reorganization ||| does: PP 100; stability 0.03
+318 ||| Cabinet Reshuffle ||| TR: Kabine Değişikliği ||| path: ANAP liberal ||| after: Internal Party Visits ||| does: PP 225; stability -0.05; tooltip: Loses 1% Support (Relative Popularity).\n
+319 ||| Protect the Party from Change ||| TR: Partiyi Değişime Karşı Koru ||| path: ANAP liberal ||| after: Internal Party Visits / Clamp Down on Corruption ||| does: PP -50; stability 0.03; tooltip: Gains 1% Support (Relative Popularity).\n
+320 ||| Redesign the Party Program ||| TR: Parti Programını Yeniden Tasarla ||| path: ANAP liberal, Saadet / Milli Gorus ||| after: Clamp Down on Corruption ||| does: PP -10; stability 0.01; tooltip: Gains 1% Support (Relative Popularity).\n
+321 ||| Tour Turkey ||| TR: Türkiye Turu ||| path: ANAP liberal ||| after: Protect the Party from Change / Redesign the Party Program ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; event "Tour Turkey"; stability 0.07
+322 ||| Immigration Law ||| TR: Göç Kanunu ||| path: ANAP liberal ||| after: Mind Games ||| does: spirit "Immigration Law"
+323 ||| Mind Games ||| TR: Akıl Oyunları ||| path: ANAP liberal, MIT intelligence state ||| after: Peace State ||| does: spirit "Mind Games"; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+324 ||| Influence Politics ||| TR: Etki Siyaseti ||| path: ANAP liberal ||| after: Mind Games ||| does: -
+325 ||| Strengthen National Influence ||| TR: Ulusal Etkiyi Güçlendir ||| path: ANAP liberal ||| after: Mind Games ||| does: PP -75
+326 ||| Peace State ||| TR: Barış Devleti ||| path: ANAP liberal ||| after: Tour Turkey ||| does: spirit "Peace State"
+327 ||| Maximize Political Power Output ||| TR: Siyasi Güç Üretimini En Üst Düzeye Çıkar ||| path: ANAP liberal ||| after: Political Manoeuvres / Make Enthusiastic Speeches ||| does: -
+328 ||| Political Manoeuvres ||| TR: Siyasi Manevralar ||| path: ANAP liberal ||| after: Influence Politics ||| does: -
+329 ||| Make Enthusiastic Speeches ||| TR: Coşkulu Konuşmalar Yap ||| path: ANAP liberal ||| after: Influence Politics ||| does: stability 0.02; war support 0.07
+330 ||| Extend Influence into the Balkans ||| TR: Balkanlara Etki Yay ||| path: ANAP liberal ||| after: Maximize Political Power Output ||| does: PP 125
+331 ||| Normalize Relations with Greece ||| TR: Yunanistan ile İlişkileri Normalleştir ||| path: ANAP liberal, Constitutional Court rule, CHP social democrat ||| after: Extend Influence into the Balkans ||| does: -
+332 ||| Become a Peace Mediator in Thrace ||| TR: Trakya'da Barış Arabulucusu Ol ||| path: ANAP liberal ||| after: Normalize Relations with Greece / Invest In Bulgaria ||| does: tooltip: ,  and  sign non-aggression pacts for the stability of the region.
+333 ||| Muslim Europe ||| TR: Müslüman Avrupa ||| path: ANAP liberal ||| after: Extend Influence into the Balkans ||| does: -
+334 ||| Build the Sofia-Athens-Istanbul Railway ||| TR: Sofya-Atina-İstanbul Demiryolunu İnşa Et ||| path: ANAP liberal ||| after: Become a Peace Mediator in Thrace ||| does: -
+335 ||| Invest In Albania ||| TR: Arnavutluk'a Yatırım Yap ||| path: ANAP liberal ||| after: Muslim Europe ||| does: builds industrial_complex, infrastructure
+336 ||| Invest In Bosnia ||| TR: Bosna'ya Yatırım Yap ||| path: ANAP liberal ||| after: Muslim Europe ||| does: builds industrial_complex, infrastructure
+337 ||| Industrialize Romania to Fight Poverty ||| TR: Yoksullukla Mücadele İçin Romanya'yı Sanayileştir ||| path: ANAP liberal ||| after: Invest In Bulgaria ||| does: builds industrial_complex, infrastructure
+338 ||| Fund Romanian Institutions ||| TR: Romanya Kurumlarını Finanse Et ||| path: ANAP liberal ||| after: Industrialize Romania to Fight Poverty ||| does: stability 0.05
+339 ||| Sofia-Athens-Istanbul-Bucharest Railway ||| TR: Sofya-Atina-İstanbul-Bükreş Demiryolu ||| path: ANAP liberal ||| after: Build the Sofia-Athens-Istanbul Railway / Fund Romanian Institutions ||| does: -
+340 ||| Invest In Serbia ||| TR: Sırbistan'a Yatırım Yap ||| path: ANAP liberal ||| after: Invest In Albania / Invest In Bosnia ||| does: builds industrial_complex, infrastructure
+341 ||| Become a Peace Mediator in Yugoslavia ||| TR: Yugoslavya'da Barış Arabulucusu Ol ||| path: ANAP liberal ||| after: Invest In Serbia ||| does: tooltip: , , , , , ,  and  sign non-aggression pacts for the stability of the region.
+342 ||| Sofia-Athens-Istanbul-Bucharest-Belgrade Railway ||| TR: Sofya-Atina-İstanbul-Bükreş-Belgrad Demiryolu ||| path: ANAP liberal ||| after: Sofia-Athens-Istanbul-Bucharest Railway / Become a Peace Mediator in Yugoslavia ||| does: -
+343 ||| Extend Influence into the Middle East ||| TR: Orta Doğu'ya Etki Yay ||| path: ANAP liberal ||| after: Maximize Political Power Output ||| does: PP 125
+344 ||| Invest In Iraq ||| TR: Irak'a Yatırım Yap ||| path: ANAP liberal ||| after: Extend Influence into the Middle East ||| does: builds industrial_complex, infrastructure
+345 ||| Extend Influence into Transcaucasia ||| TR: Kafkasya'ya Etki Yay ||| path: ANAP liberal ||| after: Maximize Political Power Output ||| does: PP 125
+346 ||| TurkStream Extensions ||| TR: TürkAkım Uzantıları ||| path: ANAP liberal ||| after: Extend Influence into Transcaucasia ||| does: builds fossil_powerplant
+347 ||| Treaties with Georgia ||| TR: Gürcistan ile Antlaşmalar ||| path: ANAP liberal ||| after: TurkStream Extensions ||| does: builds industrial_complex, infrastructure
+348 ||| Treaties with Azerbaijan ||| TR: Azerbaycan ile Antlaşmalar ||| path: ANAP liberal ||| after: TurkStream Extensions ||| does: builds industrial_complex, infrastructure
+349 ||| Build the Baku-Tbilisi-Ankara Railway ||| TR: Bakü-Tiflis-Ankara Demiryolunu İnşa Et ||| path: ANAP liberal ||| after: Treaties with Azerbaijan / Treaties with Georgia ||| does: -
+350 ||| Anti-Russian Aid ||| TR: Rusya Karşıtı Yardım ||| path: ANAP liberal ||| after: Treaties with Georgia ||| does: builds arms_factory
+351 ||| Anti-Armenian Aid ||| TR: Ermenistan Karşıtı Yardım ||| path: ANAP liberal ||| after: Treaties with Azerbaijan ||| does: builds arms_factory
+352 ||| Destroy the Armenian State ||| TR: Ermeni Devletini Yok Et ||| path: ANAP liberal ||| after: Build the Baku-Tbilisi-Ankara Railway / Anti-Armenian Aid ||| does: war goal/war on ARM
+353 ||| Cairo-Bucharest-Tehran Railway ||| TR: Kahire-Bükreş-Tahran Demiryolu ||| path: ANAP liberal ||| after: Extend the Railway to Yerevan / Sofia-Athens-Istanbul-Bucharest-Belgrade Railway ||| does: -
+354 ||| Extend the Railway to Yerevan ||| TR: Demiryolunu Erivan'a Uzat ||| path: ANAP liberal ||| after: Destroy the Armenian State ||| does: -
+355 ||| Good Relations with Kurdistan ||| TR: Kürdistan ile İyi İlişkiler ||| path: ANAP liberal ||| after: Extend Influence into the Middle East ||| does: -
+356 ||| Push for a Referendum in Kurdistan ||| TR: Kürdistan'da Referandum İçin Bastır ||| path: ANAP liberal ||| after: Good Relations with Kurdistan / Invest In Iraq ||| does: event "A Referendum Demanded by Turkey"
+357 ||| Invest In Iran ||| TR: İran'a Yatırım Yap ||| path: ANAP liberal ||| after: Extend Influence into the Middle East ||| does: builds industrial_complex, infrastructure
+358 ||| Tehran-Ankara Deals ||| TR: Tahran-Ankara Anlaşmaları ||| path: ANAP liberal ||| after: Invest In Iran ||| does: event "Tehran-Ankara Deals"
+359 ||| Ensure Peace in Syria ||| TR: Suriye'de Barışı Sağla ||| path: ANAP liberal ||| after: Oppose Rojava ||| does: stability 0.05; war support -0.05

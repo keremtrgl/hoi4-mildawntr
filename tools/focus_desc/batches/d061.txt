@@ -1,0 +1,60 @@
+3660 ||| Sell Companies to China ||| TR: Şirketleri Çin'e Sat ||| path: TKP communist ||| after: Chinese Trade Facilities ||| does: -
+3661 ||| Expand the Trade Facilities ||| TR: Ticaret Tesislerini Genişlet ||| path: TKP communist ||| after: Chinese Trade Facilities ||| does: -
+3662 ||| China's Happiness Is Our Happiness ||| TR: Çin'in Mutluluğu Bizim Mutluluğumuzdur ||| path: TKP communist ||| after: Chinese Trade Facilities ||| does: stability 0.1
+3663 ||| The Chinese Sun and Its Protection ||| TR: Çin Güneşi ve Koruması ||| path: TKP communist ||| after: China's Happiness Is Our Happiness / Expand the Trade Facilities ||| does: builds arms_factory
+3664 ||| Emergency Powers of the State ||| TR: Devletin Olağanüstü Yetkileri ||| path: TKP communist ||| after: ÖDP's Victory ||| does: spirit "Emergency Powers of the Council"
+3665 ||| ÖDP Socialism ||| TR: ÖDP Sosyalizmi ||| path: TKP communist ||| after: ÖDP's Victory ||| does: stability 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+3666 ||| Social Democratic Values ||| TR: Sosyal Demokrat Değerler ||| path: TKP communist ||| after: ÖDP Socialism / Emergency Powers of the State ||| does: spirit "social_06"; stability 0.05; tooltip: Gains 2% Support (Relative Popularity).\n
+3667 ||| Stabilize the Provinces ||| TR: İlleri İstikrara Kavuştur ||| path: TKP communist ||| after: Social Democratic Values ||| does: stability 0.05
+3668 ||| A Functional State ||| TR: İşleyen Devlet ||| path: TKP communist ||| after: Stabilize the Provinces ||| does: spirit "A Functional State"
+3669 ||| Plan Zero ||| TR: Sıfır Planı ||| path: TKP communist ||| after: A Functional State ||| does: tooltip: The new form of kamikazes becomes usable.
+3670 ||| War Propaganda ||| TR: Savaş Propagandası ||| path: TKP communist, Turkish Armed Forces junta ||| after: A Functional State ||| does: war support 0.1
+3671 ||| Turkish Planned War Structure ||| TR: Türk Planlı Savaş Yapısı ||| path: TKP communist ||| after: A Functional State ||| does: -
+3672 ||| Kayseri Military Build-Up ||| TR: Kayseri Askeri Yığınağı ||| path: TKP communist ||| after: Turkish Planned War Structure ||| does: builds arms_factory
+3673 ||| Sivas Military Build-Up ||| TR: Sivas Askeri Yığınağı ||| path: TKP communist ||| after: Turkish Planned War Structure ||| does: builds arms_factory
+3674 ||| Good Ties with the Unions ||| TR: Sendikalarla İyi İlişkiler ||| path: TKP communist ||| after: Kayseri Military Build-Up / Sivas Military Build-Up ||| does: spirit "Unions in Cooperation"
+3675 ||| Trade Action ||| TR: Ticaret Hamlesi ||| path: TKP communist ||| after: Good Ties with the Unions ||| does: spirit "The Trade Act"
+3676 ||| Support General Investors ||| TR: Genel Yatırımcıları Destekle ||| path: TKP communist ||| after: Good Ties with the Unions ||| does: stability 0.03
+3677 ||| A Happier State ||| TR: Daha Mutlu Bir Devlet ||| path: TKP communist ||| after: Trade Action / Support General Investors ||| does: stability 0.1
+3678 ||| European Trade ||| TR: Avrupa Ticareti ||| path: TKP communist ||| after: Trade Action ||| does: -
+3679 ||| New Science Law ||| TR: Yeni Bilim Kanunu ||| path: TKP communist ||| after: A Happier State ||| does: spirit "The Science Law"
+3680 ||| Support The Scientists ||| TR: Bilim İnsanlarını Destekle ||| path: TKP communist ||| after: A Happier State ||| does: spirit "Supporting the Scientists"
+3681 ||| Trade Goods ||| TR: Ticaret Malları ||| path: TKP communist ||| after: Eastern Trade ||| does: "The Trade Act" -> "The Goods Trade"
+3682 ||| Eastern Trade ||| TR: Doğu Ticareti ||| path: TKP communist ||| after: European Trade ||| does: -
+3683 ||| Happy Unions... ||| TR: Mutlu Sendikalar... ||| path: TKP communist ||| after: Support The Scientists / New Science Law ||| does: "Unions in Cooperation" -> "Unions in Cooperation"; stability 0.02
+3684 ||| Adana Industrial Development ||| TR: Adana Sanayi Kalkınması ||| path: TKP communist ||| after: Support General Investors ||| does: builds industrial_complex
+3685 ||| Kayseri Industrial Development ||| TR: Kayseri Sanayi Kalkınması ||| path: TKP communist ||| after: Adana Industrial Development ||| does: builds industrial_complex
+3686 ||| Mixed Industrial Development ||| TR: Karma Sanayi Kalkınması ||| path: TKP communist ||| after: Kayseri Industrial Development ||| does: builds arms_factory, industrial_complex
+3687 ||| Alliance Policies ||| TR: İttifak Politikaları ||| path: TKP communist ||| after: Land of the World ||| does: PP 125
+3688 ||| Peaceful United Unions ||| TR: Barışçıl Birleşik Birlikler ||| path: TKP communist ||| after: Alliance Policies ||| does: spirit "Peaceful United Unions"
+3689 ||| Economic Cooperative Unions ||| TR: Ekonomik Kooperatif Birlikleri ||| path: TKP communist ||| after: Alliance Policies ||| does: spirit "Economic Cooperative Unions"
+3690 ||| Invite Greece ||| TR: Yunanistan'ı Davet Et ||| path: TKP communist ||| after: Peaceful United Unions / Economic Cooperative Unions ||| does: event "An Invitation From Turkey"
+3691 ||| Invite Syria ||| TR: Suriye'yi Davet Et ||| path: TKP communist ||| after: Peaceful United Unions / Economic Cooperative Unions ||| does: event "An Invitation From Turkey"
+3692 ||| Invite Bulgaria ||| TR: Bulgaristan'ı Davet Et ||| path: TKP communist ||| after: Peaceful United Unions / Economic Cooperative Unions ||| does: event "An Invitation From Turkey"
+3693 ||| Invite Iraq ||| TR: Irak'ı Davet Et ||| path: TKP communist ||| after: Peaceful United Unions / Economic Cooperative Unions ||| does: event "An Invitation From Turkey"
+3694 ||| Death of Neutrality ||| TR: Tarafsızlığın Ölümü ||| path: TKP communist ||| after: Invite Iraq / Invite Bulgaria ||| does: spirit "intervention_global_interventionism"
+3695 ||| Works of Globalism ||| TR: Küreselciliğin Eserleri ||| path: TKP communist ||| after: Death of Neutrality ||| does: -
+3696 ||| Create World Communes ||| TR: Dünya Komünleri Kur ||| path: TKP communist ||| after: Death of Neutrality ||| does: -
+3697 ||| A Rebirth of Communism ||| TR: Komünizmin Yeniden Doğuşu ||| path: TKP communist ||| after: Mixed Industrial Development / Trade Goods ||| does: stability 0.03; tooltip: Gains 2% Support (Relative Popularity).\n
+3698 ||| ÖDP Positivism ||| TR: ÖDP Pozitivizmi ||| path: TKP communist ||| after: A Colourful State ||| does: spirit "ÖDP Positivism"
+3699 ||| Encourage Populism ||| TR: Halkçılığı Teşvik Et ||| path: TKP communist ||| after: Reform the Counter Books ||| does: spirit "A New Kind of Populism"
+3700 ||| National Restrictionism ||| TR: Ulusal Kısıtlamacılık ||| path: TKP communist ||| after: ÖDP Positivism / Encourage Populism ||| does: stability -0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+3701 ||| World Visionism ||| TR: Dünya Vizyonculuğu ||| path: TKP communist ||| after: ÖDP Positivism ||| does: spirit "World Visionism"
+3702 ||| Abolish Classical Populism ||| TR: Klasik Halkçılığı Kaldır ||| path: TKP communist ||| after: Encourage Populism ||| does: -
+3703 ||| Reform the Counter Books ||| TR: Karşıt Kitapları Reforme Et ||| path: TKP communist ||| after: A Rebirth of Communism ||| does: spirit "Counter Right-Wing Books"
+3704 ||| A Colourful State ||| TR: Renkli Bir Devlet ||| path: TKP communist ||| after: A Rebirth of Communism ||| does: stability -0.03; tooltip: Gains 5% Support (Relative Popularity).\n
+3705 ||| State of the Arts ||| TR: Sanatlar Devleti ||| path: TKP communist ||| after: Reform the Counter Books / A Colourful State ||| does: spirit "State of the Arts"
+3706 ||| Labour Culture of Happiness ||| TR: Mutluluğun Emek Kültürü ||| path: TKP communist ||| after: Reform the Counter Books ||| does: spirit "Workers' Happiness First"
+3707 ||| Abolish the Limits ||| TR: Sınırları Kaldır ||| path: TKP communist ||| after: National Restrictionism / World Visionism ||| does: spirit "Breaking the Limits"
+3708 ||| National Reformation Works ||| TR: Ulusal Reform Çalışmaları ||| path: TKP communist ||| after: National Restrictionism / Abolish Classical Populism ||| does: spirit "The Reform Institution"
+3709 ||| Achievements of the Scientific Community ||| TR: Bilim Camiasının Başarıları ||| path: TKP communist ||| after: Abolish Classical Populism ||| does: spirit "The Scientific Community in Action"
+3710 ||| Freedom of Objection ||| TR: İtiraz Özgürlüğü ||| path: TKP communist ||| after: World Visionism ||| does: spirit "Freedom of Dissent"
+3711 ||| Land of Wisdom ||| TR: Bilgelik Diyarı ||| path: TKP communist ||| after: Achievements of the Scientific Community ||| does: spirit "Land of Wisdom"
+3712 ||| No More Tough Communism ||| TR: Artık Sert Komünizm Yok ||| path: TKP communist ||| after: Abolish the Limits / National Reformation Works ||| does: stability 0.05; tooltip: Gains 3% Support (Relative Popularity).\n
+3713 ||| Build National Theatre ||| TR: Ulusal Tiyatro İnşa Et ||| path: TKP communist ||| after: Freedom of Objection ||| does: spirit "The National Theater in Action"
+3714 ||| Land of the World ||| TR: Dünya Diyarı ||| path: TKP communist ||| after: Save the Ecology / The Concept of the Freest Communism ||| does: stability 0.07; tooltip: Gains 2% Support (Relative Popularity).\n
+3715 ||| Save the Ecology ||| TR: Ekolojiyi Kurtar ||| path: TKP communist ||| after: No More Tough Communism / Land of Wisdom ||| does: spirit "Ecological Laws"
+3716 ||| The Concept of the Freest Communism ||| TR: En Özgür Komünizm Kavramı ||| path: TKP communist ||| after: Build National Theatre / No More Tough Communism ||| does: stability 0.03; tooltip: Gains 2% Support (Relative Popularity).\n
+3717 ||| Party Independency ||| TR: Parti Bağımsızlığı ||| path: TKP communist ||| after: Good Ties with the Unions ||| does: tooltip: Gains 5% Support (Relative Popularity).\n
+3718 ||| Counter the Greater Middle East Project ||| TR: Büyük Orta Doğu Projesine Karşı Koy ||| path: TKP communist ||| after: Create World Communes / Works of Globalism ||| does: PP 75; war support 0.1
+3719 ||| Guarantee the Middle East ||| TR: Orta Doğu'ya Garanti Ver ||| path: TKP communist ||| after: Counter the Greater Middle East Project ||| does: -

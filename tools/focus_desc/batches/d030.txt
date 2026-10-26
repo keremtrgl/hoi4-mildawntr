@@ -1,0 +1,60 @@
+1800 ||| Populist Principles ||| TR: Popülist İlkeler ||| path: GENCPARTI (Cem Uzan), Turkish Armed Forces junta ||| after: Government Reforms ||| does: PP -75; stability 0.03
+1801 ||| Suspend Gülenist Activities ||| TR: Gülenist Faaliyetleri Askıya Al ||| path: GENCPARTI (Cem Uzan) ||| after: Populist Principles ||| does: spirit "The Gülen Movement's Very Low Influence Over the Republic"; PP -75; stability 0.03
+1802 ||| Confront the Ulema ||| TR: Ulemayla Mücadele Et ||| path: GENCPARTI (Cem Uzan) ||| after: Populist Principles ||| does: "the_ulema" -> "international_bankers"; stability -0.05
+1803 ||| Economic Recovery ||| TR: Ekonomik Toparlanma ||| path: GENCPARTI (Cem Uzan) ||| after: Confront the Ulema / Suspend Gülenist Activities ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+1804 ||| Agreement with Babacan ||| TR: Babacan ile Anlaşma ||| path: GENCPARTI (Cem Uzan) ||| after: Economic Recovery / Liberal Thoughts ||| does: PP 75; builds industrial_complex
+1805 ||| Lira Movement ||| TR: Lira Hamlesi ||| path: GENCPARTI (Cem Uzan) ||| after: Economic Recovery / Bank Law ||| does: "Yeni Türk Lirası" -> "Yeni Türk Lirası"
+1806 ||| Build New Roads ||| TR: Yeni Yollar İnşa Et ||| path: GENCPARTI (Cem Uzan) ||| after: Lira Movement / Agreement with Babacan ||| does: builds infrastructure
+1807 ||| Lira Reform ||| TR: Lira Reformu ||| path: GENCPARTI (Cem Uzan) ||| after: Lira Movement ||| does: "Yeni Türk Lirası" -> "Türk Lirası"
+1808 ||| Welfare State ||| TR: Sosyal Devlet ||| path: GENCPARTI (Cem Uzan), MHP (nationalist movement) ||| after: Build New Roads / Lira Reform ||| does: stability 0.07; tooltip: Gains 3% Support (Relative Popularity).\n
+1809 ||| Mission for Young People's Happiness ||| TR: Gençlerin Mutluluğu Görevi ||| path: GENCPARTI (Cem Uzan) ||| after: Welfare State ||| does: PP -25; stability 0.02
+1810 ||| Mission for the Elderly's Happiness ||| TR: Yaşlıların Mutluluğu Görevi ||| path: GENCPARTI (Cem Uzan) ||| after: Welfare State ||| does: PP -50; stability 0.03
+1811 ||| Strengthen the Passport ||| TR: Pasaportu Güçlendir ||| path: GENCPARTI (Cem Uzan) ||| after: Mission for Young People's Happiness / Mission for the Elderly's Happiness ||| does: spirit "The Turkish Passport"
+1812 ||| Give Money to Young People ||| TR: Gençlere Para Ver ||| path: GENCPARTI (Cem Uzan) ||| after: Mission for Young People's Happiness ||| does: stability 0.05
+1813 ||| Coding Schools ||| TR: Kodlama Okulları ||| path: GENCPARTI (Cem Uzan) ||| after: Give Money to Young People ||| does: spirit "Coding Classes"
+1814 ||| Remove Visas ||| TR: Vizeleri Kaldır ||| path: GENCPARTI (Cem Uzan) ||| after: Strengthen the Passport ||| does: -
+1815 ||| Open Fishing Sites ||| TR: Balıkçılık Alanları Aç ||| path: GENCPARTI (Cem Uzan) ||| after: Mission for the Elderly's Happiness ||| does: spirit "The Fishing Industry"
+1816 ||| Nursing Homes ||| TR: Huzurevleri ||| path: GENCPARTI (Cem Uzan) ||| after: Raise Pensions / Open Fishing Sites ||| does: stability 0.02
+1817 ||| Fishing Boats for Retirees ||| TR: Emeklilere Balıkçı Tekneleri ||| path: GENCPARTI (Cem Uzan) ||| after: Open Fishing Sites ||| does: "The Fishing Industry" -> "The Fishing Industry"
+1818 ||| Expand the Fishing Industry ||| TR: Balıkçılık Sektörünü Büyüt ||| path: GENCPARTI (Cem Uzan) ||| after: Fishing Boats for Retirees ||| does: "The Fishing Industry" -> "The Fishing Industry"
+1819 ||| Resource Program ||| TR: Kaynak Programı ||| path: GENCPARTI (Cem Uzan) ||| after: Government Reforms ||| does: PP 100
+1820 ||| Sign an Agreement with Gazprom ||| TR: Gazprom ile Anlaşma İmzala ||| path: GENCPARTI (Cem Uzan) ||| after: Resource Program ||| does: event "Agreement with Gazprom Signed"; PP -75
+1821 ||| Fund Eti Maden ||| TR: Eti Maden'i Finanse Et ||| path: GENCPARTI (Cem Uzan) ||| after: Resource Program ||| does: PP -75
+1822 ||| Buy Resource Extractors ||| TR: Kaynak Çıkarma Ekipmanları Satın Al ||| path: GENCPARTI (Cem Uzan) ||| after: Resource Program ||| does: PP 25; builds fossil_powerplant
+1823 ||| Extraction Studies ||| TR: Çıkarma Çalışmaları ||| path: GENCPARTI (Cem Uzan) ||| after: Buy Resource Extractors ||| does: PP 25
+1824 ||| Strengthen the Energy Sector ||| TR: Enerji Sektörünü Güçlendir ||| path: GENCPARTI (Cem Uzan) ||| after: Extraction Studies / Countryside Resource Search ||| does: spirit "Small Rentier State"; PP 25
+1825 ||| Build Modern Schools ||| TR: Modern Okullar İnşa Et ||| path: GENCPARTI (Cem Uzan) ||| after: Mission for Young People's Happiness ||| does: stability 0.02
+1826 ||| War on Unemployment ||| TR: İşsizlikle Savaş ||| path: GENCPARTI (Cem Uzan) ||| after: Remove Visas / Nursing Homes ||| does: spirit "War On Unemployment"
+1827 ||| Abolish the ÖSS ||| TR: ÖSS'yi Kaldır ||| path: GENCPARTI (Cem Uzan) ||| after: Build Modern Schools / Give Money to Young People ||| does: stability 0.05
+1828 ||| Support Employers ||| TR: İşverenleri Destekle ||| path: GENCPARTI (Cem Uzan) ||| after: War on Unemployment / War on Corruption ||| does: "War On Unemployment" -> "War On Unemployment"
+1829 ||| Encourage Workers ||| TR: İşçileri Teşvik Et ||| path: GENCPARTI (Cem Uzan) ||| after: War on Unemployment ||| does: spirit "Encourage Workers"; spirit "The Turkish Media"; removes "The Turkish Media"
+1830 ||| Reduce the Unemployment Rate ||| TR: İşsizlik Oranını Düşür ||| path: GENCPARTI (Cem Uzan) ||| after: Support Employers / Encourage Workers ||| does: "War On Unemployment" -> "War On Unemployment"
+1831 ||| Strengthen Agriculture ||| TR: Tarımı Güçlendir ||| path: GENCPARTI (Cem Uzan) ||| after: Reduce the Unemployment Rate ||| does: spirit "The Agricultural Movement"
+1832 ||| Abolish Fees ||| TR: Harçları Kaldır ||| path: GENCPARTI (Cem Uzan) ||| after: Strengthen Agriculture ||| does: stability 0.03
+1833 ||| Decrease Taxes ||| TR: Vergileri Düşür ||| path: GENCPARTI (Cem Uzan) ||| after: Strengthen Agriculture ||| does: spirit "Tax Laws"; tooltip: Taxes will be lowered immediately.
+1834 ||| Lower Taxes on Agriculture ||| TR: Tarımdaki Vergileri Düşür ||| path: GENCPARTI (Cem Uzan) ||| after: Strengthen Agriculture ||| does: "The Agricultural Movement" -> "The Agricultural Movement"
+1835 ||| Rise of the Agricultural Economy ||| TR: Tarım Ekonomisinin Yükselişi ||| path: GENCPARTI (Cem Uzan) ||| after: Decrease Taxes / Lower Taxes on Agriculture ||| does: "The Agricultural Movement" -> "The Agricultural Movement"
+1836 ||| Spread Nationalism ||| TR: Milliyetçiliği Yay ||| path: GENCPARTI (Cem Uzan) ||| after: Rise of the Agricultural Economy ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; PP 100
+1837 ||| Stop Western Domination in Turkey ||| TR: Türkiye'deki Batı Hâkimiyetini Durdur ||| path: GENCPARTI (Cem Uzan) ||| after: Spread Nationalism ||| does: PP -50
+1838 ||| Rise of Turkishness ||| TR: Türklüğün Yükselişi ||| path: GENCPARTI (Cem Uzan) ||| after: Spread Nationalism ||| does: PP -50
+1839 ||| Nationalize the Industries ||| TR: Sanayileri Millîleştir ||| path: GENCPARTI (Cem Uzan) ||| after: Spread Nationalism ||| does: PP -30; builds industrial_complex
+1840 ||| Destroy the Consumption Economy ||| TR: Tüketim Ekonomisini Yık ||| path: GENCPARTI (Cem Uzan) ||| after: Nationalize the Industries / Rise of Turkishness ||| does: -
+1841 ||| New Agricultural Bases ||| TR: Yeni Tarım Üsleri ||| path: GENCPARTI (Cem Uzan) ||| after: Rise of the Agricultural Economy ||| does: -
+1842 ||| Labour Law ||| TR: İşçi Kanunu ||| path: GENCPARTI (Cem Uzan), Osman Pamukoglu's HEPAR, communist bloc ||| after: Rise of the Agricultural Economy ||| does: spirit "Labour Law"
+1843 ||| War for Confidence ||| TR: Güven İçin Savaş ||| path: GENCPARTI (Cem Uzan) ||| after: Destroy the Consumption Economy ||| does: spirit "The War for Honor Policy"; war support 0.07; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.; tooltip: The country will be united and its sectarian woes can be overcome.
+1844 ||| War Plans for the Invasion of Transcaucasia ||| TR: Kafkasya'nın İşgali İçin Savaş Planları ||| path: GENCPARTI (Cem Uzan) ||| after: War for Confidence ||| does: -
+1845 ||| Intervention in the Middle East ||| TR: Orta Doğu'ya Müdahale ||| path: GENCPARTI (Cem Uzan) ||| after: War for Confidence ||| does: -
+1846 ||| Support Democracy in the Middle East ||| TR: Orta Doğu'da Demokrasiyi Destekle ||| path: GENCPARTI (Cem Uzan) ||| after: Intervention in the Middle East ||| does: PP -100
+1847 ||| Democratize the Middle East ||| TR: Orta Doğu'yu Demokratikleştir ||| path: GENCPARTI (Cem Uzan) ||| after: Intervention in the Middle East ||| does: PP -100
+1848 ||| Democratic Influence in Iran ||| TR: İran'da Demokratik Etki ||| path: GENCPARTI (Cem Uzan) ||| after: Democratize the Middle East ||| does: spirit "Democratic Influence"
+1849 ||| Democratic Influence in Syria ||| TR: Suriye'de Demokratik Etki ||| path: GENCPARTI (Cem Uzan) ||| after: Democratize the Middle East ||| does: spirit "Democratic Influence"
+1850 ||| Democratic Influence in Iraq ||| TR: Irak'ta Demokratik Etki ||| path: GENCPARTI (Cem Uzan) ||| after: Democratize the Middle East ||| does: spirit "Democratic Influence"
+1851 ||| Support the Libyan Democratic Movement ||| TR: Libya Demokratik Hareketini Destekle ||| path: GENCPARTI (Cem Uzan) ||| after: Support Democracy in the Middle East ||| does: -
+1852 ||| Militarize the FSA ||| TR: ÖSO'yu Silahlandır ||| path: GENCPARTI (Cem Uzan) ||| after: Support Democracy in the Middle East ||| does: -
+1853 ||| Invasion of Armenia ||| TR: Ermenistan'ın İşgali ||| path: GENCPARTI (Cem Uzan) ||| after: Sign Treaties with Azerbaijan ||| does: war goal/war on ARM
+1854 ||| Sign Treaties with Azerbaijan ||| TR: Azerbaycan ile Antlaşmalar İmzala ||| path: GENCPARTI (Cem Uzan) ||| after: War Plans for the Invasion of Transcaucasia ||| does: -
+1855 ||| Puppet Georgia ||| TR: Gürcistan'ı Kukla Devlet Yap ||| path: GENCPARTI (Cem Uzan) ||| after: Sign Treaties with Azerbaijan ||| does: war goal/war on GEO
+1856 ||| War on Corruption ||| TR: Yolsuzlukla Savaş ||| path: GENCPARTI (Cem Uzan) ||| after: Nursing Homes / Remove Visas ||| does: PP -25
+1857 ||| Raids on Corrupt Institutions ||| TR: Yolsuz Kurumlara Baskınlar ||| path: GENCPARTI (Cem Uzan) ||| after: War on Corruption ||| does: PP -50; stability -0.03
+1858 ||| Sign a Non-Aggression Pact with Ukraine ||| TR: Ukrayna ile Saldırmazlık Paktı İmzala ||| path: GENCPARTI (Cem Uzan) ||| after: War Plans for the Invasion of Transcaucasia ||| does: -
+1859 ||| Guarantee Ukraine ||| TR: Ukrayna'ya Garanti Ver ||| path: GENCPARTI (Cem Uzan) ||| after: Sign a Non-Aggression Pact with Ukraine ||| does: -

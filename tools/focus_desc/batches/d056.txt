@@ -1,0 +1,60 @@
+3360 ||| The General Reform Plan ||| TR: Genel Reform Planı ||| path: technocratic HP ||| after: The Order Of Technology ||| does: PP 25; stability 0.02
+3361 ||| Turkish Forums ||| TR: Türk Forumları ||| path: technocratic HP ||| after: The General Reform Plan ||| does: spirit "Turkish Forums"
+3362 ||| Chamber of Innovation ||| TR: İnovasyon Odası ||| path: technocratic HP ||| after: The General Reform Plan ||| does: spirit "Chamber of Innovation"
+3363 ||| The Propaganda Machine ||| TR: Propaganda Makinesi ||| path: technocratic HP ||| after: Chamber of Innovation / Turkish Forums ||| does: spirit "Technocratic Propaganda"
+3364 ||| University Planning ||| TR: Üniversite Planlaması ||| path: technocratic HP ||| after: The General Reform Plan ||| does: -
+3365 ||| Election Promises ||| TR: Seçim Vaatleri ||| path: technocratic HP ||| after: Chamber of Innovation / University Planning ||| does: PP 50; tooltip: Gains 2% Support (Relative Popularity).\n
+3366 ||| The Great Referendum ||| TR: Büyük Referandum ||| path: technocratic HP ||| after: The Propaganda Machine / Election Promises ||| does: event "The HP's Technocratic Referendum Triumphs"; tooltip: The country will be united and its sectarian woes can be overcome.
+3367 ||| The Ecology ||| TR: Ekoloji ||| path: technocratic HP ||| after: The Education Strategy ||| does: spirit "Modern Ecological Thinking"
+3368 ||| Eco-Cities ||| TR: Eko-Şehirler ||| path: technocratic HP ||| after: The Ecology ||| does: stability 0.05; tooltip: Gains 2% Support (Relative Popularity).\n
+3369 ||| Pro-Human Nature ||| TR: İnsan Doğası Yanlılığı ||| path: technocratic HP ||| after: The Ecology ||| does: "Modern Ecological Thinking" -> "Modern Ecological Thinking"
+3370 ||| An Eco-Friendly Nation ||| TR: Çevre Dostu Bir Millet ||| path: technocratic HP ||| after: Eco-Cities / Pro-Human Nature ||| does: "Modern Ecological Thinking" -> "Modern Ecological Thinking"
+3371 ||| To the Bright Future! ||| TR: Parlak Geleceğe! ||| path: technocratic HP ||| after: An Eco-Friendly Nation ||| does: "Modern Ecological Thinking" -> "Modern Ecological Thinking"
+3372 ||| Victory of the Economist Movement ||| TR: İktisatçı Hareketin Zaferi ||| path: technocratic HP ||| after: The Economist Group ||| does: stability 0.05
+3373 ||| Prioritize the MİT ||| TR: MİT'e Öncelik Ver ||| path: technocratic HP ||| after: Victory of the Economist Movement ||| does: spirit "Milli İstihbarat Teşkilatı"; PP 150; stability 0.05
+3374 ||| Become an International Agency ||| TR: Uluslararası Bir Ajans Ol ||| path: technocratic HP ||| after: Prioritize the MİT ||| does: "Milli İstihbarat Teşkilatı" -> "Milli İstihbarat Teşkilatı"
+3375 ||| New Codes ||| TR: Yeni Kodlar ||| path: technocratic HP ||| after: Prioritize the MİT ||| does: spirit "Coding Classes"
+3376 ||| The Intelligence Weapon ||| TR: İstihbarat Silahı ||| path: technocratic HP ||| after: New Codes / Become an International Agency ||| does: spirit "Cold War Weapons"
+3377 ||| National Innovation Campaign ||| TR: Ulusal İnovasyon Kampanyası ||| path: technocratic HP ||| after: Victory of the Economist Movement ||| does: spirit "National Innovation Campaign"
+3378 ||| Turkish Innovation Fund ||| TR: Türk İnovasyon Fonu ||| path: technocratic HP ||| after: National Innovation Campaign ||| does: spirit "National Innovation Fund"
+3379 ||| Innovation Missions ||| TR: İnovasyon Görevleri ||| path: technocratic HP ||| after: National Innovation Campaign ||| does: spirit "National Innovation Campaign With Margin"; removes "National Innovation Campaign"
+3380 ||| Futuristic State ||| TR: Fütüristik Devlet ||| path: technocratic HP ||| after: Innovation Missions / Turkish Innovation Fund ||| does: spirit "Land Of Future"
+3381 ||| Financial Relief Campaign ||| TR: Mali Rahatlama Kampanyası ||| path: technocratic HP ||| after: Modern Economics ||| does: spirit "The Financial Relief Campaign"; "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+3382 ||| The Economic Belt ||| TR: Ekonomik Kuşak ||| path: technocratic HP ||| after: Financial Relief Campaign ||| does: spirit "bureau_01"; spirit "defence_01"; spirit "police_01"; spirit "edu_01"; spirit "health_01"; spirit "social_01"; tooltip: Turkey launches an austerity program to reorganize the national budget.
+3383 ||| The Economic Missions ||| TR: Ekonomik Görevler ||| path: technocratic HP ||| after: The Economic Belt ||| does: "Rational Policies" -> "Rational Policies"
+3384 ||| Look for Investments ||| TR: Yatırım Ara ||| path: technocratic HP ||| after: The Economic Missions ||| does: spirit "The Investment Campaign"
+3385 ||| Economic Relief Budget ||| TR: Ekonomik Yardım Bütçesi ||| path: technocratic HP ||| after: Victory of the Economist Movement ||| does: spirit "Economic Relief Budget"
+3386 ||| Land of Investments ||| TR: Yatırımlar Diyarı ||| path: technocratic HP ||| after: Economic Relief Budget ||| does: builds industrial_complex, offices
+3387 ||| Innovation Parks ||| TR: İnovasyon Parkları ||| path: technocratic HP ||| after: Land of Investments ||| does: builds infrastructure
+3388 ||| New Rational Policies ||| TR: Yeni Rasyonel Politikalar ||| path: technocratic HP ||| after: Financial Relief Campaign ||| does: spirit "Rational Policies"
+3389 ||| The Economists' Cabinet ||| TR: İktisatçılar Kabinesi ||| path: technocratic HP ||| after: New Rational Policies ||| does: spirit "The Economist Cabinet"
+3390 ||| Manage the BIST ||| TR: BIST'i Yönet ||| path: technocratic HP ||| after: The Economists' Cabinet ||| does: PP 50; stability 0.03; builds offices
+3391 ||| Modern Mechanism ||| TR: Modern Mekanizma ||| path: technocratic HP ||| after: Manage the BIST ||| does: "stagnation" -> "fast_growth"
+3392 ||| Emergency Civilian Industries ||| TR: Acil Durum Sivil Sanayileri ||| path: technocratic HP ||| after: Economic Relief Budget ||| does: stability -0.05; builds industrial_complex
+3393 ||| State Of Atheism ||| TR: Ateizm Devleti ||| path: technocratic HP ||| after: Victory of the Modernist Group ||| does: "sunni" -> "pluralist"; "the_ulema" -> "defense_industry"; stability -0.05
+3394 ||| Modern SGK ||| TR: Modern SGK ||| path: technocratic HP ||| after: Emergency Civilian Industries / Land of Investments ||| does: spirit "A Working SGK"
+3395 ||| Improve Financial Health ||| TR: Mali Sağlığı İyileştir ||| path: technocratic HP ||| after: Manage the BIST ||| does: spirit "The Financial Relief Campaign"; removes "The Financial Relief Campaign"
+3396 ||| National Valleys ||| TR: Ulusal Vadiler ||| path: technocratic HP ||| after: The Scientific Group / The Economist Group ||| does: tooltip: Gains 2% Support (Relative Popularity).\n
+3397 ||| Victory of the Modernist Group ||| TR: Modernist Grubun Zaferi ||| path: technocratic HP ||| after: The Scientific Group ||| does: stability 0.05
+3398 ||| State Of Pluralism ||| TR: Çoğulculuk Devleti ||| path: technocratic HP ||| after: Victory of the Economist Movement ||| does: "sunni" -> "pluralist"; "the_ulema" -> "international_bankers"; stability 0.05
+3399 ||| Reform the Arms Budget ||| TR: Silah Bütçesini Reforme Et ||| path: technocratic HP ||| after: Victory of the Modernist Group ||| does: "defence_01" -> "defence_07"
+3400 ||| Shadow Wars ||| TR: Gölge Savaşlar ||| path: technocratic HP ||| after: Reform the Arms Budget ||| does: spirit "Shadow Forces"
+3401 ||| Shadow Planning ||| TR: Gölge Planlama ||| path: technocratic HP ||| after: Shadow Wars ||| does: "Shadow Forces" -> "Shadow Planning"
+3402 ||| Robotic Warfare ||| TR: Robotik Savaş ||| path: technocratic HP ||| after: Reform the Arms Budget ||| does: spirit "Robotic Warfare"
+3403 ||| Static Warfare ||| TR: Statik Savaş ||| path: technocratic HP ||| after: Robotic Warfare / Shadow Wars ||| does: spirit "Static Warfare"
+3404 ||| Positional Warfare ||| TR: Mevzi Savaşı ||| path: technocratic HP ||| after: Robotic Warfare ||| does: spirit "Positional Warfare"
+3405 ||| Manpower Draft ||| TR: İnsan Gücü Seferberliği ||| path: technocratic HP ||| after: Victory of the Modernist Group ||| does: spirit "Conscripted Manpower"
+3406 ||| One Nation's Army ||| TR: Tek Milletin Ordusu ||| path: technocratic HP ||| after: Manpower Draft ||| does: spirit "One Nation's Army"
+3407 ||| A Fast Military ||| TR: Hızlı Ordu ||| path: technocratic HP ||| after: Manpower Draft ||| does: spirit "Rapid Equipment"
+3408 ||| A Professional Army ||| TR: Profesyonel Ordu ||| path: technocratic HP ||| after: One Nation's Army / A Fast Military ||| does: spirit "Army Of Professionals"
+3409 ||| Forces Against Rebels ||| TR: İsyancılara Karşı Kuvvetler ||| path: technocratic HP ||| after: Victory of the Modernist Group ||| does: war support 0.05
+3410 ||| The Clone Forces ||| TR: Klon Kuvvetler ||| path: technocratic HP ||| after: Forces Against Rebels ||| does: spirit "Cloned Forces"
+3411 ||| The Compliance ||| TR: Uyum ||| path: technocratic HP ||| after: Forces Against Rebels ||| does: spirit "Compliance Forces"
+3412 ||| Deadly Zones ||| TR: Ölümcül Bölgeler ||| path: technocratic HP ||| after: The Clone Forces / The Compliance ||| does: spirit "Emergency Relocation Plan"
+3413 ||| Federalization Campaign ||| TR: Federalleşme Kampanyası ||| path: technocratic HP ||| after: Foreign Policy ||| does: spirit "Technocratic Federal States Of Turkey"
+3414 ||| Integrate the Kurdish State ||| TR: Kürt Devletini Entegre Et ||| path: technocratic HP ||| after: Federalization Campaign ||| does: war goal/war on KUR
+3415 ||| Investments in the Region ||| TR: Bölgeye Yatırımlar ||| path: technocratic HP ||| after: Integrate the Kurdish State ||| does: builds industrial_complex; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+3416 ||| Integrate the Cypriot State ||| TR: Kıbrıs Devletini Entegre Et ||| path: technocratic HP ||| after: Federalization Campaign ||| does: war goal/war on CYP
+3417 ||| Sacrifice for National Opportunities ||| TR: Ulusal Fırsatlar İçin Fedakârlık ||| path: technocratic HP ||| after: Integrate the Kurdish State / Buy Batumi ||| does: "volunteer_women" -> "drafted_women"; stability -0.02
+3418 ||| Going Where the Wind Blows ||| TR: Rüzgâr Nereden Eserse ||| path: technocratic HP ||| after: Sacrifice for National Opportunities ||| does: "intervention_regional_interventionism" -> "intervention_global_interventionism"; war support 0.02
+3419 ||| Arab Spring ||| TR: Arap Baharı ||| path: technocratic HP ||| after: Going Where the Wind Blows ||| does: war support 0.07

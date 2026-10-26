@@ -1,0 +1,60 @@
+3420 ||| Operation Peace ||| TR: Barış Harekâtı ||| path: technocratic HP ||| after: Arab Spring ||| does: war support 0.02; war goal/war on ISI
+3421 ||| End the Syrian Civil War ||| TR: Suriye İç Savaşını Bitir ||| path: technocratic HP ||| after: Operation Peace ||| does: war goal/war on FSA; war goal/war on SYR
+3422 ||| Stick to the Sykes-Picot Agreement ||| TR: Sykes-Picot Anlaşmasına Bağlı Kal ||| path: technocratic HP ||| after: Operation Peace ||| does: war goal/war on IRQ
+3423 ||| Project Transcaucasia ||| TR: Kafkasya Projesi ||| path: technocratic HP ||| after: Stick to the Sykes-Picot Agreement / End the Syrian Civil War ||| does: PP 25
+3424 ||| Guarantee Georgian Independence ||| TR: Gürcistan'ın Bağımsızlığına Garanti Ver ||| path: technocratic HP ||| after: Project Transcaucasia ||| does: -
+3425 ||| Arm the Azeris ||| TR: Azerileri Silahlandır ||| path: technocratic HP ||| after: Project Transcaucasia ||| does: builds arms_factory
+3426 ||| Invest in Cyprus ||| TR: Kıbrıs'a Yatırım Yap ||| path: technocratic HP ||| after: Integrate the Cypriot State ||| does: builds industrial_complex
+3427 ||| EU-Turkish Policies ||| TR: AB-Türkiye Politikaları ||| path: technocratic HP ||| after: Going Where the Wind Blows ||| does: PP 125
+3428 ||| End of the Membership Negotiations ||| TR: Üyelik Müzakerelerinin Sonu ||| path: technocratic HP ||| after: EU-Turkish Policies ||| does: PP 50; stability -0.1
+3429 ||| Reach EU Industrial Integrity Standards ||| TR: AB Sanayi Bütünlüğü Standartlarına Ulaş ||| path: technocratic HP ||| after: End of the Membership Negotiations ||| does: -
+3430 ||| EU-Turkish Tariff Deal ||| TR: AB-Türkiye Gümrük Anlaşması ||| path: technocratic HP ||| after: Schengen Visa Deal / Reach EU Industrial Integrity Standards ||| does: spirit "The Turkish-EU Tariff Deal"
+3431 ||| Abandon the EU-Turkey Migrant Deal ||| TR: AB-Türkiye Göçmen Mutabakatından Çekil ||| path: technocratic HP ||| after: End of the Membership Negotiations ||| does: removes "EU_Turkey_deal"; war support 0.02
+3432 ||| Join the EU Single Market ||| TR: AB Tek Pazarına Katıl ||| path: technocratic HP ||| after: Reach EU Industrial Integrity Standards / Abandon the EU-Turkey Migrant Deal ||| does: spirit "Turkish-EU Market Union"
+3433 ||| Open EU Industrial Parks ||| TR: AB Sanayi Parkları Aç ||| path: technocratic HP ||| after: EU-Turkish Tariff Deal / Join the EU Single Market ||| does: stability 0.02; builds industrial_complex
+3434 ||| Open EU Offices ||| TR: AB Ofisleri Aç ||| path: technocratic HP ||| after: Join the EU Single Market ||| does: stability 0.02; builds offices
+3435 ||| Reorganize Stability ||| TR: İstikrarı Yeniden Düzenle ||| path: technocratic HP ||| after: Open EU Offices / Open EU Industrial Parks ||| does: stability 0.1
+3436 ||| EU-Turkic Policies ||| TR: AB-Türk Devletleri Politikaları ||| path: technocratic HP ||| after: EU-Turkish Policies ||| does: -
+3437 ||| Multiple Investments in Germany ||| TR: Almanya'da Çoklu Yatırımlar ||| path: technocratic HP ||| after: EU-Turkic Policies ||| does: builds industrial_complex
+3438 ||| German-Turkish Influence Deal ||| TR: Alman-Türk Etki Anlaşması ||| path: technocratic HP ||| after: Multiple Investments in Germany ||| does: -
+3439 ||| German-Turkish Friendship Deal ||| TR: Alman-Türk Dostluk Anlaşması ||| path: technocratic HP ||| after: German-Turkish Influence Deal ||| does: -
+3440 ||| Multiple Investments in France ||| TR: Fransa'da Çoklu Yatırımlar ||| path: technocratic HP ||| after: EU-Turkic Policies ||| does: builds industrial_complex
+3441 ||| French-Turkish Influence Deal ||| TR: Fransız-Türk Etki Anlaşması ||| path: technocratic HP ||| after: Multiple Investments in France ||| does: -
+3442 ||| French-Turkish Friendship Deal ||| TR: Fransız-Türk Dostluk Anlaşması ||| path: technocratic HP ||| after: French-Turkish Influence Deal ||| does: -
+3443 ||| Multiple Investments in Spain ||| TR: İspanya'da Çoklu Yatırımlar ||| path: technocratic HP ||| after: EU-Turkic Policies ||| does: builds industrial_complex
+3444 ||| Spanish-Turkish Influence Deal ||| TR: İspanyol-Türk Etki Anlaşması ||| path: technocratic HP ||| after: Multiple Investments in Spain ||| does: -
+3445 ||| Spanish-Turkish Friendship Deal ||| TR: İspanyol-Türk Dostluk Anlaşması ||| path: technocratic HP ||| after: Spanish-Turkish Influence Deal ||| does: -
+3446 ||| Finance the Turkic Union ||| TR: Türk Birliğini Finanse Et ||| path: technocratic HP ||| after: EU-Turkic Policies ||| does: PP 25
+3447 ||| Multiple Investments in Kazakhstan ||| TR: Kazakistan'da Çoklu Yatırımlar ||| path: technocratic HP ||| after: Finance the Turkic Union ||| does: builds industrial_complex
+3448 ||| Multiple Investments in Turkmenistan ||| TR: Türkmenistan'da Çoklu Yatırımlar ||| path: technocratic HP ||| after: Multiple Investments in Kazakhstan ||| does: builds industrial_complex
+3449 ||| Multiple Investments in Uzbekistan ||| TR: Özbekistan'da Çoklu Yatırımlar ||| path: technocratic HP ||| after: Finance the Turkic Union ||| does: builds industrial_complex
+3450 ||| Multiple Investments in Kyrgyzstan ||| TR: Kırgızistan'da Çoklu Yatırımlar ||| path: technocratic HP ||| after: Multiple Investments in Uzbekistan ||| does: builds industrial_complex
+3451 ||| The Agriculture Sector ||| TR: Tarım Sektörü ||| path: technocratic HP ||| after: Sectoral Campaign ||| does: PP 100; stability 0.03
+3452 ||| National Resource Action ||| TR: Ulusal Kaynak Hamlesi ||| path: technocratic HP ||| after: The Agriculture Sector ||| does: PP 75
+3453 ||| Batman Oil Pumpjacks ||| TR: Batman Petrol Pompaları ||| path: technocratic HP ||| after: National Resource Action ||| does: builds fossil_powerplant
+3454 ||| Tungsten Mining ||| TR: Tungsten Madenciliği ||| path: technocratic HP ||| after: Batman Oil Pumpjacks ||| does: -
+3455 ||| Steel Mining ||| TR: Çelik Madenciliği ||| path: technocratic HP ||| after: National Resource Action ||| does: -
+3456 ||| Iron Mines ||| TR: Demir Madenleri ||| path: technocratic HP ||| after: Steel Mining ||| does: -
+3457 ||| Anatolian Agricultural Sites ||| TR: Anadolu Tarım Alanları ||| path: technocratic HP ||| after: The Agriculture Sector ||| does: PP 75
+3458 ||| Local Farming ||| TR: Yerel Çiftçilik ||| path: technocratic HP ||| after: Anatolian Agricultural Sites ||| does: stability 0.03
+3459 ||| Konya Wheat ||| TR: Konya Buğdayı ||| path: technocratic HP ||| after: Anatolian Agricultural Sites ||| does: spirit "Wheat Fields"
+3460 ||| Black Sea Tea Agriculture ||| TR: Karadeniz Çay Tarımı ||| path: technocratic HP ||| after: Konya Wheat / Local Farming ||| does: spirit "Agricultural Project"
+3461 ||| Timber Industry ||| TR: Kereste Sanayisi ||| path: technocratic HP ||| after: Black Sea Tea Agriculture ||| does: -
+3462 ||| New Ways of Fishing ||| TR: Balıkçılıkta Yeni Yöntemler ||| path: technocratic HP ||| after: Black Sea Tea Agriculture ||| does: -
+3463 ||| The Industry Sector ||| TR: Sanayi Sektörü ||| path: technocratic HP ||| after: Sectoral Campaign ||| does: builds industrial_complex
+3464 ||| The Military Industry ||| TR: Askeri Sanayi ||| path: technocratic HP ||| after: The Industry Sector ||| does: builds arms_factory
+3465 ||| Eastern Military Industries ||| TR: Doğu Askeri Sanayileri ||| path: technocratic HP ||| after: Sivas Military Industries ||| does: builds arms_factory
+3466 ||| Capital Investments ||| TR: Başkent Yatırımları ||| path: technocratic HP ||| after: Kayseri Hava İkmal / Sivas Military Industries ||| does: builds arms_factory, industrial_complex
+3467 ||| Move Industries to Istanbul ||| TR: Sanayileri İstanbul'a Taşı ||| path: technocratic HP ||| after: Kayseri Hava İkmal ||| does: builds arms_factory, industrial_complex
+3468 ||| The Civilian Industry ||| TR: Sivil Sanayi ||| path: technocratic HP ||| after: The Industry Sector ||| does: builds industrial_complex
+3469 ||| İzmir Civilian Industries ||| TR: İzmir Sivil Sanayileri ||| path: technocratic HP ||| after: The Civilian Industry ||| does: builds industrial_complex
+3470 ||| Aegean Build-Up ||| TR: Ege Kalkınması ||| path: technocratic HP ||| after: The Civilian Industry ||| does: builds industrial_complex
+3471 ||| Mediterranean Civilian Industries ||| TR: Akdeniz Sivil Sanayileri ||| path: technocratic HP ||| after: Aegean Build-Up / İzmir Civilian Industries ||| does: builds industrial_complex
+3472 ||| Tourism Nation ||| TR: Turizm Ülkesi ||| path: technocratic HP ||| after: Mediterranean Civilian Industries ||| does: spirit "Extra Tourism Support for the Economy"
+3473 ||| The Space Age ||| TR: Uzay Çağı ||| path: technocratic HP ||| after: High Technology Administration ||| does: PP 200
+3474 ||| A Nation In Space ||| TR: Uzaydaki Millet ||| path: technocratic HP ||| after: The Space Age ||| does: stability 0.1
+3475 ||| Rise of Automation ||| TR: Otomasyonun Yükselişi ||| path: technocratic HP ||| after: A Nation In Space ||| does: "The General Automation Campaign" -> "Space-Level Automation"
+3476 ||| THY Civilian Factories ||| TR: THY Sivil Fabrikaları ||| path: technocratic HP ||| after: Mediterranean Civilian Industries ||| does: builds industrial_complex, offices
+3477 ||| Funded TUA ||| TR: Finanse Edilen TUA ||| path: technocratic HP ||| after: The Space Age ||| does: spirit "Space Renovations"
+3478 ||| The Service Sector ||| TR: Hizmet Sektörü ||| path: technocratic HP ||| after: Sectoral Campaign ||| does: builds offices
+3479 ||| The Sectoral Planning ||| TR: Sektörel Planlama ||| path: technocratic HP ||| after: The Service Sector ||| does: builds offices

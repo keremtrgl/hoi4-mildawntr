@@ -1,0 +1,60 @@
+2640 ||| Limit Exports ||| TR: İhracatı Sınırla ||| path: MHP (nationalist movement) ||| after: National Economy ||| does: -
+2641 ||| A Powerful Lira ||| TR: Güçlü Lira ||| path: MHP (nationalist movement) ||| after: National Economy ||| does: -
+2642 ||| Open National Universities ||| TR: Millî Üniversiteler Aç ||| path: MHP (nationalist movement) ||| after: National Economy ||| does: builds infrastructure
+2643 ||| Crack Down on Liberal Economists ||| TR: Liberal İktisatçıları Bastır ||| path: MHP (nationalist movement) ||| after: A Powerful Lira / Open National Universities ||| does: PP 25
+2644 ||| The No Investment, No Influence Principle ||| TR: Yatırım Yoksa Etki Yok İlkesi ||| path: MHP (nationalist movement) ||| after: Crack Down on Liberal Economists ||| does: PP -75
+2645 ||| Ankara Economic Congress ||| TR: Ankara İktisat Kongresi ||| path: MHP (nationalist movement) ||| after: Crack Down on Liberal Economists ||| does: stability 0.05
+2646 ||| Strong, Stable Economy ||| TR: Güçlü ve İstikrarlı Ekonomi ||| path: MHP (nationalist movement) ||| after: The No Investment, No Influence Principle / Ankara Economic Congress ||| does: removes "The Turkish Economic Malaise"
+2647 ||| The Question of the MHP ||| TR: MHP Meselesi ||| path: MHP (nationalist movement) ||| after: Political Decisions ||| does: PP 75
+2648 ||| End of the Bahçeli Tradition ||| TR: Bahçeli Geleneğinin Sonu ||| path: MHP (nationalist movement) ||| after: The Question of the MHP ||| does: -
+2649 ||| Concentrate Power in the Presidency ||| TR: Yetkileri Cumhurbaşkanlığında Topla ||| path: MHP (nationalist movement) ||| after: End of the Bahçeli Tradition ||| does: spirit "The Concentrated Powers of the Regime"; stability -0.05
+2650 ||| Ban Elections ||| TR: Seçimleri Yasakla ||| path: MHP (nationalist movement) ||| after: Concentrate Power in the Presidency ||| does: stability -0.05
+2651 ||| General Purges ||| TR: Genel Tasfiyeler ||| path: MHP (nationalist movement) ||| after: Concentrate Power in the Presidency ||| does: spirit "Purges of the Anti-Nationalists"; stability -0.05
+2652 ||| Follow Bahçeli ||| TR: Bahçeli'yi İzle ||| path: MHP (nationalist movement) ||| after: The Question of the MHP ||| does: stability 0.03
+2653 ||| Three Crescents ||| TR: Üç Hilal ||| path: MHP (nationalist movement) ||| after: Follow Bahçeli ||| does: spirit "Three Crescents"
+2654 ||| Control The Judiciary ||| TR: Yargıyı Kontrol Altına Al ||| path: MHP (nationalist movement) ||| after: Follow Bahçeli ||| does: spirit "A Controlled Judiciary"; stability -0.1
+2655 ||| Instil Nationalism in the Armed Forces ||| TR: Silahlı Kuvvetlere Milliyetçilik Aşıla ||| path: MHP (nationalist movement) ||| after: Control The Judiciary / Three Crescents ||| does: PP -75
+2656 ||| Cold War with the Kurds ||| TR: Kürtlerle Soğuk Savaş ||| path: MHP (nationalist movement) ||| after: Kurdish Problem ||| does: spirit "Cold War with the Kurds"
+2657 ||| Mass Assimilation Policy ||| TR: Kitlesel Asimilasyon Politikası ||| path: MHP (nationalist movement) ||| after: Kurdish Problem ||| does: spirit "Assimilation Policy"
+2658 ||| Shut Down HDP ||| TR: HDP'yi Kapat ||| path: MHP (nationalist movement) ||| after: Mass Assimilation Policy / Cold War with the Kurds ||| does: tooltip: will be shut down.
+2659 ||| Organize Ülkücü Defence Zones in the East ||| TR: Doğu'da Ülkücü Savunma Bölgeleri Kur ||| path: MHP (nationalist movement) ||| after: Cold War with the Kurds ||| does: builds bunker
+2660 ||| Ban Other Languages ||| TR: Diğer Dilleri Yasakla ||| path: MHP (nationalist movement) ||| after: Mass Assimilation Policy ||| does: PP -50; stability 0.03
+2661 ||| Loosen the Secularism Laws ||| TR: Laiklik Yasalarını Gevşet ||| path: MHP (nationalist movement) ||| after: The Question of Kemalism ||| does: PP -100
+2662 ||| Kurdish Problem ||| TR: Kürt Sorunu ||| path: MHP (nationalist movement), military junta ||| after: Political Decisions ||| does: spirit "Kurdish Xenophobia"; removes "Kurdish TV And Free Language"; removes "Kurdish Schools and Universities"; removes "Kurdish Language Freedom"; removes "Kurdish TV Channels Permitted"
+2663 ||| Open Jihadist Barracks ||| TR: Cihatçı Kışlalar Aç ||| path: MHP (nationalist movement), Saadet / Milli Gorus ||| after: Loosen the Secularism Laws ||| does: spirit "Jihadist Barracks"
+2664 ||| Purge The Kemalists ||| TR: Kemalistleri Tasfiye Et ||| path: MHP (nationalist movement) ||| after: Loosen the Secularism Laws ||| does: spirit "Kemalist Officers Protest"; spirit "Kemalist Parties Protest"; spirit "The Islamization of the Army"; spirit "The Divisions of Muhammad"
+2665 ||| Change The Curriculum ||| TR: Müfredatı Değiştir ||| path: MHP (nationalist movement) ||| after: Open Jihadist Barracks / Purge The Kemalists ||| does: PP 100; stability -0.05
+2666 ||| A Brand New Constitution ||| TR: Yepyeni Bir Anayasa ||| path: MHP (nationalist movement) ||| after: Change The Curriculum ||| does: spirit "Moderate Sharia State"; stability -0.05
+2667 ||| Befriend the Jihadists ||| TR: Cihatçılarla Dostluk Kur ||| path: MHP (nationalist movement) ||| after: Open Jihadist Barracks ||| does: -
+2668 ||| Strong Relations with Muslim Nations ||| TR: Müslüman Ülkelerle Güçlü İlişkiler ||| path: MHP (nationalist movement) ||| after: Befriend the Jihadists ||| does: spirit "Nationalist Opposition to the Arabs Within the Party"
+2669 ||| Peacekeeping State ||| TR: Barış Gücü Devleti ||| path: MHP (nationalist movement) ||| after: Protect Atatürk's Laws / Increase Secular Schools ||| does: spirit "Kemalist Neutrality"
+2670 ||| Build a Statue of Türkeş ||| TR: Türkeş'in Heykelini Dik ||| path: MHP (nationalist movement) ||| after: Instil Nationalism in the Armed Forces ||| does: spirit "The Legacy of Alparslan Türkeş"
+2671 ||| Declare Dictatorship ||| TR: Diktatörlük İlan Et ||| path: MHP (nationalist movement) ||| after: Ban Elections / General Purges ||| does: spirit "The Wolf Dictatorship"; stability -0.05
+2672 ||| Arm the Ülkücüs in the East ||| TR: Doğu'daki Ülkücüleri Silahlandır ||| path: MHP (nationalist movement) ||| after: Organize Ülkücü Defence Zones in the East ||| does: war support 0.02
+2673 ||| Unstoppable Defence Zones In The East ||| TR: Doğu'da Durdurulamaz Savunma Bölgeleri ||| path: MHP (nationalist movement) ||| after: Ban Other Languages ||| does: war support 0.01
+2674 ||| End of the Kurdish Problem ||| TR: Kürt Sorununun Sonu ||| path: MHP (nationalist movement) ||| after: Unstoppable Defence Zones In The East / Arm the Ülkücüs in the East ||| does: removes "Kurdish TV And Free Language"; removes "Kurdish TV Channels Permitted"; removes "Kurdish Schools and Universities"; removes "Kurdish Language Freedom"; removes "Kurdish Xenophobia"; stability 0.02
+2675 ||| 3rd Military Junta ||| TR: Üçüncü Askeri Cunta ||| path: military junta ||| after: - ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; PP 50; tooltip: This focus tree may look small, but by the end of this part you gain access to the big focus tree.
+2676 ||| Nationalist State ||| TR: Milliyetçi Devlet ||| path: military junta ||| after: 3rd Military Junta ||| does: stability 0.03
+2677 ||| Right-Wing Armed Kemalist State ||| TR: Sağcı Silahlı Kemalist Devlet ||| path: military junta ||| after: Nationalist State ||| does: -
+2678 ||| Loyal Arms ||| TR: Sadık Silahlar ||| path: military junta ||| after: Right-Wing Armed Kemalist State ||| does: -
+2679 ||| The Coup Constitution ||| TR: Darbe Anayasası ||| path: military junta ||| after: Right-Wing Armed Kemalist State ||| does: PP 100
+2680 ||| Dismantle Political Parties ||| TR: Siyasi Partileri Kapat ||| path: military junta ||| after: The Coup Constitution ||| does: spirit "The Army's Intervention in Politics"; PP 25; stability -0.07; tooltip: becomes the only party in the state.
+2681 ||| Reorganize the Military ||| TR: Orduyu Yeniden Düzenle ||| path: military junta ||| after: Right-Wing Armed Kemalist State ||| does: -
+2682 ||| Orders of the General Staff ||| TR: Genelkurmay'ın Emirleri ||| path: military junta ||| after: Reorganize the Military ||| does: stability 0.02
+2683 ||| Push Economic Reforms ||| TR: Ekonomik Reformları Hızlandır ||| path: military junta ||| after: Orders of the General Staff / Dismantle Political Parties ||| does: "Yeni Türk Lirası" -> "Yeni Türk Lirası"
+2684 ||| Increase Foreign Investments ||| TR: Yabancı Yatırımları Artır ||| path: military junta ||| after: Push Economic Reforms ||| does: builds industrial_complex
+2685 ||| Connections with the USA ||| TR: ABD ile Bağlantılar ||| path: military junta ||| after: 3rd Military Junta ||| does: PP 75
+2686 ||| United States Military Aid ||| TR: ABD Askeri Yardımı ||| path: military junta ||| after: Connections with the USA ||| does: spirit "US Foreign Military Aid"
+2687 ||| Feed Anti-Communist Organizations ||| TR: Antikomünist Örgütleri Besle ||| path: military junta ||| after: Connections with the USA ||| does: -
+2688 ||| New US Bases In Turkey ||| TR: Türkiye'de Yeni ABD Üsleri ||| path: military junta ||| after: United States Military Aid / Feed Anti-Communist Organizations ||| does: PP 25; stability -0.02; builds air_base
+2689 ||| Oil Agreement with the US ||| TR: ABD ile Petrol Anlaşması ||| path: military junta ||| after: New US Bases In Turkey ||| does: spirit "The Turkish-US Deal"; builds synthetic_refinery
+2690 ||| The Iraq Mission ||| TR: Irak Görevi ||| path: military junta ||| after: 3rd Military Junta ||| does: war support 0.03
+2691 ||| Join the US Invasion ||| TR: ABD İşgaline Katıl ||| path: military junta ||| after: The Iraq Mission ||| does: war goal/war on IRQ
+2692 ||| Withdrawal from Iraq ||| TR: Irak'tan Çekilme ||| path: military junta ||| after: Join the US Invasion ||| does: stability 0.02; war support -0.03
+2693 ||| Economic Movements ||| TR: Ekonomik Hamleler ||| path: military junta ||| after: Push Economic Reforms ||| does: builds arms_factory, industrial_complex, infrastructure
+2694 ||| Tax Law ||| TR: Vergi Kanunu ||| path: military junta ||| after: Push Economic Reforms ||| does: tooltip: Taxes will be lowered immediately.
+2695 ||| End of the Economic Crisis ||| TR: Ekonomik Krizin Sonu ||| path: military junta ||| after: Increase Foreign Investments / Tax Law ||| does: removes "The Turkish Economic Malaise"
+2696 ||| National Purges ||| TR: Ulusal Tasfiyeler ||| path: military junta ||| after: End of the Economic Crisis ||| does: PP 50; stability -0.03
+2697 ||| Stabilize the Regime ||| TR: Rejimi İstikrara Kavuştur ||| path: military junta ||| after: National Purges ||| does: spirit "The Stabilization of Turkey"
+2698 ||| Peace Propaganda ||| TR: Barış Propagandası ||| path: military junta ||| after: National Purges ||| does: stability 0.01; war support -0.07
+2699 ||| Enter Mosul ||| TR: Musul'a Gir ||| path: military junta ||| after: Join the US Invasion ||| does: war support 0.02

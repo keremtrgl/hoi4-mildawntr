@@ -1,0 +1,60 @@
+1080 ||| Found a New Faith ||| TR: Yeni Bir İnanç Kur ||| path: Constitutional Court rule ||| after: Conjuncture Policy / Funds On SGK ||| does: spirit "The Rise of a New Faith"
+1081 ||| Support the Academics ||| TR: Akademisyenleri Destekle ||| path: Constitutional Court rule ||| after: Funds On SGK ||| does: spirit "Supported Academics"
+1082 ||| Creation of the Innovation House ||| TR: Yenilik Evinin Kuruluşu ||| path: Constitutional Court rule ||| after: Conjuncture Policy ||| does: spirit "Houses of Innovation"
+1083 ||| Configure the Government ||| TR: Hükümeti Yapılandır ||| path: Constitutional Court rule ||| after: Creation of the Innovation House / Found a New Faith ||| does: PP 100; tooltip: Gains 2% Support (Relative Popularity).\n
+1084 ||| Land of Innovative Technocracy ||| TR: Yenilikçi Teknokrasi Diyarı ||| path: Constitutional Court rule ||| after: Configure the Government ||| does: spirit "Land of Innovative Technocracy"
+1085 ||| Open-Minded Innovation ||| TR: Açık Fikirli Yenilikçilik ||| path: Constitutional Court rule ||| after: Manage the Bureaucracy ||| does: spirit "Open-Minded Innovation"
+1086 ||| Anti-Corruption Protocol ||| TR: Yolsuzlukla Mücadele Protokolü ||| path: Constitutional Court rule ||| after: Open-Minded Innovation ||| does: -
+1087 ||| Clean Up Fraud ||| TR: Dolandırıcılığı Temizle ||| path: Constitutional Court rule ||| after: Anti-Corruption Protocol / Weaken the Police State ||| does: PP 25
+1088 ||| Weaken the Police State ||| TR: Polis Devletini Zayıflat ||| path: Constitutional Court rule ||| after: Open-Minded Innovation ||| does: "police_05" -> "police_02"; stability 0.05
+1089 ||| Prepare for the Future ||| TR: Geleceğe Hazırlan ||| path: Constitutional Court rule ||| after: Abandon the War Plans ||| does: "Foreseeing the Future" -> "Foreseeing the Future"; PP 25
+1090 ||| Abandon the War Plans ||| TR: Savaş Planlarından Vazgeç ||| path: Constitutional Court rule ||| after: Unravel the Big Picture / A Scientific Approach ||| does: spirit "defence_02"; stability 0.05; war support -0.1
+1091 ||| Regulation Machine ||| TR: Düzenleme Makinesi ||| path: Constitutional Court rule ||| after: Clean Up Fraud ||| does: spirit "Regulation Machine"
+1092 ||| Unravel the Big Picture ||| TR: Büyük Resmi Çöz ||| path: Constitutional Court rule ||| after: Regulation Machine / Achieve Happiness in the Family ||| does: spirit "Foreseeing the Future"
+1093 ||| Achieve Happiness in the Family ||| TR: Ailede Mutluluğu Sağla ||| path: Constitutional Court rule ||| after: Clean Up Fraud ||| does: stability 0.05; tooltip: Gains 2% Support (Relative Popularity).\n
+1094 ||| A Scientific Approach ||| TR: Bilimsel Yaklaşım ||| path: Constitutional Court rule ||| after: Regulation Machine ||| does: spirit "A Scientific Approach"
+1095 ||| Increase Human Brilliance ||| TR: İnsan Zekâsını Yükselt ||| path: Constitutional Court rule ||| after: Achieve Happiness in the Family ||| does: spirit "The Rise of Human Brilliance"
+1096 ||| The Middle Eastern Railways Concept ||| TR: Orta Doğu Demiryolları Konsepti ||| path: Constitutional Court rule ||| after: Receive Qatari Arms Investment / Deals with Riyadh ||| does: -
+1097 ||| Open New US Bases ||| TR: Yeni ABD Üsleri Aç ||| path: Constitutional Court rule ||| after: Stay Tied to the US ||| does: war support 0.02
+1098 ||| Receive Qatari Arms Investment ||| TR: Katar'ın Silah Yatırımlarını Al ||| path: Constitutional Court rule ||| after: Deals with Qatar ||| does: builds arms_factory
+1099 ||| Deals with Qatar ||| TR: Katar ile Anlaşmalar ||| path: Constitutional Court rule ||| after: Southern Politics ||| does: -
+1100 ||| Nuclear Site as a Guarantee ||| TR: Güvence Olarak Nükleer Tesis ||| path: Constitutional Court rule ||| after: Guarded Under NATO / Open New US Bases ||| does: stability 0.03; builds air_base, naval_base, nuclear_reactor
+1101 ||| Close Calls with the EU ||| TR: AB ile Yakın Temaslar ||| path: Constitutional Court rule ||| after: Northern Politics ||| does: -
+1102 ||| Plans to Achieve Stability in the Region ||| TR: Bölgede İstikrarı Sağlama Planları ||| path: Constitutional Court rule ||| after: Deals with Riyadh / Clash with Hezbollah ||| does: stability 0.05
+1103 ||| Southern Politics ||| TR: Güney Siyaseti ||| path: Constitutional Court rule ||| after: Foreign Policy Of Justice ||| does: PP 100
+1104 ||| Deals with Tehran ||| TR: Tahran ile Anlaşmalar ||| path: Constitutional Court rule ||| after: Southern Politics ||| does: -
+1105 ||| Deals with Riyadh ||| TR: Riyad ile Anlaşmalar ||| path: Constitutional Court rule ||| after: Deals with Qatar ||| does: -
+1106 ||| Pass the Last EU Legislation ||| TR: Son AB Mevzuatını Çıkar ||| path: Constitutional Court rule ||| after: Close Calls with the EU ||| does: spirit "Protective EU Agreements"
+1107 ||| Turkish Membership of the European Union ||| TR: Türkiye'nin Avrupa Birliği Üyeliği ||| path: Constitutional Court rule ||| after: Pass the Last EU Legislation / Open New US Bases ||| does: "Passive EU Member" -> "EU_member"; stability 0.03
+1108 ||| Guarantee Iraq ||| TR: Irak'a Garanti Ver ||| path: Constitutional Court rule ||| after: Policies Of Interventionism ||| does: -
+1109 ||| Imminent Spring Intervention ||| TR: Baharda Yakın Müdahale ||| path: Constitutional Court rule ||| after: Guarantee Iraq ||| does: PP 75; war goal/war on IRQ
+1110 ||| Guarantee Georgia ||| TR: Gürcistan'a Garanti Ver ||| path: Constitutional Court rule ||| after: Policies Of Interventionism ||| does: -
+1111 ||| For Peace and Order! ||| TR: Barış ve Düzen İçin! ||| path: Constitutional Court rule ||| after: Bombardment Of Syria / Invade the Northern Syrian Camps ||| does: PP 75; war goal/war on SYR
+1112 ||| Subvert ISIS in the Region ||| TR: Bölgede IŞİD'i Çökert ||| path: Constitutional Court rule ||| after: Imminent Spring Intervention ||| does: war support 0.03; war goal/war on ISI
+1113 ||| Guarantee Hungary ||| TR: Macaristan'a Garanti Ver ||| path: Constitutional Court rule ||| after: Guarantee Azerbaijan ||| does: -
+1114 ||| Prepare Georgia to Fight Russia ||| TR: Gürcistan'ı Rusya'yla Savaşmaya Hazırla ||| path: Constitutional Court rule ||| after: Guarantee Georgia ||| does: builds arms_factory
+1115 ||| NATO-Georgia Integration ||| TR: NATO-Gürcistan Entegrasyonu ||| path: Constitutional Court rule ||| after: Prepare Georgia to Fight Russia ||| does: event "NATO-Georgia Integration"
+1116 ||| Join the European Brotherhood ||| TR: Avrupa Kardeşliğine Katıl ||| path: Constitutional Court rule ||| after: Military Aid to Baku / Guarantee Hungary ||| does: event "A Turkish-European Brotherhood"
+1117 ||| Clash with Hezbollah ||| TR: Hizbullah ile Çatış ||| path: Constitutional Court rule ||| after: Deals with Tehran ||| does: spirit "War With Hezbollah"
+1118 ||| Trade with the US ||| TR: ABD ile Ticaret ||| path: Constitutional Court rule ||| after: Nuclear Site as a Guarantee / Turkish Membership of the European Union ||| does: -
+1119 ||| Trade with Arabia ||| TR: Arabistan ile Ticaret ||| path: Constitutional Court rule ||| after: Plans to Achieve Stability in the Region / The Middle Eastern Railways Concept ||| does: -
+1120 ||| A Regional Peace ||| TR: Bölgesel Barış ||| path: Constitutional Court rule ||| after: Trade with the US / Ensure Peace in the Caucasus ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; stability 0.1
+1121 ||| March on the PKK ||| TR: PKK'nın Üzerine Yürü ||| path: Constitutional Court rule ||| after: Counter-Terrorism Policies ||| does: war support 0.03
+1122 ||| Witch-Hunt the Gülen Organization's Buildings ||| TR: Gülen Örgütünün Binalarına Cadı Avı Başlat ||| path: Constitutional Court rule ||| after: Clash with Gülen's Fundamentalists ||| does: war support 0.03
+1123 ||| Erase Gülenism ||| TR: Gülenciliği Sil ||| path: Constitutional Court rule ||| after: Shut Down Gülen Institutions / Witch-Hunt the Gülen Organization's Buildings ||| does: removes "The Gülen Movement's Low Influence Over the Republic"
+1124 ||| Take Precautions Against the PKK ||| TR: PKK'ya Karşı Önlem Al ||| path: Constitutional Court rule ||| after: Counter-Terrorism Policies ||| does: spirit "Precautions Against the PKK"
+1125 ||| Strike the PKK's Global Presence ||| TR: PKK'nın Küresel Varlığına Darbe Vur ||| path: Constitutional Court rule ||| after: Take Precautions Against the PKK ||| does: "Precautions Against the PKK" -> "Precautions Against the PKK"
+1126 ||| Truth in the Regional Order ||| TR: Bölgesel Düzende Hakikat ||| path: Constitutional Court rule ||| after: Send Agents to Pennsylvania ||| does: "Precautions Against the Gülen Movement" -> "General Order"
+1127 ||| Increase Kurdish Acceptance ||| TR: Kürtlerin Kabul Oranını Artır ||| path: Constitutional Court rule ||| after: Strike the PKK's Global Presence ||| does: "Precautions Against the PKK" -> "Improved Kurdish Approval"
+1128 ||| Militarize the Borders ||| TR: Sınırları Militarize Et ||| path: Constitutional Court rule ||| after: March on the PKK / Take Precautions Against the PKK ||| does: war support 0.03; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+1129 ||| Establish Order ||| TR: Düzeni Tesis Et ||| path: Constitutional Court rule ||| after: March on the PKK ||| does: stability 0.05; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+1130 ||| Definitive Followers ||| TR: Kesin Takipçiler ||| path: Constitutional Court rule ||| after: Reinstate Order ||| does: tooltip: Precision Group Loses 2 Supporters.; tooltip: Soft Group Gains 1 Supporter.; tooltip: Transparent Group Gains 1 Supporter.
+1131 ||| Appease Bureaucrats ||| TR: Bürokratları Yatıştır ||| path: Constitutional Court rule ||| after: The Bureaucratic Order ||| does: tooltip: Precision Group Loses 1 Supporter.; tooltip: Transparent Group Gains 1 Supporter.
+1132 ||| Gain Massive Bureaucratic Support ||| TR: Büyük Bürokratik Destek Kazan ||| path: Constitutional Court rule ||| after: Appease Bureaucrats / Mix the Law ||| does: tooltip: Precision Group Loses 2 Supporters.; tooltip: Transparent Group Gains 2 Supporters.
+1133 ||| Attack the Bureaucrats in the Media ||| TR: Medyada Bürokratlara Saldır ||| path: Constitutional Court rule ||| after: Definitive Followers ||| does: tooltip: Precision Group Gains 1 Supporter.; tooltip: Transparent Group Loses 1 Supporter.
+1134 ||| Criticize the Soft Regime's Followers ||| TR: Yumuşak Rejim Taraftarlarını Eleştir ||| path: Constitutional Court rule ||| after: Attack the Bureaucrats in the Media ||| does: tooltip: Precision Group Gains 1 Supporter.; tooltip: Soft Group Loses 1 Supporter.
+1135 ||| Learn from the Mistake ||| TR: Hatadan Ders Çıkar ||| path: Constitutional Court rule ||| after: The Soft Regime ||| does: tooltip: Precision Group Loses 1 Supporter.; tooltip: Transparent Group Loses 1 Supporter.; tooltip: Soft Group Gains 2 Supporters.
+1136 ||| Push Soft Regime Propaganda ||| TR: Yumuşak Rejim Propagandası Yap ||| path: Constitutional Court rule ||| after: Learn from the Mistake / Allow No Scandals ||| does: tooltip: Transparent Group Loses 1 Supporter.; tooltip: Precision Group Loses 1 Supporter.; tooltip: Soft Group Gains 2 Supporters.
+1137 ||| Second Order Change of the Court ||| TR: Mahkemenin İkinci Düzen Değişikliği ||| path: Constitutional Court rule ||| after: Push Soft Regime Propaganda / Criticize the Soft Regime's Followers ||| does: stability 0.02
+1138 ||| The New Court Elections ||| TR: Yeni Mahkeme Seçimleri ||| path: Constitutional Court rule ||| after: Second Order Change of the Court ||| does: PP 125
+1139 ||| Unity of the Peoples ||| TR: Halkların Birliği ||| path: Constitutional Court rule ||| after: The New Court Elections ||| does: tooltip: Precision Group Gains 1 Supporter.; tooltip: Soft Group Loses 1 Supporter.

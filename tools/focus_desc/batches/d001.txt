@@ -1,0 +1,60 @@
+60 ||| Kadro Movement in the Party ||| TR: Partide Kadro Hareketi ||| path: reformed AKP (2008) ||| after: Liberal Reformation of the AKP ||| does: PP -75; stability -0.02; tooltip: Loses 2% Support (Relative Popularity).\n
+61 ||| Expand Liberal Policies ||| TR: Liberal Politikaları Genişlet ||| path: reformed AKP (2008) ||| after: Kadro Movement in the Party / Support Institutionalization ||| does: spirit "globalized_trade_economy"; tooltip: Gains 2% Support (Relative Popularity).\n
+62 ||| Request Support from the CHP ||| TR: CHP'den Destek İste ||| path: reformed AKP (2008) ||| after: Expand Liberal Policies ||| does: event "Deals With the CHP"
+63 ||| Finish the Mission ||| TR: Görevi Tamamla ||| path: reformed AKP (2008) ||| after: Kadro Movement in the Party ||| does: PP 75; stability 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+64 ||| Prepare Elections in the AKP ||| TR: AKP'de Seçim Hazırla ||| path: reformed AKP (2008) ||| after: Expand Liberal Policies / Strengthen the AYM ||| does: event "The AK Party Calls an Extraordinary Congress"
+65 ||| Get Along with the MPs ||| TR: Milletvekilleriyle İyi Geçin ||| path: reformed AKP (2008) ||| after: Prepare Elections in the AKP ||| does: PP 25; stability 0.01; tooltip: Gains 3% Support (Relative Popularity).\n
+66 ||| Organize Kadro Protests ||| TR: Kadro Protestoları Düzenle ||| path: reformed AKP (2008) ||| after: Prepare Elections in the AKP ||| does: PP -75; stability -0.03; tooltip: Loses 2% Support (Relative Popularity).\n
+67 ||| Get Along with the Party Delegates ||| TR: Parti Delegeleriyle İyi Geçin ||| path: reformed AKP (2008) ||| after: Prepare Elections in the AKP ||| does: PP 25; stability 0.01; tooltip: Gains 3% Support (Relative Popularity).\n
+68 ||| Exploit the Victim Narrative ||| TR: Mağduriyet Söylemini Kullan ||| path: reformed AKP (2008) ||| after: Prepare Elections in the AKP ||| does: PP -75; stability -0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+69 ||| Second Abdullah Gül Regime ||| TR: İkinci Abdullah Gül Rejimi ||| path: reformed AKP (2008) ||| after: Get Along with the Party Delegates / Get Along with the MPs ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; event "Gül Takes Power"
+70 ||| Tradesman Support Package ||| TR: Esnaf Destek Paketi ||| path: reformed AKP (2008) ||| after: Second Abdullah Gül Regime ||| does: spirit "The Shopkeepers Support Package"
+71 ||| Protect the Free Media ||| TR: Özgür Medyayı Koru ||| path: reformed AKP (2008), ANAP liberal ||| after: Second Abdullah Gül Regime ||| does: spirit "Protected Free Media"
+72 ||| Lift the Headscarf Ban ||| TR: Başörtüsü Yasağını Kaldır ||| path: reformed AKP (2008), AKP / democratic Turkey, DSP (Ecevit) government ||| after: Tradesman Support Package / Protect the Free Media ||| does: stability -0.05; tooltip: 's opinion of  changes by -7%.\n
+73 ||| Spread Liberal Influence Abroad ||| TR: Yurt Dışında Liberal Etkiyi Yay ||| path: reformed AKP (2008) ||| after: Lift the Headscarf Ban ||| does: spirit "The Liberal Brain"
+74 ||| Babacan Economics ||| TR: Babacan Ekonomisi ||| path: reformed AKP (2008) ||| after: Lift the Headscarf Ban ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"; PP 75; builds industrial_complex
+75 ||| Drop 6 Zeros from the Lira ||| TR: TL'den 6 Sıfır At ||| path: reformed AKP (2008) ||| after: Babacan Economics ||| does: "Yeni Türk Lirası" -> "Yeni Türk Lirası"
+76 ||| Create Trading Possibilities ||| TR: Ticaret Fırsatları Yarat ||| path: reformed AKP (2008) ||| after: Babacan Economics ||| does: -
+77 ||| Liberal Islamic State ||| TR: Liberal İslami Devlet ||| path: reformed AKP (2008) ||| after: Drop 6 Zeros from the Lira / Create Trading Possibilities ||| does: spirit "Liberal Islamic State"
+78 ||| Hold Meetings with Other Parties ||| TR: Diğer Partilerle Görüşmeler Yap ||| path: reformed AKP (2008) ||| after: Drop 6 Zeros from the Lira ||| does: event "Meetings With the Parties"
+79 ||| Organize Meetings with the Unions ||| TR: Sendikalarla Görüşmeler Düzenle ||| path: reformed AKP (2008) ||| after: Create Trading Possibilities ||| does: event "Meetings With the Unions"
+80 ||| Entering 2009... ||| TR: 2009'a Girerken... ||| path: reformed AKP (2008) ||| after: Hold Meetings with Other Parties / Liberal Islamic State ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; PP 25; stability 0.03
+81 ||| Winds of the European Union ||| TR: Avrupa Birliği Rüzgârları ||| path: reformed AKP (2008) ||| after: Entering 2009... ||| does: spirit "Winds of the European Union"; PP 175
+82 ||| 2011 European Integration Constitution ||| TR: 2011 Avrupa Entegrasyonu Anayasası ||| path: reformed AKP (2008) ||| after: Winds of the European Union ||| does: spirit "Western-Influenced Constitution"
+83 ||| Adopt European Laws ||| TR: Avrupa Yasalarını Benimse ||| path: reformed AKP (2008) ||| after: Winds of the European Union ||| does: spirit "Adopted European Laws"
+84 ||| European Studies ||| TR: Avrupa Çalışmaları ||| path: reformed AKP (2008) ||| after: 2011 European Integration Constitution / Adopt European Laws ||| does: spirit "European Studies"
+85 ||| Eurozone Border Protection ||| TR: Avro Bölgesi Sınır Koruması ||| path: reformed AKP (2008) ||| after: 2011 European Integration Constitution / Adopt European Laws ||| does: spirit "Eurozone Border Protection"
+86 ||| Create International Peace Forces ||| TR: Uluslararası Barış Gücü Kur ||| path: reformed AKP (2008) ||| after: Adopt European Laws ||| does: spirit "International Peace Forces"
+87 ||| Full Compliance with the UN ||| TR: BM ile Tam Uyum ||| path: reformed AKP (2008) ||| after: European Studies / Eurozone Border Protection ||| does: spirit "Signatory to the UN Peace Proposal"
+88 ||| Full Compliance with the ECHR ||| TR: AİHM ile Tam Uyum ||| path: reformed AKP (2008) ||| after: Full Compliance with the UN ||| does: spirit "Directly Bound to the ECHR"
+89 ||| European Cultural Sites ||| TR: Avrupa Kültür Alanları ||| path: reformed AKP (2008) ||| after: Full Compliance with the ECHR ||| does: builds infrastructure
+90 ||| Recovery Package for the 2008 Recession ||| TR: 2008 Resesyonu İçin Toparlanma Paketi ||| path: reformed AKP (2008) ||| after: Lift the Headscarf Ban ||| does: "recession" -> "stable_growth"; stability 0.03
+91 ||| Guaranteed Multi-Party State ||| TR: Güvenceli Çok Partili Devlet ||| path: reformed AKP (2008) ||| after: Entering 2009... ||| does: spirit "Guaranteed Multi-Party State"
+92 ||| The Kurdish Question ||| TR: Kürt Meselesi ||| path: reformed AKP (2008) ||| after: Second Abdullah Gül Regime ||| does: stability -0.05
+93 ||| TRT 6 Kurdish ||| TR: TRT 6 Kurdî ||| path: reformed AKP (2008), AKP / democratic Turkey ||| after: The Kurdish Question ||| does: spirit "Kurdish TV And Free Language"; removes "Kurdish TV Channels Permitted"; removes "Kurdish Schools and Universities"; removes "Kurdish Language Freedom"; removes "Kurdish Xenophobia"
+94 ||| Launch the Anti-Inflation Program ||| TR: Enflasyonla Mücadele Programını Başlat ||| path: reformed AKP (2008) ||| after: Winds of the European Union ||| does: spirit "The Anti-Inflation Program"
+95 ||| Request Support from the MHP ||| TR: MHP'den Destek İste ||| path: reformed AKP (2008) ||| after: Finish the Mission ||| does: event "Deals With the MHP"
+96 ||| Keep the Economic Boom Going ||| TR: Ekonomik Patlamayı Sürdür ||| path: reformed AKP (2008) ||| after: Launch the Anti-Inflation Program ||| does: spirit "economic_boom"; stability 0.01
+97 ||| Withdraw Weapons from Kurdish Areas ||| TR: Kürt Bölgelerinden Silahları Çek ||| path: reformed AKP (2008) ||| after: The Kurdish Question ||| does: stability -0.02; war support -0.05; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+98 ||| A Powerful G20 Member ||| TR: Güçlü Bir G20 Üyesi ||| path: reformed AKP (2008) ||| after: Keep the Economic Boom Going ||| does: spirit "A Powerful G20 Member"
+99 ||| Minimize the Debt ||| TR: Borcu En Aza İndir ||| path: reformed AKP (2008), Osman Pamukoglu's HEPAR ||| after: A Powerful G20 Member ||| does: stability 0.02
+100 ||| Reserves Law ||| TR: Rezerv Kanunu ||| path: reformed AKP (2008) ||| after: A Powerful G20 Member ||| does: spirit "The Central Bank Reserves Law"
+101 ||| Secure the Independence of the Central Bank ||| TR: Merkez Bankası'nın Bağımsızlığını Güvenceye Al ||| path: reformed AKP (2008) ||| after: A Powerful G20 Member ||| does: PP 100; stability 0.03
+102 ||| Prepare to Join the Euro ||| TR: Avroya Geçişe Hazırlan ||| path: reformed AKP (2008) ||| after: Minimize the Debt / Reserves Law ||| does: removes "Yeni Türk Lirası"; removes "Türk Lirası"; PP 75; tooltip: The system will prepare to phase out the lira so that the euro can become the country's real currency in the future.
+103 ||| Change the Industrialization Program ||| TR: Sanayileşme Programını Değiştir ||| path: reformed AKP (2008) ||| after: Liberal Reformation of the AKP ||| does: PP 50; stability 0.02
+104 ||| Regulate Hot Money ||| TR: Sıcak Para Düzenlemesi ||| path: reformed AKP (2008) ||| after: Change the Industrialization Program ||| does: PP 75; stability 0.01; tooltip: Hot money will flow in steadily without damaging our currency policies.
+105 ||| Continue the Investment Income ||| TR: Yatırım Gelirini Sürdür ||| path: reformed AKP (2008) ||| after: Change the Industrialization Program ||| does: PP 75; stability 0.01; tooltip: Investment will arrive faster than usual.
+106 ||| Industrialization of the Turkish Republic ||| TR: Türkiye Cumhuriyeti'nin Sanayileşmesi ||| path: reformed AKP (2008) ||| after: Regulate Hot Money / Continue the Investment Income ||| does: stability 0.03
+107 ||| Arms Factory Expansion ||| TR: Silah Fabrikalarının Genişlemesi ||| path: reformed AKP (2008) ||| after: Industrialization of the Turkish Republic ||| does: -
+108 ||| Improve Kayseri's Military Capabilities ||| TR: Kayseri'nin Askeri Kabiliyetlerini Geliştir ||| path: reformed AKP (2008) ||| after: Arms Factory Expansion ||| does: builds arms_factory
+109 ||| Dockyard Expansion ||| TR: Tersanelerin Genişlemesi ||| path: reformed AKP (2008) ||| after: Industrialization of the Turkish Republic ||| does: -
+110 ||| Mersin Dockyards ||| TR: Mersin Tersaneleri ||| path: reformed AKP (2008) ||| after: Dockyard Expansion ||| does: builds dockyard
+111 ||| Adana Dockyards ||| TR: Adana Tersaneleri ||| path: reformed AKP (2008) ||| after: Mersin Dockyards ||| does: builds dockyard
+112 ||| Dockyard Deals with Israel ||| TR: İsrail ile Tersane Anlaşmaları ||| path: reformed AKP (2008) ||| after: Adana Dockyards ||| does: builds dockyard
+113 ||| Antalya Dockyards ||| TR: Antalya Tersaneleri ||| path: reformed AKP (2008) ||| after: Mersin Dockyards ||| does: builds dockyard
+114 ||| Mediterranean Naval Supremacy ||| TR: Akdeniz'de Deniz Üstünlüğü ||| path: reformed AKP (2008) ||| after: Antalya Dockyards / Adana Dockyards ||| does: builds dockyard
+115 ||| Cyprus Naval Deployment ||| TR: Kıbrıs'a Deniz Konuşlanması ||| path: reformed AKP (2008) ||| after: Antalya Dockyards ||| does: war support 0.03; builds dockyard
+116 ||| Industrial Complex Expansion ||| TR: Sanayi Kompleksi Genişlemesi ||| path: reformed AKP (2008) ||| after: Industrialization of the Turkish Republic ||| does: stability 0.02; builds industrial_complex
+117 ||| Industrial Parks ||| TR: Sanayi Parkları ||| path: reformed AKP (2008) ||| after: Industrial Complex Expansion ||| does: builds industrial_complex
+118 ||| Reliable Land Mission ||| TR: Güvenilir Toprak Görevi ||| path: reformed AKP (2008) ||| after: Industrial Parks / Mersin Dockyards ||| does: -
+119 ||| Central Anatolian Industries ||| TR: İç Anadolu Sanayileri ||| path: reformed AKP (2008) ||| after: Industrial Complex Expansion ||| does: builds industrial_complex

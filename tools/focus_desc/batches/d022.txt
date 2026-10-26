@@ -1,0 +1,60 @@
+1320 ||| A New Method: Helleno-Kemalism ||| TR: Yeni Bir Yöntem: Heleno-Kemalizm ||| path: CHP social democrat ||| after: Barbaros Sansal's Intervention ||| does: spirit "Hellenic Kemalism"; event "The Rise of Greco-Turkism"; stability -0.02
+1321 ||| Crush the Right ||| TR: Sağı Ez ||| path: CHP social democrat ||| after: Barbaros Sansal's Intervention ||| does: spirit "The Concept of Blue Kemalist Internationalism"; removes "Turkish Nationalism"; stability -0.02
+1322 ||| Overhaul the Education System Again ||| TR: Eğitim Sistemini Yeniden Değiştir ||| path: CHP social democrat ||| after: Crush the Right / A New Method: Helleno-Kemalism ||| does: PP 50; stability -0.03
+1323 ||| Embrace European Values ||| TR: Avrupa Değerlerini Benimse ||| path: CHP social democrat ||| after: Overhaul the Education System Again ||| does: spirit "European Values"; tooltip: The "Helleno-Turkism" focus tree path will be unlocked.
+1324 ||| Peace at Home, Peace in the World ||| TR: Yurtta Sulh, Cihanda Sulh ||| path: CHP social democrat ||| after: National Unity ||| does: spirit "kemalist_neutrality_idea"; tooltip: 's opinion of  changes by +5%.\n
+1325 ||| Warmongering State ||| TR: Savaş Yanlısı Devlet ||| path: CHP social democrat ||| after: National Unity ||| does: stability -0.05; war support 0.03; tooltip: 's opinion of  changes by -5%.\n; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+1326 ||| Helleno-Turkism ||| TR: Helen-Türkçülük ||| path: CHP social democrat ||| after: National Unity ||| does: stability -0.05; tooltip: 's opinion of  changes by -35%.\n
+1327 ||| Embrace Positivism ||| TR: Pozitivizmi Benimse ||| path: CHP social democrat ||| after: Ekrem İmamoğlu's Victory ||| does: spirit "Positivism"; PP -25
+1328 ||| CHP's Rallies ||| TR: CHP Mitingleri ||| path: CHP social democrat ||| after: Become the Man of the Nation ||| does: PP 50; tooltip: Gains 1% Support (Relative Popularity).\n
+1329 ||| Mission Impossible ||| TR: İmkânsız Görev ||| path: CHP social democrat ||| after: Embrace Positivism ||| does: -
+1330 ||| Infrastructure Projects ||| TR: Altyapı Projeleri ||| path: CHP social democrat ||| after: Embrace Positivism ||| does: builds infrastructure
+1331 ||| Reform the Taxis ||| TR: Taksileri Reforme Et ||| path: CHP social democrat ||| after: Ekrem İmamoğlu's Victory ||| does: stability 0.02; tooltip: Taxes will be lowered immediately.; tooltip: Gains 1% Support (Relative Popularity).\n
+1332 ||| Bring Kemalist Nationalism ||| TR: Kemalist Milliyetçiliği Getir ||| path: CHP social democrat ||| after: Mansur Yavaş's Victory ||| does: spirit "Kemalist Nationalism"; PP 50; stability 0.01
+1333 ||| Turkishness First ||| TR: Önce Türklük ||| path: CHP social democrat ||| after: Bring Kemalist Nationalism ||| does: spirit "The Principle of Turkishness"
+1334 ||| National Economy ||| TR: Millî Ekonomi ||| path: CHP social democrat, mafia regime, MHP (nationalist movement) ||| after: Bring Kemalist Nationalism ||| does: PP 25
+1335 ||| Mediterranean League ||| TR: Akdeniz Ligi ||| path: CHP social democrat ||| after: Helleno-Turkism ||| does: -
+1336 ||| Invitation to Athens ||| TR: Atina'ya Davet ||| path: CHP social democrat ||| after: Normalize Relations with Greece ||| does: event "An Invitation From Turkey"
+1337 ||| Invitation to Yerevan ||| TR: Erivan'a Davet ||| path: CHP social democrat ||| after: Normalize Relations with Armenia ||| does: event "An Invitation From Turkey"
+1338 ||| Withdraw from Northern Cyprus ||| TR: Kuzey Kıbrıs'tan Çekil ||| path: CHP social democrat ||| after: Mediterranean League ||| does: stability -0.1; annexes NCY
+1339 ||| Support Cyprus Unification ||| TR: Kıbrıs'ın Birleşmesini Destekle ||| path: CHP social democrat ||| after: Withdraw from Northern Cyprus / Normalize Relations with Armenia ||| does: stability -0.05
+1340 ||| Allow Moderate Islamism ||| TR: Ilımlı İslamcılığa İzin Ver ||| path: CHP social democrat ||| after: Invitation to Nicosia ||| does: stability 0.03
+1341 ||| Anti-Radical Islamism ||| TR: Radikal İslamcılık Karşıtlığı ||| path: CHP social democrat ||| after: Invitation to Nicosia ||| does: stability 0.03
+1342 ||| Challenge Kemalist Nationalism ||| TR: Kemalist Milliyetçiliğe Meydan Oku ||| path: CHP social democrat ||| after: Anti-Radical Islamism / Allow Moderate Islamism ||| does: stability 0.05
+1343 ||| Invitation to Nicosia ||| TR: Lefkoşa'ya Davet ||| path: CHP social democrat ||| after: Support Cyprus Unification / Invitation to Yerevan ||| does: event "An Invitation From Turkey"
+1344 ||| NATO Coordination ||| TR: NATO Koordinasyonu ||| path: CHP social democrat ||| after: Peace at Home, Peace in the World ||| does: -
+1345 ||| Guardian of the Balkans ||| TR: Balkanların Muhafızı ||| path: CHP social democrat ||| after: NATO Coordination ||| does: spirit "Guardian of the Balkans"
+1346 ||| Thrace Peace Mediator ||| TR: Trakya Barış Arabulucusu ||| path: CHP social democrat ||| after: Guardian of the Balkans / Lead NATO's Southern Flank ||| does: tooltip: ,  and  sign non-aggression pacts for the stability of the region.
+1347 ||| Yugoslavian Peace Mediator ||| TR: Yugoslavya Barış Arabulucusu ||| path: CHP social democrat ||| after: Guardian of the Balkans / Lead NATO's Balkan Flank ||| does: tooltip: , , , , , ,  and  sign non-aggression pacts for the stability of the region.
+1348 ||| Lead NATO's Southern Flank ||| TR: NATO'nun Güney Kanadına Liderlik Et ||| path: CHP social democrat ||| after: NATO Coordination ||| does: spirit "Leading NATO's Southern Flank Forces"
+1349 ||| Lead NATO's Balkan Flank ||| TR: NATO'nun Balkan Kanadına Liderlik Et ||| path: CHP social democrat ||| after: NATO Coordination ||| does: spirit "Leading NATO's Balkan Forces"
+1350 ||| Bedrock of Financial Stability ||| TR: Finansal İstikrarın Temeli ||| path: CHP social democrat ||| after: Yugoslavian Peace Mediator / Thrace Peace Mediator ||| does: spirit "Bedrock of Financial Stability"
+1351 ||| Peacekeeping Forces ||| TR: Barış Gücü ||| path: CHP social democrat ||| after: Bedrock of Financial Stability ||| does: spirit "Turkish Interventionism"
+1352 ||| Gain More Power in the UN ||| TR: BM'de Daha Fazla Güç Kazan ||| path: CHP social democrat ||| after: Peacekeeping Forces / Peace Deals with Russia ||| does: spirit "A Stronger Position at the UN"
+1353 ||| Peace Deals with Russia ||| TR: Rusya ile Barış Anlaşmaları ||| path: CHP social democrat ||| after: Bedrock of Financial Stability ||| does: war support -0.05
+1354 ||| Destroy the Northern Iraqi Government ||| TR: Kuzey Irak Yönetimini Yok Et ||| path: CHP social democrat ||| after: Warmongering State ||| does: war goal/war on KUR
+1355 ||| Bring Back Turkish War Traditions ||| TR: Türk Savaş Geleneklerini Geri Getir ||| path: CHP social democrat ||| after: Destroy the Northern Iraqi Government ||| does: spirit "Turkish War Culture"
+1356 ||| Unify Cyprus Under Turkish Rule ||| TR: Kıbrıs'ı Türk Yönetimi Altında Birleştir ||| path: CHP social democrat ||| after: Bring Back Turkish War Traditions ||| does: war goal/war on CYP
+1357 ||| Take Over Georgia ||| TR: Gürcistan'ı Ele Geçir ||| path: CHP social democrat ||| after: Bring Back Turkish War Traditions ||| does: war goal/war on GEO
+1358 ||| Mission to the Balkans ||| TR: Balkanlara Görev ||| path: CHP social democrat ||| after: Take Over Georgia / Unify Cyprus Under Turkish Rule ||| does: war support 0.05
+1359 ||| Invade Bulgaria ||| TR: Bulgaristan'ı İşgal Et ||| path: CHP social democrat, TKP communist ||| after: Mission to the Balkans ||| does: war goal/war on BUL
+1360 ||| Claim Greece ||| TR: Yunanistan Üzerinde Hak İddia Et ||| path: CHP social democrat ||| after: Invade Bulgaria ||| does: war goal/war on GRE
+1361 ||| Strengthen Cotton Industries ||| TR: Pamuk Sanayilerini Güçlendir ||| path: CHP social democrat ||| after: Cotton Industries ||| does: -
+1362 ||| Embrace Assimilationist Policies ||| TR: Asimilasyoncu Politikaları Benimse ||| path: CHP social democrat ||| after: Invade Bulgaria ||| does: spirit "Assimilation Policy"
+1363 ||| Neo-Imperialism ||| TR: Yeni Emperyalizm ||| path: CHP social democrat ||| after: Invade Bulgaria ||| does: spirit "intervention_neo_imperialism"
+1364 ||| New Turkish Regime ||| TR: Yeni Türk Rejimi ||| path: Islamist coup regime ||| after: - ||| does: stability -0.02
+1365 ||| Reorganize Militias ||| TR: Milisleri Yeniden Düzenle ||| path: Islamist coup regime ||| after: New Turkish Regime ||| does: removes "Unorganized Militias"
+1366 ||| Russian Military Aid ||| TR: Rus Askeri Yardımı ||| path: Islamist coup regime ||| after: Reorganize Militias ||| does: spirit "Russian Foreign Military Aid"
+1367 ||| New Ideals of the State ||| TR: Devletin Yeni İdealleri ||| path: Islamist coup regime ||| after: Reorganize Militias ||| does: PP 100
+1368 ||| Restore the Glory ||| TR: Şanı Geri Getir ||| path: Islamist coup regime ||| after: New Ideals of the State ||| does: PP -75
+1369 ||| Pro-US Government ||| TR: ABD Yanlısı Hükümet ||| path: Islamist coup regime ||| after: New Ideals of the State ||| does: PP -75; stability -0.03
+1370 ||| Renounce NATO ||| TR: NATO'dan Çekil ||| path: Islamist coup regime ||| after: Pro-US Government / Restore the Glory ||| does: removes "NATO_member"; stability 0.02
+1371 ||| Disband the Constitution ||| TR: Anayasayı Feshet ||| path: Islamist coup regime ||| after: Renounce NATO ||| does: stability -0.07
+1372 ||| Chinese Military Aid ||| TR: Çin Askeri Yardımı ||| path: Islamist coup regime ||| after: Reorganize Militias ||| does: spirit "Chinese Foreign Military Aid"
+1373 ||| Army of Corruption ||| TR: Yolsuzluk Ordusu ||| path: Islamist coup regime ||| after: Pro-US Government ||| does: -
+1374 ||| Seek Help from Kurds ||| TR: Kürtlerden Yardım İste ||| path: Islamist coup regime ||| after: Army of Corruption ||| does: stability -0.02
+1375 ||| Radicalization of the State ||| TR: Devletin Radikalleşmesi ||| path: Islamist coup regime ||| after: Army of Corruption ||| does: PP 75; stability -0.05
+1376 ||| Ban Communism ||| TR: Komünizmi Yasakla ||| path: Islamist coup regime ||| after: Radicalization of the State / Seek Help from Kurds ||| does: stability -0.03
+1377 ||| Turkish Islamic Republic ||| TR: Türk İslam Cumhuriyeti ||| path: Islamist coup regime ||| after: Ban Communism ||| does: event "The Islamic Republic of Turkey Has Been Declared"
+1378 ||| Destroy Corruption ||| TR: Yolsuzluğu Yok Et ||| path: Islamist coup regime ||| after: Restore the Glory ||| does: removes "An Army of Corruption"
+1379 ||| Organize Islamist Militias ||| TR: İslamcı Milisleri Örgütle ||| path: Islamist coup regime ||| after: Destroy Corruption ||| does: spirit "Organized Islamist Militias"

@@ -1,0 +1,60 @@
+900 ||| Space Innovations ||| TR: Uzay Yenilikleri ||| path: Ataturk returns (fiction) ||| after: Start Space Mining ||| does: PP 75
+901 ||| General Space Mining ||| TR: Genel Uzay Madenciliği ||| path: Ataturk returns (fiction) ||| after: Start Space Mining ||| does: -
+902 ||| Plans with Russia ||| TR: Rusya ile Planlar ||| path: Ataturk returns (fiction) ||| after: Launch the Nuclear Project ||| does: PP 100
+903 ||| Strengthen the Nuclear Fields ||| TR: Nükleer Alanları Güçlendir ||| path: Ataturk returns (fiction) ||| after: Plans with Russia ||| does: builds nuclear_reactor
+904 ||| Boost the Reactors ||| TR: Reaktörleri Güçlendir ||| path: Ataturk returns (fiction) ||| after: Plans with Russia ||| does: -
+905 ||| Politics Driven By Nukes ||| TR: Nükleer Silah Odaklı Siyaset ||| path: Ataturk returns (fiction) ||| after: Strengthen the Nuclear Fields / Boost the Reactors ||| does: spirit "PER_mastering_atom"
+906 ||| The Great Takeover ||| TR: Büyük Ele Geçirme ||| path: Constitutional Court rule ||| after: - ||| does: PP 100
+907 ||| European Union Strategy ||| TR: Avrupa Birliği Stratejisi ||| path: Constitutional Court rule ||| after: - ||| does: PP 100
+908 ||| Technocrat-Court Alliance ||| TR: Teknokrat-Mahkeme İttifakı ||| path: Constitutional Court rule ||| after: - ||| does: stability 0.03; tooltip: Gains 2% Support (Relative Popularity).\n
+909 ||| The Court Stands Alone ||| TR: Mahkeme Tek Başına ||| path: Constitutional Court rule ||| after: - ||| does: stability 0.05; tooltip: Gains 5% Support (Relative Popularity).\n
+910 ||| Foreign Policy Of Justice ||| TR: Adaletin Dış Politikası ||| path: Constitutional Court rule ||| after: - ||| does: war support 0.05
+911 ||| Counter-Terrorism Policies ||| TR: Terörle Mücadele Politikaları ||| path: Constitutional Court rule ||| after: - ||| does: PP 100; war support 0.03
+912 ||| Policies Of Interventionism ||| TR: Müdahalecilik Politikaları ||| path: Constitutional Court rule ||| after: - ||| does: war support 0.07
+913 ||| The Great Competition ||| TR: Büyük Rekabet ||| path: Constitutional Court rule ||| after: - ||| does: PP 150; tooltip: Complete these focuses within the time frame and with their prerequisites, otherwise this part of the tree will be locked.
+914 ||| General Industrial Build-Up ||| TR: Genel Sanayi Yığınağı ||| path: Constitutional Court rule ||| after: - ||| does: builds industrial_complex
+915 ||| Concessions For EU Membership ||| TR: AB Üyeliği İçin Tavizler ||| path: Constitutional Court rule ||| after: European Union Strategy ||| does: PP 125
+916 ||| Bring the Kurds on Board ||| TR: Kürtleri Sürece Dahil Et ||| path: Constitutional Court rule ||| after: Concessions For EU Membership ||| does: -
+917 ||| An Attainable Kurdish Policy ||| TR: Ulaşılabilir Kürt Politikası ||| path: Constitutional Court rule ||| after: Bring the Kurds on Board ||| does: spirit "Workable Kurdish Policy"
+918 ||| Visit Berlin ||| TR: Berlin'i Ziyaret Et ||| path: Constitutional Court rule ||| after: Concessions For EU Membership ||| does: -
+919 ||| Laws for Turks Abroad ||| TR: Yurt Dışındaki Türkler İçin Yasalar ||| path: Constitutional Court rule ||| after: Visit Berlin ||| does: spirit "Expat Credits"
+920 ||| Court-Military Relations ||| TR: Mahkeme-Ordu İlişkileri ||| path: Constitutional Court rule ||| after: The Great Takeover ||| does: -
+921 ||| Visit Military HQ ||| TR: Askeri Karargâhı Ziyaret Et ||| path: Constitutional Court rule ||| after: Court-Military Relations ||| does: stability 0.01; tooltip: 's opinion of  changes by +3%.\n
+922 ||| EEZ Deal ||| TR: MEB Anlaşması ||| path: Constitutional Court rule ||| after: Normalize Relations with Greece ||| does: spirit "The EEZ Settlement"
+923 ||| European Adaptation Chapter 1 ||| TR: Avrupa'ya Uyum Bölüm 1 ||| path: Constitutional Court rule ||| after: EEZ Deal / Laws for Turks Abroad ||| does: event "European Adaptation, Chapter 1"
+924 ||| Normalize Relations with Armenia ||| TR: Ermenistan ile İlişkileri Normalleştir ||| path: Constitutional Court rule, CHP social democrat ||| after: European Adaptation Chapter 1 ||| does: PP -50
+925 ||| The Syrian Crisis ||| TR: Suriye Krizi ||| path: Constitutional Court rule ||| after: European Adaptation Chapter 1 ||| does: -
+926 ||| Build a Huge Wall ||| TR: Devasa Bir Duvar Ör ||| path: Constitutional Court rule ||| after: The Syrian Crisis ||| does: builds coastal_bunker
+927 ||| Rule of Law ||| TR: Hukukun Üstünlüğü ||| path: Constitutional Court rule ||| after: The Great Takeover ||| does: spirit "The Power of Law"
+928 ||| Unity Through Law ||| TR: Hukuk Yoluyla Birlik ||| path: Constitutional Court rule ||| after: Rule of Law ||| does: "The Power of Law" -> "The Power and Unity of Law"; PP 25
+929 ||| Appoint New Justices ||| TR: Yeni Üyeler Ata ||| path: Constitutional Court rule ||| after: Unity Through Law ||| does: PP 50; tooltip: Gains 2% Support (Relative Popularity).\n
+930 ||| Control the Municipalities ||| TR: Belediyeleri Kontrol Altına Al ||| path: Constitutional Court rule ||| after: Unity Through Law ||| does: spirit "Working Municipalities..."
+931 ||| General Constitutional Amendment ||| TR: Genel Anayasa Değişikliği ||| path: Constitutional Court rule ||| after: Control the Municipalities / Appoint New Justices ||| does: PP 125; stability 0.03
+932 ||| Mass Reformation of the State ||| TR: Devletin Kitlesel Reformu ||| path: Constitutional Court rule ||| after: General Constitutional Amendment ||| does: "The Power and Unity of Law" -> "The Power and Unity of Law"
+933 ||| Scientific Copyright Law ||| TR: Bilimsel Telif Hakkı Kanunu ||| path: Constitutional Court rule ||| after: Mass Reformation of the State ||| does: spirit "The Copyright Act"
+934 ||| Compulsory University Education ||| TR: Zorunlu Üniversite Eğitimi ||| path: Constitutional Court rule ||| after: Scientific Copyright Law ||| does: spirit "Compulsory University Education"
+935 ||| Open European Colleges ||| TR: Avrupa Kolejleri Aç ||| path: Constitutional Court rule ||| after: Compulsory University Education ||| does: spirit "European-Founded Colleges"
+936 ||| Introduce New Social Laws ||| TR: Yeni Sosyal Yasalar Getir ||| path: Constitutional Court rule ||| after: Mass Reformation of the State ||| does: stability 0.05
+937 ||| Reorganize the Bureaucracy ||| TR: Bürokrasiyi Yeniden Düzenle ||| path: Constitutional Court rule ||| after: Introduce New Social Laws ||| does: spirit "Bureaucratic Reorganization"
+938 ||| Social Criticism ||| TR: Toplumsal Eleştiri ||| path: Constitutional Court rule ||| after: Introduce New Social Laws ||| does: spirit "Social Criticism"
+939 ||| Start the Depoliticization ||| TR: Siyasetten Arındırmayı Başlat ||| path: Constitutional Court rule ||| after: Reorganize the Bureaucracy / Social Criticism ||| does: spirit "The Rise of Depoliticization"
+940 ||| Political Rework ||| TR: Siyasi Yeniden Yapılanma ||| path: Constitutional Court rule ||| after: Reorganize the Bureaucracy ||| does: stability 0.02; tooltip: Gains 2% Support (Relative Popularity).\n
+941 ||| Social Principles ||| TR: Sosyal İlkeler ||| path: Constitutional Court rule ||| after: Social Criticism ||| does: stability 0.03
+942 ||| Task the Armed Forces with Law Enforcement ||| TR: Silahlı Kuvvetleri Kolluk Göreviyle Görevlendir ||| path: Constitutional Court rule ||| after: Social Principles / Start the Depoliticization ||| does: stability -0.05
+943 ||| Question the System ||| TR: Sistemi Sorgula ||| path: Constitutional Court rule ||| after: The Great Takeover ||| does: stability -0.03; tooltip: Loses 2% Support (Relative Popularity).\n
+944 ||| Single-Court Regime ||| TR: Tek Mahkeme Rejimi ||| path: Constitutional Court rule ||| after: Question the System ||| does: stability 0.02; tooltip: Gains 2% Support (Relative Popularity).\n
+945 ||| European Investment Policies ||| TR: Avrupa Yatırım Politikaları ||| path: Constitutional Court rule ||| after: European Union Strategy ||| does: PP 125
+946 ||| Romanian Civil Investment ||| TR: Romanya Sivil Yatırımı ||| path: Constitutional Court rule ||| after: European Investment Policies ||| does: builds industrial_complex
+947 ||| Romanian Military Investment ||| TR: Romanya Askeri Yatırımı ||| path: Constitutional Court rule ||| after: Romanian Civil Investment ||| does: builds arms_factory
+948 ||| Rework Military Discipline ||| TR: Askeri Disiplini Yeniden Düzenle ||| path: Constitutional Court rule ||| after: Mass Reformation of the State ||| does: stability 0.02; tooltip: 's opinion of  changes by -3%.\n
+949 ||| Suspend Military Operations in Civilian Zones ||| TR: Sivil Bölgelerdeki Askeri Operasyonları Askıya Al ||| path: Constitutional Court rule ||| after: Rework Military Discipline ||| does: PP -75; stability 0.03; tooltip: 's opinion of  changes by -3%.\n
+950 ||| Open Special Military Courts ||| TR: Özel Askeri Mahkemeler Kur ||| path: Constitutional Court rule ||| after: Suspend Military Operations in Civilian Zones ||| does: PP -25; stability 0.03
+951 ||| Bulgarian Civil Investment ||| TR: Bulgaristan Sivil Yatırımı ||| path: Constitutional Court rule ||| after: European Investment Policies ||| does: builds industrial_complex
+952 ||| Bulgarian Military Investment ||| TR: Bulgaristan Askeri Yatırımı ||| path: Constitutional Court rule ||| after: Bulgarian Civil Investment ||| does: builds arms_factory
+953 ||| Purge the Politicized Generals ||| TR: Siyasallaşmış Generalleri Temizle ||| path: Constitutional Court rule ||| after: Rework Military Discipline ||| does: stability 0.03
+954 ||| Lower the Military Budget ||| TR: Askeri Bütçeyi Düşür ||| path: Constitutional Court rule ||| after: Purge the Politicized Generals / Suspend Military Operations in Civilian Zones ||| does: spirit "defence_01"
+955 ||| Hungarian Civil Investment ||| TR: Macaristan Sivil Yatırımı ||| path: Constitutional Court rule ||| after: European Investment Policies ||| does: builds industrial_complex
+956 ||| Hungarian Military Investment ||| TR: Macaristan Askeri Yatırımı ||| path: Constitutional Court rule ||| after: Hungarian Civil Investment ||| does: builds arms_factory
+957 ||| Hungarian Investment Partnership ||| TR: Macaristan Yatırım Ortaklığı ||| path: Constitutional Court rule ||| after: European Investment Policies ||| does: builds industrial_complex
+958 ||| Become a Joint Influencer of the EU ||| TR: AB'nin Ortak Belirleyicisi Ol ||| path: Constitutional Court rule ||| after: Romanian Military Investment / Bulgarian Military Investment ||| does: -
+959 ||| Civilian Project in Austria ||| TR: Avusturya'da Sivil Proje ||| path: Constitutional Court rule ||| after: Become a Joint Influencer of the EU ||| does: builds industrial_complex

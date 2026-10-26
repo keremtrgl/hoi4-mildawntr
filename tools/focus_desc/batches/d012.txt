@@ -1,0 +1,60 @@
+720 ||| Arrest the Harmful Politicians ||| TR: Zararlı Politikacıları Tutukla ||| path: Ataturk returns (fiction) ||| after: Declare New Elections ||| does: PP 75; stability 0.03
+721 ||| Arrest the Old Coup Figures ||| TR: Eski Darbecileri Tutukla ||| path: Ataturk returns (fiction) ||| after: Declare New Elections ||| does: PP 75; stability 0.03
+722 ||| A New Control ||| TR: Yeni Bir Kontrol ||| path: Ataturk returns (fiction) ||| after: Arrest the Old Coup Figures / Arrest the Harmful Politicians ||| does: removes "President Süleyman Demirel"; removes "President Necdet Sezer"; removes "President Abdullah Gül"; removes "President Recep Tayyip Erdoğan"; removes "President Sabahattin Çakmakoğlu"; removes "President Ekmeleddin İhsanoğlu"; removes "President Nevzat Yalçıntaş"; event "Atatürk Elected Suprem
+723 ||| Rise of the Industries ||| TR: Sanayilerin Yükselişi ||| path: Ataturk returns (fiction) ||| after: Atatürk's Economic Policies ||| does: PP 75
+724 ||| National Resource Plan ||| TR: Ulusal Kaynak Planı ||| path: Ataturk returns (fiction) ||| after: Rise of the Industries / Adapt to Modern Economics ||| does: PP 75; stability 0.02
+725 ||| Batman Oilfields ||| TR: Batman Petrol Sahaları ||| path: Ataturk returns (fiction), CHP social democrat ||| after: National Resource Plan ||| does: builds fossil_powerplant
+726 ||| Local Steel Mines ||| TR: Yerel Çelik Madenleri ||| path: Ataturk returns (fiction) ||| after: National Resource Plan ||| does: -
+727 ||| Boron Extraction ||| TR: Bor Çıkarımı ||| path: Ataturk returns (fiction) ||| after: Batman Oilfields / Local Steel Mines ||| does: spirit "Boron Fields"
+728 ||| Chronium Extraction ||| TR: Krom Çıkarımı ||| path: Ataturk returns (fiction) ||| after: Boron Extraction ||| does: -
+729 ||| Search for Rich Steel Deposits ||| TR: Zengin Çelik Yatakları Ara ||| path: Ataturk returns (fiction) ||| after: Boron Extraction ||| does: -
+730 ||| New Rubber Industries ||| TR: Yeni Kauçuk Sanayileri ||| path: Ataturk returns (fiction) ||| after: Boron Extraction ||| does: -
+731 ||| Land Of Resources ||| TR: Kaynaklar Diyarı ||| path: Ataturk returns (fiction) ||| after: Chronium Extraction / Search for Rich Steel Deposits ||| does: -
+732 ||| Create the Research Crew ||| TR: Araştırma Ekibini Kur ||| path: Ataturk returns (fiction) ||| after: Rise of the Political Questions ||| does: stability 0.03; tooltip: Ataturk creates a secret research group to understand the country's ongoing situation.
+733 ||| Plans for Civilian Complexes ||| TR: Sivil Kompleks Planları ||| path: Ataturk returns (fiction) ||| after: Rise of the Industries ||| does: -
+734 ||| Revenue-Driven Industries ||| TR: Gelir Odaklı Sanayiler ||| path: Ataturk returns (fiction) ||| after: Plans for Civilian Complexes ||| does: spirit "Revenue-Driven Light Industry"
+735 ||| Buy Back the Sold Factories ||| TR: Satılan Fabrikaları Geri Al ||| path: Ataturk returns (fiction) ||| after: Plans for Civilian Complexes ||| does: builds arms_factory, industrial_complex
+736 ||| Open the İzmir Civilian Industries ||| TR: İzmir Sivil Sanayilerini Aç ||| path: Ataturk returns (fiction) ||| after: Buy Back the Sold Factories / Revenue-Driven Industries ||| does: builds industrial_complex
+737 ||| Develop the Civilian Culture of the East ||| TR: Doğu'nun Sivil Kültürünü Geliştir ||| path: Ataturk returns (fiction) ||| after: Open the İzmir Civilian Industries ||| does: builds industrial_complex, infrastructure
+738 ||| Develop the Civilian Culture of the North ||| TR: Kuzey'in Sivil Kültürünü Geliştir ||| path: Ataturk returns (fiction) ||| after: Open the İzmir Civilian Industries ||| does: builds industrial_complex, infrastructure
+739 ||| General Office Project ||| TR: Genel Ofis Projesi ||| path: Ataturk returns (fiction) ||| after: Develop the Civilian Culture of the North / Develop the Civilian Culture of the East ||| does: builds offices
+740 ||| Benefits of Semi-Neutrality ||| TR: Yarı Tarafsızlığın Faydaları ||| path: Ataturk returns (fiction) ||| after: Atatürk's Foreign Policies ||| does: spirit "The Benefits of Semi-Neutrality"
+741 ||| Western Policies ||| TR: Batı Politikaları ||| path: Ataturk returns (fiction) ||| after: Benefits of Semi-Neutrality ||| does: -
+742 ||| Foreign Policy Towards the NATO Countries ||| TR: NATO Ülkelerine Yönelik Dış Politika ||| path: Ataturk returns (fiction) ||| after: Western Policies ||| does: PP 100; stability 0.03
+743 ||| Mild American Cooperation ||| TR: Ilımlı Amerikan İşbirliği ||| path: Ataturk returns (fiction) ||| after: Foreign Policy Towards the NATO Countries ||| does: -
+744 ||| Mavi Vatan ||| TR: Mavi Vatan ||| path: Ataturk returns (fiction) ||| after: Foreign Policy Towards the NATO Countries ||| does: -
+745 ||| Push New Dockyard Projects ||| TR: Yeni Tersane Projelerini Hızlandır ||| path: Ataturk returns (fiction) ||| after: Mavi Vatan ||| does: builds dockyard
+746 ||| Protection for Northern Cyprus ||| TR: Kuzey Kıbrıs'a Koruma ||| path: Ataturk returns (fiction) ||| after: Mavi Vatan ||| does: builds air_base, anti_air_building, bunker, fuel_silo, radar_station
+747 ||| Persuade the UN to Recognize Northern Cyprus ||| TR: BM'yi Kuzey Kıbrıs'ı Tanımaya İkna Et ||| path: Ataturk returns (fiction) ||| after: Push New Dockyard Projects / Protection for Northern Cyprus ||| does: event "Turkey Presses for Recognition of Northern Cyprus"
+748 ||| Build New Forts ||| TR: Yeni Tahkimatlar Kur ||| path: Ataturk returns (fiction) ||| after: Persuade the UN to Recognize Northern Cyprus ||| does: war support 0.1
+749 ||| Revive the Old Balkan Pact ||| TR: Eski Balkan Paktı'nı Canlandır ||| path: Ataturk returns (fiction) ||| after: Foreign Policy Towards the NATO Countries ||| does: PP 75
+750 ||| Investments in Romania ||| TR: Romanya'ya Yatırımlar ||| path: Ataturk returns (fiction) ||| after: Revive the Old Balkan Pact ||| does: builds industrial_complex, infrastructure
+751 ||| Guarantee Deal with Romania ||| TR: Romanya ile Garanti Anlaşması ||| path: Ataturk returns (fiction) ||| after: Investments in Romania ||| does: PP 75
+752 ||| Investments in Bulgaria ||| TR: Bulgaristan'a Yatırımlar ||| path: Ataturk returns (fiction) ||| after: Revive the Old Balkan Pact ||| does: builds industrial_complex, infrastructure
+753 ||| The Balkan Investment Fund ||| TR: Balkan Yatırım Fonu ||| path: Ataturk returns (fiction) ||| after: Investments in Bulgaria / Investments in Romania ||| does: spirit "The Balkan Investment Fund"
+754 ||| Guarantee Deal with Bulgaria ||| TR: Bulgaristan ile Garanti Anlaşması ||| path: Ataturk returns (fiction) ||| after: Investments in Bulgaria ||| does: PP 75
+755 ||| Deals with the European Union ||| TR: Avrupa Birliği ile Anlaşmalar ||| path: Ataturk returns (fiction) ||| after: The Balkan Investment Fund / Guarantee Deal with Romania ||| does: PP 125
+756 ||| Visa-Free Convention ||| TR: Vizesiz Seyahat Sözleşmesi ||| path: Ataturk returns (fiction) ||| after: Deals with the European Union ||| does: spirit "The EU Visa Deal"
+757 ||| Embrace the Principles of a Neutral State ||| TR: Tarafsız Devlet İlkelerini Benimse ||| path: Ataturk returns (fiction) ||| after: Benefits of Semi-Neutrality ||| does: spirit "intervention_local_security"; PP 125
+758 ||| Model the Euro Currency ||| TR: Avro Para Birimini Model Al ||| path: Ataturk returns (fiction) ||| after: Deals with the European Union ||| does: spirit "A Euro-Modeled Currency"
+759 ||| A Second Switzerland ||| TR: İkinci Bir İsviçre ||| path: Ataturk returns (fiction) ||| after: Atatürk's Foreign Policies ||| does: spirit "A Switzerland of Its Own"
+760 ||| The Question of Peace ||| TR: Barış Meselesi ||| path: Ataturk returns (fiction) ||| after: A Second Switzerland / Benefits of Semi-Neutrality ||| does: -
+761 ||| Increase Hatay's Protection ||| TR: Hatay'ın Korunmasını Artır ||| path: Ataturk returns (fiction) ||| after: A Second Switzerland ||| does: builds air_base, anti_air_building, bunker, fuel_silo, radar_station
+762 ||| Turkish Innovation Valleys ||| TR: Türk İnovasyon Vadileri ||| path: Ataturk returns (fiction) ||| after: Increase Hatay's Protection / The Question of Peace ||| does: stability 0.03
+763 ||| Eastern Policies ||| TR: Doğu Politikaları ||| path: Ataturk returns (fiction) ||| after: A Second Switzerland ||| does: -
+764 ||| Non-Aggression Pact with Russia ||| TR: Rusya ile Saldırmazlık Paktı ||| path: Ataturk returns (fiction) ||| after: Eastern Policies ||| does: -
+765 ||| Transcaucasian Policies ||| TR: Kafkasya Politikaları ||| path: Ataturk returns (fiction) ||| after: Non-Aggression Pact with Russia ||| does: -
+766 ||| The Beginning of the Arab Spring ||| TR: Arap Baharının Başlangıcı ||| path: Ataturk returns (fiction) ||| after: Non-Aggression Pact with Russia ||| does: stability 0.05; war support -0.02
+767 ||| Intervene in Northern Syria ||| TR: Kuzey Suriye'ye Müdahale Et ||| path: Ataturk returns (fiction) ||| after: The Beginning of the Arab Spring ||| does: war goal/war on SYR
+768 ||| Intervene in Northern Iraq ||| TR: Kuzey Irak'a Müdahale Et ||| path: Ataturk returns (fiction) ||| after: The Beginning of the Arab Spring ||| does: war goal/war on KUR
+769 ||| Block the Migrant Routes ||| TR: Göç Yollarını Kapat ||| path: Ataturk returns (fiction), technocratic HP ||| after: Intervene in Northern Syria / Intervene in Northern Iraq ||| does: spirit "Blocked Migrant Routes"
+770 ||| Use the Political Power of Secularism ||| TR: Laikliğin Siyasi Gücünü Kullan ||| path: Ataturk returns (fiction) ||| after: Block the Migrant Routes ||| does: stability -0.03
+771 ||| Spread Intelligence in the Middle East ||| TR: Orta Doğu'da İstihbarat Ağını Yay ||| path: Ataturk returns (fiction) ||| after: Block the Migrant Routes ||| does: -
+772 ||| Send Military Aid to the Revolutionaries ||| TR: Devrimcilere Askeri Yardım Gönder ||| path: Ataturk returns (fiction) ||| after: Block the Migrant Routes ||| does: spirit "Volunteers of Freedom"
+773 ||| To a New and Democratic Middle East! ||| TR: Yeni ve Demokratik Bir Orta Doğu'ya! ||| path: Ataturk returns (fiction) ||| after: Use the Political Power of Secularism / Spread Intelligence in the Middle East ||| does: stability 0.1
+774 ||| Kemalist Innovation ||| TR: Kemalist Yenilikçilik ||| path: Ataturk returns (fiction) ||| after: To Turkey's Bright Future! ||| does: spirit "Kemalist Innovation"
+775 ||| Eastern Mediterranean Policies ||| TR: Doğu Akdeniz Politikaları ||| path: Ataturk returns (fiction) ||| after: Non-Aggression Pact with Russia ||| does: -
+776 ||| Deals with Israel ||| TR: İsrail ile Anlaşmalar ||| path: Ataturk returns (fiction) ||| after: Eastern Mediterranean Policies ||| does: -
+777 ||| Crush Hezbollah ||| TR: Hizbullah'ı Ez ||| path: Ataturk returns (fiction) ||| after: Deals with Israel ||| does: war goal/war on HEZ
+778 ||| Crush the Islamic State ||| TR: İslam Devleti'ni Ez ||| path: Ataturk returns (fiction) ||| after: Deals with Israel ||| does: war goal/war on ISI
+779 ||| Invincible Navy ||| TR: Yenilmez Donanma ||| path: Ataturk returns (fiction) ||| after: Crush the Islamic State / Crush Hezbollah ||| does: spirit "Invisible Navy"

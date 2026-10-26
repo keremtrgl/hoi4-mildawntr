@@ -1,0 +1,60 @@
+3900 ||| More Left Than Social Democrats ||| TR: Sosyal Demokratlardan Daha Solda ||| path: communist bloc ||| after: Law 8503 ||| does: PP -25; stability 0.02; tooltip: Gains 2% Support (Relative Popularity).\n
+3901 ||| Tame the Banks ||| TR: Bankaları Dizginle ||| path: communist bloc ||| after: Law 8503 ||| does: PP -25; stability 0.03
+3902 ||| Authoritarian State ||| TR: Otoriter Devlet ||| path: communist bloc ||| after: Law 8503 ||| does: stability -0.07; war support 0.02
+3903 ||| Reduce Nationalism ||| TR: Milliyetçiliği Azalt ||| path: communist bloc ||| after: Vatan Partisi ||| does: removes "PKK Insurgency"; PP 25; stability -0.03
+3904 ||| Support Russia ||| TR: Rusya'yı Destekle ||| path: communist bloc ||| after: Reduce Nationalism ||| does: war support 0.02
+3905 ||| Close the Straits to the USA ||| TR: Boğazları ABD'ye Kapat ||| path: communist bloc ||| after: Support Russia ||| does: event "Turkey Strikes at Our Presence in the Black Sea"; war support 0.03
+3906 ||| Open Russian Bases ||| TR: Rus Üsleri Aç ||| path: communist bloc ||| after: Support Russia / Shut Down the US Bases ||| does: PP 25
+3907 ||| Buy Yak-130s ||| TR: Yak-130 Satın Al ||| path: communist bloc ||| after: Close the Straits to the USA / Open Russian Bases ||| does: -
+3908 ||| Chinese Goal ||| TR: Çin Hedefi ||| path: communist bloc ||| after: Reduce Nationalism ||| does: PP 100; stability -0.05
+3909 ||| Support China Against USA ||| TR: ABD'ye Karşı Çin'i Destekle ||| path: communist bloc ||| after: Chinese Goal / Shut Down the US Bases ||| does: stability -0.03; war support 0.05
+3910 ||| New Chinese Investments ||| TR: Yeni Çin Yatırımları ||| path: communist bloc ||| after: Chinese Goal ||| does: builds industrial_complex
+3911 ||| Complete the Chinese Industrial Plan for Turkey ||| TR: Türkiye İçin Çin Sanayi Planını Tamamla ||| path: communist bloc ||| after: New Chinese Investments / Support China Against USA ||| does: builds industrial_complex
+3912 ||| Unite the Workers ||| TR: İşçileri Birleştir ||| path: communist bloc ||| after: The Great Turkish Civil War ||| does: -
+3913 ||| Open TCA ||| TR: TCA'yı Aç ||| path: communist bloc ||| after: Unite the Workers ||| does: -
+3914 ||| Gather International Communist Volunteers ||| TR: Uluslararası Komünist Gönüllüleri Topla ||| path: communist bloc ||| after: Unite the Workers ||| does: spirit "International Brigades"
+3915 ||| Get Russian Aid ||| TR: Rus Yardımı Al ||| path: communist bloc ||| after: Unite the Workers ||| does: spirit "Russian Foreign Military Aid"
+3916 ||| End of the Great Civil War ||| TR: Büyük İç Savaşın Sonu ||| path: communist bloc ||| after: Gather International Communist Volunteers / Get Russian Aid ||| does: PP 100; stability 0.1; war support -0.1
+3917 ||| Focus on Reconstruction ||| TR: Yeniden İnşaya Odaklan ||| path: communist bloc ||| after: End of the Great Civil War ||| does: spirit "The Repair Focus"
+3918 ||| Open Up Politics ||| TR: Siyaseti Aç ||| path: communist bloc ||| after: Focus on Reconstruction ||| does: event "The Communist Congress"; PP -25; stability -0.05
+3919 ||| The Turkish Revolution ||| TR: Türk Devrimi ||| path: communist bloc ||| after: 5th Workers' Congress / Perinçek's Powers ||| does: event "The Great Turkish Revolution"
+3920 ||| 5th Workers' Congress ||| TR: 5. İşçi Kurultayı ||| path: communist bloc ||| after: Tame the Banks / Strengthen the Istanbul Convention ||| does: event "The 5th ÖDP Congress"
+3921 ||| Spread Communism Peacefully ||| TR: Komünizmi Barışçıl Yollarla Yay ||| path: communist bloc ||| after: The Turkish Revolution ||| does: stability 0.05; war support -0.1
+3922 ||| Spread Communism With War ||| TR: Komünizmi Savaşla Yay ||| path: communist bloc ||| after: The Turkish Revolution ||| does: stability -0.1; war support 0.05
+3923 ||| Fund Communist Parties in the Middle East ||| TR: Orta Doğu'daki Komünist Partileri Finanse Et ||| path: communist bloc ||| after: Spread Communism Peacefully ||| does: PP 75
+3924 ||| Fund Communist Parties in the Balkans ||| TR: Balkanlardaki Komünist Partileri Finanse Et ||| path: communist bloc ||| after: Spread Communism Peacefully ||| does: PP 75
+3925 ||| Support the Communists in Iran ||| TR: İran'daki Komünistleri Destekle ||| path: communist bloc ||| after: Fund Communist Parties in the Middle East ||| does: spirit "Communist Influence"
+3926 ||| Support the Communists in Syria ||| TR: Suriye'deki Komünistleri Destekle ||| path: communist bloc ||| after: Fund Communist Parties in the Middle East ||| does: spirit "Communist Influence"
+3927 ||| Support the Communists in Iraq ||| TR: Irak'taki Komünistleri Destekle ||| path: communist bloc ||| after: Support the Communists in Syria ||| does: spirit "Communist Influence"
+3928 ||| Support the Communists in Saudi Arabia ||| TR: Suudi Arabistan'daki Komünistleri Destekle ||| path: communist bloc ||| after: Support the Communists in Syria / Support the Communists in Iran ||| does: spirit "Communist Influence"
+3929 ||| Support the Communists in Egypt ||| TR: Mısır'daki Komünistleri Destekle ||| path: communist bloc ||| after: Support the Communists in Iran ||| does: spirit "Communist Influence"
+3930 ||| Support the Communists in Greece ||| TR: Yunanistan'daki Komünistleri Destekle ||| path: communist bloc ||| after: Fund Communist Parties in the Balkans ||| does: spirit "Communist Influence"
+3931 ||| Support the Communists in Bulgaria ||| TR: Bulgaristan'daki Komünistleri Destekle ||| path: communist bloc ||| after: Fund Communist Parties in the Balkans ||| does: spirit "Communist Influence"
+3932 ||| Support the Communists in Romania ||| TR: Romanya'daki Komünistleri Destekle ||| path: communist bloc ||| after: Fund Communist Parties in the Balkans ||| does: spirit "Communist Influence"
+3933 ||| Support the Communists in Yugoslavia ||| TR: Yugoslavya'daki Komünistleri Destekle ||| path: communist bloc ||| after: Support the Communists in Bulgaria / Support the Communists in Greece ||| does: spirit "Communist Influence"
+3934 ||| Support the Communists in Albania ||| TR: Arnavutluk'taki Komünistleri Destekle ||| path: communist bloc ||| after: Support the Communists in Bulgaria / Support the Communists in Romania ||| does: spirit "Communist Influence"
+3935 ||| Prepare for the Invasion of the Middle East ||| TR: Orta Doğu'nun İşgaline Hazırlan ||| path: communist bloc ||| after: Spread Communism With War ||| does: -
+3936 ||| Solve the Hatay Problem ||| TR: Hatay Sorununu Çöz ||| path: communist bloc ||| after: Prepare for the Invasion of the Middle East ||| does: war goal/war on SYR
+3937 ||| Liberate the Workers of Iraq ||| TR: Irak İşçilerini Kurtar ||| path: communist bloc ||| after: Prepare for the Invasion of the Middle East ||| does: war goal/war on IRQ
+3938 ||| Liberate the Workers of Saudi Arabia ||| TR: Suudi Arabistan İşçilerini Kurtar ||| path: communist bloc ||| after: Liberate the Workers of Iraq / Solve the Hatay Problem ||| does: war goal/war on SAU
+3939 ||| Liberate the Workers of Iran ||| TR: İran İşçilerini Kurtar ||| path: communist bloc ||| after: Liberate the Workers of Iraq ||| does: war goal/war on PER
+3940 ||| Liberate the Workers of Egypt ||| TR: Mısır İşçilerini Kurtar ||| path: communist bloc ||| after: Liberate the Workers of Iraq ||| does: war goal/war on EGY
+3941 ||| Prepare for the Invasion of the Balkans ||| TR: Balkanların İşgaline Hazırlan ||| path: communist bloc ||| after: Spread Communism With War ||| does: -
+3942 ||| Liberate the Workers of Greece ||| TR: Yunanistan İşçilerini Kurtar ||| path: communist bloc ||| after: Prepare for the Invasion of the Balkans ||| does: war goal/war on GRE
+3943 ||| Liberate the Workers of Bulgaria ||| TR: Bulgaristan İşçilerini Kurtar ||| path: communist bloc ||| after: Prepare for the Invasion of the Balkans ||| does: war goal/war on BUL
+3944 ||| TKP Leadership ||| TR: TKP Liderliği ||| path: communist bloc ||| after: - ||| does: PP 25; stability 0.02; tooltip: Gains 5% Support (Relative Popularity).\n
+3945 ||| Liberal Socialism ||| TR: Liberal Sosyalizm ||| path: communist bloc ||| after: TKP Leadership ||| does: spirit "Liberal Socialism"
+3946 ||| Support Greens ||| TR: Yeşilleri Destekle ||| path: communist bloc ||| after: Liberal Socialism ||| does: tooltip: Gains 3% Support (Relative Popularity).\n
+3947 ||| Take Power from the CHP ||| TR: İktidarı CHP'den Al ||| path: communist bloc ||| after: Liberal Socialism ||| does: PP -50; stability 0.02; tooltip: Loses 3% Support (Relative Popularity).\n
+3948 ||| Support Farmers ||| TR: Çiftçileri Destekle ||| path: communist bloc ||| after: Liberal Socialism ||| does: PP 100
+3949 ||| Factory Law ||| TR: Fabrika Kanunu ||| path: communist bloc ||| after: Support Greens ||| does: spirit "Factory Law"
+3950 ||| Pay Rise for Workers ||| TR: İşçilere Zam ||| path: communist bloc ||| after: Support Farmers ||| does: stability 0.05
+3951 ||| Support Green Energy ||| TR: Yeşil Enerjiyi Destekle ||| path: communist bloc ||| after: Support Greens ||| does: stability 0.05
+3952 ||| Free Tractors ||| TR: Bedava Traktör ||| path: communist bloc ||| after: Support Farmers ||| does: stability 0.05
+3953 ||| New Constitution... ||| TR: Yeni Anayasa... ||| path: communist bloc ||| after: Liberal Socialism ||| does: PP 50; stability -0.05; war support 0.05
+3954 ||| Ceasefire with the Nationalists ||| TR: Milliyetçilerle Ateşkes ||| path: communist bloc ||| after: New Constitution... ||| does: PP 75; stability 0.05; tooltip: Gains 2% Support (Relative Popularity).\n
+3955 ||| Restore Confidence ||| TR: Güveni Yeniden Tesis Et ||| path: communist bloc ||| after: New Constitution... ||| does: removes "PKK Insurgency"
+3956 ||| 8-Hour Working Day ||| TR: 8 Saatlik İş Günü ||| path: communist bloc ||| after: Reform the Judiciary / Restore Confidence ||| does: PP -75; stability 0.05
+3957 ||| Unemployment Policy ||| TR: İstihdam Politikası ||| path: communist bloc ||| after: State Control of Mosques / Ceasefire with the Nationalists ||| does: PP -50; stability 0.05
+3958 ||| Stabilized State ||| TR: İstikrarlı Devlet ||| path: communist bloc ||| after: 8-Hour Working Day ||| does: stability 0.1
+3959 ||| The New State ||| TR: Yeni Devlet ||| path: communist bloc ||| after: Create Trade Unions / Stabilized State ||| does: event "The Great Turkish Revolution"

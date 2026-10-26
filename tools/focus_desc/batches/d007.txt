@@ -1,0 +1,60 @@
+420 ||| Marx's Anarchist Version Of Manifesto ||| TR: Marx'ın Manifestosunun Anarşist Versiyonu ||| path: anarchist ||| after: Destroy the Capitalists ||| does: PP 50; stability 0.05; tooltip: Gains 5% Support (Relative Popularity).\n
+421 ||| Create the Anarchist Socialist Front ||| TR: Anarşist Sosyalist Cepheyi Kur ||| path: anarchist ||| after: Marx's Anarchist Version Of Manifesto / Cleanse the Pro-Americans ||| does: spirit "The Socialist Front"
+422 ||| Weaken The Rich ||| TR: Zenginleri Zayıflat ||| path: anarchist ||| after: Create the Anarchist Socialist Front ||| does: stability -0.05
+423 ||| Imprison the Rich ||| TR: Zenginleri Hapset ||| path: anarchist ||| after: Weaken The Rich ||| does: stability -0.05
+424 ||| Increase The Money Float ||| TR: Para Akışını Artır ||| path: anarchist ||| after: Create the Anarchist Socialist Front ||| does: stability -0.05
+425 ||| Push Labour Propaganda ||| TR: Çalışma Propagandası Yap ||| path: anarchist ||| after: Increase The Money Float ||| does: spirit "Work Propaganda"
+426 ||| The Labour Culture ||| TR: Emek Kültürü ||| path: anarchist ||| after: Create the Anarchist Socialist Front ||| does: spirit "The Labor Culture"
+427 ||| Child Labour Mission ||| TR: Çocuk İşçiliği Görevi ||| path: anarchist ||| after: The Labour Culture ||| does: spirit "Long-Lasting Child Labor"
+428 ||| The Elements Of Collectivization ||| TR: Kolektifleştirmenin Unsurları ||| path: anarchist ||| after: Push Labour Propaganda / Imprison the Rich ||| does: -
+429 ||| Working Teams ||| TR: Çalışma Ekipleri ||| path: anarchist ||| after: The Elements Of Collectivization ||| does: spirit "Working Teams"
+430 ||| Victory for the Anarcho-Capitalists ||| TR: Anarko-Kapitalistlerin Zaferi ||| path: anarchist ||| after: Start the Congress Elections ||| does: PP 75; stability 0.02; war support 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+431 ||| The Money Act ||| TR: Para Kanunu ||| path: anarchist ||| after: Victory for the Anarcho-Capitalists ||| does: spirit "The Money Act"
+432 ||| Arrest the Commies ||| TR: Komünistleri Tutukla ||| path: anarchist ||| after: The Money Act ||| does: stability -0.05; tooltip: Gains 5% Support (Relative Popularity).\n
+433 ||| Anti-Communist State ||| TR: Komünizm Karşıtı Devlet ||| path: anarchist ||| after: The Money Act ||| does: stability -0.05; tooltip: Gains 5% Support (Relative Popularity).\n
+434 ||| Reorganize the Situation ||| TR: Durumu Yeniden Düzenle ||| path: anarchist ||| after: Anti-Communist State / Arrest the Commies ||| does: stability 0.15; tooltip: Reorganizing the situation makes the country far more stable than it is today.
+435 ||| Organize the Anarchist Units ||| TR: Anarşist Birlikleri Örgütle ||| path: anarchist ||| after: Start the Anarchist Militarization ||| does: PP 100; war support 0.02; tooltip: Gains 2% Support (Relative Popularity).\n
+436 ||| Istanbul Anarchist Group ||| TR: İstanbul Anarşist Grubu ||| path: anarchist ||| after: Organize the Anarchist Units ||| does: PP -75; war support 0.02; tooltip: Gains 1% Support (Relative Popularity).\n; tooltip: will reorganize in the Istanbul state.
+437 ||| Izmir Anarchist Group ||| TR: İzmir Anarşist Grubu ||| path: anarchist ||| after: Organize the Anarchist Units ||| does: PP -75; war support 0.02; tooltip: Gains 1% Support (Relative Popularity).\n; tooltip: will reorganize in the İzmir state.
+438 ||| Ankara Anarchist Group ||| TR: Ankara Anarşist Grubu ||| path: anarchist ||| after: Organize the Anarchist Units ||| does: PP -75; war support 0.02; tooltip: Gains 1% Support (Relative Popularity).\n; tooltip: will reorganize in the Ankara state.
+439 ||| Formalize the Western Anarchist Group ||| TR: Batı Anarşist Grubunu Resmîleştir ||| path: anarchist ||| after: Ankara Anarchist Group / Izmir Anarchist Group ||| does: PP -125; war support 0.05; tooltip: Gains 5% Support (Relative Popularity).\n
+440 ||| Start The Revolution! ||| TR: Devrimi Başlat! ||| path: anarchist ||| after: Formalize the Western Anarchist Group / Formalize the War System ||| does: event "An Anarchist Takeover!"; event "The First Anarchist Takeover"
+441 ||| Control The Highways ||| TR: Otoyolları Kontrol Altına Al ||| path: anarchist ||| after: Start The Revolution! ||| does: PP -75; stability -0.05; war support 0.03; war support -0.07
+442 ||| Spirit Of Rebellion ||| TR: İsyan Ruhu ||| path: anarchist ||| after: Start The Revolution! ||| does: spirit "Spirit Of Rebellion"
+443 ||| Anarchist Positivism ||| TR: Anarşist Pozitivizm ||| path: anarchist ||| after: Spirit Of Rebellion / Control The Highways ||| does: spirit "Anarchist Positivism"
+444 ||| The Motherland Committee ||| TR: Anavatan Komitesi ||| path: anarchist ||| after: Anarchist Positivism ||| does: spirit "The Homeland Committee"
+445 ||| Guerrilla Tactics ||| TR: Gerilla Taktikleri ||| path: anarchist ||| after: Anarchist Positivism ||| does: spirit "Guerrilla Tactics"
+446 ||| A New Kind of Modern Movement ||| TR: Yeni Tür Modern Bir Hareket ||| path: anarchist ||| after: Anarchist Positivism ||| does: spirit "A New Kind of Modern Movement"
+447 ||| Victory of the Bastion of Anarchism ||| TR: Anarşizm Kalesinin Zaferi ||| path: anarchist ||| after: A New Kind of Modern Movement / The Motherland Committee ||| does: stability 0.05
+448 ||| Anarchist Repairing Staff ||| TR: Anarşist Onarım Ekibi ||| path: anarchist ||| after: Victory of the Bastion of Anarchism ||| does: spirit "Anarchist Repairing Staff"
+449 ||| Workout Propaganda ||| TR: Egzersiz Propagandası ||| path: anarchist ||| after: Victory of the Bastion of Anarchism ||| does: spirit "Work Propaganda"
+450 ||| Start the Anarchist Working Engine ||| TR: Anarşist Çalışma Motorunu Başlat ||| path: anarchist ||| after: Workout Propaganda / Anarchist Repairing Staff ||| does: spirit "The Anarchist Work Engine"; "The 2001 Turkish Economic Crisis" -> "The Turkish Economic Malaise"
+451 ||| Committee Elections ||| TR: Komite Seçimleri ||| path: anarchist ||| after: Prevent a Second Bloodshed ||| does: stability 0.03
+452 ||| Anarchist Collectivization ||| TR: Anarşist Kolektifleştirme ||| path: anarchist ||| after: The Anarchist Economy ||| does: spirit "Anarchist Collectivization"
+453 ||| The Anarchist Economy ||| TR: Anarşist Ekonomi ||| path: anarchist ||| after: Start the Anarchist Working Engine ||| does: PP 125
+454 ||| Declare the Ineffective Regime ||| TR: Etkisiz Rejimi İlan Et ||| path: anarchist ||| after: Start the Anarchist Working Engine ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"; stability 0.05
+455 ||| Declare Anarchist Neutrality ||| TR: Anarşist Tarafsızlık İlan Et ||| path: anarchist ||| after: Declare the Ineffective Regime ||| does: spirit "Anarchist Neutrality"
+456 ||| Building a New Society ||| TR: Yeni Bir Toplum İnşa Etmek ||| path: anarchist ||| after: Declare Anarchist Neutrality / Brainwashing ||| does: spirit "A New Society: Anarchism"
+457 ||| Brainwashing ||| TR: Beyin Yıkama ||| path: anarchist ||| after: Declare the Ineffective Regime ||| does: spirit "Brainwashing"
+458 ||| Anarchist Science Activity ||| TR: Anarşist Bilim Faaliyeti ||| path: anarchist ||| after: Start the Anarchist Working Engine ||| does: PP 125
+459 ||| Stabilize the Localities ||| TR: Yerel Bölgeleri İstikrara Kavuştur ||| path: anarchist ||| after: Building a New Society ||| does: stability 0.05; tooltip: The locals will be happy with the state.
+460 ||| The Mother State ||| TR: Ana Devlet ||| path: anarchist ||| after: Building a New Society ||| does: stability 0.05; tooltip: The Mother State will be stabilized and return to good condition.
+461 ||| Encourage Anarchist Happiness ||| TR: Anarşist Mutluluğu Teşvik Et ||| path: anarchist ||| after: Building a New Society ||| does: stability 0.05; tooltip: The people will be happier than ever before.
+462 ||| Anarcho-Neutralism ||| TR: Anarko-Tarafsızlık ||| path: anarchist ||| after: Encourage Anarchist Happiness / The Mother State ||| does: PP 75; stability 0.02
+463 ||| Remove the Complex Bureaucracy ||| TR: Karmaşık Bürokrasiyi Kaldır ||| path: anarchist ||| after: Anarcho-Neutralism ||| does: stability -0.07; tooltip: The bureaucracy will be removed at any cost.
+464 ||| Respectful Anarchism ||| TR: Saygılı Anarşizm ||| path: anarchist ||| after: Remove the Complex Bureaucracy ||| does: stability 0.1
+465 ||| Torchbearers of Anarchism ||| TR: Anarşizmin Meşale Taşıyıcıları ||| path: anarchist ||| after: Anarchist Science Activity ||| does: spirit "Torchbearers of the State"
+466 ||| Create the University of Anarchism ||| TR: Anarşizm Üniversitesini Kur ||| path: anarchist ||| after: Torchbearers of Anarchism ||| does: -
+467 ||| Disband Systematic Education ||| TR: Sistematik Eğitimi Kaldır ||| path: anarchist ||| after: Torchbearers of Anarchism ||| does: spirit "edu_01"
+468 ||| Free Education, Free Land ||| TR: Özgür Eğitim, Özgür Toprak ||| path: anarchist ||| after: Disband Systematic Education / Create the University of Anarchism ||| does: spirit "Free Education, Free Land"
+469 ||| Protection for Academics ||| TR: Akademisyenlere Koruma ||| path: anarchist ||| after: Create the University of Anarchism ||| does: spirit "Protected Academies"
+470 ||| Anarchist Hackers ||| TR: Anarşist Hackerlar ||| path: anarchist ||| after: Free Education, Free Land / Protection for Academics ||| does: spirit "A Group of Hackers"
+471 ||| Education Scheme ||| TR: Eğitim Planı ||| path: anarchist ||| after: Disband Systematic Education ||| does: spirit "Education: WANTED"
+472 ||| Appoint Technicians ||| TR: Teknisyenleri Ata ||| path: anarchist ||| after: Anarchist Collectivization ||| does: spirit "Appointed Technicians"
+473 ||| Divide the Construction Plans ||| TR: İnşaat Planlarını Böl ||| path: anarchist ||| after: Appoint Technicians / Abolish the Central Bank ||| does: spirit "Divided Construction Plans"
+474 ||| Denounce Interventionist Policies ||| TR: Müdahaleci Politikaları Reddet ||| path: anarchist ||| after: Appoint Technicians ||| does: war support -0.07; tooltip: State interventionist policies will be abandoned.
+475 ||| Abolish the Central Bank ||| TR: Merkez Bankası'nı Kaldır ||| path: anarchist ||| after: Anarchist Collectivization ||| does: stability -0.03
+476 ||| An Elective System ||| TR: Seçimli Bir Sistem ||| path: anarchist ||| after: Respectful Anarchism / Systematize the Collectivization ||| does: PP 75; stability 0.03
+477 ||| People's Money, People's Job ||| TR: Halkın Parası, Halkın İşi ||| path: anarchist ||| after: Abolish the Central Bank ||| does: stability 0.07; tooltip: People will be happier at work.
+478 ||| Quiet Construction ||| TR: Sessiz İnşaat ||| path: anarchist ||| after: Denounce Interventionist Policies / Divide the Construction Plans ||| does: -
+479 ||| Anarchist-Forged Economy ||| TR: Anarşizmle Dövülmüş Ekonomi ||| path: anarchist ||| after: Quiet Construction ||| does: spirit "An Anarchist-Born Economy"

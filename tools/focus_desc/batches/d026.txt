@@ -1,0 +1,60 @@
+1560 ||| Shut Down TRT 6 ||| TR: TRT 6'yı Kapat ||| path: AKP / democratic Turkey ||| after: Shut Down Religious Schools / Development of Kemalist Science ||| does: tooltip: 's opinion of  will decrease rapidly!\n
+1561 ||| Atatürk's Ideal State ||| TR: Atatürk'ün İdeal Devleti ||| path: AKP / democratic Turkey ||| after: Shut Down TRT 6 ||| does: stability 0.05; tooltip: The country will be united and its sectarian woes can be overcome.; tooltip: Gains 5% Support (Relative Popularity).\n
+1562 ||| 6 Arrows ||| TR: Altı Ok ||| path: AKP / democratic Turkey ||| after: Atatürk's Ideal State ||| does: spirit "The Six Arrows of Kemalism"
+1563 ||| Westernize the Republic ||| TR: Cumhuriyeti Batılılaştır ||| path: AKP / democratic Turkey ||| after: Atatürk's Ideal State ||| does: tooltip: With westernization, the conservatism of both the government and society will decline, and so will the radicalization of the country.
+1564 ||| Green Energy ||| TR: Yeşil Enerji ||| path: AKP / democratic Turkey ||| after: Left-Wing Economic Project ||| does: PP 75; stability 0.02
+1565 ||| Build Solar Power Plants ||| TR: Güneş Enerjisi Santralleri Kur ||| path: AKP / democratic Turkey ||| after: Green Energy ||| does: spirit "Solar Energy"; builds synthetic_refinery
+1566 ||| Hydroelectricity ||| TR: Hidroelektrik ||| path: AKP / democratic Turkey ||| after: Green Energy ||| does: spirit "Hydroelectricity"; builds synthetic_refinery
+1567 ||| Wind Farms ||| TR: Rüzgâr Santralleri ||| path: AKP / democratic Turkey ||| after: Hydroelectricity / Build Solar Power Plants ||| does: spirit "Wind Energy"; builds synthetic_refinery
+1568 ||| Close Relations with Germany ||| TR: Almanya ile Yakın İlişkiler ||| path: AKP / democratic Turkey ||| after: Victory Speech of the People's Alliance ||| does: -
+1569 ||| Talks with Merkel ||| TR: Merkel ile Görüşmeler ||| path: AKP / democratic Turkey ||| after: Close Relations with Germany ||| does: -
+1570 ||| War for the Eastern Mediterranean ||| TR: Doğu Akdeniz İçin Savaş ||| path: AKP / democratic Turkey ||| after: Increase Armaments ||| does: war support 0.05
+1571 ||| New Marines ||| TR: Yeni Deniz Piyadeleri ||| path: AKP / democratic Turkey ||| after: War for the Eastern Mediterranean ||| does: spirit "Navy Build-Up"
+1572 ||| Drone-Backed Navy ||| TR: İHA Destekli Donanma ||| path: AKP / democratic Turkey ||| after: War for the Eastern Mediterranean ||| does: spirit "Drone-Backed Navy"
+1573 ||| Search for Oil in the Eastern Mediterranean ||| TR: Doğu Akdeniz'de Petrol Ara ||| path: AKP / democratic Turkey ||| after: New Marines / Drone-Backed Navy ||| does: PP 30; tooltip: An event will fire once we find oil.
+1574 ||| Invisible Navy ||| TR: Görünmez Donanma ||| path: AKP / democratic Turkey ||| after: Victory of the Government of National Accord / Search for Oil in the Eastern Mediterranean ||| does: spirit "Invisible Navy"
+1575 ||| Victory of the Government of National Accord ||| TR: Ulusal Mutabakat Hükümeti'nin Zaferi ||| path: AKP / democratic Turkey ||| after: Give Military Aid to Libya ||| does: PP 75; stability 0.05; war support 0.05
+1576 ||| Push Anti-American Propaganda ||| TR: ABD Karşıtı Propaganda Yap ||| path: AKP / democratic Turkey ||| after: Politicize the Economic Failure ||| does: war support 0.05
+1577 ||| Treaties with Russia ||| TR: Rusya ile Antlaşmalar ||| path: AKP / democratic Turkey ||| after: Push Anti-American Propaganda ||| does: -
+1578 ||| Jandarma Policy ||| TR: Jandarma Politikası ||| path: AKP / democratic Turkey ||| after: Speeches of Victory ||| does: "police_04" -> "police_05"
+1579 ||| Milli İstihbarat Teşkilatı ||| TR: Millî İstihbarat Teşkilatı ||| path: AKP / democratic Turkey ||| after: Reforms of the State ||| does: spirit "Milli İstihbarat Teşkilatı"; stability 0.05
+1580 ||| The 2023 Elections ||| TR: 2023 Seçimleri ||| path: AKP / democratic Turkey ||| after: - ||| does: PP -50; stability -0.02
+1581 ||| Sinan Oğan's Advantage ||| TR: Sinan Oğan'ın Avantajı ||| path: AKP / democratic Turkey ||| after: - ||| does: "Syrian Immigration" -> "Managed Syrian Immigration"; PP -50
+1582 ||| Victory of Erdoğan ||| TR: Erdoğan'ın Zaferi ||| path: AKP / democratic Turkey ||| after: The 2023 Elections ||| does: event "Victory of Erdoğan in 2023"; PP -50; tooltip: Gains 1.5% Support (Relative Popularity).\n
+1583 ||| Erdoğan's Political Consolidation Campaign ||| TR: Erdoğan'ın Siyasi Konsolidasyon Kampanyası ||| path: AKP / democratic Turkey ||| after: Victory of Erdoğan ||| does: stability 0.03
+1584 ||| Arab Submission ||| TR: Arap Teslimiyeti ||| path: AKP / democratic Turkey ||| after: Erdoğan's Political Consolidation Campaign ||| does: PP 50
+1585 ||| The Parliamentary Scheme ||| TR: Meclis Planı ||| path: AKP / democratic Turkey ||| after: Erdoğan's Political Consolidation Campaign ||| does: PP 150
+1586 ||| The Right Man at the Right Time ||| TR: Doğru Zamanda Doğru Adam ||| path: AKP / democratic Turkey ||| after: The Parliamentary Scheme / Arab Submission ||| does: PP 75; stability 0.03; tooltip: Gains 1% Support (Relative Popularity).\n; tooltip: Gains 0.5% Support (Relative Popularity).\n; tooltip: Gains 0.05% Support (Relative Popularity).\n
+1587 ||| We Are in Space! ||| TR: Uzaydayız! ||| path: AKP / democratic Turkey ||| after: The Right Man at the Right Time ||| does: stability 0.1
+1588 ||| Expand TÜRKSAT ||| TR: TÜRKSAT'ı Genişlet ||| path: AKP / democratic Turkey ||| after: We Are in Space! ||| does: spirit "TÜRKSAT Technologies"
+1589 ||| Turkish Technology House ||| TR: Türk Teknoloji Evi ||| path: AKP / democratic Turkey ||| after: We Are in Space! ||| does: -
+1590 ||| Improve Eximbank ||| TR: Eximbank'ı Geliştir ||| path: AKP / democratic Turkey ||| after: The Right Man at the Right Time ||| does: spirit "Improving Eximbank"
+1591 ||| Wage Policy ||| TR: Ücret Politikası ||| path: AKP / democratic Turkey ||| after: Improve Eximbank ||| does: spirit "Wage Policies"
+1592 ||| Family And Youth Bank ||| TR: Aile ve Gençlik Bankası ||| path: AKP / democratic Turkey ||| after: Improve Eximbank ||| does: spirit "Family And Youth Bank"
+1593 ||| The Support of the Ulema ||| TR: Ulemanın Desteği ||| path: AKP / democratic Turkey ||| after: The Right Man at the Right Time ||| does: stability 0.03
+1594 ||| The Turkish National Jet ||| TR: Türk Millî Jeti ||| path: AKP / democratic Turkey ||| after: The Right Man at the Right Time ||| does: -
+1595 ||| Turkish National Ships ||| TR: Türk Millî Gemileri ||| path: AKP / democratic Turkey ||| after: The Turkish National Jet ||| does: -
+1596 ||| Concessions to Sinan Oğan ||| TR: Sinan Oğan'a Tavizler ||| path: AKP / democratic Turkey ||| after: Sinan Oğan's Advantage / The Right Man at the Right Time ||| does: PP -25; tooltip: Loses 2% Support (Relative Popularity).\n
+1597 ||| Victory of Muharrem İnce ||| TR: Muharrem İnce'nin Zaferi ||| path: AKP / democratic Turkey ||| after: The 2023 Elections ||| does: event "Victory of Muharrem İnce in 2023"; PP -50; tooltip: Gains 1.5% Support (Relative Popularity).\n
+1598 ||| Immigration Control ||| TR: Göç Kontrolü ||| path: AKP / democratic Turkey ||| after: Sinan Oğan's Advantage ||| does: spirit "The Return of the Syrians"; removes "Afghan Immigration"; removes "Managed Syrian Immigration"; stability 0.05
+1599 ||| Zafer Tourism ||| TR: Zafer Turizmi ||| path: AKP / democratic Turkey ||| after: Immigration Control / Concessions to Sinan Oğan ||| does: spirit "Zafer Tourism"
+1600 ||| Erase HÜDA PAR's Influence ||| TR: HÜDA PAR'ın Etkisini Sil ||| path: AKP / democratic Turkey ||| after: Zafer Tourism ||| does: PP 75; stability 0.03; tooltip: Loses 2% Support (Relative Popularity).\n
+1601 ||| Victory of Sinan Oğan ||| TR: Sinan Oğan'ın Zaferi ||| path: AKP / democratic Turkey ||| after: The 2023 Elections ||| does: event "Victory of Sinan Oğan in 2023"; PP -50; tooltip: Gains 1.5% Support (Relative Popularity).\n
+1602 ||| Victory of Kemal Kılıçdaroğlu ||| TR: Kemal Kılıçdaroğlu'nun Zaferi ||| path: AKP / democratic Turkey ||| after: The 2023 Elections ||| does: event "Victory of Kılıçdaroğlu in 2023"; PP -50; tooltip: Gains 1.5% Support (Relative Popularity).\n
+1603 ||| The Regime of Questions ||| TR: Sorular Rejimi ||| path: AKP / democratic Turkey ||| after: Victory of Kemal Kılıçdaroğlu ||| does: PP -50; stability -0.03
+1604 ||| Pressure the Parliament ||| TR: Meclise Baskı Yap ||| path: AKP / democratic Turkey ||| after: The Regime of Questions ||| does: PP 150
+1605 ||| Powers of Anıtkabir ||| TR: Anıtkabir'in Gücü ||| path: AKP / democratic Turkey ||| after: The Regime of Questions ||| does: stability 0.1; tooltip: Gains 3% Support (Relative Popularity).\n; tooltip: Gains 2% Support (Relative Popularity).\n
+1606 ||| The Love ||| TR: Sevgi ||| path: AKP / democratic Turkey ||| after: Powers of Anıtkabir / Pressure the Parliament ||| does: stability 0.1; tooltip: Gains 1% Support (Relative Popularity).\n; tooltip: Gains 0.3% Support (Relative Popularity).\n; tooltip: Gains 0.1% Support (Relative Popularity).\n; tooltip: Gains 0.2% Support (Relative Popularity).\n; tooltip: Gains 0.7% Support (Relative Popularity).\n
+1607 ||| Achieve a Left-Right Coalition ||| TR: Sol-Sağ Koalisyonu Kur ||| path: AKP / democratic Turkey ||| after: Concessions to Sinan Oğan / Immigration Control ||| does: spirit "The Right-Left Coalition"
+1608 ||| Zafer Mancınık ||| TR: Zafer Mancınık ||| path: AKP / democratic Turkey ||| after: Zafer Tourism / Achieve a Left-Right Coalition ||| does: -
+1609 ||| Redesign the Election System ||| TR: Seçim Sistemini Yeniden Tasarla ||| path: AKP / democratic Turkey ||| after: The Love ||| does: PP 100
+1610 ||| Political Transparency ||| TR: Siyasi Şeffaflık ||| path: AKP / democratic Turkey ||| after: Redesign the Election System ||| does: PP -100; stability 0.03
+1611 ||| Push Anti-Corruption Practices ||| TR: Yolsuzlukla Mücadele Uygulamalarını Hızlandır ||| path: AKP / democratic Turkey ||| after: Political Transparency / Lower the Election Threshold ||| does: PP -50; stability -0.03
+1612 ||| The Syrian Peace Deal ||| TR: Suriye Barış Anlaşması ||| path: AKP / democratic Turkey ||| after: The Love ||| does: stability 0.03; war support -0.1
+1613 ||| The Immigration Program ||| TR: Göç Programı ||| path: AKP / democratic Turkey ||| after: The Syrian Peace Deal ||| does: "Syrian Immigration" -> "Managed Syrian Immigration"
+1614 ||| Deport the Immigrants ||| TR: Göçmenleri Sınır Dışı Et ||| path: AKP / democratic Turkey, MHP / Grey Wolves nationalist ||| after: The Immigration Program ||| does: spirit "The Return of the Syrians"; removes "Afghan Immigration"; removes "Managed Syrian Immigration"; stability 0.05
+1615 ||| Improve the Lira ||| TR: Lirayı Güçlendir ||| path: AKP / democratic Turkey ||| after: Improve Eximbank ||| does: -
+1616 ||| The Taxation Program ||| TR: Vergi Programı ||| path: AKP / democratic Turkey ||| after: Improve the Lira / Grant the Central Bank Independence ||| does: spirit "A New Taxation System"
+1617 ||| Withdraw from the EU Migration Procedures ||| TR: AB Göç Prosedürlerinden Çekil ||| path: AKP / democratic Turkey ||| after: Deport the Immigrants / Push Anti-Corruption Practices ||| does: removes "EU_Turkey_deal"; war support 0.02
+1618 ||| Turkish Style Silicon Valleys ||| TR: Türk Tarzı Silikon Vadileri ||| path: AKP / democratic Turkey ||| after: The Love ||| does: spirit "Turkish Style Silicon Valleys"
+1619 ||| Fast Growth Ideas ||| TR: Hızlı Büyüme Fikirleri ||| path: AKP / democratic Turkey ||| after: Turkish Style Silicon Valleys ||| does: -

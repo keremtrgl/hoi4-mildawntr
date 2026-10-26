@@ -1,0 +1,60 @@
+660 ||| Act on Natural Gas ||| TR: Doğalgaz Hamlesi ||| path: anarchist ||| after: Capitalist Resource Missions ||| does: -
+661 ||| Build Natural Gas Platforms ||| TR: Doğalgaz Platformları Kur ||| path: anarchist ||| after: Act on Natural Gas ||| does: -
+662 ||| General Petroleum Project ||| TR: Genel Petrol Projesi ||| path: anarchist ||| after: Capitalist Resource Missions ||| does: builds fossil_powerplant
+663 ||| Customize Oil Production ||| TR: Petrol Üretimini Özelleştir ||| path: anarchist ||| after: General Petroleum Project ||| does: builds fossil_powerplant
+664 ||| Oil and Natural Gas Complexes ||| TR: Petrol ve Doğalgaz Kompleksleri ||| path: anarchist ||| after: Customize Oil Production / Build Natural Gas Platforms ||| does: -
+665 ||| Build Oil Pumpjacks ||| TR: Petrol Kuyusu Pompaları Kur ||| path: anarchist, Constitutional Court rule ||| after: General Petroleum Project ||| does: builds fossil_powerplant
+666 ||| Support Material Activities ||| TR: Malzeme Faaliyetlerini Destekle ||| path: anarchist ||| after: Build Oil Pumpjacks ||| does: -
+667 ||| Act on Boron ||| TR: Bor Hamlesi ||| path: anarchist ||| after: Capitalist Resource Missions ||| does: spirit "Boron Fields"
+668 ||| Build More Oil Pumpjacks ||| TR: Daha Fazla Petrol Pompası Kur ||| path: anarchist ||| after: General Petroleum Project ||| does: builds fossil_powerplant
+669 ||| Systematic Boron Extraction ||| TR: Sistematik Bor Çıkarımı ||| path: anarchist ||| after: Act on Boron ||| does: -
+670 ||| Oil and Boron Complexes ||| TR: Petrol ve Bor Kompleksleri ||| path: anarchist ||| after: Build More Oil Pumpjacks / Systematic Boron Extraction ||| does: -
+671 ||| Emergency Iron Fields ||| TR: Acil Durum Demir Sahaları ||| path: anarchist ||| after: Oil and Natural Gas Complexes / Oil and Boron Complexes ||| does: -
+672 ||| Gun Shops ||| TR: Silah Dükkânları ||| path: anarchist ||| after: Emergency Iron Fields ||| does: spirit "Gun Shops"
+673 ||| Gun Trade ||| TR: Silah Ticareti ||| path: anarchist ||| after: Gun Shops ||| does: spirit "Gun Dealers"
+674 ||| Open Gun Shops on Wall Street ||| TR: Wall Street'te Silah Dükkânları Aç ||| path: anarchist ||| after: Gun Shops ||| does: spirit "A World of Guns"
+675 ||| Act on Exports ||| TR: İhracat Hamlesi ||| path: anarchist ||| after: Emergency Iron Fields ||| does: spirit "globalized_trade_economy"
+676 ||| World Of Money ||| TR: Paranın Dünyası ||| path: anarchist ||| after: Act on Exports ||| does: stability 0.05
+677 ||| Default on Foreign Taxes ||| TR: Dış Vergileri Ödeme ||| path: anarchist ||| after: Act on Exports ||| does: stability 0.05
+678 ||| Invest in Gold ||| TR: Altına Yatırım Yap ||| path: anarchist ||| after: Invest In Stocks ||| does: spirit "Gold Investments"
+679 ||| Skyrocket Gold ||| TR: Altını Uçur ||| path: anarchist ||| after: Invest in Gold ||| does: spirit "Gold Investment Returns"
+680 ||| Abolish All Economic Policies ||| TR: Tüm Ekonomi Politikalarını Kaldır ||| path: anarchist ||| after: Fund the Invested Corporations / Financial Boom In Banks ||| does: spirit "economic_boom"
+681 ||| A Death Theory ||| TR: Bir Ölüm Teorisi ||| path: anarchist ||| after: Abolish All Economic Policies ||| does: removes "Anarchist Neutrality"
+682 ||| Economic Anarchism ||| TR: Ekonomik Anarşizm ||| path: anarchist ||| after: A Death Theory / Buy, Buy, Buy! ||| does: stability 0.1
+683 ||| Buy, Buy, Buy! ||| TR: Al, Al, Al! ||| path: anarchist ||| after: Abolish All Economic Policies ||| does: -
+684 ||| Target Economic Crisis ||| TR: Ekonomik Krizi Hedef Al ||| path: anarchist ||| after: Economic Anarchism ||| does: war support 0.05
+685 ||| Target US Economic Activity ||| TR: ABD'nin Ekonomik Faaliyetini Hedef Al ||| path: anarchist ||| after: Economic Anarchism ||| does: war support 0.03
+686 ||| Invade the Unstable Debtor ||| TR: İstikrarsız Borçluyu İşgal Et ||| path: anarchist ||| after: Target Economic Crisis ||| does: war goal/war on GRE
+687 ||| Default on Greece's Debt ||| TR: Yunanistan'ın Borcunu Ödeme ||| path: anarchist ||| after: Invade the Unstable Debtor ||| does: stability 0.03
+688 ||| Invade Venezuela ||| TR: Venezuela'yı İşgal Et ||| path: anarchist ||| after: Target Economic Crisis ||| does: war goal/war on VEN
+689 ||| Solve Inflation ||| TR: Enflasyonu Çöz ||| path: anarchist ||| after: Invade Venezuela ||| does: removes "Mild Inflation"; stability 0.02
+690 ||| Management of Economic Anarchism ||| TR: Ekonomik Anarşizmin Yönetimi ||| path: anarchist ||| after: Target US Economic Activity ||| does: PP 125; stability -0.03
+691 ||| Freedom for the FED ||| TR: FED'e Özgürlük ||| path: anarchist ||| after: Management of Economic Anarchism ||| does: stability 0.03; stability 0.1
+692 ||| Anarchize the Banks in the USA ||| TR: ABD'deki Bankaları Anarşistleştir ||| path: anarchist ||| after: Management of Economic Anarchism ||| does: spirit "Anarchized US Banks"; stability 0.03
+693 ||| Anti-Recession Package ||| TR: Resesyon Karşıtı Paket ||| path: anarchist ||| after: Management of Economic Anarchism ||| does: spirit "stable_growth"; stability 0.03
+694 ||| Lower Consumer Goods ||| TR: Tüketim Mallarını Azalt ||| path: anarchist ||| after: Invade Venezuela / Invade the Unstable Debtor ||| does: spirit "Reduced Consumer Goods"
+695 ||| Secure the US Economy ||| TR: ABD Ekonomisini Güvenceye Al ||| path: anarchist ||| after: Anti-Recession Package / Freedom for the FED ||| does: spirit "economic_boom"; stability 0.1
+696 ||| Economic Meetings ||| TR: Ekonomik Toplantılar ||| path: anarchist ||| after: Solve Inflation / Lower Consumer Goods ||| does: spirit "economic_boom"
+697 ||| Become the IMF ||| TR: IMF Ol ||| path: anarchist ||| after: Secure the US Economy / Economic Meetings ||| does: event "Anarchists Take Control of the IMF"; PP 50
+698 ||| Intervene in the Coming Oil Crisis ||| TR: Yaklaşan Petrol Krizine Müdahale Et ||| path: anarchist ||| after: Become the IMF ||| does: war goal/war on IRQ; war goal/war on KUW; war goal/war on SYR; war goal/war on LEB; war goal/war on SAU; war goal/war on JOR; war goal/war on ISR
+699 ||| Solve the Coming Oil Crisis ||| TR: Yaklaşan Petrol Krizini Çöz ||| path: anarchist ||| after: Intervene in the Coming Oil Crisis / Invade Iran ||| does: spirit "No More Oil Crises"
+700 ||| Invade Iran ||| TR: İran'ı İşgal Et ||| path: anarchist, Islamist coup regime ||| after: Become the IMF ||| does: war goal/war on PER
+701 ||| Trade, Trade, Trade ||| TR: Ticaret, Ticaret, Ticaret ||| path: anarchist ||| after: Solve the Coming Oil Crisis ||| does: spirit "The Utopia of Trade"; tooltip: The country will be united and its sectarian woes can be overcome.
+702 ||| He Is Back! ||| TR: O Geri Döndü! ||| path: Ataturk returns (fiction) ||| after: - ||| does: removes "TUR_legacy_of_ataturk_preserved"; "The 2001 Turkish Economic Crisis" -> "The Turkish Economic Malaise"; stability 0.1; tooltip: The country will be united and its sectarian woes can be overcome.
+703 ||| Atatürk's Economic Policies ||| TR: Atatürk'ün Ekonomi Politikaları ||| path: Ataturk returns (fiction) ||| after: - ||| does: PP 100
+704 ||| Atatürk's Foreign Policies ||| TR: Atatürk'ün Dış Politikası ||| path: Ataturk returns (fiction) ||| after: - ||| does: spirit "kemalist_neutrality_idea"; PP 75
+705 ||| Social Life and Party Governance ||| TR: Sosyal Hayat ve Parti Yönetimi ||| path: Ataturk returns (fiction) ||| after: - ||| does: PP 100; tooltip: Gains 1% Support (Relative Popularity).\n
+706 ||| To Turkey's Bright Future! ||| TR: Türkiye'nin Parlak Geleceğine! ||| path: Ataturk returns (fiction) ||| after: - ||| does: -
+707 ||| Adapt to Modern Economics ||| TR: Modern Ekonomiye Uyum ||| path: Ataturk returns (fiction) ||| after: Atatürk's Economic Policies ||| does: PP 75
+708 ||| New Ankara Economic Congress ||| TR: Yeni Ankara İktisat Kongresi ||| path: Ataturk returns (fiction) ||| after: Adapt to Modern Economics ||| does: spirit "Ankara's Economic Missions"; "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"; "Yeni Türk Lirası" -> "Yeni Türk Lirası"
+709 ||| Increase Lira Stability ||| TR: Liranın İstikrarını Artır ||| path: Ataturk returns (fiction) ||| after: New Ankara Economic Congress ||| does: "Yeni Türk Lirası" -> "Türk Lirası"
+710 ||| Steps for Fast Growth ||| TR: Hızlı Büyüme İçin Adımlar ||| path: Ataturk returns (fiction) ||| after: Increase Lira Stability ||| does: "recession" -> "fast_growth"
+711 ||| General Economic Reform ||| TR: Genel Ekonomik Reform ||| path: Ataturk returns (fiction) ||| after: New Ankara Economic Congress ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+712 ||| Contact Investors ||| TR: Yatırımcılarla Temas Kur ||| path: Ataturk returns (fiction) ||| after: General Economic Reform ||| does: spirit "Promising Investors"
+713 ||| A New World, New Changes ||| TR: Yeni Bir Dünya, Yeni Değişimler ||| path: Ataturk returns (fiction) ||| after: He Is Back! ||| does: PP 75; tooltip: Gains 1% Support (Relative Popularity).\n; tooltip: Atatürk tries to understand and adapt to the politics of the new millennium.
+714 ||| New Kemalism ||| TR: Yeni Kemalizm ||| path: Ataturk returns (fiction) ||| after: A New World, New Changes ||| does: spirit "New Kemalism"; tooltip: Gains 3% Support (Relative Popularity).\n
+715 ||| Change and Modernize the CHP ||| TR: CHP'yi Değiştir ve Modernleştir ||| path: Ataturk returns (fiction) ||| after: New Kemalism ||| does: -
+716 ||| Rise of the Political Questions ||| TR: Siyasi Meselelerin Yükselişi ||| path: Ataturk returns (fiction) ||| after: A New World, New Changes ||| does: PP -75
+717 ||| Convene the TBMM ||| TR: TBMM'yi Topla ||| path: Ataturk returns (fiction) ||| after: Rise of the Political Questions / New Kemalism ||| does: -
+718 ||| Complete Adaptation to the 21st Century ||| TR: 21. Yüzyıla Tam Uyum ||| path: Ataturk returns (fiction) ||| after: Convene the TBMM ||| does: removes "Reassessing the Situation"
+719 ||| Declare New Elections ||| TR: Yeni Seçim İlan Et ||| path: Ataturk returns (fiction) ||| after: Complete Adaptation to the 21st Century ||| does: stability 0.01

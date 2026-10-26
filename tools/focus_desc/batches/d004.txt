@@ -1,0 +1,60 @@
+240 ||| Push Anti-DYP Propaganda ||| TR: DYP Karşıtı Propaganda Yap ||| path: ANAP liberal ||| after: Oppose the Merger ||| does: tooltip: Loses 1% Support (Relative Popularity).\n
+241 ||| Protect the Party Values ||| TR: Parti Değerlerini Koru ||| path: ANAP liberal ||| after: Expel the Resisting Cadres from the Party / Push Anti-DYP Propaganda ||| does: PP 100; stability 0.05
+242 ||| End the Political Question ||| TR: Siyasi Meseleyi Sonlandır ||| path: ANAP liberal ||| after: Congress of the DYP-ANAP Merger / Protect the Party Values ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; PP 100
+243 ||| Protest the Armed Forces' Intervention in Politics ||| TR: Silahlı Kuvvetlerin Siyasete Müdahalesini Protesto Et ||| path: ANAP liberal ||| after: End the Political Question ||| does: tooltip: 's opinion of  changes by -10%.\n; tooltip: This move may cause indignation within .\n
+244 ||| Democratization of the State ||| TR: Devletin Demokratikleşmesi ||| path: ANAP liberal ||| after: End the Political Question ||| does: PP 25; stability 0.03
+245 ||| Weaken the Centralist Regime ||| TR: Merkeziyetçi Rejimi Zayıflat ||| path: ANAP liberal ||| after: End the Political Question ||| does: spirit "Weakened Centralist Regime"
+246 ||| Working Municipalities... ||| TR: Çalışan Belediyeler... ||| path: ANAP liberal ||| after: Weaken the Centralist Regime ||| does: spirit "Working Municipalities..."
+247 ||| Redesign Local Government ||| TR: Yerel Yönetimi Yeniden Tasarla ||| path: ANAP liberal ||| after: Weaken the Centralist Regime ||| does: spirit "Redesigned Local Rules"
+248 ||| Start Local Works ||| TR: Yerel Çalışmaları Başlat ||| path: ANAP liberal ||| after: Redesign Local Government ||| does: spirit "Local Works"
+249 ||| Fund Local Governments ||| TR: Yerel Yönetimleri Finanse Et ||| path: ANAP liberal ||| after: Redesign Local Government ||| does: stability 0.03
+250 ||| Legacy of Turgut Özal ||| TR: Turgut Özal'ın Mirası ||| path: ANAP liberal ||| after: Mesut Yılmaz's Victory ||| does: PP 75; stability 0.02; tooltip: Gains 3% Support (Relative Popularity).\n
+251 ||| Redesign the Economic Policy ||| TR: Ekonomi Politikasını Yeniden Tasarla ||| path: ANAP liberal ||| after: Legacy of Turgut Özal ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+252 ||| ANAP's Economic Agenda ||| TR: ANAP'ın Ekonomi Gündemi ||| path: ANAP liberal ||| after: Redesign the Economic Policy ||| does: PP 15; tooltip: Gains 1% Support (Relative Popularity).\n
+253 ||| Boost Market Morale ||| TR: Piyasalarda Moral Sağla ||| path: ANAP liberal ||| after: Redesign the Economic Policy ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+254 ||| Busy as a Bee ||| TR: Arı Gibi Çalışmak ||| path: ANAP liberal ||| after: Redesign the Economic Policy ||| does: spirit "Busy as a Bee"
+255 ||| Cotton Industries ||| TR: Pamuk Sanayileri ||| path: ANAP liberal, CHP social democrat ||| after: Busy as a Bee ||| does: spirit "Cotton Industries"
+256 ||| Textile Industries ||| TR: Tekstil Sanayileri ||| path: ANAP liberal ||| after: Busy as a Bee ||| does: spirit "Textile Industries"
+257 ||| Develop Central Anatolia ||| TR: İç Anadolu'yu Kalkındır ||| path: ANAP liberal ||| after: Redesign the Economic Policy ||| does: builds industrial_complex, infrastructure
+258 ||| War Industries in Central Anatolia ||| TR: İç Anadolu'da Savaş Sanayileri ||| path: ANAP liberal ||| after: Develop Central Anatolia ||| does: builds arms_factory, infrastructure
+259 ||| Upgrade War Industries to the Fifth Generation ||| TR: Savaş Sanayilerini Beşinci Nesle Yükselt ||| path: ANAP liberal ||| after: War Industries in Central Anatolia ||| does: spirit "Fifth-Generation Military Industries"; builds arms_factory
+260 ||| Black Sea Navy Project ||| TR: Karadeniz Donanma Projesi ||| path: ANAP liberal ||| after: Redesign the Economic Policy ||| does: builds dockyard, infrastructure
+261 ||| Industrialize The North ||| TR: Kuzeyi Sanayileştir ||| path: ANAP liberal ||| after: Black Sea Navy Project ||| does: builds industrial_complex, infrastructure
+262 ||| Develop Istanbul ||| TR: İstanbul'u İmar Et ||| path: ANAP liberal ||| after: Redesign the Economic Policy ||| does: builds industrial_complex, infrastructure
+263 ||| New Transportation System in Istanbul ||| TR: İstanbul'da Yeni Ulaşım Sistemi ||| path: ANAP liberal ||| after: Develop Istanbul ||| does: stability 0.07
+264 ||| Connected Airports ||| TR: Birbirine Bağlı Havalimanları ||| path: ANAP liberal ||| after: War Industries in Central Anatolia / Industrialize The North ||| does: builds air_base
+265 ||| Countrywide Radio Project ||| TR: Ülke Çapında Radyo Projesi ||| path: ANAP liberal ||| after: Connected Airports ||| does: builds radar_station
+266 ||| Countrywide Road Project ||| TR: Ülke Çapında Yol Projesi ||| path: ANAP liberal ||| after: Connected Airports ||| does: builds infrastructure
+267 ||| Investment Policy ||| TR: Yatırım Politikası ||| path: ANAP liberal ||| after: Redesign the Economic Policy ||| does: PP 100
+268 ||| Visit Washington and London ||| TR: Washington ve Londra'yı Ziyaret Et ||| path: ANAP liberal ||| after: Investment Policy ||| does: -
+269 ||| Investments in Industrial Complexes? ||| TR: Sanayi Komplekslerine Yatırım mı? ||| path: ANAP liberal ||| after: Visit Washington and London ||| does: builds industrial_complex
+270 ||| Visit NATO Supreme Headquarters ||| TR: NATO Yüksek Karargâhını Ziyaret Et ||| path: ANAP liberal ||| after: Investment Policy ||| does: -
+271 ||| Investments in Dockyards? ||| TR: Tersanelere Yatırım mı? ||| path: ANAP liberal ||| after: Visit Washington and London / Visit NATO Supreme Headquarters ||| does: builds dockyard
+272 ||| For the Happiness of Working People ||| TR: Çalışan Halkın Mutluluğu İçin ||| path: ANAP liberal ||| after: End the Political Question ||| does: PP 10; stability 0.03
+273 ||| The Politics of Us ||| TR: Biz Diyen Siyaset ||| path: ANAP liberal ||| after: For the Happiness of Working People ||| does: stability 0.05; tooltip: Gains 3% Support (Relative Popularity).\n
+274 ||| Abolish the Headscarf Law ||| TR: Başörtüsü Yasasını Kaldır ||| path: ANAP liberal ||| after: The Politics of Us / Respect Islamic Values ||| does: PP -150; stability 0.05; tooltip: 's opinion of  changes by -3%.\n
+275 ||| Build Roads ||| TR: Yollar İnşa Et ||| path: ANAP liberal, Turkish Armed Forces junta ||| after: The Politics of Us ||| does: builds infrastructure
+276 ||| Respect Islamic Values ||| TR: İslami Değerlere Saygı ||| path: ANAP liberal ||| after: Protest the Armed Forces' Intervention in Politics / Democratization of the State ||| does: stability 0.05
+277 ||| Working for Our People ||| TR: Halkımız İçin Çalışmak ||| path: ANAP liberal ||| after: The Politics of Us ||| does: PP 50; stability 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+278 ||| A Working SGK... ||| TR: Çalışan Bir SGK... ||| path: ANAP liberal ||| after: Build Roads / Working for Our People ||| does: spirit "A Working SGK"
+279 ||| Create Trade Unions ||| TR: Sendikalar Kur ||| path: ANAP liberal, communist bloc ||| after: Build Roads / Abolish the Headscarf Law ||| does: spirit "State Trade Unions"; spirit "The Turkish Media"; removes "The Turkish Media"
+280 ||| New Strategies To Defeat Terrorists ||| TR: Teröristleri Yenmek İçin Yeni Stratejiler ||| path: ANAP liberal ||| after: Protect the 8th Law ||| does: war support 0.01
+281 ||| Put the Military in Second Place ||| TR: Orduyu İkinci Plana Al ||| path: ANAP liberal ||| after: New Strategies To Defeat Terrorists ||| does: stability 0.02; war support -0.07
+282 ||| Expand Education for the Kurdish People ||| TR: Kürt Halkının Eğitimini Genişlet ||| path: ANAP liberal ||| after: New Strategies To Defeat Terrorists ||| does: spirit "Kurdish Schools and Universities"; removes "Kurdish TV And Free Language"; removes "Kurdish TV Channels Permitted"; removes "Kurdish Language Freedom"; removes "Kurdish Xenophobia"
+283 ||| Train Civilian Corps ||| TR: Sivil Birlikler Eğit ||| path: ANAP liberal ||| after: Put the Military in Second Place / Expand Education for the Kurdish People ||| does: spirit "Civil Defense Corps"
+284 ||| Local Civilian Defence Forces ||| TR: Sivil Yerel Savunma Kuvvetleri ||| path: ANAP liberal ||| after: Train Civilian Corps / New Kurdish Rights ||| does: "Civil Defense Corps" -> "Improved Civil Defense Corps"
+285 ||| Border Security ||| TR: Sınır Güvenliği ||| path: ANAP liberal ||| after: Put the Military in Second Place ||| does: spirit "Border Security"
+286 ||| New Kurdish Rights ||| TR: Yeni Kürt Hakları ||| path: ANAP liberal ||| after: Expand Education for the Kurdish People ||| does: spirit "Kurdish TV And Free Language"; removes "Kurdish Schools and Universities"; removes "Kurdish TV Channels Permitted"; removes "Kurdish Language Freedom"; removes "Kurdish Xenophobia"
+287 ||| Protect the 8th Law ||| TR: 8. Kanunu Koru ||| path: ANAP liberal ||| after: End the National Reforms ||| does: stability -0.02; war support 0.07
+288 ||| Freedom for Local Religions ||| TR: Yerel İnançlara Özgürlük ||| path: ANAP liberal ||| after: Respect Islamic Values / Redesign Local Government ||| does: spirit "Freedom for Local Religious Leaders"
+289 ||| Local Institutions ||| TR: Yerel Kurumlar ||| path: ANAP liberal ||| after: Freedom for Local Religions / Start Local Works ||| does: spirit "Local Institutions"
+290 ||| Send Money to Our People ||| TR: Halkımıza Para Gönder ||| path: ANAP liberal ||| after: For the Happiness of Working People ||| does: stability 0.05
+291 ||| Local Banks ||| TR: Yerel Bankalar ||| path: ANAP liberal ||| after: Start Local Works / Fund Local Governments ||| does: spirit "Local Banks"
+292 ||| Pool the Finances of Local Institutions ||| TR: Yerel Kurumların Mali Kaynaklarını Birleştir ||| path: ANAP liberal ||| after: Local Institutions / Local Banks ||| does: spirit "Integrating the Local Economies"
+293 ||| End the National Reforms ||| TR: Ulusal Reformları Sonlandır ||| path: ANAP liberal ||| after: - ||| does: PP 100
+294 ||| Improve the Lira Reform ||| TR: Lira Reformunu Geliştir ||| path: ANAP liberal ||| after: ANAP's Economic Agenda ||| does: "Yeni Türk Lirası" -> "Yeni Türk Lirası"
+295 ||| Drop the 6 Zeros ||| TR: 6 Sıfırı At ||| path: ANAP liberal ||| after: Improve the Lira Reform / Competition Authority ||| does: "Yeni Türk Lirası" -> "Türk Lirası"
+296 ||| Create the Automotive Sector ||| TR: Otomotiv Sektörünü Kur ||| path: ANAP liberal ||| after: Textile Industries / Cotton Industries ||| does: spirit "The Turkish Automotive Sector"
+297 ||| Send Turkish Engineers to Volkswagen ||| TR: Türk Mühendisleri Volkswagen'e Gönder ||| path: ANAP liberal ||| after: Create the Automotive Sector ||| does: spirit "Turkish Technicians Sent to Volkswagen"; spirit "Turkish Technicians Received"
+298 ||| Fund the Automotive Sector ||| TR: Otomotiv Sektörünü Finanse Et ||| path: ANAP liberal ||| after: Create the Automotive Sector ||| does: stability 0.01; builds fossil_powerplant
+299 ||| Turkish Cars on the Road ||| TR: Türk Otomobilleri Yollarda ||| path: ANAP liberal ||| after: Send Turkish Engineers to Volkswagen / Fund the Automotive Sector ||| does: "The Turkish Automotive Sector" -> "The Turkish Automotive Sector"

@@ -1,0 +1,60 @@
+1200 ||| Strengthen the Lira ||| TR: Lirayı Güçlendir ||| path: CHP social democrat ||| after: Budget Discipline ||| does: "Yeni Türk Lirası" -> "Türk Lirası"
+1201 ||| Solve Turkey's Economic Problems ||| TR: Türkiye'nin Ekonomik Sorunlarını Çöz ||| path: CHP social democrat ||| after: Strengthen the Lira / Grant the Central Bank Independence ||| does: removes "The Turkish Economic Malaise"
+1202 ||| Rebuild Sümerbank ||| TR: Sümerbank'ı Yeniden Kur ||| path: CHP social democrat ||| after: Investment Cult ||| does: spirit "Sümerbank Revenues"
+1203 ||| Perfecting the Lira ||| TR: Liranın Mükemmelleşmesi ||| path: CHP social democrat ||| after: Strengthen the Lira ||| does: "Türk Lirası" -> "Türk Lirası"; stability 0.02
+1204 ||| Metropolitan Projects ||| TR: Büyükşehir Projeleri ||| path: CHP social democrat ||| after: CHP's Economic Policy ||| does: builds infrastructure
+1205 ||| New Industrial Facilities ||| TR: Yeni Sanayi Tesisleri ||| path: CHP social democrat ||| after: CHP's Economic Policy ||| does: -
+1206 ||| New Sugar Facilities ||| TR: Yeni Şeker Fabrikaları ||| path: CHP social democrat ||| after: New Industrial Facilities ||| does: builds industrial_complex
+1207 ||| Anatolian Military Industries ||| TR: Anadolu Askeri Sanayileri ||| path: CHP social democrat, AKP / democratic Turkey ||| after: New Industrial Facilities ||| does: war support 0.02; builds arms_factory
+1208 ||| Tank Factories ||| TR: Tank Fabrikaları ||| path: CHP social democrat, Saadet / Milli Gorus ||| after: Anatolian Military Industries ||| does: builds arms_factory
+1209 ||| Gun Factories ||| TR: Silah Fabrikaları ||| path: CHP social democrat, AKP / democratic Turkey ||| after: Tank Factories ||| does: builds arms_factory
+1210 ||| Armoured Supply Transport Factories ||| TR: Zırhlı İkmal Taşıtı Fabrikaları ||| path: CHP social democrat ||| after: Tank Factories ||| does: builds arms_factory
+1211 ||| Raman Oilfield ||| TR: Raman Petrol Sahası ||| path: CHP social democrat ||| after: New Industrial Facilities ||| does: PP 100
+1212 ||| Hakkari Oilfields ||| TR: Hakkari Petrol Sahaları ||| path: CHP social democrat ||| after: Raman Oilfield ||| does: builds fossil_powerplant
+1213 ||| Southern Oil Deposits ||| TR: Güney Petrol Yatakları ||| path: CHP social democrat ||| after: Hakkari Oilfields / Batman Oilfields ||| does: -
+1214 ||| Infrastructure Construction ||| TR: Altyapı İnşaatı ||| path: CHP social democrat ||| after: New Industrial Facilities ||| does: stability 0.02; builds infrastructure
+1215 ||| Muharrem İnce's Victory ||| TR: Muharrem İnce'nin Zaferi ||| path: CHP social democrat ||| after: Resignation of Deniz Baykal ||| does: stability 0.02
+1216 ||| Old-School Kemalism ||| TR: Eski Usul Kemalizm ||| path: CHP social democrat ||| after: Muharrem İnce's Victory ||| does: spirit "Old-School Kemalism"
+1217 ||| Purge Kılıçdaroğlu's Agents ||| TR: Kılıçdaroğlu'nun Adamlarını Temizle ||| path: CHP social democrat ||| after: Old-School Kemalism ||| does: PP -50; tooltip: Loses 1% Support (Relative Popularity).\n
+1218 ||| Kılıçdaroğlu's Victory ||| TR: Kılıçdaroğlu'nun Zaferi ||| path: CHP social democrat ||| after: Resignation of Deniz Baykal ||| does: stability 0.02
+1219 ||| Reform the Party ||| TR: Partiyi Reforme Et ||| path: CHP social democrat ||| after: Kılıçdaroğlu's Victory / Muharrem İnce's Victory ||| does: PP 75; stability -0.03; tooltip: Loses 1% Support (Relative Popularity).\n
+1220 ||| Direct Rule ||| TR: Doğrudan Yönetim ||| path: CHP social democrat ||| after: Old-School Kemalism / Reform the Party ||| does: PP 100; stability -0.01; tooltip: Loses 1% Support (Relative Popularity).\n
+1221 ||| Embrace the New Foreign Policy ||| TR: Yeni Dış Politikayı Benimse ||| path: CHP social democrat ||| after: Direct Rule / Purge Kılıçdaroğlu's Agents ||| does: PP 100; tooltip: The "Warmongering Nation" focus tree path will be unlocked.
+1222 ||| Destroy the Party's Inner Vatican System ||| TR: Parti İçindeki Vatikan Düzenini Yık ||| path: CHP social democrat ||| after: Kılıçdaroğlu's Victory ||| does: stability 0.01; tooltip: Gains 1% Support (Relative Popularity).\n
+1223 ||| A Social Democratic System ||| TR: Sosyal Demokrat Bir Düzen ||| path: CHP social democrat ||| after: Reform the Party / Destroy the Party's Inner Vatican System ||| does: PP 25; stability 0.02; tooltip: Gains 1% Support (Relative Popularity).\n
+1224 ||| Challenge the Opposition Within the Party ||| TR: Parti İçi Muhalefete Meydan Oku ||| path: CHP social democrat ||| after: Destroy the Party's Inner Vatican System ||| does: PP 50; stability -0.01; tooltip: Loses 1% Support (Relative Popularity).\n
+1225 ||| Kılıçdaroğlu's Emergency Powers ||| TR: Kılıçdaroğlu'nun Olağanüstü Yetkileri ||| path: CHP social democrat ||| after: A Social Democratic System / Challenge the Opposition Within the Party ||| does: spirit "Kılıçdaroğlu's Emergency Powers"; PP -25
+1226 ||| A Reliable Man ||| TR: Güvenilir Adam ||| path: CHP social democrat ||| after: Kılıçdaroğlu's Victory ||| does: spirit "Kılıçdaroğlu, the Reliable Man"
+1227 ||| New CHP Policies ||| TR: Yeni CHP Politikaları ||| path: CHP social democrat ||| after: A Reliable Man ||| does: PP 75; stability 0.01; tooltip: Gains 1% Support (Relative Popularity).\n
+1228 ||| We Are Not Here to Give Up! ||| TR: Buraya Pes Etmeye Gelmedik! ||| path: CHP social democrat ||| after: A Reliable Man ||| does: PP 25; war support 0.03; tooltip: Gains 1% Support (Relative Popularity).\n
+1229 ||| Prepare for the Last Wave ||| TR: Son Dalgaya Hazırlan ||| path: CHP social democrat ||| after: New CHP Policies / We Are Not Here to Give Up! ||| does: PP 100
+1230 ||| 2023 CHP Internal Elections ||| TR: 2023 CHP Kurultayı ||| path: CHP social democrat ||| after: Prepare for the Last Wave ||| does: PP 75; tooltip: Gains 1% Support (Relative Popularity).\n
+1231 ||| Mansur Yavaş's Victory ||| TR: Mansur Yavaş'ın Zaferi ||| path: CHP social democrat ||| after: 2023 CHP Internal Elections ||| does: spirit "The Turkish Media"; removes "Kılıçdaroğlu, the Reliable Man"; removes "Kılıçdaroğlu's Emergency Powers"; removes "The Turkish Media"; stability 0.05; tooltip: The "Warmongering Nation" focus tree path will be unlocked.
+1232 ||| Ekrem İmamoğlu's Victory ||| TR: Ekrem İmamoğlu'nun Zaferi ||| path: CHP social democrat ||| after: 2023 CHP Internal Elections ||| does: spirit "The Turkish Media"; removes "Kılıçdaroğlu, the Reliable Man"; removes "Kılıçdaroğlu's Emergency Powers"; removes "The Turkish Media"; stability 0.05
+1233 ||| Reform the AYM ||| TR: AYM'yi Reforme Et ||| path: CHP social democrat ||| after: Ekrem İmamoğlu's Victory ||| does: PP 125
+1234 ||| Become the Man of the Nation ||| TR: Milletin Adamı Ol ||| path: CHP social democrat ||| after: Kılıçdaroğlu's Victory ||| does: -
+1235 ||| Kılıçdaroğlu's Book ||| TR: Kılıçdaroğlu'nun Kitabı ||| path: CHP social democrat ||| after: Become the Man of the Nation ||| does: PP 75; tooltip: Gains 1% Support (Relative Popularity).\n
+1236 ||| Strengthen the SSK ||| TR: SSK'yı Güçlendir ||| path: CHP social democrat ||| after: Embrace Anti-Corruption Laws / General Quality Inspection ||| does: spirit "The SSK's Systematic Work"; PP -50
+1237 ||| Health Insurance First ||| TR: Önce Sağlık Sigortası ||| path: CHP social democrat ||| after: New Healthcare System ||| does: spirit "Health Insurance"
+1238 ||| New Healthcare System ||| TR: Yeni Sağlık Sistemi ||| path: CHP social democrat ||| after: New Bağ-Kur System / Strengthen the SSK ||| does: -
+1239 ||| Buy New Medical Equipment from Europe ||| TR: Avrupa'dan Yeni Tıbbi Cihaz Satın Al ||| path: CHP social democrat ||| after: New Healthcare System ||| does: stability 0.02
+1240 ||| Medicine Supervision ||| TR: İlaç Denetimi ||| path: CHP social democrat ||| after: New Healthcare System ||| does: spirit "Medicine Supervision"
+1241 ||| EU-Turkish Agreement ||| TR: AB-Türkiye Anlaşması ||| path: CHP social democrat ||| after: Health Insurance First / Buy New Medical Equipment from Europe ||| does: -
+1242 ||| Adopt ILO Standards ||| TR: ILO Standartlarını Benimse ||| path: CHP social democrat ||| after: Strike Law ||| does: spirit "ILO Standards"
+1243 ||| Peace Between Employers and Employees ||| TR: İşveren ile Çalışan Arasında Barış ||| path: CHP social democrat ||| after: Strike Law ||| does: spirit "Peace Between Employers and Employees"
+1244 ||| An End to Wage Injustice ||| TR: Ücret Adaletsizliğine Son ||| path: CHP social democrat ||| after: Peace Between Employers and Employees / Adopt ILO Standards ||| does: stability 0.1
+1245 ||| Protect Workers from Inflation ||| TR: İşçileri Enflasyondan Koru ||| path: CHP social democrat ||| after: Adopt ILO Standards ||| does: spirit "Protecting Workers From Inflation"
+1246 ||| Hunt Down the Hoarders ||| TR: Stokçuların Peşine Düş ||| path: CHP social democrat ||| after: Peace Between Employers and Employees / Adopt ILO Standards ||| does: spirit "The Hoarders Hunt"
+1247 ||| Changes to the Education System ||| TR: Eğitim Sisteminde Değişiklikler ||| path: CHP social democrat ||| after: - ||| does: PP 50
+1248 ||| Kemalist Education System ||| TR: Kemalist Eğitim Sistemi ||| path: CHP social democrat ||| after: Changes to the Education System ||| does: spirit "Kemalist Education System"
+1249 ||| Kemalist Nationalism ||| TR: Kemalist Milliyetçilik ||| path: CHP social democrat, MHP / Grey Wolves nationalist ||| after: Kemalist Education System / Equal Education ||| does: spirit "The Ülkücü-Kemalist Model of Nationalism"; tooltip: 's opinion of  changes by +3%.\n
+1250 ||| Kemalist Institutions ||| TR: Kemalist Kurumlar ||| path: CHP social democrat ||| after: Kemalist Education System / School Scholarships ||| does: spirit "Kemalist Institutions"
+1251 ||| Equal Education ||| TR: Eşit Eğitim ||| path: CHP social democrat ||| after: Changes to the Education System ||| does: stability 0.03
+1252 ||| School Scholarships ||| TR: Okul Bursları ||| path: CHP social democrat ||| after: Changes to the Education System ||| does: spirit "School Scholarships"
+1253 ||| 12 Years of Compulsory Education ||| TR: 12 Yıllık Zorunlu Eğitim ||| path: CHP social democrat ||| after: Equal Education ||| does: PP 75; stability -0.05
+1254 ||| Schools with Foreign Language Support ||| TR: Yabancı Dil Destekli Okullar ||| path: CHP social democrat ||| after: School Scholarships ||| does: spirit "Schools with Foreign Language Support"
+1255 ||| The Language of Science ||| TR: Bilimin Dili ||| path: CHP social democrat ||| after: 12 Years of Compulsory Education / Kemalist Nationalism ||| does: spirit "A Language of Science"
+1256 ||| General Culture Programs ||| TR: Genel Kültür Programları ||| path: CHP social democrat ||| after: 12 Years of Compulsory Education ||| does: spirit "General Culture Programs"
+1257 ||| Literacy Mobilization ||| TR: Okuma-Yazma Seferberliği ||| path: CHP social democrat ||| after: 12 Years of Compulsory Education ||| does: spirit "The Mobilization of the Students"
+1258 ||| Vocational Education ||| TR: Mesleki Eğitim ||| path: CHP social democrat ||| after: Schools with Foreign Language Support ||| does: spirit "Vocational Education"
+1259 ||| Strengthen the TDK ||| TR: TDK'yı Güçlendir ||| path: CHP social democrat ||| after: Literacy Mobilization / General Culture Programs ||| does: spirit "TDK Progress..."

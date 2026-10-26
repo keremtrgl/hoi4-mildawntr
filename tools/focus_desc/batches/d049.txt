@@ -1,0 +1,60 @@
+2940 ||| Organize Saboteurs ||| TR: Sabotajcılar Örgütle ||| path: Islamist-Ottomanist ||| after: Sacrifices of the Ergenekon Trials ||| does: war support 0.02; tooltip: The Ottomanists will organize saboteurs to crush the current regime at the right time.
+2941 ||| Improve the Economic Situation ||| TR: Ekonomik Durumu İyileştir ||| path: Islamist-Ottomanist ||| after: Organize Funding Banks / Change The Bureaucracy ||| does: stability -0.15; tooltip: Gunfire and explosions begin to echo through the streets as the economic situation worsens.
+2942 ||| Publish Anti-Capitalist Propaganda ||| TR: Antikapitalist Propaganda Yayımla ||| path: Islamist-Ottomanist ||| after: Improve the Economic Situation ||| does: stability 0.03; war support 0.02
+2943 ||| The Great Islamic Revolution ||| TR: Büyük İslam Devrimi ||| path: Islamist-Ottomanist ||| after: Improve the Economic Situation ||| does: event "A Kemalist Rebellion Breaks Out"
+2944 ||| 0% Interest Rate Policy ||| TR: %0 Faiz Politikası ||| path: Islamist-Ottomanist ||| after: Improve the Economic Situation ||| does: spirit "Zero Interest Rate Policy"
+2945 ||| The Saviour Crescent ||| TR: Kurtarıcı Hilal ||| path: Islamist-Ottomanist ||| after: The Great Islamic Revolution ||| does: spirit "The Saving Crescent"
+2946 ||| Returning to the Traditions... ||| TR: Geleneklere Dönüş... ||| path: Islamist-Ottomanist ||| after: The Great Islamic Revolution ||| does: stability 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+2947 ||| Islamic Cooperationism ||| TR: İslami İşbirlikçilik ||| path: Islamist-Ottomanist ||| after: Returning to the Traditions... / The Saviour Crescent ||| does: spirit "Islamic Cooperationism"
+2948 ||| Crush the Communist Organizations ||| TR: Komünist Örgütleri Ez ||| path: Islamist-Ottomanist ||| after: Islamic Cooperationism ||| does: spirit "The Anti-Communist Doctrine"
+2949 ||| Send Diplomats to Hezbollah ||| TR: Hizbullah'a Diplomat Gönder ||| path: Islamist-Ottomanist ||| after: Islamic Cooperationism ||| does: spirit "Cooperation With Hezbollah"
+2950 ||| Send Diplomats to the İBDA-C ||| TR: İBDA-C'ye Diplomat Gönder ||| path: Islamist-Ottomanist ||| after: Islamic Cooperationism ||| does: spirit "Cooperation With IBDA-C"
+2951 ||| Confirm the Alliance with the İBDA-C ||| TR: İBDA-C ile İttifakı Onayla ||| path: Islamist-Ottomanist ||| after: Send Diplomats to the İBDA-C ||| does: -
+2952 ||| Ask Iran for Military Support ||| TR: İran'dan Askeri Destek İste ||| path: Islamist-Ottomanist ||| after: Send Diplomats to Hezbollah ||| does: -
+2953 ||| The End of the Republic ||| TR: Cumhuriyetin Sonu ||| path: Islamist-Ottomanist ||| after: Confirm the Alliance with the İBDA-C / Ask Iran for Military Support ||| does: event "The Death of the Republic"
+2954 ||| Repair The State ||| TR: Devleti Onar ||| path: Islamist-Ottomanist ||| after: The End of the Republic ||| does: spirit "Repairing the State..."
+2955 ||| National Coverage Action ||| TR: Ulusal Kapsama Eylemi ||| path: Islamist-Ottomanist ||| after: The End of the Republic ||| does: stability 0.03
+2956 ||| Remnants of the Kemalist Guardians ||| TR: Kemalist Muhafızların Kalıntıları ||| path: Islamist-Ottomanist ||| after: National Coverage Action / Repair The State ||| does: -
+2957 ||| Reform The Armed Forces ||| TR: Silahlı Kuvvetleri Reforme Et ||| path: Islamist-Ottomanist ||| after: Remnants of the Kemalist Guardians ||| does: PP 100
+2958 ||| Islamization Of The Armed Forces ||| TR: Silahlı Kuvvetlerin İslamileştirilmesi ||| path: Islamist-Ottomanist ||| after: Remnants of the Kemalist Guardians ||| does: -
+2959 ||| Shut Down the Kemalist Guardianship Colleges ||| TR: Kemalist Vesayet Kolejlerini Kapat ||| path: Islamist-Ottomanist ||| after: Reform The Armed Forces / Islamization Of The Armed Forces ||| does: -
+2960 ||| Clear Away the Kemalist Guardianship Remnants ||| TR: Kemalist Vesayet Kalıntılarını Temizle ||| path: Islamist-Ottomanist ||| after: Shut Down the Kemalist Guardianship Colleges ||| does: removes "Remnants of the Kemalist Guardians"
+2961 ||| Abolish the Republican Reforms ||| TR: Cumhuriyet Reformlarını Kaldır ||| path: Islamist-Ottomanist ||| after: Clear Away the Kemalist Guardianship Remnants / Replace Kemalist Institutions ||| does: PP 300; stability -0.05; tooltip: Abolishing the republican rules one by one will lead to instability in the future.
+2962 ||| Partial Return to the Ottoman Language ||| TR: Osmanlıcaya Kısmi Dönüş ||| path: Islamist-Ottomanist ||| after: Abolish the Republican Reforms ||| does: spirit "A Language Influenced by Ottoman Turkish"
+2963 ||| End Gender Equality ||| TR: Kadın-Erkek Eşitliğine Son Ver ||| path: Islamist-Ottomanist ||| after: Abolish the Republican Reforms ||| does: stability -0.15; tooltip: Changing the core equality system will bring protests and armed attacks.
+2964 ||| Fez Traditions ||| TR: Fes Gelenekleri ||| path: Islamist-Ottomanist ||| after: Abolish the Republican Reforms ||| does: spirit "Fez Traditions"
+2965 ||| Destroy the Statues ||| TR: Heykelleri Yık ||| path: Islamist-Ottomanist ||| after: Fez Traditions / End Gender Equality ||| does: spirit "The Destroyed Statue Industry"
+2966 ||| Replace Kemalist Institutions ||| TR: Kemalist Kurumları Değiştir ||| path: Islamist-Ottomanist ||| after: Shut Down the Kemalist Guardianship Colleges ||| does: spirit "Replaced Kemalist Institutions"
+2967 ||| Islamic Army Traditions ||| TR: İslami Ordu Gelenekleri ||| path: Islamist-Ottomanist ||| after: Shut Down the Kemalist Guardianship Colleges ||| does: spirit "Islamic Army Traditions"
+2968 ||| Destroy Economic Freedom ||| TR: Ekonomik Özgürlüğü Yok Et ||| path: Islamist-Ottomanist ||| after: End Gender Equality / Fez Traditions ||| does: spirit "Controlled Economic Freedom"
+2969 ||| A Political Answer ||| TR: Siyasi Bir Cevap ||| path: Islamist-Ottomanist ||| after: Destroy Economic Freedom / Destroy the Statues ||| does: PP 175; tooltip: The country will be united and its sectarian woes can be overcome.
+2970 ||| Return to the Ottomans ||| TR: Osmanlı'ya Dönüş ||| path: Islamist-Ottomanist ||| after: A Political Answer ||| does: PP 75; tooltip: Gains 5% Support (Relative Popularity).\n; tooltip: will be authorized to take over the government.
+2971 ||| İBDA-C Presence ||| TR: İBDA-C Varlığı ||| path: Islamist-Ottomanist ||| after: A Political Answer ||| does: PP -75; tooltip: Gains 5% Support (Relative Popularity).\n; tooltip: will be authorized to take over the government by illegal means.
+2972 ||| Plot the İBDA-C Coup ||| TR: İBDA-C Darbesini Planla ||| path: Islamist-Ottomanist ||| after: İBDA-C Presence ||| does: war support 0.03
+2973 ||| Purge the Iranian Hezbollah ||| TR: İran Hizbullahı'nı Temizle ||| path: Islamist-Ottomanist ||| after: Plot the İBDA-C Coup ||| does: removes "Alliance With Hezbollah"; war support 0.03
+2974 ||| Expand Radical Islamism ||| TR: Radikal İslamcılığı Yay ||| path: Islamist-Ottomanist ||| after: Purge the Iranian Hezbollah / A Second Islamic State ||| does: -
+2975 ||| A Second Islamic State ||| TR: İkinci Bir İslam Devleti ||| path: Islamist-Ottomanist ||| after: İBDA-C Presence ||| does: spirit "A Second Islamic State"
+2976 ||| Jihadist Barracks ||| TR: Cihatçı Kışlalar ||| path: Islamist-Ottomanist ||| after: Expand Radical Islamism ||| does: spirit "Jihadist Barracks"
+2977 ||| International Jihadists ||| TR: Uluslararası Cihatçılar ||| path: Islamist-Ottomanist ||| after: Expand Radical Islamism ||| does: spirit "Global Jihadists"
+2978 ||| Living with the Past ||| TR: Geçmişle Yaşamak ||| path: Islamist-Ottomanist ||| after: Return to the Ottomans ||| does: spirit "Traditional Ottoman Communities"
+2979 ||| Crush IBDA-C ||| TR: İBDA-C'yi Ez ||| path: Islamist-Ottomanist ||| after: Living with the Past ||| does: removes "Alliance With IBDA-C"; war support 0.03
+2980 ||| Oligarchic Assets ||| TR: Oligarşik Varlıklar ||| path: Islamist-Ottomanist ||| after: Return to the Ottomans ||| does: stability 0.02
+2981 ||| The New Ottoman Monarchy ||| TR: Yeni Osmanlı Monarşisi ||| path: Islamist-Ottomanist ||| after: Ottoman Public Speech / Embrace Ottoman Neutrality ||| does: event "The Ottomans Replace the Interim Government"; stability 0.05
+2982 ||| Ottoman Supporters' Group ||| TR: Osmanlı Destekçileri Grubu ||| path: Islamist-Ottomanist ||| after: Crush IBDA-C / Oligarchic Assets ||| does: -
+2983 ||| Ottoman Public Speech ||| TR: Osmanlı Halk Konuşması ||| path: Islamist-Ottomanist ||| after: Ottoman Supporters' Group ||| does: -
+2984 ||| Embrace Ottoman Neutrality ||| TR: Osmanlı Tarafsızlığını Benimse ||| path: Islamist-Ottomanist ||| after: Ottoman Supporters' Group ||| does: spirit "Ottoman Neutrality"
+2985 ||| The İBDA-C State ||| TR: İBDA-C Devleti ||| path: Islamist-Ottomanist ||| after: International Jihadists / Jihadist Barracks ||| does: event "IBDA-C Overthrows the Interim Government"; stability 0.05
+2986 ||| Ottoman Political Questions ||| TR: Osmanlı Siyasi Meseleleri ||| path: Islamist-Ottomanist ||| after: The New Ottoman Monarchy ||| does: PP 75; stability 0.03
+2987 ||| Crown Orhan Osmanoğlu ||| TR: Orhan Osmanoğlu'nu Taç Giydir ||| path: Islamist-Ottomanist ||| after: Ottoman Political Questions ||| does: event "The Coronation of Orhan Osmanoğlu"
+2988 ||| Prepare the Palaces for the Monarchy ||| TR: Sarayları Monarşiye Hazırla ||| path: Islamist-Ottomanist ||| after: Ottoman Political Questions ||| does: PP 100; tooltip: Gains 2% Support (Relative Popularity).\n
+2989 ||| Reinstate The Ottoman Empire ||| TR: Osmanlı İmparatorluğu'nu Yeniden Kur ||| path: Islamist-Ottomanist ||| after: Prepare the Palaces for the Monarchy / Crown Orhan Osmanoğlu ||| does: stability 0.1
+2990 ||| Keep the Parliament ||| TR: Meclisi Koru ||| path: Islamist-Ottomanist ||| after: Reinstate The Ottoman Empire ||| does: spirit "Parliament Stays in Session"
+2991 ||| Abolish the Parliament ||| TR: Meclisi Kaldır ||| path: Islamist-Ottomanist ||| after: Reinstate The Ottoman Empire ||| does: spirit "Parliament Abolished"
+2992 ||| Divine Monarchical Rule ||| TR: İlahi Monarşi Yönetimi ||| path: Islamist-Ottomanist ||| after: Abolish the Parliament ||| does: stability -0.02; tooltip: Gains 5% Support (Relative Popularity).\n
+2993 ||| Wage War Against Liberal Freedom ||| TR: Liberal Özgürlüğe Karşı Savaş Aç ||| path: Islamist-Ottomanist ||| after: Abolish the Parliament ||| does: stability -0.05
+2994 ||| Fast Decision Staff ||| TR: Hızlı Karar Kadrosu ||| path: Islamist-Ottomanist ||| after: Divine Monarchical Rule / Wage War Against Liberal Freedom ||| does: spirit "Fast Decision Staff"
+2995 ||| Re-Establish the Parties ||| TR: Partileri Yeniden Kur ||| path: Islamist-Ottomanist ||| after: Keep the Parliament ||| does: stability 0.07; tooltip: The disbanded parties will be re-established.
+2996 ||| Withdraw from Parliamentary Intervention ||| TR: Meclise Müdahaleden Çekil ||| path: Islamist-Ottomanist ||| after: Keep the Parliament ||| does: PP -75; stability 0.05; tooltip: The armed forces will leave the parliament to prevent instability in it.
+2997 ||| Secure the Sultan's Power over the Parliament ||| TR: Padişahın Meclis Üzerindeki Gücünü Güvenceye Al ||| path: Islamist-Ottomanist ||| after: Re-Establish the Parties / Withdraw from Parliamentary Intervention ||| does: tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+2998 ||| Ottoman Constitution ||| TR: Osmanlı Anayasası ||| path: Islamist-Ottomanist ||| after: Fast Decision Staff / Secure the Sultan's Power over the Parliament ||| does: spirit "Ottoman Constitution"
+2999 ||| The Palace Question ||| TR: Saray Meselesi ||| path: Islamist-Ottomanist ||| after: Ottoman Constitution ||| does: stability 0.03; tooltip: Gains 2% Support (Relative Popularity).\n

@@ -1,0 +1,60 @@
+840 ||| Island Crisis ||| TR: Adalar Krizi ||| path: Ataturk returns (fiction) ||| after: Step into the Aegean Islands / Build New Forts ||| does: war goal/war on GRE
+841 ||| Buy American Infantry Weapons ||| TR: Amerikan Piyade Silahları Satın Al ||| path: Ataturk returns (fiction) ||| after: Mild American Cooperation ||| does: -
+842 ||| Buy American Armoured Weapons ||| TR: Amerikan Zırhlı Silahları Satın Al ||| path: Ataturk returns (fiction) ||| after: Buy American Infantry Weapons ||| does: -
+843 ||| Localize the American Weaponry ||| TR: Amerikan Silahlarını Yerlileştir ||| path: Ataturk returns (fiction) ||| after: Buy American Armoured Weapons / Buy American Artillery Weapons ||| does: spirit "Localizing American Weaponry"
+844 ||| Fully Localized Military Equipment ||| TR: Tamamen Yerli Askeri Teçhizat ||| path: Ataturk returns (fiction) ||| after: Localize the American Weaponry ||| does: war support 0.03
+845 ||| Buy American Artillery Weapons ||| TR: Amerikan Topçu Silahları Satın Al ||| path: Ataturk returns (fiction) ||| after: Buy American Infantry Weapons ||| does: -
+846 ||| Claims on Batumi ||| TR: Batum Üzerindeki Talepler ||| path: Ataturk returns (fiction) ||| after: Transcaucasian Policies ||| does: event "Turkey Demands Batumi"
+847 ||| Prepare Georgia for Defence ||| TR: Gürcistan'ı Savunmaya Hazırla ||| path: Ataturk returns (fiction) ||| after: Claims on Batumi ||| does: builds arms_factory
+848 ||| Create the Azerbaijani Corridor ||| TR: Azerbaycan Koridorunu Kur ||| path: Ataturk returns (fiction) ||| after: Prepare Georgia for Defence / Militarize The Azerbaijanis ||| does: event "Turkey Wants to Partition Armenia"
+849 ||| Militarize The Azerbaijanis ||| TR: Azerbaycanlıları Silahlandır ||| path: Ataturk returns (fiction) ||| after: Claims on Batumi ||| does: builds arms_factory
+850 ||| Unite Against the Unrightful ||| TR: Haksızlara Karşı Birleş ||| path: Ataturk returns (fiction) ||| after: Create the Azerbaijani Corridor ||| does: PP 25
+851 ||| Modern Middle Eastern Peace Deals ||| TR: Modern Orta Doğu Barış Anlaşmaları ||| path: Ataturk returns (fiction) ||| after: Save the Turks in Iran / Unite Against the Unrightful ||| does: event "The Question of a Modern Saadabad"
+852 ||| Support Ethiopia ||| TR: Etiyopya'yı Destekle ||| path: Ataturk returns (fiction) ||| after: Invincible Navy / Intervene in Libya ||| does: builds industrial_complex
+853 ||| A Second Cyprus Intervention ||| TR: İkinci Kıbrıs Müdahalesi ||| path: Ataturk returns (fiction) ||| after: Island Crisis ||| does: war goal/war on CYP
+854 ||| Increase the MİT's Capabilities ||| TR: MİT'in Kabiliyetlerini Artır ||| path: Ataturk returns (fiction) ||| after: Strengthen the MİT ||| does: spirit "Expanded MİT Capacity"
+855 ||| Anti-Gülenist Reform ||| TR: Gülenist Karşıtı Reform ||| path: Ataturk returns (fiction) ||| after: Start the Gülenist Investigation in the Army ||| does: -
+856 ||| An End to the Gülenist Organization ||| TR: Gülenist Örgüte Son ||| path: Ataturk returns (fiction) ||| after: Anti-Gülenist Reform / Purge the Gülenists ||| does: removes "The Gülen Movement's Partial Influence Over the Republic"
+857 ||| Open Cultural/Historic Lands ||| TR: Kültürel ve Tarihî Alanları Aç ||| path: Ataturk returns (fiction) ||| after: Enrich the Quality of Life ||| does: spirit "Turkish Culture"
+858 ||| Visionary Kemalist Nationalism ||| TR: Vizyoner Kemalist Milliyetçilik ||| path: Ataturk returns (fiction) ||| after: Increase the MİT's Deception Capabilities / Increase the MİT's Capabilities ||| does: spirit "Kemalist Nationalism"; removes "Expanded MİT Capacity"; removes "Expanded MİT Decryption"; "Milli İstihbarat Teşkilatı" -> "A Strengthened MİT"
+859 ||| Principle: Populism ||| TR: İlke: Halkçılık ||| path: Ataturk returns (fiction) ||| after: Visionary Kemalist Nationalism / Visionary Reformation ||| does: PP 75; stability 0.03; tooltip: Unlocks the populism Decisions  in the Six Arrows decision category.
+860 ||| Principle: Revolutionism ||| TR: İlke: Devrimcilik ||| path: Ataturk returns (fiction) ||| after: Visionary Kemalist Nationalism ||| does: PP 75; tooltip: Unlocks the revolutionism Decisions  in the Six Arrows decision category.
+861 ||| Sumerian Turkey ||| TR: Sümerli Türkiye ||| path: Ataturk returns (fiction) ||| after: Open Cultural/Historic Lands / Open New Museums ||| does: spirit "Sumerian Turkey"
+862 ||| Create a New Parliament ||| TR: Yeni Bir Meclis Kur ||| path: Ataturk returns (fiction) ||| after: Winds of Political Revolution ||| does: PP 125; stability 0.05; tooltip: Atatürk redesigns the parliament and its broken system.
+863 ||| Create a New Bureaucracy ||| TR: Yeni Bir Bürokrasi Kur ||| path: Ataturk returns (fiction) ||| after: Winds of Political Revolution ||| does: PP 125; stability 0.05; tooltip: Atatürk redesigns the bureaucracy and its broken system.
+864 ||| Winds of Political Revolution ||| TR: Siyasi Devrim Rüzgârları ||| path: Ataturk returns (fiction) ||| after: Principle: Revolutionism ||| does: spirit "corruption_level_01"; stability 0.05
+865 ||| New Competition Laws ||| TR: Yeni Rekabet Yasaları ||| path: Ataturk returns (fiction) ||| after: Principle: Revolutionism ||| does: spirit "Turkish Economic Competition"
+866 ||| Protect Social Media ||| TR: Sosyal Medyayı Koru ||| path: Ataturk returns (fiction) ||| after: Principle: Revolutionism ||| does: spirit "Protected Free Media"
+867 ||| Rational Politics ||| TR: Rasyonel Siyaset ||| path: Ataturk returns (fiction) ||| after: Create a New Bureaucracy / Create a New Parliament ||| does: spirit "Rational Values"
+868 ||| Speed Up the Natural Transformation ||| TR: Doğal Dönüşümü Hızlandır ||| path: Ataturk returns (fiction) ||| after: Rational Politics ||| does: spirit "The Natural Transformation"
+869 ||| Increase the Country's Wisdom ||| TR: Ülkenin Bilgeliğini Artır ||| path: Ataturk returns (fiction) ||| after: Rational Politics ||| does: spirit "National Wisdom"
+870 ||| Help the Poor ||| TR: Yoksullara Yardım Et ||| path: Ataturk returns (fiction) ||| after: Principle: Populism ||| does: PP 25; stability 0.03
+871 ||| Lower Unemployment ||| TR: İşsizliği Düşür ||| path: Ataturk returns (fiction) ||| after: Principle: Populism ||| does: spirit "The Employment Missions"
+872 ||| Create a New Job Office ||| TR: Yeni Bir İş Bulma Ofisi Kur ||| path: Ataturk returns (fiction) ||| after: Lower Unemployment / Help the Poor ||| does: builds infrastructure, offices
+873 ||| Support Unionization ||| TR: Sendikalaşmayı Destekle ||| path: Ataturk returns (fiction) ||| after: Create a New Job Office ||| does: spirit "The Unionization Campaign"
+874 ||| Push New Environmental Laws ||| TR: Yeni Çevre Yasalarını Zorla ||| path: Ataturk returns (fiction) ||| after: Lower Unemployment ||| does: PP 100
+875 ||| New Dams ||| TR: Yeni Barajlar ||| path: Ataturk returns (fiction) ||| after: Push New Environmental Laws ||| does: spirit "Hydroelectricity"; builds synthetic_refinery
+876 ||| New Wind Farms ||| TR: Yeni Rüzgâr Santralleri ||| path: Ataturk returns (fiction) ||| after: Push New Environmental Laws ||| does: spirit "Wind Energy"; builds synthetic_refinery
+877 ||| Negotiate with the Communists ||| TR: Komünistlerle Müzakere Et ||| path: Ataturk returns (fiction) ||| after: Support Unionization ||| does: stability 0.02; tooltip: Gains 1% Support (Relative Popularity).\n
+878 ||| Strike Law ||| TR: Grev Kanunu ||| path: Ataturk returns (fiction), CHP social democrat ||| after: Support Unionization ||| does: spirit "Strike Law"
+879 ||| Sign the International ILO Deal ||| TR: Uluslararası ILO Anlaşmasını İmzala ||| path: Ataturk returns (fiction) ||| after: Help the Poor ||| does: spirit "ILO Standards"
+880 ||| Family Laws ||| TR: Aile Yasaları ||| path: Ataturk returns (fiction) ||| after: Sign the International ILO Deal ||| does: spirit "social_06"; PP 25
+881 ||| Rise of General Happiness ||| TR: Genel Mutluluğun Yükselişi ||| path: Ataturk returns (fiction) ||| after: Sign the International ILO Deal ||| does: stability 0.05; tooltip: Gains 1% Support (Relative Popularity).\n
+882 ||| A Working Nation ||| TR: Çalışan Bir Millet ||| path: Ataturk returns (fiction) ||| after: Strike Law / Negotiate with the Communists ||| does: spirit "A Working State"
+883 ||| Principle: Republicanism ||| TR: İlke: Cumhuriyetçilik ||| path: Ataturk returns (fiction) ||| after: A Working Nation ||| does: stability 0.05; tooltip: Unlocks the republicanism Decisions  in the Six Arrows decision category.
+884 ||| Strengthen the Foundations of Democracy ||| TR: Demokrasinin Temellerini Güçlendir ||| path: Ataturk returns (fiction) ||| after: Principle: Republicanism ||| does: spirit "bureau_05"; PP 25
+885 ||| A Multi-Party State ||| TR: Çok Partili Bir Devlet ||| path: Ataturk returns (fiction) ||| after: Strengthen the Foundations of Democracy / Finish Off the Bad Political Figures ||| does: PP 25; stability 0.02; tooltip: Gains 1% Support (Relative Popularity).\n
+886 ||| Lower the Threshold ||| TR: Barajı Düşür ||| path: Ataturk returns (fiction) ||| after: Strengthen the Foundations of Democracy / Finish Off the Bad Political Figures ||| does: stability 0.05; tooltip: The election threshold will be set to 5%
+887 ||| Liberalize the Country ||| TR: Ülkeyi Liberalleştir ||| path: Ataturk returns (fiction) ||| after: Strengthen the Foundations of Democracy ||| does: PP 250
+888 ||| Military Protection Of Democracy ||| TR: Demokrasinin Askeri Koruması ||| path: Ataturk returns (fiction) ||| after: Liberalize the Country / A Multi-Party State ||| does: tooltip: and  unite against anti-Kemalist groups. (The army's influence in the government will be restored to defend Kemalism.)\n
+889 ||| A Free YSK ||| TR: Özgür Bir YSK ||| path: Ataturk returns (fiction) ||| after: A Multi-Party State / Lower the Threshold ||| does: spirit "An Independent YSK"
+890 ||| Redesign the Constitutional Court ||| TR: Anayasa Mahkemesi'ni Yeniden Tasarla ||| path: Ataturk returns (fiction) ||| after: A Free YSK / Military Protection Of Democracy ||| does: spirit "The Reorganized AYM"
+891 ||| Finish Off the Bad Political Figures ||| TR: Kötü Siyasi Figürlerin İşini Bitir ||| path: Ataturk returns (fiction) ||| after: Principle: Republicanism ||| does: PP -50; stability 0.02
+892 ||| A State Of Realism ||| TR: Gerçekçilik Devleti ||| path: Ataturk returns (fiction) ||| after: To Turkey's Bright Future! ||| does: spirit "Realist Values"
+893 ||| It Is Time for Highly Progressive Projects ||| TR: Son Derece İlerici Projelerin Zamanı Geldi ||| path: Ataturk returns (fiction) ||| after: A State Of Realism / Kemalist Innovation ||| does: PP 50; stability 0.05
+894 ||| Launch the Nuclear Project ||| TR: Nükleer Projeyi Başlat ||| path: Ataturk returns (fiction) ||| after: It Is Time for Highly Progressive Projects ||| does: spirit "The Turkish Nuclear Energy Project"
+895 ||| Launch the Space Project ||| TR: Uzay Projesini Başlat ||| path: Ataturk returns (fiction) ||| after: It Is Time for Highly Progressive Projects ||| does: PP 100
+896 ||| Cooperate with the Astronauts ||| TR: Astronotlarla İşbirliği Yap ||| path: Ataturk returns (fiction) ||| after: Launch the Space Project ||| does: PP 100
+897 ||| Cooperate with the Cosmonauts ||| TR: Kozmonotlarla İşbirliği Yap ||| path: Ataturk returns (fiction) ||| after: Launch the Space Project ||| does: PP 100
+898 ||| Start Space Mining ||| TR: Uzay Madenciliğini Başlat ||| path: Ataturk returns (fiction) ||| after: Cooperate with the Cosmonauts / Cooperate with the Astronauts ||| does: -
+899 ||| The Space Intel ||| TR: Uzay İstihbaratı ||| path: Ataturk returns (fiction) ||| after: Start Space Mining ||| does: spirit "Space Intelligence"

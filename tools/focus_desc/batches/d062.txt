@@ -1,0 +1,60 @@
+3720 ||| Middle Eastern Working Cooperation ||| TR: Orta Doğu Çalışma İşbirlikleri ||| path: TKP communist ||| after: Counter the Greater Middle East Project ||| does: -
+3721 ||| Formalize the Middle Eastern Alliance ||| TR: Orta Doğu İttifakını Resmîleştir ||| path: TKP communist ||| after: Counter the Greater Middle East Project ||| does: -
+3722 ||| Anti-US Cooperation ||| TR: ABD Karşıtı İşbirliği ||| path: TKP communist ||| after: Middle Eastern Working Cooperation ||| does: war goal/war on USA
+3723 ||| Bomb the Pentagon ||| TR: Pentagon'u Bombala ||| path: TKP communist ||| after: Anti-US Cooperation ||| does: war support -0.02
+3724 ||| Sector Europe ||| TR: Avrupa Sektörü ||| path: TKP communist ||| after: Formalize the Middle Eastern Alliance ||| does: war goal/war on GER; war goal/war on FRA; war goal/war on ENG; war goal/war on SPR; war goal/war on POR; war goal/war on GRE
+3725 ||| The United Front ||| TR: Birleşik Cephe ||| path: TKP communist ||| after: Strengthen the Millî İstihbarat Teşkilatı ||| does: event "The United Front"
+3726 ||| Victory Is Ours! ||| TR: Zafer Bizim! ||| path: TKP communist ||| after: Islamic Riots / Bomb New York ||| does: war support 0.1
+3727 ||| The Original Communists ||| TR: Asıl Komünistler ||| path: TKP communist ||| after: TKP's Victory ||| does: PP 100; tooltip: Gains 5% Support (Relative Popularity).\n
+3728 ||| Peace with the Leftist Organizations ||| TR: Sol Örgütlerle Barış ||| path: TKP communist ||| after: The Original Communists ||| does: spirit "Cooperation With Leftist Organizations"
+3729 ||| Secure Loyal Unions ||| TR: Sadık Sendikalar Sağla ||| path: TKP communist ||| after: The Original Communists ||| does: spirit "Loyal Unions"
+3730 ||| Powerful Turkish Communism ||| TR: Güçlü Türk Komünizmi ||| path: TKP communist ||| after: Secure Loyal Unions / Peace with the Leftist Organizations ||| does: stability 0.03; tooltip: Gains 5% Support (Relative Popularity).\n
+3731 ||| Morally Energetic State ||| TR: Ahlaken Enerjik Devlet ||| path: TKP communist ||| after: Powerful Turkish Communism ||| does: stability 0.03; tooltip: Gains 2% Support (Relative Popularity).\n
+3732 ||| Stabilization Act ||| TR: İstikrar Yasası ||| path: TKP communist ||| after: Morally Energetic State ||| does: spirit "The Stabilization of Turkey"
+3733 ||| Peace Be Upon Us ||| TR: Üzerimize Barış Olsun ||| path: TKP communist ||| after: Morally Energetic State ||| does: spirit "A Peaceful Solution"
+3734 ||| The Three Pillars of the State ||| TR: Devletin Üç Temel Direği ||| path: TKP communist ||| after: Morally Energetic State ||| does: PP 125
+3735 ||| Support the Workers... ||| TR: İşçileri Destekle... ||| path: TKP communist ||| after: The Three Pillars of the State ||| does: spirit "Workers in Action"
+3736 ||| Support the Peasants... ||| TR: Köylüleri Destekle... ||| path: TKP communist ||| after: The Three Pillars of the State ||| does: spirit "Peasants in Action"
+3737 ||| Support the Farmers... ||| TR: Çiftçileri Destekle... ||| path: TKP communist ||| after: The Three Pillars of the State ||| does: spirit "Farmers in Action"
+3738 ||| Anti-Coup Policies ||| TR: Darbe Karşıtı Politikalar ||| path: TKP communist ||| after: Support the Farmers... / Support the Peasants... ||| does: PP 100; war support 0.03
+3739 ||| Dismantle the Army's Structural Power ||| TR: Ordunun Yapısal Gücünü Dağıt ||| path: TKP communist ||| after: Anti-Coup Policies ||| does: stability -0.03; war support -0.03
+3740 ||| Defeat EMEP's Coup Attempt ||| TR: EMEP'in Darbe Girişimini Püskürt ||| path: TKP communist ||| after: Abolish the Military Institutions / Dismantle the Army's Structural Power ||| does: event "The EMEP's Coup Attempt Has Failed"; tooltip: If this is not achieved within 7 years, the coup attempt will succeed.
+3741 ||| Abolish the Military Institutions ||| TR: Askeri Kurumları Kaldır ||| path: TKP communist ||| after: Anti-Coup Policies ||| does: stability -0.07
+3742 ||| Military Secularism ||| TR: Askeri Laiklik ||| path: TKP communist ||| after: Anti-Coup Policies ||| does: spirit "Military Secularism Achieved"
+3743 ||| Diyanet Reform ||| TR: Diyanet Reformu ||| path: TKP communist ||| after: Defeat EMEP's Coup Attempt ||| does: -
+3744 ||| Clash with the Ulema ||| TR: Ulemayla Çatış ||| path: TKP communist ||| after: Diyanet Reform ||| does: -
+3745 ||| Deal with the Sharia ||| TR: Şeriatla Hesaplaş ||| path: TKP communist ||| after: Diyanet Reform ||| does: PP -75; stability 0.05
+3746 ||| Communist Colleges! ||| TR: Komünist Kolejler! ||| path: TKP communist ||| after: Defeat EMEP's Coup Attempt ||| does: spirit "Communist Colleges"
+3747 ||| Achieve a Collective Society ||| TR: Kolektif Bir Toplum Kur ||| path: TKP communist ||| after: Deal with the Sharia / Clash with the Ulema ||| does: spirit "A Collectivist Society"
+3748 ||| Communist Science ||| TR: Komünist Bilim ||| path: TKP communist ||| after: Communist Colleges! ||| does: stability 0.03; tooltip: Gains 5% Support (Relative Popularity).\n
+3749 ||| Communist Scientific Community ||| TR: Komünist Bilim Camiası ||| path: TKP communist ||| after: Communist Colleges! ||| does: spirit "The Communist Scientific Community"
+3750 ||| Agricultural Act ||| TR: Tarım Kanunu ||| path: TKP communist ||| after: Achieve a Collective Society ||| does: spirit "The Agricultural Action Plan"
+3751 ||| Buy New Livestock ||| TR: Yeni Hayvanlar Satın Al ||| path: TKP communist ||| after: Agricultural Act ||| does: stability 0.03
+3752 ||| Tractor Expansion ||| TR: Traktör Yaygınlaştırması ||| path: TKP communist ||| after: Agricultural Act ||| does: -
+3753 ||| Modernize The Tractors ||| TR: Traktörleri Modernleştir ||| path: TKP communist ||| after: Tractor Expansion / Buy New Livestock ||| does: -
+3754 ||| The Union Culture ||| TR: Sendika Kültürü ||| path: TKP communist ||| after: Achieve a Collective Society ||| does: -
+3755 ||| Freedom For Unions ||| TR: Sendikalara Özgürlük ||| path: TKP communist ||| after: The Union Culture ||| does: -
+3756 ||| Bring the Unions into Parliament ||| TR: Sendikaları Meclise Taşı ||| path: TKP communist ||| after: The Union Culture ||| does: stability 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+3757 ||| Eight Hours of Work ||| TR: Sekiz Saatlik İş ||| path: TKP communist ||| after: Bring the Unions into Parliament / Freedom For Unions ||| does: spirit "The Eight-Hour Workday"
+3758 ||| Weekend Holiday Culture ||| TR: Hafta Sonu Tatil Kültürü ||| path: TKP communist ||| after: The Union Culture / Agricultural Act ||| does: spirit "The Weekend Holiday"
+3759 ||| Freedom for Workers ||| TR: İşçilere Özgürlük ||| path: TKP communist ||| after: Weekend Holiday Culture ||| does: stability 0.05
+3760 ||| Finish the General Reforms ||| TR: Genel Reformları Tamamla ||| path: TKP communist ||| after: Eight Hours of Work / Modernize The Tractors ||| does: PP 125
+3761 ||| Seven-Year Long-Term Plan ||| TR: Yedi Yıllık Uzun Vadeli Plan ||| path: TKP communist ||| after: Finish the General Reforms ||| does: PP 125; stability 0.03
+3762 ||| Expand the Military Industries ||| TR: Askeri Sanayileri Genişlet ||| path: TKP communist ||| after: Seven-Year Long-Term Plan ||| does: builds arms_factory
+3763 ||| Culture of Civilian Development ||| TR: Sivil Kalkınma Kültürü ||| path: TKP communist ||| after: Expand the Civilian Industries ||| does: builds industrial_complex
+3764 ||| Open the Kayseri Industrial Factory ||| TR: Kayseri Sanayi Fabrikasını Aç ||| path: TKP communist ||| after: Expand the Civilian Industries ||| does: builds industrial_complex
+3765 ||| Open the Sivas Industrial Factory ||| TR: Sivas Sanayi Fabrikasını Aç ||| path: TKP communist ||| after: Expand the Civilian Industries ||| does: builds industrial_complex
+3766 ||| Open the Adana Industrial Factories ||| TR: Adana Sanayi Fabrikalarını Aç ||| path: TKP communist ||| after: Open the Sivas Industrial Factory / Culture of Civilian Development ||| does: builds industrial_complex
+3767 ||| Open the Ankara Industrial Factories ||| TR: Ankara Sanayi Fabrikalarını Aç ||| path: TKP communist ||| after: Open the Sivas Industrial Factory / Culture of Civilian Development ||| does: builds industrial_complex
+3768 ||| General Civilian Development ||| TR: Genel Sivil Kalkınma ||| path: TKP communist ||| after: Open the Ankara Industrial Factories / Open the Adana Industrial Factories ||| does: builds industrial_complex
+3769 ||| The Great Collectivism ||| TR: Büyük Kolektivizm ||| path: TKP communist ||| after: General Civilian Development / General Military Development ||| does: -
+3770 ||| Open the Adana Military Factory ||| TR: Adana Askeri Fabrikasını Aç ||| path: TKP communist ||| after: Expand the Military Industries ||| does: builds industrial_complex
+3771 ||| Open the İzmir Military Factory ||| TR: İzmir Askeri Fabrikasını Aç ||| path: TKP communist ||| after: Expand the Military Industries ||| does: builds industrial_complex
+3772 ||| Open the Istanbul Military Factories ||| TR: İstanbul Askeri Fabrikalarını Aç ||| path: TKP communist ||| after: Open the Adana Military Factory / Expand the Military Industries ||| does: builds industrial_complex
+3773 ||| Open the Samsun Military Factories ||| TR: Samsun Askeri Fabrikalarını Aç ||| path: TKP communist ||| after: Open the İzmir Military Factory / Expand the Military Industries ||| does: builds industrial_complex
+3774 ||| General Military Development ||| TR: Genel Askeri Kalkınma ||| path: TKP communist ||| after: Open the Samsun Military Factories / Open the Istanbul Military Factories ||| does: builds arms_factory
+3775 ||| General War Preparation ||| TR: Genel Savaş Hazırlığı ||| path: TKP communist ||| after: The Great Collectivism ||| does: war support 0.05
+3776 ||| Disband Neutrality ||| TR: Tarafsızlığı Kaldır ||| path: TKP communist ||| after: General War Preparation ||| does: spirit "intervention_global_interventionism"
+3777 ||| Power of the Comrades ||| TR: Yoldaşların Gücü ||| path: TKP communist ||| after: General War Preparation ||| does: -
+3778 ||| Prepare for the Coming Violence ||| TR: Gelecek Şiddete Hazırlan ||| path: TKP communist ||| after: General War Preparation ||| does: spirit "drafted_women"
+3779 ||| Crush Kurdistan ||| TR: Kürdistan'ı Ez ||| path: TKP communist ||| after: Prepare for the Coming Violence / Power of the Comrades ||| does: war goal/war on KUR

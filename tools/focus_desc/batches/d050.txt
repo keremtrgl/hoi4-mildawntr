@@ -1,0 +1,60 @@
+3000 ||| Topkapı Palace ||| TR: Topkapı Sarayı ||| path: Islamist-Ottomanist ||| after: The Palace Question ||| does: stability 0.1; builds arms_factory, dockyard, industrial_complex; tooltip: Gains 5% Support (Relative Popularity).\n
+3001 ||| Dolmabahçe Palace ||| TR: Dolmabahçe Sarayı ||| path: Islamist-Ottomanist ||| after: The Palace Question ||| does: stability 0.1; builds arms_factory, dockyard, industrial_complex; tooltip: Gains 5% Support (Relative Popularity).\n
+3002 ||| Yıldız Palace ||| TR: Yıldız Sarayı ||| path: Islamist-Ottomanist ||| after: The Palace Question ||| does: stability 0.05; builds arms_factory, industrial_complex; tooltip: Gains 5% Support (Relative Popularity).\n
+3003 ||| Küçüksu Palace ||| TR: Küçüksu Kasrı ||| path: Islamist-Ottomanist ||| after: The Palace Question ||| does: stability 0.07; builds industrial_complex; tooltip: Gains 5% Support (Relative Popularity).\n
+3004 ||| Beylerbeyi Palace ||| TR: Beylerbeyi Sarayı ||| path: Islamist-Ottomanist ||| after: The Palace Question ||| does: stability 0.1; builds arms_factory, dockyard, industrial_complex; tooltip: Gains 5% Support (Relative Popularity).\n
+3005 ||| Formalize the New Ottoman System ||| TR: Yeni Osmanlı Düzenini Resmîleştir ||| path: Islamist-Ottomanist ||| after: Küçüksu Palace / Beylerbeyi Palace ||| does: stability 0.05
+3006 ||| Plans Against the PKK ||| TR: PKK'ya Karşı Planlar ||| path: Islamist-Ottomanist ||| after: Formalize the New Ottoman System ||| does: war support 0.03
+3007 ||| Plans Against the Gülenist Organization ||| TR: Gülenist Örgüte Karşı Planlar ||| path: Islamist-Ottomanist ||| after: Formalize the New Ottoman System ||| does: spirit "The Gülen Movement's Very Low Influence Over the Republic"; war support 0.03; tooltip: If this is not achieved by 2016, the Gülen movement and its forces will be able to launch a coup attempt to seize the state.
+3008 ||| Shell the PKK Camps ||| TR: PKK Kamplarını Topa Tut ||| path: Islamist-Ottomanist ||| after: Plans Against the PKK ||| does: tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+3009 ||| Islamize the Kurds ||| TR: Kürtleri İslamileştir ||| path: Islamist-Ottomanist ||| after: Plans Against the PKK ||| does: spirit "The Islamization of the Kurds"
+3010 ||| Islamic Unity of Turks and Kurds ||| TR: Türklerin ve Kürtlerin İslami Birliği ||| path: Islamist-Ottomanist ||| after: Shell the PKK Camps / Islamize the Kurds ||| does: stability 0.05; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+3011 ||| Finish Off the PKK ||| TR: PKK'nın İşini Bitir ||| path: Islamist-Ottomanist ||| after: Islamic Unity of Turks and Kurds / Invest in the East ||| does: -
+3012 ||| Invest in the East ||| TR: Doğu'ya Yatırım Yap ||| path: Islamist-Ottomanist ||| after: Islamize the Kurds / Shell the PKK Camps ||| does: builds industrial_complex; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+3013 ||| Wipe Out the PKK Remnants ||| TR: PKK Kalıntılarını Yok Et ||| path: Islamist-Ottomanist ||| after: Shell the PKK Camps ||| does: tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+3014 ||| Start Detaining Gülenists ||| TR: Gülenistleri Gözaltına Almaya Başla ||| path: Islamist-Ottomanist ||| after: Plans Against the Gülenist Organization ||| does: -
+3015 ||| Ensure the Mosques' Loyalty to the State ||| TR: Camilerin Devlete Sadakatini Sağla ||| path: Islamist-Ottomanist ||| after: Plans Against the Gülenist Organization ||| does: -
+3016 ||| Ban the Gülen Organization ||| TR: Gülen Örgütünü Yasakla ||| path: Islamist-Ottomanist ||| after: Ensure the Mosques' Loyalty to the State / Start Detaining Gülenists ||| does: -
+3017 ||| Declare a Fatwa Against the Gülenists ||| TR: Gülenistlere Karşı Fetva İlan Et ||| path: Islamist-Ottomanist ||| after: Ensure the Mosques' Loyalty to the State / Start Detaining Gülenists ||| does: event "The Anti-Gülenist Fatwa Is Declared"
+3018 ||| Foreign Approach ||| TR: Dış Yaklaşım ||| path: Islamist-Ottomanist ||| after: The New Ottoman Monarchy ||| does: PP 125
+3019 ||| Ottoman Imperialism ||| TR: Osmanlı Emperyalizmi ||| path: Islamist-Ottomanist ||| after: Foreign Approach ||| does: spirit "Ottoman Interventionism"
+3020 ||| Embrace Interventionism ||| TR: Müdahaleciliği Benimse ||| path: Islamist-Ottomanist ||| after: Ottoman Imperialism ||| does: removes "Ottoman Neutrality"
+3021 ||| Declaration of the Ottoman Jihad ||| TR: Osmanlı Cihadının İlanı ||| path: Islamist-Ottomanist ||| after: Ottoman Imperialism ||| does: event "Declaration of Islamic Jihad"
+3022 ||| Ottoman Expansion to the South ||| TR: Güney'e Osmanlı Yayılması ||| path: Islamist-Ottomanist ||| after: Declaration of the Ottoman Jihad / Embrace Interventionism ||| does: PP 75; war support 0.02
+3023 ||| Bring Syria Back into the Fold ||| TR: Suriye'yi Yeniden Saflarımıza Kat ||| path: Islamist-Ottomanist ||| after: Ottoman Expansion to the South ||| does: war goal/war on SYR
+3024 ||| Seize Iraq ||| TR: Irak'ı Ele Geçir ||| path: Islamist-Ottomanist ||| after: Pay the USA for Planned American Oil Extraction / Open New US Bases Across the Country ||| does: war goal/war on IRQ
+3025 ||| Ottoman-USA Oil Deal ||| TR: Osmanlı-ABD Petrol Anlaşması ||| path: Islamist-Ottomanist ||| after: Ottoman Expansion to the South ||| does: event "The Ottoman Empire Proposes an Oil-for-Troops Deal"
+3026 ||| Pay the USA for Planned American Oil Extraction ||| TR: Planlanan Amerikan Petrol Çıkarımı İçin ABD'ye Ödeme Yap ||| path: Islamist-Ottomanist ||| after: Ottoman-USA Oil Deal ||| does: stability -0.03
+3027 ||| Take Over Lebanon ||| TR: Lübnan'ı Ele Geçir ||| path: Islamist-Ottomanist ||| after: Bring Syria Back into the Fold ||| does: war goal/war on LEB
+3028 ||| The Israel Plan ||| TR: İsrail Planı ||| path: Islamist-Ottomanist ||| after: Purge Iran's Militants / Pay the USA for Planned American Oil Extraction ||| does: PP 150
+3029 ||| Purge Iran's Militants ||| TR: İran'ın Militanlarını Temizle ||| path: Islamist-Ottomanist ||| after: Bring Syria Back into the Fold ||| does: removes "Alliance With Hezbollah"; war support 0.03
+3030 ||| Expand the US Kuwait Oil Department ||| TR: ABD Kuveyt Petrol Departmanını Genişlet ||| path: Islamist-Ottomanist ||| after: Seize Iraq ||| does: war goal/war on KUW
+3031 ||| Open New US Bases Across the Country ||| TR: Ülke Genelinde Yeni ABD Üsleri Aç ||| path: Islamist-Ottomanist ||| after: Ottoman-USA Oil Deal ||| does: PP 100; stability -0.05
+3032 ||| Crush Israel ||| TR: İsrail'i Ez ||| path: Islamist-Ottomanist ||| after: The Israel Plan / Seize Iraq ||| does: war goal/war on ISR
+3033 ||| Seek Iran's Appeasement ||| TR: İran'ı Yatıştırmaya Çalış ||| path: Islamist-Ottomanist ||| after: Purge Iran's Militants / Take Over Lebanon ||| does: -
+3034 ||| Alliance With Iran ||| TR: İran ile İttifak ||| path: Islamist-Ottomanist ||| after: The Israel Plan / Seek Iran's Appeasement ||| does: war goal/war on ISR
+3035 ||| Send Diplomats To Pakistan ||| TR: Pakistan'a Diplomat Gönder ||| path: Islamist-Ottomanist ||| after: Seek Iran's Appeasement ||| does: -
+3036 ||| Press The Claim Of Suez ||| TR: Süveyş Üzerindeki Hakkı Dayat ||| path: Islamist-Ottomanist ||| after: Alliance With Iran / Crush Israel ||| does: war goal/war on EGY
+3037 ||| Revive the Saadabad Pact ||| TR: Sadabat Paktı'nı Canlandır ||| path: Islamist-Ottomanist ||| after: Send Diplomats To Pakistan / Alliance With Iran ||| does: -
+3038 ||| Revenge for 1917 ||| TR: 1917'nin İntikamı ||| path: Islamist-Ottomanist ||| after: Alliance With Iran / Crush Israel ||| does: spirit "The Anger of 1917"; war goal/war on SAU
+3039 ||| US Oil Extraction Fields ||| TR: ABD Petrol Çıkarma Sahaları ||| path: Islamist-Ottomanist ||| after: Expand the US Kuwait Oil Department ||| does: -
+3040 ||| Ottoman Cores in the South ||| TR: Güney'deki Osmanlı Toprakları ||| path: Islamist-Ottomanist ||| after: Revenge for 1917 / Press The Claim Of Suez ||| does: -
+3041 ||| Ottoman Expansion to the West and East ||| TR: Batı'ya ve Doğu'ya Osmanlı Yayılması ||| path: Islamist-Ottomanist ||| after: Ottoman Cores in the South ||| does: PP 75; war support 0.02
+3042 ||| Weaken NATO by Plotting Revolutions ||| TR: Devrimler Kışkırtarak NATO'yu Zayıflat ||| path: Islamist-Ottomanist ||| after: Ottoman Expansion to the West and East ||| does: PP 175; war support 0.03
+3043 ||| Immigrant Waves for Europe ||| TR: Avrupa'ya Göçmen Dalgaları ||| path: Islamist-Ottomanist ||| after: Weaken NATO by Plotting Revolutions ||| does: event "Waves of Migrants From the Ottomans"; stability -0.05
+3044 ||| Support European Radical Elements ||| TR: Avrupa'daki Radikal Unsurları Destekle ||| path: Islamist-Ottomanist ||| after: Weaken NATO by Plotting Revolutions ||| does: event "Armed Neo-Nazis Take Action"; stability -0.05
+3045 ||| Support Monarchist Movements in Europe ||| TR: Avrupa'daki Monarşist Hareketleri Destekle ||| path: Islamist-Ottomanist ||| after: Support European Radical Elements / Immigrant Waves for Europe ||| does: PP -100
+3046 ||| European Revolutionary Spring... ||| TR: Avrupa Devrim Baharı... ||| path: Islamist-Ottomanist ||| after: Support Monarchist Movements in Europe ||| does: event "Instability Spreads Across the Country"
+3047 ||| Crush the Main Enemy ||| TR: Baş Düşmanı Ez ||| path: Islamist-Ottomanist ||| after: European Revolutionary Spring... ||| does: war goal/war on GRE
+3048 ||| Restore Rumelia ||| TR: Rumeli'yi Geri Al ||| path: Islamist-Ottomanist ||| after: European Revolutionary Spring... ||| does: war goal/war on BUL
+3049 ||| Submit Muslim Europe ||| TR: Müslüman Avrupa'yı Boyun Eğdir ||| path: Islamist-Ottomanist ||| after: European Revolutionary Spring... ||| does: event "The Ottomans Want to Subjugate Muslim Europe"
+3050 ||| Create European Armed Units ||| TR: Avrupalı Silahlı Birlikler Kur ||| path: Islamist-Ottomanist ||| after: Submit Muslim Europe ||| does: PP 75
+3051 ||| Policy Of Russia ||| TR: Rusya Politikası ||| path: Islamist-Ottomanist ||| after: Ottoman Expansion to the West and East ||| does: PP 175
+3052 ||| Transcaucasia Policy ||| TR: Kafkasya Politikası ||| path: Islamist-Ottomanist ||| after: Ottoman Expansion to the West and East ||| does: PP 175
+3053 ||| Destroy the Serbian State ||| TR: Sırp Devletini Yok Et ||| path: Islamist-Ottomanist ||| after: Create European Armed Units / Speed Up Naval Shipments ||| does: war goal/war on SER
+3054 ||| Restore the Ottoman Principality of Wallachia ||| TR: Osmanlı Eflak Beyliğini Geri Getir ||| path: Islamist-Ottomanist ||| after: Restore Rumelia ||| does: war goal/war on ROM
+3055 ||| Speed Up Naval Shipments ||| TR: Deniz Sevkiyatlarını Hızlandır ||| path: Islamist-Ottomanist ||| after: Crush the Main Enemy ||| does: spirit "Mediterranean Naval Shipments"
+3056 ||| Long-Term Invasion Plans ||| TR: Uzun Vadeli İşgal Planları ||| path: Islamist-Ottomanist ||| after: On Our Own ||| does: spirit "Long-Term Invasion Planning"
+3057 ||| Ottoman War Machine ||| TR: Osmanlı Savaş Makinesi ||| path: Islamist-Ottomanist ||| after: On Our Own ||| does: spirit "The Turkish War Machine"; war support 0.03
+3058 ||| Crush Hungary ||| TR: Macaristan'ı Ez ||| path: Islamist-Ottomanist ||| after: Ottoman War Machine / Long-Term Invasion Plans ||| does: war goal/war on HUN
+3059 ||| The Second Central Powers ||| TR: İkinci İttifak Devletleri ||| path: Islamist-Ottomanist ||| after: Destroy the Serbian State ||| does: event "The Ottomans Propose New Central Powers to Germany"; stability 0.03

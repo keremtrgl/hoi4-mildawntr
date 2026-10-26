@@ -1,0 +1,60 @@
+480 ||| Counter Consumer Goods ||| TR: Tüketim Mallarına Karşı Koy ||| path: anarchist ||| after: Quiet Construction ||| does: spirit "Reduced Consumer Goods"
+481 ||| Systematize the Collectivization ||| TR: Kolektifleştirmeyi Sistemleştir ||| path: anarchist ||| after: Anarchist-Forged Economy / Counter Consumer Goods ||| does: -
+482 ||| A Different Kind of Elections ||| TR: Farklı Türde Seçimler ||| path: anarchist ||| after: Respectful Anarchism / Personal Innovation ||| does: stability 0.05
+483 ||| Prevent a Second Bloodshed ||| TR: İkinci Bir Kan Dökülmesini Önle ||| path: anarchist ||| after: An Elective System / A Different Kind of Elections ||| does: spirit "Blood of Revenge"; removes "The Turkish Media"; tooltip: The Turkish media's opinion no longer matters.; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+484 ||| Coding Classes ||| TR: Kodlama Dersleri ||| path: anarchist, CHP social democrat, AKP / democratic Turkey ||| after: Anarchist Hackers ||| does: spirit "Coding Classes"
+485 ||| AI Technologies ||| TR: Yapay Zekâ Teknolojileri ||| path: anarchist ||| after: Anarchist Hackers ||| does: spirit "AI Technologies"
+486 ||| Personal Innovation ||| TR: Kişisel Yenilikçilik ||| path: anarchist ||| after: AI Technologies / Coding Classes ||| does: spirit "Personal Innovation"
+487 ||| Embrace the New System ||| TR: Yeni Sistemi Benimse ||| path: anarchist ||| after: Victory for the Green Anarchists ||| does: stability 0.05; war support 0.02
+488 ||| Green Act ||| TR: Yeşil Yasa ||| path: anarchist ||| after: Embrace the New System ||| does: stability 0.02; tooltip: Gains 3% Support (Relative Popularity).\n
+489 ||| Green Propaganda ||| TR: Yeşil Propaganda ||| path: anarchist ||| after: Embrace the New System ||| does: PP 75; tooltip: Gains 3% Support (Relative Popularity).\n
+490 ||| Modern Ecologist Movement ||| TR: Modern Ekolojist Hareket ||| path: anarchist ||| after: Green Propaganda / Green Act ||| does: spirit "The Modern Ecologist Movement"; tooltip: Gains 1% Support (Relative Popularity).\n
+491 ||| Win the Support of the Scientists ||| TR: Bilim İnsanlarının Desteğini Kazan ||| path: anarchist ||| after: Modern Ecologist Movement ||| does: spirit "Support From Scientists"
+492 ||| Win the Support of the Academics ||| TR: Akademisyenlerin Desteğini Kazan ||| path: anarchist ||| after: Modern Ecologist Movement ||| does: spirit "Support From Academics"
+493 ||| Strengthen Relations with Greenpeace ||| TR: Greenpeace ile İlişkileri Güçlendir ||| path: anarchist ||| after: Win the Support of the Academics / Win the Support of the Scientists ||| does: PP 75; tooltip: Gains 2% Support (Relative Popularity).\n
+494 ||| Seize the Money of the Rich ||| TR: Zenginlerin Parasına El Koy ||| path: anarchist ||| after: Modern Ecologist Movement ||| does: stability -0.02
+495 ||| Plant Some Trees ||| TR: Biraz Ağaç Dik ||| path: anarchist ||| after: Strengthen Relations with Greenpeace ||| does: spirit "Planted Trees"
+496 ||| Create a Sanctions Community ||| TR: Yaptırım Topluluğu Kur ||| path: anarchist ||| after: Strengthen Relations with Greenpeace ||| does: spirit "The Green Sanctions Commission"
+497 ||| Worldwide Green Anarchist Propaganda ||| TR: Dünya Çapında Yeşil Anarşist Propaganda ||| path: anarchist ||| after: Strengthen Relations with Greenpeace ||| does: PP 75; tooltip: Gains 3% Support (Relative Popularity).\n
+498 ||| Strong in the Political Arena ||| TR: Siyasi Arenada Güçlü ||| path: anarchist ||| after: Worldwide Green Anarchist Propaganda / Plant Some Trees ||| does: PP 75; stability 0.03
+499 ||| Stop Globalization ||| TR: Küreselleşmeyi Durdur ||| path: anarchist ||| after: Strong in the Political Arena ||| does: spirit "semi_consumption_economy"; stability 0.03
+500 ||| Blame the US for Wall Street ||| TR: Wall Street İçin ABD'yi Suçla ||| path: anarchist ||| after: Strong in the Political Arena ||| does: spirit "recession"; stability 0.05; stability -0.07
+501 ||| Launch the National Ecology Programs ||| TR: Ulusal Ekoloji Programlarını Başlat ||| path: anarchist ||| after: Pro-Ecological Policies ||| does: PP 75; tooltip: Gains 3% Support (Relative Popularity).\n
+502 ||| Windmills ||| TR: Yel Değirmenleri ||| path: anarchist ||| after: Launch the National Ecology Programs ||| does: spirit "Windmills"; builds synthetic_refinery
+503 ||| Hydroelectric Engineering ||| TR: Hidroelektrik Mühendisliği ||| path: anarchist ||| after: Launch the National Ecology Programs ||| does: spirit "Hydroelectricity"; builds synthetic_refinery
+504 ||| Alliance with Scientists ||| TR: Bilim İnsanlarıyla İttifak ||| path: anarchist ||| after: Win the Support of the Scientists ||| does: -
+505 ||| Abolish High Wages ||| TR: Yüksek Maaşları Kaldır ||| path: anarchist ||| after: Seize the Money of the Rich ||| does: PP -175; stability 0.02
+506 ||| Become the Leader of the UN ||| TR: BM'nin Lideri Ol ||| path: anarchist ||| after: Cooperate with the FAO / Cooperate with the WFP ||| does: spirit "p5_member"; event "Green Anarchists Take the Lead at the UN"
+507 ||| UNESCO State ||| TR: UNESCO Devleti ||| path: anarchist ||| after: Blame the US for Wall Street / Stop Globalization ||| does: stability 0.1
+508 ||| Cooperate with the FAO ||| TR: FAO ile İşbirliği Yap ||| path: anarchist ||| after: UNESCO State ||| does: spirit "FAO"
+509 ||| Cooperate with IFAD ||| TR: IFAD ile İşbirliği Yap ||| path: anarchist ||| after: UNESCO State ||| does: spirit "IFAD"
+510 ||| Cooperate with the WFP ||| TR: WFP ile İşbirliği Yap ||| path: anarchist ||| after: UNESCO State ||| does: spirit "WFP"
+511 ||| Solar Energy ||| TR: Güneş Enerjisi ||| path: anarchist ||| after: Thermal Spring Trade / Create Bird Habitat Zones ||| does: spirit "Solar Energy"; builds synthetic_refinery
+512 ||| Deindustrialization Act ||| TR: Sanayisizleştirme Yasası ||| path: anarchist ||| after: Pro-Ecological Policies ||| does: spirit "The Deindustrialization Program"
+513 ||| Pro-Ecological Policies ||| TR: Ekoloji Yanlısı Politikalar ||| path: anarchist ||| after: Strong in the Political Arena ||| does: PP 100
+514 ||| Fish Act ||| TR: Balık Yasası ||| path: anarchist ||| after: Hydroelectric Engineering ||| does: spirit "The Fishing Industry"
+515 ||| Destroy the Kaz Mountains Mining Facilities ||| TR: Kaz Dağları'ndaki Maden Tesislerini Yık ||| path: anarchist ||| after: Deindustrialization Act ||| does: stability 0.03; builds infrastructure
+516 ||| Deindustrialize Adana ||| TR: Adana'yı Sanayisizleştir ||| path: anarchist ||| after: Deindustrialization Act / Launch the National Ecology Programs ||| does: stability 0.03; builds industrial_complex
+517 ||| Create Bird Habitat Zones ||| TR: Kuş Yaşam Alanları Kur ||| path: anarchist ||| after: Windmills / Hydroelectric Engineering ||| does: PP 75; stability 0.05
+518 ||| Support Agriculture in Adana ||| TR: Adana'da Tarımı Destekle ||| path: anarchist ||| after: Manage Active Pollution / Village Culture ||| does: spirit "Strengthened Agriculture"
+519 ||| Manage Active Pollution ||| TR: Aktif Kirliliği Yönet ||| path: anarchist ||| after: Deindustrialize Adana / Thermal Springs ||| does: stability 0.05; builds arms_factory, industrial_complex
+520 ||| Village Culture ||| TR: Köy Kültürü ||| path: anarchist ||| after: Destroy the Kaz Mountains Mining Facilities / Deindustrialize Adana ||| does: stability -0.03; builds offices
+521 ||| Expand the Wind Farm Zones ||| TR: Rüzgâr Santrali Bölgelerini Genişlet ||| path: anarchist ||| after: Windmills ||| does: builds synthetic_refinery
+522 ||| Efficient Solar Energy ||| TR: Verimli Güneş Enerjisi ||| path: anarchist ||| after: Solar Energy ||| does: -
+523 ||| Build the Antalya Energy Fields ||| TR: Antalya Enerji Sahalarını Kur ||| path: anarchist ||| after: Solar Energy ||| does: -
+524 ||| Agricultural Economy ||| TR: Tarım Ekonomisi ||| path: anarchist ||| after: Support Agriculture in Adana ||| does: -
+525 ||| Animal Protection Law ||| TR: Hayvanları Koruma Kanunu ||| path: anarchist ||| after: Support Agriculture in Adana ||| does: spirit "Protection for Animals"
+526 ||| Ban the Use of Coal ||| TR: Kömür Kullanımını Yasakla ||| path: anarchist ||| after: Animal Protection Law / Agricultural Economy ||| does: spirit "The Coal Ban"
+527 ||| Protect The Water ||| TR: Suyu Koru ||| path: anarchist ||| after: Efficient Solar Energy / Build the Antalya Energy Fields ||| does: spirit "Clean Water"
+528 ||| Ban Fossil Oil ||| TR: Fosil Petrolü Yasakla ||| path: anarchist ||| after: Ban the Use of Coal ||| does: -
+529 ||| Plan to Minimize Carbon Levels ||| TR: Karbon Seviyelerini En Aza İndirme Planı ||| path: anarchist ||| after: Protect The Water ||| does: stability 0.05
+530 ||| Renewable State ||| TR: Yenilenebilir Devlet ||| path: anarchist ||| after: Ban Fossil Oil / Plan to Minimize Carbon Levels ||| does: stability 0.15
+531 ||| Ban Nuclear Energy ||| TR: Nükleer Enerjiyi Yasakla ||| path: anarchist ||| after: Create Bird Habitat Zones / Thermal Spring Trade ||| does: spirit "The Nuclear Energy Ban"
+532 ||| The World Deserves to Breathe! ||| TR: Dünya Nefes Almayı Hak Ediyor! ||| path: anarchist ||| after: Ban Nuclear Energy ||| does: -
+533 ||| Remove the Nukes ||| TR: Nükleer Silahları Kaldır ||| path: anarchist ||| after: The World Deserves to Breathe! ||| does: -
+534 ||| The Trash Act ||| TR: Çöp Yasası ||| path: anarchist ||| after: Pro-Ecological Policies ||| does: spirit "The Plastic Bag Law"
+535 ||| Reliable Charging Conversion ||| TR: Güvenilir Şarj Dönüşümü ||| path: anarchist ||| after: Remove the Nukes ||| does: -
+536 ||| Ecological Condemnation of the USA ||| TR: ABD'nin Ekolojik Olarak Kınanması ||| path: anarchist ||| after: Become the Leader of the UN ||| does: event "A Call for Ecology in the United States"
+537 ||| Ecological Condemnation of China ||| TR: Çin'in Ekolojik Olarak Kınanması ||| path: anarchist ||| after: Become the Leader of the UN ||| does: event "A Call for Ecology in China"
+538 ||| Revenge of Ecology ||| TR: Ekolojinin İntikamı ||| path: anarchist ||| after: Ecological Condemnation of China / Ecological Condemnation of the USA ||| does: war support 0.1
+539 ||| Bring American Ecologists Here ||| TR: Amerikalı Ekolojistleri Buraya Getir ||| path: anarchist ||| after: Ecological Condemnation of the USA ||| does: -

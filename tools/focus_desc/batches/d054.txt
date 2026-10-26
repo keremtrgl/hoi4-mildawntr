@@ -1,0 +1,60 @@
+3240 ||| The Neo-Ottoman Commonwealth ||| TR: Yeni Osmanlı Milletler Topluluğu ||| path: Islamist-Ottomanist ||| after: The European Dream / Talks with the West ||| does: spirit "intervention_isolation"; stability 0.1
+3241 ||| Long Live Osman ||| TR: Çok Yaşa Osman ||| path: Islamist-Ottomanist ||| after: Changes in the Regime ||| does: stability 0.05
+3242 ||| Guardian of Islam ||| TR: İslam'ın Muhafızı ||| path: Islamist-Ottomanist ||| after: Long Live Osman ||| does: -
+3243 ||| Improve the Technocracy ||| TR: Teknokrasiyi Geliştir ||| path: Islamist-Ottomanist ||| after: Long Live Osman ||| does: -
+3244 ||| Neo-Renaissance ||| TR: Yeni Rönesans ||| path: Islamist-Ottomanist ||| after: Guardian of Islam / Improve the Technocracy ||| does: spirit "Neo-Renaissance"
+3245 ||| New Recruitments ||| TR: Yeni Askeri Alımlar ||| path: Islamist-Ottomanist ||| after: Neo-Renaissance ||| does: war support 0.05
+3246 ||| A Star of Europe ||| TR: Avrupa'nın Yıldızı ||| path: Islamist-Ottomanist ||| after: The Neo-Ottoman Commonwealth ||| does: spirit "corruption_level_01"; stability 0.1
+3247 ||| Invest in the Military ||| TR: Orduya Yatırım Yap ||| path: Islamist-Ottomanist ||| after: Neo-Renaissance ||| does: builds arms_factory
+3248 ||| Western Weaponry ||| TR: Batılı Silahlar ||| path: Islamist-Ottomanist ||| after: Talks with the West / Cover the Geopolitics ||| does: builds arms_factory
+3249 ||| The New Heir ||| TR: Yeni Veliaht ||| path: Islamist-Ottomanist ||| after: New Recruitments / Invest in the Military ||| does: stability 0.05
+3250 ||| The New Successor ||| TR: Yeni Halef ||| path: Islamist-Ottomanist ||| after: The Neo-Ottoman Commonwealth ||| does: stability 0.05
+3251 ||| Aceh Issue ||| TR: Açe Meselesi ||| path: Islamist-Ottomanist ||| after: Western Weaponry ||| does: -
+3252 ||| Rise of Technology ||| TR: Teknolojinin Yükselişi ||| path: Islamist-Ottomanist ||| after: Gain the Majority ||| does: -
+3253 ||| Milli Görüş ||| TR: Millî Görüş ||| path: Saadet / Milli Gorus ||| after: - ||| does: stability 0.1; tooltip: Gains 3% Support (Relative Popularity).\n
+3254 ||| Knock Knock: Your Vote? ||| TR: Tak Tak: Oyunuz? ||| path: Saadet / Milli Gorus ||| after: Milli Görüş ||| does: PP -75; tooltip: Gains 5% Support (Relative Popularity).\n
+3255 ||| Counter the AKP Islamists ||| TR: AKP'li İslamcılara Karşı Koy ||| path: Saadet / Milli Gorus ||| after: Milli Görüş ||| does: PP -25; stability 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+3256 ||| Publish Erbakan's Anti-AKP Propaganda ||| TR: Erbakan'ın AKP Karşıtı Propagandasını Yayımla ||| path: Saadet / Milli Gorus ||| after: Knock Knock: Your Vote? / Counter the AKP Islamists ||| does: PP -25; tooltip: Loses 5% Support (Relative Popularity).\n
+3257 ||| Victory in the Elections ||| TR: Seçimlerde Zafer ||| path: Saadet / Milli Gorus ||| after: Publish Erbakan's Anti-AKP Propaganda ||| does: PP 100
+3258 ||| National Industrialization Campaign ||| TR: Millî Sanayileşme Kampanyası ||| path: Saadet / Milli Gorus ||| after: Redesign the Party Program ||| does: -
+3259 ||| Work for Better Conditions ||| TR: Daha İyi Koşullar İçin Çalış ||| path: Saadet / Milli Gorus ||| after: National Industrialization Campaign ||| does: spirit "Working for Better Conditions"
+3260 ||| Diyarbakır Project ||| TR: Diyarbakır Projesi ||| path: Saadet / Milli Gorus ||| after: Sivas Project ||| does: builds industrial_complex, infrastructure
+3261 ||| Tensions with the Military ||| TR: Orduyla Gerginlikler ||| path: Saadet / Milli Gorus ||| after: Redesign the Party Program ||| does: stability -0.05; war support 0.05; tooltip: 's opinion of  changes by -5%.\n
+3262 ||| Military Purges ||| TR: Askeri Tasfiyeler ||| path: Saadet / Milli Gorus ||| after: Tensions with the Military ||| does: spirit "Military Purges"; stability 0.05; tooltip: 's opinion of  changes by -8%.\n
+3263 ||| Open New Prisons ||| TR: Yeni Cezaevleri Aç ||| path: Saadet / Milli Gorus ||| after: Tensions with the Military ||| does: PP 100; stability -0.02; war support 0.03; tooltip: 's opinion of  changes by -8%.\n
+3264 ||| Defeat the Coup Attempt ||| TR: Darbe Girişimini Püskürt ||| path: Saadet / Milli Gorus ||| after: Military Purges / Open New Prisons ||| does: war support 0.05
+3265 ||| War Against Westernization ||| TR: Batılılaşmaya Karşı Savaş ||| path: Saadet / Milli Gorus ||| after: Defeat the Coup Attempt ||| does: PP -75
+3266 ||| Constitution Amendment ||| TR: Anayasa Değişikliği ||| path: Saadet / Milli Gorus ||| after: Defeat the Coup Attempt ||| does: stability 0.05
+3267 ||| Exile the Coup Plotters ||| TR: Darbecileri Sürgüne Gönder ||| path: Saadet / Milli Gorus ||| after: War Against Westernization ||| does: spirit "Kemalists in Exile"
+3268 ||| Turn Hagia Sophia into a Mosque ||| TR: Ayasofya'yı Camiye Dönüştür ||| path: Saadet / Milli Gorus ||| after: Defeat the Coup Attempt ||| does: PP 50
+3269 ||| Repair Old Mosques ||| TR: Eski Camileri Onar ||| path: Saadet / Milli Gorus ||| after: Turn Hagia Sophia into a Mosque ||| does: spirit "Mosque Industry"
+3270 ||| Return of Erbakan ||| TR: Erbakan'ın Dönüşü ||| path: Saadet / Milli Gorus ||| after: Exile the Coup Plotters / Repair Old Mosques ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; event "The Return of Erbakan"; tooltip: The country will be united and its sectarian woes can be overcome.
+3271 ||| Banner of the Milli Görüş ||| TR: Millî Görüş'ün Sancağı ||| path: Saadet / Milli Gorus ||| after: Return of Erbakan ||| does: spirit "Banner of the Milli Görüş"
+3272 ||| Peace with the Kurds ||| TR: Kürtlerle Barış ||| path: Saadet / Milli Gorus ||| after: Return of Erbakan ||| does: stability 0.05
+3273 ||| Use Religion to Unite with the Kurds ||| TR: Kürtlerle Birlik İçin Dini Kullan ||| path: Saadet / Milli Gorus ||| after: Peace with the Kurds ||| does: PP 100; stability 0.07
+3274 ||| Open Kurdish Universities in Kurdish Areas ||| TR: Kürt Bölgelerinde Kürtçe Eğitim Veren Üniversiteler Aç ||| path: Saadet / Milli Gorus ||| after: Peace with the Kurds ||| does: spirit "Kurdish TV Channels Permitted"; removes "Kurdish TV And Free Language"; removes "Kurdish Schools and Universities"; removes "Kurdish Language Freedom"; removes "Kurdish Xenophobia"
+3275 ||| Open TRT 6 ||| TR: TRT 6'yı Aç ||| path: Saadet / Milli Gorus ||| after: Use Religion to Unite with the Kurds / Open Kurdish Universities in Kurdish Areas ||| does: spirit "Kurdish TV And Free Language"; removes "Kurdish TV Channels Permitted"; removes "Kurdish Schools and Universities"; removes "Kurdish Language Freedom"; removes "Kurdish Xenophobia"
+3276 ||| NATO Policy ||| TR: NATO Politikası ||| path: Saadet / Milli Gorus, Turkish Armed Forces junta ||| after: Redesign the Party Program ||| does: PP 75
+3277 ||| Reject Sharia Laws ||| TR: Şeriat Kanunlarını Reddet ||| path: Saadet / Milli Gorus ||| after: Expel Anti-Kemalists from the Party ||| does: PP 75; stability 0.07
+3278 ||| NATO's Islamic Power ||| TR: NATO'nun İslami Gücü ||| path: Saadet / Milli Gorus ||| after: Stay in NATO ||| does: spirit "NATO's Islamic Power"
+3279 ||| Get US Military Aid ||| TR: ABD Askeri Yardımı Al ||| path: Saadet / Milli Gorus ||| after: NATO's Islamic Power ||| does: stability -0.03; builds arms_factory
+3280 ||| Get UK Military Aid ||| TR: Birleşik Krallık Askeri Yardımı Al ||| path: Saadet / Milli Gorus ||| after: NATO's Islamic Power ||| does: stability -0.03; builds arms_factory
+3281 ||| Press for Recognition of Northern Cyprus ||| TR: Kuzey Kıbrıs'ın Tanınması İçin Baskı Yap ||| path: Saadet / Milli Gorus ||| after: Get US Military Aid / Get UK Military Aid ||| does: PP 175
+3282 ||| Crush Pro-NATO Organizations in the State ||| TR: Devletteki NATO Yanlısı Örgütleri Ez ||| path: Saadet / Milli Gorus ||| after: Leave NATO ||| does: spirit "Crushing the Pro-NATO Organizations"
+3283 ||| Disband US Bases ||| TR: ABD Üslerini Kapat ||| path: Saadet / Milli Gorus ||| after: Crush Pro-NATO Organizations in the State ||| does: stability -0.02; war support 0.02
+3284 ||| Close the Bosporus to the US ||| TR: İstanbul Boğazı'nı ABD'ye Kapat ||| path: Saadet / Milli Gorus ||| after: Crush Pro-NATO Organizations in the State ||| does: war support 0.03
+3285 ||| Buy Russian Planes ||| TR: Rus Uçakları Satın Al ||| path: Saadet / Milli Gorus ||| after: Disband US Bases / Close the Bosporus to the US ||| does: -
+3286 ||| Arrival Of Sharia Laws ||| TR: Şeriat Kanunlarının Gelişi ||| path: Saadet / Milli Gorus ||| after: Declare the Great Caliphate ||| does: spirit "Moderate Sharia State"
+3287 ||| Turkish Armed Forces ||| TR: Türk Silahlı Kuvvetleri ||| path: Saadet / Milli Gorus ||| after: Redesign the Party Program ||| does: -
+3288 ||| Modernization of the Turkish Armed Forces ||| TR: Türk Silahlı Kuvvetleri'nin Modernizasyonu ||| path: Saadet / Milli Gorus ||| after: Turkish Armed Forces ||| does: -
+3289 ||| Modernize the Tanks ||| TR: Tankları Modernleştir ||| path: Saadet / Milli Gorus ||| after: Modernization of the Turkish Armed Forces ||| does: -
+3290 ||| Research Plan for New Artillery ||| TR: Yeni Topçu Araştırma Planı ||| path: Saadet / Milli Gorus ||| after: Modernization of the Turkish Armed Forces ||| does: spirit "Turkish Artillery"
+3291 ||| Small Infantry Equipment Modernization ||| TR: Hafif Piyade Teçhizatının Modernizasyonu ||| path: Saadet / Milli Gorus ||| after: Modernization of the Turkish Armed Forces ||| does: -
+3292 ||| Modernization of the Turkish Naval Forces ||| TR: Türk Deniz Kuvvetleri'nin Modernizasyonu ||| path: Saadet / Milli Gorus ||| after: Research Plan for New Artillery / Small Infantry Equipment Modernization ||| does: -
+3293 ||| Turkish Destroyer ||| TR: Türk Muhribi ||| path: Saadet / Milli Gorus ||| after: Modernization of the Turkish Naval Forces ||| does: spirit "Turkish Destroyer Sector"
+3294 ||| Modernization of the Submarines ||| TR: Denizaltıların Modernizasyonu ||| path: Saadet / Milli Gorus ||| after: Modernization of the Turkish Naval Forces ||| does: spirit "Turkish Submarine Sector"
+3295 ||| Turkish Cruiser Project ||| TR: Türk Kruvazör Projesi ||| path: Saadet / Milli Gorus ||| after: Modernization of the Submarines / Turkish Destroyer ||| does: spirit "Turkish Grand Carrier Projection"
+3296 ||| Modernization of the Turkish Air Force ||| TR: Türk Hava Kuvvetleri'nin Modernizasyonu ||| path: Saadet / Milli Gorus ||| after: Research Plan for New Artillery / Small Infantry Equipment Modernization ||| does: spirit "Turkish Air Force Standardization"
+3297 ||| TF-X Program ||| TR: TF-X Programı ||| path: Saadet / Milli Gorus ||| after: Modernization of the Turkish Air Force ||| does: spirit "Turkish Air Forces"
+3298 ||| Special Strategic Bombers ||| TR: Özel Stratejik Bombardıman Uçakları ||| path: Saadet / Milli Gorus ||| after: TF-X Program ||| does: -
+3299 ||| Kayseri Air Program ||| TR: Kayseri Hava Programı ||| path: Saadet / Milli Gorus ||| after: War Tactics ||| does: -

@@ -1,0 +1,60 @@
+600 ||| Create the Anarchist Socialist Forces ||| TR: Anarşist Sosyalist Kuvvetleri Kur ||| path: anarchist ||| after: Efficient Anarchy System ||| does: stability 0.02; war support 0.05
+601 ||| Seize Transportation ||| TR: Ulaşımı Ele Geçir ||| path: anarchist ||| after: Create the Anarchist Socialist Forces ||| does: spirit "Anarchist Transportation"
+602 ||| Anarchist Automobiles ||| TR: Anarşist Otomobiller ||| path: anarchist ||| after: Seize Transportation ||| does: -
+603 ||| Call to Arms ||| TR: Silah Başına ||| path: anarchist ||| after: Create the Anarchist Socialist Forces ||| does: -
+604 ||| Prepare the Human Waves ||| TR: İnsan Dalgalarını Hazırla ||| path: anarchist ||| after: Call to Arms ||| does: spirit "Human Wave Tactics"
+605 ||| Revenue from the Early Military ||| TR: Erken Ordudan Gelirler ||| path: anarchist ||| after: Call to Arms ||| does: -
+606 ||| Create the Arms Industry ||| TR: Silah Sanayisini Kur ||| path: anarchist ||| after: Create the Anarchist Socialist Forces ||| does: builds arms_factory
+607 ||| Boost the Military Industries ||| TR: Askeri Sanayileri Destekle ||| path: anarchist ||| after: Create the Arms Industry ||| does: builds arms_factory
+608 ||| Guerrilla Warfare ||| TR: Gerilla Savaşı ||| path: anarchist ||| after: Boost the Military Industries / Revenue from the Early Military ||| does: -
+609 ||| Create Socialist Elites ||| TR: Sosyalist Elitler Yarat ||| path: anarchist ||| after: Guerrilla Warfare ||| does: spirit "The Socialist Elites"; stability -0.1
+610 ||| Worldwide Utopian Ideas ||| TR: Dünya Çapında Ütopya Fikirleri ||| path: anarchist ||| after: Guerrilla Warfare ||| does: removes "Anarchist Neutrality"; stability 0.03
+611 ||| Socialist Utopian Plans ||| TR: Sosyalist Ütopya Planları ||| path: anarchist ||| after: Worldwide Utopian Ideas / Create Socialist Elites ||| does: PP 125
+612 ||| The Northern Plan ||| TR: Kuzey Planı ||| path: anarchist ||| after: Socialist Utopian Plans ||| does: PP 75; war support 0.05
+613 ||| Gather the Transcaucasian Countries ||| TR: Kafkas Ülkelerini Topla ||| path: anarchist ||| after: The Northern Plan ||| does: war goal/war on ARM; war goal/war on GEO; war goal/war on AZE
+614 ||| Attack Ukraine ||| TR: Ukrayna'ya Saldır ||| path: anarchist ||| after: The Northern Plan ||| does: war goal/war on UKR
+615 ||| Attack the Old Socialists ||| TR: Eski Sosyalistlere Saldır ||| path: anarchist ||| after: Attack Ukraine / Gather the Transcaucasian Countries ||| does: war goal/war on SOV
+616 ||| The Turkish Control ||| TR: Türk Kontrolü ||| path: anarchist ||| after: Attack the Old Socialists ||| does: war support 0.05; war goal/war on TRK; war goal/war on KAZ; war goal/war on UZB; war goal/war on KYR
+617 ||| A New Kind of Cores ||| TR: Yeni Tür Topraklar ||| path: anarchist ||| after: The Turkish Control / Harsh Secularism Quotas ||| does: tooltip: This state gains cores on every state on the planet.
+618 ||| Joint Forces of Anarchism ||| TR: Anarşizmin Ortak Kuvvetleri ||| path: anarchist ||| after: A New Kind of Cores ||| does: spirit "Joint Forces of Anarchism"
+619 ||| Systematize the Forces ||| TR: Kuvvetleri Sistemleştir ||| path: anarchist ||| after: A New Kind of Cores ||| does: spirit "Systematic Anarchist Forces"
+620 ||| The Utopia Declaration ||| TR: Ütopya Bildirgesi ||| path: anarchist ||| after: Systematize the Forces / Joint Forces of Anarchism ||| does: PP 50
+621 ||| Manage The Victory ||| TR: Zaferi Yönet ||| path: anarchist ||| after: The Utopia Declaration ||| does: stability 0.1; tooltip: The country will be united and its sectarian woes can be overcome.
+622 ||| The Southern Plan ||| TR: Güney Planı ||| path: anarchist ||| after: Socialist Utopian Plans ||| does: PP 75; war support 0.01
+623 ||| Westward ||| TR: Batı Yönü ||| path: anarchist ||| after: Socialist Utopian Plans ||| does: PP 75; war support 0.03
+624 ||| The Traditional Borders... ||| TR: Geleneksel Sınırlar... ||| path: anarchist ||| after: The Southern Plan ||| does: war goal/war on TUR
+625 ||| Crush the Unstable Komşu ||| TR: İstikrarsız Komşuyu Ez ||| path: anarchist ||| after: The Southern Plan ||| does: war goal/war on GRE
+626 ||| Force the Unification of the Islamic World ||| TR: İslam Dünyasının Birleşmesini Zorla ||| path: anarchist ||| after: Crush the Unstable Komşu / The Traditional Borders... ||| does: tooltip: The Islamic world will be united under the atheist regime of anarchism.
+627 ||| Harsh Secularism Quotas ||| TR: Sert Laiklik Kotaları ||| path: anarchist ||| after: Force the Unification of the Islamic World ||| does: tooltip: Secular or atheist policies will begin to be accepted by many nations.
+628 ||| Plan NATO ||| TR: NATO Planı ||| path: anarchist ||| after: Westward ||| does: removes "NATO_member"; PP 100
+629 ||| Defence Plans Against NATO ||| TR: NATO'ya Karşı Savunma Planları ||| path: anarchist ||| after: Plan NATO ||| does: spirit "Countering NATO Defenses"
+630 ||| Attack Plans Against NATO ||| TR: NATO'ya Karşı Saldırı Planları ||| path: anarchist ||| after: Plan NATO ||| does: spirit "Countering NATO Attacks"
+631 ||| United Counter-Forces ||| TR: Birleşik Karşı Kuvvetler ||| path: anarchist ||| after: Attack Plans Against NATO / Defence Plans Against NATO ||| does: spirit "Countering NATO Attacks and Defenses"; removes "Countering NATO Attacks"; removes "Countering NATO Defenses"
+632 ||| The Financial Freedom ||| TR: Finansal Özgürlük ||| path: anarchist ||| after: Reorganize the Situation ||| does: spirit "Financial Freedom"
+633 ||| The Credit House ||| TR: Kredi Evi ||| path: anarchist ||| after: The Financial Freedom ||| does: spirit "The Credit House"
+634 ||| Legalize Robbery ||| TR: Soygunu Yasallaştır ||| path: anarchist ||| after: Reorganize the Situation ||| does: spirit "Legalized Robbery"
+635 ||| Abolish the Anti-Money Laws ||| TR: Para Karşıtı Yasaları Kaldır ||| path: anarchist ||| after: Legalize Robbery ||| does: -
+636 ||| Freedom for the Banks ||| TR: Bankalara Özgürlük ||| path: anarchist ||| after: Abolish the Anti-Money Laws ||| does: spirit "Freedom for the Banks"
+637 ||| Legalize Gun Sales ||| TR: Silah Satışını Yasallaştır ||| path: anarchist ||| after: Abolish the Anti-Money Laws ||| does: spirit "Freedom for Arms Dealers"
+638 ||| A Death System ||| TR: Bir Ölüm Sistemi ||| path: anarchist ||| after: Legalize Gun Sales / Freedom for the Banks ||| does: PP 150; stability 0.05
+639 ||| Finance The State ||| TR: Devleti Finanse Et ||| path: anarchist ||| after: A Death System ||| does: spirit "The Finance State"
+640 ||| Pacifist Globalization Outlook ||| TR: Pasifist Küreselleşme Anlayışı ||| path: anarchist ||| after: A Death System ||| does: spirit "export_economy"
+641 ||| Ever Heard of Money? ||| TR: Para Diye Bir Şey Duydun mu? ||| path: anarchist ||| after: Finance The State / Pacifist Globalization Outlook ||| does: stability 0.05
+642 ||| Print More Money ||| TR: Daha Fazla Para Bas ||| path: anarchist ||| after: Ever Heard of Money? ||| does: stability -0.03
+643 ||| Encourage Inflationary Moves ||| TR: Enflasyonist Hamleleri Teşvik Et ||| path: anarchist ||| after: Ever Heard of Money? ||| does: spirit "Mild Inflation"
+644 ||| Maximize the Amount of Banknotes ||| TR: Banknot Miktarını En Üst Düzeye Çıkar ||| path: anarchist ||| after: Ever Heard of Money? ||| does: -
+645 ||| Talks with the IMF ||| TR: IMF ile Görüşmeler ||| path: anarchist ||| after: Maximize the Amount of Banknotes / Encourage Inflationary Moves ||| does: PP 100; stability 0.02
+646 ||| Look Towards American Wealth ||| TR: ABD'nin Zenginliğine Bak ||| path: anarchist ||| after: Talks with the IMF ||| does: -
+647 ||| Look Towards European Wealth ||| TR: Avrupa'nın Zenginliğine Bak ||| path: anarchist ||| after: Talks with the IMF ||| does: -
+648 ||| Expand The National Bank ||| TR: Ulusal Bankayı Genişlet ||| path: anarchist ||| after: Look Towards American Wealth / Look Towards European Wealth ||| does: stability -0.02
+649 ||| Buy a 5% Share of the ECB ||| TR: ECB'nin %5 Hissesini Satın Al ||| path: anarchist ||| after: Look Towards European Wealth ||| does: stability 0.02
+650 ||| Buy a 5% Share of the FED ||| TR: FED'in %5 Hissesini Satın Al ||| path: anarchist ||| after: Look Towards American Wealth ||| does: stability 0.02
+651 ||| Strengthen Gold ||| TR: Altını Güçlendir ||| path: anarchist, Islamist-Ottomanist ||| after: Buy a 5% Share of the ECB / Expand The National Bank ||| does: stability 0.07
+652 ||| Invest In Stocks ||| TR: Hisse Senetlerine Yatırım Yap ||| path: anarchist ||| after: Strengthen Gold ||| does: -
+653 ||| Invest in Banks ||| TR: Bankalara Yatırım Yap ||| path: anarchist ||| after: Invest In Stocks ||| does: spirit "Bank Investments"
+654 ||| Financial Boom In Banks ||| TR: Bankalarda Finansal Patlama ||| path: anarchist ||| after: Invest in Banks ||| does: spirit "Bank Investment Returns"
+655 ||| Money Mining Facilities ||| TR: Para Madenciliği Tesisleri ||| path: anarchist ||| after: Reorganize the Situation ||| does: spirit "Money Digging"
+656 ||| Invest in Corporations ||| TR: Şirketlere Yatırım Yap ||| path: anarchist ||| after: Invest In Stocks ||| does: spirit "Corporate Investments"
+657 ||| Bitcoin Miners ||| TR: Bitcoin Madencileri ||| path: anarchist ||| after: Money Mining Facilities ||| does: -
+658 ||| Fund the Invested Corporations ||| TR: Yatırım Yapılan Şirketleri Finanse Et ||| path: anarchist ||| after: Invest in Corporations ||| does: spirit "Corporate Investment Returns"
+659 ||| Capitalist Resource Missions ||| TR: Kapitalist Kaynak Görevleri ||| path: anarchist ||| after: A Death System ||| does: PP 125

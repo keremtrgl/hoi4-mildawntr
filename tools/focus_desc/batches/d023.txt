@@ -1,0 +1,60 @@
+1380 ||| Declaration of the Caliphate ||| TR: Hilafetin İlanı ||| path: Islamist coup regime ||| after: Organize Islamist Militias / Disband the Constitution ||| does: -
+1381 ||| Power of the Traditions ||| TR: Geleneklerin Gücü ||| path: Islamist coup regime ||| after: Destroy Corruption ||| does: spirit "The Power of Tradition"
+1382 ||| Proclaim the Ottoman Empire ||| TR: Osmanlı İmparatorluğu'nu İlan Et ||| path: Islamist coup regime ||| after: Declaration of the Caliphate ||| does: event "The Ottoman Sultanate is Reborn"
+1383 ||| Victory in the Civil War ||| TR: İç Savaş Zaferi ||| path: Islamist coup regime ||| after: Turkish Islamic Republic / Proclaim the Ottoman Empire ||| does: event "The Turkish Civil War Ends"; stability 0.07
+1384 ||| Unity of Islam ||| TR: İslam Birliği ||| path: Islamist coup regime ||| after: Victory in the Civil War ||| does: PP 100
+1385 ||| Invade Armenia ||| TR: Ermenistan'ı İşgal Et ||| path: Islamist coup regime, TKP communist ||| after: Unity of Islam ||| does: war goal/war on ARM
+1386 ||| Invasion of the Levant ||| TR: Levant'ın İşgali ||| path: Islamist coup regime ||| after: Unity of Islam ||| does: war goal/war on ROJ; war goal/war on KUR; war goal/war on IRQ; war goal/war on SYR; war goal/war on ISI; war goal/war on NUS; war goal/war on FSA; war goal/war on LEB; war goal/war on HEZ; war goal/war on JOR; war goal/war on ISR; war goal/war on PAL; war goal/war on HAM; war goal/war on KUW; war go
+1387 ||| Invade Georgia ||| TR: Gürcistan'ı İşgal Et ||| path: Islamist coup regime, TKP communist ||| after: Unity of Islam ||| does: war goal/war on GEO
+1388 ||| Invasion of the Maghreb ||| TR: Mağrib'in İşgali ||| path: Islamist coup regime ||| after: Invasion of the Levant / Invade Armenia ||| does: war goal/war on EGY; war goal/war on HOR; war goal/war on GNA; war goal/war on ALG; war goal/war on TUA; war goal/war on GNC; war goal/war on TUN; war goal/war on MOR; war goal/war on SHA; war goal/war on MAU
+1389 ||| Invasion of Arabia ||| TR: Arabistan'ın İşgali ||| path: Islamist coup regime ||| after: Invade Georgia / Invasion of the Levant ||| does: war goal/war on SAU; war goal/war on HOU; war goal/war on YEM; war goal/war on AQY; war goal/war on OMA; war goal/war on UAE; war goal/war on QAT; war goal/war on BHR
+1390 ||| Invade Azerbaijan ||| TR: Azerbaycan'ı İşgal Et ||| path: Islamist coup regime, TKP communist ||| after: Invasion of Arabia ||| does: war goal/war on AZE
+1391 ||| Internationalism ||| TR: Enternasyonalizm ||| path: Islamist coup regime ||| after: Invade Azerbaijan / Invade Iran ||| does: spirit "internationalism"
+1392 ||| Victory Against Corruption ||| TR: Yolsuzluğa Karşı Zafer ||| path: AKP / democratic Turkey ||| after: Operations Against Corruption ||| does: PP 25; stability 0.05
+1393 ||| Future of the Republic? ||| TR: Cumhuriyetin Geleceği? ||| path: AKP / democratic Turkey ||| after: - ||| does: PP 150; stability 0.05
+1394 ||| Start the Anti-Corruption Strikes ||| TR: Yolsuzluk Operasyonlarını Başlat ||| path: AKP / democratic Turkey ||| after: Future of the Republic? ||| does: PP -75; stability 0.05
+1395 ||| Corruption Operations in Banks ||| TR: Bankalarda Yolsuzluk Operasyonları ||| path: AKP / democratic Turkey ||| after: Start the Anti-Corruption Strikes ||| does: PP 75
+1396 ||| Operations Against Corrupt Officials ||| TR: Yolsuz Yetkililere Yönelik Operasyonlar ||| path: AKP / democratic Turkey ||| after: Start the Anti-Corruption Strikes ||| does: stability -0.05; tooltip: Loses 5% Support (Relative Popularity).\n
+1397 ||| The Hezbollah Scandal ||| TR: Hizbullah Skandalı ||| path: AKP / democratic Turkey ||| after: Operations Against Corrupt Officials / Corruption Operations in Banks ||| does: PP 100; stability -0.02
+1398 ||| Constitutional Changes ||| TR: Anayasa Değişiklikleri ||| path: AKP / democratic Turkey ||| after: The Hezbollah Scandal ||| does: PP 100; stability 0.05
+1399 ||| Handle the Prison Protests ||| TR: Cezaevi Protestolarını Yönet ||| path: AKP / democratic Turkey ||| after: Constitutional Changes ||| does: PP -25; stability 0.03
+1400 ||| Governmental Security Restoration ||| TR: Devlet Güvenliğinin Yeniden Tesisi ||| path: AKP / democratic Turkey ||| after: Handle the Prison Protests ||| does: PP 125; stability -0.03; tooltip: Gains 1% Support (Relative Popularity).\n
+1401 ||| Expand the Prison Amnesty ||| TR: Cezaevi Affını Genişlet ||| path: AKP / democratic Turkey ||| after: Handle the Prison Protests ||| does: PP -25; stability 0.03; tooltip: Gains 1% Support (Relative Popularity).\n
+1402 ||| Government Budget Plans ||| TR: Hükümet Bütçe Planları ||| path: AKP / democratic Turkey ||| after: Constitutional Changes ||| does: PP 100; stability -0.05
+1403 ||| Use Force to Stop the Officers' Riots ||| TR: Memur İsyanlarını Zorla Bastır ||| path: AKP / democratic Turkey ||| after: Government Budget Plans ||| does: PP 75; tooltip: Loses 5% Support (Relative Popularity).\n
+1404 ||| Winds of 2001 ||| TR: 2001 Rüzgârları ||| path: AKP / democratic Turkey ||| after: Expand the Prison Amnesty / Use Force to Stop the Officers' Riots ||| does: PP 100
+1405 ||| Economic Measures ||| TR: Ekonomik Tedbirler ||| path: AKP / democratic Turkey ||| after: Government Budget Plans ||| does: spirit "Restoring The Budget"; builds arms_factory
+1406 ||| Revive the Industrial Facilities ||| TR: Sanayi Tesislerini Canlandır ||| path: AKP / democratic Turkey ||| after: Future of the Republic? ||| does: -
+1407 ||| Build-Operate-Transfer ||| TR: Yap-İşlet-Devret ||| path: AKP / democratic Turkey ||| after: Revive the Industrial Facilities ||| does: spirit "Build-Operate-Transfer"
+1408 ||| Recover Istanbul from the 1999 Earthquake ||| TR: İstanbul'u 1999 Depreminden Kurtar ||| path: AKP / democratic Turkey ||| after: Build-Operate-Transfer ||| does: stability 0.03
+1409 ||| Istanbul Ports ||| TR: İstanbul Limanları ||| path: AKP / democratic Turkey ||| after: Recover Istanbul from the 1999 Earthquake ||| does: stability -0.01; builds naval_base
+1410 ||| Cooperate with the IMF ||| TR: IMF ile İşbirliği Yap ||| path: AKP / democratic Turkey ||| after: Build-Operate-Transfer ||| does: stability -0.05
+1411 ||| Urban Transformation ||| TR: Kentsel Dönüşüm ||| path: AKP / democratic Turkey ||| after: Recover Istanbul from the 1999 Earthquake / Cooperate with the IMF ||| does: stability -0.03; builds arms_factory, industrial_complex, infrastructure, offices; tooltip: With this action, overall housing resistance rises by 3 points.
+1412 ||| New Houses ||| TR: Yeni Konutlar ||| path: AKP / democratic Turkey ||| after: Urban Transformation ||| does: stability 0.02; builds infrastructure; tooltip: With this action, overall housing resistance rises by 1 point.
+1413 ||| İzmir EU Industrial Parks ||| TR: İzmir AB Sanayi Parkları ||| path: AKP / democratic Turkey ||| after: Cooperate with the IMF ||| does: stability 0.02; builds industrial_complex
+1414 ||| Digital Areas ||| TR: Dijital Alanlar ||| path: AKP / democratic Turkey ||| after: İzmir EU Industrial Parks ||| does: stability 0.03; builds internet_station
+1415 ||| Open Istanbul University ||| TR: İstanbul Üniversitesi'ni Aç ||| path: AKP / democratic Turkey, GENCPARTI (Cem Uzan) ||| after: Cooperate with the IMF ||| does: builds infrastructure
+1416 ||| The Copenhagen Criteria ||| TR: Kopenhag Kriterleri ||| path: AKP / democratic Turkey ||| after: Build-Operate-Transfer ||| does: spirit "The Copenhagen Criteria"; stability -0.07
+1417 ||| Green Light for TÜBİTAK Projects ||| TR: TÜBİTAK Projelerine Yeşil Işık ||| path: AKP / democratic Turkey, DSP (Ecevit) government ||| after: Competition Authority ||| does: PP 25; stability 0.02
+1418 ||| Introduce the Central Bank Law ||| TR: Merkez Bankası Kanununu Çıkar ||| path: AKP / democratic Turkey ||| after: The Copenhagen Criteria ||| does: PP 100; stability 0.03
+1419 ||| Fund Companies ||| TR: Şirketleri Finanse Et ||| path: AKP / democratic Turkey ||| after: Competition Authority / Introduce the Central Bank Law ||| does: PP 75; stability -0.03
+1420 ||| Digital Universe ||| TR: Dijital Evren ||| path: AKP / democratic Turkey ||| after: Digital Areas / Green Light for TÜBİTAK Projects ||| does: stability 0.07; builds internet_station
+1421 ||| TENMAK ||| TR: TENMAK ||| path: AKP / democratic Turkey ||| after: Fund Companies ||| does: spirit "TENMAK"
+1422 ||| Investment Magnet ||| TR: Yatırım Mıknatısı ||| path: AKP / democratic Turkey ||| after: Introduce the Central Bank Law ||| does: builds industrial_complex, infrastructure
+1423 ||| Anatolian Industries ||| TR: Anadolu Sanayileri ||| path: AKP / democratic Turkey ||| after: Build-Operate-Transfer ||| does: stability 0.02; builds industrial_complex
+1424 ||| Sivas Project ||| TR: Sivas Projesi ||| path: AKP / democratic Turkey, GENCPARTI (Cem Uzan), Saadet / Milli Gorus ||| after: Anatolian Industries ||| does: builds industrial_complex, infrastructure
+1425 ||| Kayseri Project ||| TR: Kayseri Projesi ||| path: AKP / democratic Turkey, GENCPARTI (Cem Uzan), Saadet / Milli Gorus ||| after: Anatolian Industries ||| does: builds industrial_complex, infrastructure
+1426 ||| Capital Project ||| TR: Başkent Projesi ||| path: AKP / democratic Turkey ||| after: Sivas Project / Kayseri Project ||| does: builds industrial_complex, infrastructure
+1427 ||| Industrialize Agriculture ||| TR: Tarımı Sanayileştir ||| path: AKP / democratic Turkey, GENCPARTI (Cem Uzan) ||| after: Capital Project / Investment Magnet ||| does: builds industrial_complex, infrastructure
+1428 ||| Redesign Istanbul's Transportation System ||| TR: İstanbul Ulaşım Sistemini Yeniden Tasarla ||| path: AKP / democratic Turkey ||| after: Istanbul Ports / Urban Transformation ||| does: stability 0.05; builds infrastructure
+1429 ||| Marmaray ||| TR: Marmaray ||| path: AKP / democratic Turkey ||| after: Redesign Istanbul's Transportation System ||| does: stability 0.02
+1430 ||| Bacasız Sanayi... ||| TR: Bacasız Sanayi... ||| path: AKP / democratic Turkey ||| after: Redesign Istanbul's Transportation System / New Houses ||| does: spirit "Extra Tourism Support for the Economy"
+1431 ||| Summer Tourism Attractions ||| TR: Yaz Turizmi Cazibe Merkezleri ||| path: AKP / democratic Turkey ||| after: Bacasız Sanayi... ||| does: spirit "Summer Tourism Attractions"
+1432 ||| Winter Tourism Attractions ||| TR: Kış Turizmi Cazibe Merkezleri ||| path: AKP / democratic Turkey ||| after: Bacasız Sanayi... ||| does: spirit "Winter Tourism Attractions"
+1433 ||| Countryside Resource Search ||| TR: Kırsalda Kaynak Arama ||| path: AKP / democratic Turkey, GENCPARTI (Cem Uzan) ||| after: TENMAK ||| does: PP -75
+1434 ||| Fund Road Engineers ||| TR: Yol Mühendislerini Finanse Et ||| path: AKP / democratic Turkey ||| after: Build-Operate-Transfer ||| does: stability 0.02
+1435 ||| Reliable Land Project ||| TR: Güvenilir Toprak Projesi ||| path: AKP / democratic Turkey ||| after: Industrialize Agriculture ||| does: -
+1436 ||| Batman Oil Deposits ||| TR: Batman Petrol Yatakları ||| path: AKP / democratic Turkey ||| after: TENMAK ||| does: builds fossil_powerplant
+1437 ||| All Efforts on Road Building ||| TR: Tüm Güç Yol Yapımına ||| path: AKP / democratic Turkey ||| after: Fund Road Engineers ||| does: stability 0.02; builds infrastructure
+1438 ||| Drone Factories ||| TR: İHA Fabrikaları ||| path: AKP / democratic Turkey, MIT intelligence state ||| after: Gun Factories ||| does: builds arms_factory
+1439 ||| Altay Tank Factories ||| TR: Altay Tank Fabrikaları ||| path: AKP / democratic Turkey, MIT intelligence state ||| after: Anatolian Military Industries ||| does: builds arms_factory

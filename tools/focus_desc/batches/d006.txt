@@ -1,0 +1,60 @@
+360 ||| Cairo-Ankara Deals ||| TR: Kahire-Ankara Anlaşmaları ||| path: ANAP liberal ||| after: Ensure Peace in Syria ||| does: event "Cairo-Ankara Deals"
+361 ||| Revive the Baghdad Pact ||| TR: Bağdat Paktı'nı Canlandır ||| path: ANAP liberal ||| after: Invest In Iraq ||| does: event "Turkey Wants to Revive the Saadabad Pact"
+362 ||| Oppose Rojava ||| TR: Rojava'ya Karşı Çık ||| path: ANAP liberal ||| after: Push for a Referendum in Kurdistan / Tehran-Ankara Deals ||| does: war goal/war on ROJ
+363 ||| European-Asian Gateway Initiative ||| TR: Avrupa-Asya Geçit Girişimi ||| path: ANAP liberal ||| after: Cairo-Bucharest-Tehran Railway ||| does: spirit "The Turkish Gateway Project Is Fully Operational"; event "The Turkish Gateway Project Succeeds"; tooltip: The country will be united and its sectarian woes can be overcome.
+364 ||| Shut Down the Syrian-Turkish Border ||| TR: Suriye-Türkiye Sınırını Kapat ||| path: ANAP liberal ||| after: Immigration Law ||| does: tooltip: The Turkish-Syrian border will be closed and the Turkish Armed Forces will be massed at the border.
+365 ||| Shut Down the Iraqi-Turkish Border ||| TR: Irak-Türkiye Sınırını Kapat ||| path: ANAP liberal ||| after: Immigration Law ||| does: tooltip: The Turkish-Iraqi border will be closed and the Turkish Armed Forces will be massed at the border.
+366 ||| Paying Off Migration ||| TR: Göç Karşılığında Ödeme ||| path: ANAP liberal ||| after: Shut Down the Iraqi-Turkish Border / Shut Down the Syrian-Turkish Border ||| does: spirit "Paying Off Migration"
+367 ||| Attack United States Influence ||| TR: ABD Etkisine Saldır ||| path: ANAP liberal ||| after: Strengthen National Influence ||| does: PP -50
+368 ||| Attack Chinese Influence ||| TR: Çin Etkisine Saldır ||| path: ANAP liberal ||| after: Strengthen National Influence ||| does: PP -50
+369 ||| National Coverage ||| TR: Ulusal Kapsama ||| path: ANAP liberal ||| after: Attack Chinese Influence / Attack United States Influence ||| does: stability 0.03
+370 ||| Turkish National Armed Forces ||| TR: Türk Millî Silahlı Kuvvetleri ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Mesut Yılmaz's Victory ||| does: -
+371 ||| Give More Power to the Military ||| TR: Orduya Daha Fazla Güç Ver ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Turkish National Armed Forces ||| does: PP -75; stability -0.02
+372 ||| Increase Army Payments ||| TR: Asker Maaşlarını Artır ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Give More Power to the Military ||| does: PP 75
+373 ||| Nationalization of the Armed Forces ||| TR: Silahlı Kuvvetlerin Millîleştirilmesi ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Give More Power to the Military ||| does: -
+374 ||| Military Action ||| TR: Askeri Harekât ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Nationalization of the Armed Forces / Increase Army Payments ||| does: -
+375 ||| Modernization of the Armed Forces ||| TR: Silahlı Kuvvetlerin Modernizasyonu ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Military Action ||| does: -
+376 ||| Tank Modernization ||| TR: Tank Modernizasyonu ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Modernization of the Armed Forces ||| does: -
+377 ||| Altay Tank ||| TR: Altay Tankı ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Tank Modernization ||| does: -
+378 ||| Small Arms Modernization ||| TR: Hafif Silahların Modernizasyonu ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Modernization of the Armed Forces ||| does: -
+379 ||| Artillery Modernization ||| TR: Topçu Modernizasyonu ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Small Arms Modernization ||| does: spirit "Turkish Artillery"
+380 ||| War Tactics ||| TR: Savaş Taktikleri ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Military Action ||| does: -
+381 ||| The Modern Art of War ||| TR: Modern Savaş Sanatı ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: War Tactics ||| does: -
+382 ||| Mediterranean Exercises ||| TR: Akdeniz Tatbikatları ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: The Modern Art of War ||| does: -
+383 ||| Tuz Gölü Exercises ||| TR: Tuz Gölü Tatbikatları ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: The Modern Art of War ||| does: -
+384 ||| Doctrine of War ||| TR: Savaş Doktrini ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Tuz Gölü Exercises / Mediterranean Exercises ||| does: -
+385 ||| Turkish Special Armed Forces ||| TR: Türk Özel Kuvvetleri ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Military Action ||| does: spirit "Türk Özel Kuvvetler Komutanlığı"
+386 ||| Strengthen Offensive Power ||| TR: Taarruz Gücünü Artır ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Turkish Special Armed Forces ||| does: "Türk Özel Kuvvetler Komutanlığı" -> "Türk Özel Kuvvetler Komutanlığı"
+387 ||| The Strongest Special Forces in NATO ||| TR: NATO'nun En Güçlü Özel Kuvvetleri ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Strengthen Offensive Power ||| does: "Türk Özel Kuvvetler Komutanlığı" -> "Türk Özel Kuvvetler Komutanlığı"
+388 ||| Serving for Turkey ||| TR: Türkiye'nin Hizmetinde ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: The Strongest Special Forces in NATO ||| does: "Türk Özel Kuvvetler Komutanlığı" -> "Türk Özel Kuvvetler Komutanlığı"
+389 ||| Air Modernization ||| TR: Hava Modernizasyonu ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Small Arms Modernization / Tank Modernization ||| does: spirit "Turkish Air Force Standardization"
+390 ||| THK Program ||| TR: THK Programı ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Air Modernization ||| does: spirit "Turkish Air Forces"
+391 ||| Navy Modernization ||| TR: Donanma Modernizasyonu ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Air Modernization ||| does: -
+392 ||| Turkish Destroyers ||| TR: Türk Muhripleri ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Navy Modernization ||| does: spirit "Turkish Destroyer Sector"
+393 ||| Turkish Battleships ||| TR: Türk Zırhlıları ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Navy Modernization ||| does: spirit "Turkish Battleship Sector"
+394 ||| Turkish Carrier Project ||| TR: Türk Uçak Gemisi Projesi ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Turkish Battleships / Turkish Destroyers ||| does: spirit "Turkish Grand Carrier Projection"
+395 ||| Turkish Tank Weaponry ||| TR: Türk Tank Silahları ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: Altay Tank ||| does: spirit "Turkish Tankery"
+396 ||| Turkish Drones ||| TR: Türk İHA'ları ||| path: ANAP liberal, CHP social democrat, AKP / democratic Turkey ||| after: THK Program ||| does: spirit "The Turkish Drone Industry"
+397 ||| Anarchist Preparations ||| TR: Anarşist Hazırlıklar ||| path: anarchist ||| after: - ||| does: PP 75; stability 0.02; war support 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+398 ||| Anarchist Consultation ||| TR: Anarşist İstişare ||| path: anarchist ||| after: - ||| does: removes "The Turkish Economic Malaise"; PP 125
+399 ||| Thermal Springs ||| TR: Termal Sular ||| path: anarchist ||| after: Launch the National Ecology Programs / Deindustrialization Act ||| does: spirit "Thermal Water Projects"; builds synthetic_refinery
+400 ||| Tired of the State Structure ||| TR: Devlet Yapısından Bıkkınlık ||| path: anarchist ||| after: Anarchist Preparations ||| does: stability -0.1; war support 0.05; tooltip: Gains 5% Support (Relative Popularity).\n
+401 ||| Anti-Economic Propaganda ||| TR: Ekonomi Karşıtı Propaganda ||| path: anarchist ||| after: Tired of the State Structure ||| does: stability -0.03; tooltip: Gains 1% Support (Relative Popularity).\n
+402 ||| Arm the Economic Victims ||| TR: Ekonomik Mağdurları Silahlandır ||| path: anarchist ||| after: Anti-Economic Propaganda ||| does: stability -0.05; war support 0.05; tooltip: Gains 3% Support (Relative Popularity).\n
+403 ||| Anti-Work Propaganda ||| TR: Çalışma Karşıtı Propaganda ||| path: anarchist ||| after: Tired of the State Structure ||| does: stability -0.03; tooltip: Gains 1% Support (Relative Popularity).\n
+404 ||| Create The Anarchist Congress ||| TR: Anarşist Kongreyi Kur ||| path: anarchist ||| after: Anti-Work Propaganda / Anti-Economic Propaganda ||| does: spirit "The Anarchist Congress Assembles"; stability -0.01; tooltip: Gains 3% Support (Relative Popularity).\n
+405 ||| Arm the Unemployed ||| TR: İşsizleri Silahlandır ||| path: anarchist ||| after: Anti-Work Propaganda ||| does: stability -0.03; tooltip: Gains 1% Support (Relative Popularity).\n
+406 ||| Start the Anarchist Militarization ||| TR: Anarşist Militarizasyonu Başlat ||| path: anarchist ||| after: Arm the Unemployed / Create The Anarchist Congress ||| does: spirit "Anarchist Militarization"; stability -0.01; tooltip: Gains 3% Support (Relative Popularity).\n
+407 ||| Connect with the Generals ||| TR: Generallerle Bağlantı Kur ||| path: anarchist ||| after: Start the Anarchist Militarization ||| does: PP 100; war support 0.02; tooltip: Gains 2% Support (Relative Popularity).\n
+408 ||| Talks with Military Groups ||| TR: Askeri Gruplarla Görüşmeler ||| path: anarchist ||| after: Connect with the Generals ||| does: war support 0.03; tooltip: Gains 2% Support (Relative Popularity).\n
+409 ||| Appoint New Generals to Command ||| TR: Yeni Generalleri Komutaya Ata ||| path: anarchist ||| after: Connect with the Generals ||| does: war support 0.01; tooltip: Gains 1% Support (Relative Popularity).\n
+410 ||| Anarchist Planning ||| TR: Anarşist Planlama ||| path: anarchist ||| after: Connect with the Generals ||| does: PP 25; war support 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+411 ||| Formalize the War System ||| TR: Savaş Sistemini Resmîleştir ||| path: anarchist ||| after: Appoint New Generals to Command / Talks with Military Groups ||| does: spirit "defence_07"; war support 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+412 ||| Thermal Spring Trade ||| TR: Termal Su Ticareti ||| path: anarchist ||| after: Thermal Springs ||| does: -
+413 ||| Control the Electricity ||| TR: Elektriği Kontrol Altına Al ||| path: anarchist ||| after: Anarchist Consultation ||| does: spirit "Controlled Electricity"
+414 ||| Prevent Election Rigging ||| TR: Seçimlere Hile Karıştırılmasını Önle ||| path: anarchist ||| after: Anarchist Consultation ||| does: PP 75; stability 0.03
+415 ||| Start the Congress Elections ||| TR: Kongre Seçimlerini Başlat ||| path: anarchist ||| after: Prevent Election Rigging / Control the Electricity ||| does: PP 125
+416 ||| Victory for the Green Anarchists ||| TR: Yeşil Anarşistlerin Zaferi ||| path: anarchist ||| after: Start the Congress Elections ||| does: PP 75; stability 0.02; war support 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+417 ||| Victory for the Anarcho-Left ||| TR: Anarko-Solun Zaferi ||| path: anarchist ||| after: Start the Congress Elections ||| does: PP 75; stability 0.02; war support 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+418 ||| Destroy the Capitalists ||| TR: Kapitalistleri Yok Et ||| path: anarchist ||| after: Victory for the Anarcho-Left ||| does: spirit "Looting the Capitalists..."
+419 ||| Cleanse the Pro-Americans ||| TR: Amerikan Yanlılarını Temizle ||| path: anarchist ||| after: Destroy the Capitalists ||| does: PP -75; stability -0.03; tooltip: Gains 5% Support (Relative Popularity).\n

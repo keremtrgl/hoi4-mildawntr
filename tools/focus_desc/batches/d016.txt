@@ -1,0 +1,60 @@
+960 ||| Civilian Project in France ||| TR: Fransa'da Sivil Proje ||| path: Constitutional Court rule ||| after: Become a Joint Influencer of the EU ||| does: builds industrial_complex
+961 ||| Infrastructure Investment in France ||| TR: Fransa'da Altyapı Yatırımı ||| path: Constitutional Court rule ||| after: Civilian Project in France ||| does: builds infrastructure
+962 ||| Open Military Prisons ||| TR: Askeri Cezaevleri Aç ||| path: Constitutional Court rule ||| after: Purge the Politicized Generals ||| does: spirit "Military Prisons"
+963 ||| Ensure Military Loyalty ||| TR: Ordunun Sadakatini Sağla ||| path: Constitutional Court rule ||| after: Open Military Prisons / Lower the Military Budget ||| does: tooltip: 's opinion of  changes by +3%.\n
+964 ||| Rotation of Real Partnership ||| TR: Gerçek Ortaklık Rotasyonu ||| path: Constitutional Court rule ||| after: European Union Strategy ||| does: PP 75
+965 ||| Reach Out to Hungary ||| TR: Macaristan'a El Uzat ||| path: Constitutional Court rule ||| after: Rotation of Real Partnership ||| does: -
+966 ||| Turkic Partnership with Hungary ||| TR: Macaristan ile Türk Ortaklığı ||| path: Constitutional Court rule ||| after: Reach Out to Hungary ||| does: -
+967 ||| Alliance with Hungary ||| TR: Macaristan ile İttifak ||| path: Constitutional Court rule ||| after: Hungarian Military Investment / Turkic Partnership with Hungary ||| does: event "A Turkish Partnership Offer"
+968 ||| Persuade Hungary to Leave the EU ||| TR: Macaristan'ı AB'den Ayrılmaya İkna Et ||| path: Constitutional Court rule ||| after: Turkic Partnership with Hungary ||| does: event "Turkey Pushes Us Away From the EU"
+969 ||| Increase Turkic Influence in Hungary ||| TR: Macaristan'daki Türk Etkisini Artır ||| path: Constitutional Court rule ||| after: Persuade Hungary to Leave the EU ||| does: PP 100
+970 ||| Guarantee the Northern Syrian Regime ||| TR: Kuzey Suriye Yönetimine Garanti Ver ||| path: Constitutional Court rule ||| after: Policies Of Interventionism ||| does: -
+971 ||| Invade the Northern Syrian Camps ||| TR: Kuzey Suriye'deki Kampları İşgal Et ||| path: Constitutional Court rule ||| after: Guarantee the Northern Syrian Regime ||| does: war support 0.02; war goal/war on TUR
+972 ||| Bombardment Of Syria ||| TR: Suriye'nin Bombalanması ||| path: Constitutional Court rule, Osman Pamukoglu's HEPAR ||| after: Guarantee the Northern Syrian Regime ||| does: war support 0.02; war goal/war on TUR
+973 ||| Relocate the Parliament ||| TR: Meclisi Taşı ||| path: Constitutional Court rule ||| after: Technocrat-Court Alliance ||| does: stability 0.07
+974 ||| Withdraw the Lawmakers from the Court ||| TR: Yasa Yapıcıları Mahkemeden Çek ||| path: Constitutional Court rule ||| after: Technocrat-Court Alliance ||| does: stability -0.03; tooltip: Loses 2% Support (Relative Popularity).\n
+975 ||| Appoint Technocrats to the Court ||| TR: Mahkemeye Teknokratlar Ata ||| path: Constitutional Court rule ||| after: Withdraw the Lawmakers from the Court / Relocate the Parliament ||| does: spirit "bureau_05"; stability 0.05; tooltip: Gains 2% Support (Relative Popularity).\n
+976 ||| Open the Economists' Council ||| TR: İktisatçılar Konseyini Kur ||| path: Constitutional Court rule ||| after: Appoint Technocrats to the Court ||| does: spirit "The Economists' Council"
+977 ||| Open the Policymakers' Council ||| TR: Politika Yapıcılar Konseyini Kur ||| path: Constitutional Court rule ||| after: Appoint Technocrats to the Court ||| does: spirit "The Policy Council"
+978 ||| Open the Military Council ||| TR: Askeri Konseyi Kur ||| path: Constitutional Court rule ||| after: Appoint Technocrats to the Court ||| does: spirit "The Military Council"
+979 ||| Gather the Powers Around the Court ||| TR: Yetkileri Mahkeme Etrafında Topla ||| path: Constitutional Court rule ||| after: Open the Military Council / Open the Policymakers' Council ||| does: spirit "The Concentrated Powers of the Regime"
+980 ||| Reset Corruption ||| TR: Yolsuzluğu Sıfırla ||| path: Constitutional Court rule ||| after: Gather the Powers Around the Court ||| does: spirit "corruption_level_03"
+981 ||| Increase Military Confidence ||| TR: Orduya Güveni Artır ||| path: Constitutional Court rule ||| after: Gather the Powers Around the Court ||| does: spirit "intervention_neo_imperialism"; stability -0.02
+982 ||| Control the Media ||| TR: Medyayı Kontrol Altına Al ||| path: Constitutional Court rule ||| after: Gather the Powers Around the Court ||| does: spirit "Controlled Social Media"; removes "The Turkish Media"; tooltip: The Turkish media's opinion no longer matters.
+983 ||| Use the Military as a Government Guard ||| TR: Orduyu Hükümetin Muhafızı Olarak Kullan ||| path: Constitutional Court rule ||| after: Control the Media / Increase Military Confidence ||| does: PP 75
+984 ||| Budget Protectionism ||| TR: Bütçe Korumacılığı ||| path: Constitutional Court rule ||| after: Reset Corruption ||| does: "corruption_level_03" -> "corruption_level_02"
+985 ||| Harmony of Workers ||| TR: İşçilerin Uyumu ||| path: Constitutional Court rule ||| after: Gather the Powers Around the Court ||| does: spirit "The Harmonious Workers' Movement"
+986 ||| Solve the Unions' Problems ||| TR: Sendikaların Sorunlarını Çöz ||| path: Constitutional Court rule ||| after: Harmony of Workers ||| does: "The Harmonious Workers' Movement" -> "The Harmonious Workers' Movement"
+987 ||| The Art of Social Sciences ||| TR: Sosyal Bilimler Sanatı ||| path: Constitutional Court rule ||| after: Solve the Unions' Problems / Budget Protectionism ||| does: spirit "The Art of Social Sciences"
+988 ||| Northern Politics ||| TR: Kuzey Siyaseti ||| path: Constitutional Court rule ||| after: Foreign Policy Of Justice ||| does: PP 100
+989 ||| Stay Tied to the US ||| TR: ABD'ye Bağlı Kal ||| path: Constitutional Court rule ||| after: Northern Politics ||| does: PP -75
+990 ||| Guarded Under NATO ||| TR: NATO Güvencesi Altında ||| path: Constitutional Court rule ||| after: Stay Tied to the US ||| does: spirit "Under NATO's Protection"
+991 ||| Guarantee Azerbaijan ||| TR: Azerbaycan'a Garanti Ver ||| path: Constitutional Court rule ||| after: Policies Of Interventionism ||| does: -
+992 ||| Military Aid to Baku ||| TR: Bakü'ye Askeri Yardım ||| path: Constitutional Court rule ||| after: Guarantee Azerbaijan ||| does: builds arms_factory
+993 ||| Regional Policies ||| TR: Bölgesel Politikalar ||| path: Constitutional Court rule ||| after: Foreign Policy Of Justice ||| does: PP 75; stability 0.02; war support 0.02
+994 ||| National Stabilization Act ||| TR: Ulusal İstikrar Yasası ||| path: Constitutional Court rule, MHP / Grey Wolves nationalist, Turkish Armed Forces junta ||| after: Regional Policies ||| does: spirit "The Stabilization of Turkey"
+995 ||| Transcaucasian Oil Deal ||| TR: Kafkasya Petrol Anlaşması ||| path: Constitutional Court rule ||| after: National Stabilization Act ||| does: event "Transcaucasian Oil Deal"
+996 ||| Ensure Peace in the Caucasus ||| TR: Kafkasya'da Barışı Sağla ||| path: Constitutional Court rule ||| after: Build Oil Pumpjacks ||| does: -
+997 ||| Absolute Power Through Law ||| TR: Hukuk Yoluyla Mutlak Güç ||| path: Constitutional Court rule ||| after: The Court Stands Alone ||| does: spirit "The Rise of Absolutism"
+998 ||| Restore the Power of Law ||| TR: Hukukun Gücünü Yeniden Tesis Et ||| path: Constitutional Court rule ||| after: The Court Stands Alone ||| does: PP 100; stability 0.02
+999 ||| Stability of Law ||| TR: Hukukun İstikrarı ||| path: Constitutional Court rule ||| after: Restore the Power of Law / Absolute Power Through Law ||| does: stability 0.1
+1000 ||| Political Drain ||| TR: Siyasi Erozyon ||| path: Constitutional Court rule ||| after: Stability of Law ||| does: "The Rise of Absolutism" -> "The Rise of Absolutism"
+1001 ||| Restore the Military's Energy ||| TR: Ordunun Enerjisini Geri Kazandır ||| path: Constitutional Court rule ||| after: Stability of Law ||| does: PP -75
+1002 ||| Law Cycles ||| TR: Hukuk Döngüleri ||| path: Constitutional Court rule ||| after: Stability of Law ||| does: spirit "Flexible Laws"
+1003 ||| Engine of Statics ||| TR: Durağanlığın Motoru ||| path: Constitutional Court rule ||| after: Political Drain / Restore the Military's Energy ||| does: spirit "The Engine of Statistics"
+1004 ||| Open the Senate ||| TR: Senatoyu Aç ||| path: Constitutional Court rule ||| after: Engine of Statics ||| does: "The Function of the Senate" -> "The Function of the Senate"
+1005 ||| Kickstart the Military ||| TR: Orduyu Harekete Geçir ||| path: Constitutional Court rule ||| after: Engine of Statics ||| does: spirit "Kickstarting Militarization"
+1006 ||| Boost Media Independence ||| TR: Medya Bağımsızlığını Güçlendir ||| path: Constitutional Court rule ||| after: Engine of Statics ||| does: spirit "Bolstering Media Independence"
+1007 ||| Restore the Guardians of Kemalism ||| TR: Kemalizmin Muhafızlarını Geri Getir ||| path: Constitutional Court rule ||| after: Boost Media Independence / Kickstart the Military ||| does: spirit "Guardians of Kemalism"; stability 0.05
+1008 ||| Absorb the Powers of the Senate and Parliament ||| TR: Senato ve Meclisin Yetkilerini Devral ||| path: Constitutional Court rule ||| after: Open the Senate ||| does: "The Function of the Senate" -> "The Function of the Senate"
+1009 ||| Quality Audit ||| TR: Kalite Denetimi ||| path: Constitutional Court rule ||| after: Engine of Statics ||| does: spirit "Quality Audits"
+1010 ||| European Quality of Life Standards ||| TR: Avrupa Yaşam Kalitesi Standartları ||| path: Constitutional Court rule ||| after: Quality Audit ||| does: spirit "European Quality of Life Standards"
+1011 ||| Manage the Bureaucracy ||| TR: Bürokrasiyi Yönet ||| path: Constitutional Court rule ||| after: Absorb the Powers of the Senate and Parliament / European Quality of Life Standards ||| does: spirit "Manage the Bureaucracy"
+1012 ||| Take Precautions Against Gülen ||| TR: Gülen'e Karşı Önlem Al ||| path: Constitutional Court rule ||| after: Counter-Terrorism Policies ||| does: spirit "Precautions Against the Gülen Movement"
+1013 ||| Send Agents to Pennsylvania ||| TR: Pensilvanya'ya Ajan Gönder ||| path: Constitutional Court rule ||| after: Take Precautions Against Gülen ||| does: "Precautions Against the Gülen Movement" -> "Precautions Against the Gülen Movement"
+1014 ||| Clash with Gülen's Fundamentalists ||| TR: Gülen'in Fundamentalistleriyle Çatış ||| path: Constitutional Court rule ||| after: Counter-Terrorism Policies ||| does: "The Gülen Movement's Growing Influence Over the Republic" -> "The Gülen Movement's Partial Influence Over the Republic"; tooltip: If this is not achieved by 2016, the Gülen movement and its forces will be able to launch a coup attempt to seize the state.
+1015 ||| Shut Down Gülen Institutions ||| TR: Gülen Kurumlarını Kapat ||| path: Constitutional Court rule, DSP (Ecevit) government, Saadet / Milli Gorus ||| after: Clash with Gülen's Fundamentalists ||| does: "The Gülen Movement's Partial Influence Over the Republic" -> "The Gülen Movement's Low Influence Over the Republic"
+1016 ||| Industrial Projects ||| TR: Sanayi Projeleri ||| path: Constitutional Court rule ||| after: General Industrial Build-Up ||| does: PP 125
+1017 ||| Focus on Military Industries ||| TR: Askeri Sanayilere Odaklan ||| path: Constitutional Court rule ||| after: Industrial Projects ||| does: builds arms_factory
+1018 ||| New Generation of Military Industries ||| TR: Yeni Nesil Askeri Sanayiler ||| path: Constitutional Court rule ||| after: Focus on Military Industries ||| does: spirit "Fifth-Generation Military Industries"
+1019 ||| Open Tank Factories ||| TR: Tank Fabrikaları Aç ||| path: Constitutional Court rule ||| after: New Generation of Military Industries ||| does: builds arms_factory

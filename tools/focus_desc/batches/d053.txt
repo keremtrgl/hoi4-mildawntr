@@ -1,0 +1,60 @@
+3180 ||| Industrialization of the Islamic State ||| TR: İslam Devletinin Sanayileşmesi ||| path: Islamist-Ottomanist ||| after: No Consumption Economy ||| does: builds arms_factory, dockyard, industrial_complex
+3181 ||| Remove the Political Power of the Lira ||| TR: Liranın Siyasi Gücünü Kaldır ||| path: Islamist-Ottomanist ||| after: No Consumption Economy ||| does: removes "Yeni Türk Lirası"; removes "Türk Lirası"; PP 75; stability 0.03
+3182 ||| Build Oil Refineries ||| TR: Petrol Rafinerileri İnşa Et ||| path: Islamist-Ottomanist ||| after: Launch the National Resource Program ||| does: builds fossil_powerplant
+3183 ||| Create Precious Metal Extraction Zones ||| TR: Değerli Maden Çıkarma Bölgeleri Kur ||| path: Islamist-Ottomanist ||| after: Launch the National Resource Program ||| does: -
+3184 ||| Open Tungsten Mining Fields ||| TR: Tungsten Madeni Sahaları Aç ||| path: Islamist-Ottomanist ||| after: Create Precious Metal Extraction Zones / Build Oil Refineries ||| does: -
+3185 ||| Military Industries of the Islamic State ||| TR: İslam Devletinin Askeri Sanayileri ||| path: Islamist-Ottomanist ||| after: Industrialization of the Islamic State ||| does: builds arms_factory
+3186 ||| Expand the Civilian Industries ||| TR: Sivil Sanayileri Genişlet ||| path: Islamist-Ottomanist, TKP communist ||| after: Industrialization of the Islamic State ||| does: builds industrial_complex
+3187 ||| Stable Economic System ||| TR: İstikrarlı Ekonomik Sistem ||| path: Islamist-Ottomanist ||| after: Military Industries of the Islamic State / Expand the Civilian Industries ||| does: -
+3188 ||| Reorganize the Budget System ||| TR: Bütçe Sistemini Yeniden Düzenle ||| path: Islamist-Ottomanist ||| after: Remove the Political Power of the Lira ||| does: spirit "The Reorganized Budget System"
+3189 ||| Tax Reforms ||| TR: Vergi Reformları ||| path: Islamist-Ottomanist ||| after: Reorganize the Budget System ||| does: spirit "Tax Laws"; tooltip: Taxes will be lowered immediately.
+3190 ||| Unemployment Benefit Reform ||| TR: İşsizlik Maaşı Reformu ||| path: Islamist-Ottomanist ||| after: Reorganize the Budget System ||| does: spirit "Unemployment Benefit Reform"
+3191 ||| Reduce Unemployment ||| TR: İşsizliği Azalt ||| path: Islamist-Ottomanist ||| after: Unemployment Benefit Reform / Tax Reforms ||| does: -
+3192 ||| Create Systematic Great Growth ||| TR: Sistematik Büyük Büyüme Yarat ||| path: Islamist-Ottomanist ||| after: Stable Economic System ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+3193 ||| Rich Resource State ||| TR: Kaynak Zengini Devlet ||| path: Islamist-Ottomanist ||| after: Open Tungsten Mining Fields ||| does: spirit "rentier_state"
+3194 ||| Strengthen the National War Industries ||| TR: Ulusal Savaş Sanayilerini Güçlendir ||| path: Islamist-Ottomanist ||| after: Reduce Unemployment ||| does: spirit "Islamic War Industries"
+3195 ||| Gold Reform ||| TR: Altın Reformu ||| path: Islamist-Ottomanist ||| after: Reduce Unemployment / Create Systematic Great Growth ||| does: spirit "Reformed Gold"
+3196 ||| Crack Down on the Last Capitalist Elements ||| TR: Son Kapitalist Unsurları Bastır ||| path: Islamist-Ottomanist ||| after: Rich Resource State / Reduce Unemployment ||| does: PP 75; stability 0.07
+3197 ||| Expand the War Deposits ||| TR: Savaş Depolarını Genişlet ||| path: Islamist-Ottomanist ||| after: Strengthen the National War Industries ||| does: -
+3198 ||| Vulnerable Arms Factories ||| TR: Savunmasız Silah Fabrikaları ||| path: Islamist-Ottomanist ||| after: Strengthen the National War Industries ||| does: spirit "Vulnerable Arms Factories"
+3199 ||| The Great Islamic Economy ||| TR: Büyük İslam Ekonomisi ||| path: Islamist-Ottomanist ||| after: Vulnerable Arms Factories / Expand the War Deposits ||| does: removes "The Turkish Economic Malaise"; stability 0.05
+3200 ||| Return of the Jizya Tax ||| TR: Cizye Vergisinin Dönüşü ||| path: Islamist-Ottomanist ||| after: Valuable Ottoman Lira ||| does: spirit "The Jizya Tax"
+3201 ||| Ottoman Tourism ||| TR: Osmanlı Turizmi ||| path: Islamist-Ottomanist ||| after: Valuable Ottoman Lira ||| does: spirit "Ottoman Tourism"
+3202 ||| Keep the Loyal Research Colleges ||| TR: Sadık Araştırma Kolejlerini Koru ||| path: Islamist-Ottomanist ||| after: Embrace an Anti-Debt Policy ||| does: -
+3203 ||| Build Cultural Academies ||| TR: Kültür Akademileri Kur ||| path: Islamist-Ottomanist ||| after: Control the Old Central Bank's Money ||| does: -
+3204 ||| The Great Islamic Science ||| TR: Büyük İslam Bilimi ||| path: Islamist-Ottomanist ||| after: Create Systematic Great Growth ||| does: -
+3205 ||| Search for Natural Gas ||| TR: Doğalgaz Ara ||| path: Islamist-Ottomanist ||| after: Rich Resource State ||| does: builds fossil_powerplant
+3206 ||| Build Science Museums ||| TR: Bilim Müzeleri Kur ||| path: Islamist-Ottomanist ||| after: Finish Off the Gülenists / Finish Off the PKK ||| does: spirit "Modern Museums"
+3207 ||| Ban the Modern Hat Culture ||| TR: Modern Şapka Kültürünü Yasakla ||| path: Islamist-Ottomanist ||| after: Build Science Museums ||| does: -
+3208 ||| Reform TÜBİTAK ||| TR: TÜBİTAK'ı Reforme Et ||| path: Islamist-Ottomanist ||| after: Build Science Museums ||| does: spirit "A Reformed TÜBİTAK"
+3209 ||| Observatories ||| TR: Rasathaneler ||| path: Islamist-Ottomanist ||| after: Reform TÜBİTAK / Science Supervision Institutions ||| does: spirit "Observatories"
+3210 ||| Science Supervision Institutions ||| TR: Bilim Denetim Kurumları ||| path: Islamist-Ottomanist ||| after: Build Science Museums ||| does: spirit "The Ottoman Science Supervision Institution"
+3211 ||| Hıfzıssıhha Law ||| TR: Hıfzıssıhha Kanunu ||| path: Islamist-Ottomanist ||| after: Science Supervision Institutions / Reform TÜBİTAK ||| does: stability 0.05
+3212 ||| Ottoman Red Crescent Society ||| TR: Osmanlı Hilal-i Ahmer Cemiyeti ||| path: Islamist-Ottomanist ||| after: Science Supervision Institutions ||| does: spirit "The Ottoman Red Crescent Society (Hilal-i Ahmer)"
+3213 ||| Build Cultural Museums ||| TR: Kültür Müzeleri Kur ||| path: Islamist-Ottomanist ||| after: Ban the Modern Hat Culture / Science Supervision Institutions ||| does: -
+3214 ||| Strengthen the Mehter Band ||| TR: Mehter Takımını Güçlendir ||| path: Islamist-Ottomanist ||| after: Ottoman Red Crescent Society / Build Cultural Museums ||| does: spirit "The Reorganized Army Mehter Band"
+3215 ||| Unitary State Principles ||| TR: Üniter Devlet İlkeleri ||| path: Islamist-Ottomanist ||| after: Ottoman Red Crescent Society / Hıfzıssıhha Law ||| does: spirit "Unitary State Principles"
+3216 ||| Keep the Social State System ||| TR: Sosyal Devlet Sistemini Koru ||| path: Islamist-Ottomanist ||| after: Strengthen the Mehter Band / Unitary State Principles ||| does: stability 0.05
+3217 ||| Crush the Communist Unions ||| TR: Komünist Sendikaları Ez ||| path: Islamist-Ottomanist ||| after: Crush the Communist Organizations ||| does: -
+3218 ||| Repair the Effects of Mobilization ||| TR: Seferberliğin Etkilerini Onar ||| path: Islamist-Ottomanist ||| after: Repair The State ||| does: spirit "Repairing the Effects of Mobilization"
+3219 ||| The New Controlled Media ||| TR: Yeni Kontrollü Medya ||| path: Islamist-Ottomanist ||| after: National Coverage Action ||| does: spirit "Controlled Social Media"; removes "The Turkish Media"; tooltip: The Turkish media's opinion no longer matters.
+3220 ||| Buy High-Quality German Weapons ||| TR: Yüksek Kaliteli Alman Silahları Satın Al ||| path: Islamist-Ottomanist ||| after: Border Deals with Austria / Revenge for the First World War ||| does: -
+3221 ||| German Licensed Tanks ||| TR: Alman Lisanslı Tanklar ||| path: Islamist-Ottomanist ||| after: Rebuild the Berlin-Baghdad Railway / Revenge for the First World War ||| does: -
+3222 ||| The Greater Umayyad ||| TR: Büyük Emevi ||| path: Islamist-Ottomanist ||| after: Reliable Islamic Movement / Peaceful Propaganda ||| does: stability 0.1
+3223 ||| Ottoman Cavalry ||| TR: Osmanlı Atlıları ||| path: Islamist-Ottomanist ||| after: Turkish Mountaineer Special Forces / Crush Hungary ||| does: -
+3224 ||| Reorganize Supply Chains to Vienna ||| TR: İkmal Hatlarını Viyana'ya Göre Yeniden Düzenle ||| path: Islamist-Ottomanist ||| after: Crush Hungary / Control The Population Movements ||| does: -
+3225 ||| The Question of the Throne ||| TR: Taht Meselesi ||| path: Islamist-Ottomanist ||| after: - ||| does: PP 100
+3226 ||| Defend the Regime ||| TR: Rejimi Savun ||| path: Islamist-Ottomanist ||| after: The Question of the Throne ||| does: stability 0.02
+3227 ||| Execution of Enemies ||| TR: Düşmanların İnfazı ||| path: Islamist-Ottomanist ||| after: Defend the Regime ||| does: spirit "Government Censorship"
+3228 ||| Solid Control ||| TR: Sağlam Kontrol ||| path: Islamist-Ottomanist ||| after: Execution of Enemies ||| does: -
+3229 ||| Political Islam ||| TR: Siyasal İslam ||| path: Islamist-Ottomanist ||| after: Solid Control ||| does: PP 50
+3230 ||| Gain the Majority ||| TR: Çoğunluğu Kazan ||| path: Islamist-Ottomanist ||| after: Political Islam ||| does: -
+3231 ||| Changes in the Regime ||| TR: Rejimde Değişiklikler ||| path: Islamist-Ottomanist ||| after: The Question of the Throne ||| does: PP 150; stability -0.02
+3232 ||| Long Live Bayezid ||| TR: Çok Yaşa Bayezid ||| path: Islamist-Ottomanist ||| after: Changes in the Regime ||| does: stability 0.05
+3233 ||| Crescent of Innovation ||| TR: Yeniliğin Hilali ||| path: Islamist-Ottomanist ||| after: Long Live Bayezid ||| does: spirit "Crescent Of Innovation"
+3234 ||| Rational Cabinet ||| TR: Rasyonel Kabine ||| path: Islamist-Ottomanist ||| after: Long Live Bayezid ||| does: spirit "Rational Policies"
+3235 ||| Cover the Geopolitics ||| TR: Jeopolitiği Kapsa ||| path: Islamist-Ottomanist ||| after: Rational Cabinet / Crescent of Innovation ||| does: spirit "intervention_neo_imperialism"
+3236 ||| Long Live Neslişah ||| TR: Çok Yaşa Neslişah ||| path: Islamist-Ottomanist ||| after: Changes in the Regime ||| does: stability 0.05
+3237 ||| Rise of the Alafranga ||| TR: Alafrangalığın Yükselişi ||| path: Islamist-Ottomanist ||| after: Long Live Neslişah ||| does: spirit "The Alafranga"
+3238 ||| Talks with the West ||| TR: Batı ile Görüşmeler ||| path: Islamist-Ottomanist ||| after: Rise of the Alafranga ||| does: -
+3239 ||| The European Dream ||| TR: Avrupa Hayali ||| path: Islamist-Ottomanist ||| after: Rise of the Alafranga ||| does: -

@@ -1,0 +1,60 @@
+2700 ||| Integrate Mosul ||| TR: Musul'u Entegre Et ||| path: military junta ||| after: Enter Mosul ||| does: PP -75; stability -0.05
+2701 ||| Lift the Ban on Political Parties ||| TR: Siyasi Parti Yasağını Kaldır ||| path: military junta ||| after: Hold Elections ||| does: removes "The Army's Intervention in Politics"; PP -75; stability 0.03
+2702 ||| Turkish Officers Stage a Coup to Suspend Democracy ||| TR: Türk Subayları Demokrasiyi Askıya Almak İçin Darbe Yapıyor ||| path: military junta ||| after: Lift the Ban on Political Parties ||| does: spirit "Pro-NATO Officers in Charge"; stability -0.07; switches to Turkish Armed Forces junta tree
+2703 ||| Turkish Elections ||| TR: Türkiye Seçimleri ||| path: military junta ||| after: Lift the Ban on Political Parties ||| does: stability 0.02; switches to AKP / democratic Turkey tree; tooltip: You will need to ask parliament to justify a war again.
+2704 ||| Organize a Counter-Strike ||| TR: Karşı Saldırı Düzenle ||| path: MIT intelligence state ||| after: - ||| does: war support 0.1
+2705 ||| New Economics ||| TR: Yeni Ekonomi ||| path: MIT intelligence state ||| after: - ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+2706 ||| Government Policies ||| TR: Hükümet Politikaları ||| path: MIT intelligence state ||| after: - ||| does: war support 0.03
+2707 ||| Foreign Policies ||| TR: Dış Politika ||| path: MIT intelligence state ||| after: - ||| does: PP 100
+2708 ||| Hakan Fidan's Regime ||| TR: Hakan Fidan Rejimi ||| path: MIT intelligence state ||| after: - ||| does: PP 100
+2709 ||| Counter-Terror Operations ||| TR: Terörle Mücadele Operasyonları ||| path: MIT intelligence state ||| after: - ||| does: war support 0.05
+2710 ||| Data-Breaking Group ||| TR: Veri Kırma Grubu ||| path: MIT intelligence state ||| after: - ||| does: spirit "The Data Mining Group"
+2711 ||| Secret Jewish Mind Games ||| TR: Gizli Yahudi Akıl Oyunları ||| path: MIT intelligence state ||| after: - ||| does: PP 100
+2712 ||| Oligarchic Economic Model ||| TR: Oligarşik Ekonomi Modeli ||| path: MIT intelligence state ||| after: New Economics ||| does: spirit "Oligarchic Economic Model"; "the_ulema" -> "oligarchs"; "Yeni Türk Lirası" -> "Yeni Türk Lirası"
+2713 ||| Deals with the Sabancı Group ||| TR: Sabancı Grubu ile Anlaşmalar ||| path: MIT intelligence state ||| after: Oligarchic Economic Model ||| does: spirit "Sabancı Group"
+2714 ||| Sabancı Local Industries ||| TR: Sabancı Yerel Sanayileri ||| path: MIT intelligence state ||| after: Deals with the Sabancı Group ||| does: builds industrial_complex
+2715 ||| Sabancı Modern Industries ||| TR: Sabancı Modern Sanayileri ||| path: MIT intelligence state ||| after: Sabancı Local Industries ||| does: builds industrial_complex
+2716 ||| AS Industries ||| TR: AS Sanayileri ||| path: MIT intelligence state ||| after: Deals with the Sabancı Group ||| does: builds industrial_complex
+2717 ||| Finance the Sabancı Military Sector ||| TR: Sabancı Askeri Sektörünü Finanse Et ||| path: MIT intelligence state ||| after: AS Industries ||| does: builds arms_factory
+2718 ||| Full Partnership with the Sabancı Group ||| TR: Sabancı Grubu ile Tam Ortaklık ||| path: MIT intelligence state ||| after: Finance the Sabancı Military Sector / Sabancı Modern Industries ||| does: "Sabancı Group" -> "Full Partnership with the Sabancı Group"
+2719 ||| Deals with the Koç Group ||| TR: Koç Grubu ile Anlaşmalar ||| path: MIT intelligence state ||| after: Oligarchic Economic Model ||| does: spirit "Koç Group"
+2720 ||| Koç Finance ||| TR: Koç Finans ||| path: MIT intelligence state ||| after: Deals with the Koç Group ||| does: builds offices
+2721 ||| Koç Universities ||| TR: Koç Üniversiteleri ||| path: MIT intelligence state ||| after: Koç Finance ||| does: builds offices
+2722 ||| Koç Banks ||| TR: Koç Bankaları ||| path: MIT intelligence state ||| after: Deals with the Koç Group ||| does: builds offices
+2723 ||| Koç Stocks ||| TR: Koç Hisseleri ||| path: MIT intelligence state ||| after: Koç Banks ||| does: builds offices
+2724 ||| Full Partnership with the Koç Group ||| TR: Koç Grubu ile Tam Ortaklık ||| path: MIT intelligence state ||| after: Koç Stocks / Koç Universities ||| does: "Koç Group" -> "Full Partnership With Koç Group"
+2725 ||| The National Resistance ||| TR: Millî Direniş ||| path: MIT intelligence state ||| after: Organize a Counter-Strike ||| does: event "MİT Launches a Counterstrike Against the Mafias!"
+2726 ||| Call the People to War ||| TR: Halkı Savaşa Çağır ||| path: MIT intelligence state ||| after: The National Resistance ||| does: -
+2727 ||| Organize the Emergency Government ||| TR: Acil Durum Hükümetini Kur ||| path: MIT intelligence state ||| after: The National Resistance ||| does: spirit "Milli İstihbarat Teşkilatı"; PP 150; stability 0.05
+2728 ||| Arm the Kemalists ||| TR: Kemalistleri Silahlandır ||| path: MIT intelligence state ||| after: Organize the Emergency Government ||| does: -
+2729 ||| Regional Defence ||| TR: Bölgesel Savunma ||| path: MIT intelligence state ||| after: Arm the Kemalists ||| does: stability -0.1; war support -0.1
+2730 ||| Ask SADAT for Help ||| TR: SADAT'tan Yardım İste ||| path: MIT intelligence state ||| after: Regional Defence ||| does: stability -0.03
+2731 ||| SADAT Anti-Air ||| TR: SADAT Hava Savunması ||| path: MIT intelligence state ||| after: Ask SADAT for Help ||| does: -
+2732 ||| SADAT Extra Equipment ||| TR: SADAT Ek Teçhizatı ||| path: MIT intelligence state ||| after: Ask SADAT for Help ||| does: -
+2733 ||| The First Offensive ||| TR: İlk Taarruz ||| path: MIT intelligence state ||| after: Regional Defence ||| does: spirit "First Offensive"
+2734 ||| Restore Ankara ||| TR: Ankara'yı Yeniden Kazan ||| path: MIT intelligence state ||| after: The First Offensive ||| does: builds arms_factory
+2735 ||| Restore Antalya ||| TR: Antalya'yı Yeniden Kazan ||| path: MIT intelligence state ||| after: The First Offensive ||| does: builds arms_factory
+2736 ||| The Second Offensive ||| TR: İkinci Taarruz ||| path: MIT intelligence state ||| after: Restore Antalya / Restore Ankara ||| does: spirit "Second Offensive"
+2737 ||| Restore General Order ||| TR: Genel Düzeni Yeniden Tesis Et ||| path: MIT intelligence state ||| after: The Second Offensive ||| does: stability 0.05
+2738 ||| Open Mafia Prisons ||| TR: Mafya Cezaevlerini Aç ||| path: MIT intelligence state ||| after: The Second Offensive ||| does: stability 0.05
+2739 ||| Declare The New Regime ||| TR: Yeni Rejimi İlan Et ||| path: MIT intelligence state ||| after: Restore General Order / Open Mafia Prisons ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; stability 0.1; tooltip: The country will be united and its sectarian woes can be overcome.; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+2740 ||| Local Industrialization Model ||| TR: Yerel Sanayileşme Modeli ||| path: MIT intelligence state ||| after: New Economics ||| does: spirit "Local Industrialization Campaign"; "Yeni Türk Lirası" -> "Yeni Türk Lirası"
+2741 ||| New Tax Policies ||| TR: Yeni Vergi Politikaları ||| path: MIT intelligence state ||| after: Oligarchic Economic Model / Local Industrialization Model ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"; "Yeni Türk Lirası" -> "Türk Lirası"
+2742 ||| Restore The Economy ||| TR: Ekonomiyi Toparla ||| path: MIT intelligence state ||| after: New Tax Policies ||| does: removes "The Turkish Economic Malaise"; "Türk Lirası" -> "Türk Lirası"
+2743 ||| Copenhagen Criteria Membership ||| TR: Kopenhag Kriterleri Üyeliği ||| path: MIT intelligence state ||| after: Restore The Economy ||| does: spirit "The Copenhagen Criteria"; stability -0.07
+2744 ||| A Fully Localized Economy ||| TR: Tamamen Yerelleşmiş Ekonomi ||| path: MIT intelligence state ||| after: Copenhagen Criteria Membership ||| does: removes "Government Boosted Civilian Sector"; removes "Government Boosted Arms Sector"; removes "Government-Boosted Financial Sector"; "Local Industrialization Campaign" -> "Local Industrialization Campaign"
+2745 ||| Call Kurdish Groups to War ||| TR: Kürt Gruplarını Savaşa Çağır ||| path: MIT intelligence state ||| after: The National Resistance ||| does: -
+2746 ||| Ask the Westerners for Help ||| TR: Batılılardan Yardım İste ||| path: MIT intelligence state ||| after: Regional Defence ||| does: -
+2747 ||| American Military Equipment ||| TR: Amerikan Askeri Teçhizatı ||| path: MIT intelligence state ||| after: Ask the Westerners for Help ||| does: event "They Are Asking the United States for Help"
+2748 ||| French Military Equipment ||| TR: Fransız Askeri Teçhizatı ||| path: MIT intelligence state ||| after: Ask the Westerners for Help ||| does: event "They Are Asking France for Help"
+2749 ||| Boost The Finance Sector ||| TR: Finans Sektörünü Destekle ||| path: MIT intelligence state ||| after: Local Industrialization Model ||| does: spirit "Government-Boosted Financial Sector"
+2750 ||| Istanbul Office ||| TR: İstanbul Ofisi ||| path: MIT intelligence state ||| after: Boost The Finance Sector ||| does: builds offices
+2751 ||| Restore The Media Offices ||| TR: Medya Ofislerini Yeniden Kur ||| path: MIT intelligence state ||| after: Istanbul Office ||| does: builds offices
+2752 ||| Russian Military Equipment ||| TR: Rus Askeri Teçhizatı ||| path: MIT intelligence state ||| after: Ask the Westerners for Help ||| does: event "They Are Asking Russia for Help"
+2753 ||| German Military Equipment ||| TR: Alman Askeri Teçhizatı ||| path: MIT intelligence state ||| after: Ask the Westerners for Help ||| does: event "They Are Asking Germany for Help"
+2754 ||| Ankara Office ||| TR: Ankara Ofisi ||| path: MIT intelligence state ||| after: Boost The Finance Sector ||| does: builds offices
+2755 ||| Service Economics ||| TR: Hizmet Ekonomisi ||| path: MIT intelligence state ||| after: Ankara Office ||| does: builds offices
+2756 ||| Turkish Office Build-Up ||| TR: Türk Ofis Yapılanması ||| path: MIT intelligence state ||| after: Restore The Media Offices / Service Economics ||| does: builds offices
+2757 ||| Boost the Civilian Sector ||| TR: Sivil Sektörü Destekle ||| path: MIT intelligence state ||| after: Local Industrialization Model ||| does: spirit "Government Boosted Civilian Sector"
+2758 ||| Kayseri Civilian Factory ||| TR: Kayseri Sivil Fabrikası ||| path: MIT intelligence state ||| after: Boost the Civilian Sector ||| does: builds industrial_complex
+2759 ||| Sivas Civilian Factory ||| TR: Sivas Sivil Fabrikası ||| path: MIT intelligence state ||| after: Kayseri Civilian Factory ||| does: builds industrial_complex
