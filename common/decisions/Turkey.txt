@@ -3489,7 +3489,7 @@ swap_ideas = {
 			custom_effect_tooltip = HOUSING_INCREASE_10
 	subtract_from_variable = { TUR_building_resistancy = -10 }
 			add_stability = -0.05
-					set_temp_variable = { temp_opinion_change = -5 }	
+					set_temp_variable = { temp_opinion = -5 }	
             change_industrial_conglomerates_opinion = yes
 	}   }
 
@@ -3595,7 +3595,7 @@ swap_ideas = {
 		clr_global_flag = EA_BLOCK_MOD_4	
 			custom_effect_tooltip = HOUSING_INCREASE_10
 		subtract_from_variable = { TUR_building_resistancy = -10 }
-					set_temp_variable = { temp_opinion_change = -3 }	
+					set_temp_variable = { temp_opinion = -3 }	
             change_industrial_conglomerates_opinion = yes
 			add_stability = -0.05
 			add_political_power = 100
@@ -3897,7 +3897,7 @@ check_variable = { var = TUR_building_resistancy value = 50 compare = less_than_
 		custom_effect_tooltip = HOUSING_DECREASE_5
 				subtract_from_variable = { TUR_building_resistancy = 5 }
 		add_stability = 0.01
-				set_temp_variable = { temp_opinion_change = 3 }	
+				set_temp_variable = { temp_opinion = 3 }	
             change_industrial_conglomerates_opinion = yes	
 			subtract_from_variable = { treasury = -5.0 }
 			custom_effect_tooltip = 5_billion_revenue_tt

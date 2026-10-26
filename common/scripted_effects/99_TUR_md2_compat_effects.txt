@@ -60,11 +60,11 @@ add_10_nationalist_monarchists = {
 
 ### Military internal faction
 increase_The_military_opinion = {
-	set_temp_variable = { temp_opinion_change = 5 }
+	set_temp_variable = { temp_opinion = 5 }
 	change_the_military_opinion = yes
 }
 decrease_The_military_opinion = {
-	set_temp_variable = { temp_opinion_change = -5 }
+	set_temp_variable = { temp_opinion = -5 }
 	change_the_military_opinion = yes
 }
 

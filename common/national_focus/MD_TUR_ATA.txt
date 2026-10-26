@@ -150,7 +150,7 @@ swap_ideas = {
 
             completion_reward = {
 			add_political_power = 75
-				set_temp_variable = { temp_opinion_change = 7 }	
+				set_temp_variable = { temp_opinion = 7 }	
             change_industrial_conglomerates_opinion = yes	
 				}
 			}
@@ -486,7 +486,7 @@ set_global_flag = ATA_BLOCK
 
             completion_reward = {
             add_political_power = 75
-				set_temp_variable = { temp_opinion_change = 7 }	
+				set_temp_variable = { temp_opinion = 7 }	
             change_industrial_conglomerates_opinion = yes	
 				}
 			}
@@ -2542,7 +2542,7 @@ add_offsite_building = { type = arms_factory level = 1 }
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 
             completion_reward = {
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_military_opinion = yes	
 			army_experience = 50
 			add_doctrine_cost_reduction = {
@@ -4740,7 +4740,7 @@ create_production_license = {
 
 		completion_reward = {
 			TRGX_bop_very_low_decrease_effect = yes
-				set_temp_variable = { temp_opinion_change = 25 }	
+				set_temp_variable = { temp_opinion = 25 }	
             change_the_ulema_opinion = yes	
 	} }
 focus = {

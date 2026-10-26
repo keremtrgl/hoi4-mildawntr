@@ -151,9 +151,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 		completion_reward = {
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion_change = -20 }	
+				set_temp_variable = { temp_opinion = -20 }	
             change_the_ulema_opinion = yes
 				}
 			}
@@ -178,9 +178,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
                 add_ideas = betrayal_from_FETO3
 		        add_stability = 0.03
 				add_political_power = -75
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion_change = -10 }	
+				set_temp_variable = { temp_opinion = -10 }	
             change_the_ulema_opinion = yes
 				}
 			}
@@ -2602,7 +2602,7 @@ swap_ideas = {
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 	completion_reward = {
-				set_temp_variable = { temp_opinion_change = 10 }	
+				set_temp_variable = { temp_opinion = 10 }	
             change_industrial_conglomerates_opinion = yes
 
 			add_tech_bonus = {

@@ -139,7 +139,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	completion_reward = {
 	   add_stability = -0.05
 	   add_political_power = -50
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_military_opinion = yes	
 						add_popularity = {
 							ideology = communism
@@ -160,7 +160,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 		
 	completion_reward = {
-				set_temp_variable = { temp_opinion_change = 10 }	
+				set_temp_variable = { temp_opinion = 10 }	
             change_industrial_conglomerates_opinion = yes	
 			add_tech_bonus = {
 				name = CAT_industry
@@ -375,7 +375,7 @@ block_defence_decrease = yes
 		
 	completion_reward = {
 	   add_political_power = -75
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_military_opinion = yes	
 						add_popularity = {
 							ideology = democratic
@@ -398,7 +398,7 @@ block_defence_decrease = yes
 		
 	completion_reward = {
 	   add_stability = 0.05
-				set_temp_variable = { temp_opinion_change = 20 }	
+				set_temp_variable = { temp_opinion = 20 }	
             change_the_ulema_opinion = yes	
       }
 	}
@@ -454,7 +454,7 @@ block_defence_decrease = yes
 		
 	completion_reward = {
 	   add_political_power = 50
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_ulema_opinion = yes	
       }
 	}
@@ -682,7 +682,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	completion_reward = {
 	add_stability = 0.07
 	add_political_power = 75
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_ulema_opinion = yes	
 		TRGX_bop_very_low_decrease_effect = yes
 			} 
@@ -1008,7 +1008,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		
 	completion_reward = {
        add_ideas = moderate_sharia_state
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_ulema_opinion = yes	
       } 
 	}
@@ -1933,7 +1933,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	completion_reward = {
 	   add_command_power = 25
 	   add_political_power = -75
-				set_temp_variable = { temp_opinion_change = -10 }	
+				set_temp_variable = { temp_opinion = -10 }	
             change_the_ulema_opinion = yes
 						add_popularity = {
 							ideology = fascism
@@ -1962,9 +1962,9 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	completion_reward = {
 	   add_ideas = turkish_islamist_schools
 	   add_political_power = -75
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion_change = 20 }	
+				set_temp_variable = { temp_opinion = 20 }	
             change_the_ulema_opinion = yes	
       }
 	}
@@ -2258,7 +2258,7 @@ add_ideas =	media_opinion_towards_bad_2_right_left_wing_sad
 	completion_reward = {
 	add_political_power = -75
 	add_stability = -0.07
-				set_temp_variable = { temp_opinion_change = 10 }	
+				set_temp_variable = { temp_opinion = 10 }	
             change_the_military_opinion = yes	
 						add_popularity = {
 							ideology = communism
@@ -2376,9 +2376,9 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 	completion_reward = {
 	   add_ideas = madrassas
 	   add_political_power = -75
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion_change = 20 }	
+				set_temp_variable = { temp_opinion = 20 }	
             change_the_ulema_opinion = yes	
       }
 	}

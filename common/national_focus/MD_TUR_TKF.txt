@@ -4311,7 +4311,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ARMS}
        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 
 		completion_reward = {
-				set_temp_variable = { temp_opinion_change = -20 }	
+				set_temp_variable = { temp_opinion = -20 }	
             change_the_ulema_opinion = yes
 swap_ideas = {
                 add_idea = pluralist
@@ -4330,7 +4330,7 @@ swap_ideas = {
        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 
 		completion_reward = {
-				set_temp_variable = { temp_opinion_change = -20 }	
+				set_temp_variable = { temp_opinion = -20 }	
             change_the_ulema_opinion = yes
 swap_ideas = {
                 add_idea = labour_unions
@@ -4353,9 +4353,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
 		        add_stability = 0.05
 				add_political_power = -75
-				set_temp_variable = { temp_opinion_change = 5}	
+				set_temp_variable = { temp_opinion = 5}	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion_change = 5 }	
+				set_temp_variable = { temp_opinion = 5 }	
             change_the_ulema_opinion = yes
 	} } 
 	focus = {
@@ -4660,7 +4660,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
         add_political_power = 125
 		add_stability = 0.03
-				set_temp_variable = { temp_opinion_change = 10 }	
+				set_temp_variable = { temp_opinion = 10 }	
             change_industrial_conglomerates_opinion = yes		
 				}
 			}
@@ -6760,7 +6760,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	   
 		completion_reward = {
 				custom_effect_tooltip = every_neighbour_country_effects
-				set_temp_variable = { temp_opinion_change = -20 }	
+				set_temp_variable = { temp_opinion = -20 }	
             change_the_ulema_opinion = yes
 swap_ideas = {
                 add_idea = pluralist

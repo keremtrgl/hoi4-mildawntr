@@ -256,7 +256,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
     completion_reward = {
 	        custom_effect_tooltip = TUR_MIL_relations_23
 	        custom_effect_tooltip = TUR_ARMED_FORCES_planning_plot		
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_military_opinion = yes			
 			}
 		}
@@ -1195,10 +1195,10 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	completion_reward = {
 	        add_stability = 0.05
 			add_political_power = -150
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_military_opinion = yes	
 							clr_country_flag = banned_head_scarf
-				set_temp_variable = { temp_opinion_change = 20 }	
+				set_temp_variable = { temp_opinion = 20 }	
             change_the_ulema_opinion = yes	
 				custom_effect_tooltip = TUR_MIL_relations_22
 				subtract_from_variable = { TUR_rel_anap = 3 }
@@ -1284,7 +1284,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			search_filters = { FOCUS_FILTER_INTERNAL_FACTION }		
 			
 	completion_reward = {
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_ulema_opinion = yes
 				add_stability = 0.05
 			}

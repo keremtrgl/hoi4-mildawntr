@@ -39,7 +39,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 	completion_reward = {
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_military_opinion = yes		
 			army_experience = -75
 				add_popularity = {
@@ -371,10 +371,10 @@ add_ideas =	media_opinion_towards_bad_2_neutral_right_wing_sad
 	        add_stability = -0.05
 				       	set_global_flag = FIRE_SUPEREVENT_9
 						hidden_effect = { sound_effect = "superev_tsk_march" }
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_military_opinion = yes	
 	clr_country_flag = banned_head_scarf
-				set_temp_variable = { temp_opinion_change = 20 }	
+				set_temp_variable = { temp_opinion = 20 }	
             change_the_ulema_opinion = yes	
 				custom_effect_tooltip = TUR_MIL_relations_11
 				subtract_from_variable = { TUR_rel_akp = 7 }
@@ -2130,7 +2130,7 @@ remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad
 remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
 add_ideas =	media_opinion_towards_bad_3_right_left_neutral_wing_sad
 }
-				set_temp_variable = { temp_opinion_change = -10 }	
+				set_temp_variable = { temp_opinion = -10 }	
             change_the_military_opinion = yes	
 
 				custom_effect_tooltip = TUR_MIL_relations_13
@@ -2488,7 +2488,7 @@ increase_economic_growth = yes
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 	completion_reward = {
-				set_temp_variable = { temp_opinion_change = 20 }	
+				set_temp_variable = { temp_opinion = 20 }	
             change_the_military_opinion = yes		
 				custom_effect_tooltip = TUR_MIL_relations_2
 				subtract_from_variable = { TUR_rel_akp = 3 }

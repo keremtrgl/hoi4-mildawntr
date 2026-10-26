@@ -2103,7 +2103,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 
 		completion_reward = {
 			TRGX_bop_very_low_decrease_effect = yes
-				set_temp_variable = { temp_opinion_change = 25 }	
+				set_temp_variable = { temp_opinion = 25 }	
             change_the_ulema_opinion = yes	
 	} }
 	focus = {
@@ -4171,7 +4171,7 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
 			
 		completion_reward = {
-				set_temp_variable = { temp_opinion_change = 25 }	
+				set_temp_variable = { temp_opinion = 25 }	
             change_the_ulema_opinion = yes	
 	} }
 	focus = {
@@ -7288,7 +7288,7 @@ diplomatic_relation = {
 			
     completion_reward = {
 			add_stability = 0.03
-				set_temp_variable = { temp_opinion_change = 25 }	
+				set_temp_variable = { temp_opinion = 25 }	
             change_the_ulema_opinion = yes	
 			}
 		}
@@ -8986,7 +8986,7 @@ remove_ideas = covid_19_normalised
 
 		
 		completion_reward = {
-				set_temp_variable = { temp_opinion_change = 30 }	
+				set_temp_variable = { temp_opinion = 30 }	
             change_the_ulema_opinion = yes	
 			add_political_power = 50
 		}

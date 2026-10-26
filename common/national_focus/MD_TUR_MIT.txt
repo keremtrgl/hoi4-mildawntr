@@ -1005,7 +1005,7 @@ add_ideas =	media_opinion_towards_bad_3_right_left_neutral_wing_sad
 
 		completion_reward = {
    add_ideas = local_industrialization_campaign
-				set_temp_variable = { temp_opinion_change = 10 }	
+				set_temp_variable = { temp_opinion = 10 }	
             change_industrial_conglomerates_opinion = yes	
 			add_tech_bonus = {
 				name = CAT_fuel_refining
@@ -4288,9 +4288,9 @@ add_ideas = fahrettin_altuns_media_group
        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 
 		completion_reward = {
-				set_temp_variable = { temp_opinion_change = 5 }	
+				set_temp_variable = { temp_opinion = 5 }	
             change_oligarchs_opinion = yes	
-				set_temp_variable = { temp_opinion_change = 5}	
+				set_temp_variable = { temp_opinion = 5}	
             change_the_military_opinion = yes	
 	add_power_balance_value = {
 		id = TUR_mit_balance
@@ -4313,7 +4313,7 @@ add_ideas = fahrettin_altuns_media_group
        search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion_change = 10 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_oligarchs_opinion = yes
     add_ideas = controlled_media 
 				custom_effect_tooltip = PRESS_HAS_CONTROLLED
@@ -6438,9 +6438,9 @@ swap_ideas = {
 				
 		        add_stability = 0.03
 				add_political_power = -75
-				set_temp_variable = { temp_opinion_change = -10 }	
+				set_temp_variable = { temp_opinion = -10 }	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_ulema_opinion = yes
 			add_ideas = mosque_law
 				}

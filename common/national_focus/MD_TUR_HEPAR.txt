@@ -50,7 +50,7 @@ add_political_power = 75
 		
 	completion_reward = {
 custom_effect_tooltip = TUR_MIL_relations_24
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_military_opinion = yes		
 			subtract_from_variable = { TUR_rel_hepar = -10 }
 }
@@ -136,7 +136,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		
 	completion_reward = {
 custom_effect_tooltip = TUR_MIL_relations_24
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_military_opinion = yes	
 			subtract_from_variable = { TUR_rel_hepar = -10 }
 			army_experience = 35
@@ -2359,7 +2359,7 @@ add_political_power = 25
 remove_unit_leader_role = { character = yavuz_turkgenci }
 		        add_stability = -0.03
 				add_political_power = -75
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_military_opinion = yes	
 custom_effect_tooltip = NATO_GENERALS_KICKED
 				}

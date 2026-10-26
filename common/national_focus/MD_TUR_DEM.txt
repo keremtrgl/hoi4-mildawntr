@@ -820,7 +820,7 @@ swap_ideas = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}	
 	completion_reward = {
 
-				set_temp_variable = { temp_opinion_change = 10 }	
+				set_temp_variable = { temp_opinion = 10 }	
             change_industrial_conglomerates_opinion = yes		
 			}
 	}
@@ -3579,7 +3579,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	        add_stability = -0.05
 				       	set_global_flag = FIRE_SUPEREVENT_9
 						clr_country_flag = banned_head_scarf
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_military_opinion = yes	
 				custom_effect_tooltip = TUR_MIL_relations_11
 				subtract_from_variable = { TUR_rel_akp = 7 }
@@ -3805,7 +3805,7 @@ completion_reward = {
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 	completion_reward = {
-				set_temp_variable = { temp_opinion_change = 10 }	
+				set_temp_variable = { temp_opinion = 10 }	
             change_the_military_opinion = yes	
 				custom_effect_tooltip = TUR_MIL_relations_2
 				subtract_from_variable = { TUR_rel_akp = 3 }
@@ -4142,10 +4142,10 @@ has_global_flag = TUR_false_removed
 	completion_reward = {
 	        add_stability = 0.05
 			add_political_power = -150
-				set_temp_variable = { temp_opinion_change = -20 }	
+				set_temp_variable = { temp_opinion = -20 }	
             change_the_military_opinion = yes	
 			
-				set_temp_variable = { temp_opinion_change = 25 }	
+				set_temp_variable = { temp_opinion = 25 }	
             change_the_ulema_opinion = yes	
 			
 				custom_effect_tooltip = TUR_MIL_relations_12
@@ -4359,7 +4359,7 @@ remove_unit_leader_role = { character = hursit_tolon }
 			custom_effect_tooltip = TUR_AKP_small_start
 	        add_stability = -0.05
 			add_political_power = 75
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_military_opinion = yes	
 				custom_effect_tooltip = TUR_MIL_relations_13
 				subtract_from_variable = { TUR_rel_akp = 10 }			
@@ -5337,9 +5337,9 @@ increase_social_spending = yes
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 		completion_reward = {
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_ulema_opinion = yes
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_military_opinion = yes	
 				}
 			}
@@ -5422,7 +5422,7 @@ increase_social_spending = yes
 		
 	completion_reward = {
 	        add_political_power = 125
-				set_temp_variable = { temp_opinion_change = 25 }	
+				set_temp_variable = { temp_opinion = 25 }	
             change_the_military_opinion = yes	
 			}
 	}
@@ -5880,7 +5880,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}	
 		
 	completion_reward = {
-				set_temp_variable = { temp_opinion_change = 20 }	
+				set_temp_variable = { temp_opinion = 20 }	
             change_the_military_opinion = yes		
 			army_experience = -75
 swap_ideas = { 
@@ -6055,7 +6055,7 @@ remove_ideas = covid_19_normalised
 				recalculate_party = yes
 			}
 			custom_effect_tooltip = TUR_AKP_small_start1	
-				set_temp_variable = { temp_opinion_change = 10 }	
+				set_temp_variable = { temp_opinion = 10 }	
             change_the_ulema_opinion = yes
 			add_stability = 0.02
 			subtract_from_variable = { treasury = 15.0 }
@@ -7343,7 +7343,7 @@ search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 
 	completion_reward = {
 		        add_stability = 0.03
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_ulema_opinion = yes	
  }
 }
@@ -7587,7 +7587,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
 
 	completion_reward = {
 	        add_stability = 0.03
-				set_temp_variable = { temp_opinion_change = 25 }	
+				set_temp_variable = { temp_opinion = 25 }	
             change_the_ulema_opinion = yes	
 			
 			}

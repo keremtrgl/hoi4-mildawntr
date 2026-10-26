@@ -2458,7 +2458,7 @@ custom_effect_tooltip = WARN_GULEN
 		
         completion_reward = {
 		        add_political_power = 75	
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_ulema_opinion = yes	
 	} } 
 	focus = {
@@ -3088,7 +3088,7 @@ TUR_kemalist_turn_hostile_effect = yes
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 		
         completion_reward = {
-				set_temp_variable = { temp_opinion_change = 20 }	
+				set_temp_variable = { temp_opinion = 20 }	
             change_the_ulema_opinion = yes	
 	} } 
 	focus = {
@@ -3207,7 +3207,7 @@ swap_ideas = {
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 		
         completion_reward = {
-				set_temp_variable = { temp_opinion_change = 30 }	
+				set_temp_variable = { temp_opinion = 30 }	
             change_the_ulema_opinion = yes	
 			add_stability = 0.05
 			add_ideas = sunni

@@ -1368,9 +1368,9 @@ add_ideas = turkic_expansionism
         completion_reward = {
 		        add_political_power = 75
 				add_war_support = 0.05
-				set_temp_variable = { temp_opinion_change = -15 }	
+				set_temp_variable = { temp_opinion = -15 }	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion_change = 20 }	
+				set_temp_variable = { temp_opinion = 20 }	
             change_the_ulema_opinion = yes
 	} } 
 	shared_focus = {
@@ -1453,9 +1453,9 @@ add_ideas = turkic_expansionism
         completion_reward = {
 		        add_political_power = 75
 				add_war_support = 0.05
-				set_temp_variable = { temp_opinion_change = 15 }	
+				set_temp_variable = { temp_opinion = 15 }	
             change_the_military_opinion = yes	
-				set_temp_variable = { temp_opinion_change = -20 }	
+				set_temp_variable = { temp_opinion = -20 }	
             change_the_ulema_opinion = yes	
 	} } 
 	shared_focus = {
