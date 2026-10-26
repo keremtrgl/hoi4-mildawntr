@@ -2847,10 +2847,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_akp value = 35 compare = less_than_or_equals }	
 		has_stability < 0.2	
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
-		has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -2870,10 +2871,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_anap value = 35 compare = less_than_or_equals }	
 		has_stability < 0.2	
 			neutrality_neutral_libertarians_are_in_power = yes	
-		has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -2894,10 +2896,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_bozkurtlar value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
 			nationalist_fascist_are_in_power = yes
-		has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -2918,10 +2921,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_dyp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
 				western_autocrats_are_in_power = yes
-		has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -2942,10 +2946,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_emep value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
 				emerging_autocracy_are_in_power = yes
-		has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -2966,10 +2971,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_fp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
 				emerging_reactionaries_are_in_power = yes
-		has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -2990,10 +2996,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_gencparti value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
 				neutrality_neutral_autocracy_are_in_power = yes
-		has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3014,10 +3021,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_ibda_c value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
 		has_government = fascism
-		has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3038,10 +3046,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_mhp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
 				nationalist_right_wing_populists_are_in_power = yes
-						has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3062,10 +3071,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_odp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
 				emerging_anarchist_communism_are_in_power = yes
-						has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3086,10 +3096,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_socdem value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
 		neutrality_neutral_social_are_in_power = yes
-				has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3110,10 +3121,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_tkp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
 				emerging_communist_state_are_in_power = yes
-						has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3134,10 +3146,11 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_tkp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
 				neutrality_neutral_communism_are_in_power = yes
-						has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3161,6 +3174,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_akp value = -25 compare = less_than_or_equals }	
 		has_stability < 0.2
 		NOT = {
@@ -3171,7 +3186,6 @@ country_event = {
 		}
 		}	
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
-		has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3191,6 +3205,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_anap value = -25 compare = less_than_or_equals }	
 		has_stability < 0.2	
 		NOT = {
@@ -3201,7 +3217,6 @@ country_event = {
 		}
 		}	
 neutrality_neutral_libertarians_are_in_power = yes
-		has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3222,6 +3237,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_bozkurtlar value = -25 compare = less_than_or_equals }
 		has_stability < 0.2
 		NOT = {
@@ -3232,7 +3249,6 @@ country_event = {
 		}
 		}		
 			nationalist_fascist_are_in_power = yes
-					has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3253,6 +3269,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_dyp value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
 		NOT = {
@@ -3263,7 +3281,6 @@ country_event = {
 		}
 		}	
 				western_autocrats_are_in_power = yes
-						has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3284,6 +3301,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_emep value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
 		NOT = {
@@ -3294,7 +3313,6 @@ country_event = {
 		}
 		}	
 				emerging_autocracy_are_in_power = yes
-						has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3339,6 +3357,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_gencparti value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
 		NOT = {
@@ -3349,7 +3369,6 @@ country_event = {
 		}
 		}	
 	neutrality_neutral_autocracy_are_in_power = yes
-			has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3370,6 +3389,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_ibda_c value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
 		NOT = {
@@ -3380,7 +3401,6 @@ country_event = {
 		}
 		}	
 		has_government = fascism
-				has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3401,6 +3421,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_mhp value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
 		NOT = {
@@ -3411,7 +3433,6 @@ country_event = {
 		}
 		}	
 nationalist_right_wing_populists_are_in_power = yes
-		has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3432,6 +3453,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_odp value = -25 compare = less_than_or_equals }
 		has_stability < 0.2
 		NOT = {
@@ -3442,7 +3465,6 @@ country_event = {
 		}
 		}		
 	emerging_anarchist_communism_are_in_power = yes
-			has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3463,6 +3485,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_socdem value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
 		NOT = {
@@ -3473,7 +3497,6 @@ country_event = {
 		}
 		}	
 		neutrality_neutral_social_are_in_power = yes
-				has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3494,6 +3517,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_tkp value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
 		NOT = {
@@ -3504,7 +3529,6 @@ country_event = {
 		}
 		}	
 				emerging_communist_state_are_in_power = yes
-						has_idea = turkish_military_infulence
  }
 
 	option = {
@@ -3525,6 +3549,8 @@ country_event = {
  fire_only_once = yes
 
  trigger = {
+		tag = TUR
+		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_tkp value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
 		NOT = {
@@ -3535,7 +3561,6 @@ country_event = {
 		}
 		}	
 			neutrality_neutral_communism_are_in_power = yes
-					has_idea = turkish_military_infulence
  }
 
 	option = {
