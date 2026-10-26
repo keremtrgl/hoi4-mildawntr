@@ -10,6 +10,7 @@ add_namespace = TurkeyNATO
 ##Event: Update General Staff
 country_event = {
  id = TurkeyArms.1
+ is_triggered_only = yes
  title = TurkeyArms.1.title
  desc = TurkeyArms.1.desc
  picture = GFX_ozkok
@@ -32,8 +33,8 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyArms_1 }
 	option = {
 		name = TurkeyArms.1.a
 		ai_chance = { factor = 1}
@@ -51,6 +52,7 @@ country_event = {
 ##Event: Update General Staff
 country_event = {
  id = TurkeyArms.2
+ is_triggered_only = yes
  title = TurkeyArms.2.title
  desc = TurkeyArms.2.desc
  picture = GFX_yasar_buyukanit
@@ -75,7 +77,6 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
 
 	option = {
@@ -89,12 +90,13 @@ country_event = {
 	remove_idea = general_staff_under_2
 	  } 
 	}
-	} 	immediate = { clr_global_flag = kivirik set_global_flag = yasar_buyukanit }
+	} 	immediate = { set_country_flag = TUR_evf_TurkeyArms_2 clr_global_flag = kivirik set_global_flag = yasar_buyukanit }
 }
 
 ##Event: Update General Staff
 country_event = {
  id = TurkeyArms.3
+ is_triggered_only = yes
  title = TurkeyArms.3.title
  desc = TurkeyArms.3.desc
  picture = GFX_ilker_basbug
@@ -119,7 +121,6 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = TurkeyArms.3.a
@@ -132,12 +133,13 @@ country_event = {
 	remove_idea = general_staff_under_3
 	  } }
 	}
-	immediate = { clr_global_flag = yasar_buyukanit set_global_flag = ilker_basbug }
+	immediate = { set_country_flag = TUR_evf_TurkeyArms_3 clr_global_flag = yasar_buyukanit set_global_flag = ilker_basbug }
 }
 
 ##Event: Update General Staff
 country_event = {
  id = TurkeyArms.4
+ is_triggered_only = yes
  title = TurkeyArms.4.title
  desc = TurkeyArms.4.desc
  picture = GFX_isik_kosaner
@@ -162,7 +164,6 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = TurkeyArms.4.a
@@ -176,12 +177,13 @@ country_event = {
 	remove_idea = general_staff_under_4
 	  } }
 	}
-	immediate = { clr_global_flag = ilker_basbug set_global_flag = kosaner }
+	immediate = { set_country_flag = TUR_evf_TurkeyArms_4 clr_global_flag = ilker_basbug set_global_flag = kosaner }
 }
 
 ##Event: Update General Staff
 country_event = {
  id = TurkeyArms.5
+ is_triggered_only = yes
  title = TurkeyArms.5.title
  desc = TurkeyArms.5.desc
  picture = GFX_necdet_ozel
@@ -206,7 +208,6 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = TurkeyArms.5.a
@@ -220,12 +221,13 @@ country_event = {
 	remove_idea = general_staff_under_5
 	  } }
 	}
-	immediate = { clr_global_flag = kosaner set_global_flag = ozel }
+	immediate = { set_country_flag = TUR_evf_TurkeyArms_5 clr_global_flag = kosaner set_global_flag = ozel }
 }
 
 ##Event: Update General Staff
 country_event = {
  id = TurkeyArms.6
+ is_triggered_only = yes
  title = TurkeyArms.6.title
  desc = TurkeyArms.6.desc
  picture = GFX_hulusi_akar
@@ -250,7 +252,6 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = TurkeyArms.6.a
@@ -264,12 +265,13 @@ country_event = {
 	remove_idea = general_staff_under_6
 	  } }
 	}
-	immediate = { clr_global_flag = ozel set_global_flag = akar }
+	immediate = { set_country_flag = TUR_evf_TurkeyArms_6 clr_global_flag = ozel set_global_flag = akar }
 }
 
 ##Event: Update General Staff
 country_event = {
  id = TurkeyArms.7
+ is_triggered_only = yes
  title = TurkeyArms.7.title
  desc = TurkeyArms.7.desc
  picture = GFX_yasar_guler
@@ -294,7 +296,6 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = TurkeyArms.7.a
@@ -308,12 +309,13 @@ country_event = {
 	remove_idea = general_staff_under_7
 	  } }
 	}
-	immediate = { clr_global_flag = akar set_global_flag = guler }
+	immediate = { set_country_flag = TUR_evf_TurkeyArms_7 clr_global_flag = akar set_global_flag = guler }
 }
 
 ##Event: Update General Staff
 country_event = {
  id = TurkeyArms.8
+ is_triggered_only = yes
  title = TurkeyArms.8.title
  desc = TurkeyArms.8.desc
  picture = GFX_metin_gurak_leadership
@@ -336,9 +338,9 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
 
+ immediate = { set_country_flag = TUR_evf_TurkeyArms_8 }
 	option = {
 		name = TurkeyArms.8.a
 		ai_chance = { factor = 1}
@@ -553,6 +555,7 @@ country_event = {
 ##Event: Russian Jet Violates Our Airspace
 country_event = {
  id = TurkeyForeign.9
+ is_triggered_only = yes
  title = TurkeyForeign.9.title
  desc = TurkeyForeign.9.desc
  picture = GFX_turkey_shuts_down_the_jet
@@ -566,8 +569,8 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyForeign_9 }
 	option = {
 		name = TurkeyForeign.9.a
 		ai_chance = { factor = 1}
@@ -618,6 +621,7 @@ country_event = {
 ##Event: Should We Send Ships To Palestine
 country_event = {
  id = TurkeyForeign.11
+ is_triggered_only = yes
  title = TurkeyForeign.11.title
  desc = TurkeyForeign.11.desc
  picture = GFX_mv_mavi_marmara_small
@@ -634,8 +638,8 @@ country_event = {
          }
 	}
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyForeign_11 }
 	option = {
 		name = TurkeyForeign.11.a
 		ai_chance = { factor = 1}
@@ -691,6 +695,7 @@ country_event = {
 ##Event: We Need To Buy SAM Sites
 country_event = {
  id = TurkeyForeign.13
+ is_triggered_only = yes
  title = TurkeyForeign.13.title
  desc = TurkeyForeign.13.desc
  picture = GFX_s400_equipment
@@ -714,8 +719,8 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyForeign_13 }
 	option = {
 		name = TurkeyForeign.13.a
 		ai_chance = { factor = 1}
@@ -1507,6 +1512,7 @@ country_event = {
 ##Event: AI AKP REALISTIC
 country_event = {
  id = TurkeyAI.1
+ is_triggered_only = yes
  title = TurkeyAI.1.title
  desc = TurkeyAI.1.desc
  picture = GFX_the_great_ai
@@ -1520,6 +1526,7 @@ country_event = {
  option = CLASSIC_REGIME_OF_ERDOGAN
  } }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_1 }
 	option = {
 		name = TurkeyAI.1.a
 		ai_chance = { factor = 1}
@@ -1538,6 +1545,7 @@ TUR_kemalist_turn_hostile_effect = yes
 ##Event: AI CHP
 country_event = {
  id = TurkeyAI.2
+ is_triggered_only = yes
  title = TurkeyAI.2.title
  desc = TurkeyAI.2.desc
  picture = GFX_the_great_ai
@@ -1552,6 +1560,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_2 }
 	option = {
 		name = TurkeyAI.2.a
 		ai_chance = { factor = 1}
@@ -1585,6 +1594,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI DSP
 country_event = {
  id = TurkeyAI.3
+ is_triggered_only = yes
  title = TurkeyAI.3.title
  desc = TurkeyAI.3.desc
  picture = GFX_the_great_ai
@@ -1599,6 +1609,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_3 }
 	option = {
 		name = TurkeyAI.3.a
 		ai_chance = { factor = 1}
@@ -1634,6 +1645,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI MHP
 country_event = {
  id = TurkeyAI.4
+ is_triggered_only = yes
  title = TurkeyAI.4.title
  desc = TurkeyAI.4.desc
  picture = GFX_the_great_ai
@@ -1648,6 +1660,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_4 }
 	option = {
 		name = TurkeyAI.4.a
 		ai_chance = { factor = 1}
@@ -1677,6 +1690,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI JUNTA
 country_event = {
  id = TurkeyAI.5
+ is_triggered_only = yes
  title = TurkeyAI.5.title
  desc = TurkeyAI.5.desc
  picture = GFX_the_great_ai
@@ -1692,6 +1706,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_5 }
 	option = {
 		name = TurkeyAI.5.a
 		ai_chance = { factor = 1}
@@ -1729,6 +1744,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI SAADET
 country_event = {
  id = TurkeyAI.6
+ is_triggered_only = yes
  title = TurkeyAI.6.title
  desc = TurkeyAI.6.desc
  picture = GFX_the_great_ai
@@ -1743,6 +1759,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_6 }
 	option = {
 		name = TurkeyAI.6.a
 		ai_chance = { factor = 1}
@@ -1777,6 +1794,7 @@ TUR_kemalist_turn_hostile_effect = yes
 ##Event: AI GENCPARTY
 country_event = {
  id = TurkeyAI.7
+ is_triggered_only = yes
  title = TurkeyAI.7.title
  desc = TurkeyAI.7.desc
  picture = GFX_the_great_ai
@@ -1790,6 +1808,7 @@ country_event = {
      option = GENC_TAKE_OVER
       } 
  }
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_7 }
 	option = {
 		name = TurkeyAI.7.a
 		ai_chance = { factor = 1}
@@ -1824,6 +1843,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI HEPAR
 country_event = {
  id = TurkeyAI.8
+ is_triggered_only = yes
  title = TurkeyAI.8.title
  desc = TurkeyAI.8.desc
  picture = GFX_the_great_ai
@@ -1839,6 +1859,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_8 }
 	option = {
 		name = TurkeyAI.8.a
 		ai_chance = { factor = 1}
@@ -1885,6 +1906,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI TKP
 country_event = {
  id = TurkeyAI.9
+ is_triggered_only = yes
  title = TurkeyAI.9.title
  desc = TurkeyAI.9.desc
  picture = GFX_the_great_ai
@@ -1899,6 +1921,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_9 }
 	option = {
 		name = TurkeyAI.9.a
 		ai_chance = { factor = 1}
@@ -1931,6 +1954,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI ANAP
 country_event = {
  id = TurkeyAI.10
+ is_triggered_only = yes
  title = TurkeyAI.10.title
  desc = TurkeyAI.10.desc
  picture = GFX_the_great_ai
@@ -1946,6 +1970,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_10 }
 	option = {
 		name = TurkeyAI.10.a
 		ai_chance = { factor = 1}
@@ -1981,6 +2006,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI LDP
 country_event = {
  id = TurkeyAI.11
+ is_triggered_only = yes
  title = TurkeyAI.11.title
  desc = TurkeyAI.11.desc
  picture = GFX_the_great_ai
@@ -1994,6 +2020,7 @@ country_event = {
      option = LDP_TAKE_OVER
       } 
  }
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_11 }
 	option = {
 		name = TurkeyAI.11.a
 		ai_chance = { factor = 1}
@@ -2033,6 +2060,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI ANARCHIST
 country_event = {
  id = TurkeyAI.12
+ is_triggered_only = yes
  title = TurkeyAI.12.title
  desc = TurkeyAI.12.desc
  picture = GFX_the_great_ai
@@ -2047,6 +2075,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_12 }
 	option = {
 		name = TurkeyAI.12.a
 		ai_chance = { factor = 1}
@@ -2064,6 +2093,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI MAFIA
 country_event = {
  id = TurkeyAI.13
+ is_triggered_only = yes
  title = TurkeyAI.13.title
  desc = TurkeyAI.13.desc
  picture = GFX_the_great_ai
@@ -2078,6 +2108,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_13 }
 	option = {
 		name = TurkeyAI.13.a
 		ai_chance = { factor = 1}
@@ -2096,6 +2127,7 @@ TUR_kemalist_turn_hostile_effect = yes
 ##Event: AI AYM
 country_event = {
  id = TurkeyAI.14
+ is_triggered_only = yes
  title = TurkeyAI.14.title
  desc = TurkeyAI.14.desc
  picture = GFX_the_great_ai
@@ -2110,6 +2142,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_14 }
 	option = {
 		name = TurkeyAI.14.a
 		ai_chance = { factor = 1}
@@ -2173,6 +2206,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI OTTOMAN EMPIRE
 country_event = {
  id = TurkeyAI.15
+ is_triggered_only = yes
  title = TurkeyAI.15.title
  desc = TurkeyAI.15.desc
  picture = GFX_the_great_ai
@@ -2187,6 +2221,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_15 }
 	option = {
 		name = TurkeyAI.15.a
 		ai_chance = { factor = 1}
@@ -2204,6 +2239,7 @@ TUR_kemalist_turn_hostile_effect = yes
 ##Event: AI Ataturk
 country_event = {
  id = TurkeyAI.16
+ is_triggered_only = yes
  title = TurkeyAI.16.title
  desc = TurkeyAI.16.desc
  picture = GFX_the_great_ai
@@ -2218,6 +2254,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_16 }
 	option = {
 		name = TurkeyAI.16.a
 		ai_chance = { factor = 1}
@@ -2257,6 +2294,7 @@ TUR_kemalist_turn_hostile_effect = yes
 ##Event: AI Technocracy
 country_event = {
  id = TurkeyAI.17
+ is_triggered_only = yes
  title = TurkeyAI.17.title
  desc = TurkeyAI.17.desc
  picture = GFX_the_great_ai
@@ -2271,6 +2309,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_17 }
 	option = {
 		name = TurkeyAI.17.a
 		ai_chance = { factor = 1}
@@ -2321,6 +2360,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 ##Event: AI MIT
 country_event = {
  id = TurkeyAI.18
+ is_triggered_only = yes
  title = TurkeyAI.18.title
  desc = TurkeyAI.18.desc
  picture = GFX_the_great_ai
@@ -2335,6 +2375,7 @@ country_event = {
       } 
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAI_18 }
 	option = {
 		name = TurkeyAI.18.a
 		ai_chance = { factor = 1}

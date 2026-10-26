@@ -2754,6 +2754,7 @@ country_event = {
 ##Event: Selecting The Mafia Leader
 country_event = {
  id = TurkeyF.91
+ is_triggered_only = yes
  title = TurkeyF.91.title
  desc = TurkeyF.91.desc
  picture = GFX_alaattin_cakici_classical
@@ -2769,9 +2770,9 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_91 }
 	option = {
 		name = TurkeyF.91.a
 		ai_chance = { factor = 100}
@@ -3013,6 +3014,7 @@ country_event = {
 ##Event: August Protests
 country_event = {
  id = TurkeyF.99
+ is_triggered_only = yes
  title = TurkeyF.99.title
  desc = TurkeyF.99.desc
  picture = GFX_august_protests
@@ -3033,8 +3035,8 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_99 }
 	option = {
 		name = TurkeyF.99.a
 		ai_chance = { factor = 100}
@@ -3087,6 +3089,7 @@ add_stability = 0.02
 ##Event: Failed Military Coup Attempt
 country_event = {
  id = TurkeyF.101
+ is_triggered_only = yes
  title = TurkeyF.101.title
  desc = TurkeyF.101.desc
  picture = GFX_15th_july
@@ -3106,8 +3109,8 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_101 }
 	option = {
 		name = TurkeyF.101.a
 		ai_chance = { factor = 100}
@@ -5950,6 +5953,7 @@ country_event = {
 ##Event: Congress Reshuffle
 country_event = {
  id = TurkeyF.197
+ is_triggered_only = yes
  title = TurkeyF.197.title
  desc = TurkeyF.197.desc
  picture = GFX_aym_from_the_inside
@@ -5963,8 +5967,8 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_197 }
 	option = {
 		name = TurkeyF.197.a
 		ai_chance = { factor = 100}
@@ -5977,6 +5981,7 @@ country_event = {
 ##Event: Congress Reshuffle #2
 country_event = {
  id = TurkeyF.198
+ is_triggered_only = yes
  title = TurkeyF.198.title
  desc = TurkeyF.198.desc
  picture = GFX_aym_from_the_inside
@@ -5990,8 +5995,8 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_198 }
 	option = {
 		name = TurkeyF.198.a
 		ai_chance = { factor = 100}
@@ -6004,6 +6009,7 @@ country_event = {
 ##Event: Congress Reshuffle #3
 country_event = {
  id = TurkeyF.199
+ is_triggered_only = yes
  title = TurkeyF.199.title
  desc = TurkeyF.199.desc
  picture = GFX_aym_from_the_inside
@@ -6017,8 +6023,8 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_199 }
 	option = {
 		name = TurkeyF.199.a
 		ai_chance = { factor = 100}
@@ -6136,6 +6142,7 @@ country_event = {
 ##Event: Anitkabir Attack!
 country_event = {
  id = TurkeyF.203
+ is_triggered_only = yes
  title = TurkeyF.203.title
  desc = TurkeyF.203.desc
  picture = GFX_mustafa_kemals_cemetery
@@ -6157,8 +6164,8 @@ country_event = {
          }	
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_203 }
 	option = {
 		name = TurkeyF.203.a
 		ai_chance = { factor = 100}
@@ -6172,6 +6179,7 @@ country_event = {
 ##Event: Anitkabir Investigation
 country_event = {
  id = TurkeyF.204
+ is_triggered_only = yes
  title = TurkeyF.204.title
  desc = TurkeyF.204.desc
  picture = GFX_museoleum_of_ankara
@@ -6186,8 +6194,8 @@ country_event = {
          }	
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_204 }
 	option = {
 		name = TurkeyF.204.a
 		ai_chance = { factor = 100}
@@ -6200,6 +6208,7 @@ country_event = {
 ##Event: He Comes Back!
 country_event = {
  id = TurkeyF.205
+ is_triggered_only = yes
  title = TurkeyF.205.title
  desc = TurkeyF.205.desc
  picture = GFX_ataturk_in_general_staff
@@ -6214,8 +6223,8 @@ country_event = {
          }	
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_205 }
 	option = {
 		name = TurkeyF.205.a
 		ai_chance = { factor = 100}
@@ -6229,6 +6238,7 @@ add_named_threat = { threat = -2 name = RETURN_OF_ATATURK }
 ##Event: Ataturk Returns To Politics
 country_event = {
  id = TurkeyF.206
+ is_triggered_only = yes
  title = TurkeyF.206.title
  desc = TurkeyF.206.desc
  picture = GFX_return_of_ataturk_2
@@ -6243,8 +6253,8 @@ country_event = {
          }	
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_206 }
 	option = {
 		name = TurkeyF.206.a
 		ai_chance = { factor = 100}
@@ -6535,6 +6545,7 @@ country_event = {
 ##Event: Technocrats In Cyprus
 country_event = {
  id = TurkeyF.216
+ is_triggered_only = yes
  title = TurkeyF.216.title
  desc = TurkeyF.216.desc
  picture = GFX_hp_the_victory
@@ -6553,8 +6564,8 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_216 }
 	option = {
 		name = TurkeyF.216.a
 		ai_chance = { factor = 1}
@@ -6574,6 +6585,7 @@ custom_effect_tooltip = TECHNOCRAT_OPEN_THERE
 ##Event: Creation Of HP
 country_event = {
  id = TurkeyF.217
+ is_triggered_only = yes
  title = TurkeyF.217.title
  desc = TurkeyF.217.desc
  picture = GFX_halkin_partisi_slogan
@@ -6593,8 +6605,8 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_217 }
 	option = {
 		name = TurkeyF.217.a
 		ai_chance = { factor = 1}
@@ -6608,6 +6620,7 @@ set_global_flag = TECHNOCRATIC_APPROACH
 ##Event: Kemal Dervis Leaves CHP
 country_event = {
  id = TurkeyF.218
+ is_triggered_only = yes
  title = TurkeyF.218.title
  desc = TurkeyF.218.desc
  picture = GFX_kemal_dervis_leading
@@ -6627,8 +6640,8 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_218 }
 	option = {
 		name = TurkeyF.217.a
 		ai_chance = { factor = 1}
@@ -6647,6 +6660,7 @@ country_event = {
 ##Event: HP Leader Selection
 country_event = {
  id = TurkeyF.219
+ is_triggered_only = yes
  title = TurkeyF.219.title
  desc = TurkeyF.219.desc
  picture = GFX_HP_slogan
@@ -6663,8 +6677,8 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_219 }
 	option = {
 		name = TurkeyF.219.a
 		ai_chance = { factor = 1}
@@ -6836,6 +6850,7 @@ country_event = {
 ##Event: Threats To Mafia Group
 country_event = {
  id = TurkeyF.224
+ is_triggered_only = yes
  title = TurkeyF.224.title
  desc = TurkeyF.224.desc
  picture = GFX_MIT_equipment
@@ -6857,7 +6872,7 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
+ immediate = { set_country_flag = TUR_evf_TurkeyF_224 }
 	option = {
 		name = TurkeyF.224.a
 		ai_chance = { factor = 1}
@@ -7665,6 +7680,7 @@ country_event = {
 ##Event: Military Selections
 country_event = {
  id = TurkeyF.236
+ is_triggered_only = yes
  title = TurkeyF.236.title
  desc = TurkeyF.236.desc
  picture = GFX_the_millitary_convoys
@@ -7675,6 +7691,7 @@ country_event = {
 		has_completed_focus = TAK_junta
 	}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_236 }
 	option = {
 		name = TurkeyF.236.a
 		ai_chance = { factor = 1}
@@ -7714,6 +7731,7 @@ country_event = {
 ##Event: Israeli Appeal
 country_event = {
  id = TurkeyF.237
+ is_triggered_only = yes
  title = TurkeyF.237.title
  desc = TurkeyF.237.desc
  picture = GFX_turkish_israeli_political_deal
@@ -7724,6 +7742,7 @@ country_event = {
 		has_completed_focus = MIT_declare_the_new_regime
 	}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_237 }
 	option = {
 		name = TurkeyF.237.a
 		ai_chance = { factor = 1}
@@ -7753,6 +7772,7 @@ country_event = {
 ##Event: Iran Attacks Our Soldiers!
 country_event = {
  id = TurkeyF.238
+ is_triggered_only = yes
  title = TurkeyF.238.title
  desc = TurkeyF.238.desc
  picture = GFX_iran_attacks_on_turkey
@@ -7766,6 +7786,7 @@ country_event = {
 	}
 
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_238 }
 	option = {
 		name = TurkeyF.238.a
 		ai_chance = { factor = 1}
@@ -7781,6 +7802,7 @@ country_event = {
 ##Event: Israel's Dark Secrets
 country_event = {
  id = TurkeyF.239
+ is_triggered_only = yes
  title = TurkeyF.239.title
  desc = TurkeyF.239.desc
  picture = GFX_israel_world
@@ -7794,6 +7816,7 @@ country_event = {
 	    has_completed_focus = TECH_new_secrets
 	} 
 
+ immediate = { set_country_flag = TUR_evf_TurkeyF_239 }
 	option = {
 		name = TurkeyF.239.a
 		ai_chance = { factor = 1}

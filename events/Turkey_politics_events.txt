@@ -113,6 +113,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 ##Event: Trigger 2000 Elections
 country_event = {
  id = TurkeyPresidency.1
+ is_triggered_only = yes
  title = TurkeyPresidency.1.title
  desc = TurkeyPresidency.1.desc
  picture = GFX_ahmet_necdet_sezer_vs_nevzat
@@ -133,8 +134,8 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyPresidency_1 }
 	option = {
 		name = TurkeyPresidency.1.a
 		ai_chance = { factor = 1}
@@ -158,6 +159,7 @@ clr_global_flag = END_THE_ELECTION_PR
 ##Event: Trigger 2007 Elections 
 country_event = {
  id = TurkeyPresidency.2
+ is_triggered_only = yes
  title = TurkeyPresidency.2.title
  desc = TurkeyPresidency.2.desc
  picture = GFX_gul_vs_sabahattin
@@ -178,8 +180,8 @@ country_event = {
 		 } 
 	}
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyPresidency_2 }
 	option = {
 		name = TurkeyPresidency.2.a
 		ai_chance = { factor = 1}
@@ -203,6 +205,7 @@ clr_global_flag = END_THE_ELECTION_PR
 ##Event: Trigger 2014 Elections 
 country_event = {
  id = TurkeyPresidency.3
+ is_triggered_only = yes
  title = TurkeyPresidency.3.title
  desc = TurkeyPresidency.3.desc
  picture = GFX_erdogan_vs_ekmeleddin
@@ -223,8 +226,8 @@ country_event = {
 		 } 
 	}
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyPresidency_3 }
 	option = {
 		name = TurkeyPresidency.3.a
 		ai_chance = { factor = 1}
@@ -248,6 +251,7 @@ clr_global_flag = END_THE_ELECTION_PR
 ##Event: Nevzat Yalcintas Victory
 country_event = {
  id = TurkeyPresidency.4
+ is_triggered_only = yes
  title = TurkeyPresidency.4.title
  desc = TurkeyPresidency.4.desc
  picture = GFX_nevzat_victory_in_elections
@@ -270,8 +274,8 @@ country_event = {
 		 } 
 	}
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyPresidency_4 }
 	option = {
 		name = TurkeyPresidency.4.a
 		ai_chance = { factor = 1}
@@ -291,6 +295,7 @@ country_event = {
 ##Event: Ahmet Necdet Sezer Victory
 country_event = {
  id = TurkeyPresidency.5
+ is_triggered_only = yes
  title = TurkeyPresidency.5.title
  desc = TurkeyPresidency.5.desc
  picture = GFX_necdet_victory_in_elections
@@ -311,8 +316,8 @@ country_event = {
 		 has_capitulated = yes
 		 } 
 	}
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyPresidency_5 }
 	option = {
 		name = TurkeyPresidency.5.a
 		ai_chance = { factor = 1}
@@ -374,6 +379,7 @@ country_event = {
 ##Event: Sabahattin Cakmakoglu Victory
 country_event = {
  id = TurkeyPresidency.7
+ is_triggered_only = yes
  title = TurkeyPresidency.7.title
  desc = TurkeyPresidency.7.desc
  picture = GFX_sabahattin_victory_in_elections
@@ -395,8 +401,8 @@ country_event = {
 		 } 
 	}
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyPresidency_7 }
 	option = {
 		name = TurkeyPresidency.7.a
 		ai_chance = { factor = 1}
@@ -416,6 +422,7 @@ country_event = {
 ##Event: Erdogan Victory
 country_event = {
  id = TurkeyPresidency.8
+ is_triggered_only = yes
  title = TurkeyPresidency.8.title
  desc = TurkeyPresidency.8.desc
  picture = GFX_erdogan_victory_in_elections
@@ -436,8 +443,8 @@ country_event = {
 		 has_capitulated = yes
 		 } 
 	}
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyPresidency_8 }
 	option = {
 		name = TurkeyPresidency.8.a
 		ai_chance = { factor = 1}
@@ -458,6 +465,7 @@ country_event = {
 ##Event: Ekmeleddin Victory
 country_event = {
  id = TurkeyPresidency.9
+ is_triggered_only = yes
  title = TurkeyPresidency.9.title
  desc = TurkeyPresidency.9.desc
  picture = GFX_ekmeleddin_victory_in_elections
@@ -479,8 +487,8 @@ country_event = {
 		 } 
 	}
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyPresidency_9 }
 	option = {
 		name = TurkeyPresidency.9.a
 		ai_chance = { factor = 1}
@@ -1026,6 +1034,7 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 215}
 ##Event: Collapse Of Kemalists
 country_event = {
  id = TurkeyO.2
+ is_triggered_only = yes
  title = TurkeyO.2.title
  desc = TurkeyO.2.desc
  picture = GFX_execution_for_the_pkk_leader
@@ -1050,8 +1059,8 @@ country_event = {
 		 }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyO_2 }
 	option = {
 		name = TurkeyO.2.a
 		ai_chance = { factor = 1}
@@ -1140,6 +1149,7 @@ country_event = {
 ##Event: EMEP Supports The Actions
 country_event = {
  id = TurkeyCo.2
+ is_triggered_only = yes
  title = TurkeyCo.2.title
  desc = TurkeyCo.2.desc
  picture = GFX_rise_of_emep
@@ -1150,8 +1160,8 @@ country_event = {
 		 has_global_flag = TUR_government_attack
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyCo_2 }
 	option = {
 		name = TurkeyCo.2.a
 		ai_chance = { factor = 1}
@@ -1164,6 +1174,7 @@ country_event = {
 ##Event: ÖDP Supports The Actions
 country_event = {
  id = TurkeyCo.3
+ is_triggered_only = yes
  title = TurkeyCo.3.title
  desc = TurkeyCo.3.desc
  picture = GFX_rise_of_odp
@@ -1175,8 +1186,8 @@ country_event = {
     }
 
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyCo_3 }
 	option = {
 		name = TurkeyCo.3.a
 		ai_chance = { factor = 1}
@@ -1189,6 +1200,7 @@ country_event = {
 ##Event: TKP Supports The Actions
 country_event = {
  id = TurkeyCo.4
+ is_triggered_only = yes
  title = TurkeyCo.4.title
  desc = TurkeyCo.4.desc
  picture = GFX_tkp_propaganda
@@ -1199,8 +1211,8 @@ country_event = {
 		 has_global_flag = TUR_government_attack
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyCo_4 }
 	option = {
 		name = TurkeyCo.4.a
 		ai_chance = { factor = 1}
@@ -1213,6 +1225,7 @@ country_event = {
 ##Event: The Great Turkish Civil War
 country_event = {
  id = TurkeyCo.5
+ is_triggered_only = yes
  title = TurkeyCo.5.title
  desc = TurkeyCo.5.desc
  picture = GFX_workers_rise
@@ -1223,8 +1236,8 @@ country_event = {
 		 has_global_flag = TUR_government_attack
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyCo_5 }
 	option = {
 		name = TurkeyCo.5.a
 		ai_chance = { factor = 1}
@@ -1355,6 +1368,7 @@ country_event = {
 ##Event: Turkish Civil War
 country_event = {
  id = TurkeyC.6
+ is_triggered_only = yes
  title = TurkeyC.6.title
  desc = TurkeyC.6.desc
  picture = GFX_republican_propaganda
@@ -1368,8 +1382,8 @@ country_event = {
 	has_global_flag = TUR_coup_attempt_success
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyC_6 }
 	option = {
 		name = TurkeyC.6.a
 		ai_chance = { factor = 1}
@@ -1657,6 +1671,7 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 125}
 ##Event: Turkish Civil War
 country_event = {
  id = TurkeyC.1
+ is_triggered_only = yes
  title = TurkeyC.1.title
  desc = TurkeyC.1.desc
  picture = GFX_republican_propaganda
@@ -1670,8 +1685,8 @@ country_event = {
 	has_global_flag = TUR_coup_attempt_success
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyC_1 }
 	option = {
 		name = TurkeyC.1.a
 		ai_chance = { factor = 1}
@@ -1961,6 +1976,7 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 125}
 ##Event: Kemalist Question?
 country_event = {
 	id = TurkeyC.2
+	is_triggered_only = yes
 	title = TurkeyC.2.title
 	desc = TurkeyC.2.desc
 	picture = GFX_kemalist_guards
@@ -1975,7 +1991,7 @@ country_event = {
 		 has_capitulated = yes
 		 }
     }
-	mean_time_to_happen = {days = 1}
+	immediate = { set_country_flag = TUR_evf_TurkeyC_2 }
 	option = {
 		name = TurkeyC.2.a
 		ai_chance = { factor = 1}
@@ -2197,6 +2213,7 @@ add_timed_idea = { idea = turkish_civil_war_modifier days = 125}
 ##Event: Kurdish Movement
 country_event = {
  id = TurkeyC.5
+ is_triggered_only = yes
  title = TurkeyC.5.title
  desc = TurkeyC.5.desc
  picture = GFX_kirkuk
@@ -2215,8 +2232,8 @@ country_event = {
 		 }
     }
 
-    mean_time_to_happen = {days = 1}
 
+ immediate = { set_country_flag = TUR_evf_TurkeyC_5 }
 	option = {
 		name = TurkeyC.5.a
 		ai_chance = { factor = 1}
@@ -2841,6 +2858,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (AKP)
 country_event = {
  id = TurkeyA.1
+ is_triggered_only = yes
  title = TurkeyA.1.title
  desc = TurkeyA.1.desc
  picture = GFX_armed_forces_feels_bad
@@ -2854,6 +2872,7 @@ country_event = {
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_1 }
 	option = {
 		name = TurkeyA.1.a
 		ai_chance = { factor = 1}
@@ -2865,6 +2884,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 ##Event: We Are Hearing Whispers (ANAP)
 country_event = {
  id = TurkeyA.2
+ is_triggered_only = yes
  title = TurkeyA.2.title
  desc = TurkeyA.2.desc
  picture = GFX_armed_forces_feels_bad
@@ -2878,6 +2898,7 @@ country_event = {
 			neutrality_neutral_libertarians_are_in_power = yes	
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_2 }
 	option = {
 		name = TurkeyA.2.a
 		ai_chance = { factor = 1}
@@ -2890,6 +2911,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (Bozkurtlar)
 country_event = {
  id = TurkeyA.4
+ is_triggered_only = yes
  title = TurkeyA.4.title
  desc = TurkeyA.4.desc
  picture = GFX_armed_forces_feels_bad
@@ -2903,6 +2925,7 @@ country_event = {
 			nationalist_fascist_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_4 }
 	option = {
 		name = TurkeyA.4.a
 		ai_chance = { factor = 1}
@@ -2915,6 +2938,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (DYP)
 country_event = {
  id = TurkeyA.5
+ is_triggered_only = yes
  title = TurkeyA.5.title
  desc = TurkeyA.5.desc
  picture = GFX_armed_forces_feels_bad
@@ -2928,6 +2952,7 @@ country_event = {
 				western_autocrats_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_5 }
 	option = {
 		name = TurkeyA.5.a
 		ai_chance = { factor = 1}
@@ -2940,6 +2965,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (EMEP)
 country_event = {
  id = TurkeyA.6
+ is_triggered_only = yes
  title = TurkeyA.6.title
  desc = TurkeyA.6.desc
  picture = GFX_armed_forces_feels_bad
@@ -2953,6 +2979,7 @@ country_event = {
 				emerging_autocracy_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_6 }
 	option = {
 		name = TurkeyA.6.a
 		ai_chance = { factor = 1}
@@ -2965,6 +2992,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (FP)
 country_event = {
  id = TurkeyA.7
+ is_triggered_only = yes
  title = TurkeyA.7.title
  desc = TurkeyA.7.desc
  picture = GFX_armed_forces_feels_bad
@@ -2978,6 +3006,7 @@ country_event = {
 				emerging_reactionaries_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_7 }
 	option = {
 		name = TurkeyA.6.a
 		ai_chance = { factor = 1}
@@ -2990,6 +3019,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (Gencparty)
 country_event = {
  id = TurkeyA.8
+ is_triggered_only = yes
  title = TurkeyA.8.title
  desc = TurkeyA.8.desc
  picture = GFX_armed_forces_feels_bad
@@ -3003,6 +3033,7 @@ country_event = {
 				neutrality_neutral_autocracy_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_8 }
 	option = {
 		name = TurkeyA.8.a
 		ai_chance = { factor = 1}
@@ -3015,6 +3046,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (IBDAC)
 country_event = {
  id = TurkeyA.10
+ is_triggered_only = yes
  title = TurkeyA.10.title
  desc = TurkeyA.10.desc
  picture = GFX_armed_forces_feels_bad
@@ -3028,6 +3060,7 @@ country_event = {
 		has_government = fascism
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_10 }
 	option = {
 		name = TurkeyA.10.a
 		ai_chance = { factor = 1}
@@ -3040,6 +3073,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (MHP)
 country_event = {
  id = TurkeyA.11
+ is_triggered_only = yes
  title = TurkeyA.11.title
  desc = TurkeyA.11.desc
  picture = GFX_armed_forces_feels_bad
@@ -3053,6 +3087,7 @@ country_event = {
 				nationalist_right_wing_populists_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_11 }
 	option = {
 		name = TurkeyA.11.a
 		ai_chance = { factor = 1}
@@ -3065,6 +3100,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (ODP)
 country_event = {
  id = TurkeyA.12
+ is_triggered_only = yes
  title = TurkeyA.12.title
  desc = TurkeyA.12.desc
  picture = GFX_armed_forces_feels_bad
@@ -3078,6 +3114,7 @@ country_event = {
 				emerging_anarchist_communism_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_12 }
 	option = {
 		name = TurkeyA.12.a
 		ai_chance = { factor = 1}
@@ -3090,6 +3127,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (SOCDEM)
 country_event = {
  id = TurkeyA.13
+ is_triggered_only = yes
  title = TurkeyA.13.title
  desc = TurkeyA.13.desc
  picture = GFX_armed_forces_feels_bad
@@ -3103,6 +3141,7 @@ country_event = {
 		neutrality_neutral_social_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_13 }
 	option = {
 		name = TurkeyA.13.a
 		ai_chance = { factor = 1}
@@ -3115,6 +3154,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (TKP)
 country_event = {
  id = TurkeyA.14
+ is_triggered_only = yes
  title = TurkeyA.14.title
  desc = TurkeyA.14.desc
  picture = GFX_armed_forces_feels_bad
@@ -3128,6 +3168,7 @@ country_event = {
 				emerging_communist_state_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_14 }
 	option = {
 		name = TurkeyA.14.a
 		ai_chance = { factor = 1}
@@ -3140,6 +3181,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (TIP)
 country_event = {
  id = TurkeyA.15
+ is_triggered_only = yes
  title = TurkeyA.15.title
  desc = TurkeyA.15.desc
  picture = GFX_armed_forces_feels_bad
@@ -3153,6 +3195,7 @@ country_event = {
 				neutrality_neutral_communism_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_15 }
 	option = {
 		name = TurkeyA.15.a
 		ai_chance = { factor = 1}
@@ -3168,6 +3211,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (AKP)
 country_event = {
  id = TurkeyA.16
+ is_triggered_only = yes
  title = TurkeyA.16.title
  desc = TurkeyA.16.desc
  picture = GFX_whispers_are_finalyzing
@@ -3188,6 +3232,7 @@ country_event = {
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_16 }
 	option = {
 		name = TurkeyA.16.a
 		ai_chance = { factor = 1}
@@ -3199,6 +3244,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 ##Event: We Are Hearing Whispers (ANAP)
 country_event = {
  id = TurkeyA.17
+ is_triggered_only = yes
  title = TurkeyA.17.title
  desc = TurkeyA.17.desc
  picture = GFX_whispers_are_finalyzing
@@ -3219,6 +3265,7 @@ country_event = {
 neutrality_neutral_libertarians_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_17 }
 	option = {
 		name = TurkeyA.17.a
 		ai_chance = { factor = 1}
@@ -3231,6 +3278,7 @@ neutrality_neutral_libertarians_are_in_power = yes
 ##Event: We Are Hearing Whispers (Bozkurtlar)
 country_event = {
  id = TurkeyA.19
+ is_triggered_only = yes
  title = TurkeyA.19.title
  desc = TurkeyA.19.desc
  picture = GFX_whispers_are_finalyzing
@@ -3251,6 +3299,7 @@ country_event = {
 			nationalist_fascist_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_19 }
 	option = {
 		name = TurkeyA.19.a
 		ai_chance = { factor = 1}
@@ -3263,6 +3312,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (DYP)
 country_event = {
  id = TurkeyA.20
+ is_triggered_only = yes
  title = TurkeyA.20.title
  desc = TurkeyA.20.desc
  picture = GFX_whispers_are_finalyzing
@@ -3283,6 +3333,7 @@ country_event = {
 				western_autocrats_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_20 }
 	option = {
 		name = TurkeyA.20.a
 		ai_chance = { factor = 1}
@@ -3295,6 +3346,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (EMEP)
 country_event = {
  id = TurkeyA.21
+ is_triggered_only = yes
  title = TurkeyA.21.title
  desc = TurkeyA.21.desc
  picture = GFX_whispers_are_finalyzing
@@ -3315,6 +3367,7 @@ country_event = {
 				emerging_autocracy_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_21 }
 	option = {
 		name = TurkeyA.21.a
 		ai_chance = { factor = 1}
@@ -3351,6 +3404,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (Gencparty)
 country_event = {
  id = TurkeyA.23
+ is_triggered_only = yes
  title = TurkeyA.23.title
  desc = TurkeyA.23.desc
  picture = GFX_whispers_are_finalyzing
@@ -3371,6 +3425,7 @@ country_event = {
 	neutrality_neutral_autocracy_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_23 }
 	option = {
 		name = TurkeyA.23.a
 		ai_chance = { factor = 1}
@@ -3383,6 +3438,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (IBDAC)
 country_event = {
  id = TurkeyA.25
+ is_triggered_only = yes
  title = TurkeyA.25.title
  desc = TurkeyA.25.desc
  picture = GFX_whispers_are_finalyzing
@@ -3403,6 +3459,7 @@ country_event = {
 		has_government = fascism
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_25 }
 	option = {
 		name = TurkeyA.25.a
 		ai_chance = { factor = 1}
@@ -3415,6 +3472,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (MHP)
 country_event = {
  id = TurkeyA.26
+ is_triggered_only = yes
  title = TurkeyA.26.title
  desc = TurkeyA.26.desc
  picture = GFX_whispers_are_finalyzing
@@ -3435,6 +3493,7 @@ country_event = {
 nationalist_right_wing_populists_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_26 }
 	option = {
 		name = TurkeyA.26.a
 		ai_chance = { factor = 1}
@@ -3447,6 +3506,7 @@ nationalist_right_wing_populists_are_in_power = yes
 ##Event: We Are Hearing Whispers (ODP)
 country_event = {
  id = TurkeyA.27
+ is_triggered_only = yes
  title = TurkeyA.27.title
  desc = TurkeyA.27.desc
  picture = GFX_whispers_are_finalyzing
@@ -3467,6 +3527,7 @@ country_event = {
 	emerging_anarchist_communism_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_27 }
 	option = {
 		name = TurkeyA.27.a
 		ai_chance = { factor = 1}
@@ -3479,6 +3540,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (SOCDEM)
 country_event = {
  id = TurkeyA.28
+ is_triggered_only = yes
  title = TurkeyA.28.title
  desc = TurkeyA.28.desc
  picture = GFX_whispers_are_finalyzing
@@ -3499,6 +3561,7 @@ country_event = {
 		neutrality_neutral_social_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_28 }
 	option = {
 		name = TurkeyA.28.a
 		ai_chance = { factor = 1}
@@ -3511,6 +3574,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (TKP)
 country_event = {
  id = TurkeyA.29
+ is_triggered_only = yes
  title = TurkeyA.29.title
  desc = TurkeyA.29.desc
  picture = GFX_whispers_are_finalyzing
@@ -3531,6 +3595,7 @@ country_event = {
 				emerging_communist_state_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_29 }
 	option = {
 		name = TurkeyA.29.a
 		ai_chance = { factor = 1}
@@ -3543,6 +3608,7 @@ country_event = {
 ##Event: We Are Hearing Whispers (TIP)
 country_event = {
  id = TurkeyA.30
+ is_triggered_only = yes
  title = TurkeyA.30.title
  desc = TurkeyA.30.desc
  picture = GFX_whispers_are_finalyzing
@@ -3563,6 +3629,7 @@ country_event = {
 			neutrality_neutral_communism_are_in_power = yes
  }
 
+ immediate = { set_country_flag = TUR_evf_TurkeyA_30 }
 	option = {
 		name = TurkeyA.30.a
 		ai_chance = { factor = 1}
@@ -3942,6 +4009,7 @@ country_event = {
 ##Event: Our Leader Gets Older KK
 country_event = {
  id = TurkeyAge.1
+ is_triggered_only = yes
  title = TurkeyAge.1.title
  desc = TurkeyAge.1.desc
  picture = GFX_our_leader_gets_older
@@ -3954,6 +4022,7 @@ country_event = {
 		 has_country_leader = { id = 7800 }	
  } 
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAge_1 }
 	option = {
 		name = TurkeyAge.1.a
 		ai_chance = { factor = 1}
@@ -3973,6 +4042,7 @@ country_event = {
 ##Event: Our Leader Gets Older Mesut Yilmaz
 country_event = {
  id = TurkeyAge.2
+ is_triggered_only = yes
  title = TurkeyAge.2.title
  desc = TurkeyAge.2.desc
  picture = GFX_our_leader_gets_older
@@ -3985,6 +4055,7 @@ country_event = {
 		 date > 2016.1.1
  } 
 
+ immediate = { set_country_flag = TUR_evf_TurkeyAge_2 }
 	option = {
 		name = TurkeyAge.2.a
 		ai_chance = { factor = 1}

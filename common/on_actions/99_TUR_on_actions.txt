@@ -2,6 +2,9 @@ on_actions = {
 #
 	on_daily_TUR = {
 		effect = {
+			# Turkey events that used to be polled for every country (see TUR_polled_event_dispatcher.txt)
+			TUR_dispatch_polled_events = yes
+
 			set_variable = { TUR_PKK_min_strength = 0 }
 			if = {
 				limit = { SYR = { has_idea = TUR_PKK_active_foreign } }
