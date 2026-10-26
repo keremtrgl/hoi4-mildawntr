@@ -429,21 +429,6 @@ country_event = {
 
 
 ##Event: Turkey Makes A Deal With GAZPROM
-country_event = {
- id = TurkeyForeign.3
- title = TurkeyForeign.3.title
- desc = TurkeyForeign.3.desc
- picture = GFX_gazprom
- is_triggered_only = yes
-
-	option = {
-		name = TurkeyForeign.3.a
-		ai_chance = { factor = 1}
-
-				set_temp_variable = { int_investment_change = 25.0 }
-				modify_international_investment_effect = yes 
-	}
-}
 
 ##Event: Inviting Turkey to Join the Iraq War
 country_event = {
@@ -1495,8 +1480,8 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
+	immediate = { set_country_flag = TUR_evf_TurkeyNATO_7 }
 	option = {
 		name = TurkeyNATO.7.a
 		ai_chance = { factor = 1}

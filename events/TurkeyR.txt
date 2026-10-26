@@ -1027,39 +1027,7 @@ country_event = { #Random PKK Attack
 }
 ######################################################
 #
-news_event = { #Cyprus Unifies under NCY
-	id = TurkeyMD.77
-	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkey.77" }
-
-	title = TurkeyMD.77.t
-	desc = TurkeyMD.77.d
-	picture = GFX_trade_agreement
-	major = yes
-	is_triggered_only = yes
-
-	option = { #Good!
-		name = TurkeyMD.77.a
-		log = "[GetDateText]: [This.GetName]: Turkey.77.a executed"
-		ai_chance = { factor = 5 }
-	}
-}
 #
-news_event = { #Cyprus Unifies under SCY
-	id = TurkeyMD.88
-	immediate = { log = "[GetDateText]: [Root.GetName]: event Turkey.88" }
-
-	title = TurkeyMD.88.t
-	desc = TurkeyMD.88.d
-	picture = GFX_trade_agreement
-	major = yes
-	is_triggered_only = yes
-
-	option = { #Good!
-		name = TurkeyMD.88.a
-		log = "[GetDateText]: [This.GetName]: Turkey.88.a executed"
-		ai_chance = { factor = 5 }
-	}
-}
 
 # Cypriot Issues
 country_event = { #Greece event

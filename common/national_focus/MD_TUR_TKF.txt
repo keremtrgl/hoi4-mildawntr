@@ -942,6 +942,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}		
 		
 			completion_reward = {
+				news_event = { id = Turkey_news.29 hours = 6 }
 			        add_political_power = 50
 					reverse_add_opinion_modifier = { target = SOV modifier =  trade_mission }
 				 	hidden_effect = {

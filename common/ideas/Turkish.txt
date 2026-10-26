@@ -262,10 +262,6 @@ ideas = {
 			modifier = { stability_weekly = 0.001}
 		}
 		
- 		army_strengh_increase = {
-			allowed_civil_war = { always = yes }
-			modifier = { monthly_population = 0.5 stability_factor = -0.15 neutrality_drift = -0.03}
-		}
 		
  		syrian_immigration = {
 			allowed_civil_war = { always = yes }
@@ -356,10 +352,6 @@ ideas = {
 			modifier = { stability_factor = 0.05 political_power_cost = -0.05 	production_factory_max_efficiency_factor = -0.05 }
 		}
 		
- 		FETO_alliance = {
-			allowed_civil_war = { always = yes }
-			modifier = { stability_factor = 0.05 political_power_cost = -0.1 army_morale_factor = -0.1 army_org_factor = -0.1}
-		}
 
  		betrayal_from_FETO3 = {
 			allowed_civil_war = { always = yes }
@@ -472,10 +464,6 @@ ideas = {
 			modifier = { agency_upgrade_time = -0.05 air_ace_generation_chance_factor = 0.05 max_army_group_size = 2}
 		}
 
- 		industrialization_NATO = {
-			allowed_civil_war = { always = yes }
-			modifier = { agency_upgrade_time = -0.05 air_ace_generation_chance_factor = 0.05 max_army_group_size = 2}
-		}
 
 
  		army_of_the_corruption = {
@@ -519,53 +507,13 @@ ideas = {
 
 
 
- 		wip = {
-			allowed_civil_war = { always = yes }
-			modifier = { army_attack_factor = 1000 army_speed_factor = 100}
-		}
-
- 		wip_ukr = { 
-			allowed_civil_war = { always = yes }
-			modifier = { army_core_defence_factor = 10.5 army_core_attack_factor = 10.5}
-		}
-
- 		motherland_defence = {
-			allowed_civil_war = { always = yes }
-			modifier = { army_core_defence_factor = 1.5 army_core_attack_factor = 1.0 surrender_limit = 1.0 industry_repair_factor = 1.0 industry_free_repair_factor = 1.0 	army_attack_factor = 1.35 army_defence_factor = 0.65 cas_damage_reduction = 0.85}
-		}
-
- 		USAID_backup = {
-			allowed_civil_war = { always = yes }
-			modifier = { political_power_gain = 2.75 army_speed_factor = 0.5 autonomy_gain = 75 foreign_influence_defense_modifier = 0.3 foreign_influence_modifier = 0.3 interest_rate_multiplier_modifier = -5 air_superiority_bonus_in_combat = 0.35 air_superiority_efficiency = 0.35 supply_consumption_factor = -0.5}
-		}
-
- 		wip_speed_factor = {
-			allowed_civil_war = { always = yes }
-			modifier = { army_speed_factor = 5.0 army_attack_factor = 3.65 army_defence_factor = 3.65}
-		}
-
- 		wip_industries = {
-			allowed_civil_war = { always = yes }
-			modifier = {
-				production_factory_max_efficiency_factor = 1
-				production_factory_efficiency_gain_factor = 1
-				industrial_capacity_factory = 1000
-				production_speed_buildings_factor = 1
-	minimum_training_level = -0.25 training_time_factor = -0.25
-			   }
-		}
 
 
- 		mild_wip = {
-			allowed_civil_war = { always = yes }
-			modifier = {
-				production_factory_max_efficiency_factor = 1
-				production_factory_efficiency_gain_factor = 1
-				industrial_capacity_factory = 1
-				production_speed_buildings_factor = 1
-	minimum_training_level = -0.25 training_time_factor = -0.25
-			   }
-		}
+
+
+
+
+
 
 
 
@@ -640,10 +588,6 @@ ideas = {
 			modifier = { weekly_manpower = 300 }
 		}
 		
- 		industrialization_arms_NATO = {
-			allowed_civil_war = { always = yes }
-			modifier = { agency_upgrade_time = -0.05 air_ace_generation_chance_factor = 0.05 max_army_group_size = 2}
-		}
 
  		immigration_talks = {
 			allowed_civil_war = { always = yes }
@@ -652,12 +596,6 @@ ideas = {
 		}
 
 
- 		blocking_traffick = {
-			allowed_civil_war = { always = yes }
-			modifier = {
-				custom_modifier_tooltip = BLOCK_PANELING
-			}
-		}  
 		
  		foreign_aid_us_tur = {
 			allowed_civil_war = { always = yes }
@@ -685,15 +623,7 @@ ideas = {
 			}
 		}
 		
- 		rise_of_fp1 = {                 #Askıya Alındı
-			allowed_civil_war = { always = yes }
-			modifier = { communism_drift = 0.05 }
-		}
 
- 		pro_seculars = {
-			allowed_civil_war = { always = yes }
-			modifier = { democratic_drift = 0.05 fascism_drift = -0.01 }
-		}
 				
  		foreign_aid_prc_tur = {
 			allowed_civil_war = { always = yes }
@@ -986,21 +916,6 @@ custom_modifier_tooltip = AD_BOSPHORUS
 				}
 		}
 
- 		mass_banking7 = {
-			allowed_civil_war = { always = yes }
-			modifier = { 			
-                political_power_cost = 0.2
-                stability_factor = 0.1
-                democratic_drift = 0.05
-                democratic_acceptance = 20				
-			    production_factory_max_efficiency_factor = 0.15
-				production_factory_efficiency_gain_factor = 0.15
-				industrial_capacity_factory = 0.15
-				production_speed_buildings_factor = 0.15
-				min_export = 0.15
-offices_worker_requirement_modifier = -0.15			
-				}
-		}
 		
  		liberazation_of_the_kemalism = {
 			allowed_civil_war = { always = yes }
@@ -5304,21 +5219,7 @@ production_speed_buildings_factor = 0.05
 				}
 		}		
 
- 		jihadist_barracks = {
-			allowed_civil_war = { always = yes }
-			modifier = { 		
-		        recruitable_population_factor = 0.05
-				conscription = 0.015
-				}
-		}			
 
- 		global_jihadists_declared = {
-			allowed_civil_war = { always = yes }
-			modifier = { 		
-		        war_support_factor = 0.1
-				weekly_manpower = 2750
-				}
-		}			
 
  		prepared_for_the_sanctions = {
 			allowed_civil_war = { always = yes }
@@ -6761,13 +6662,6 @@ modifier = {
 				}
 		}
 		
-		tore_of_anarchists = {
-			allowed_civil_war = { always = yes }
-			modifier = {
-            political_power_cost = -0.05
-			stability_factor = 0.03
-				}
-		}
 		
 		divided_construction = {
 			allowed_civil_war = { always = yes }
@@ -7609,13 +7503,6 @@ stability_factor = 0.05
 			   }
 		}
 
-		recovered_society = {
-			allowed_civil_war = { always = yes }
-			modifier = {
-		    political_power_cost = 0.1
-			democratic_drift = 0.05
-			   }
-		}
 
 		fiscal_politicss = {
 			allowed_civil_war = { always = yes }
@@ -7625,29 +7512,8 @@ stability_factor = 0.05
 			   }
 		}
 
-		increase_the_technologies = {
-			allowed_civil_war = { always = yes }
-			modifier = {
-		    research_speed_factor = 0.05
-			   }
-		}
 		
- 		cyber_war = {
-			allowed_civil_war = { always = yes }
-			modifier = { 		
-				decryption_power = 15
-                agency_upgrade_time = -0.05
-                intelligence_agency_defense = 0.05			
-				}
-		}
 		
-		turkish_presidency_strenghened = {
-			allowed_civil_war = { always = yes }
-			modifier = { 
-				political_power_cost = -0.15
-                stability_factor = -0.07				
-			}
-		}
 
  		TURKSAT_tech = {
 			allowed_civil_war = { always = yes }
@@ -9611,15 +9477,6 @@ offices_worker_requirement_modifier = -0.05
 				}
 		}
 
-		nuclear_energy_project_4  = {
-			allowed_civil_war = { always = yes }
-			modifier = { 	
-			    political_power_gain = -0.1
-				research_speed_factor = 0.05
-                production_speed_nuclear_reactor_factor = 0.15
-				nuclear_energy_generation_modifier = 0.15
-				}
-		}
 
  		space_intelligence= {
 			allowed_civil_war = { always = yes }
@@ -11202,16 +11059,6 @@ foreign_influence_defense_modifier = 0.1
 				}
 		}
 
- 	    turkish_salvation_front = {
-			allowed_civil_war = { always = yes }
-			modifier = {
-		        army_core_attack_factor = 0.25
-		        army_core_defence_factor = 0.25			    
-				land_reinforce_rate = 0.1
-				army_org_Factor = 0.05
-				planning_speed = 0.05
-				}
-		}
 
 	    white_energy_operations = {
 			allowed_civil_war = { always = yes }
@@ -12166,29 +12013,6 @@ army_leader_start_planning_level = 1
 			}
 		}
 	
-		turkish_NCY_officers = {
-			
-			allowed = {
-				always = no
-			}
-
-			cancel = {
-				has_war = yes
-			}
-
-			picture = tur_kemalist_neutrality
-			
-			removal_cost = -1
-	
-			modifier = {
-			political_power_cost = 0.25
-army_leader_cost_factor = 0.2
-army_leader_start_attack_level = 1
-
-army_leader_start_defense_level = 1
-army_leader_start_planning_level = 1
-			}
-		}
 
 		turkish_war_for_confidence = {
 			
@@ -12629,25 +12453,6 @@ army_leader_start_planning_level = 1
 			}
 		}
 		#
-		TUR_pkk_legalized = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_pkk_legalized" }
-			picture = fire
-			allowed = {
-				original_tag = TUR
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			cancel = {
-				neutrality_neutral_oligarch_are_in_power = yes
-			}
-			modifier = {
-				production_speed_buildings_factor = -0.40
-				production_factory_start_efficiency_factor = -0.40
-				local_resources_factor = -0.20
-				political_power_factor = -0.30
-			}
-		}
 		#
 		TUR_attacking_mafia1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_attacking_mafia1" }

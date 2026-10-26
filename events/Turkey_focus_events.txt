@@ -76,25 +76,6 @@ swap_ideas = {
 }
 
 ##Event: Gülen Movement Broke Up
-country_event = {
- id = TurkeyF.2
- title = TurkeyF.2.title
- desc = TurkeyF.2.desc
- picture = GFX_politics_shiite2
- is_triggered_only = yes
-
-    trigger = {
-    }
-
-    mean_time_to_happen = {days = 1}
-
-	option = {
-		name = TurkeyF.2.a
-		ai_chance = { factor = 1}
-
-	set_global_flag = TUR_FETO_BAD
-	}
-}
 
 ##Event: Demand Fetullah To Return Turkey
 country_event = {
@@ -812,38 +793,6 @@ add_named_threat = { threat = 1 name = AZE_ARM_WAR }
 }
 
 ##Event: US Invasion
-country_event = {
- id = TurkeyF.25
- title = TurkeyF.25.title
- desc = TurkeyF.25.desc
- picture = GFX_afghanistan_war
-  fire_only_once = yes
-  is_triggered_only = yes
-
-    trigger = {
-         tag = USA
-		 NOT = {
-		 is_puppet = yes
-		 }
-		 is_ai = yes
-         AND = {
-             date > 2003.3.20
-	         date < 2003.4.20
-         }
-    }
-
-    mean_time_to_happen = {days = 1}
-
-	option = {
-		name = TurkeyF.25.a
-		ai_chance = { factor = 1}
-
-		create_wargoal = {
-			type = annex_everything
-			target = IRQ
-		}
-	}
-}
 
 ##Event: Turkish Diktat
 country_event = {
@@ -1653,6 +1602,7 @@ country_event = {
 
 	option = {
 		name = TurkeyF.52.b
+		TUR = { country_event = { id = TurkeyF.53 hours = 6 } }
 		ai_chance = { factor = 100}
 
 	add_political_power = -50
@@ -1706,6 +1656,7 @@ country_event = {
 
 	option = {
 		name = TurkeyF.54.b
+		TUR = { country_event = { id = TurkeyF.55 hours = 6 } }
 		ai_chance = { factor = 100}
 
 	add_political_power = -50
@@ -1758,6 +1709,7 @@ country_event = {
 
 	option = {
 		name = TurkeyF.56.b
+		TUR = { country_event = { id = TurkeyF.57 hours = 6 } }
 		ai_chance = { factor = 100}
 
 	add_political_power = -50
@@ -2580,88 +2532,8 @@ remove_unit_leader_role = { character = ozden_ordek }
 }
 
 ##Event: Mafia Take Over In Italy
-country_event = {
- id = TurkeyF.85
- title = TurkeyF.85.title
- desc = TurkeyF.85.desc
- picture = GFX_italian_takeover_mafia
- is_triggered_only = yes
-
-    trigger = {
-    }
-
-    mean_time_to_happen = {days = 1}
-
-	option = {
-		name = TurkeyF.85.a
-		ai_chance = { factor = 100}
-
-    add_state_core = 84
-    add_state_core = 83
-    add_state_core = 956
-    add_state_core = 957
-    add_state_core = 82
-    add_state_core = 81
-    add_state_core = 960
-    add_state_core = 79
-    add_state_core = 265
-    add_state_core = 77
-    add_state_core = 80
-    add_state_core = 78
-    add_state_core = 285
-    TUR = {
-	annex_country = { target = ITA transfer_troops = yes}
-		ITA = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
-	hidden_effect = {
-	load_OOB = ITA_2000    
-	} }
-}
 
 ##Event: Mafia Take Over In Mexico
-country_event = {
- id = TurkeyF.86
- title = TurkeyF.86.title
- desc = TurkeyF.86.desc
- picture = GFX_italian_takeover_mafia
- is_triggered_only = yes
-
-    trigger = {
-    }
-
-    mean_time_to_happen = {days = 1}
-
-	option = {
-		name = TurkeyF.86.a
-		ai_chance = { factor = 100}
-
-    add_state_core = 828
-    add_state_core = 829
-    add_state_core = 830
-    add_state_core = 833
-    add_state_core = 832
-    add_state_core = 831
-    add_state_core = 834
-    add_state_core = 836
-    add_state_core = 838
-    add_state_core = 835
-    add_state_core = 837
-    add_state_core = 839
-    add_state_core = 840
-    TUR = {
-	annex_country = { target = MEX transfer_troops = yes}
-		MEX = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
-	hidden_effect = {
-	load_OOB = MEX_2000    
-	} }
-}
 
 ##Event: Assasination On The USA President
 country_event = {
@@ -4808,38 +4680,6 @@ country_event = {
 } }
 
 ##Event: Assimilation Of Germans
-country_event = {
- id = TurkeyF.159
- title = TurkeyF.159.title
- desc = TurkeyF.159.desc
- picture = GFX_turkish_take_over_in_germany
- is_triggered_only = yes
-
-    trigger = {
-    }
-
-    mean_time_to_happen = {days = 1}
-
-	option = {
-		name = TurkeyF.159.a
-		ai_chance = { factor = 100}
-
-	annex_country = { target = GER transfer_troops = yes}
-		GER = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} 
-	add_state_core = 45
-	add_state_core = 539	
-	add_state_core = 37	
-	add_state_core = 38	
-	add_state_core = 39	
-	add_state_core = 41	
-	add_state_core = 966
-	add_state_core = 40	
-	add_state_core = 967	
-} }
 
 ##Event: Fast Unification Of Turkic Union
 country_event = {
@@ -5251,6 +5091,7 @@ country_event = {
 
 	option = {
 		name = TurkeyF.172.b
+		TUR = { country_event = { id = TurkeyF.173 hours = 6 } }
 		ai_chance = { factor = 100}
 
 	add_political_power = -50
@@ -5302,6 +5143,7 @@ country_event = {
 
 	option = {
 		name = TurkeyF.174.b
+		TUR = { country_event = { id = TurkeyF.175 hours = 6 } }
 		ai_chance = { factor = 100}
 
 	add_political_power = -50
@@ -5353,6 +5195,7 @@ country_event = {
 
 	option = {
 		name = TurkeyF.176.b
+		TUR = { country_event = { id = TurkeyF.177 hours = 6 } }
 		ai_chance = { factor = 100}
 
 	add_political_power = -50
@@ -5404,6 +5247,7 @@ country_event = {
 
 	option = {
 		name = TurkeyF.178.b
+		TUR = { country_event = { id = TurkeyF.179 hours = 6 } }
 		ai_chance = { factor = 100}
 
 	add_political_power = -50
@@ -5624,6 +5468,7 @@ country_event = {
  is_triggered_only = yes
 
     trigger = {
+		NOT = { has_global_flag = TUR_coup_attempt_success }
 	date > 2016.1.1	
 		OR = {
 		has_completed_focus = HEPAR_victory_of_anatolian_eagle
@@ -5647,8 +5492,8 @@ country_event = {
 		}
     }
 
-    mean_time_to_happen = {days = 1}
 
+	immediate = { set_country_flag = TUR_evf_TurkeyF_187 }
 	option = {
 		name = TurkeyF.187.a
 		ai_chance = { factor = 100}
@@ -5664,42 +5509,6 @@ country_event = {
 } }
 
 ##Event: EMEP Take Overs The Regime
-country_event = {
- id = TurkeyF.188
- title = TurkeyF.188.title
- desc = TurkeyF.188.desc
- picture = GFX_coup_tanks
- is_triggered_only = yes
-
-    trigger = {
-	always = no
-	date > 2009.1.1	
-    }
-
-    mean_time_to_happen = {days = 1}
-
-	option = {
-		name = TurkeyF.188.a
-		ai_chance = { factor = 100}
-
-    complete_national_focus = TKF_preserve_the_nation
-	set_global_flag = TUR_TKP_GET_DESTROYED
-	country_event = MD4_election_campaign.0
-            custom_effect_tooltip = EMEP_ACTION_2
-			set_global_flag = EMEP_GREEN_LIGHT
-			set_temp_variable = { rul_party_temp = 7 }
-			change_ruling_party_effect = yes
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = yes
-			}
-			set_temp_variable = { party_index = 7 }
-			set_temp_variable = { party_popularity_increase = 0.50 }
-			set_temp_variable = { temp_outlook_increase = 0.50 }
-			change_relative_party_popularity = yes
-
-	}
-}
 
 ##Event: Turkish Persuade
 country_event = {
@@ -6035,81 +5844,6 @@ country_event = {
 }
 
 ##Event: The Court Take Over
-country_event = {
- id = TurkeyF.200
- title = TurkeyF.200.title
- desc = TurkeyF.200.desc
- picture = GFX_ahmet_necdet_sezer_regime
- is_triggered_only = yes
-
-    trigger = {
-    }
-
-    mean_time_to_happen = {days = 1}
-
-	option = {
-		name = TurkeyF.200.a
-		ai_chance = { factor = 100}
-
-   set_global_flag = COURT_RULES_AYM
-   clr_global_flag = MP_MOMENT
-        set_country_flag = AYM_government
-TUR_kemalist_turn_ally_effect = yes 
-TUR_traditionalists_turn_enemy_effect = yes 
-	set_variable = { var = TUR_united_aym value = 55 }
-	set_variable = { var = TUR_politicized_aym value = 45 }
-	set_variable = { var = TUR_soft_group value = 3 }
-	set_variable = { var = TUR_precision_group value = 7 }
-	set_variable = { var = TUR_transparent_group value = 5 }
-		set_country_flag = AYM_FOCUS_LOCATION
-        hidden_effect = { news_event = Turkey_news.35 }
-	hidden_effect = { remove_ideas = pr_necdet }
-	hidden_effect = { remove_ideas = pr_gul }
-	set_country_flag = AYM_FOCUS_LOCATION
-				load_focus_tree = MD_TUR_AYM
-    custom_effect_tooltip = MD_TUR_COURT_tooltip
-
-add_named_threat = { threat = -2 name = AYM_TAKE_OVER }
-
-	create_country_leader = {
-		name = "Constitutional Court"
-		picture = "aym_governance.dds"
-		ideology = Neutral_conservatism
-		traits = {
-			neutrality_Neutral_conservatism
-			staunch_constitutionalist
-		}
-	}
-			clear_array = gov_coalition_array
-			set_variable = { ruling_party = 14 } #Neutral_conservatism
-			add_to_variable = { party_pop_array^14 = 0.5 } #Neutral_conservatism
-			recalculate_party = yes
-			IF = {
-				limit = {
-					NOT = {
-						has_government = neutrality
-					}
-				}
-				add_popularity = {
-					ideology = neutrality
-					popularity = 0.5
-				}
-				recalculate_party = yes
-				set_politics = {
-					ruling_party = neutrality
-				}
-			}
-			else = {
-				meta_effect = {
-					text = {
-						set_country_flag = [META_SET_RULING_PARTY]
-					}
-					META_SET_RULING_PARTY = "[meta_set_ruling_leader]"
-				}
-				set_leader = yes
-			}
-		}
-}
 
 ##Event: The Military Drama
 country_event = {

@@ -1691,22 +1691,6 @@ country_event = {
 }
 
 ##Event: Empty
-country_event = {
- id = Turkey.50
- title = Turkey.50.title
- desc = Turkey.50.desc
- picture = GFX_terrorist_attack
- is_triggered_only = yes
-
-    mean_time_to_happen = {days = 1}
-
-	option = {
-		name = Turkey.50.a
-		ai_chance = { factor = 1}
-
-	add_political_power = -25
-	}
-}
 
 ##Event: Necmettin Erbakan Memnu Hakları
 country_event = {
@@ -1908,22 +1892,6 @@ country_event = {
 }
 
 ##Event: Empty
-country_event = {
- id = Turkey.57
- title = Turkey.57.title
- desc = Turkey.57.desc
- picture = GFX_terrorist_attack
- is_triggered_only = yes
-
-    mean_time_to_happen = {days = 1}
-
-	option = {
-		name = Turkey.57.a
-		ai_chance = { factor = 1}
-
-	add_political_power = -35
-	}
-}
 
 ##Event: Pig Grip First Case
 country_event = {
@@ -10575,28 +10543,6 @@ country_event = {
 } }
 
 ##Event: Turan Course
-country_event = {
- id = Turkey.321
- title = Turkey.321.title
- desc = Turkey.321.desc
- picture = GFX_coup_tanks
- is_triggered_only = yes
-
-    mean_time_to_happen = {days = 1}
-
-	option = {
-		name = Turkey.321.a
-		ai_chance = { factor = 1}
-
-						add_popularity = {
-							ideology = nationalist
-							popularity = 0.45
-						}	
-                set_politics = {
-                ruling_party = nationalist
-                elections_allowed = no
-            }				
-} }
 
 ##Event: Turkic Coup
 country_event = {
@@ -19812,9 +19758,15 @@ country_event = {
  desc = Turkey.547.desc
  picture = GFX_us_recognizes_armenian_genocide
  is_triggered_only = yes
+ fire_only_once = yes
+ trigger = {
+	 tag = TUR
+	 AND = { date > 2021.4.24 date < 2021.5.24 }
+	 NOT = { has_capitulated = yes }
+ }
 
-    mean_time_to_happen = {days = 1}
 
+	immediate = { set_country_flag = TUR_evf_Turkey_547 }
 	option = {
 		name = Turkey.547.a
 		ai_chance = { factor = 1}
@@ -23490,8 +23442,8 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 1}
 
+	immediate = { set_country_flag = TUR_evf_Turkey_648 }
 	option = {
 		name = Turkey.648.a
 		ai_chance = { factor = 100}
@@ -24654,8 +24606,8 @@ country_event = {
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
+	immediate = { set_country_flag = TUR_evf_Turkey_686 }
 	option = {
 		name = Turkey.686.a
 		ai_chance = { factor = 100}

@@ -11976,4 +11976,118 @@ TUR_dispatch_polled_events = {
 		}
 		country_event = TurkeyAge.2
 	}
+	# events that were marked triggered-only but had no caller; added to the dispatcher in 2.0.2-TUR.4
+	if = {  # Turkey.547  (Turkey.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkey_547 }
+			tag = TUR
+			AND = { date > 2021.4.24 date < 2021.5.24 }
+			NOT = { has_capitulated = yes }
+		}
+		country_event = Turkey.547
+	}
+	if = {  # Turkey.648  (Turkey.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkey_648 }
+			tag = TUR
+			AND = {
+			date > 2024.2.17
+			date < 2024.3.17
+			}
+			NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+			}
+		}
+		country_event = Turkey.648
+	}
+	if = {  # Turkey.686  (Turkey.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkey_686 }
+			tag = TUR
+			AND = {
+			date > 2025.4.23
+			date < 2025.5.23
+			}
+		}
+		country_event = Turkey.686
+	}
+	if = {  # Turkeys.9206  (Turkey_politics_events.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkeys_9206 }
+			tag = TUR
+			NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_capitulated = yes
+			}
+			neutrality_neutral_muslim_brotherhood_are_in_power = yes
+			AND = {
+			date > 2022.1.1
+			date < 2022.2.1
+			}
+		}
+		country_event = Turkeys.9206
+	}
+	if = {  # Turkeys.9207  (Turkey_politics_events.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkeys_9207 }
+			tag = TUR
+			NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_capitulated = yes
+			}
+			neutrality_neutral_muslim_brotherhood_are_in_power = yes
+			AND = {
+			date > 2022.2.3
+			date < 2022.3.2
+			}
+		}
+		country_event = Turkeys.9207
+	}
+	if = {  # TurkeyNATO.7  (Turkey_foreign_events.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_TurkeyNATO_7 }
+			has_war_with = CHI
+			tag = TUR
+			NOT = {
+			has_government = fascism
+			has_capitulated = yes
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			}
+		}
+		country_event = TurkeyNATO.7
+	}
+	if = {  # TurkeyF.187  (Turkey_focus_events.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_TurkeyF_187 }
+			NOT = { has_global_flag = TUR_coup_attempt_success }   # no second coup if July 15 already happened
+			tag = TUR
+			date > 2016.1.1
+			OR = {
+			has_completed_focus = HEPAR_victory_of_anatolian_eagle
+			has_completed_focus = AYM_the_great_take_over
+			has_completed_focus = OTT_approach_ottomans
+			has_completed_focus = DSP_restoring_our_power
+			has_completed_focus = MHF_question_of_gulenists
+			has_completed_focus = TUR_AKP_victory
+			has_completed_focus = CHPs_economic_policy
+			has_completed_focus = MIT_declare_the_new_regime
+			}
+			NOT = {
+			has_completed_focus = DSP_shut_down_gulen_institutions
+			has_completed_focus = AYM_violent_clash_with_feto
+			has_completed_focus = OTT_towards_gulenist
+			has_completed_focus = HEPAR_clash_with_gulenists
+			has_completed_focus = MHF_question_of_gulenists
+			has_completed_focus = TUR_end_of_feto_alliance
+			has_completed_focus = CHP_general_gulenist_cleaning
+			has_completed_focus = MIT_cleanize_the_gulenist_movement
+			}
+		}
+		country_event = TurkeyF.187
+	}
 }
