@@ -1,0 +1,72 @@
+{
+  "_comment": "Files this submod ships at the same path as a Millennium Dawn file (so they replace MD's copy). 'merge': MD's file plus our edits, kept up to date with a 3-way merge against base/. 'replace': deliberate replacement of MD's Turkey content; MD changes are only reported for review. See tools/md_sync.py.",
+  "md_workshop_id": "2777392649",
+  "base_version": "2.0.2",
+  "files": {
+    "common/scripted_localisation/00_MD_politicsview_scripted_localisation.txt": {
+      "mode": "merge",
+      "why": "Turkey party names inserted at the top of each party defined_text (first match wins); MD's own TUR lines removed.",
+      "strategy": "party_names"
+    },
+    "common/national_focus/01_EU_USoE_shared.txt": {
+      "mode": "merge",
+      "why": "Turkey-specific position offsets for the shared EU/USoE tree in each Turkish path."
+    },
+    "common/countries/cosmetic.txt": {
+      "mode": "merge",
+      "why": "Colours for the submod's cosmetic tags appended to MD's list (the game only reads this file name)."
+    },
+    "common/bookmarks/blitzkrieg.txt": {
+      "mode": "merge",
+      "why": "Turkey's ideas and focuses shown on the bookmark screen."
+    },
+    "history/countries/TUR - Turkey.txt": {
+      "mode": "merge",
+      "why": "Turkey's start rebuilt on MD 2.0 history plus the submod's parties, characters and flags."
+    },
+    "common/national_focus/turkey.txt": {
+      "mode": "replace",
+      "why": "Intentionally empty: disables MD's Turkey focus tree so the submod's trees are used."
+    },
+    "localisation/english/MD_focus_TUR_l_english.yml": {
+      "mode": "replace",
+      "why": "Localisation for the submod's trees under MD's file name (MD's tree is disabled)."
+    },
+    "common/ai_strategy_plans/TUR_strategy_plans.txt": {
+      "mode": "replace",
+      "why": "MD's Turkey AI plans target MD's Turkey tree, which the submod disables."
+    },
+    "common/characters/TUR.txt": {
+      "mode": "replace",
+      "why": "Submod's Turkish characters."
+    },
+    "common/decisions/Turkey.txt": {
+      "mode": "replace",
+      "why": "Submod's Turkish decisions."
+    },
+    "common/decisions/categories/99_TUR_decision_categories.txt": {
+      "mode": "replace",
+      "why": "Submod's Turkish decision categories."
+    },
+    "common/ideas/Turkish.txt": {
+      "mode": "replace",
+      "why": "Submod's Turkish national spirits."
+    },
+    "common/on_actions/99_TUR_on_actions.txt": {
+      "mode": "replace",
+      "why": "Submod's Turkish on_actions (daily/weekly mechanics, event dispatcher)."
+    },
+    "common/scripted_effects/99_TUR_scripted_effects.txt": {
+      "mode": "replace",
+      "why": "Submod's Turkish scripted effects."
+    },
+    "common/scripted_effects/TUR_political_leaders.txt": {
+      "mode": "replace",
+      "why": "Submod's Turkish political leaders."
+    },
+    "events/Turkey.txt": {
+      "mode": "replace",
+      "why": "Submod's Turkish events."
+    }
+  }
+}
