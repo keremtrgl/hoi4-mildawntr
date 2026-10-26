@@ -5869,7 +5869,79 @@ country_event = {
 		name = TurkeyF.202.b
 		ai_chance = { factor = 100}
 
-    country_event = TurkeyF.200s
+    country_event = TurkeyF.200
+		}
+}
+
+##Event: The Court Take Over
+country_event = {
+ id = TurkeyF.200
+ title = TurkeyF.200.title
+ desc = TurkeyF.200.desc
+ picture = GFX_ahmet_necdet_sezer_regime
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyF.200.a
+		ai_chance = { factor = 100}
+
+   set_global_flag = COURT_RULES_AYM
+   clr_global_flag = MP_MOMENT
+        set_country_flag = AYM_government
+TUR_kemalist_turn_ally_effect = yes 
+TUR_traditionalists_turn_enemy_effect = yes 
+	set_variable = { var = TUR_united_aym value = 55 }
+	set_variable = { var = TUR_politicized_aym value = 45 }
+	set_variable = { var = TUR_soft_group value = 3 }
+	set_variable = { var = TUR_precision_group value = 7 }
+	set_variable = { var = TUR_transparent_group value = 5 }
+		set_country_flag = AYM_FOCUS_LOCATION
+        hidden_effect = { news_event = Turkey_news.35 }
+	hidden_effect = { remove_ideas = pr_necdet }
+	hidden_effect = { remove_ideas = pr_gul }
+	set_country_flag = AYM_FOCUS_LOCATION
+				load_focus_tree = MD_TUR_AYM
+    custom_effect_tooltip = MD_TUR_COURT_tooltip
+
+add_named_threat = { threat = -2 name = AYM_TAKE_OVER }
+
+	create_country_leader = {
+		name = "Constitutional Court"
+		picture = "aym_governance.dds"
+		ideology = Neutral_conservatism
+		traits = {
+			neutrality_Neutral_conservatism
+			staunch_constitutionalist
+		}
+	}
+			clear_array = gov_coalition_array
+			set_variable = { ruling_party = 14 } #Neutral_conservatism
+			add_to_variable = { party_pop_array^14 = 0.5 } #Neutral_conservatism
+			recalculate_party = yes
+			IF = {
+				limit = {
+					NOT = {
+						has_government = neutrality
+					}
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+				}
+				recalculate_party = yes
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			else = {
+				meta_effect = {
+					text = {
+						set_country_flag = [META_SET_RULING_PARTY]
+					}
+					META_SET_RULING_PARTY = "[meta_set_ruling_leader]"
+				}
+				set_leader = yes
+			}
 		}
 }
 

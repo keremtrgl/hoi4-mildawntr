@@ -2,14 +2,14 @@ ideas = {
 	country = {
 		protest_thingy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea protest_thingy" }
-			picture = idea_man_five_year_plan_industry
+			picture = man_five_year_plan_industry
 			allowed_civil_war = { always = yes }
 			modifier = {
 			}
 		}
 		treat_wounds = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea treat_wounds" }
-			picture = idea_man_five_year_plan_industry
+			picture = man_five_year_plan_industry
 			allowed_civil_war = { always = yes }
 			modifier = {
 				industry_repair_factor = 0.5
@@ -19,7 +19,7 @@ ideas = {
 		}
 		kurds_want_independence = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kurds_want_independence" }
-			picture = GFX_intel_bonus
+			picture = intel_bonus
 			allowed_civil_war = { always = yes }
 			modifier = {
 				trade_opinion_factor = -0.1

@@ -136,9 +136,6 @@
  TUR_COMPROMISE_PRESIDENT_TT: "Deputy Prime Minister Özkan will negotiate a compromise presidential candidate with the parliament"
  TUR_DROP_TAXES_TT: "Our §YTaxes§! will be lowered to 10%"
  TT_kurdish_resistance_dynamic_modifier: "§HActive Conflict§!"
- TUR_assualt_on_pkk: "£inventory_texticon   §W30§!"
- TUR_assualt_on_pkk_blocked: "£inventory_texticon   §R30§!"
- TUR_assault_on_pkk2: "We require §H30§! small arms!"
  TUR_assualt_on_pkk3: "£inventory_texticon   §R5§!"
  TUR_LEFTISTS_FORM_COALITION_TT: "§W[communist_state_L]§!, §W[anarchist_communism_L]§! and §W[Autocracy_L]§! will form a coalition!"
  TUR_EMEP_IS_STRONGEST: "§W[Autocracy_L]§! ([?party_pop_array^7|%1]) is stronger than §W[communist_state_L]§! ([?party_pop_array^4|%1]) and §W[anarchist_communism_L]§! ([?party_pop_array^5|%1])"
@@ -262,8 +259,6 @@
  TUR_siege_of_greece: "In Athens in Less Than 5 Minutes"
  TUR_siege_of_greece_desc: "It should not be long before Turkish armour and infantry roll into Athens and raise the Crescent flag on their soil!"
 
- TUR_pkk_insurgency_category: "Kurdish-Turkish Conflict - Military Branch"
- TUR_pkk_insurgency_category_desc: "The §Y£pkk PKK, §Y£tak TJK, §Y£ypg YPG §!§!§!, along with many other minor Kurdish insurgent groups, have been waging a guerrilla war against the Turkish government since the 1980s. The goals of these groups range from full independence to substantial autonomy. \n\n§Y£pkk PKK §! activity is measured by their §YAggressiveness§! and §YStrength§!.\n\n§YAggressiveness§! measures the overall willingness of the §Y£pkk PKK §! to fight and influences the frequency of attacks. §YAggressiveness§! decreases naturally every week down to a certain cap. The aggressiveness cap can both decrease and increase based on the development of the Kurdish provinces, as well as your and other countries' events and decisions. If it drops to 50 or lower, the §Y£pkk PKK §! will call a ceasefire. Low §HAggressiveness§! does not mean no attacks, only that the §Y£pkk PKK §! will conduct fewer attacks than usual.\n\n§YStrength§! measures the military capabilities and popularity of the §Y£pkk PKK §! and affects the strength of resistance in Kurdish states. The minimum value of §YStrength§! is 15 for every country the §Y£pkk PKK §! operates in. Strength also affects the damage done by attacks: the higher it is, the more they will hurt.\n\n§YAggressiveness§! results in a §Rhigher frequency of attacks§!, and §HStrength§! determines the damage done by these attacks. These random attacks increase §Y£pkk PKK §! §HStrength§!, which can lead to the §Y£pkk PKK §! declaring independence from us if it reaches §H100!§! We can manually reduce the §Y£pkk PKK §!'s §Hstrength§! through raids, but we would risk increasing their §HAggressiveness§!.\n\nTo eliminate the §Y£pkk PKK§!, their strength must be below §Y15§! and their aggressiveness below §Y45§!. \n\n§Y£pkk PKK §! Aggressiveness: [?TUR.TUR_PKK_aggro]\nAggressiveness Cap: [?TUR.TUR_PKK_max_aggro]\nAggressiveness: [?TUR.TUR_PKK_aggro_increase] per week\n\n§Y£pkk PKK §! Strength: [?TUR.TUR_PKK_strength]\nMinimum Strength: [?TUR.TUR_PKK_min_strength]"
 #
 pkk_static_modifier: "Echoes of Kurdish Resistance"
  pkk_static_modifier_desc: "Ever since the end of the Great War and the Treaty of Sèvres, the Kurds have been yearning for a country of their own, free and independent from ours. Their independence from our nation would have devastating consequences, but occupying them will do no good either."

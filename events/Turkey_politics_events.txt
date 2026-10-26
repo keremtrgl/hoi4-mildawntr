@@ -2851,6 +2851,27 @@ country_event = {
 	}
 }
 
+##Event: War Referendum Passes
+country_event = {
+ id = TurkeyT.19
+ title = TurkeyT.19.title
+ desc = TurkeyT.19.desc
+ picture = GFX_tbmm
+ is_triggered_only = yes
+
+	option = {
+		name = TurkeyT.19.a
+		ai_chance = { factor = 1}
+
+		add_war_support = 0.03
+		if = {
+			limit = { NOT = { has_global_flag = DISABLE_WAR_SYSTEM_PAR } }
+			set_global_flag = { flag = DISABLE_WAR_SYSTEM_PAR days = 70 }
+			custom_effect_tooltip = TurkeyT.19.tt
+		}
+	}
+}
+
  
 
 ########################## Turkish Armed Forces ###################

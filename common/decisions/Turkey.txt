@@ -879,7 +879,6 @@ TUR_SYR = {
 				target = TUR
 				modifier = border_conflict_started
 			}
-			country_event = { id = TUR_ob_warn.1 hours = 1 }
 			activate_targeted_decision = { target = TUR decision = TUR_afrin_d }
 			}
 			custom_effect_tooltip = WTT_border_incident_delay_until_new_incident_180
