@@ -31,7 +31,7 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   dosyalarını gölgeleyen 16 dosya için `tools/md_sync.py` eklendi.
 - **2.0.2-TUR.4** (26 Ekim): Hiçbir şeyin tetiklemediği 38 olay çözüldü: 7 ret cevabı bağlandı, 7 tarih/koşul olayı
   dağıtıcıya eklendi, 3 odak ödülü ve 1 haber bağlandı, 17 ölü olay ve 26 kullanılmayan ruh silindi.
-- **2.0.2-TUR.5** (hazırlanıyor, 27 Ekim):
+- **2.0.2-TUR.5** (27 Ekim, ana mod ve Türkçe paket birlikte yayınlandı):
   - 1.440 odak grubu için İngilizce ve Türkçe açıklamalar (2.097 odak).
   - Yayın öncesi kontrol aracı (`tools/release_check.py`) ve onun bulduğu hatalar:
     - "Askerî Dram" olayının B seçeneği yazım hatası yüzünden (`TurkeyF.200s`) "Mahkeme Yönetimi Devralıyor"
