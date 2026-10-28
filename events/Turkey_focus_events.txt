@@ -3972,10 +3972,10 @@ country_event = {
 ##Event: Austria Wants To Join Central Powers
 country_event = {
  id = TurkeyF.133
+ is_triggered_only = yes
  title = TurkeyF.133.title
  desc = TurkeyF.133.desc
  picture = GFX_second_central_powers_action
- is_triggered_only = no
  fire_only_once = yes
 
     trigger = {
@@ -3985,8 +3985,8 @@ country_event = {
 	 }
     }
 
-    mean_time_to_happen = {days = 1}
 
+	immediate = { set_country_flag = TUR_evf_TurkeyF_133 }
 	option = {
 		name = TurkeyF.133.a
 		ai_chance = { factor = 100}

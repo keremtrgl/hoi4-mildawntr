@@ -12090,4 +12090,91 @@ TUR_dispatch_polled_events = {
 		}
 		country_event = TurkeyF.187
 	}
+	# remaining polled events whose trigger needs Turkey to exist; added in 2.0.2-TUR.6
+	if = {  # Turkey.253  (Turkey.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkey_253 }
+			tag = TUR
+			neutrality_neutral_muslim_brotherhood_are_in_power = yes
+			AND = {
+			date > 2018.2.1
+			date < 2018.3.1
+			}
+			NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_capitulated = yes
+			}
+		}
+		country_event = Turkey.253
+	}
+	if = {  # TurkeyPresidency.6  (Turkey_politics_events.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_TurkeyPresidency_6 }
+			AND = {
+			tag = TUR
+			date > 2007.8.28
+			date < 2008.2.28
+			}
+			has_elections = yes
+			has_global_flag = ELECTION_RESULTS
+			check_variable = { var = TUR_the_first_party value = 50 compare = greater_than }
+			NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_capitulated = yes
+			}
+		}
+		country_event = TurkeyPresidency.6
+	}
+	if = {  # pkk_attack.2  (Turkey_pkk_events.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_pkk_attack_2 }
+			tag = TUR
+			has_idea = pkk_terror_idea
+			has_country_flag = pkk_inf_attack
+		}
+		country_event = pkk_attack.2
+	}
+	if = {  # pkk_attack.3  (Turkey_pkk_events.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_pkk_attack_3 }
+			tag = TUR
+			has_idea = pkk_terror_idea
+			has_country_flag = pkk_civ_attack
+		}
+		country_event = pkk_attack.3
+	}
+	if = {  # pkk_attack.4  (Turkey_pkk_events.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_pkk_attack_4 }
+			tag = TUR
+			has_idea = pkk_terror_idea
+			has_country_flag = pkk_cit_attack
+		}
+		country_event = pkk_attack.4
+	}
+	if = {  # TurkeyF.133  (Turkey_focus_events.txt), fires for GER
+		limit = {
+			GER = {
+				NOT = { has_country_flag = TUR_evf_TurkeyF_133 }
+				tag = GER
+				GER = {
+				is_in_faction_with = TUR
+				}
+			}
+		}
+		GER = { country_event = TurkeyF.133 }
+	}
+	if = {  # TurkeyForeign.4  (Turkey_foreign_events.txt), fires for USA
+		limit = {
+			USA = {
+				NOT = { has_country_flag = TUR_evf_TurkeyForeign_4 }
+				tag = USA
+				has_war_with = IRQ
+				is_in_faction_with = TUR
+			}
+		}
+		USA = { country_event = TurkeyForeign.4 }
+	}
 }

@@ -403,6 +403,7 @@ country_event = {
 country_event = {
 
 	id = pkk_attack.2
+	is_triggered_only = yes
 
 	title = pkk_attack.2.t
 	desc = pkk_attack.2.d
@@ -416,17 +417,10 @@ country_event = {
 		has_country_flag = pkk_inf_attack
 	}
 
-	immediate = {
+	immediate = { set_country_flag = TUR_evf_pkk_attack_2
 		log = "[GetDateText]: [Root.GetName] pkk inf attack happened"
 	}
 
-	mean_time_to_happen = {
-		days = 1
-		modifier = {
-			factor = 0.25
-			tag = TUR
-		}
-	}
 
 	option = {
 		name = pkk_attack.2.a
@@ -472,6 +466,7 @@ country_event = {
 country_event = {
 
 	id = pkk_attack.3
+	is_triggered_only = yes
 
 	title = pkk_attack.3.t
 	desc = pkk_attack.3.d
@@ -485,17 +480,10 @@ country_event = {
 		has_country_flag = pkk_civ_attack
 	}
 
-	immediate = {
+	immediate = { set_country_flag = TUR_evf_pkk_attack_3
 		log = "[GetDateText]: [Root.GetName] pkk civ attack happened"
 	}
 
-	mean_time_to_happen = {
-		days = 1
-		modifier = {
-			factor = 0.25
-			tag = TUR
-		}
-	}
 
 	option = {
 		name = pkk_attack.3.a
@@ -549,6 +537,7 @@ country_event = {
 country_event = {
 
 	id = pkk_attack.4
+	is_triggered_only = yes
 
 	title = pkk_attack.4.t
 	desc = pkk_attack.4.d
@@ -562,17 +551,10 @@ country_event = {
 		has_country_flag = pkk_cit_attack
 	}
 
-	immediate = {
+	immediate = { set_country_flag = TUR_evf_pkk_attack_4
 		log = "[GetDateText]: [Root.GetName] pkk cit attack happened"
 	}
 
-	mean_time_to_happen = {
-		days = 1
-		modifier = {
-			factor = 0.25
-			tag = TUR
-		}
-	}
 
 	option = {
 		name = pkk_attack.4.a

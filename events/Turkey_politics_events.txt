@@ -337,6 +337,7 @@ country_event = {
 ##Event: Abdullah Gul Victory
 country_event = {
  id = TurkeyPresidency.6
+ is_triggered_only = yes
  title = TurkeyPresidency.6.title
  desc = TurkeyPresidency.6.desc
  picture = GFX_gul_victory_in_elections
@@ -357,8 +358,8 @@ country_event = {
 		 has_capitulated = yes
 		 } 
 	}
-    mean_time_to_happen = {days = 1}
 
+	immediate = { set_country_flag = TUR_evf_TurkeyPresidency_6 }
 	option = {
 		name = TurkeyPresidency.6.a
 		ai_chance = { factor = 1}

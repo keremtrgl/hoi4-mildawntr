@@ -8074,6 +8074,7 @@ country_event = {
 ##Event: Rise Of Muharrem Ince
 country_event = {
  id = Turkey.253
+ is_triggered_only = yes
  title = Turkey.253.title
  desc = Turkey.253.desc
  picture = GFX_ince_speech
@@ -8093,8 +8094,8 @@ country_event = {
 		 } 
     }
 
-    mean_time_to_happen = {days = 0}
 
+	immediate = { set_country_flag = TUR_evf_Turkey_253 }
 	option = {
 		name = Turkey.253.a
 		ai_chance = { factor = 1}
@@ -21605,7 +21606,7 @@ country_event = {
          tag = USA
          AND = {
              date > 2012.2.7
-	         date < 2012.2.7
+	         date < 2012.3.7
          }
     }
 

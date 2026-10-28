@@ -433,6 +433,7 @@ country_event = {
 ##Event: Inviting Turkey to Join the Iraq War
 country_event = {
  id = TurkeyForeign.4
+ is_triggered_only = yes
  title = TurkeyForeign.4.title
  desc = TurkeyForeign.4.desc
  picture = GFX_turkeys_afghan_operation
@@ -444,8 +445,8 @@ country_event = {
 	is_in_faction_with = TUR
     }
 
-    mean_time_to_happen = {days = 1}
 
+	immediate = { set_country_flag = TUR_evf_TurkeyForeign_4 }
 	option = {
 		name = TurkeyForeign.4.a
 		ai_chance = { factor = 1}
