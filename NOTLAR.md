@@ -47,11 +47,14 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   - `MD_source/` (PSD şablonları) yanlışlıkla Workshop'a gidiyordu; senkronizasyondan çıkarıldı.
 
 - **2.0.2-TUR.6** (hazırlanıyor):
-  - Yükleme sırası koruması: Millennium Dawn +Turkey'den sonra yüklenirse oyun başında uyarı penceresi
-    (`common/scripted_guis/TUR_load_order_warning.txt`, `interface/TUR_load_order_warning.gui`). Bizim TUR geçmiş dosyası
-    `TUR_submod_history_loaded` bayrağını koyar; `on_startup` bayrak yoksa `TUR_load_order_wrong` koyar. Pencere, bayrak
-    ve metinler MD'nin `replace_path` ile silmediği klasörlerde (`scripted_guis`, `on_actions`, `interface`, `localisation`).
-    Yalnızca yeni oyunlarda kontrol edilir; eski kayıtlarda yanlış alarm vermez.
+  - Mod çakışması uyarısı: başka bir mod Türkiye'nin ülke geçmişini (`history/countries/TUR - Turkey.txt`) ezerse
+    (genelde ikinci bir Türkiye modu) yeni oyunun başında uyarı penceresi çıkar
+    (`common/scripted_guis/TUR_load_order_warning.txt`, `interface/TUR_load_order_warning.gui`). Bizim TUR geçmişi
+    `TUR_submod_history_loaded` bayrağını koyar; `on_startup` bayrak yoksa `TUR_load_order_wrong` koyar. Yalnızca yeni
+    oyunlarda kontrol edilir; eski kayıtlarda yanlış alarm vermez. Oyunda test edildi: normal kurulumda pencere çıkmaz,
+    bayrak satırı kaldırılınca Türkçe pencere çıkıyor ve "Anladım" ile kapanıyor.
+  - Millennium Dawn 2.0.3 ile uyumlu: gölgelediğimiz 16 dosya değişmemiş (`md_sync status`), referans kontrolü temiz;
+    `md_overrides.json` `base_version` 2.0.3.
   - Kalan 28 polled olaydan 7'si (Türkiye'nin var olmasını gerektirenler) dağıtıcıya taşındı. Turkey.597'nin (Kürecik
     radarı) tarih aralığı boştu (2012.2.7–2012.2.7), hiç çıkamıyordu; düzeltildi. Kalan 21'i bilerek polled: tetikleri
     Türkiye olmadan da geçerli (iç savaş etiketleri, tüm ülkelere giden COVID olayı, gerçek rastgele süreli PKK olayları,
@@ -71,10 +74,11 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   O iki dosya `mod_disabled_test\` klasöründe durur. Yalnızca launcher'dan yükleme yaparken `mod\`'a geri konur,
   yüklemeden sonra yine çıkarılır. (CreamAPI ya da yükleme sırası suçlanmıştı; ikisi de bu belirtinin sebebi değildi.)
   Aboneleri etkilemez, onlarda local kopya yok.
-- **Yükleme sırası: Millennium Dawn → +Turkey → Türkçe paket.** MD'nin descriptor'ında `events`,
-  `common/national_focus`, `common/ideas`, `history/countries` vb. için `replace_path` var. MD sonra yüklenirse
-  bizim bu klasörlerdeki dosyalarımızı siler. Launcher playset'leri bu sıraya göre düzeltildi
-  (yedek: `launcher-v2_before_order_fix_*.sqlite`).
+- **MD ile +Turkey'nin playset sırası modu bozmaz.** 28 Ekim'de denendi: `dlc_load.json`'da MD en sonda olsa bile
+  bizim aynı yoldaki TUR geçmiş dosyamız kazandı (kayıtta `TUR_submod_history_loaded` vardı). Oyun bir modu
+  `dependencies` satırındaki modlardan sonra yüklüyor. Önceden "MD sonra yüklenirse odak ağacı kaybolur" denmişti; bu
+  yanlıştı ve 2.0.2-TUR.5 değişiklik notunda da geçiyor. Gerçek risk, Türkiye dosyalarını değiştiren başka bir modun
+  bizden sonra gelmesi; TUR.6'daki uyarı penceresi bunu yakalıyor.
 - **`common/scripted_effects` ve `scripted_triggers` dosyalarında BOM olmaz.** Ayrıştırıcı, yorumla başlayan
   dosyanın önündeki BOM'u reddediyor (dağıtıcı bu yüzden bir kez yüklenmedi). Yerelleştirme `.yml` dosyalarında ise BOM şart.
 - **Satır sonları:** repo CRLF (autocrlf=true), MD dosyaları LF. 3-yollu birleştirmeden önce normalize edilir (`md_sync.py` yapıyor).
@@ -100,7 +104,8 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
 
 1. `python tools/md_sync.py` (MD güncellendiyse önce `merge`/`accept`). MD güncellemesinde sıra:
    `status` → `merge` → çakışmaları çöz / replace dosyalarını incele → `accept` → `release_check.py` → oyunda test →
-   `md_base/` ile birlikte commit. `md_overrides.json`'daki `base_version` güncellenir.
+   `md_base/` ile birlikte commit. `md_overrides.json`'daki `base_version` güncellenir (2.0.3'e geçişte hiçbir dosya
+   değişmedi, yalnızca etiket güncellendi).
 2. `python tools/release_check.py` — 0 hata olmalı. Uyarılar okunur, bilinçli olanlar dışında düzeltilir.
 3. `descriptor.mod` ve gerekiyorsa `turkish_pack/descriptor.mod` içinde `version=` artırılır.
 4. Senkronizasyon (PowerShell):

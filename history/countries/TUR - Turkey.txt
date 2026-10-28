@@ -1,7 +1,7 @@
 ﻿capital = 159
 
-# marker for the load-order check in common/on_actions/99_TUR_on_actions.txt (on_startup):
-# if Millennium Dawn loads after +Turkey, MD's copy of this file runs instead and the flag is missing
+# marker for the mod-conflict check in common/on_actions/99_TUR_on_actions.txt (on_startup):
+# if another mod overrides this file, the flag is missing and a warning window is shown
 set_global_flag = TUR_submod_history_loaded
 
 156 = { set_state_flag = TUR_mun_take_over }

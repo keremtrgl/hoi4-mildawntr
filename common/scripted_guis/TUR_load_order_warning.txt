@@ -1,9 +1,9 @@
 scripted_gui = {
 
-	# Shown when Millennium Dawn is loaded after +Turkey. MD's replace_path then removes our events, focus trees,
-	# ideas and country history, so Turkey silently runs MD's own content. This file, the window, the on_startup
-	# check and the localisation all live in folders MD does not replace, so the warning survives the wrong order.
+	# Shown when +Turkey's TUR country history did not run: another mod overrides history/countries/TUR - Turkey.txt
+	# (typically a second Turkey mod loaded after us), so Turkey starts without our parties, leaders and spirits.
 	# Detection: our TUR history sets TUR_submod_history_loaded; on_startup sets TUR_load_order_wrong if it is missing.
+	# (Millennium Dawn itself always loads first: the game orders a mod after its dependencies, tested 2026-10-28.)
 	TUR_load_order_warning = {
 		context_type = player_context
 
