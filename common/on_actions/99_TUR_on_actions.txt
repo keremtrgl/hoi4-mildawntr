@@ -1,4 +1,15 @@
 on_actions = {
+	# Millennium Dawn loaded after +Turkey wipes our events/focus trees/ideas/history (MD's replace_path).
+	# Our TUR history sets TUR_submod_history_loaded; without it, show TUR_load_order_warning (scripted_guis).
+	on_startup = {
+		effect = {
+			if = {
+				limit = { NOT = { has_global_flag = TUR_submod_history_loaded } }
+				set_global_flag = TUR_load_order_wrong
+				log = "+Turkey: Millennium Dawn is loaded after +Turkey, so MD replaced the submod's content. Fix the playset load order."
+			}
+		}
+	}
 #
 	on_daily_TUR = {
 		effect = {

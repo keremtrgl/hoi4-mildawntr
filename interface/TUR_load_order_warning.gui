@@ -1,0 +1,50 @@
+guiTypes = {
+	# see common/scripted_guis/TUR_load_order_warning.txt
+	containerWindowType = {
+		name = "TUR_load_order_warning_window"
+		position = { x = -310 y = -190 }
+		size = { width = 620 height = 380 }
+		orientation = center
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+
+		background = {
+			name = "TUR_load_order_warning_bg"
+			quadTextureSprite = "GFX_tiled_window"
+		}
+
+		instantTextBoxType = {
+			name = "TUR_load_order_warning_title"
+			position = { x = 30 y = 24 }
+			font = "hoi_24header"
+			maxWidth = 560
+			maxHeight = 30
+			text = "TUR_LOAD_ORDER_WARNING_TITLE"
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "TUR_load_order_warning_text"
+			position = { x = 40 y = 78 }
+			font = "hoi_18mbs"
+			maxWidth = 540
+			maxHeight = 220
+			text = "TUR_LOAD_ORDER_WARNING_TEXT"
+			format = left
+		}
+
+		buttonType = {
+			name = "TUR_load_order_close_button"
+			position = { x = 200 y = 318 }
+			spriteType = "GFX_button_221x34"
+			font = "hoi_18mbs"
+			text = "TUR_LOAD_ORDER_WARNING_OK"
+			format = center
+			shortcut = "ESCAPE"
+			clicksound = click_default
+		}
+	}
+}

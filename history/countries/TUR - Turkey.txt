@@ -1,5 +1,9 @@
 ﻿capital = 159
 
+# marker for the load-order check in common/on_actions/99_TUR_on_actions.txt (on_startup):
+# if Millennium Dawn loads after +Turkey, MD's copy of this file runs instead and the flag is missing
+set_global_flag = TUR_submod_history_loaded
+
 156 = { set_state_flag = TUR_mun_take_over }
 163 = { set_state_flag = TUR_mun_take_over }
 934 = { set_state_flag = TUR_mun_take_over }
