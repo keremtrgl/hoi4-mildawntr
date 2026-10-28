@@ -141,8 +141,8 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
 
 - Odak açıklamaları tamamlandı (TUR.5'te 1.440 grup, TUR.6'da 2.580 grup). Oyunda göz ile kontrol edilmedi.
 - Odak adları üzerine tasarım kararı: "Secret Jewish Mind Games", "Jewish Gold", "Counter the Jewish Lobby" gibi
-  antisemitik kalıp taşıyan başlıklar orijinal moddan geliyor. Açıklamalar bunu eleştirel anlatıyor; adların
-  değiştirilmesi önerilir (Steam'de şikâyet ve kaldırılma riski).
+  antisemitik kalıp taşıyan başlıklar orijinal moddan geliyor. Açıklamalar bunu eleştirel anlatıyor. 28 Ekim'de
+  karar: başlıklar olduğu gibi kalacak (Steam'de şikâyet riski bilinerek).
 - Yapay zekâ odak ağırlıkları ve gözlemci modunda davranış incelenmedi.
 - Performans ölçümü (TUR.2 olay optimizasyonunun etkisi) yapılmadı.
 - Denge: `release_check.py --only balance --all` MD'den güçlü 100 değer listeliyor (en çarpıcısı `decryption_power`
