@@ -62,4 +62,6 @@ mod, errors from our files in `error.log`).
 `extract.py` groups focuses with an empty `_desc` by name and writes batches; texts go in `out/dNNN.txt` as
 `index ||| English ||| Turkish`; `build.py check` validates them and `build.py apply .` writes them into the
 English localisation and the Turkish pack. Re-running `extract.py` renumbers the groups, so the texts of an
-applied round are archived with their `groups.json` (`round1/` = 2.0.2-TUR.5) before extracting the next round.
+applied round are archived with their `groups.json` (`round1/` = 2.0.2-TUR.5, `round2/` = 2.0.2-TUR.6) before
+extracting the next round. After round 2 every focus in the trees has a description; the empty `_desc` keys
+`release_check.py` still counts belong to commented-out focuses or loc keys no focus uses.

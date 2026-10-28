@@ -1,0 +1,60 @@
+2520 ||| Shut Down US Bases ||| TR: ABD Üslerini Kapat ||| path: communist bloc ||| after: Unemployment Policy / 8-Hour Working Day ||| does: stability -0.02; war support 0.02
+2521 ||| A Coup Against the Old Coup Plotters! ||| TR: Eski Darbecilere Karşı Darbe! ||| path: Turkish Armed Forces junta ||| after: - ||| does: PP -25
+2522 ||| Declare Turkish Dictatorship ||| TR: Türk Diktatörlüğü İlan Et ||| path: Turkish Armed Forces junta ||| after: A Coup Against the Old Coup Plotters! ||| does: spirit "The Turkish Military Dictatorship"; stability -0.05; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+2523 ||| Unite Our People ||| TR: Halkımızı Birleştir ||| path: Turkish Armed Forces junta ||| after: Declare Turkish Dictatorship ||| does: stability 0.1
+2524 ||| Hunt Down the Terrorists ||| TR: Teröristleri Avla ||| path: Turkish Armed Forces junta ||| after: Unite Our People ||| does: war support 0.01; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+2525 ||| Southern Defence Line ||| TR: Güney Savunma Hattı ||| path: Turkish Armed Forces junta ||| after: Hunt Down the Terrorists ||| does: builds bunker
+2526 ||| End of Turkish Democracy ||| TR: Türk Demokrasisinin Sonu ||| path: Turkish Armed Forces junta ||| after: Declare Turkish Dictatorship ||| does: spirit "The End of Turkish Democracy"
+2527 ||| Control the Press ||| TR: Basını Kontrol Altına Al ||| path: Turkish Armed Forces junta ||| after: Declare Turkish Dictatorship ||| does: spirit "Controlled Press"; removes "The Turkish Media"; tooltip: The Turkish media's opinion no longer matters.
+2528 ||| Return Interventionism ||| TR: Müdahaleciliğe Geri Dön ||| path: Turkish Armed Forces junta ||| after: End of Turkish Democracy / Control the Press ||| does: -
+2529 ||| Arrest Pro-Democrats ||| TR: Demokrasi Yanlılarını Tutukla ||| path: Turkish Armed Forces junta ||| after: End of Turkish Democracy ||| does: PP 75; stability -0.02
+2530 ||| Banner of Nationalism ||| TR: Milliyetçiliğin Sancağı ||| path: Turkish Armed Forces junta ||| after: National Stabilization Act ||| does: PP 75; stability -0.02
+2531 ||| Embrace Nationalist Propaganda ||| TR: Milliyetçi Propagandayı Benimse ||| path: Turkish Armed Forces junta ||| after: Banner of Nationalism ||| does: PP -30; stability 0.05
+2532 ||| Embrace Atatürk's Six Arrows and a Neutral Policy ||| TR: Atatürk'ün Altı Okunu ve Tarafsız Politikayı Benimse ||| path: Turkish Armed Forces junta ||| after: National Stabilization Act ||| does: spirit "The Six Arrows of Kemalism"; spirit "kemalist_neutrality_idea"
+2533 ||| Kemalist Innovations ||| TR: Kemalist Yenilikler ||| path: Turkish Armed Forces junta ||| after: Embrace Atatürk's Six Arrows and a Neutral Policy ||| does: stability 0.05
+2534 ||| Secular Forces ||| TR: Laik Kuvvetler ||| path: Turkish Armed Forces junta ||| after: Kemalist Innovations ||| does: spirit "Fully Secularized Armed Forces"
+2535 ||| Maximum Westernization ||| TR: Azami Batılılaşma ||| path: Turkish Armed Forces junta ||| after: Secular Forces ||| does: tooltip: With westernization, the conservatism of both the government and society will decline, and so will the radicalization of the country.
+2536 ||| Banner of Populism ||| TR: Halkçılığın Sancağı ||| path: Turkish Armed Forces junta ||| after: National Stabilization Act ||| does: PP -35; stability 0.03
+2537 ||| Tax Act ||| TR: Vergi Kanunu ||| path: Turkish Armed Forces junta ||| after: Banner of Populism ||| does: spirit "Tax Laws"; tooltip: Taxes will be lowered immediately.
+2538 ||| Civilian Economic Program ||| TR: Sivil Ekonomi Programı ||| path: Turkish Armed Forces junta ||| after: Tax Act / Labour Law ||| does: spirit "Civilian Economic Program"
+2539 ||| Expand Strike Rights ||| TR: Grev Haklarını Genişlet ||| path: Turkish Armed Forces junta ||| after: Labour Law ||| does: -
+2540 ||| Withdraw from European Laws ||| TR: Avrupa Yasalarından Çekil ||| path: Turkish Armed Forces junta ||| after: Arrest Pro-Democrats ||| does: spirit "Embracing Turkish Values"; removes "EU_member"; stability 0.03
+2541 ||| Social Reforms ||| TR: Sosyal Reformlar ||| path: Turkish Armed Forces junta ||| after: Labour Law / Shut Down DİSK ||| does: stability 0.07
+2542 ||| Reconfigure the Economic Plan ||| TR: Ekonomik Planı Yeniden Düzenle ||| path: Turkish Armed Forces junta ||| after: A Coup Against the Old Coup Plotters! ||| does: PP 100
+2543 ||| Embrace Etatism ||| TR: Devletçiliği Benimse ||| path: Turkish Armed Forces junta ||| after: Reconfigure the Economic Plan ||| does: spirit "TUR_etatism"
+2544 ||| Build the Ankara Aircraft Factory ||| TR: Ankara Uçak Fabrikasını Kur ||| path: Turkish Armed Forces junta ||| after: Rebuild Kayseri Plane Factory ||| does: builds air_base, arms_factory
+2545 ||| New Universities ||| TR: Yeni Üniversiteler ||| path: Turkish Armed Forces junta ||| after: Build Roads / Rebuild Kayseri Plane Factory ||| does: builds infrastructure
+2546 ||| Destroy the Rent-Seeking System in Istanbul ||| TR: İstanbul'daki Rant Düzenini Yık ||| path: Turkish Armed Forces junta ||| after: Embrace Etatism ||| does: stability 0.03; builds industrial_complex, infrastructure; tooltip: With this action, overall housing resistance rises by 3 points.
+2547 ||| Boost Employers ||| TR: İşverenleri Destekle ||| path: Turkish Armed Forces junta ||| after: Destroy the Rent-Seeking System in Istanbul / Build Roads ||| does: spirit "Supporting Employers"
+2548 ||| Buy Back Factories ||| TR: Fabrikaları Geri Satın Al ||| path: Turkish Armed Forces junta ||| after: Embrace Etatism ||| does: stability 0.05; builds industrial_complex
+2549 ||| Rebuild Istanbul ||| TR: İstanbul'u Yeniden İnşa Et ||| path: Turkish Armed Forces junta ||| after: Destroy the Rent-Seeking System in Istanbul / Buy Back Factories ||| does: stability 0.1; builds industrial_complex, infrastructure; tooltip: With this action, overall housing resistance rises by 3 points.
+2550 ||| Clear the Slums ||| TR: Gecekonduları Temizle ||| path: Turkish Armed Forces junta ||| after: Buy Back Factories ||| does: -
+2551 ||| Economic Powerhouse ||| TR: Ekonomik Güç Merkezi ||| path: Turkish Armed Forces junta ||| after: Rebuild Istanbul / Boost Employers ||| does: spirit "Turkish Economic Powerhouse"
+2552 ||| Draw Closer to Russia ||| TR: Rusya ile Yakınlaş ||| path: Turkish Armed Forces junta ||| after: End of Turkey's NATO Membership ||| does: stability -0.02; war support 0.02
+2553 ||| Protection Treaties with Iran ||| TR: İran ile Koruma Antlaşmaları ||| path: Turkish Armed Forces junta ||| after: End of Turkey's NATO Membership ||| does: spirit "The White Prince"; PP -35
+2554 ||| Turkey Stays in NATO ||| TR: Türkiye NATO'da Kalıyor ||| path: Turkish Armed Forces junta ||| after: NATO Policy ||| does: PP 25; stability 0.02
+2555 ||| Guardians of the Balkans ||| TR: Balkanların Muhafızları ||| path: Turkish Armed Forces junta ||| after: Turkey Stays in NATO ||| does: spirit "Guardian of the Balkans"
+2556 ||| Pressure the Kurdish Parties ||| TR: Kürt Partilerine Baskı Yap ||| path: Turkish Armed Forces junta ||| after: Banner of Nationalism ||| does: PP 100; stability -0.03
+2557 ||| Build a Wall on the Syrian-Turkish Border ||| TR: Suriye-Türkiye Sınırına Duvar Ör ||| path: Turkish Armed Forces junta ||| after: Banner of Nationalism ||| does: builds bunker
+2558 ||| Close the Kurdish Party ||| TR: Kürt Partisini Kapat ||| path: Turkish Armed Forces junta ||| after: Pressure the Kurdish Parties ||| does: PP 100; tooltip: will be shut down.
+2559 ||| Reject Immigration ||| TR: Göçü Reddet ||| path: Turkish Armed Forces junta ||| after: Build a Wall on the Syrian-Turkish Border ||| does: spirit "Rejecting Immigration"
+2560 ||| Power of Nationalist Turkish Blood ||| TR: Milliyetçi Türk Kanının Gücü ||| path: Turkish Armed Forces junta ||| after: Close the Kurdish Party / Reject Immigration ||| does: spirit "The Power of Turkish Blood"
+2561 ||| Önce Vatan! ||| TR: Önce Vatan! ||| path: Turkish Armed Forces junta ||| after: Populist Principles / Power of Nationalist Turkish Blood ||| does: war support 0.05; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+2562 ||| Turkish Diktat! ||| TR: Türk Dayatması! ||| path: Turkish Armed Forces junta ||| after: Önce Vatan! ||| does: event "The Turkish Diktat"
+2563 ||| Clear the Terrorists from the Borders ||| TR: Sınırlardaki Teröristleri Temizle ||| path: Turkish Armed Forces junta ||| after: Turkish Diktat! ||| does: war support 0.02; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+2564 ||| Eliminate Assad's Power ||| TR: Esad'ın Gücünü Yok Et ||| path: Turkish Armed Forces junta ||| after: Clear the Terrorists from the Borders ||| does: war goal/war on SYR
+2565 ||| Turkishness Act ||| TR: Türklük Yasası ||| path: Turkish Armed Forces junta ||| after: Turkish Diktat! ||| does: PP 100
+2566 ||| Boost Azerbaijan ||| TR: Azerbaycan'ı Destekle ||| path: Turkish Armed Forces junta ||| after: Turkishness Act ||| does: PP 75; war support 0.02
+2567 ||| Partition of Armenia ||| TR: Ermenistan'ın Bölünmesi ||| path: Turkish Armed Forces junta ||| after: Build Industrial Complexes in Azerbaijan / Build Military Factories in Azerbaijan ||| does: event "Turkey Wants to Partition Armenia"
+2568 ||| Save Backward Iran ||| TR: Geride Kalmış İran'ı Kurtar ||| path: Turkish Armed Forces junta ||| after: Clear the Terrorists from the Borders ||| does: war goal/war on PER; war goal/war on HEZ
+2569 ||| An Anti-Arab State ||| TR: Arap Karşıtı Devlet Anlayışı ||| path: Turkish Armed Forces junta ||| after: Save Backward Iran / Eliminate Assad's Power ||| does: spirit "The Anger of 1917"; war goal/war on SAU
+2570 ||| Build Industrial Complexes in Azerbaijan ||| TR: Azerbaycan'da Sanayi Kompleksleri Kur ||| path: Turkish Armed Forces junta ||| after: Boost Azerbaijan ||| does: builds industrial_complex
+2571 ||| Build Military Factories in Azerbaijan ||| TR: Azerbaycan'da Askeri Fabrikalar Kur ||| path: Turkish Armed Forces junta ||| after: Boost Azerbaijan ||| does: builds arms_factory
+2572 ||| Denounce Kemalist Neutrality ||| TR: Kemalist Tarafsızlığı Reddet ||| path: Turkish Armed Forces junta ||| after: Önce Vatan! ||| does: removes "kemalist_neutrality_idea"; stability -0.05
+2573 ||| End of the Sectarian Woes ||| TR: Mezhepsel Sorunların Sonu ||| path: Turkish Armed Forces junta ||| after: Önce Vatan! ||| does: tooltip: The country will be united and its sectarian woes can be overcome.
+2574 ||| Money Diplomacy ||| TR: Para Diplomasisi ||| path: Turkish Armed Forces junta ||| after: Turkish Diktat! ||| does: PP 50
+2575 ||| Save the South ||| TR: Güneyi Kurtar ||| path: Turkish Armed Forces junta ||| after: Partition of Armenia ||| does: war goal/war on IRQ
+2576 ||| Restoring Hope! ||| TR: Umudu Yeniden Yeşert! ||| path: Turkish Armed Forces junta ||| after: Save the South ||| does: spirit "Restoring Hope!"; PP -250
+2577 ||| Money for the Islands ||| TR: Adalar İçin Para ||| path: Turkish Armed Forces junta ||| after: Money Diplomacy ||| does: event "Turkey Wants to Buy the Islands"
+2578 ||| Offer Protection to Bulgaria ||| TR: Bulgaristan'a Koruma Teklif Et ||| path: Turkish Armed Forces junta ||| after: Money for the Islands ||| does: event "The Turkish Protection Offer"
+2579 ||| NATO Military Competitions ||| TR: NATO Askeri Yarışmaları ||| path: Turkish Armed Forces junta ||| after: Turkey Stays in NATO ||| does: -

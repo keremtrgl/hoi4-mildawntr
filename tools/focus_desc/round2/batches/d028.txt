@@ -1,0 +1,60 @@
+1680 ||| Public War Propaganda ||| TR: Kamuya Yönelik Savaş Propagandası ||| path: Islamist-Ottomanist ||| after: The İBDA-C State ||| does: war support 0.05
+1681 ||| Declare Mass Military Mobilization ||| TR: Kitlesel Askeri Seferberlik İlan Et ||| path: Islamist-Ottomanist ||| after: Public War Propaganda ||| does: spirit "Full Mobilization"
+1682 ||| Prepare for the Unstoppable War ||| TR: Durdurulamaz Savaşa Hazırlan ||| path: Islamist-Ottomanist ||| after: Declare Mass Military Mobilization ||| does: spirit "Unstoppable War Preparations"
+1683 ||| Massively Support the Arms Industry ||| TR: Silah Sanayisini Büyük Ölçüde Destekle ||| path: Islamist-Ottomanist ||| after: Declare Mass Military Mobilization ||| does: spirit "defence_09"
+1684 ||| There Is No Turning Back... ||| TR: Geri Dönüş Yok... ||| path: Islamist-Ottomanist ||| after: Massively Support the Arms Industry / Prepare for the Unstoppable War ||| does: spirit "There Is No Turning Back..."
+1685 ||| Rise of the Islamic State ||| TR: İslam Devletinin Yükselişi ||| path: Islamist-Ottomanist ||| after: There Is No Turning Back... ||| does: stability 0.1; war support 0.1
+1686 ||| Islamic Operations Against Syria ||| TR: Suriye'ye Karşı İslami Operasyonlar ||| path: Islamist-Ottomanist ||| after: Rise of the Islamic State / Advance the Great Islamization ||| does: war support 0.05; war goal/war on SYR; annexes ISI; annexes NUS
+1687 ||| Islamic Operations Against Iraq ||| TR: Irak'a Karşı İslami Operasyonlar ||| path: Islamist-Ottomanist ||| after: Rise of the Islamic State / Create the Jihadist Volunteer Corps ||| does: war support 0.03; war goal/war on IRQ; annexes ISI
+1688 ||| Create the Jihadist Volunteer Corps ||| TR: Cihatçı Gönüllü Kolordusunu Kur ||| path: Islamist-Ottomanist ||| after: There Is No Turning Back... ||| does: PP -50; tooltip: Every neighboring Muslim country will see a rise in domestic radicalism.
+1689 ||| Advance the Great Islamization ||| TR: Büyük İslamlaşmayı İlerlet ||| path: Islamist-Ottomanist ||| after: There Is No Turning Back... ||| does: -
+1690 ||| Mission Of Tehran ||| TR: Tahran Görevi ||| path: Islamist-Ottomanist ||| after: Islamic Operations Against Iraq / Islamic Operations Against Syria ||| does: war goal/war on PER
+1691 ||| Bomb Russian Bases in the Middle East ||| TR: Orta Doğu'daki Rus Üslerini Bombala ||| path: Islamist-Ottomanist ||| after: Islamic Operations Against Syria ||| does: war goal/war on SOV; war goal/war on TUR
+1692 ||| Bomb US Bases in the Middle East ||| TR: Orta Doğu'daki ABD Üslerini Bombala ||| path: Islamist-Ottomanist ||| after: Islamic Operations Against Iraq ||| does: war goal/war on USA; war goal/war on TUR
+1693 ||| Help the Taliban Forces ||| TR: Taliban Güçlerine Yardım Et ||| path: Islamist-Ottomanist ||| after: Create the Jihadist Volunteer Corps ||| does: war support 0.05
+1694 ||| Islamization Studies ||| TR: İslamlaşma Çalışmaları ||| path: Islamist-Ottomanist ||| after: Advance the Great Islamization ||| does: -
+1695 ||| Cross the Saudi Border ||| TR: Suudi Sınırını Geç ||| path: Islamist-Ottomanist ||| after: Mission Of Tehran / Bomb US Bases in the Middle East ||| does: war goal/war on SAU
+1696 ||| Action of Osama bin Laden ||| TR: Usame bin Ladin'in Eylemi ||| path: Islamist-Ottomanist ||| after: Cross the Saudi Border ||| does: stability -0.1; tooltip: Osama bin Laden begins terrorist attacks in Saudi Arabia. Saudi Arabia's stability will be shaken.
+1697 ||| Save Palestine from Israeli Hands ||| TR: Filistin'i İsrail'in Elinden Kurtar ||| path: Islamist-Ottomanist ||| after: Cross the Saudi Border ||| does: war goal/war on ISR; annexes PAL
+1698 ||| Desert Forces ||| TR: Çöl Kuvvetleri ||| path: Islamist-Ottomanist ||| after: Cross the Saudi Border ||| does: spirit "Desert Forces"
+1699 ||| War with the Imperialists ||| TR: Emperyalistlerle Savaş ||| path: Islamist-Ottomanist ||| after: Desert Forces / Action of Osama bin Laden ||| does: war goal/war on USA
+1700 ||| Threaten NATO with Immigrant Waves ||| TR: NATO'yu Göçmen Dalgalarıyla Tehdit Et ||| path: Islamist-Ottomanist ||| after: Desert Forces / Action of Osama bin Laden ||| does: event "The Islamic State Threatens Us With Waves of Migrants"
+1701 ||| Anti-US Arms ||| TR: ABD Karşıtı Silahlar ||| path: Islamist-Ottomanist ||| after: Threaten NATO with Immigrant Waves / War with the Imperialists ||| does: spirit "Forces Against the US Military"
+1702 ||| Jihad Against Crusaders ||| TR: Haçlılara Karşı Cihat ||| path: Islamist-Ottomanist ||| after: Threaten NATO with Immigrant Waves / Camel Units ||| does: war support 0.1; war goal/war on HLS
+1703 ||| Create Naval Defence Hubs ||| TR: Deniz Savunma Merkezleri Kur ||| path: Islamist-Ottomanist ||| after: War with the Imperialists / Take Over Suez ||| does: builds coastal_bunker
+1704 ||| Sign a Non-Aggression Pact with Russia ||| TR: Rusya ile Saldırmazlık Paktı İmzala ||| path: Islamist-Ottomanist, TKP communist ||| after: Jihad Against Crusaders / Anti-US Arms ||| does: -
+1705 ||| Camel Units ||| TR: Deve Birlikleri ||| path: Islamist-Ottomanist ||| after: Desert Forces ||| does: -
+1706 ||| Take Over Suez ||| TR: Süveyş'i Ele Geçir ||| path: Islamist-Ottomanist ||| after: Save Palestine from Israeli Hands ||| does: war goal/war on EGY
+1707 ||| Camel Blitzkrieg ||| TR: Deve Yıldırım Harekâtı ||| path: Islamist-Ottomanist ||| after: Camel Units ||| does: -
+1708 ||| Bomb the Suez Canal ||| TR: Süveyş Kanalı'nı Bombala ||| path: Islamist-Ottomanist ||| after: Take Over Suez ||| does: war goal/war on TUR
+1709 ||| Sign a Non-Aggression Pact with China ||| TR: Çin ile Saldırmazlık Paktı İmzala ||| path: Islamist-Ottomanist ||| after: Camel Blitzkrieg / Jihad Against Crusaders ||| does: -
+1710 ||| War with NATO ||| TR: NATO ile Savaş ||| path: Islamist-Ottomanist ||| after: Sign a Non-Aggression Pact with China / Sign a Non-Aggression Pact with Russia ||| does: war support 0.1
+1711 ||| Call the German Jihadist Forces to Act ||| TR: Alman Cihatçı Güçlerini Harekete Çağır ||| path: Islamist-Ottomanist ||| after: War with NATO ||| does: tooltip: Jihadists will gather and organize a rebellion in .
+1712 ||| Call the French Jihadist Forces to Act ||| TR: Fransız Cihatçı Güçlerini Harekete Çağır ||| path: Islamist-Ottomanist ||| after: War with NATO ||| does: tooltip: Jihadists would gather and organize a rebellion in .
+1713 ||| Call the Italian Jihadist Forces to Act ||| TR: İtalyan Cihatçı Güçlerini Harekete Çağır ||| path: Islamist-Ottomanist ||| after: War with NATO ||| does: tooltip: Jihadists will gather and organize a rebellion in .
+1714 ||| Arm the Palestinian Forces ||| TR: Filistin Güçlerini Silahlandır ||| path: Islamist-Ottomanist ||| after: War with NATO ||| does: -
+1715 ||| Unity or War with the Rest ||| TR: Diğerleriyle Birlik ya da Savaş ||| path: Islamist-Ottomanist ||| after: Camel Blitzkrieg / Jihad Against Crusaders ||| does: event "The Islamic Unification Ultimatum"; tooltip: If radical Islamism has more than 5% support in a Muslim country, that country will obey our coming ultimatum 100%.
+1716 ||| Throw the Men to the Front ||| TR: Askerleri Cepheye Sür ||| path: Islamist-Ottomanist ||| after: Arm the Palestinian Forces / Call the Italian Jihadist Forces to Act ||| does: spirit "An Efficient Supply System for Mass Armies"
+1717 ||| Hard Tank Breakthrough Strategies ||| TR: Sert Tank Yarma Stratejileri ||| path: Islamist-Ottomanist ||| after: Call the German Jihadist Forces to Act / Call the French Jihadist Forces to Act ||| does: spirit "Hard Tank Breakthrough Strategies"
+1718 ||| Embrace Hardcore Revenge Policies ||| TR: Amansız İntikam Politikalarını Benimse ||| path: Islamist-Ottomanist ||| after: Arm the Palestinian Forces / Call the Italian Jihadist Forces to Act ||| does: spirit "Embracing Revenge"
+1719 ||| Become the Modern Umayyad Caliphate ||| TR: Modern Emevi Hilafeti Ol ||| path: Islamist-Ottomanist ||| after: Embrace Hardcore Revenge Policies / Throw the Men to the Front ||| does: war support 0.03; tooltip: Gains 5% Support (Relative Popularity).\n
+1720 ||| Umayyad Style Naval Build-Up ||| TR: Emevi Tarzı Donanma Kuruluşu ||| path: Islamist-Ottomanist ||| after: Become the Modern Umayyad Caliphate ||| does: spirit "The Glorious Umayyad-Style Naval Development Plan"
+1721 ||| Continue the National Cause ||| TR: Millî Davaya Devam Et ||| path: Islamist-Ottomanist ||| after: Become the Modern Umayyad Caliphate ||| does: stability 0.03; war support 0.05
+1722 ||| Create the Naval Machinery Industries ||| TR: Deniz Makineleri Sanayilerini Kur ||| path: Islamist-Ottomanist ||| after: Umayyad Style Naval Build-Up ||| does: builds dockyard
+1723 ||| Construct Naval Dockyards ||| TR: Kıyı Tersaneleri İnşa Et ||| path: Islamist-Ottomanist ||| after: Umayyad Style Naval Build-Up ||| does: builds dockyard
+1724 ||| The Great Umayyad Navy ||| TR: Büyük Emevi Donanması ||| path: Islamist-Ottomanist ||| after: Construct Naval Dockyards / Create the Naval Machinery Industries ||| does: stability 0.02
+1725 ||| Recreate al-Andalus ||| TR: Endülüs'ü Yeniden Kur ||| path: Islamist-Ottomanist ||| after: Continue the National Cause ||| does: -
+1726 ||| Stall the War ||| TR: Savaşı Durdur ||| path: Islamist-Ottomanist ||| after: Continue the National Cause ||| does: spirit "Hold and Don't Yield an Inch!"
+1727 ||| Offer Peace for Mankind ||| TR: İnsanlık İçin Barış Teklif Et ||| path: Islamist-Ottomanist ||| after: Stall the War / Recreate al-Andalus ||| does: event "The Umayyads Offer Peace?"
+1728 ||| The New World Order ||| TR: Yeni Dünya Düzeni ||| path: Islamist-Ottomanist ||| after: Offer Peace for Mankind / The Great Umayyad Navy ||| does: stability 0.03
+1729 ||| Recovering from Islam's Great War ||| TR: İslam'ın Büyük Savaşından Toparlanma ||| path: Islamist-Ottomanist ||| after: The New World Order ||| does: spirit "Recovering From the Great War of Religion"
+1730 ||| Overcome the Effects of Heavy Casualties ||| TR: Ağır Kayıpların Etkisinin Üstesinden Gel ||| path: Islamist-Ottomanist ||| after: The New World Order ||| does: spirit "Overcoming Heavy Wartime Casualties"
+1731 ||| Cut Military Expenses ||| TR: Askeri Harcamaları Kes ||| path: Islamist-Ottomanist ||| after: Overcome the Effects of Heavy Casualties / Recovering from Islam's Great War ||| does: spirit "defence_05"; stability 0.1
+1732 ||| Extract North African Oil ||| TR: Kuzey Afrika Petrolünü Çıkar ||| path: Islamist-Ottomanist ||| after: Recovering from Islam's Great War / Overcome the Effects of Heavy Casualties ||| does: -
+1733 ||| Rocket The GDP ||| TR: GSYİH'yi Uçur ||| path: Islamist-Ottomanist ||| after: Overcome the Effects of Heavy Casualties / Recovering from Islam's Great War ||| does: spirit "Rocketing GDP"
+1734 ||| Stabilize The Great State ||| TR: Büyük Devleti İstikrara Kavuştur ||| path: Islamist-Ottomanist ||| after: Cut Military Expenses / Rocket The GDP ||| does: spirit "Stabilizing the Great State"
+1735 ||| Peaceful Propaganda ||| TR: Barışçıl Propaganda ||| path: Islamist-Ottomanist ||| after: Stabilize The Great State ||| does: spirit "Peace State"
+1736 ||| Reliable Islamic Movement ||| TR: Güvenilir İslami Hareket ||| path: Islamist-Ottomanist ||| after: Stabilize The Great State ||| does: spirit "Reliable Islamic Movement"
+1737 ||| IBDA-C Economics ||| TR: İBDA-C Ekonomisi ||| path: Islamist-Ottomanist ||| after: The İBDA-C State ||| does: PP 150
+1738 ||| No Consumption Economy ||| TR: Tüketimsiz Ekonomi ||| path: Islamist-Ottomanist ||| after: IBDA-C Economics ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+1739 ||| Launch the National Resource Program ||| TR: Ulusal Kaynak Programını Başlat ||| path: Islamist-Ottomanist ||| after: No Consumption Economy ||| does: stability 0.03

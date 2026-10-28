@@ -1,0 +1,60 @@
+2340 ||| Bulwark Against Capitalism ||| TR: Kapitalizme Karşı Kale ||| path: TKP communist ||| after: Crush Kurdistan ||| does: spirit "Bulwark Against Capitalism"
+2341 ||| Plans for the Middle East ||| TR: Orta Doğu Planları ||| path: TKP communist ||| after: The New Tale of the New SSR ||| does: -
+2342 ||| Invade Iraq ||| TR: Irak'ı İşgal Et ||| path: TKP communist ||| after: Plans for the Middle East ||| does: war goal/war on IRQ
+2343 ||| Invade Syria ||| TR: Suriye'yi İşgal Et ||| path: TKP communist ||| after: Plans for the Middle East ||| does: war goal/war on SYR
+2344 ||| Establish the Southern SSR ||| TR: Güney SSC'sini Kur ||| path: TKP communist ||| after: Invade Syria / Invade Iraq ||| does: -
+2345 ||| Plans for the Balkans ||| TR: Balkan Planları ||| path: TKP communist ||| after: The New Tale of the New SSR ||| does: -
+2346 ||| Operations in Bulgaria and Yugoslavia ||| TR: Bulgaristan ve Yugoslavya Harekâtı ||| path: TKP communist ||| after: Plans for the Balkans ||| does: event "Communist Agitation in Our Country"
+2347 ||| Operations in Greece and Romania ||| TR: Yunanistan ve Romanya Harekâtı ||| path: TKP communist ||| after: Plans for the Balkans ||| does: event "Communist Agitation in Our Country"
+2348 ||| Establish the Balkan SSR ||| TR: Balkan SSC'sini Kur ||| path: TKP communist ||| after: Operations in Greece and Romania / Operations in Bulgaria and Yugoslavia ||| does: -
+2349 ||| Plans for Transcaucasia ||| TR: Kafkasya Planları ||| path: TKP communist ||| after: The New Tale of the New SSR ||| does: -
+2350 ||| Invade Armenia and Azerbaijan ||| TR: Ermenistan ve Azerbaycan'ı İşgal Et ||| path: TKP communist ||| after: Plans for Transcaucasia ||| does: war goal/war on ARM; war goal/war on AZE
+2351 ||| Establish the Transcaucasian SSR ||| TR: Kafkasya SSC'sini Kur ||| path: TKP communist ||| after: Invade Armenia and Azerbaijan / Invade Georgia ||| does: -
+2352 ||| Unite the Three SSRs ||| TR: Üç SSC'yi Birleştir ||| path: TKP communist ||| after: Establish the Transcaucasian SSR / Establish the Balkan SSR ||| does: annexes GEO; annexes BUL; annexes SYR
+2353 ||| Abolish the Turkic Relations ||| TR: Türk Devletleriyle İlişkileri Kes ||| path: TKP communist ||| after: Crush Kurdistan ||| does: -
+2354 ||| The General Call ||| TR: Genel Çağrı ||| path: TKP communist ||| after: Unite the Three SSRs / The Princes' Strike ||| does: event "A United Communist Call"
+2355 ||| The New Tale of the New SSR ||| TR: Yeni SSC'nin Yeni Hikâyesi ||| path: TKP communist ||| after: Abolish the Turkic Relations / Bulwark Against Capitalism ||| does: stability 0.05; tooltip: The country will be united and its sectarian woes can be overcome.
+2356 ||| The Princes' Strike ||| TR: Prenslerin Saldırısı ||| path: TKP communist ||| after: Establish the Southern SSR ||| does: war support 0.05; war goal/war on PER
+2357 ||| Peninsular Wars ||| TR: Yarımada Savaşları ||| path: TKP communist ||| after: Establish the Transcaucasian SSR ||| does: war support 0.05; war goal/war on ITA
+2358 ||| Bomb New York ||| TR: New York'u Bombala ||| path: TKP communist ||| after: Bomb the Pentagon / Communist Bombardments ||| does: stability -0.02
+2359 ||| Islamic Riots ||| TR: İslami Ayaklanmalar ||| path: TKP communist ||| after: Power of Euroscepticism / Sign a Non-Aggression Pact with Russia ||| does: stability -0.02
+2360 ||| Power of Euroscepticism ||| TR: Avrupa Şüpheciliğinin Gücü ||| path: TKP communist ||| after: Sector Europe ||| does: -
+2361 ||| Communist Bombardments ||| TR: Komünist Bombardımanlar ||| path: TKP communist ||| after: Anti-US Cooperation ||| does: -
+2362 ||| Deals with Russia and China ||| TR: Rusya ve Çin ile Anlaşmalar ||| path: TKP communist ||| after: The United Front ||| does: -
+2363 ||| General Stabilization ||| TR: Genel İstikrar ||| path: TKP communist ||| after: Victory Is Ours! ||| does: stability 0.05
+2364 ||| Satisfied with Power ||| TR: Güçten Memnun ||| path: TKP communist ||| after: General Stabilization ||| does: tooltip: The country will be united and its sectarian woes can be overcome.
+2365 ||| Preserve The Nation ||| TR: Milleti Koru ||| path: TKP communist ||| after: EMEP's Victory ||| does: stability 0.1
+2366 ||| A Communist Nationalism ||| TR: Komünist Bir Milliyetçilik ||| path: TKP communist ||| after: Preserve The Nation ||| does: spirit "National Communism"
+2367 ||| Fight Against Terror ||| TR: Terörle Mücadele ||| path: TKP communist ||| after: Time For Radical Actions / Increase the Nationalist Spirit ||| does: war support 0.05
+2368 ||| Legalize The Leftist Organizations ||| TR: Sol Örgütleri Yasallaştır ||| path: TKP communist ||| after: Preserve The Nation ||| does: spirit "Cooperation With Leftist Organizations"
+2369 ||| İBDA-C Crackdown ||| TR: İBDA-C'ye Baskı ||| path: TKP communist ||| after: Fight Against Terror ||| does: tooltip: Radicalism among the youth weakens...
+2370 ||| Time For Radical Actions ||| TR: Radikal Eylemlerin Zamanı ||| path: TKP communist ||| after: Legalize The Leftist Organizations / A Communist Nationalism ||| does: war support 0.1
+2371 ||| Tough Prisons ||| TR: Sert Cezaevleri ||| path: TKP communist ||| after: Fight Against Terror ||| does: tooltip: With westernization, the conservatism of both the government and society will decline, and so will the radicalization of the country.
+2372 ||| Slay the Corrupt ||| TR: Yozlaşmışları Yok Et ||| path: TKP communist ||| after: Tough Prisons ||| does: PP -275; stability 0.05
+2373 ||| Burn The Villages ||| TR: Köyleri Yak ||| path: TKP communist ||| after: War with the PKK ||| does: stability -0.05; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+2374 ||| Accept Communism Or Die ||| TR: Komünizmi Kabul Et ya da Öl ||| path: TKP communist ||| after: War with the PKK ||| does: stability -0.1; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+2375 ||| Strategic Bombardment of the North ||| TR: Kuzeyin Stratejik Bombardımanı ||| path: TKP communist ||| after: War with the PKK ||| does: tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+2376 ||| Enter Northern Iraq ||| TR: Kuzey Irak'a Gir ||| path: TKP communist ||| after: Arrest The Terrorists / Burn The Villages ||| does: war goal/war on KUR
+2377 ||| Arrest The Terrorists ||| TR: Teröristleri Tutukla ||| path: TKP communist ||| after: Finish Off the Gülenists ||| does: removes "The Gülen Movement's Very Low Influence Over the Republic"
+2378 ||| Communist Authorities ||| TR: Komünist Otoriteler ||| path: TKP communist ||| after: Slay the Corrupt ||| does: war support 0.05
+2379 ||| Prevent the Far Right ||| TR: Aşırı Sağı Engelle ||| path: TKP communist ||| after: Communist Authorities ||| does: war support 0.03
+2380 ||| Harsh Industrial Quotas ||| TR: Sert Sanayi Kotaları ||| path: TKP communist ||| after: End of the PKK ||| does: spirit "Harsh Industrial Quotas"
+2381 ||| Increase the Nationalist Spirit ||| TR: Milliyetçi Ruhu Artır ||| path: TKP communist ||| after: A Communist Nationalism ||| does: -
+2382 ||| Arm The Leftist Organizations ||| TR: Sol Örgütleri Silahlandır ||| path: TKP communist ||| after: Legalize The Leftist Organizations ||| does: -
+2383 ||| Civilian Development ||| TR: Sivil Kalkınma ||| path: TKP communist ||| after: Harsh Industrial Quotas ||| does: builds industrial_complex
+2384 ||| Military Development ||| TR: Askeri Kalkınma ||| path: TKP communist ||| after: Harsh Industrial Quotas ||| does: builds arms_factory
+2385 ||| Open the Trabzon Civilian Factory ||| TR: Trabzon Sivil Fabrikasını Aç ||| path: TKP communist ||| after: Civilian Development ||| does: builds industrial_complex
+2386 ||| Mixed Development ||| TR: Karma Kalkınma ||| path: TKP communist ||| after: Civilian Development / Military Development ||| does: builds arms_factory, industrial_complex
+2387 ||| Open the Diyarbakır Civilian Factory ||| TR: Diyarbakır Sivil Fabrikasını Aç ||| path: TKP communist ||| after: Open the Trabzon Civilian Factory ||| does: builds industrial_complex
+2388 ||| Massive Expansion of the Civilian Industries ||| TR: Sivil Sanayilerin Büyük Genişlemesi ||| path: TKP communist ||| after: Mixed Development ||| does: builds industrial_complex
+2389 ||| Expand the Trabzon Civilian Factory ||| TR: Trabzon Sivil Fabrikasını Genişlet ||| path: TKP communist ||| after: Open the Trabzon Civilian Factory ||| does: builds industrial_complex
+2390 ||| Open the Sivas Military Factory ||| TR: Sivas Askeri Fabrikasını Aç ||| path: TKP communist ||| after: Military Development ||| does: builds arms_factory
+2391 ||| Open the Hatay Military Factory ||| TR: Hatay Askeri Fabrikasını Aç ||| path: TKP communist ||| after: Open the Sivas Military Factory ||| does: builds arms_factory
+2392 ||| Expand the Sivas Military Factory ||| TR: Sivas Askeri Fabrikasını Genişlet ||| path: TKP communist ||| after: Open the Sivas Military Factory ||| does: builds arms_factory
+2393 ||| Pax Industrialism ||| TR: Sanayi Barışı ||| path: TKP communist ||| after: General Military Development / General Civilian Development ||| does: -
+2394 ||| Project the Economic Boom ||| TR: Ekonomik Patlamayı Planla ||| path: TKP communist ||| after: Massive Expansion of the Civilian Industries ||| does: spirit "economic_boom"
+2395 ||| Eight Years of Development! ||| TR: Sekiz Yıllık Kalkınma! ||| path: TKP communist ||| after: Pax Industrialism ||| does: tooltip: The country will be united and its sectarian woes can be overcome.
+2396 ||| Internet Reform ||| TR: İnternet Reformu ||| path: TKP communist ||| after: Eight Years of Development! ||| does: spirit "Internet Reform"
+2397 ||| People's Unification Action ||| TR: Halkın Birleşme Hamlesi ||| path: TKP communist ||| after: Eight Years of Development! ||| does: spirit "The Unification of the Peoples"
+2398 ||| Remove the Interior Doors ||| TR: İç Kapıları Kaldır ||| path: TKP communist ||| after: People's Unification Action / Internet Reform ||| does: stability -0.05; tooltip: Gains 5% Support (Relative Popularity).\n
+2399 ||| General Invasion Plans ||| TR: Genel İşgal Planları ||| path: TKP communist ||| after: Remove the Interior Doors ||| does: PP 100; tooltip: Gains 3% Support (Relative Popularity).\n

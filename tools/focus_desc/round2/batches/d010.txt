@@ -1,0 +1,60 @@
+600 ||| Support Bulgarian Nationalists ||| TR: Bulgar Milliyetçilerini Destekle ||| path: Osman Pamukoglu's HEPAR ||| after: Fund the Bulgarian Nationalists ||| does: PP -25
+601 ||| Right-Wing Regime Succession ||| TR: Sağcı Rejimin İktidara Gelmesi ||| path: Osman Pamukoglu's HEPAR ||| after: Rig the Elections / Support Bulgarian Nationalists ||| does: stability -0.07; war support 0.02; war support -0.02
+602 ||| Invade the Isolated Balkan Forces ||| TR: Yalıtılmış Balkan Kuvvetlerini İşgal Et ||| path: Osman Pamukoglu's HEPAR ||| after: Orchestrate a Military Coup in Greece / Right-Wing Regime Succession ||| does: war goal/war on GRE; war goal/war on BUL
+603 ||| Complete the Misak-ı Millî ||| TR: Misak-ı Millî'yi Tamamla ||| path: Osman Pamukoglu's HEPAR ||| after: Invade the Isolated Balkan Forces ||| does: stability -0.05; war support 0.07
+604 ||| Seek Russian Nuclear Support ||| TR: Rusya'dan Nükleer Destek İste ||| path: Osman Pamukoglu's HEPAR ||| after: Push the Turkish Nuclear Program ||| does: event "Turkey Asks for Technical Support for Its Nuclear Program"
+605 ||| Seek Iranian Nuclear Support ||| TR: İran'dan Nükleer Destek İste ||| path: Osman Pamukoglu's HEPAR ||| after: Push the Turkish Nuclear Program ||| does: event "Turkey Asks for Technical Support for Its Nuclear Program"
+606 ||| Uranium Extraction Sites ||| TR: Uranyum Çıkarma Sahaları ||| path: Osman Pamukoglu's HEPAR ||| after: Seek Iranian Nuclear Support / Seek Russian Nuclear Support ||| does: spirit "Uranium Trade"
+607 ||| First Turkish Nuclear Test ||| TR: İlk Türk Nükleer Denemesi ||| path: Osman Pamukoglu's HEPAR ||| after: Uranium Extraction Sites ||| does: spirit "PER_mastering_atom"
+608 ||| Prepare for the Coming War ||| TR: Gelecek Savaşa Hazırlan ||| path: Osman Pamukoglu's HEPAR ||| after: CSTO Observer State ||| does: -
+609 ||| Build a Shield in the West ||| TR: Batı'da Kalkan Kur ||| path: Osman Pamukoglu's HEPAR ||| after: Prepare for the Coming War ||| does: builds bunker
+610 ||| SAM Sites ||| TR: Hava Savunma Füze Mevzileri ||| path: Osman Pamukoglu's HEPAR ||| after: Prepare for the Coming War ||| does: builds anti_air_building
+611 ||| Emergency Relocation Plan ||| TR: Acil Durum Tahliye Planı ||| path: Osman Pamukoglu's HEPAR ||| after: Prepare for the Coming War ||| does: spirit "Emergency Relocation Plan"
+612 ||| Çakmak Plan ||| TR: Çakmak Planı ||| path: Osman Pamukoglu's HEPAR ||| after: Emergency Relocation Plan / SAM Sites ||| does: builds bunker
+613 ||| Cover Istanbul ||| TR: İstanbul'u Koru ||| path: Osman Pamukoglu's HEPAR ||| after: Çakmak Plan / Naval Defences ||| does: builds air_base, bunker
+614 ||| Naval Defences ||| TR: Deniz Savunmaları ||| path: Osman Pamukoglu's HEPAR ||| after: Build a Shield in the West ||| does: builds coastal_bunker, naval_base
+615 ||| Version A Missiles ||| TR: A Sürümü Füzeler ||| path: Osman Pamukoglu's HEPAR ||| after: SAM Sites ||| does: builds anti_air_building
+616 ||| Cover Industries ||| TR: Sanayileri Koru ||| path: Osman Pamukoglu's HEPAR ||| after: Cover Istanbul ||| does: spirit "Sheltering Industries"
+617 ||| Shelter the People ||| TR: Halkı Sığınaklara Al ||| path: Osman Pamukoglu's HEPAR ||| after: Cover Istanbul ||| does: spirit "Sheltering the Population"
+618 ||| World War Three Looms ||| TR: Üçüncü Dünya Savaşı Kapıda ||| path: Osman Pamukoglu's HEPAR ||| after: Cover Industries / Shelter the People ||| does: war support 0.1; war goal/war on USA
+619 ||| Nationalist Propaganda ||| TR: Milliyetçi Propaganda ||| path: Osman Pamukoglu's HEPAR ||| after: World War Three Looms ||| does: PP 75; war support 0.07
+620 ||| 24/7 Factories ||| TR: 7/24 Çalışan Fabrikalar ||| path: Osman Pamukoglu's HEPAR ||| after: World War Three Looms ||| does: spirit "24/7 Factories"
+621 ||| Call to Arms for the War ||| TR: Savaş İçin Silah Başına ||| path: Osman Pamukoglu's HEPAR ||| after: World War Three Looms ||| does: spirit "The Call to Arms"
+622 ||| Experts in Guerrilla Warfare ||| TR: Gerilla Savaşı Uzmanları ||| path: Osman Pamukoglu's HEPAR ||| after: Call to Arms for the War / 24/7 Factories ||| does: spirit "guerilla_warfare"
+623 ||| Take Old Weapons from the Stockpiles ||| TR: Stoklardaki Eski Silahları Al ||| path: Osman Pamukoglu's HEPAR ||| after: Call to Arms for the War ||| does: war support 0.02
+624 ||| Buy New Guns ||| TR: Yeni Silahlar Satın Al ||| path: Osman Pamukoglu's HEPAR ||| after: Call to Arms for the War ||| does: war support 0.02
+625 ||| War for the Motherland ||| TR: Anavatan İçin Savaş ||| path: Osman Pamukoglu's HEPAR ||| after: Experts in Guerrilla Warfare / Buy New Guns ||| does: spirit "War for the Motherland"
+626 ||| Russian Victory in Europe ||| TR: Rusya'nın Avrupa'daki Zaferi ||| path: Osman Pamukoglu's HEPAR ||| after: War for the Motherland ||| does: spirit "Russian Supremacy"; war support 0.07
+627 ||| Occupy Thrace ||| TR: Trakya'yı İşgal Et ||| path: Osman Pamukoglu's HEPAR ||| after: Russian Victory in Europe ||| does: -
+628 ||| Occupy Burgas ||| TR: Burgaz'ı İşgal Et ||| path: Osman Pamukoglu's HEPAR ||| after: Russian Victory in Europe ||| does: -
+629 ||| Banner of Victory ||| TR: Zafer Sancağı ||| path: Osman Pamukoglu's HEPAR ||| after: Occupy Burgas / Occupy Thrace ||| does: spirit "Banner of Victory"
+630 ||| Expansion Towards the South ||| TR: Güney'e Doğru Genişleme ||| path: Osman Pamukoglu's HEPAR ||| after: CSTO Observer State ||| does: war support 0.02
+631 ||| Tackle The Syrian Threat ||| TR: Suriye Tehdidini Çöz ||| path: Osman Pamukoglu's HEPAR ||| after: Expansion Towards the South ||| does: war goal/war on SYR
+632 ||| Clear the Kurds from the Border ||| TR: Sınırdaki Kürtleri Temizle ||| path: Osman Pamukoglu's HEPAR ||| after: Expansion Towards the South ||| does: war goal/war on KUR
+633 ||| Interventionist Militants ||| TR: Müdahaleci Militanlar ||| path: Osman Pamukoglu's HEPAR ||| after: Clear the Kurds from the Border / Tackle The Syrian Threat ||| does: spirit "Interventionist Corps"
+634 ||| Crush the United States' Cronies in Iraq ||| TR: ABD'nin Irak'taki Kuklalarını Ez ||| path: Osman Pamukoglu's HEPAR ||| after: Clear the Kurds from the Border ||| does: war goal/war on IRQ
+635 ||| Occupy the Claims and Withdraw ||| TR: Hak İddia Edilen Toprakları İşgal Et ve Çekil ||| path: Osman Pamukoglu's HEPAR ||| after: Tackle The Syrian Threat ||| does: stability -0.03
+636 ||| A Peace Miracle in the Middle East ||| TR: Orta Doğu'da Barış Mucizesi ||| path: Osman Pamukoglu's HEPAR ||| after: Crush the United States' Cronies in Iraq / Interventionist Militants ||| does: stability 0.1
+637 ||| LDP Victory ||| TR: LDP'nin Zaferi ||| path: LDP libertarian ||| after: - ||| does: PP 25; stability 0.05; tooltip: Gains 3% Support (Relative Popularity).\n
+638 ||| Capitalist Industries ||| TR: Kapitalist Sanayiler ||| path: LDP libertarian ||| after: LDP Victory ||| does: -
+639 ||| Large Investments ||| TR: Büyük Yatırımlar ||| path: LDP libertarian ||| after: Capitalist Industries ||| does: builds industrial_complex, infrastructure
+640 ||| Development of Sivas ||| TR: Sivas'ın Kalkınması ||| path: LDP libertarian ||| after: Large Investments ||| does: builds industrial_complex, infrastructure
+641 ||| Development of Kayseri ||| TR: Kayseri'nin Kalkınması ||| path: LDP libertarian ||| after: Large Investments ||| does: builds industrial_complex, infrastructure
+642 ||| Development of the East ||| TR: Doğu'nun Kalkınması ||| path: LDP libertarian ||| after: Development of Kayseri / Development of Sivas ||| does: builds industrial_complex, infrastructure
+643 ||| Agreement with the US ||| TR: ABD ile Anlaşma ||| path: LDP libertarian ||| after: Capitalist Industries ||| does: -
+644 ||| Ally with the US in the Markets ||| TR: Piyasalarda ABD ile İttifak ||| path: LDP libertarian ||| after: Agreement with the US ||| does: -
+645 ||| Modernize Istanbul ||| TR: İstanbul'u Modernleştir ||| path: LDP libertarian ||| after: Ally with the US in the Markets / Development of Kayseri ||| does: builds infrastructure; tooltip: With this action, overall housing resistance rises by 3 points.
+646 ||| Weaken Communism ||| TR: Komünizmi Zayıflat ||| path: LDP libertarian ||| after: Capitalist Industries ||| does: PP 75; stability 0.02
+647 ||| Push Capitalist Propaganda ||| TR: Kapitalist Propaganda Yap ||| path: LDP libertarian ||| after: Weaken Communism ||| does: PP 25; stability 0.05
+648 ||| New Dockyard for Mersin ||| TR: Mersin'e Yeni Tersane ||| path: LDP libertarian ||| after: Ally with the US in the Markets / Push Capitalist Propaganda ||| does: builds dockyard
+649 ||| Industrialized State ||| TR: Sanayileşmiş Devlet ||| path: LDP libertarian ||| after: Modernize Istanbul / New Dockyard for Mersin ||| does: -
+650 ||| Liberal State ||| TR: Liberal Devlet ||| path: LDP libertarian ||| after: LDP Victory ||| does: "mixed_economy" -> "export_economy"; stability -0.05; tooltip: Gains 3% Support (Relative Popularity).\n
+651 ||| Rule the Country Like a Grocery Store ||| TR: Ülkeyi Bakkal Gibi Yönet ||| path: LDP libertarian ||| after: LDP Victory ||| does: PP 75; stability -0.05
+652 ||| Push Liberal Reforms ||| TR: Liberal Reformları Hızlandır ||| path: LDP libertarian ||| after: Liberal State / Rule the Country Like a Grocery Store ||| does: PP 75; stability 0.03
+653 ||| Sell TRT ||| TR: TRT'yi Sat ||| path: LDP libertarian ||| after: Push Liberal Reforms ||| does: event "We Have Sold TRT"; PP -100; stability 0.02
+654 ||| Symphony Orchestra ||| TR: Senfoni Orkestrası ||| path: LDP libertarian ||| after: Push Liberal Reforms ||| does: spirit "Tın Tın Senfoni Orkestrası"; event "Tin Tin Symphony Orchestra"; stability 0.07
+655 ||| Fire Non-Liberals ||| TR: Liberal Olmayanları Kov ||| path: LDP libertarian ||| after: Push Liberal Reforms ||| does: stability -0.07; tooltip: Gains 3% Support (Relative Popularity).\n
+656 ||| Liberalize Constitution ||| TR: Anayasayı Liberalleştir ||| path: LDP libertarian ||| after: Push Liberal Reforms ||| does: PP 100; stability 0.02
+657 ||| Dismiss Civil Servants ||| TR: Memurları İşten Çıkar ||| path: LDP libertarian ||| after: Fire Non-Liberals / Symphony Orchestra ||| does: stability -0.05; tooltip: Loses 3% Support (Relative Popularity).\n
+658 ||| The Ankara Question ||| TR: Ankara Meselesi ||| path: LDP libertarian ||| after: Dismiss Civil Servants ||| does: PP 75
+659 ||| Change the Capital ||| TR: Başkenti Değiştir ||| path: LDP libertarian ||| after: The Ankara Question ||| does: -

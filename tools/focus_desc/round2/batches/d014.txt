@@ -1,0 +1,60 @@
+840 ||| Take Assistance from the Ülkücüs ||| TR: Ülkücülerden Yardım Al ||| path: mafia regime ||| after: Continue the Clash with the PKK ||| does: spirit "Assistance From the Ülkücüs"
+841 ||| Arm the Ülkücüs ||| TR: Ülkücüleri Silahlandır ||| path: mafia regime, MHP / Grey Wolves nationalist ||| after: Take Assistance from the Ülkücüs / Anti-PKK Militarization ||| does: war support 0.02
+842 ||| Defence Zones Against the PKK in the East ||| TR: Doğu'da PKK'ya Karşı Savunma Bölgeleri ||| path: mafia regime ||| after: Take Assistance from the Ülkücüs / Fund Hezbollah Against the PKK ||| does: builds bunker
+843 ||| Fund Hezbollah Against the PKK ||| TR: PKK'ya Karşı Hizbullah'ı Finanse Et ||| path: mafia regime ||| after: Continue the Clash with the PKK ||| does: spirit "Funded Hezbollah"
+844 ||| General Strike on the PKK ||| TR: PKK'ya Genel Saldırı ||| path: mafia regime ||| after: Defence Zones Against the PKK in the East / Arm the Ülkücüs ||| does: -
+845 ||| Anti-PKK Militarization ||| TR: PKK Karşıtı Silahlanma ||| path: mafia regime ||| after: Continue the Clash with the PKK ||| does: spirit "Anti-PKK Militarization"
+846 ||| Create Foreign Connections ||| TR: Yurt Dışı Bağlantıları Kur ||| path: mafia regime ||| after: - ||| does: PP 100
+847 ||| Control The Economy ||| TR: Ekonomiyi Kontrol Altına Al ||| path: mafia regime ||| after: Mafia Industrial Parks / Turkish Industrial Powerhouse ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+848 ||| Land of Illegal Business ||| TR: Yasa Dışı İşler Diyarı ||| path: mafia regime ||| after: Open Supply Trade Facilities / Open Military Trade Facilities ||| does: spirit "The Criminal Trade"; removes "The Supply Trade"; removes "The Military Trade"
+849 ||| Cooperation with the Italian Mafia ||| TR: İtalyan Mafyası ile İşbirliği ||| path: mafia regime ||| after: Create Foreign Connections ||| does: -
+850 ||| Cooperation with the Mexican Mafia ||| TR: Meksika Mafyası ile İşbirliği ||| path: mafia regime ||| after: Create Foreign Connections ||| does: -
+851 ||| Legalize Casinos ||| TR: Kumarhaneleri Yasallaştır ||| path: mafia regime ||| after: Death of the Old Society ||| does: spirit "Legalized Casinos"
+852 ||| A Casino in Every Province ||| TR: Her İle Bir Kumarhane ||| path: mafia regime ||| after: Legalize Casinos ||| does: -
+853 ||| Legalize Drug Trade ||| TR: Uyuşturucu Ticaretini Yasallaştır ||| path: mafia regime ||| after: Create Foreign Connections ||| does: spirit "The Legalized Drug Trade"
+854 ||| Sicily-Antalya Drug Trade Route ||| TR: Sicilya-Antalya Uyuşturucu Ticaret Hattı ||| path: mafia regime ||| after: Cooperation with the Italian Mafia / Legalize Drug Trade ||| does: -
+855 ||| Drug Convoys ||| TR: Uyuşturucu Konvoyları ||| path: mafia regime ||| after: Legalize Drug Trade ||| does: -
+856 ||| Trade Deals with Mexico ||| TR: Meksika ile Ticaret Anlaşmaları ||| path: mafia regime ||| after: Cooperation with the Mexican Mafia / Legalize Drug Trade ||| does: -
+857 ||| Feed The Italian Mafia ||| TR: İtalyan Mafyasını Besle ||| path: mafia regime ||| after: Cooperation with the Italian Mafia ||| does: stability -0.07
+858 ||| Feed The Mexican Mafia ||| TR: Meksika Mafyasını Besle ||| path: mafia regime ||| after: Cooperation with the Mexican Mafia ||| does: stability -0.07
+859 ||| Send Military Aid to the Italian Mafia ||| TR: İtalyan Mafyasına Askeri Yardım Gönder ||| path: mafia regime ||| after: Feed The Italian Mafia / Sicily-Antalya Drug Trade Route ||| does: -
+860 ||| Raid Italian Prisons ||| TR: İtalyan Cezaevlerine Baskın Yap ||| path: mafia regime ||| after: Send Military Aid to the Italian Mafia / The Italian Mafia Learns Real War ||| does: stability -0.1
+861 ||| European Drug Trade ||| TR: Avrupa Uyuşturucu Ticareti ||| path: mafia regime ||| after: Drug Convoys / Sicily-Antalya Drug Trade Route ||| does: -
+862 ||| American Drug Trade ||| TR: Amerika Uyuşturucu Ticareti ||| path: mafia regime ||| after: Drug Convoys / Trade Deals with Mexico ||| does: -
+863 ||| The Italian Mafia Learns Real War ||| TR: İtalyan Mafyası Gerçek Savaşı Öğreniyor ||| path: mafia regime ||| after: Feed The Italian Mafia ||| does: -
+864 ||| Organize a Mafia Takeover in Italy ||| TR: İtalya'da Mafya Darbesi Düzenle ||| path: mafia regime ||| after: Raid Italian Prisons / Turkish Intervention Group in Mexico ||| does: -
+865 ||| The Mexican Mafia Learns Real War ||| TR: Meksika Mafyası Gerçek Savaşı Öğreniyor ||| path: mafia regime ||| after: Feed The Mexican Mafia / Trade Deals with Mexico ||| does: -
+866 ||| Send Military Aid to the Mexican Mafia ||| TR: Meksika Mafyasına Askeri Yardım Gönder ||| path: mafia regime ||| after: Trade Deals with Mexico / Feed The Mexican Mafia ||| does: -
+867 ||| Organize a Mafia Takeover in Mexico ||| TR: Meksika'da Mafya Darbesi Düzenle ||| path: mafia regime ||| after: Raid Mexican Prisons / Turkish Intervention Group in Italy ||| does: -
+868 ||| Raid Mexican Prisons ||| TR: Meksika Cezaevlerine Baskın Yap ||| path: mafia regime ||| after: Send Military Aid to the Mexican Mafia / The Mexican Mafia Learns Real War ||| does: stability -0.1
+869 ||| Prepare for War with the USA ||| TR: ABD ile Savaşa Hazırlan ||| path: mafia regime ||| after: Feed The Mexican Mafia ||| does: -
+870 ||| Ask the Local American Communists for Help ||| TR: Yerel Amerikan Komünistlerinden Yardım İste ||| path: mafia regime ||| after: Prepare for War with the USA ||| does: spirit "Help From Local American Communists"
+871 ||| Cooperate with the South American Mafia ||| TR: Güney Amerika Mafyası ile İşbirliği Yap ||| path: mafia regime ||| after: Prepare for War with the USA ||| does: spirit "Intelligence From the South American Cartels"
+872 ||| Raid American Prisons ||| TR: Amerikan Cezaevlerine Baskın Yap ||| path: mafia regime ||| after: Ask the Local American Communists for Help / Cooperate with the South American Mafia ||| does: stability -0.1
+873 ||| War with the USA ||| TR: ABD ile Savaş ||| path: mafia regime ||| after: Raid American Prisons / Organize a Mafia Takeover in Mexico ||| does: war support 0.05; war goal/war on USA
+874 ||| Worldwide Drug Trade ||| TR: Dünya Çapında Uyuşturucu Ticareti ||| path: mafia regime ||| after: Camouflaged Convoys ||| does: -
+875 ||| Camouflaged Convoys ||| TR: Kamufle Edilmiş Konvoylar ||| path: mafia regime ||| after: European Drug Trade / American Drug Trade ||| does: -
+876 ||| Turkish Intervention Group in Italy ||| TR: İtalya'daki Türk Müdahale Grubu ||| path: mafia regime ||| after: Send Military Aid to the Mexican Mafia ||| does: spirit "The Turkish Intervention Group"
+877 ||| Turkish Intervention Group in Mexico ||| TR: Meksika'daki Türk Müdahale Grubu ||| path: mafia regime ||| after: Send Military Aid to the Italian Mafia ||| does: spirit "The Turkish Intervention Group"
+878 ||| Plan North ||| TR: Kuzey Planı ||| path: mafia regime ||| after: Organize a Mafia Takeover in Mexico / Organize a Mafia Takeover in Italy ||| does: -
+879 ||| Prepare for War with Europe ||| TR: Avrupa ile Savaşa Hazırlan ||| path: mafia regime ||| after: Feed The Italian Mafia ||| does: -
+880 ||| Ask Local Muslims for Help ||| TR: Yerel Müslümanlardan Yardım İste ||| path: mafia regime ||| after: Prepare for War with Europe ||| does: spirit "Help From Local Muslims"
+881 ||| Get Along with the Pakistani Mafia ||| TR: Pakistan Mafyasıyla İyi Geçin ||| path: mafia regime ||| after: Prepare for War with Europe ||| does: spirit "Intelligence From the Pakistani Gangs"
+882 ||| Raid Tourist Destinations ||| TR: Turistik Bölgelere Baskın Yap ||| path: mafia regime ||| after: Get Along with the Pakistani Mafia / Ask Local Muslims for Help ||| does: stability -0.1
+883 ||| War with Europe ||| TR: Avrupa ile Savaş ||| path: mafia regime ||| after: Organize a Mafia Takeover in Italy / Raid Tourist Destinations ||| does: war support 0.05; war goal/war on GER; war goal/war on FRA; war goal/war on ENG; war goal/war on SPR; war goal/war on POR; war goal/war on GRE
+884 ||| Home of the Russian Exiles ||| TR: Sürgündeki Rusların Yurdu ||| path: mafia regime ||| after: Plan North ||| does: PP 25
+885 ||| Oligarchic Investments ||| TR: Oligarşik Yatırımlar ||| path: mafia regime ||| after: Home of the Russian Exiles / Damage the Russian Bureaucracy ||| does: PP 50
+886 ||| Russian Factories ||| TR: Rus Fabrikaları ||| path: mafia regime ||| after: Home of the Russian Exiles / Poison the Russian Armed Forces ||| does: builds industrial_complex, infrastructure
+887 ||| Damage the Russian Bureaucracy ||| TR: Rus Bürokrasisine Zarar Ver ||| path: mafia regime ||| after: Plan North ||| does: PP 50; stability -0.05
+888 ||| Poison the Russian Armed Forces ||| TR: Rus Silahlı Kuvvetlerini Zehirle ||| path: mafia regime ||| after: Plan North ||| does: spirit "Poisoned Russian Forces"
+889 ||| War with Russia ||| TR: Rusya ile Savaş ||| path: mafia regime ||| after: Russian Factories / Oligarchic Investments ||| does: war support 0.05; war goal/war on SOV
+890 ||| Poison European Forces ||| TR: Avrupa Kuvvetlerini Zehirle ||| path: mafia regime ||| after: War with Europe ||| does: spirit "Poisoned European Forces"
+891 ||| Chemical Warfare ||| TR: Kimyasal Savaş ||| path: mafia regime ||| after: War with Europe ||| does: spirit "Chemical Weapons Against the Europeans"
+892 ||| Poison Modified Cigarettes ||| TR: Zehirli Modifiye Sigaralar ||| path: mafia regime ||| after: War with the USA ||| does: spirit "Poisoned Americans"
+893 ||| Declare the Great Mafia Confederation ||| TR: Büyük Mafya Konfederasyonunu İlan Et ||| path: mafia regime ||| after: War with Russia / Assassinate the US President ||| does: stability 0.25; tooltip: The country will be united and its sectarian woes can be overcome.
+894 ||| Strike the Religious Communities of Europe ||| TR: Avrupa'nın Dinî Topluluklarına Darbe Vur ||| path: mafia regime ||| after: Chemical Warfare / Poison European Forces ||| does: event "Europe's Religious Communities Under Attack!"
+895 ||| Weaken the Pentagon ||| TR: Pentagon'u Zayıflat ||| path: mafia regime ||| after: War with the USA ||| does: spirit "The Sabotaged Pentagon"
+896 ||| Californian Rebellion ||| TR: Kaliforniya İsyanı ||| path: mafia regime ||| after: Weaken the Pentagon / Poison Modified Cigarettes ||| does: event "The United States Is in Chaos!"
+897 ||| Assassinate the US President ||| TR: ABD Başkanına Suikast Düzenle ||| path: mafia regime ||| after: Californian Rebellion ||| does: event "The Assassination of the US President"
+898 ||| Sow European Chaos ||| TR: Avrupa'da Kaos Yarat ||| path: mafia regime ||| after: Strike the Religious Communities of Europe ||| does: event "Europe Is in Chaos!"
+899 ||| Create a Hacker Group ||| TR: Hacker Grubu Kur ||| path: mafia regime ||| after: Time for Robbery ||| does: tooltip: A Hacker Group will be created to steal everything.

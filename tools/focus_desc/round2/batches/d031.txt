@@ -1,0 +1,60 @@
+1860 ||| Special Jets ||| TR: Özel Jetler ||| path: Saadet / Milli Gorus ||| after: TF-X Program ||| does: -
+1861 ||| Visit Industrial Sites ||| TR: Sanayi Tesislerini Ziyaret Et ||| path: Saadet / Milli Gorus ||| after: National Industrialization Campaign ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"; stability 0.02
+1862 ||| Agreements with Investors ||| TR: Yatırımcılarla Anlaşmalar ||| path: Saadet / Milli Gorus ||| after: Visit Industrial Sites / Work for Better Conditions ||| does: builds industrial_complex, infrastructure
+1863 ||| Labour Policy ||| TR: Çalışma Politikası ||| path: Saadet / Milli Gorus ||| after: Visit Industrial Sites ||| does: spirit "Labour Policy"; "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+1864 ||| Rebuild Kayseri Plane Factory ||| TR: Kayseri Uçak Fabrikasını Yeniden Kur ||| path: Saadet / Milli Gorus, Turkish Armed Forces junta ||| after: Labour Policy / Kayseri Project ||| does: builds air_base, arms_factory
+1865 ||| Buy Back Sold Factories ||| TR: Satılan Fabrikaları Geri Al ||| path: Saadet / Milli Gorus ||| after: Labour Policy ||| does: stability 0.05; builds industrial_complex
+1866 ||| Revive Economic Trade ||| TR: Ekonomik Ticareti Canlandır ||| path: Saadet / Milli Gorus ||| after: Agreements with Investors ||| does: builds industrial_complex
+1867 ||| Industrialized East ||| TR: Sanayileşmiş Doğu ||| path: Saadet / Milli Gorus ||| after: Kayseri Project / Diyarbakır Project ||| does: stability 0.05; tooltip: Gains 3% Support (Relative Popularity).\n
+1868 ||| Heavy Industry Campaign ||| TR: Ağır Sanayi Hamlesi ||| path: Saadet / Milli Gorus ||| after: Buy Back Sold Factories / Rebuild Kayseri Plane Factory ||| does: spirit "Erbakan's Heavy Industry Plan"
+1869 ||| Plane Factories ||| TR: Uçak Fabrikaları ||| path: Saadet / Milli Gorus ||| after: Heavy Industry Campaign ||| does: builds arms_factory, infrastructure
+1870 ||| Equipment Factories ||| TR: Teçhizat Fabrikaları ||| path: Saadet / Milli Gorus ||| after: Heavy Industry Campaign ||| does: builds arms_factory, infrastructure
+1871 ||| A Developed Turkey ||| TR: Gelişmiş Türkiye ||| path: Saadet / Milli Gorus ||| after: Plane Factories / Equipment Factories ||| does: removes "The Turkish Economic Malaise"
+1872 ||| Adopt an Interventionist Policy ||| TR: Müdahaleci Bir Politika Benimse ||| path: Saadet / Milli Gorus ||| after: Return of Erbakan ||| does: war support 0.03
+1873 ||| D-8 ||| TR: D-8 ||| path: Saadet / Milli Gorus ||| after: Banner of the Milli Görüş ||| does: removes "Yeni Türk Lirası"; removes "Türk Lirası"; tooltip: Moves such as Erbakan's promotion of an Arab dinar will destroy the political standing of the Turkish lira.
+1874 ||| War on Islamic Radicalization ||| TR: İslami Radikalleşmeye Karşı Savaş ||| path: Saadet / Milli Gorus ||| after: Banner of the Milli Görüş ||| does: PP -75
+1875 ||| Re-open Closed Islamic Schools ||| TR: Kapatılan Medreseleri Yeniden Aç ||| path: Saadet / Milli Gorus ||| after: War on Islamic Radicalization / D-8 ||| does: spirit "Turkish Islamist Schools"; PP -75
+1876 ||| Create Volunteer Reserve Forces ||| TR: Gönüllü Yedek Kuvvetler Kur ||| path: Saadet / Milli Gorus ||| after: Adopt an Interventionist Policy ||| does: spirit "The Volunteer Force"
+1877 ||| Oil Cooperation In D-8 ||| TR: D-8'de Petrol İşbirliği ||| path: Saadet / Milli Gorus ||| after: D-8 ||| does: -
+1878 ||| United Against the PKK ||| TR: PKK'ya Karşı Birlik ||| path: Saadet / Milli Gorus ||| after: Open Kurdish Universities in Kurdish Areas / Use Religion to Unite with the Kurds ||| does: war support 0.05
+1879 ||| Suppress Jihadism ||| TR: Cihatçılığı Bastır ||| path: Saadet / Milli Gorus ||| after: Declare the Great Caliphate ||| does: spirit "The Divisions of Muhammad"
+1880 ||| Recruit Moderate Jihadists ||| TR: Ilımlı Cihatçıları Saflarına Kat ||| path: Saadet / Milli Gorus ||| after: Suppress Jihadism ||| does: -
+1881 ||| Turn the D-8 into an Alliance ||| TR: D-8'i İttifaka Dönüştür ||| path: Saadet / Milli Gorus ||| after: Re-open Closed Islamic Schools / Open TRT 6 ||| does: event "Turkey Wants to Turn the D-8 Into an Alliance"
+1882 ||| Respecting Atatürk's Principles ||| TR: Atatürk İlkelerine Saygı ||| path: Saadet / Milli Gorus ||| after: Turn the D-8 into an Alliance ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; PP 50; stability 0.02
+1883 ||| Redesign the Six Principles ||| TR: Altı İlkeyi Yeniden Tasarla ||| path: Saadet / Milli Gorus ||| after: Respecting Atatürk's Principles ||| does: spirit "The Redesigned Six Arrows"
+1884 ||| Expel Anti-Kemalists from the Party ||| TR: Kemalizm Karşıtlarını Partiden İhraç Et ||| path: Saadet / Milli Gorus ||| after: Redesign the Six Principles ||| does: PP -25; stability 0.02
+1885 ||| Ban Anti-Secular Media ||| TR: Laiklik Karşıtı Medyayı Yasakla ||| path: Saadet / Milli Gorus ||| after: Expel Anti-Kemalists from the Party ||| does: PP 125; stability -0.02
+1886 ||| Kadro Movement ||| TR: Kadro Hareketi ||| path: Saadet / Milli Gorus ||| after: Ban Anti-Secular Media ||| does: PP -75; stability -0.07
+1887 ||| Danger Ahead! ||| TR: Tehlike Yaklaşıyor! ||| path: Saadet / Milli Gorus ||| after: Open Jihadist Barracks / Kadro Movement ||| does: war support 0.05; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+1888 ||| Disregarding Atatürk's Principles ||| TR: Atatürk İlkelerine Saygısızlık ||| path: Saadet / Milli Gorus ||| after: Turn the D-8 into an Alliance ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; PP 15; stability -0.05
+1889 ||| Opening Of Madrasas ||| TR: Medreselerin Açılışı ||| path: Saadet / Milli Gorus ||| after: Disregarding Atatürk's Principles ||| does: spirit "Islamic Madrasas"; PP -75
+1890 ||| Create Local Defence Bases ||| TR: Yerel Savunma Üsleri Kur ||| path: Saadet / Milli Gorus ||| after: United Against the PKK ||| does: builds bunker
+1891 ||| Oil Industries of the D-8 ||| TR: D-8'in Petrol Sanayileri ||| path: Saadet / Milli Gorus ||| after: Oil Cooperation In D-8 ||| does: builds industrial_complex
+1892 ||| Purge American Influence in Iraq ||| TR: Irak'taki Amerikan Etkisini Temizle ||| path: Saadet / Milli Gorus ||| after: Danger Ahead! ||| does: war goal/war on IRQ
+1893 ||| Purge Russian Influence in Syria ||| TR: Suriye'deki Rus Etkisini Temizle ||| path: Saadet / Milli Gorus ||| after: Danger Ahead! ||| does: war goal/war on SYR
+1894 ||| Save Lebanon from Western Hands ||| TR: Lübnan'ı Batı'nın Elinden Kurtar ||| path: Saadet / Milli Gorus ||| after: Purge Russian Influence in Syria / Purge American Influence in Iraq ||| does: war goal/war on LEB
+1895 ||| Save Jordan from Monarchy ||| TR: Ürdün'ü Monarşiden Kurtar ||| path: Saadet / Milli Gorus ||| after: Save Lebanon from Western Hands ||| does: war goal/war on JOR
+1896 ||| Create an Armed Intervention Force ||| TR: Silahlı Müdahale Gücü Kur ||| path: Saadet / Milli Gorus ||| after: Create Volunteer Reserve Forces ||| does: -
+1897 ||| Destroy Middle Eastern US Base ||| TR: Orta Doğu'daki ABD Üssünü Yok Et ||| path: Saadet / Milli Gorus ||| after: Save Lebanon from Western Hands ||| does: war goal/war on ISR
+1898 ||| Save the Saudis from Monarchy ||| TR: Suudileri Monarşiden Kurtar ||| path: Saadet / Milli Gorus ||| after: Danger Ahead! ||| does: war goal/war on SAU
+1899 ||| Save Egypt from American Influence ||| TR: Mısır'ı Amerikan Etkisinden Kurtar ||| path: Saadet / Milli Gorus ||| after: Danger Ahead! ||| does: war goal/war on EGY
+1900 ||| Save the Southern Arabs from Monarchy ||| TR: Güney Arapları Monarşiden Kurtar ||| path: Saadet / Milli Gorus ||| after: Save the Saudis from Monarchy / Save Egypt from American Influence ||| does: war goal/war on OMA; war goal/war on YEM
+1901 ||| Save the Eastern Arabs from Monarchy ||| TR: Doğu Arapları Monarşiden Kurtar ||| path: Saadet / Milli Gorus ||| after: Save the Southern Arabs from Monarchy ||| does: war goal/war on KUW; war goal/war on QAT; war goal/war on BHR; war goal/war on UAE
+1902 ||| Declare the Great Caliphate ||| TR: Büyük Hilafeti İlan Et ||| path: Saadet / Milli Gorus ||| after: Opening Of Madrasas ||| does: spirit "Sunni Caliphate"
+1903 ||| D-8's Classical Special Forces ||| TR: D-8'in Klasik Özel Kuvvetleri ||| path: Saadet / Milli Gorus ||| after: Turkish Armed Forces ||| does: spirit "D-8 Special Units"
+1904 ||| D-8's Trained Special Forces ||| TR: D-8'in Eğitimli Özel Kuvvetleri ||| path: Saadet / Milli Gorus ||| after: D-8's Classical Special Forces ||| does: -
+1905 ||| D-8's Well Trained Special Forces ||| TR: D-8'in İyi Eğitimli Özel Kuvvetleri ||| path: Saadet / Milli Gorus ||| after: D-8's Trained Special Forces ||| does: -
+1906 ||| Advanced Tanks ||| TR: Gelişmiş Tanklar ||| path: Saadet / Milli Gorus ||| after: Modernize the Tanks ||| does: spirit "Turkish Tankery"
+1907 ||| The Order Of Technology ||| TR: Teknoloji Düzeni ||| path: technocratic HP ||| after: - ||| does: PP 100
+1908 ||| The Economist Group ||| TR: İktisatçılar Grubu ||| path: technocratic HP ||| after: - ||| does: event "The Economist Group Wins the Internal Election"; stability 0.02; tooltip: The technocrats draw up plans for new economic advances.; tooltip: Gains 5% Support (Relative Popularity).\n
+1909 ||| The Scientific Group ||| TR: Bilim İnsanları Grubu ||| path: technocratic HP ||| after: - ||| does: event "The Scientific Group Wins the Internal Election"; stability 0.02; tooltip: The technocrats draw up plans for new military and technological advances.; tooltip: Gains 5% Support (Relative Popularity).\n
+1910 ||| The Education Strategy ||| TR: Eğitim Stratejisi ||| path: technocratic HP ||| after: - ||| does: PP 100
+1911 ||| Modern Economics ||| TR: Modern Ekonomi ||| path: technocratic HP ||| after: - ||| does: PP 100
+1912 ||| Foreign Policy ||| TR: Dış Politika ||| path: technocratic HP ||| after: - ||| does: PP 100
+1913 ||| Sectoral Campaign ||| TR: Sektörel Kampanya ||| path: technocratic HP ||| after: - ||| does: PP 100
+1914 ||| High Technology Administration ||| TR: İleri Teknoloji Yönetimi ||| path: technocratic HP ||| after: - ||| does: -
+1915 ||| The Media ||| TR: Medya ||| path: technocratic HP ||| after: The Education Strategy ||| does: spirit "Technocratic Turkish Media"
+1916 ||| Grant Freedom to the Media ||| TR: Medyaya Özgürlük Ver ||| path: technocratic HP ||| after: The Media ||| does: PP 75; tooltip: Gains 2% Support (Relative Popularity).\n
+1917 ||| Purge the Media Bosses ||| TR: Medya Patronlarını Temizle ||| path: technocratic HP ||| after: The Media ||| does: "Technocratic Turkish Media" -> "Technocratic Turkish Media"
+1918 ||| Lies and Fraud ||| TR: Yalanlar ve Dolandırıcılık ||| path: technocratic HP ||| after: Purge the Media Bosses / Grant Freedom to the Media ||| does: "Technocratic Turkish Media" -> "Technocratic Turkish Media"
+1919 ||| Cosmetic Censorship ||| TR: Göstermelik Sansür ||| path: technocratic HP ||| after: Lies and Fraud ||| does: spirit "Controlled Social Media"; removes "The Turkish Media"; "Technocratic Turkish Media" -> "Technocratic Turkish Media"; tooltip: The Turkish media's opinion no longer matters.

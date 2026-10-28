@@ -1,0 +1,60 @@
+660 ||| Destroy Slums ||| TR: Gecekonduları Yık ||| path: LDP libertarian ||| after: Dismiss Civil Servants ||| does: PP 25; stability -0.02
+661 ||| Abolish the Offside Rule ||| TR: Futboldan Ofsaytı Kaldır ||| path: LDP libertarian ||| after: Destroy Slums ||| does: PP 75; stability 0.03
+662 ||| Abolish Reserve Officers ||| TR: Yedek Subaylığı Kaldır ||| path: LDP libertarian ||| after: Abolish the Offside Rule ||| does: -
+663 ||| Make School Compulsory ||| TR: Okulu Zorunlu Hâle Getir ||| path: LDP libertarian ||| after: Dismiss Civil Servants ||| does: spirit "Compulsory Schooling"
+664 ||| Liberalize Kemalist Ideology ||| TR: Kemalist İdeolojiyi Liberalleştir ||| path: LDP libertarian ||| after: Make School Compulsory ||| does: spirit "Liberalized Kemalism"
+665 ||| Liberalize Islamist Ideology ||| TR: İslamcı İdeolojiyi Liberalleştir ||| path: LDP libertarian ||| after: Make School Compulsory ||| does: spirit "Liberalized Islamism"
+666 ||| Educate the People About Banks ||| TR: Halkı Bankalar Hakkında Eğit ||| path: LDP libertarian ||| after: Liberalize Islamist Ideology / Liberalize Kemalist Ideology ||| does: spirit "Banking Education"
+667 ||| Build Up Ankara ||| TR: Ankara'yı İmar Et ||| path: LDP libertarian ||| after: The Ankara Question ||| does: builds industrial_complex, infrastructure
+668 ||| Hard Capitalism ||| TR: Katı Kapitalizm ||| path: LDP libertarian ||| after: Abolish Reserve Officers / Educate the People About Banks ||| does: spirit "Hard Capitalism"; PP 75; stability 0.02; tooltip: The country will be united and its sectarian woes can be overcome.
+669 ||| Spread Capitalism ||| TR: Kapitalizmi Yay ||| path: LDP libertarian ||| after: Give the System a Mission ||| does: spirit "Spreader of Capitalism"
+670 ||| Guardian of Liberalism ||| TR: Liberalizmin Muhafızı ||| path: LDP libertarian ||| after: Spread Capitalism ||| does: spirit "Guardians of Liberalism"
+671 ||| Bring Liberalism to Syria ||| TR: Suriye'ye Liberalizm Götür ||| path: LDP libertarian ||| after: Guardian of Liberalism ||| does: war goal/war on SYR
+672 ||| Bring Liberalism to Iraq ||| TR: Irak'a Liberalizm Götür ||| path: LDP libertarian ||| after: Guardian of Liberalism ||| does: war goal/war on IRQ
+673 ||| Bring Liberalism to Georgia ||| TR: Gürcistan'a Liberalizm Götür ||| path: LDP libertarian ||| after: Guardian of Liberalism ||| does: war goal/war on GEO
+674 ||| Bring Liberalism to Iran ||| TR: İran'a Liberalizm Götür ||| path: LDP libertarian ||| after: Bring Liberalism to Iraq / Bring Liberalism to Syria ||| does: war goal/war on PER
+675 ||| Bring Liberalism to Armenia ||| TR: Ermenistan'a Liberalizm Götür ||| path: LDP libertarian ||| after: Bring Liberalism to Georgia ||| does: war goal/war on ARM
+676 ||| Bring Liberalism to Azerbaijan ||| TR: Azerbaycan'a Liberalizm Götür ||| path: LDP libertarian ||| after: Bring Liberalism to Georgia ||| does: war goal/war on AZE
+677 ||| Bring Liberalism to Afghanistan ||| TR: Afganistan'a Liberalizm Götür ||| path: LDP libertarian ||| after: Bring Liberalism to Iran ||| does: war goal/war on AFG; war goal/war on TAL
+678 ||| Deal With Russia ||| TR: Rusya ile Anlaş ||| path: LDP libertarian ||| after: Bring Liberalism to Armenia / Bring Liberalism to Azerbaijan ||| does: -
+679 ||| Support Liberalism in Ukraine ||| TR: Ukrayna'da Liberalizmi Destekle ||| path: LDP libertarian ||| after: Bring Liberalism to Georgia ||| does: PP 75; stability 0.05
+680 ||| Invade the Communists ||| TR: Komünistleri İşgal Et ||| path: LDP libertarian ||| after: Deal With Russia / Bring Liberalism to Afghanistan ||| does: war goal/war on CHI
+681 ||| The Space Program ||| TR: Uzay Programı ||| path: LDP libertarian ||| after: Hard Capitalism ||| does: spirit "Turkish Space Program"
+682 ||| Glass Production ||| TR: Cam Üretimi ||| path: LDP libertarian ||| after: The Space Program ||| does: spirit "Mass Glass Production"
+683 ||| Technological Empowerment ||| TR: Teknolojik Güçlenme ||| path: LDP libertarian ||| after: Glass Production ||| does: spirit "Mass Patenting of the Wrong Things"
+684 ||| New Steel Mines ||| TR: Yeni Çelik Madenleri ||| path: LDP libertarian ||| after: The Space Program ||| does: -
+685 ||| Space Engineering ||| TR: Uzay Mühendisliği ||| path: LDP libertarian ||| after: New Steel Mines / Glass Production ||| does: spirit "Space Engineering"
+686 ||| Resource Expansion ||| TR: Kaynak Genişlemesi ||| path: LDP libertarian ||| after: Space Engineering / Technological Empowerment ||| does: -
+687 ||| New Oil-Producing Factories ||| TR: Yeni Petrol Üretim Fabrikaları ||| path: LDP libertarian ||| after: Resource Expansion ||| does: builds fossil_powerplant
+688 ||| New Steel-Producing Factories ||| TR: Yeni Çelik Üretim Fabrikaları ||| path: LDP libertarian ||| after: Resource Expansion ||| does: -
+689 ||| New Engines ||| TR: Yeni Motorlar ||| path: LDP libertarian ||| after: The Space Program ||| does: spirit "Fast Engines"
+690 ||| Send Ankara to Space ||| TR: Ankara'yı Uzaya Gönder ||| path: LDP libertarian ||| after: New Engines / New Steel Mines ||| does: spirit "Sending Ankara Into Space"; stability -0.03; builds arms_factory, industrial_complex, infrastructure, offices
+691 ||| Legal and Economic Unity ||| TR: Hukuki ve Ekonomik Birlik ||| path: LDP libertarian ||| after: Hard Capitalism ||| does: spirit "Legal and Economic Unity"
+692 ||| Legal Breaks for the Rich ||| TR: Zenginlere Yasal Ayrıcalıklar ||| path: LDP libertarian ||| after: Legal and Economic Unity ||| does: "Legal and Economic Unity" -> "A Fake Union of Law and Economics"
+693 ||| Maximize Profit ||| TR: Kârı En Üst Düzeye Çıkar ||| path: LDP libertarian ||| after: Legal Breaks for the Rich / New Engines ||| does: spirit "General Income Maximization"
+694 ||| Trickle-Up Wealth ||| TR: Yukarı Doğru Akan Servet ||| path: LDP libertarian ||| after: Legal and Economic Unity ||| does: spirit "Trickle-Up Wealth"
+695 ||| Monetary Policies ||| TR: Para Politikaları ||| path: LDP libertarian ||| after: Legal and Economic Unity ||| does: spirit "Fiscal Policy"
+696 ||| Managed Income Policies ||| TR: Yönetilen Gelir Politikaları ||| path: LDP libertarian ||| after: Trickle-Up Wealth / Monetary Policies ||| does: spirit "economic_boom"
+697 ||| Biased Institutionalism ||| TR: Taraflı Kurumsalcılık ||| path: LDP libertarian ||| after: Monetary Policies / Trickle-Up Wealth ||| does: spirit "Biased Institutionalism"
+698 ||| Sham Legal Protection ||| TR: Göstermelik Hukuki Koruma ||| path: LDP libertarian ||| after: Trickle-Up Wealth ||| does: spirit "Sham Legal Protection"
+699 ||| One-Man Government ||| TR: Tek Adam Hükümeti ||| path: LDP libertarian ||| after: Sham Legal Protection / Biased Institutionalism ||| does: -
+700 ||| Westernization of the State ||| TR: Devletin Batılılaşması ||| path: LDP libertarian ||| after: One-Man Government ||| does: tooltip: With westernization, the conservatism of both the government and society will decline, and so will the radicalization of the country.
+701 ||| Democratic Institutionalism ||| TR: Demokratik Kurumsalcılık ||| path: LDP libertarian ||| after: One-Man Government ||| does: "Biased Institutionalism" -> "Biased Democratic Institutionalism"
+702 ||| Bank Policies ||| TR: Banka Politikaları ||| path: LDP libertarian ||| after: Power Of Globalization ||| does: PP 75; stability 0.03
+703 ||| Worldwide Engine ||| TR: Küresel Motor ||| path: LDP libertarian ||| after: Maximize Profit / Managed Income Policies ||| does: spirit "The Worldwide Market Engine"
+704 ||| Power Of Globalization ||| TR: Küreselleşmenin Gücü ||| path: LDP libertarian ||| after: Worldwide Engine ||| does: spirit "Power Of Globalization"
+705 ||| Mass Banking ||| TR: Kitlesel Bankacılık ||| path: LDP libertarian ||| after: Bank Policies ||| does: spirit "Turkish Banking"
+706 ||| Send Money to the Banks ||| TR: Bankalara Para Gönder ||| path: LDP libertarian ||| after: Mass Banking ||| does: -
+707 ||| Increase the Power of the Banks ||| TR: Bankaların Gücünü Artır ||| path: LDP libertarian ||| after: Send Money to the Banks ||| does: -
+708 ||| Buy Banks Abroad ||| TR: Yurt Dışında Banka Satın Al ||| path: LDP libertarian ||| after: Increase the Power of the Banks / Bank Law ||| does: -
+709 ||| Turkish Entry into the EU ||| TR: Türkiye'nin AB'ye Girişi ||| path: LDP libertarian ||| after: Mass Banking ||| does: removes "The Turkish Economic Malaise"; PP 100
+710 ||| European Banking ||| TR: Avrupa Bankacılığı ||| path: LDP libertarian ||| after: Turkish Entry into the EU ||| does: -
+711 ||| Control Over Europe ||| TR: Avrupa Üzerinde Kontrol ||| path: LDP libertarian ||| after: Turkish Entry into the EU ||| does: PP 150
+712 ||| Capitalist Europe ||| TR: Kapitalist Avrupa ||| path: LDP libertarian ||| after: Control Over Europe / European Banking ||| does: -
+713 ||| New Banks in the Country ||| TR: Ülkede Yeni Bankalar ||| path: LDP libertarian ||| after: Control Over Europe ||| does: -
+714 ||| Mission Europa ||| TR: Avrupa Görevi ||| path: LDP libertarian ||| after: New Banks in the Country / Capitalist Europe ||| does: removes "The Turkish Economic Malaise"; PP 100
+715 ||| National Constructionism ||| TR: Ulusal İnşaatçılık ||| path: LDP libertarian ||| after: Mass Banking ||| does: spirit "Mass Construction"
+716 ||| Mass Innovation ||| TR: Kitlesel Yenilikçilik ||| path: LDP libertarian ||| after: National Constructionism ||| does: spirit "Mass Innovation"
+717 ||| Private Construction ||| TR: Özel İnşaat ||| path: LDP libertarian ||| after: National Constructionism ||| does: "Mass Construction" -> "Mass Construction"
+718 ||| New Achievements ||| TR: Yeni Başarılar ||| path: LDP libertarian ||| after: New Research / Lower Consumerism ||| does: stability 0.03
+719 ||| New Research ||| TR: Yeni Araştırmalar ||| path: LDP libertarian ||| after: Mass Innovation / Private Construction ||| does: "Mass Innovation" -> "Mass Innovation"

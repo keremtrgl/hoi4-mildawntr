@@ -1,0 +1,60 @@
+420 ||| Diesel for 1 YTL ||| TR: Mazot 1 YTL ||| path: GENCPARTI (Cem Uzan) ||| after: Strengthen the Energy Sector ||| does: PP 25
+421 ||| Advance the Technology Industry ||| TR: Teknoloji Sanayisini İlerlet ||| path: GENCPARTI (Cem Uzan) ||| after: Coding Schools ||| does: -
+422 ||| Continue the Reforms ||| TR: Reformlara Devam Et ||| path: GENCPARTI (Cem Uzan) ||| after: Destroy the Consumption Economy ||| does: PP 100
+423 ||| Win Babacan Over ||| TR: Babacan'ı Saflarımıza Kat ||| path: GENCPARTI (Cem Uzan) ||| after: Continue the Reforms ||| does: PP -50; tooltip: Gains 3% Support (Relative Popularity).\n
+424 ||| End of the Turkish Economic Sickness ||| TR: Türk Ekonomik Hastalığının Sonu ||| path: GENCPARTI (Cem Uzan) ||| after: Win Babacan Over / Open Next-Generation Factories ||| does: removes "The Turkish Economic Malaise"
+425 ||| GENÇ Populism ||| TR: GENÇ Popülizmi ||| path: GENCPARTI (Cem Uzan) ||| after: Continue the Reforms ||| does: PP 25; stability 0.05; tooltip: Gains 3% Support (Relative Popularity).\n
+426 ||| Open Next-Generation Factories ||| TR: Yeni Nesil Fabrikalar Aç ||| path: GENCPARTI (Cem Uzan) ||| after: Continue the Reforms ||| does: builds arms_factory, industrial_complex, infrastructure
+427 ||| End of the Economic Meltdown ||| TR: Ekonomik Çöküşün Sonu ||| path: GENCPARTI (Cem Uzan) ||| after: Reintroduce the Lira / End of the Turkish Economic Sickness ||| does: spirit "economic_boom"; spirit "The Turkish Media"; removes "The Turkish Media"
+428 ||| Small Industrialization Programs ||| TR: Küçük Sanayileşme Programları ||| path: GENCPARTI (Cem Uzan) ||| after: Cem Uzan Is Victorious ||| does: -
+429 ||| Develop the Capital ||| TR: Başkenti Geliştir ||| path: GENCPARTI (Cem Uzan) ||| after: Small Industrialization Programs ||| does: builds arms_factory, industrial_complex, infrastructure
+430 ||| Invest in the Country ||| TR: Ülkeye Yatırım Yap ||| path: GENCPARTI (Cem Uzan) ||| after: Small Industrialization Programs ||| does: builds industrial_complex, infrastructure
+431 ||| Roads of the State ||| TR: Devletin Yolları ||| path: GENCPARTI (Cem Uzan) ||| after: Industrialize Agriculture ||| does: builds infrastructure
+432 ||| Defence Industry ||| TR: Savunma Sanayii ||| path: GENCPARTI (Cem Uzan) ||| after: Industrialize Agriculture ||| does: builds arms_factory
+433 ||| Victory of the Anatolian Saviour ||| TR: Anadolu Kurtarıcısının Zaferi ||| path: Osman Pamukoglu's HEPAR ||| after: - ||| does: PP 75; stability 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+434 ||| Realpolitik ||| TR: Reelpolitik ||| path: Osman Pamukoglu's HEPAR ||| after: - ||| does: PP 100
+435 ||| Healthy Relations with the Army ||| TR: Orduyla Sağlıklı İlişkiler ||| path: Osman Pamukoglu's HEPAR ||| after: Victory of the Anatolian Saviour ||| does: tooltip: 's opinion of  changes by +10%.\n
+436 ||| Expel the Opposing Generals ||| TR: Karşı Çıkan Generalleri Görevden Al ||| path: Osman Pamukoglu's HEPAR ||| after: Healthy Relations with the Army ||| does: PP -75; stability -0.03; tooltip: 's opinion of  changes by +3%.\n
+437 ||| Ensure the Loyalty of the General Staff ||| TR: Genelkurmay'ın Sadakatini Sağla ||| path: Osman Pamukoglu's HEPAR ||| after: Healthy Relations with the Army ||| does: stability 0.02; tooltip: 's opinion of  changes by +3%.\n
+438 ||| Neutralize The Media ||| TR: Medyayı Etkisiz Hâle Getir ||| path: Osman Pamukoglu's HEPAR ||| after: Healthy Relations with the Army ||| does: PP 75; tooltip: Gains 3% Support (Relative Popularity).\n; tooltip: 's opinion of  changes by +3%.\n
+439 ||| Cooperation with the Armed Forces ||| TR: Silahlı Kuvvetlerle İşbirliği ||| path: Osman Pamukoglu's HEPAR ||| after: Expel the Opposing Generals / Ensure the Loyalty of the General Staff ||| does: tooltip: 's opinion of  changes by +10%.\n
+440 ||| Clash with the Gülenists ||| TR: Gülenistlerle Çatış ||| path: Osman Pamukoglu's HEPAR ||| after: Cooperation with the Armed Forces ||| does: spirit "The Gülen Movement's Growing Influence Over the Republic"; tooltip: If this is not achieved by 2010, the Gülen movement will overthrow the government by force of arms.
+441 ||| Shut Down Gülen Dormitories ||| TR: Gülen Yurtlarını Kapat ||| path: Osman Pamukoglu's HEPAR ||| after: Clash with the Gülenists ||| does: PP 25; stability -0.03
+442 ||| Control the Colleges ||| TR: Kolejleri Kontrol Altına Al ||| path: Osman Pamukoglu's HEPAR ||| after: Shut Down Gülen Dormitories ||| does: spirit "Anti-Gülenist Universities"
+443 ||| The Scientific Community as a Weapon ||| TR: Silah Olarak Bilim Camiası ||| path: Osman Pamukoglu's HEPAR ||| after: Control the Colleges ||| does: -
+444 ||| Shut Down Gülen Schools ||| TR: Gülen Okullarını Kapat ||| path: Osman Pamukoglu's HEPAR ||| after: Clash with the Gülenists ||| does: PP 100; stability -0.03
+445 ||| Control The Television ||| TR: Televizyonu Kontrol Altına Al ||| path: Osman Pamukoglu's HEPAR ||| after: Shut Down Gülen Schools ||| does: spirit "Controlled Television"; removes "The Turkish Media"; tooltip: The Turkish media's opinion no longer matters.
+446 ||| Prepare a Counter-Fatwa ||| TR: Karşı Fetva Hazırla ||| path: Osman Pamukoglu's HEPAR ||| after: Control The Television ||| does: spirit "A Counter-Fatwa"
+447 ||| Kemalist Doctrine ||| TR: Kemalist Doktrin ||| path: Osman Pamukoglu's HEPAR ||| after: Cooperation with the Armed Forces ||| does: spirit "Kemalist Doctrine"
+448 ||| Embrace Revolutionism ||| TR: Devrimciliği Benimse ||| path: Osman Pamukoglu's HEPAR ||| after: Kemalist Doctrine ||| does: spirit "Revolutionism"
+449 ||| Strike Rights ||| TR: Grev Hakları ||| path: Osman Pamukoglu's HEPAR ||| after: Embrace Revolutionism ||| does: spirit "Strike Law"
+450 ||| Classical Turkish Nationalism ||| TR: Klasik Türk Milliyetçiliği ||| path: Osman Pamukoglu's HEPAR, MHP / Grey Wolves nationalist ||| after: Kemalist Doctrine ||| does: spirit "Turkish Nationalism"
+451 ||| Increase Political Quality ||| TR: Siyasetin Kalitesini Artır ||| path: Osman Pamukoglu's HEPAR ||| after: Classical Turkish Nationalism / Embrace Revolutionism ||| does: spirit "Clean Politics"
+452 ||| Push the Military Out of Politics ||| TR: Orduyu Siyasetten Uzaklaştır ||| path: Osman Pamukoglu's HEPAR ||| after: Classical Turkish Nationalism ||| does: removes "Guardians of Kemalism"; stability 0.02; tooltip: will not mind these radical Decisions  until the  government changes.\n
+453 ||| Intervene in the Election Threshold ||| TR: Seçim Barajına Müdahale Et ||| path: Osman Pamukoglu's HEPAR ||| after: Increase Political Quality / Push the Military Out of Politics ||| does: stability 0.03; tooltip: The election threshold will be set to 7%
+454 ||| Multi-Democratic State ||| TR: Çoğulcu Demokratik Devlet ||| path: Osman Pamukoglu's HEPAR ||| after: Intervene in the Election Threshold / Strengthen the AYM ||| does: -
+455 ||| Clashes with the PKK ||| TR: PKK ile Çatışmalar ||| path: Osman Pamukoglu's HEPAR ||| after: Cooperation with the Armed Forces ||| does: PP 75
+456 ||| Volunteer Forces ||| TR: Gönüllü Kuvvetler ||| path: Osman Pamukoglu's HEPAR ||| after: Clashes with the PKK ||| does: spirit "An Efficient Volunteer Force"
+457 ||| Feed the Military's Desire for Revenge ||| TR: Ordunun İntikam Arzusunu Besle ||| path: Osman Pamukoglu's HEPAR ||| after: Volunteer Forces ||| does: spirit "Military Revenge"
+458 ||| Avenging Forces ||| TR: İntikam Kuvvetleri ||| path: Osman Pamukoglu's HEPAR ||| after: Feed the Military's Desire for Revenge ||| does: "Military Revenge" -> "Extreme Military Revenge"
+459 ||| Eastern Defence Organizations ||| TR: Doğu Savunma Örgütleri ||| path: Osman Pamukoglu's HEPAR ||| after: Clashes with the PKK ||| does: spirit "National Defence Organizations"
+460 ||| Missile Stations ||| TR: Füze İstasyonları ||| path: Osman Pamukoglu's HEPAR ||| after: Volunteer Forces / Eastern Defence Organizations ||| does: builds anti_air_building
+461 ||| Systematic Barricades ||| TR: Sistematik Barikatlar ||| path: Osman Pamukoglu's HEPAR ||| after: Missile Stations ||| does: builds bunker
+462 ||| New Railway Junctions ||| TR: Yeni Demiryolu Kavşakları ||| path: Osman Pamukoglu's HEPAR, MHP / Grey Wolves nationalist ||| after: Missile Stations ||| does: -
+463 ||| Crusade Against the PKK ||| TR: PKK'ya Karşı Haçlı Seferi ||| path: Osman Pamukoglu's HEPAR ||| after: Eastern Defence Organizations ||| does: spirit "Crusade Against the PKK"
+464 ||| Ready For Madness! ||| TR: Çılgınlığa Hazır! ||| path: Osman Pamukoglu's HEPAR ||| after: Crusade Against the PKK ||| does: war support 0.05; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+465 ||| Put an End to the PKK ||| TR: PKK'ya Son Ver ||| path: Osman Pamukoglu's HEPAR ||| after: Avenging Forces / Ready For Madness! ||| does: war support -0.1
+466 ||| Economic Resolution Project ||| TR: Ekonomik Çözüm Projesi ||| path: Osman Pamukoglu's HEPAR ||| after: Victory of the Anatolian Saviour ||| does: spirit "Economic Resolution Project"; "Yeni Türk Lirası" -> "Yeni Türk Lirası"
+467 ||| Economist Negotiations ||| TR: İktisatçılarla Müzakereler ||| path: Osman Pamukoglu's HEPAR ||| after: Economic Resolution Project ||| does: PP 25; stability 0.03
+468 ||| Trade with the EU ||| TR: AB ile Ticaret ||| path: Osman Pamukoglu's HEPAR ||| after: Economist Negotiations ||| does: -
+469 ||| Visit the IMF ||| TR: IMF'yi Ziyaret Et ||| path: Osman Pamukoglu's HEPAR ||| after: Economic Resolution Project ||| does: PP 75; stability -0.02
+470 ||| Finish the Economic Plan ||| TR: Ekonomi Planını Tamamla ||| path: Osman Pamukoglu's HEPAR ||| after: Economist Negotiations / Visit the IMF ||| does: "Yeni Türk Lirası" -> "Türk Lirası"; stability 0.05
+471 ||| Agricultural Project ||| TR: Tarım Projesi ||| path: Osman Pamukoglu's HEPAR ||| after: Finish the Economic Plan ||| does: spirit "Agricultural Project"
+472 ||| Trade with the USA ||| TR: ABD ile Ticaret ||| path: Osman Pamukoglu's HEPAR ||| after: Visit the IMF ||| does: -
+473 ||| Investment Agreements ||| TR: Yatırım Anlaşmaları ||| path: Osman Pamukoglu's HEPAR ||| after: Finish the Economic Plan / Trade with the USA ||| does: builds industrial_complex, infrastructure
+474 ||| Recovery Group ||| TR: Toparlanma Grubu ||| path: Osman Pamukoglu's HEPAR ||| after: Investment Agreements ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+475 ||| Limited Interventions in the Central Bank ||| TR: Merkez Bankası'na Sınırlı Müdahaleler ||| path: Osman Pamukoglu's HEPAR ||| after: Investment Agreements ||| does: spirit "Chaotic Economic Interventions"
+476 ||| New Headquarters for the Istanbul Stock Exchange ||| TR: Borsa İstanbul İçin Yeni Merkez ||| path: Osman Pamukoglu's HEPAR ||| after: Recovery Group / Limited Interventions in the Central Bank ||| does: PP 50; stability 0.03; builds offices
+477 ||| Interventionist Rules ||| TR: Müdahaleci Kurallar ||| path: Osman Pamukoglu's HEPAR ||| after: Limited Interventions in the Central Bank ||| does: -
+478 ||| Industrialization Concept ||| TR: Sanayileşme Konsepti ||| path: Osman Pamukoglu's HEPAR ||| after: Finish the Economic Plan ||| does: spirit "The Concept of Industrialization"
+479 ||| Work Propaganda ||| TR: Çalışma Propagandaları ||| path: Osman Pamukoglu's HEPAR ||| after: Labour Law ||| does: spirit "Work Propaganda"

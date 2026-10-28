@@ -1,0 +1,60 @@
+300 ||| Create a Shield System Against the PKK ||| TR: PKK'ya Karşı Kalkan Sistemi Kur ||| path: DSP (Ecevit) government ||| after: Arm the Local Turks in the East ||| does: builds bunker
+301 ||| Force Barzani's Forces to Fight the PKK ||| TR: Barzani Güçlerini PKK ile Savaşmaya Zorla ||| path: DSP (Ecevit) government ||| after: Arm the Local Turks in the East ||| does: stability -0.02; war support 0.01; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+302 ||| Crush US Influence ||| TR: ABD Etkisini Ez ||| path: DSP (Ecevit) government ||| after: War on Foreign Influence ||| does: PP -50
+303 ||| Crush German Influence ||| TR: Alman Etkisini Ez ||| path: DSP (Ecevit) government ||| after: War on Foreign Influence ||| does: PP -50
+304 ||| Crush Chinese Influence ||| TR: Çin Etkisini Ez ||| path: DSP (Ecevit) government ||| after: Crush US Influence / Crush German Influence ||| does: PP -50
+305 ||| Bring Back Turkish Interventionism ||| TR: Türk Müdahaleciliğini Geri Getir ||| path: DSP (Ecevit) government ||| after: Glory of the Cyprus Intervention ||| does: spirit "Turkish Interventionism"
+306 ||| Crisis with Gülen ||| TR: Gülen ile Kriz ||| path: DSP (Ecevit) government ||| after: Ban Headscarves / Lift the Headscarf Ban ||| does: PP -75
+307 ||| DSP and CHP Clash in the Courts ||| TR: DSP ile CHP Mahkemelerde Çatışıyor ||| path: DSP (Ecevit) government ||| after: Accuse the CHP of Being Reactionary ||| does: spirit "The DSP and CHP Lawsuits"
+308 ||| Act Against the CHP ||| TR: CHP'ye Karşı Harekete Geç ||| path: DSP (Ecevit) government ||| after: DSP and CHP Clash in the Courts ||| does: tooltip: will use every tactic it has against . With these tactics,  could win over the cadres of  and weaken  decisively.
+309 ||| Protect the Uyghurs Against China ||| TR: Uygurları Çin'e Karşı Koru ||| path: DSP (Ecevit) government ||| after: Crush Chinese Influence ||| does: war support 0.05
+310 ||| Push Operations in Iraq ||| TR: Irak'ta Operasyonlara Hız Ver ||| path: DSP (Ecevit) government ||| after: Force Barzani's Forces to Fight the PKK / Create a Shield System Against the PKK ||| does: war support 0.02; tooltip: PKK Strength Decreases by 5\nPKK Aggressiveness Decreases by 5
+311 ||| Bring Back the War Culture ||| TR: Savaş Kültürünü Geri Getir ||| path: DSP (Ecevit) government ||| after: - ||| does: spirit "Turkish War Culture"; spirit "The Turkish Media"; removes "The Turkish Media"; event "The Legacy of Ecevit"; tooltip: The country will be united and its sectarian woes can be overcome.; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+312 ||| Expansion Towards the West ||| TR: Batı'ya Doğru Genişleme ||| path: DSP (Ecevit) government ||| after: End of the Kurdish State in the South ||| does: war support 0.05
+313 ||| End of the Kurdish State in the South ||| TR: Güneydeki Kürt Devletinin Sonu ||| path: DSP (Ecevit) government ||| after: Bring Back the War Culture ||| does: war goal/war on KUR
+314 ||| Mission: Ayşe's Second Holiday ||| TR: Görev: Ayşe'nin İkinci Tatili ||| path: DSP (Ecevit) government ||| after: Bring Back the War Culture ||| does: war support 0.05
+315 ||| Four-Year Naval Production Program ||| TR: Dört Yıllık Donanma Üretim Programı ||| path: DSP (Ecevit) government ||| after: Mission: Ayşe's Second Holiday ||| does: spirit "The Four-Year Turkish Naval Program"
+316 ||| Build Dockyards in Mersin ||| TR: Mersin'de Tersaneler İnşa Et ||| path: DSP (Ecevit) government ||| after: Four-Year Naval Production Program ||| does: builds dockyard
+317 ||| Build Dockyards in Adana ||| TR: Adana'da Tersaneler İnşa Et ||| path: DSP (Ecevit) government ||| after: Four-Year Naval Production Program ||| does: builds dockyard
+318 ||| Send Ayşe on Her Second Holiday ||| TR: Ayşe İkinci Kez Tatile Çıksın ||| path: DSP (Ecevit) government ||| after: Build Dockyards in Adana / Build Dockyards in Mersin ||| does: war goal/war on CYP
+319 ||| Expansion Towards the East ||| TR: Doğu'ya Doğru Genişleme ||| path: DSP (Ecevit) government ||| after: End of the Kurdish State in the South ||| does: war support 0.05
+320 ||| Crush Syria ||| TR: Suriye'yi Ez ||| path: DSP (Ecevit) government ||| after: Expansion Towards the East ||| does: war goal/war on SYR
+321 ||| Cooperation with Our Azerbaijani Brothers ||| TR: Azerbaycanlı Kardeşlerimizle İşbirliği ||| path: DSP (Ecevit) government ||| after: Connections to Our Turkic Brothers ||| does: builds industrial_complex
+322 ||| Connections to Our Turkic Brothers ||| TR: Türk Kardeşlerimizle Bağlar ||| path: DSP (Ecevit) government ||| after: Bring Back the War Culture ||| does: war support 0.05
+323 ||| Invade Backward Iran ||| TR: Geride Kalmış İran'ı İşgal Et ||| path: DSP (Ecevit) government ||| after: Cooperation with Our Azerbaijani Brothers / Expansion Towards the East ||| does: war goal/war on PER
+324 ||| Take Over Iraq ||| TR: Irak'ı Ele Geçir ||| path: DSP (Ecevit) government ||| after: Expansion Towards the East ||| does: war goal/war on IRQ
+325 ||| The Israel Question ||| TR: İsrail Meselesi ||| path: DSP (Ecevit) government ||| after: Take Over Iraq / Crush Syria ||| does: PP 75; PP 5
+326 ||| Denounce Israel ||| TR: İsrail'i Kına ||| path: DSP (Ecevit) government ||| after: The Israel Question ||| does: PP -75
+327 ||| Side with Israel ||| TR: İsrail'in Yanında Yer Al ||| path: DSP (Ecevit) government ||| after: The Israel Question ||| does: PP -25
+328 ||| Destroy Egypt ||| TR: Mısır'ı Yok Et ||| path: DSP (Ecevit) government ||| after: Turkish-Israeli Technology Trade / Anti-Palestinian State ||| does: war goal/war on EGY
+329 ||| Turkish-Israeli Technology Trade ||| TR: Türk-İsrail Teknoloji Ticareti ||| path: DSP (Ecevit) government ||| after: Side with Israel ||| does: spirit "Israeli-Turkish Technology Trade"
+330 ||| Anti-Palestinian State ||| TR: Filistin Karşıtı Devlet ||| path: DSP (Ecevit) government ||| after: Side with Israel ||| does: war support 0.01
+331 ||| Attack the Jewish State ||| TR: Yahudi Devletine Saldır ||| path: DSP (Ecevit) government ||| after: Visit Cairo / Support Palestine ||| does: war goal/war on ISR
+332 ||| Visit Cairo ||| TR: Kahire'yi Ziyaret Et ||| path: DSP (Ecevit) government ||| after: Denounce Israel ||| does: PP -25
+333 ||| Support Palestine ||| TR: Filistin'i Destekle ||| path: DSP (Ecevit) government ||| after: Denounce Israel ||| does: war support 0.03
+334 ||| Crush the Komşu ||| TR: Komşuyu Ez ||| path: DSP (Ecevit) government ||| after: Expansion Towards the West ||| does: war goal/war on GRE
+335 ||| Save the Turks in Bulgaria ||| TR: Bulgaristan'daki Türkleri Kurtar ||| path: DSP (Ecevit) government ||| after: Expansion Towards the West ||| does: war goal/war on BUL
+336 ||| Destroy the Yugoslav States ||| TR: Yugoslav Devletlerini Yok Et ||| path: DSP (Ecevit) government ||| after: Save the Turks in Bulgaria / Crush the Komşu ||| does: war goal/war on SER; war goal/war on FYR; war goal/war on KOS; war goal/war on BOS; war goal/war on SLV
+337 ||| Revenge for 1911 ||| TR: 1911'in İntikamı ||| path: DSP (Ecevit) government ||| after: Send Ayşe on Her Second Holiday / Destroy the Yugoslav States ||| does: spirit "Anti-Italian Force"; war goal/war on ITA
+338 ||| Plans Against NATO Supremacy ||| TR: NATO Üstünlüğüne Karşı Planlar ||| path: DSP (Ecevit) government ||| after: Revenge for 1911 ||| does: spirit "Resisting NATO Supremacy!"
+339 ||| Türk Milleti Önceliğimiz! ||| TR: Türk Milleti Önceliğimiz! ||| path: DSP (Ecevit) government ||| after: Plans Against NATO Supremacy ||| does: spirit "The Turkish Nation Comes First"
+340 ||| Expand the Labour Laws ||| TR: İşçi Kanunlarını Genişlet ||| path: DSP (Ecevit) government ||| after: Labour Laws ||| does: -
+341 ||| 4-Year Short-Term Economic Development ||| TR: 4 Yıllık Kısa Vadeli Ekonomik Kalkınma ||| path: DSP (Ecevit) government ||| after: Victory in the 2003 Elections ||| does: PP 75; stability 0.03
+342 ||| Resource Search ||| TR: Kaynak Arayışı ||| path: DSP (Ecevit) government ||| after: 4-Year Short-Term Economic Development ||| does: PP 125
+343 ||| Search for Oil Reserves ||| TR: Petrol Rezervleri Ara ||| path: DSP (Ecevit) government ||| after: Resource Search ||| does: -
+344 ||| Aluminium Plants ||| TR: Alüminyum Tesisleri ||| path: DSP (Ecevit) government ||| after: Resource Search ||| does: -
+345 ||| Mixed Plants ||| TR: Karma Tesisler ||| path: DSP (Ecevit) government ||| after: Aluminium Plants / Search for Oil Reserves ||| does: builds fossil_powerplant
+346 ||| New Modern Offices ||| TR: Yeni Modern Ofisler ||| path: DSP (Ecevit) government ||| after: 4-Year Short-Term Economic Development ||| does: builds offices
+347 ||| The Digital World ||| TR: Dijital Dünya ||| path: DSP (Ecevit) government ||| after: New Modern Offices ||| does: stability 0.03; builds internet_station
+348 ||| Industrial Movement ||| TR: Sanayi Hamlesi ||| path: DSP (Ecevit) government ||| after: 4-Year Short-Term Economic Development ||| does: PP 125
+349 ||| Central Industrial Expansion ||| TR: Merkezde Sanayi Genişlemesi ||| path: DSP (Ecevit) government ||| after: Industrial Movement ||| does: builds industrial_complex, infrastructure
+350 ||| General Build Up ||| TR: Genel Kalkınma ||| path: DSP (Ecevit) government ||| after: Aluminium Plants / Central Industrial Expansion ||| does: stability 0.05; builds arms_factory, industrial_complex, infrastructure, offices
+351 ||| Western Industrial Expansion ||| TR: Batı'da Sanayi Genişlemesi ||| path: DSP (Ecevit) government ||| after: Industrial Movement ||| does: builds industrial_complex, infrastructure
+352 ||| New Arms Factories ||| TR: Yeni Silah Fabrikaları ||| path: DSP (Ecevit) government ||| after: Western Industrial Expansion / Central Industrial Expansion ||| does: builds arms_factory
+353 ||| The Boom! ||| TR: Patlama! ||| path: DSP (Ecevit) government ||| after: General Build Up / New Arms Factories ||| does: spirit "economic_boom"
+354 ||| Cem Uzan Is Victorious ||| TR: Cem Uzan Zafer Kazandı ||| path: GENCPARTI (Cem Uzan) ||| after: - ||| does: PP 25; stability 0.05; tooltip: Gains 3% Support (Relative Popularity).\n
+355 ||| Liberal Thoughts ||| TR: Liberal Düşünceler ||| path: GENCPARTI (Cem Uzan) ||| after: - ||| does: PP -50; stability -0.05; tooltip: Gains 3% Support (Relative Popularity).\n
+356 ||| Bank Law ||| TR: Bankacılık Kanunu ||| path: GENCPARTI (Cem Uzan), LDP libertarian ||| after: Send Money to the Banks ||| does: PP 100; stability 0.03
+357 ||| GENÇ Parti Propaganda ||| TR: GENÇ Parti Propagandası ||| path: GENCPARTI (Cem Uzan) ||| after: Cem Uzan Is Victorious ||| does: PP 25; tooltip: Gains 5% Support (Relative Popularity).\n
+358 ||| Strengthen the Government ||| TR: Hükümeti Güçlendir ||| path: GENCPARTI (Cem Uzan) ||| after: Cem Uzan Is Victorious ||| does: PP 75; stability -0.03; tooltip: Gains 5% Support (Relative Popularity).\n
+359 ||| Government Reforms ||| TR: Hükümet Reformları ||| path: GENCPARTI (Cem Uzan) ||| after: GENÇ Parti Propaganda / Strengthen the Government ||| does: PP 100

@@ -1,0 +1,60 @@
+1140 ||| Merge The Unions ||| TR: Birlikleri Birleştir ||| path: MHP / Grey Wolves nationalist ||| after: Prepare for the Coming Merger of the Unions ||| does: event "The Merger of Two Powers"; event "The Organization of Islamic Cooperation Becomes Real"
+1141 ||| Turkic-Islamic States Talks ||| TR: Türk-İslam Devletleri Görüşmeleri ||| path: MHP / Grey Wolves nationalist ||| after: OIC Unification Plans ||| does: event "Talks Between the Turkic and Islamic States"
+1142 ||| Prepare for the Coming Merger of the Unions ||| TR: Birliklerin Yaklaşan Birleşmesine Hazırlan ||| path: MHP / Grey Wolves nationalist ||| after: Turkic-Islamic States Talks / Deeply Islamize the Turkic Countries ||| does: PP -100; stability -0.15
+1143 ||| Adana Military Factory ||| TR: Adana Askeri Fabrikası ||| path: MHP / Grey Wolves nationalist ||| after: Build the Kayseri Arms Factory ||| does: builds arms_factory
+1144 ||| Plan the Source of Power ||| TR: Güç Kaynağını Planla ||| path: MHP / Grey Wolves nationalist ||| after: Adana Military Factory ||| does: -
+1145 ||| Plant Nuclear Reactors ||| TR: Nükleer Reaktörler Kur ||| path: MHP / Grey Wolves nationalist ||| after: Plan the Source of Power ||| does: builds nuclear_reactor
+1146 ||| Introduce Boron Energy Models ||| TR: Bor Enerjisi Modellerini Tanıt ||| path: MHP / Grey Wolves nationalist ||| after: Land of Resources ||| does: spirit "Boron Fields"
+1147 ||| Turkish Boron Fields ||| TR: Türk Bor Sahaları ||| path: MHP / Grey Wolves nationalist, technocratic HP ||| after: Introduce Boron Energy Models ||| does: "Boron Fields" -> "Boron Fields"
+1148 ||| Turkish War Sector ||| TR: Türk Savaş Sektörü ||| path: MHP / Grey Wolves nationalist ||| after: Adana Military Factory / Reform the Economic Techniques ||| does: builds arms_factory
+1149 ||| The Great Turkish National Economy ||| TR: Büyük Türk Millî Ekonomisi ||| path: MHP / Grey Wolves nationalist ||| after: Unshakable Economy / Legacy of the Crisis ||| does: removes "The Turkish Economic Malaise"
+1150 ||| Divisions in the Party ||| TR: Parti İçi Bölünmeler ||| path: MHP / Grey Wolves nationalist ||| after: - ||| does: stability -0.05
+1151 ||| Radical Takeover ||| TR: Radikal Ele Geçirme ||| path: MHP / Grey Wolves nationalist ||| after: Divisions in the Party ||| does: stability 0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+1152 ||| Suppress Politics ||| TR: Baskı Siyaseti ||| path: MHP / Grey Wolves nationalist ||| after: Radical Takeover ||| does: spirit "The Politics of Suppression"; stability -0.03
+1153 ||| Counter Possible Party Factionalism ||| TR: Olası Parti İçi Hizipleşmeye Karşı Koy ||| path: MHP / Grey Wolves nationalist ||| after: Radical Takeover ||| does: PP 75; stability 0.05; tooltip: Factionalism within the party will be dealt a severe blow.
+1154 ||| Realm of the Ülkücü State ||| TR: Ülkücü Devletin Diyarı ||| path: MHP / Grey Wolves nationalist ||| after: Counter Possible Party Factionalism / Suppress Politics ||| does: stability 0.1
+1155 ||| Democratized Ülkücüs ||| TR: Demokratikleşmiş Ülkücüler ||| path: MHP / Grey Wolves nationalist ||| after: Divisions in the Party ||| does: stability 0.07; tooltip: Gains 2% Support (Relative Popularity).\n
+1156 ||| Bahçeli State ||| TR: Bahçeli Devleti ||| path: MHP / Grey Wolves nationalist ||| after: Democratized Ülkücüs ||| does: spirit "Bahçeli's Powers"
+1157 ||| Support Factionalism Within the Party ||| TR: Parti İçi Hizipleşmeyi Destekle ||| path: MHP / Grey Wolves nationalist ||| after: Democratized Ülkücüs ||| does: stability -0.03; tooltip: Factionalism within the party will rise dramatically.
+1158 ||| Support Internal Party Elections ||| TR: Parti İçi Seçimleri Destekle ||| path: MHP / Grey Wolves nationalist ||| after: Bahçeli State / Support Factionalism Within the Party ||| does: stability -0.02
+1159 ||| Sudden Turanist Takeover ||| TR: Ani Turancı Ele Geçirme ||| path: MHP / Grey Wolves nationalist ||| after: Support Internal Party Elections ||| does: removes "Bahçeli's Powers"; stability 0.1
+1160 ||| Nationalist Women ||| TR: Milliyetçi Kadınlar ||| path: MHP / Grey Wolves nationalist ||| after: Internal Party Elections ||| does: removes "Bahçeli's Powers"; stability 0.05; tooltip: Gains 2% Support (Relative Popularity).\n
+1161 ||| Push Renewable Energy Projects ||| TR: Yenilenebilir Enerji Projelerini Hızlandır ||| path: MHP / Grey Wolves nationalist ||| after: Nationalist Women ||| does: spirit "Hydroelectricity"; builds synthetic_refinery
+1162 ||| Keeper of the Balance ||| TR: Dengenin Koruyucusu ||| path: MHP / Grey Wolves nationalist ||| after: Internal Party Elections ||| does: stability 0.04; tooltip: Gains 2% Support (Relative Popularity).\n
+1163 ||| A Principalist Party ||| TR: İlkeli Bir Parti ||| path: MHP / Grey Wolves nationalist ||| after: Keeper of the Balance ||| does: spirit "The Principled MHP"
+1164 ||| Legacy Of Türkeş ||| TR: Türkeş'in Mirası ||| path: MHP / Grey Wolves nationalist ||| after: Keeper of the Balance / Nationalist Women ||| does: spirit "The Legacy of Türkeş"
+1165 ||| A Concept of True Nationalism ||| TR: Gerçek Milliyetçilik Kavramı ||| path: MHP / Grey Wolves nationalist ||| after: Internal Party Elections ||| does: removes "Bahçeli's Powers"; stability 0.07; tooltip: Gains 2% Support (Relative Popularity).\n
+1166 ||| Weaken Traditional Ülkücülük ||| TR: Geleneksel Ülkücülüğü Zayıflat ||| path: MHP / Grey Wolves nationalist ||| after: A Concept of True Nationalism ||| does: stability -0.03
+1167 ||| A New Nationalism ||| TR: Yeni Bir Milliyetçilik ||| path: MHP / Grey Wolves nationalist ||| after: A Concept of True Nationalism ||| does: stability -0.03
+1168 ||| A Man Of Wisdom ||| TR: Bilge Bir Adam ||| path: MHP / Grey Wolves nationalist ||| after: Keeper of the Balance ||| does: -
+1169 ||| Strengthen the Balance Among the People ||| TR: Halk Arasındaki Dengeyi Güçlendir ||| path: MHP / Grey Wolves nationalist ||| after: Nationalist Women ||| does: stability 0.05
+1170 ||| Accept Social Democratic Activities ||| TR: Sosyal Demokrat Faaliyetleri Kabul Et ||| path: MHP / Grey Wolves nationalist ||| after: Strengthen the Balance Among the People / Push Renewable Energy Projects ||| does: stability 0.05
+1171 ||| Lift the Death Penalty Ban ||| TR: İdam Yasağını Kaldır ||| path: MHP / Grey Wolves nationalist ||| after: Weaken Traditional Ülkücülük ||| does: stability -0.03; tooltip: Executions will no longer be banned.
+1172 ||| Economic Reform Plan ||| TR: Ekonomik Reform Planı ||| path: MHP / Grey Wolves nationalist ||| after: A New Nationalism ||| does: spirit "fast_growth"
+1173 ||| Bahçeli, the Only Man ||| TR: Bahçeli, Tek Adam ||| path: MHP / Grey Wolves nationalist ||| after: A Man Of Wisdom / Legacy Of Türkeş ||| does: -
+1174 ||| Bozkurtlar ||| TR: Bozkurtlar ||| path: MHP (nationalist movement) ||| after: - ||| does: spirit "Bozkurtlar"
+1175 ||| Bolster Confidence ||| TR: Özgüveni Güçlendir ||| path: MHP (nationalist movement) ||| after: Bozkurtlar ||| does: -
+1176 ||| Türk Keneşi ||| TR: Türk Keneşi ||| path: MHP (nationalist movement) ||| after: Bolster Confidence ||| does: PP 100
+1177 ||| Principles of Turkishness ||| TR: Türklük İlkeleri ||| path: MHP (nationalist movement) ||| after: Türk Keneşi ||| does: spirit "The Principle of Turkishness"
+1178 ||| Raise Nationalism in the Turkic States ||| TR: Türk Devletlerinde Milliyetçiliği Yükselt ||| path: MHP (nationalist movement) ||| after: Türk Keneşi ||| does: PP -100
+1179 ||| Turkic Land Doctrine ||| TR: Türk Kara Doktrini ||| path: MHP (nationalist movement) ||| after: Open Ülkü Ocakları Branches in the Turkic States ||| does: -
+1180 ||| National Weaponry ||| TR: Millî Silahlar ||| path: MHP (nationalist movement) ||| after: Turkic Land Doctrine ||| does: -
+1181 ||| Turkic Populism ||| TR: Türk Popülizmi ||| path: MHP (nationalist movement) ||| after: Open Ülkü Ocakları Branches in the Turkic States ||| does: spirit "Turkic Populism"
+1182 ||| Continue Expanding the Ülkücü Organizations ||| TR: Ülkücü Örgütleri Genişletmeye Devam Et ||| path: MHP (nationalist movement) ||| after: Bolster Confidence ||| does: PP 100
+1183 ||| Build Ülkü Ocakları Centres ||| TR: Ülkü Ocakları Merkezleri İnşa Et ||| path: MHP (nationalist movement) ||| after: Continue Expanding the Ülkücü Organizations ||| does: spirit "Ülkü Ocakları"
+1184 ||| Crack Down on Westernizers ||| TR: Batıcıları Bastır ||| path: MHP (nationalist movement) ||| after: Continue Expanding the Ülkücü Organizations ||| does: PP -25; stability -0.02
+1185 ||| Legacy of 1980 ||| TR: 1980'in Mirası ||| path: MHP (nationalist movement) ||| after: Continue Expanding the Ülkücü Organizations ||| does: spirit "The Legacy of 1980"; PP -225; stability 0.05
+1186 ||| All Power to the Ülkücüs ||| TR: Tüm Yetki Ülkücülere ||| path: MHP (nationalist movement) ||| after: Crack Down on Westernizers / Legacy of 1980 ||| does: -
+1187 ||| Abandon NATO ||| TR: NATO'yu Terk Et ||| path: MHP (nationalist movement) ||| after: All Power to the Ülkücüs ||| does: removes "NATO_member"; war support 0.03
+1188 ||| Shut Down the Parliament ||| TR: Meclisi Kapat ||| path: MHP (nationalist movement) ||| after: Stabilize the State / Abandon NATO ||| does: PP 75; stability -0.05
+1189 ||| Political Decisions ||| TR: Siyasi Kararlar ||| path: MHP (nationalist movement) ||| after: Shut Down the Parliament ||| does: PP 150; tooltip: The country will be united and its sectarian woes can be overcome.
+1190 ||| The Question of Kemalism ||| TR: Kemalizm Meselesi ||| path: MHP (nationalist movement) ||| after: Political Decisions ||| does: war support 0.02
+1191 ||| Follow Atatürk ||| TR: Atatürk'ü İzle ||| path: MHP (nationalist movement) ||| after: The Question of Kemalism ||| does: spirit "Atatürk Nationalism"
+1192 ||| Sun Language Theory ||| TR: Güneş Dil Teorisi ||| path: MHP (nationalist movement) ||| after: Follow Atatürk ||| does: spirit "Sun Language Theory"
+1193 ||| Increase Secular Schools ||| TR: Laik Okulları Artır ||| path: MHP (nationalist movement) ||| after: Sun Language Theory ||| does: spirit "Secular Schools"
+1194 ||| Declare a State of Emergency (OHAL) ||| TR: OHAL İlan Et ||| path: MHP (nationalist movement) ||| after: All Power to the Ülkücüs ||| does: war support 0.02
+1195 ||| Collect the Ülkücü Weapons ||| TR: Ülkücü Silahları Topla ||| path: MHP (nationalist movement) ||| after: Declare a State of Emergency (OHAL) ||| does: -
+1196 ||| Protect Atatürk's Laws ||| TR: Atatürk Kanunlarını Koru ||| path: MHP (nationalist movement) ||| after: Sun Language Theory ||| does: PP 100; stability 0.05
+1197 ||| The Kadro Movement in the CHP ||| TR: CHP'de Kadro Hareketi ||| path: MHP (nationalist movement) ||| after: Follow Atatürk ||| does: PP -75; stability -0.05
+1198 ||| Open Turkish Factories ||| TR: Türk Fabrikaları Aç ||| path: MHP (nationalist movement) ||| after: National Economy ||| does: builds arms_factory, industrial_complex, infrastructure
+1199 ||| Gather Ülkücü Volunteers ||| TR: Ülkücü Gönüllüleri Topla ||| path: MHP (nationalist movement) ||| after: Declare a State of Emergency (OHAL) ||| does: -

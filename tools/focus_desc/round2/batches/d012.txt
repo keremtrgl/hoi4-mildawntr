@@ -1,0 +1,60 @@
+720 ||| Lower Consumerism ||| TR: Tüketimciliği Azalt ||| path: LDP libertarian ||| after: Mass Innovation / Private Construction ||| does: "Mass Construction" -> "Mass Construction"
+721 ||| Give the System a Mission ||| TR: Sisteme Bir Görev Ver ||| path: LDP libertarian ||| after: Buy Banks Abroad ||| does: PP 100
+722 ||| Proceeds of the Rahşan Amnesty ||| TR: Rahşan Affının Getirileri ||| path: mafia regime ||| after: - ||| does: PP 35; stability -0.02; tooltip: will be known as the "Mafias United Front"
+723 ||| Time for Robbery ||| TR: Soygun Zamanı ||| path: mafia regime ||| after: - ||| does: tooltip: Mafia Robbery Decisions will be unlocked to gain a great many things.
+724 ||| Make Peace Among the Mafias ||| TR: Mafyalar Arasında Barışı Sağla ||| path: mafia regime ||| after: Proceeds of the Rahşan Amnesty ||| does: stability 0.07
+725 ||| Publish the Mafia Council Law ||| TR: Mafya Konseyi Yasasını Yayımla ||| path: mafia regime ||| after: Make Peace Among the Mafias ||| does: PP -50; stability 0.03
+726 ||| Create a Data Mining Group ||| TR: Veri Madenciliği Grubu Kur ||| path: mafia regime ||| after: Publish the Mafia Council Law ||| does: spirit "The Data Mining Group"
+727 ||| Underground Mafia Base ||| TR: Yeraltı Mafya Üssü ||| path: mafia regime ||| after: Make Peace Among the Mafias ||| does: spirit "Mafia Underground Base"
+728 ||| Draft the Mafias ||| TR: Mafyaları Askere Al ||| path: mafia regime ||| after: Make Peace Among the Mafias ||| does: PP -50; stability 0.03
+729 ||| Organize the First Mafia Council Meeting ||| TR: İlk Mafya Konseyi Toplantısını Düzenle ||| path: mafia regime ||| after: Draft the Mafias / Publish the Mafia Council Law ||| does: event "The First Mafia Council Meeting"
+730 ||| Seize Security Channels ||| TR: Güvenlik Kanallarını Ele Geçir ||| path: mafia regime ||| after: Organize the First Mafia Council Meeting / Create a Data Mining Group ||| does: spirit "Controlling the Security Channels"
+731 ||| Relocate the Mafias ||| TR: Mafyaları Yeniden Konuşlandır ||| path: mafia regime ||| after: Organize the First Mafia Council Meeting ||| does: spirit "Relocating the Mafias"
+732 ||| Create a Code Breaker Group ||| TR: Şifre Kırıcı Grup Kur ||| path: mafia regime ||| after: Draft the Mafias ||| does: spirit "The Code Breaker Group"
+733 ||| Seize Banks ||| TR: Bankaları Ele Geçir ||| path: mafia regime ||| after: Organize the First Mafia Council Meeting / Create a Code Breaker Group ||| does: spirit "Controlling the Banks"
+734 ||| Finish the Coup Plan ||| TR: Darbe Planını Tamamla ||| path: mafia regime ||| after: Relocate the Mafias / Seize Banks ||| does: -
+735 ||| Build a Corrupt State ||| TR: Yozlaşmış Bir Devlet Kur ||| path: mafia regime ||| after: Finish the Coup Plan ||| does: spirit "corruption_level_10"; stability -0.03
+736 ||| Intervene in Politics ||| TR: Siyasete Müdahale Et ||| path: mafia regime ||| after: Build a Corrupt State ||| does: PP -75; stability -0.05
+737 ||| Increase General Instability ||| TR: Genel İstikrarsızlığı Artır ||| path: mafia regime ||| after: Build a Corrupt State ||| does: PP 75; stability -0.05; tooltip: 's strongholds get stronger.
+738 ||| Cooperate with the Ülkücüs ||| TR: Ülkücülerle İşbirliği Yap ||| path: mafia regime ||| after: Finish the Coup Plan ||| does: PP -25; stability 0.02; tooltip: will receive financial and arms support.
+739 ||| Get Weapons from Eastern Nations ||| TR: Doğu Ülkelerinden Silah Al ||| path: mafia regime ||| after: Cooperate with the Ülkücüs ||| does: war support 0.05
+740 ||| Create a New Mafia Base in Adana ||| TR: Adana'da Yeni Mafya Üssü Kur ||| path: mafia regime ||| after: Cooperate with the Ülkücüs ||| does: -
+741 ||| Declaration of the Turkish Mafia State ||| TR: Türk Mafya Devletinin İlanı ||| path: mafia regime ||| after: Create a New Mafia Base in Adana / Intervene in Politics ||| does: event "The Mafias Take Over the Regime"; event "The First Mafia Takeover"
+742 ||| Feed The Pain ||| TR: Acıyı Besle ||| path: mafia regime ||| after: Declaration of the Turkish Mafia State ||| does: stability -0.05; war support 0.07
+743 ||| Arrest Politicians ||| TR: Politikacıları Tutukla ||| path: mafia regime ||| after: Feed The Pain / One-Man Supremacy ||| does: stability -0.05; tooltip: will gain more power on the streets.
+744 ||| Shut Down Parties ||| TR: Partileri Kapat ||| path: mafia regime ||| after: Feed The Pain / Single Party State ||| does: stability -0.03; tooltip: dissolves all the parties.
+745 ||| Death of the Old Society ||| TR: Eski Toplumun Ölümü ||| path: mafia regime ||| after: Arrest Politicians / Shut Down Parties ||| does: -
+746 ||| Write Töre into Law ||| TR: Töreyi Yasaya Ekle ||| path: mafia regime ||| after: Death of the Old Society ||| does: spirit "Töre in the Law"
+747 ||| Legalize Weapons ||| TR: Silahları Yasallaştır ||| path: mafia regime ||| after: Death of the Old Society ||| does: spirit "Permitted Personal Firearms"
+748 ||| Crush Social Justice ||| TR: Sosyal Adaleti Ez ||| path: mafia regime ||| after: Death of the Old Society ||| does: PP 75; stability -0.05
+749 ||| Send Telegrams to the Tribes ||| TR: Aşiretlere Telgraf Gönder ||| path: mafia regime ||| after: Write Töre into Law ||| does: -
+750 ||| Gun Studies ||| TR: Silah Çalışmaları ||| path: mafia regime ||| after: Legalize Weapons ||| does: -
+751 ||| The New Hierarchy ||| TR: Yeni Hiyerarşi ||| path: mafia regime ||| after: Crush Social Justice ||| does: spirit "The New Hierarchy"
+752 ||| State Of Criminals ||| TR: Suçlular Devleti ||| path: mafia regime ||| after: Send Telegrams to the Tribes / The New Hierarchy ||| does: spirit "State Of Criminals"; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+753 ||| Single Party State ||| TR: Tek Parti Devleti ||| path: mafia regime ||| after: Declaration of the Turkish Mafia State ||| does: stability -0.03
+754 ||| One-Man Supremacy ||| TR: Tek Adam Üstünlüğü ||| path: mafia regime ||| after: Declaration of the Turkish Mafia State ||| does: spirit "The Mafia Dictatorship"
+755 ||| Mafia Management of the Economy ||| TR: Ekonominin Mafya Yönetimi ||| path: mafia regime ||| after: Declaration of the Turkish Mafia State ||| does: "The 2001 Turkish Economic Crisis" -> "The Turkish Economic Malaise"; PP -75
+756 ||| Education Of Loyalty ||| TR: Sadakat Eğitimi ||| path: mafia regime ||| after: Arrest the Unemployed / Weaken the Emotional Mind ||| does: spirit "Education Of Loyalty"
+757 ||| Ensure People's Loyalty ||| TR: Halkın Sadakatini Sağla ||| path: mafia regime ||| after: State Of Criminals ||| does: stability 0.05
+758 ||| Revive Nationalism ||| TR: Milliyetçiliği Canlandır ||| path: mafia regime ||| after: State Of Criminals ||| does: war support 0.03
+759 ||| Crush Leftist Ideas ||| TR: Solcu Fikirleri Ez ||| path: mafia regime ||| after: Revive Nationalism ||| does: stability -0.03
+760 ||| Arrest Leftists ||| TR: Solcuları Tutukla ||| path: mafia regime ||| after: Revive Nationalism ||| does: stability -0.02
+761 ||| Burn the Leftist Books ||| TR: Solcu Kitapları Yak ||| path: mafia regime ||| after: Revive Nationalism ||| does: stability -0.07
+762 ||| Publish Right-Wing Books ||| TR: Sağcı Kitaplar Yayımla ||| path: mafia regime ||| after: Arrest Leftists / Burn the Leftist Books ||| does: spirit "Right-Wing Literature Dominates"
+763 ||| Return to Religion... ||| TR: Dine Dönüş... ||| path: mafia regime ||| after: Arrest Leftists / Burn the Leftist Books ||| does: spirit "The Return to Islam..."
+764 ||| Cancel the Atheists... ||| TR: Ateistleri Linç Et... ||| path: mafia regime ||| after: Return to Religion... / Construct New Prisons ||| does: -
+765 ||| Construct New Prisons ||| TR: Yeni Cezaevleri İnşa Et ||| path: mafia regime ||| after: Arrest Leftists / Burn the Leftist Books ||| does: spirit "New Prisons"
+766 ||| Control Twitter ||| TR: Twitter'ı Kontrol Altına Al ||| path: mafia regime ||| after: Publish Right-Wing Books / Construct New Prisons ||| does: spirit "Controlled Social Media"; removes "The Turkish Media"; tooltip: The Turkish media's opinion no longer matters.
+767 ||| Seize Foreign Social Media Accounts in Turkey ||| TR: Türkiye'deki Yabancı Sosyal Medya Hesaplarına El Koy ||| path: mafia regime ||| after: Construct New Prisons ||| does: stability -0.02
+768 ||| All Power to TRT ||| TR: Tüm Güç TRT'ye ||| path: mafia regime ||| after: Seize Foreign Social Media Accounts in Turkey / Control Twitter ||| does: spirit "All Power to TRT"
+769 ||| Right-Wing Education ||| TR: Sağcı Eğitim ||| path: mafia regime ||| after: Publish Right-Wing Books ||| does: -
+770 ||| Crush the Provocateurs ||| TR: Provokatörleri Ez ||| path: mafia regime ||| after: Ensure People's Loyalty ||| does: stability 0.07; war support 0.03
+771 ||| Arrest Rebellious People ||| TR: Asileri Tutukla ||| path: mafia regime ||| after: Ensure People's Loyalty ||| does: PP 75; stability 0.03
+772 ||| Harsh Loyalty Laws ||| TR: Sert Sadakat Yasaları ||| path: mafia regime ||| after: Ensure People's Loyalty ||| does: spirit "Harsh Loyalty Laws"
+773 ||| Weaken the Emotional Mind ||| TR: Duygusal Aklı Zayıflat ||| path: mafia regime ||| after: Arrest Rebellious People / Harsh Loyalty Laws ||| does: spirit "Weakened Emotions"
+774 ||| Mission: An Emotionless Society ||| TR: Görev: Duygusuz Toplum ||| path: mafia regime ||| after: Crush the Provocateurs / Arrest Rebellious People ||| does: spirit "Secret DNA Interventions"
+775 ||| Arrest the Unemployed ||| TR: İşsizleri Tutuklayın ||| path: mafia regime ||| after: Harsh Loyalty Laws ||| does: spirit "Arrest the Unemployed"
+776 ||| Invest in DNA Science ||| TR: DNA Bilimine Yatırım Yap ||| path: mafia regime ||| after: Mission: An Emotionless Society ||| does: -
+777 ||| Acceptable Violence ||| TR: Kabul Edilebilir Şiddet ||| path: mafia regime ||| after: Weaken the Emotional Mind / Mission: An Emotionless Society ||| does: spirit "Acceptable Violence"
+778 ||| Create a State Information Bureau ||| TR: Devlet Bilgi Bürosu Kur ||| path: mafia regime ||| after: Arrest the Unemployed ||| does: spirit "The State Information Bureau"
+779 ||| Protect the State Laws ||| TR: Devlet Yasalarını Koru ||| path: mafia regime ||| after: Invest in DNA Science / Acceptable Violence ||| does: PP 100; stability 0.03; war support 0.03

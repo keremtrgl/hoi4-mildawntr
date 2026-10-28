@@ -1,0 +1,60 @@
+900 ||| Gather the Criminals ||| TR: Suçluları Topla ||| path: mafia regime ||| after: Time for Robbery ||| does: tooltip: Criminals will be gathered to do something illegal.
+901 ||| Search for the Target ||| TR: Hedefi Ara ||| path: mafia regime ||| after: Gather the Criminals / Create a Hacker Group ||| does: war support 0.02
+902 ||| Focus On Banks ||| TR: Bankalara Odaklan ||| path: mafia regime ||| after: Search for the Target ||| does: tooltip: The mafias will begin planning to raid Banks
+903 ||| Focus On Data ||| TR: Verilere Odaklan ||| path: mafia regime ||| after: Search for the Target ||| does: tooltip: The mafias will begin planning to steal Data
+904 ||| Rob the FED ||| TR: FED'i Soy ||| path: mafia regime ||| after: Focus On Banks ||| does: tooltip: The mafias will begin planning to raid the FED
+905 ||| Rob the ECB ||| TR: ECB'yi Soy ||| path: mafia regime ||| after: Focus On Banks ||| does: tooltip: The mafias will begin planning to raid the ECB
+906 ||| Target the Pentagon Documents ||| TR: Pentagon Belgelerini Hedef Al ||| path: mafia regime ||| after: Focus On Data ||| does: tooltip: The mafias will begin planning to steal Pentagon Documents
+907 ||| Target Russian Weapons Data ||| TR: Rus Silah Verilerini Hedef Al ||| path: mafia regime ||| after: Focus On Data ||| does: tooltip: The mafias will begin planning to steal Russian Weaponry
+908 ||| Target European Army Data ||| TR: Avrupa Ordusu Verilerini Hedef Al ||| path: mafia regime ||| after: Focus On Data ||| does: tooltip: The mafias will begin planning to steal European Army Documents
+909 ||| Target the F-35 Program ||| TR: F-35 Programını Hedef Al ||| path: mafia regime ||| after: Target the Pentagon Documents / Target European Army Data ||| does: tooltip: The mafias will begin planning to steal F-35 Program Files
+910 ||| Target the Russian Chemical Tests ||| TR: Rus Kimyasal Testlerini Hedef Al ||| path: mafia regime ||| after: Target European Army Data / Target Russian Weapons Data ||| does: tooltip: The mafias will begin planning to steal Russian Chemical Tests
+911 ||| Rob the French Central Bank ||| TR: Fransız Merkez Bankası'nı Soy ||| path: mafia regime ||| after: Focus On Banks ||| does: tooltip: The mafias will begin planning to raid the FCB
+912 ||| Rob the Chinese Central Bank ||| TR: Çin Merkez Bankası'nı Soy ||| path: mafia regime ||| after: Rob the French Central Bank / Rob the FED ||| does: tooltip: The mafias will begin planning to raid the PCOB
+913 ||| Rob the British Central Bank ||| TR: İngiliz Merkez Bankası'nı Soy ||| path: mafia regime ||| after: Rob the ECB / Rob the French Central Bank ||| does: tooltip: The mafias will begin planning to raid the UKB
+914 ||| The Vision of the True Right ||| TR: Gerçek Sağın Vizyonu ||| path: MHP / Grey Wolves nationalist ||| after: - ||| does: PP 75; stability 0.02; tooltip: Gains 1% Support (Relative Popularity).\n
+915 ||| The Far Right's Economic Plan ||| TR: Aşırı Sağın Ekonomi Planı ||| path: MHP / Grey Wolves nationalist ||| after: - ||| does: "Yeni Türk Lirası" -> "Yeni Türk Lirası"; stability 0.03
+916 ||| Push Nationalist Propaganda ||| TR: Milliyetçi Propaganda Yap ||| path: MHP / Grey Wolves nationalist ||| after: The Vision of the True Right ||| does: PP -25; stability -0.01; tooltip: Gains 2% Support (Relative Popularity).\n
+917 ||| Create the Anti-Left Movement ||| TR: Sol Karşıtı Hareketi Kur ||| path: MHP / Grey Wolves nationalist ||| after: The Vision of the True Right ||| does: spirit "The Anti-Left Movement"; spirit "The Rise of the Wild Left"
+918 ||| An Electable Right ||| TR: Seçilebilir Sağ ||| path: MHP / Grey Wolves nationalist ||| after: The Vision of the True Right ||| does: spirit "An Electable Right"
+919 ||| Touring Turkey... ||| TR: Türkiye Turu... ||| path: MHP / Grey Wolves nationalist ||| after: An Electable Right / Create the Anti-Left Movement ||| does: event "The MHP Tours Turkey"
+920 ||| The General Elections ||| TR: Genel Seçimler ||| path: MHP / Grey Wolves nationalist ||| after: Touring Turkey... ||| does: stability 0.03
+921 ||| Change The Bureaucracy ||| TR: Bürokrasiyi Değiştir ||| path: MHP / Grey Wolves nationalist, Islamist-Ottomanist ||| after: The General Elections ||| does: stability -0.05; tooltip: The bureaucracy will be remodeled along nationalist principles.
+922 ||| Collaborate with the Right ||| TR: Sağ ile İşbirliği Yap ||| path: MHP / Grey Wolves nationalist ||| after: The General Elections ||| does: stability -0.07; tooltip: The right-wing parties will unite against the left, leading to a civil war.
+923 ||| Abolish the Leftist Laws ||| TR: Solcu Yasaları Kaldır ||| path: MHP / Grey Wolves nationalist ||| after: The General Elections ||| does: -
+924 ||| The Right-Wing Front ||| TR: Sağ Cephe ||| path: MHP / Grey Wolves nationalist ||| after: Collaborate with the Right / Change The Bureaucracy ||| does: event "The Right-Wing Front Is Formalized"
+925 ||| Create Emergency Ülkücü Divisions ||| TR: Acil Durum Ülkücü Tümenleri Kur ||| path: MHP / Grey Wolves nationalist ||| after: Arm the Ülkücüs ||| does: -
+926 ||| Anti-Guerrilla Doctrine ||| TR: Gerilla Karşıtı Doktrin ||| path: MHP / Grey Wolves nationalist ||| after: The Right-Wing Front ||| does: spirit "The Counter-Guerrillas"
+927 ||| Shut Down DİSK ||| TR: DİSK'i Kapat ||| path: MHP / Grey Wolves nationalist, Turkish Armed Forces junta ||| after: Anti-Guerrilla Doctrine / Arm the Ülkücüs ||| does: stability 0.05; tooltip: Closing DİSK will stop the unions from spreading propaganda for ideas such as communism and socialism.
+928 ||| Use Gladio Against the Communists ||| TR: Komünistlere Karşı Gladio'yu Kullan ||| path: MHP / Grey Wolves nationalist ||| after: Anti-Guerrilla Doctrine ||| does: -
+929 ||| Build the Ankara Prison ||| TR: Ankara Cezaevini İnşa Et ||| path: MHP / Grey Wolves nationalist ||| after: Shut Down DİSK / Use Gladio Against the Communists ||| does: stability -0.03; tooltip: Well-known communist figures will be hanged in the prisons.
+930 ||| Control the Streets ||| TR: Sokakları Kontrol Altına Al ||| path: MHP / Grey Wolves nationalist ||| after: Build the Ankara Prison ||| does: stability 0.1
+931 ||| Political Rehabilitation ||| TR: Siyasi Rehabilitasyon ||| path: MHP / Grey Wolves nationalist ||| after: Control the Streets ||| does: spirit "Political Rehabilitation"
+932 ||| Disband Parties ||| TR: Partileri Kapat ||| path: MHP / Grey Wolves nationalist ||| after: Political Rehabilitation / National Stabilization Act ||| does: PP -75; stability 0.05
+933 ||| Withdraw the Army from Parliament ||| TR: Orduyu Meclisten Çek ||| path: MHP / Grey Wolves nationalist ||| after: Political Rehabilitation ||| does: stability 0.02; tooltip: The army will leave the parliament for possible democratic elections in the future.
+934 ||| Achieve Family Happiness ||| TR: Aile Mutluluğunu Sağla ||| path: MHP / Grey Wolves nationalist ||| after: National Stabilization Act ||| does: stability 0.05
+935 ||| Law No. 5233 ||| TR: 5233 Sayılı Kanun ||| path: MHP / Grey Wolves nationalist ||| after: Withdraw the Army from Parliament / Disband Parties ||| does: removes "The Turkish Media"; PP 75; tooltip: The Turkish media's opinion no longer matters.
+936 ||| Internal Party Elections ||| TR: Parti İçi Seçimler ||| path: MHP / Grey Wolves nationalist ||| after: Law No. 5233 ||| does: PP 125
+937 ||| Victory of the Hardline Ülkücüs ||| TR: Sert Çizgideki Ülkücülerin Zaferi ||| path: MHP / Grey Wolves nationalist ||| after: Internal Party Elections ||| does: stability -0.02; war support 0.05; tooltip: Loses 3% Support (Relative Popularity).\n
+938 ||| Burn the Leftist Huts ||| TR: Solcuların Kulübelerini Yak ||| path: MHP / Grey Wolves nationalist ||| after: Victory of the Hardline Ülkücüs ||| does: "The Anti-Left Movement" -> "The Anti-Left Movement"
+939 ||| Exile the Leftist Leaders ||| TR: Solcu Liderleri Sürgüne Gönder ||| path: MHP / Grey Wolves nationalist ||| after: Burn the Leftist Huts ||| does: "The Anti-Left Movement" -> "The Anti-Left Movement"
+940 ||| A Land Against the Left ||| TR: Sol Karşıtı Bir Diyar ||| path: MHP / Grey Wolves nationalist ||| after: Exile the Leftist Leaders ||| does: "The Anti-Left Movement" -> "The Anti-Left Movement"
+941 ||| Victory of the Democratic Ülkücüs ||| TR: Demokrat Ülkücülerin Zaferi ||| path: MHP / Grey Wolves nationalist ||| after: Internal Party Elections ||| does: stability 0.05; war support -0.02; tooltip: Gains 3% Support (Relative Popularity).\n
+942 ||| Release Some Leftists ||| TR: Bazı Solcuları Serbest Bırak ||| path: MHP / Grey Wolves nationalist ||| after: Victory of the Democratic Ülkücüs ||| does: "The Anti-Left Movement" -> "The Anti-Left Movement"
+943 ||| Abolish the Party Ban Law ||| TR: Parti Yasağı Kanununu Kaldır ||| path: MHP / Grey Wolves nationalist ||| after: Release Some Leftists ||| does: "The Anti-Left Movement" -> "The Anti-Left Movement"
+944 ||| Limit the Opposition's Powers ||| TR: Muhalefetin Yetkilerini Sınırla ||| path: MHP / Grey Wolves nationalist ||| after: Abolish the Party Ban Law ||| does: "The Anti-Left Movement" -> "The Anti-Left Movement"
+945 ||| Democratize the Ülkücüs ||| TR: Ülkücüleri Demokratikleştir ||| path: MHP / Grey Wolves nationalist ||| after: Victory of the Democratic Ülkücüs ||| does: stability 0.05; war support -0.03; tooltip: Gains 3% Support (Relative Popularity).\n
+946 ||| Hold Elections ||| TR: Seçimlere Git ||| path: MHP / Grey Wolves nationalist, military junta ||| after: Democratize the Ülkücüs / Release Some Leftists ||| does: stability 0.05; tooltip: Loses 3% Support (Relative Popularity).\n
+947 ||| A New Kind Of Democracy ||| TR: Yeni Bir Demokrasi Türü ||| path: MHP / Grey Wolves nationalist ||| after: Hold Elections ||| does: stability 0.07
+948 ||| A Reformed Constitution ||| TR: Reforme Edilmiş Anayasa ||| path: MHP / Grey Wolves nationalist ||| after: A New Kind Of Democracy ||| does: spirit "A Democracy-Influenced Constitution"
+949 ||| Collaborate with the Unions ||| TR: Sendikalarla İşbirliği Yap ||| path: MHP / Grey Wolves nationalist ||| after: Limit the Opposition's Powers ||| does: "The Anti-Left Movement" -> "The Anti-Left Movement"
+950 ||| Declare Neutrality ||| TR: Tarafsızlık İlan Et ||| path: MHP / Grey Wolves nationalist ||| after: Democratize the Ülkücüs ||| does: spirit "Ülkücü Neutrality"; PP 75
+951 ||| Appease the Islamists ||| TR: İslamcıları Yatıştır ||| path: MHP / Grey Wolves nationalist ||| after: Declare Neutrality ||| does: spirit "Appeasing the Islamists"
+952 ||| Promote Kemalism ||| TR: Kemalizmi Teşvik Et ||| path: MHP / Grey Wolves nationalist ||| after: Appease the Islamists ||| does: spirit "Promoting Kemalism"
+953 ||| Switch to a Presidential System ||| TR: Başkanlık Sistemine Geç ||| path: MHP / Grey Wolves nationalist ||| after: Promote Kemalism / A Reformed Constitution ||| does: spirit "The Turkish Presidency"
+954 ||| Contact the Bozkurtlar ||| TR: Bozkurtlarla Temas Kur ||| path: MHP / Grey Wolves nationalist ||| after: Switch to a Presidential System ||| does: spirit "Bozkurtlar"
+955 ||| Lone Wolf... ||| TR: Yalnız Kurt... ||| path: MHP / Grey Wolves nationalist ||| after: Switch to a Presidential System ||| does: -
+956 ||| Successful Nationalism ||| TR: Başarılı Milliyetçilik ||| path: MHP / Grey Wolves nationalist ||| after: Lone Wolf... / Contact the Bozkurtlar ||| does: spirit "Steps Toward a Militarist Society"
+957 ||| Prepare the Border Law ||| TR: Sınır Kanununu Hazırla ||| path: MHP / Grey Wolves nationalist ||| after: Successful Nationalism / United Under the Bozkurtlar ||| does: PP 150
+958 ||| Send Troops to the Borders ||| TR: Sınırlara Asker Gönder ||| path: MHP / Grey Wolves nationalist ||| after: Prepare the Border Law ||| does: PP 75; stability 0.05; war support 0.05; tooltip: Turkey will radicalize its border policies.
+959 ||| Create Border Protection Institutions ||| TR: Sınır Koruma Kurumları Kur ||| path: MHP / Grey Wolves nationalist ||| after: Send Troops to the Borders ||| does: spirit "Border Protection Institutions"

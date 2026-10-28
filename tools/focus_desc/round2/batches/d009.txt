@@ -1,0 +1,60 @@
+540 ||| Socialist Defenders ||| TR: Sosyalist Savunucular ||| path: Osman Pamukoglu's HEPAR ||| after: Shield Against Capitalism ||| does: spirit "Socialist Defenders"
+541 ||| Cheap Chinese Equipment ||| TR: Ucuz Çin Teçhizatı ||| path: Osman Pamukoglu's HEPAR ||| after: Shield Against Capitalism / Chinese Investments ||| does: war support 0.02
+542 ||| Beijing Accords ||| TR: Pekin Mutabakatları ||| path: Osman Pamukoglu's HEPAR ||| after: Chinese Investments / Let Russian Ships Pass Through the Bosporus ||| does: spirit "CHI_sco_member"; PP 25
+543 ||| CSTO Observer State ||| TR: KGAÖ Gözlemci Devleti ||| path: Osman Pamukoglu's HEPAR ||| after: Socialist Defenders / Cheap Chinese Equipment ||| does: PP 25; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+544 ||| A Guaranteed NATO Force ||| TR: Garantili NATO Gücü ||| path: Osman Pamukoglu's HEPAR ||| after: First Benefit Then Leave ||| does: stability -0.02; war support -0.02
+545 ||| Deals On Autarky ||| TR: Otarşi Anlaşmaları ||| path: Osman Pamukoglu's HEPAR ||| after: First Benefit Then Leave ||| does: spirit "Turkish Autarky"; builds fossil_powerplant
+546 ||| Fresh NATO Investments ||| TR: Taze NATO Yatırımları ||| path: Osman Pamukoglu's HEPAR ||| after: A Guaranteed NATO Force / Deals On Autarky ||| does: builds industrial_complex
+547 ||| Put More NATO Generals in the Field ||| TR: Sahaya Daha Fazla NATO Generali Koy ||| path: Osman Pamukoglu's HEPAR ||| after: Deals On Autarky / A Guaranteed NATO Force ||| does: stability -0.02
+548 ||| Great Power Projection ||| TR: Büyük Güç Projeksiyonu ||| path: Osman Pamukoglu's HEPAR ||| after: A Guaranteed NATO Force ||| does: spirit "Great Power Projection"
+549 ||| Istanbul Exercise ||| TR: İstanbul Tatbikatı ||| path: Osman Pamukoglu's HEPAR ||| after: Put More NATO Generals in the Field / Fresh NATO Investments ||| does: -
+550 ||| Nationalist Coverage ||| TR: Milliyetçi Kapsama ||| path: Osman Pamukoglu's HEPAR ||| after: Great Power Projection / Fresh NATO Investments ||| does: spirit "Nationalist Coverage"
+551 ||| Let US Ships Pass Through the Bosporus ||| TR: ABD Gemilerinin İstanbul Boğazı'ndan Geçişine İzin Ver ||| path: Osman Pamukoglu's HEPAR ||| after: Put More NATO Generals in the Field ||| does: stability -0.05
+552 ||| Influence The Turkic Nations ||| TR: Türk Devletlerini Etkile ||| path: Osman Pamukoglu's HEPAR ||| after: Let US Ships Pass Through the Bosporus / Istanbul Exercise ||| does: PP -25
+553 ||| Quit NATO ||| TR: NATO'dan Çık ||| path: Osman Pamukoglu's HEPAR ||| after: Influence The Turkic Nations / Fresh US Equipment ||| does: removes "NATO_member"; stability 0.05; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+554 ||| Fresh US Equipment ||| TR: Taze ABD Teçhizatı ||| path: Osman Pamukoglu's HEPAR ||| after: Istanbul Exercise / Nationalist Coverage ||| does: war support 0.02
+555 ||| Licensed Equipment ||| TR: Lisanslı Teçhizat ||| path: Osman Pamukoglu's HEPAR ||| after: Nationalist Coverage ||| does: -
+556 ||| Push the Turkish Nuclear Program ||| TR: Türk Nükleer Programını Hızlandır ||| path: Osman Pamukoglu's HEPAR ||| after: CSTO Observer State ||| does: tooltip: Decisions  about the Nuclear Program will be unlocked.
+557 ||| Return to the Misak-ı Millî ||| TR: Misak-ı Millî'ye Dönüş ||| path: Osman Pamukoglu's HEPAR ||| after: Quit NATO ||| does: war support 0.03
+558 ||| Mutual Asian Defensive Pact ||| TR: Karşılıklı Asya Savunma Paktı ||| path: Osman Pamukoglu's HEPAR ||| after: Quit NATO ||| does: -
+559 ||| Demand Unification with Azerbaijan ||| TR: Azerbaycan ile Birleşme Talep Et ||| path: Osman Pamukoglu's HEPAR, MHP / Grey Wolves nationalist ||| after: Mutual Asian Defensive Pact ||| does: event "The Republic of Turkey Invites Us to Unite"
+560 ||| Invite Turkmenistan ||| TR: Türkmenistan'ı Davet Et ||| path: Osman Pamukoglu's HEPAR ||| after: Mutual Asian Defensive Pact ||| does: event "An Invitation From Turkey"
+561 ||| Invite Uzbekistan ||| TR: Özbekistan'ı Davet Et ||| path: Osman Pamukoglu's HEPAR ||| after: Invite Turkmenistan / Demand Unification with Azerbaijan ||| does: event "An Invitation From Turkey"
+562 ||| Invite Kazakhstan ||| TR: Kazakistan'ı Davet Et ||| path: Osman Pamukoglu's HEPAR ||| after: Demand Unification with Azerbaijan / Invite Turkmenistan ||| does: event "An Invitation From Turkey"
+563 ||| Invite Israel ||| TR: İsrail'i Davet Et ||| path: Osman Pamukoglu's HEPAR ||| after: Persuade Israel Against NATO ||| does: event "An Invitation From Turkey"
+564 ||| Invite Egypt ||| TR: Mısır'ı Davet Et ||| path: Osman Pamukoglu's HEPAR ||| after: Withdraw Recognition of Israel ||| does: event "An Invitation From Turkey"
+565 ||| Persuade Israel Against NATO ||| TR: İsrail'i NATO'ya Karşı İkna Et ||| path: Osman Pamukoglu's HEPAR ||| after: The Question of Protecting Suez ||| does: removes "Major_Non_NATO_Ally"; PP 25; war support 0.02
+566 ||| Invite Kyrgyzstan ||| TR: Kırgızistan'ı Davet Et ||| path: Osman Pamukoglu's HEPAR ||| after: Invite Turkmenistan ||| does: event "An Invitation From Turkey"
+567 ||| Withdraw Recognition of Israel ||| TR: İsrail'i Tanımaktan Vazgeç ||| path: Osman Pamukoglu's HEPAR ||| after: The Question of Protecting Suez ||| does: PP -100; war support 0.02
+568 ||| The Question of Protecting Suez ||| TR: Süveyş'in Korunması Meselesi ||| path: Osman Pamukoglu's HEPAR ||| after: Mutual Asian Defensive Pact ||| does: PP 50; war support 0.03
+569 ||| Invite Qatar ||| TR: Katar'ı Davet Et ||| path: Osman Pamukoglu's HEPAR ||| after: Invite Uzbekistan / Invite Kyrgyzstan ||| does: event "An Invitation From Turkey"
+570 ||| Nationalization of Equipment ||| TR: Teçhizatın Millîleştirilmesi ||| path: Osman Pamukoglu's HEPAR ||| after: Quit NATO ||| does: -
+571 ||| Faster Production First ||| TR: Önce Hızlı Üretim ||| path: Osman Pamukoglu's HEPAR ||| after: Nationalization of Equipment ||| does: spirit "Faster Production"
+572 ||| Growing Industries ||| TR: Büyüyen Sanayiler ||| path: Osman Pamukoglu's HEPAR ||| after: Nationalization of Equipment ||| does: spirit "Growing Industries..."
+573 ||| Total War Economy ||| TR: Topyekûn Savaş Ekonomisi ||| path: Osman Pamukoglu's HEPAR ||| after: Growing Industries / Faster Production First ||| does: spirit "Total War Economy"
+574 ||| Limit the Changes ||| TR: Değişikliklere Sınır Koy ||| path: Osman Pamukoglu's HEPAR ||| after: Total War Economy ||| does: stability -0.03; war support 0.07
+575 ||| Look Towards the East ||| TR: Doğu'ya Bak ||| path: Osman Pamukoglu's HEPAR ||| after: Return to the Misak-ı Millî ||| does: war support 0.02
+576 ||| Look Towards the South ||| TR: Güney'e Bak ||| path: Osman Pamukoglu's HEPAR ||| after: Return to the Misak-ı Millî ||| does: war support 0.02
+577 ||| Finish the Unfinished Job ||| TR: Yarım Kalan İşi Bitir ||| path: Osman Pamukoglu's HEPAR ||| after: Look Towards the East / Demand Unification with Azerbaijan ||| does: war goal/war on ARM
+578 ||| Ask the PRC for Guarantees ||| TR: ÇHC'den Güvence İste ||| path: Osman Pamukoglu's HEPAR ||| after: Mission to the Major Powers ||| does: -
+579 ||| Ask Russia for Guarantees ||| TR: Rusya'dan Güvence İste ||| path: Osman Pamukoglu's HEPAR ||| after: Mission to the Major Powers ||| does: -
+580 ||| Ask the United States for Guarantees ||| TR: ABD'den Güvence İste ||| path: Osman Pamukoglu's HEPAR ||| after: Mission to the Major Powers ||| does: -
+581 ||| Ask France for Guarantees ||| TR: Fransa'dan Güvence İste ||| path: Osman Pamukoglu's HEPAR ||| after: Mission To Europe ||| does: -
+582 ||| Mission to the Middle East ||| TR: Orta Doğu'ya Görev ||| path: Osman Pamukoglu's HEPAR ||| after: Diplomatic Coverage ||| does: -
+583 ||| Ask Iran for Guarantees ||| TR: İran'dan Güvence İste ||| path: Osman Pamukoglu's HEPAR ||| after: Mission to the Middle East ||| does: -
+584 ||| Ask the Saudis for Guarantees ||| TR: Suudilerden Güvence İste ||| path: Osman Pamukoglu's HEPAR ||| after: Mission to the Middle East ||| does: -
+585 ||| Press Azerbaijani Claims ||| TR: Azerbaycan'ın Taleplerini Dayat ||| path: Osman Pamukoglu's HEPAR ||| after: Finish the Unfinished Job ||| does: war goal/war on PER
+586 ||| Intervene in Georgia ||| TR: Gürcistan'a Müdahale ||| path: Osman Pamukoglu's HEPAR ||| after: Finish the Unfinished Job ||| does: war goal/war on GEO
+587 ||| Assistance from the Saudis ||| TR: Suudilerden Yardım ||| path: Osman Pamukoglu's HEPAR ||| after: Press Azerbaijani Claims / Intervene in Georgia ||| does: stability 0.02; war support 0.03; war goal/war on PER
+588 ||| Finish the Conquest in the East ||| TR: Doğu'daki Fethi Tamamla ||| path: Osman Pamukoglu's HEPAR ||| after: Assistance from the Saudis ||| does: PP 75; war support 0.03
+589 ||| Push Greek Nationalism ||| TR: Yunan Milliyetçiliğini Körükle ||| path: Osman Pamukoglu's HEPAR ||| after: Look Towards the West ||| does: spirit "Greek Nationalism Supported"
+590 ||| Push Socialist Protests in Greece ||| TR: Yunanistan'da Sosyalist Protestoları Körükle ||| path: Osman Pamukoglu's HEPAR ||| after: Push Greek Nationalism ||| does: PP -25; PP -100; stability -0.05; war support 0.02
+591 ||| Secretly Arm Greek Nationalists ||| TR: Yunan Milliyetçilerini Gizlice Silahlandır ||| path: Osman Pamukoglu's HEPAR ||| after: Push Greek Nationalism ||| does: stability -0.05
+592 ||| Look Towards the West ||| TR: Batı'ya Bak ||| path: Osman Pamukoglu's HEPAR ||| after: Finish the Conquest in the East / Compliance Forces ||| does: war support 0.02
+593 ||| The Mosul Mission ||| TR: Musul Görevi ||| path: Osman Pamukoglu's HEPAR ||| after: Look Towards the South ||| does: war goal/war on KUR
+594 ||| Integrate Mosul into the State ||| TR: Musul'u Devlete Entegre Et ||| path: Osman Pamukoglu's HEPAR ||| after: The Mosul Mission ||| does: stability -0.03
+595 ||| Demand Iraq's Submission ||| TR: Irak'tan Teslimiyet Talep Et ||| path: Osman Pamukoglu's HEPAR ||| after: The Mosul Mission ||| does: event "Turkey Demands Our Submission"
+596 ||| Compliance Forces ||| TR: İtaat Kuvvetleri ||| path: Osman Pamukoglu's HEPAR, TKP communist ||| after: Bombardment Of Syria ||| does: spirit "Compliance Forces"
+597 ||| Orchestrate a Military Coup in Greece ||| TR: Yunanistan'da Askeri Darbe Düzenle ||| path: Osman Pamukoglu's HEPAR ||| after: Push Socialist Protests in Greece / Secretly Arm Greek Nationalists ||| does: event "Turkey Orchestrates a Coup in Greece"
+598 ||| Fund the Bulgarian Nationalists ||| TR: Bulgar Milliyetçilerini Finanse Et ||| path: Osman Pamukoglu's HEPAR ||| after: Look Towards the West ||| does: spirit "Bulgarian Nationalism Supported"
+599 ||| Rig the Elections ||| TR: Seçimlere Hile Karıştır ||| path: Osman Pamukoglu's HEPAR ||| after: Fund the Bulgarian Nationalists ||| does: PP -50

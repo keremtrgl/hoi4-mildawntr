@@ -1,0 +1,60 @@
+2160 ||| Peace, Land and Bread ||| TR: Barış, Toprak ve Ekmek ||| path: TKP communist ||| after: War with the Ülkücüs ||| does: spirit "Peace, Land and Bread"
+2161 ||| Repair Crews ||| TR: Onarım Ekipleri ||| path: TKP communist ||| after: DİSK Cooperation / Peace, Land and Bread ||| does: spirit "Repair Crews"
+2162 ||| Agreement with the Unions ||| TR: Sendikalarla Anlaşma ||| path: TKP communist ||| after: War with the Ülkücüs ||| does: spirit "Union Agreements"
+2163 ||| Militarize the Workers ||| TR: İşçileri Silahlandır ||| path: TKP communist ||| after: Agreement with the Unions / DİSK Cooperation ||| does: spirit "Armed Workers"
+2164 ||| A New Kind of Society ||| TR: Yeni Tür Bir Toplum ||| path: TKP communist ||| after: Repair Crews / Militarize the Workers ||| does: removes "The Turkish Media"; stability 0.1; tooltip: The Turkish media's opinion no longer matters.; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.
+2165 ||| Shut Down NATO Bases ||| TR: NATO Üslerini Kapat ||| path: TKP communist ||| after: A New Kind of Society ||| does: stability -0.02; war support 0.02
+2166 ||| Finish Off Gladio ||| TR: Gladio'nun İşini Bitir ||| path: TKP communist ||| after: A New Kind of Society ||| does: removes "The Counter-Guerrillas"; stability 0.05
+2167 ||| United Left Against the US ||| TR: ABD'ye Karşı Birleşik Sol ||| path: TKP communist ||| after: A New Kind of Society ||| does: spirit "The United Left Against the USA"
+2168 ||| Ban the Right ||| TR: Sağı Yasakla ||| path: TKP communist ||| after: United Left Against the US / Finish Off Gladio ||| does: -
+2169 ||| Communist Military Congress ||| TR: Komünist Askeri Kongre ||| path: TKP communist ||| after: Ban the Right ||| does: event "The General Communist Military Congress"
+2170 ||| Vatan's Victory ||| TR: Vatan'ın Zaferi ||| path: TKP communist ||| after: Communist Military Congress ||| does: event "Perinçek Takes Control of Turkey"; tooltip: Gains 3% Support (Relative Popularity).\n
+2171 ||| EMEP's Victory ||| TR: EMEP'in Zaferi ||| path: TKP communist ||| after: Communist Military Congress ||| does: tooltip: Gains 3% Support (Relative Popularity).\n
+2172 ||| ÖDP's Victory ||| TR: ÖDP'nin Zaferi ||| path: TKP communist ||| after: Communist Military Congress ||| does: tooltip: Gains 3% Support (Relative Popularity).\n
+2173 ||| TKP's Victory ||| TR: TKP'nin Zaferi ||| path: TKP communist ||| after: Communist Military Congress ||| does: tooltip: Gains 3% Support (Relative Popularity).\n
+2174 ||| Fast Construction Movement ||| TR: Hızlı İnşaat Hamlesi ||| path: TKP communist ||| after: Vatan's Victory ||| does: spirit "Fast Construction Movement"
+2175 ||| Kemalist Socialism ||| TR: Kemalist Sosyalizm ||| path: TKP communist ||| after: Fast Construction Movement ||| does: spirit "Kemalist Nationalism"
+2176 ||| Neutral Positioning ||| TR: Tarafsız Konumlanma ||| path: TKP communist ||| after: Perinçek's Wisdom / Perinçek's Powers ||| does: spirit "Neutral Positioning"
+2177 ||| Perinçek's Powers ||| TR: Perinçek'in Yetkileri ||| path: TKP communist, communist bloc ||| after: Kemalist Socialism ||| does: spirit "Perinçek's Powers"
+2178 ||| Perinçek's Wisdom ||| TR: Perinçek'in Bilgeliği ||| path: TKP communist ||| after: Kemalist Socialism ||| does: spirit "Perinçek's Wisdom"
+2179 ||| Crush Western Influence ||| TR: Batı Etkisini Ez ||| path: TKP communist ||| after: Neutral Positioning ||| does: stability 0.05
+2180 ||| Build The New Çakmak Line ||| TR: Yeni Çakmak Hattını İnşa Et ||| path: TKP communist ||| after: Neutral Positioning ||| does: builds bunker
+2181 ||| Build The New Aegean Line ||| TR: Yeni Ege Hattını İnşa Et ||| path: TKP communist ||| after: Neutral Positioning ||| does: builds bunker
+2182 ||| An End to American-Turkish Financing ||| TR: Amerikan-Türk Finansmanına Son ||| path: TKP communist ||| after: Crush Western Influence ||| does: war support 0.03
+2183 ||| Hang the Local Investors ||| TR: Yerel Yatırımcıları As ||| path: TKP communist ||| after: Crush Western Influence ||| does: spirit "Crushing Local Investors"
+2184 ||| National Vision ||| TR: Millî Vizyon ||| path: TKP communist ||| after: Hang the Local Investors / An End to American-Turkish Financing ||| does: PP 100
+2185 ||| The Yak Deal ||| TR: Yak Anlaşması ||| path: TKP communist ||| after: An Alternative to the European Union ||| does: -
+2186 ||| Buy S-400s ||| TR: S-400 Satın Al ||| path: TKP communist ||| after: An Alternative to the European Union ||| does: event "A NATO Country Turning Into a Russian Ally?"; PP 50
+2187 ||| Glory of Soviet Thinking ||| TR: Sovyet Düşüncesinin Şanı ||| path: TKP communist ||| after: An Alternative to the European Union / An Alternative to the USA ||| does: spirit "The Glory of the Soviet Past"
+2188 ||| Become a CSTO Observer State ||| TR: KGAÖ Gözlemci Devleti Ol ||| path: TKP communist ||| after: Buy S-400s ||| does: PP 25
+2189 ||| Communist Militia Culture ||| TR: Komünist Milis Kültürü ||| path: TKP communist ||| after: Glory of Soviet Thinking ||| does: -
+2190 ||| Export Communism to the Turkic Union ||| TR: Komünizmi Türk Birliğine İhraç Et ||| path: TKP communist ||| after: Communist Militia Culture ||| does: PP -100
+2191 ||| Perinçek Fundamentals ||| TR: Perinçek'in Temel İlkeleri ||| path: TKP communist ||| after: Build New Universities ||| does: spirit "Perinçek's Fundamentals"
+2192 ||| Take Russian Guarantees ||| TR: Rus Güvenceleri Al ||| path: TKP communist ||| after: Become a CSTO Observer State ||| does: -
+2193 ||| An Alternative to the European Union ||| TR: Avrupa Birliği'ne Alternatif ||| path: TKP communist ||| after: National Vision ||| does: -
+2194 ||| An Alternative to the USA ||| TR: ABD'ye Alternatif ||| path: TKP communist ||| after: National Vision ||| does: -
+2195 ||| Trade Wars Between Asia and the West ||| TR: Asya ile Batı Arasındaki Ticaret Savaşları ||| path: TKP communist ||| after: An Alternative to the USA ||| does: spirit "The Invasion of Chinese Markets"
+2196 ||| Chinese Marketplace ||| TR: Çin Pazarı ||| path: TKP communist ||| after: Trade Wars Between Asia and the West ||| does: -
+2197 ||| Learn the Chinese Economic Style ||| TR: Çin Ekonomi Modelini Öğren ||| path: TKP communist ||| after: Chinese Marketplace ||| does: -
+2198 ||| Achieve Chinese-Turkish Military Cooperation ||| TR: Çin-Türk Askeri İşbirliğini Sağla ||| path: TKP communist ||| after: An Alternative to the USA ||| does: -
+2199 ||| Take Chinese Guarantees ||| TR: Çin Güvenceleri Al ||| path: TKP communist ||| after: Achieve Chinese-Turkish Military Cooperation ||| does: -
+2200 ||| Withdraw Recognition of Taiwan ||| TR: Tayvan'ı Tanımaktan Vazgeç ||| path: TKP communist ||| after: Take Chinese Guarantees ||| does: -
+2201 ||| Join the Shanghai Pact ||| TR: Şanghay Paktı'na Katıl ||| path: TKP communist ||| after: Export Communism to the Turkic Union / Withdraw Recognition of Taiwan ||| does: spirit "CHI_sco_member"
+2202 ||| Visit Shanghai ||| TR: Şanghay'ı Ziyaret Et ||| path: TKP communist ||| after: Join the Shanghai Pact ||| does: -
+2203 ||| China Is on the Right Side ||| TR: Çin Haklı Tarafta ||| path: TKP communist ||| after: Join the Shanghai Pact ||| does: spirit "Supporting China Forever!"
+2204 ||| China-Boosted Economic Development ||| TR: Çin Destekli Ekonomik Kalkınma ||| path: TKP communist ||| after: China Is on the Right Side / Visit Shanghai ||| does: builds industrial_complex
+2205 ||| Open the Bosporus to China ||| TR: İstanbul Boğazı'nı Çin'e Aç ||| path: TKP communist ||| after: China-Boosted Economic Development ||| does: -
+2206 ||| Chinese Investment Plan Phase I ||| TR: Çin Yatırım Planı Aşama I ||| path: TKP communist ||| after: China-Boosted Economic Development ||| does: stability 0.03
+2207 ||| Replace US Investors with Chinese Ones ||| TR: ABD'li Yatırımcıların Yerine Çinlileri Getir ||| path: TKP communist ||| after: China-Boosted Economic Development ||| does: -
+2208 ||| Time For Investments ||| TR: Yatırım Zamanı ||| path: TKP communist ||| after: Replace US Investors with Chinese Ones / Chinese Investment Plan Phase I ||| does: PP 125
+2209 ||| First Phase of the Silk Road Initiative ||| TR: İpek Yolu Girişiminin İlk Aşaması ||| path: TKP communist ||| after: Time For Investments ||| does: builds infrastructure
+2210 ||| Switch to the Yuan ||| TR: Yuana Geç ||| path: TKP communist ||| after: Time For Investments ||| does: removes "Yeni Türk Lirası"; removes "Türk Lirası"; tooltip: Moves such as Perinçek's promotion of the Chinese yuan will destroy the political standing of the Turkish lira.
+2211 ||| Chinese Money ||| TR: Çin Parası ||| path: TKP communist ||| after: Switch to the Yuan ||| does: -
+2212 ||| Silk Road Initiative I ||| TR: İpek Yolu Girişimi I ||| path: TKP communist ||| after: First Phase of the Silk Road Initiative ||| does: builds infrastructure
+2213 ||| Silk Road Initiative II ||| TR: İpek Yolu Girişimi II ||| path: TKP communist ||| after: First Phase of the Silk Road Initiative ||| does: builds infrastructure
+2214 ||| Chinese Investment in Arms Factories I ||| TR: Silah Fabrikalarına Çin Yatırımı I ||| path: TKP communist ||| after: Time For Investments ||| does: builds arms_factory
+2215 ||| Chinese Military Sector Investment ||| TR: Askeri Sektöre Çin Yatırımı ||| path: TKP communist ||| after: Chinese Investment in Arms Factories I ||| does: builds arms_factory
+2216 ||| Chinese Investment in Arms Factories II ||| TR: Silah Fabrikalarına Çin Yatırımı II ||| path: TKP communist ||| after: Chinese Investment in Arms Factories I ||| does: builds arms_factory
+2217 ||| Chinese Investment in Dockyards ||| TR: Tersanelere Çin Yatırımı ||| path: TKP communist ||| after: Silk Road Initiative II / Silk Road Initiative I ||| does: builds dockyard
+2218 ||| Chinese Licensing Program ||| TR: Çin Lisans Programı ||| path: TKP communist ||| after: Chinese Military Sector Investment / Chinese Investment in Arms Factories II ||| does: spirit "The Chinese Licensing Program"
+2219 ||| Chinese Trade Facilities ||| TR: Çin Ticaret Tesisleri ||| path: TKP communist ||| after: Chinese Investment in Dockyards / Chinese Licensing Program ||| does: -

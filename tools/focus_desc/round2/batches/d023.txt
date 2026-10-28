@@ -1,0 +1,60 @@
+1380 ||| American Investments ||| TR: Amerikan Yatırımları ||| path: MIT intelligence state, technocratic HP ||| after: American Equipment Campaign ||| does: builds industrial_complex, infrastructure
+1381 ||| Modern İncirlik ||| TR: Modern İncirlik ||| path: MIT intelligence state ||| after: American Equipment Campaign ||| does: builds air_base, anti_air_building, arms_factory, fuel_silo, radar_station
+1382 ||| European Intel Program ||| TR: Avrupa İstihbarat Programı ||| path: MIT intelligence state ||| after: Turkish Worldwide Intel Program ||| does: PP 175
+1383 ||| Balkan Influence Program ||| TR: Balkan Etki Programı ||| path: MIT intelligence state ||| after: European Intel Program ||| does: -
+1384 ||| Athens Intel ||| TR: Atina İstihbaratı ||| path: MIT intelligence state ||| after: Balkan Influence Program ||| does: -
+1385 ||| Greek-Turkish Investment Projects ||| TR: Yunan-Türk Yatırım Projeleri ||| path: MIT intelligence state ||| after: Athens Intel ||| does: -
+1386 ||| Sofia Intel ||| TR: Sofya İstihbaratı ||| path: MIT intelligence state ||| after: Balkan Influence Program ||| does: -
+1387 ||| Bucharest Intel ||| TR: Bükreş İstihbaratı ||| path: MIT intelligence state ||| after: Sofia Intel ||| does: -
+1388 ||| Belgrade Intel ||| TR: Belgrad İstihbaratı ||| path: MIT intelligence state ||| after: Sofia Intel ||| does: -
+1389 ||| Budapest Intel ||| TR: Budapeşte İstihbaratı ||| path: MIT intelligence state ||| after: Belgrade Intel / Bucharest Intel ||| does: -
+1390 ||| Western European Influence Program ||| TR: Batı Avrupa Etki Programı ||| path: MIT intelligence state ||| after: European Intel Program ||| does: -
+1391 ||| Paris Intel ||| TR: Paris İstihbaratı ||| path: MIT intelligence state ||| after: Western European Influence Program ||| does: -
+1392 ||| Berlin Intel ||| TR: Berlin İstihbaratı ||| path: MIT intelligence state ||| after: Western European Influence Program ||| does: -
+1393 ||| Rome Intel ||| TR: Roma İstihbaratı ||| path: MIT intelligence state ||| after: Berlin Intel / Paris Intel ||| does: -
+1394 ||| London Intel ||| TR: Londra İstihbaratı ||| path: MIT intelligence state ||| after: Western European Influence Program ||| does: -
+1395 ||| Madrid Intel ||| TR: Madrid İstihbaratı ||| path: MIT intelligence state ||| after: London Intel / Berlin Intel ||| does: -
+1396 ||| European Deal ||| TR: Avrupa Anlaşması ||| path: MIT intelligence state ||| after: Madrid Intel / Rome Intel ||| does: -
+1397 ||| Target World Documents ||| TR: Dünya Belgelerini Hedef Al ||| path: MIT intelligence state ||| after: Data-Breaking Group ||| does: war support 0.02
+1398 ||| Target Pentagon Files ||| TR: Pentagon Dosyalarını Hedef Al ||| path: MIT intelligence state ||| after: Target World Documents ||| does: war support 0.02; tooltip: The mafias will begin planning to steal Pentagon Files
+1399 ||| Turkish Prime Ministry ||| TR: Türkiye Başbakanlığı ||| path: MIT intelligence state ||| after: Hakan Fidan's Regime ||| does: PP 100; stability 0.02
+1400 ||| The Governmental Group ||| TR: Hükümet Grubu ||| path: MIT intelligence state ||| after: Turkish Prime Ministry ||| does: tooltip: The government faction will take its place in Hakan Fidan's regime.
+1401 ||| Powers to Fahrettin Altun ||| TR: Fahrettin Altun'a Yetki ||| path: MIT intelligence state ||| after: The Governmental Group ||| does: spirit "Powers to Fahrettin Altun"
+1402 ||| Fahrettin Altun's Media Group ||| TR: Fahrettin Altun'un Medya Grubu ||| path: MIT intelligence state ||| after: Powers to Fahrettin Altun ||| does: spirit "Fahrettin Altun's Media Group"; removes "The Turkish Media"; tooltip: The Turkish media's opinion no longer matters.
+1403 ||| Strengthen the Bureaucracy ||| TR: Bürokrasiyi Güçlendir ||| path: MIT intelligence state ||| after: Powers to Fahrettin Altun ||| does: spirit "Strengthen The Bureaucracy"
+1404 ||| Sudden SADAT Takeover ||| TR: Ani SADAT Darbesi ||| path: MIT intelligence state ||| after: Turkish Prime Ministry ||| does: tooltip: The government faction will take its place in Hakan Fidan's regime.
+1405 ||| Powers to Melih Tanrıverdi ||| TR: Melih Tanrıverdi'ye Yetki ||| path: MIT intelligence state ||| after: Sudden SADAT Takeover ||| does: spirit "Powers To Melih Tanrıverdi"
+1406 ||| Fund the SADAT Group ||| TR: SADAT Grubunu Finanse Et ||| path: MIT intelligence state ||| after: Powers to Melih Tanrıverdi ||| does: -
+1407 ||| Strengthen the Military Factions ||| TR: Askeri Hizipleri Güçlendir ||| path: MIT intelligence state ||| after: Powers to Melih Tanrıverdi ||| does: -
+1408 ||| Strengthen the Oligarchs ||| TR: Oligarkları Güçlendir ||| path: MIT intelligence state ||| after: Strengthen the Military Factions / Fund the SADAT Group ||| does: spirit "Controlled Social Media"; tooltip: The Turkish media's opinion no longer matters.
+1409 ||| Open Private SADAT Factories ||| TR: Özel SADAT Fabrikaları Aç ||| path: MIT intelligence state ||| after: Powers to Melih Tanrıverdi ||| does: -
+1410 ||| The Sectoral Campaign ||| TR: Sektörel Kampanya ||| path: MIT intelligence state ||| after: Open Private SADAT Factories / Strengthen the Military Factions ||| does: spirit "The Sectoral Campaign"
+1411 ||| SADAT's Military Plans ||| TR: SADAT'ın Askeri Planları ||| path: MIT intelligence state ||| after: The Sectoral Campaign / Strengthen the Oligarchs ||| does: spirit "SADAT's Military Plans"
+1412 ||| Plans to Overthrow the Government ||| TR: Hükümeti Devirme Planları ||| path: MIT intelligence state ||| after: SADAT's Military Plans ||| does: removes "Milli İstihbarat Teşkilatı"; "Powers To Melih Tanrıverdi" -> "Powers To Melih Tanrıverdi"
+1413 ||| The Great March ||| TR: Büyük Yürüyüş ||| path: MIT intelligence state ||| after: Plans to Overthrow the Government ||| does: spirit "SADAT's Great Movement"; tooltip: SADAT secretly begins planning the Great March on Ankara to topple the government.
+1414 ||| The Betrayal ||| TR: İhanet ||| path: MIT intelligence state ||| after: Secret Jewish Mind Games ||| does: war support 0.1
+1415 ||| Jewish Gold ||| TR: Yahudi Altını ||| path: MIT intelligence state ||| after: The Betrayal ||| does: spirit "Jewish Community Investments"
+1416 ||| Restore the MİT ||| TR: MİT'i Yeniden Yapılandır ||| path: MIT intelligence state ||| after: Plans to Overthrow the Government ||| does: spirit "Milli İstihbarat Teşkilatı"
+1417 ||| The New Bureaucracy ||| TR: Yeni Bürokrasi ||| path: MIT intelligence state ||| after: Restore the MİT ||| does: spirit "New Bureaucracy"
+1418 ||| Arrest the Espionage Officials ||| TR: Casusluk Yetkililerini Tutukla ||| path: MIT intelligence state ||| after: Restore the MİT ||| does: -
+1419 ||| The State Of SADAT ||| TR: SADAT Devleti ||| path: MIT intelligence state ||| after: Arrest the Espionage Officials / The New Bureaucracy ||| does: war support 0.1
+1420 ||| The Armageddon Thoughts ||| TR: Kıyamet Düşünceleri ||| path: MIT intelligence state ||| after: The Betrayal ||| does: spirit "Armageddon Preparation"
+1421 ||| Work on Arms ||| TR: Silahlar Üzerinde Çalış ||| path: MIT intelligence state ||| after: The Betrayal ||| does: builds arms_factory
+1422 ||| Prepare for the Last Moment ||| TR: Son Ana Hazırlan ||| path: MIT intelligence state ||| after: The Armageddon Thoughts / Work on Arms ||| does: spirit "For The Last Moment!"
+1423 ||| SADAT APCs ||| TR: SADAT Zırhlı Personel Taşıyıcıları ||| path: MIT intelligence state ||| after: Ask SADAT for Help ||| does: -
+1424 ||| SADAT MBTs ||| TR: SADAT Ana Muharebe Tankları ||| path: MIT intelligence state ||| after: Ask SADAT for Help ||| does: -
+1425 ||| Agreement with Cem Uzan ||| TR: Cem Uzan ile Anlaşma ||| path: MIT intelligence state ||| after: Oligarchic Economic Model ||| does: spirit "Cem Uzan Group"
+1426 ||| Uzan Group-Dominated Technology Sector ||| TR: Uzan Grubu Hâkimiyetindeki Teknoloji Sektörü ||| path: MIT intelligence state ||| after: Agreement with Cem Uzan ||| does: builds internet_station
+1427 ||| Telsim Investments ||| TR: Telsim Yatırımları ||| path: MIT intelligence state ||| after: Agreement with Cem Uzan ||| does: builds internet_station, offices
+1428 ||| National Technology Investments ||| TR: Millî Teknoloji Yatırımları ||| path: MIT intelligence state ||| after: Telsim Investments ||| does: builds internet_station
+1429 ||| New Media ||| TR: Yeni Medya ||| path: MIT intelligence state ||| after: Uzan Group-Dominated Technology Sector ||| does: builds offices
+1430 ||| Full Partnership with Cem Uzan ||| TR: Cem Uzan ile Tam Ortaklık ||| path: MIT intelligence state ||| after: National Technology Investments / New Media ||| does: "Cem Uzan Group" -> "Full Partnership With Cem Uzan Group"
+1431 ||| The Oligarchic Movement ||| TR: Oligarşik Hareket ||| path: MIT intelligence state ||| after: Copenhagen Criteria Membership ||| does: removes "Full Partnership With Cem Uzan Group"; removes "Full Partnership With Koç Group"; removes "Full Partnership with the Sabancı Group"; "Oligarchic Economic Model" -> "Oligarchic Economic Model"
+1432 ||| Happy Family Policies ||| TR: Mutlu Aile Politikaları ||| path: MIT intelligence state ||| after: Expand The Welfare / Social Society ||| does: spirit "Happy Family Policies"
+1433 ||| Bank for the Old and the Young ||| TR: Yaşlılar ve Gençler Bankası ||| path: MIT intelligence state ||| after: Limit the Police / Happy Family Policies ||| does: spirit "Family And Youth Bank"
+1434 ||| Cairo Intel ||| TR: Kahire İstihbaratı ||| path: MIT intelligence state ||| after: Tehran Intel / Riyadh Intel ||| does: -
+1435 ||| Damascus Intel ||| TR: Şam İstihbaratı ||| path: MIT intelligence state ||| after: Smash the Sykes-Picot Agreement ||| does: -
+1436 ||| Ashgabat Intel ||| TR: Aşkabat İstihbaratı ||| path: MIT intelligence state ||| after: Central Asian Intel Program ||| does: -
+1437 ||| Tashkent Intel ||| TR: Taşkent İstihbaratı ||| path: MIT intelligence state ||| after: Ashgabat Intel / Astana Intel ||| does: -
+1438 ||| Bishkek Intel ||| TR: Bişkek İstihbaratı ||| path: MIT intelligence state ||| after: Baku Intel / Ashgabat Intel ||| does: -
+1439 ||| Greek-Turkish Island Crisis ||| TR: Yunan-Türk Adalar Krizi ||| path: MIT intelligence state ||| after: Athens Intel ||| does: war goal/war on GRE

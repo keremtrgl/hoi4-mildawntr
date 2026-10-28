@@ -1,0 +1,60 @@
+780 ||| Destroy the Old Curriculum ||| TR: Eski Müfredatı Yok Et ||| path: mafia regime ||| after: Reform Education ||| does: PP -25; war support 0.02
+781 ||| Increase Jarring Elements ||| TR: Sarsıcı Unsurları Artır ||| path: mafia regime ||| after: Reform Education ||| does: PP -25; stability -0.02; war support 0.05
+782 ||| Weapon-Focused Lessons ||| TR: Silah Odaklı Dersler ||| path: mafia regime ||| after: Increase Jarring Elements / Destroy the Old Curriculum ||| does: -
+783 ||| An Emotionless Armed Society ||| TR: Duygusuz Silahlı Toplum ||| path: mafia regime ||| after: Increase Jarring Elements ||| does: -
+784 ||| Educate for National Unity ||| TR: Millî Birlik İçin Eğit ||| path: mafia regime ||| after: Destroy the Old Curriculum ||| does: spirit "National Unity Education"
+785 ||| Create Mafia Unions ||| TR: Mafya Sendikaları Kur ||| path: mafia regime ||| after: Mafia Management of the Economy ||| does: spirit "The Mafia Trade Union"
+786 ||| Embrace a New Taxation System ||| TR: Yeni Vergi Sistemini Benimse ||| path: mafia regime ||| after: Mafia Management of the Economy ||| does: spirit "A New Taxation System"; tooltip: Taxes will be raised immediately.
+787 ||| Mafia Gold ||| TR: Mafya Altını ||| path: mafia regime ||| after: Increase the Central Bank Reserves ||| does: spirit "Mafia Gold"
+788 ||| Increase the Central Bank Reserves ||| TR: Merkez Bankası Rezervlerini Artır ||| path: mafia regime ||| after: Create Mafia Unions / Mafia Capitals ||| does: "fast_growth" -> "economic_boom"
+789 ||| Tax the Weak ||| TR: Zayıfları Vergilendir ||| path: mafia regime ||| after: Embrace a New Taxation System ||| does: spirit "Heavy Taxes on Society"
+790 ||| Tax the Immigrants ||| TR: Göçmenleri Vergilendir ||| path: mafia regime ||| after: Embrace a New Taxation System ||| does: spirit "Taxing Immigrants"
+791 ||| Tourism-Boosted Economy ||| TR: Turizm Destekli Ekonomi ||| path: mafia regime ||| after: Tax the Weak / Tax the Immigrants ||| does: spirit "Extra Tourism Support for the Economy"
+792 ||| Mafia Capitals ||| TR: Mafya Sermayesi ||| path: mafia regime ||| after: Mafia Management of the Economy ||| does: spirit "Funded Mafia Capital"
+793 ||| Open Military Trade Facilities ||| TR: Askeri Ticaret Tesisleri Aç ||| path: mafia regime ||| after: Tourism-Boosted Economy ||| does: spirit "The Military Trade"
+794 ||| Gold Mines in Bornova ||| TR: Bornova'da Altın Madenleri ||| path: mafia regime ||| after: Mafia Gold ||| does: -
+795 ||| Consolidation of Mafia Capital ||| TR: Mafya Sermayesinin Pekiştirilmesi ||| path: mafia regime ||| after: Mafia Capitals ||| does: PP 25
+796 ||| Statist Industry ||| TR: Devletçi Sanayi ||| path: mafia regime ||| after: Mafia Management of the Economy ||| does: spirit "Empowered Industry"
+797 ||| Open Supply Trade Facilities ||| TR: İkmal Ticareti Tesisleri Aç ||| path: mafia regime ||| after: Tourism-Boosted Economy ||| does: spirit "The Supply Trade"
+798 ||| Expand the KDV ||| TR: KDV'yi Genişlet ||| path: mafia regime ||| after: Tax the Weak ||| does: spirit "Expanded VAT (KDV)"
+799 ||| Gold Mining States ||| TR: Altın Madeni Devletleri ||| path: mafia regime ||| after: Gold Mines in Bornova ||| does: -
+800 ||| Mafia Investment Policies ||| TR: Mafya Yatırım Politikaları ||| path: mafia regime ||| after: Mafia Industrial Parks / Industrialize Central Anatolia ||| does: PP 125
+801 ||| Treaties with Global Mafias ||| TR: Küresel Mafyalarla Antlaşmalar ||| path: mafia regime ||| after: Build Roads Across the Country ||| does: builds arms_factory
+802 ||| Industrial Investments ||| TR: Sanayi Yatırımları ||| path: mafia regime ||| after: Treaties with Global Mafias ||| does: builds industrial_complex, infrastructure
+803 ||| Build Roads Across the Country ||| TR: Ülke Genelinde Yollar İnşa Et ||| path: mafia regime ||| after: Statist Industry ||| does: stability 0.02; builds infrastructure
+804 ||| National Civilian Power ||| TR: Ulusal Sivil Güç ||| path: mafia regime ||| after: Statist Industry ||| does: spirit "True Civilian Power"
+805 ||| Social-Economic Investments ||| TR: Sosyoekonomik Yatırımlar ||| path: mafia regime ||| after: Mafia Investment Policies / Industrial Investments ||| does: stability 0.1
+806 ||| Mafia Industrial Parks ||| TR: Mafya Sanayi Parkları ||| path: mafia regime ||| after: Build Roads Across the Country / National Civilian Power ||| does: builds industrial_complex
+807 ||| Kickstart the Markets ||| TR: Piyasaları Harekete Geçir ||| path: mafia regime ||| after: Mafia Capitals / Mafia Markets ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"; stability -0.03
+808 ||| Industrialize Central Anatolia ||| TR: İç Anadolu'yu Sanayileştir ||| path: mafia regime, Islamist-Ottomanist ||| after: Build Roads Across the Country ||| does: builds industrial_complex
+809 ||| Turkish Industrial Powerhouse ||| TR: Türk Sanayi Güç Merkezi ||| path: mafia regime ||| after: Consolidation of Mafia Capital / Kickstart the Markets ||| does: spirit "The Mafia Industrial Powerhouse"
+810 ||| Fix the Economy ||| TR: Ekonomiyi Düzelt ||| path: mafia regime ||| after: National Economy / Control The Economy ||| does: removes "The Turkish Economic Malaise"
+811 ||| Mafia Markets ||| TR: Mafya Piyasaları ||| path: mafia regime ||| after: Mafia Management of the Economy ||| does: spirit "Special Mafia Marketplaces"
+812 ||| Redesign the Armed Forces ||| TR: Silahlı Kuvvetleri Yeniden Tasarla ||| path: mafia regime ||| after: - ||| does: -
+813 ||| General Training Program ||| TR: Genel Eğitim Programı ||| path: mafia regime ||| after: Redesign the Armed Forces ||| does: -
+814 ||| New Military Law ||| TR: Yeni Askeri Kanun ||| path: mafia regime ||| after: Redesign the Armed Forces ||| does: -
+815 ||| Mobilization Law ||| TR: Seferberlik Kanunu ||| path: mafia regime ||| after: General Training Program ||| does: PP -25
+816 ||| Teach General War Tactics to the Mafias ||| TR: Mafyalara Genel Savaş Taktiklerini Öğret ||| path: mafia regime ||| after: General Training Program ||| does: -
+817 ||| War Academies ||| TR: Harp Akademileri ||| path: mafia regime ||| after: General Training Program ||| does: spirit "War Academies"
+818 ||| Create a Mafia Defence Organization ||| TR: Mafya Savunma Örgütü Kur ||| path: mafia regime ||| after: War Academies / Mobilization Law ||| does: spirit "Mafia Defense Organizations"
+819 ||| Teach Guerrilla Tactics to the Mafias ||| TR: Mafyalara Gerilla Taktiklerini Öğret ||| path: mafia regime ||| after: Teach General War Tactics to the Mafias ||| does: -
+820 ||| Appoint Mafia Bosses as Generals ||| TR: Mafya Babalarını General Olarak Ata ||| path: mafia regime ||| after: Create a Mafia Defence Organization / Bring the Mafias Back from the Fight Against the PKK ||| does: -
+821 ||| Bring the Mafias Back from the Fight Against the PKK ||| TR: Mafyaları PKK ile Çatışmadan Geri Çek ||| path: mafia regime ||| after: War Academies ||| does: spirit "Lessons From the War With the PKK"
+822 ||| Solve the Military Depression ||| TR: Askeri Buhranı Çöz ||| path: mafia regime ||| after: Appoint Mafia Bosses as Generals / Teach Modern War Tactics to the Mafias ||| does: removes "The Unstable Army"
+823 ||| Teach Modern War Tactics to the Mafias ||| TR: Mafyalara Modern Savaş Taktiklerini Öğret ||| path: mafia regime ||| after: Teach Guerrilla Tactics to the Mafias ||| does: -
+824 ||| Use the War with the PKK as a Testing Ground ||| TR: PKK ile Savaşı Deneme Alanı Olarak Kullan ||| path: mafia regime ||| after: Bring the Mafias Back from the Fight Against the PKK ||| does: -
+825 ||| Gun Tests ||| TR: Silah Testleri ||| path: mafia regime ||| after: New Military Law ||| does: spirit "Gun Tests"
+826 ||| Increase Troop Speed ||| TR: Birlik Hızını Artır ||| path: mafia regime ||| after: New Military Law ||| does: spirit "Rapid Forces"
+827 ||| Withdrawal Law ||| TR: Geri Çekilme Kanunu ||| path: mafia regime ||| after: Gun Tests / Increase Troop Speed ||| does: spirit "Withdrawal Law"
+828 ||| Increase Military Spending ||| TR: Askeri Harcamaları Artır ||| path: mafia regime ||| after: Withdrawal Law ||| does: spirit "defence_09"
+829 ||| Seize Old Equipment Stocks ||| TR: Eski Teçhizat Stoklarına El Koy ||| path: mafia regime ||| after: Withdrawal Law ||| does: war support 0.02
+830 ||| Finish the Military Design ||| TR: Askeri Tasarımı Tamamla ||| path: mafia regime ||| after: Solve the Military Depression / Adapt Tanks and Planes for the Mafias ||| does: -
+831 ||| Adapt Tanks and Planes for the Mafias ||| TR: Tank ve Uçakları Mafyalara Uyarla ||| path: mafia regime ||| after: Increase Military Spending / Seize Old Equipment Stocks ||| does: removes "Tanks and Airplanes?"
+832 ||| The Question of Border Protection ||| TR: Sınırların Korunması Meselesi ||| path: mafia regime ||| after: Finish the Military Design ||| does: PP 50; war support 0.01
+833 ||| Plant Border Mafias ||| TR: Sınır Mafyaları Yerleştir ||| path: mafia regime ||| after: The Question of Border Protection ||| does: spirit "Border Mafias in Action"
+834 ||| Mine the Borders ||| TR: Sınırları Mayınla ||| path: mafia regime ||| after: The Question of Border Protection ||| does: spirit "Mined Borders"
+835 ||| Shut Down All Borders ||| TR: Tüm Sınırları Kapat ||| path: mafia regime, MHP / Grey Wolves nationalist ||| after: Mine the Borders / Plant Border Mafias ||| does: tooltip: All of Turkey's borders will be shut down.
+836 ||| An Isolated State ||| TR: Sınırlarıyla Yalıtılmış Devlet ||| path: mafia regime ||| after: Shut Down All Borders / Build a Wall in the South ||| does: spirit "A Fully Isolated State"
+837 ||| Build a Wall in the South ||| TR: Güneye Duvar Ör ||| path: mafia regime ||| after: Mine the Borders ||| does: builds coastal_bunker
+838 ||| Strengthen Border Mafias ||| TR: Sınır Mafyalarını Güçlendir ||| path: mafia regime ||| after: Plant Border Mafias ||| does: -
+839 ||| Continue the Clash with the PKK ||| TR: PKK ile Çatışmayı Sürdür ||| path: mafia regime ||| after: Finish the Military Design ||| does: PP 50; war support 0.01

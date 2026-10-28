@@ -63,6 +63,10 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     göre), MD'nin aynı modifier için kullandığı en yüksek değeri aşan değerler (denge), yanlış kapsamda çalışan
     efektler; commit öncesi hook (`git config core.hooksPath tools/hooks`). `strip_code` regex'e geçti (10 kat hızlı).
   - `army_org_Factor` → `army_org_factor` (31 yer; oyun büyük/küçük harfe duyarsız, yalnızca tutarlılık).
+  - Kalan tüm odak açıklamaları yazıldı: 2.580 grup, 2.642 odak, İngilizce ve Türkçe (`tools/focus_desc/round2/`).
+    Artık ağaçlardaki her odağın açıklaması var. Karanlık içerikli odaklar (terör, katliam, ırkçı politikalar)
+    hikâye düzeyinde ve kınayan bir dille anlatıldı. Kalan boş `_desc` anahtarları yorum satırına alınmış odaklara ya da
+    hiçbir odağın kullanmadığı anahtarlara ait. `MIT_balkan_inluence_program_desc` iki dosyada tanımlıydı; biri silindi.
 
 ## Kalıcı dersler (tekrar düşme!)
 
@@ -135,7 +139,10 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
 
 ## Açık işler
 
-- Odak açıklamaları: 4.020 gruptan 1.440'ı yazıldı (d000–d023). `release_check.py` kalan boş `_desc` sayısını gösterir.
+- Odak açıklamaları tamamlandı (TUR.5'te 1.440 grup, TUR.6'da 2.580 grup). Oyunda göz ile kontrol edilmedi.
+- Odak adları üzerine tasarım kararı: "Secret Jewish Mind Games", "Jewish Gold", "Counter the Jewish Lobby" gibi
+  antisemitik kalıp taşıyan başlıklar orijinal moddan geliyor. Açıklamalar bunu eleştirel anlatıyor; adların
+  değiştirilmesi önerilir (Steam'de şikâyet ve kaldırılma riski).
 - Yapay zekâ odak ağırlıkları ve gözlemci modunda davranış incelenmedi.
 - Performans ölçümü (TUR.2 olay optimizasyonunun etkisi) yapılmadı.
 - Denge: `release_check.py --only balance --all` MD'den güçlü 100 değer listeliyor (en çarpıcısı `decryption_power`

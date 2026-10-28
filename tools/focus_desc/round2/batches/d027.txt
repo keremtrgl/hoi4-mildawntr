@@ -1,0 +1,60 @@
+1620 ||| On Our Own ||| TR: Kendi Başımıza ||| path: Islamist-Ottomanist ||| after: Destroy the Serbian State ||| does: PP 100; stability 0.05; war support 0.03
+1621 ||| Turkish Mountaineer Special Forces ||| TR: Türk Dağcı Özel Kuvvetleri ||| path: Islamist-Ottomanist ||| after: Ottoman War Machine ||| does: spirit "Ottoman Special Mountain Troops"
+1622 ||| Control The Population Movements ||| TR: Nüfus Hareketlerini Kontrol Altına Al ||| path: Islamist-Ottomanist ||| after: Long-Term Invasion Plans ||| does: spirit "Controlled Population Movements"
+1623 ||| Besiege Vienna Again ||| TR: Viyana'yı Yeniden Kuşat ||| path: Islamist-Ottomanist ||| after: Ottoman Cavalry / Reorganize Supply Chains to Vienna ||| does: war goal/war on AUS
+1624 ||| Declare the Greater Ottoman Empire ||| TR: Büyük Osmanlı İmparatorluğu'nu İlan Et ||| path: Islamist-Ottomanist ||| after: Complete the Revenge for Sèvres / Besiege Vienna Again ||| does: stability 0.1
+1625 ||| German Assistance ||| TR: Alman Yardımı ||| path: Islamist-Ottomanist ||| after: The Second Central Powers ||| does: spirit "German Assistance"
+1626 ||| German Investments ||| TR: Alman Yatırımları ||| path: Islamist-Ottomanist ||| after: The Second Central Powers ||| does: builds arms_factory, industrial_complex
+1627 ||| Revenge for the First World War ||| TR: Birinci Dünya Savaşı'nın İntikamı ||| path: Islamist-Ottomanist ||| after: German Assistance / German Investments ||| does: war support 0.02; war goal/war on ENG; war goal/war on FRA
+1628 ||| Border Deals with Austria ||| TR: Avusturya ile Sınır Anlaşmaları ||| path: Islamist-Ottomanist ||| after: German Assistance ||| does: event "The Ottomans Propose a Future Border Agreement"
+1629 ||| Rebuild the Berlin-Baghdad Railway ||| TR: Berlin-Bağdat Demiryolunu Yeniden İnşa Et ||| path: Islamist-Ottomanist ||| after: German Investments ||| does: -
+1630 ||| Complete the Revenge for Sèvres ||| TR: Sevr'in İntikamını Tamamla ||| path: Islamist-Ottomanist ||| after: Buy High-Quality German Weapons / German Licensed Tanks ||| does: -
+1631 ||| Restore the Karadeniz Donanma-yı Hümayun ||| TR: Karadeniz Donanma-yı Hümayun'unu Yeniden Kur ||| path: Islamist-Ottomanist ||| after: Policy Of Russia ||| does: spirit "Building Up the Imperial Black Sea Fleet"
+1632 ||| Denounce Montreux ||| TR: Montrö'yü Feshet ||| path: Islamist-Ottomanist ||| after: Restore the Karadeniz Donanma-yı Hümayun ||| does: removes "The Montreux Convention Confirmed"; stability -0.03
+1633 ||| Fund the Naval Industry ||| TR: Deniz Sanayisini Finanse Et ||| path: Islamist-Ottomanist ||| after: Restore the Karadeniz Donanma-yı Hümayun ||| does: -
+1634 ||| Crimean Deal ||| TR: Kırım Anlaşması ||| path: Islamist-Ottomanist ||| after: Fund the Naval Industry / Denounce Montreux ||| does: event "The Ottomans Propose a Crimean Agreement"
+1635 ||| Demand a Protectorate over Georgia ||| TR: Gürcistan Üzerinde Himaye Talep Et ||| path: Islamist-Ottomanist ||| after: Transcaucasia Policy ||| does: event "The Ottomans Demand to Protect Us"
+1636 ||| Ask Azerbaijan for Unification ||| TR: Azerbaycan'a Birleşme Teklif Et ||| path: Islamist-Ottomanist ||| after: Demand a Protectorate over Georgia ||| does: event "The Republic of Turkey Invites Us to Unite"
+1637 ||| Yerevan Crisis ||| TR: Erivan Krizi ||| path: Islamist-Ottomanist ||| after: Ask Azerbaijan for Unification / Increase Military Presence Around Armenia ||| does: war goal/war on ARM
+1638 ||| Increase Military Presence Around Armenia ||| TR: Ermenistan Çevresindeki Askeri Varlığı Artır ||| path: Islamist-Ottomanist ||| after: Demand a Protectorate over Georgia ||| does: builds arms_factory
+1639 ||| Islamic Golden Age ||| TR: İslam'ın Altın Çağı ||| path: Islamist-Ottomanist ||| after: Declare the Greater Ottoman Empire ||| does: -
+1640 ||| Ottoman Economic Policies ||| TR: Osmanlı Ekonomi Politikaları ||| path: Islamist-Ottomanist ||| after: The New Ottoman Monarchy ||| does: PP 150
+1641 ||| Embrace an Anti-Debt Policy ||| TR: Borç Karşıtı Politikayı Benimse ||| path: Islamist-Ottomanist ||| after: Ottoman Economic Policies ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+1642 ||| Control the Old Central Bank's Money ||| TR: Eski Merkez Bankası'nın Parasını Kontrol Altına Al ||| path: Islamist-Ottomanist ||| after: Ottoman Economic Policies ||| does: stability -0.03
+1643 ||| Ottoman Industrialization Program ||| TR: Osmanlı Sanayileşme Programı ||| path: Islamist-Ottomanist ||| after: Control the Old Central Bank's Money / Embrace an Anti-Debt Policy ||| does: spirit "Ottoman Industrialization Program"
+1644 ||| Ottoman State Banks ||| TR: Osmanlı Devlet Bankaları ||| path: Islamist-Ottomanist ||| after: Ottoman Industrialization Program ||| does: "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+1645 ||| Build the Ankara-Adana Railway ||| TR: Ankara-Adana Demiryolunu İnşa Et ||| path: Islamist-Ottomanist ||| after: Ottoman Industrialization Program ||| does: -
+1646 ||| Industrialize the Unindustrialized East ||| TR: Sanayileşmemiş Doğu'yu Sanayileştir ||| path: Islamist-Ottomanist ||| after: Industrialize Central Anatolia / Ottoman State Banks ||| does: builds industrial_complex
+1647 ||| Reform TOKİ ||| TR: TOKİ'yi Reforme Et ||| path: Islamist-Ottomanist ||| after: Industrialize Central Anatolia / Ottoman State Banks ||| does: spirit "Ottoman TOKİ"
+1648 ||| Withdraw Products from World Markets ||| TR: Ürünleri Dünya Piyasalarından Çek ||| path: Islamist-Ottomanist ||| after: Ottoman State Banks ||| does: stability 0.03
+1649 ||| Hıfzıssıhha Institutions ||| TR: Hıfzıssıhha Kurumları ||| path: Islamist-Ottomanist ||| after: Build the Ankara-Adana Railway / Ottoman State Banks ||| does: stability 0.05
+1650 ||| Bring Back the Ottoman Lira ||| TR: Osmanlı Lirasını Geri Getir ||| path: Islamist-Ottomanist ||| after: Reform TOKİ / Withdraw Products from World Markets ||| does: -
+1651 ||| Istanbul Dockyard Project ||| TR: İstanbul Tersane Projesi ||| path: Islamist-Ottomanist ||| after: Industrialize the Unindustrialized East / Reform TOKİ ||| does: builds dockyard
+1652 ||| Kayseri Arms Factory ||| TR: Kayseri Silah Fabrikası ||| path: Islamist-Ottomanist ||| after: Withdraw Products from World Markets ||| does: builds arms_factory
+1653 ||| Support the Ottoman Foundation Culture ||| TR: Osmanlı Vakıf Kültürünü Destekle ||| path: Islamist-Ottomanist ||| after: Istanbul Dockyard Project / Bring Back the Ottoman Lira ||| does: spirit "The Ottoman Foundation Culture"
+1654 ||| Mosque Industry ||| TR: Cami Sanayii ||| path: Islamist-Ottomanist ||| after: Bring Back the Ottoman Lira ||| does: spirit "Mosque Industry"
+1655 ||| Valuable Ottoman Lira ||| TR: Değerli Osmanlı Lirası ||| path: Islamist-Ottomanist ||| after: Support the Ottoman Foundation Culture ||| does: "The Ottoman Lira" -> "Valuable Ottoman Lira"
+1656 ||| Expand the Military Production Facilities ||| TR: Askeri Üretim Tesislerini Genişlet ||| path: Islamist-Ottomanist ||| after: Kayseri Arms Factory ||| does: builds arms_factory
+1657 ||| Samsun Dockyard Build-Up ||| TR: Samsun Tersanesinin Kurulması ||| path: Islamist-Ottomanist ||| after: Istanbul Dockyard Project ||| does: builds dockyard
+1658 ||| Ottoman Radio Connection Initiative ||| TR: Osmanlı Radyo Bağlantısı Girişimi ||| path: Islamist-Ottomanist ||| after: Istanbul Dockyard Project ||| does: builds radar_station
+1659 ||| Become an Economic Powerhouse ||| TR: Ekonomik Güç Merkezi Ol ||| path: Islamist-Ottomanist ||| after: Strengthen Gold / Ottoman Tourism ||| does: removes "The Turkish Economic Malaise"; stability 0.05
+1660 ||| Publish Labour Propaganda ||| TR: Çalışma Propagandası Yayımla ||| path: Islamist-Ottomanist ||| after: Expand the Military Production Facilities / Mosque Industry ||| does: spirit "Work Propaganda"
+1661 ||| Ottoman Film Sector ||| TR: Osmanlı Film Sektörü ||| path: Islamist-Ottomanist ||| after: Samsun Dockyard Build-Up / Ottoman Radio Connection Initiative ||| does: spirit "Ottoman Film Sector"
+1662 ||| İBDA-C Political Question ||| TR: İBDA-C Siyasi Meselesi ||| path: Islamist-Ottomanist ||| after: The İBDA-C State ||| does: PP 75; stability 0.03
+1663 ||| Declaration of the Islamic Caliphate ||| TR: İslam Hilafetinin İlanı ||| path: Islamist-Ottomanist ||| after: Elect the Caliph of Islam / Guarantee Our Islamic Brothers ||| does: stability 0.1
+1664 ||| Elect the Caliph of Islam ||| TR: İslam'ın Halifesini Seç ||| path: Islamist-Ottomanist ||| after: İBDA-C Political Question ||| does: event "Electing the New Caliph"
+1665 ||| Guarantee Our Islamic Brothers ||| TR: İslam Kardeşlerimize Garanti Ver ||| path: Islamist-Ottomanist ||| after: İBDA-C Political Question ||| does: -
+1666 ||| Islamic Values of the İBDA-C ||| TR: İBDA-C'nin İslami Değerleri ||| path: Islamist-Ottomanist ||| after: Declaration of the Islamic Caliphate ||| does: stability 0.07
+1667 ||| Publish the Islamic Fatwa ||| TR: İslami Fetvayı Yayımla ||| path: Islamist-Ottomanist ||| after: Declaration of the Islamic Caliphate ||| does: war support 0.05
+1668 ||| Crush the Nation's Terrorists ||| TR: Milletin Teröristlerini Ez ||| path: Islamist-Ottomanist ||| after: Declaration of the Islamic Caliphate ||| does: removes "The Gülen Movement's Growing Influence Over the Republic"; stability 0.03
+1669 ||| Global Jihad Declaration ||| TR: Küresel Cihat İlanı ||| path: Islamist-Ottomanist ||| after: Crush the Nation's Terrorists / Islamic Values of the İBDA-C ||| does: event "Declaration of Islamic Jihad"
+1670 ||| Abolish Capitalist Activities ||| TR: Kapitalist Faaliyetleri Kaldır ||| path: Islamist-Ottomanist ||| after: Islamic Values of the İBDA-C / Crush the Nation's Terrorists ||| does: -
+1671 ||| Prepare for the Coming Massive Sanctions ||| TR: Gelecek Büyük Yaptırımlara Hazırlan ||| path: Islamist-Ottomanist ||| after: Global Jihad Declaration / Abolish Capitalist Activities ||| does: spirit "Ready for Sanctions"
+1672 ||| Prepare for Death ||| TR: Ölüme Hazırlan ||| path: Islamist-Ottomanist ||| after: Prepare for the Coming Massive Sanctions ||| does: tooltip: The new form of kamikazes becomes usable.
+1673 ||| Create the Emergency Jihadist Divisions ||| TR: Acil Durum Cihatçı Tümenlerini Kur ||| path: Islamist-Ottomanist ||| after: Prepare for Death ||| does: -
+1674 ||| Create the Iranian Jihadist Group ||| TR: İranlı Cihatçı Grubu Kur ||| path: Islamist-Ottomanist ||| after: Create the Emergency Jihadist Divisions ||| does: tooltip: Jihadists will be organized in .
+1675 ||| Create the Iraqi Jihadist Group ||| TR: Iraklı Cihatçı Grubu Kur ||| path: Islamist-Ottomanist ||| after: Create the Emergency Jihadist Divisions ||| does: tooltip: Jihadists will be organized in .
+1676 ||| Create the Syrian Jihadist Group ||| TR: Suriyeli Cihatçı Grubu Kur ||| path: Islamist-Ottomanist ||| after: Create the Emergency Jihadist Divisions ||| does: tooltip: Jihadists will be organized in .
+1677 ||| Create the Saudi Jihadist Group ||| TR: Suudi Cihatçı Grubu Kur ||| path: Islamist-Ottomanist ||| after: Create the Iraqi Jihadist Group / Create the Iranian Jihadist Group ||| does: tooltip: Jihadists will be organized in .
+1678 ||| Create the Pakistani Jihadist Group ||| TR: Pakistanlı Cihatçı Grubu Kur ||| path: Islamist-Ottomanist ||| after: Create the Iraqi Jihadist Group / Create the Syrian Jihadist Group ||| does: tooltip: Jihadists will be organized in .
+1679 ||| Create the Global Jihadist Group ||| TR: Küresel Cihatçı Grubu Kur ||| path: Islamist-Ottomanist ||| after: Create the Pakistani Jihadist Group / Create the Saudi Jihadist Group ||| does: tooltip: Jihadists will be organized around the world.

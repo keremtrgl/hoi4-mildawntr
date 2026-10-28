@@ -1,0 +1,60 @@
+2100 ||| Complete the Automation Campaign ||| TR: Otomasyon Kampanyasını Tamamla ||| path: technocratic HP ||| after: Self-Sufficient Economy / Anti-Unemployment Campaign ||| does: "The Anti-Unemployment and Automation Campaign" -> "The General Automation Campaign"
+2101 ||| NATO-Turkey Policies ||| TR: NATO-Türkiye Politikaları ||| path: technocratic HP ||| after: Going Where the Wind Blows ||| does: PP 125
+2102 ||| Prepare for World War III ||| TR: Üçüncü Dünya Savaşı'na Hazırlan ||| path: technocratic HP ||| after: NATO-Turkey Policies ||| does: -
+2103 ||| Operational Forces ||| TR: Harekât Kuvvetleri ||| path: technocratic HP ||| after: NATO-Turkey Policies ||| does: spirit "Turkish Intervention Forces"
+2104 ||| Buy Patriot Missiles ||| TR: Patriot Füzeleri Satın Al ||| path: technocratic HP ||| after: Prepare for World War III ||| does: builds anti_air_building
+2105 ||| Imminent Land Fortifications ||| TR: Acil Kara Tahkimatları ||| path: technocratic HP ||| after: Prepare for World War III ||| does: spirit "Experimental Land Fortifications"
+2106 ||| Fortify the Bulgarian Line ||| TR: Bulgar Hattını Tahkim Et ||| path: technocratic HP ||| after: Prepare for World War III ||| does: builds bunker
+2107 ||| Nationwide Ballistic Missile Silos ||| TR: Ülke Genelinde Balistik Füze Siloları ||| path: technocratic HP ||| after: Buy Patriot Missiles / Imminent Land Fortifications ||| does: builds anti_air_building
+2108 ||| Nationwide TEL Batteries ||| TR: Ülke Genelinde Mobil Fırlatıcı Bataryaları ||| path: technocratic HP ||| after: Fortify the Bulgarian Line / Buy Patriot Missiles ||| does: builds anti_air_building
+2109 ||| A New Airport in Every Province ||| TR: Her İle Yeni Havalimanı ||| path: technocratic HP ||| after: Nationwide TEL Batteries / Nationwide Ballistic Missile Silos ||| does: builds air_base
+2110 ||| Relocate the Nuclear Reactors ||| TR: Nükleer Reaktörlerin Yerini Değiştir ||| path: technocratic HP ||| after: Nationwide Ballistic Missile Silos ||| does: builds nuclear_reactor
+2111 ||| Open Military Bases in Somaliland ||| TR: Somaliland'de Askeri Üsler Aç ||| path: technocratic HP ||| after: Intervention in Somaliland ||| does: -
+2112 ||| Intervention in Somaliland ||| TR: Somaliland'e Müdahale ||| path: technocratic HP ||| after: Operational Forces ||| does: war support 0.02
+2113 ||| Complete the Intervention in Somaliland ||| TR: Somaliland Müdahalesini Tamamla ||| path: technocratic HP ||| after: Open Military Bases in Somaliland ||| does: -
+2114 ||| Intervention in Indonesia ||| TR: Endonezya'ya Müdahale ||| path: technocratic HP ||| after: Operational Forces ||| does: war support 0.02
+2115 ||| Open Military Bases in Indonesia ||| TR: Endonezya'da Askeri Üsler Aç ||| path: technocratic HP ||| after: Intervention in Indonesia ||| does: -
+2116 ||| Complete the Intervention in Indonesia ||| TR: Endonezya Müdahalesini Tamamla ||| path: technocratic HP ||| after: Open Military Bases in Indonesia ||| does: -
+2117 ||| Intervention in Yemen ||| TR: Yemen'e Müdahale ||| path: technocratic HP ||| after: Operational Forces ||| does: war support 0.02
+2118 ||| Intervention in Libya ||| TR: Libya'ya Müdahale ||| path: technocratic HP ||| after: Operational Forces ||| does: war support 0.02
+2119 ||| Intervention in Tunisia ||| TR: Tunus'a Müdahale ||| path: technocratic HP ||| after: Operational Forces ||| does: war support 0.02
+2120 ||| Intervention in Mexico ||| TR: Meksika'ya Müdahale ||| path: technocratic HP ||| after: Operational Forces ||| does: war support 0.02
+2121 ||| Open Military Bases in Yemen ||| TR: Yemen'de Askeri Üsler Aç ||| path: technocratic HP ||| after: Intervention in Yemen ||| does: -
+2122 ||| Open Military Bases in Libya ||| TR: Libya'da Askeri Üsler Aç ||| path: technocratic HP ||| after: Intervention in Libya ||| does: -
+2123 ||| Open Military Bases in Tunisia ||| TR: Tunus'ta Askeri Üsler Aç ||| path: technocratic HP ||| after: Intervention in Tunisia ||| does: -
+2124 ||| Open Military Bases in Mexico ||| TR: Meksika'da Askeri Üsler Aç ||| path: technocratic HP ||| after: Intervention in Mexico ||| does: -
+2125 ||| Complete the Intervention in Yemen ||| TR: Yemen Müdahalesini Tamamla ||| path: technocratic HP ||| after: Open Military Bases in Yemen ||| does: -
+2126 ||| Complete the Intervention in Libya ||| TR: Libya Müdahalesini Tamamla ||| path: technocratic HP ||| after: Open Military Bases in Libya ||| does: -
+2127 ||| Complete the Intervention in Tunisia ||| TR: Tunus Müdahalesini Tamamla ||| path: technocratic HP ||| after: Open Military Bases in Tunisia ||| does: -
+2128 ||| Complete the Intervention in Mexico ||| TR: Meksika Müdahalesini Tamamla ||| path: technocratic HP ||| after: Open Military Bases in Mexico ||| does: -
+2129 ||| World War Three Declaration ||| TR: Üçüncü Dünya Savaşı İlanı ||| path: technocratic HP ||| after: Reorganize War Support / Reorganize Stability ||| does: war support 0.1
+2130 ||| Reorganize War Support ||| TR: Savaş Desteğini Yeniden Düzenle ||| path: technocratic HP ||| after: A New Airport in Every Province / Relocate the Nuclear Reactors ||| does: war support 0.1
+2131 ||| Rubber Mines ||| TR: Kauçuk Madenleri ||| path: technocratic HP ||| after: Iron Mines / Turkish Boron Fields ||| does: -
+2132 ||| Dozens Of Military Industries ||| TR: Onlarca Askeri Sanayi ||| path: technocratic HP ||| after: Move Industries to Istanbul / Capital Investments ||| does: builds arms_factory
+2133 ||| Financial Offices ||| TR: Finans Ofisleri ||| path: technocratic HP ||| after: Work on Local Technologies / Finance Istanbul ||| does: builds offices
+2134 ||| Ankara-Diyarbakır Railway ||| TR: Ankara-Diyarbakır Demiryolu ||| path: technocratic HP ||| after: The Turkish Railways ||| does: -
+2135 ||| Nuclear Energy Campaign ||| TR: Nükleer Enerji Kampanyası ||| path: technocratic HP ||| after: High Technology Administration ||| does: spirit "The Turkish Nuclear Energy Project"
+2136 ||| Seek Help from Russia ||| TR: Rusya'dan Yardım İste ||| path: technocratic HP ||| after: Nuclear Energy Campaign ||| does: PP 100
+2137 ||| Start the National Uranium Campaign ||| TR: Ulusal Uranyum Kampanyasını Başlat ||| path: technocratic HP ||| after: Nuclear Energy Campaign ||| does: -
+2138 ||| Trabzon Nuclear Reactor ||| TR: Trabzon Nükleer Reaktörü ||| path: technocratic HP ||| after: Seek Help from Russia / Start the National Uranium Campaign ||| does: builds nuclear_reactor
+2139 ||| İzmir Nuclear Reactor ||| TR: İzmir Nükleer Reaktörü ||| path: technocratic HP ||| after: Seek Help from Russia ||| does: builds nuclear_reactor
+2140 ||| New Resources ||| TR: Yeni Kaynaklar ||| path: technocratic HP ||| after: Start the National Uranium Campaign ||| does: -
+2141 ||| The Turkish Nuclear Project ||| TR: Türk Nükleer Projesi ||| path: technocratic HP ||| after: İzmir Nuclear Reactor / Trabzon Nuclear Reactor ||| does: builds nuclear_reactor
+2142 ||| Turkish Nuclear Power ||| TR: Türk Nükleer Gücü ||| path: technocratic HP ||| after: The Turkish Nuclear Project ||| does: spirit "nuclear_power_def"
+2143 ||| National Investment in Turkish Space ||| TR: Türk Uzay Çalışmalarına Ulusal Yatırım ||| path: technocratic HP ||| after: A Nation In Space / Funded TUA ||| does: stability 0.02
+2144 ||| Reform the TUA ||| TR: TUA'yı Reforme Et ||| path: technocratic HP ||| after: Funded TUA ||| does: "Space Renovations" -> "Space Renovations II"
+2145 ||| Expose the Dark Secrets ||| TR: Karanlık Sırları İfşa Et ||| path: technocratic HP ||| after: The Space Intelligence ||| does: spirit "Finding The Dark Secrets"
+2146 ||| General Mobilization Campaign ||| TR: Genel Seferberlik Kampanyası ||| path: technocratic HP ||| after: World War Three Declaration ||| does: spirit "National Mobilization"
+2147 ||| World War Three Budget ||| TR: Üçüncü Dünya Savaşı Bütçesi ||| path: technocratic HP ||| after: World War Three Declaration ||| does: "defence_07" -> "defence_09"
+2148 ||| A New Modern İncirlik ||| TR: Yeni ve Modern İncirlik ||| path: technocratic HP ||| after: World War Three Budget / General Mobilization Campaign ||| does: builds air_base, anti_air_building, arms_factory, fuel_silo, radar_station
+2149 ||| Control the Provincial Mayors ||| TR: İl Belediye Başkanlarını Kontrol Altına Al ||| path: TKP communist ||| after: - ||| does: PP 75; stability -0.02
+2150 ||| Countrywide Propaganda ||| TR: Ülke Çapında Propaganda ||| path: TKP communist ||| after: Control the Provincial Mayors ||| does: PP 100
+2151 ||| General Propaganda ||| TR: Genel Propaganda ||| path: TKP communist ||| after: Control the Provincial Mayors ||| does: PP 100
+2152 ||| Create the Anti-Right Movement ||| TR: Sağ Karşıtı Hareketi Kur ||| path: TKP communist ||| after: Countrywide Propaganda / General Propaganda ||| does: spirit "The Anti-Right Movement"
+2153 ||| Action Of Workers ||| TR: İşçilerin Eylemi ||| path: TKP communist ||| after: Create the Anti-Right Movement ||| does: stability -0.05; tooltip: This change will give a boost to the left wing, which clashes with the right.
+2154 ||| Win the Popular Majority ||| TR: Halk Çoğunluğunu Kazan ||| path: TKP communist ||| after: Create the Anti-Right Movement ||| does: stability 0.03
+2155 ||| Bureaucratic Changes ||| TR: Bürokratik Değişiklikler ||| path: TKP communist ||| after: Create the Anti-Right Movement ||| does: stability -0.1; tooltip: This change will increase the clash between the right and the left.
+2156 ||| Smash the Ülkücüs ||| TR: Ülkücüleri Ez ||| path: TKP communist ||| after: TKF_the_elections ||| does: stability -0.03
+2157 ||| Cooperation with the Non-Right ||| TR: Sağ Dışı Güçlerle İşbirliği ||| path: TKP communist ||| after: TKF_the_elections ||| does: -
+2158 ||| War with the Ülkücüs ||| TR: Ülkücülerle Savaş ||| path: TKP communist ||| after: Cooperation with the Non-Right / Smash the Ülkücüs ||| does: event "An Ülkücü Rebellion Breaks Out"
+2159 ||| DİSK Cooperation ||| TR: DİSK İşbirlikleri ||| path: TKP communist ||| after: War with the Ülkücüs ||| does: spirit "Cooperation With DİSK"; removes "The Turkish Economic Malaise"

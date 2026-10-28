@@ -1,0 +1,60 @@
+2040 ||| Film Offices ||| TR: Film Ofisleri ||| path: technocratic HP ||| after: The Sectoral Planning ||| does: builds offices
+2041 ||| Finance Istanbul ||| TR: İstanbul'u Finanse Et ||| path: technocratic HP ||| after: Film Offices ||| does: builds offices
+2042 ||| Mercedes Offices ||| TR: Mercedes Ofisleri ||| path: technocratic HP ||| after: The Sectoral Planning ||| does: builds offices
+2043 ||| Work on Local Technologies ||| TR: Yerli Teknolojiler Üzerine Çalış ||| path: technocratic HP ||| after: Mercedes Offices / Film Offices ||| does: builds offices
+2044 ||| Banking Offices ||| TR: Bankacılık Ofisleri ||| path: technocratic HP ||| after: Mercedes Offices ||| does: builds offices
+2045 ||| Infrastructure Planning ||| TR: Altyapı Planlaması ||| path: technocratic HP ||| after: The Service Sector ||| does: builds infrastructure
+2046 ||| Solve Istanbul's Traffic Jams ||| TR: İstanbul Trafiğini Çöz ||| path: technocratic HP ||| after: Infrastructure Planning ||| does: stability 0.03; builds infrastructure; tooltip: With this action, overall housing resistance rises by 3 points.
+2047 ||| New Airports ||| TR: Yeni Havalimanları ||| path: technocratic HP ||| after: Infrastructure Planning ||| does: builds air_base
+2048 ||| The Turkish Railways ||| TR: Türk Demiryolları ||| path: technocratic HP ||| after: New Airports / Solve Istanbul's Traffic Jams ||| does: spirit "The Railway Culture"
+2049 ||| İzmir-Ankara Railway ||| TR: İzmir-Ankara Demiryolu ||| path: technocratic HP ||| after: The Turkish Railways ||| does: -
+2050 ||| Prepare the New Government ||| TR: Yeni Hükümeti Hazırla ||| path: technocratic HP ||| after: The Great Referendum ||| does: stability 0.03; tooltip: Gains 5% Support (Relative Popularity).\n
+2051 ||| The Great Pain of the War ||| TR: Savaşın Büyük Acısı ||| path: technocratic HP ||| after: Prepare the New Government ||| does: event "The Technocratic Pains"
+2052 ||| Ease the Mechanism ||| TR: Mekanizmayı Rahatlat ||| path: technocratic HP ||| after: The Great Pain of the War ||| does: "The Pains of Technocratic Change" -> "The Pains of Technocratic Change"; PP 25
+2053 ||| End Corruption ||| TR: Yolsuzluğa Son Ver ||| path: technocratic HP ||| after: Ease the Mechanism ||| does: spirit "corruption_level_01"; PP 25
+2054 ||| Integrate the AYM ||| TR: AYM'yi Entegre Et ||| path: technocratic HP ||| after: The Great Pain of the War ||| does: spirit "The Reorganized AYM"
+2055 ||| New Modern Bureaucracy ||| TR: Yeni Modern Bürokrasi ||| path: technocratic HP ||| after: Ease the Mechanism ||| does: "The Pains of Technocratic Change" -> "The Pains of Technocratic Change"; PP 25
+2056 ||| Adapt the Parties to Change ||| TR: Partileri Değişime Uyarla ||| path: technocratic HP ||| after: The Great Pain of the War ||| does: "The Pains of the Technocratic Party System" -> "The Pains of the Technocratic Party System"; PP 25
+2057 ||| Integrate the New Election System ||| TR: Yeni Seçim Sistemini Entegre Et ||| path: technocratic HP ||| after: Integrate the AYM ||| does: PP 100; tooltip: Gains 3% Support (Relative Popularity).\n
+2058 ||| The Senate ||| TR: Senato ||| path: technocratic HP ||| after: Integrate the New Election System / New Modern Bureaucracy ||| does: removes "The Pains of Technocratic Change"
+2059 ||| Academic MPs ||| TR: Akademisyen Milletvekilleri ||| path: technocratic HP ||| after: Adapt the Parties to Change ||| does: "The Pains of the Technocratic Party System" -> "The Pains of the Technocratic Party System"; PP 25
+2060 ||| The National Assembly ||| TR: Millet Meclisi ||| path: technocratic HP ||| after: Academic MPs / Integrate the New Election System ||| does: removes "The Pains of the Technocratic Party System"
+2061 ||| Create New Big-Minded Parties ||| TR: Yeni Vizyoner Partiler Kur ||| path: technocratic HP ||| after: Adapt the Parties to Change ||| does: PP 200; tooltip: Loses 2% Support (Relative Popularity).\n
+2062 ||| Launch the Technocratic Government ||| TR: Teknokratik Hükümeti Başlat ||| path: technocratic HP ||| after: The National Assembly / The Senate ||| does: spirit "The Turkish Media"; removes "The Turkish Media"; PP 25; tooltip: Opens all the focus sections in this technocratic path.; tooltip: You will no longer need to ask Parliament  before declaring war on any nation.; tooltip: The country will be united and its sectarian woes can be overcome.
+2063 ||| Millennial Media ||| TR: Milenyum Medyası ||| path: technocratic HP ||| after: Media Education / Cosmetic Censorship ||| does: "Technocratic Turkish Media" -> "Technocratic Turkish Media"
+2064 ||| The New Education Program ||| TR: Yeni Eğitim Programı ||| path: technocratic HP ||| after: The Education Strategy ||| does: spirit "Technocratic Turkish Education"
+2065 ||| Visual Learning ||| TR: Görsel Öğrenme ||| path: technocratic HP ||| after: The New Education Program ||| does: spirit "Visual Learning"
+2066 ||| Kinetic Learning ||| TR: Kinestetik Öğrenme ||| path: technocratic HP ||| after: The New Education Program ||| does: spirit "Kinetic Learning"
+2067 ||| Vocal Learning ||| TR: İşitsel Öğrenme ||| path: technocratic HP ||| after: The New Education Program ||| does: spirit "Vocal Learning"
+2068 ||| Collective Education ||| TR: Kolektif Eğitim ||| path: technocratic HP ||| after: Vocal Learning / Kinetic Learning ||| does: "Technocratic Turkish Education" -> "Technocratic Turkish Education"
+2069 ||| End Coercion in Education ||| TR: Eğitimde Zorlamaya Son Ver ||| path: technocratic HP ||| after: New Modern Schools ||| does: "Motivational Teaching" -> "Motivational Teaching"
+2070 ||| New Modern Schools ||| TR: Yeni Modern Okullar ||| path: technocratic HP ||| after: Collective Education ||| does: spirit "Motivational Teaching"
+2071 ||| Adaptive Technologies ||| TR: Uyarlanabilir Teknolojiler ||| path: technocratic HP ||| after: Collective Education ||| does: spirit "Technology Compatibility With Education"
+2072 ||| High-IQ Policies ||| TR: Yüksek IQ Politikaları ||| path: technocratic HP ||| after: Adaptive Technologies / New Modern Schools ||| does: "Technocratic Turkish Education" -> "Technocratic Turkish Education"
+2073 ||| Interesting Teaching ||| TR: İlgi Çekici Öğretim ||| path: technocratic HP ||| after: End Coercion in Education / Millennial Media ||| does: "Motivational Teaching" -> "Motivational Teaching"
+2074 ||| Space-Age Understanding of Education ||| TR: Uzay Çağı Eğitim Anlayışı ||| path: technocratic HP ||| after: High-IQ Policies ||| does: "Technocratic Turkish Education" -> "Technocratic Turkish Education"
+2075 ||| VR-Boosted Education ||| TR: Sanal Gerçeklik Destekli Eğitim ||| path: technocratic HP ||| after: Adaptive Technologies ||| does: "Technology Compatibility With Education" -> "Technology Compatibility With Education"
+2076 ||| The Intelligence ||| TR: İstihbarat ||| path: technocratic HP ||| after: Space-Age Understanding of Education / Interesting Teaching ||| does: "Technocratic Turkish Education" -> "Technocratic Turkish Education"
+2077 ||| Works of Technology ||| TR: Teknoloji Çalışmaları ||| path: technocratic HP ||| after: VR-Boosted Education / The Turkish Ecology ||| does: "Technology Compatibility With Education" -> "Technology Compatibility With Education"
+2078 ||| Media Education ||| TR: Medya Eğitimi ||| path: technocratic HP ||| after: Collective Education ||| does: spirit "Media Education"
+2079 ||| Ecology Education ||| TR: Ekoloji Eğitimi ||| path: technocratic HP ||| after: Collective Education ||| does: spirit "Ecology Education"
+2080 ||| The Turkish Ecology ||| TR: Türk Ekolojisi ||| path: technocratic HP ||| after: Ecology Education / To the Bright Future! ||| does: "Modern Ecological Thinking" -> "Modern Ecological Thinking"
+2081 ||| The Unions Deal ||| TR: Sendika Anlaşması ||| path: technocratic HP ||| after: The Economic Belt / New Rational Policies ||| does: spirit "The Unions Deal"; "The Turkish Economic Malaise" -> "The Turkish Economic Malaise"
+2082 ||| Improve the Unions ||| TR: Sendikaları Geliştir ||| path: technocratic HP ||| after: The Unions Deal ||| does: "The Unions Deal" -> "Union Adaptability"
+2083 ||| End of the Economic Belt ||| TR: Ekonomik Kuşağın Sonu ||| path: technocratic HP ||| after: End of the Economic Sickness ||| does: -
+2084 ||| End of the Economic Sickness ||| TR: Ekonomik Hastalığın Sonu ||| path: technocratic HP ||| after: Improve the Unions ||| does: removes "The Turkish Economic Malaise"; "Yeni Türk Lirası" -> "Türk Lirası"
+2085 ||| 2008 Budget Replanning ||| TR: 2008 Bütçesinin Yeniden Planlanması ||| path: technocratic HP ||| after: End of the Economic Belt ||| does: "recession" -> "stagnation"
+2086 ||| Get Rid of the Military Factories ||| TR: Askeri Fabrikalardan Kurtul ||| path: technocratic HP ||| after: 2008 Budget Replanning ||| does: builds arms_factory
+2087 ||| Support the Corporations ||| TR: Şirketleri Destekle ||| path: technocratic HP ||| after: 2008 Budget Replanning ||| does: spirit "The Cooperation Fund"
+2088 ||| Turkish Airlines ||| TR: Türk Hava Yolları ||| path: technocratic HP ||| after: 2008 Budget Replanning ||| does: spirit "Turkish Airlines"
+2089 ||| New Taxation Policies ||| TR: Yeni Vergi Politikaları ||| path: technocratic HP ||| after: 2008 Budget Replanning ||| does: spirit "A New Taxation System"; tooltip: Taxes will be raised immediately.
+2090 ||| Save Money for Hard Times ||| TR: Zor Günler İçin Para Biriktir ||| path: technocratic HP ||| after: Support the Corporations / Get Rid of the Military Factories ||| does: spirit "Money Reserves"
+2091 ||| New Offices ||| TR: Yeni Ofisler ||| path: technocratic HP ||| after: Turkish Airlines / New Taxation Policies ||| does: builds offices
+2092 ||| Resolve the 2008 Economic Crisis ||| TR: 2008 Ekonomik Krizini Sonlandır ||| path: technocratic HP ||| after: New Offices / Save Money for Hard Times ||| does: "recession" -> "fast_growth"; "Türk Lirası" -> "Türk Lirası"
+2093 ||| Start the Automation Campaign ||| TR: Otomasyon Kampanyasını Başlat ||| path: technocratic HP ||| after: Resolve the 2008 Economic Crisis ||| does: spirit "The Automation Campaign"
+2094 ||| Fourth Generation Military Industries ||| TR: Dördüncü Nesil Askeri Sanayiler ||| path: technocratic HP ||| after: Start the Automation Campaign ||| does: spirit "Fifth-Generation Military Industries"; builds arms_factory
+2095 ||| Anti-Unemployment Campaign ||| TR: İşsizlikle Mücadele Kampanyası ||| path: technocratic HP ||| after: Robotic Workforce / Fourth Generation Military Industries ||| does: "The Robotics and Automation Campaign" -> "The Anti-Unemployment and Automation Campaign"
+2096 ||| Sufficient Taxes ||| TR: Yeterli Vergiler ||| path: technocratic HP ||| after: Start the Automation Campaign ||| does: spirit "Sufficient Taxation"; tooltip: Taxes will be raised immediately.
+2097 ||| Fourth Generation Civilian Industries ||| TR: Dördüncü Nesil Sivil Sanayiler ||| path: technocratic HP ||| after: Start the Automation Campaign ||| does: spirit "Fourth Generation Civilian Industries"; builds industrial_complex
+2098 ||| Robotic Workforce ||| TR: Robotik İşgücü ||| path: technocratic HP ||| after: Start the Automation Campaign ||| does: "The Automation Campaign" -> "The Robotics and Automation Campaign"
+2099 ||| Self-Sufficient Economy ||| TR: Kendi Kendine Yeten Ekonomi ||| path: technocratic HP ||| after: Fourth Generation Civilian Industries / Sufficient Taxes ||| does: "Sufficient Taxation" -> "Sufficient Taxation and Economics"
