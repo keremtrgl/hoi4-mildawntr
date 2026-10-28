@@ -1131,7 +1131,7 @@ offices_worker_requirement_modifier = -0.1
 				production_speed_buildings_factor = 0.05 
 				land_reinforce_rate = 0.05
 				mobilization_speed = 0.05
-				army_org_Factor = 0.05
+				army_org_factor = 0.05
 				planning_speed = 0.05
 				}
 		}
@@ -1142,7 +1142,7 @@ offices_worker_requirement_modifier = -0.1
 		        army_attack_factor = 0.1
 		        army_defence_factor = 0.1			    
 				land_reinforce_rate = 0.05
-				army_org_Factor = -0.05
+				army_org_factor = -0.05
 				planning_speed = -0.05
 				equipment_capture_factor = 0.05
 				}
@@ -1672,7 +1672,7 @@ mil_facs_worker_requirement_modifier = -0.05
 
  		turkish_war_culture = {
 			allowed_civil_war = { always = yes }
-			modifier = { army_defence_factor = 0.07 army_attack_factor = 0.07 army_org_Factor = 0.07 planning_speed = 0.15}
+			modifier = { army_defence_factor = 0.07 army_attack_factor = 0.07 army_org_factor = 0.07 planning_speed = 0.15}
 		}
 		
  		TUR_4_year_dockyard_plan = {
@@ -2320,7 +2320,7 @@ army_morale_factor = 0.05 army_core_defence_factor = 0.05 	army_core_attack_fact
  		        army_attack_factor = 0.1
 		        army_defence_factor = 0.1			    
 				land_reinforce_rate = 0.05
-				army_org_Factor = -0.05
+				army_org_factor = -0.05
 				planning_speed = -0.05        
 				equipment_capture_factor = 0.05   			
 			   }
@@ -2883,12 +2883,12 @@ mil_facs_worker_requirement_modifier = -0.02
  		south_flank_NATO = { 
 			allowed_civil_war = { always = yes }
 			modifier = {
-				army_org_Factor = 0.05
+				army_org_factor = 0.05
 				planning_speed = 0.05
 			}
 		    targeted_modifier = {
             tag = GRE
-				army_org_Factor = 0.05
+				army_org_factor = 0.05
 				planning_speed = 0.05
 			}
 		}
@@ -2896,32 +2896,32 @@ mil_facs_worker_requirement_modifier = -0.02
  		balkan_NATO = {
 			allowed_civil_war = { always = yes }
 			modifier = {
-				army_org_Factor = 0.02
+				army_org_factor = 0.02
 				planning_speed = 0.02
 			}
 		    targeted_modifier = {
             tag = GRE
-				army_org_Factor = 0.02
+				army_org_factor = 0.02
 				planning_speed = 0.02
 			}
 		    targeted_modifier = {
             tag = BUL
-				army_org_Factor = 0.02
+				army_org_factor = 0.02
 				planning_speed = 0.02
 			}
 		    targeted_modifier = {
             tag = ROM
-				army_org_Factor = 0.02
+				army_org_factor = 0.02
 				planning_speed = 0.02
 			}
 			targeted_modifier = {
             tag = ALB
-				army_org_Factor = 0.02
+				army_org_factor = 0.02
 				planning_speed = 0.02
 			}
 		    targeted_modifier = {
             tag = CRO
-				army_org_Factor = 0.02
+				army_org_factor = 0.02
 				planning_speed = 0.02
 			}
 		}
@@ -3961,7 +3961,7 @@ offices_worker_requirement_modifier = 0.05
 		        army_attack_factor = -0.25
 		        army_defence_factor = -0.25		    
 				land_reinforce_rate = -0.25
-				army_org_Factor = -0.25
+				army_org_factor = -0.25
 				planning_speed = -0.25
 				}
 		}
@@ -3974,7 +3974,7 @@ offices_worker_requirement_modifier = 0.05
 		        army_attack_factor = -0.15
 		        army_defence_factor = -0.15		    
 				land_reinforce_rate = -0.15
-				army_org_Factor = -0.15
+				army_org_factor = -0.15
 				planning_speed = -0.15
 				}
 		}
@@ -3987,7 +3987,7 @@ offices_worker_requirement_modifier = 0.05
 		        army_attack_factor = -0.1
 		        army_defence_factor = -0.1		    
 				land_reinforce_rate = -0.1
-				army_org_Factor = -0.1
+				army_org_factor = -0.1
 				planning_speed = -0.1
 				}
 		}
@@ -4000,7 +4000,7 @@ offices_worker_requirement_modifier = 0.05
 		        army_attack_factor = -0.05
 		        army_defence_factor = -0.05		    
 				land_reinforce_rate = -0.05
-				army_org_Factor = -0.05
+				army_org_factor = -0.05
 				planning_speed = -0.05
 				}
 		}
@@ -4012,7 +4012,7 @@ offices_worker_requirement_modifier = 0.05
 		        army_attack_factor = -0.03
 		        army_defence_factor = -0.03		    
 				land_reinforce_rate = -0.03
-				army_org_Factor = -0.03
+				army_org_factor = -0.03
 				planning_speed = -0.03
 				}
 		}
@@ -4030,7 +4030,7 @@ offices_worker_requirement_modifier = 0.05
 			allowed_civil_war = { always = yes }
 			modifier = { 		
 		        max_planning = 0.05    
-				army_org_Factor = 0.05
+				army_org_factor = 0.05
 				planning_speed = 0.05
 				}
 		}
@@ -5107,7 +5107,7 @@ production_speed_buildings_factor = 0.25
 		        army_attack_factor = -0.15
 		        army_defence_factor = -0.15	    
 				land_reinforce_rate = -0.15
-				army_org_Factor = -0.15
+				army_org_factor = -0.15
 				planning_speed = -0.15
 				}
 		}	
@@ -5119,7 +5119,7 @@ production_speed_buildings_factor = 0.25
 		        army_attack_factor = -0.1
 		        army_defence_factor = -0.1		    
 				land_reinforce_rate = -0.1
-				army_org_Factor = -0.1
+				army_org_factor = -0.1
 				planning_speed = -0.1
 				}
 		}		
@@ -5131,7 +5131,7 @@ production_speed_buildings_factor = 0.25
 		        army_attack_factor = -0.07
 		        army_defence_factor = -0.07		    
 				land_reinforce_rate = -0.07
-				army_org_Factor = -0.07
+				army_org_factor = -0.07
 				planning_speed = -0.07
 				}
 		}			
@@ -5144,7 +5144,7 @@ production_speed_buildings_factor = 0.25
 		        army_attack_factor = -0.04
 		        army_defence_factor = -0.04	    
 				land_reinforce_rate = -0.04
-				army_org_Factor = -0.04
+				army_org_factor = -0.04
 				planning_speed = -0.04
 				}
 		}			
@@ -5486,7 +5486,7 @@ production_speed_buildings_factor = 0.05
 				industrial_capacity_factory = 0.1
 				land_reinforce_rate = 0.05
 				mobilization_speed = 0.05
-				army_org_Factor = 0.05
+				army_org_factor = 0.05
 				planning_speed = 0.05
 				}
 		}		
@@ -9610,7 +9610,7 @@ offices_worker_requirement_modifier = -0.05
 				political_power_cost = -0.1
 				land_reinforce_rate = 0.05
 				mobilization_speed = 0.05
-				army_org_Factor = 0.05
+				army_org_factor = 0.05
 				planning_speed = 0.05
 				}
 		}
@@ -10285,7 +10285,7 @@ offices_worker_requirement_modifier = -0.05
 		        army_attack_factor = 0.05
 		        army_defence_factor = 0.1			    
 				land_reinforce_rate = 0.05
-				army_org_Factor = 0.05
+				army_org_factor = 0.05
 				}
 		}
 
@@ -10295,7 +10295,7 @@ offices_worker_requirement_modifier = -0.05
 		        army_attack_factor = 0.1
 		        army_defence_factor = 0.1			    
 				land_reinforce_rate = 0.1
-				army_org_Factor = 0.1
+				army_org_factor = 0.1
 				planning_speed = 0.05
 				}
 		}
@@ -10308,7 +10308,7 @@ offices_worker_requirement_modifier = -0.05
 		        army_attack_factor = 0.5
 		        army_defence_factor = 0.5		    
 				land_reinforce_rate = 0.5
-				army_org_Factor = 0.5			
+				army_org_factor = 0.5			
 				}
 		}
 
@@ -10317,7 +10317,7 @@ offices_worker_requirement_modifier = -0.05
 			modifier = { 		
 		        army_attack_factor = 0.05    
 				land_reinforce_rate = 0.05
-				army_org_Factor = 0.05	
+				army_org_factor = 0.05	
 				}
 		}
 
@@ -10325,7 +10325,7 @@ offices_worker_requirement_modifier = -0.05
 			allowed_civil_war = { always = yes }
 			modifier = { 		  
 				land_reinforce_rate = 0.1
-				army_org_Factor = 0.05	
+				army_org_factor = 0.05	
 				}
 		}
 
@@ -11053,7 +11053,7 @@ foreign_influence_defense_modifier = 0.1
 		        army_core_attack_factor = -0.70		
 				air_superiority_bonus_in_combat = -1.0
 				land_reinforce_rate = -0.2
-				army_org_Factor = -0.2
+				army_org_factor = -0.2
 				planning_speed = -0.2
 				surrender_limit = 1.0
 				}
@@ -11886,7 +11886,7 @@ foreign_influence_defense_modifier = 0.1
 			modifier = { research_speed_factor = 0.05 democratic_acceptance = 50 justify_war_goal_time = -0.25 send_volunteer_size = 7 equipment_capture_factor = 0.1 command_power_gain = 0.1 army_leader_start_attack_level = 2 army_leader_start_defense_level = 2 decryption = 15 subversive_activites_upkeep = -0.05 breakthrough_factor = 0.1 invasion_preparation = -0.1 air_maximum_speed_factor = 0.1 non_core_manpower = 0.05 wounded_chance_factor = -0.05}
 		    targeted_modifier = {
             tag = USA
-				army_org_Factor = 0.1
+				army_org_factor = 0.1
 				planning_speed = 0.25
 			}			
 		}

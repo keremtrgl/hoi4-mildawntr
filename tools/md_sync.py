@@ -39,17 +39,12 @@ def md_version(md):
 
 # ---------------------------------------------------------------- definitions / references
 
+_CODE_NOISE = re.compile(r'#[^\n]*|"[^"]*"?')
+
+
 def strip_code(t):
-    """drop comments and quoted strings (log texts, loc keys in quotes are not references)"""
-    out, i, n = [], 0, len(t)
-    while i < n:
-        c = t[i]
-        if c == '#':
-            j = t.find('\n', i); i = n if j < 0 else j; continue
-        if c == '"':
-            j = t.find('"', i + 1); i = n if j < 0 else j + 1; out.append(' '); continue
-        out.append(c); i += 1
-    return ''.join(out)
+    """drop comments and quoted strings (log texts, loc keys in quotes are not references); a string becomes one space"""
+    return _CODE_NOISE.sub(lambda m: '' if m.group(0)[0] == '#' else ' ', t)
 
 
 def blocks(t):

@@ -46,6 +46,21 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     - 4 bozuk yerelleştirme satırı ve 10 çift tanımlı anahtar (5'i Türkçe pakette) düzeltildi.
   - `MD_source/` (PSD şablonları) yanlışlıkla Workshop'a gidiyordu; senkronizasyondan çıkarıldı.
 
+- **2.0.2-TUR.6** (hazırlanıyor):
+  - Yükleme sırası koruması: Millennium Dawn +Turkey'den sonra yüklenirse oyun başında uyarı penceresi
+    (`common/scripted_guis/TUR_load_order_warning.txt`, `interface/TUR_load_order_warning.gui`). Bizim TUR geçmiş dosyası
+    `TUR_submod_history_loaded` bayrağını koyar; `on_startup` bayrak yoksa `TUR_load_order_wrong` koyar. Pencere, bayrak
+    ve metinler MD'nin `replace_path` ile silmediği klasörlerde (`scripted_guis`, `on_actions`, `interface`, `localisation`).
+    Yalnızca yeni oyunlarda kontrol edilir; eski kayıtlarda yanlış alarm vermez.
+  - Kalan 28 polled olaydan 7'si (Türkiye'nin var olmasını gerektirenler) dağıtıcıya taşındı. Turkey.597'nin (Kürecik
+    radarı) tarih aralığı boştu (2012.2.7–2012.2.7), hiç çıkamıyordu; düzeltildi. Kalan 21'i bilerek polled: tetikleri
+    Türkiye olmadan da geçerli (iç savaş etiketleri, tüm ülkelere giden COVID olayı, gerçek rastgele süreli PKK olayları,
+    ABD/SSCB/PAN tepkileri) ve hepsi önce `tag = X` kontrol ettiği için maliyetleri ihmal edilebilir.
+  - Kontrol aracı: bilinmeyen modifier adı (oyunun kendi dokümantasyonuna ve tüm katmanların modifier_definitions'ına
+    göre), MD'nin aynı modifier için kullandığı en yüksek değeri aşan değerler (denge), yanlış kapsamda çalışan
+    efektler; commit öncesi hook (`git config core.hooksPath tools/hooks`). `strip_code` regex'e geçti (10 kat hızlı).
+  - `army_org_Factor` → `army_org_factor` (31 yer; oyun büyük/küçük harfe duyarsız, yalnızca tutarlılık).
+
 ## Kalıcı dersler (tekrar düşme!)
 
 - **Sesler WAV kalmalı.** HOI4 ses efektlerini yalnızca WAV'dan yükler. OGG'ye çevirince (cd921e5) 22 konuşma
@@ -69,6 +84,10 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   olayı ölü gösterebilir. Silmeden önce benzer kimlikleri ara; artık `release_check.py` olmayan olay çağrılarını yakalıyor.
 - **Türkçe paket başlıkları:** olay ve GUI başlık fontlarında ı/ş/ğ glifi yok. Bu başlıklarda harfler
   i/s/g'ye çevrildi (942 satır). Gövde metinleri normal Türkçe.
+- **Clausewitz anahtarları büyük/küçük harfe duyarsızdır** (`SpriteType`, `army_org_Factor` çalışır). Kontrol aracı
+  modifier adlarını bu yüzden küçük harfle karşılaştırır.
+- **Denge uyarıları tasarım kararıdır**: `release_check.py` MD'den güçlü değerleri listeler ama otomatik düzeltilmez.
+  İncelenip bilinçli bırakılanlar `tools/balance_allow.json`'a yazılır.
 - **İngilizce metinlerde ı ş ğ İ Ş Ğ kullanılmaz** (Latin-1 dışı, İngilizce fontlarda olmayabilir). ü ö ç sorun değil.
 - **Oyunu test için doğrudan başlat:** `hoi4.exe`'yi çalışma dizini oyun klasörü olacak şekilde çalıştır. Hangi
   modların yükleneceği `dlc_load.json`'dan okunur; launcher bu dosyayı yeniden yazabilir, testten önce kontrol et.
@@ -79,7 +98,9 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
 
 ## Yayın kontrol listesi
 
-1. `python tools/md_sync.py` (MD güncellendiyse önce `merge`/`accept`).
+1. `python tools/md_sync.py` (MD güncellendiyse önce `merge`/`accept`). MD güncellemesinde sıra:
+   `status` → `merge` → çakışmaları çöz / replace dosyalarını incele → `accept` → `release_check.py` → oyunda test →
+   `md_base/` ile birlikte commit. `md_overrides.json`'daki `base_version` güncellenir.
 2. `python tools/release_check.py` — 0 hata olmalı. Uyarılar okunur, bilinçli olanlar dışında düzeltilir.
 3. `descriptor.mod` ve gerekiyorsa `turkish_pack/descriptor.mod` içinde `version=` artırılır.
 4. Senkronizasyon (PowerShell):
@@ -112,4 +133,5 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
 - Odak açıklamaları: 4.020 gruptan 1.440'ı yazıldı (d000–d023). `release_check.py` kalan boş `_desc` sayısını gösterir.
 - Yapay zekâ odak ağırlıkları ve gözlemci modunda davranış incelenmedi.
 - Performans ölçümü (TUR.2 olay optimizasyonunun etkisi) yapılmadı.
-- Yükleme sırası yanlış olan oyuncular için oyun içi uyarı ve açıklamaya not önerildi, karar bekliyor.
+- Denge: `release_check.py --only balance --all` MD'den güçlü 100 değer listeliyor (en çarpıcısı `decryption_power`
+  10–50, MD en fazla 2). Tasarım kararı bekliyor.

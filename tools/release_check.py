@@ -425,6 +425,203 @@ def same_files(a, b):
     return h(a) == h(b)
 
 
+# ---------------------------------------------------------------- balance and scope
+
+# |value| above which a modifier on a national spirit / dynamic modifier is worth a second look.
+# Keys not listed fall back by suffix: *_factor / *_modifier / *_multiplier at 1.0 (= +-100%).
+LIMITS = {
+    'political_power_cost': 1.0, 'political_power_gain': 2.0, 'political_power_factor': 0.5,
+    'stability_factor': 0.30, 'war_support_factor': 0.30, 'stability_weekly': 0.01, 'war_support_weekly': 0.01,
+    'consumer_goods_factor': 0.25, 'research_speed_factor': 0.30, 'industrial_capacity_factory': 0.5,
+    'industrial_capacity_dockyard': 0.5, 'production_factory_max_efficiency_factor': 0.5,
+    'production_factory_efficiency_gain_factor': 0.75, 'production_speed_buildings_factor': 0.75,
+    'productivity_growth_modifier': 0.5, 'army_attack_factor': 0.30, 'army_defence_factor': 0.30,
+    'army_core_attack_factor': 0.40, 'army_core_defence_factor': 0.40, 'army_org_factor': 0.30,
+    'planning_speed': 0.5, 'max_planning': 0.5, 'tax_gain_multiplier_modifier': 0.5,
+    'interest_rate_multiplier_modifier': 0.5, 'monthly_population': 0.5, 'conscription': 0.05,
+    'democratic_drift': 0.3, 'communism_drift': 0.3, 'fascism_drift': 0.3, 'neutrality_drift': 0.3,
+    'nationalist_drift': 0.3,
+}
+BALANCE_ALLOW = os.path.join(ROOT, 'tools', 'balance_allow.json')
+
+STATE_ONLY = {'add_building_construction', 'add_extra_state_shared_building_slots', 'set_state_flag', 'clr_state_flag',
+              'add_resource', 'add_core_of', 'remove_core_of', 'add_claim_by', 'remove_claim_by', 'damage_building',
+              'set_building_level', 'set_demilitarized_zone', 'add_state_modifier', 'set_state_category'}
+COUNTRY_ONLY = {'add_political_power', 'add_stability', 'add_war_support', 'add_ideas', 'remove_ideas', 'swap_ideas',
+                'add_timed_idea', 'country_event', 'news_event', 'set_country_flag', 'clr_country_flag', 'set_politics',
+                'add_popularity', 'load_focus_tree', 'add_named_threat', 'create_wargoal', 'declare_war_on',
+                'add_tech_bonus', 'add_research_slot', 'add_equipment_to_stockpile', 'complete_national_focus',
+                'set_party_name', 'retire_country_leader', 'add_opinion_modifier', 'add_to_faction', 'annex_country'}
+STATE_SCOPES = {'random_owned_state', 'every_owned_state', 'random_state', 'every_state', 'random_controlled_state',
+                'every_controlled_state', 'random_owned_controlled_state', 'every_owned_controlled_state', 'capital_scope',
+                'random_core_state', 'every_core_state', 'random_neighbor_state', 'every_neighbor_state'}
+COUNTRY_SCOPES = {'owner', 'controller', 'random_country', 'every_country', 'random_other_country', 'every_other_country',
+                  'random_neighbor_country', 'every_neighbor_country', 'overlord', 'faction_leader', 'random_enemy_country',
+                  'every_enemy_country', 'random_allied_country', 'every_allied_country', 'every_subject_country',
+                  'random_subject_country', 'occupied_country_tag'}
+TRIGGER_BLOCKS = {'limit', 'trigger', 'available', 'visible', 'allowed', 'potential', 'bypass', 'cancel', 'cancel_if_not_visible',
+                  'activation', 'ai_will_do', 'ai_chance', 'mean_time_to_happen', 'modifier', 'is_good', 'target_trigger',
+                  'target_root_trigger', 'highlight_states', 'state_target', 'on_map_area', 'cost', 'custom_cost_trigger'}
+EFFECT_ROOTS = {'completion_reward': 'country', 'option': 'country', 'immediate': 'country', 'complete_effect': 'country',
+                'remove_effect': 'country', 'timeout_effect': 'country', 'cancel_effect': 'country', 'select_effect': 'country'}
+
+
+def block_items(body):
+    """depth-1 items of a block body (comments stripped): (key, value, is_block, offset).
+    For a block, value is its inner text and offset where that inner text starts in body."""
+    out, depth, key, start = [], 0, None, None
+    tok = re.compile(r'([\w.:@\-^]+)\s*[=<>]\s*(\{)|([\w.:@\-^]+)\s*[=<>]\s*([^\s{}]+)|(\{)|(\})')
+    for m in tok.finditer(body):
+        if m.group(2) or m.group(5):
+            if depth == 0 and m.group(2):
+                key, start = m.group(1), m.end()
+            depth += 1
+        elif m.group(6):
+            depth -= 1
+            if depth == 0 and key is not None:
+                out.append((key, body[start:m.start()], True, start))
+                key = None
+        elif depth == 0 and m.group(3):
+            out.append((m.group(3), m.group(4), False, m.start(3)))
+    return out
+
+
+def modifier_blocks(r, t):
+    """(owner name, modifier block text) for an ideas or dynamic_modifiers file (comments stripped)"""
+    if r.startswith('common/ideas/'):
+        return [(idea, mb) for k, b in blocks(t) for ck, cb in blocks(inner(b)) for idea, ib in blocks(inner(cb))
+                for mk, mb, is_block, _ in block_items(inner(ib)) if mk == 'modifier' and is_block]
+    return [(k, inner(b)) for k, b in blocks(t)]
+
+
+def numeric_modifiers(body):
+    for k, v, is_block, _ in block_items(body):
+        if not is_block and re.fullmatch(r'-?\d+(\.\d+)?', v):
+            yield k, float(v), v
+
+
+def known_modifiers(game, md):
+    """(exact names, compiled template regex) of modifiers the game recognises: the game's own
+    documentation/modifiers_documentation.md plus every layer's common/modifier_definitions"""
+    names, templates = set(), []
+    doc = os.path.join(game, 'documentation', 'modifiers_documentation.md')
+    if os.path.exists(doc):
+        for n in re.findall(r'(?m)^\* \[([^\]]+)\]\(#', read(doc)):
+            if '<' in n:
+                templates.append(re.escape(n).replace(r'\<', '<').replace(r'\>', '>'))
+            else:
+                names.add(n.lower())
+    for base in (game, md, ROOT):
+        for p in glob.glob(os.path.join(base, 'common', 'modifier_definitions', '*.txt')):
+            names |= {k.lower() for k, _ in blocks(strip_code(read(p)))}
+    pat = re.compile('|'.join(re.sub(r'<[^>]+>', r'[a-z0-9_]+', t.lower()) for t in templates) or r'(?!)')
+    return names, pat
+
+
+# keys that sit next to modifiers but are not modifiers (dynamic modifiers carry icon/enable/remove_trigger)
+MODIFIER_BLOCK_KEYS = {'custom_modifier_tooltip', 'hidden_modifier', 'icon', 'enable', 'remove_trigger',
+                       'valid_relation_trigger', 'attacker_modifier'}
+
+
+def check_modifier_names(rep, mod_files, game, md):
+    names, pat = known_modifiers(game, md)
+    unknown = []
+    for r, p in sorted(mod_files.items()):
+        if not r.endswith('.txt') or not r.startswith(('common/ideas/', 'common/dynamic_modifiers/')):
+            continue
+        for name, body in modifier_blocks(r, strip_code(read(p))):
+            for k, v, is_block, _ in block_items(body):
+                # Clausewitz keys are case-insensitive (army_org_Factor works), so compare in lower case
+                if is_block or k in MODIFIER_BLOCK_KEYS or k.lower() in names or pat.fullmatch(k.lower()):
+                    continue
+                unknown.append(f'{name}: {k} = {v}  ({r})')
+    rep.add('balance', 'Every modifier name is one the game recognises (unknown ones are silently ignored)', 'ERROR', unknown)
+
+
+def check_balance(rep, mod_files, md):
+    """flag modifiers stronger than anything Millennium Dawn itself uses for the same key (MD's own max |value|);
+    keys MD never uses fall back to LIMITS / 100% for *_factor-style keys. ai_* keys only steer AI and are skipped."""
+    group = 'balance'
+    md_max = collections.defaultdict(float)
+    for p in glob.glob(os.path.join(md, 'common', 'ideas', '*.txt')) + glob.glob(os.path.join(md, 'common', 'dynamic_modifiers', '*.txt')):
+        r = 'common/' + rel(p, os.path.join(md, 'common'))
+        for _, body in modifier_blocks(r, strip_code(read(p))):
+            for k, f, _ in numeric_modifiers(body):
+                md_max[k.lower()] = max(md_max[k.lower()], abs(f))
+    allow = set(json.load(open(BALANCE_ALLOW, encoding='utf-8')).get('reviewed', [])) if os.path.exists(BALANCE_ALLOW) else set()
+    hits = []
+    for r, p in sorted(mod_files.items()):
+        if not r.endswith('.txt') or not r.startswith(('common/ideas/', 'common/dynamic_modifiers/')):
+            continue
+        for name, body in modifier_blocks(r, strip_code(read(p))):
+            for k, f, v in numeric_modifiers(body):
+                k = k.lower()
+                if k.startswith('ai_') or k in MODIFIER_BLOCK_KEYS:
+                    continue
+                if k in md_max:
+                    lim, src = md_max[k], 'MD max'
+                else:
+                    lim = LIMITS.get(k) or (1.0 if k.endswith(('_factor', '_modifier', '_multiplier')) else None)
+                    src = 'limit'
+                if lim is not None and abs(f) > lim + 1e-9 and f'{name}:{k}' not in allow:
+                    hits.append(f'{name}: {k} = {v}  ({src} {lim:g})  ({r})')
+    rep.add(group, "No modifier stronger than Millennium Dawn's own strongest (reviewed: tools/balance_allow.json)",
+            'WARN', hits)
+
+
+def check_scopes(rep, mod_files):
+    """country-only effects in a state scope and state-only effects in a country scope, in event options and
+    immediates, focus rewards and decision effects; scopes we cannot know (ROOT, FROM, PREV, event targets) are skipped"""
+    group = 'scope'
+    hits = []
+
+    def walk(body, base, scope, text, r, weights=False):
+        for k, v, is_block, off in block_items(body):
+            if k in TRIGGER_BLOCKS:
+                continue
+            line = text.count('\n', 0, base + off) + 1
+            if scope == 'country' and k in STATE_ONLY:
+                hits.append(f'{r}:{line}: {k} in country scope (needs a state scope)')
+            elif scope == 'state' and k in COUNTRY_ONLY:
+                hits.append(f'{r}:{line}: {k} in state scope (needs owner = {{ }} or a country scope)')
+            if not is_block:
+                continue
+            sub = scope
+            if re.fullmatch(r'\d+', k):
+                sub = scope if weights else 'state'      # random_list children are weights, not state ids
+            elif k in STATE_SCOPES:
+                sub = 'state'
+            elif k in COUNTRY_SCOPES or re.fullmatch(r'[A-Z][A-Z0-9]{2}', k):
+                sub = 'country'
+            elif k in ('ROOT', 'FROM', 'PREV', 'THIS') or k.startswith(('event_target:', 'var:', 'FROM.', 'ROOT.', 'PREV.')):
+                sub = 'unknown'
+            walk(v, base + off, sub, text, r, weights=(k == 'random_list'))
+
+    def roots(body, base, text, r):
+        for k, v, is_block, off in block_items(body):
+            if not is_block or k in TRIGGER_BLOCKS:
+                continue
+            if k in EFFECT_ROOTS:
+                walk(v, base + off, EFFECT_ROOTS[k], text, r)
+            else:
+                roots(v, base + off, text, r)
+
+    for r, p in sorted(mod_files.items()):
+        if r.endswith('.txt') and r.startswith(('events/', 'common/national_focus/', 'common/decisions/')):
+            text = strip_code(read(p))
+            if r.startswith('events/'):
+                # state_event options run in state scope
+                for k, v, is_block, off in block_items(text):
+                    if is_block:
+                        root_scope = 'state' if k == 'state_event' else 'country'
+                        for ck, cv, cb, coff in block_items(v):
+                            if cb and ck in ('option', 'immediate'):
+                                walk(cv, off + coff, root_scope, text, r)
+            else:
+                roots(text, 0, text, r)
+    rep.add(group, 'State effects run in a state scope and country effects in a country scope', 'WARN', sorted(set(hits)))
+
+
 def check_release(rep, docs, md, game):
     group = 'release'
     desc = read(os.path.join(ROOT, 'descriptor.mod'))
@@ -515,7 +712,7 @@ def main():
     ap.add_argument('--game', default=os.path.join(STEAM, 'common', 'Hearts of Iron IV'))
     ap.add_argument('--md', default=os.path.join(STEAM, 'workshop', 'content', '394360', MD_ID))
     ap.add_argument('--docs', default=docs_default)
-    ap.add_argument('--only', default='files,loc,refs,pack,release,log')
+    ap.add_argument('--only', default='files,loc,refs,balance,scope,pack,release,log')
     ap.add_argument('--strict', action='store_true')
     ap.add_argument('--all', action='store_true')
     ap.add_argument('--report')
@@ -546,6 +743,11 @@ def main():
         check_loc(rep, en_mod, loc_union)
     if 'refs' in only:
         check_refs(rep, layers, loc_union, en_values)
+    if 'balance' in only:
+        check_modifier_names(rep, mod_files, a.game, a.md)
+        check_balance(rep, mod_files, a.md)
+    if 'scope' in only:
+        check_scopes(rep, mod_files)
     if 'pack' in only:
         check_pack(rep, loc_union, en_values, a.docs)
     if 'release' in only:
