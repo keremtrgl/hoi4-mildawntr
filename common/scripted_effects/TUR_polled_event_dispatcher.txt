@@ -12090,7 +12090,7 @@ TUR_dispatch_polled_events = {
 		}
 		country_event = TurkeyF.187
 	}
-	# remaining polled events whose trigger needs Turkey to exist; added in 2.0.2-TUR.6
+	# remaining polled events whose trigger needs Turkey to exist; added in 2.0.3-TUR.6
 	if = {  # Turkey.253  (Turkey.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_Turkey_253 }

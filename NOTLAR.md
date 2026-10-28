@@ -46,7 +46,7 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     - 4 bozuk yerelleştirme satırı ve 10 çift tanımlı anahtar (5'i Türkçe pakette) düzeltildi.
   - `MD_source/` (PSD şablonları) yanlışlıkla Workshop'a gidiyordu; senkronizasyondan çıkarıldı.
 
-- **2.0.2-TUR.6** (hazırlanıyor):
+- **2.0.3-TUR.6** (28 Ekim, ana mod ve Türkçe paket birlikte yayınlandı; MD 2.0.3 için):
   - Mod çakışması uyarısı: başka bir mod Türkiye'nin ülke geçmişini (`history/countries/TUR - Turkey.txt`) ezerse
     (genelde ikinci bir Türkiye modu) yeni oyunun başında uyarı penceresi çıkar
     (`common/scripted_guis/TUR_load_order_warning.txt`, `interface/TUR_load_order_warning.gui`). Bizim TUR geçmişi
