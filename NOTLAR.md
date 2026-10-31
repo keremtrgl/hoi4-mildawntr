@@ -145,5 +145,9 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   karar: başlıklar olduğu gibi kalacak (Steam'de şikâyet riski bilinerek).
 - Yapay zekâ odak ağırlıkları ve gözlemci modunda davranış incelenmedi.
 - Performans ölçümü (TUR.2 olay optimizasyonunun etkisi) yapılmadı.
-- Denge: `release_check.py --only balance --all` MD'den güçlü 100 değer listeliyor (en çarpıcısı `decryption_power`
-  10–50, MD en fazla 2). Tasarım kararı bekliyor.
+- Denge (31 Ekim'de gözden geçirildi): "MD en fazla" sütunu yalnızca bulunan en yüksek değeri gösterir, ölçek değildir.
+  `decryption_power` MD'nin istihbarat özelliklerinde 50'ye çıkıyor; `country_resource_cost_*` düz tüketim birimi.
+  Gerçek hata enerjideydi: aynı etki hem yüzde (`fossil_pp_energy_generation_modifier = -1.0`) hem düz değer
+  (`fossil_energy_gain = -100`) yazılmıştı. Düz değer santral üretimini eksiye düşürebilir ve MD'nin kuralına aykırıdır.
+  5 düz değer silindi, `nuclear_energy_gain = -10` → `nuclear_energy_generation_modifier = -0.10`, bor -60/-25 → -15/-11.
+  Kalanlar `tools/balance_allow.json`'da; yeni değerler uyarı vermeye devam eder.

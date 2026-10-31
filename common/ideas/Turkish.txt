@@ -2427,7 +2427,6 @@ army_morale_factor = 0.05 army_core_defence_factor = 0.05 	army_core_attack_fact
 				consumer_goods_factor = -0.01
 				local_resources_factor = 0.1
 				nuclear_energy_generation_modifier = 0.05
-				fossil_energy_gain = 5
 				fossil_pp_energy_generation_modifier = 0.05
 				energy_gain = 0.1
 			   }
@@ -4807,7 +4806,6 @@ offices_worker_requirement_modifier = 0.05
 			stability_factor = 0.03
             consumer_goods_factor = 0.01
 		    production_speed_buildings_factor = -0.05
-			fossil_energy_gain = -5
 			fossil_pp_energy_generation_modifier = -0.1
 			   }
 		}			
@@ -6263,7 +6261,7 @@ agency_upgrade_time = -0.05
 
 		bor_mining_facilities = {
 			allowed_civil_war = { always = yes }
-			modifier = { country_resource_cost_steel = -60 country_resource_cost_aluminium = -25 production_factory_max_efficiency_factor = 0.1 }
+			modifier = { country_resource_cost_steel = -15 country_resource_cost_aluminium = -11 production_factory_max_efficiency_factor = 0.1 }
 		}
 
 		wolf_status_basic = {
@@ -6994,7 +6992,6 @@ nuclear_energy_generation_modifier = -0.05
      		stability_factor = 0.02
             base_fuel_gain_factor = -0.05 
             fuel_cost = 3
-			fossil_energy_gain = 3
 			fossil_pp_energy_generation_modifier = 0.03	
 				}
 		}
@@ -7006,7 +7003,6 @@ nuclear_energy_generation_modifier = -0.05
 			 consumer_goods_factor = -0.08
             base_fuel_gain_factor = -0.25 
             fuel_cost = 25	
-				fossil_energy_gain = -100
 				fossil_pp_energy_generation_modifier = -1.0
 				}
 		}
@@ -9711,8 +9707,7 @@ offices_worker_requirement_modifier = -0.05
 				political_power_cost = 0.1
 				democratic_drift = 0.05
 				stability_weekly = -0.0045
-				fossil_energy_gain = -35
-				nuclear_energy_gain = -10
+				nuclear_energy_generation_modifier = -0.10
 				fossil_pp_energy_generation_modifier = -0.35
                 base_fuel_gain_factor = -0.35 
                 fuel_cost = 15
