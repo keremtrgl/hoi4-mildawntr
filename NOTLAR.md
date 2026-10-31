@@ -70,8 +70,8 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
 
 ## Kalıcı dersler (tekrar düşme!)
 
-- **Sesler WAV kalmalı.** HOI4 ses efektlerini yalnızca WAV'dan yükler. OGG'ye çevirince (cd921e5) 22 konuşma
-  sessiz kaldı, WAV'a geri dönüldü (a49210e). Boyut küçültmek için örnekleme hızı/kanal düşürülür, format değişmez.
+- **Sesler WAV kalmalı.** HOI4 ses efektlerini yalnızca WAV'dan yükler. OGG'ye çevirince (88d1f8e) 22 konuşma
+  sessiz kaldı, WAV'a geri dönüldü (c4fbe45). Boyut küçültmek için örnekleme hızı/kanal düşürülür, format değişmez.
 - **Workshop kopyası açılmıyorsa önce `logs/system.log`'a bak.** "Active Mod Count" ve "Active Mod:" satırları
   oyunun gerçekten neyi yüklediğini gösterir. Bu bilgisayarda local `md_turkey_upload.mod` ve `md_turkey_tr.mod`
   dosyaları Workshop öğeleriyle aynı `remote_file_id`'yi taşıdığı için oyun Workshop kopyalarını sessizce atlıyordu.
