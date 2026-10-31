@@ -9,7 +9,7 @@ Workshop'a gönderilmez (senkronizasyon `NOTLAR.md`'yi hariç tutar). Her sürü
 |---|---|
 | Ana mod (Workshop) | 3826896215 — "Millenium Dawn +Turkey (MD 2.0 Update)" |
 | Türkçe dil paketi (Workshop) | 3827287270 — "Millenium Dawn +Turkey - Türkçe Dil Paketi" |
-| Bağımlılık | Millennium Dawn 2777392649, sürüm 2.0.2 |
+| Bağımlılık | Millennium Dawn 2777392649, sürüm 2.0.3 |
 | Oyun | HOI4 1.19.3 (`supported_version="1.19.*"`) |
 | Repo | bu klasör, ana dal `master`, her sürüm `v<sürüm>` etiketiyle |
 | Yükleme klasörü | `Belgeler\Paradox Interactive\Hearts of Iron IV\mod\md_turkey_upload` |
@@ -68,7 +68,7 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     hikâye düzeyinde ve kınayan bir dille anlatıldı. Kalan boş `_desc` anahtarları yorum satırına alınmış odaklara ya da
     hiçbir odağın kullanmadığı anahtarlara ait. `MIT_balkan_inluence_program_desc` iki dosyada tanımlıydı; biri silindi.
 
-- **Sıradaki sürüm (yayınlanmadı, oyunda test edilmedi):**
+- **2.0.3-TUR.7** (31 Ekim 2026):
   - Enerji ve bor denge düzeltmeleri, odaklara yapay zekâ ağırlıkları (aşağıda "Açık işler").
   - 15 Temmuz: darbenin başarısız sonucu `TUR_fire_15_july_event` ve `coup_attempt_tur` bayraklarını koymuyordu; Turkey.363
     ve Turkey.126 hiç çıkamıyordu. Bağlandı.
