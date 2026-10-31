@@ -635,16 +635,22 @@ ideas = {
 			modifier = { production_oil_factor = 0.1 fuel_cost = -5 }
 		}
 
+		TUR_covert_balkan_plans = {
+			picture = intel_bonus
+			allowed_civil_war = { always = yes }
+			modifier = { generate_wargoal_tension = -0.25 justify_war_goal_time = -0.25 send_volunteers_tension = -0.25 enemy_operative_detection_chance_factor = -0.2 }
+		}
+
 		TUR_legacy_of_ataturk_preserved = { 
 			picture = tur_legacy_of_ataturk
 			allowed_civil_war = { always = yes }				
-			modifier = { stability_factor = 0.05 political_power_gain = 0.05 }
+			modifier = { stability_factor = 0.10 political_power_gain = 0.50 }
 		}
 
 		TUR_legacy_of_ataturk_fulfilled = { 
             allowed_civil_war = { always = yes }
             picture = tur_legacy_of_ataturk
-			modifier = { stability_factor = 0.15 political_power_gain = 0.1 democratic_drift = 0.02 }
+			modifier = { stability_factor = 0.15 political_power_gain = 0.75 democratic_drift = 0.02 }
 		}
 
 		TUR_legacy_of_ataturk_defiled = { 

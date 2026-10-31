@@ -2322,6 +2322,13 @@ custom_effect_tooltip = WARN_GULEN
 		
 		completion_reward = {
         custom_effect_tooltip = CHP_anti_state
+			hidden_effect = {
+				add_to_variable = { party_pop_array^2 = 0.03 }
+				add_to_variable = { party_pop_array^3 = -0.03 }
+				recalculate_party = yes
+			}
+			custom_effect_tooltip = TUR_DSP_increase
+			custom_effect_tooltip = TUR_CHP_decrease_big
 }   ai_will_do = { base = 8 } }
 	focus = {
 		id = DSP_protection_to_uyghur_turks
@@ -3703,7 +3710,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = DSP_general_build_up
 		icon = industry3
-		cost = 15.00
+		cost = 9.29
 		prerequisite = {
 			focus = DSP_future_gold
 		}

@@ -353,7 +353,7 @@ focus_tree = {
 	focus = {
 		id = MAF_became_the_government
 		icon = turkish_flag
-		cost = 15.00
+		cost = 9.29
 		prerequisite = {
 			focus = MAF_create_new_bases_in_adana
 		}
@@ -3816,7 +3816,7 @@ swap_ideas = {
 	focus = {
 		id = MAF_world_drug_trade
 		icon = liberalization
-		cost = 15.00
+		cost = 9.29
 		prerequisite = {
 			focus = MAF_camuflage_convoys
 		}
@@ -4998,12 +4998,12 @@ swap_ideas = {
 
 	
         available = {
-		country_exists = USA
+		country_exists = SOV
         }
 
     bypass = {
 	NOT = {
-	country_exists = USA
+	country_exists = SOV
 	} } 
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	

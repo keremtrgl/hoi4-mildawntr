@@ -1,0 +1,148 @@
+TUR_mafia_heists = {
+
+	TUR_heist_fed = {
+		icon = GFX_decision_infiltrate_state
+		visible = { original_tag = TUR has_completed_focus = MAF_mission_to_FED }
+		available = { country_exists = USA NOT = { has_war_with = USA } }
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		remove_effect = {
+			add_to_variable = { treasury = 20 }
+			custom_effect_tooltip = TUR_heist_20_billion_tt
+			USA = { add_stability = -0.03 }
+		}
+	}
+
+	TUR_heist_ecb = {
+		icon = GFX_decision_infiltrate_state
+		visible = { original_tag = TUR has_completed_focus = MAF_mission_to_ECB }
+		available = { country_exists = GER NOT = { has_war_with = GER } }
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		remove_effect = {
+			add_to_variable = { treasury = 15 }
+			custom_effect_tooltip = TUR_heist_15_billion_tt
+			GER = { add_stability = -0.03 }
+		}
+	}
+
+	TUR_heist_banque_de_france = {
+		icon = GFX_decision_infiltrate_state
+		visible = { original_tag = TUR has_completed_focus = MAF_mission_to_FRA }
+		available = { country_exists = FRA NOT = { has_war_with = FRA } }
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		remove_effect = {
+			add_to_variable = { treasury = 10 }
+			custom_effect_tooltip = TUR_heist_10_billion_tt
+			FRA = { add_stability = -0.03 }
+		}
+	}
+
+	TUR_heist_pboc = {
+		icon = GFX_decision_infiltrate_state
+		visible = { original_tag = TUR has_completed_focus = MAF_mission_to_PRC }
+		available = { country_exists = CHI NOT = { has_war_with = CHI } }
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		remove_effect = {
+			add_to_variable = { treasury = 15 }
+			custom_effect_tooltip = TUR_heist_15_billion_tt
+			CHI = { add_stability = -0.03 }
+		}
+	}
+
+	TUR_heist_boe = {
+		icon = GFX_decision_infiltrate_state
+		visible = { original_tag = TUR has_completed_focus = MAF_mission_to_UK }
+		available = { country_exists = ENG NOT = { has_war_with = ENG } }
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		remove_effect = {
+			add_to_variable = { treasury = 10 }
+			custom_effect_tooltip = TUR_heist_10_billion_tt
+			ENG = { add_stability = -0.03 }
+		}
+	}
+
+	TUR_heist_pentagon = {
+		icon = GFX_decision_infiltrate_state
+		visible = { original_tag = TUR has_completed_focus = MAF_target_pentagon_documents }
+		available = { country_exists = USA NOT = { has_war_with = USA } }
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		remove_effect = {
+			add_intel = { target = USA civilian_intel = 50 army_intel = 50 airforce_intel = 50 navy_intel = 50 }
+			add_tech_bonus = { name = TUR_heist_pentagon bonus = 0.5 uses = 1 category = CAT_infantry_weapons }
+		}
+	}
+
+	TUR_heist_russian_arms = {
+		icon = GFX_decision_infiltrate_state
+		visible = { original_tag = TUR has_completed_focus = MAF_target_the_russian_weaponary }
+		available = { country_exists = SOV NOT = { has_war_with = SOV } }
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		remove_effect = {
+			add_intel = { target = SOV civilian_intel = 50 army_intel = 50 airforce_intel = 50 navy_intel = 50 }
+			add_tech_bonus = { name = TUR_heist_russian_arms bonus = 0.5 uses = 1 category = CAT_armor }
+		}
+	}
+
+	TUR_heist_european_army = {
+		icon = GFX_decision_infiltrate_state
+		visible = { original_tag = TUR has_completed_focus = MAF_target_european_army_documents }
+		available = { country_exists = FRA NOT = { has_war_with = FRA } }
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		remove_effect = {
+			add_intel = { target = FRA civilian_intel = 50 army_intel = 50 airforce_intel = 50 navy_intel = 50 }
+			add_tech_bonus = { name = TUR_heist_european_army bonus = 0.5 uses = 1 category = CAT_artillery }
+		}
+	}
+
+	TUR_heist_f35 = {
+		icon = GFX_decision_infiltrate_state
+		visible = { original_tag = TUR has_completed_focus = MAF_target_f35_program }
+		available = { country_exists = USA NOT = { has_war_with = USA } }
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		remove_effect = {
+			add_intel = { target = USA civilian_intel = 50 army_intel = 50 airforce_intel = 50 navy_intel = 50 }
+			add_tech_bonus = { name = TUR_heist_f35 bonus = 0.5 uses = 1 category = CAT_aircraft }
+		}
+	}
+
+	TUR_heist_russian_chemical = {
+		icon = GFX_decision_infiltrate_state
+		visible = { original_tag = TUR has_completed_focus = MAF_target_russian_biological_tests }
+		available = { country_exists = SOV NOT = { has_war_with = SOV } }
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		remove_effect = {
+			add_intel = { target = SOV civilian_intel = 50 army_intel = 50 airforce_intel = 50 navy_intel = 50 }
+			add_tech_bonus = { name = TUR_heist_russian_chemical bonus = 0.5 uses = 1 category = CAT_infantry_weapons }
+		}
+	}
+
+}

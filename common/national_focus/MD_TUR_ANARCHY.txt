@@ -28,7 +28,7 @@ focus_tree = {
 	focus = {
 		id = ANA_wait_for_the_results
 		icon = masters_of_our_own_fate
-		cost = 15.00
+		cost = 9.29
 		x = 83
 		y = 0
 
@@ -740,7 +740,7 @@ neutrality_neutral_social_are_in_power = yes
 	focus = {
 		id = ANA_use_the_effects_of_collevization_society
 		icon = worker_paradise
-		cost = 15
+		cost = 9.29
 		prerequisite = {
 			focus = ANA_push_work_propagandas
 		}
@@ -1064,7 +1064,7 @@ neutrality_neutral_social_are_in_power = yes
 	focus = {
 		id = ANA_start_the_anarchist_revolution
 		icon = crush_the_revolution
-		cost = 15.00
+		cost = 9.29
 		prerequisite = {
 			focus = ANA_formalize_western_anarchist_group
 		}
@@ -2419,7 +2419,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = ANA_became_the_leader_of_un
 		icon = align_to_united_nations
-		cost = 15.00
+		cost = 9.29
 		prerequisite = {
 			focus = ANA_cooperae_with_FDO
 		}
@@ -4253,7 +4253,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 	focus = {
 		id = ANA_ecologist_anarchist_utopia
 		icon = political_pressure_dark_green
-		cost = 15.00
+		cost = 9.29
 		prerequisite = {
 			focus = ANA_the_last_round
 		}
@@ -5382,6 +5382,12 @@ search_filters = {FOCUS_FILTER_NATO}
 
 		completion_reward = {
 				custom_effect_tooltip = GENERAL_CORE_SYSTEM
+			hidden_effect = {
+				every_state = {
+					limit = { is_controlled_by = ROOT NOT = { is_core_of = ROOT } }
+					add_core_of = ROOT
+				}
+			}
 		} ai_will_do = { base = 2 } } 
 	focus = {
 		id = ANA_joint_forces_of_anarchism
@@ -5416,7 +5422,7 @@ search_filters = {FOCUS_FILTER_NATO}
 	focus = {
 		id = ANA_the_utopia_declaration
 		icon = centralization
-		cost = 15.00
+		cost = 9.29
 		prerequisite = {
 			focus = ANA_systematic_forces
 		}
@@ -5570,6 +5576,15 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 	
         completion_reward = {
 		custom_effect_tooltip = ISLAMIC_WORLD_UNITE
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						OR = { tag = SYR tag = IRQ tag = PER tag = SAU tag = JOR tag = LEB tag = KUW tag = QAT tag = UAE tag = OMA tag = YEM tag = HOU tag = AZE tag = EGY tag = LBA tag = BAH }
+						NOT = { is_in_faction_with = ROOT }
+					}
+					ROOT = { create_wargoal = { type = annex_everything target = PREV } }
+				}
+			}
 	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_harsh_quotas_of_secularism
@@ -5584,6 +5599,9 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 	
         completion_reward = {
 		custom_effect_tooltip = SET_SECULAR_HECK
+		every_neighbor_country = {
+			add_popularity = { ideology = communism popularity = 0.05 }
+		}
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = ANA_plan_NATO
@@ -7234,7 +7252,7 @@ add_ideas = world_of_guns
 	focus = {
 		id = ANA_IMF_talks
 		icon = imf
-		cost = 15.00
+		cost = 9.29
 		prerequisite = {
 			focus = ANA_safe_us_economy
 		}

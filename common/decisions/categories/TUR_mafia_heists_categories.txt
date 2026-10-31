@@ -1,0 +1,6 @@
+TUR_mafia_heists = {
+	icon = GFX_decision_recruit_operative
+	priority = 12990
+	allowed = { original_tag = TUR }
+	visible = { original_tag = TUR has_completed_focus = MAF_time_for_steal }
+}

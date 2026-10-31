@@ -206,7 +206,7 @@ swap_ideas = {
 	focus = {
 		id = MHF_right_front
 		icon = fascist_liberty
-		cost = 15.00
+		cost = 9.29
 		prerequisite = {
 			focus = MHF_collabrate_with_the_right
 		}
@@ -5105,7 +5105,8 @@ swap_ideas = {
 	}
 
     completion_reward = {
-	        custom_effect_tooltip = hide_plan_system				
+	        custom_effect_tooltip = hide_plan_system
+			add_timed_idea = { idea = TUR_covert_balkan_plans days = 365 }				
 			}
 		ai_will_do = { base = 8 }
 		}
@@ -5123,6 +5124,10 @@ swap_ideas = {
 		
 		completion_reward = {
 	    custom_effect_tooltip = direct_insult_system
+		every_other_country = {
+			limit = { is_in_faction_with = ROOT }
+			add_opinion_modifier = { target = ROOT modifier = large_increase }
+		}
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = MHF_plant_nationalism_in_europe
@@ -6480,6 +6485,14 @@ swap_ideas = {
 		
 	completion_reward = {
 		custom_effect_tooltip = BALKAN_SUBMIT_ACTION
+		if = {
+			limit = { is_faction_leader = yes BOS = { exists = yes is_in_faction = no NOT = { has_war_with = ROOT } } }
+			add_to_faction = BOS
+		}
+		if = {
+			limit = { is_faction_leader = yes ALB = { exists = yes is_in_faction = no NOT = { has_war_with = ROOT } } }
+			add_to_faction = ALB
+		}
       }
 		ai_will_do = { base = 8 }
 	}
