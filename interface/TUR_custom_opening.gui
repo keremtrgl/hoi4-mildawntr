@@ -37,17 +37,18 @@ guiTypes = {
 
 		buttonType = {
 			name = "FAQ_button2"
-			position = { x = 350 y = 260 }
-			spriteType = "GFX_ideas_icon"
+			position = { x = 120 y = 330 }
+			spriteType = "GFX_button_221x34"
 			frame = 1
-			font = "hoi_16mbs"
+			font = "hoi_18mbs"
+			text = "FAQ_OPEN"
 			format = center
 		}
 
 
 		buttonType = {
 			name = "MD_another_check_button"
-			position = { x = 120 y = 355 }
+			position = { x = 120 y = 375 }
 			spriteType = "GFX_button_221x34"
 			frame = 1
 			font = "hoi_18mbs"
@@ -72,7 +73,17 @@ guiTypes = {
 			position = { x=130 y=470 }
 			quadTextureSprite ="GFX_steam_MDTURK"
 			clicksound = click_default
+			pdx_tooltip = "MD_STEAM_TT"
 			web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=3826896215"
+		}
+
+		ButtonType = {
+			name = "id_discord_tr"
+			position = { x=318 y=470 }
+			quadTextureSprite ="GFX_discord_MDTURK"
+			clicksound = click_default
+			pdx_tooltip = "MD_DISCORD_TT"
+			web_link = "steam://openurl_external/https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fdiscord.gg%2F69XF65D2sA"
 		}
 	}
 }
@@ -422,7 +433,7 @@ guiTypes = {
 			font = "hoi_18mbs"
 			maxWidth = 425
 			maxHeight = 70
-			text = "Greens:"	
+			text = "GREENS_title"
 			format = centre
 		}
 
