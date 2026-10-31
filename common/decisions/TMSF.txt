@@ -23,16 +23,17 @@ TUR_TMSF = {
           remove_effect = {
         			custom_effect_tooltip = TUR_bddk_boost
 		subtract_from_variable = { bddk_level = -1 }
-          }
-          complete_effect = { 
-
-          }
-		remove_effect = {
+          
   decrease_centralization = yes 
   decrease_social_spending = yes 
   decrease_education_budget = yes 
   decrease_policing_budget = yes 
-	}   }
+	
+          }
+          complete_effect = { 
+
+          }
+   }
 
     TUR_tmsf_intervene_1 = {
 		icon = GFX_decision_eng_trade_unions_demand
@@ -59,6 +60,14 @@ TUR_TMSF = {
           remove_effect = {
         			custom_effect_tooltip = TUR_bddk_boost
 		subtract_from_variable = { bddk_level = -1 }
+          
+			934 = {	
+				add_building_construction = {
+					type = offices
+					instant_build = yes
+					level = 1
+				} 
+	}   
           }
           complete_effect = {
 			934 = {	
@@ -69,14 +78,7 @@ TUR_TMSF = {
 				} 
             }	           
           }
-		remove_effect = {
-			934 = {	
-				add_building_construction = {
-					type = offices
-					instant_build = yes
-					level = 1
-				} 
-	}   }  }
+  }
 
 
     TUR_tmsf_intervene_4 = {
@@ -104,6 +106,9 @@ TUR_TMSF = {
           remove_effect = {
         			custom_effect_tooltip = TUR_bddk_boost
 		subtract_from_variable = { bddk_level = -1 }
+          
+			add_political_power = -75
+	
           }
           complete_effect = {
 			934 = {	
@@ -114,9 +119,7 @@ TUR_TMSF = {
 				} 
             }	           
           }
-		remove_effect = {
-			add_political_power = -75
-	}   }  
+   }  
 
 
     TUR_tmsf_intervene_5 = {
@@ -145,11 +148,11 @@ TUR_TMSF = {
           remove_effect = {
         			custom_effect_tooltip = TUR_bddk_boost
 		subtract_from_variable = { bddk_level = -1 }
+          
           }
           complete_effect = {        
           }
-		remove_effect = {
-	}   }
+   }
 
 
     TUR_tmsf_intervene_6 = {
@@ -177,10 +180,7 @@ TUR_TMSF = {
           remove_effect = {
         			custom_effect_tooltip = TUR_bddk_boost
 		subtract_from_variable = { bddk_level = -1 }
-          }
-          complete_effect = {        
-          }
-		remove_effect = {
+          
 			934 = {	
 				add_building_construction = {
 					type = offices
@@ -188,7 +188,11 @@ TUR_TMSF = {
 					level = -1
 				} 
                }
-	}   }
+	
+          }
+          complete_effect = {        
+          }
+   }
 
     TUR_tmsf_intervene_2 = {
 		icon = GFX_decision_politic_oppression

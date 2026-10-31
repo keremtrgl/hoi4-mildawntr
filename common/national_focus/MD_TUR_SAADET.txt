@@ -747,15 +747,15 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 
     available = {
 	has_idea = NATO_member
-	}
-
-
-        available = {
+	
 		country_exists = USA
 		NOT = {
 		has_war_with = USA
 		 }
-        }
+        
+		}
+
+
 
     bypass = {
 	OR = {
@@ -798,15 +798,15 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 
     available = {
 	has_idea = NATO_member
-	}
 	
-
-        available = {
 		country_exists = ENG
 		NOT = {
 		has_war_with = ENG
 		 }
-        }
+        
+		}
+	
+
 
     bypass = {
 	OR = {

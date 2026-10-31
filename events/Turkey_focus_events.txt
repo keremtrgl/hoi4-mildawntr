@@ -6091,6 +6091,14 @@ country_event = {
 		name = TurkeyF.207.a
 		ai_chance = { factor = 100}
 
+	# The CHP governs and elections are suspended. This runs before Atatürk is created,
+	# because change_ruling_party_effect picks a new party leader.
+	custom_effect_tooltip = ATA_SUPREME_PRESIDENCY_TT
+	hidden_effect = {
+		set_temp_variable = { rul_party_temp = 3 }
+		set_temp_variable = { disable_elections = 1 }
+		change_ruling_party_effect = yes
+	}
 	create_country_leader = {
 		name = "Mustafa Kemal Pasha"
 		picture = "ataturk.dds"

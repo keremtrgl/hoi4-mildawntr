@@ -3536,19 +3536,19 @@ swap_ideas = {
 
         available = {
         USA = { controls_state = 771}
-        }
+        
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_left_side_range  
+			}
+		
+		}
 		
 		bypass = {
 		NOT = {
         USA = { controls_state = 771}
 		} }
 
-		available = {
-			is_power_balance_in_range = {
-				id = TRGX_power_balance
-				range < TRGX_left_side_range  
-			}
-		}
 
 		completion_reward = {
 		add_ideas = agency_on_pensylvania

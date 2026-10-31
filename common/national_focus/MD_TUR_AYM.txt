@@ -582,7 +582,12 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		NOT = {
 		has_war_with = SYR
 		 }
-        }
+        
+		controls_state = 162
+		controls_state = 992
+		controls_state = 158
+		
+		}
 
     bypass = {
     NOT = {
@@ -591,11 +596,6 @@ custom_effect_tooltip = TUR_MIL_relations_25
 	} 
 	
 
-		available = {
-		controls_state = 162
-		controls_state = 992
-		controls_state = 158
-		}
 	
 		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}	
 		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}	
@@ -3901,17 +3901,17 @@ swap_ideas = {
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 157
+	controls_state = 934
+	
+		}
 
         bypass = {
 		NOT = {
         country_exists = CHI
         } } 
 
-    available = {
-	controls_state = 157
-	controls_state = 934
-	}
 
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
@@ -3965,17 +3965,17 @@ swap_ideas = {
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 157
+	controls_state = 934
+	
+		}
 
         bypass = {
 		NOT = {
         country_exists = CHI
         } } 
 
-    available = {
-	controls_state = 157
-	controls_state = 934
-	}
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 		search_filters = {FOCUS_FILTER_INFLUENCE}
@@ -5521,7 +5521,11 @@ swap_ideas = {
 		NOT = {
 		has_war_with = QAT
 		 }
-        }
+        
+	controls_state = 157
+	controls_state = 934
+	
+		}
 
         bypass = {
 		OR = {
@@ -5530,10 +5534,6 @@ swap_ideas = {
         country_exists = QAT
         } } }
 
-    available = {
-	controls_state = 157
-	controls_state = 934
-	}
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -7281,17 +7281,17 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		NOT = {
 		has_war_with = USA
 		 }
-        }
+        
+	controls_state = 157
+	controls_state = 934
+	
+		}
 
         bypass = {
 		NOT = {
         country_exists = USA
         } } 
 
-    available = {
-	controls_state = 157
-	controls_state = 934
-	}
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 		search_filters = {FOCUS_FILTER_INFLUENCE}

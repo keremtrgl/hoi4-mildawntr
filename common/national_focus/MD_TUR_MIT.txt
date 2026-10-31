@@ -713,9 +713,9 @@ swap_ideas = {
 				id = TUR_mit_balance
 				range > MIT_right_side_range  
 			}
-		}
-		available = {
+		
 		has_war_with = WTU
+		
 		}
 
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
@@ -747,9 +747,9 @@ swap_ideas = {
 				id = TUR_mit_balance
 				range > MIT_right_side_range  
 			}
-		}
-		available = {
+		
 		has_war_with = WTU
+		
 		}
 
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
@@ -817,11 +817,11 @@ swap_ideas = {
 
         available = {
 		controls_state = 159
+		
+		has_war_with = WTU
+		
 		}
 
-		available = {
-		has_war_with = WTU
-		}
 
 		bypass = {
 		NOT = {
@@ -857,12 +857,12 @@ swap_ideas = {
 
         available = {
 		controls_state = 157
-		}
-
-
-		available = {
+		
 		has_war_with = WTU
+		
 		}
+
+
 
 		bypass = {
 		NOT = {
@@ -1180,14 +1180,14 @@ remove_ideas = government_boosted_financial_sector
 
 		available = {
 		has_war_with = WTU
-		}
-
-        available = {
+		
 		country_exists = USA
 		NOT = {
 		has_war_with = USA
 		 }
-        }
+        
+		}
+
 
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
@@ -1211,14 +1211,14 @@ remove_ideas = government_boosted_financial_sector
 
 		available = {
 		has_war_with = WTU
-		}
-
-        available = {
+		
 		country_exists = FRA
 		NOT = {
 		has_war_with = FRA
 		 }
-        }
+        
+		}
+
 
 	search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
@@ -1316,14 +1316,14 @@ remove_ideas = government_boosted_financial_sector
 
 		available = {
 		has_war_with = WTU
-		}
-
-        available = {
+		
 		country_exists = SOV
 		NOT = {
 		has_war_with = SOV
 		 }
-        }
+        
+		}
+
 
 	search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
@@ -1347,14 +1347,14 @@ remove_ideas = government_boosted_financial_sector
 
 		available = {
 		has_war_with = WTU
-		}
-
-        available = {
+		
 		country_exists = GER
 		NOT = {
 		has_war_with = GER
 		 }
-        }
+        
+		}
+
 
 	search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
@@ -4175,12 +4175,12 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 				id = TUR_mit_balance
 				range < MIT_middle_left_side_range  
 			}
-		}
-        
-		available = {
+		
 		NOT = {
 		has_global_flag = DARK_PARALYSIS
-		} }
+		} 
+		}
+        
 
 		completion_reward = {
     custom_effect_tooltip = GOVERNMENTAL_GROUP_DCS
@@ -4277,12 +4277,12 @@ add_ideas = fahrettin_altuns_media_group
 				id = TUR_mit_balance
 				range > MIT_middle_right_side_range  
 			}
-		}
-
-		available = {
+		
 		NOT = {
 		has_global_flag = DARK_PARALYSIS
-		} }
+		} 
+		}
+
 
 		completion_reward = {
     custom_effect_tooltip = SADAT_GROUP_DCS
@@ -4678,9 +4678,9 @@ add_ideas = armedegon_thoughts
 				id = TUR_mit_balance
 				range > MIT_right_side_range  
 			}
-		}
-		available = {
+		
 		has_war_with = WTU
+		
 		}
 		
 			search_filters = {FOCUS_FILTER_TURKISH_ARMS}
@@ -4712,9 +4712,9 @@ add_ideas = armedegon_thoughts
 				id = TUR_mit_balance
 				range > MIT_right_side_range  
 			}
-		}
-		available = {
+		
 		has_war_with = WTU
+		
 		}
 
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
@@ -6015,7 +6015,10 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 161
+	
+		}
 
         bypass = {
 		OR = {
@@ -6024,9 +6027,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
         country_exists = CHI
         } } }
 
-    available = {
-	controls_state = 161
-	}
 
 	completion_reward = {
 					TUR = {
@@ -6077,7 +6077,11 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 934
+	controls_state = 155
+	
+		}
 
         bypass = {
 		OR = {
@@ -6086,10 +6090,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
         country_exists = CHI
         } } }
 
-    available = {
-	controls_state = 934
-	controls_state = 155
-	}
 
 	completion_reward = {
 					TUR = {
@@ -6754,13 +6754,13 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		NOT = {
 		has_war_with = ISR
 		 }
-        }
-
-		available = {
+        
 		controls_state = 156
 		controls_state = 934
 		controls_state = 159
+		
 		}
+
 
 	completion_reward = {
 					reverse_add_opinion_modifier = { target = ISR modifier = invested_in_country }

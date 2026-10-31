@@ -104,6 +104,18 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   - `release_check.py`: imkânsız tarih, hazine/ipucu ve dizi dışı parti kontrolleri.
   - `FIRE_SUPEREVENT_13` ("Turkish Germany") bilinçli olarak açılmadı: onu tetikleyecek içerik hiç yazılmamış.
 
+- **2.0.3-TUR.8** (31 Ekim 2026), Atatürk güncellemesi:
+  - Atatürk yolu kilitleniyordu: `ATA_declare_elections` MD'nin seçim kampanyasını açıyordu, CHP kazanamıyor, ağaç
+    `western_social_democrats_are_in_power` bekliyordu. Artık CHP'ye +%25 ve `change_ruling_party_effect` (rul_party 3).
+    TurkeyF.207 seçimleri kapatıp CHP'yi iktidara alıyor. `ATA_new_kemalism` gerçekten CHP'yi +%3 artırıyor.
+    `ATA_a_new_control`'ün o noktada sağlanamayan `available`'ı kaldırıldı. Oyunda doğrulandı.
+  - Buff: `ATA_came_back` +150 PP, 3 yıllık `ATA_return_of_the_father`, 7 bölgede 10 sivil / 8 askerî / 2 tersane (slotlarıyla).
+    Odaklardaki 41 fabrika/tersane ve 5 offsite iki katı (ek slotla), 36 PP ödülü 1,5 katı.
+  - Yol Rehberi 10 sayfa (`custom_opening_2..11`, `FAQ_1..10`), her yolun tarih aralığı ve bekleme süreleri.
+  - Tekrarlanan bloklar: HOI4 yalnızca sonuncusunu okur. 48 odakta `available`, 5 TMSF kararı ve uçak projesinde
+    `remove_effect`, `TUR_clear_the_slums`'ta `complete_effect` birleştirildi; `TUR_ottoman_rally`'deki ölü ilk üçlü silindi.
+  - Var olmayan `cost_reduced_last_stand` ipuçları (OTT, TKF) ve `TKF_beat_the_EMEPs_coup`'taki ölü koşul kaldırıldı.
+
 ## Kalıcı dersler (tekrar düşme!)
 
 - **Sesler WAV kalmalı.** HOI4 ses efektlerini yalnızca WAV'dan yükler. OGG'ye çevirince (88d1f8e) 22 konuşma

@@ -1923,7 +1923,10 @@ custom_effect_tooltip = WARN_GULEN
 	controls_state = 193
 	controls_state = 164
 	controls_state = 633
-	} }
+	} 
+		has_idea = TUR_PKK_insurgency_active
+		
+		}
 	
 
     bypass = {
@@ -1932,9 +1935,6 @@ custom_effect_tooltip = WARN_GULEN
 	controls_state = 633
 	} 
 	
-		available = {
-		has_idea = TUR_PKK_insurgency_active
-		}
 
 		completion_reward = {
 		army_experience = 15
@@ -5207,12 +5207,6 @@ country_event = TurkeyF.111
 				amount = 1000
 			}
 			custom_effect_tooltip = kamikaze_focus_tooltip
-			if = { 
-				limit = {
-					has_dlc = "Waking the Tiger"
-				}
-				custom_effect_tooltip = cost_reduced_last_stand 
-			}
 		}
 		ai_will_do = { base = 8 }
 	}

@@ -2633,6 +2633,12 @@ swap_ideas = {
 
 		available = {
 		has_global_flag = TUR_coup_attempt_failed
+		
+			is_power_balance_in_range = {
+				id = TRGX_power_balance
+				range < TRGX_middle_left_side_range  
+			}
+		
 		}
 		
 		bypass = {
@@ -2640,12 +2646,6 @@ swap_ideas = {
 		}
 
 			
-		available = {
-			is_power_balance_in_range = {
-				id = TRGX_power_balance
-				range < TRGX_middle_left_side_range  
-			}
-		}
 		
 		completion_reward = {
         add_war_support = 0.05

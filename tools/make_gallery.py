@@ -59,12 +59,12 @@ def update():
     img = mosaic(11)
     d = ImageDraw.Draw(img)
     d.rectangle((110, 90, 119, 240), fill=RED)
-    d.text((144, 88), 'UPDATE 2.0.3-TUR.7  ·  PLAYTEST AND LOGIC PASS', font=font(32), fill=GOLD)
+    d.text((144, 88), 'UPDATE 2.0.3-TUR.8  ·  THE ATATÜRK UPDATE', font=font(32), fill=GOLD)
     d.text((140, 128), "What's New", font=font(88), fill=WHITE)
-    rows = ('Long focuses now take 45 or 55 days', 'PKK follows the real 2000-2015 timeline', 'Presidential elections show who runs',
-            'AI focus priorities: development first', 'Real 1999 parliament seats at the start',
-            'Space programme and locked paths restored', 'Mafia events rarer, third option 3.5 billion', '96 wrong money and party effects fixed',
-            '19 impossible event dates fixed', 'Works without Arms Against Tyranny')
+    rows = ('Atatürk path no longer softlocks', 'Atatürk wins the elections and leads the CHP', 'Return of the Father: +25% PP and building',
+            'Atatürk focuses build twice the factories', 'Atatürk focuses give 50% more political power',
+            'Path Guide: 10 pages with every date window', 'Tells you when to wait and for how long', '48 focuses had a condition the game ignored',
+            '8 decisions lost half their effects: fixed', 'Fake tooltips and dead conditions removed')
     for i, text in enumerate(rows):
         x, y = (110 if i < 5 else 1000), 340 + (i % 5) * 110
         d.rounded_rectangle((x, y, x + 820, y + 88), radius=8, fill=PANEL, outline=EDGE, width=2)

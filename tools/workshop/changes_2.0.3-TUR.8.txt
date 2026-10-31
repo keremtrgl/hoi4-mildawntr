@@ -1,0 +1,109 @@
+[h1]Update 2.0.3-TUR.8 · The Atatürk Update[/h1]
+
+Atatürk's return was the path players asked about most, and the path that broke most often. We traced it step by step in game, fixed what stopped it, made it far stronger, and rewrote the Path Guide so nobody is left waiting without knowing why.
+
+[h2]The Atatürk path works from start to finish[/h2]
+[list]
+[*][b]No more softlock.[/b] "Declare New Elections" started an ordinary election campaign that the CHP almost never won. Most of the tree then stayed locked because it needs social democrats in power. Now the CHP wins the elections and forms the government, and the tooltip says so.
+[*][b]Atatürk leads the country himself.[/b] After the Supreme Presidency event the CHP governs alone with elections suspended, and Mustafa Kemal Pasha becomes the leader.
+[*]"New Kemalism" now really raises CHP support, as its tooltip promised.
+[*]"A New Control" no longer waits for a condition the path cannot meet at that point.
+[*][b]Tested in game:[/b] the event chain, the elections, the change of leader and the unlocked branches.
+[/list]
+
+[h2]A much stronger Atatürk[/h2]
+Reaching Atatürk means wrecking your own industry and stability, so his return now pays that back.
+[list]
+[*][b]New spirit, "The Return of the Father" (3 years):[/b] +10% stability, +25% political power, +25% construction speed, +10% factory output, +10% research speed, +5% war support.
+[*][b]He rebuilds the industry:[/b] the moment he returns you get +150 political power and up to 10 civilian factories, 8 military factories and 2 dockyards in Ankara, İzmir, Bursa, Adana, Antalya, Edirne and Sivas, with the building slots they need. Only states you still control get them.
+[*][b]Twice the factories:[/b] every factory and dockyard the Atatürk focuses build is doubled (41 rewards), and offsite factories too. Building slots grow with them, so nothing is wasted.
+[*][b]50% more political power[/b] from all 36 Atatürk focuses that give it.
+[/list]
+
+[h2]Path Guide rewritten: 10 pages[/h2]
+The old guide said what to do but not when, so players did everything right and still saw nothing happen.
+[list]
+[*]One page per path: the 2001 crisis and its successors, Ottoman, Junta, Constitutional Court, Mafia, Anarchists and MİT, Atatürk, HEPAR and Ülkücü, the reformed AKP and the 2023 CHP leaders.
+[*]Every page gives the exact date window, the conditions, which options to pick and which settings must be on.
+[*][b]It tells you when you must wait.[/b] Example: Atatürk cannot appear before 10 January 2001; after the first event, three more follow on 10 May, 10 June and 10 July 2001 at the earliest.
+[*]The first page lists every key date at a glance. Pages have next and previous buttons.
+[/list]
+
+[h2]Conditions the game silently ignored[/h2]
+When a focus or decision repeats a block, Hearts of Iron keeps only the last copy and drops the first without a word. We found and merged every case.
+[list]
+[*][b]48 focuses[/b] across the AKP, AYM, CHP, DEM, Mafia, MİT, Ottoman, Saadet and TKP trees had half of their requirements ignored. Both halves apply now, so these focuses open exactly when they were meant to.
+[*][b]5 TMSF decisions[/b] and the plane project lost half of their results when they ended. They give everything now.
+[*][b]Clear the Slums[/b] lost half of its effect. Fixed.
+[*]The Ottoman rally decision had a dead second cost and duration. Cleaned up: 50 political power, 25 days, as before.
+[/list]
+
+[h2]Other fixes[/h2]
+[list]
+[*]Two Ottoman and TKP focuses promised a cheaper "last stand" ability that does not exist in Millennium Dawn. The false tooltips are gone.
+[*]"Beat the EMEP's coup" had a dead condition and a misleading "if not achieved in 6 years" note. Removed.
+[*]Clearer names: "Shell the PKK Positions" and "Military Culture", with new descriptions.
+[/list]
+
+[h2]Notes[/h2]
+[list]
+[*]Existing saves load. The Atatürk fixes apply to saves that have not reached Atatürk yet; a new game is recommended.
+[*]For the Atatürk, Mafia, Anarchist and MİT paths, turn on [b]Fictional Reality[/b] in Mod Settings. It starts switched off.
+[*]Built for Millennium Dawn 2.0.3 and Hearts of Iron IV 1.19.
+[*]The Turkish language pack is updated to 2.0.3-TUR.8 at the same time; please update both.
+[/list]
+
+[h1]Türkçe[/h1]
+
+Atatürk'ün dönüşü en çok sorulan ve en çok bozulan yoldu. Oyunda adım adım takip ettik, onu durduran hataları düzelttik, yolu çok daha güçlü yaptık ve Yol Rehberi'ni yeniden yazdık: artık kimse neden beklediğini bilmeden beklemeyecek.
+
+[h2]Atatürk yolu baştan sona çalışıyor[/h2]
+[list]
+[*][b]Kilitlenme bitti.[/b] "Yeni Seçim İlan Et" sıradan bir seçim kampanyası başlatıyordu ve CHP neredeyse hiç kazanamıyordu. Ağacın büyük kısmı iktidarda sosyal demokrat ister, bu yüzden kilitli kalıyordu. Artık CHP seçimi kazanıp hükümeti kuruyor; ipucu da bunu söylüyor.
+[*][b]Ülkeyi Atatürk bizzat yönetiyor.[/b] Yüce Cumhurbaşkanlığı olayından sonra CHP seçimler askıya alınmış şekilde tek başına yönetiyor ve lider Mustafa Kemal Paşa oluyor.
+[*]"Yeni Kemalizm" ipucunda yazdığı gibi CHP desteğini gerçekten artırıyor.
+[*]"Yeni Bir Denetim" yolun o anda karşılayamadığı bir koşulu artık beklemiyor.
+[*][b]Oyunda test edildi:[/b] olay zinciri, seçim, lider değişimi ve açılan dallar.
+[/list]
+
+[h2]Çok daha güçlü bir Atatürk[/h2]
+Atatürk'e ulaşmak için kendi sanayinizi ve istikrarınızı yıkıyorsunuz; dönüşü artık bunun karşılığını veriyor.
+[list]
+[*][b]Yeni ulusal ruh, "Ata'nın Dönüşü" (3 yıl):[/b] +%10 istikrar, +%25 siyasi güç, +%25 inşa hızı, +%10 fabrika verimi, +%10 araştırma hızı, +%5 savaş desteği.
+[*][b]Sanayiyi yeniden kuruyor:[/b] Döndüğü anda +150 siyasi güç ve Ankara, İzmir, Bursa, Adana, Antalya, Edirne ve Sivas'ta 10'a kadar sivil fabrika, 8 askerî fabrika ve 2 tersane, gerekli inşa alanlarıyla birlikte. Yalnızca hâlâ elinizde olan bölgelere kurulur.
+[*][b]İki kat fabrika:[/b] Atatürk odaklarının kurduğu her fabrika ve tersane ikiye katlandı (41 ödül), ülke dışı fabrikalar da. İnşa alanları da birlikte artıyor, hiçbiri boşa gitmiyor.
+[*]Siyasi güç veren 36 Atatürk odağının hepsi [b]%50 daha fazla siyasi güç[/b] veriyor.
+[/list]
+
+[h2]Yol Rehberi yeniden yazıldı: 10 sayfa[/h2]
+Eski rehber ne yapılacağını söylüyor ama ne zaman olacağını söylemiyordu; oyuncular her şeyi doğru yapıp yine hiçbir şey göremiyordu.
+[list]
+[*]Her yol için bir sayfa: 2001 krizi ve ardılları, Osmanlı, Cunta, AYM, Mafya, Anarşist ve MİT, Atatürk, HEPAR ve Ülkücü, Yenilenmiş AKP ve 2023 CHP liderleri.
+[*]Her sayfada tam tarih aralığı, koşullar, seçilecek seçenekler ve açık olması gereken ayarlar yazıyor.
+[*][b]Beklemeniz gerekiyorsa söylüyor.[/b] Örnek: Atatürk 10 Ocak 2001'den önce gelemez; ilk olaydan sonra üç olay daha en erken 10 Mayıs, 10 Haziran ve 10 Temmuz 2001'de gelir.
+[*]İlk sayfa tüm önemli tarihleri tek bakışta gösteriyor. Sayfalar arasında ileri ve geri düğmeleri var.
+[/list]
+
+[h2]Oyunun sessizce görmezden geldiği koşullar[/h2]
+Bir odak ya da karar aynı bloğu iki kez yazınca Hearts of Iron yalnızca sonuncusunu okur, ilkini hiçbir uyarı vermeden atar. Bu durumların hepsini bulup birleştirdik.
+[list]
+[*]AKP, AYM, CHP, DEM, Mafya, MİT, Osmanlı, Saadet ve TKP ağaçlarındaki [b]48 odağın[/b] koşullarının yarısı yok sayılıyordu. Artık iki yarısı da geçerli; bu odaklar tam olması gerektiği zaman açılıyor.
+[*][b]5 TMSF kararı[/b] ve uçak projesi biterken sonuçlarının yarısını kaybediyordu. Artık hepsini veriyor.
+[*][b]Gecekonduları Temizle[/b] etkisinin yarısını kaybediyordu. Düzeltildi.
+[*]Osmanlı mitingi kararındaki ölü ikinci maliyet ve süre temizlendi: önceden olduğu gibi 50 siyasi güç, 25 gün.
+[/list]
+
+[h2]Diğer düzeltmeler[/h2]
+[list]
+[*]İki Osmanlı ve TKP odağı, Millennium Dawn'da var olmayan ucuzlamış bir "son direniş" yeteneği vaat ediyordu. Yanlış ipuçları kaldırıldı.
+[*]"EMEP'in Darbesini Yen" odağındaki ölü koşul ve yanıltıcı "6 yıl içinde başarılmazsa" notu kaldırıldı.
+[*]Daha açık isimler: "PKK Mevzilerini Topçuyla Döv" ve "Askerî Kültür", yeni açıklamalarla.
+[/list]
+
+[h2]Notlar[/h2]
+[list]
+[*]Eski kayıtlar açılır. Atatürk düzeltmeleri henüz Atatürk'e ulaşmamış kayıtlarda geçerlidir; yeni oyun önerilir.
+[*]Atatürk, Mafya, Anarşist ve MİT yolları için Mod Ayarları'nda [b]Kurgusal Gerçeklik[/b]'i açın. Başlangıçta kapalıdır.
+[*]Millennium Dawn 2.0.3 ve Hearts of Iron IV 1.19 için hazırlandı.
+[*]Türkçe dil paketi de aynı anda 2.0.3-TUR.8'e güncellendi; lütfen ikisini birlikte güncelleyin.
+[/list]

@@ -1,4 +1,4 @@
-version="2.0.3-TUR.7"
+version="2.0.3-TUR.8"
 name="Millenium Dawn +Turkey - Türkçe Dil Paketi"
 tags={
 	"Translation"

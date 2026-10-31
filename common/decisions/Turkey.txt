@@ -3547,8 +3547,7 @@ swap_ideas = {
 
 			complete_effect = {
 		custom_effect_tooltip = PREREQUISITE_RES_2
-		}	
-		complete_effect = {
+		
 			custom_effect_tooltip = HOUSING_INCREASE_3
 	subtract_from_variable = { TUR_building_resistancy = -3 }
 			add_stability = -0.03
@@ -3559,7 +3558,9 @@ swap_ideas = {
 			set_temp_variable = { temp_outlook_increase = 0.01 }
 			change_relative_party_popularity = yes
 			set_temp_variable = { drift_switch_change = 0.01 }	
-	}   }
+	
+			}	
+   }
 	TUR_new_restorations = {
 		icon = GFX_decision_generic_construction
 
@@ -4187,11 +4188,12 @@ TUR_nationalized_weaponary = {
 		}
 		remove_effect = {
 		set_global_flag = TUR_announced_plane_project
-		}
-		remove_effect = {
+		
 		add_war_support = 0.01
 		add_stability = 0.01
-		} 
+		
+		}
+ 
 	}
 
 
@@ -7375,10 +7377,6 @@ TUR_islamist_restorationists = {
 			factor = 15
 		}
 
-		days_remove = 185
-		cost = 75
-		fire_only_once = yes
-		
 		days_remove = 25
 		cost = 50
 		fire_only_once = yes

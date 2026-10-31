@@ -1556,7 +1556,11 @@ reverse_add_opinion_modifier = { target = TUR modifier = state_visists}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 161
+	controls_state = 1032
+	
+		}
 
         bypass = {
 		OR = {
@@ -1565,10 +1569,6 @@ reverse_add_opinion_modifier = { target = TUR modifier = state_visists}
         country_exists = CHI
         } } }
 
-    available = {
-	controls_state = 161
-	controls_state = 1032
-	}
 
 	completion_reward = {
 			161 = {
@@ -1757,7 +1757,10 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 161
+	
+		}
 
         bypass = {
 		OR = {
@@ -1766,9 +1769,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
         country_exists = CHI
         } } }
 
-    available = {
-	controls_state = 161
-	}
 
 	completion_reward = {
 					TUR = {
@@ -1899,7 +1899,11 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 934
+	controls_state = 155
+	
+		}
 
         bypass = {
 		OR = {
@@ -1908,10 +1912,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
         country_exists = CHI
         } } }
 
-    available = {
-	controls_state = 934
-	controls_state = 155
-	}
 
 	completion_reward = {
 					TUR = {
@@ -1961,7 +1961,11 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 162
+	controls_state = 1032
+	
+		}
 
         bypass = {
 		OR = {
@@ -1970,10 +1974,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
         country_exists = CHI
         } } }
 
-    available = {
-	controls_state = 162
-	controls_state = 1032
-	}
 
 	completion_reward = {
 					TUR = {
@@ -2023,7 +2023,11 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 162
+	controls_state = 1032
+	
+		}
 
         bypass = {
 		OR = {
@@ -2032,10 +2036,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
         country_exists = CHI
         } } }
 
-    available = {
-	controls_state = 162
-	controls_state = 1032
-	}
 
 	completion_reward = {
 					TUR = {
@@ -2085,7 +2085,11 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 160
+	controls_state = 159
+	
+		}
 
         bypass = {
 		OR = {
@@ -2094,10 +2098,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
         country_exists = CHI
         } } }
 
-    available = {
-	controls_state = 160
-	controls_state = 159
-	}
 
 	completion_reward = {
 					TUR = {
@@ -2147,7 +2147,11 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 155
+	controls_state = 157
+	
+		}
 
         bypass = {
 		OR = {
@@ -2156,10 +2160,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
         country_exists = CHI
         } } }
 
-    available = {
-	controls_state = 155
-	controls_state = 157
-	}
 
 	completion_reward = {
 					TUR = {
@@ -2215,7 +2215,11 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 161
+	controls_state = 157
+	
+		}
 
         bypass = {
 		OR = {
@@ -2224,10 +2228,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
         country_exists = CHI
         } } }
 
-    available = {
-	controls_state = 161
-	controls_state = 157
-	}
 
 	completion_reward = {
 					TUR = {
@@ -2459,7 +2459,12 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 155
+	controls_state = 157
+	controls_state = 161
+	
+		}
 
         bypass = {
 		OR = {
@@ -2468,11 +2473,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
         country_exists = CHI
         } } }
 
-    available = {
-	controls_state = 155
-	controls_state = 157
-	controls_state = 161
-	}
 
 	completion_reward = {
 					TUR = {
@@ -2628,12 +2628,6 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 				}
 			}
 			custom_effect_tooltip = kamikaze_focus_tooltip
-			if = { 
-				limit = {
-					has_dlc = "Waking the Tiger"
-				}
-				custom_effect_tooltip = cost_reduced_last_stand 
-			}
 		}
 		ai_will_do = { base = 8 }
 	}
@@ -4352,15 +4346,9 @@ search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 
 search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 
-    available = {
-    NOT = {
-	has_global_flag = TUR_TKP_GET_DESTROYED
-	}
-	}
 
 	completion_reward = {
 			country_event = TurkeyF.181
-			custom_effect_tooltip = IF_NOT_ACHIEVED_6_YEARS
 			}
 		ai_will_do = { base = 10 }
 			} 
@@ -6476,9 +6464,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
         available = {
         has_war = yes
-        }
-
-		available = {
+        
 		GER = {
 		influence_higher_30 = yes
 		}
@@ -6497,7 +6483,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		GRE = {
 		influence_higher_30 = yes
 		}
+		
 		}
+
 
     completion_reward = {
 	 GER = {	
@@ -6546,9 +6534,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
         available = {
         has_war = yes
-        }
-
-		available = {
+        
 		GER = {
 		influence_higher_30 = yes
 		}
@@ -6567,7 +6553,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		GRE = {
 		influence_higher_30 = yes
 		}
+		
 		}
+
 
     completion_reward = {
 		45 = {
@@ -8457,9 +8445,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 
         available = {
 		has_war = yes
-        }
-
-		available = {
+        
 		GER = {
 		influence_higher_30 = yes
 		}
@@ -8478,7 +8464,9 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 		GRE = {
 		influence_higher_30 = yes
 		}
+		
 		}
+
 
     completion_reward = {
 		45 = {
@@ -8596,7 +8584,10 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 
         available = {
 		country_exists = USA
-        }
+        
+		has_war = yes
+        
+		}
 
     bypass = {
 	NOT = {
@@ -8605,9 +8596,6 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
 
-        available = {
-		has_war = yes
-        }
 
     completion_reward = {
 	army_experience = 25
@@ -8654,9 +8642,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 
         available = {
 		has_war = yes
-        }
-
-		available = {
+        
 		GER = {
 		influence_higher_30 = yes
 		}
@@ -8675,7 +8661,9 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		GRE = {
 		influence_higher_30 = yes
 		}
+		
 		}
+
 
     completion_reward = {
 		45 = {
@@ -9183,7 +9171,10 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = SOV
 		 }
-        }
+        
+	controls_state = 1032
+	
+		}
 
     bypass = {
 	OR = {
@@ -9193,9 +9184,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	 }
 	} }
 
-    available = {
-	controls_state = 1032
-	}
 
 	completion_reward = {
 					TUR = {
@@ -9310,7 +9298,13 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = CHI
 		 }
-        }
+        
+	controls_state = 1032
+	controls_state = 162
+	controls_state = 934
+	controls_state = 155
+	
+		}
 
     bypass = {
 	OR = {
@@ -9320,12 +9314,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	 }
 	} }
 
-    available = {
-	controls_state = 1032
-	controls_state = 162
-	controls_state = 934
-	controls_state = 155
-	}
 
 	completion_reward = {
 					TUR = {
@@ -9461,7 +9449,10 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		NOT = {
 		has_war_with = SOV
 		 }
-        }
+        
+	controls_state = 1032
+	
+		}
 
     bypass = {
 	OR = {
@@ -9471,9 +9462,6 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 	 }
 	} }
 
-    available = {
-	controls_state = 1032
-	}
 
 	completion_reward = {
 					TUR = {

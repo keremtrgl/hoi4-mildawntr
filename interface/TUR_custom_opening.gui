@@ -95,48 +95,46 @@ guiTypes = {
 		position = { x = -64% y = 30% }
 		size = { width = 570 height = 600 }
 		orientation = upper_right
-		
+
 		fade_time = 300
 		fade_type = linear
 		moveable = yes
 		click_to_front = yes
-		
+
 		background = {
 			name = "achievements_bgs"
 			spriteType = "GFX_settings_popup_bg"
 		}
-		
+
 		instantTextBoxType = {
 			name = "FAQ_title"
 			position = { x = 45 y = 27 }
 			font = "hoi_30header"
 			maxWidth = 400
 			maxHeight = 20
-			text = "FAQ_S"	
-			format = centre
-		}
-		
-		instantTextBoxType = {
-			name = "super_event_1_desc"
-			position = { x = 22 y = 92 }
-			font = "hoi_18mbs"
-			maxWidth = 425
-			maxHeight = 70
-			text = "FAQ_1_DESC"	
+			text = "FAQ_S"
 			format = centre
 		}
 
+		instantTextBoxType = {
+			name = "guide_text_1"
+			position = { x = 25 y = 82 }
+			font = "hoi_16mbs"
+			maxWidth = 420
+			maxHeight = 390
+			text = "FAQ_1_DESC"
+			format = left
+		}
+
 		buttonType = {
-			name = "come_on_button"
+			name = "guide_next_1"
 			position = { x = 300 y = 478 }
 			spriteType = "GFX_naval_increase_amount"
 			frame = 1
-			font = "hoi_18mbs"
-			format = center
 		}
-	
+
 		buttonType = {
-			name = "return_1_button"
+			name = "guide_return_1"
 			position = { x = 160 y = 480 }
 			spriteType = "GFX_sort_button_140x29"
 			frame = 1
@@ -146,66 +144,62 @@ guiTypes = {
 			shortcut = "ESCAPE"
 		}
 	}
- }
+}
 
- 
+
 guiTypes = {
 	containerWindowType = {
 		name = "custom_opening_3"
 		position = { x = -64% y = 30% }
 		size = { width = 570 height = 600 }
 		orientation = upper_right
-		
+
 		fade_time = 300
 		fade_type = linear
 		moveable = yes
 		click_to_front = yes
-		
+
 		background = {
 			name = "achievements_bgs"
 			spriteType = "GFX_settings_popup_bg"
 		}
-		
+
 		instantTextBoxType = {
 			name = "FAQ_title"
 			position = { x = 45 y = 27 }
 			font = "hoi_30header"
 			maxWidth = 400
 			maxHeight = 20
-			text = "FAQ_S_2"	
+			text = "FAQ_S_2"
 			format = centre
 		}
-		
+
 		instantTextBoxType = {
-			name = "super_event_1_desc"
-			position = { x = 22 y = 92 }
-			font = "hoi_18mbs"
-			maxWidth = 425
-			maxHeight = 70
-			text = "FAQ_2_DESC"	
-			format = centre
+			name = "guide_text_2"
+			position = { x = 25 y = 82 }
+			font = "hoi_16mbs"
+			maxWidth = 420
+			maxHeight = 390
+			text = "FAQ_2_DESC"
+			format = left
 		}
 
 		buttonType = {
-			name = "come_on_button_neg"
-			position = { x = 300 y = 478 }
-			spriteType = "GFX_naval_increase_amount"
-			frame = 1
-			font = "hoi_18mbs"
-			format = center
-		}
-
-		buttonType = {
-			name = "come_on_button_pos"
+			name = "guide_prev_2"
 			position = { x = 125 y = 478 }
 			spriteType = "GFX_naval_decrease_amount"
 			frame = 1
-			font = "hoi_18mbs"
-			format = center
 		}
 
 		buttonType = {
-			name = "return_2_button"
+			name = "guide_next_2"
+			position = { x = 300 y = 478 }
+			spriteType = "GFX_naval_increase_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_return_2"
 			position = { x = 160 y = 480 }
 			spriteType = "GFX_sort_button_140x29"
 			frame = 1
@@ -215,7 +209,7 @@ guiTypes = {
 			shortcut = "ESCAPE"
 		}
 	}
- }
+}
 
 
 guiTypes = {
@@ -224,58 +218,53 @@ guiTypes = {
 		position = { x = -64% y = 30% }
 		size = { width = 570 height = 600 }
 		orientation = upper_right
-		
+
 		fade_time = 300
 		fade_type = linear
 		moveable = yes
 		click_to_front = yes
-		
+
 		background = {
 			name = "achievements_bgs"
 			spriteType = "GFX_settings_popup_bg"
 		}
-		
+
 		instantTextBoxType = {
 			name = "FAQ_title"
 			position = { x = 45 y = 27 }
 			font = "hoi_30header"
 			maxWidth = 400
 			maxHeight = 20
-			text = "FAQ_S_3"	
-			format = centre
-		}
-		
-		instantTextBoxType = {
-			name = "super_event_1_desc"
-			position = { x = 22 y = 92 }
-			font = "hoi_18mbs"
-			maxWidth = 425
-			maxHeight = 70
-			text = "FAQ_3_DESC"	
+			text = "FAQ_S_3"
 			format = centre
 		}
 
+		instantTextBoxType = {
+			name = "guide_text_3"
+			position = { x = 25 y = 82 }
+			font = "hoi_16mbs"
+			maxWidth = 420
+			maxHeight = 390
+			text = "FAQ_3_DESC"
+			format = left
+		}
+
 		buttonType = {
-			name = "come_on_button_pos2"
+			name = "guide_prev_3"
 			position = { x = 125 y = 478 }
 			spriteType = "GFX_naval_decrease_amount"
 			frame = 1
-			font = "hoi_18mbs"
-			format = center
-		 }
-
-		buttonType = {
-			name = "come_on_button_neg2"
-			position = { x = 300 y = 478 }
-			spriteType = "GFX_naval_increase_amount"
-			frame = 1
-			font = "hoi_18mbs"
-			format = center
-			shortcut = "ESCAPE"
 		}
 
 		buttonType = {
-			name = "return_4_button"
+			name = "guide_next_3"
+			position = { x = 300 y = 478 }
+			spriteType = "GFX_naval_increase_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_return_3"
 			position = { x = 160 y = 480 }
 			spriteType = "GFX_sort_button_140x29"
 			frame = 1
@@ -285,9 +274,7 @@ guiTypes = {
 			shortcut = "ESCAPE"
 		}
 	}
- }
-
-
+}
 
 
 guiTypes = {
@@ -296,58 +283,53 @@ guiTypes = {
 		position = { x = -64% y = 30% }
 		size = { width = 570 height = 600 }
 		orientation = upper_right
-		
+
 		fade_time = 300
 		fade_type = linear
 		moveable = yes
 		click_to_front = yes
-		
+
 		background = {
 			name = "achievements_bgs"
 			spriteType = "GFX_settings_popup_bg"
 		}
-		
+
 		instantTextBoxType = {
 			name = "FAQ_title"
 			position = { x = 45 y = 27 }
 			font = "hoi_30header"
 			maxWidth = 400
 			maxHeight = 20
-			text = "FAQ_S_4"	
-			format = centre
-		}
-		
-		instantTextBoxType = {
-			name = "super_event_3_desc"
-			position = { x = 22 y = 92 }
-			font = "hoi_18mbs"
-			maxWidth = 425
-			maxHeight = 70
-			text = "FAQ_4_DESC"	
+			text = "FAQ_S_4"
 			format = centre
 		}
 
+		instantTextBoxType = {
+			name = "guide_text_4"
+			position = { x = 25 y = 82 }
+			font = "hoi_16mbs"
+			maxWidth = 420
+			maxHeight = 390
+			text = "FAQ_4_DESC"
+			format = left
+		}
+
 		buttonType = {
-			name = "come_on_button_pos3"
+			name = "guide_prev_4"
 			position = { x = 125 y = 478 }
 			spriteType = "GFX_naval_decrease_amount"
 			frame = 1
-			font = "hoi_18mbs"
-			format = center
-		 }
-
-		#buttonType = {
-		#	name = "come_on_button_neg3"
-		#	position = { x = 300 y = 478 }
-		#	spriteType = "GFX_naval_increase_amount"
-		#	frame = 1
-		#	font = "hoi_18mbs"
-		#	format = center
-		#	shortcut = "ESCAPE"
-		# }
+		}
 
 		buttonType = {
-			name = "return_5_button"
+			name = "guide_next_4"
+			position = { x = 300 y = 478 }
+			spriteType = "GFX_naval_increase_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_return_4"
 			position = { x = 160 y = 480 }
 			spriteType = "GFX_sort_button_140x29"
 			frame = 1
@@ -357,19 +339,390 @@ guiTypes = {
 			shortcut = "ESCAPE"
 		}
 	}
- }
+}
 
 
+guiTypes = {
+	containerWindowType = {
+		name = "custom_opening_6"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+
+		instantTextBoxType = {
+			name = "FAQ_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "FAQ_S_5"
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "guide_text_5"
+			position = { x = 25 y = 82 }
+			font = "hoi_16mbs"
+			maxWidth = 420
+			maxHeight = 390
+			text = "FAQ_5_DESC"
+			format = left
+		}
+
+		buttonType = {
+			name = "guide_prev_5"
+			position = { x = 125 y = 478 }
+			spriteType = "GFX_naval_decrease_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_next_5"
+			position = { x = 300 y = 478 }
+			spriteType = "GFX_naval_increase_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_return_5"
+			position = { x = 160 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "RETURN_TO_MENU_MD_DESC"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+}
 
 
+guiTypes = {
+	containerWindowType = {
+		name = "custom_opening_7"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+
+		instantTextBoxType = {
+			name = "FAQ_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "FAQ_S_6"
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "guide_text_6"
+			position = { x = 25 y = 82 }
+			font = "hoi_16mbs"
+			maxWidth = 420
+			maxHeight = 390
+			text = "FAQ_6_DESC"
+			format = left
+		}
+
+		buttonType = {
+			name = "guide_prev_6"
+			position = { x = 125 y = 478 }
+			spriteType = "GFX_naval_decrease_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_next_6"
+			position = { x = 300 y = 478 }
+			spriteType = "GFX_naval_increase_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_return_6"
+			position = { x = 160 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "RETURN_TO_MENU_MD_DESC"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+}
 
 
+guiTypes = {
+	containerWindowType = {
+		name = "custom_opening_8"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+
+		instantTextBoxType = {
+			name = "FAQ_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "FAQ_S_7"
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "guide_text_7"
+			position = { x = 25 y = 82 }
+			font = "hoi_16mbs"
+			maxWidth = 420
+			maxHeight = 390
+			text = "FAQ_7_DESC"
+			format = left
+		}
+
+		buttonType = {
+			name = "guide_prev_7"
+			position = { x = 125 y = 478 }
+			spriteType = "GFX_naval_decrease_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_next_7"
+			position = { x = 300 y = 478 }
+			spriteType = "GFX_naval_increase_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_return_7"
+			position = { x = 160 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "RETURN_TO_MENU_MD_DESC"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+}
 
 
+guiTypes = {
+	containerWindowType = {
+		name = "custom_opening_9"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+
+		instantTextBoxType = {
+			name = "FAQ_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "FAQ_S_8"
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "guide_text_8"
+			position = { x = 25 y = 82 }
+			font = "hoi_16mbs"
+			maxWidth = 420
+			maxHeight = 390
+			text = "FAQ_8_DESC"
+			format = left
+		}
+
+		buttonType = {
+			name = "guide_prev_8"
+			position = { x = 125 y = 478 }
+			spriteType = "GFX_naval_decrease_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_next_8"
+			position = { x = 300 y = 478 }
+			spriteType = "GFX_naval_increase_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_return_8"
+			position = { x = 160 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "RETURN_TO_MENU_MD_DESC"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+}
 
 
+guiTypes = {
+	containerWindowType = {
+		name = "custom_opening_10"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+
+		instantTextBoxType = {
+			name = "FAQ_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "FAQ_S_9"
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "guide_text_9"
+			position = { x = 25 y = 82 }
+			font = "hoi_16mbs"
+			maxWidth = 420
+			maxHeight = 390
+			text = "FAQ_9_DESC"
+			format = left
+		}
+
+		buttonType = {
+			name = "guide_prev_9"
+			position = { x = 125 y = 478 }
+			spriteType = "GFX_naval_decrease_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_next_9"
+			position = { x = 300 y = 478 }
+			spriteType = "GFX_naval_increase_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_return_9"
+			position = { x = 160 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "RETURN_TO_MENU_MD_DESC"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+}
 
 
+guiTypes = {
+	containerWindowType = {
+		name = "custom_opening_11"
+		position = { x = -64% y = 30% }
+		size = { width = 570 height = 600 }
+		orientation = upper_right
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+
+		background = {
+			name = "achievements_bgs"
+			spriteType = "GFX_settings_popup_bg"
+		}
+
+		instantTextBoxType = {
+			name = "FAQ_title"
+			position = { x = 45 y = 27 }
+			font = "hoi_30header"
+			maxWidth = 400
+			maxHeight = 20
+			text = "FAQ_S_10"
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "guide_text_10"
+			position = { x = 25 y = 82 }
+			font = "hoi_16mbs"
+			maxWidth = 420
+			maxHeight = 390
+			text = "FAQ_10_DESC"
+			format = left
+		}
+
+		buttonType = {
+			name = "guide_prev_10"
+			position = { x = 125 y = 478 }
+			spriteType = "GFX_naval_decrease_amount"
+			frame = 1
+		}
+
+		buttonType = {
+			name = "guide_return_10"
+			position = { x = 160 y = 480 }
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			text = "RETURN_TO_MENU_MD_DESC"
+			format = center
+			shortcut = "ESCAPE"
+		}
+	}
+}
 
 
 guiTypes = {

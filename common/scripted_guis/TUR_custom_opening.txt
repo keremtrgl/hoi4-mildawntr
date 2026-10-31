@@ -166,19 +166,26 @@ scripted_gui = {
 		}
 
 		effects = {
-		    return_1_button_click = {
+		    guide_return_1_click = {
 				clr_country_flag = FAQ_1
-				clr_country_flag = FAQ_2 
+				clr_country_flag = FAQ_2
 				clr_country_flag = FAQ_3
 				clr_country_flag = FAQ_4
-	            set_country_flag = MENU_OUTLOOK_TRIGGERED
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
-		    come_on_button_click = {
+		    guide_next_1_click = {
 				clr_country_flag = FAQ_1
 				set_country_flag = FAQ_2
 			}
-		} }
-	
+		}
+	}
+
 	custom_opening_3_window = {
 		context_type = player_context
 
@@ -191,22 +198,29 @@ scripted_gui = {
 		}
 
 		effects = {
-		    return_2_button_click = {
+		    guide_return_2_click = {
 				clr_country_flag = FAQ_1
-				clr_country_flag = FAQ_2 
+				clr_country_flag = FAQ_2
 				clr_country_flag = FAQ_3
 				clr_country_flag = FAQ_4
-	            set_country_flag = MENU_OUTLOOK_TRIGGERED
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
-		    come_on_button_pos_click = {
-				set_country_flag = FAQ_1
+		    guide_prev_2_click = {
 				clr_country_flag = FAQ_2
+				set_country_flag = FAQ_1
 			}
-		    come_on_button_neg_click = {
+		    guide_next_2_click = {
 				clr_country_flag = FAQ_2
 				set_country_flag = FAQ_3
 			}
-		} }
+		}
+	}
 
 	custom_opening_4_window = {
 		context_type = player_context
@@ -220,23 +234,29 @@ scripted_gui = {
 		}
 
 		effects = {
-		    return_4_button_click = {
+		    guide_return_3_click = {
 				clr_country_flag = FAQ_1
-				clr_country_flag = FAQ_2 
+				clr_country_flag = FAQ_2
 				clr_country_flag = FAQ_3
 				clr_country_flag = FAQ_4
-	            set_country_flag = MENU_OUTLOOK_TRIGGERED
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
-		    come_on_button_pos2_click = {
+		    guide_prev_3_click = {
 				clr_country_flag = FAQ_3
 				set_country_flag = FAQ_2
 			}
-		    come_on_button_neg2_click = {
+		    guide_next_3_click = {
 				clr_country_flag = FAQ_3
 				set_country_flag = FAQ_4
 			}
-		} }
-
+		}
+	}
 
 	custom_opening_5_window = {
 		context_type = player_context
@@ -250,16 +270,239 @@ scripted_gui = {
 		}
 
 		effects = {
-		    return_5_button_click = {
+		    guide_return_4_click = {
 				clr_country_flag = FAQ_1
-				clr_country_flag = FAQ_2 
+				clr_country_flag = FAQ_2
 				clr_country_flag = FAQ_3
 				clr_country_flag = FAQ_4
-	            set_country_flag = MENU_OUTLOOK_TRIGGERED
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
-		    come_on_button_pos3_click = {
-				set_country_flag = FAQ_3
+		    guide_prev_4_click = {
 				clr_country_flag = FAQ_4
+				set_country_flag = FAQ_3
 			}
-		} }
+		    guide_next_4_click = {
+				clr_country_flag = FAQ_4
+				set_country_flag = FAQ_5
+			}
+		}
+	}
+
+	custom_opening_6_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_6"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_5
+			tag = TUR
+		}
+
+		effects = {
+		    guide_return_5_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    guide_prev_5_click = {
+				clr_country_flag = FAQ_5
+				set_country_flag = FAQ_4
+			}
+		    guide_next_5_click = {
+				clr_country_flag = FAQ_5
+				set_country_flag = FAQ_6
+			}
+		}
+	}
+
+	custom_opening_7_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_7"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_6
+			tag = TUR
+		}
+
+		effects = {
+		    guide_return_6_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    guide_prev_6_click = {
+				clr_country_flag = FAQ_6
+				set_country_flag = FAQ_5
+			}
+		    guide_next_6_click = {
+				clr_country_flag = FAQ_6
+				set_country_flag = FAQ_7
+			}
+		}
+	}
+
+	custom_opening_8_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_8"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_7
+			tag = TUR
+		}
+
+		effects = {
+		    guide_return_7_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    guide_prev_7_click = {
+				clr_country_flag = FAQ_7
+				set_country_flag = FAQ_6
+			}
+		    guide_next_7_click = {
+				clr_country_flag = FAQ_7
+				set_country_flag = FAQ_8
+			}
+		}
+	}
+
+	custom_opening_9_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_9"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_8
+			tag = TUR
+		}
+
+		effects = {
+		    guide_return_8_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    guide_prev_8_click = {
+				clr_country_flag = FAQ_8
+				set_country_flag = FAQ_7
+			}
+		    guide_next_8_click = {
+				clr_country_flag = FAQ_8
+				set_country_flag = FAQ_9
+			}
+		}
+	}
+
+	custom_opening_10_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_10"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_9
+			tag = TUR
+		}
+
+		effects = {
+		    guide_return_9_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    guide_prev_9_click = {
+				clr_country_flag = FAQ_9
+				set_country_flag = FAQ_8
+			}
+		    guide_next_9_click = {
+				clr_country_flag = FAQ_9
+				set_country_flag = FAQ_10
+			}
+		}
+	}
+
+	custom_opening_11_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_11"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_10
+			tag = TUR
+		}
+
+		effects = {
+		    guide_return_10_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    guide_prev_10_click = {
+				clr_country_flag = FAQ_10
+				set_country_flag = FAQ_9
+			}
+		}
+	}
 }
