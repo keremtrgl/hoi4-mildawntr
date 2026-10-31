@@ -115,6 +115,21 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   - Tekrarlanan bloklar: HOI4 yalnızca sonuncusunu okur. 48 odakta `available`, 5 TMSF kararı ve uçak projesinde
     `remove_effect`, `TUR_clear_the_slums`'ta `complete_effect` birleştirildi; `TUR_ottoman_rally`'deki ölü ilk üçlü silindi.
   - Var olmayan `cost_reduced_last_stand` ipuçları (OTT, TKF) ve `TKF_beat_the_EMEPs_coup`'taki ölü koşul kaldırıldı.
+- **2.0.3-TUR.9** (1 Kasım 2026):
+  - Odak süreleri: 21 günlük odaklar 30, 45 günlükler 50 gün (AKP kuruluş olayları 16 Ağustos 2001'de geliyordu, ağaç
+    öne geçiyordu). Özel ağaçlardaki 105 günlük 44 odak 65 gün (`cost = 9.29`). TSK'daki 210 günlük odak bilerek kaldı.
+  - Cumhurbaşkanlığı seçimleri 45/55 (2000), 58/42 (2007), 52/48 (2014) başlıyor. Aday ipuçlarındaki ham `$KEY$` metni:
+    scripted loc iç içe anahtarı açmıyor, metin doğrudan yazıldı. Mafya seçeneği 1,5 milyar.
+  - Türkçe ekipman adları (`TUR_equipment_names_l_english.yml`): tank gövdeleri, helikopterler, Türksat/Göktürk/UKZS.
+    Teknoloji adları ülkeye özel yapılamıyor: araştırma ekranı `[scripted loc]` çalıştırmıyor, ham parantez gösteriyor (test edildi).
+  - Bilim insanı portreleri: `portraits/999_TUR_scientist_portraits.txt`, 26 erkek 13 kadın, militan portre yok.
+  - Atatürk'ün Mirası Korunuyor: +%10 istikrar, +0.50 PP; Tamamlandı: +0.75 PP. İsimsiz 8 ruha isim.
+  - Genel adla görünen partiler (`00_MD_politicsview_scripted_localisation.txt`, TUR yedek satırları `TUR.<ideoloji>_2000`):
+    LDP, ÖDP, Türk Hizbullahı, Kitap ve Sünnet Cemaati, İBDA-C, Yeşiller, SHP, Yenilikçiler. BBP zaten başka slotta var.
+  - Yalnızca ipucu gösteren 20 odak: Mafya soygunları yeni karar kategorisi (`TUR_mafia_heists`), Anarşist (çekirdek,
+    savaş hedefi, komünizm desteği), DEM (+%10 istikrar), DSP (parti desteği), MHF (gizli plan ruhu, ittifak görüşü,
+    BOS/ALB ittifaka). Rus kimyasal test odağı ABD'ye bakıyordu, SOV oldu.
+  - Workshop başlık/açıklaması 12 dilde (`tools/workshop/i18n/`), Steam'in Edit Title & Description sayfasından.
 
 ## Kalıcı dersler (tekrar düşme!)
 
