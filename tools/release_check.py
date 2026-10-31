@@ -578,7 +578,7 @@ def check_structure(rep, mod_files, md):
     mod_text = {r: comment.sub('', read(p)) for r, p in mod_files.items() if r.endswith('.txt')}
     md_text = [comment.sub('', read(p)) for p in files_under(md, ['common/**/*.txt', 'events/**/*.txt']).values()]
     every = '\n'.join(list(mod_text.values()) + md_text)
-    ours = '\n'.join(mod_text.values())
+    ours = '\n'.join(t for r, t in mod_text.items() if 'politicsview' not in r)      # MD's own lines for other countries
     allow = set(json.load(open(FLAG_ALLOW, encoding='utf-8')).get('reviewed', [])) if os.path.exists(FLAG_ALLOW) else set()
 
     def named(verb, kind, text):
