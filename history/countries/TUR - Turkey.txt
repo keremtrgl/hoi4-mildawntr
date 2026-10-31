@@ -252,7 +252,7 @@ set_global_flag = TUR_submod_history_loaded
 	set_variable = { TUR_mafia_influence_gain = 0 }
 	set_variable = { TUR_event_counter_1_mafia = 2 }
 	set_variable = { TUR_PKK_min_strength = 30 }
-	set_variable = { TUR_PKK_strength = 35 }
+	set_variable = { TUR_PKK_strength = 20 }
 	set_variable = { TUR_event_counter_1_pkk = 2 }
 	set_variable = { TUR_event_counter_2_pkk = 2 }
 	set_variable = { TUR_event_counter_3_pkk = 2 }
@@ -901,7 +901,7 @@ set_global_flag = TUR_submod_history_loaded
 	set_variable = { ct_training = 7 }
 	set_convoys = 90
 	set_variable = { TUR_PKK_aggro_increase = -0.5 }
-	set_variable = { TUR_PKK_aggro = 45 }
+	set_variable = { TUR_PKK_aggro = 30 }
 	set_variable = { TUR_PKK_max_aggro = 100 }
 	give_guarantee = AZE
 	add_timed_idea = { idea = turkeys_new_millennium  days = 991 }

@@ -1,17 +1,46 @@
 
-# First time the ceasefire breaks: starts the counter-terror decisions in common/decisions/Turkey.txt.
-# pkk_presence runs 0-100 and those decisions wear it down; the ideas cancel themselves at pkk_presence_min.
+# Starts the counter-terror decisions in common/decisions/Turkey.txt. pkk_presence runs 0-100 and sets how often
+# pkk_attack events come; it starts low and is capped at 60 so the insurgency stays a side problem. Those decisions
+# wear it down, and the ideas cancel themselves at pkk_presence_min.
 TUR_pkk_campaign_start = {
 	if = {
 		limit = { NOT = { has_country_flag = TUR_pkk_campaign_started } }
 		set_country_flag = TUR_pkk_campaign_started
-		set_variable = { var = pkk_presence value = 70 }
+		set_variable = { var = pkk_presence value = 30 }
 		set_variable = { var = pkk_presence_min value = 0 }
-		set_variable = { var = pkk_presence_max value = 100 }
+		set_variable = { var = pkk_presence_max value = 60 }
 		add_ideas = pkk_terror_idea
 		add_ideas = sympathetic_professors
 		add_ideas = outposts_problem
 		add_ideas = kurdish_language_problem
+	}
+}
+
+# Runs monthly. 2000: ceasefire after the capture of Ocalan. June 2004: low-level insurgency resumes.
+# July 2015: the peace process collapses, a sharp peak that fades by itself as TUR_PKK_aggro falls.
+TUR_pkk_timeline = {
+	if = {
+		limit = {
+			date > 2004.6.1
+			NOT = { has_country_flag = TUR_PKK_tamed }
+			OR = {
+				has_idea = TUR_PKK_insurgency_ceasefire
+				has_idea = TUR_PKK_insurgency_active
+			}
+		}
+		TUR_pkk_campaign_start = yes
+	}
+	if = {
+		limit = {
+			date > 2015.7.20
+			NOT = { has_country_flag = TUR_pkk_2015_escalation }
+			NOT = { has_country_flag = TUR_PKK_tamed }
+			has_idea = TUR_PKK_insurgency_ceasefire
+		}
+		set_country_flag = TUR_pkk_2015_escalation
+		set_variable = { TUR_PKK_aggro = 70 }
+		add_to_variable = { var = pkk_presence value = 15 }
+		clamp_variable = { var = pkk_presence min = 0 max = pkk_presence_max }
 	}
 }
 

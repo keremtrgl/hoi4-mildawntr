@@ -89,9 +89,12 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     eşitlendi. `TUR_AKP_small_start1` istisna: kod %1 kaldı, metin %3'ten %1'e indi (kod değişseydi AKP üç kat hızlanırdı).
   - Meclis başlangıcı gerçek 18 Nisan 1999 sonucu: DSP 136, MHP 129, FP 111, ANAP 86, DYP 85, bağımsız 3 (CHP 0).
   - Turkeys.9207 (2022 ittifakı) +%20 yerine +%5; diğer kampanya olayları %1–5 arası.
-  - PKK kararları (38 karar) yeniden bağlandı: `pkk_terror_idea` eski 2017 başlangıcından kalmıştı ve `pkk_presence` hiç
-    başlatılmıyordu. `TUR_pkk_campaign_start` ilk ateşkes bozulunca (`TUR_PKK_aggro > 59`) varlığı 70'ten başlatır ve 4
-    ruhu ekler. Cezalar hafifletildi: toplam -%25 istikrar / -%20 siyasi güç yerine -%7 / -%6.
+  - PKK 2000 başlangıcına göre yeniden kuruldu (`TUR_pkk_timeline`, aylık). Sistem 2017'ye göreydi: `pkk_terror_idea`
+    eklenmiyor, `pkk_presence` başlatılmıyor, saldırganlık yalnızca düştüğü için "ateşkes bozulması" tetiği çalışmıyordu.
+    2000: Öcalan sonrası ateşkes, güç 35 → 20, saldırganlık 45 → 30, rastgele saldırı yok. Haziran 2004: düşük yoğunluk
+    başlar, 38 karar açılır, varlık 30'dan başlar (üst sınır 60). Temmuz 2015: barış süreci biter, saldırganlık 70'e
+    çıkar ve kendiliğinden söner. Cezalar: toplam -%9 istikrar / -%6 siyasi güç (2015 zirvesinde -%12). Düşük yoğunlukta
+    saldırı yaklaşık 7 ayda bir. `add_stability = -0.5` yazım hatası -0.05 yapıldı.
   - Borç 364, hazine 34 ve kişi başı GSYH MD'nin değerleri, değiştirilmedi.
   - `release_check.py`: imkânsız tarih, hazine/ipucu ve dizi dışı parti kontrolleri.
   - `FIRE_SUPEREVENT_13` ("Turkish Germany") bilinçli olarak açılmadı: onu tetikleyecek içerik hiç yazılmamış.
