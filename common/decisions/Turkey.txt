@@ -6052,7 +6052,7 @@ TUR_bitcoin_sell_buy = {
 	  complete_effect = {  
 	  custom_effect_tooltip = BUY_BITCOIN_MTG
 	  subtract_from_variable = { TUR_deposit_bitcoin = -1 }
-			subtract_from_variable = { treasury = -1.0 }
+			subtract_from_variable = { treasury = 1 }
 			custom_effect_tooltip = 1_billion_expense_tt	
 } } 
 
@@ -6078,7 +6078,7 @@ TUR_bitcoin_sell_buy = {
 	  complete_effect = {  
 	  custom_effect_tooltip = BUY_BITCOIN_MTG
 	  subtract_from_variable = { TUR_deposit_bitcoin = -1 }
-			subtract_from_variable = { treasury = -1.0 }
+			subtract_from_variable = { treasury = 1 }
 			custom_effect_tooltip = 1_billion_expense_tt	
 } } 
 
@@ -6104,7 +6104,7 @@ TUR_bitcoin_sell_buy = {
 	  complete_effect = {  
 	  custom_effect_tooltip = BUY_BITCOIN_MTG
 	  subtract_from_variable = { TUR_deposit_bitcoin = -1 }
-			subtract_from_variable = { treasury = -30.0 }
+			subtract_from_variable = { treasury = 30 }
 			custom_effect_tooltip = 30_billion_expense_tt	
 } } 
 
@@ -6130,7 +6130,7 @@ TUR_bitcoin_sell_buy = {
 	  complete_effect = {  
 	  custom_effect_tooltip = BUY_BITCOIN_MTG
 	  subtract_from_variable = { TUR_deposit_bitcoin = -1 }
-			subtract_from_variable = { treasury = -500.0 }
+			subtract_from_variable = { treasury = 500 }
 			custom_effect_tooltip = 500_billion_expense_tt	
 } } 
 
@@ -6156,7 +6156,7 @@ TUR_bitcoin_sell_buy = {
 	  complete_effect = {  
 	  custom_effect_tooltip = BUY_BITCOIN_MTG
 	  subtract_from_variable = { TUR_deposit_bitcoin = -1 }
-			subtract_from_variable = { treasury = -1000.0 }
+			subtract_from_variable = { treasury = 1000 }
 			custom_effect_tooltip = 1_trillion_expense_tt	 
 } } 
 
@@ -6716,7 +6716,7 @@ TUR_cyprus_situation = {
 
       remove_effect = {
 			subtract_from_variable = { treasury = 75.0 }
-			custom_effect_tooltip = 100_billion_expense_tt
+			custom_effect_tooltip = 75_billion_expense_tt
 			NCY = {
 			146 = { 
 				add_building_construction = {
@@ -6751,7 +6751,7 @@ TUR_cyprus_situation = {
 
       remove_effect = {
 			subtract_from_variable = { treasury = 75.0 }
-			custom_effect_tooltip = 100_billion_expense_tt
+			custom_effect_tooltip = 75_billion_expense_tt
 			NCY = {
 			add_command_power = 10
 			146 = { 
@@ -7353,7 +7353,7 @@ TUR_islamist_restorationists = {
 		set_global_flag = TUR_islamic_revolutionary_move_2
         custom_effect_tooltip = ibda_approaching_4
 			hidden_effect = {
-				add_to_variable = { party_pop_array^11 = 0.01 }
+				add_to_variable = { party_pop_array^11 = 0.05 }
 				recalculate_party = yes
 			}	
 		} 

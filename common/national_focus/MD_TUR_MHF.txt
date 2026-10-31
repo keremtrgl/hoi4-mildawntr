@@ -546,7 +546,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 				}
 			custom_effect_tooltip = MHP_lose_support_1
 			hidden_effect = {
-				add_to_variable = { party_pop_array^23 = -0.03 }
+				add_to_variable = { party_pop_array^20 = -0.03 }
 				recalculate_party = yes
 			}					
 		}
@@ -643,7 +643,7 @@ swap_ideas = {
 				}
 			custom_effect_tooltip = MHP_supporting_action_3
 			hidden_effect = {
-				add_to_variable = { party_pop_array^23 = 0.03 }
+				add_to_variable = { party_pop_array^20 = 0.03 }
 				recalculate_party = yes
 			}					
 		}
@@ -736,7 +736,7 @@ swap_ideas = {
 				}
 			custom_effect_tooltip = MHP_supporting_action_3
 			hidden_effect = {
-				add_to_variable = { party_pop_array^23 = 0.03 }
+				add_to_variable = { party_pop_array^20 = 0.03 }
 				recalculate_party = yes
 			}					
 		}
@@ -765,7 +765,7 @@ swap_ideas = {
             }			
 			custom_effect_tooltip = MHP_lose_support_1
 			hidden_effect = {
-				add_to_variable = { party_pop_array^23 = -0.03 }
+				add_to_variable = { party_pop_array^20 = -0.03 }
 				recalculate_party = yes
 			}	
 					}
@@ -1781,7 +1781,7 @@ swap_ideas = {
 				}
 			custom_effect_tooltip = ULKISTS_gain_support_1
 			hidden_effect = {
-				add_to_variable = { party_pop_array^24 = -0.03 }
+				add_to_variable = { party_pop_array^21 = 0.03 }
 				recalculate_party = yes
 			}					
 		}
@@ -1804,7 +1804,7 @@ swap_ideas = {
 			add_ideas = ulkist_paramilitaries
 			custom_effect_tooltip = ULKISTS_gain_support_1
 			hidden_effect = {
-				add_to_variable = { party_pop_array^24 = -0.03 }
+				add_to_variable = { party_pop_array^21 = 0.03 }
 				recalculate_party = yes
 			}					
 		}
@@ -1828,7 +1828,7 @@ swap_ideas = {
 			add_ideas = islamic_cooperation_and_ulkism
 			custom_effect_tooltip = ULKISTS_gain_support_1
 			hidden_effect = {
-				add_to_variable = { party_pop_array^24 = -0.03 }
+				add_to_variable = { party_pop_array^21 = 0.03 }
 				recalculate_party = yes
 			}					
 		}
@@ -1880,7 +1880,7 @@ swap_ideas = {
             }			
 			custom_effect_tooltip = ULKISTS_gain_support_2
 			hidden_effect = {
-				add_to_variable = { party_pop_array^23 = 0.05 }
+				add_to_variable = { party_pop_array^21 = 0.05 }
 				recalculate_party = yes
 			}	
 					}
@@ -7604,7 +7604,7 @@ swap_ideas = {
 	            add_stability = 0.03
 			custom_effect_tooltip = ULKISTS_gain_support_1
 			hidden_effect = {
-				add_to_variable = { party_pop_array^24 = -0.03 }
+				add_to_variable = { party_pop_array^21 = 0.03 }
 				recalculate_party = yes
 			}					
 } ai_will_do = { base = 10 } }

@@ -556,7 +556,7 @@ custom_modifier_tooltip = AD_025
 		clr_global_flag = BENEFIT_THE_MAXIMIZATION		
 			custom_effect_tooltip = UNION_DECREASE_3
 		subtract_from_variable = { TUR_union_acceptance = 3 }
-        			subtract_from_variable = { treasury = 50.0 }
+        			subtract_from_variable = { treasury = -50 }
 			custom_effect_tooltip = 50_billion_revenue_tt
 	}   }
 

@@ -643,7 +643,7 @@ neutrality_neutral_social_are_in_power = yes
 
 		completion_reward = {
 			add_stability = -0.05
-			subtract_from_variable = { treasury = 100.0 }
+			subtract_from_variable = { treasury = -100 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -663,7 +663,7 @@ neutrality_neutral_social_are_in_power = yes
 
 		completion_reward = {
 			add_stability = -0.05
-			subtract_from_variable = { treasury = 100.0 }
+			subtract_from_variable = { treasury = -100 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -683,7 +683,7 @@ neutrality_neutral_social_are_in_power = yes
 
 		completion_reward = {
 			add_stability = -0.05
-			subtract_from_variable = { treasury = 100.0 }
+			subtract_from_variable = { treasury = -100 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -2158,7 +2158,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 
 		completion_reward = {
 			add_stability = -0.02
-			subtract_from_variable = { treasury = 100.0 }
+			subtract_from_variable = { treasury = -100 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -2411,7 +2411,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_stability = 0.02
 			add_political_power = -175
-			subtract_from_variable = { treasury = 50.0 }
+			subtract_from_variable = { treasury = -50 }
 			custom_effect_tooltip = 50_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -5026,7 +5026,7 @@ block_defence_decrease = yes
 				uses = 1
 				category = land_doctrine
 			}
-			subtract_from_variable = { treasury = 50.0 }
+			subtract_from_variable = { treasury = -50 }
 			custom_effect_tooltip = 50_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -5836,7 +5836,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 
 		completion_reward = {
 			add_stability = 0.05
-			subtract_from_variable = { treasury = 100.0 }
+			subtract_from_variable = { treasury = -100 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -5856,7 +5856,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 
 		completion_reward = {
 			add_stability = -0.03
-			subtract_from_variable = { treasury = 100.0 }
+			subtract_from_variable = { treasury = -100 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -5875,7 +5875,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 
 		completion_reward = {
  add_timed_idea = { idea = minor_inflation  days = 365 }
-subtract_from_variable = { treasury = 250.0 }
+subtract_from_variable = { treasury = -250 }
 			custom_effect_tooltip = 250_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -5897,7 +5897,7 @@ subtract_from_variable = { treasury = 250.0 }
 		    add_idea = the_finance_state_2
 			remove_idea = the_finance_state_1
 			}
-subtract_from_variable = { treasury = 100.0 }
+subtract_from_variable = { treasury = -100 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -5982,7 +5982,7 @@ subtract_from_variable = { treasury = 100.0 }
 
 		completion_reward = {
 			add_stability = -0.02
-			subtract_from_variable = { treasury = 50.0 }
+			subtract_from_variable = { treasury = -50 }
 			custom_effect_tooltip = 50_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -6007,7 +6007,7 @@ subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
 			GER = {
 			subtract_from_variable = { treasury = 50.0 }
-			custom_effect_tooltip = 50_billion_revenue_tt
+			custom_effect_tooltip = 50_billion_expense_tt
 			}
 		}
 		ai_will_do = { base = 14 }
@@ -6032,7 +6032,7 @@ subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
 			USA = {
 			subtract_from_variable = { treasury = 50.0 }
-			custom_effect_tooltip = 50_billion_revenue_tt
+			custom_effect_tooltip = 50_billion_expense_tt
 			}
 		}
 		ai_will_do = { base = 14 }
@@ -6058,7 +6058,7 @@ subtract_from_variable = { treasury = 100.0 }
 
 		completion_reward = {
 			add_stability = 0.07
-			subtract_from_variable = { treasury = -100.0 }
+			subtract_from_variable = { treasury = 100 }
 			custom_effect_tooltip = 100_billion_expense_tt
 		}
 		ai_will_do = { base = 14 }
@@ -6722,7 +6722,7 @@ add_ideas = world_of_guns
 
 		completion_reward = {
 			add_stability = 0.05
-			subtract_from_variable = { treasury = 100.0 }
+			subtract_from_variable = { treasury = -100 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }
@@ -6950,7 +6950,7 @@ add_ideas = world_of_guns
 
 		completion_reward = {
 			add_stability = 0.03
-			subtract_from_variable = { treasury = 500.0 }
+			subtract_from_variable = { treasury = -500 }
 			custom_effect_tooltip = 500_billion_revenue_tt
 		}
 		ai_will_do = { base = 14 }

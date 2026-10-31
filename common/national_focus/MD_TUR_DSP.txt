@@ -358,7 +358,7 @@ increase_policing_budget = yes
 				uses = 1
 				category = CAT_industry
 			}
-			subtract_from_variable = { treasury = 10.0 }
+			subtract_from_variable = { treasury = -10 }
 			custom_effect_tooltip = 10_billion_revenue_tt
 }   ai_will_do = { base = 10 } }
 	focus = {
@@ -399,7 +399,7 @@ increase_policing_budget = yes
 		completion_reward = {
 		add_stability = 0.01
 		add_political_power = 65
-			subtract_from_variable = { treasury = 10.0 }
+			subtract_from_variable = { treasury = -10 }
 			custom_effect_tooltip = 10_billion_revenue_tt
 }   ai_will_do = { base = 10 } }
 	focus = {
@@ -1835,7 +1835,7 @@ add_ideas =	media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			}		
 					custom_effect_tooltip = TUR_DSP_increase_small
 			hidden_effect = {
-				add_to_variable = { party_pop_array^3 = 0.02 }
+				add_to_variable = { party_pop_array^1 = 0.02 }
 				recalculate_party = yes
 			}		
 					custom_effect_tooltip = TUR_CHP_increase

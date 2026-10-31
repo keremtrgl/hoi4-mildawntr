@@ -1777,7 +1777,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		search_filters = {FOCUS_FILTER_STABILITY}		
 			completion_reward = {
 			add_stability = 0.05
-			subtract_from_variable = { treasury = 50.0 }
+			subtract_from_variable = { treasury = -50 }
 			custom_effect_tooltip = 50_billion_revenue_tt					
 				}
 		ai_will_do = { base = 10 }
@@ -2280,7 +2280,7 @@ add_political_power = -75
 add_war_support = 0.03
             custom_effect_tooltip = VATAN_normal
 			hidden_effect = {
-				add_to_variable = { party_pop_array^05= 0.03}
+				add_to_variable = { party_pop_array^4 = 0.03 }
 				recalculate_party = yes
 			}
 }

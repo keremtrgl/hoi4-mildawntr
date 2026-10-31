@@ -7507,7 +7507,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		add_political_power = -50
 		custom_effect_tooltip = AKP_2023_R
 			hidden_effect = {
-				add_to_variable = { party_pop_array^12 = 0.02 }
+				add_to_variable = { party_pop_array^12 = 0.015 }
 				recalculate_party = yes
 			}		
     news_event = Turkey_news.40
@@ -7874,7 +7874,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 						}	
     custom_effect_tooltip = TUR_AKP_fall_small
 			hidden_effect = {
-				add_to_variable = { party_pop_array^12 = -0.03 }
+				add_to_variable = { party_pop_array^12 = -0.02 }
 				recalculate_party = yes
 			}	
  }
@@ -7901,7 +7901,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		add_political_power = -50
 		custom_effect_tooltip = MEMLEKET_2023_R
 			hidden_effect = {
-				add_to_variable = { party_pop_array^0 = 0.02 }
+				add_to_variable = { party_pop_array^0 = 0.015 }
 				recalculate_party = yes
 			}		
     news_event = Turkey_news.38
@@ -7999,7 +7999,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 						}	
     custom_effect_tooltip = TUR_AKP_fall_small
 			hidden_effect = {
-				add_to_variable = { party_pop_array^12 = -0.03 }
+				add_to_variable = { party_pop_array^12 = -0.02 }
 				recalculate_party = yes
 			}	
  }
@@ -8027,7 +8027,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		set_global_flag = SINAN_OGAN_THE_VICTOR
 		custom_effect_tooltip = ZAFER_2023_R
 			hidden_effect = {
-				add_to_variable = { party_pop_array^21 = 0.02 }
+				add_to_variable = { party_pop_array^21 = 0.015 }
 				recalculate_party = yes
 			}		
 	    news_event = Turkey_news.39
@@ -8061,7 +8061,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		add_political_power = -50
 		custom_effect_tooltip = CHP_2023_R
 			hidden_effect = {
-				add_to_variable = { party_pop_array^3 = 0.02 }
+				add_to_variable = { party_pop_array^3 = 0.015 }
 				recalculate_party = yes
 			}		
     news_event = Turkey_news.41

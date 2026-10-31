@@ -16,7 +16,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	   add_political_power = 25
        custom_effect_tooltip = TUR_liberals
 			hidden_effect = {
-				add_to_variable = { party_pop_array^2= 0.05 }
+				add_to_variable = { party_pop_array^2 = 0.03 }
 				recalculate_party = yes
 			}
       }
@@ -482,7 +482,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	   }
        custom_effect_tooltip = TUR_liberals
 			hidden_effect = {
-				add_to_variable = { party_pop_array^2= 0.05 }
+				add_to_variable = { party_pop_array^2 = 0.03 }
 				recalculate_party = yes
 			}
       }
@@ -547,7 +547,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	completion_reward = {
 	   add_stability = 0.02
 	   add_political_power = -100
-			subtract_from_variable = { treasury = -50.0 }
+			subtract_from_variable = { treasury = -0.5 }
 			custom_effect_tooltip = 500_million_revenue_tt
 				country_event = Turkey.240
       }
@@ -568,7 +568,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	completion_reward = {
 	   add_stability = 0.07
 	   add_ideas = senfoni_orkestrasi
-			subtract_from_variable = { treasury = 25.0 }
+			subtract_from_variable = { treasury = 0.25 }
 			custom_effect_tooltip = 250_million_expense_tt
 					country_event = Turkey.241
       }
@@ -590,7 +590,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	   add_stability = -0.07
        custom_effect_tooltip = TUR_liberals
 			hidden_effect = {
-				add_to_variable = { party_pop_array^2= 0.05 }
+				add_to_variable = { party_pop_array^2 = 0.03 }
 				recalculate_party = yes
 			}
       }
@@ -640,7 +640,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	   add_stability = -0.05
        custom_effect_tooltip = TUR_liberals_negative
 			hidden_effect = {
-				add_to_variable = { party_pop_array^2= -0.05 }
+				add_to_variable = { party_pop_array^2 = -0.03 }
 				recalculate_party = yes
 			}
       }

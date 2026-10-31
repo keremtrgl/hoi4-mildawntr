@@ -171,7 +171,7 @@ focus_tree = {
     completion_reward = {
        custom_effect_tooltip = TUR_anap_normal_decrease
 			hidden_effect = {
-				add_to_variable = { party_pop_array^16= 0.03 }
+				add_to_variable = { party_pop_array^16 = -0.03 }
 				recalculate_party = yes
 			}			
             add_stability = -0.02         
@@ -2351,7 +2351,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
         add_stability = -0.05
        custom_effect_tooltip = TUR_anap_small_decrease
 			hidden_effect = {
-				add_to_variable = { party_pop_array^0= -0.01 }
+				add_to_variable = { party_pop_array^16 = -0.01 }
 				recalculate_party = yes
 			}			
 }   ai_will_do = { base = 10 } }
@@ -2377,7 +2377,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
         add_stability = 0.03
        custom_effect_tooltip = TUR_anap_small_increase
 			hidden_effect = {
-				add_to_variable = { party_pop_array^0= 0.01 }
+				add_to_variable = { party_pop_array^16 = 0.01 }
 				recalculate_party = yes
 			}			
 }   ai_will_do = { base = 10 } }
@@ -2400,7 +2400,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
         add_stability = 0.01
        custom_effect_tooltip = TUR_anap_small_increase
 			hidden_effect = {
-				add_to_variable = { party_pop_array^0= 0.01 }
+				add_to_variable = { party_pop_array^16 = 0.01 }
 				recalculate_party = yes
 			}			
 }   ai_will_do = { base = 10 } }

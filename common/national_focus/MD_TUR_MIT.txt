@@ -441,7 +441,7 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} }
-	subtract_from_variable = { treasury = -15.0 }
+	subtract_from_variable = { treasury = 15 }
 			custom_effect_tooltip = 15_billion_expense_tt
 		} ai_will_do = { base = 14 } } 
 	focus = {
@@ -3168,11 +3168,11 @@ reverse_add_opinion_modifier = { target = USA modifier = reached_out_a_major_pow
         }
 
 		completion_reward = {
-	  			subtract_from_variable = { treasury = 25.0 }
+	  			subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt	
 			USA = {
-	  			subtract_from_variable = { treasury = -25.0 }
-			custom_effect_tooltip = 50_billion_revenue_tt	
+	  			subtract_from_variable = { treasury = 25 }
+			custom_effect_tooltip = 25_billion_expense_tt	
 			}
 create_production_license = {
     target = USA

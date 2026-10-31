@@ -372,7 +372,7 @@ country_event = {
 
     custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
-				add_to_variable = { party_pop_array^3 = 0.05 }
+				add_to_variable = { party_pop_array^3 = 0.03 }
 				recalculate_party = yes
 			}
 	}
@@ -492,10 +492,10 @@ country_event = {
 		}
 			 add_political_power = -50
 			 add_stability = -0.07
-			subtract_from_variable = { treasury = -6.0 }
+			subtract_from_variable = { treasury = -5.25 }
 			custom_effect_tooltip = 5_25_billion_revenue_tt
 			USA = { 
-			subtract_from_variable = { treasury = 6.0 }
+			subtract_from_variable = { treasury = 6 }
 			custom_effect_tooltip = 6_billion_expense_tt
 			}
 	}
@@ -5146,7 +5146,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	add_political_power = -75
     custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
-				add_to_variable = { party_pop_array^3 = 0.05 }
+				add_to_variable = { party_pop_array^3 = 0.03 }
 				recalculate_party = yes
 			}
 			add_popularity = {
@@ -5190,7 +5190,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	add_stability = -0.01
     custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
-				add_to_variable = { party_pop_array^3 = 0.05 }
+				add_to_variable = { party_pop_array^3 = 0.03 }
 				recalculate_party = yes
 			}
 			add_popularity = {
@@ -6247,7 +6247,7 @@ country_event = {
 
     custom_effect_tooltip = TUR_AKP_small_start
 			hidden_effect = {
-				add_to_variable = { party_pop_array^12 = 0.05 }
+				add_to_variable = { party_pop_array^12 = 0.02 }
 				recalculate_party = yes
 			}
 
@@ -7061,7 +7061,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 			custom_effect_tooltip = TUR_CHP_increase_big
 			set_global_flag = istanbul_convention_withdrawal
 			hidden_effect = {
-				add_to_variable = { party_pop_array^3 = 0.06 }
+				add_to_variable = { party_pop_array^3 = 0.05 }
 				recalculate_party = yes
 			}			
 } }
@@ -7337,7 +7337,7 @@ country_event = {
 	        add_stability = 0.03
 	    custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
-				add_to_variable = { party_pop_array^3 = 0.05 }
+				add_to_variable = { party_pop_array^3 = 0.03 }
 				recalculate_party = yes
 			}
 } }
@@ -7657,7 +7657,7 @@ country_event = {
     add_political_power = 75
        custom_effect_tooltip = TUR_liberals
 			hidden_effect = {
-				add_to_variable = { party_pop_array^2= 0.05 }
+				add_to_variable = { party_pop_array^2 = 0.03 }
 				recalculate_party = yes
 			}
 } }
@@ -7829,7 +7829,7 @@ country_event = {
     custom_effect_tooltip = TUR_AKP_start_big
 			custom_effect_tooltip = TR_speechev_rise_of_akp
 			hidden_effect = {
-				add_to_variable = { party_pop_array^12 = 0.1 }
+				add_to_variable = { party_pop_array^12 = 0.11 }
 				recalculate_party = yes
 			}
 		}
@@ -7907,7 +7907,7 @@ country_event = {
     custom_effect_tooltip = TUR_CHP_decrease
     custom_effect_tooltip = TUR_AKP_fall_small
 			hidden_effect = {
-				add_to_variable = { party_pop_array^12 = -0.02 }
+				add_to_variable = { party_pop_array^3 = -0.01 }
 				recalculate_party = yes
 			}
 			hidden_effect = {
@@ -8345,7 +8345,7 @@ country_event = {
 
 		    add_stability = 0.05
 			subtract_from_variable = { treasury = 75.0 }
-			custom_effect_tooltip = 70_billion_expense_tt
+			custom_effect_tooltip = 75_billion_expense_tt
 			set_temp_variable = { debt_change = -100 }
 			modify_debt_effect = yes
 		}	
@@ -11846,7 +11846,7 @@ country_event = {
 		neutrality_neutral_muslim_brotherhood_are_in_power = yes
          AND = {
              date > 2020.8.1
-	         date < 2020.8.1
+	         date < 2020.9.1
          }
 		 NOT = {
 		 has_government = fascism
@@ -11865,7 +11865,7 @@ country_event = {
 	add_political_power = -75
     custom_effect_tooltip = TUR_AKP_fall_small
 			hidden_effect = {
-				add_to_variable = { party_pop_array^12 = -0.03 }
+				add_to_variable = { party_pop_array^12 = -0.02 }
 				recalculate_party = yes
 			}
 } }
@@ -11883,7 +11883,7 @@ country_event = {
          tag = TUR
          AND = {
              date > 2021.8.25
-	         date < 2021.8.25
+	         date < 2021.9.25
          }
 		 	neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 NOT = {
@@ -13020,7 +13020,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	 add_political_power = -75
     custom_effect_tooltip = TUR_AKP_fall_small
 			hidden_effect = {
-				add_to_variable = { party_pop_array^3 = -0.01 }
+				add_to_variable = { party_pop_array^12 = -0.02 }
 				recalculate_party = yes
 			}
 	}	
@@ -13330,7 +13330,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2020.1.1
-             date < 2020.1.1
+             date < 2020.2.1
          }
 		 NOT = {
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
@@ -13374,7 +13374,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2020.1.1
-             date < 2020.1.1
+             date < 2020.2.1
          }
 		 NOT = {
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
@@ -14413,7 +14413,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2022.2.11
-             date < 2022.2.11
+             date < 2022.3.11
          }
 		 neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 NOT = {
@@ -14449,7 +14449,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2022.2.28
-             date < 2022.2.28
+             date < 2022.3.28
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 NOT = {
@@ -14468,7 +14468,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
      add_stability = -0.03
     custom_effect_tooltip = TUR_AKP_fall_small
 			hidden_effect = {
-				add_to_variable = { party_pop_array^12 = -0.03 }
+				add_to_variable = { party_pop_array^12 = -0.02 }
 				recalculate_party = yes
 			}	 
   }  
@@ -14522,7 +14522,7 @@ country_event = {
      add_stability = -0.02
     custom_effect_tooltip = TUR_AKP_fall_small
 			hidden_effect = {
-				add_to_variable = { party_pop_array^12 = -0.03 }
+				add_to_variable = { party_pop_array^12 = -0.02 }
 				recalculate_party = yes
 			}	 			
   }  
@@ -14544,7 +14544,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2022.3.12
-             date < 2022.3.12
+             date < 2022.4.12
          }
 		 NOT = {
 		 has_government = fascism
@@ -14578,7 +14578,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2022.3.10
-             date < 2022.3.10
+             date < 2022.4.10
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
          SOV = {
@@ -14617,7 +14617,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2022.3.22
-             date < 2022.3.22
+             date < 2022.4.22
          }
 		 NOT = {
 		 has_government = fascism
@@ -14651,7 +14651,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2022.2.27
-             date < 2022.2.27
+             date < 2022.3.27
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
          SOV = {
@@ -14692,7 +14692,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2022.3.30
-             date < 2022.3.30
+             date < 2022.4.30
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
          SOV = {
@@ -14728,7 +14728,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2022.4.7
-             date < 2022.4.7
+             date < 2022.5.7
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 NOT = {
@@ -14762,7 +14762,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2022.3.26
-             date < 2022.3.26
+             date < 2022.4.26
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
          SOV = {
@@ -14800,7 +14800,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2022.3.22
-             date < 2022.3.22
+             date < 2022.4.22
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 NOT = {
@@ -15680,7 +15680,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	add_political_power = -75
     custom_effect_tooltip = TUR_AKP_fall_small
 			hidden_effect = {
-				add_to_variable = { party_pop_array^12 = -0.03 }
+				add_to_variable = { party_pop_array^12 = -0.02 }
 				recalculate_party = yes
 			}
   }  }
@@ -15722,7 +15722,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 				}
 			custom_effect_tooltip = MHP_lose_support_1
 			hidden_effect = {
-				add_to_variable = { party_pop_array^23 = -0.03 }
+				add_to_variable = { party_pop_array^20 = -0.03 }
 				recalculate_party = yes
 			}	
   }  }
@@ -16318,7 +16318,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 
 			custom_effect_tooltip = IYI_lower_the_pop_of_sixth
 			hidden_effect = {
-				add_to_variable = { party_pop_array^15 = -0.015 }
+				add_to_variable = { party_pop_array^1 = -0.015 }
 				recalculate_party = yes
 			}	
 	}     }
@@ -16512,7 +16512,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 
 			custom_effect_tooltip = IYI_6_R
 			hidden_effect = {
-				add_to_variable = { party_pop_array^2 = 0.01 }
+				add_to_variable = { party_pop_array^1 = 0.01 }
 				recalculate_party = yes
 			}	
 			add_stability = 0.02
@@ -17277,7 +17277,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2023.3.18
-             date < 2023.3.18
+             date < 2023.4.18
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 NOT = {
@@ -18199,7 +18199,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2012.12.12
-             date < 2012.1.12
+             date < 2013.1.12
          }
 		 NOT = {
 		 has_government = fascism
@@ -18233,7 +18233,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2021.12.3
-             date < 2021.1.3
+             date < 2022.1.3
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 NOT = {
@@ -19582,7 +19582,7 @@ country_event = {
          tag = TUR
 		  AND = {
              date > 2023.1.23
-             date < 2023.1.23
+             date < 2023.2.23
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 NOT = {
@@ -19797,7 +19797,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
     custom_effect_tooltip = Q_TIP
     custom_effect_tooltip = Q_EMEP
 			hidden_effect = {
-				add_to_variable = { party_pop_array^7 = 0.01 }
+				add_to_variable = { party_pop_array^8 = 0.01 }
 				recalculate_party = yes
 			}
 			hidden_effect = {
@@ -19942,7 +19942,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 
     custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
-				add_to_variable = { party_pop_array^3 = 0.01 }
+				add_to_variable = { party_pop_array^3 = 0.03 }
 				recalculate_party = yes
 			}
   }  }
@@ -21860,7 +21860,7 @@ country_event = {
 			custom_effect_tooltip = 1_billion_expense_tt		
 		}
 		TUR = {
-			subtract_from_variable = { treasury = 1.0 }
+			subtract_from_variable = { treasury = -1.0 }
 			custom_effect_tooltip = 1_billion_revenue_tt		
 		}
 	}
@@ -24883,7 +24883,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 add_political_power = -50
     custom_effect_tooltip = TUR_CHP_increase
 			hidden_effect = {
-				add_to_variable = { party_pop_array^3 = 0.05 }
+				add_to_variable = { party_pop_array^3 = 0.03 }
 				recalculate_party = yes
 			}
 } }
@@ -25835,7 +25835,7 @@ country_event = {
 
        custom_effect_tooltip = TUR_CHP_increase_so_small
 			hidden_effect = {
-				add_to_variable = { party_pop_array^03= 0.02}
+				add_to_variable = { party_pop_array^3 = 0.01 }
 				recalculate_party = yes
 			}	 
 				add_popularity = {

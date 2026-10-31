@@ -81,6 +81,16 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     okunuyordu. `TUR = { has_country_flag = X }` yapıldı; rejim koşulları ilk kez gerçekten çalışıyor.
   - `preppin_*` yazım hatası (`prepping_*`), metni olmayan 2 ipucu, çakışan `AYM_hungary_invest_3` odağı.
   - `release_check.py`: bayrak ve ağaçlar arası önkoşul kontrolleri (`tools/flag_allow.json`).
+  - İmkânsız tarih pencereli 19 olay (`date > X` ve `date < X`, Turkey.508/509'da yıl hatası) bir aylık pencereye açıldı;
+    olay ve dağıtıcı birlikte değişti.
+  - Para: ipucuyla çelişen 39 yer düzeltildi. Gelir olarak anlatılıp para çıkaran odaklar (ANA_*, DSP, HEPAR, TECH) gelir
+    oldu; Bitcoin alımı, Altın ve Koç gider oldu; ipucu yanlış olanlarda (Yunanistan yardımı, ECB/FED payı) ipucu değişti.
+  - Partiler: `party_pop_array` 0–23'tür; `^24` satırları dizinin dışına yazıyordu. 57 yerde parti, yön veya oran metinle
+    eşitlendi. `TUR_AKP_small_start1` istisna: kod %1 kaldı, metin %3'ten %1'e indi (kod değişseydi AKP üç kat hızlanırdı).
+  - Meclis başlangıcı gerçek 18 Nisan 1999 sonucu: DSP 136, MHP 129, FP 111, ANAP 86, DYP 85, bağımsız 3 (CHP 0).
+  - Turkeys.9207 (2022 ittifakı) +%20 yerine +%5; diğer kampanya olayları %1–5 arası.
+  - Borç 364, hazine 34 ve kişi başı GSYH MD'nin değerleri, değiştirilmedi.
+  - `release_check.py`: imkânsız tarih, hazine/ipucu ve dizi dışı parti kontrolleri.
   - `FIRE_SUPEREVENT_13` ("Turkish Germany") bilinçli olarak açılmadı: onu tetikleyecek içerik hiç yazılmamış.
 
 ## Kalıcı dersler (tekrar düşme!)

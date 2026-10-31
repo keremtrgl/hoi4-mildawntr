@@ -1684,7 +1684,7 @@ swap_ideas = {
 					instant_build = yes
 					level = -1
 				}
-			subtract_from_variable = { treasury = 26.0 }
+			subtract_from_variable = { treasury = -26.25 }
 			custom_effect_tooltip = 26_25_billion_revenue_tt
 		} } ai_will_do = { base = 14 } }
 	focus = {
@@ -1707,7 +1707,7 @@ swap_ideas = {
 			add_stability = 0.05
        custom_effect_tooltip = TUR_saadet_small
 			hidden_effect = {
-				add_to_variable = { party_pop_array^6= 0.05 }
+				add_to_variable = { party_pop_array^6 = 0.03 }
 				recalculate_party = yes
 			}
 		} ai_will_do = { base = 14 } } 

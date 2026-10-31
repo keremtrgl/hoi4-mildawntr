@@ -610,6 +610,38 @@ def check_structure(rep, mod_files, md):
     rep.add(group, 'Focus prerequisites stay inside their own tree', 'WARN', wired)
 
 
+def check_logic(rep, mod_files, en_values):
+    """conditions that can never hold and numbers that contradict what the player is told"""
+    group = 'refs'
+    comment = re.compile(r'#[^\n]*')
+    texts = {r: comment.sub('', read(p)) for r, p in mod_files.items() if r.endswith('.txt') and 'politicsview' not in r}
+    dates, money, party = [], [], []
+    money_re = re.compile(r'subtract_from_variable\s*=\s*\{\s*treasury\s*=\s*(-?[\d.]+)\s*\}')
+
+    def day(s):
+        return tuple((int(x) for x in (s.split('.') + ['1', '1'])[:3]))
+
+    for r, t in texts.items():
+        for m in re.finditer(r'date\s*>\s*([\d.]+)\s+date\s*<\s*([\d.]+)', t):
+            if day(m.group(1)) >= day(m.group(2)):
+                dates.append(f'{r}:{t.count(chr(10), 0, m.start()) + 1}: date > {m.group(1)} and date < {m.group(2)}')
+        for m in money_re.finditer(t):
+            near = t[max(0, m.start() - 200):m.end() + 200]
+            tips = sorted((abs(x.start() - 200), x.group(1)) for x in re.finditer(r'custom_effect_tooltip\s*=\s*(\S*(?:billion|trillion|million)\S*)', near))
+            told = re.search(r'([\d.]+)\s*(Billion|Trillion|Million)', en_values.get(tips[0][1], '')) if tips else None
+            if told:
+                amount = float(told.group(1)) * {'Billion': 1, 'Trillion': 1000, 'Million': .001}[told.group(2)]
+                amount *= 1 if en_values[tips[0][1]].startswith('Add') else -1
+                if abs(amount + float(m.group(1))) > 1e-6:
+                    money.append(f'{r}:{t.count(chr(10), 0, m.start()) + 1}: changes the treasury by {-float(m.group(1)):g}, {tips[0][1]} says {amount:g}')
+        for m in re.finditer(r'party_pop_array\^(\d+)', t):
+            if int(m.group(1)) > 23:
+                party.append(f'{r}:{t.count(chr(10), 0, m.start()) + 1}: party_pop_array^{m.group(1)} (the array has 24 parties)')
+    rep.add(group, 'Date windows can be true', 'WARN', dates)
+    rep.add(group, 'Treasury changes match their tooltips', 'WARN', money)
+    rep.add(group, 'Party indexes are inside party_pop_array', 'WARN', party)
+
+
 def check_scopes(rep, mod_files):
     """country-only effects in a state scope and state-only effects in a country scope, in event options and
     immediates, focus rewards and decision effects; scopes we cannot know (ROOT, FROM, PREV, event targets) are skipped"""
@@ -785,6 +817,7 @@ def main():
     if 'refs' in only:
         check_refs(rep, layers, loc_union, en_values)
         check_structure(rep, mod_files, a.md)
+        check_logic(rep, mod_files, en_values)
     if 'balance' in only:
         check_modifier_names(rep, mod_files, a.game, a.md)
         check_balance(rep, mod_files, a.md)

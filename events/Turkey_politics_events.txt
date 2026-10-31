@@ -82,10 +82,10 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	country_event = MD4_election_campaign.0
 						add_popularity = {
 							ideology = neutrality
-							popularity = 0.2
+							popularity = 0.05
 						}	
 			hidden_effect = {
-				add_to_variable = { party_pop_array^12 = 0.2 }
+				add_to_variable = { party_pop_array^12 = 0.05 }
 				recalculate_party = yes
 			}						
 	}
@@ -97,10 +97,10 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	country_event = MD4_election_campaign.0
 						add_popularity = {
 							ideology = democratic
-							popularity = 0.2
+							popularity = 0.05
 						}	
 			hidden_effect = {
-				add_to_variable = { party_pop_array^3 = 0.2 }
+				add_to_variable = { party_pop_array^3 = 0.05 }
 				recalculate_party = yes
 			}	
 	}
