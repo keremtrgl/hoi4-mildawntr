@@ -5,7 +5,7 @@ focus_tree = {
 	focus = {
 		id = HEPAR_victory_of_anatolian_eagle
 		icon = hepar_becomes_government
-		cost = 6.43
+		cost = 7.15
 		x = 32
 		y = 0
 
@@ -26,7 +26,7 @@ add_political_power = 75
 	focus = {
 		id = HEPAR_usage_of_weltpolitik
 		icon = diplomacy
-		cost = 6.43
+		cost = 7.15
 		x = 54
 		y = 10
 
@@ -39,7 +39,7 @@ add_political_power = 75
 	focus = {
 		id = HEPAR_healthy_relations_with_military
 		icon = blr_nato_cooperation
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_victory_of_anatolian_eagle
 		}
@@ -123,7 +123,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 	focus = {
 		id = HEPAR_cooperative_with_army
 		icon = small_arms4
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_kick_opposing_generals
 		}
@@ -295,7 +295,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = HEPAR_kemalist_doctrine
 		icon = chp
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_cooperative_with_army
 		}
@@ -311,7 +311,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = HEPAR_embrace_revolutionism
 		icon = militant_socialism
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_kemalist_doctrine
 		}
@@ -325,7 +325,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = HEPAR_strike_rights
 		icon = Generic_Socialist_Industry
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_embrace_revolutionism
 		}
@@ -341,7 +341,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = HEPAR_classical_nationalism
 		icon = Generic_Ultranationalist_Government
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_kemalist_doctrine
 		}
@@ -356,7 +356,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = HEPAR_increase_political_quality
 		icon = focus_ETH_re-convene_the_parliament
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_classical_nationalism
 		}
@@ -376,7 +376,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = HEPAR_elective_state
 		icon = election2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_increase_political_quality
 		}
@@ -395,7 +395,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = HEPAR_powerize_AYM
 		icon = parliament_box
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_increase_political_quality
 		}
@@ -411,7 +411,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = HEPAR_push_military_out_of_politics
 		icon = the_road_of_life
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_classical_nationalism
 		}
@@ -429,7 +429,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = HEPAR_intervene_in_threshold
 		icon = blue_democracy
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_increase_political_quality
 		}
@@ -450,7 +450,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = HEPAR_multi_democrat
 		icon = Election
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_intervene_in_threshold
 		}
@@ -735,7 +735,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = HEPAR_economy_resolvation_project
 		icon = balance_buget
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_victory_of_anatolian_eagle
 		}
@@ -757,7 +757,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_economist_meetings
 		icon = business_man
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_economy_resolvation_project
 		}
@@ -786,7 +786,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_trade_with_EU
 		icon = trade_with_europe
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_economist_meetings
 		}
@@ -823,7 +823,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_visit_IMF
 		icon = imf
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_economy_resolvation_project
 		}
@@ -853,7 +853,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_finish_the_economy_plan
 		icon = liberalization_policies
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_economist_meetings
 		}
@@ -881,7 +881,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_agriculture_projection
 		icon = farming
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_finish_the_economy_plan
 		}
@@ -897,7 +897,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_trade_with_USA
 		icon = trade_with_america
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_visit_IMF
 		}
@@ -975,7 +975,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_open_recovery_group
 		icon = cash_grap
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_investments_agreements
 		}
@@ -995,7 +995,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_limited_intervention_on_central_bank
 		icon = central_planned_economy2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_investments_agreements
 		}
@@ -1012,7 +1012,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_new_istanbul_borsa_base
 		icon = istanbul_borsa
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_open_recovery_group
 		}
@@ -1047,7 +1047,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_minimize_debt
 		icon = better_money_on_fire
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_open_recovery_group
 		}
@@ -1068,7 +1068,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_interventionary_rules
 		icon = BRA_simplify_the_tax_system
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_limited_intervention_on_central_bank
 		}
@@ -1089,7 +1089,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_industrialization
 		icon = RUS_State_Construction
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_finish_the_economy_plan
 		}
@@ -1105,7 +1105,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_workers_law
 		icon = Generic_Socialist_Man
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_industrialization
 		}
@@ -1124,7 +1124,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_work_propaganda
 		icon = Generic_Socialist_Propaganda
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_workers_law
 		}
@@ -1142,7 +1142,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_save_industry_from_privatization
 		icon = Labourist
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_work_propaganda
 		}
@@ -1158,7 +1158,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_crack_down_foreign_controllers
 		icon = GEO_Enforce_Wealth_Distribution
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_save_industry_from_privatization
 		}
@@ -1177,7 +1177,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_diplomats_working
 		icon = generic_government
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_usage_of_weltpolitik
 		}
@@ -1274,7 +1274,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_crack_down_national_priviate
 		icon = communist_propaganda
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_save_industry_from_privatization
 		}
@@ -1293,7 +1293,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_began_to_hunt_corruption
 		icon = focus_generic_buy_guns
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_multi_democrat
 		}
@@ -1310,7 +1310,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = HEPAR_began_the_movement_of_improvement
 		icon = focus_drinks_peace
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_began_to_hunt_corruption
 		}
@@ -1801,7 +1801,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = HEPAR_push_new_books
 		icon = Generic_Major_City
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_support_writers
 		}
@@ -1820,7 +1820,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	focus = {
 		id = HEPAR_support_writers
 		icon = BLR_High_quality_education
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_turkish_theathers
 		}
@@ -2012,7 +2012,7 @@ completion_reward = {
 	focus = {
 		id = HEPAR_turkish_market_enlargement
 		icon = BRA_libertarian_economics
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_minimize_debt
 		}
@@ -2049,7 +2049,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_fluent_economy
 		icon = vineyard
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_turkish_market_enlargement
 		}
@@ -2067,7 +2067,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_support_the_agriculture
 		icon = agriculture
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_cheap_fertilizer
 		}
@@ -2087,7 +2087,7 @@ swap_ideas = {
 	focus = {
 		id = HEPAR_cheap_fertilizer
 		icon = consumer_goods
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_agriculture_projection
 		}
@@ -2224,7 +2224,7 @@ add_stability = 0.03
 	focus = {
 		id = HEPAR_wheat_power
 		icon = agriculture2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_move_industries_to_central
 		}
@@ -2241,7 +2241,7 @@ add_stability = 0.03
 	focus = {
 		id = HEPAR_finish_the_general_improvement_reforms
 		icon = stolen_papers2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_push_new_books
 		}
@@ -2317,7 +2317,7 @@ add_political_power = 25
 	focus = {
 		id = HEPAR_political_changement
 		icon = focus_generic_improve_the_administration
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_finish_the_general_improvement_reforms
 		}
@@ -2698,7 +2698,7 @@ custom_effect_tooltip = NATO_GENERALS_KICKED
 	focus = {
 		id = HEPAR_turkish_joinment_of_shangai_alliance
 		icon = aplly_to_join_csto
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_socialist_defenders
 		}
@@ -3118,7 +3118,7 @@ add_political_power = -25
 	focus = {
 		id = HEPAR_leave_the_NATO
 		icon = end_of_nato
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_infulence_the_turkic_nations
 		}
@@ -3256,7 +3256,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_start_the_turkish_nuclear_program
 		icon = nuclear_bomb
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_turkish_joinment_of_shangai_alliance
 		}
@@ -3354,7 +3354,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_invite_turkmenistan
 		icon = align_to_turkmenistan
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_create_the_alliance_of_mutual_asian_pact
 		}
@@ -3387,7 +3387,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_invite_uzbekistan
 		icon = align_to_uzbekistan
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_invite_turkmenistan
 		}
@@ -3422,7 +3422,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_invite_kazakhstan
 		icon = align_to_kazakhstan
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_demand_unification_with_azerbaijan
 		}
@@ -3457,7 +3457,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_invite_israel
 		icon = align_to_israel
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_persuade_israel_against_NATO
 		}
@@ -3489,7 +3489,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_invite_cairo
 		icon = align_to_egypt
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_withdrawal_recognization_from_israel
 		}
@@ -3559,7 +3559,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_invite_kyrgztan
 		icon = align_to_kyrgyzstan
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_invite_turkmenistan
 		}
@@ -3627,7 +3627,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_question_of_suez_protection
 		icon = egypt_map
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_create_the_alliance_of_mutual_asian_pact
 		}
@@ -3658,7 +3658,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_invite_qatar
 		icon = align_to_iraq3
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_invite_uzbekistan
 		}
@@ -3697,7 +3697,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_nationalization_of_equipments
 		icon = ARM_seize_stockpiles
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_leave_the_NATO
 		}
@@ -3719,7 +3719,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_fastern_production
 		icon = aviation_industry
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_nationalization_of_equipments
 		}
@@ -3734,7 +3734,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_stimulated_industries
 		icon = factory_complex
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_nationalization_of_equipments
 		}
@@ -3750,7 +3750,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_total_war_economy
 		icon = POL_twardy
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_stimulated_industries
 		}
@@ -3769,7 +3769,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_put_limitation_to_changes
 		icon = Generic_Volunteer_Corps
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_total_war_economy
 		}
@@ -3788,7 +3788,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_eastwards
 		icon = small_arms_east
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_time_for_agressivism
 		}
@@ -3809,7 +3809,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_southwards
 		icon = small_arms_west
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_time_for_agressivism
 		}
@@ -4216,7 +4216,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_finish_the_conquesta_in_east
 		icon = consolidation
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_assistance_from_arabs
 		}
@@ -4237,7 +4237,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_push_greece_for_nationalism
 		icon = byzantium
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_plan_for_west
 		}
@@ -4322,7 +4322,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_secretly_arm_greek_nationalists
 		icon = Greece_friend
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_push_greece_for_nationalism
 		}
@@ -4365,7 +4365,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_plan_for_west
 		icon = small_arms2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_finish_the_conquesta_in_east
 		}
@@ -4456,7 +4456,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = HEPAR_demands_to_iraq
 		icon = align_to_iraq2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_mission_for_mosul
 		}
@@ -4581,7 +4581,7 @@ declare_war_on = { type = annex_everything target = SYR }
 	focus = {
 		id = HEPAR_compliance_forces_of_there
 		icon = military_bases
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_bomb_the_syria
 		}
@@ -4597,7 +4597,7 @@ declare_war_on = { type = annex_everything target = SYR }
 	focus = {
 		id = HEPAR_coup_the_greece
 		icon = golden_dawn
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_push_protests_in_greece
 		}
@@ -4638,7 +4638,7 @@ declare_war_on = { type = annex_everything target = SYR }
 	focus = {
 		id = HEPAR_fund_the_bulgarian_nationalists
 		icon = consolidate_the_third_bulgarian_state
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_plan_for_west
 		}
@@ -4713,7 +4713,7 @@ declare_war_on = { type = annex_everything target = SYR }
 	focus = {
 		id = HEPAR_support_bulgarian_nationalists
 		icon = Bulgaria_Republic
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_fund_the_bulgarian_nationalists
 		}
@@ -4753,7 +4753,7 @@ declare_war_on = { type = annex_everything target = SYR }
 	focus = {
 		id = HEPAR_right_regime_in_bulgaria
 		icon = promote_bulgarian_nationalism
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_rig_the_elections
 		}
@@ -4874,7 +4874,7 @@ declare_war_on = { type = annex_everything target = SYR }
 	focus = {
 		id = HEPAR_seek_russian_support
 		icon = rapprochement_with_russia
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_start_the_turkish_nuclear_program
 		}
@@ -4906,7 +4906,7 @@ declare_war_on = { type = annex_everything target = SYR }
 	focus = {
 		id = HEPAR_seek_iranian_support
 		icon = iran_guard
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_start_the_turkish_nuclear_program
 		}
@@ -4938,7 +4938,7 @@ declare_war_on = { type = annex_everything target = SYR }
 	focus = {
 		id = HEPAR_uranium_extractions
 		icon = uranium_processing
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_seek_iranian_support
 		}
@@ -4957,7 +4957,7 @@ declare_war_on = { type = annex_everything target = SYR }
 	focus = {
 		id = HEPAR_first_nuclear_tests
 		icon = nuclear_science
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_uranium_extractions
 		}
@@ -4975,7 +4975,7 @@ has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_6
 	focus = {
 		id = HEPAR_prepare_for_the_coming_war
 		icon = anti_war_with_big_gun
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_turkish_joinment_of_shangai_alliance
 		}
@@ -5115,7 +5115,7 @@ has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_6
 	focus = {
 		id = HEPAR_emergency_relocation_plan
 		icon = smuggle_truck
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_prepare_for_the_coming_war
 		}
@@ -5316,7 +5316,7 @@ has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_6
 	focus = {
 		id = HEPAR_cover_industries
 		icon = Generic_Jungle_Insurgency
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_cover_istanbul
 		}
@@ -5330,7 +5330,7 @@ has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_6
 	focus = {
 		id = HEPAR_cover_people_in_shelters
 		icon = ukreplenia
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_cover_istanbul
 		}
@@ -5369,7 +5369,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_nationalist_propagandas
 		icon = nationalist_education
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_the_war_of_the_world
 		}
@@ -5389,7 +5389,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_247_works
 		icon = forced_labour
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_the_war_of_the_world
 		}
@@ -5403,7 +5403,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_call_for_arms
 		icon = Paternal_Autocrat
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_the_war_of_the_world
 		}
@@ -5417,7 +5417,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_guerillas
 		icon = Generic_Partisan
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_call_for_arms
 		}
@@ -5437,7 +5437,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_usage_of_old
 		icon = machine_gun
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_call_for_arms
 		}
@@ -5458,7 +5458,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_bought_new_guns
 		icon = t14_armata
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_call_for_arms
 		}
@@ -5501,7 +5501,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_war_for_motherland
 		icon = turkish_authoritarianism
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_guerillas
 		}
@@ -5521,7 +5521,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_russian_victory_in_europe
 		icon = russian_monarchy
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_war_for_motherland
 		}
@@ -5605,7 +5605,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_banner_of_victory
 		icon = turkish_flag
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_occupy_burgas
 		}
@@ -5624,7 +5624,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_expansionism_towards_south
 		icon = crucial_contribution
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_turkish_joinment_of_shangai_alliance
 		}
@@ -5719,7 +5719,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_interventionist_groups
 		icon = focus_ETH_freedom_at_gunpoint
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_clean_the_kurds_in_the_border
 		}
@@ -5812,7 +5812,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = HEPAR_build_a_peace_miracle_in_middle_east
 		icon = peace
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_remove_the_american_coronies_in_iraq
 		}
@@ -5844,7 +5844,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = TUR_armed_forces7
 		icon = TUR_military_regime
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_victory_of_anatolian_eagle
 		}
@@ -5863,7 +5863,7 @@ declare_war_on = { type = annex_everything target = USA }
 	focus = {
 		id = TUR_give_more_power_to_army7
 		icon = dangerous_laws
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_armed_forces7
 		}
@@ -5918,7 +5918,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_act_of_military7
 		icon = armed_forces_of_turkey
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_nationalization_of_armed_forces7
 		}
@@ -5938,7 +5938,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_modernization_of_armed_forces7
 		icon = military_mission
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_act_of_military7
 		}
@@ -5956,7 +5956,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_tank_modernization7
 		icon = Generic_Refit_Tanks
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_modernization_of_armed_forces7
 		}
@@ -5976,7 +5976,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_altay_tank_project7
 		icon = tanks5
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_tank_modernization7
 		}
@@ -5996,7 +5996,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_gun_modernization7
 		icon = Generic_Military_Equipment
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_modernization_of_armed_forces7
 		}
@@ -6016,7 +6016,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_artillery_modernizetion7
 		icon = artillery3
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_gun_modernization7
 		}
@@ -6038,7 +6038,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_war_tactics7
 		icon = military_planning
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_act_of_military7
 		}
@@ -6059,7 +6059,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_modern_art_of_war7
 		icon = infiltration_tactics
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_war_tactics7
 		}
@@ -6080,7 +6080,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_med_trainings7
 		icon = inundation_lines
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_modern_art_of_war7
 		}
@@ -6172,7 +6172,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_special_armed_forces7
 		icon = helmet_knife
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_act_of_military7
 		}
@@ -6187,7 +6187,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_strenghen_combat7
 		icon = mass_assault
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_special_armed_forces7
 		}
@@ -6204,7 +6204,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_strongest_special_armed_forces_in_NATO7
 		icon = nato3
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_strenghen_combat7
 		}
@@ -6227,7 +6227,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_special_forces_for_turkish_state7
 		icon = align_to_turkey
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_strongest_special_armed_forces_in_NATO7
 		}
@@ -6245,7 +6245,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_air_modernization7
 		icon = f35
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_gun_modernization7
 		}
@@ -6268,7 +6268,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_THK_program7
 		icon = fighter_plane
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_air_modernization7
 		}
@@ -6290,7 +6290,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_navy_modernizations7
 		icon = TUR_navy
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_air_modernization7
 		}
@@ -6308,7 +6308,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkish_destroyers7
 		icon = destroyers
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_navy_modernizations7
 		}
@@ -6330,7 +6330,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_battleship7
 		icon = battleships
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_navy_modernizations7
 		}
@@ -6352,7 +6352,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_creation_of_turkish_carriers7
 		icon = ship_bleur_point
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_battleship7
 		}
@@ -6377,7 +6377,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkish_tank_weaponary7
 		icon = tanks4
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_altay_tank_project7
 		}
@@ -6399,7 +6399,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkish_drones7
 		icon = turkish_drone
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_THK_program7
 		}
@@ -6430,7 +6430,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_covid-19_pandemic10
 		icon = generic_healthcare
-		cost = 6.43
+		cost = 7.15
 		x = 67
 		y = 0
 
@@ -6447,7 +6447,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_covid-19_preparations10
 		icon = production2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_pandemic10
 		}
@@ -6467,7 +6467,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_build_up_hospitals10
 		icon = generic_hospital2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations10
 		}
@@ -6487,7 +6487,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turn_airports_to_hospital10
 		icon = generic_hospital
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_build_up_hospitals10
 		}
@@ -6508,7 +6508,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_start_up_vaccine_program9
 		icon = brain_power
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations10
 		}
@@ -6534,7 +6534,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_german_vaccines9
 		icon = trade_with_germany
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program9
 		}
@@ -6555,7 +6555,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_increase_funds_to_science10
 		icon = market_economy
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations10
 		}
@@ -6575,7 +6575,7 @@ increase_healthcare_budget = yes
 	focus = {
 		id = TUR_buy_medicines10
 		icon = protectionist_economics
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_increase_funds_to_science10
 		}
@@ -6601,7 +6601,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_chinese_vaccines10
 		icon = trade_with_china
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital10
 		}
@@ -6628,7 +6628,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_normalisation_from_covid10
 		icon = consumer_goods
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines10
 		}
@@ -6651,7 +6651,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_end_of_covid10
 		icon = aristocratic_funding
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_normalisation_from_covid10
 		}

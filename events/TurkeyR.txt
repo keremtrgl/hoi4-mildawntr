@@ -51,8 +51,8 @@ country_event = { # Turkish Mafia cause a scene!
 	option = { #Launch a full investigation
 	name = Turkish_mafia.1.c
 	log = "[GetDateText]: [This.GetName]: Turkish_mafia.1.b executed"
-			subtract_from_variable = { treasury = 3.5 }
-			custom_effect_tooltip = 3_5_billion_expense_tt		
+			subtract_from_variable = { treasury = 1.5 }
+			custom_effect_tooltip = 1_5_billion_expense_tt		
 		add_political_power = -25
 	set_variable = { TUR_event_counter_1_mafia = 2 }
 	custom_effect_tooltip = TUR_mafia_warn
@@ -164,8 +164,8 @@ country_event = { # Mafia hideout discovered by police
 		name = Turkish_mafia.2.c
 		log = "[GetDateText]: [This.GetName]: Turkish_mafia.2.b executed"
 		add_political_power = -25
-			subtract_from_variable = { treasury = 3.5 }
-			custom_effect_tooltip = 3_5_billion_expense_tt
+			subtract_from_variable = { treasury = 1.5 }
+			custom_effect_tooltip = 1_5_billion_expense_tt
 		set_variable = { TUR_event_counter_1_mafia = 2 }
 		custom_effect_tooltip = TUR_mafia_warn
 		random_list = {
@@ -281,8 +281,8 @@ country_event = { # Turkish mafia weapon cache discovered
 	name = Turkish_mafia.3.c
 	log = "[GetDateText]: [This.GetName]: Turkish_mafia.3.b executed"
 	add_political_power = -25
-			subtract_from_variable = { treasury = 3.5 }
-			custom_effect_tooltip = 3_5_billion_expense_tt
+			subtract_from_variable = { treasury = 1.5 }
+			custom_effect_tooltip = 1_5_billion_expense_tt
 	set_variable = { TUR_event_counter_1_mafia = 2 }
 	custom_effect_tooltip = TUR_mafia_warn
 	random_list = {

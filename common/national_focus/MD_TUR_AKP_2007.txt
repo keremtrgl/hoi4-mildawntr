@@ -5,7 +5,7 @@ focus_tree = {
 	focus = {
 		id = PKA_victory_of_akp
 		icon = akp
-		cost = 6.43
+		cost = 7.15
 		x = 20
 		y = 0
 
@@ -53,7 +53,7 @@ focus_tree = {
 	focus = {
 		id = PKA_support_for_institutionalization
 		icon = examine_foreign_laws
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_victory_of_akp
 		}
@@ -75,7 +75,7 @@ focus_tree = {
 	focus = {
 		id = PKA_back_AYM
 		icon = focus_generic_court
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_support_for_institutionalization
 		}
@@ -92,7 +92,7 @@ focus_tree = {
 	focus = {
 		id = PKA_support_kadro_movement
 		icon = champagne_green
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_victory_of_akp
 		}
@@ -114,7 +114,7 @@ focus_tree = {
 	focus = {
 		id = PKA_continue_liberal_politicies
 		icon = liberalization
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_support_kadro_movement
 		}
@@ -155,7 +155,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	focus = {
 		id = PKA_finish_the_mission
 		icon = Farm_national_movement
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_support_kadro_movement
 		}
@@ -615,7 +615,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_vision_of_europe
 		icon = United_States_of_Europe
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_entering_the_2009
 		}
@@ -632,7 +632,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_2011_constitution_amedment
 		icon = BRA_the_european_social_democrat_model
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_vision_of_europe
 		}
@@ -648,7 +648,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_eu_law_origins
 		icon = EDA_icon
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_vision_of_europe
 		}
@@ -664,7 +664,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_european_studies
 		icon = free_higher_education
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_2011_constitution_amedment
 		}
@@ -683,7 +683,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_protect_the_borders
 		icon = focus_generic_land_reclamation
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_2011_constitution_amedment
 		}
@@ -702,7 +702,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_create_peace_forces
 		icon = peace
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_eu_law_origins
 		}
@@ -718,7 +718,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_accordance_with_UN
 		icon = align_to_united_nations
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_european_studies
 		}
@@ -738,7 +738,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_full_coordinance_with_AIHM
 		icon = EFSF_icon
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_accordance_with_UN
 		}
@@ -815,7 +815,7 @@ swap_ideas = {
 	focus = {
 		id = PKA_guaranteed_multi_party_state
 		icon = Generic_Pawns
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_entering_the_2009
 		}
@@ -829,7 +829,7 @@ swap_ideas = {
 	focus = {
 		id = PKA_question_of_kurdish_problem
 		icon = espionage
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_abdullah_guls_revenge
 		}
@@ -842,7 +842,7 @@ swap_ideas = {
 	focus = {
 		id = PKA_trt_6_kurdish
 		icon = television
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_question_of_kurdish_problem
 		}
@@ -866,7 +866,7 @@ swap_ideas = {
 	focus = {
 		id = PKA_control_the_inflation
 		icon = better_money_on_fire
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_vision_of_europe
 		}
@@ -900,7 +900,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	focus = {
 		id = PKA_keep_up_the_economic_boom
 		icon = economic_prosperity2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_control_the_inflation
 		}
@@ -919,7 +919,7 @@ add_ideas = economic_boom
 	focus = {
 		id = PKA_withdrew_from_kurdish_places
 		icon = volunteers
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_question_of_kurdish_problem
 		}
@@ -942,7 +942,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = PKA_became_strong_economies
 		icon = market_economy
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_keep_up_the_economic_boom
 		}
@@ -1002,7 +1002,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = PKA_prepare_for_joining_euro
 		icon = euro
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_pay_off_our_debts
 		}
@@ -1031,7 +1031,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = PKA_change_the_industrialization_program
 		icon = romanian_economic_development_plan
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_victory_of_akp
 		}
@@ -1054,7 +1054,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = PKA_rule_for_warm_money
 		icon = BRA_mensalao_new
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_change_the_industrialization_program
 		}
@@ -1072,7 +1072,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = PKA_continue_the_investment_income
 		icon = economic_community
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_change_the_industrialization_program
 		}
@@ -1090,7 +1090,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = PKA_industrialization_of_the_state
 		icon = central_planned_economy
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_rule_for_warm_money
 		}
@@ -1145,7 +1145,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = PKA_improve_kayseris_military_capabilities
 		icon = industry4
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_central_military_industries
 		}
@@ -1175,7 +1175,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_dockyard_expansion
 		icon = naval_industry
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_industrialization_of_the_state
 		}
@@ -1228,7 +1228,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_adana_dockyards
 		icon = civitavecchia_port
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_mersin_dockyards
 		}
@@ -1338,7 +1338,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_antalya_dockyards
 		icon = Generic_Maritime
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_mersin_dockyards
 		}
@@ -1407,7 +1407,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_cyprus_naval_deployment
 		icon = torpedo
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_antalya_dockyards
 		}
@@ -1449,7 +1449,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_civilian_resolution_project
 		icon = industrial_complexes
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_industrialization_of_the_state
 		}
@@ -1620,7 +1620,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_civilian_investment_policies
 		icon = business_man2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_central_industrial_complexes
 		}
@@ -1702,7 +1702,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_industrialization_program_for_kayseri
 		icon = broadway
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_abdullah_guls_revenge
 		}
@@ -1752,7 +1752,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_ankara_kayseri_railway
 		icon = infrastructure
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_industrialization_program_for_kayseri
 		}
@@ -1777,7 +1777,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_question_of_gulenists
 		icon = islamophobia
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_coup_thoughts_of_2014
 		}
@@ -1848,7 +1848,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_elective_state
 		icon = meeting
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_entering_the_2009
 		}
@@ -1956,7 +1956,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_helping_our_allies
 		icon = europe_tank
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_internation_helpout
 		}
@@ -1974,7 +1974,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_powerize_lira
 		icon = lira
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_vision_of_europe
 		}
@@ -1993,7 +1993,7 @@ swap_ideas = {
 	focus = {
 		id = PKA_internation_helpout
 		icon = united_nations
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_powerize_lira
 		}
@@ -2007,7 +2007,7 @@ swap_ideas = {
 	focus = {
 		id = PKA_european_mediator
 		icon = europe
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_co_assistance_with_yugoslavian_situation
 		}
@@ -2100,7 +2100,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = PKA_fight_with_anti_liberal_thoughts
 		icon = crush_fanatics_turk
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_enterence_of_EU_membership
 		}
@@ -2123,7 +2123,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	focus = {
 		id = PKA_rival_with_MHP
 		icon = mhp 
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_enterence_of_EU_membership
 		}
@@ -2367,7 +2367,7 @@ swap_ideas = {
 	focus = {
 		id = PKA_surpress_august_revolt
 		icon = molotov_cocktail
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_limit_the_freedom
 		}
@@ -2590,7 +2590,7 @@ increase_economic_growth = yes
 	focus = {
 		id = PKA_MIT
 		icon = mit
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_new_relations_with_military
 		}
@@ -2618,7 +2618,7 @@ swap_ideas = {
 	focus = {
 		id = PKA_early_coup_attempt
 		icon = coups_on_the_world
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_MIT
 		}
@@ -2686,7 +2686,7 @@ swap_ideas = {
 	focus = {
 		id = PKA_condemn_usa
 		icon = usa
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_changes_in_political_undestandings
 		}
@@ -2716,7 +2716,7 @@ swap_ideas = {
 	focus = {
 		id = PKA_towards_NATO
 		icon = nato
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_changes_in_political_undestandings
 		}
@@ -2747,7 +2747,7 @@ swap_ideas = {
 	focus = {
 		id = PKA_changes_in_political_undestandings
 		icon = goal_JAP_diet
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_early_coup_attempt
 		}
@@ -2932,7 +2932,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_default_usa_debts
 		icon = american_dream
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_condemn_usa
 		}
@@ -2996,7 +2996,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_formalize_euro_defence
 		icon = hans_eichel_euro
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_towards_NATO
 		}
@@ -3119,7 +3119,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_support_european_expansionism
 		icon = attack_democracy4
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_default_usa_debts
 		}
@@ -3139,7 +3139,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_expand_the_eu_army_power
 		icon = arms_treade_deals
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_european_army_thoughts
 		}
@@ -3164,7 +3164,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_echological_reforms
 		icon = improve_relations_green
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_demand_financial_posibilities_first
 		}
@@ -3252,7 +3252,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_liberalized_war_economies
 		icon = market_economy
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_expand_the_eu_army_power
 		}
@@ -3491,7 +3491,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_industrialization_law
 		icon = red_industry
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_echological_reforms
 		}
@@ -3505,7 +3505,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_filter_law
 		icon = war2_green
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_echological_reforms
 		}
@@ -3663,7 +3663,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_restored_order
 		icon = military_mission2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_resolve_greece
 		}
@@ -3683,7 +3683,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_make_green_propaganda
 		icon = green_world
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_industrialization_law
 		}
@@ -3708,7 +3708,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_minors_mission
 		icon = dangerous_deal3
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_echological_imperialism
 		}
@@ -3725,7 +3725,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_majors_mission
 		icon = alliance_USA_CHI
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_echological_imperialism
 		}
@@ -3879,7 +3879,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	focus = {
 		id = PKA_ensure_echological_peace
 		icon = brain_power
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_clean_USA
 		}
@@ -4068,7 +4068,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_remove_the_changing_situations
 		icon = diplomacy
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_restored_order
 		}
@@ -4094,7 +4094,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_strenghen_KDK
 		icon = pass_legislation
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_remove_the_changing_situations
 		}
@@ -4108,7 +4108,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_liberal_studies
 		icon = government_beu
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_remove_the_changing_situations
 		}
@@ -4122,7 +4122,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	focus = {
 		id = PKA_sivas_military_bases
 		icon = GEO_Industrialize_the_Countryside
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_central_military_industries
 		}
@@ -4334,7 +4334,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = PKA_privatized_arms_sector
 		icon = helmet_knife
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = PKA_improvement_of_arms_sector
 		}
@@ -4376,7 +4376,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = TUR_covid-19_pandemic11
 		icon = generic_healthcare
-		cost = 6.43
+		cost = 7.15
 		x = 61
 		y = 0
 
@@ -4393,7 +4393,7 @@ add_extra_state_shared_building_slots = 1
 	focus = {
 		id = TUR_covid-19_preparations11
 		icon = production2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_pandemic11
 		}
@@ -4413,7 +4413,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_build_up_hospitals11
 		icon = generic_hospital2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations11
 		}
@@ -4433,7 +4433,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turn_airports_to_hospital11
 		icon = generic_hospital
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_build_up_hospitals11
 		}
@@ -4454,7 +4454,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_start_up_vaccine_program1
 		icon = brain_power
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations11
 		}
@@ -4480,7 +4480,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_german_vaccines1
 		icon = trade_with_germany
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program1
 		}
@@ -4501,7 +4501,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_increase_funds_to_science11
 		icon = market_economy
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations11
 		}
@@ -4521,7 +4521,7 @@ increase_healthcare_budget = yes
 	focus = {
 		id = TUR_buy_medicines11
 		icon = protectionist_economics
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_increase_funds_to_science11
 		}
@@ -4547,7 +4547,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_chinese_vaccines11
 		icon = trade_with_china
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital11
 		}
@@ -4574,7 +4574,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_normalisation_from_covid11
 		icon = consumer_goods
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines11
 		}
@@ -4597,7 +4597,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_end_of_covid11
 		icon = aristocratic_funding
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_normalisation_from_covid11
 		}
@@ -4667,7 +4667,7 @@ add_named_threat = { threat = -1 name = peace_whatever_costs }
 	focus = {
 		id = TUR_expansion_on_the_borders8
 		icon = entente
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_hedef_20238
 		}
@@ -4787,7 +4787,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_integrate_batumi8
 		icon = small_arms5
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_money_for_batumi8
 		}
@@ -4809,7 +4809,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_PKK_attacks8
 		icon = focus_attack_pkk
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders8
 		}
@@ -4842,7 +4842,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_end_of_FETO8
 		icon = thompson_submachine_gun
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_PKK_attacks8
 		}
@@ -4871,7 +4871,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_strong_state8
 		icon = military_mission2
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_integrate_batumi8
 		}
@@ -4896,7 +4896,7 @@ add_stability = 0.1
 	focus = {
 		id = TUR_NATO_mission8
 		icon = nato_membership_action_plan
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_peace_whatever_costs8
 		}
@@ -4968,7 +4968,7 @@ add_ideas = nato_turkey_missionary
 	focus = {
 		id = TUR_positions_for_protection8
 		icon = nato3
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_NATO_mission8
 		}
@@ -5099,7 +5099,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_bor8
 		icon = b-5
-		cost = 6.43
+		cost = 7.15
 		prerequisite = {
 			focus = TUR_strong_state8
 			focus = TUR_international_military_factories8
