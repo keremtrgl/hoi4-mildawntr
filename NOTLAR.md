@@ -130,6 +130,9 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     savaş hedefi, komünizm desteği), DEM (+%10 istikrar), DSP (parti desteği), MHF (gizli plan ruhu, ittifak görüşü,
     BOS/ALB ittifaka). Rus kimyasal test odağı ABD'ye bakıyordu, SOV oldu.
   - Workshop başlık/açıklaması 12 dilde (`tools/workshop/i18n/`), Steam'in Edit Title & Description sayfasından.
+- **2.0.3-TUR.9.1** (1 Kasım 2026), düzeltme: İngilizce oyunda Türkçe kalan girdiler çevrildi (yeni parti adları,
+  Özel Kuvvetler Komutanlığı, MIST/MIDST ruhları, senfoni orkestrası ruhu, Turkey.254.a), "Arınç" yazımı düzeltildi.
+  Tarama: oyunda kullanılan her odağın İngilizce açıklaması var; boş 758 `_desc` anahtarının odakları yorum satırında.
 
 ## Kalıcı dersler (tekrar düşme!)
 
