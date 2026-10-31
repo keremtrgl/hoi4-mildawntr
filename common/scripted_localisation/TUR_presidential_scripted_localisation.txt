@@ -1,0 +1,32 @@
+# Names and tooltips of the two presidential candidates; the *_make_visible flags come from TurkeyPresidency.1-3.
+defined_text = {
+	name = TUR_first_candidate_name
+	text = { trigger = { has_global_flag = NEVZAT_make_visible } localization_key = TUR_candidate_nevzat }
+	text = { trigger = { has_global_flag = ABDULLAH_GUL_make_visible } localization_key = TUR_candidate_gul }
+	text = { trigger = { has_global_flag = RTE_make_visible } localization_key = TUR_candidate_erdogan }
+	text = { localization_key = TUR_candidate_first }
+}
+
+defined_text = {
+	name = TUR_first_candidate_tt
+	text = { trigger = { has_global_flag = NEVZAT_make_visible } localization_key = TUR_candidate_nevzat_tt }
+	text = { trigger = { has_global_flag = ABDULLAH_GUL_make_visible } localization_key = TUR_candidate_gul_tt }
+	text = { trigger = { has_global_flag = RTE_make_visible } localization_key = TUR_candidate_erdogan_tt }
+	text = { localization_key = TUR_candidate_none_tt }
+}
+
+defined_text = {
+	name = TUR_second_candidate_name
+	text = { trigger = { has_global_flag = NECDET_make_visible } localization_key = TUR_candidate_necdet }
+	text = { trigger = { has_global_flag = SABAHATTIN_make_visible } localization_key = TUR_candidate_sabahattin }
+	text = { trigger = { has_global_flag = EKMELEDDIN_make_visible } localization_key = TUR_candidate_ekmeleddin }
+	text = { localization_key = TUR_candidate_second }
+}
+
+defined_text = {
+	name = TUR_second_candidate_tt
+	text = { trigger = { has_global_flag = NECDET_make_visible } localization_key = TUR_candidate_necdet_tt }
+	text = { trigger = { has_global_flag = SABAHATTIN_make_visible } localization_key = TUR_candidate_sabahattin_tt }
+	text = { trigger = { has_global_flag = EKMELEDDIN_make_visible } localization_key = TUR_candidate_ekmeleddin_tt }
+	text = { localization_key = TUR_candidate_none_tt }
+}

@@ -3,7 +3,7 @@
 shared_focus = {
 		id = TUR_greek_issues
 		icon = attack_cyprus
-		cost = 10
+		cost = 6.43
 		x = 0#37
 		y = 45#11
 
@@ -167,7 +167,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	shared_focus = {
 		id = TUR_cypriot_troubles
 		icon = align_to_northern_cyprus
-		cost = 10
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_greek_issues
 		}
@@ -204,7 +204,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	shared_focus = {
 		id = TUR_aggressive_approach
 		icon = focus_ROM_secure_greece
-		cost = 10
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_cypriot_troubles
 		}
@@ -234,7 +234,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	shared_focus = {
 		id = TUR_direct_involvement
 		icon = war_against_greece
-		cost = 10
+		cost = 7.86
 		mutually_exclusive = { focus = TUR_indirect_involvement }
 		available = {
 			country_exists = NCY
@@ -387,7 +387,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	shared_focus = {
 		id = TUR_indirect_involvement
 		icon = flames_of_rebellion
-		cost = 10
+		cost = 7.86
 		mutually_exclusive = { focus = TUR_direct_involvement }
 		available = {
 			NOT = {
@@ -528,7 +528,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	shared_focus = {
 		id = TUR_great_uprising
 		icon = focus_generic_fascist_uprising
-		cost = 10
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_fund_militias
 		}
@@ -596,7 +596,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	shared_focus = {
 		id = TUR_aegan_dispute
 		icon = greek_thing
-		cost = 10
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_greek_issues
 		}
@@ -616,7 +616,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	shared_focus = {
 		id = TUR_path_of_no_return #CANT BE IN NATO AND DO THIS!
 		icon = Kill_Greece
-		cost = 10
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_aegan_dispute
 		}
@@ -815,7 +815,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	shared_focus = {
 		id = TUR_siege_of_greece
 		icon = war
-		cost = 10
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_last_second_upgrades
 		}
@@ -975,7 +975,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	shared_focus = {
 		id = TUR_let_the_games_begin
 		icon = Generic_Violent_Coup
-		cost = 10
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_smuggle_trucks
 		}
@@ -1037,7 +1037,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	shared_focus = {
 		id = TUR_path_of_compromise
 		icon = goal_JAP_peace
-		cost = 10
+		cost = 7.86
 		prerequisite = { focus = TUR_aegan_dispute }
 		prerequisite = { focus = TUR_cypriot_troubles }
 		mutually_exclusive = {
@@ -1273,7 +1273,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	shared_focus = {
 		id = TUR_acquire_agean
 		icon = BRA_cutting_the_red_tape
-		cost = 10
+		cost = 7.86
 		prerequisite = { focus = TUR_peaceful_unification }
 		available = {
 			NOT = {

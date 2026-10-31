@@ -95,6 +95,11 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     başlar, 38 karar açılır, varlık 30'dan başlar (üst sınır 60). Temmuz 2015: barış süreci biter, saldırganlık 70'e
     çıkar ve kendiliğinden söner. Cezalar: toplam -%9 istikrar / -%6 siyasi güç (2015 zirvesinde -%12). Düşük yoğunlukta
     saldırı yaklaşık 7 ayda bir. `add_stability = -0.5` yazım hatası -0.05 yapıldı.
+  - Oyun içi test geri bildirimi: 70 günlük Türkiye odakları kısaldı. Savaş, rejim, yol seçimi ve büyük ödüllü olanlar
+    55 gün (`7.86`), diğerleri 45 gün (`6.43`); 20 günlükler 21 gün. 35 ve 50 günlükler aynı. Mafya olayı haftalık %50'den
+    %20'ye indi, üçüncü seçenek 10 yerine 3,5 milyar. Cumhurbaşkanlığı ekranı adayların adını, partisini ve seçilirse
+    vereceği etkiyi gösteriyor. ANAP artık "Libertarians" görünmüyor. Üretici fonları AAT DLC'si yoksa ordu tecrübesi
+    veriyor. TUSAŞ'ın helikopter üreticisi için eksik MIO eklendi.
   - Borç 364, hazine 34 ve kişi başı GSYH MD'nin değerleri, değiştirilmedi.
   - `release_check.py`: imkânsız tarih, hazine/ipucu ve dizi dışı parti kontrolleri.
   - `FIRE_SUPEREVENT_13` ("Turkish Germany") bilinçli olarak açılmadı: onu tetikleyecek içerik hiç yazılmamış.

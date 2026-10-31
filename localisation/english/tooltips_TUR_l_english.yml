@@ -898,15 +898,15 @@
  TO_BUY_S400:0 "If we want to buy S-400s, we first need to ask for Patriots."
 
  #Presidential Elections
- FIRST_PARTY_GAINS_POP:0 "§GThe first party gains 1% of the popular parliamentary vote.§!"
- SECOND_PARTY_GAINS_POP:0 "§GThe second party gains 1% of the popular parliamentary vote.§!"
- FIRST_PARTY_LOSES_POP:0 "§RThe first party loses 1% of the popular parliamentary vote.§!"
- SECOND_PARTY_LOSES_POP:0 "§RThe second party loses 1% of the popular parliamentary vote.§!"
+ FIRST_PARTY_GAINS_POP:0 "§G[TUR_first_candidate_name] gains 1% of the parliamentary vote.§!"
+ SECOND_PARTY_GAINS_POP:0 "§G[TUR_second_candidate_name] gains 1% of the parliamentary vote.§!"
+ FIRST_PARTY_LOSES_POP:0 "§R[TUR_first_candidate_name] loses 1% of the parliamentary vote.§!"
+ SECOND_PARTY_LOSES_POP:0 "§R[TUR_second_candidate_name] loses 1% of the parliamentary vote.§!"
 
- FIRST_PARTY_GAINS_POP_2:0 "§GThe first party gains 2% of the popular parliamentary vote.§!"
- SECOND_PARTY_GAINS_POP_2:0 "§GThe second party gains 2% of the popular parliamentary vote.§!"
- FIRST_PARTY_LOSES_POP_2:0 "§RThe first party loses 2% of the popular parliamentary vote.§!"
- SECOND_PARTY_LOSES_POP_2:0 "§RThe second party loses 2% of the popular parliamentary vote.§!"
+ FIRST_PARTY_GAINS_POP_2:0 "§G[TUR_first_candidate_name] gains 2% of the parliamentary vote.§!"
+ SECOND_PARTY_GAINS_POP_2:0 "§G[TUR_second_candidate_name] gains 2% of the parliamentary vote.§!"
+ FIRST_PARTY_LOSES_POP_2:0 "§R[TUR_first_candidate_name] loses 2% of the parliamentary vote.§!"
+ SECOND_PARTY_LOSES_POP_2:0 "§R[TUR_second_candidate_name] loses 2% of the parliamentary vote.§!"
 
  END_OF_THE_ELECTION_PRESIDENTIAL:0 "§YThe end of the presidential elections.§!"
  END_OF_THE_ELECTION_MAYOR:0 "§YThe end of the mayoral elections.§!"
@@ -1186,3 +1186,19 @@
 
 
  TUR_SUBMOD_AI_BEHAVIOR: "Turkey AI Path (Turkey Submod)"
+ TUR_candidate_first:0 "First candidate"
+ TUR_candidate_second:0 "Second candidate"
+ TUR_candidate_none_tt:0 "Presidential candidate"
+ TUR_candidate_nevzat:0 "Nevzat Yalcintas"
+ TUR_candidate_necdet:0 "Ahmet Necdet Sezer"
+ TUR_candidate_gul:0 "Abdullah Gul"
+ TUR_candidate_sabahattin:0 "Sabahattin Cakmakoglu"
+ TUR_candidate_erdogan:0 "Recep Tayyip Erdogan"
+ TUR_candidate_ekmeleddin:0 "Ekmeleddin Ihsanoglu"
+ TUR_candidate_if_elected:0 "§YIf elected:§!"
+ TUR_candidate_nevzat_tt:0 "§YNevzat Yalcintas§!\nVirtue Party (FP). Economist and MP, the candidate of the Islamist opposition.\n\n$TUR_candidate_if_elected$\n$NEVZAT_KA$"
+ TUR_candidate_necdet_tt:0 "§YAhmet Necdet Sezer§!\nIndependent. President of the Constitutional Court, backed by the DSP-MHP-ANAP coalition.\n\n$TUR_candidate_if_elected$\n$NECDET_KA$"
+ TUR_candidate_gul_tt:0 "§YAbdullah Gul§!\nJustice and Development Party (AKP). Foreign minister and former prime minister.\n\n$TUR_candidate_if_elected$\n$GUL_KA$"
+ TUR_candidate_sabahattin_tt:0 "§YSabahattin Cakmakoglu§!\nNationalist Movement Party (MHP). Former minister of the interior.\n\n$TUR_candidate_if_elected$\n$SABAHATTIN_KA$"
+ TUR_candidate_erdogan_tt:0 "§YRecep Tayyip Erdogan§!\nJustice and Development Party (AKP). The sitting prime minister.\n\n$TUR_candidate_if_elected$\n$ERDOGAN_KA$"
+ TUR_candidate_ekmeleddin_tt:0 "§YEkmeleddin Ihsanoglu§!\nJoint candidate of CHP and MHP. Historian and former head of the Organisation of Islamic Cooperation.\n\n$TUR_candidate_if_elected$\n$EKMELEDDIN_KA$"

@@ -6,7 +6,7 @@ focus_tree = {
 	focus = {
 		id = TAK_junta
 		icon = armed_forces_of_turkey
-		cost = 10.00
+		cost = 6.43
 		x = 27
 		y = 0
 
@@ -24,7 +24,7 @@ focus_tree = {
 	focus = {
 		id = TAK_declare_dictatorship
 		icon = fascism2
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_junta
 		}
@@ -55,7 +55,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = TAK_gather_people
 		icon = national_unity
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_declare_dictatorship
 		}
@@ -70,7 +70,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = TAK_hunt_terrorists
 		icon = lend_lease
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_gather_people
 		}
@@ -96,7 +96,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_defences_in_south
 		icon = air_defense2
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_hunt_terrorists
 		}
@@ -139,7 +139,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_lift_the_elections
 		icon = elections_banned
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_declare_dictatorship
 		}
@@ -156,7 +156,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_control_the_press
 		icon = press_censorship
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_declare_dictatorship
 		}
@@ -184,7 +184,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_return_intervention
 		icon = helmet_knife
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_lift_the_elections
 		}
@@ -203,7 +203,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_arrest_democrats
 		icon = anti_democracy
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_lift_the_elections
 		}
@@ -224,7 +224,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_national_stabilization
 		icon = stability
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_return_intervention
 		}
@@ -247,7 +247,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_banner_of_nationalism
 		icon = align_to_turkey
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_national_stabilization
 		}
@@ -295,7 +295,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_banner_of_6_arrows
 		icon = focus_TUR_ratify_the_six_arrows
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_national_stabilization
 		}
@@ -314,7 +314,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_innovations
 		icon = research
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_banner_of_6_arrows
 		}
@@ -334,7 +334,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_secular_forces
 		icon = coups_on_the_world
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_innovations
 		}
@@ -354,7 +354,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_westernization
 		icon = closer_ties_with_western_bloc
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_secular_forces
 		}
@@ -375,7 +375,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_banner_of_populism
 		icon = generic_left_wing_populism
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_national_stabilization
 		}
@@ -479,7 +479,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_withdrawal_from_european_policies
 		icon = attack_europe
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_arrest_democrats
 		}
@@ -538,7 +538,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_true_populism
 		icon = union_representation_act
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_make_civilian_economic_program
 		}
@@ -563,7 +563,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_reconfigure_economic_plan
 		icon = centralization_question
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_junta
 		}
@@ -587,7 +587,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_etatism
 		icon = central_planned_economy3
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_reconfigure_economic_plan
 		}
@@ -597,8 +597,14 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
         add_ideas = TUR_etatism
 
-			every_military_industrial_organization = {
-				add_mio_funds = 500
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				every_military_industrial_organization = {
+					add_mio_funds = 500
+				}
+			}
+			else = {
+				army_experience = 20
 			}	
 				}
 		ai_will_do = { base = 8 }
@@ -606,7 +612,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_kayseri_air_factory
 		icon = air_industry
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_etatism
 		}
@@ -646,7 +652,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_ankara_air_factory
 		icon = air_production
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_kayseri_air_factory
 		}
@@ -686,7 +692,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_build_roads
 		icon = construct_infrastructure
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_etatism
 		}
@@ -747,7 +753,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_open_university
 		icon = university
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_build_roads
 		}
@@ -779,7 +785,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_destroy_rant_system_in_istanbul
 		icon = union_negotiations
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_etatism
 		}
@@ -836,7 +842,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_support_industrials
 		icon = production2
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_destroy_rant_system_in_istanbul
 		}
@@ -856,7 +862,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_rebought_factories
 		icon = liberalization_policies
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_etatism
 		}
@@ -908,7 +914,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_rebuild_istanbul
 		icon = broadway
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_destroy_rant_system_in_istanbul
 		}
@@ -950,7 +956,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_crush_the_slums
 		icon = red_industry
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_rebought_factories
 		}
@@ -993,7 +999,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_economic_forge
 		icon = coins
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_rebuild_istanbul
 		}
@@ -1026,7 +1032,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_NATO_policy
 		icon = nato2
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_junta
 		}
@@ -1043,7 +1049,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_announce_the_leave
 		icon = attack_nato
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_NATO_policy
 		}
@@ -1072,7 +1078,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_draw_closer_ties_with_russia
 		icon = align_to_russia
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_announce_the_leave
 		}
@@ -1113,7 +1119,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_guard_the_iran
 		icon = iran_guard
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_announce_the_leave
 		}
@@ -1153,7 +1159,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_continue_with_nato
 		icon = align_to_nato
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_NATO_policy
 		}
@@ -1180,7 +1186,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_guard_the_balkans
 		icon = balkan_conflict
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_continue_with_nato
 		}
@@ -1375,7 +1381,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_true_nationalism
 		icon = nationalist_constiution
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_close_the_party
 		}
@@ -1399,7 +1405,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	focus = {
 		id = TAK_once_vatan
 		icon = turkish_authoritarianism
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_true_populism
 		}
@@ -1428,7 +1434,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = TAK_demands_to_usa
 		icon = us_non_nato_ally
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_once_vatan
 		}
@@ -1461,7 +1467,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	focus = {
 		id = TAK_clean_the_border_terrorists
 		icon = generic_entrenchment
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_demands_to_usa
 		}
@@ -1488,7 +1494,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_eliminate_the_assad
 		icon = attack_syria
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_clean_the_border_terrorists
 		}
@@ -1522,7 +1528,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_turkish_nationalism_speeks
 		icon = turkish_flag
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_demands_to_usa
 		}
@@ -1552,7 +1558,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_boost_azerbaijan
 		icon = align_to_azerbaijan
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_turkish_nationalism_speeks
 		}
@@ -1593,7 +1599,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_division_of_armenia
 		icon = GEO_Armenia_What
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_industrials_in_azerbaijan
 		}
@@ -1629,7 +1635,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_irani_militias
 		icon = iran_resistence_economy
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_clean_the_border_terrorists
 		}
@@ -1667,7 +1673,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_anti_arabic_state
 		icon = attack_saudi_arabia
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_irani_militias
 		}
@@ -1691,7 +1697,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_industrials_in_azerbaijan
 		icon = azer_oil_big
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_boost_azerbaijan
 		}
@@ -1748,7 +1754,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_militiary_industrials_in_azerbaijan
 		icon = Azerbaijani_Army
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_boost_azerbaijan
 		}
@@ -1841,7 +1847,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_money_diplomacy
 		icon = money
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_demands_to_usa
 		}
@@ -1857,7 +1863,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	focus = {
 		id = TAK_save_the_south
 		icon = iraqi_soldier
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_division_of_armenia
 		}
@@ -1935,7 +1941,7 @@ reverse_add_opinion_modifier = { target = USA modifier = leader_of_our_hopes }
 	focus = {
 		id = TAK_money_for_islands
 		icon = land_reform
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_money_diplomacy
 		}
@@ -1968,7 +1974,7 @@ reverse_add_opinion_modifier = { target = USA modifier = leader_of_our_hopes }
 	focus = {
 		id = TAK_offer_protection_to_bulgaria
 		icon = align_to_bulgaria
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_money_for_islands
 		}
@@ -2000,7 +2006,7 @@ reverse_add_opinion_modifier = { target = USA modifier = leader_of_our_hopes }
 	focus = {
 		id = TAK_nato_military_competitions
 		icon = nato_standards
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TAK_continue_with_nato
 		}
@@ -2040,7 +2046,7 @@ reverse_add_opinion_modifier = { target = USA modifier = leader_of_our_hopes }
 	focus = {
 		id = TUR_armed_forces3
 		icon = TUR_military_regime
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TAK_junta
 		}
@@ -2059,7 +2065,7 @@ reverse_add_opinion_modifier = { target = USA modifier = leader_of_our_hopes }
 	focus = {
 		id = TUR_give_more_power_to_army3
 		icon = dangerous_laws
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_armed_forces3
 		}
@@ -2114,7 +2120,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_act_of_military3
 		icon = armed_forces_of_turkey
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_nationalization_of_armed_forces3
 		}
@@ -2134,7 +2140,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_modernization_of_armed_forces3
 		icon = military_mission
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_act_of_military3
 		}
@@ -2152,7 +2158,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_tank_modernization3
 		icon = Generic_Refit_Tanks
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_modernization_of_armed_forces3
 		}
@@ -2172,7 +2178,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_altay_tank_project3
 		icon = tanks5
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_tank_modernization3
 		}
@@ -2192,7 +2198,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_gun_modernization3
 		icon = Generic_Military_Equipment
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_modernization_of_armed_forces3
 		}
@@ -2212,7 +2218,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_artillery_modernizetion3
 		icon = artillery3
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_gun_modernization3
 		}
@@ -2234,7 +2240,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_war_tactics3
 		icon = military_planning
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_act_of_military3
 		}
@@ -2255,7 +2261,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_modern_art_of_war3
 		icon = infiltration_tactics
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_war_tactics3
 		}
@@ -2276,7 +2282,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_med_trainings3
 		icon = inundation_lines
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_modern_art_of_war3
 		}
@@ -2297,7 +2303,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_tuz_trainings3
 		icon = grand_battleplan
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_modern_art_of_war3
 		}
@@ -2327,7 +2333,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_doctrine_of_war3
 		icon = static_defense
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_tuz_trainings3
 		}
@@ -2366,7 +2372,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_special_armed_forces3
 		icon = helmet_knife
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_act_of_military3
 		}
@@ -2381,7 +2387,7 @@ block_defence_decrease = yes
 	focus = {
 		id = TUR_strenghen_combat3
 		icon = mass_assault
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_special_armed_forces3
 		}
@@ -2398,7 +2404,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_strongest_special_armed_forces_in_NATO3
 		icon = nato3
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_strenghen_combat3
 		}
@@ -2421,7 +2427,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_special_forces_for_turkish_state3
 		icon = align_to_turkey
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_strongest_special_armed_forces_in_NATO3
 		}
@@ -2439,7 +2445,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_air_modernization3
 		icon = f35
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_gun_modernization3
 		}
@@ -2462,7 +2468,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_THK_program3
 		icon = fighter_plane
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_air_modernization3
 		}
@@ -2483,7 +2489,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_navy_modernizations3
 		icon = TUR_navy
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_air_modernization3
 		}
@@ -2501,7 +2507,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkish_destroyers3
 		icon = destroyers
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_navy_modernizations3
 		}
@@ -2523,7 +2529,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_battleship3
 		icon = battleships
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_navy_modernizations3
 		}
@@ -2545,7 +2551,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_creation_of_turkish_carriers3
 		icon = ship_bleur_point
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_battleship3
 		}
@@ -2570,7 +2576,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkish_tank_weaponary3
 		icon = tanks4
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_altay_tank_project3
 		}
@@ -2592,7 +2598,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turkish_drones3
 		icon = turkish_drone
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_THK_program3
 		}
@@ -2621,7 +2627,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_covid-19_pandemic7-
 		icon = generic_healthcare
-		cost = 10.00
+		cost = 6.43
 		x = 66
 		y = 0
 
@@ -2638,7 +2644,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_covid-19_preparations7-
 		icon = production2
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_covid-19_pandemic7-
 		}
@@ -2658,7 +2664,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_build_up_hospitals7-
 		icon = generic_hospital2
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_covid-19_preparations7-
 		}
@@ -2678,7 +2684,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_turn_airports_to_hospital7-
 		icon = generic_hospital
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_build_up_hospitals7-
 		}
@@ -2699,7 +2705,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_start_up_vaccine_program19
 		icon = brain_power
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_covid-19_preparations7-
 		}
@@ -2725,7 +2731,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_german_vaccines19
 		icon = trade_with_germany
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program19
 		}
@@ -2746,7 +2752,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_increase_funds_to_science7-
 		icon = market_economy
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_covid-19_preparations7-
 		}
@@ -2766,7 +2772,7 @@ increase_healthcare_budget = yes
 	focus = {
 		id = TUR_buy_medicines7-
 		icon = protectionist_economics
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_increase_funds_to_science7-
 		}
@@ -2792,7 +2798,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_buy_chinese_vaccines7-
 		icon = trade_with_china
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital7-
 		}
@@ -2819,7 +2825,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_normalisation_from_covid7-
 		icon = consumer_goods
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines7-
 		}
@@ -2842,7 +2848,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_end_of_covid7-
 		icon = aristocratic_funding
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_normalisation_from_covid7-
 		}
@@ -2864,7 +2870,7 @@ remove_ideas = covid_19_normalised
 	focus = {
 		id = TUR_hedef_20235-
 		icon = 2023
-		cost = 10.00
+		cost = 7.86
 		mutually_exclusive = {
 			focus = TUR_peace_whatever_costs5-
 		}
@@ -2888,7 +2894,7 @@ add_named_threat = { threat = 1 name = 2023_tensions }
 	focus = {
 		id = TUR_peace_whatever_costs5-
 		icon = major_alliance3
-		cost = 10.00
+		cost = 7.86
 		mutually_exclusive = {
 			focus = TUR_hedef_20235-
 		}
@@ -2912,7 +2918,7 @@ add_named_threat = { threat = -1 name = peace_whatever_costs }
 	focus = {
 		id = TUR_expansion_on_the_borders5-
 		icon = entente
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_hedef_20235-
 		}
@@ -2932,7 +2938,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_unification_with_azerbaijan5-
 		icon = align_to_azerbaijan
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders5-
 		}
@@ -2966,7 +2972,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_ultimatium_to_armenia5-
 		icon = irredentism
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_unification_with_azerbaijan5-
 		}
@@ -3000,7 +3006,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_money_for_batumi5-
 		icon = liberalization_policies
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders5-
 		}
@@ -3032,7 +3038,7 @@ add_political_power = 75
 	focus = {
 		id = TUR_integrate_batumi5-
 		icon = small_arms5
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_money_for_batumi5-
 		}
@@ -3054,7 +3060,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_PKK_attacks5-
 		icon = focus_attack_pkk
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_expansion_on_the_borders5-
 		}
@@ -3086,7 +3092,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_end_of_FETO5-
 		icon = thompson_submachine_gun
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_PKK_attacks5-
 		}
@@ -3115,7 +3121,7 @@ add_political_power = -75
 	focus = {
 		id = TUR_strong_state5-
 		icon = military_mission2
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_integrate_batumi5-
 		}
@@ -3140,7 +3146,7 @@ add_stability = 0.1
 	focus = {
 		id = TUR_NATO_mission5-
 		icon = nato_membership_action_plan
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_peace_whatever_costs5-
 		}
@@ -3161,7 +3167,7 @@ add_ideas = nato_turkey_missionary
 	focus = {
 		id = TUR_join_NATO_equipmentary5-
 		icon = nato_standards
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_NATO_mission5-
 		}
@@ -3212,7 +3218,7 @@ add_ideas = nato_turkey_missionary
 	focus = {
 		id = TUR_positions_for_protection5-
 		icon = nato3
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_NATO_mission5-
 		}
@@ -3237,7 +3243,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_industrialization_program5-
 		icon = factory_planning
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_join_NATO_equipmentary5-
 		}
@@ -3292,7 +3298,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_international_military_factories5-
 		icon = un_pko
-		cost = 10.00
+		cost = 7.86
 		prerequisite = {
 			focus = TUR_industrialization_program5-
 		}
@@ -3343,7 +3349,7 @@ swap_ideas = {
 	focus = {
 		id = TUR_bor5-
 		icon = b-5
-		cost = 10.00
+		cost = 6.43
 		prerequisite = {
 			focus = TUR_strong_state5-
 			focus = TUR_international_military_factories5-

@@ -13762,7 +13762,7 @@ defined_text = {
 defined_text = {
 	name = Neutral_Libertarian_L
 	# Turkey submod party names
-	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Libertarian}
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Neutral_Libertarian }
 	text = { trigger = { has_country_flag = USoE_political_parties date < 2017.1.1 } localization_key = USoE.Neutral_Libertarian }
 	text = { trigger = { has_country_flag = USoE_political_parties date > 2017.1.1 } localization_key = USoE.Neutral_Libertarian_2017 }
 	text = { trigger = { original_tag = BOL } localization_key = BOL.Neutral_Libertarian }
