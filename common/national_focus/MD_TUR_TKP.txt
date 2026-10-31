@@ -33,7 +33,7 @@ focus_tree = {
 				recalculate_party = yes
 			}
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_ODP
@@ -61,7 +61,7 @@ focus_tree = {
 				recalculate_party = yes
 			}
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_perincek
@@ -88,7 +88,7 @@ focus_tree = {
 				recalculate_party = yes
 			}
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_national_reorganization
@@ -105,7 +105,7 @@ focus_tree = {
         add_political_power = 100
 		add_stability = 0.05
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 		focus = {
 		id = TUR_communists_on_the_military
@@ -144,7 +144,7 @@ focus_tree = {
 					popularity = -0.1
 				}
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_authoratarion_module
@@ -225,7 +225,7 @@ focus_tree = {
 					popularity = -0.25
 				}
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_unite_the_state
@@ -316,7 +316,7 @@ focus_tree = {
 				recalculate_party = yes
 			}
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_anti_us_ally
@@ -537,7 +537,7 @@ focus_tree = {
 				recalculate_party = yes
 			}	 
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_more_social_than_social_democrats
@@ -562,7 +562,7 @@ focus_tree = {
 				recalculate_party = yes
 			}	 
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_weaken_banks
@@ -585,7 +585,7 @@ focus_tree = {
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_spread_authority
@@ -632,7 +632,7 @@ focus_tree = {
 					popularity = -0.15
 				}
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_support_russia
@@ -859,7 +859,7 @@ focus_tree = {
 	add_stability = -0.05
     generic_grant_5_percent_influence_of_CHI = yes
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 				}
 	focus = {
 		id = TUR_chinese_nationalism
@@ -1132,7 +1132,7 @@ focus_tree = {
 		add_political_power = 100
 		add_war_support = -0.1
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_repair_focus
@@ -1169,7 +1169,7 @@ focus_tree = {
 		add_political_power = -25
         country_event = TurkeyCo.6
 	}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_accept_istanbul
@@ -1190,7 +1190,7 @@ focus_tree = {
 		add_political_power = -50
 		custom_effect_tooltip = TUR_AKP_small_start
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_the_turkish_revolution
@@ -1323,7 +1323,7 @@ focus_tree = {
 			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_spread_on_iran
@@ -1726,7 +1726,7 @@ focus_tree = {
         army_experience = 50
 		add_command_power = 25
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = TUR_enter_greece
@@ -1819,7 +1819,7 @@ focus_tree = {
 				recalculate_party = yes
 			}
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TKP_liberal_socialism
@@ -1899,7 +1899,7 @@ focus_tree = {
 				recalculate_party = yes
 			}		 
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TKP_support_farmers
@@ -1955,7 +1955,7 @@ focus_tree = {
 			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt		
 		}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TKP_support_green_energy
@@ -1976,7 +1976,7 @@ focus_tree = {
 			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt		
 		}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TKP_free_tractor
@@ -1997,7 +1997,7 @@ focus_tree = {
 			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt		
 		}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TKP_new_constitution
@@ -2019,7 +2019,7 @@ focus_tree = {
 	 add_stability = -0.05
 	 add_war_support = 0.05
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TKP_reform_the_judge
@@ -2063,7 +2063,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = TUR_MHP_small_start
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = TUR_new_confidences
@@ -2246,7 +2246,7 @@ focus_tree = {
 					add_war_support = 0.02
 					reverse_add_opinion_modifier = { target = USA modifier = insult }
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 				}
 	focus = {
 		id = TUR_covid-19_pandemic3
@@ -2303,7 +2303,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital3
@@ -2324,7 +2324,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program11
@@ -2350,7 +2350,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines11
@@ -2427,7 +2427,7 @@ swap_ideas = {
 			focus = TUR_turn_airports_to_hospital3
 		}
 		prerequisite = {
-			focus = TUR_buy_german_vaccines3
+			focus = TUR_buy_german_vaccines11
 		}
 		prerequisite = {
 			focus = TUR_buy_medicines3

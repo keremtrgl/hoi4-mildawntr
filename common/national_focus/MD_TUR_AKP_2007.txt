@@ -524,7 +524,7 @@ swap_ideas = {
 					reverse_add_opinion_modifier = { target = SOV modifier = economic_mission }	
 					reverse_add_opinion_modifier = { target = CHI modifier = economic_mission }						
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = PKA_liberal_islamic_state
@@ -4422,7 +4422,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital11
@@ -4443,7 +4443,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program1
@@ -4469,7 +4469,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines1
@@ -4885,7 +4885,7 @@ add_political_power = -75
 add_war_support = 0.05
 add_stability = 0.1
 }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_NATO_mission8
@@ -5037,7 +5037,7 @@ swap_ideas = {
 	ICE = { country_event = TurkeyF.17}
 			
 		}  } 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_international_military_factories8
@@ -5088,7 +5088,7 @@ swap_ideas = {
 	ICE = { country_event = TurkeyF.18}
 			
 		}  } 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_bor8

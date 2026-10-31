@@ -31,7 +31,7 @@ TUR_mafia_influence_mechanic = {
 		original_tag = TUR
 		has_country_flag = playing_mafia
 		NOT = {
-		has_global_flag = TUR_mafia_gone
+		TUR = { has_country_flag = TUR_mafia_gone }
 		}
 	}
 

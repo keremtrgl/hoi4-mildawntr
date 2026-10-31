@@ -19,7 +19,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
     completion_reward = {
 	add_ideas = bozkurtlar
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = AU_strenghen_confidence
 		icon = demand_territory2
@@ -498,7 +498,7 @@ focus_tree = {
 	remove_idea = quarries_1
 	        }
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = AU_stabilize_the_state
@@ -613,7 +613,7 @@ focus_tree = {
 	completion_reward = {
        add_ideas = ataturk_nationalism
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = AU_sun_language_theory
@@ -710,7 +710,7 @@ focus_tree = {
 	add_stability = 0.05
 	add_political_power = 100
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = AU_changes_in_chp
@@ -1084,7 +1084,7 @@ focus_tree = {
 	   add_stability = -0.05
        add_timed_idea = { idea = general_purges  days = 90 }
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = AU_follow_bahceli
@@ -1125,7 +1125,7 @@ focus_tree = {
     completion_reward = {
 	add_ideas = three_crescent
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = AU_shot_down_the_judge
@@ -1171,7 +1171,7 @@ focus_tree = {
 			add_command_power = -15
 			add_political_power = -75
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = AU_war_with_the_kurds
@@ -1514,7 +1514,7 @@ focus_tree = {
     completion_reward = {
             add_ideas = legacy_of_turkes
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = AU_declare_dictatorship
@@ -1537,7 +1537,7 @@ focus_tree = {
 	   add_stability = -0.05
        add_ideas = turkish_dictatorship
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = AU_arm_the_ulkists
@@ -1650,7 +1650,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital4
@@ -1671,7 +1671,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_increase_funds_to_science4
@@ -1745,7 +1745,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 
 	focus = {
@@ -2119,7 +2119,7 @@ add_political_power = -75
 add_war_support = 0.05
 add_stability = 0.1
 }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_NATO_mission3
@@ -2270,7 +2270,7 @@ swap_ideas = {
 	ICE = { country_event = TurkeyF.17}
 			
 		}  } 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_international_military_factories3
@@ -2321,7 +2321,7 @@ swap_ideas = {
 	ICE = { country_event = TurkeyF.18}
 			
 		}  } 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_bor3

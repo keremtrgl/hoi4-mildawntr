@@ -75,7 +75,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		        add_stability = -0.03
 				add_political_power = -75
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = HEPAR_ensure_general_staff_loyalty
@@ -190,7 +190,7 @@ add_stability = -0.03
 swap_ideas = {
                 add_idea = betrayal_from_FETO1
                 remove_idea = betrayal_from_FETO
-	} } ai_will_do = { base = 8 } }
+	} } ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_control_the_collagoes
 		icon = military_women
@@ -207,7 +207,7 @@ swap_ideas = {
 	
 		completion_reward = {
 	    add_ideas = collegues_against_gulenists			
-		} ai_will_do = { base = 8 } }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = HEPAR_use_scientific_community_as_a_weapon
 		icon = research3
@@ -227,7 +227,7 @@ swap_ideas = {
 	    add_idea = scientific_community_against_gulenists		
         remove_idea = collegues_against_gulenists
              }		
-		} ai_will_do = { base = 8 } }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = HEPAR_shut_down_gulen_schools
 		icon = political_arrests
@@ -245,7 +245,7 @@ swap_ideas = {
 completion_reward = {
 add_political_power = 100
 add_stability = -0.03
-	} ai_will_do = { base = 8 } } 
+	} ai_will_do = { base = 10 } } 
 	focus = {
 		id = HEPAR_control_the_television
 		icon = television
@@ -274,7 +274,7 @@ remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad
 remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
 remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
 }
-		} ai_will_do = { base = 8 } }
+		} ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_counter_fetwa
 		icon = islamist_gov
@@ -291,7 +291,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	
 		completion_reward = {
 	    add_ideas = counter_fetwa			
-		} ai_will_do = { base = 8 } }
+		} ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_kemalist_doctrine
 		icon = chp
@@ -337,7 +337,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	
 		completion_reward = {
 			add_ideas = strike_law
-		} ai_will_do = { base = 8 } }
+		} ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_classical_nationalism
 		icon = Generic_Ultranationalist_Government
@@ -372,7 +372,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	
 		completion_reward = {
 			add_ideas = quality_politics
-		} ai_will_do = { base = 8 } }
+		} ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_elective_state
 		icon = election2
@@ -391,7 +391,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	
 		completion_reward = {
 			add_ideas = elective_state
-		} ai_will_do = { base = 8 } }
+		} ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_powerize_AYM
 		icon = parliament_box
@@ -472,7 +472,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			add_idea = multi_party_elective_state
 			remove_idea = quality_politics
 			 }
-		} ai_will_do = { base = 8 } }
+		} ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_clash_with_PKK
 		icon = FRA_Reform_Military_Mass_Mobilization_Volksturm
@@ -781,7 +781,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = -10.0 }
 			custom_effect_tooltip = 10_billion_revenue_tt
 				}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	} 
 	focus = {
 		id = HEPAR_trade_with_EU
@@ -848,7 +848,7 @@ swap_ideas = {
 			custom_effect_tooltip = 10_billion_revenue_tt
 				}
 
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	} 
 	focus = {
 		id = HEPAR_finish_the_economy_plan
@@ -876,7 +876,7 @@ swap_ideas = {
   add_idea = lira_3
 }  						
 				}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = HEPAR_agriculture_projection
@@ -1007,7 +1007,7 @@ swap_ideas = {
 			completion_reward = {
 			add_ideas = economic_interventionary			
 				}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = HEPAR_new_istanbul_borsa_base
@@ -1084,7 +1084,7 @@ swap_ideas = {
             remove_idea = economic_interventionary
          }			
 				}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = HEPAR_industrialization
@@ -1486,7 +1486,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			 add_political_power = 50
 			subtract_from_variable = { treasury = -5.0 }
 			custom_effect_tooltip = 5_billion_revenue_tt
-		} ai_will_do = { base = 10 } } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = HEPAR_club_rules
 		icon = grey_market_sheep
@@ -1621,7 +1621,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	
 		completion_reward = {
 		add_ideas = TUR_17_year_politiche
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_control_over_illegal_facilities
 		icon = Generic_Policeman
@@ -1756,7 +1756,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	
 		completion_reward = {
 		add_ideas = turkish_films
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_hunt_the_illegal_mafia
 		icon = volunteers
@@ -1940,7 +1940,7 @@ completion_reward = {
 swap_ideas = {
                 add_idea = betrayal_from_FETO2
                 remove_idea = betrayal_from_FETO1
-	} } ai_will_do = { base = 8 } }
+	} } ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_fund_nationalists
 		icon = counter
@@ -2102,7 +2102,7 @@ add_stability = 0.03
 	  			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt	
 }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
     }	
 	focus = {
 		id = HEPAR_move_industries_to_central
@@ -2358,7 +2358,7 @@ add_political_power = 25
     remove_ideas = NATO_member
 	add_stability = 0.03
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = HEPAR_denounce_the_trade_with_usa_and_its_allies
@@ -3141,7 +3141,7 @@ add_political_power = -25
 set_global_flag = DISABLE_WAR_SYSTEM_PAR
 custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU	
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = HEPAR_US_solid_equipments
@@ -3798,7 +3798,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 					add_war_support = 0.02
 					add_manpower = 10000
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = HEPAR_southwards
@@ -3819,7 +3819,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 					add_war_support = 0.02
 					add_manpower = 10000
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = HEPAR_slain_the_armenia
@@ -4226,7 +4226,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 					add_war_support = 0.03
 					add_political_power = 75
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = HEPAR_push_greece_for_nationalism
@@ -4378,7 +4378,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 					add_war_support = 0.02
 					add_manpower = 10000
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = HEPAR_mission_for_mosul
@@ -4445,7 +4445,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	    remove_state_claim = 164
 	    remove_state_claim = 165
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = HEPAR_demands_to_iraq
@@ -4479,7 +4479,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	completion_reward = {
 	 IRQ = { country_event = TurkeyF.74 }   
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 	} 
 	focus = {
 		id = HEPAR_bomb_the_syria
@@ -5491,7 +5491,7 @@ declare_war_on = { type = annex_everything target = USA }
 			subtract_from_variable = { treasury = -50.0 }
 			custom_effect_tooltip = 50_billion_revenue_tt
      }	
-	 } ai_will_do = { base = 8 } }
+	 } ai_will_do = { base = 14 } }
 	focus = {
 		id = HEPAR_war_for_motherland
 		icon = turkish_authoritarianism
@@ -5570,7 +5570,7 @@ declare_war_on = { type = annex_everything target = USA }
 	    transfer_state = 140
         add_state_core = 974
         add_state_core = 140		
-		} ai_will_do = { base = 8 } }	
+		} ai_will_do = { base = 2 } }	
 	focus = {
 		id = HEPAR_occupy_burgas
 		icon = focus_ROM_puppet_bulgaria
@@ -5595,7 +5595,7 @@ declare_war_on = { type = annex_everything target = USA }
 	    transfer_state = 996
         add_state_core = 154
         add_state_core = 996		
-		} ai_will_do = { base = 8 } }
+		} ai_will_do = { base = 2 } }
 	focus = {
 		id = HEPAR_banner_of_victory
 		icon = turkish_flag
@@ -5634,7 +5634,7 @@ declare_war_on = { type = annex_everything target = USA }
 					add_war_support = 0.02
 					add_manpower = 10000
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = HEPAR_clean_the_southern_problem
@@ -5802,7 +5802,7 @@ declare_war_on = { type = annex_everything target = USA }
         add_state_claim = 571	
         add_state_claim = 158
         add_state_claim = 571		
-		} ai_will_do = { base = 10 } }	
+		} ai_will_do = { base = 2 } }	
 	focus = {
 		id = HEPAR_build_a_peace_miracle_in_middle_east
 		icon = peace
@@ -5892,7 +5892,7 @@ declare_war_on = { type = annex_everything target = USA }
 			increase_military_spending = yes
 block_defence_decrease = yes
       
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TUR_nationalization_of_armed_forces7
 		icon = levant_and_anatolia
@@ -6216,7 +6216,7 @@ swap_ideas = {
 swap_ideas = { 
   remove_idea = turk_ozel_kuvvetler1
   add_idea = turk_ozel_kuvvetler2
-} } ai_will_do = { base = 8 } }
+} } ai_will_do = { base = 10 } }
       
 	focus = {
 		id = TUR_special_forces_for_turkish_state7
@@ -6256,7 +6256,7 @@ swap_ideas = {
         air_experience = 75
 		add_ideas = thk_program
 			} 
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 
 	focus = {
@@ -6279,7 +6279,7 @@ swap_ideas = {
 				bonus = 0.5
 				category = CAT_aircraft
 			} } 
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_navy_modernizations7
@@ -6297,7 +6297,7 @@ swap_ideas = {
 		completion_reward = {
 			navy_experience = 75
 			} 
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_turkish_destroyers7
@@ -6319,7 +6319,7 @@ swap_ideas = {
 				uses = 2
 				category = CAT_destroyers
 			} } 
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_battleship7
@@ -6341,7 +6341,7 @@ swap_ideas = {
 				bonus = 0.5
 				category = CAT_surface_ships
 			} } 
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_creation_of_turkish_carriers7
@@ -6366,7 +6366,7 @@ swap_ideas = {
 				bonus = 0.5
 				category = CAT_aircraft_carriers
 	        } }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_turkish_tank_weaponary7
@@ -6417,7 +6417,7 @@ swap_ideas = {
 				category = CAT_air_drones
 			
 			} }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 
 
@@ -6476,7 +6476,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital10
@@ -6497,7 +6497,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program9
@@ -6523,7 +6523,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines9

@@ -68,6 +68,21 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     hikâye düzeyinde ve kınayan bir dille anlatıldı. Kalan boş `_desc` anahtarları yorum satırına alınmış odaklara ya da
     hiçbir odağın kullanmadığı anahtarlara ait. `MIT_balkan_inluence_program_desc` iki dosyada tanımlıydı; biri silindi.
 
+- **Sıradaki sürüm (yayınlanmadı, oyunda test edilmedi):**
+  - Enerji ve bor denge düzeltmeleri, odaklara yapay zekâ ağırlıkları (aşağıda "Açık işler").
+  - 15 Temmuz: darbenin başarısız sonucu `TUR_fire_15_july_event` ve `coup_attempt_tur` bayraklarını koymuyordu; Turkey.363
+    ve Turkey.126 hiç çıkamıyordu. Bağlandı.
+  - Uzay Programı: Turkey.273 yorum satırındaydı, 5 karar sonsuza dek kilitliydi. Olay dağıtıcıya eklenerek açıldı (2023).
+  - Laiklik kararı `UNLOCK_SECULARISM` arıyordu, ATA ağacı `UNLOCK_LAICISM` koyuyor. Düzeltildi.
+  - Kürt federalizasyonu kararı, devam kararının aradığı bayrağı koymuyordu; Yumruk yolundaki gibi eklendi.
+  - Türk Birliği: `TR_candidate` hiç koyulmayan `TURKIC_UNION_SIGNATURE` bayrağını bekliyordu; `TR_policies` artık koyuyor.
+  - TKP aşı dalı CHP ağacındaki odağa bağlıydı (`TUR_buy_german_vaccines3`), `...11` yapıldı.
+  - 55 okuma: `MAF/MIT/ANAS_government`, `ATA_NO_PR_ALLOWED`, `TUR_mafia_gone` ülke bayrağı olarak koyulup global
+    okunuyordu. `TUR = { has_country_flag = X }` yapıldı; rejim koşulları ilk kez gerçekten çalışıyor.
+  - `preppin_*` yazım hatası (`prepping_*`), metni olmayan 2 ipucu, çakışan `AYM_hungary_invest_3` odağı.
+  - `release_check.py`: bayrak ve ağaçlar arası önkoşul kontrolleri (`tools/flag_allow.json`).
+  - `FIRE_SUPEREVENT_13` ("Turkish Germany") bilinçli olarak açılmadı: onu tetikleyecek içerik hiç yazılmamış.
+
 ## Kalıcı dersler (tekrar düşme!)
 
 - **Sesler WAV kalmalı.** HOI4 ses efektlerini yalnızca WAV'dan yükler. OGG'ye çevirince (88d1f8e) 22 konuşma
@@ -92,6 +107,8 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   olayı ölü gösterebilir. Silmeden önce benzer kimlikleri ara; artık `release_check.py` olmayan olay çağrılarını yakalıyor.
 - **Türkçe paket başlıkları:** olay ve GUI başlık fontlarında ı/ş/ğ glifi yok. Bu başlıklarda harfler
   i/s/g'ye çevrildi (942 satır). Gövde metinleri normal Türkçe.
+- **`has_global_flag = Inevitable` hata değildir:** hiç koyulmayan bayrak, görevin süre dolana kadar açık kalmasını sağlayan
+  kasıtlı kalıptır (`timeout_effect` çalışır). Böyle bayraklar `tools/flag_allow.json`'a yazılır.
 - **Clausewitz anahtarları büyük/küçük harfe duyarsızdır** (`SpriteType`, `army_org_Factor` çalışır). Kontrol aracı
   modifier adlarını bu yüzden küçük harfle karşılaştırır.
 - **Denge uyarıları tasarım kararıdır**: `release_check.py` MD'den güçlü değerleri listeler ama otomatik düzeltilmez.

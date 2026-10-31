@@ -44,7 +44,7 @@ swap_ideas = {
 				set_temp_variable = { temp_opinion = 15 }	
             change_international_bankers_opinion = yes	
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = LDP_investments
@@ -293,7 +293,7 @@ reverse_add_opinion_modifier = { target = USA modifier = economic_union }
 	add_idea = lira_4
 	remove_idea = lira_2
 	  } }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	 }
 	focus = {
 		id = LDP_modernize_istanbul
@@ -367,7 +367,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			}
 
              }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
         }
 	focus = {
 		id = LDP_get_capitalist_propaganda
@@ -397,7 +397,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			}
 
              }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
         }			 
 	focus = {
 		id = LDP_new_dockyard_for_mersin
@@ -506,7 +506,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	   add_stability = -0.05
        add_political_power = 75
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = LDP_push_reforms
@@ -528,7 +528,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	   add_stability = 0.03
 	   add_political_power = 75
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = LDP_sell_TRT
@@ -551,7 +551,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			custom_effect_tooltip = 500_million_revenue_tt
 				country_event = Turkey.240
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = LDP_senfoni_orkestrasi
@@ -572,7 +572,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			custom_effect_tooltip = 250_million_expense_tt
 					country_event = Turkey.241
       }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = LDP_kick_people
@@ -701,7 +701,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	 add_political_power = 25
 	 add_manpower = 12000
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = LDP_remove_offside
@@ -755,7 +755,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
        add_ideas = force_people_to_go_school
 	   add_research_slot = 1
       }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = LDP_delete_kemalism
@@ -808,7 +808,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	completion_reward = {
        add_ideas = bank_education
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = LDP_sell_ankara
@@ -910,7 +910,7 @@ reverse_add_opinion_modifier = { target = USA modifier = supports_us_2 }
             USA = {
 			give_guarantee = TUR
              } } 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
         }
 	focus = {
 		id = LDP_spread_capitalism
@@ -1617,7 +1617,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
  				add_dynamic_modifier = { modifier = TUR_timed_state_modifier_5 days = 730 }
 			} 
       } }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = LDP_law_and_economic_pressure
@@ -1635,7 +1635,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
         completion_reward = {
 		add_ideas = law_and_economic_unity
 		} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = LDP_new_law_system
@@ -1657,7 +1657,7 @@ swap_ideas = {
   add_idea = law_and_economic_unity_partial
 }
       
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = LDP_confession_policy
 		icon = vineyard
@@ -1759,7 +1759,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
        completion_reward = {
 		add_ideas = biased_institutionalism
 		} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = LDP_increase_the_law_protection
@@ -1778,7 +1778,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
         completion_reward = {
 		add_ideas = fake_law_protectionism
 		} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = LDP_only_man_bureocracy
@@ -1842,7 +1842,7 @@ swap_ideas = {
   add_idea = biased_democratic_institutionalism
 }
       
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = LDP_bank_policies
 		icon = strait_messina_bridge
@@ -1860,7 +1860,7 @@ swap_ideas = {
 		add_political_power = 75
 		add_stability = 0.03
 		} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = LDP_worldwide_engine
@@ -1964,7 +1964,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
       add_political_power = 100
 	  add_stability = 0.03
       } 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = LDP_power_of_bankk
@@ -2150,7 +2150,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 					reverse_add_opinion_modifier = { target = ITA modifier = TUR_westernism }
 					reverse_add_opinion_modifier = { target = USA modifier = TUR_westernism }
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 			}
 	focus = {
 		id = LDP_open_new_banks_in_the_foreign_countriess
@@ -2662,7 +2662,7 @@ add_political_power = -75
 add_war_support = 0.05
 add_stability = 0.1
 }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_NATO_mission1
@@ -2813,7 +2813,7 @@ swap_ideas = {
 	ICE = { country_event = TurkeyF.17}
 			
 		}  } 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_international_military_factories1
@@ -2864,7 +2864,7 @@ swap_ideas = {
 	ICE = { country_event = TurkeyF.18}
 			
 		} 
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 14 } }
 
 
 
@@ -3170,7 +3170,7 @@ swap_ideas = {
 swap_ideas = { 
   remove_idea = turk_ozel_kuvvetler1
   add_idea = turk_ozel_kuvvetler2
-} } ai_will_do = { base = 8 } }
+} } ai_will_do = { base = 10 } }
       
 	focus = {
 		id = TUR_special_forces_for_turkish_state8
@@ -3210,7 +3210,7 @@ swap_ideas = {
         air_experience = 75
 		add_ideas = thk_program
 			} 
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 
 	focus = {
@@ -3233,7 +3233,7 @@ swap_ideas = {
 				bonus = 0.5
 				category = CAT_aircraft
 			} } 
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_navy_modernizations8
@@ -3251,7 +3251,7 @@ swap_ideas = {
 		completion_reward = {
 			navy_experience = 75
 			} 
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_turkish_destroyers8
@@ -3273,7 +3273,7 @@ swap_ideas = {
 				uses = 2
 				category = CAT_destroyers
 			} } 
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_battleship8
@@ -3295,7 +3295,7 @@ swap_ideas = {
 				bonus = 0.5
 				category = CAT_surface_ships
 			} } 
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_creation_of_turkish_carriers8
@@ -3320,7 +3320,7 @@ swap_ideas = {
 				bonus = 0.5
 				category = CAT_aircraft_carriers
 	        } }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_turkish_tank_weaponary8
@@ -3371,7 +3371,7 @@ swap_ideas = {
 				category = CAT_air_drones
 			
 			} }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 
 	focus = {
@@ -3408,7 +3408,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital1
@@ -3429,7 +3429,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program6
@@ -3455,7 +3455,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines6

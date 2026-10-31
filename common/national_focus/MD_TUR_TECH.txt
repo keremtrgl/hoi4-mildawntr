@@ -43,7 +43,7 @@ has_completed_focus = TECH_launch_the_new_government
 			}
 			custom_effect_tooltip = TECH_INCREASE_5
  }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 }
 	focus = {
 		id = TECH_the_past
@@ -90,7 +90,7 @@ has_completed_focus = TECH_launch_the_new_government
 	completion_reward = {
 	add_political_power = 100
  }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 }
 	focus = {
 		id = TECH_modern_economics
@@ -109,7 +109,7 @@ has_completed_focus = TECH_launch_the_new_government
 	completion_reward = {
 	add_political_power = 100
  }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 }
 	focus = {
 		id = TECH_foreign_policies
@@ -228,7 +228,7 @@ has_completed_focus = TECH_VR_boosted_education
 			}
 			custom_effect_tooltip = TECH_INCREASE_2
  }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 }
 	focus = {
 		id = TECH_clean_the_media_bosses
@@ -324,7 +324,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	add_political_power = 25
 	add_stability = 0.02
  }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 }
 	focus = {
 		id = TECH_forums
@@ -485,7 +485,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			}
 			custom_effect_tooltip = TECH_INCREASE_2
  }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 }
 	focus = {
 		id = TECH_the_human_nature
@@ -568,7 +568,7 @@ swap_ideas = {
 
 		completion_reward = {
 add_stability = 0.05
-}   ai_will_do = { base = 10 } }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_prioritize_MIT
 		icon = mit
@@ -1079,7 +1079,7 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-		} } ai_will_do = { base = 10 } }
+		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_state_of_atheism
 		icon = anti_pacifism
@@ -1104,7 +1104,7 @@ swap_ideas = {
   remove_idea = the_ulema
   add_idea = defense_industry
 }  
-}   ai_will_do = { base = 10 } }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_new_SGK
 		icon = sgk
@@ -1989,7 +1989,7 @@ swap_ideas = {
 	add_political_power = 50
 			set_temp_variable = { modify_europeanism = -0.03 }
 			europeanism_change = yes
-}   ai_will_do = { base = 8 } } 
+}   ai_will_do = { base = 10 } } 
 	focus = {
 		id = TECH_schengen_visa_deal
 		icon = EU_reform
@@ -2010,7 +2010,7 @@ swap_ideas = {
 				
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
-}   ai_will_do = { base = 8 } } 
+}   ai_will_do = { base = 10 } } 
 	focus = {
 		id = TECH_industrial_integrity
 		icon = EU_Banking
@@ -2137,7 +2137,7 @@ swap_ideas = {
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
 			owner = { add_stability = 0.02 }
-		} } ai_will_do = { base = 10 } }
+		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_EU_offices
 		icon = EU_lisbon_treaty
@@ -2175,7 +2175,7 @@ swap_ideas = {
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
 			owner = { add_stability = 0.02 }
-		} } ai_will_do = { base = 8 } }
+		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_reorganize_the_stability
 		icon = stability
@@ -3034,7 +3034,7 @@ swap_ideas = {
 		completion_reward = {
 add_political_power = 100
 add_stability = 0.03
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_the_resource_planning
 		icon = resource_extraction
@@ -3056,7 +3056,7 @@ add_political_power = 75
 				uses = 2
 				category = CAT_fuel_refining
 			}
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_batman_oil_sites
 		icon = oil
@@ -4383,7 +4383,7 @@ swap_ideas = {
   add_idea = pain_of_the_government_2
 }
       
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_no_time_for_corruption
 		icon = focus_generic_buy_guns
@@ -4416,7 +4416,7 @@ swap_ideas = {
 
 		completion_reward = {
 		add_ideas = reorganized_AYM
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_modern_bureocracy
 		icon = democratic_stability
@@ -4437,7 +4437,7 @@ swap_ideas = {
   add_idea = pain_of_the_government_3
 }
       
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_adapt_parties_to_change
 		icon = autonomy
@@ -4458,7 +4458,7 @@ swap_ideas = {
   add_idea = pain_of_the_parties_2
 }
       
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_integrate_new_election_system
 		icon = break_free2 
@@ -4502,7 +4502,7 @@ swap_ideas = {
 
 		completion_reward = {
 		remove_ideas = pain_of_the_government_3 
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_academician_MPs
 		icon = champagne_bribes2
@@ -4523,7 +4523,7 @@ swap_ideas = {
   add_idea = pain_of_the_parties_3
 }
       
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_the_council
 		icon = self_management
@@ -4543,7 +4543,7 @@ swap_ideas = {
 
 		completion_reward = {
 		remove_ideas = pain_of_the_parties_3 
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_big_minded_parties
 		icon = Generic_Hedonism
@@ -6108,7 +6108,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = TECH_intervene_in_the_indonesia
@@ -6232,7 +6232,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = TECH_intervene_in_the_yemen
@@ -6599,7 +6599,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = TECH_puppet_the_libya
@@ -6640,7 +6640,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = TECH_puppet_the_tunisia
@@ -6680,7 +6680,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = TECH_puppet_the_mexico
@@ -6721,7 +6721,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = TECH_world_war_three_declaration
@@ -7014,7 +7014,7 @@ add_war_support = 0.1
 			custom_effect_tooltip = 25_billion_revenue_tt
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TECH_national_uranium_campaign
@@ -7251,7 +7251,7 @@ add_war_support = 0.1
 			subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_expense_tt
       }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TECH_reform_TUA
@@ -7312,7 +7312,7 @@ swap_ideas = {
             completion_reward = {
 			add_ideas = expose_of_the_dark_secrets
 				}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TECH_general_mobilization_campaign
@@ -7467,7 +7467,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital25
@@ -7488,7 +7488,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program25
@@ -7514,7 +7514,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines25

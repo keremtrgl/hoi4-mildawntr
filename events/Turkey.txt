@@ -3993,6 +3993,8 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
 	add_stability = 0.1
 	set_global_flag = TUR_coup_attempt_failed
+	set_global_flag = TUR_fire_15_july_event
+	set_global_flag = coup_attempt_tur
 	hidden_effect = {
 	remove_ideas = turkish_military_infulence
 	remove_ideas = turkish_military_infulence_armed
@@ -8886,28 +8888,28 @@ country_event = {
 
 
 ##Event: Space Plan
-#country_event = {
-#id = Turkey.273
-#title = Turkey.273.title
-#desc = Turkey.273.desc
-#picture = GFX_tuap
-#fire_only_once = yes
-#
-#    trigger = {
-#         tag = TUR
-#         date > 2023.1.1
-#    }
-#
-#    mean_time_to_happen = {days = 1}
-#
-#	option = {
-#		name = Turkey.273.a
-#		ai_chance = { factor = 1}
-#
-#   set_global_flag = TUR_SPACE_PROGRAM
-#   add_political_power = -75
-#	}	
-# } 
+country_event = {
+	id = Turkey.273
+	is_triggered_only = yes
+	title = Turkey.273.title
+	desc = Turkey.273.desc
+	picture = GFX_tuap
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		date > 2023.1.1
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_273 }
+	option = {
+		name = Turkey.273.a
+		ai_chance = { factor = 1 }
+
+		set_global_flag = TUR_SPACE_PROGRAM
+		add_political_power = -75
+	}
+}
 
 ##Event: Space Rocket Tests
 country_event = {
@@ -11951,9 +11953,6 @@ country_event = {
 		ai_chance = { factor = 1}
 
 	add_political_power = 1
-	remove_unit_leader_role = { character = ilhan_tolu }
-	remove_unit_leader_role = { character = mustafa_ozsoy }
-	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
 	hidden_effect = {
 	AZE = {
     add_ideas = turkic_state

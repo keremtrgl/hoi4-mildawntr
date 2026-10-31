@@ -164,7 +164,7 @@ focus_tree = {
     add_political_power = -75
 	add_stability = -0.03
 			} 
-	}  ai_will_do = { base = 8 } }
+	}  ai_will_do = { base = 10 } }
 	focus = {
 		id = TURF_denounce_nato
 		icon = renounce_nato
@@ -188,7 +188,7 @@ focus_tree = {
     remove_ideas = NATO_member
 	add_stability = 0.02
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TURF_denounce_constitution
@@ -282,7 +282,7 @@ focus_tree = {
 	 white_peace = KUR
 	add_stability = -0.02
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}  
 	focus = {
 		id = TURF_radicalization
@@ -436,7 +436,7 @@ focus_tree = {
 add_10_nationalist_monarchists = yes
     add_ideas = power_of_the_tradition
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TURF_proclaim_the_new_ottomans
@@ -925,7 +925,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital6
@@ -946,7 +946,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program13
@@ -972,7 +972,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines13

@@ -443,6 +443,7 @@ LIMITS = {
     'nationalist_drift': 0.3,
 }
 BALANCE_ALLOW = os.path.join(ROOT, 'tools', 'balance_allow.json')
+FLAG_ALLOW = os.path.join(ROOT, 'tools', 'flag_allow.json')
 
 STATE_ONLY = {'add_building_construction', 'add_extra_state_shared_building_slots', 'set_state_flag', 'clr_state_flag',
               'add_resource', 'add_core_of', 'remove_core_of', 'add_claim_by', 'remove_claim_by', 'damage_building',
@@ -567,6 +568,46 @@ def check_balance(rep, mod_files, md):
                     hits.append(f'{name}: {k} = {v}  ({src} {lim:g})  ({r})')
     rep.add(group, "No modifier stronger than Millennium Dawn's own strongest (reviewed: tools/balance_allow.json)",
             'WARN', hits)
+
+
+def check_structure(rep, mod_files, md):
+    """flags read but never set (or set as another kind), and focuses wired to another tree; intentional flags, such
+    as a mission's never-true `available`, go in tools/flag_allow.json"""
+    group = 'refs'
+    comment = re.compile(r'#[^\n]*')
+    mod_text = {r: comment.sub('', read(p)) for r, p in mod_files.items() if r.endswith('.txt')}
+    md_text = [comment.sub('', read(p)) for p in files_under(md, ['common/**/*.txt', 'events/**/*.txt']).values()]
+    every = '\n'.join(list(mod_text.values()) + md_text)
+    ours = '\n'.join(mod_text.values())
+    allow = set(json.load(open(FLAG_ALLOW, encoding='utf-8')).get('reviewed', [])) if os.path.exists(FLAG_ALLOW) else set()
+
+    def named(verb, kind, text):
+        return (set(re.findall(rf'{verb}_{kind}_flag\s*=\s*(\w+)', text)) |
+                set(re.findall(rf'{verb}_{kind}_flag\s*=\s*\{{[^}}]*?flag\s*=\s*(\w+)', text)))
+
+    kinds = ('country', 'global', 'state')
+    placed = {k: named('set', k, every) | named('modify', k, every) for k in kinds}
+    bad = []
+    for kind in kinds:
+        for flag in sorted(named('has', kind, ours) - placed[kind] - allow):
+            other = [k for k in kinds if flag in placed[k]]
+            bad.append(f'has_{kind}_flag = {flag}: ' + (f'set as a {other[0]} flag' if other else 'never set'))
+    rep.add(group, 'Every flag read is set as the same kind of flag (reviewed: tools/flag_allow.json)', 'WARN', bad)
+
+    trees = {}
+    for r, t in mod_text.items():
+        if os.path.basename(r).startswith('MD_TUR_') and '/national_focus/' in '/' + r.replace(os.sep, '/'):
+            for block in re.split(r'(?m)^[ \t]*focus[ \t]*=[ \t]*\{', t)[1:]:
+                fid = re.search(r'\bid\s*=\s*(\S+)', block)
+                if fid:
+                    trees[fid.group(1)] = (os.path.basename(r), block)
+    wired = []
+    for fid, (tree, block) in trees.items():
+        for group_body in re.findall(r'prerequisite\s*=\s*\{([^}]*)\}', block):
+            for pre in re.findall(r'\bfocus\s*=\s*(\S+)', group_body):
+                if pre in trees and trees[pre][0] != tree:
+                    wired.append(f'{tree}: {fid} needs {pre} from {trees[pre][0]}')
+    rep.add(group, 'Focus prerequisites stay inside their own tree', 'WARN', wired)
 
 
 def check_scopes(rep, mod_files):
@@ -743,6 +784,7 @@ def main():
         check_loc(rep, en_mod, loc_union)
     if 'refs' in only:
         check_refs(rep, layers, loc_union, en_values)
+        check_structure(rep, mod_files, a.md)
     if 'balance' in only:
         check_modifier_names(rep, mod_files, a.game, a.md)
         check_balance(rep, mod_files, a.md)

@@ -45,8 +45,7 @@ def focus_spans(text):
 
 
 def weight(code):
-    filters = re.search(r'search_filters\s*=\s*\{([^}]*)\}', code)
-    filters = set(filters.group(1).split()) if filters else set()
+    filters = {f for block in re.findall(r'search_filters\s*=\s*\{([^}]*)\}', code) for f in block.split()}
     if WAR_EFFECT.search(code) or 'FOCUS_FILTER_ANNEXATION' in filters:
         return BASE_WAR
     if filters & DEVELOP:

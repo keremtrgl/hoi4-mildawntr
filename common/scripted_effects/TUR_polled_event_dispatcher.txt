@@ -2,6 +2,14 @@
 # country (mean_time_to_happen = 1 day). Runs once a day for TUR from on_daily_TUR.
 # Do not edit by hand: change the event's trigger and regenerate, or edit both together.
 TUR_dispatch_polled_events = {
+	if = {  # Turkey.273  (Turkey.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkey_273 }
+			tag = TUR
+			date > 2023.1.1
+		}
+		country_event = Turkey.273
+	}
 	if = {  # Turkey.1  (Turkey.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_Turkey_1 }
@@ -10932,9 +10940,9 @@ TUR_dispatch_polled_events = {
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
-			has_global_flag = MAF_government
-			has_global_flag = MIT_government
-			has_global_flag = ANAS_government
+			TUR = { has_country_flag = MAF_government }
+			TUR = { has_country_flag = MIT_government }
+			TUR = { has_country_flag = ANAS_government }
 			has_capitulated = yes
 			}
 		}
@@ -10952,9 +10960,9 @@ TUR_dispatch_polled_events = {
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
-			has_global_flag = MAF_government
-			has_global_flag = MIT_government
-			has_global_flag = ANAS_government
+			TUR = { has_country_flag = MAF_government }
+			TUR = { has_country_flag = MIT_government }
+			TUR = { has_country_flag = ANAS_government }
 			has_capitulated = yes
 			}
 		}
@@ -10972,9 +10980,9 @@ TUR_dispatch_polled_events = {
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
-			has_global_flag = MAF_government
-			has_global_flag = MIT_government
-			has_global_flag = ANAS_government
+			TUR = { has_country_flag = MAF_government }
+			TUR = { has_country_flag = MIT_government }
+			TUR = { has_country_flag = ANAS_government }
 			has_capitulated = yes
 			}
 		}
@@ -10992,9 +11000,9 @@ TUR_dispatch_polled_events = {
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
-			has_global_flag = MAF_government
-			has_global_flag = MIT_government
-			has_global_flag = ANAS_government
+			TUR = { has_country_flag = MAF_government }
+			TUR = { has_country_flag = MIT_government }
+			TUR = { has_country_flag = ANAS_government }
 			has_capitulated = yes
 			}
 		}
@@ -11012,9 +11020,9 @@ TUR_dispatch_polled_events = {
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
-			has_global_flag = MAF_government
-			has_global_flag = MIT_government
-			has_global_flag = ANAS_government
+			TUR = { has_country_flag = MAF_government }
+			TUR = { has_country_flag = MIT_government }
+			TUR = { has_country_flag = ANAS_government }
 			has_capitulated = yes
 			}
 		}
@@ -11032,9 +11040,9 @@ TUR_dispatch_polled_events = {
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
-			has_global_flag = MAF_government
-			has_global_flag = MIT_government
-			has_global_flag = ANAS_government
+			TUR = { has_country_flag = MAF_government }
+			TUR = { has_country_flag = MIT_government }
+			TUR = { has_country_flag = ANAS_government }
 			has_capitulated = yes
 			}
 		}
@@ -11052,9 +11060,9 @@ TUR_dispatch_polled_events = {
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
-			has_global_flag = MAF_government
-			has_global_flag = MIT_government
-			has_global_flag = ANAS_government
+			TUR = { has_country_flag = MAF_government }
+			TUR = { has_country_flag = MIT_government }
+			TUR = { has_country_flag = ANAS_government }
 			has_capitulated = yes
 			}
 		}
@@ -11072,9 +11080,9 @@ TUR_dispatch_polled_events = {
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
-			has_global_flag = MAF_government
-			has_global_flag = MIT_government
-			has_global_flag = ANAS_government
+			TUR = { has_country_flag = MAF_government }
+			TUR = { has_country_flag = MIT_government }
+			TUR = { has_country_flag = ANAS_government }
 			has_capitulated = yes
 			}
 		}
@@ -11352,7 +11360,7 @@ TUR_dispatch_polled_events = {
 			}
 			has_elections = yes
 			NOT = {
-			has_global_flag = ATA_NO_PR_ALLOWED
+			TUR = { has_country_flag = ATA_NO_PR_ALLOWED }
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
 			has_capitulated = yes
@@ -11370,7 +11378,7 @@ TUR_dispatch_polled_events = {
 			}
 			has_elections = yes
 			NOT = {
-			has_global_flag = ATA_NO_PR_ALLOWED
+			TUR = { has_country_flag = ATA_NO_PR_ALLOWED }
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
 			has_capitulated = yes
@@ -11388,7 +11396,7 @@ TUR_dispatch_polled_events = {
 			}
 			has_elections = yes
 			NOT = {
-			has_global_flag = ATA_NO_PR_ALLOWED
+			TUR = { has_country_flag = ATA_NO_PR_ALLOWED }
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
 			has_capitulated = yes

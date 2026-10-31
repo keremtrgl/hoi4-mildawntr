@@ -201,7 +201,7 @@ swap_ideas = {
 swap_ideas = { 
   remove_idea = lira_2
   add_idea = lira_3
-} } ai_will_do = { base = 10 } }		
+} } ai_will_do = { base = 14 } }		
 	focus = {
 		id = ATA_weaken_The_depression
 		icon = liberalization_policies
@@ -219,7 +219,7 @@ swap_ideas = {
 swap_ideas = { 
   remove_idea = recession
   add_idea = fast_growth
-} } ai_will_do = { base = 10 } }	
+} } ai_will_do = { base = 14 } }	
 	focus = {
 		id = ATA_social_state
 		icon = decentralized_economy
@@ -293,7 +293,7 @@ swap_ideas = {
 			add_ideas = a_new_kemalism
 			custom_effect_tooltip = TUR_CHP_increase
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = ATA_change_the_chp
@@ -315,7 +315,7 @@ swap_ideas = {
 			remove_idea = a_new_kemalism
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = ATA_rise_of_the_problems
@@ -423,7 +423,7 @@ swap_ideas = {
 					popularity = 0.03
 				} 
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = ATA_cleanize_the_harm_2
@@ -447,7 +447,7 @@ swap_ideas = {
 					popularity = 0.03
 				} 
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 
 	focus = {
@@ -535,7 +535,7 @@ set_global_flag = ATA_BLOCK
 				category = CAT_fuel_refining
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 			}
 	focus = {
 		id = ATA_batman_oil_fields
@@ -1143,7 +1143,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				add_stability = 0.03
 				add_political_power = 100
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}	
 	focus = {
 		id = ATA_mild_american_cooperationism
@@ -1757,7 +1757,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			remove_idea = kemalist_neutrality_idea
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ATA_insure_hatay_security
@@ -1833,7 +1833,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			add_research_slot = 1
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} ai_will_do = { base = 10 } } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = ATA_eastern_policy
 		icon = Trade_with_the_east
@@ -2569,7 +2569,7 @@ add_offsite_building = { type = arms_factory level = 1 }
 					popularity = 0.04
 				}	
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ATA_one_nation_and_invinsible
@@ -2612,7 +2612,7 @@ add_offsite_building = { type = arms_factory level = 1 }
 				category = land_doctrine
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = ATA_start_the_gulenist_investigation
@@ -3242,7 +3242,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		completion_reward = {
         add_ideas = secular_front
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ATA_resecularize_the_state
@@ -3341,7 +3341,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	   add_stability = 0.05
 	   add_political_power = 25
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ATA_create_a_life_with_social_happiness
@@ -3452,7 +3452,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
             completion_reward = {
 			add_ideas = village_institutions
 				}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = ATA_restore_kayseri
@@ -4015,7 +4015,7 @@ swap_ideas = {
 swap_ideas = { 
   remove_idea = lira_3
   add_idea = lira_4
-} } ai_will_do = { base = 10 } }	
+} } ai_will_do = { base = 14 } }	
 	focus = {
 		id = ATA_safe_zone_bankers
 		icon = money
@@ -4037,7 +4037,7 @@ swap_ideas = {
 
             completion_reward = {
 remove_ideas = reformss_for_2001_crisis
-} ai_will_do = { base = 10 } } 
+} ai_will_do = { base = 14 } } 
 	focus = {
 		id = ATA_cheap_investment
 		icon = Focus_Generic_Consumer_Goods
@@ -4769,7 +4769,7 @@ create_production_license = {
 				change_influence_percentage = yes
 					}
 			
-	}	ai_will_do = { base = 8 } }
+	}	ai_will_do = { base = 14 } }
 	focus = {
 		id = ATA_question_of_thessaloniki
 		icon = attack_cyprus
@@ -4959,7 +4959,7 @@ focus = {
 					popularity = 0.02
 				}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ATA_revolutionism
@@ -5027,7 +5027,7 @@ focus = {
 			add_stability = 0.05
 			custom_effect_tooltip = ATATURK_LAUNCH_NEW_PARLIAMENT
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = ATA_a_new_bureocracy
@@ -5047,7 +5047,7 @@ focus = {
 			add_stability = 0.05
 			custom_effect_tooltip = ATATURK_LAUNCH_NEW_BUREOCRACY
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = ATA_winds_of_revolution
@@ -5086,7 +5086,7 @@ focus = {
             completion_reward = {
 			add_ideas = the_turkish_competition
 				}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 			}
 	focus = {
 		id = ATA_fast_informationism
@@ -5126,7 +5126,7 @@ focus = {
             completion_reward = {
 			add_ideas = the_rationality
 				}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 			}
 	focus = {
 		id = ATA_nature_of_revolution
@@ -5182,7 +5182,7 @@ focus = {
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt			
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ATA_lower_the_unemployment
@@ -5200,7 +5200,7 @@ focus = {
 		completion_reward = {
         add_ideas = unemployment_planning_1
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ATA_new_job_offices
@@ -5237,7 +5237,7 @@ focus = {
 					level = 1
 				} 
 		} } 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ATA_support_the_unionization
@@ -5255,7 +5255,7 @@ focus = {
 		completion_reward = {
         add_ideas = general_unionization
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ATA_push_enviroenmental_laws
@@ -5382,7 +5382,7 @@ focus = {
             completion_reward = {
 			add_ideas = strike_law
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = ATA_ITO_and_international_support
@@ -5400,7 +5400,7 @@ focus = {
             completion_reward = {
 			add_ideas = ILO_standarts
 				}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = ATA_family_laws
@@ -5648,7 +5648,7 @@ focus = {
 	   add_political_power = -50
 	   add_stability = 0.02
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ATA_embodiment_of_real_state
@@ -5688,7 +5688,7 @@ focus = {
 				add_mio_funds = 500
 			}	
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ATA_nuclear_project
@@ -5763,7 +5763,7 @@ focus = {
 			custom_effect_tooltip = 25_billion_revenue_tt
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ATA_cooperate_with_russians
@@ -5803,7 +5803,7 @@ focus = {
 			custom_effect_tooltip = 25_billion_revenue_tt
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ATA_space_mining
@@ -5886,7 +5886,7 @@ focus = {
 			add_research_slot = 1
 			add_political_power = 75
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ATA_space_mining_II
@@ -5974,7 +5974,7 @@ focus = {
 			add_political_power = 100
 			}
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ATA_strenghen_nuclear_fiels
@@ -6112,7 +6112,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital23
@@ -6133,7 +6133,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program23
@@ -6159,7 +6159,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines23

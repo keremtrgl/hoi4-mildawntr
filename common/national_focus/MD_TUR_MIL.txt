@@ -48,7 +48,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 		
 		completion_reward = {
     add_stability = 0.03
-} ai_will_do = { base = 8 } } 
+} ai_will_do = { base = 10 } } 
 	focus = {
 		id = TUR_kemalist_military
 		icon = small_arms3
@@ -388,7 +388,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 				}
 			}
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_petrol_ofisi_connection
@@ -628,7 +628,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 		completion_reward = {
 	add_stability = -0.03
 	add_political_power = 50
-	 }  ai_will_do = { base = 8 } }
+	 }  ai_will_do = { base = 10 } }
 	focus = {
 		id = TUR_stabilize_the_regime
 		icon = stability
@@ -773,7 +773,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 		add_stability = 0.03
 		remove_ideas = political_parties_banned
 	 } 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_organize_a_military_coup
@@ -805,7 +805,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 nationalist_Nat_Autocracy
 				military_career
 				}
-    } } ai_will_do = { base = 8 } }
+    } } ai_will_do = { base = 10 } }
 	focus = {
 		id = TUR_elections_of_the_state
 		icon = election2
@@ -851,6 +851,6 @@ nationalist_Nat_Autocracy
 				complete_national_focus = TUR_awake_the_industry
 				set_country_flag = MIL_ACTION
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 }

@@ -97,7 +97,7 @@ focus_tree = {
 				recalculate_party = yes
 			}	
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = OTT_compramise_elites
@@ -451,7 +451,7 @@ focus_tree = {
 		
 		completion_reward = { 
 		    add_ideas = no_interest_rate_policy
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 14 } }
 	focus = {
 		id = OTT_saviour_crescent
 		icon = islamist_gov
@@ -513,7 +513,7 @@ focus_tree = {
 		
 		completion_reward = { 
 		    add_ideas = islamic_cooperationism
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_crush_the_communistic_organizations
 		icon = communist_repression
@@ -684,7 +684,7 @@ focus_tree = {
 			add_idea = dusts_of_the_kemalist_guardians_2 
 			remove_idea = dusts_of_the_kemalist_guardians
 			}
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_reform_arms
 		icon = helmet_knife
@@ -709,7 +709,7 @@ focus_tree = {
 
 	   add_political_power = 100
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = OTT_arm_local_islamists
@@ -730,7 +730,7 @@ focus_tree = {
 			add_idea = dusts_of_the_kemalist_guardians_3
 			remove_idea = dusts_of_the_kemalist_guardians_2
 			}
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_shut_down_the_guardianship_collages
 		icon = military_planning
@@ -752,7 +752,7 @@ focus_tree = {
 			add_idea = dusts_of_the_kemalist_guardians_4
 			remove_idea = dusts_of_the_kemalist_guardians_3
 			}
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_end_of_the_dusts
 		icon = fallen_soldiers
@@ -768,7 +768,7 @@ focus_tree = {
 				
 		completion_reward = {
 			remove_ideas = dusts_of_the_kemalist_guardians_4
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_abolishing_the_reforms
 		icon = stolen_papers
@@ -792,7 +792,7 @@ focus_tree = {
 		    add_stability = -0.05
 			add_political_power = 300
 			custom_effect_tooltip = a_new_period_for_turkey
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_returning_to_the_arabic_language
 		icon = arabunion
@@ -867,7 +867,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = destroy_the_statues
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_replace_kemalist_institutions
 		icon = parlamentary_reform
@@ -886,7 +886,7 @@ focus_tree = {
     completion_reward = {
 	        add_ideas = replaced_kemalist_institutions
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = OTT_islamic_traditions
@@ -1082,7 +1082,7 @@ focus_tree = {
 			add_idea =  ibda_c_cooperationism_3
 			remove_idea = ibda_c_cooperationism_2
 			}
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_isis_assets
 		icon = islamic_militarism
@@ -1100,7 +1100,7 @@ focus_tree = {
     completion_reward = {
 			add_ideas = secondary_jihadists_state
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = OTT_islamic_barracks
@@ -1118,7 +1118,7 @@ focus_tree = {
     completion_reward = {
 			add_ideas = islamist_barracks
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = OTT_international_jihadists
@@ -1252,7 +1252,7 @@ focus_tree = {
 			add_idea = returning_to_ottoman_values_3
 			remove_idea = returning_to_ottoman_values_2
 			}
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_removal_of_systematic_equality
 		icon = neutrality
@@ -1268,7 +1268,7 @@ focus_tree = {
 		
 		completion_reward = {
 		    add_ideas = ottoman_neutralism
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = OTT_ibda_c_take_over
 		icon = ibda_c_brotherhood
@@ -1309,7 +1309,7 @@ focus_tree = {
 			add_political_power = 75
 			add_stability = 0.03
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = OTT_crown_the_king
@@ -1389,7 +1389,7 @@ focus_tree = {
     completion_reward = {
 			add_ideas = parliament_stays_in_course
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = OTT_abolish_parliament
@@ -1513,7 +1513,7 @@ focus_tree = {
 	  		add_political_power = -75
 			custom_effect_tooltip = army_withdrawals_from_politics_action_ottomans
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 				}
 	focus = {
 		id = OTT_secure_sultan_parliament_balance
@@ -1880,7 +1880,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		add_war_support = 0.03
 		add_manpower = 10000
 		add_command_power = 5
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = OTT_towards_gulenist
 		icon = islamophobia
@@ -2289,7 +2289,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
     completion_reward = {
 			country_event = TurkeyF.119
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		}
 	focus = {
 		id = OTT_expansionism_towards_south
@@ -2313,7 +2313,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	        add_war_support = 0.02
 			add_political_power = 75
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		}
 	focus = {
 		id = OTT_back_syria_to_the_fold
@@ -2541,7 +2541,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	        add_war_support = 0.03
 			remove_ideas = hezbollah_cooperationism_2
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = OTT_overthrown_kuwait
@@ -2625,7 +2625,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	add_stability = -0.05
     generic_grant_5_percent_influence_of_USA = yes
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 				}
 	focus = {
 		id = OTT_attack_on_israel
@@ -2952,7 +2952,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	  			subtract_from_variable = { treasury = 10.0 }
 			custom_effect_tooltip = 10_billion_expense_tt	
 					}
-		ai_will_do = { base = 14 }
+		ai_will_do = { base = 2 }
 				}
 	focus = {
 		id = OTT_put_the_cores
@@ -3040,7 +3040,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	        add_state_core = 208
 	        add_state_core = 169			
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		}	
 	focus = {
 		id = OTT_expansionism_towards_west
@@ -3061,7 +3061,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	        add_war_support = 0.02
 			add_political_power = 75
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		}
 	focus = {
 		id = OTT_NATO_policies
@@ -3376,7 +3376,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	        BOS = {
 			country_event = TurkeyF.130
 			}
-       } ai_will_do = { base = 8 } } 
+       } ai_will_do = { base = 2 } } 
 	focus = {
 		id = OTT_create_european_unit
 		icon = volunteers
@@ -3564,7 +3564,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 				add_mio_funds = 500
 			}	
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = OTT_clamp_down_the_hungary
@@ -3672,7 +3672,7 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 			add_stability = 0.05
 			add_war_support = 0.03
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		}
 	focus = {
 		id = OTT_mountainners
@@ -3919,7 +3919,7 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 	        AUS = {
 			country_event = TurkeyF.135
 			}
-       } ai_will_do = { base = 8 } } 
+       } ai_will_do = { base = 2 } } 
 	focus = {
 		id = OTT_revive_berlin_baghdad_railway
 		icon = infrastructure1
@@ -3982,7 +3982,7 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 	        remove_state_claim = 979
 	        remove_state_claim = 1039						
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		}	
 	focus = {
 		id = OTT_ottoman_black_sea_navy
@@ -4017,7 +4017,7 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 		completion_reward = {
 		        add_stability = -0.03
 	  			remove_ideas = power_on_bosporus
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_fund_the_naval_industry
 		icon = naval_industry
@@ -4070,7 +4070,7 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 	        SOV = {
 			country_event = TurkeyF.126
 			}
-       } ai_will_do = { base = 8 } } 			
+       } ai_will_do = { base = 2 } } 			
 	focus = {
 		id = OTT_demand_protection_to_georgia
 		icon = align_to_georgia
@@ -4104,7 +4104,7 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 	        GEO = {
 			country_event = TurkeyF.128
 			}
-       } ai_will_do = { base = 8 } } 		
+       } ai_will_do = { base = 2 } } 		
 	focus = {
 		id = OTT_ask_unification_to_azerbaijan
 		icon = align_to_azerbaijan
@@ -4286,7 +4286,7 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 				category = CAT_agriculture
 			}
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 		} 
 	focus = {
 		id = OTT_embrace_anti_debt_policy
@@ -4327,7 +4327,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = -100.0 }
 			custom_effect_tooltip = 100_billion_revenue_tt
       }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = OTT_industrialization_of_the_ottomans
@@ -4528,7 +4528,7 @@ swap_ideas = {
 			remove_idea = export_economy
 			}
 		}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = OTT_hifzissaha_places
@@ -4551,7 +4551,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
 		}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = OTT_return_the_ottoman_money
@@ -4891,7 +4891,7 @@ swap_ideas = {
 			add_stability = 0.05
 			remove_ideas = reformss_for_2001_crisis
 					}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = OTT_work_propagandas
@@ -4955,7 +4955,7 @@ swap_ideas = {
 			add_political_power = 75
 			add_stability = 0.03
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = OTT_declare_the_caliphate
@@ -5131,7 +5131,7 @@ country_event = TurkeyF.111
     completion_reward = {
 			country_event = TurkeyF.119
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		}
 	focus = {
 		id = OTT_abolish_capitalism
@@ -5543,7 +5543,7 @@ country_event = TurkeyF.111
 		add_stability = 0.1
 		add_war_support = 0.1
 		}
-}   ai_will_do = { base = 10 } }
+}   ai_will_do = { base = 2 } }
 	focus = {
 		id = OTT_invade_syria
 		icon = true_caliphate
@@ -5821,7 +5821,7 @@ country_event = TurkeyF.111
 			add_manpower = 75000
 			add_research_slot = 1
 			}
-		} ai_will_do = { base = 8 } }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = OTT_islamization_jihad_studies
 		icon = MEX_Defend_the_constitution
@@ -6432,7 +6432,7 @@ diplomatic_relation = {
 		
 		completion_reward = {
 			add_war_support = 0.1
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = OTT_arm_the_german_islamist_unit
 		icon = attack_germany
@@ -6708,7 +6708,7 @@ diplomatic_relation = {
 			country_event = TurkeyF.113
 			}
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		}
 	focus = {
 		id = OTT_throw_man_to_the_front
@@ -7115,7 +7115,7 @@ diplomatic_relation = {
 	        add_state_core = 492
 	        add_state_core = 493			
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		}
 	focus = {
 		id = OTT_umayyad_naval_expertise
@@ -7591,7 +7591,7 @@ diplomatic_relation = {
     completion_reward = {
        add_ideas = reliable_islamic_movement 
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		} 
 	focus = {
 		id = OTT_ibda_c_economics
@@ -7630,7 +7630,7 @@ diplomatic_relation = {
 			}
 
         }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
       }
 	focus = {
 		id = OTT_no_consumption_economy
@@ -7677,7 +7677,7 @@ swap_ideas = {
 				category = CAT_fuel_refining
 			}
 					}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = OTT_industrialize_the_islamic_state
@@ -7740,7 +7740,7 @@ swap_ideas = {
     remove_ideas = lira_4
     remove_ideas = lira_5
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = OTT_extract_oils
@@ -8140,7 +8140,7 @@ swap_ideas = {
 			add_stability = 0.07
 			add_political_power = 75
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 				}
 	focus = {
 		id = OTT_war_deposits
@@ -8197,7 +8197,7 @@ swap_ideas = {
 			add_stability = 0.05
 			remove_ideas = reformss_for_2001_crisis
 					}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = OTT_powerize_gold
@@ -8368,7 +8368,7 @@ swap_ideas = {
 		completion_reward = {
 		add_ideas = modern_museums
 		} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	} 
 	focus = {
 		id = OTT_fez_culture
@@ -8390,7 +8390,7 @@ swap_ideas = {
 			add_idea = fez_traditions_enforced 
 			remove_idea = fez_traditions
 			}
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 14 } }
 	focus = {
 		id = OTT_reform_tubitak
 		icon = tech_sharing
@@ -8482,7 +8482,7 @@ swap_ideas = {
 		
 		completion_reward = {
 		    add_ideas = hilali_ahmer_cemiyeti
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_cultural_museums
 		icon = champagne_green
@@ -8505,7 +8505,7 @@ swap_ideas = {
 			add_idea = modern_and_cultural_museums 
 			remove_idea = modern_museums
 			}
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 14 } }
 	focus = {
 		id = OTT_mehter_musics
 		icon = lion
@@ -8525,7 +8525,7 @@ swap_ideas = {
 		
 		completion_reward = {
 		    add_ideas = mehter_group
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_new_hospitals
 		icon = generic_hospital2
@@ -8564,7 +8564,7 @@ swap_ideas = {
 		
 		completion_reward = {
 		    add_ideas = unitary_state_principles
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_stand_with_social_state
 		icon = social_democracy_industry
@@ -8605,7 +8605,7 @@ swap_ideas = {
 			add_idea = communistic_organizations_crushed_2 
 			remove_idea = communistic_organizations_crushed
 			}
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_repair_mobilization
 		icon = small_arms5
@@ -8650,7 +8650,7 @@ remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad
 remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
 }
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	} 
 	focus = {
 		id = OTT_buy_german_ships
@@ -8704,7 +8704,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	GER = {
 			subtract_from_variable = { treasury = -25 }
 			custom_effect_tooltip = 25_billion_revenue_tt	 
-	 } } ai_will_do = { base = 8 } }
+	 } } ai_will_do = { base = 14 } }
 	focus = {
 		id = OTT_german_technology_supremacy
 		icon = leopard_2a6
@@ -8893,7 +8893,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital12
@@ -8914,7 +8914,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program7
@@ -8940,7 +8940,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines7

@@ -58,7 +58,7 @@ focus_tree = {
 					ideology = neutrality
 					popularity = 0.02
 				}
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_enforced_law
 		icon = USA_new_foreign_policy
@@ -88,7 +88,7 @@ focus_tree = {
 				add_to_variable = { party_pop_array^14 = 0.05 }
 				recalculate_party = yes
 			}	
-		}  ai_will_do = { base = 8 } }
+		}  ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_foreign_policy
 		icon = USA_new_foreign_policy
@@ -356,7 +356,7 @@ focus_tree = {
 					add_ideas = expat_credits
 					}
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = AYM_military_relations
@@ -470,7 +470,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 					add_ideas = EEZ_settled
 					}
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = AYM_first_level_acceptance
@@ -660,7 +660,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
                         }
                    
 			} } } 		
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_laws_above
@@ -699,7 +699,7 @@ swap_ideas = {
   add_idea = power_and_unity_of_the_law
 }
       
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_appoint_lawmakers
 		icon = diplomacy
@@ -721,7 +721,7 @@ swap_ideas = {
 				add_to_variable = { party_pop_array^14 = 0.02 }
 				recalculate_party = yes
 			}	
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_control_the_municipality
 		icon = position_armies
@@ -758,7 +758,7 @@ swap_ideas = {
 		completion_reward = {
 	    add_political_power = 125
 		add_stability = 0.03
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_mass_reformation
 		icon = treaty3
@@ -777,7 +777,7 @@ swap_ideas = {
 swap_ideas = { 
   remove_idea = power_and_unity_of_the_law
   add_idea = power_and_unity_of_the_law_2
-} } ai_will_do = { base = 8 } }
+} } ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_scientific_law
 		icon = science
@@ -894,7 +894,7 @@ swap_ideas = {
 
 		completion_reward = {
 	    add_ideas = rise_of_depoliticalization
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_a_political_laws
 		icon = Generic_Factionalism
@@ -920,7 +920,7 @@ swap_ideas = {
 				add_to_variable = { party_pop_array^14 = 0.02 }
 				recalculate_party = yes
 			}	
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_social_defence
 		icon = social_democracy_industry
@@ -941,7 +941,7 @@ swap_ideas = {
 					ideology = neutrality
 					popularity = 0.02
 				}
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_task_the_armed_forces
 		icon = Polish_army
@@ -991,7 +991,7 @@ swap_ideas = {
 				add_to_variable = { party_pop_array^14 = -0.02 }
 				recalculate_party = yes
 			}
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_party_cleaning
 		icon = Generic_Political_Killing
@@ -1016,7 +1016,7 @@ swap_ideas = {
 				add_to_variable = { party_pop_array^14 = 0.02 }
 				recalculate_party = yes
 			}	
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_relation_on_invest
 		icon = central_planned_economy
@@ -1217,7 +1217,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
             change_the_military_opinion = yes
 			subtract_from_variable = { TUR_rel_hepar = 3 }
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = AYM_bulgaria_invest
@@ -1502,7 +1502,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_relation_on_invest
 		}
-		x = 28
+		x = 30
 		y = 19
 
 
@@ -2025,7 +2025,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 	completion_reward = {
 	give_guarantee = FSA
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = AYM_immediate_intervention_syr
@@ -2198,7 +2198,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 				recalculate_party = yes
 			}
                     }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = AYM_appoint_technocrats
@@ -2226,7 +2226,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 				recalculate_party = yes
 			}	
                     }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = AYM_economist_council
@@ -2262,7 +2262,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 	completion_reward = {
  add_ideas = policy_maker_s_council
                     }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = AYM_arms_council
@@ -2282,7 +2282,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 	completion_reward = {
  add_ideas = military_s_council
                     }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_collect_the_powers_united
@@ -2373,7 +2373,7 @@ remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad
 remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
 remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
 }
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_divine_management
 		icon = war4
@@ -2564,7 +2564,7 @@ swap_ideas = {
 	completion_reward = {
 			add_ideas = guarded_under_the_NATO
                     }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = AYM_gur_azerbaijan
@@ -2633,7 +2633,7 @@ swap_ideas = {
 					level = 2
 				} 
 	} }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_middle_type_politics
@@ -2655,7 +2655,7 @@ swap_ideas = {
 					add_stability = 0.02
 					add_political_power = 75
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 				}
 	focus = {
 		id = AYM_national_stabilization
@@ -2673,7 +2673,7 @@ swap_ideas = {
     completion_reward = {
        add_timed_idea = { idea = stabilization_of_TUR  days = 365 }
 	 }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = AYM_trancaucasian_deal
@@ -2707,7 +2707,7 @@ swap_ideas = {
 		GEO = {
 					country_event = TurkeyF.196
 	}
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 14 } }
 	focus = {
 		id = AYM_oil_deals
 		icon = oil_trade
@@ -2761,7 +2761,7 @@ swap_ideas = {
 			}
 	  			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt	
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = AYM_and_of_peace
 		icon = white_peace
@@ -2879,7 +2879,7 @@ swap_ideas = {
   add_idea = rise_of_absolutism_2
 }
                     }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = AYM_restore_military_ambitions
@@ -2997,7 +2997,7 @@ swap_ideas = {
 	completion_reward = {
             add_timed_idea = { idea = kickstart_of_the_militarization days = 720 }
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_boosted_media
@@ -3076,7 +3076,7 @@ swap_ideas = {
 	completion_reward = {
 add_ideas = quality_audits
                     }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_persevance_of_european_syt
@@ -3094,7 +3094,7 @@ add_ideas = quality_audits
 	completion_reward = {
 add_ideas = european_quality_life_standarts
                     }
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_the_managing_autonomy
@@ -3234,7 +3234,7 @@ swap_ideas = {
 
 		completion_reward = {
 			add_political_power = 125
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = AYM_military_development
 		icon = industry4
@@ -3941,7 +3941,7 @@ swap_ideas = {
 			modify_international_investment_effect = yes			
 			}
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = AYM_chinese_investing_land
@@ -4004,7 +4004,7 @@ swap_ideas = {
 			modify_international_investment_effect = yes			
 			}
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = AYM_expand_faculties
@@ -4123,7 +4123,7 @@ swap_ideas = {
 		add_political_power = 75
 set_global_flag = DISABLE_WAR_SYSTEM_PAR
 custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU			
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_accordance_with_AIHM
 		icon = EFSF_icon
@@ -4143,7 +4143,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
 		add_ideas = full_accordance_with_AIHM
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_taarif_laws
 		icon = market_economy
@@ -4223,7 +4223,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 
 		completion_reward = {
 	    add_ideas = uncontrolled_senate
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_guarentee_the_council
 		icon = MEX_Mexican_government
@@ -4265,7 +4265,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		completion_reward = {
 	    add_ideas = turkish_presidency_weakened
 		add_political_power = 100
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_leash_kemalist_guardians
 		icon = coup
@@ -4285,7 +4285,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	    remove_ideas = turkish_military_infulence
 		army_experience = -50
 		add_stability = -0.05
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_semi_federalization_of_states
 		icon = TUR_military_regime
@@ -4303,7 +4303,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 
 		completion_reward = {
 	    add_ideas = turkish_federalization
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = AYM_built_in_4_laws
 		icon = pass_legislation
@@ -4409,7 +4409,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
 		add_ideas = Frontex
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_open_the_borders
 		icon = Generic_Redraw_Borders
@@ -4444,7 +4444,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 					add_political_power = -75
 					add_stability = -0.02
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 				}
 	focus = {
 		id = AYM_kosova_aid
@@ -4631,7 +4631,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			set_temp_variable = { modify_europeanism = 0.03 }
 			europeanism_change = yes
 		add_ideas = passive_european_membership
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = AYM_adopt_the_bureocracy
 		icon = aristocratic_funding
@@ -4659,7 +4659,7 @@ remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad
 remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
 add_ideas = media_opinion_towards_good_happy_everyone
 }
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_oriented_of_european_council
 		icon = focus_SWI_dissolve_the_federal_council
@@ -4699,7 +4699,7 @@ add_ideas = media_opinion_towards_good_happy_everyone
 			set_temp_variable = { modify_europeanism = 0.03 }
 			europeanism_change = yes
 		add_ideas = eu_style_legislative
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_ease_the_tensions
 		icon = focus_generic_national_security
@@ -5028,7 +5028,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 	completion_reward = {
 			add_ideas = politics_of_recovery_and_revision
                     }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_phyo_war
@@ -5319,7 +5319,7 @@ swap_ideas = {
   add_idea = foreseeing_the_future_2
 }
       
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = AYM_war_documents
 		icon = chemical_warfare
@@ -5403,7 +5403,7 @@ swap_ideas = {
 				add_to_variable = { party_pop_array^14 = 0.02 }
 				recalculate_party = yes
 			}	
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_scientific_approach
 		icon = continuous_research
@@ -5564,7 +5564,7 @@ swap_ideas = {
 			modify_international_investment_effect = yes			
 			}
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = AYM_qatar_non_agression
@@ -5665,7 +5665,7 @@ diplomatic_relation = {
 				change_influence_percentage = yes
 			}
 			owner = { add_stability = 0.03 }
-		} } ai_will_do = { base = 8 } }
+		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = AYM_approachment_with_eu
 		icon = closer_ties_with_eu
@@ -5756,7 +5756,7 @@ diplomatic_relation = {
 		SAU = {
 		add_stability = 0.05			
 		}
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_southern_politics
 		icon = iran_dominance
@@ -5908,7 +5908,7 @@ swap_ideas = {
   add_idea = EU_member
 }
              }				
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = AYM_gur_iraq
@@ -6141,7 +6141,7 @@ swap_ideas = {
 	 add_equipment_to_stockpile = {	type = infantry_weapons_type amount = 3000 }
 			} }
 	}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_nato_clashes
@@ -6176,7 +6176,7 @@ swap_ideas = {
 	completion_reward = {
 					country_event = TurkeyF.195
 	}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_european_brotherhood
@@ -6213,7 +6213,7 @@ swap_ideas = {
 		SLO = {
 					country_event = TurkeyF.201
 	}
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 14 } }
 	focus = {
 		id = AYM_destroy_the_hezbollah
 		icon = attack_hezbollah
@@ -6266,7 +6266,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_arabic_saviour
@@ -6301,7 +6301,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_democracy_and_the_order
@@ -6337,7 +6337,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 add_ideas = media_opinion_towards_bad_1_left_wing_sad
 }
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = AYM_violent_clash_with_pkk
@@ -6396,7 +6396,7 @@ TRGX_bop_very_low_decrease_effect = yes
 				damage = 1.0
 			}
 		} }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_offical_cleanization_act
@@ -6553,7 +6553,7 @@ swap_ideas = {
     add_command_power = 15
 	TUR_remove_pkk = yes
         }  
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_militarize_the_borders
@@ -6585,7 +6585,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			add_to_variable = { TUR_PKK_aggro = -5 }
 			add_to_variable = { TUR_PKK_strength = -5 }		
 	 }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = AYM_order_and_establishment
@@ -7175,7 +7175,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			modify_international_investment_effect = yes			
 			}
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = AYM_german_trading
@@ -7207,7 +7207,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_gazprom_deal
@@ -7314,7 +7314,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 				change_influence_percentage = yes
 			}
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = AYM_german_universities
@@ -7348,7 +7348,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			custom_effect_tooltip = 5_billion_expense_tt
 			add_ideas = german_universities
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = AYM_gazprom_hub
@@ -7940,7 +7940,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital22
@@ -7961,7 +7961,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program22
@@ -7987,7 +7987,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines22

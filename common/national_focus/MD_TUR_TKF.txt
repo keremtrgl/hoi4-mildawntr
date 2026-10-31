@@ -19,7 +19,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 							ideology = communism
 							popularity = 0.07
 						}	}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = TKF_countrywide_propaganda
@@ -101,7 +101,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 							ideology = communism
 							popularity = 0.05
 						}	}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TKF_take_over_the_majority
@@ -189,7 +189,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 							ideology = nationalist
 							popularity = -0.1
 						}	}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = TKF_cooparete_with_not_right
@@ -254,7 +254,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
         add_ideas = peace_land_bread
-	} ai_will_do = { base = 8 } } 
+	} ai_will_do = { base = 10 } } 
 	focus = {
 		id = TKF_repair_stuff
 		icon = continuous_repairments
@@ -635,7 +635,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 				}
 			}
 	}
-	} ai_will_do = { base = 8 } } 
+	} ai_will_do = { base = 10 } } 
 	focus = {
 		id = TKF_perinceks_powers
 		icon = position_armies
@@ -987,7 +987,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
 		add_ideas = glory_of_the_soviet_past
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = TKF_csto_observer_state
 		icon = aplly_to_join_csto
@@ -1156,7 +1156,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
 			add_ideas = perincek_fundementalis
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = TKF_russian_guarantee_first
 		icon = russian_elections
@@ -1790,7 +1790,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt
 			}
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TKF_turn_to_yuan
@@ -1872,7 +1872,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 			}	
 subtract_from_variable = { treasury = -100.0 }
 			custom_effect_tooltip = 100_billion_revenue_tt
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 14 } }
 	focus = {
 		id = TKF_chinese_investment_of_inf_2
 		icon = infrastructure
@@ -1934,7 +1934,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt
 			}
-			} }	ai_will_do = { base = 8 } }
+			} }	ai_will_do = { base = 14 } }
 	focus = {
 		id = TKF_road_iniatitive
 		icon = the_road_of_life
@@ -1996,7 +1996,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt
 			}
-			} }	ai_will_do = { base = 8 } }	
+			} }	ai_will_do = { base = 14 } }	
 	focus = {
 		id = TKF_chinese_investment_of_arms
 		icon = army_reform
@@ -2058,7 +2058,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt
 			}
-			} }	ai_will_do = { base = 8 } }	
+			} }	ai_will_do = { base = 14 } }	
 	focus = {
 		id = TKF_chinese_military_stocks
 		icon = industry_military
@@ -2120,7 +2120,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt
 			}
-			} }	ai_will_do = { base = 8 } }	
+			} }	ai_will_do = { base = 14 } }	
 	focus = {
 		id = TKF_chinese_investment_of_arms_2
 		icon = industry4
@@ -2182,7 +2182,7 @@ set_temp_variable = { int_investment_change = 15.0 }
 			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt
 			}
-			} }	ai_will_do = { base = 8 } }	
+			} }	ai_will_do = { base = 14 } }	
 	focus = {
 		id = TKF_chinese_dockyards
 		icon = naval_industry
@@ -2250,7 +2250,7 @@ set_temp_variable = { int_investment_change = 25.0 }
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
 			}
-			} }	ai_will_do = { base = 8 } }	
+			} }	ai_will_do = { base = 14 } }	
 	focus = {
 		id = TKF_lisences
 		icon = chinese_licenses
@@ -2514,7 +2514,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
         add_ideas = emergency_powers_of_the_state
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = TKF_odp_socialism
@@ -2796,7 +2796,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			add_stability = 0.03
 	subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
-			} ai_will_do = { base = 10 } } 
+			} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TKF_happiness_ACTED
 		icon = communism10
@@ -3345,7 +3345,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	completion_reward = {
   add_ideas = odp_possitivism
 	}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TKF_encourage_populism
@@ -3363,7 +3363,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	completion_reward = {
   add_ideas = new_kind_of_populism
 	}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TKF_national_ressirictism
@@ -3496,7 +3496,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	completion_reward = {
   add_ideas = state_of_arts
 	}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TKF_labour_culture_of_happiness
@@ -3649,7 +3649,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	completion_reward = {
 		add_ideas = national_theathre
 	}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TKF_land_of_world
@@ -3695,7 +3695,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	completion_reward = {
 			add_ideas = echological_laws
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 			} 
 	focus = {
 		id = TKF_most_free_communism
@@ -4191,7 +4191,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
         completion_reward = {
 	add_timed_idea = { idea = stabilization_of_TUR days = 365 }
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = TKF_peace_upon_us
 		icon = peace
@@ -4299,7 +4299,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ARMS}
         add_political_power = 100
 		add_war_support = 0.03
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = TKF_disband_armys_structual_things
@@ -4387,7 +4387,7 @@ search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 		completion_reward = {
         add_ideas = military_secularism_achieved
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = TKF_diyanet_reform
@@ -4448,7 +4448,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
             change_the_military_opinion = yes	
 				set_temp_variable = { temp_opinion = 5 }	
             change_the_ulema_opinion = yes
-	} ai_will_do = { base = 8 } } 
+	} ai_will_do = { base = 10 } } 
 	focus = {
 		id = TKF_communist_colleges
 		icon = Laurel_Slovakia
@@ -4515,7 +4515,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 				recalculate_party = yes
 			}
 		}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TKF_communist_scientific_community
@@ -4572,7 +4572,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt		
 				}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 			}
 	focus = {
 		id = TKF_tractor_expansion
@@ -4761,7 +4761,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 				set_temp_variable = { temp_opinion = 10 }	
             change_industrial_conglomerates_opinion = yes		
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = TKF_civilian_industries
@@ -6813,7 +6813,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
                 add_war_support = 0.05
 				add_manpower = 225000
-	} ai_will_do = { base = 8 } } 
+	} ai_will_do = { base = 10 } } 
 	focus = {
 		id = TKF_legalize_THKPC
 		icon = TotSoc_Focus
@@ -6927,7 +6927,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	   add_stability = 0.05
 	   add_political_power = -275
 			decrease_corruption = yes
-	} ai_will_do = { base = 8 } } 
+	} ai_will_do = { base = 10 } } 
 	focus = {
 		id = TKF_war_with_PKK
 		icon = focus_attack_pkk
@@ -6983,7 +6983,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 				type = infrastructure
 				damage = 1.0
 			} }
-	} ai_will_do = { base = 10 } } 
+	} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TKF_accept_or_die
 		icon = attack_democracy2
@@ -7758,7 +7758,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
         add_ideas = internet_reform
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = TKF_unification_works
@@ -7776,7 +7776,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
         add_ideas = peoples_unification_action
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = TKF_no_more_comprasion
@@ -8064,7 +8064,7 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 				} 
 		subtract_from_variable = { treasury = 100 }
 			custom_effect_tooltip = 100_billion_expense_tt
-			} }	ai_will_do = { base = 10 } }
+			} }	ai_will_do = { base = 14 } }
 	focus = {
 		id = TKF_trancaucasian_turnout
 		icon = georgian_bagratuni
@@ -8527,7 +8527,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 					popularity = 0.05
 				}	 
 	 }
-	} ai_will_do = { base = 8 } } 
+	} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TKF_compliance_joint_forces
 		icon = brothers_in_arms
@@ -9041,7 +9041,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 				set_temp_variable = { tag_index = CHI.id }
 				change_influence_percentage = yes
 			}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = TKF_land_forting_stuff
@@ -9202,7 +9202,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 					instant_build = yes
 				}
 			}
-			} }	ai_will_do = { base = 8 } } 
+			} }	ai_will_do = { base = 14 } } 
 	focus = {
 		id = TKF_nuclear_systems
 		icon = nuclear_energy
@@ -9266,7 +9266,7 @@ search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
 		            add_state_claim = 143
 		            add_state_claim = 144	
 					add_stability = 0.1			
-			} ai_will_do = { base = 10 } }	
+			} ai_will_do = { base = 2 } }	
 	focus = {
 		id = TKF_finish_silk_road
 		icon = infrastructure1
@@ -9338,7 +9338,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 					instant_build = yes
 				}
 			}
-			} }	} } ai_will_do = { base = 8 } }	
+			} }	} } ai_will_do = { base = 14 } }	
 	focus = {
 		id = TKF_supreme_maoism
 		icon = maoism
@@ -9488,7 +9488,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 					instant_build = yes
 				}
 			}
-			} }	ai_will_do = { base = 8 } } 
+			} }	ai_will_do = { base = 14 } } 
 	focus = {
 		id = TKF_chinese_experiment_globally
 		icon = chinese_social_democracy
@@ -9611,7 +9611,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital16
@@ -9632,7 +9632,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program18
@@ -9658,7 +9658,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines18

@@ -245,6 +245,7 @@ subtract_from_variable = { var = pkk_presence value = 1 }
 			add_stability = 0.02
 	set_global_flag = GIVE_INDUSTRIES_PKK
 	set_global_flag = FEDERALIZATION_GREEN_LIGHT
+	set_global_flag = START_THE_QUESTION_PKK_A_FEDERALIZATION
 			swap_ideas = {
 				remove_idea = TUR_kurdish_trouble
 				add_idea = TUR_kurdish_trouble2
@@ -2200,9 +2201,9 @@ TUR_counter_terrorism_mil = {
 		available = {
 			NOT = {
 				has_country_flag = doing_counter_terror_op_mil
-				has_country_flag = preppin_ext
-				has_country_flag = preppin_int
-				has_country_flag = preppin_air
+				has_country_flag = prepping_ext
+				has_country_flag = prepping_int
+				has_country_flag = prepping_air
 			}
 		}
 

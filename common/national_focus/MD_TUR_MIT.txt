@@ -122,7 +122,7 @@ swap_ideas = {
 	completion_reward = {
        add_ideas = datamining_group
       }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = MIT_secret_jewish_take_over
@@ -614,7 +614,7 @@ swap_ideas = {
 					spy
 				}
 			}
-		}  ai_will_do = { base = 8 } }
+		}  ai_will_do = { base = 10 } }
 	focus = {
 		id = MIT_open_armed_kemalists
 		icon = kemalists
@@ -667,7 +667,7 @@ swap_ideas = {
 		add_war_support = -0.1
 		}
 	  }
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = MIT_offer_help_from_SADAT
@@ -1926,7 +1926,7 @@ increase_social_spending = yes
 		add_stability = 0.02
 decrease_policing_budget = yes
 			block_police_increase = yes      
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = MIT_education_policies
 		icon = blr_russian_education
@@ -2495,7 +2495,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = MIT_influence_saudi_arabia
@@ -3098,7 +3098,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 				type = infrastructure
 				damage = 1.0
 			} }
-	} ai_will_do = { base = 10 } } 
+	} ai_will_do = { base = 14 } } 
 	focus = {
 		id = MIT_intelligence_works_against_pkk
 		icon = Generic_Intelligence_Gathering
@@ -4147,7 +4147,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		completion_reward = {
         add_political_power = 100
 		add_stability = 0.02
-		} ai_will_do = { base = 8 } } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = MIT_governmental_group
 		icon = turkish_authoritarianism
@@ -4652,7 +4652,7 @@ add_ideas = armedegon_thoughts
 
 		completion_reward = {
    add_ideas = for_the_last_moment
-} ai_will_do = { base = 8 } } 
+} ai_will_do = { base = 14 } } 
 	focus = {
 		id = MIT_SADAT_APCs
 		icon = apc
@@ -4947,7 +4947,7 @@ swap_ideas = {
 
 		completion_reward = {
    add_ideas = happy_family_policies
-} ai_will_do = { base = 8 } } 
+} ai_will_do = { base = 10 } } 
 	focus = {
 		id = MIT_old_and_young_bank
 		icon = Generic_Working_Class_Family
@@ -5846,7 +5846,7 @@ diplomatic_relation = {
 
 		completion_reward = {
 add_ideas = free_eu_visa_deal  
-}   ai_will_do = { base = 8 } }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = MIT_eu_espionage_deal
 		icon = EU_GDPR
@@ -6045,7 +6045,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
             set_temp_variable = { int_investment_change = 25.0 }
 			modify_international_investment_effect = yes		
 					}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = MIT_strenghtened_silkway
@@ -6109,7 +6109,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 			}
             set_temp_variable = { int_investment_change = 15.0 }
 			modify_international_investment_effect = yes
-			} }	ai_will_do = { base = 8 } }
+			} }	ai_will_do = { base = 14 } }
 	focus = {
 		id = MIT_strenghten_CIMERw
 		icon = the_cimer_focus
@@ -6156,7 +6156,7 @@ add_ideas = cimer_mit
     add_ideas = controlled_media 
 				custom_effect_tooltip = PRESS_HAS_CONTROLLED
 				set_global_flag = PRESS_HAS_MANAGED
-	} ai_will_do = { base = 8 } }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = MIT_reform_the_corruption
 		icon = MEX_Purge_corrupt_judges
@@ -6520,7 +6520,7 @@ swap_ideas = {
             change_the_ulema_opinion = yes
 			add_ideas = mosque_law
 				}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 10 }
 			}
 	focus = {
 		id = MIT_suicide_the_gulen
@@ -6926,7 +6926,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital26
@@ -6947,7 +6947,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program26
@@ -6973,7 +6973,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines26

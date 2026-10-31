@@ -44,7 +44,8 @@ python tools/release_check.py --report report.md
 ```
 
 Groups: `files` (braces, encoding, BOM, real DDS, no OGG), `loc` (line syntax, duplicate keys), `refs`
-(events, spirits, focuses, trees, sprites, textures, sounds, unfired events, missing names), `balance`
+(events, spirits, focuses, trees, sprites, textures, sounds, unfired events, missing names, flags read but never
+set or set as another kind — reviewed ones go in `tools/flag_allow.json` — and prerequisites in another tree), `balance`
 (unknown modifier names; modifiers stronger than MD's own strongest for the same key — reviewed ones go in
 `tools/balance_allow.json` as `{"reviewed": ["idea_name:modifier_key", ...]}`), `scope` (state-only effects in
 country scope and the other way round), `pack` (Turkish pack: syntax, duplicates, orphans, lost

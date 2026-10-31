@@ -79,7 +79,6 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		name = Turkeys.9207.a
 		ai_chance = { factor = 1}
 
-	custom_effect_tooltip = 20_increase_12_TT
 	country_event = MD4_election_campaign.0
 						add_popularity = {
 							ideology = neutrality
@@ -95,7 +94,6 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		name = Turkeys.9207.b
 		ai_chance = { factor = 1}
 
-	custom_effect_tooltip = 20_increase_3_TT
 	country_event = MD4_election_campaign.0
 						add_popularity = {
 							ideology = democratic
@@ -127,7 +125,7 @@ country_event = {
          }
 		 		 has_elections = yes
 		 NOT = {
-		 has_global_flag = ATA_NO_PR_ALLOWED
+		 TUR = { has_country_flag = ATA_NO_PR_ALLOWED }
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
 		 has_capitulated = yes
@@ -173,7 +171,7 @@ country_event = {
          }
 		 		 has_elections = yes
 		 NOT = {
-		 has_global_flag = ATA_NO_PR_ALLOWED
+		 TUR = { has_country_flag = ATA_NO_PR_ALLOWED }
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
 		 has_capitulated = yes
@@ -219,7 +217,7 @@ country_event = {
          }
 		 		 has_elections = yes
 		 NOT = {
-		 has_global_flag = ATA_NO_PR_ALLOWED
+		 TUR = { has_country_flag = ATA_NO_PR_ALLOWED }
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
 		 has_capitulated = yes
