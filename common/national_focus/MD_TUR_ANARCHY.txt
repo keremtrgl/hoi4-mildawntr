@@ -23,6 +23,7 @@ focus_tree = {
 			}	
 			add_war_support = 0.03
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_wait_for_the_results
@@ -41,6 +42,7 @@ focus_tree = {
 			add_political_power = 125
 remove_ideas = reformss_for_2001_crisis
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_termic_waters
@@ -78,6 +80,7 @@ remove_ideas = reformss_for_2001_crisis
 			custom_effect_tooltip = 25_billion_expense_tt	
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_bored_of_the_state
@@ -101,6 +104,7 @@ remove_ideas = reformss_for_2001_crisis
 			}	
 			add_war_support = 0.05
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_anti_economic_program_propaganda
@@ -122,6 +126,7 @@ remove_ideas = reformss_for_2001_crisis
 			}	
 			add_stability = -0.03
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_arm_the_economical_victims
@@ -147,6 +152,7 @@ remove_ideas = reformss_for_2001_crisis
 				recalculate_party = yes
 			}	
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_anti_job_propaganda
@@ -168,6 +174,7 @@ remove_ideas = reformss_for_2001_crisis
 			}	
 			add_stability = -0.03
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_create_an_anarchist_congress
@@ -194,6 +201,7 @@ remove_ideas = reformss_for_2001_crisis
 			}	
 			add_stability = -0.01
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_arm_the_unemployment
@@ -215,6 +223,7 @@ remove_ideas = reformss_for_2001_crisis
 			}	
 			add_stability = -0.03
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_start_anarchist_militarization
@@ -243,6 +252,7 @@ remove_ideas = reformss_for_2001_crisis
 			}	
 			add_stability = -0.01
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_connect_the_new_generals
@@ -266,6 +276,7 @@ remove_ideas = reformss_for_2001_crisis
 			add_political_power = 100
 			add_war_support = 0.02
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_keep_talks_with_military_groups
@@ -289,6 +300,7 @@ remove_ideas = reformss_for_2001_crisis
 			add_war_support = 0.03
 			custom_effect_tooltip = ANA_RISE_2
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_appoint_new_generals_to_command
@@ -312,6 +324,7 @@ remove_ideas = reformss_for_2001_crisis
 			add_war_support = 0.01
 			custom_effect_tooltip = ANA_RISE_1
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_anarchist_planning
@@ -337,6 +350,7 @@ remove_ideas = reformss_for_2001_crisis
 			add_war_support = 0.03
 			custom_effect_tooltip = ANA_RISE_3
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_formalized_war_system
@@ -365,6 +379,7 @@ remove_ideas = reformss_for_2001_crisis
 			add_war_support = 0.03
 			custom_effect_tooltip = ANA_RISE_3
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_termic_water_trade
@@ -383,6 +398,7 @@ remove_ideas = reformss_for_2001_crisis
 			remove_idea = termic_waters
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_control_the_electiricity
@@ -399,6 +415,7 @@ remove_ideas = reformss_for_2001_crisis
 		completion_reward = {
 			add_ideas = electiricy_controlled
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_prevent_the_rigging
@@ -417,6 +434,7 @@ remove_ideas = reformss_for_2001_crisis
 			add_stability = 0.03
 			add_political_power = 75
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_start_of_congress_elections
@@ -440,6 +458,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 			add_political_power = 125
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_victory_for_green_anarchists
@@ -478,6 +497,7 @@ neutrality_neutral_social_are_in_power = yes
 			}	
 			add_war_support = 0.03
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_victory_of_anarcho_socialists
@@ -508,6 +528,7 @@ neutrality_neutral_social_are_in_power = yes
 			}	
 			add_war_support = 0.03
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_destroy_the_capitalists
@@ -522,6 +543,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 			add_ideas = capitalism_looting
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_cleanize_pro_americans
@@ -547,6 +569,7 @@ neutrality_neutral_social_are_in_power = yes
 				recalculate_party = yes
 			}	
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_marxs_manifesto
@@ -570,6 +593,7 @@ neutrality_neutral_social_are_in_power = yes
 				recalculate_party = yes
 			}	
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_create_a_socialist_front
@@ -602,6 +626,7 @@ neutrality_neutral_social_are_in_power = yes
 			}
 			add_ideas = create_a_socialist_front
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_eliminate_rich
@@ -621,6 +646,7 @@ neutrality_neutral_social_are_in_power = yes
 			subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_prison_the_rich
@@ -640,6 +666,7 @@ neutrality_neutral_social_are_in_power = yes
 			subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_increase_the_income_of_low_and_medium
@@ -659,6 +686,7 @@ neutrality_neutral_social_are_in_power = yes
 			subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_push_work_propagandas
@@ -674,6 +702,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 			add_ideas = work_propaganda
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_create_labour_culture
@@ -691,6 +720,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 			add_ideas = labour_culture
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_let_child_labour_live
@@ -705,6 +735,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 			add_ideas = child_labour_culture
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_use_the_effects_of_collevization_society
@@ -730,6 +761,7 @@ neutrality_neutral_social_are_in_power = yes
 			remove_idea = anarchist_collectivization_systematic
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_working_teams
@@ -744,6 +776,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 		    add_ideas = working_teams_working
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_anarcho_capitalist_victory
@@ -774,6 +807,7 @@ neutrality_neutral_social_are_in_power = yes
 			}	
 			add_war_support = 0.03
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_the_money_law
@@ -791,6 +825,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 			add_ideas = the_money_law
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_kill_the_commies
@@ -812,6 +847,7 @@ neutrality_neutral_social_are_in_power = yes
 				recalculate_party = yes
 			}	
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_anti_communist_law
@@ -833,6 +869,7 @@ neutrality_neutral_social_are_in_power = yes
 				recalculate_party = yes
 			}	
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_reorganize_the_sitution
@@ -870,6 +907,7 @@ neutrality_neutral_social_are_in_power = yes
 			add_stability = 0.15
 			custom_effect_tooltip = REORGANIZED_SITUATION_ANA
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_create_anarchist_units
@@ -893,6 +931,7 @@ neutrality_neutral_social_are_in_power = yes
 			add_political_power = 100
 			add_war_support = 0.02
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_istanbul_anarchist_group
@@ -924,6 +963,7 @@ neutrality_neutral_social_are_in_power = yes
 			custom_effect_tooltip = ANA_RISE_1
 			custom_effect_tooltip = ANA_organizationing
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_izmir_anarchist_group
@@ -955,6 +995,7 @@ neutrality_neutral_social_are_in_power = yes
 			custom_effect_tooltip = ANA_RISE_1
 			custom_effect_tooltip = ANA_organizationing_2
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_ankara_anarchist_group
@@ -986,6 +1027,7 @@ neutrality_neutral_social_are_in_power = yes
 			custom_effect_tooltip = ANA_RISE_1
 			custom_effect_tooltip = ANA_organizationing_3
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_formalize_western_anarchist_group
@@ -1017,6 +1059,7 @@ neutrality_neutral_social_are_in_power = yes
 			add_war_support = 0.05
 			custom_effect_tooltip = ANA_RISE_5
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_start_the_anarchist_revolution
@@ -1038,6 +1081,7 @@ neutrality_neutral_social_are_in_power = yes
     news_event = Turkey_news.32
 				}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_control_the_highways
@@ -1061,6 +1105,7 @@ neutrality_neutral_social_are_in_power = yes
 		   add_political_power = -75
 		   }
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_spirit_of_rebellion
@@ -1077,6 +1122,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 		    add_ideas = spirit_of_rebellion
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_positivism
@@ -1097,6 +1143,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 		    add_ideas = anarchist_positivism
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_the_mother_committee
@@ -1114,6 +1161,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 		    add_ideas = motherland_committee
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_guerilla_tactics
@@ -1129,6 +1177,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 		    add_ideas = guerilla_tactics
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_a_new_kind_of_modern_movement
@@ -1146,6 +1195,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 		    add_ideas = a_new_kind_of_modern_movement
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_victory_of_anarchism
@@ -1176,6 +1226,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 		    add_stability = 0.05
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_anarchist_repairing
@@ -1191,6 +1242,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 		    add_ideas = anarchist_repairing_stuff
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_workout_propagandas
@@ -1207,6 +1259,7 @@ neutrality_neutral_social_are_in_power = yes
 		completion_reward = {
 		    add_ideas = workout_propaganda
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_start_the_working_engine
@@ -1230,6 +1283,7 @@ swap_ideas = {
   add_idea = reforms_for_2001_crisis
 }
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_the_commitee_elections
@@ -1252,6 +1306,7 @@ swap_ideas = {
 		add_stability = 0.03	
 		country_event = MD4_election_campaign.0
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_anarchist_collectivization
@@ -1269,6 +1324,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_ideas = anarchist_collectivization
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_anarchist_economy
@@ -1307,6 +1363,7 @@ swap_ideas = {
 			}
 
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_declare_the_ineffective_regime
@@ -1331,6 +1388,7 @@ swap_ideas = {
   add_idea = reformss_for_2001_crisis
 }
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_declare_neutrality
@@ -1346,6 +1404,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_ideas = anarcho_neutrality
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_building_a_new_society
@@ -1366,6 +1425,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_ideas = a_new_society_of_anarchism
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_brain_cleaning
@@ -1381,6 +1441,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_ideas = brain_cleaning
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_science
@@ -1398,6 +1459,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_political_power = 125
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_stabilize_the_locals
@@ -1414,7 +1476,7 @@ swap_ideas = {
 		completion_reward = {
 		   add_stability = 0.05
 		   custom_effect_tooltip = local_happiness_description
-	}   }
+	}   ai_will_do = { base = 10 } }
 	focus = {
 		id = ANA_mother_state
 		icon = women_issues
@@ -1430,7 +1492,7 @@ swap_ideas = {
 		completion_reward = {
 		   add_stability = 0.05
 		   custom_effect_tooltip = mother_state_description
-	}   }
+	}   ai_will_do = { base = 10 } }
 	focus = {
 		id = ANA_encourage_happiness
 		icon = family
@@ -1446,7 +1508,7 @@ swap_ideas = {
 		completion_reward = {
 		   add_stability = 0.05
 		   custom_effect_tooltip = encouraged_happiness_description
-	}   }
+	}   ai_will_do = { base = 10 } }
 	focus = {
 		id = ANA_anarcho_neutralism
 		icon = stability
@@ -1470,6 +1532,7 @@ swap_ideas = {
 		    add_stability = 0.02
 			add_political_power = 75
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_fully_removal_of_bureocracy
@@ -1487,6 +1550,7 @@ swap_ideas = {
 		    add_stability = -0.07
 			custom_effect_tooltip = bureocracratic_removal
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_respective_anarchism
@@ -1503,6 +1567,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_stability = 0.1
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_torchbearers_of_the_country
@@ -1519,6 +1584,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_ideas = torchbearers_of_state
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_create_the_university_of_anarchism
@@ -1534,7 +1600,7 @@ swap_ideas = {
 
 		completion_reward = {
 		    add_research_slot = 1
-	}   }
+	}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_disband_systematic_education
 		icon = education_reform
@@ -1549,7 +1615,7 @@ swap_ideas = {
 
 		completion_reward = {
 		    add_ideas = edu_01
-	}   }
+	}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_free_education_free_land
 		icon = land_reform
@@ -1568,7 +1634,7 @@ swap_ideas = {
 
 		completion_reward = {
 		    add_ideas = free_education_free_land
-	}   }
+	}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_protect_academies
 		icon = BLR_National_Library
@@ -1583,7 +1649,7 @@ swap_ideas = {
 
 		completion_reward = {
 		    add_ideas = protect_academies
-	}   }
+	}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_create_hacker_group
 		icon = radar
@@ -1603,7 +1669,7 @@ swap_ideas = {
 
 		completion_reward = {
 		    add_ideas = a_hacker_group
-	}   }
+	}   ai_will_do = { base = 8 } }
 	focus = {
 		id = ANA_wanted_education
 		icon = radar2
@@ -1619,7 +1685,7 @@ swap_ideas = {
 
 		completion_reward = {
 		    add_ideas = education_WANTED
-	}   }
+	}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_appoint_technicans
 		icon = walfare_state
@@ -1635,6 +1701,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_ideas = appoint_technicans
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_divided_construction_plans
@@ -1655,6 +1722,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_ideas = divided_construction
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_denounce_state_interventionism
@@ -1671,7 +1739,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_war_support = -0.07
 			custom_effect_tooltip = denounce_interventionism_job_def
-	}   }
+	}   ai_will_do = { base = 8 } }
 	focus = {
 		id = ANA_disband_the_national_money
 		icon = money_on_fire
@@ -1689,7 +1757,7 @@ swap_ideas = {
 		   add_stability = -0.03
   			subtract_from_variable = { treasury = -100.0 }
 			custom_effect_tooltip = 100_billion_revenue_tt
-	}   }
+	}   ai_will_do = { base = 10 } }
 	focus = {
 		id = ANA_create_elective_systems
 		icon = elections_rigged
@@ -1709,7 +1777,7 @@ swap_ideas = {
 		completion_reward = {
 		   add_stability = 0.03
 		   add_political_power = 75
-	}   }
+	}   ai_will_do = { base = 8 } }
 	focus = {
 		id = ANA_peoples_money_peoples_job
 		icon = chinese_licenses
@@ -1725,7 +1793,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_stability = 0.07
 			custom_effect_tooltip = peoples_money_job_def
-	}   }
+	}   ai_will_do = { base = 10 } }
 	focus = {
 		id = ANA_silence_of_construction
 		icon = Focus_Shut_the_Fuck_Up
@@ -1751,6 +1819,7 @@ swap_ideas = {
 			remove_idea = divided_construction
 			}
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_anarchist_born_economy
@@ -1767,6 +1836,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_ideas = anarchist_born_economy
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_delete_the_consumer_goods
@@ -1783,6 +1853,7 @@ swap_ideas = {
 		completion_reward = {
 		    add_ideas = consumer_goods_lowering_for_anarchism
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_systematize_the_collectivization
@@ -1806,6 +1877,7 @@ swap_ideas = {
 			remove_idea = anarchist_collectivization
 			}
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_different_kind_of_elections
@@ -1824,7 +1896,7 @@ swap_ideas = {
 
 		completion_reward = {
 		   add_stability = 0.05
-	}   }
+	}   ai_will_do = { base = 10 } }
 	focus = {
 		id = ANA_prevent_the_second_blood
 		icon = bloody_purge
@@ -1855,7 +1927,7 @@ remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad
 remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
 remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
 }
-	}   }
+	}   ai_will_do = { base = 8 } }
 	focus = {
 		id = ANA_coding_classes
 		icon = cryptography
@@ -1870,6 +1942,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = coding_classes
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_AI_technologies
@@ -1885,6 +1958,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = AI_technologies
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_personel_innovationism
@@ -1904,6 +1978,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = personel_innovationalism
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_embrace_the_new_system
@@ -1922,6 +1997,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		    add_stability = 0.05
 			add_war_support = 0.02
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_green_act
@@ -1943,6 +2019,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 				recalculate_party = yes
 			}	
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_green_propagandas
@@ -1964,6 +2041,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 				recalculate_party = yes
 			}	
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_long_live_the_modern_echologist_movement
@@ -2001,6 +2079,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 				recalculate_party = yes
 			}	
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_get_support_of_scientists
@@ -2017,6 +2096,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_ideas = support_from_scientists	
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_get_support_of_academics
@@ -2033,6 +2113,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_ideas = support_from_academicians	
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_normalize_with_the_greenpeace
@@ -2060,6 +2141,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 				recalculate_party = yes
 			}	
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_hunt_the_richs_money
@@ -2079,6 +2161,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_plant_some_trees
@@ -2094,6 +2177,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_ideas = planted_trees
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_create_sanction_community
@@ -2109,6 +2193,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_ideas = sanction_community_of_greens
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_worldwide_propaganda
@@ -2130,6 +2215,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 				recalculate_party = yes
 			}	
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_strong_in_political_fields
@@ -2154,6 +2240,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			add_stability = 0.03
 			add_political_power = 75
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_stop_globalization_folder
@@ -2171,6 +2258,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			add_stability = 0.03
 			add_ideas = semi_consumption_economy
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_blame_USA_against_wall_street
@@ -2209,6 +2297,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			add_ideas = recession 
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_start_the_country_echologies
@@ -2230,6 +2319,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 				recalculate_party = yes
 			}	
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_windmills
@@ -2255,6 +2345,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			custom_effect_tooltip = 25_billion_expense_tt	
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_hydroelectiricty
@@ -2280,6 +2371,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			custom_effect_tooltip = 25_billion_expense_tt	
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_alliance_with_scientists
@@ -2300,6 +2392,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			remove_idea = support_from_scientists
 			}
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_fully_destroy_the_up_wages
@@ -2321,6 +2414,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_revenue_tt
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_became_the_leader_of_un
@@ -2346,6 +2440,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
         country_event = TurkeyF.165
 		}  
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_unesco_state
@@ -2365,6 +2460,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_stability = 0.1
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_cooperae_with_FDO
@@ -2383,6 +2479,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = action_of_FDO
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_cooperate_with_IFAD
@@ -2401,6 +2498,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = action_of_IFAD
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_cooperate_with_WFP
@@ -2419,6 +2517,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = action_of_WFP
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_sun_energy
@@ -2453,6 +2552,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			custom_effect_tooltip = 25_billion_expense_tt	
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_deindustrialization
@@ -2470,6 +2570,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		     add_timed_idea = { idea = deindustriaization_program  days = 365 }
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_focus_on_state
@@ -2486,6 +2587,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_political_power = 100
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_fish_act
@@ -2500,6 +2602,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_ideas = fishing_sites
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_destroy_kaz_daglari_action
@@ -2539,7 +2642,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 					instant_build = yes
 					level = -1
 				} }
-		} } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = ANA_deindustrialize_adana
 		icon = war2_green
@@ -2587,7 +2690,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 					instant_build = yes
 					level = -1
 				} }
-		} } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = ANA_bird_habitat_zones
 		icon = protect_parks
@@ -2611,6 +2714,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			add_political_power = 75
 			add_stability = 0.05
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_support_agriculture_in_adana
@@ -2632,6 +2736,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		   add_ideas = agriculture_increase_1
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_destroy_the_active_pollution
@@ -2679,7 +2784,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 					instant_build = yes
 					level = -1
 				} }
-		} } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = ANA_expand_village_culture
 		icon = tree_focus
@@ -2721,7 +2826,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 					instant_build = yes
 					level = -1
 				} }
-		} } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = ANA_wind_mill_zones
 		icon = windmill
@@ -2755,6 +2860,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			custom_effect_tooltip = 25_billion_expense_tt	
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_sun_energy_places
@@ -2772,6 +2878,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			remove_idea = the_energy_of_sun
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_antalya_energy_fields
@@ -2801,7 +2908,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			}
 	  			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt	
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_agricultural_places
 		icon = house
@@ -2820,6 +2927,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			remove_idea = agriculture_increase_1
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_animals_law
@@ -2834,6 +2942,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		   add_ideas = protection_for_animals
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_ban_coal
@@ -2853,6 +2962,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = coal_ban
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_save_the_water
@@ -2873,6 +2983,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		   add_ideas = healthy_water
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_ban_fossil_oil
@@ -2892,6 +3003,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			remove_idea = coal_ban
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_importance_to_carbon_levels
@@ -2908,6 +3020,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_stability = 0.05
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_renewable_state
@@ -2930,6 +3043,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_stability = 0.15
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_ban_nuclear_power
@@ -2950,6 +3064,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = nuclear_energy_ban
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_world_deserve_breath
@@ -2970,6 +3085,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			remove_idea = nuclear_energy_ban
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_destroy_the_nukes
@@ -2990,6 +3106,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			remove_idea = nuclear_energy_ban_2
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_trash_act
@@ -3005,6 +3122,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_ideas = laws_of_bin
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_charge_converting
@@ -3026,6 +3144,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			remove_idea = nuclear_energy_ban_3
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_condemn_usa
@@ -3043,6 +3162,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		USA = {                   
         country_event = TurkeyF.163
 		}  }
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_condemn_china
@@ -3073,6 +3193,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		CHI = {                   
         country_event = TurkeyF.164
 		}  }
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_blood_eyed_revenge
@@ -3092,6 +3213,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		   add_war_support = 0.1
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_collect_pro_ecologist_usa
@@ -3134,6 +3256,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 							popularity = 0.15
 						}	}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_collect_pro_ecologist_china
@@ -3175,6 +3298,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 							popularity = 0.15
 						}	}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_invite_greta
@@ -3195,6 +3319,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
         completion_reward = {                
         country_event = TurkeyF.166
 		}  
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_the_ecologist_imperialism
@@ -3214,6 +3339,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = ecoogical_imperialism
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_armed_ecologists
@@ -3233,6 +3359,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 				add_mio_funds = 500
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_ecologist_tanks
@@ -3249,6 +3376,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = ecologist_tanks
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_invent_rock_cannon
@@ -3268,6 +3396,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
             remove_idea = ecologist_tanks
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_ban_the_bombing_planes
@@ -3284,6 +3413,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = banned_flying_wings
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_invent_ecologist_weapons
@@ -3300,6 +3430,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = ecologist_weapons
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_the_water_planes
@@ -3315,6 +3446,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 		    add_ideas = water_planes
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_special_killing_forces
@@ -3334,6 +3466,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
             remove_idea = ecologist_weapons
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_new_kind_of_war
@@ -3356,6 +3489,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_war_support = 0.1
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_protect_humans
@@ -3373,6 +3507,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_ideas = protection_for_humans
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_protect_animals
@@ -3390,6 +3525,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		completion_reward = {
 			add_ideas = protection_for_animals
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_target_europe
@@ -3409,6 +3545,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			add_political_power = 75
 			add_command_power = 5
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_target_middle_east
@@ -3428,6 +3565,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			add_political_power = 75
 			add_command_power = 5
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_target_majors
@@ -3451,6 +3589,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			add_political_power = 125
 			add_war_support = 0.03
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_attack_iran
@@ -3485,7 +3624,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			type = annex_everything
 			target = PER
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_attack_fossil_reserves
 		icon = oil_red
@@ -3502,7 +3641,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 
 		completion_reward = {
 	    add_war_support = 0.05
-		} } 
+		} ai_will_do = { base = 8 } } 
 	focus = {
 		id = ANA_attack_south_posititons
 		icon = South_Africa_ger
@@ -3537,7 +3676,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			type = annex_everything
 			target = SYR
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_destroy_the_israel
 		icon = attack_israel
@@ -3572,7 +3711,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			type = annex_everything
 			target = ISR
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_clean_afganistan_and_pakistan
 		icon = attack_pakistan2
@@ -3600,7 +3739,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			type = annex_everything
 			target = PAK
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_call_europe_for_cease
 		icon = align_to_europe
@@ -3699,6 +3838,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		SLV = {                   
         country_event = TurkeyF.167
 		} }
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_peace_solution
@@ -3716,6 +3856,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 			add_ideas = peace_solution
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_join_european_union
@@ -3823,6 +3964,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
         country_event = TurkeyF.170
 		} 
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_climate_meetings
@@ -3847,6 +3989,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			every_country = {
         country_event = TurkeyF.168
 		}   }
+		ai_will_do = { base = 8 }
 	}    
 	focus = {
 		id = ANA_call_europe_for_unification
@@ -3946,6 +4089,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		SLV = {                   
         country_event = TurkeyF.169
 		} }
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_peace_forever
@@ -3967,6 +4111,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
             remove_idea = peace_solution
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_genius_europe
@@ -3985,6 +4130,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 			add_ideas = genius_europe
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_ecologist_middle_east
@@ -4002,6 +4148,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 			remove_ideas = anarcho_neutrality 
 		}
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = ANA_target_usa
@@ -4036,7 +4183,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			type = annex_everything
 			target = USA
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_target_china
 		icon = attack_china
@@ -4070,7 +4217,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			type = annex_everything
 			target = CHI
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_the_last_round
 		icon = USA_new_foreign_policy
@@ -4096,7 +4243,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			type = annex_everything
 			target = TUR
 		} }
-		} }
+		} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_ecologist_anarchist_utopia
 		icon = political_pressure_dark_green
@@ -4114,6 +4261,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		    add_political_power = 50
 			set_cosmetic_tag = ANARCH_UTOPIA_G
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_fast_construction
@@ -4129,6 +4277,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = fast_construction
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_start_the_industrialization_forge
@@ -4151,6 +4300,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				recalculate_party = yes
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_state_bureocracy
@@ -4171,6 +4321,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		    add_stability = -0.1
 			custom_effect_tooltip = BUREOCRACY_RETURN
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_sivas_factory
@@ -4208,7 +4359,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = ANA_kayseri_factory
 		icon = MEX_Industrialize_the_north
@@ -4244,7 +4395,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = ANA_turkish_factory_culture
 		icon = vineyard
@@ -4263,6 +4414,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
         add_ideas = the_turkish_industrial_culture
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_adana_arms_factory
@@ -4300,7 +4452,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = ANA_diyarbakir_factory
 		icon = tank_production
@@ -4337,7 +4489,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = ANA_create_modern_offices
 		icon = romanian_economic_development_plan
@@ -4377,7 +4529,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				} }
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = ANA_turkish_railway_projections
 		icon = great_railway_incident
@@ -4399,6 +4551,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = the_turkish_railway_culture
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_socialist_innovationism
@@ -4423,6 +4576,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				recalculate_party = yes
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_atheist_state
@@ -4440,6 +4594,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			remove_idea = sunni 
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_turkish_network_project
@@ -4462,6 +4617,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = the_turkish_radar_culture
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_build_schools
@@ -4478,6 +4634,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_research_slot = 1
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_innovation_first
@@ -4495,6 +4652,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = innovation_first
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_preserve_secularism
@@ -4516,6 +4674,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				recalculate_party = yes
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_sciente_tourmaments
@@ -4535,6 +4694,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = science_tourmaments
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_science_exhibitions
@@ -4555,6 +4715,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = science_exhabitions
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_invention_founder_society
@@ -4574,6 +4735,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = invention_founder_society
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_upward_academics
@@ -4597,6 +4759,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = upward_academicians
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_clothing_intervention
@@ -4614,6 +4777,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = non_religious_interventionism
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_anarchist_guardian
@@ -4633,6 +4797,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_manpower = 100000
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_unhealthy_state
@@ -4650,6 +4815,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		    add_stability = -0.05
 			remove_ideas = the_ulema
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_send_academicans_to_world
@@ -4670,6 +4836,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = academicians_in_the_world
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_the_great_anarchist_science
@@ -4696,6 +4863,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		    remove_ideas = invention_founder_society
 		    add_ideas = anarchist_science_power
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_intervening_the_spiritual
@@ -4716,6 +4884,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			remove_idea = non_religious_interventionism
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_efficent_anarchy_system
@@ -4739,6 +4908,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		    add_stability = 0.1
 			custom_effect_tooltip = ORDER_REPAIR_ANSOC
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_create_the_socialist_anarchist_forces
@@ -4766,6 +4936,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				add_mio_funds = 500
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_seize_buses
@@ -4781,6 +4952,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = anarchist_transportation
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_anarchist_otomobiles
@@ -4798,6 +4970,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			remove_idea = anarchist_transportation
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_call_the_arms
@@ -4814,6 +4987,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			increase_military_spending = yes
 block_defence_decrease = yes
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_prepare_human_waves
@@ -4830,6 +5004,7 @@ block_defence_decrease = yes
 		completion_reward = {
 		    add_ideas = human_waves_tactics
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_incomes_from_early_military
@@ -4854,6 +5029,7 @@ block_defence_decrease = yes
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_revenue_tt
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_create_the_arms_industry
@@ -4890,7 +5066,7 @@ block_defence_decrease = yes
 				
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = ANA_boost_the_military_industrials
 		icon = industry_military
@@ -4935,7 +5111,7 @@ block_defence_decrease = yes
 				} }				
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = ANA_learn_guerilla_warfare
 		icon = communist_spies2
@@ -4961,6 +5137,7 @@ block_defence_decrease = yes
 			remove_idea = guerilla_tactics
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_create_socialist_elites
@@ -4978,6 +5155,7 @@ block_defence_decrease = yes
 		    add_stability = -0.1
 			add_ideas = the_socialist_elites
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_push_the_worldwide_utopia_ideas
@@ -4996,6 +5174,7 @@ block_defence_decrease = yes
 		    add_stability = 0.03
 			remove_ideas = anarcho_neutrality 
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_start_the_socialist_utopia_plans
@@ -5015,6 +5194,7 @@ block_defence_decrease = yes
 		completion_reward = {
 		    add_political_power = 125
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_the_north_planning
@@ -5036,6 +5216,7 @@ search_filters = {FOCUS_FILTER_NATO}
 		    add_political_power = 75
 			add_war_support = 0.05
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_collect_trancaucasia
@@ -5063,7 +5244,7 @@ search_filters = {FOCUS_FILTER_NATO}
 			type = annex_everything
 			target = AZE
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_wreckle_ukraine
 		icon = attack_ukraine
@@ -5097,7 +5278,7 @@ search_filters = {FOCUS_FILTER_NATO}
 			type = annex_everything
 			target = UKR
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_attack_the_old_socialist
 		icon = focus_SOV_third_rome
@@ -5134,7 +5315,7 @@ search_filters = {FOCUS_FILTER_NATO}
 			type = annex_everything
 			target = SOV
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_the_turkish_control
 		icon = turkish_authoritarianism
@@ -5167,7 +5348,7 @@ search_filters = {FOCUS_FILTER_NATO}
 			type = annex_everything
 			target = KYR
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_the_new_kind_of_cores
 		icon = annex_country_2
@@ -5189,7 +5370,7 @@ search_filters = {FOCUS_FILTER_NATO}
 
 		completion_reward = {
 				custom_effect_tooltip = GENERAL_CORE_SYSTEM
-		} } 
+		} ai_will_do = { base = 2 } } 
 	focus = {
 		id = ANA_joint_forces_of_anarchism
 		icon = condemn_macedonian_organizations
@@ -5204,7 +5385,7 @@ search_filters = {FOCUS_FILTER_NATO}
 
        completion_reward = {
 		add_ideas = joint_forces_of_military
-	} }
+	} ai_will_do = { base = 8 } }
 	focus = {
 		id = ANA_systematic_forces
 		icon = support_macedonian_organizations
@@ -5219,7 +5400,7 @@ search_filters = {FOCUS_FILTER_NATO}
 
        completion_reward = {
 		add_ideas = systematic_forces_of_anarchism
-	} }
+	} ai_will_do = { base = 8 } }
 	focus = {
 		id = ANA_the_utopia_declaration
 		icon = centralization
@@ -5240,6 +5421,7 @@ search_filters = {FOCUS_FILTER_NATO}
 		    add_political_power = 50
 			set_cosmetic_tag = ANARCH_UTOPIA_R
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_manage_the_victory
@@ -5259,7 +5441,7 @@ search_filters = {FOCUS_FILTER_NATO}
 		    custom_effect_tooltip = TUR_united_state
 			set_global_flag = TUR_UNITE_DIASPORA
 						TUR_remove_state_modifier_effects = yes
-	} }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = ANA_the_south_planning
 		icon = befriend_middle_east
@@ -5279,6 +5461,7 @@ search_filters = {FOCUS_FILTER_NATO}
 		    add_political_power = 75
 			add_war_support = 0.01
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_direction_west
@@ -5300,6 +5483,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		    add_political_power = 75
 			add_war_support = 0.03
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_the_traditional_borders
@@ -5320,7 +5504,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			type = annex_everything
 			target = TUR
 		} }
-		} }
+		} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_crush_the_unconfident_komsi
 		icon = metaxas
@@ -5354,7 +5538,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			type = annex_everything
 			target = GRE
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_force_unification_of_islam_world
 		icon = islamophobia
@@ -5374,7 +5558,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 	
         completion_reward = {
 		custom_effect_tooltip = ISLAMIC_WORLD_UNITE
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_harsh_quotas_of_secularism
 		icon = communism4
@@ -5388,7 +5572,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 	
         completion_reward = {
 		custom_effect_tooltip = SET_SECULAR_HECK
-	} }
+	} ai_will_do = { base = 8 } }
 	focus = {
 		id = ANA_plan_NATO
 		icon = end_of_nato
@@ -5406,6 +5590,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		    add_political_power = 100
 			remove_ideas = NATO_member
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_counter_nato_defense
@@ -5424,6 +5609,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 			add_ideas = arms_of_nato_against_defence
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_counter_nato_attack
@@ -5442,6 +5628,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 			add_ideas = arms_of_nato_against_attack
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_united_counter_forces
@@ -5465,6 +5652,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			remove_ideas = arms_of_nato_against_defence
 			add_ideas = attack_and_defense_combined_force
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_meeting_with_the_financial_freedom
@@ -5481,6 +5669,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = financial_freedom_action
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_the_credit_house
@@ -5496,6 +5685,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = the_credit_house
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_free_robbing
@@ -5512,6 +5702,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 			add_ideas = free_robbing 
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_disband_the_counter_money_laws
@@ -5532,6 +5723,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			remove_idea = the_money_law
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_freedom_for_banks
@@ -5549,6 +5741,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = freedom_for_banks
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_freedom_for_gun_sellers
@@ -5566,6 +5759,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = freedom_for_gunselers
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_restore_the_politics
@@ -5591,6 +5785,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 				add_mio_funds = 500
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_judgement_financing
@@ -5605,6 +5800,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = the_finance_state_1
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_pacifist_globalization
@@ -5620,6 +5816,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 		completion_reward = {
 		    add_ideas = export_economy
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_heard_of_money
@@ -5642,6 +5839,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_print_money
@@ -5661,6 +5859,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 			subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_encourage_inflation
@@ -5679,6 +5878,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 subtract_from_variable = { treasury = 250.0 }
 			custom_effect_tooltip = 250_billion_revenue_tt
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_money_maximum
@@ -5700,6 +5900,7 @@ subtract_from_variable = { treasury = 250.0 }
 subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_talks_with_IMF
@@ -5724,6 +5925,7 @@ subtract_from_variable = { treasury = 100.0 }
 			add_political_power = 100
 			add_stability = 0.02
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_USA_richness
@@ -5741,6 +5943,7 @@ subtract_from_variable = { treasury = 100.0 }
 		completion_reward = {
 		add_offsite_building = { type = industrial_complex level = 2 }
 		}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_european_richness
@@ -5759,6 +5962,7 @@ subtract_from_variable = { treasury = 100.0 }
 		completion_reward = {
 		add_offsite_building = { type = industrial_complex level = 2 }
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_general_money_deposits
@@ -5781,6 +5985,7 @@ subtract_from_variable = { treasury = 100.0 }
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_revenue_tt
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_buy_ECB
@@ -5805,6 +6010,7 @@ subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 50_billion_revenue_tt
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_buy_FED
@@ -5829,6 +6035,7 @@ subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 50_billion_revenue_tt
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_empower_golds
@@ -5854,6 +6061,7 @@ subtract_from_variable = { treasury = 100.0 }
 			subtract_from_variable = { treasury = -100.0 }
 			custom_effect_tooltip = 100_billion_expense_tt
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_we_are_the_stocks
@@ -5871,6 +6079,7 @@ subtract_from_variable = { treasury = 100.0 }
 			remove_idea = the_finance_state_2
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_bank_investments
@@ -5886,6 +6095,7 @@ subtract_from_variable = { treasury = 100.0 }
 		completion_reward = {
 		     add_timed_idea = { idea = bank_investments  days = 125 }
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_banking_engine
@@ -5906,6 +6116,7 @@ subtract_from_variable = { treasury = 100.0 }
 		completion_reward = {
 		     add_timed_idea = { idea = bank_investments_return  days = 730 }
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_money_digging
@@ -5920,6 +6131,7 @@ subtract_from_variable = { treasury = 100.0 }
 		completion_reward = {
 		    add_ideas = money_digging
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_corporation_investments
@@ -5935,6 +6147,7 @@ subtract_from_variable = { treasury = 100.0 }
 		completion_reward = {
 		     add_timed_idea = { idea = corporation_investments  days = 125 }
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_bitcoin_miners
@@ -5952,6 +6165,7 @@ subtract_from_variable = { treasury = 100.0 }
 			remove_idea = money_digging
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_corporations_stuff
@@ -5973,6 +6187,7 @@ subtract_from_variable = { treasury = 100.0 }
 		completion_reward = {
 		     add_timed_idea = { idea = corporation_investments_return  days = 730 }
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_resource_working
@@ -5995,6 +6210,7 @@ subtract_from_variable = { treasury = 100.0 }
 				category = CAT_fuel_refining
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_natural_gas
@@ -6024,7 +6240,7 @@ subtract_from_variable = { treasury = 100.0 }
 			}
 	  			subtract_from_variable = { treasury = 15.0 }
 			custom_effect_tooltip = 15_billion_expense_tt	
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_natural_gas_plants
 		icon = barrels
@@ -6053,7 +6269,7 @@ subtract_from_variable = { treasury = 100.0 }
 			}
 	  			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt	
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_novus_petrolium
 		icon = oil_companies
@@ -6101,6 +6317,7 @@ subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 50_billion_expense_tt	
 			}
 			}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = ANA_oil_customization
@@ -6148,7 +6365,7 @@ subtract_from_variable = { treasury = 100.0 }
 	  			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt	
 			}
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_mixed_plants
 		icon = oil_red
@@ -6180,7 +6397,7 @@ subtract_from_variable = { treasury = 100.0 }
 			}
 	  			subtract_from_variable = { treasury = 70.0 }
 			custom_effect_tooltip = 70_billion_expense_tt	
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_build_petrol_plants
 		icon = oil_production2
@@ -6227,7 +6444,7 @@ subtract_from_variable = { treasury = 100.0 }
 	  			subtract_from_variable = { treasury = 30.0 }
 			custom_effect_tooltip = 30_billion_expense_tt	
 			}
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_material_activity
 		icon = oil_green
@@ -6262,7 +6479,7 @@ subtract_from_variable = { treasury = 100.0 }
 			}
 	  			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt	
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_boron_facilities
 		icon = b-5
@@ -6277,6 +6494,7 @@ subtract_from_variable = { treasury = 100.0 }
 		completion_reward = {
 		     add_ideas = laws_of_bor
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_petrol_jack
@@ -6330,7 +6548,7 @@ subtract_from_variable = { treasury = 100.0 }
 	  			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt	
 		}
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_boron_time
 		icon = bor_mining
@@ -6347,6 +6565,7 @@ subtract_from_variable = { treasury = 100.0 }
 			remove_idea = laws_of_bor
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_mixed_plants_2
@@ -6385,7 +6604,7 @@ subtract_from_variable = { treasury = 100.0 }
 			}
 	  			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt	
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_iron_world
 		icon = powerplant
@@ -6426,7 +6645,7 @@ subtract_from_variable = { treasury = 100.0 }
 			}
 	  			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt	
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ANA_gun_shops
 		icon = rearmament
@@ -6439,7 +6658,7 @@ subtract_from_variable = { treasury = 100.0 }
 
 		completion_reward = {
 add_ideas = gun_shops
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = ANA_gun_dealers
 		icon = grenade
@@ -6455,7 +6674,7 @@ add_ideas = gun_shops
 
 		completion_reward = {
 add_ideas = gun_dealers
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = ANA_gun_world
 		icon = soldiers2
@@ -6472,7 +6691,7 @@ add_ideas = gun_dealers
 
 		completion_reward = {
 add_ideas = world_of_guns
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = ANA_export_stuff
 		icon = export_economy
@@ -6486,6 +6705,7 @@ add_ideas = world_of_guns
 		completion_reward = {
 			add_ideas = globalized_trade_economy
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_money_world
@@ -6505,6 +6725,7 @@ add_ideas = world_of_guns
 			subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_revenue_tt
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_bankery_works
@@ -6524,6 +6745,7 @@ add_ideas = world_of_guns
 				set_temp_variable = { temp_opinion = -15 }	
             change_international_bankers_opinion = yes			
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_gold_investments
@@ -6539,6 +6761,7 @@ add_ideas = world_of_guns
 		completion_reward = {
 		     add_timed_idea = { idea = gold_investments  days = 125 }
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_gold_works_as_fast
@@ -6559,6 +6782,7 @@ add_ideas = world_of_guns
 		completion_reward = {
 		     add_timed_idea = { idea = gold_investments_return  days = 730 }
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_disband_economic_policies
@@ -6580,6 +6804,7 @@ add_ideas = world_of_guns
 		completion_reward = {
 		     add_ideas = economic_boom
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_philips_theory
@@ -6597,6 +6822,7 @@ add_ideas = world_of_guns
 		     add_research_slot = 1
 			remove_ideas = anarcho_neutrality 
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_economic_anarchism
@@ -6616,6 +6842,7 @@ add_ideas = world_of_guns
 		completion_reward = {
 		     add_stability = 0.1
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_work_work_work
@@ -6633,6 +6860,7 @@ add_ideas = world_of_guns
 			remove_idea = the_finance_state_3
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_target_crisis
@@ -6651,6 +6879,7 @@ add_ideas = world_of_guns
 		    add_war_support = 0.05
 			add_command_power = 25
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_target_usa_2
@@ -6669,6 +6898,7 @@ add_ideas = world_of_guns
 		    add_war_support = 0.03
 			add_command_power = 75
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_invade_greece
@@ -6704,7 +6934,7 @@ add_ideas = world_of_guns
 			type = annex_everything
 			target = GRE
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_default_their_debts
 		icon = better_money
@@ -6723,6 +6953,7 @@ add_ideas = world_of_guns
 			subtract_from_variable = { treasury = 500.0 }
 			custom_effect_tooltip = 500_billion_revenue_tt
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_invade_venezuela
@@ -6758,7 +6989,7 @@ add_ideas = world_of_guns
 			type = annex_everything
 			target = VEN
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_solve_inflation
 		icon = better_money_on_fire
@@ -6774,7 +7005,7 @@ add_ideas = world_of_guns
         completion_reward = {
 		remove_ideas = minor_inflation
 		add_stability = 0.02
-	} }
+	} ai_will_do = { base = 10 } }
 	focus = {
 		id = ANA_control_the_banks
 		icon = EU_Banking
@@ -6793,7 +7024,7 @@ add_ideas = world_of_guns
 		add_political_power = 125
 		add_stability = -0.03
 	reverse_add_opinion_modifier = { target = USA modifier = anarchist_american_aid }
-	} }
+	} ai_will_do = { base = 8 } }
 	focus = {
 		id = ANA_FED_solvation
 		icon = federal_reserve
@@ -6830,6 +7061,7 @@ add_ideas = world_of_guns
 			add_stability = 0.1
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_bank_designing_system
@@ -6866,6 +7098,7 @@ add_ideas = world_of_guns
 			add_ideas = anarchized_us_banks
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_recession_solves
@@ -6907,6 +7140,7 @@ add_ideas = world_of_guns
 			add_ideas = stable_growth
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_consumer_good_deficit
@@ -6924,6 +7158,7 @@ add_ideas = world_of_guns
 		completion_reward = {
 			add_ideas = consumer_goods_lowered
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_safe_us_economy
@@ -6956,6 +7191,7 @@ add_ideas = world_of_guns
 			add_ideas = economic_boom
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = ANA_economic_meetings
@@ -6976,7 +7212,7 @@ add_ideas = world_of_guns
 
         completion_reward = {
 		add_ideas = economic_boom
-	} }
+	} ai_will_do = { base = 8 } }
 	focus = {
 		id = ANA_IMF_talks
 		icon = imf
@@ -7009,6 +7245,7 @@ add_ideas = world_of_guns
     news_event = Turkey_news.28
 				}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_invade_south
@@ -7052,7 +7289,7 @@ add_ideas = world_of_guns
 			type = annex_everything
 			target = ISR
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_solve_petrodollar_crisis
 		icon = united_states_dollar
@@ -7072,6 +7309,7 @@ add_ideas = world_of_guns
 		completion_reward = {
 		    add_ideas = solved_petrodolar_crisis
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = ANA_invade_iran
@@ -7107,7 +7345,7 @@ add_ideas = world_of_guns
 			type = annex_everything
 			target = PER
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = ANA_trade_trade_trade
 		icon = ExpandTrade
@@ -7126,6 +7364,7 @@ add_ideas = world_of_guns
 			set_global_flag = TUR_UNITE_DIASPORA
 						TUR_remove_state_modifier_effects = yes
 		}
+		ai_will_do = { base = 8 }
 	}
 
 
@@ -7145,7 +7384,7 @@ add_ideas = world_of_guns
 		completion_reward = {
         add_political_power = 75
 	block_health_decrease = yes
-		} }
+		} ai_will_do = { base = 8 } }
 		
 	focus = {
 		id = TUR_covid-19_preparations14
@@ -7166,7 +7405,7 @@ swap_ideas = {
 }
 			subtract_from_variable = { treasury = 10.0 }
 			custom_effect_tooltip = 10_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals14
 		icon = generic_hospital2
@@ -7185,6 +7424,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital14
@@ -7205,6 +7445,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program2
@@ -7230,6 +7471,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines2
@@ -7250,6 +7492,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_increase_funds_to_science14
@@ -7269,6 +7512,7 @@ increase_healthcare_budget = yes
 			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_medicines14
@@ -7294,6 +7538,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_chinese_vaccines14
@@ -7320,6 +7565,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_normalisation_from_covid14
@@ -7342,6 +7588,7 @@ swap_ideas = {
 } 
 	custom_effect_tooltip = COV_AVAILABLE_1
 }
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TUR_end_of_covid14
@@ -7362,6 +7609,7 @@ swap_ideas = {
 remove_ideas = covid_19_normalised
 	custom_effect_tooltip = COV_AVAILABLE_2
 }
+		ai_will_do = { base = 8 }
 	}
 
 

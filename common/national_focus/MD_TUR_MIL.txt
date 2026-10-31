@@ -27,7 +27,7 @@ remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad
 remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
 add_ideas =	media_opinion_towards_good_happy_everyone
 }
-} } 
+} ai_will_do = { base = 10 } } 
 	focus = {
 		id = TUR_nationalist_state
 		icon = turkish_flag
@@ -48,7 +48,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 		
 		completion_reward = {
     add_stability = 0.03
-} } 
+} ai_will_do = { base = 8 } } 
 	focus = {
 		id = TUR_kemalist_military
 		icon = small_arms3
@@ -67,6 +67,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	add_idea = turkish_military_infulence_armed
 	remove_idea = turkish_military_infulence_coup
 	 } }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_get_rid_of_kurds
@@ -85,6 +86,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 				set_temp_variable = { temp_opinion = 15 }	
             change_the_military_opinion = yes	
 			}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_new_constitution
@@ -102,6 +104,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 		completion_reward = {
         add_political_power = 100
 	 } 
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_dismantle_all_parties
@@ -123,6 +126,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 		custom_effect_tooltip = TUR_MIL_dismantle
 		add_ideas = political_parties_banned
 	 } 
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_bans_of_kurdish_language
@@ -142,7 +146,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
         remove_ideas = kurdish_language_solutions_2
         remove_ideas = kurdish_language_solutions_4		
 			}
-		} }
+		} ai_will_do = { base = 8 } }
 	focus = {
 		id = TUR_reorganize_miltary
 		icon = military_women
@@ -158,6 +162,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 		completion_reward = {
         add_command_power = 15
 	 } 
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_turkish_ranking_shift
@@ -176,6 +181,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
         add_command_power = 5
 		add_stability = 0.02
 	 } 
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_push_economic_reforms
@@ -205,6 +211,7 @@ swap_ideas = {
   add_idea = lira_2
 }
       }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_increase_foreign_investments
@@ -236,6 +243,7 @@ swap_ideas = {
 					level = 1
 				}
 			} }
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_connections_of_the_usa
@@ -271,7 +279,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
     USA = {
 	add_political_power = 75
 	}
-} } 
+} ai_will_do = { base = 8 } } 
 	focus = {
 		id = TUR_take_american_aid
 		icon = american_military_agreement
@@ -301,7 +309,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 		
 		completion_reward = {
     add_ideas = foreign_aid_us_tur
-} } 
+} ai_will_do = { base = 8 } } 
 	focus = {
 		id = TUR_feed_anti_communistic_organizations
 		icon = american_partnerships
@@ -333,7 +341,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 							ideology = communism
 							popularity = -0.02
 						}	
-} } 
+} ai_will_do = { base = 8 } } 
 	focus = {
 		id = TUR_new_american_bases_for_usa
 		icon = american_shield
@@ -380,6 +388,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 				}
 			}
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TUR_petrol_ofisi_connection
@@ -438,7 +447,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
     USA = {
 	add_ideas = usa_turkish_deal
 	}
-} } 
+} ai_will_do = { base = 8 } } 
 	focus = {
 		id = TUR_mission_of_iraq
 		icon = legacy_of_marines
@@ -461,6 +470,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
         add_war_support = 0.03
 		add_command_power = 10
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TUR_join_usa_invasion
@@ -489,7 +499,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 			type = annex_everything
 			target = IRQ
 		}
-	} }
+	} ai_will_do = { base = 2 } }
 	focus = {
 		id = TUR_withdrawl
 		icon = peace
@@ -516,6 +526,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 		add_stability = 0.02
 		add_war_support = -0.03
 		}
+		ai_will_do = { base = 10 }
 	} 
 	focus = {
 		id = TUR_economic_grants
@@ -551,6 +562,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 				}
 			}
 			}
+		ai_will_do = { base = 14 }
 		}
 	focus = {
 		id = TUR_medium_taxes
@@ -574,6 +586,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 			subtract_from_variable = { corporate_tax_rate = 2 }
 			subtract_from_variable = { population_tax_rate = 2 }	 
 	 }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_end_of_crisis
@@ -597,7 +610,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 
 		completion_reward = {
 	remove_ideas = reformss_for_2001_crisis
-	 }  }
+	 }  ai_will_do = { base = 14 } }
 	
 	focus = {
 		id = TUR_arrested_people
@@ -615,7 +628,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 		completion_reward = {
 	add_stability = -0.03
 	add_political_power = 50
-	 }  }
+	 }  ai_will_do = { base = 8 } }
 	focus = {
 		id = TUR_stabilize_the_regime
 		icon = stability
@@ -631,6 +644,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	completion_reward = {
        add_timed_idea = { idea = stabilization_of_TUR  days = 90 }
       }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_open_elections
@@ -657,6 +671,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
                 ruling_party = nationalist
                 elections_allowed = yes
 	 }  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TUR_peace_propagandas
@@ -674,7 +689,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 		completion_reward = {
      add_war_support = -0.07
 	 add_stability = 0.01
-	 }  }
+	 }  ai_will_do = { base = 10 } }
 	focus = {
 		id = TUR_enter_kerkuk
 		icon = tanks5
@@ -702,6 +717,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 							popularity = 0.03
 						}	
             } 
+		ai_will_do = { base = 8 }
 		}
 	focus = {
 		id = TUR_integrate_kerkuk
@@ -734,6 +750,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 		add_state_core = 166
 		add_state_core = 165
             } 
+		ai_will_do = { base = 10 }
 		}
 	focus = {
 		id = TUR_lift_political_party_ban
@@ -756,6 +773,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 		add_stability = 0.03
 		remove_ideas = political_parties_banned
 	 } 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TUR_organize_a_military_coup
@@ -787,7 +805,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 nationalist_Nat_Autocracy
 				military_career
 				}
-    } } }
+    } } ai_will_do = { base = 8 } }
 	focus = {
 		id = TUR_elections_of_the_state
 		icon = election2
@@ -833,5 +851,6 @@ nationalist_Nat_Autocracy
 				complete_national_focus = TUR_awake_the_industry
 				set_country_flag = MIL_ACTION
 		}
+		ai_will_do = { base = 8 }
 	}
 }

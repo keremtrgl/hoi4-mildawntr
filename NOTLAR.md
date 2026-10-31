@@ -143,7 +143,8 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
 - Odak adları üzerine tasarım kararı: "Secret Jewish Mind Games", "Jewish Gold", "Counter the Jewish Lobby" gibi
   antisemitik kalıp taşıyan başlıklar orijinal moddan geliyor. Açıklamalar bunu eleştirel anlatıyor. 28 Ekim'de
   karar: başlıklar olduğu gibi kalacak (Steam'de şikâyet riski bilinerek).
-- Yapay zekâ odak ağırlıkları ve gözlemci modunda davranış incelenmedi.
+- Yapay zekâ odak ağırlıkları `tools/add_ai_weights.py` ile eklendi (31 Ekim, henüz yayınlanmadı): önce ekonomi ve
+  araştırma, sonra güvenlik, savaş ve ilhaklar en sonda. Gözlemci modunda davranış hâlâ test edilmedi.
 - Performans ölçümü (TUR.2 olay optimizasyonunun etkisi) yapılmadı.
 - Denge (31 Ekim'de gözden geçirildi): "MD en fazla" sütunu yalnızca bulunan en yüksek değeri gösterir, ölçek değildir.
   `decryption_power` MD'nin istihbarat özelliklerinde 50'ye çıkıyor; `country_resource_cost_*` düz tüketim birimi.

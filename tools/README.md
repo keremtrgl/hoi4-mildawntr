@@ -57,6 +57,13 @@ mod, errors from our files in `error.log`).
 `git config core.hooksPath tools/hooks` enables `tools/hooks/pre-commit`, which runs the content checks
 (about 30 s) and blocks the commit on errors. The last report is in `.git/release_check_last.txt`.
 
+## Focus AI weights: `add_ai_weights.py`
+
+Gives every focus in the `MD_TUR_*` trees that has no `ai_will_do` a base weight from its effects and
+`search_filters`: economy and research 14, stability and armed forces 10, others 8 (MD's usual base), wars and
+annexations 2. Hand-written blocks are kept. `python tools/add_ai_weights.py` reports, `apply` writes; safe to
+re-run after adding focuses.
+
 ## Focus descriptions: `focus_desc/`
 
 `extract.py` groups focuses with an empty `_desc` by name and writes batches; texts go in `out/dNNN.txt` as

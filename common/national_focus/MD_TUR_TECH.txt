@@ -14,6 +14,7 @@ focus_tree = {
 	completion_reward = {
 	add_political_power = 100
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_the_future
@@ -42,6 +43,7 @@ has_completed_focus = TECH_launch_the_new_government
 			}
 			custom_effect_tooltip = TECH_INCREASE_5
  }
+		ai_will_do = { base = 10 }
 }
 	focus = {
 		id = TECH_the_past
@@ -69,6 +71,7 @@ has_completed_focus = TECH_launch_the_new_government
 			}
 			custom_effect_tooltip = TECH_INCREASE_5
 			 }
+		ai_will_do = { base = 10 }
 }
 	focus = {
 		id = TECH_education_reforms
@@ -87,6 +90,7 @@ has_completed_focus = TECH_launch_the_new_government
 	completion_reward = {
 	add_political_power = 100
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_modern_economics
@@ -105,6 +109,7 @@ has_completed_focus = TECH_launch_the_new_government
 	completion_reward = {
 	add_political_power = 100
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_foreign_policies
@@ -123,6 +128,7 @@ has_completed_focus = TECH_launch_the_new_government
 	completion_reward = {
 	add_political_power = 100
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_industrial_movements
@@ -162,6 +168,7 @@ has_completed_focus = TECH_launch_the_new_government
 			}
 
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_high_technology_adminstration
@@ -181,6 +188,7 @@ has_completed_focus = TECH_VR_boosted_education
 	completion_reward = {
 	add_research_slot = 1
  }
+		ai_will_do = { base = 14 }
 }
 	focus = {
 		id = TECH_the_media
@@ -198,7 +206,7 @@ has_completed_focus = TECH_VR_boosted_education
 
 		completion_reward = {
 		add_ideas = reformed_media
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_grant_freedom_for_media
 		icon = social_media
@@ -220,6 +228,7 @@ has_completed_focus = TECH_VR_boosted_education
 			}
 			custom_effect_tooltip = TECH_INCREASE_2
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_clean_the_media_bosses
@@ -241,7 +250,7 @@ swap_ideas = {
   add_idea = reformed_media_2
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_lies_and_fraud
 		icon = generic_controlled_press
@@ -264,7 +273,7 @@ swap_ideas = {
   add_idea = reformed_media_3
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_linear_censorship
 		icon = internet_censorship
@@ -297,7 +306,7 @@ remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad
 remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad	
 remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
 }
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_reform_plan
 		icon = stolen_papers2
@@ -315,6 +324,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	add_political_power = 25
 	add_stability = 0.02
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_forums
@@ -331,6 +341,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	completion_reward = {
 	add_ideas = turkish_forums
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_create_chamber_of_innovation
@@ -348,6 +359,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	completion_reward = {
 	add_ideas = chamber_of_innovation
  }
+		ai_will_do = { base = 14 }
 }
 	focus = {
 		id = TECH_the_propaganda
@@ -367,6 +379,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	completion_reward = {
 	add_ideas = technocratic_propaganda
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_university_planning
@@ -383,6 +396,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	completion_reward = {
 	add_research_slot = 1
  }
+		ai_will_do = { base = 14 }
 }
 	focus = {
 		id = TECH_election_promises
@@ -407,6 +421,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			}
 			custom_effect_tooltip = TECH_INCREASE_2
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_the_great_referandum
@@ -430,6 +445,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			set_global_flag = TUR_UNITE_DIASPORA
 						TUR_remove_state_modifier_effects = yes
         } 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_the_ecology
@@ -447,7 +463,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 
 		completion_reward = {
 		add_ideas = ecological_minds
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_cities_of_ecology
 		icon = shenzhen_night
@@ -469,6 +485,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 			}
 			custom_effect_tooltip = TECH_INCREASE_2
  }
+		ai_will_do = { base = 10 }
 }
 	focus = {
 		id = TECH_the_human_nature
@@ -490,7 +507,7 @@ swap_ideas = {
   add_idea = ecological_minds_2
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_eco_friendly_nation
 		icon = water_conservation
@@ -514,7 +531,7 @@ swap_ideas = {
   add_idea = ecological_minds_3
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_bright_futures
 		icon = torchbearers_of_tomorrow
@@ -535,7 +552,7 @@ swap_ideas = {
   add_idea = ecological_minds_4
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_victory_of_future_movement
 		icon = champagne_green
@@ -551,7 +568,7 @@ swap_ideas = {
 
 		completion_reward = {
 add_stability = 0.05
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_prioritize_MIT
 		icon = mit
@@ -581,7 +598,7 @@ add_stability = 0.05
 				add_political_power = 150
 			}
 add_ideas = mit
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_international_agency
 		icon = Focus_Roll_the_Dice
@@ -599,6 +616,7 @@ swap_ideas = {
   add_idea = mit_empowered
 }
       }
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_new_codes
@@ -614,6 +632,7 @@ swap_ideas = {
 	completion_reward = {
 	add_ideas = coding_classes
       }
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_the_weapons_of_cold_war
@@ -631,7 +650,7 @@ swap_ideas = {
 
 		completion_reward = {
 	add_ideas = the_weapons_of_cold_war
-}   } 
+}   ai_will_do = { base = 8 } } 
 	focus = {
 		id = TECH_national_innovation_campaign
 		icon = czech_military_research_institute
@@ -646,7 +665,7 @@ swap_ideas = {
 
 		completion_reward = {
        add_timed_idea = { idea = national_innovation_campaign  days = 365 }
-}   } 
+}   ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_turkish_innovation_fund
 		icon = money
@@ -661,7 +680,7 @@ swap_ideas = {
 
 		completion_reward = {
 add_ideas = national_innovation_fund
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_darting_the_innovation
 		icon = champagne_bribes
@@ -687,7 +706,7 @@ add_ideas = national_innovation_fund
 		completion_reward = {
 		remove_ideas = national_innovation_campaign
        add_timed_idea = { idea = national_innovation_campaign_darted  days = 365 }
-}   } 
+}   ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_futuristic_state
 		icon = future_of_indonesia
@@ -705,7 +724,7 @@ add_ideas = national_innovation_fund
 
 		completion_reward = {
 	add_ideas = the_land_of_futures
-}   } 
+}   ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_financial_relief
 		icon = better_money_on_fire
@@ -724,7 +743,7 @@ swap_ideas = {
   remove_idea = reformed_2001_crisis
   add_idea = reforms_for_2001_crisis
 }
-}   } 
+}   ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_the_belt
 		icon = forced_labour
@@ -753,7 +772,7 @@ block_bureau_increase = yes
 block_defence_increase = yes
 
 custom_effect_tooltip = THE_BELT_POLICY
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_announce_the_missions
 		icon = Generic_Public_Works
@@ -772,7 +791,7 @@ swap_ideas = {
   add_idea = the_rational_policies_2
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_look_for_investments
 		icon = vineyard
@@ -787,7 +806,7 @@ swap_ideas = {
 
 		completion_reward = {
 add_ideas = the_investment_campaign    
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_chinese_investments
 		icon = peoples_republic_of_china
@@ -844,6 +863,7 @@ add_ideas = the_investment_campaign
 				change_influence_percentage = yes
 			}
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_economic_relief_budget
@@ -859,7 +879,7 @@ add_ideas = the_investment_campaign
 
 		completion_reward = {
 add_ideas = economical_relief_budget
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_land_of_investments
 		icon = central_planned_economy3
@@ -890,7 +910,7 @@ add_extra_state_shared_building_slots = 1
 				} 
 	subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } }
+		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_innovation_parks
 		icon = continuous_research
@@ -916,7 +936,7 @@ add_extra_state_shared_building_slots = 1
 				} 
 	subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } }
+		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_rational_policies
 		icon = house
@@ -931,7 +951,7 @@ add_extra_state_shared_building_slots = 1
 
 		completion_reward = {
 		add_ideas = the_rational_policies
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_launch_RK
 		icon = rekabet_kurumu
@@ -946,7 +966,7 @@ add_extra_state_shared_building_slots = 1
 
 		completion_reward = {
 add_ideas = competetion_authority
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_economist_cabinet
 		icon = anarchist_economy
@@ -966,7 +986,7 @@ has_completed_focus = TECH_the_future
 
 		completion_reward = {
 add_ideas = the_economist_cabinet    
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_manage_the_BIST
 		icon = istanbul_borsa
@@ -1000,6 +1020,7 @@ add_ideas = the_economist_cabinet
 					level = 1
 				 } 	
 				} }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TECH_the_new_point_mechanism
@@ -1022,7 +1043,7 @@ swap_ideas = {
   remove_idea = stagnation
   add_idea = fast_growth
 } 
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_emergency_civilian_industries
 		icon = decentralized_economy
@@ -1058,7 +1079,7 @@ swap_ideas = {
 					instant_build = yes
 					level = 1
 				} 
-		} } }
+		} } ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_state_of_atheism
 		icon = anti_pacifism
@@ -1083,7 +1104,7 @@ swap_ideas = {
   remove_idea = the_ulema
   add_idea = defense_industry
 }  
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_new_SGK
 		icon = sgk
@@ -1101,7 +1122,7 @@ swap_ideas = {
 
 		completion_reward = {
 add_ideas = working_sgk
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_increase_the_financial_health
 		icon = business_man2
@@ -1128,7 +1149,7 @@ add_ideas = working_sgk
 		completion_reward = {
 			remove_ideas = financial_relief_campaign
        add_ideas = financial_relief_campaign
-}   } 
+}   ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_nations_valleys
 		icon = blr_research_with_china
@@ -1150,6 +1171,7 @@ add_ideas = working_sgk
 			}
 			custom_effect_tooltip = TECH_INCREASE_2
  }
+		ai_will_do = { base = 14 }
 }
 	focus = {
 		id = TECH_victory_of_past_movement
@@ -1165,7 +1187,7 @@ add_ideas = working_sgk
 
 		completion_reward = {
 add_stability = 0.05
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_state_of_pluralism
 		icon = angel
@@ -1189,7 +1211,7 @@ swap_ideas = {
   remove_idea = the_ulema
   add_idea = international_bankers
 }        
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_arms_budget
 		icon = Generic_Morale_Bonus_Focus
@@ -1208,7 +1230,7 @@ swap_ideas = {
   remove_idea = defence_01
   add_idea = defence_07
 }   
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_shadow_wars
 		icon = Generic_Secret_Meeting
@@ -1223,7 +1245,7 @@ swap_ideas = {
 
 		completion_reward = {
 		add_ideas = shadow_wars
-}   } 
+}   ai_will_do = { base = 10 } } 
 	focus = {
 		id = TECH_shadow_planning
 		icon = Generic_Crouched_Soldier
@@ -1242,7 +1264,7 @@ swap_ideas = {
   add_idea = shadow_planning
 }
       
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_robotic_warfare
 		icon = Focus_Superior_Firepower_Doctrine
@@ -1257,7 +1279,7 @@ swap_ideas = {
 
 		completion_reward = {
 add_ideas = robotic_warfare 
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_static_warfare
 		icon = grand_battleplan
@@ -1275,7 +1297,7 @@ add_ideas = robotic_warfare
 
 		completion_reward = {
 add_ideas = static_warfare    
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_positional_warfare
 		icon = Generic_Refit_Tanks
@@ -1290,7 +1312,7 @@ add_ideas = static_warfare
 
 		completion_reward = {
 add_ideas = positional_warfare    
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_the_manpower_draft
 		icon = Azerbaijani_Army
@@ -1305,7 +1327,7 @@ add_ideas = positional_warfare
 
 		completion_reward = {
 		add_ideas = manpower_drafts
-}   } 
+}   ai_will_do = { base = 10 } } 
 	focus = {
 		id = TECH_one_nations_army
 		icon = general_staff
@@ -1320,7 +1342,7 @@ add_ideas = positional_warfare
 
 		completion_reward = {
 		add_ideas = one_nations_army
-}   } 
+}   ai_will_do = { base = 10 } } 
 	focus = {
 		id = TECH_focus_on_the_speed
 		icon = apc
@@ -1335,7 +1357,7 @@ add_ideas = positional_warfare
 
 		completion_reward = {
 		add_ideas = speedy_forces
-}   } 
+}   ai_will_do = { base = 10 } } 
 	focus = {
 		id = TECH_army_of_profession
 		icon = Focus_Machine_Gun_Crew
@@ -1353,7 +1375,7 @@ add_ideas = positional_warfare
 
 		completion_reward = {
 add_ideas = army_of_the_profession    
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_forces_against_rebels
 		icon = Generic_Pawns
@@ -1369,7 +1391,7 @@ add_ideas = army_of_the_profession
 
 		completion_reward = {
 add_war_support = 0.05 
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_clone_forces
 		icon = Focus_Rationing
@@ -1384,7 +1406,7 @@ add_war_support = 0.05
 
 		completion_reward = {
 add_ideas = cloning_the_force    
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_compliance_planning
 		icon = generic_embrace_agrarian_society
@@ -1399,7 +1421,7 @@ add_ideas = cloning_the_force
 
 		completion_reward = {
 add_ideas = compliance_forces    
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_weird_location_zones
 		icon = Generic_Cottonmouth
@@ -1417,7 +1439,7 @@ add_ideas = compliance_forces
 
 		completion_reward = {
 add_ideas = emergency_relocation_plan    
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_federalization_campaign
 		icon = focus_SWI_dissolve_the_federal_council
@@ -1435,6 +1457,7 @@ add_ideas = emergency_relocation_plan
 		set_country_flag = TUR_PKK_federalized
 	        TUR_remove_pkk = yes
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_integrate_the_kurdish_state
@@ -1457,6 +1480,7 @@ add_ideas = emergency_relocation_plan
 			target = KUR
 		}
  }
+		ai_will_do = { base = 2 }
 }
 	focus = {
 		id = TECH_investments_in_the_region
@@ -1501,7 +1525,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			add_to_variable = { TUR_PKK_strength = -5 }		
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_buy_batumi
 		icon = georgian_bagratuni
@@ -1533,6 +1557,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	GEO = {
     country_event = TurkeyF.14
         } } 
+		ai_will_do = { base = 2 }
 	}
 	focus = {
 		id = TECH_integrate_the_cyprus_state
@@ -1556,6 +1581,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			target = CYP
 		}
  }
+		ai_will_do = { base = 2 }
 }
 	focus = {
 		id = TECH_sacrifice_for_national_oppurtinities
@@ -1583,7 +1609,7 @@ swap_ideas = {
   add_idea = drafted_women
 }
       
-}   }
+}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_where_the_wind_blows
 		icon = kurd_mountainwarafre
@@ -1604,7 +1630,7 @@ swap_ideas = {
   add_idea = intervention_global_interventionism
 }
       
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_arabic_spring
 		icon = syria_resistance
@@ -1625,6 +1651,7 @@ swap_ideas = {
 	add_war_support = 0.07
 	add_manpower = 10000
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_the_peace_operation
@@ -1646,6 +1673,7 @@ swap_ideas = {
 			target = ISI
 		}
  }
+		ai_will_do = { base = 2 }
 }
 	focus = {
 		id = TECH_invade_syria
@@ -1686,6 +1714,7 @@ swap_ideas = {
 			target = SYR
 		}
  }
+		ai_will_do = { base = 2 }
 }
 	focus = {
 		id = TECH_invade_iraq
@@ -1722,6 +1751,7 @@ swap_ideas = {
 			target = IRQ
 		}
  }
+		ai_will_do = { base = 2 }
 }
 	focus = {
 		id = TECH_project_caucasus
@@ -1762,6 +1792,7 @@ swap_ideas = {
 		add_political_power = 25
 		}
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_guarantee_georgia
@@ -1796,6 +1827,7 @@ swap_ideas = {
 					give_guarantee = GEO
 					}
 					}
+		ai_will_do = { base = 8 }
 				}
 	focus = {
 		id = TECH_arm_the_azeris
@@ -1853,6 +1885,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 50 }
 			custom_effect_tooltip = 50_billion_expense_tt
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_root_out_the_immigrant_paths
@@ -1875,6 +1908,7 @@ swap_ideas = {
     completion_reward = {
     add_ideas = blocked_immigrant_routes	
 	  }
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_invest_in_the_cyprus
@@ -1915,7 +1949,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_EU_policies
 		icon = closer_ties_with_eu
@@ -1933,6 +1967,7 @@ swap_ideas = {
 			completion_reward = {
 			add_political_power = 125
 	}
+		ai_will_do = { base = 8 }
 			}
 	focus = {
 		id = TECH_not_a_full_member
@@ -1954,7 +1989,7 @@ swap_ideas = {
 	add_political_power = 50
 			set_temp_variable = { modify_europeanism = -0.03 }
 			europeanism_change = yes
-}   } 
+}   ai_will_do = { base = 8 } } 
 	focus = {
 		id = TECH_schengen_visa_deal
 		icon = EU_reform
@@ -1975,7 +2010,7 @@ swap_ideas = {
 				
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
-}   } 
+}   ai_will_do = { base = 8 } } 
 	focus = {
 		id = TECH_industrial_integrity
 		icon = EU_Banking
@@ -1998,7 +2033,7 @@ swap_ideas = {
             } 
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
-		} }
+		} ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_taarif_deal
 		icon = EU_policies
@@ -2019,7 +2054,7 @@ swap_ideas = {
              add_ideas = turkish_taarif_deal
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
-		} }   
+		} ai_will_do = { base = 8 } }   
 	focus = {
 		id = TECH_destroy_the_eu_turkey_deal
 		icon = EU_no_deal_exit
@@ -2039,6 +2074,7 @@ swap_ideas = {
 			set_temp_variable = { modify_europeanism = -0.02 }
 			europeanism_change = yes
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_market_union
@@ -2060,7 +2096,7 @@ swap_ideas = {
              add_ideas = the_turkish_market_union
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
-		} }  
+		} ai_will_do = { base = 8 } }  
 	focus = {
 		id = TECH_EU_industrial_parks
 		icon = industry4
@@ -2101,7 +2137,7 @@ swap_ideas = {
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
 			owner = { add_stability = 0.02 }
-		} } }
+		} } ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_EU_offices
 		icon = EU_lisbon_treaty
@@ -2139,7 +2175,7 @@ swap_ideas = {
 			set_temp_variable = { modify_europeanism = 0.02 }
 			europeanism_change = yes
 			owner = { add_stability = 0.02 }
-		} } }
+		} } ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_reorganize_the_stability
 		icon = stability
@@ -2158,7 +2194,7 @@ swap_ideas = {
 
 		completion_reward = {
 			add_stability = 0.1
-		} } 
+		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = TECH_eu_and_turkic_policies
 		icon = trade_with_europe
@@ -2202,6 +2238,7 @@ swap_ideas = {
 					reverse_add_opinion_modifier = { target = ITA modifier = TUR_westernism }
 					reverse_add_opinion_modifier = { target = USA modifier = TUR_westernism }
 				}
+		ai_will_do = { base = 8 }
 			}
 	focus = {
 		id = TECH_german_multi_investments
@@ -2269,6 +2306,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_german_influence_deal
@@ -2307,6 +2345,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 					}
+		ai_will_do = { base = 8 }
 				}
 	focus = {
 		id = TECH_german_friendship_deal
@@ -2345,6 +2384,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 					}
+		ai_will_do = { base = 8 }
 				}
 	focus = {
 		id = TECH_french_multi_investments
@@ -2420,6 +2460,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_french_influence_deal
@@ -2458,6 +2499,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 					}
+		ai_will_do = { base = 8 }
 				}
 	focus = {
 		id = TECH_french_friendship_deal
@@ -2495,6 +2537,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 					}
+		ai_will_do = { base = 8 }
 				}
 	focus = {
 		id = TECH_spanish_multi_investments
@@ -2570,6 +2613,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_spanish_influence_deal
@@ -2609,6 +2653,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 					}
+		ai_will_do = { base = 8 }
 				}
 	focus = {
 		id = TECH_spanish_friendship_deal
@@ -2648,6 +2693,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 					}
+		ai_will_do = { base = 8 }
 				}
 	focus = {
 		id = TECH_finance_the_turkic_nations
@@ -2671,6 +2717,7 @@ swap_ideas = {
 	                reverse_add_opinion_modifier = { target = UZB modifier = turkic_united_front }
 	                reverse_add_opinion_modifier = { target = KYR modifier = turkic_united_front }
 			}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_investments_in_kazakhstan
@@ -2746,6 +2793,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_investments_in_turkmenistan
@@ -2819,6 +2867,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_investments_in_uzbeksitan
@@ -2892,6 +2941,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_investments_in_kyrgzstan
@@ -2966,6 +3016,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_the_agriculture
@@ -2983,7 +3034,7 @@ swap_ideas = {
 		completion_reward = {
 add_political_power = 100
 add_stability = 0.03
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_the_resource_planning
 		icon = resource_extraction
@@ -3005,7 +3056,7 @@ add_political_power = 75
 				uses = 2
 				category = CAT_fuel_refining
 			}
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_batman_oil_sites
 		icon = oil
@@ -3061,7 +3112,7 @@ add_political_power = 75
 				uses = 1
 				category = CAT_fuel_refining
 			} }
-				} } }
+				} } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_wealth_irons
 		icon = PB_Generic_Mining_Industry
@@ -3096,7 +3147,7 @@ add_political_power = 75
 					amount = 9
 				}
 			}
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_precious_steel_mines
 		icon = steel_production2
@@ -3131,7 +3182,7 @@ add_political_power = 75
 					amount = 11
 				}
 			}
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_boron
 		icon = bor_mining
@@ -3149,7 +3200,7 @@ add_political_power = 75
 
 		completion_reward = {
 add_ideas = laws_of_bor
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_iron_mines
 		icon = steel_production
@@ -3184,7 +3235,7 @@ add_ideas = laws_of_bor
 					amount = 11
 				}
 			}
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_anatolian_agriculture_sites
 		icon = coffee_plantation
@@ -3199,7 +3250,7 @@ add_ideas = laws_of_bor
 
 		completion_reward = {
 add_political_power = 75
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_villagers_committee
 		icon = farming
@@ -3220,6 +3271,7 @@ add_stability = 0.03
 	  			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt	
 }
+		ai_will_do = { base = 14 }
     }	
 	focus = {
 		id = TECH_konya_wheats
@@ -3235,7 +3287,7 @@ add_stability = 0.03
 
 		completion_reward = {
 add_ideas = wheat_fields    
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_eastern_agriculture
 		icon = Generic_Tea_Farming
@@ -3253,7 +3305,7 @@ add_ideas = wheat_fields
 
 		completion_reward = {
 add_ideas = agriculture_projection    
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_wood_industries
 		icon = lumber_industry
@@ -3271,7 +3323,7 @@ add_ideas = agriculture_projection
 		completion_reward = {
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_revenue_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_new_ways_of_fishing
 		icon = Generic_Veggies
@@ -3289,7 +3341,7 @@ add_ideas = agriculture_projection
 		completion_reward = {
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_revenue_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_industry
 		icon = centralization_question
@@ -3319,7 +3371,7 @@ add_ideas = agriculture_projection
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_arms_industry
 		icon = industry4
@@ -3349,7 +3401,7 @@ add_ideas = agriculture_projection
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_sivas_military_industries
 		icon = industry_military
@@ -3379,7 +3431,7 @@ add_ideas = agriculture_projection
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_eastern_arms_factories
 		icon = goal_JAP_military_business
@@ -3427,7 +3479,7 @@ add_ideas = agriculture_projection
 			}
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_kayseri_hava_ikmal
 		icon = fighter_plane
@@ -3476,7 +3528,7 @@ add_ideas = agriculture_projection
 				}  }
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_capital_investments
 		icon = IND_new_capital
@@ -3515,7 +3567,7 @@ add_ideas = agriculture_projection
 			}
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_move_industries_to_istanbul
 		icon = MEX_Capitalismo_opresor
@@ -3582,7 +3634,7 @@ add_ideas = agriculture_projection
 			}
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_civilian_industry
 		icon = construction_engineering
@@ -3612,7 +3664,7 @@ add_ideas = agriculture_projection
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_izmir_civilian_industries
 		icon = highway_repairs
@@ -3642,7 +3694,7 @@ add_ideas = agriculture_projection
 			}
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_aegean_build_up
 		icon = construction2
@@ -3678,7 +3730,7 @@ add_ideas = agriculture_projection
 			}
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_med_civilian_industries
 		icon = industrial_complexes
@@ -3720,7 +3772,7 @@ add_ideas = agriculture_projection
 			}
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_tourism_nation
 		icon = Generic_Maritime
@@ -3733,7 +3785,7 @@ add_ideas = agriculture_projection
 
 		completion_reward = {
 add_ideas = tourism_power    
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_space_age
 		icon = generic_space
@@ -3749,6 +3801,7 @@ add_ideas = tourism_power
 	completion_reward = {
 	   add_political_power = 200
       }
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_nation_in_space
@@ -3771,6 +3824,7 @@ add_ideas = tourism_power
 				category = CAT_satellites
 			}
       }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TECH_together_with_auto
@@ -3792,7 +3846,7 @@ swap_ideas = {
   add_idea = space_automazation
 }
       
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_thy_factories
 		icon = focus_airline
@@ -3828,7 +3882,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_funded_TUA
 		icon = TUA
@@ -3850,6 +3904,7 @@ swap_ideas = {
 				category = CAT_satellites
 			}
 				}
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TECH_the_service
@@ -3880,7 +3935,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_sectoral_planning
 		icon = market_economy
@@ -3910,7 +3965,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_venus_offices
 		icon = film_industry2
@@ -3940,7 +3995,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_finance_istanbul
 		icon = Generic_Major_City
@@ -3976,7 +4031,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_turkcell_offices
 		icon = bmw_car
@@ -4006,7 +4061,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_work_on_local_technologies
 		icon = tech_sharing
@@ -4040,7 +4095,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_bankery_offices
 		icon = eac_bank
@@ -4079,7 +4134,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_infra_planning
 		icon = infrastructure
@@ -4122,7 +4177,7 @@ swap_ideas = {
 				} }
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_solve_the_istanbul
 		icon = broadway
@@ -4175,7 +4230,7 @@ swap_ideas = {
 				} 
 			subtract_from_variable = { treasury = 10.0 }
 			custom_effect_tooltip = 10_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_turkish_airports
 		icon = build_new_airports
@@ -4225,7 +4280,7 @@ swap_ideas = {
 				} }
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_turkish_railways
 		icon = construction_development
@@ -4243,6 +4298,7 @@ swap_ideas = {
             completion_reward = {
 			add_ideas = the_turkish_railway_culture
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_izmir_ankara_railway
@@ -4266,6 +4322,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_create_the_government
@@ -4289,6 +4346,7 @@ swap_ideas = {
 			}
 			custom_effect_tooltip = TECH_INCREASE_5
         } 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_the_great_pain
@@ -4303,6 +4361,7 @@ swap_ideas = {
 	completion_reward = {
     country_event = TurkeyF.221
         } 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_ease_the_mechanism
@@ -4324,7 +4383,7 @@ swap_ideas = {
   add_idea = pain_of_the_government_2
 }
       
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_no_time_for_corruption
 		icon = focus_generic_buy_guns
@@ -4341,7 +4400,7 @@ swap_ideas = {
 		add_political_power = 25
         add_ideas = corruption_level_01
       
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_integrate_AYM
 		icon = pass_legislation
@@ -4357,7 +4416,7 @@ swap_ideas = {
 
 		completion_reward = {
 		add_ideas = reorganized_AYM
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_modern_bureocracy
 		icon = democratic_stability
@@ -4378,7 +4437,7 @@ swap_ideas = {
   add_idea = pain_of_the_government_3
 }
       
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_adapt_parties_to_change
 		icon = autonomy
@@ -4399,7 +4458,7 @@ swap_ideas = {
   add_idea = pain_of_the_parties_2
 }
       
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_integrate_new_election_system
 		icon = break_free2 
@@ -4420,6 +4479,7 @@ swap_ideas = {
 			}
 			custom_effect_tooltip = TECH_INCREASE_3
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_the_senate
@@ -4442,7 +4502,7 @@ swap_ideas = {
 
 		completion_reward = {
 		remove_ideas = pain_of_the_government_3 
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_academician_MPs
 		icon = champagne_bribes2
@@ -4463,7 +4523,7 @@ swap_ideas = {
   add_idea = pain_of_the_parties_3
 }
       
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_the_council
 		icon = self_management
@@ -4483,7 +4543,7 @@ swap_ideas = {
 
 		completion_reward = {
 		remove_ideas = pain_of_the_parties_3 
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_big_minded_parties
 		icon = Generic_Hedonism
@@ -4501,7 +4561,7 @@ swap_ideas = {
 				recalculate_party = yes
 			}
 			custom_effect_tooltip = TECH_DECREASE_2
-	}       }
+	}       ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_launch_the_new_government
 		icon = parliament_box
@@ -4535,7 +4595,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 }
 			set_global_flag = TUR_UNITE_DIASPORA
 		    custom_effect_tooltip = TUR_united_state
-	}       }
+	}       ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_millenial_media
 		icon = media_awareness
@@ -4559,7 +4619,7 @@ swap_ideas = {
   add_idea = reformed_media_5
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_education
 		icon = education_reform
@@ -4576,7 +4636,7 @@ swap_ideas = {
 
 		completion_reward = {
 		add_ideas = new_turkish_education_policies
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_embrace_visuality
 		icon = research3
@@ -4591,7 +4651,7 @@ swap_ideas = {
 
 		completion_reward = {
 		add_ideas = visual_learning
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_embrace_kinetic_learning
 		icon = goal_JAP_choose_research
@@ -4606,7 +4666,7 @@ swap_ideas = {
 
 		completion_reward = {
 		add_ideas = kinetic_learning
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_vocal_learning
 		icon = goal_JAP_quake_research
@@ -4621,7 +4681,7 @@ swap_ideas = {
 
 		completion_reward = {
 		add_ideas = vocal_learning
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_collective_education
 		icon = nationalist_education
@@ -4648,7 +4708,7 @@ swap_ideas = {
   add_idea = new_turkish_education_policies_2
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_death_of_coercion
 		icon = focus_SWE_institute_of_technology
@@ -4667,7 +4727,7 @@ swap_ideas = {
   add_idea = motivational_teaching_2
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_modern_schools
 		icon = goal_JAP_tech_university
@@ -4683,7 +4743,7 @@ swap_ideas = {
 
 		completion_reward = {
 			add_ideas = motivational_teaching
-		 } }
+		 } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_adaptive_technology
 		icon = blr_russian_education
@@ -4699,7 +4759,7 @@ swap_ideas = {
 
 		completion_reward = {
 			add_ideas = technological_teaching
-		 } }
+		 } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_iq_policies
 		icon = BLR_High_quality_education
@@ -4723,7 +4783,7 @@ swap_ideas = {
   add_idea = new_turkish_education_policies_3
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_interesting_teaching
 		icon = ahmadi_research
@@ -4745,7 +4805,7 @@ swap_ideas = {
   add_idea = motivational_teaching_3
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_space_understanding_of_education
 		icon = orbit_moon
@@ -4764,7 +4824,7 @@ swap_ideas = {
   add_idea = new_turkish_education_policies_4
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_VR_boosted_education
 		icon = economic_tech
@@ -4784,7 +4844,7 @@ swap_ideas = {
   add_idea = technological_teaching_2
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_intelligence
 		icon = focus_TUR_the_sun_language_theory
@@ -4811,7 +4871,7 @@ swap_ideas = {
 	remove_unit_leader_role = { character = ilhan_tolu }
 	remove_unit_leader_role = { character = mustafa_ozsoy }
 	remove_advisor_role = { character = TUR_akin_ozturk slot = high_command }
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_technology_works
 		icon = research4
@@ -4833,7 +4893,7 @@ swap_ideas = {
   add_idea = technological_teaching_3
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_media_education
 		icon = german_greencard
@@ -4850,7 +4910,7 @@ swap_ideas = {
 
 		completion_reward = {
 			add_ideas = media_education
-		 } }
+		 } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_ecoogy_education
 		icon = improve_relations_green
@@ -4867,7 +4927,7 @@ swap_ideas = {
 
 		completion_reward = {
 add_ideas = ecology_education
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_turkish_ecology
 		icon = green_world
@@ -4890,7 +4950,7 @@ swap_ideas = {
   add_idea = ecological_minds_5
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_unions_deal
 		icon = Generic_Workers_Democracy
@@ -4912,7 +4972,7 @@ swap_ideas = {
   remove_idea = reforms_for_2001_crisis
   add_idea = reformss_for_2001_crisis
 }
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_improve_the_unions
 		icon = industry_democratic3
@@ -4931,7 +4991,7 @@ swap_ideas = {
   add_idea = unions_deal_imp
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_american_investments
 		icon = align_to_america2
@@ -4988,6 +5048,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_closure_of_the_belt
@@ -5008,7 +5069,7 @@ swap_ideas = {
   increase_healthcare_budget = yes 
   increase_military_spending = yes 
   increase_policing_budget = yes 
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_end_the_sickness
 		icon = economic_prosperity
@@ -5027,7 +5088,7 @@ swap_ideas = {
   remove_idea = lira_1
   add_idea = lira_3
 }
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_2008_budget_replanning
 		icon = economic_crisis
@@ -5065,7 +5126,7 @@ swap_ideas = {
   remove_idea = recession
   add_idea = stagnation
 }
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_get_rid_of_military_factories
 		icon = factory_complex
@@ -5119,7 +5180,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_support_corporations
 		icon = generic_banks
@@ -5135,7 +5196,7 @@ swap_ideas = {
 
 		completion_reward = {
 add_ideas = corporation_boosting    
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_turkish_airways
 		icon = focus_airline
@@ -5151,7 +5212,7 @@ add_ideas = corporation_boosting
 
 		completion_reward = {
 add_ideas = turkish_airforces    
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_new_taxation_policies
 		icon = Generic_State_Socialism
@@ -5170,7 +5231,7 @@ add_ideas = turkish_airforces
 		custom_effect_tooltip = HIGH_TAX_ACTION
 			subtract_from_variable = { corporate_tax_rate = -2 }
 			subtract_from_variable = { population_tax_rate = -2 }
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_stock_the_money_for_bad_times
 		icon = Generic_Loadsamoney
@@ -5189,7 +5250,7 @@ add_ideas = turkish_airforces
 
 		completion_reward = {
 add_ideas = money_stocking_programme    
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_offices
 		icon = chiturmarganets
@@ -5232,7 +5293,7 @@ add_ideas = money_stocking_programme
 			}
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_finalize_the_2008_crisis
 		icon = gold_standard2
@@ -5257,7 +5318,7 @@ swap_ideas = {
   remove_idea = lira_3
   add_idea = lira_4
 }
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_auto_campaign
 		icon = industry_communist2
@@ -5277,7 +5338,7 @@ swap_ideas = {
 
 		completion_reward = {
 add_ideas = automazation_campaign    
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_fourth_generation_military_industries
 		icon = industry_military
@@ -5355,7 +5416,7 @@ add_ideas = automazation_campaign
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_anti_unemployment_campaign
 		icon = production2
@@ -5378,7 +5439,7 @@ swap_ideas = {
   add_idea = anti_unemployment_campaign
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_the_sufficent_tax
 		icon = radical_tax_reform
@@ -5397,7 +5458,7 @@ add_ideas = sufficent_tax
 		custom_effect_tooltip = HIGH_TAX_ACTION
 			subtract_from_variable = { corporate_tax_rate = -2 }
 			subtract_from_variable = { population_tax_rate = -2 }
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = ECH_fourth_generation_civilian_industries
 		icon = sustainable_development
@@ -5472,7 +5533,7 @@ add_ideas = sufficent_tax
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_robotic_workforce
 		icon = mining_truck
@@ -5492,7 +5553,7 @@ swap_ideas = {
   add_idea = robotic_workforces_auto
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_sufficent_based_economy
 		icon = women_in_the_economy
@@ -5515,7 +5576,7 @@ swap_ideas = {
   add_idea = sufficent_tax_economics
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_finalize_the_auto_campaign
 		icon = lion_economy
@@ -5537,7 +5598,7 @@ swap_ideas = {
   add_idea = ending_the_automazation_campaign
 }
       
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_NATO_policies
 		icon = nato2
@@ -5555,6 +5616,7 @@ swap_ideas = {
 			completion_reward = {
 			add_political_power = 125
 	}
+		ai_will_do = { base = 8 }
 			}
 	focus = {
 		id = TECH_prepare_for_world_war_three
@@ -5591,6 +5653,7 @@ swap_ideas = {
 				category = naval_doctrine
 			}
 	}
+		ai_will_do = { base = 8 }
 			}
 	focus = {
 		id = TECH_operational_forces
@@ -5607,6 +5670,7 @@ swap_ideas = {
             completion_reward = {
 			add_ideas = operational_forces
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_buy_patriot_missles
@@ -5652,7 +5716,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_land_fortification
 		icon = military_fort2
@@ -5668,6 +5732,7 @@ swap_ideas = {
 	completion_reward = {
 		add_ideas = land_fort_planting
  }
+		ai_will_do = { base = 8 }
 }
 	focus = {
 		id = TECH_fort_the_bulgarian_line
@@ -5712,7 +5777,7 @@ swap_ideas = {
                         }					
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } }
+		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_missle_places
 		icon = rocketry
@@ -5761,7 +5826,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_professional_railways
 		icon = railways_shaaban
@@ -5809,7 +5874,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_new_airports
 		icon = nanjing_airport
@@ -5876,7 +5941,7 @@ swap_ideas = {
 			}
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_relocate_the_nuclear_reactors
 		icon = natanz_nuclear_facility
@@ -5924,7 +5989,7 @@ swap_ideas = {
 			change_reactor_grade_material_effect = yes
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_open_bases_in_somaliland
 		icon = focus_generic_develop_somaliland
@@ -5960,6 +6025,7 @@ swap_ideas = {
 		active = yes
 	}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_intervene_in_the_somaliland
@@ -6002,7 +6068,7 @@ swap_ideas = {
 		amount = 760
 		producer = TUR
 	}
-			} } }
+			} } ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_puppet_the_somali
 		icon = attack_somalia
@@ -6042,6 +6108,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_intervene_in_the_indonesia
@@ -6085,7 +6152,7 @@ swap_ideas = {
 		amount = 760
 		producer = TUR
 	}
-			} } }
+			} } ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_open_bases_in_indonesia
 		icon = trade_with_indonesia
@@ -6122,6 +6189,7 @@ swap_ideas = {
 		active = yes
 	}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_puppet_the_indonesia
@@ -6164,6 +6232,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_intervene_in_the_yemen
@@ -6207,7 +6276,7 @@ swap_ideas = {
 		amount = 760
 		producer = TUR
 	}
-			} } }
+			} } ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_intervene_in_the_libya
 		icon = generic_entrenchment
@@ -6250,7 +6319,7 @@ swap_ideas = {
 		amount = 760
 		producer = TUR
 	}
-			} } }
+			} } ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_intervene_in_the_tunisia
 		icon = align_to_tunisia
@@ -6293,7 +6362,7 @@ swap_ideas = {
 		amount = 760
 		producer = TUR
 	}
-			} } }
+			} } ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_intervene_in_the_mexico
 		icon = align_to_mexico
@@ -6337,7 +6406,7 @@ swap_ideas = {
 		amount = 760
 		producer = TUR
 	}
-			} } }
+			} } ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_open_bases_in_yemen
 		icon = houthi_yemen
@@ -6375,6 +6444,7 @@ swap_ideas = {
 		active = yes
 	}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_open_bases_in_libya
@@ -6412,6 +6482,7 @@ swap_ideas = {
 		active = yes
 	}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_open_bases_in_tunisia
@@ -6449,6 +6520,7 @@ swap_ideas = {
 		active = yes
 	}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_open_bases_in_mexico
@@ -6486,6 +6558,7 @@ swap_ideas = {
 		active = yes
 	}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_puppet_the_yemen
@@ -6526,6 +6599,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_puppet_the_libya
@@ -6566,6 +6640,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_puppet_the_tunisia
@@ -6605,6 +6680,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_puppet_the_mexico
@@ -6645,6 +6721,7 @@ swap_ideas = {
 				change_influence_percentage = yes
 			}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_world_war_three_declaration
@@ -6680,7 +6757,7 @@ add_war_support = 0.1
 				set_temp_variable = { tag_index = TUR.id }
 				change_influence_percentage = yes
 			}
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_reorganize_the_war_support
 		icon = anti_war_with_big_gun
@@ -6699,7 +6776,7 @@ add_war_support = 0.1
 
 		completion_reward = {
 			add_war_support = 0.1
-		} } 
+		} ai_will_do = { base = 8 } } 
 	focus = {
 		id = TECH_rubber_mines
 		icon = rubber_production
@@ -6740,7 +6817,7 @@ add_war_support = 0.1
 					amount = 17
 				}
 			}
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_dozens_of_militaries
 		icon = Generic_Military_Equipment
@@ -6798,7 +6875,7 @@ add_war_support = 0.1
 			}
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_financial_state
 		icon = industry3
@@ -6852,7 +6929,7 @@ add_war_support = 0.1
 			}
 			subtract_from_variable = { treasury = 75.0 }
 			custom_effect_tooltip = 75_billion_expense_tt
-		} }
+		} ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_ankara_diyarbakir_railway
 		icon = Generic_Railroads
@@ -6875,6 +6952,7 @@ add_war_support = 0.1
 			subtract_from_variable = { treasury = 25 }
 			custom_effect_tooltip = 25_billion_expense_tt
 					}
+		ai_will_do = { base = 14 }
 				}
 	focus = {
 		id = TECH_nuclear_energy
@@ -6895,6 +6973,7 @@ add_war_support = 0.1
 			set_temp_variable = { change_resource = 500 }
 			change_reactor_grade_material_effect = yes
       }
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TECH_seek_help_from_russia
@@ -6935,6 +7014,7 @@ add_war_support = 0.1
 			custom_effect_tooltip = 25_billion_revenue_tt
 			}
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_national_uranium_campaign
@@ -6983,7 +7063,7 @@ add_war_support = 0.1
 					amount = 3
 				}
 			} } } 
-		} } }
+		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_new_reactors
 		icon = nuclear_science
@@ -7015,7 +7095,7 @@ add_war_support = 0.1
 			change_reactor_grade_material_effect = yes
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_new_reactors_2
 		icon = nuclear_science
@@ -7045,7 +7125,7 @@ add_war_support = 0.1
 			change_reactor_grade_material_effect = yes
 			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_new_resources
 		icon = mining
@@ -7092,7 +7172,7 @@ add_war_support = 0.1
 					amount = 9
 				}
 			} } } 
-		} } }
+		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_declare_the_project
 		icon = nuclear_bull
@@ -7132,7 +7212,7 @@ add_war_support = 0.1
 			change_reactor_grade_material_effect = yes
 			subtract_from_variable = { treasury = 50.0 }
 			custom_effect_tooltip = 50_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_turkish_nuclear_power
 		icon = nuclear_energy
@@ -7149,7 +7229,7 @@ add_war_support = 0.1
 			add_ideas = nuclear_power_def
 			set_temp_variable = { change_resource = 500 }
 			change_reactor_grade_material_effect = yes
-		} } 
+		} ai_will_do = { base = 8 } } 
 	focus = {
 		id = TECH_national_investment_in_turkish_space
 		icon = MEX_Social_investments
@@ -7171,6 +7251,7 @@ add_war_support = 0.1
 			subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_expense_tt
       }
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TECH_reform_TUA
@@ -7195,7 +7276,7 @@ swap_ideas = {
 				uses = 1
 				category = CAT_satellites
 			}
-}   }
+}   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_space_intelligence
 		icon = moon_relax
@@ -7213,6 +7294,7 @@ swap_ideas = {
             completion_reward = {
 			add_ideas = space_intelligence
 				}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TECH_new_secrets
@@ -7230,6 +7312,7 @@ swap_ideas = {
             completion_reward = {
 			add_ideas = expose_of_the_dark_secrets
 				}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TECH_general_mobilization_campaign
@@ -7245,7 +7328,7 @@ swap_ideas = {
 
 		completion_reward = {
 add_ideas = national_mobilization
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_world_war_budget
 		icon = Focus_Mobile_Warfare_Doctrine
@@ -7263,7 +7346,7 @@ swap_ideas = {
   remove_idea = defence_07
   add_idea = defence_09
 }   
-}   }
+}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_new_incirlik
 		icon = usa_aircraft_advancements
@@ -7323,7 +7406,7 @@ swap_ideas = {
 				set_temp_variable = { tag_index = USA.id }
 				change_influence_percentage = yes
 			}
-		} } 
+		} ai_will_do = { base = 8 } } 
 
 
 
@@ -7344,7 +7427,7 @@ swap_ideas = {
 		completion_reward = {
         add_political_power = 75
 	block_health_decrease = yes
-		} }
+		} ai_will_do = { base = 8 } }
 		
 	focus = {
 		id = TUR_covid-19_preparations25
@@ -7365,7 +7448,7 @@ swap_ideas = {
 }
 			subtract_from_variable = { treasury = 10.0 }
 			custom_effect_tooltip = 10_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals25
 		icon = generic_hospital2
@@ -7384,6 +7467,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital25
@@ -7404,6 +7488,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program25
@@ -7429,6 +7514,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines25
@@ -7449,6 +7535,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_increase_funds_to_science25
@@ -7468,6 +7555,7 @@ increase_healthcare_budget = yes
 			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_medicines25
@@ -7493,6 +7581,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_chinese_vaccines25
@@ -7519,6 +7608,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_normalisation_from_covid25
@@ -7541,6 +7631,7 @@ swap_ideas = {
 } 
 	custom_effect_tooltip = COV_AVAILABLE_1
 }
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TUR_end_of_covid25
@@ -7561,6 +7652,7 @@ swap_ideas = {
 remove_ideas = covid_19_normalised
 	custom_effect_tooltip = COV_AVAILABLE_2
 }
+		ai_will_do = { base = 8 }
 	} 
 
 ##############################

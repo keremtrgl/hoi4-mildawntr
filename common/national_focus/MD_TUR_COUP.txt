@@ -25,6 +25,7 @@ focus_tree = {
 	completion_reward = {
     add_stability = -0.02
 			} 
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TURF_reorganize_militias
@@ -41,6 +42,7 @@ focus_tree = {
 	completion_reward = {
     remove_ideas = unorganized_militias
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TURF_russian_military_aid
@@ -72,6 +74,7 @@ focus_tree = {
 	completion_reward = {
     add_ideas = foreign_aid_rus_tur
 		}
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TURF_new_ideals
@@ -88,6 +91,7 @@ focus_tree = {
 	completion_reward = {
     add_political_power = 100
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TURF_mission_of_ottomans
@@ -113,6 +117,7 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TURF_mission_of_gulen
@@ -159,7 +164,7 @@ focus_tree = {
     add_political_power = -75
 	add_stability = -0.03
 			} 
-	}  }
+	}  ai_will_do = { base = 8 } }
 	focus = {
 		id = TURF_denounce_nato
 		icon = renounce_nato
@@ -183,6 +188,7 @@ focus_tree = {
     remove_ideas = NATO_member
 	add_stability = 0.02
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TURF_denounce_constitution
@@ -199,6 +205,7 @@ focus_tree = {
 	completion_reward = {
 	add_stability = -0.07
 			} 
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TURF_chinese_military_aid
@@ -230,6 +237,7 @@ focus_tree = {
 	completion_reward = {
     add_ideas = foreign_aid_prc_tur
 		}
+		ai_will_do = { base = 8 }
 	} 
 	focus = {
 		id = TURF_corrupted_army
@@ -249,6 +257,7 @@ focus_tree = {
 	remove_idea = army_of_the_corruption
 	               } 
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TURF_seek_help_from_kurds
@@ -273,6 +282,7 @@ focus_tree = {
 	 white_peace = KUR
 	add_stability = -0.02
 			} 
+		ai_will_do = { base = 8 }
 	}  
 	focus = {
 		id = TURF_radicalization
@@ -296,6 +306,7 @@ focus_tree = {
 							popularity = 0.05
 						}	
 			} 
+		ai_will_do = { base = 10 }
 	}  
 	focus = {
 		id = TURF_ban_social_rights
@@ -322,6 +333,7 @@ focus_tree = {
 							popularity = -1.0
 						}	
 			} 
+		ai_will_do = { base = 10 }
 	} 
 	focus = {
 		id = TURF_radicalized_iran_style_gov
@@ -340,6 +352,7 @@ focus_tree = {
 			
 		hidden_effect = { country_event = Turkey_news.16 }
 		} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TURF_destroy_corruption
@@ -360,6 +373,7 @@ focus_tree = {
 	remove_idea = corruption_level_10
 	               } 
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TURF_organize_islamist_militaries
@@ -376,6 +390,7 @@ focus_tree = {
 	completion_reward = {
     add_ideas = islamist_militias
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TURF_declaration_of_the_caliphate
@@ -402,6 +417,7 @@ focus_tree = {
 	remove_idea = sunni
 	               } 
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TURF_tradition_power
@@ -420,6 +436,7 @@ focus_tree = {
 add_10_nationalist_monarchists = yes
     add_ideas = power_of_the_tradition
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TURF_proclaim_the_new_ottomans
@@ -470,7 +487,7 @@ hidden_effect = {
                 ruling_party = nationalist
                 elections_allowed = no
             }						
-	    }				 } }
+	    }				 } ai_will_do = { base = 8 } }
 	focus = {
 		id = TURF_winner_of_the_war
 		icon = align_to_turkey
@@ -496,6 +513,7 @@ hidden_effect = {
 	add_stability = 0.07
 			hidden_effect = { country_event = Turkey_news.12 } 
 			} 
+		ai_will_do = { base = 10 }
 	} 
 	focus = {
 		id = TURF_for_unification_of_islam
@@ -514,6 +532,7 @@ hidden_effect = {
 	completion_reward = {
 	add_political_power = 100
 			} 
+		ai_will_do = { base = 8 }
 	} 
 	focus = {
 		id = TURF_invade_1
@@ -534,6 +553,7 @@ hidden_effect = {
 			target = ARM
 		}
 			} 
+		ai_will_do = { base = 2 }
 	} 
 	focus = {
 		id = TURF_invade_2
@@ -610,6 +630,7 @@ hidden_effect = {
 			target = CYP
 		}
 			} 
+		ai_will_do = { base = 2 }
 	} 
 	focus = {
 		id = TURF_invade_3
@@ -629,6 +650,7 @@ hidden_effect = {
 			target = GEO
 		}
 			} 
+		ai_will_do = { base = 2 }
 	} 
 	focus = {
 		id = TURF_invade_4
@@ -688,6 +710,7 @@ hidden_effect = {
 			target = MAU
 		}
 			} 
+		ai_will_do = { base = 2 }
 	} 
 	focus = {
 		id = TURF_invade_5
@@ -739,6 +762,7 @@ hidden_effect = {
 			target = BHR
 		}
 			} 
+		ai_will_do = { base = 2 }
 	} 
 	focus = {
 		id = TURF_invade_6
@@ -759,6 +783,7 @@ hidden_effect = {
 			target = PER
 		}
 			} 
+		ai_will_do = { base = 2 }
 	} 
 	focus = {
 		id = TURF_invade_7
@@ -779,6 +804,7 @@ hidden_effect = {
 			target = AZE
 		}
 			} 
+		ai_will_do = { base = 2 }
 	} 
 	focus = {
 		id = TURF_new_ideals_of_the_state
@@ -798,6 +824,7 @@ hidden_effect = {
 	completion_reward = {
     add_ideas = internationalism
 		}
+		ai_will_do = { base = 8 }
 	} 
 
 
@@ -859,7 +886,7 @@ hidden_effect = {
 		completion_reward = {
         add_political_power = 75
 		block_health_decrease = yes
-		} }
+		} ai_will_do = { base = 8 } }
 	focus = {
 		id = TUR_covid-19_preparations6
 		icon = production2
@@ -879,7 +906,7 @@ swap_ideas = {
 }
 			subtract_from_variable = { treasury = 10.0 }
 			custom_effect_tooltip = 10_billion_expense_tt
-		} } 
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals6
 		icon = generic_hospital2
@@ -898,6 +925,7 @@ swap_ideas = {
 			add_stability = 0.03
 			custom_effect_tooltip = 20_billion_expense_tt
 			}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital6
@@ -918,6 +946,7 @@ swap_ideas = {
 			add_stability = 0.02
 			custom_effect_tooltip = 5_billion_expense_tt
 			}
+		ai_will_do = { base = 10 }
 	}
 	focus = {
 		id = TUR_start_up_vaccine_program13
@@ -943,6 +972,7 @@ swap_ideas = {
 			custom_effect_tooltip = COV_DECISION_OPENING_VAC
 			set_global_flag = VACCINATION_GREEN_LIGHT_TUR
 			} 
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TUR_buy_german_vaccines13
@@ -963,6 +993,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_increase_funds_to_science6
@@ -985,6 +1016,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_medicines6
@@ -1010,6 +1042,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 20.0 }
 			custom_effect_tooltip = 20_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_buy_chinese_vaccines6
@@ -1036,6 +1069,7 @@ swap_ideas = {
 			subtract_from_variable = { treasury = 5.0 }
 			custom_effect_tooltip = 5_billion_expense_tt
 			} 
+		ai_will_do = { base = 14 }
 	}
 	focus = {
 		id = TUR_normalisation_from_covid6
@@ -1058,6 +1092,7 @@ swap_ideas = {
 } 
 	custom_effect_tooltip = COV_AVAILABLE_1
 }
+		ai_will_do = { base = 8 }
 	}
 	focus = {
 		id = TUR_end_of_covid6
@@ -1078,4 +1113,5 @@ swap_ideas = {
 remove_ideas = covid_19_normalised
 	custom_effect_tooltip = COV_AVAILABLE_2
 }
+		ai_will_do = { base = 8 }
 	} }
