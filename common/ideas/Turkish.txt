@@ -36,9 +36,9 @@ ideas = {
 				}
 			}
 			modifier = {
-				consumer_goods_factor = 0.05
-				stability_factor = -0.1
-				political_power_gain = -0.1
+				consumer_goods_factor = 0.02
+				stability_factor = -0.03
+				political_power_gain = -0.03
 			}
 		}
 		sympathetic_professors = {
@@ -53,8 +53,8 @@ ideas = {
 				NOT = { has_idea = pkk_terror_idea }
 			}
 			modifier = {
-				stability_factor = -0.05
-				research_speed_factor = -0.05
+				stability_factor = -0.02
+				research_speed_factor = -0.02
 			}
 		}
 		sympathetic_professors_dealt_with = {
@@ -148,8 +148,8 @@ ideas = {
 			picture = kurdish_xenophobia
 			allowed_civil_war = { always = yes }
 			modifier = {
-				stability_factor = -0.1
-				political_power_gain = -0.1
+				stability_factor = -0.02
+				political_power_gain = -0.03
 			}
 		}
 		kurdish_language_solutions_1 = {

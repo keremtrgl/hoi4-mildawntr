@@ -1,9 +1,28 @@
 
+# First time the ceasefire breaks: starts the counter-terror decisions in common/decisions/Turkey.txt.
+# pkk_presence runs 0-100 and those decisions wear it down; the ideas cancel themselves at pkk_presence_min.
+TUR_pkk_campaign_start = {
+	if = {
+		limit = { NOT = { has_country_flag = TUR_pkk_campaign_started } }
+		set_country_flag = TUR_pkk_campaign_started
+		set_variable = { var = pkk_presence value = 70 }
+		set_variable = { var = pkk_presence_min value = 0 }
+		set_variable = { var = pkk_presence_max value = 100 }
+		add_ideas = pkk_terror_idea
+		add_ideas = sympathetic_professors
+		add_ideas = outposts_problem
+		add_ideas = kurdish_language_problem
+	}
+}
+
 TUR_remove_pkk = {
 	custom_effect_tooltip = NOT_PREPARED
     custom_effect_tooltip = CORE_THE_SOUTH
 	hidden_effect = {
 	remove_ideas = pkk_terror_idea
+	remove_ideas = sympathetic_professors
+	remove_ideas = outposts_problem
+	remove_ideas = kurdish_language_problem
 	remove_ideas = TUR_PKK_insurgency_ceasefire
 	remove_ideas = TUR_PKK_insurgency_active
 	remove_ideas = TUR_PKK_active_foreign

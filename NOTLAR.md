@@ -89,6 +89,9 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     eşitlendi. `TUR_AKP_small_start1` istisna: kod %1 kaldı, metin %3'ten %1'e indi (kod değişseydi AKP üç kat hızlanırdı).
   - Meclis başlangıcı gerçek 18 Nisan 1999 sonucu: DSP 136, MHP 129, FP 111, ANAP 86, DYP 85, bağımsız 3 (CHP 0).
   - Turkeys.9207 (2022 ittifakı) +%20 yerine +%5; diğer kampanya olayları %1–5 arası.
+  - PKK kararları (38 karar) yeniden bağlandı: `pkk_terror_idea` eski 2017 başlangıcından kalmıştı ve `pkk_presence` hiç
+    başlatılmıyordu. `TUR_pkk_campaign_start` ilk ateşkes bozulunca (`TUR_PKK_aggro > 59`) varlığı 70'ten başlatır ve 4
+    ruhu ekler. Cezalar hafifletildi: toplam -%25 istikrar / -%20 siyasi güç yerine -%7 / -%6.
   - Borç 364, hazine 34 ve kişi başı GSYH MD'nin değerleri, değiştirilmedi.
   - `release_check.py`: imkânsız tarih, hazine/ipucu ve dizi dışı parti kontrolleri.
   - `FIRE_SUPEREVENT_13` ("Turkish Germany") bilinçli olarak açılmadı: onu tetikleyecek içerik hiç yazılmamış.
