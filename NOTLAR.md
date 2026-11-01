@@ -134,6 +134,11 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   Özel Kuvvetler Komutanlığı, MIST/MIDST ruhları, senfoni orkestrası ruhu, Turkey.254.a), "Arınç" yazımı düzeltildi.
   Tarama: oyunda kullanılan her odağın İngilizce açıklaması var; boş 758 `_desc` anahtarının odakları yorum satırında.
 
+- **2.0.3-TUR.9.2** (1 Kasım 2026), parti isimleri düzeltmesi: scripted localisation dosyasının başındaki
+  UTF-8 BOM kaldırıldı. Bu üç bayt bütün parti isimlerini ve logolarını boş bırakıyor, 312 ayrıştırma hatası
+  üretiyordu. Yeni oyun oturumunda isimler ve logolar doğrulandı; ilgili hata sayısı sıfır. Yayın kontrolü artık
+  scripted localisation içindeki BOM'u da reddediyor; 5 regresyon testi eklendi. Mevcut kayıtlarla uyumludur.
+
 ## Kalıcı dersler (tekrar düşme!)
 
 - **Sesler WAV kalmalı.** HOI4 ses efektlerini yalnızca WAV'dan yükler. OGG'ye çevirince (88d1f8e) 22 konuşma
@@ -149,7 +154,7 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   `dependencies` satırındaki modlardan sonra yüklüyor. Önceden "MD sonra yüklenirse odak ağacı kaybolur" denmişti; bu
   yanlıştı ve 2.0.2-TUR.5 değişiklik notunda da geçiyor. Gerçek risk, Türkiye dosyalarını değiştiren başka bir modun
   bizden sonra gelmesi; TUR.6'daki uyarı penceresi bunu yakalıyor.
-- **`common/scripted_effects` ve `scripted_triggers` dosyalarında BOM olmaz.** Ayrıştırıcı, yorumla başlayan
+- **`common/scripted_effects`, `scripted_triggers` ve `scripted_localisation` dosyalarında BOM olmaz.** Ayrıştırıcı, yorumla başlayan
   dosyanın önündeki BOM'u reddediyor (dağıtıcı bu yüzden bir kez yüklenmedi). Yerelleştirme `.yml` dosyalarında ise BOM şart.
 - **Satır sonları:** repo CRLF (autocrlf=true), MD dosyaları LF. 3-yollu birleştirmeden önce normalize edilir (`md_sync.py` yapıyor).
 - **MD API:** `change_*_opinion` efektlerini çağırmadan önce `set_temp_variable = { temp_opinion = X }`.

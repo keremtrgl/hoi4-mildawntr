@@ -79,7 +79,8 @@ class Report:
 # ---------------------------------------------------------------- loading
 
 def read(path):
-    return open(path, encoding='utf-8-sig', errors='replace').read().replace('\r\n', '\n')
+    with open(path, encoding='utf-8-sig', errors='replace') as source:
+        return source.read().replace('\r\n', '\n')
 
 
 def rel(path, base):
@@ -149,7 +150,8 @@ def check_files(rep, mod_files):
     bom_missing, bom_bad, header_bad, braces, not_utf8, fake_dds, oggs = [], [], [], [], [], [], []
     for r, p in sorted(mod_files.items()):
         ext = os.path.splitext(r)[1].lower()
-        raw = open(p, 'rb').read()
+        with open(p, 'rb') as source:
+            raw = source.read()
         if ext == '.ogg':
             oggs.append(r)
         if ext == '.dds' and not raw.startswith(b'DDS '):
@@ -168,7 +170,8 @@ def check_files(rep, mod_files):
             first = raw.decode('utf-8-sig').lstrip().split('\n', 1)[0].strip()
             if not re.match(r'^l_\w+:\s*$', first):
                 header_bad.append(f'{r}: first line is "{first[:40]}"')
-        elif bom and re.match(r'common/(scripted_effects|scripted_triggers)/', r):
+        elif re.match(r'common/(scripted_effects|scripted_triggers|scripted_localisation)/', r) \
+                and b'\xef\xbb\xbf' in raw:
             bom_bad.append(f'{r} (the parser rejects a BOM here)')
         if ext in ('.txt', '.gui', '.gfx', '.asset'):
             t = strip_code(read(p))
@@ -190,7 +193,7 @@ def check_files(rep, mod_files):
     rep.add(group, 'Files are valid UTF-8', 'ERROR', not_utf8)
     rep.add(group, 'Localisation files start with a UTF-8 BOM', 'ERROR', bom_missing)
     rep.add(group, 'Localisation files start with an l_<language>: header', 'ERROR', header_bad)
-    rep.add(group, 'No BOM in scripted effect/trigger files', 'ERROR', bom_bad)
+    rep.add(group, 'No BOM in scripted effect/trigger/localisation files', 'ERROR', bom_bad)
     rep.add(group, '.dds files are real DDS textures', 'ERROR', fake_dds)
     rep.add(group, 'No OGG sounds (HOI4 plays sound effects from WAV only)', 'ERROR', oggs)
 
