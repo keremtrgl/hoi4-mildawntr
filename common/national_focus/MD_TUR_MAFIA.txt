@@ -4765,6 +4765,9 @@ swap_ideas = {
 		completion_reward = {
 		    custom_effect_tooltip = ROB_MAF_PRE1
 			set_global_flag = MAF_HACKER_GROUP_CREATED
+			add_political_power = 30
+			add_to_variable = { treasury = 2 }
+			custom_effect_tooltip = TUR_heist_2_billion_tt
 		} ai_will_do = { base = 8 } } 
 	focus = {
 		id = MAF_collect_the_criminals
@@ -4780,6 +4783,8 @@ swap_ideas = {
 		completion_reward = {
 		    custom_effect_tooltip = ROB_MAF_PRE2
 			set_global_flag = MAF_COLLECTED_CRIMINALS
+			add_manpower = 2500
+			army_experience = 10
 		} ai_will_do = { base = 8 } } 
 	focus = {
 		id = MAF_look_for_the_target

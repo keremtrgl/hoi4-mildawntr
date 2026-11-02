@@ -1085,13 +1085,13 @@ shared_focus = {
 					is_in_faction = yes
 					is_faction_leader = yes
 				}
-				add_to_faction = SOV
+				if = { limit = { country_exists = SOV } add_to_faction = SOV }
 			}
 			else_if = {
 				limit = { NOT = { is_in_faction = yes } }
 				leave_faction = yes
 				create_faction_from_template = faction_template_eurasian_alliance
-				add_to_faction = SOV
+				if = { limit = { country_exists = SOV } add_to_faction = SOV }
 			}
 		}
 	}
@@ -1250,12 +1250,12 @@ shared_focus = {
 							is_in_faction = yes
 							is_faction_leader = yes
 						}
-						add_to_faction = ISR
+						if = { limit = { country_exists = ISR } add_to_faction = ISR }
 					}
 					else_if = {
 						limit = { NOT = { is_in_faction = yes } }
 						create_faction_from_template = faction_template_western_alliance
-						add_to_faction = ISR
+						if = { limit = { country_exists = ISR } add_to_faction = ISR }
 					}
 				}
 			}

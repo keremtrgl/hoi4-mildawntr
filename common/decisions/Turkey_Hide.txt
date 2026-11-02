@@ -1123,8 +1123,8 @@ TUR_mafia_influence_mechanic = {
 					days = 1
 				}
 			}
-			puppet = WAS
-			puppet = SCO
+			if = { limit = { country_exists = WAS } puppet = WAS }
+			if = { limit = { country_exists = SCO } puppet = SCO }
 			hidden_effect = {
 				SCO = { set_cosmetic_tag = TUR_SCOTTISH_SYNDICATE }
 				WAS = { set_cosmetic_tag = TUR_WELSH_SYNDICATE }
@@ -2068,7 +2068,7 @@ TUR_mafia_influence_mechanic = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove TUR_our_puppets"
 			add_ideas = TUR_belgian_workers
-			puppet = BEL
+			if = { limit = { country_exists = BEL } puppet = BEL }
 		}
 
 		days_remove = 40

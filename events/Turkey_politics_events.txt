@@ -3827,8 +3827,8 @@ country_event = {
 		ai_chance = { factor = 1}
 
 		SOV = {
-			add_to_faction = CHI
-			add_to_faction = SER 
+			if = { limit = { country_exists = CHI } add_to_faction = CHI }
+			if = { limit = { country_exists = SER } add_to_faction = SER } 
 		create_wargoal = {
 			type = annex_everything
 			target = POL

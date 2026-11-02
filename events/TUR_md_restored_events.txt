@@ -1023,10 +1023,10 @@ country_event = { # Failed Promise
 				}
 			}
 			TUR = {
-				set_autonomy = {
+				if = { limit = { country_exists = PKK } set_autonomy = {
 					target = PKK
 					autonomy_state = TUR_eyalet_province
-				}
+				} }
 			}
 			# PKK OOB
 			PKK = {

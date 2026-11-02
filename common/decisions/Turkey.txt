@@ -656,10 +656,10 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 					}
 					release_puppet = PKK
 					hidden_effect = {
-						set_autonomy = {
+						if = { limit = { country_exists = PKK } set_autonomy = {
 							target = PKK
 							autonomy_state = autonomy_autonomous_state
-						}
+						} }
 					}
 					PKK = {
 						hidden_effect = {

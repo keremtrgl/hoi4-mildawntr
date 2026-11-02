@@ -3842,9 +3842,9 @@ search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		y = 39
 
 		completion_reward = {
-		add_to_faction = PAL
-		add_to_faction = BHR
-		add_to_faction = QAT		
+		if = { limit = { country_exists = PAL } add_to_faction = PAL }
+		if = { limit = { country_exists = BHR } add_to_faction = BHR }
+		if = { limit = { country_exists = QAT } add_to_faction = QAT }		
 		}
 		ai_will_do = { base = 8 }
 	}
@@ -5663,10 +5663,10 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		add_state_core = 630
 		add_state_core = 169
 		}
-	set_autonomy = {
+	if = { limit = { country_exists = SYR } set_autonomy = {
 		target = SYR
 		autonomous_state = autonomy_special_administrative_region
-	}
+	} }
 	} ai_will_do = { base = 2 } }
 	focus = {
 		id = TKF_reds_in_balkans
@@ -5939,10 +5939,10 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		add_state_core = 137
 		add_state_core = 138
 		}
-	set_autonomy = {
+	if = { limit = { country_exists = BUL } set_autonomy = {
 		target = BUL
 		autonomous_state = autonomy_special_administrative_region
-	}
+	} }
 	} ai_will_do = { base = 2 } }
 	focus = {
 		id = TKF_reds_in_trancaucasia
@@ -6137,10 +6137,10 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		add_state_core = 1038
 		add_state_core = 705
 		}
-	set_autonomy = {
+	if = { limit = { country_exists = GEO } set_autonomy = {
 		target = GEO
 		autonomous_state = autonomy_special_administrative_region
-	}
+	} }
 	} ai_will_do = { base = 2 } }
 	focus = {
 		id = TKF_unite_the_three_head

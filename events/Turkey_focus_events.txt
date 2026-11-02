@@ -946,10 +946,10 @@ country_event = {
 	add_political_power = -50	
 
 	TUR = {
-	set_autonomy = {
+	if = { limit = { country_exists = BUL } set_autonomy = {
 		target = BUL
 		autonomous_state = autonomy_special_administrative_region
-	}
+	} }
 	} } 
 
 	option = {
@@ -1587,7 +1587,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = GRE
+	if = { limit = { country_exists = GRE } add_to_faction = GRE }
 	 }
 	}
 
@@ -1641,7 +1641,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = ARM
+	if = { limit = { country_exists = ARM } add_to_faction = ARM }
 	 }
 	}
 
@@ -1694,7 +1694,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = CYP
+	if = { limit = { country_exists = CYP } add_to_faction = CYP }
 	 }
 	}
 
@@ -1800,7 +1800,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = TRK
+	if = { limit = { country_exists = TRK } add_to_faction = TRK }
 	 }
 	}
 
@@ -1855,7 +1855,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = KAZ
+	if = { limit = { country_exists = KAZ } add_to_faction = KAZ }
 	 }
 	}
 
@@ -1910,7 +1910,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = UZB
+	if = { limit = { country_exists = UZB } add_to_faction = UZB }
 	 }
 	}
 
@@ -1965,7 +1965,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = KYR
+	if = { limit = { country_exists = KYR } add_to_faction = KYR }
 	 }
 	}
 
@@ -2020,7 +2020,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = QAT
+	if = { limit = { country_exists = QAT } add_to_faction = QAT }
 	 }
 	}
 
@@ -2075,7 +2075,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = ISR
+	if = { limit = { country_exists = ISR } add_to_faction = ISR }
 	 }
 	}
 
@@ -2130,7 +2130,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = EGY
+	if = { limit = { country_exists = EGY } add_to_faction = EGY }
 	 }
 	}
 
@@ -2196,10 +2196,10 @@ country_event = {
 
 	add_war_support = -0.05
 	TUR = {
-	set_autonomy = {
+	if = { limit = { country_exists = IRQ } set_autonomy = {
 		target = IRQ
 		autonomous_state = autonomy_special_administrative_region
-	}
+	} }
 } } }
 
 ##Event: Iraq Refuses
@@ -3828,10 +3828,10 @@ country_event = {
 
 	add_stability = 0.03
 	TUR = {
-	set_autonomy = {
+	if = { limit = { country_exists = GEO } set_autonomy = {
 		target = GEO
 		autonomous_state = autonomy_special_administrative_region
-	}
+	} }
 } }
 	option = {
 		name = TurkeyF.128.b
@@ -3981,7 +3981,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	add_stability = 0.03
-	add_to_faction = AUS
+	if = { limit = { country_exists = AUS } add_to_faction = AUS }
 	}
 
 	option = {
@@ -5068,7 +5068,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = GRE
+	if = { limit = { country_exists = GRE } add_to_faction = GRE }
 	 }
 	}
 
@@ -5120,7 +5120,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = SYR
+	if = { limit = { country_exists = SYR } add_to_faction = SYR }
 	 }
 	}
 
@@ -5172,7 +5172,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = BUL
+	if = { limit = { country_exists = BUL } add_to_faction = BUL }
 	 }
 	}
 
@@ -5224,7 +5224,7 @@ country_event = {
 		ai_chance = { factor = 100}
 
 	TUR = {
-	add_to_faction = IRQ
+	if = { limit = { country_exists = IRQ } add_to_faction = IRQ }
 	 }
 	}
 
@@ -5596,7 +5596,7 @@ country_event = {
 
 	TUR = {
 	create_faction = "HUN_TURKIC_ALLIANCE"
-	add_to_faction = HUN
+	if = { limit = { country_exists = HUN } add_to_faction = HUN }
 	}
 } }
 
@@ -7230,7 +7230,7 @@ country_event = {
 		ai_chance = { factor = 1}
 
 	TUR = {
-	add_to_faction = ISR
+	if = { limit = { country_exists = ISR } add_to_faction = ISR }
 	}
 	reverse_add_opinion_modifier = { target = ISR modifier = new_turkey }
       add_opinion_modifier = { target = ISR modifier = new_turkey }	
@@ -7622,7 +7622,7 @@ country_event = {
 		hidden_effect = {
 		USA = {
 		give_guarantee = ISR
-		add_to_faction = ISR
+		if = { limit = { country_exists = ISR } add_to_faction = ISR }
 		}
              ISR = {
 			add_offsite_building = { type = industrial_complex level = 100 }
