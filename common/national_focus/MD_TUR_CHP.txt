@@ -4,7 +4,7 @@ focus_tree = {
 	
 	focus = {
 		id = CHP_a_new_start_for_turkey
-		icon = GFX_focus_TURNEW_193
+		icon = deniz_baykal_elections_2002
 		cost = 7.15
 		x = 21
 		y = 0
@@ -25,7 +25,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = CHP_resigns
-		icon = GFX_focus_TURNEW_194
+		icon = deniz_baykal
 		cost = 7.15
 		x = 50
 		y = 0
@@ -1248,7 +1248,7 @@ swap_ideas = {
 			} } ai_will_do = { base = 10 } }		
 	focus = {
 		id = CHP_old_school_kemalism
-		icon = GFX_focus_TURNEW_208
+		icon = military_academy
 		cost = 7.15
 		prerequisite = {
 			focus = CHP_put_muharrem_ince
@@ -1315,7 +1315,7 @@ swap_ideas = {
 			} ai_will_do = { base = 10 } } 
 	focus = {
 		id = CHP_reform_the_party
-		icon = GFX_focus_TURNEW_210
+		icon = vineyard
 		cost = 7.15
 		prerequisite = {
 			focus = CHP_put_kilicdaroglu_on_the_leadership
@@ -1393,7 +1393,7 @@ set_global_flag = WARMONGERING_NATIONALISM_FOCUS_OPEN
 	}
 	focus = {
 		id = CHPs_vatican_style_system
-		icon = GFX_focus_TURNEW_213
+		icon = focus_generic_vatican_state
 		cost = 7.15
 		prerequisite = {
 			focus = CHP_put_kilicdaroglu_on_the_leadership
@@ -2486,7 +2486,7 @@ increase_education_budget = yes
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = CHP_protection_wall_of_secularism_and_laicism
-		icon = GFX_focus_TURNEW_059
+		icon = protection_wall_of_kemalism
 		cost = 7.86
 		x = 21
 		y = 18
