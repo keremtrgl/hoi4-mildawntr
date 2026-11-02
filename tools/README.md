@@ -26,6 +26,21 @@ python tools/md_sync.py accept "common/ideas/Turkish.txt"   # after reviewing a 
 Typical MD update: `status` → `merge` → resolve/review → `accept` each reviewed replace file → test in
 game → commit together with `md_base/`.
 
+## When Millennium Dawn updates: `md_loc.py` (language pack)
+
+The pack translates about 44,000 of MD's own English lines (interface, mechanics, EU, Middle East...).
+`md_loc_base.json` records a fingerprint of every MD English line in the 120 files the pack translates, as
+of the MD version the translations match. When MD changes a line, our Turkish goes stale silently; when
+MD adds lines to those files, they show in English.
+
+```
+python tools/md_loc.py             # stale translations and new untranslated MD lines; exit code 1 = work to do
+python tools/md_loc.py --all       # the full list
+python tools/md_loc.py snapshot    # after translating them: record MD's current English as the base
+```
+
+`release_check.py` runs the same comparison in its pack group (two WARN checks).
+
 ## `convert_events.py`
 
 Converts "fire as soon as the trigger holds" polled events into triggered events plus the daily

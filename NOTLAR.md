@@ -190,6 +190,8 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
    `status` → `merge` → çakışmaları çöz / replace dosyalarını incele → `accept` → `release_check.py` → oyunda test →
    `md_base/` ile birlikte commit. `md_overrides.json`'daki `base_version` güncellenir (2.0.3'e geçişte hiçbir dosya
    değişmedi, yalnızca etiket güncellendi).
+   Dil paketi için `python tools/md_loc.py`: MD'nin İngilizcesi değişen çevirileri ve çevrilmemiş yeni MD satırlarını
+   listeler. Çevirdikten sonra `python tools/md_loc.py snapshot` ile taban kaydı yenilenir ve `md_loc_base.json` commit'lenir.
 2. `python tools/release_check.py` — 0 hata olmalı. Uyarılar okunur, bilinçli olanlar dışında düzeltilir.
 3. `descriptor.mod` ve gerekiyorsa `turkish_pack/descriptor.mod` içinde `version=` artırılır.
 4. Senkronizasyon (PowerShell):

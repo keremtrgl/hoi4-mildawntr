@@ -20,6 +20,7 @@ import argparse, collections, glob, hashlib, json, os, re, subprocess, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from md_sync import blocks, inner, strip_code, definitions  # noqa: E402
+import md_loc  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PACK = os.path.join(ROOT, 'turkish_pack')
@@ -372,7 +373,7 @@ def strip_code_keep_strings(t):
     return re.sub(r'#[^\n"]*(?=\n|$)', '', t)
 
 
-def check_pack(rep, loc_union, en_values, docs):
+def check_pack(rep, loc_union, en_values, docs, md):
     group = 'pack'
     pack_files = files_under(PACK, ['localisation/**/*.yml'])
     malformed, seen, dups, orphans, token_diff, bom = [], {}, [], [], [], []
@@ -404,6 +405,11 @@ def check_pack(rep, loc_union, en_values, docs):
     mod_keys = {k for k, v in en_values.items() if v.strip()}
     missing = sorted(mod_keys - seen.keys())
     pct = 100 * (len(mod_keys) - len(missing)) / max(1, len(mod_keys))
+    changed, new = md_loc.compare(md)
+    rep.add(group, "Translations of Millennium Dawn texts match MD's current English (tools/md_loc.py)", 'WARN',
+            [f'{k}  ({r}): MD now says "{v[:90]}"' for k, r, v in changed])
+    rep.add(group, 'No new Millennium Dawn lines left untranslated in files the pack covers', 'WARN',
+            [f'{k}  ({r}): "{v[:90]}"' for k, r, v in new])
     rep.add(group, 'Translation coverage', 'INFO',
             [f'{len(mod_keys) - len(missing)} / {len(mod_keys)} English keys of the mod translated ({pct:.1f}%)'] +
             ([f'untranslated, e.g. {", ".join(missing[:5])}'] if missing else []))
@@ -830,7 +836,7 @@ def main():
     if 'scope' in only:
         check_scopes(rep, mod_files)
     if 'pack' in only:
-        check_pack(rep, loc_union, en_values, a.docs)
+        check_pack(rep, loc_union, en_values, a.docs, a.md)
     if 'release' in only:
         check_release(rep, a.docs, a.md, a.game)
     if 'log' in only:
