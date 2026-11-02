@@ -139,6 +139,13 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   üretiyordu. Yeni oyun oturumunda isimler ve logolar doğrulandı; ilgili hata sayısı sıfır. Yayın kontrolü artık
   scripted localisation içindeki BOM'u da reddediyor; 5 regresyon testi eklendi. Mevcut kayıtlarla uyumludur.
 
+- **2.0.3-TUR.10** (2 Kasım 2026), Türkçe dil güncellemesi ve denge: diplomatik tur odaklarının yabancı ülkelere
+  verdiği siyasi güç/istikrar Türkiye'ye alındı (ziyaret edilen ülkeye +20 görüş, `TUR_diplomatic_tour`), TKF
+  seferberliği 500 bin, nüfus projesi %50, anarşist bilim %15, PP ödülleri 325/275/250/250, dört zayıf yolun ilk
+  odakları güçlendirildi. 44 yeni ikon (toplam 559). Dil paketi: MD arayüzü/mekanikleri, AB (`MD_focus_EU`) ve
+  Orta Doğu (`MD_middle_east_content`) çevirisi `zz_TR_MDX2_*` dosyalarında; paket 64.241 satır. Yükleme ekranı ve
+  yükleme ipuçları ASCII (yazı tipi ı/ş/ğ içermiyor, oyunda doğrulandı).
+
 ## Kalıcı dersler (tekrar düşme!)
 
 - **Sesler WAV kalmalı.** HOI4 ses efektlerini yalnızca WAV'dan yükler. OGG'ye çevirince (88d1f8e) 22 konuşma

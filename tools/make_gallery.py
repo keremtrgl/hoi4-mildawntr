@@ -59,12 +59,12 @@ def update():
     img = mosaic(11)
     d = ImageDraw.Draw(img)
     d.rectangle((110, 90, 119, 240), fill=RED)
-    d.text((144, 88), 'UPDATE 2.0.3-TUR.8  ·  THE ATATÜRK UPDATE', font=font(32), fill=GOLD)
+    d.text((144, 88), 'UPDATE 2.0.3-TUR.10  ·  THE TURKISH LANGUAGE UPDATE', font=font(32), fill=GOLD)
     d.text((140, 128), "What's New", font=font(88), fill=WHITE)
-    rows = ('Atatürk path no longer softlocks', 'Atatürk wins the elections and leads the CHP', 'Return of the Father: +25% PP and building',
-            'Atatürk focuses build twice the factories', 'Atatürk focuses give 50% more political power',
-            'Path Guide: 10 pages with every date window', 'Tells you when to wait and for how long', '48 focuses had a condition the game ignored',
-            '8 decisions lost half their effects: fixed', 'Fake tooltips and dead conditions removed')
+    rows = ('Millennium Dawn in Turkish: 42,000 more lines', '559 new focus icons, sharp at game size', 'Turkic Union annexation crash fixed',
+            'The PKK insurgency can now be ended', 'Every DSİ dam builds and shows its benefit',
+            'Turkish insignia for fleets and task forces', 'Diplomatic tours now reward Turkey', 'Rebalanced PP, manpower and spirits',
+            'Stronger start for four weaker paths', '221 missing names and texts restored')
     for i, text in enumerate(rows):
         x, y = (110 if i < 5 else 1000), 340 + (i % 5) * 110
         d.rounded_rectangle((x, y, x + 820, y + 88), radius=8, fill=PANEL, outline=EDGE, width=2)
