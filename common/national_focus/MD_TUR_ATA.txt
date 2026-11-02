@@ -2301,30 +2301,17 @@ diplomatic_relation = {
 
             completion_reward = {
 				add_stability = 0.1
-            TUN = {
-				add_stability = 0.1
-				}   
-            LBA = {
-				add_stability = 0.1
-				}   
-            SYR = {
-				add_stability = 0.1
-				}   
-            IRQ = {
-				add_stability = 0.1
-				}   
-            SAU = {
-				add_stability = 0.1
-				}   
-            PER = {
-				add_stability = 0.1
-				}   
-            ALG = {
-				add_stability = 0.1
-				}   
-            EGY = {
-				add_stability = 0.1
-				}   
+            custom_effect_tooltip = TUR_diplomatic_tour_tt
+            hidden_effect = {
+            	if = { limit = { country_exists = TUN } TUN = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+            	if = { limit = { country_exists = LBA } LBA = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+            	if = { limit = { country_exists = SYR } SYR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+            	if = { limit = { country_exists = IRQ } IRQ = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+            	if = { limit = { country_exists = SAU } SAU = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+            	if = { limit = { country_exists = PER } PER = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+            	if = { limit = { country_exists = ALG } ALG = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+            	if = { limit = { country_exists = EGY } EGY = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+            }
 			}
 			
 		ai_will_do = { base = 10 }
@@ -5670,7 +5657,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 	completion_reward = {
-	   add_political_power = 375
+	   add_political_power = 325
       }
 		ai_will_do = { base = 8 }
 	}

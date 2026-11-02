@@ -5741,26 +5741,16 @@ diplomatic_relation = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
-		PER = {
-		add_stability = 0.05
-		}
-		GEO = {
-		add_stability = 0.05		
-		}
-		ARM = {
-		add_stability = 0.05		
-		}
-		AZE = {
-		add_stability = 0.05			
-		}
-		SYR = {
-		add_stability = 0.05			
-		}
-		IRQ = {
-		add_stability = 0.05			
-		}
-		SAU = {
-		add_stability = 0.05			
+			add_stability = 0.05
+		custom_effect_tooltip = TUR_diplomatic_tour_tt
+		hidden_effect = {
+			if = { limit = { country_exists = PER } PER = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+			if = { limit = { country_exists = GEO } GEO = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+			if = { limit = { country_exists = ARM } ARM = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+			if = { limit = { country_exists = AZE } AZE = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+			if = { limit = { country_exists = SYR } SYR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+			if = { limit = { country_exists = IRQ } IRQ = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+			if = { limit = { country_exists = SAU } SAU = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
 		}
 }   ai_will_do = { base = 10 } }
 	focus = {

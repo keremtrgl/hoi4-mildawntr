@@ -5533,7 +5533,7 @@ swap_ideas = {
 	}
 
     completion_reward = {
-	        add_political_power = 350				
+	        add_political_power = 275				
 			}
 		ai_will_do = { base = 8 }
 		}
@@ -6127,186 +6127,56 @@ swap_ideas = {
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
 		
     completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
 	        custom_effect_tooltip = OIC_member_states_particapation
-			HOU = {
-			add_stability = 0.05
-			add_political_power = 100
-			}
-			SAU = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			YEM = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			AQY = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			OMA = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			UAE = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			QAT = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			BHR = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			PER = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			AZE = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			MAU = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			SHA = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			MOR = {
-			add_stability = 0.05
-			add_political_power = 100
-			}		
-			GNC = {
-			add_stability = 0.05
-			add_political_power = 100
-			}		
-			TUA = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			ALG = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			GNA = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			HOR = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			EGY = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			NCY = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			TAL = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-        	PAK = {
-			add_stability = 0.05
-			add_political_power = 100
-			}	
-        	SUD = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	SSU = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	CHA = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	NGR = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	MAL = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	MAU = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	CHE = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	MAY = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	SIN = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	BAN = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	LBA = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	TUN = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	KUW = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	IRQ = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	KUR = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	SYR = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	LEB = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	JOR = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	PAL = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	ISR = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	HEZ = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	TAJ = {                  
-			add_stability = 0.05
-			add_political_power = 100
-			}
-        	IND = {                  
-			add_stability = 0.05
-			add_political_power = 100
+			custom_effect_tooltip = TUR_diplomatic_tour_tt
+			hidden_effect = {
+				if = { limit = { country_exists = HOU } HOU = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = SAU } SAU = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = YEM } YEM = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = AQY } AQY = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = OMA } OMA = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = UAE } UAE = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = QAT } QAT = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = BHR } BHR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = PER } PER = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = AZE } AZE = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = MAU } MAU = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = SHA } SHA = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = MOR } MOR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = GNC } GNC = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = TUA } TUA = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = ALG } ALG = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = GNA } GNA = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = HOR } HOR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = EGY } EGY = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = NCY } NCY = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = TAL } TAL = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = PAK } PAK = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = SUD } SUD = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = SSU } SSU = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = CHA } CHA = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = NGR } NGR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = MAL } MAL = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = MAU } MAU = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = CHE } CHE = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = MAY } MAY = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = SIN } SIN = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = BAN } BAN = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = LBA } LBA = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = TUN } TUN = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = KUW } KUW = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = IRQ } IRQ = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = KUR } KUR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = SYR } SYR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = LEB } LEB = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = JOR } JOR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = PAL } PAL = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = ISR } ISR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = HEZ } HEZ = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = TAJ } TAJ = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = IND } IND = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
 			}
 			}
 		ai_will_do = { base = 10 }

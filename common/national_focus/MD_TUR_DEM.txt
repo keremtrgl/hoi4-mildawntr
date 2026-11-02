@@ -9010,94 +9010,33 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 search_filters = {FOCUS_FILTER_TURKISH_ISLAMISM}
 
     completion_reward = {
-			HOU = {
-			add_stability = 0.05
 			add_political_power = 100
+			add_stability = 0.05
+			custom_effect_tooltip = TUR_diplomatic_tour_tt
+			hidden_effect = {
+				if = { limit = { country_exists = HOU } HOU = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = SAU } SAU = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = YEM } YEM = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = AQY } AQY = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = OMA } OMA = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = UAE } UAE = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = QAT } QAT = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = BHR } BHR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = PER } PER = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = AZE } AZE = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = MAU } MAU = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = SHA } SHA = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = MOR } MOR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = GNC } GNC = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = TUA } TUA = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = ALG } ALG = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = GNA } GNA = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = HOR } HOR = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = EGY } EGY = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = NCY } NCY = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = TAL } TAL = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
+				if = { limit = { country_exists = PAK } PAK = { add_opinion_modifier = { target = ROOT modifier = TUR_diplomatic_tour } } }
 			}
-			SAU = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			YEM = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			AQY = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			OMA = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			UAE = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			QAT = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			BHR = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			PER = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			AZE = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			MAU = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			SHA = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			MOR = {
-			add_stability = 0.05
-			add_political_power = 100
-			}		
-			GNC = {
-			add_stability = 0.05
-			add_political_power = 100
-			}		
-			TUA = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			ALG = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			GNA = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			HOR = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			EGY = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			NCY = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-			TAL = {
-			add_stability = 0.05
-			add_political_power = 100
-			}			
-        	PAK = {
-			add_stability = 0.05
-			add_political_power = 100
-			}					
 			}
 		ai_will_do = { base = 10 }
 		}
