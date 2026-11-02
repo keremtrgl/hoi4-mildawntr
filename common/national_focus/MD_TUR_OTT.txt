@@ -357,7 +357,7 @@ focus_tree = {
 	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_organize_saboteurs
-		icon = espionage3
+		icon = GFX_focus_TURNEW_486
 		cost = 7.00
 		prerequisite = {
 			focus = OTT_finish_ergenekon_trials
@@ -584,7 +584,7 @@ focus_tree = {
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = OTT_ask_military_support_from_iran
-		icon = iran_guard
+		icon = GFX_focus_TURNEW_832
 		cost = 7.00
 		prerequisite = {
 			focus = OTT_send_diplomats_to_hezbollah
@@ -2394,7 +2394,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	}
 	focus = {
 		id = OTT_USA_deals
-		icon = american_military_agreement
+		icon = GFX_focus_TURNEW_660
 		cost = 7.86
 		prerequisite = {
 			focus = OTT_expansionism_towards_south
