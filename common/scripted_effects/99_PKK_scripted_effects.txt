@@ -95,7 +95,30 @@ TUR_remove_pkk = {
 	935 = { set_demilitarized_zone = no }
 
 	add_state_core = 162
-	add_state_core = 935	
+	add_state_core = 935
+	add_state_core = 1205
+	162 = { if = { limit = { has_dynamic_modifier = { modifier = pkk_static_modifier } } remove_dynamic_modifier = { modifier = pkk_static_modifier } } }
+	935 = { if = { limit = { has_dynamic_modifier = { modifier = pkk_static_modifier } } remove_dynamic_modifier = { modifier = pkk_static_modifier } } }
+	}
+}
+
+# Takes back a PKK puppet and cores every Kurdish state Turkey owns. Used by TUR_reintegrate_kurdistan.
+TUR_reintegrate_kurdistan_effect = {
+	if = {
+		limit = { country_exists = PKK PKK = { is_subject_of = ROOT } }
+		annex_country = { target = PKK transfer_troops = yes }
+	}
+	every_state = {
+		limit = { OR = { state = 162 state = 935 state = 1205 } is_owned_by = ROOT }
+		add_core_of = ROOT
+	}
+	if = {
+		limit = { NOT = { has_country_flag = TUR_PKK_tamed } }
+		TUR_remove_pkk = yes
+	}
+	else = {
+		162 = { if = { limit = { has_dynamic_modifier = { modifier = pkk_static_modifier } } remove_dynamic_modifier = { modifier = pkk_static_modifier } } }
+		935 = { if = { limit = { has_dynamic_modifier = { modifier = pkk_static_modifier } } remove_dynamic_modifier = { modifier = pkk_static_modifier } } }
 	}
 }
 

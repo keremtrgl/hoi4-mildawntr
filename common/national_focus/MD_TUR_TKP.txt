@@ -434,7 +434,7 @@ focus_tree = {
 				}
 	focus = {
 		id = TUR_build_worker_houses
-		icon = workers_party
+		icon = GFX_focus_TURNEW_058
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_ODP
@@ -2153,7 +2153,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TKP_build_union
-		icon = communist_revolution_asia
+		icon = GFX_focus_TURNEW_058
 		cost = 7.15
 		prerequisite = {
 			focus = TKP_unemployment_policy
@@ -2250,7 +2250,7 @@ focus_tree = {
 				}
 	focus = {
 		id = TUR_covid-19_pandemic3
-		icon = generic_healthcare
+		icon = GFX_focus_TURNEW_013
 		cost = 7.15
 		x = 40
 		y = 0
@@ -2267,7 +2267,7 @@ focus_tree = {
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = TUR_covid-19_preparations3
-		icon = production2
+		icon = GFX_focus_TURNEW_002
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_pandemic3
@@ -2287,7 +2287,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals3
-		icon = generic_hospital2
+		icon = GFX_focus_TURNEW_017
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations3
@@ -2307,7 +2307,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital3
-		icon = generic_hospital
+		icon = GFX_focus_TURNEW_018
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_build_up_hospitals3
@@ -2354,7 +2354,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_german_vaccines11
-		icon = trade_with_germany
+		icon = GFX_focus_TURNEW_014
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program11
@@ -2375,7 +2375,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_increase_funds_to_science3
-		icon = market_economy
+		icon = GFX_focus_TURNEW_016
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations3
@@ -2421,7 +2421,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_chinese_vaccines3
-		icon = trade_with_china
+		icon = GFX_focus_TURNEW_015
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital3
@@ -2448,7 +2448,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_normalisation_from_covid3
-		icon = consumer_goods
+		icon = GFX_focus_TURNEW_019
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines3

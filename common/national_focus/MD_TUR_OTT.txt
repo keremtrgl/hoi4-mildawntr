@@ -1372,7 +1372,7 @@ focus_tree = {
 		}
 	focus = {
 		id = OTT_keep_parliament
-		icon = parliament_box
+		icon = GFX_focus_TURNEW_107
 		cost = 5.00
 		prerequisite = {
 			focus = OTT_declare_the_ottoman_empire
@@ -1393,7 +1393,7 @@ focus_tree = {
 		}
 	focus = {
 		id = OTT_abolish_parliament
-		icon = authoritarian_democracy
+		icon = GFX_focus_TURNEW_108
 		cost = 5.00
 		prerequisite = {
 			focus = OTT_declare_the_ottoman_empire
@@ -1517,7 +1517,7 @@ focus_tree = {
 				}
 	focus = {
 		id = OTT_secure_sultan_parliament_balance
-		icon = monarchism4
+		icon = GFX_focus_TURNEW_109
 		cost = 5.00
 		prerequisite = {
 			focus = OTT_reestablish_parties
@@ -1541,7 +1541,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_approve_the_new_constitution
-		icon = MEX_Rewrite_the_constitution
+		icon = GFX_focus_TURNEW_110
 		cost = 7.15
 		prerequisite = {
 			focus = OTT_fast_decision_staff
@@ -3515,7 +3515,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	} ai_will_do = { base = 2 } }
 	focus = {
 		id = OTT_increase_navalshipments
-		icon = naval_upgrade
+		icon = GFX_focus_TURNEW_081
 		cost = 7.15
 		prerequisite = {
 			focus = OTT_destroy_the_main_enemy
@@ -3682,7 +3682,7 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 		}
 	focus = {
 		id = OTT_mountainners
-		icon = kurd_mountainwarafre
+		icon = GFX_focus_TURNEW_155
 		cost = 7.15
 		prerequisite = {
 			focus = OTT_war_machine
@@ -4666,7 +4666,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = OTT_approve_dernek_culture
-		icon = union_negotiations
+		icon = GFX_focus_TURNEW_189
 		cost = 7.15
 		prerequisite = {
 			focus = OTT_istanbul_docks
@@ -5586,8 +5586,8 @@ country_event = TurkeyF.111
 		
 		completion_reward = {
 		add_war_support = 0.05
-        annex_country = { target = ISI }
-        annex_country = { target = NUS }
+        if = { limit = { country_exists = ISI } annex_country = { target = ISI } }
+        if = { limit = { country_exists = NUS } annex_country = { target = NUS } }
 		create_wargoal = {
 			type = annex_everything
 			target = SYR
@@ -5629,7 +5629,7 @@ country_event = TurkeyF.111
 		
 		completion_reward = {
 		add_war_support = 0.03
-        annex_country = { target = ISI }
+        if = { limit = { country_exists = ISI } annex_country = { target = ISI } }
 		create_wargoal = {
 			type = annex_everything
 			target = IRQ
@@ -5948,7 +5948,7 @@ country_event = TurkeyF.111
 		
 		completion_reward = {
 		add_state_core = 207
-        annex_country = { target = PAL }
+        if = { limit = { country_exists = PAL } annex_country = { target = PAL } }
 		create_wargoal = {
 			type = annex_everything
 			target = ISR
@@ -6745,7 +6745,7 @@ diplomatic_relation = {
 		}
 	focus = {
 		id = OTT_hard_breakthroughts
-		icon = tanks5
+		icon = GFX_focus_TURNEW_170
 		cost = 7.15
 		prerequisite = {
 			focus = OTT_arm_the_german_islamist_unit
@@ -8534,7 +8534,7 @@ swap_ideas = {
 	} ai_will_do = { base = 10 } }
 	focus = {
 		id = OTT_new_hospitals
-		icon = generic_hospital2
+		icon = GFX_focus_TURNEW_017
 		cost = 7.15
 		prerequisite = {
 			focus = OTT_hifzissaha_law
@@ -8845,7 +8845,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 
 	focus = {
 		id = TUR_covid-19_pandemic12
-		icon = generic_healthcare
+		icon = GFX_focus_TURNEW_013
 		cost = 7.15
 		x = 61
 		y = 0
@@ -8863,7 +8863,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		
 	focus = {
 		id = TUR_covid-19_preparations12
-		icon = production2
+		icon = GFX_focus_TURNEW_002
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_pandemic12
@@ -8883,7 +8883,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals12
-		icon = generic_hospital2
+		icon = GFX_focus_TURNEW_017
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations12
@@ -8903,7 +8903,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital12
-		icon = generic_hospital
+		icon = GFX_focus_TURNEW_018
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_build_up_hospitals12
@@ -8950,7 +8950,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_german_vaccines7
-		icon = trade_with_germany
+		icon = GFX_focus_TURNEW_014
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program7
@@ -8971,7 +8971,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_increase_funds_to_science12
-		icon = market_economy
+		icon = GFX_focus_TURNEW_016
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations12
@@ -9017,7 +9017,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_chinese_vaccines12
-		icon = trade_with_china
+		icon = GFX_focus_TURNEW_015
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital12
@@ -9044,7 +9044,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_normalisation_from_covid12
-		icon = consumer_goods
+		icon = GFX_focus_TURNEW_019
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines12

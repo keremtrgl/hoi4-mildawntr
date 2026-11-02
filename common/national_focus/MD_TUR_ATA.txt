@@ -255,7 +255,7 @@ swap_ideas = {
 } } ai_will_do = { base = 14 } }		
 	focus = {
 		id = ATA_weaken_The_depression
-		icon = liberalization_policies
+		icon = GFX_focus_TURNEW_025
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_money_stability
@@ -440,7 +440,7 @@ swap_ideas = {
 			}
 	focus = {
 		id = ATA_declare_elections
-		icon = election2
+		icon = GFX_focus_TURNEW_057
 		cost = 7.86
 		prerequisite = {
 			focus = ATA_adapt_to_21st_century
@@ -647,7 +647,7 @@ set_global_flag = ATA_BLOCK
 		} } ai_will_do = { base = 8 } }
 	focus = {
 		id = ATA_local_steel
-		icon = steel_production
+		icon = GFX_focus_TURNEW_298
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_resource_planning
@@ -681,7 +681,7 @@ set_global_flag = ATA_BLOCK
 		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = ATA_local_boron_fields
-		icon = bor_mining
+		icon = GFX_focus_TURNEW_007
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_batman_oil_fields
@@ -701,7 +701,7 @@ set_global_flag = ATA_BLOCK
 			}
 	focus = {
 		id = ATA_land_of_chronium
-		icon = PB_Generic_Mining_Industry
+		icon = GFX_focus_TURNEW_148
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_local_boron_fields
@@ -1935,7 +1935,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 	}	
 	focus = {
 		id = ATA_non_agression_with_russia
-		icon = rapprochement_with_russia
+		icon = GFX_focus_TURNEW_111
 		cost = 5.00
 		prerequisite = {
 			focus = ATA_eastern_policy
@@ -2183,7 +2183,7 @@ diplomatic_relation = {
 	}	
 	focus = {
 		id = ATA_spread_the_intelligence
-		icon = brain_power
+		icon = GFX_focus_TURNEW_005
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_turkify_the_lands
@@ -2776,7 +2776,7 @@ custom_effect_tooltip = WARN_GULEN
 		}
 	focus = {
 		id = ATA_increase_the_army_potential
-		icon = Generic_Refit_Tanks
+		icon = GFX_focus_TURNEW_165
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_redzyne_the_armed_forces
@@ -3117,7 +3117,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		}
 	focus = {
 		id = ATA_open_new_museums
-		icon = Tourism_is_our_oil
+		icon = GFX_focus_TURNEW_186
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_enrich_the_live_quantity
@@ -3153,7 +3153,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		}
 	focus = {
 		id = ATA_ataturk_culture_centre
-		icon = free_higher_education
+		icon = GFX_focus_TURNEW_091
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_reform_the_education
@@ -3186,7 +3186,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = ATA_student_mobilization
-		icon = ahmadi_research
+		icon = GFX_focus_TURNEW_192
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_reform_the_education
@@ -3497,7 +3497,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = ATA_foreign_language_education
-		icon = autonomy
+		icon = GFX_focus_TURNEW_179
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_innovation_strategy
@@ -3688,7 +3688,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = ATA_open_the_plane_search_office
-		icon = air_production
+		icon = GFX_focus_TURNEW_171
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_move_the_istanbul_arms_industries
@@ -4991,7 +4991,7 @@ focus = {
           }
 	focus = {
 		id = ATA_open_cultural_lands
-		icon = GEO_Promoting_Georgian_Culture
+		icon = GFX_focus_TURNEW_187
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_enrich_the_live_quantity
@@ -5116,7 +5116,7 @@ focus = {
 		}
 	focus = {
 		id = ATA_a_new_parliament
-		icon = goverment_building_sheep
+		icon = GFX_focus_TURNEW_053
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_winds_of_revolution
@@ -5382,7 +5382,7 @@ focus = {
 	}
 	focus = {
 		id = ATA_new_dams
-		icon = water_dam
+		icon = GFX_focus_TURNEW_300
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_push_enviroenmental_laws
@@ -5414,7 +5414,7 @@ focus = {
 		}
 	focus = {
 		id = ATA_winds_mills
-		icon = windmills
+		icon = GFX_focus_TURNEW_032
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_push_enviroenmental_laws
@@ -5803,7 +5803,7 @@ focus = {
 	}
 	focus = {
 		id = ATA_nuclear_project
-		icon = Generic_Red_Atomic
+		icon = GFX_focus_TURNEW_030
 		cost = 7.15
 		prerequisite = {
 			focus = ATA_new_projects
@@ -5821,7 +5821,7 @@ focus = {
 	}
 	focus = {
 		id = ATA_space_project
-		icon = generic_space
+		icon = GFX_focus_TURNEW_012
 		cost = 7.15
 		prerequisite = {
 			focus = ATA_new_projects
@@ -5967,7 +5967,7 @@ focus = {
 		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = ATA_space_intel
-		icon = international_space_station
+		icon = GFX_focus_TURNEW_083
 		cost = 7.15
 		prerequisite = {
 			focus = ATA_space_mining
@@ -6089,7 +6089,7 @@ focus = {
 	}
 	focus = {
 		id = ATA_strenghen_nuclear_fiels
-		icon = nuclear_bomb
+		icon = GFX_focus_TURNEW_030
 		cost = 7.86
 		prerequisite = {
 			focus = ATA_deals_with_russia
@@ -6169,7 +6169,7 @@ focus = {
 
 	focus = {
 		id = TUR_covid-19_pandemic23
-		icon = generic_healthcare
+		icon = GFX_focus_TURNEW_013
 		cost = 7.15
 		x = 95
 		y = 0
@@ -6187,7 +6187,7 @@ focus = {
 		
 	focus = {
 		id = TUR_covid-19_preparations23
-		icon = production2
+		icon = GFX_focus_TURNEW_002
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_pandemic23
@@ -6207,7 +6207,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals23
-		icon = generic_hospital2
+		icon = GFX_focus_TURNEW_017
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations23
@@ -6227,7 +6227,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital23
-		icon = generic_hospital
+		icon = GFX_focus_TURNEW_018
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_build_up_hospitals23
@@ -6274,7 +6274,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_german_vaccines23
-		icon = trade_with_germany
+		icon = GFX_focus_TURNEW_014
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program23
@@ -6295,7 +6295,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_increase_funds_to_science23
-		icon = market_economy
+		icon = GFX_focus_TURNEW_016
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations23
@@ -6341,7 +6341,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_chinese_vaccines23
-		icon = trade_with_china
+		icon = GFX_focus_TURNEW_015
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital23
@@ -6368,7 +6368,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_normalisation_from_covid23
-		icon = consumer_goods
+		icon = GFX_focus_TURNEW_019
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines23

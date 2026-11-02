@@ -93,25 +93,27 @@ custom_effect_tooltip = DEC_1_PKK_POINT
 TUR_get_rid_of_pkk = {
 	icon = GFX_decision_generic_military
 		available = {
-			NOT = {
-			has_idea = TUR_PKK_insurgency_active
+			custom_trigger_tooltip = {
+				tooltip = TUR_get_rid_of_pkk_strength_tt
+				OR = {
+					check_variable = { var = TUR_PKK_strength value = 15 compare = less_than_or_equals }
+					check_variable = { var = TUR_PKK_strength value = TUR_PKK_min_strength compare = less_than_or_equals }
+				}
 			}
-			check_variable = { var = TUR_PKK_strength value = 15 compare = less_than_or_equals }
 			check_variable = { var = TUR_PKK_aggro value = 45 compare = less_than_or_equals }
 		}
 
 		visible = {
-			check_variable = { var = TUR_PKK_strength value = 15 compare = less_than_or_equals }
-			check_variable = { var = TUR_PKK_aggro value = 45 compare = less_than_or_equals }
+			NOT = { has_country_flag = TUR_PKK_tamed }
 		}
 
-        cost = 200
+        cost = 150
 		#custom_cost_trigger = {
 		#	has_army_experience > 49
 		#}
 		#custom_cost_text = army_xp_50
 
-		days_remove = 125
+		days_remove = 90
 		fire_only_once = yes
 
 		remove_effect = {
@@ -122,6 +124,32 @@ TUR_get_rid_of_pkk = {
 		political_power_cost = 0.25
 		consumer_goods_factor = 0.05
 		}
+}
+TUR_reintegrate_kurdistan = {
+	icon = GFX_decision_generic_civil_support
+
+	visible = {
+		original_tag = TUR
+		TUR_kurdistan_needs_reintegration = yes
+	}
+
+	available = {
+		if = {
+			limit = { country_exists = PKK }
+			NOT = { has_war_with = PKK }
+		}
+	}
+
+	cost = 50
+
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision TUR_reintegrate_kurdistan"
+		custom_effect_tooltip = TUR_reintegrate_kurdistan_tt
+		hidden_effect = { TUR_reintegrate_kurdistan_effect = yes }
+		add_stability = 0.03
+	}
+
+	ai_will_do = { base = 50 }
 }
 }
 

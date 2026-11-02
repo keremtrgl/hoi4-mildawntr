@@ -3635,7 +3635,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 	}
 	focus = {
 		id = TKF_build_national_theathre
-		icon = radar2
+		icon = GFX_focus_TURNEW_092
 		cost = 7.2
 		prerequisite = {
 			focus = TKF_freedom_objection
@@ -4556,7 +4556,7 @@ search_filters = {FOCUS_FILTER_STABILITY}
 			}
 	focus = {
 		id = TKF_buy_animals
-		icon = Canned_Fish
+		icon = GFX_focus_TURNEW_151
 		cost = 7.2
 		prerequisite = {
 			focus = TKF_agricultural_act
@@ -4689,7 +4689,7 @@ swap_ideas = {
 	} ai_will_do = { base = 8 } } 
 	focus = {
 		id = TKF_weekend_culture
-		icon = stolen_papers
+		icon = GFX_focus_TURNEW_183
 		cost = 7.2
 		prerequisite = {
 			focus = TKF_the_union_culture
@@ -6169,13 +6169,13 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
         completion_reward = {
    TUR = {
-	annex_country = { target = GEO transfer_troops = yes}
+	if = { limit = { country_exists = GEO } annex_country = { target = GEO transfer_troops = yes} }
    } 
    TUR = {
-	annex_country = { target = BUL transfer_troops = yes}
+	if = { limit = { country_exists = BUL } annex_country = { target = BUL transfer_troops = yes} }
    } 
   TUR = {
-	annex_country = { target = SYR transfer_troops = yes}
+	if = { limit = { country_exists = SYR } annex_country = { target = SYR transfer_troops = yes} }
    } 
    set_cosmetic_tag = TKP_TUR_REL
 
@@ -7756,7 +7756,7 @@ swap_ideas = {
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = TKF_internet_reform
-		icon = internet_censorship
+		icon = GFX_focus_TURNEW_087
 		cost = 5.00
 		prerequisite = {
 			focus = TKF_eight_years_of_development
@@ -9569,7 +9569,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 
 	focus = {
 		id = TUR_covid-19_pandemic16
-		icon = generic_healthcare
+		icon = GFX_focus_TURNEW_013
 		cost = 7.15
 		x = 55
 		y = 0
@@ -9587,7 +9587,7 @@ search_filters = {FOCUS_FILTER_INFLUENCE}
 		
 	focus = {
 		id = TUR_covid-19_preparations16
-		icon = production2
+		icon = GFX_focus_TURNEW_002
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_pandemic16
@@ -9607,7 +9607,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals16
-		icon = generic_hospital2
+		icon = GFX_focus_TURNEW_017
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations16
@@ -9627,7 +9627,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital16
-		icon = generic_hospital
+		icon = GFX_focus_TURNEW_018
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_build_up_hospitals16
@@ -9674,7 +9674,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_german_vaccines18
-		icon = trade_with_germany
+		icon = GFX_focus_TURNEW_014
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program18
@@ -9695,7 +9695,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_increase_funds_to_science16
-		icon = market_economy
+		icon = GFX_focus_TURNEW_016
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations16
@@ -9741,7 +9741,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_chinese_vaccines16
-		icon = trade_with_china
+		icon = GFX_focus_TURNEW_015
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital16
@@ -9768,7 +9768,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_normalisation_from_covid16
-		icon = consumer_goods
+		icon = GFX_focus_TURNEW_019
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines16

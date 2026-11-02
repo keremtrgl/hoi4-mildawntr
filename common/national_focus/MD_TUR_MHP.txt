@@ -518,7 +518,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AU_leave_the_nato
-		icon = attack_nato
+		icon = GFX_focus_TURNEW_118
 		cost = 7.15
 		prerequisite = {
 			focus = AU_all_power_to_ulkists
@@ -1597,7 +1597,7 @@ focus_tree = {
 
 	focus = {
 		id = TUR_covid-19_pandemic4
-		icon = generic_healthcare
+		icon = GFX_focus_TURNEW_013
 		cost = 7.15
 		x = 40
 		y = 0
@@ -1614,7 +1614,7 @@ focus_tree = {
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = TUR_covid-19_preparations4
-		icon = production2
+		icon = GFX_focus_TURNEW_002
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_pandemic4
@@ -1634,7 +1634,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals4
-		icon = generic_hospital2
+		icon = GFX_focus_TURNEW_017
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations4
@@ -1654,7 +1654,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital4
-		icon = generic_hospital
+		icon = GFX_focus_TURNEW_018
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_build_up_hospitals4
@@ -1675,7 +1675,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_increase_funds_to_science4
-		icon = market_economy
+		icon = GFX_focus_TURNEW_016
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations4
@@ -1750,7 +1750,7 @@ swap_ideas = {
 
 	focus = {
 		id = TUR_buy_german_vaccines4x
-		icon = trade_with_germany
+		icon = GFX_focus_TURNEW_014
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_start_up_vaccines4xx
@@ -1773,7 +1773,7 @@ swap_ideas = {
 
 	focus = {
 		id = TUR_buy_chinese_vaccines4
-		icon = trade_with_china
+		icon = GFX_focus_TURNEW_015
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital4
@@ -1800,7 +1800,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_normalisation_from_covid4
-		icon = consumer_goods
+		icon = GFX_focus_TURNEW_019
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines4
@@ -2123,7 +2123,7 @@ add_stability = 0.1
 	}
 	focus = {
 		id = TUR_NATO_mission3
-		icon = nato_membership_action_plan
+		icon = GFX_focus_TURNEW_046
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_peace_whatever_costs3
@@ -2325,7 +2325,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_bor3
-		icon = b-5
+		icon = GFX_focus_TURNEW_007
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_strong_state3

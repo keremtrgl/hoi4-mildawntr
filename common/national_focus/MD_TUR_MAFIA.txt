@@ -2482,7 +2482,7 @@ swap_ideas = {
 	} ai_will_do = { base = 10 } }
 	focus = {
 		id = MAF_border_land_mines
-		icon = land_mine_issue
+		icon = GFX_focus_TURNEW_164
 		cost = 5.00
 		prerequisite = {
 			focus = MAF_question_of_protection_of_borders
@@ -5095,7 +5095,7 @@ swap_ideas = {
 
 	focus = {
 		id = TUR_covid-19_pandemic15
-		icon = generic_healthcare
+		icon = GFX_focus_TURNEW_013
 		cost = 7.15
 		x = 37
 		y = 0
@@ -5113,7 +5113,7 @@ swap_ideas = {
 		
 	focus = {
 		id = TUR_covid-19_preparations15
-		icon = production2
+		icon = GFX_focus_TURNEW_002
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_pandemic15
@@ -5133,7 +5133,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals15
-		icon = generic_hospital2
+		icon = GFX_focus_TURNEW_017
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations15
@@ -5153,7 +5153,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital15
-		icon = generic_hospital
+		icon = GFX_focus_TURNEW_018
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_build_up_hospitals15
@@ -5200,7 +5200,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_german_vaccines17
-		icon = trade_with_germany
+		icon = GFX_focus_TURNEW_014
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program17
@@ -5221,7 +5221,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_increase_funds_to_science15
-		icon = market_economy
+		icon = GFX_focus_TURNEW_016
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations15
@@ -5270,7 +5270,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_chinese_vaccines15
-		icon = trade_with_china
+		icon = GFX_focus_TURNEW_015
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital15
@@ -5297,7 +5297,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_normalisation_from_covid15
-		icon = consumer_goods
+		icon = GFX_focus_TURNEW_019
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines15

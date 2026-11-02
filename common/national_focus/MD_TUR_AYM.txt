@@ -396,7 +396,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_normalize_with_greece
-		icon = Greece_republic2
+		icon = GFX_focus_TURNEW_048
 		cost = 7.2
 		prerequisite = {
 			focus = AYM_compromise_focused_eu_policies
@@ -3366,7 +3366,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } }
 	focus = {
 		id = AYM_military_deposits
-		icon = Generic_Military_Equipment
+		icon = GFX_focus_TURNEW_169
 		cost = 7.2
 		prerequisite = {
 			focus = AYM_plane_factory_build_up
@@ -5148,7 +5148,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 	}
 	focus = {
 		id = AYM_research_sgy
-		icon = ahmadi_research
+		icon = GFX_focus_TURNEW_010
 		cost = 7.2
 		prerequisite = {
 			focus = AYM_SGK_signatory
@@ -7892,7 +7892,7 @@ swap_ideas = {
 
 	focus = {
 		id = TUR_covid-19_pandemic22
-		icon = generic_healthcare
+		icon = GFX_focus_TURNEW_013
 		cost = 7.15
 		x = 80
 		y = 0
@@ -7910,7 +7910,7 @@ swap_ideas = {
 		
 	focus = {
 		id = TUR_covid-19_preparations22
-		icon = production2
+		icon = GFX_focus_TURNEW_002
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_pandemic22
@@ -7930,7 +7930,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals22
-		icon = generic_hospital2
+		icon = GFX_focus_TURNEW_017
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations22
@@ -7950,7 +7950,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital22
-		icon = generic_hospital
+		icon = GFX_focus_TURNEW_018
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_build_up_hospitals22
@@ -7997,7 +7997,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_german_vaccines22
-		icon = trade_with_germany
+		icon = GFX_focus_TURNEW_014
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program22
@@ -8018,7 +8018,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_increase_funds_to_science22
-		icon = market_economy
+		icon = GFX_focus_TURNEW_016
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations22
@@ -8067,7 +8067,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_chinese_vaccines22
-		icon = trade_with_china
+		icon = GFX_focus_TURNEW_015
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital22
@@ -8094,7 +8094,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_normalisation_from_covid22
-		icon = consumer_goods
+		icon = GFX_focus_TURNEW_019
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines22

@@ -560,7 +560,7 @@ add_ideas = national_defence_organizations
 	}
 	focus = {
 		id = HEPAR_rocket_missles
-		icon = rocketry
+		icon = GFX_focus_TURNEW_041
 		cost = 7.2
 		prerequisite = {
 			focus = HEPAR_voluntairly_army
@@ -1046,7 +1046,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = HEPAR_minimize_debt
-		icon = better_money_on_fire
+		icon = GFX_focus_TURNEW_140
 		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_open_recovery_group
@@ -1176,7 +1176,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = HEPAR_diplomats_working
-		icon = generic_government
+		icon = GFX_focus_TURNEW_052
 		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_usage_of_weltpolitik
@@ -1819,7 +1819,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 }   ai_will_do = { base = 14 } }
 	focus = {
 		id = HEPAR_support_writers
-		icon = BLR_High_quality_education
+		icon = GFX_focus_TURNEW_185
 		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_turkish_theathers
@@ -2086,7 +2086,7 @@ swap_ideas = {
 			}
 	focus = {
 		id = HEPAR_cheap_fertilizer
-		icon = consumer_goods
+		icon = GFX_focus_TURNEW_150
 		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_agriculture_projection
@@ -5225,7 +5225,7 @@ has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_6
 		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = HEPAR_naval_defences
-		icon = carriers2
+		icon = GFX_focus_TURNEW_161
 		cost = 7.86
 		prerequisite = {
 			focus = HEPAR_build_shield_to_the_west
@@ -6351,7 +6351,7 @@ swap_ideas = {
 		}
 	focus = {
 		id = TUR_creation_of_turkish_carriers7
-		icon = ship_bleur_point
+		icon = GFX_focus_TURNEW_153
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_battleship7
@@ -6376,7 +6376,7 @@ swap_ideas = {
 		}
 	focus = {
 		id = TUR_turkish_tank_weaponary7
-		icon = tanks4
+		icon = GFX_focus_TURNEW_160
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_altay_tank_project7
@@ -6398,7 +6398,7 @@ swap_ideas = {
 
 	focus = {
 		id = TUR_turkish_drones7
-		icon = turkish_drone
+		icon = GFX_focus_TURNEW_006
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_THK_program7
@@ -6429,7 +6429,7 @@ swap_ideas = {
 
 	focus = {
 		id = TUR_covid-19_pandemic10
-		icon = generic_healthcare
+		icon = GFX_focus_TURNEW_013
 		cost = 7.15
 		x = 67
 		y = 0
@@ -6446,7 +6446,7 @@ swap_ideas = {
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = TUR_covid-19_preparations10
-		icon = production2
+		icon = GFX_focus_TURNEW_002
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_pandemic10
@@ -6466,7 +6466,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals10
-		icon = generic_hospital2
+		icon = GFX_focus_TURNEW_017
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations10
@@ -6486,7 +6486,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital10
-		icon = generic_hospital
+		icon = GFX_focus_TURNEW_018
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_build_up_hospitals10
@@ -6533,7 +6533,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_german_vaccines9
-		icon = trade_with_germany
+		icon = GFX_focus_TURNEW_014
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program9
@@ -6554,7 +6554,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_increase_funds_to_science10
-		icon = market_economy
+		icon = GFX_focus_TURNEW_016
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations10
@@ -6600,7 +6600,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_chinese_vaccines10
-		icon = trade_with_china
+		icon = GFX_focus_TURNEW_015
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital10
@@ -6627,7 +6627,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_normalisation_from_covid10
-		icon = consumer_goods
+		icon = GFX_focus_TURNEW_019
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines10

@@ -176,7 +176,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	}
 	focus = {
 		id = PKA_prepare_election_in_AKP
-		icon = Minority_syr_repres
+		icon = GFX_focus_TURNEW_093
 		cost = 7.86
 		prerequisite = {
 			focus = PKA_continue_liberal_politicies
@@ -200,7 +200,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_get_along_well_with_pms
-		icon = democracy4
+		icon = GFX_focus_TURNEW_094
 		cost = 5.00
 		prerequisite = {
 			focus = PKA_prepare_election_in_AKP
@@ -326,7 +326,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_right_wing_sad
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_tradesman_support_package
-		icon = business_man
+		icon = GFX_focus_TURNEW_141
 		cost = 7.2
 		prerequisite = {
 			focus = PKA_abdullah_guls_revenge
@@ -419,7 +419,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_right_wing_sad
 	}
 	focus = {
 		id = PKA_unatikan_babacan_economics
-		icon = babacan
+		icon = GFX_focus_TURNEW_259
 		cost = 7.2
 		prerequisite = {
 			focus = PKA_lift_ban_from_headscarves
@@ -459,7 +459,7 @@ swap_ideas = {
 	} ai_will_do = { base = 14 } }
 	focus = {
 		id = PKA_discard_6_zeros
-		icon = lira
+		icon = GFX_focus_TURNEW_022
 		cost = 7.2
 		prerequisite = {
 			focus = PKA_unatikan_babacan_economics
@@ -480,7 +480,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = PKA_trading_possibilities
-		icon = ExpandTrade
+		icon = GFX_focus_TURNEW_260
 		cost = 7.2
 		prerequisite = {
 			focus = PKA_unatikan_babacan_economics
@@ -545,7 +545,7 @@ swap_ideas = {
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_hold_meetings_with_other_parties
-		icon = Decentralization
+		icon = GFX_focus_TURNEW_095
 		cost = 7.2
 		prerequisite = {
 			focus = PKA_discard_6_zeros
@@ -614,7 +614,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_vision_of_europe
-		icon = United_States_of_Europe
+		icon = GFX_focus_TURNEW_045
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_entering_the_2009
@@ -647,7 +647,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_eu_law_origins
-		icon = EDA_icon
+		icon = GFX_focus_TURNEW_099
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_vision_of_europe
@@ -717,7 +717,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_accordance_with_UN
-		icon = align_to_united_nations
+		icon = GFX_focus_TURNEW_096
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_european_studies
@@ -737,7 +737,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_full_coordinance_with_AIHM
-		icon = EFSF_icon
+		icon = GFX_focus_TURNEW_097
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_accordance_with_UN
@@ -786,7 +786,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = PKA_recovery_package_of_2008_crisis
-		icon = liberalization_policies
+		icon = GFX_focus_TURNEW_261
 		cost = 7.2
 		prerequisite = {
 			focus = PKA_lift_ban_from_headscarves
@@ -814,7 +814,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = PKA_guaranteed_multi_party_state
-		icon = Generic_Pawns
+		icon = GFX_focus_TURNEW_098
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_entering_the_2009
@@ -865,7 +865,7 @@ swap_ideas = {
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_control_the_inflation
-		icon = better_money_on_fire
+		icon = GFX_focus_TURNEW_139
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_vision_of_europe
@@ -955,7 +955,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_pay_off_our_debts
-		icon = balance_buget
+		icon = GFX_focus_TURNEW_140
 		cost = 5.00
 		prerequisite = {
 			focus = PKA_became_strong_economies
@@ -971,7 +971,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_reserves_law
-		icon = gold_standard
+		icon = GFX_focus_TURNEW_262
 		cost = 5.00
 		prerequisite = {
 			focus = PKA_became_strong_economies
@@ -985,7 +985,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_secure_independence_of_central_bank
-		icon = expand_finance_ministry
+		icon = GFX_focus_TURNEW_008
 		cost = 5.00
 		prerequisite = {
 			focus = PKA_became_strong_economies
@@ -1001,7 +1001,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	}
 	focus = {
 		id = PKA_prepare_for_joining_euro
-		icon = euro
+		icon = GFX_focus_TURNEW_263
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_pay_off_our_debts
@@ -1030,7 +1030,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	}
 	focus = {
 		id = PKA_change_the_industrialization_program
-		icon = romanian_economic_development_plan
+		icon = GFX_focus_TURNEW_264
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_victory_of_akp
@@ -1071,7 +1071,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	}
 	focus = {
 		id = PKA_continue_the_investment_income
-		icon = economic_community
+		icon = GFX_focus_TURNEW_265
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_change_the_industrialization_program
@@ -1337,7 +1337,7 @@ add_extra_state_shared_building_slots = 1
 				} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_antalya_dockyards
-		icon = Generic_Maritime
+		icon = GFX_focus_TURNEW_317
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_mersin_dockyards
@@ -1406,7 +1406,7 @@ add_extra_state_shared_building_slots = 1
 		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = PKA_cyprus_naval_deployment
-		icon = torpedo
+		icon = GFX_focus_TURNEW_318
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_antalya_dockyards
@@ -1448,7 +1448,7 @@ add_extra_state_shared_building_slots = 1
 		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = PKA_civilian_resolution_project
-		icon = industrial_complexes
+		icon = GFX_focus_TURNEW_266
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_industrialization_of_the_state
@@ -1479,7 +1479,7 @@ add_extra_state_shared_building_slots = 1
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = PKA_industrial_conservasion
-		icon = merge_plants
+		icon = GFX_focus_TURNEW_267
 		cost = 7.86
 		prerequisite = {
 			focus = PKA_civilian_resolution_project
@@ -1581,7 +1581,7 @@ add_extra_state_shared_building_slots = 1
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = PKA_central_industrial_complexes
-		icon = MEX_Industrialize_the_north
+		icon = GFX_focus_TURNEW_268
 		cost = 7.86
 		prerequisite = {
 			focus = PKA_civilian_resolution_project
@@ -1619,7 +1619,7 @@ add_extra_state_shared_building_slots = 1
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = PKA_civilian_investment_policies
-		icon = business_man2
+		icon = GFX_focus_TURNEW_269
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_central_industrial_complexes
@@ -1635,7 +1635,7 @@ add_extra_state_shared_building_slots = 1
 	}
 	focus = {
 		id = PKA_investment_opurtinies_with_USA
-		icon = USA_authoritarian_financial_control
+		icon = GFX_focus_TURNEW_270
 		cost = 7.86
 		prerequisite = {
 			focus = PKA_civilian_investment_policies
@@ -1751,7 +1751,7 @@ add_extra_state_shared_building_slots = 1
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = PKA_ankara_kayseri_railway
-		icon = infrastructure
+		icon = GFX_focus_TURNEW_061
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_industrialization_program_for_kayseri
@@ -2006,7 +2006,7 @@ swap_ideas = {
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_european_mediator
-		icon = europe
+		icon = GFX_focus_TURNEW_100
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_co_assistance_with_yugoslavian_situation
@@ -2495,7 +2495,7 @@ add_ideas =	media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		}
 	focus = {
 		id = PKA_recover_the_trade_reliability
-		icon = embargo
+		icon = GFX_focus_TURNEW_271
 		cost = 7.2
 		prerequisite = {
 			focus = PKA_recovering_from_the_revolt
@@ -2589,7 +2589,7 @@ increase_economic_growth = yes
 	}
 	focus = {
 		id = PKA_MIT
-		icon = mit
+		icon = GFX_focus_TURNEW_319
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_new_relations_with_military
@@ -2656,7 +2656,7 @@ swap_ideas = {
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_med_tradeship
-		icon = POTEF451
+		icon = GFX_focus_TURNEW_272
 		cost = 7.2
 		prerequisite = {
 			focus = PKA_recover_the_trade_reliability
@@ -3016,7 +3016,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_leave_the_dollar
-		icon = united_states_dollar
+		icon = GFX_focus_TURNEW_273
 		cost = 7.86
 		prerequisite = {
 			focus = PKA_european_usa_crisis
@@ -3269,7 +3269,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_increase_military_service
-		icon = generic_embrace_agrarian_society
+		icon = GFX_focus_TURNEW_320
 		cost = 5.00
 		prerequisite = {
 			focus = PKA_liberalized_war_economies
@@ -3490,7 +3490,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 		}
 	focus = {
 		id = PKA_industrialization_law
-		icon = red_industry
+		icon = GFX_focus_TURNEW_274
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_echological_reforms
@@ -3878,7 +3878,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	}
 	focus = {
 		id = PKA_ensure_echological_peace
-		icon = brain_power
+		icon = GFX_focus_TURNEW_009
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_clean_USA
@@ -4151,7 +4151,7 @@ add_extra_state_shared_building_slots = 1
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = PKA_dockyard_artilery_industries
-		icon = artillery
+		icon = GFX_focus_TURNEW_162
 		cost = 7.86
 		prerequisite = {
 			focus = PKA_mersin_dockyards
@@ -4231,7 +4231,7 @@ add_extra_state_shared_building_slots = 1
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = PKA_dockyard_arms_facilitiies
-		icon = ship_bleur_point
+		icon = GFX_focus_TURNEW_321
 		cost = 7.86
 		prerequisite = {
 			focus = PKA_improvement_of_arms_sector
@@ -4268,7 +4268,7 @@ add_extra_state_shared_building_slots = 1
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = PKA_investment_opurtinies_with_ENG
-		icon = british_nationalism
+		icon = GFX_focus_TURNEW_275
 		cost = 7.86
 		prerequisite = {
 			focus = PKA_civilian_investment_policies
@@ -4375,7 +4375,7 @@ add_extra_state_shared_building_slots = 1
 
 	focus = {
 		id = TUR_covid-19_pandemic11
-		icon = generic_healthcare
+		icon = GFX_focus_TURNEW_013
 		cost = 7.15
 		x = 61
 		y = 0
@@ -4392,7 +4392,7 @@ add_extra_state_shared_building_slots = 1
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = TUR_covid-19_preparations11
-		icon = production2
+		icon = GFX_focus_TURNEW_002
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_pandemic11
@@ -4412,7 +4412,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_build_up_hospitals11
-		icon = generic_hospital2
+		icon = GFX_focus_TURNEW_017
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations11
@@ -4432,7 +4432,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_turn_airports_to_hospital11
-		icon = generic_hospital
+		icon = GFX_focus_TURNEW_018
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_build_up_hospitals11
@@ -4479,7 +4479,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_german_vaccines1
-		icon = trade_with_germany
+		icon = GFX_focus_TURNEW_014
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program1
@@ -4500,7 +4500,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_increase_funds_to_science11
-		icon = market_economy
+		icon = GFX_focus_TURNEW_016
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_covid-19_preparations11
@@ -4546,7 +4546,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_buy_chinese_vaccines11
-		icon = trade_with_china
+		icon = GFX_focus_TURNEW_015
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_turn_airports_to_hospital11
@@ -4573,7 +4573,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_normalisation_from_covid11
-		icon = consumer_goods
+		icon = GFX_focus_TURNEW_019
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_buy_chinese_vaccines11
@@ -4895,7 +4895,7 @@ add_stability = 0.1
 	}
 	focus = {
 		id = TUR_NATO_mission8
-		icon = nato_membership_action_plan
+		icon = GFX_focus_TURNEW_046
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_peace_whatever_costs8
@@ -5098,7 +5098,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_bor8
-		icon = b-5
+		icon = GFX_focus_TURNEW_007
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_strong_state8

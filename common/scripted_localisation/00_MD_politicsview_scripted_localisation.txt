@@ -13900,9 +13900,8 @@ defined_text = {
 defined_text = {
 	name = Neutral_Autocracy_L
 	# Turkey submod party names
-	text = { trigger = { original_tag = TUR } localization_key = TUR.Neutral_Autocracy }
 	text = { trigger = { original_tag = TUR has_global_flag = blast } localization_key = TUR.Neutral_Autocracy_Gelecek }
-	text = { trigger = { original_tag = TUR has_global_flag = cem_uzan } localization_key = TUR.Neutral_Autocracy }
+	text = { trigger = { original_tag = TUR } localization_key = TUR.Neutral_Autocracy }
 	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Autocracy}
 	text = { trigger = { original_tag = SAU } localization_key = SAU.Neutral_Autocracy }
 	text = { trigger = { has_country_flag = USoE_political_parties } localization_key = USoE.Neutral_Autocracy }
@@ -18655,7 +18654,7 @@ defined_text = {
 defined_text = {
 	name = anarchist_communism_L_icon
 	# Turkey submod party names
-	text = { trigger = { original_tag = TUR } localization_key = TUR.anarchist_communism_icon_2017 }
+	text = { trigger = { original_tag = TUR } localization_key = TUR.anarchist_communism_icon }
 	text = { trigger = { original_tag = TUR } localization_key = generic.anarchist_communism_icon}
 	text = { trigger = { OR = { original_tag = AFR original_tag = SIE } } localization_key = SIE.anarchist_communism_icon }
 	text = { trigger = { original_tag = BOL } localization_key = BOL.anarchist_communism_icon }
@@ -19422,7 +19421,7 @@ defined_text = {
 	# Turkey submod party names
 	text = { trigger = { original_tag = TUR has_global_flag = blast } localization_key = TUR.Neutral_Autocracy_Gelecek_icon }
     text = { trigger = { original_tag = TUR has_global_flag = cem_uzan } localization_key = TUR.Neutral_Autocracy_icon }
-    text = { trigger = { original_tag = TUR } localization_key = TUR.Technocratic_icon }
+    text = { trigger = { original_tag = TUR } localization_key = TUR.Neutral_Autocracy_icon }
 	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Autocracy_icon}
 	text = { trigger = { original_tag = SIA } localization_key = SIA.Neutral_Autocracy_icon }
 	text = { trigger = { original_tag = SAU } localization_key = SAU.Neutral_Autocracy_icon }
@@ -19717,7 +19716,7 @@ defined_text = {
 defined_text = {
 	name = Neutral_Muslim_Brotherhood_L_icon
 	# Turkey submod party names
-	text = { trigger = { original_tag = TUR has_global_flag = akp } localization_key = TUR.Neutral_Muslim_Brotherhood_2001_icon }
+	text = { trigger = { original_tag = TUR has_global_flag = akp } localization_key = TUR.Neutral_Muslim_Brotherhood_akp_icon }
 	text = { trigger = { original_tag = TUR date > 2001.8.14 } localization_key = TUR.Neutral_Muslim_Brotherhood_icon }
 	text = { trigger = { original_tag = TUR } localization_key = generic.Neutral_Muslim_Brotherhood_icon}
 	text = { trigger = { original_tag = SIA } localization_key = SIA.Neutral_Muslim_Brotherhood_icon }

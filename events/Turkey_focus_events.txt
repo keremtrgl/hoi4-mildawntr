@@ -302,12 +302,11 @@ country_event = {
 add_named_threat = { threat = 1 name = TURKISH_ANNEXATION_AZE }
 			set_cosmetic_tag = AZT
     TUR = {
-	annex_country = { target = AZE transfer_troops = yes}
-		AZE = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { country_exists = AZE }
+		AZE = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = AZE transfer_troops = yes }
+	} }
 	hidden_effect = {
 	add_state_core = 713
 	add_state_core = 712
@@ -567,12 +566,11 @@ country_event = {
 	TUR = {
     set_cosmetic_tag = TRU
     TUR = {
-	annex_country = { target = ROOT transfer_troops = yes}
-		ROOT = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { ROOT = { exists = yes NOT = { tag = TUR } } }
+		ROOT = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = ROOT transfer_troops = yes }
+	} }
 	hidden_effect = {
 	add_state_core = 718
 	add_state_core = 714
@@ -613,12 +611,11 @@ country_event = {
 	TUR = {
     set_cosmetic_tag = TRU 
     TUR = {
-	annex_country = { target = ROOT transfer_troops = yes}
-		ROOT = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { ROOT = { exists = yes NOT = { tag = TUR } } }
+		ROOT = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = ROOT transfer_troops = yes }
+	} }
 	hidden_effect = {
 	add_state_core = 727
 	add_state_core = 726
@@ -653,12 +650,11 @@ country_event = {
 	TUR = {
     set_cosmetic_tag = TRU
     TUR = {
-	annex_country = { target = ROOT transfer_troops = yes}
-		ROOT = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { ROOT = { exists = yes NOT = { tag = TUR } } }
+		ROOT = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = ROOT transfer_troops = yes }
+	} }
 	hidden_effect = {
 	add_state_core = 713
 	add_state_core = 712
@@ -694,12 +690,11 @@ country_event = {
 	TUR = {
     set_cosmetic_tag = TRU
     TUR = {
-	annex_country = { target = ROOT transfer_troops = yes}
-		ROOT = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { ROOT = { exists = yes NOT = { tag = TUR } } }
+		ROOT = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = ROOT transfer_troops = yes }
+	} }
 	hidden_effect = {
 	add_state_core = 720
 	add_state_core = 721
@@ -735,12 +730,11 @@ country_event = {
 	TUR = {
     set_cosmetic_tag = TRU
     TUR = {
-	annex_country = { target = ROOT transfer_troops = yes}
-		ROOT = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { ROOT = { exists = yes NOT = { tag = TUR } } }
+		ROOT = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = ROOT transfer_troops = yes }
+	} }
 	hidden_effect = {
 	add_state_core = 728
 	add_state_core = 729
@@ -1211,15 +1205,14 @@ country_event = {
 		ai_chance = { factor = 1}
 
     TUR = {
-	annex_country = { target = KUR transfer_troops = yes}
-	add_state_core = 630
-	add_state_core = 164
-	add_state_core = 633
-		KUR = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} 
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { country_exists = KUR }
+		KUR = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = KUR transfer_troops = yes }
+		add_state_core = 630
+		add_state_core = 164
+		add_state_core = 633
+	} 
 	}
 
 }
@@ -1276,12 +1269,11 @@ country_event = {
 	TUR = {
     set_cosmetic_tag = TRU 
     TUR = {
-	annex_country = { target = ROOT transfer_troops = yes}
-		ROOT = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { ROOT = { exists = yes NOT = { tag = TUR } } }
+		ROOT = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = ROOT transfer_troops = yes }
+	} }
 	hidden_effect = {
 	add_state_core = 123
 	add_state_core = 121
@@ -1319,12 +1311,11 @@ country_event = {
 	TUR = {
     set_cosmetic_tag = TRU 
     TUR = {
-	annex_country = { target = ROOT transfer_troops = yes}
-		ROOT = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { ROOT = { exists = yes NOT = { tag = TUR } } }
+		ROOT = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = ROOT transfer_troops = yes }
+	} }
 	hidden_effect = {
 	add_state_core = 146
 	 }
@@ -3375,12 +3366,11 @@ country_event = {
 
 	TUR = {
     TUR = {
-	annex_country = { target = ROOT transfer_troops = yes}
-		ROOT = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { ROOT = { exists = yes NOT = { tag = TUR } } }
+		ROOT = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = ROOT transfer_troops = yes }
+	} }
 	}
 } 
 	option = {
@@ -3892,12 +3882,11 @@ country_event = {
 		ai_chance = { factor = 100}
 
     TUR = {
-	annex_country = { target = ROOT transfer_troops = yes}
-		ROOT = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} }
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { ROOT = { exists = yes NOT = { tag = TUR } } }
+		ROOT = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = ROOT transfer_troops = yes }
+	} }
 	}
 	option = {
 		name = TurkeyF.130.b
@@ -4600,12 +4589,11 @@ country_event = {
 		ai_chance = { factor = 100}
 
     TUR = {
-	annex_country = { target = ROOT transfer_troops = yes}
-		ROOT = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		}
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { ROOT = { exists = yes NOT = { tag = TUR } } }
+		ROOT = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = ROOT transfer_troops = yes }
+	}
 } }
 	option = {
 		name = TurkeyF.155.b
@@ -4699,12 +4687,11 @@ country_event = {
 		ai_chance = { factor = 100}
 
     set_cosmetic_tag = TRU 
-	annex_country = { target = UZB transfer_troops = yes}
-		UZB = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} 
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { country_exists = UZB }
+		UZB = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = UZB transfer_troops = yes }
+	} 
 	hidden_effect = {
 	add_state_core = 727
 	add_state_core = 726
@@ -4712,12 +4699,11 @@ country_event = {
 
     }
 
-	annex_country = { target = KAZ transfer_troops = yes}
-		KAZ = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} 
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { country_exists = KAZ }
+		KAZ = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = KAZ transfer_troops = yes }
+	} 
 	hidden_effect = {
 	add_state_core = 718
 	add_state_core = 714
@@ -4728,35 +4714,32 @@ country_event = {
 
     }
 
-	annex_country = { target = AZE transfer_troops = yes}
-		AZE = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} 
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { country_exists = AZE }
+		AZE = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = AZE transfer_troops = yes }
+	} 
 	hidden_effect = {
 	add_state_core = 713
 	add_state_core = 712
 	add_state_core = 711
 	}
 
-	annex_country = { target = KYR transfer_troops = yes}
-		KYR = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} 
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { country_exists = KYR }
+		KYR = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = KYR transfer_troops = yes }
+	} 
 	hidden_effect = {
 	add_state_core = 720
 	add_state_core = 721
     }
 
-	annex_country = { target = TRK transfer_troops = yes}
-		TRK = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} 
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { country_exists = TRK }
+		TRK = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = TRK transfer_troops = yes }
+	} 
 	hidden_effect = {
 	add_state_core = 728
 	add_state_core = 729
@@ -6244,15 +6227,14 @@ country_event = {
 
 	news_event = Turkey_news.43
     TUR = {
-	annex_country = { target = KUR transfer_troops = yes}
-	add_state_core = 630
-	add_state_core = 164
-	add_state_core = 633
-		KUR = {
-			every_unit_leader = {
-				set_nationality = TUR
-			}
-		} 
+	if = { # annexing a country that no longer exists crashes the game
+		limit = { country_exists = KUR }
+		KUR = { every_unit_leader = { set_nationality = TUR } }
+		annex_country = { target = KUR transfer_troops = yes }
+		add_state_core = 630
+		add_state_core = 164
+		add_state_core = 633
+	} 
 	}
 
 }

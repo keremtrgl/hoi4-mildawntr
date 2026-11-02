@@ -1,0 +1,15 @@
+# True when Turkey holds a PKK puppet or owns a Kurdish state it has no core on (lost in the PKK uprising).
+# Shows TUR_reintegrate_kurdistan. The federalized Ottoman path gives these cores up on purpose.
+TUR_kurdistan_needs_reintegration = {
+	NOT = { has_cosmetic_tag = OTT_federalized }
+	OR = {
+		AND = {
+			country_exists = PKK
+			PKK = { is_subject_of = ROOT }
+		}
+		any_owned_state = {
+			OR = { state = 162 state = 935 state = 1205 }
+			NOT = { is_core_of = ROOT }
+		}
+	}
+}

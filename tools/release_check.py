@@ -298,7 +298,10 @@ def check_refs(rep, layers, loc_union, mod_loc):
     rep.add(group, 'Every focus icon / event picture / idea picture sprite exists', 'WARN', fmt(missing_sprite))
 
     roots = [ROOT, layers.md, layers.game]
-    no_tex = [f'{n} -> {t}  ({r})' for r, n, t in textures if not any(os.path.exists(os.path.join(b, t)) for b in roots)]
+    # the engine loads the .dds when a .tga path is missing (vanilla's own theatreselector.gfx relies on it)
+    tex_exists = lambda t: any(os.path.exists(os.path.join(b, c)) for b in roots
+                               for c in (t, re.sub(r'\.tga$', '.dds', t)))
+    no_tex = [f'{n} -> {t}  ({r})' for r, n, t in textures if not tex_exists(t)]
     rep.add(group, 'Every sprite the mod defines points to an existing texture', 'ERROR', no_tex)
 
     # events nothing fires: triggered-only, never mentioned outside their own definition
