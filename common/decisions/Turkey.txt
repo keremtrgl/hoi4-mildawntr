@@ -7623,3 +7623,29 @@ TUR_east_express = {
 	}
 }
 }
+
+TUR_mod_menu_category = {
+
+	TUR_open_welcome_window = {
+		icon = GFX_decision_generic_speech
+
+		visible = {
+			is_ai = no
+			tag = TUR
+		}
+
+		available = {
+			NOT = { has_country_flag = MENU_OUTLOOK_TRIGGERED }
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			set_country_flag = MENU_OUTLOOK_TRIGGERED
+		}
+	}
+}

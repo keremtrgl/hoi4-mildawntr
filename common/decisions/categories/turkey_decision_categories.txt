@@ -843,3 +843,10 @@ TUR_counter_terrorism_civ = {
 	allowed = { original_tag = TUR }
 	visible = { original_tag = TUR }
 }
+
+TUR_mod_menu_category = {
+	icon = GFX_decision_category_generic_crisis
+	priority = -200
+	allowed = { original_tag = TUR }
+	visible = { is_ai = no }
+}

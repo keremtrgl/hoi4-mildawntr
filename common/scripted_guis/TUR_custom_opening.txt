@@ -177,6 +177,11 @@ scripted_gui = {
 				clr_country_flag = FAQ_8
 				clr_country_flag = FAQ_9
 				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
 				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
 		    guide_next_1_click = {
@@ -209,6 +214,11 @@ scripted_gui = {
 				clr_country_flag = FAQ_8
 				clr_country_flag = FAQ_9
 				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
 				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
 		    guide_prev_2_click = {
@@ -245,6 +255,11 @@ scripted_gui = {
 				clr_country_flag = FAQ_8
 				clr_country_flag = FAQ_9
 				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
 				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
 		    guide_prev_3_click = {
@@ -281,6 +296,11 @@ scripted_gui = {
 				clr_country_flag = FAQ_8
 				clr_country_flag = FAQ_9
 				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
 				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
 		    guide_prev_4_click = {
@@ -317,6 +337,11 @@ scripted_gui = {
 				clr_country_flag = FAQ_8
 				clr_country_flag = FAQ_9
 				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
 				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
 		    guide_prev_5_click = {
@@ -353,6 +378,11 @@ scripted_gui = {
 				clr_country_flag = FAQ_8
 				clr_country_flag = FAQ_9
 				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
 				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
 		    guide_prev_6_click = {
@@ -389,6 +419,11 @@ scripted_gui = {
 				clr_country_flag = FAQ_8
 				clr_country_flag = FAQ_9
 				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
 				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
 		    guide_prev_7_click = {
@@ -425,6 +460,11 @@ scripted_gui = {
 				clr_country_flag = FAQ_8
 				clr_country_flag = FAQ_9
 				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
 				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
 		    guide_prev_8_click = {
@@ -461,6 +501,11 @@ scripted_gui = {
 				clr_country_flag = FAQ_8
 				clr_country_flag = FAQ_9
 				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
 				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
 		    guide_prev_9_click = {
@@ -497,11 +542,221 @@ scripted_gui = {
 				clr_country_flag = FAQ_8
 				clr_country_flag = FAQ_9
 				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
 				set_country_flag = MENU_OUTLOOK_TRIGGERED
 			}
 		    guide_prev_10_click = {
 				clr_country_flag = FAQ_10
 				set_country_flag = FAQ_9
+			}
+		    guide_next_10_click = {
+				clr_country_flag = FAQ_10
+				set_country_flag = FAQ_11
+			}
+		}
+	}
+
+	custom_opening_12_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_12"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_11
+			tag = TUR
+		}
+
+		effects = {
+		    guide_return_11_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    guide_prev_11_click = {
+				clr_country_flag = FAQ_11
+				set_country_flag = FAQ_10
+			}
+		    guide_next_11_click = {
+				clr_country_flag = FAQ_11
+				set_country_flag = FAQ_12
+			}
+		}
+	}
+
+	custom_opening_13_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_13"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_12
+			tag = TUR
+		}
+
+		effects = {
+		    guide_return_12_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    guide_prev_12_click = {
+				clr_country_flag = FAQ_12
+				set_country_flag = FAQ_11
+			}
+		    guide_next_12_click = {
+				clr_country_flag = FAQ_12
+				set_country_flag = FAQ_13
+			}
+		}
+	}
+
+	custom_opening_14_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_14"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_13
+			tag = TUR
+		}
+
+		effects = {
+		    guide_return_13_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    guide_prev_13_click = {
+				clr_country_flag = FAQ_13
+				set_country_flag = FAQ_12
+			}
+		    guide_next_13_click = {
+				clr_country_flag = FAQ_13
+				set_country_flag = FAQ_14
+			}
+		}
+	}
+
+	custom_opening_15_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_15"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_14
+			tag = TUR
+		}
+
+		effects = {
+		    guide_return_14_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    guide_prev_14_click = {
+				clr_country_flag = FAQ_14
+				set_country_flag = FAQ_13
+			}
+		    guide_next_14_click = {
+				clr_country_flag = FAQ_14
+				set_country_flag = FAQ_15
+			}
+		}
+	}
+
+	custom_opening_16_window = {
+		context_type = player_context
+
+		window_name = "custom_opening_16"
+
+		visible = {
+			is_ai = no
+			has_country_flag = FAQ_15
+			tag = TUR
+		}
+
+		effects = {
+		    guide_return_15_click = {
+				clr_country_flag = FAQ_1
+				clr_country_flag = FAQ_2
+				clr_country_flag = FAQ_3
+				clr_country_flag = FAQ_4
+				clr_country_flag = FAQ_5
+				clr_country_flag = FAQ_6
+				clr_country_flag = FAQ_7
+				clr_country_flag = FAQ_8
+				clr_country_flag = FAQ_9
+				clr_country_flag = FAQ_10
+				clr_country_flag = FAQ_11
+				clr_country_flag = FAQ_12
+				clr_country_flag = FAQ_13
+				clr_country_flag = FAQ_14
+				clr_country_flag = FAQ_15
+				set_country_flag = MENU_OUTLOOK_TRIGGERED
+			}
+		    guide_prev_15_click = {
+				clr_country_flag = FAQ_15
+				set_country_flag = FAQ_14
 			}
 		}
 	}
