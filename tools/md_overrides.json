@@ -70,11 +70,11 @@
     },
     "interface/theatreselector.gfx": {
       "mode": "merge",
-      "why": "noOfFrames 100 -> 115 for the army shield atlases, which carry 15 Turkish army insignia after MD's frames."
+      "why": "noOfFrames 100 -> 115 for the army shield atlases and 31 -> 46 for the navy (task force) atlases, which carry 15 Turkish insignia after MD's frames."
     },
     "gfx/army_icons/army_icons.txt": {
       "mode": "merge",
-      "why": "15 Turkish army insignia (frames 101-115, original_tag = TUR) appended to MD's army list."
+      "why": "15 Turkish insignia (original_tag = TUR) appended to MD's army list (frames 101-115) and to the fleet and task force lists (frames 32-46)."
     }
   }
 }
