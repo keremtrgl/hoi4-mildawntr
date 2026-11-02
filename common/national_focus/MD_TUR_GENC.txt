@@ -26,7 +26,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = GENC_liberal_thoughts
-		icon = liberalization
+		icon = GFX_focus_TURNEW_429
 		cost = 7.15
 		x = 17
 		y = 5
@@ -62,7 +62,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = GENC_propaganda
-		icon = neu_path
+		icon = GFX_focus_TURNEW_454
 		cost = 7.15
 		prerequisite = {
 			focus = GENC_victorius
@@ -617,7 +617,7 @@ swap_ideas = {
 }   ai_will_do = { base = 14 } }
 	focus = {
 		id = GENC_fishing_industry
-		icon = develop_polish_shipbuilding
+		icon = GFX_focus_TURNEW_305
 		cost = 7.15
 		prerequisite = {
 			focus = GENC_free_ships_for_them
@@ -998,7 +998,7 @@ swap_ideas = {
     }	
 	focus = {
 		id = GENC_strenghen_agriculture
-		icon = land_reform
+		icon = GFX_focus_TURNEW_306
 		cost = 7.15
 		prerequisite = {
 			focus = GENC_decrease_on_unemployed
@@ -1283,7 +1283,7 @@ remove_idea = consumption_economy
     }	
 	focus = {
 		id = GENC_new_agricultural_bases
-		icon = focus_generic_land_reclamation
+		icon = GFX_focus_TURNEW_801
 		cost = 7.15
 		prerequisite = {
 			focus = GENC_rise_of_agriculture
@@ -1653,7 +1653,7 @@ add_political_power = -100
 	}
 	focus = {
 		id = GENC_militarize_FSA
-		icon = islamic_emirate_of_syria
+		icon = GFX_focus_TURNEW_824
 		cost = 7.15
 		prerequisite = {
 			focus = GENC_support_democrats
@@ -1682,7 +1682,7 @@ add_political_power = -100
 	}
 	focus = {
 		id = GENC_invasion_of_armenia
-		icon = attack_armenia
+		icon = GFX_focus_TURNEW_604
 		cost = 7.86
 		prerequisite = {
 			focus = GENC_sign_azerbaijani_treaty
@@ -1861,7 +1861,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = GENC_mazot_1_ytl
-		icon = generic_gas
+		icon = GFX_focus_TURNEW_307
 		cost = 7.15
 		prerequisite = {
 			focus = GENC_strenghen_power_on_energy

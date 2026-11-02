@@ -4,7 +4,7 @@ focus_tree = {
 	
 	focus = {
 		id = TKF_vote_time
-		icon = Focus_Socialist_Propaganda
+		icon = GFX_focus_TURNEW_440
 		cost = 7.15
 		x = 43
 		y = 0
@@ -23,7 +23,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		}
 	focus = {
 		id = TKF_countrywide_propaganda
-		icon = communist_propaganda
+		icon = GFX_focus_TURNEW_465
 		cost = 5.00
 		prerequisite = {
 			focus = TKF_vote_time
@@ -105,7 +105,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		}
 	focus = {
 		id = TKF_take_over_the_majority
-		icon = major_alliance2
+		icon = GFX_focus_TURNEW_415
 		cost = 5.00
 		prerequisite = {
 			focus = TKF_create_anti_right_movement
@@ -227,7 +227,7 @@ swap_ideas = {
 	} ai_will_do = { base = 8 } } 
 	focus = {
 		id = TKF_disk_cooperations
-		icon = industry_communism
+		icon = GFX_focus_TURNEW_614
 		cost = 7.2
 		prerequisite = {
 			focus = TKF_national_rebellion
@@ -1194,7 +1194,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		} } ai_will_do = { base = 8 } }
 	focus = {
 		id = TKF_new_friendships_in_north
-		icon = reinforce_northern_naval_bases
+		icon = GFX_focus_TURNEW_638
 		cost = 5.00
 		prerequisite = {
 			focus = TKF_national_vision
@@ -1739,7 +1739,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 			} ai_will_do = { base = 8 } }	
 	focus = {
 		id = TKF_chinese_investment_of_inf
-		icon = mandate_of_heaven
+		icon = GFX_focus_TURNEW_810
 		cost = 7.86
 		prerequisite = {
 			focus = TKF_investment_time

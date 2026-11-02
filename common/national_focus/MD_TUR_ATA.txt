@@ -105,7 +105,7 @@ swap_ideas = {
 			}
 	focus = {
 		id = ATA_foreign_policies
-		icon = generic_government
+		icon = GFX_focus_TURNEW_598
 		cost = 7.15
 		x = 49
 		y = 0
@@ -376,7 +376,7 @@ swap_ideas = {
 			}
 	focus = {
 		id = ATA_rise_of_the_problems
-		icon = anti_pacifism
+		icon = GFX_focus_TURNEW_398
 		cost = 5.00
 		prerequisite = {
 			focus = ATA_a_new_world
@@ -470,7 +470,7 @@ swap_ideas = {
 			}
 	focus = {
 		id = ATA_cleanize_the_harm
-		icon = Generic_Political_Killing
+		icon = GFX_focus_TURNEW_472
 		cost = 7.20
 		prerequisite = {
 			focus = ATA_declare_elections
@@ -574,7 +574,7 @@ set_global_flag = ATA_BLOCK
 			}
 	focus = {
 		id = ATA_resource_planning
-		icon = resource_extraction
+		icon = GFX_focus_TURNEW_647
 		cost = 7.15
 		prerequisite = {
 			focus = ATA_industrial_restoration
@@ -735,7 +735,7 @@ set_global_flag = ATA_BLOCK
 		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = ATA_look_for_rich_steel
-		icon = steel_production2
+		icon = GFX_focus_TURNEW_299
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_local_boron_fields
@@ -769,7 +769,7 @@ set_global_flag = ATA_BLOCK
 		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = ATA_turkish_rubber_industries
-		icon = rubber_production
+		icon = GFX_focus_TURNEW_796
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_local_boron_fields
@@ -1247,7 +1247,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 	}	
 	focus = {
 		id = ATA_protect_the_mavi_turkiye
-		icon = turk_naval
+		icon = GFX_focus_TURNEW_342
 		cost = 7.15
 		prerequisite = {
 			focus = ATA_NATO_relationship
@@ -1723,7 +1723,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 	}	
 	focus = {
 		id = ATA_joint_deal_of_european_union
-		icon = EU_TUR
+		icon = GFX_focus_TURNEW_622
 		cost = 7.15
 		prerequisite = {
 			focus = ATA_investment_fund_of_balkans
@@ -2697,7 +2697,7 @@ add_offsite_building = { type = arms_factory level = 2 }
 		}
 	focus = {
 		id = ATA_start_the_gulenist_investigation
-		icon = islamophobia
+		icon = GFX_focus_TURNEW_343
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_redzyne_the_armed_forces
@@ -2909,7 +2909,7 @@ swap_ideas = {
 		}
 	focus = {
 		id = ATA_strenghen_the_mit_power
-		icon = focus_generic_secret_service_agency
+		icon = GFX_focus_TURNEW_344
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_strenghen_mit
@@ -3537,7 +3537,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		}
 	focus = {
 		id = ATA_restore_kayseri
-		icon = industry2
+		icon = GFX_focus_TURNEW_818
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_support_the_aerial_industries
@@ -3853,7 +3853,7 @@ add_offsite_building = { type = arms_factory level = 2 }
 		}
 	focus = {
 		id = ATA_kayseri-air
-		icon = air_industry
+		icon = GFX_focus_TURNEW_345
 		cost = 7.86
 		prerequisite = {
 			focus = ATA_restore_kayseri
@@ -4275,7 +4275,7 @@ swap_ideas = {
 
 	focus = {
 		id = ATA_localize_the_US_weapons
-		icon = Focus_Study_Submachineguns
+		icon = GFX_focus_TURNEW_346
 		cost = 7.86
 		prerequisite = {
 			focus = ATA_mild_american_cooperationism
@@ -5638,7 +5638,7 @@ focus = {
 	}
 	focus = {
 		id = ATA_lower_threshold
-		icon = Focus_Parliament_Constitution
+		icon = GFX_focus_TURNEW_423
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_strenghen_the_foundations_of_democracy
@@ -6145,7 +6145,7 @@ focus = {
 	}
 	focus = {
 		id = ATA_politics_by_nukes
-		icon = nuclear_energy
+		icon = GFX_focus_TURNEW_347
 		cost = 7.15
 		prerequisite = {
 			focus = ATA_strenghen_nuclear_fiels

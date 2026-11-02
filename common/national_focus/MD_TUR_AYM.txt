@@ -4,7 +4,7 @@ focus_tree = {
 
 	focus = {
 		id = AYM_the_great_take_over
-		icon = generic_government
+		icon = GFX_focus_TURNEW_399
 		cost = 7.15
 		x = 21
 		y = 0
@@ -91,7 +91,7 @@ focus_tree = {
 		}  ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_foreign_policy
-		icon = USA_new_foreign_policy
+		icon = GFX_focus_TURNEW_599
 		cost = 7.15
 		x = 48
 		y = 16
@@ -204,7 +204,7 @@ focus_tree = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = AYM_compromise_focused_eu_policies
-		icon = EU_policies
+		icon = GFX_focus_TURNEW_623
 		cost = 5.00
 		prerequisite = {
 			focus = AYM_european_union_strategy
@@ -376,7 +376,7 @@ focus_tree = {
 		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_meet_HQ
-		icon = Generic_Morale_Bonus_Focus
+		icon = GFX_focus_TURNEW_819
 		cost = 5.00
 		prerequisite = {
 			focus = AYM_military_relations
@@ -1174,7 +1174,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		}
 	focus = {
 		id = AYM_suspend_military_actions
-		icon = Generic_Urban_Partisans
+		icon = GFX_focus_TURNEW_349
 		cost = 5.00
 		prerequisite = {
 			focus = AYM_military_law
@@ -1197,7 +1197,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		}
 	focus = {
 		id = AYM_military_courts
-		icon = dangerous_laws
+		icon = GFX_focus_TURNEW_350
 		cost = 5.00
 		prerequisite = {
 			focus = AYM_suspend_military_actions
@@ -1611,7 +1611,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 	}
 	focus = {
 		id = AYM_austria_invest
-		icon = align_to_austria
+		icon = GFX_focus_TURNEW_797
 		cost = 7.2
 		prerequisite = {
 			focus = AYM_joint_infulencer_of_eu
@@ -1789,7 +1789,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 	}
 	focus = {
 		id = AYM_military_prisons
-		icon = armoured_fist
+		icon = GFX_focus_TURNEW_351
 		cost = 5.00
 		prerequisite = {
 			focus = AYM_clean_the_generals
@@ -2160,7 +2160,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 	} ai_will_do = { base = 2 } }
 	focus = {
 		id = AYM_new_parliament
-		icon = champagne_bribes2
+		icon = GFX_focus_TURNEW_424
 		cost = 5.00
 		prerequisite = {
 			focus = AYM_mutual_government
@@ -2266,7 +2266,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 	}
 	focus = {
 		id = AYM_arms_council
-		icon = turk_militia
+		icon = GFX_focus_TURNEW_352
 		cost = 7.2
 		prerequisite = {
 			focus = AYM_appoint_technocrats
@@ -2677,7 +2677,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = AYM_trancaucasian_deal
-		icon = GEO_Transcaucasian_Union
+		icon = GFX_focus_TURNEW_648
 		cost = 7.86
 		prerequisite = {
 			focus = AYM_national_stabilization
@@ -3294,7 +3294,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = AYM_tank_factories
-		icon = industry_tanks
+		icon = GFX_focus_TURNEW_353
 		cost = 7.2
 		prerequisite = {
 			focus = AYM_new_generation_of_militaries

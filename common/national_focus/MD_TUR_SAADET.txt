@@ -29,7 +29,7 @@ reverse_add_opinion_modifier = { target = ISR modifier = general_serious_threat 
 	}
 	focus = {
 		id = MSNL_boost_saadet
-		icon = focus_RAJ_tryst_with_destiny_hand
+		icon = GFX_focus_TURNEW_438
 		cost = 7.15
 		prerequisite = {
 			focus = MSNL_islam_movement
@@ -398,7 +398,7 @@ block_defence_decrease = yes
 	}
 	focus = {
 		id = MSNL_renew_constitution
-		icon = MEX_Defend_the_constitution
+		icon = GFX_focus_TURNEW_413
 		cost = 7.15
 		prerequisite = {
 			focus = MSNL_beat_the_coup_attempt
@@ -682,7 +682,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	}
 	focus = {
 		id = MSNL_recognize_sharia_law
-		icon = end_sharia_law
+		icon = GFX_focus_TURNEW_463
 		cost = 7.2
 		prerequisite = {
 			focus = MSNL_kick_anti_ataturk_supporters_in_party
@@ -714,7 +714,7 @@ add_ideas =	media_opinion_towards_bad_1_left_wing_sad
 	}
 	focus = {
 		id = MSNL_nato_islam_power
-		icon = nato3
+		icon = GFX_focus_TURNEW_636
 		cost = 7.15
 		prerequisite = {
 			focus = MSNL_continue_with_NATO
@@ -1689,7 +1689,7 @@ swap_ideas = {
 		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = MSNL_industrialized_east
-		icon = anarchist_economy
+		icon = GFX_focus_TURNEW_808
 		cost = 7.15
 		prerequisite = {
 			focus = MSNL_open_factories_in_kayseri
@@ -2148,7 +2148,7 @@ search_filters = {FOCUS_FILTER_MANPOWER}
 	}
 	focus = {
 		id = MSNL_create_muslim_united_front
-		icon = muslim_expansionism
+		icon = GFX_focus_TURNEW_612
 		cost = 9.29
 		prerequisite = {
 			focus = MSNL_medrese

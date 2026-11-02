@@ -5,7 +5,7 @@ focus_tree = {
 	continuous_focus_position = { x = 4240 y = 1450 }
 	focus = {
 		id = TAK_junta
-		icon = armed_forces_of_turkey
+		icon = GFX_focus_TURNEW_442
 		cost = 7.15
 		x = 27
 		y = 0
@@ -138,7 +138,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			} ai_will_do = { base = 8 } }
 	focus = {
 		id = TAK_lift_the_elections
-		icon = elections_banned
+		icon = GFX_focus_TURNEW_417
 		cost = 7.15
 		prerequisite = {
 			focus = TAK_declare_dictatorship
@@ -183,7 +183,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	 }  ai_will_do = { base = 10 } }
 	focus = {
 		id = TAK_return_intervention
-		icon = helmet_knife
+		icon = GFX_focus_TURNEW_616
 		cost = 7.15
 		prerequisite = {
 			focus = TAK_lift_the_elections
@@ -202,7 +202,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	 }  ai_will_do = { base = 8 } }
 	focus = {
 		id = TAK_arrest_democrats
-		icon = anti_democracy
+		icon = GFX_focus_TURNEW_467
 		cost = 7.15
 		prerequisite = {
 			focus = TAK_lift_the_elections
@@ -1077,7 +1077,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	}
 	focus = {
 		id = TAK_draw_closer_ties_with_russia
-		icon = align_to_russia
+		icon = GFX_focus_TURNEW_640
 		cost = 7.15
 		prerequisite = {
 			focus = TAK_announce_the_leave

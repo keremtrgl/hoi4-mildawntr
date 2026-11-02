@@ -4,7 +4,7 @@ focus_tree = {
 		
 	focus = {
 		id = MAF_begin_the_first_congress
-		icon = examine_foreign_laws
+		icon = GFX_focus_TURNEW_432
 		cost = 7.15
 		x = 21
 		y = 0
@@ -276,7 +276,7 @@ focus_tree = {
 		}
 	focus = {
 		id = MAF_increase_general_instability
-		icon = fallen_soldiers
+		icon = GFX_focus_TURNEW_457
 		cost = 7.15
 		prerequisite = {
 			focus = MAF_build_a_corruption_in_a_state
@@ -432,7 +432,7 @@ focus_tree = {
 	} ai_will_do = { base = 10 } } 
 	focus = {
 		id = MAF_destroy_parties
-		icon = anti_democracy
+		icon = GFX_focus_TURNEW_407
 		cost = 7.2
 		prerequisite = {
 			focus = MAF_stability_programs
@@ -1495,7 +1495,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = MAF_military_trade
-		icon = ExpandTrade
+		icon = GFX_focus_TURNEW_827
 		cost = 7.15
 		prerequisite = {
 			focus = MAF_limit_the_tourism
@@ -1689,7 +1689,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = MAF_investments_2
-		icon = anarchist_economy
+		icon = GFX_focus_TURNEW_804
 		cost = 7.86
 		prerequisite = {
 			focus = MAF_treaties_with_mafias
@@ -2103,7 +2103,7 @@ swap_ideas = {
 	} ai_will_do = { base = 10 } }
 	focus = {
 		id = MAF_teach_mafias_general_war_tactics
-		icon = brothers_in_arms
+		icon = GFX_focus_TURNEW_360
 		cost = 5.00
 		prerequisite = {
 			focus = MAF_general_training
@@ -2498,7 +2498,7 @@ swap_ideas = {
 	} ai_will_do = { base = 10 } }
 	focus = {
 		id = MAF_shut_down_all_borders
-		icon = war4
+		icon = GFX_focus_TURNEW_607
 		cost = 5.00
 		prerequisite = {
 			focus = MAF_border_land_mines
@@ -4962,7 +4962,7 @@ swap_ideas = {
 		} ai_will_do = { base = 8 } } 
 	focus = {
 		id = MAF_target_f35_program
-		icon = fighter_plane
+		icon = GFX_focus_TURNEW_362
 		cost = 5.00
 		prerequisite = {
 			focus = MAF_target_pentagon_documents

@@ -6,7 +6,7 @@ focus_tree = {
 
 	focus = {
 		id = DSP_restoring_our_power
-		icon = horse_white_plain
+		icon = GFX_focus_TURNEW_453
 		cost = 7.15
 		x = 26
 		y = 0
@@ -48,7 +48,7 @@ focus_tree = {
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = DSP_delay_elections
-		icon = elections_rigged
+		icon = GFX_focus_TURNEW_428
 		cost = 1.5
 		prerequisite = {
 			focus = DSP_restoring_our_power
@@ -107,7 +107,7 @@ focus_tree = {
 			} ai_will_do = { base = 10 } }
 	focus = {
 		id = DSP_fastern_european_negotiotians
-		icon = EU_policies
+		icon = GFX_focus_TURNEW_603
 		cost = 7.15
 		prerequisite = {
 			focus = DSP_cure_the_ecevit
@@ -746,7 +746,7 @@ increase_policing_budget = yes
 	}
 	focus = {
 		id = DSP_leave_the_nato
-		icon = attack_nato
+		icon = GFX_focus_TURNEW_627
 		cost = 7.86
 		prerequisite = {
 			focus = DSP_policy_of_NATO
@@ -1583,7 +1583,7 @@ add_ideas =	media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	}
 	focus = {
 		id = DSP_send_technicians_to_see_fort
-		icon = literacy_rate_improvment2
+		icon = GFX_focus_TURNEW_800
 		cost = 7.15
 		prerequisite = {
 			focus = DSP_visit_scientific_communities_in_usa
@@ -2008,7 +2008,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	 } ai_will_do = { base = 8 } } 
 	focus = {
 		id = DSP_shield_system
-		icon = defense
+		icon = GFX_focus_TURNEW_823
 		cost = 7.2
 		prerequisite = {
 			focus = DSP_arm_the_local_turks
@@ -2291,7 +2291,7 @@ custom_effect_tooltip = WARN_GULEN
 			}
 	focus = {
 		id = DSP_trials_to_chp
-		icon = control_judiciary
+		icon = GFX_focus_TURNEW_403
 		cost = 7.15
 		prerequisite = {
 			focus = DSP_blame_chp_with_reactionary
@@ -3435,7 +3435,7 @@ search_filters = {FOCUS_FILTER_EXPENDITURE}
 	}
 	focus = {
 		id = DSP_resource_focused
-		icon = resource_extraction
+		icon = GFX_focus_TURNEW_651
 		cost = 7.15
 		prerequisite = {
 			focus = DSP_industrial_decisions

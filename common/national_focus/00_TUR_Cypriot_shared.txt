@@ -2,7 +2,7 @@
 
 shared_focus = {
 		id = TUR_greek_issues
-		icon = attack_cyprus
+		icon = GFX_focus_TURNEW_223
 		cost = 7.15
 		x = 0#37
 		y = 45#11
@@ -166,7 +166,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	#
 	shared_focus = {
 		id = TUR_cypriot_troubles
-		icon = align_to_northern_cyprus
+		icon = GFX_focus_TURNEW_224
 		cost = 7.86
 		prerequisite = {
 			focus = TUR_greek_issues
@@ -203,7 +203,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_aggressive_approach
-		icon = focus_ROM_secure_greece
+		icon = GFX_focus_TURNEW_593
 		cost = 7.86
 		prerequisite = {
 			focus = TUR_cypriot_troubles
@@ -270,7 +270,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_demand_british_withdrawal
-		icon = enemy_of_britain2
+		icon = GFX_focus_TURNEW_225
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_direct_involvement
@@ -309,7 +309,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_bring_the_north_to_fold
-		icon = Generic_Revanchism
+		icon = GFX_focus_TURNEW_226
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_demand_british_withdrawal
@@ -386,7 +386,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_indirect_involvement
-		icon = flames_of_rebellion
+		icon = GFX_focus_TURNEW_227
 		cost = 7.86
 		mutually_exclusive = { focus = TUR_direct_involvement }
 		available = {
@@ -479,7 +479,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_fund_militias
-		icon = ARM_seize_stockpiles
+		icon = GFX_focus_TURNEW_813
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_provide_military_training
@@ -595,7 +595,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	#Aegean Dispute
 	shared_focus = {
 		id = TUR_aegan_dispute
-		icon = greek_thing
+		icon = GFX_focus_TURNEW_617
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_greek_issues
@@ -615,7 +615,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 
 	shared_focus = {
 		id = TUR_path_of_no_return #CANT BE IN NATO AND DO THIS!
-		icon = Kill_Greece
+		icon = GFX_focus_TURNEW_641
 		cost = 7.86
 		prerequisite = {
 			focus = TUR_aegan_dispute
@@ -670,7 +670,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_fortify_coast
-		icon = coastal_fort
+		icon = GFX_focus_TURNEW_418
 		cost = 7.15
 		mutually_exclusive = { focus = TUR_crete_rebellion }
 		prerequisite = {
@@ -712,7 +712,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_border_pictures
-		icon = Generic_Redraw_Borders
+		icon = GFX_focus_TURNEW_443
 		cost = 5.72
 		prerequisite = {
 			focus = TUR_fortify_coast
@@ -852,7 +852,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_crete_rebellion
-		icon = focus_GRE_byzantine_themata
+		icon = GFX_focus_TURNEW_393
 		cost = 5.72
 		mutually_exclusive = { focus = TUR_fortify_coast }
 		prerequisite = {
@@ -1036,7 +1036,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_path_of_compromise
-		icon = goal_JAP_peace
+		icon = GFX_focus_TURNEW_228
 		cost = 7.86
 		prerequisite = { focus = TUR_aegan_dispute }
 		prerequisite = { focus = TUR_cypriot_troubles }
@@ -1097,7 +1097,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_withdraw_support_cyprus
-		icon = attack_northern_cyprus
+		icon = GFX_focus_TURNEW_229
 		cost = 5.72
 		prerequisite = { focus = TUR_path_of_compromise }
 		bypass = {
@@ -1217,7 +1217,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_peaceful_unification
-		icon = coa
+		icon = GFX_focus_TURNEW_230
 		cost = 5
 		prerequisite = { focus = TUR_support_one_cyprus }
 		bypass = {
@@ -1272,7 +1272,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_acquire_agean
-		icon = BRA_cutting_the_red_tape
+		icon = GFX_focus_TURNEW_231
 		cost = 7.86
 		prerequisite = { focus = TUR_peaceful_unification }
 		available = {

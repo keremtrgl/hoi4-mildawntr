@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = TURF_new_regime
-		icon = turkish_flag
+		icon = GFX_focus_TURNEW_451
 		cost = 7.15
 		x = 13
 		y = 0
@@ -46,7 +46,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TURF_russian_military_aid
-		icon = align_to_russia
+		icon = GFX_focus_TURNEW_821
 		cost = 7.15
 		prerequisite = {
 			focus = TURF_reorganize_militias
@@ -192,7 +192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TURF_denounce_constitution
-		icon = dangerous_laws
+		icon = GFX_focus_TURNEW_401
 		cost = 7.15
 		prerequisite = {
 			focus = TURF_denounce_nato
@@ -286,7 +286,7 @@ focus_tree = {
 	}  
 	focus = {
 		id = TURF_radicalization
-		icon = islamophobia
+		icon = GFX_focus_TURNEW_426
 		cost = 7.15
 		prerequisite = {
 			focus = TURF_corrupted_army
@@ -557,7 +557,7 @@ hidden_effect = {
 	} 
 	focus = {
 		id = TURF_invade_2
-		icon = jihad_in_the_levant
+		icon = GFX_focus_TURNEW_601
 		cost = 7.86
 		prerequisite = {
 			focus = TURF_for_unification_of_islam
@@ -634,7 +634,7 @@ hidden_effect = {
 	} 
 	focus = {
 		id = TURF_invade_3
-		icon = attack_georgia
+		icon = GFX_focus_TURNEW_625
 		cost = 7.86
 		prerequisite = {
 			focus = TURF_for_unification_of_islam

@@ -492,7 +492,7 @@ add_political_power = 75
 	}
 	focus = {
 		id = HEPAR_voluntairly_army
-		icon = focus_fidayin
+		icon = GFX_focus_TURNEW_356
 		cost = 7.2
 		prerequisite = {
 			focus = HEPAR_clash_with_PKK
@@ -822,7 +822,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = HEPAR_visit_IMF
-		icon = imf
+		icon = GFX_focus_TURNEW_605
 		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_economy_resolvation_project
@@ -880,7 +880,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = HEPAR_agriculture_projection
-		icon = farming
+		icon = GFX_focus_TURNEW_802
 		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_finish_the_economy_plan
@@ -1378,7 +1378,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_guarantee_the_4_elements
-		icon = Focus_Parliament_Constitution
+		icon = GFX_focus_TURNEW_405
 		cost = 5.00
 		prerequisite = {
 			focus = HEPAR_hard_justice_rules
@@ -2385,7 +2385,7 @@ add_political_power = 25
 	}
 	focus = {
 		id = HEPAR_kick_NATO_generals_from_country
-		icon = end_of_nato
+		icon = GFX_focus_TURNEW_629
 		cost = 7.2
 		prerequisite = {
 			focus = HEPAR_went_out_NATO
@@ -5040,7 +5040,7 @@ has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_6
 		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = HEPAR_SAM_sites
-		icon = air_defense2
+		icon = GFX_focus_TURNEW_825
 		cost = 7.86
 		prerequisite = {
 			focus = HEPAR_prepare_for_the_coming_war
@@ -5281,7 +5281,7 @@ has_global_flag = TUR_NUCLEAR_PROGRAM_TEST_6
 		} } ai_will_do = { base = 14 } }
 	focus = {
 		id = HEPAR_version_A_missles
-		icon = focus_rocketry
+		icon = GFX_focus_TURNEW_357
 		cost = 7.86
 		prerequisite = {
 			focus = HEPAR_SAM_sites

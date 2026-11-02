@@ -30,7 +30,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 } ai_will_do = { base = 10 } } 
 	focus = {
 		id = TUR_nationalist_state
-		icon = turkish_flag
+		icon = GFX_focus_TURNEW_460
 		cost = 6.5
 		prerequisite = {
 			focus = TUR_military_take_over
@@ -90,7 +90,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	}
 	focus = {
 		id = TUR_new_constitution
-		icon = nationalist_constiution
+		icon = GFX_focus_TURNEW_410
 		cost = 5.00
 		prerequisite = {
 			focus = TUR_kemalist_military
@@ -474,7 +474,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	}
 	focus = {
 		id = TUR_join_usa_invasion
-		icon = american_air_supremacy
+		icon = GFX_focus_TURNEW_609
 		cost = 5.00
 		prerequisite = {
 			focus = TUR_mission_of_iraq
@@ -502,7 +502,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	} ai_will_do = { base = 2 } }
 	focus = {
 		id = TUR_withdrawl
-		icon = peace
+		icon = GFX_focus_TURNEW_633
 		cost = 5.00
 		prerequisite = {
 			focus = TUR_join_usa_invasion
@@ -808,7 +808,7 @@ nationalist_Nat_Autocracy
     } } ai_will_do = { base = 10 } }
 	focus = {
 		id = TUR_elections_of_the_state
-		icon = election2
+		icon = GFX_focus_TURNEW_435
 		cost = 9.29
 		prerequisite = {
 			focus = TUR_lift_political_party_ban
