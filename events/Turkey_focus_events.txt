@@ -179,6 +179,7 @@ country_event = {
 
 	add_stability = 0.01
 add_named_threat = { threat = 1 name = BRUNSON_CRISIS }
+	set_global_flag = TUR_brunson_held
 	USA =  {
 	country_event = TurkeyF.7
 	} } 
@@ -238,6 +239,7 @@ country_event = {
 
 	add_stability = 0.02
 	add_war_support = 0.03
+	set_global_flag = TUR_brunson_sanctions
             add_opinion_modifier = {
                   target = USA modifier = attacks_on_our_economy
             }	
@@ -252,6 +254,9 @@ country_event = {
 
 	add_stability = -0.03
 	add_war_support = -0.03
+	clr_global_flag = TUR_brunson_held
+	set_global_flag = TUR_brunson_released
+	hidden_effect = { news_event = Turkey_news.30 }
 						add_popularity = {
 							ideology = ROOT
 							popularity = -0.03

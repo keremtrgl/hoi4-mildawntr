@@ -6537,9 +6537,6 @@ has_idea = pr_erdogan
 		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
 		
 	completion_reward = {
-	hidden_effect = {
-    news_event = Turkey_news.30
-				}
 swap_ideas = { 
   remove_idea = reformss_for_2001_crisis
   add_idea = economic_failing
@@ -8319,6 +8316,80 @@ search_filters = {FOCUS_FILTER_POLITICAL}
  }
 		ai_will_do = { base = 8 }
 }
+	focus = {
+		id = TUR_ogan_cabinet
+		icon = sinan_ogan_cabinet
+		cost = 5
+		prerequisite = {
+			focus = TUR_concessions_to_sinan_ogan
+		}
+		x = 20
+		y = 70
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		available = {
+			has_completed_focus = TUR_victory_of_erdogan
+		}
+
+		completion_reward = {
+			country_event = Turkey.766
+		}
+		ai_will_do = { base = 8 }
+	}
+	focus = {
+		id = TUR_ozdag_interior_minister
+		icon = umit_ozdag_mhf
+		cost = 5
+		prerequisite = {
+			focus = TUR_concessions_to_sinan_ogan_2
+		}
+		x = 26
+		y = 70
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}
+
+		available = {
+			has_completed_focus = TUR_victory_of_kemal_kilicdaroglu
+		}
+
+		completion_reward = {
+			add_ideas = TUR_ozdag_interior_ministry
+			if = {
+				limit = { has_idea = syrian_immigration }
+				swap_ideas = {
+					remove_idea = syrian_immigration
+					add_idea = syrian_immigration_acted
+				}
+			}
+			custom_effect_tooltip = TUR_OZDAG_INTERIOR_PARTY_TT
+			hidden_effect = {
+				add_to_variable = { party_pop_array^21 = 0.015 }
+				add_to_variable = { party_pop_array^3 = -0.01 }
+				recalculate_party = yes
+			}
+		}
+		ai_will_do = { base = 8 }
+	}
+	focus = {
+		id = TUR_cracks_in_the_table
+		icon = chp_iyi_alliance
+		cost = 5
+		prerequisite = {
+			focus = TUR_victory_of_kemal_kilicdaroglu
+		}
+		x = 25
+		y = 66
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			country_event = Turkey.767
+		}
+		ai_will_do = { base = 10 }
+	}
 	focus = {
 		id = TUR_left_right_acceptance
 		icon = GFX_focus_TURNEW_105

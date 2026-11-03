@@ -4856,7 +4856,7 @@ remove_ideas = limits_of_the_parliament_main_target
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
          AND = {
              date > 2010.1.1
-	         date < 2011.1.1
+	         date < 2010.9.1
          }
 		}
 
@@ -4875,8 +4875,8 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		remove_effect = {
 		custom_effect_tooltip = CHANGE_CONS
 		custom_effect_tooltip = CHANGE_2010_CONS_NOTE
+		custom_effect_tooltip = TUR_REFERENDUM_2010_TT
 		hidden_effect = {
-        country_event = Turkey.69
 		set_global_flag = TUR_AKP_2010_AMEDMENTS
 	  } } 
 	}
@@ -4893,7 +4893,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
          AND = {
              date > 2016.1.1
-	         date < 2017.1.1
+	         date < 2017.4.1
         }
 		}
 
@@ -4911,8 +4911,8 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		remove_effect = {
 		custom_effect_tooltip = CHANGE_CONS
 		custom_effect_tooltip = CHANGE_2016_CONS_NOTE
+		custom_effect_tooltip = TUR_REFERENDUM_2017_TT
 		hidden_effect = {
-        country_event = Turkey.313
 		set_global_flag = TUR_AKP_2016_AMEDMENT
 	  } } 
 	}

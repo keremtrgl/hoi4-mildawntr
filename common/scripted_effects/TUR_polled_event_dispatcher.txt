@@ -1826,6 +1826,7 @@ TUR_dispatch_polled_events = {
 			NOT = { has_country_flag = TUR_evf_Turkey_130 }
 			tag = TUR
 			country_exists = HOL
+			has_global_flag = TUR_AKP_2016_AMEDMENT
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
@@ -4176,10 +4177,11 @@ TUR_dispatch_polled_events = {
 			NOT = { has_country_flag = TUR_evf_Turkey_314 }
 			tag = TUR
 			AND = {
-			date > 2017.4.13
-			date < 2017.5.13
+			date > 2018.7.8
+			date < 2018.8.9
 			}
 			neutrality_neutral_muslim_brotherhood_are_in_power = yes
+			has_country_flag = TUR_evf_Turkey_313
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
@@ -8306,6 +8308,55 @@ TUR_dispatch_polled_events = {
 			country_exists = UKR
 		}
 		country_event = Turkey.763
+	}
+	if = {  # Turkey.69  (Turkey.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkey_69 }
+			tag = TUR
+			has_global_flag = TUR_AKP_2010_AMEDMENTS
+			date > 2010.9.11
+			date < 2011.9.12
+			NOT = { has_capitulated = yes }
+		}
+		country_event = Turkey.69
+	}
+	if = {  # Turkey.313  (Turkey.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkey_313 }
+			tag = TUR
+			has_global_flag = TUR_AKP_2016_AMEDMENT
+			date > 2017.4.15
+			date < 2018.4.16
+			NOT = { has_capitulated = yes }
+		}
+		country_event = Turkey.313
+	}
+	if = {  # Turkey.764  (Turkey.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkey_764 }
+			tag = TUR
+			date > 2002.11.2
+			date < 2003.3.1
+			neutrality_neutral_muslim_brotherhood_are_in_power = yes
+			NOT = {
+				has_government = fascism
+				has_global_flag = TUR_MAFIATIC_TR
+				has_capitulated = yes
+			}
+		}
+		country_event = Turkey.764
+	}
+	if = {  # Turkey.765  (Turkey.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkey_765 }
+			tag = TUR
+			has_global_flag = { flag = TUR_brunson_held days > 60 }
+			date > 2018.10.11
+			country_exists = USA
+			NOT = { has_war_with = USA }
+			NOT = { has_capitulated = yes }
+		}
+		country_event = Turkey.765
 	}
 	if = {  # Turkey.556  (Turkey.txt)
 		limit = {

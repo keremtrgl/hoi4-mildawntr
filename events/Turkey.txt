@@ -2261,11 +2261,17 @@ country_event = {
  desc = Turkey.69.desc
  picture = GFX_2010_constitution_amedment
  is_triggered_only = yes
+ fire_only_once = yes
 
     trigger = {
-    }
+		tag = TUR
+		has_global_flag = TUR_AKP_2010_AMEDMENTS
+		date > 2010.9.11
+		date < 2011.9.12
+		NOT = { has_capitulated = yes }
+	}
 
-    mean_time_to_happen = {days = 1}
+ immediate = { set_country_flag = TUR_evf_Turkey_69 }
 
 	option = {
 		name = Turkey.69.a
@@ -4321,6 +4327,7 @@ country_event = {
     trigger = {
          tag = TUR
 		 country_exists = HOL
+		 has_global_flag = TUR_AKP_2016_AMEDMENT
 		 NOT = {
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
@@ -8806,6 +8813,11 @@ country_event = {
 
 	add_stability = -0.03
 	custom_effect_tooltip = TUR_dollar_rose
+	if = {
+		limit = { has_global_flag = TUR_brunson_sanctions }
+		custom_effect_tooltip = TUR_BRUNSON_SANCTIONS_TT
+		add_stability = -0.02
+	}
 	}	
   }
 
@@ -10292,12 +10304,17 @@ country_event = {
  desc = Turkey.313.desc
  picture = GFX_constitution_change_celebrations
  is_triggered_only = yes
+ fire_only_once = yes
 
     trigger = {
-         tag = TUR
-    }
+		tag = TUR
+		has_global_flag = TUR_AKP_2016_AMEDMENT
+		date > 2017.4.15
+		date < 2018.4.16
+		NOT = { has_capitulated = yes }
+	}
 
-    mean_time_to_happen = {days = 1}
+ immediate = { set_country_flag = TUR_evf_Turkey_313 }
 
 	option = {
 		name = Turkey.313.a
@@ -10318,10 +10335,11 @@ country_event = {
     trigger = {
          tag = TUR
 		  AND = {
-             date > 2017.4.13
-             date < 2017.5.13
+             date > 2018.7.8
+             date < 2018.8.9
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		 has_country_flag = TUR_evf_Turkey_313
 		 NOT = {
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
@@ -27982,5 +28000,162 @@ country_event = {
 
 		add_political_power = 50
 		add_stability = 0.01
+	}
+}
+
+
+country_event = {
+	id = Turkey.764
+	is_triggered_only = yes
+	title = Turkey.764.title
+	desc = Turkey.764.desc
+	picture = GFX_akp
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		date > 2002.11.2
+		date < 2003.3.1
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_capitulated = yes
+		}
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_764 }
+
+	option = {
+		name = Turkey.764.a
+		ai_chance = { factor = 1 }
+
+		add_stability = 0.02
+		add_political_power = 25
+	}
+}
+
+
+country_event = {
+	id = Turkey.765
+	is_triggered_only = yes
+	title = Turkey.765.title
+	desc = Turkey.765.desc
+	picture = GFX_brunson
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		has_global_flag = { flag = TUR_brunson_held days > 60 }
+		date > 2018.10.11
+		country_exists = USA
+		NOT = { has_war_with = USA }
+		NOT = { has_capitulated = yes }
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_765 }
+
+	option = {
+		name = Turkey.765.a
+		ai_chance = { factor = 1 }
+
+		clr_global_flag = TUR_brunson_held
+		set_global_flag = TUR_brunson_released
+		add_stability = 0.01
+		if = {
+			limit = { has_global_flag = TUR_brunson_sanctions }
+			clr_global_flag = TUR_brunson_sanctions
+			custom_effect_tooltip = TUR_BRUNSON_RELATIONS_TT
+			hidden_effect = {
+				remove_opinion_modifier = { target = USA modifier = attacks_on_our_economy }
+				remove_opinion_modifier = { target = USA modifier = closed_embassies }
+			}
+		}
+		hidden_effect = { news_event = Turkey_news.30 }
+	}
+}
+
+
+country_event = {
+	id = Turkey.766
+	is_triggered_only = yes
+	title = Turkey.766.title
+	desc = Turkey.766.desc
+	picture = GFX_sinan_ogan_declares_support_to_erdogan
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_766 }
+
+	option = {
+		name = Turkey.766.a
+		ai_chance = { factor = 3 }
+
+		add_political_power = 25
+		custom_effect_tooltip = TUR_HIST_766A_PARTY_TT
+		hidden_effect = {
+			add_to_variable = { party_pop_array^21 = 0.01 }
+			recalculate_party = yes
+		}
+	}
+
+	option = {
+		name = Turkey.766.b
+		ai_chance = { factor = 1 }
+
+		add_political_power = -50
+		add_stability = 0.02
+		custom_effect_tooltip = TUR_HIST_766B_PARTY_TT
+		hidden_effect = {
+			add_to_variable = { party_pop_array^12 = 0.01 }
+			add_to_variable = { party_pop_array^21 = -0.01 }
+			recalculate_party = yes
+		}
+	}
+}
+
+
+country_event = {
+	id = Turkey.767
+	is_triggered_only = yes
+	title = Turkey.767.title
+	desc = Turkey.767.desc
+	picture = GFX_altili_masa_leaders
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_767 }
+
+	option = {
+		name = Turkey.767.a
+		ai_chance = { factor = 2 }
+
+		add_political_power = -50
+		add_stability = 0.03
+		custom_effect_tooltip = TUR_HIST_767A_PARTY_TT
+		hidden_effect = {
+			add_to_variable = { party_pop_array^1 = 0.01 }
+			recalculate_party = yes
+		}
+	}
+
+	option = {
+		name = Turkey.767.b
+		ai_chance = { factor = 1 }
+
+		add_political_power = 25
+		add_stability = -0.04
+		custom_effect_tooltip = TUR_HIST_767B_PARTY_TT
+		hidden_effect = {
+			add_to_variable = { party_pop_array^1 = -0.02 }
+			add_to_variable = { party_pop_array^3 = 0.01 }
+			recalculate_party = yes
+		}
 	}
 }

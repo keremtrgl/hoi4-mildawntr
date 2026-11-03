@@ -269,6 +269,12 @@ ideas = {
 			modifier = { political_power_factor = -0.05 stability_factor = -0.03 }
 		}
 
+ 		TUR_ozdag_interior_ministry = {
+			picture = border_security_first
+			allowed_civil_war = { always = yes }
+			modifier = { stability_factor = -0.02 war_support_factor = 0.03 political_power_factor = -0.05 }
+		}
+
  		syrian_immigration = {
 			allowed_civil_war = { always = yes }
 			modifier = { monthly_population = 0.5 stability_factor = -0.15 neutrality_drift = -0.03}
