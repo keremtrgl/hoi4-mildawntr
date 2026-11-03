@@ -1907,7 +1907,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_right_wing_sad
 }   ai_will_do = { base = 8 } }
 	focus = {
 		id = CHP_health_insurance_first
-		icon = generic_healthcare
+		icon = GFX_focus_TURNEW_1153
 		cost = 5.00
 		prerequisite = {
 			focus = CHP_new_health_system
@@ -1963,7 +1963,7 @@ increase_healthcare_budget = yes
 	} ai_will_do = { base = 14 } }
 	focus = {
 		id = CHP_buy_new_hospital_things_from_europe
-		icon = generic_hospital
+		icon = GFX_focus_TURNEW_1152
 		cost = 5.00
 		prerequisite = {
 			focus = CHP_new_health_system
@@ -2406,7 +2406,7 @@ increase_education_budget = yes
 	}
 	focus = {
 		id = CHP_strenghen_TDK
-		icon = brain_power
+		icon = GFX_focus_TURNEW_1155
 		cost = 7.15
 		prerequisite = {
 			focus = CHP_mobilization_of_reading_and_writing
@@ -2998,7 +2998,7 @@ add_political_power = -100
 	}
 	focus = {
 		id = CHP_media_independence
-		icon = liberal_press
+		icon = GFX_focus_TURNEW_1154
 		cost = 5.00
 		prerequisite = {
 			focus = CHP_destroy_anti_democratic_movements
