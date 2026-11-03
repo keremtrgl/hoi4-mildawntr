@@ -75,7 +75,7 @@ has_completed_focus = TECH_launch_the_new_government
 }
 	focus = {
 		id = TECH_education_reforms
-		icon = goal_JAP_education_rebuilding
+		icon = GFX_focus_TURNEW_1117
 		cost = 7.15
 		x = 19
 		y = 13
@@ -192,7 +192,7 @@ has_completed_focus = TECH_VR_boosted_education
 }
 	focus = {
 		id = TECH_the_media
-		icon = liberal_press
+		icon = GFX_focus_TURNEW_1121
 		cost = 5.8
 		prerequisite = {
 			focus = TECH_education_reforms
@@ -309,7 +309,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 }   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_reform_plan
-		icon = stolen_papers2
+		icon = GFX_focus_TURNEW_1119
 		cost = 7.15
 		prerequisite = {
 			focus = TECH_the_order
@@ -449,7 +449,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	}
 	focus = {
 		id = TECH_the_ecology
-		icon = eco_democracy
+		icon = GFX_focus_TURNEW_1120
 		cost = 5.8
 		prerequisite = {
 			focus = TECH_education_reforms
@@ -1561,7 +1561,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	}
 	focus = {
 		id = TECH_integrate_the_cyprus_state
-		icon = align_to_northern_cyprus
+		icon = GFX_focus_TURNEW_1118
 		cost = 7.86
 		prerequisite = {
 			focus = TECH_federalization_campaign
@@ -5607,7 +5607,7 @@ swap_ideas = {
 }   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_NATO_policies
-		icon = nato2
+		icon = GFX_focus_TURNEW_1116
 		cost = 5.00
 		prerequisite = {
 			focus = TECH_where_the_wind_blows

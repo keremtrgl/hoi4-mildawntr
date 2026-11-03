@@ -208,7 +208,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = LDP_agreement_with_US
-		icon = american_political_reform
+		icon = GFX_focus_TURNEW_1073
 		cost = 7.15
 		prerequisite = {
 			focus = LDP_capitalist_industries
@@ -685,7 +685,7 @@ search_filters = {FOCUS_FILTER_RESEARCH}
 	}
 	focus = {
 		id = LDP_destroy_slums
-		icon = focus_generic_land_reclamation
+		icon = GFX_focus_TURNEW_1075
 		cost = 7.15
 		prerequisite = {
 			focus = LDP_dont_work_for_people
@@ -1084,7 +1084,7 @@ reverse_add_opinion_modifier = { target = USA modifier = supports_us_2 }
 	}
 	focus = {
 		id = LDP_deal_with_russia
-		icon = focus_rus_yunarmiya
+		icon = GFX_focus_TURNEW_1074
 		cost = 7.15
 		prerequisite = {
 			focus = LDP_invade_armenia
@@ -1328,7 +1328,7 @@ reverse_add_opinion_modifier = { target = USA modifier = supports_us_2 }
 	}
 	focus = {
 		id = LDP_tech_economics
-		icon = tech_sharing
+		icon = GFX_focus_TURNEW_1077
 		cost = 7.15
 		prerequisite = {
 			focus = LDP_mass_glass
@@ -2240,7 +2240,7 @@ search_filters = {FOCUS_FILTER_INDUSTRY}
 	} ai_will_do = { base = 14 } }
 	focus = {
 		id = LDP_private_construction
-		icon = MEX_Social_investments
+		icon = GFX_focus_TURNEW_1076
 		cost = 7.15
 		prerequisite = {
 			focus = LDP_contructionism

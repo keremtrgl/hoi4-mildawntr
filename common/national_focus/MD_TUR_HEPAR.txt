@@ -98,7 +98,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 			}
 	focus = {
 		id = HEPAR_takeover_propaganda_radios
-		icon = radio_communications
+		icon = GFX_focus_TURNEW_1071
 		cost = 5.00
 		prerequisite = {
 			focus = HEPAR_healthy_relations_with_military
@@ -645,7 +645,7 @@ add_ideas = national_defence_organizations
 			} ai_will_do = { base = 8 } }
 	focus = {
 		id = HEPAR_new_railways
-		icon = Generic_Train
+		icon = GFX_focus_TURNEW_1069
 		cost = 7.2
 		prerequisite = {
 			focus = HEPAR_rocket_missles
@@ -1192,7 +1192,7 @@ swap_ideas = {
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = HEPAR_mission_to_europe
-		icon = align_to_europe
+		icon = GFX_focus_TURNEW_1068
 		cost = 5.00
 		prerequisite = {
 			focus = HEPAR_diplomats_working
@@ -1591,7 +1591,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_protect_informals
-		icon = protectionist_economics
+		icon = GFX_focus_TURNEW_1070
 		cost = 5.00
 		prerequisite = {
 			focus = HEPAR_anti_prisioners_law
@@ -2337,7 +2337,7 @@ add_political_power = 25
 }   ai_will_do = { base = 8 } }
 	focus = {
 		id = HEPAR_went_out_NATO
-		icon = renounce_nato
+		icon = GFX_focus_TURNEW_1072
 		cost = 7.2
 		prerequisite = {
 			focus = HEPAR_follow_perincek
@@ -2784,7 +2784,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	}
 	focus = {
 		id = HEPAR_deals_on_autarky
-		icon = trade_with_america
+		icon = GFX_focus_TURNEW_1067
 		cost = 7.2
 		prerequisite = {
 			focus = HEPAR_nation_mighty_nation
