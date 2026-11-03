@@ -163,6 +163,13 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     Ecevit görevi zaman aşımında oyuncu artık Azerbaycan'a geçmiyor.
   - Yol Rehberi 15 sayfa, hoş geldiniz penceresini yeniden açan karar.
   - Dil paketi: yeni içeriğin hepsi Türkçe; ı/ş/ğ içeren 26 olay başlığı yazı tipi kuralına çevrildi.
+- **2.0.3-TUR.12** (3 Kasım 2026), teçhizat ve ikon güncellemesi:
+  - Çökme: Türk Birliği dalındaki `TR_launch_a_coup` ödülünde `ruling_party` olmadan `set_politics` vardı (93a15ba).
+    Odak ipucu yazılırken oyun çöküyordu (yığın exe içinde çözüldü: odak ipucu → EFFECT_SET_POLITICS → parti adı).
+    MD'nin `enable_elections_with_no_leader_change` efekti kullanılıyor. `set_politics` her zaman `ruling_party` ister.
+  - Teçhizat isimleri: `TUR_equipment_names_l_english.yml` (yeni anahtarlar) ve
+    `replace/TUR_equipment_replace_l_english.yml` (MD'nin ABD'den kopyalanmış TUR_ isimleri).
+  - 325 yeni odak ikonu: `tn_837`–`tn_1161`, `interface/TUR_focus_icons_2026.gfx`.
 
 ## Kalıcı dersler (tekrar düşme!)
 
