@@ -51,7 +51,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 } ai_will_do = { base = 10 } } 
 	focus = {
 		id = TUR_kemalist_military
-		icon = small_arms3
+		icon = GFX_focus_TURNEW_1022
 		cost = 7.00
 		prerequisite = {
 			focus = TUR_nationalist_state
@@ -71,7 +71,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	}
 	focus = {
 		id = TUR_get_rid_of_kurds
-		icon = conscription
+		icon = GFX_focus_TURNEW_1019
 		cost = 5.00
 		prerequisite = {
 			focus = TUR_kemalist_military
@@ -166,7 +166,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	}
 	focus = {
 		id = TUR_turkish_ranking_shift
-		icon = military_planning
+		icon = GFX_focus_TURNEW_1029
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_reorganize_miltary
@@ -185,7 +185,7 @@ add_ideas =	media_opinion_towards_good_happy_everyone
 	}
 	focus = {
 		id = TUR_push_economic_reforms
-		icon = decentralized_economy
+		icon = GFX_focus_TURNEW_1024
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_turkish_ranking_shift
@@ -282,7 +282,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 } ai_will_do = { base = 8 } } 
 	focus = {
 		id = TUR_take_american_aid
-		icon = american_military_agreement
+		icon = GFX_focus_TURNEW_1027
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_connections_of_the_usa
@@ -631,7 +631,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 	 }  ai_will_do = { base = 10 } }
 	focus = {
 		id = TUR_stabilize_the_regime
-		icon = stability
+		icon = GFX_focus_TURNEW_1026
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_arrested_people

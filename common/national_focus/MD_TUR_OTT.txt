@@ -26,7 +26,7 @@ focus_tree = {
 	}
 	focus = {
 		id = OTT_corrupting_institutions
-		icon = examine_foreign_laws
+		icon = GFX_focus_TURNEW_954
 		cost = 4.29
 		prerequisite = {
 			focus = OTT_approach_ottomans
@@ -101,7 +101,7 @@ focus_tree = {
 	}
 	focus = {
 		id = OTT_compramise_elites
-		icon = gamble_cards
+		icon = GFX_focus_TURNEW_953
 		cost = 4.29
 		prerequisite = {
 			focus = OTT_approach_ottomans
@@ -245,7 +245,7 @@ focus_tree = {
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = OTT_support_islamic_arms
-		icon = islamic_militarization
+		icon = GFX_focus_TURNEW_962
 		cost = 5.00
 		prerequisite = {
 			focus = OTT_began_the_strike_on_guards
@@ -297,7 +297,7 @@ focus_tree = {
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = OTT_finish_ergenekon_trials
-		icon = turk_skulls_guns_fire
+		icon = GFX_focus_TURNEW_956
 		cost = 5.00
 		prerequisite = {
 			focus = OTT_ergenekon_trials
@@ -323,7 +323,7 @@ focus_tree = {
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = OTT_organize_funding_banks
-		icon = generic_banks
+		icon = GFX_focus_TURNEW_959
 		cost = 7.00
 		prerequisite = {
 			focus = OTT_finish_ergenekon_trials
@@ -829,7 +829,7 @@ focus_tree = {
 		}
 	focus = {
 		id = OTT_reuse_fez
-		icon = OTT_gendarmerie
+		icon = GFX_focus_TURNEW_961
 		cost = 7.15
 		prerequisite = {
 			focus = OTT_abolishing_the_reforms
@@ -890,7 +890,7 @@ focus_tree = {
 		}
 	focus = {
 		id = OTT_islamic_traditions
-		icon = saudi_royalty
+		icon = GFX_focus_TURNEW_958
 		cost = 5.00
 		prerequisite = {
 			focus = OTT_shut_down_the_guardianship_collages
@@ -1104,7 +1104,7 @@ focus_tree = {
 		}
 	focus = {
 		id = OTT_islamic_barracks
-		icon = military_bases
+		icon = GFX_focus_TURNEW_957
 		cost = 5.00
 		prerequisite = {
 			focus = OTT_expand_radical_islamism
@@ -3992,7 +3992,7 @@ add_opinion_modifier = { target = GER modifier = new_central_powers }
 		}	
 	focus = {
 		id = OTT_ottoman_black_sea_navy
-		icon = TUR_navy
+		icon = GFX_focus_TURNEW_960
 		cost = 7.15
 		prerequisite = {
 			focus = OTT_policy_of_russia
@@ -8378,7 +8378,7 @@ swap_ideas = {
 	} 
 	focus = {
 		id = OTT_fez_culture
-		icon = social_democracy_purge
+		icon = GFX_focus_TURNEW_955
 		cost = 7.15
 		prerequisite = {
 			focus = OTT_science_reforms

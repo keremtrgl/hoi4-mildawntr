@@ -152,7 +152,7 @@ swap_ideas = {
 			}
 	focus = {
 		id = ATA_economic_policies
-		icon = economic_prosperity2
+		icon = GFX_focus_TURNEW_858
 		cost = 7.15
 		x = 30
 		y = 10
@@ -625,7 +625,7 @@ set_global_flag = ATA_BLOCK
 		}
 	focus = {
 		id = ATA_industrial_restoration
-		icon = centralization_question
+		icon = GFX_focus_TURNEW_861
 		cost = 5.00
 		prerequisite = {
 			focus = ATA_economic_policies
@@ -1076,7 +1076,7 @@ add_offsite_building = { type = industrial_complex level = 2 }
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = ATA_develop_the_east
-		icon = brick_laying
+		icon = GFX_focus_TURNEW_857
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_open_izmir_industries
@@ -1272,7 +1272,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 	}	
 	focus = {
 		id = ATA_NATO_relationship
-		icon = align_to_nato
+		icon = GFX_focus_TURNEW_855
 		cost = 5.00
 		prerequisite = {
 			focus = ATA_european_policy
@@ -1342,7 +1342,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 	}	
 	focus = {
 		id = ATA_leash_new_dockyards
-		icon = naval_dockyard
+		icon = GFX_focus_TURNEW_862
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_protect_the_mavi_turkiye
@@ -1451,7 +1451,7 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 	}    
 	focus = {
 		id = ATA_new_mines
-		icon = Generic_Redraw_Borders
+		icon = GFX_focus_TURNEW_864
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_force_UN_recognition
@@ -2495,7 +2495,7 @@ add_offsite_building = { type = arms_factory level = 2 }
 	}	ai_will_do = { base = 14 } }
 	focus = {
 		id = ATA_crush_the_hezbollah
-		icon = attack_hezbollah
+		icon = GFX_focus_TURNEW_856
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_ties_with_israel
@@ -3407,7 +3407,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	}
 	focus = {
 		id = ATA_mosque_law
-		icon = aid_quran
+		icon = GFX_focus_TURNEW_863
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_resecularize_the_state
@@ -3444,7 +3444,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = ATA_freedom_of_religions
-		icon = religious_unity
+		icon = GFX_focus_TURNEW_860
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_counter_religion_politicization
@@ -3793,7 +3793,7 @@ add_offsite_building = { type = arms_factory level = 2 }
 			}
 	focus = {
 		id = ATA_support_the_aerial_industries
-		icon = focus_airline
+		icon = GFX_focus_TURNEW_867
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_move_the_istanbul_arms_industries
@@ -5253,7 +5253,7 @@ focus = {
 			}
 	focus = {
 		id = ATA_fast_informationism
-		icon = liberal_press
+		icon = GFX_focus_TURNEW_859
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_revolutionism
@@ -5422,7 +5422,7 @@ focus = {
 	}
 	focus = {
 		id = ATA_push_enviroenmental_laws
-		icon = tree_focus
+		icon = GFX_focus_TURNEW_865
 		cost = 7.2
 		prerequisite = {
 			focus = ATA_lower_the_unemployment
@@ -5777,7 +5777,7 @@ focus = {
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = ATA_redzyne_the_constitutional_court
-		icon = AYM_focus
+		icon = GFX_focus_TURNEW_866
 		cost = 7.15
 		prerequisite = {
 			focus = ATA_free_YSK

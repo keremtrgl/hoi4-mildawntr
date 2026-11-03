@@ -54,7 +54,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 }
 	focus = {
 		id = TAK_gather_people
-		icon = national_unity
+		icon = GFX_focus_TURNEW_976
 		cost = 7.15
 		prerequisite = {
 			focus = TAK_declare_dictatorship
@@ -95,7 +95,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	} ai_will_do = { base = 10 } }
 	focus = {
 		id = TAK_defences_in_south
-		icon = air_defense2
+		icon = GFX_focus_TURNEW_974
 		cost = 7.86
 		prerequisite = {
 			focus = TAK_hunt_terrorists
@@ -399,7 +399,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	 } ai_will_do = { base = 10 } }
 	focus = {
 		id = TAK_tax_act
-		icon = radical_tax_reform
+		icon = GFX_focus_TURNEW_980
 		cost = 7.2
 		prerequisite = {
 			focus = TAK_banner_of_populism
@@ -437,7 +437,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	}
 	focus = {
 		id = TAK_make_civilian_economic_program
-		icon = romanian_economic_development_plan
+		icon = GFX_focus_TURNEW_977
 		cost = 7.2
 		prerequisite = {
 			focus = TAK_tax_act
@@ -651,7 +651,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TAK_ankara_air_factory
-		icon = air_production
+		icon = GFX_focus_TURNEW_973
 		cost = 7.86
 		prerequisite = {
 			focus = TAK_kayseri_air_factory
@@ -784,7 +784,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TAK_destroy_rant_system_in_istanbul
-		icon = union_negotiations
+		icon = GFX_focus_TURNEW_975
 		cost = 7.86
 		prerequisite = {
 			focus = TAK_etatism
@@ -861,7 +861,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TAK_rebought_factories
-		icon = liberalization_policies
+		icon = GFX_focus_TURNEW_979
 		cost = 7.86
 		prerequisite = {
 			focus = TAK_etatism
@@ -1404,7 +1404,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 	 } ai_will_do = { base = 10 } }
 	focus = {
 		id = TAK_once_vatan
-		icon = turkish_authoritarianism
+		icon = GFX_focus_TURNEW_978
 		cost = 7.15
 		prerequisite = {
 			focus = TAK_true_populism

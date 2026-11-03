@@ -30,7 +30,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MHF_economy
-		icon = man_the_factories
+		icon = GFX_focus_TURNEW_932
 		cost = 7.15
 		x = 52
 		y = 0
@@ -133,7 +133,7 @@ swap_ideas = {
 } ai_will_do = { base = 8 } }
 	focus = {
 		id = MHF_the_elections
-		icon = election2
+		icon = GFX_focus_TURNEW_935
 		cost = 7.86
 		prerequisite = {
 			focus = MHF_tour_the_turkey
@@ -149,7 +149,7 @@ swap_ideas = {
 } ai_will_do = { base = 10 } }
 	focus = {
 		id = MHF_change_the_bureocracy
-		icon = meeting
+		icon = GFX_focus_TURNEW_931
 		cost = 5.00
 		prerequisite = {
 			focus = MHF_the_elections
@@ -245,7 +245,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = MHF_armed_ulkist_divisions
-		icon = ultranationalist_volunteers
+		icon = GFX_focus_TURNEW_930
 		cost = 4.29
 		prerequisite = {
 			focus = MHF_arm_the_ulkists
@@ -992,7 +992,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = MHF_send_arms_to_the_borders
-		icon = volunteers
+		icon = GFX_focus_TURNEW_934
 		cost = 7.86
 		prerequisite = {
 			focus = MHF_prepare_the_border_law
@@ -1236,7 +1236,7 @@ swap_ideas = {
 }
 	focus = {
 		id = MHF_massive_industrialization_program
-		icon = factory_complex
+		icon = GFX_focus_TURNEW_933
 		cost = 7.15
 		prerequisite = {
 			focus = MHF_national_economy
@@ -1969,7 +1969,7 @@ swap_ideas = {
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = MHF_a_militarist_society
-		icon = officer_purge
+		icon = GFX_focus_TURNEW_929
 		cost = 7.15
 		prerequisite = {
 			focus = MHF_a_new_kind_of_state
@@ -2229,7 +2229,7 @@ change_state_after_war = yes
 		} ai_will_do = { base = 10 } }
 	focus = {
 		id = MHF_ulkist_zones_in_east
-		icon = Paternal_Autocrat
+		icon = GFX_focus_TURNEW_936
 		cost = 7.2
 		prerequisite = {
 			focus = MHF_war_with_terorism

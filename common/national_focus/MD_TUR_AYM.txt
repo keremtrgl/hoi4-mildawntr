@@ -16,7 +16,7 @@ focus_tree = {
 		} ai_will_do = { base = 8 } } 
 	focus = {
 		id = AYM_european_union_strategy
-		icon = EU_GDPR
+		icon = GFX_focus_TURNEW_877
 		cost = 7.15
 		x = 21
 		y = 17
@@ -35,7 +35,7 @@ focus_tree = {
 }   ai_will_do = { base = 8 } }
 	focus = {
 		id = AYM_mutual_government
-		icon = MEX_Allign_the_government
+		icon = GFX_focus_TURNEW_881
 		cost = 7.86
 		mutually_exclusive = {
 			focus = AYM_enforced_law
@@ -170,7 +170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AYM_industrial_rise_up
-		icon = modern_refinery_industry
+		icon = GFX_focus_TURNEW_879
 		cost = 7.86
 		x = 67
 		y = 16
@@ -1019,7 +1019,7 @@ swap_ideas = {
 		} ai_will_do = { base = 10 } } 
 	focus = {
 		id = AYM_relation_on_invest
-		icon = central_planned_economy
+		icon = GFX_focus_TURNEW_882
 		cost = 5.00
 		prerequisite = {
 			focus = AYM_european_union_strategy
@@ -1095,7 +1095,7 @@ swap_ideas = {
 				}
 	focus = {
 		id = AYM_romania_invest_2
-		icon = romanian_investements
+		icon = GFX_focus_TURNEW_883
 		cost = 7.2
 		prerequisite = {
 			focus = AYM_romania_invest
@@ -1280,7 +1280,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 				}
 	focus = {
 		id = AYM_bulgaria_invest_2
-		icon = consolidate_the_third_bulgarian_state
+		icon = GFX_focus_TURNEW_876
 		cost = 7.2
 		prerequisite = {
 			focus = AYM_bulgaria_invest
@@ -1358,7 +1358,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		}
 	focus = {
 		id = AYM_lower_the_military_budget
-		icon = license_production
+		icon = GFX_focus_TURNEW_880
 		cost = 5.00
 		prerequisite = {
 			focus = AYM_clean_the_generals
@@ -2454,7 +2454,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = AYM_social_sciences
-		icon = socialist_science
+		icon = GFX_focus_TURNEW_884
 		cost = 7.15
 		prerequisite = {
 			focus = AYM_connection_with_labours
@@ -4152,7 +4152,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = AYM_taarif_laws
-		icon = market_economy
+		icon = GFX_focus_TURNEW_885
 		cost = 7.15
 		prerequisite = {
 			focus = AYM_accordance_with_AIHM
@@ -6337,7 +6337,7 @@ add_ideas = media_opinion_towards_bad_1_left_wing_sad
 	}
 	focus = {
 		id = AYM_violent_clash_with_pkk
-		icon = Generic_Tank_through_Wall
+		icon = GFX_focus_TURNEW_886
 		cost = 7.15
 		prerequisite = {
 			focus = AYM_terror_policy
@@ -7314,7 +7314,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 				}
 	focus = {
 		id = AYM_german_universities
-		icon = burgfrieden
+		icon = GFX_focus_TURNEW_878
 		cost = 7.2
 		prerequisite = {
 			focus = AYM_german_trading

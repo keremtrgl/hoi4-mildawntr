@@ -791,7 +791,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = TUR_economic_retreat
-		icon = goal_JAP_valuedown
+		icon = GFX_focus_TURNEW_1018
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_small_increase_in_money
@@ -823,7 +823,7 @@ swap_ideas = {
 		}
 	focus = {
 		id = TUR_awake_the_industry
-		icon = factory_complex
+		icon = GFX_focus_TURNEW_1012
 		cost = 7.15
 		x = 40
 		y = 1
@@ -2130,7 +2130,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_tank_factories
-		icon = tank_production
+		icon = GFX_focus_TURNEW_1028
 		cost = 7.15
 		prerequisite = {
 			focus = TUR_anatolian_military_industries
@@ -2159,7 +2159,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_artillery_factories
-		icon = artillery
+		icon = GFX_focus_TURNEW_1011
 		cost = 7.86
 		prerequisite = {
 			focus = TUR_tank_factories
@@ -3027,7 +3027,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 
 	focus = {
 		id = TUR_another_military_plot
-		icon = coups_on_the_world
+		icon = GFX_focus_TURNEW_1009
 		cost = 7.86
 		prerequisite = {
 			focus = TUR_economic_fail
@@ -4392,7 +4392,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	}
 	focus = {
 		id = TUR_AKP_in_2011
-		icon = akp
+		icon = GFX_focus_TURNEW_1007
 		cost = 4.29
 		prerequisite = {
 			focus = TUR_new_state_of_liberalism
@@ -6457,7 +6457,7 @@ has_idea = pr_erdogan
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = TUR_NATO_mission_in_afganistan
-		icon = nato3
+		icon = GFX_focus_TURNEW_1008
 		cost = 5.00
 		prerequisite = {
 			focus = TUR_give_weapons_to_syria
@@ -7065,7 +7065,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
 	}
 	focus = {
 		id = TUR_invisible_in_seas
-		icon = carriers2
+		icon = GFX_focus_TURNEW_1021
 		cost = 25.00
 		prerequisite = {
 			focus = TUR_victory_of_turkey_backed_state

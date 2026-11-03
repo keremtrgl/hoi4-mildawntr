@@ -233,7 +233,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	#CANT BE IN NATO AND DO THIS
 	shared_focus = {
 		id = TUR_direct_involvement
-		icon = war_against_greece
+		icon = GFX_focus_TURNEW_1017
 		cost = 7.86
 		mutually_exclusive = { focus = TUR_indirect_involvement }
 		available = {
@@ -527,7 +527,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_great_uprising
-		icon = focus_generic_fascist_uprising
+		icon = GFX_focus_TURNEW_1020
 		cost = 7.86
 		prerequisite = {
 			focus = TUR_fund_militias
@@ -814,7 +814,7 @@ has_country_flag = OTT_FOCUS_LOCATION
 	}
 	shared_focus = {
 		id = TUR_siege_of_greece
-		icon = war
+		icon = GFX_focus_TURNEW_1025
 		cost = 7.86
 		prerequisite = {
 			focus = TUR_last_second_upgrades

@@ -391,7 +391,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = CHP_sign_agreements_with_banks
-		icon = EU_Banking
+		icon = GFX_focus_TURNEW_894
 		cost = 5.00
 		prerequisite = {
 			focus = CHP_redyzne_SYD
@@ -429,7 +429,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = CHP_city_inside_law
-		icon = broadway
+		icon = GFX_focus_TURNEW_890
 		cost = 5.00
 		prerequisite = {
 			focus = CHP_redyzne_SYD
@@ -659,7 +659,7 @@ remove_ideas = reformss_for_2001_crisis
 }   ai_will_do = { base = 14 } }
 	focus = {
 		id = CHP_rebuy_sumerbank
-		icon = BRA_libertarian_economics
+		icon = GFX_focus_TURNEW_893
 		cost = 7.15
 		prerequisite = {
 			focus = CHP_investment_cult
@@ -881,7 +881,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = CHP_tank_factories
-		icon = tank_production
+		icon = GFX_focus_TURNEW_895
 		cost = 7.15
 		prerequisite = {
 			focus = CHP_anatolian_military_industries
@@ -945,7 +945,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = CHP_war_train_consumers
-		icon = Generic_Train
+		icon = GFX_focus_TURNEW_897
 		cost = 7.86
 		prerequisite = {
 			focus = CHP_tank_factories
@@ -2295,7 +2295,7 @@ increase_education_budget = yes
 }   ai_will_do = { base = 14 } }
 	focus = {
 		id = CHP_compulsory_12_years_education
-		icon = dangerous_deal3
+		icon = GFX_focus_TURNEW_891
 		cost = 5.00
 		prerequisite = {
 			focus = CHP_equal_educations
@@ -2330,7 +2330,7 @@ increase_education_budget = yes
 }   ai_will_do = { base = 14 } }
 	focus = {
 		id = CHP_the_language_of_science
-		icon = science2
+		icon = GFX_focus_TURNEW_896
 		cost = 5.00
 		prerequisite = {
 			focus = CHP_compulsory_12_years_education
@@ -3307,7 +3307,7 @@ add_political_power = -100
 	}
 	focus = {
 		id = CHP_AIHM_connections
-		icon = EFSF_icon
+		icon = GFX_focus_TURNEW_887
 		cost = 7.15
 		prerequisite = {
 			focus = CHP_strenghen_istanbul_convention
@@ -3743,7 +3743,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 			}
 	focus = {
 		id = CHP_attacks_on_pkk
-		icon = focus_generic_self_propelled_gun
+		icon = GFX_focus_TURNEW_889
 		cost = 5.00
 		prerequisite = {
 			focus = CHP_advance_on_MIT
@@ -3941,7 +3941,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = CHP_national_mobilization_against_pkk
-		icon = recruitment
+		icon = GFX_focus_TURNEW_892
 		cost = 7.15
 		prerequisite = {
 			focus = CHP_sign_agreement_with_ulkists
@@ -4739,7 +4739,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 }   ai_will_do = { base = 8 } }
 	focus = {
 		id = CHP_NATO_coordination
-		icon = nato_membership_action_plan
+		icon = GFX_focus_TURNEW_888
 		cost = 7.15
 		prerequisite = {
 			focus = CHP_peace_at_the_home_peace_at_the_world

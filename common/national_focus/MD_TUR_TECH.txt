@@ -47,7 +47,7 @@ has_completed_focus = TECH_launch_the_new_government
 }
 	focus = {
 		id = TECH_the_past
-		icon = Generic_Pyramid
+		icon = GFX_focus_TURNEW_987
 		cost = 4.29
 		mutually_exclusive = {
 			focus = TECH_the_future
@@ -94,7 +94,7 @@ has_completed_focus = TECH_launch_the_new_government
 }
 	focus = {
 		id = TECH_modern_economics
-		icon = cash_grap
+		icon = GFX_focus_TURNEW_983
 		cost = 7.15
 		x = 40
 		y = 6
@@ -172,7 +172,7 @@ has_completed_focus = TECH_launch_the_new_government
 }
 	focus = {
 		id = TECH_high_technology_adminstration
-		icon = national_grid
+		icon = GFX_focus_TURNEW_982
 		cost = 7.86
 		x = 114
 		y = 8
@@ -1046,7 +1046,7 @@ swap_ideas = {
 }   ai_will_do = { base = 14 } }
 	focus = {
 		id = TECH_emergency_civilian_industries
-		icon = decentralized_economy
+		icon = GFX_focus_TURNEW_981
 		cost = 5.8
 		prerequisite = {
 			focus = TECH_economic_relief_budget
@@ -1300,7 +1300,7 @@ add_ideas = static_warfare
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_positional_warfare
-		icon = Generic_Refit_Tanks
+		icon = GFX_focus_TURNEW_984
 		cost = 5.8
 		prerequisite = {
 			focus = TECH_robotic_warfare
@@ -1315,7 +1315,7 @@ add_ideas = positional_warfare
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_the_manpower_draft
-		icon = Azerbaijani_Army
+		icon = GFX_focus_TURNEW_986
 		cost = 5.8
 		prerequisite = {
 			focus = TECH_victory_of_past_movement
@@ -5835,7 +5835,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TECH_professional_railways
-		icon = railways_shaaban
+		icon = GFX_focus_TURNEW_985
 		cost = 7.86
 		prerequisite = {
 			focus = TECH_fort_the_bulgarian_line

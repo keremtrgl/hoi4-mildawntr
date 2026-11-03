@@ -244,7 +244,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 	}
 	focus = {
 		id = PKA_delegation_power
-		icon = autonomy
+		icon = GFX_focus_TURNEW_966
 		cost = 5.00
 		prerequisite = {
 			focus = PKA_prepare_election_in_AKP
@@ -342,7 +342,7 @@ add_ideas =	media_opinion_towards_bad_2_neutral_right_wing_sad
 	}
 	focus = {
 		id = PKA_protect_free_media
-		icon = liberal_press
+		icon = GFX_focus_TURNEW_970
 		cost = 7.2
 		prerequisite = {
 			focus = PKA_abdullah_guls_revenge
@@ -631,7 +631,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 	} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_2011_constitution_amedment
-		icon = BRA_the_european_social_democrat_model
+		icon = GFX_focus_TURNEW_963
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_vision_of_europe
@@ -918,7 +918,7 @@ add_ideas = economic_boom
 	}
 	focus = {
 		id = PKA_withdrew_from_kurdish_places
-		icon = volunteers
+		icon = GFX_focus_TURNEW_972
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_question_of_kurdish_problem
@@ -941,7 +941,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		} ai_will_do = { base = 8 } }
 	focus = {
 		id = PKA_became_strong_economies
-		icon = market_economy
+		icon = GFX_focus_TURNEW_964
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_keep_up_the_economic_boom
@@ -1053,7 +1053,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	}
 	focus = {
 		id = PKA_rule_for_warm_money
-		icon = BRA_mensalao_new
+		icon = GFX_focus_TURNEW_971
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_change_the_industrialization_program
@@ -1089,7 +1089,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	}
 	focus = {
 		id = PKA_industrialization_of_the_state
-		icon = central_planned_economy
+		icon = GFX_focus_TURNEW_969
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_rule_for_warm_money
@@ -1114,7 +1114,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 	}
 	focus = {
 		id = PKA_central_military_industries
-		icon = tank_production
+		icon = GFX_focus_TURNEW_965
 		cost = 7.86
 		prerequisite = {
 			focus = PKA_industrialization_of_the_state
@@ -1174,7 +1174,7 @@ add_extra_state_shared_building_slots = 1
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = PKA_dockyard_expansion
-		icon = naval_industry
+		icon = GFX_focus_TURNEW_967
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_industrialization_of_the_state
@@ -3163,7 +3163,7 @@ add_ideas =	media_opinion_towards_bad_1_neutral_wing_sad
 	}
 	focus = {
 		id = PKA_echological_reforms
-		icon = improve_relations_green
+		icon = GFX_focus_TURNEW_968
 		cost = 7.15
 		prerequisite = {
 			focus = PKA_demand_financial_posibilities_first

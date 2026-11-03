@@ -25,7 +25,7 @@ add_political_power = 75
 	}
 	focus = {
 		id = HEPAR_usage_of_weltpolitik
-		icon = diplomacy
+		icon = GFX_focus_TURNEW_917
 		cost = 7.15
 		x = 54
 		y = 10
@@ -79,7 +79,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 			}
 	focus = {
 		id = HEPAR_ensure_general_staff_loyalty
-		icon = military_planning
+		icon = GFX_focus_TURNEW_914
 		cost = 5.00
 		prerequisite = {
 			focus = HEPAR_healthy_relations_with_military
@@ -122,7 +122,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 			}
 	focus = {
 		id = HEPAR_cooperative_with_army
-		icon = small_arms4
+		icon = GFX_focus_TURNEW_911
 		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_kick_opposing_generals
@@ -734,7 +734,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		} ai_will_do = { base = 8 } } 
 	focus = {
 		id = HEPAR_economy_resolvation_project
-		icon = balance_buget
+		icon = GFX_focus_TURNEW_912
 		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_victory_of_anatolian_eagle
@@ -1088,7 +1088,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = HEPAR_industrialization
-		icon = RUS_State_Construction
+		icon = GFX_focus_TURNEW_916
 		cost = 7.15
 		prerequisite = {
 			focus = HEPAR_finish_the_economy_plan
@@ -1394,7 +1394,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_give_rules_under_protection_of_arms
-		icon = goal_JAP_defend_constitution
+		icon = GFX_focus_TURNEW_915
 		cost = 5.00
 		prerequisite = {
 			focus = HEPAR_hard_justice_rules
@@ -1659,7 +1659,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 }   ai_will_do = { base = 10 } }
 	focus = {
 		id = HEPAR_education_reforms
-		icon = education_reform
+		icon = GFX_focus_TURNEW_913
 		cost = 5.00
 		prerequisite = {
 			focus = HEPAR_17_year_politiche
@@ -3022,7 +3022,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 	}
 	focus = {
 		id = HEPAR_US_ships_in_blacksea
-		icon = 350_ship_navy
+		icon = GFX_focus_TURNEW_910
 		cost = 7.2
 		prerequisite = {
 			focus = HEPAR_put_more_NATO_generals

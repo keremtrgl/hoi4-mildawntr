@@ -46,7 +46,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = GENC_bank_law
-		icon = protectionist_economics
+		icon = GFX_focus_TURNEW_905
 		cost = 7.15
 		x = 23
 		y = 5
@@ -502,7 +502,7 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = GENC_coding_schools
-		icon = MEX_Defend_the_constitution
+		icon = GFX_focus_TURNEW_906
 		cost = 7.15
 		prerequisite = {
 			focus = GENC_give_money_to_young
@@ -1109,7 +1109,7 @@ swap_ideas = {
     }	
 	focus = {
 		id = GENC_rise_nationalism
-		icon = focus_generic_spread_fascism
+		icon = GFX_focus_TURNEW_909
 		cost = 7.86
 		prerequisite = {
 			focus = GENC_rise_of_agriculture
@@ -1214,7 +1214,7 @@ completion_reward = {
     }	
 	focus = {
 		id = GENC_nationalize_industries
-		icon = factory_planning
+		icon = GFX_focus_TURNEW_907
 		cost = 7.86
 		prerequisite = {
 			focus = GENC_rise_nationalism
@@ -1980,7 +1980,7 @@ swap_ideas = {
 	}
 	focus = {
 		id = GENC_populism
-		icon = generic_embrace_agrarian_society
+		icon = GFX_focus_TURNEW_908
 		cost = 7.15
 		prerequisite = {
 			focus = GENC_continue_up_reforms
@@ -2993,7 +2993,7 @@ swap_ideas = {
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_army_industry2
-		icon = Generic_State_Socialism
+		icon = GFX_focus_TURNEW_1010
 		cost = 7.86
 		prerequisite = {
 			focus = TUR_industrialize_agriculture2
