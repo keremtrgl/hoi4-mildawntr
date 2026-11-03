@@ -7267,10 +7267,9 @@ TUR_recover_ecevit = {
           selectable_mission = yes                
           days_mission_timeout = 100            
           timeout_effect = {                      
-               add_political_power = -75
-               add_stability = -0.05	
+               add_political_power = -150
+               add_stability = -0.10	
 			   			retire_country_leader = yes
-        AZE = { change_tag_from = TUR }	   
           }
           complete_effect = {            
                add_political_power = 300			   
