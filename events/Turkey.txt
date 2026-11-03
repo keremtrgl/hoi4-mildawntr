@@ -19966,6 +19966,7 @@ country_event = {
              date < 2023.6.22
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
+has_global_flag = SECOND_TOUR_DECLARATION
 		 NOT = {
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
@@ -20010,6 +20011,7 @@ country_event = {
              date < 2023.6.24
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
+has_global_flag = SECOND_TOUR_DECLARATION
 		 NOT = {
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
@@ -20053,6 +20055,7 @@ country_event = {
              date < 2023.6.14
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
+has_global_flag = SECOND_TOUR_DECLARATION
 		 NOT = {
 		 has_government = fascism
 		 has_global_flag = TUR_MAFIATIC_TR
@@ -22884,8 +22887,8 @@ country_event = {
     trigger = {
          tag = TUR
 		  AND = {
-             date > 2023.9.21
-             date < 2023.10.21
+             date > 2023.11.5
+             date < 2023.12.5
          }
 neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 NOT = {
