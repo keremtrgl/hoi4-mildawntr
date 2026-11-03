@@ -146,6 +146,24 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   Orta Doğu (`MD_middle_east_content`) çevirisi `zz_TR_MDX2_*` dosyalarında; paket 64.241 satır. Yükleme ekranı ve
   yükleme ipuçları ASCII (yazı tipi ı/ş/ğ içermiyor, oyunda doğrulandı).
 
+- **2.0.3-TUR.11** (3 Kasım 2026), tarih güncellemesi:
+  - 2023 seçimi oyuncu seçimi değil: ittifakların parti desteği, gerçek sonuç ve istikrardan hesaplanıyor
+    (`common/scripted_effects/TUR_2023_election_effects.txt`, `gen_effects.py` ile üretildi). Zafer odakları yalnızca
+    kazanana açılıyor (`TUR_2023_winner_*`), seçim hiç olmazsa 1 Temmuz 2023'ten sonra eski davranış. ATA İttifakı olayı
+    (742), İnce'nin yarışta kalması (743, Memleket > %6), Oğan pazarlığı seçimli, Özdağ protokolü bayrakla tutuluyor.
+  - Özgür Özel CHP kurultayının dördüncü sonucu (`CHP_ozgur_ozel`); 38. Kurultay 4–5 Kasım 2023'e taşındı.
+  - 24 yeni tarihî olay (Turkey.742–765): Çözüm Süreci, 2015'in iki seçimi, Rus yaptırımları (`TUR_russian_sanctions`),
+    Esad'ın düşüşü, Terörsüz Türkiye, Fırat Kalkanı, Barış Pınarı, Pençe-Kilit/Kılıç, İsrail ticareti, tahıl koridoru,
+    Kasım 2002 sonucu, Brunson'ın tahliyesi. Brunson yaptırımı varsa Ağustos 2018 kur olayı (270) daha sert.
+  - Tarih düzeltmeleri: Su-24 krizi 24 Kasım 2015; 2010 ve 2017 referandum sonuçları gerçek tarihlerde (dağıtıcıdan,
+    kararlar artık olayı doğrudan çağırmıyor); yemin töreni (314) Temmuz 2018'e taşındı ve referandum gerekiyor.
+  - Yeni odaklar: "Oğan Hükümette mi?" (Erdoğan), "İçişleri Bakanı Özdağ" ve "Masanın Çatlakları" (Kılıçdaroğlu),
+    olaylar 766 ve 767. 72. satırda, çünkü 70. satır dolu.
+  - Atatürk yolu: 40'tan az fabrika şartı (Türkiye ~66 ile başlıyor), darbe olaylarından korunuyor, açılış güçlendi.
+    Ecevit görevi zaman aşımında oyuncu artık Azerbaycan'a geçmiyor.
+  - Yol Rehberi 15 sayfa, hoş geldiniz penceresini yeniden açan karar.
+  - Dil paketi: yeni içeriğin hepsi Türkçe; ı/ş/ğ içeren 26 olay başlığı yazı tipi kuralına çevrildi.
+
 ## Kalıcı dersler (tekrar düşme!)
 
 - **Sesler WAV kalmalı.** HOI4 ses efektlerini yalnızca WAV'dan yükler. OGG'ye çevirince (88d1f8e) 22 konuşma
