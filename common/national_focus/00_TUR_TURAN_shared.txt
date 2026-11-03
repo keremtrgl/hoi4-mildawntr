@@ -1383,7 +1383,7 @@ add_ideas = turkic_expansionism
 		add_stability = -0.1
 		set_temp_variable = { rul_party_temp = 22 }
 		change_ruling_party_effect = yes
-		set_politics = { elections_allowed = yes }
+		enable_elections_with_no_leader_change = yes
 		set_temp_variable = { party_index = 22 }
 		set_temp_variable = { party_popularity_increase = 0.30 }
 		set_temp_variable = { temp_outlook_increase = 0.30 }
