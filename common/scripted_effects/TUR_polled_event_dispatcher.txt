@@ -11556,6 +11556,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyC.6  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyC_6 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			NOT = {
 			has_capitulated = yes
@@ -11567,6 +11568,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyC.1  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyC_1 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			NOT = {
 			has_capitulated = yes
@@ -11608,6 +11610,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.1  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_1 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_akp value = 35 compare = less_than_or_equals }
@@ -11619,6 +11622,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.2  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_2 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_anap value = 35 compare = less_than_or_equals }
@@ -11630,6 +11634,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.4  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_4 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_bozkurtlar value = 35 compare = less_than_or_equals }
@@ -11641,6 +11646,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.5  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_5 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_dyp value = 35 compare = less_than_or_equals }
@@ -11652,6 +11658,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.6  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_6 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_emep value = 35 compare = less_than_or_equals }
@@ -11663,6 +11670,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.7  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_7 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_fp value = 35 compare = less_than_or_equals }
@@ -11674,6 +11682,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.8  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_8 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_gencparti value = 35 compare = less_than_or_equals }
@@ -11685,6 +11694,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.10  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_10 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_ibda_c value = 35 compare = less_than_or_equals }
@@ -11696,6 +11706,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.11  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_11 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_mhp value = 35 compare = less_than_or_equals }
@@ -11707,6 +11718,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.12  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_12 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_odp value = 35 compare = less_than_or_equals }
@@ -11718,6 +11730,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.13  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_13 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_socdem value = 35 compare = less_than_or_equals }
@@ -11729,6 +11742,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.14  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_14 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_tkp value = 35 compare = less_than_or_equals }
@@ -11740,6 +11754,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.15  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_15 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_tkp value = 35 compare = less_than_or_equals }
@@ -11751,6 +11766,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.16  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_16 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_akp value = -25 compare = less_than_or_equals }
@@ -11769,6 +11785,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.17  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_17 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_anap value = -25 compare = less_than_or_equals }
@@ -11787,6 +11804,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.19  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_19 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_bozkurtlar value = -25 compare = less_than_or_equals }
@@ -11805,6 +11823,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.20  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_20 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_dyp value = -25 compare = less_than_or_equals }
@@ -11823,6 +11842,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.21  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_21 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_emep value = -25 compare = less_than_or_equals }
@@ -11841,6 +11861,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.23  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_23 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_gencparti value = -25 compare = less_than_or_equals }
@@ -11859,6 +11880,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.25  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_25 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_ibda_c value = -25 compare = less_than_or_equals }
@@ -11877,6 +11899,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.26  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_26 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_mhp value = -25 compare = less_than_or_equals }
@@ -11895,6 +11918,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.27  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_27 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_odp value = -25 compare = less_than_or_equals }
@@ -11913,6 +11937,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.28  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_28 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_socdem value = -25 compare = less_than_or_equals }
@@ -11931,6 +11956,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.29  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_29 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_tkp value = -25 compare = less_than_or_equals }
@@ -11949,6 +11975,7 @@ TUR_dispatch_polled_events = {
 	if = {  # TurkeyA.30  (Turkey_politics_events.txt)
 		limit = {
 			NOT = { has_country_flag = TUR_evf_TurkeyA_30 }
+			NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 			tag = TUR
 			has_idea = turkish_military_infulence
 			check_variable = { var = TUR_rel_tkp value = -25 compare = less_than_or_equals }

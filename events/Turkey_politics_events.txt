@@ -1375,6 +1375,7 @@ country_event = {
 
     trigger = {
          tag = TUR
+         NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		 NOT = {
 		 has_capitulated = yes
 		 } 
@@ -1678,6 +1679,7 @@ country_event = {
 
     trigger = {
          tag = TUR
+         NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		 NOT = {
 		 has_capitulated = yes
 		 } 
@@ -2886,6 +2888,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_akp value = 35 compare = less_than_or_equals }	
 		has_stability < 0.2	
@@ -2912,6 +2915,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_anap value = 35 compare = less_than_or_equals }	
 		has_stability < 0.2	
@@ -2939,6 +2943,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_bozkurtlar value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -2966,6 +2971,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_dyp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -2993,6 +2999,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_emep value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3020,6 +3027,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_fp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3047,6 +3055,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_gencparti value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3074,6 +3083,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_ibda_c value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3101,6 +3111,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_mhp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3128,6 +3139,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_odp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3155,6 +3167,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_socdem value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3182,6 +3195,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_tkp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3209,6 +3223,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_tkp value = 35 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3239,6 +3254,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_akp value = -25 compare = less_than_or_equals }	
 		has_stability < 0.2
@@ -3272,6 +3288,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_anap value = -25 compare = less_than_or_equals }	
 		has_stability < 0.2	
@@ -3306,6 +3323,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_bozkurtlar value = -25 compare = less_than_or_equals }
 		has_stability < 0.2
@@ -3340,6 +3358,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_dyp value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3374,6 +3393,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_emep value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3432,6 +3452,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_gencparti value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3466,6 +3487,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_ibda_c value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3500,6 +3522,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_mhp value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3534,6 +3557,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_odp value = -25 compare = less_than_or_equals }
 		has_stability < 0.2
@@ -3568,6 +3592,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_socdem value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3602,6 +3627,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_tkp value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
@@ -3636,6 +3662,7 @@ country_event = {
 
  trigger = {
 		tag = TUR
+		NOT = { has_country_flag = ATA_FOCUS_LOCATION }
 		has_idea = turkish_military_infulence
 		check_variable = { var = TUR_rel_tkp value = -25 compare = less_than_or_equals }
 		has_stability < 0.2	
