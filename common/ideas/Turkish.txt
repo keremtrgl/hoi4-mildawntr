@@ -263,6 +263,12 @@ ideas = {
 		}
 		
 		
+ 		TUR_russian_sanctions = {
+			picture = embargo
+			allowed_civil_war = { always = yes }
+			modifier = { political_power_factor = -0.05 stability_factor = -0.03 }
+		}
+
  		syrian_immigration = {
 			allowed_civil_war = { always = yes }
 			modifier = { monthly_population = 0.5 stability_factor = -0.15 neutrality_drift = -0.03}

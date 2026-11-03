@@ -27181,3 +27181,800 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		add_stability = -0.02
 	}
 }
+
+
+country_event = {
+	id = Turkey.744
+	is_triggered_only = yes
+	title = Turkey.744.title
+	desc = Turkey.744.desc
+	picture = GFX_kurd_rally
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2013.3.21
+			date < 2013.4.21
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_744 }
+
+	option = {
+		name = Turkey.744.a
+		ai_chance = { factor = 3 }
+
+		set_country_flag = TUR_peace_process
+		add_stability = 0.02
+		custom_effect_tooltip = TUR_PKK_PRESENCE_DOWN_10_TT
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = TUR_pkk_campaign_started NOT = { has_country_flag = TUR_PKK_tamed } }
+				subtract_from_variable = { var = pkk_presence value = 10 }
+				clamp_variable = { var = pkk_presence min = 0 max = pkk_presence_max }
+			}
+		}
+		custom_effect_tooltip = TUR_HIST_744_PARTY_TT
+		hidden_effect = {
+			add_to_variable = { party_pop_array^8 = 0.01 }
+			add_to_variable = { party_pop_array^20 = 0.01 }
+			recalculate_party = yes
+		}
+	}
+
+	option = {
+		name = Turkey.744.b
+		ai_chance = { factor = 1 }
+
+		add_political_power = 25
+		add_war_support = 0.02
+	}
+}
+
+
+country_event = {
+	id = Turkey.745
+	is_triggered_only = yes
+	title = Turkey.745.title
+	desc = Turkey.745.desc
+	picture = GFX_ahmet_davutoglu
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2015.2.28
+			date < 2015.3.28
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+		has_country_flag = TUR_peace_process
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_745 }
+
+	option = {
+		name = Turkey.745.a
+		ai_chance = { factor = 1 }
+
+		add_political_power = -25
+		add_stability = 0.02
+		custom_effect_tooltip = TUR_PKK_PRESENCE_DOWN_5_TT
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = TUR_pkk_campaign_started NOT = { has_country_flag = TUR_PKK_tamed } }
+				subtract_from_variable = { var = pkk_presence value = 5 }
+				clamp_variable = { var = pkk_presence min = 0 max = pkk_presence_max }
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = Turkey.746
+	is_triggered_only = yes
+	title = Turkey.746.title
+	desc = Turkey.746.desc
+	picture = GFX_hendek_operations
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2015.7.24
+			date < 2015.8.24
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+		has_country_flag = TUR_peace_process
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_746 }
+
+	option = {
+		name = Turkey.746.a
+		ai_chance = { factor = 1 }
+
+		clr_country_flag = TUR_peace_process
+		add_stability = -0.05
+		add_war_support = 0.05
+	}
+}
+
+
+country_event = {
+	id = Turkey.747
+	is_triggered_only = yes
+	title = Turkey.747.title
+	desc = Turkey.747.desc
+	picture = GFX_demirtas
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2015.6.7
+			date < 2015.7.7
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_747 }
+
+	option = {
+		name = Turkey.747.a
+		ai_chance = { factor = 1 }
+
+		add_stability = -0.03
+		custom_effect_tooltip = TUR_HIST_747_PARTY_TT
+		hidden_effect = {
+			add_to_variable = { party_pop_array^12 = -0.04 }
+			add_to_variable = { party_pop_array^8 = 0.03 }
+			add_to_variable = { party_pop_array^20 = 0.01 }
+			recalculate_party = yes
+		}
+	}
+}
+
+
+country_event = {
+	id = Turkey.748
+	is_triggered_only = yes
+	title = Turkey.748.title
+	desc = Turkey.748.desc
+	picture = GFX_akp_inside_elections
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2015.11.1
+			date < 2015.12.1
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+		has_country_flag = TUR_evf_Turkey_747
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_748 }
+
+	option = {
+		name = Turkey.748.a
+		ai_chance = { factor = 1 }
+
+		add_stability = 0.04
+		add_political_power = 50
+		custom_effect_tooltip = TUR_HIST_748_PARTY_TT
+		hidden_effect = {
+			add_to_variable = { party_pop_array^12 = 0.05 }
+			add_to_variable = { party_pop_array^8 = -0.02 }
+			add_to_variable = { party_pop_array^20 = -0.03 }
+			recalculate_party = yes
+		}
+	}
+}
+
+
+country_event = {
+	id = Turkey.749
+	is_triggered_only = yes
+	title = Turkey.749.title
+	desc = Turkey.749.desc
+	picture = GFX_russian_kremlin
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2015.11.25
+			date < 2016.2.1
+		}
+		has_global_flag = TUR_su24_sanctions
+		NOT = { has_war_with = SOV }
+		NOT = { has_capitulated = yes }
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_749 }
+
+	option = {
+		name = Turkey.749.a
+		ai_chance = { factor = 1 }
+
+		add_timed_idea = { idea = TUR_russian_sanctions days = 270 }
+	}
+}
+
+
+country_event = {
+	id = Turkey.750
+	is_triggered_only = yes
+	title = Turkey.750.title
+	desc = Turkey.750.desc
+	picture = GFX_russia_turk_befrind
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2016.6.27
+			date < 2016.7.27
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+		has_idea = TUR_russian_sanctions
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_750 }
+
+	option = {
+		name = Turkey.750.a
+		ai_chance = { factor = 1 }
+
+		remove_ideas = TUR_russian_sanctions
+		add_political_power = -25
+		add_stability = 0.02
+	}
+}
+
+
+country_event = {
+	id = Turkey.751
+	is_triggered_only = yes
+	title = Turkey.751.title
+	desc = Turkey.751.desc
+	picture = GFX_umayyad_symbolic
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		date > 2011.3.15
+		186 = { OR = { is_controlled_by = FSA is_controlled_by = NUS } }
+		NOT = { has_capitulated = yes }
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_751 }
+
+	option = {
+		name = Turkey.751.a
+		ai_chance = { factor = 1 }
+
+		add_political_power = 75
+		if = {
+			limit = { has_idea = syrian_immigration }
+			swap_ideas = { remove_idea = syrian_immigration add_idea = syrian_immigration_acted }
+		}
+	}
+}
+
+
+country_event = {
+	id = Turkey.752
+	is_triggered_only = yes
+	title = Turkey.752.title
+	desc = Turkey.752.desc
+	picture = GFX_bahceli
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2024.10.22
+			date < 2024.11.22
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_752 }
+
+	option = {
+		name = Turkey.752.a
+		ai_chance = { factor = 1 }
+
+		add_political_power = 25
+	}
+}
+
+
+country_event = {
+	id = Turkey.753
+	is_triggered_only = yes
+	title = Turkey.753.title
+	desc = Turkey.753.desc
+	picture = GFX_dem_mhp_akp_alliance
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2025.2.27
+			date < 2025.3.27
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+		OR = { has_country_flag = TUR_evf_Turkey_752 has_country_flag = TUR_evf_Turkey_661 }
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_753 }
+
+	option = {
+		name = Turkey.753.a
+		ai_chance = { factor = 1 }
+
+		add_stability = 0.03
+		custom_effect_tooltip = TUR_PKK_PRESENCE_DOWN_10_TT
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = TUR_pkk_campaign_started NOT = { has_country_flag = TUR_PKK_tamed } }
+				subtract_from_variable = { var = pkk_presence value = 10 }
+				clamp_variable = { var = pkk_presence min = 0 max = pkk_presence_max }
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = Turkey.754
+	is_triggered_only = yes
+	title = Turkey.754.title
+	desc = Turkey.754.desc
+	picture = GFX_pkk_no_more
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2025.5.12
+			date < 2025.6.12
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+		has_country_flag = TUR_evf_Turkey_753
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_754 }
+
+	option = {
+		name = Turkey.754.a
+		ai_chance = { factor = 1 }
+
+		add_stability = 0.03
+		add_political_power = 50
+		custom_effect_tooltip = TUR_PKK_PRESENCE_DOWN_20_TT
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = TUR_pkk_campaign_started NOT = { has_country_flag = TUR_PKK_tamed } }
+				subtract_from_variable = { var = pkk_presence value = 20 }
+				clamp_variable = { var = pkk_presence min = 0 max = pkk_presence_max }
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = Turkey.755
+	is_triggered_only = yes
+	title = Turkey.755.title
+	desc = Turkey.755.desc
+	picture = GFX_TUR_PKK_generic3
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2025.7.11
+			date < 2025.8.11
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+		has_country_flag = TUR_evf_Turkey_754
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_755 }
+
+	option = {
+		name = Turkey.755.a
+		ai_chance = { factor = 1 }
+
+		add_stability = 0.02
+		custom_effect_tooltip = TUR_PKK_PRESENCE_DOWN_10_TT
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = TUR_pkk_campaign_started NOT = { has_country_flag = TUR_PKK_tamed } }
+				subtract_from_variable = { var = pkk_presence value = 10 }
+				clamp_variable = { var = pkk_presence min = 0 max = pkk_presence_max }
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = Turkey.756
+	is_triggered_only = yes
+	title = Turkey.756.title
+	desc = Turkey.756.desc
+	picture = GFX_tbmm
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2025.8.5
+			date < 2025.9.5
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+		has_country_flag = TUR_evf_Turkey_755
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_756 }
+
+	option = {
+		name = Turkey.756.a
+		ai_chance = { factor = 1 }
+
+		add_political_power = 50
+	}
+}
+
+
+country_event = {
+	id = Turkey.757
+	is_triggered_only = yes
+	title = Turkey.757.title
+	desc = Turkey.757.desc
+	picture = GFX_TUR_syrian_border_attack
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2016.8.24
+			date < 2016.9.24
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_757 }
+
+	option = {
+		name = Turkey.757.a
+		ai_chance = { factor = 1 }
+
+		army_experience = 10
+		add_war_support = 0.02
+		add_political_power = -25
+	}
+}
+
+
+country_event = {
+	id = Turkey.758
+	is_triggered_only = yes
+	title = Turkey.758.title
+	desc = Turkey.758.desc
+	picture = GFX_TUR_attack_PKK
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2019.10.9
+			date < 2019.11.9
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_758 }
+
+	option = {
+		name = Turkey.758.a
+		ai_chance = { factor = 1 }
+
+		army_experience = 15
+		add_war_support = 0.03
+		add_political_power = -50
+	}
+}
+
+
+country_event = {
+	id = Turkey.759
+	is_triggered_only = yes
+	title = Turkey.759.title
+	desc = Turkey.759.desc
+	picture = GFX_tr_usa_talks
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2019.10.17
+			date < 2019.11.17
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+		has_country_flag = TUR_evf_Turkey_758
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_759 }
+
+	option = {
+		name = Turkey.759.a
+		ai_chance = { factor = 2 }
+
+		add_stability = 0.02
+		add_political_power = 50
+	}
+
+	option = {
+		name = Turkey.759.b
+		ai_chance = { factor = 1 }
+
+		add_war_support = 0.03
+		army_experience = 5
+		add_political_power = -50
+	}
+}
+
+
+country_event = {
+	id = Turkey.760
+	is_triggered_only = yes
+	title = Turkey.760.title
+	desc = Turkey.760.desc
+	picture = GFX_TUR_PKK_generic2
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2022.4.17
+			date < 2022.5.17
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_760 }
+
+	option = {
+		name = Turkey.760.a
+		ai_chance = { factor = 1 }
+
+		army_experience = 10
+		custom_effect_tooltip = TUR_PKK_PRESENCE_DOWN_5_TT
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = TUR_pkk_campaign_started NOT = { has_country_flag = TUR_PKK_tamed } }
+				subtract_from_variable = { var = pkk_presence value = 5 }
+				clamp_variable = { var = pkk_presence min = 0 max = pkk_presence_max }
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = Turkey.761
+	is_triggered_only = yes
+	title = Turkey.761.title
+	desc = Turkey.761.desc
+	picture = GFX_turkish_operations_update
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2022.11.20
+			date < 2022.12.20
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_761 }
+
+	option = {
+		name = Turkey.761.a
+		ai_chance = { factor = 1 }
+
+		air_experience = 15
+		custom_effect_tooltip = TUR_PKK_PRESENCE_DOWN_5_TT
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = TUR_pkk_campaign_started NOT = { has_country_flag = TUR_PKK_tamed } }
+				subtract_from_variable = { var = pkk_presence value = 5 }
+				clamp_variable = { var = pkk_presence min = 0 max = pkk_presence_max }
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = Turkey.762
+	is_triggered_only = yes
+	title = Turkey.762.title
+	desc = Turkey.762.desc
+	picture = GFX_turkish_protests_to_israel
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2024.5.2
+			date < 2024.6.2
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+		country_exists = ISR
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_762 }
+
+	option = {
+		name = Turkey.762.a
+		ai_chance = { factor = 1 }
+
+		add_political_power = 50
+		add_stability = 0.01
+		custom_effect_tooltip = TUR_HIST_762_PARTY_TT
+		hidden_effect = {
+			add_to_variable = { party_pop_array^12 = 0.01 }
+			recalculate_party = yes
+		}
+	}
+}
+
+
+country_event = {
+	id = Turkey.763
+	is_triggered_only = yes
+	title = Turkey.763.title
+	desc = Turkey.763.desc
+	picture = GFX_erdogan_un_in_deal
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		AND = {
+			date > 2022.7.22
+			date < 2022.8.22
+		}
+		neutrality_neutral_muslim_brotherhood_are_in_power = yes
+		NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+		}
+		country_exists = SOV
+		country_exists = UKR
+	}
+
+	immediate = { set_country_flag = TUR_evf_Turkey_763 }
+
+	option = {
+		name = Turkey.763.a
+		ai_chance = { factor = 1 }
+
+		add_political_power = 50
+		add_stability = 0.01
+	}
+}
