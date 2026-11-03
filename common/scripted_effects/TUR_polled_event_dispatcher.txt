@@ -7625,6 +7625,7 @@ TUR_dispatch_polled_events = {
 			has_global_flag = TUR_MAFIATIC_TR
 			has_global_flag = ERDOGAN_NOT_ACHIEVED
 			has_capitulated = yes
+			AND = { has_global_flag = MEMLEKET_INCE check_variable = { party_pop_array^0 > 0.06 } }
 			}
 		}
 		country_event = Turkey.539
@@ -7776,10 +7777,11 @@ TUR_dispatch_polled_events = {
 			NOT = { has_country_flag = TUR_evf_Turkey_549 }
 			tag = TUR
 			AND = {
-			date > 2023.5.13
-			date < 2023.6.13
+			date > 2023.5.15
+			date < 2023.6.15
 			}
 			neutrality_neutral_muslim_brotherhood_are_in_power = yes
+			has_global_flag = SECOND_TOUR_DECLARATION
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
@@ -7835,6 +7837,7 @@ TUR_dispatch_polled_events = {
 			}
 			neutrality_neutral_muslim_brotherhood_are_in_power = yes
 			has_global_flag = SECOND_TOUR_DECLARATION
+			has_global_flag = TUR_ogan_deal
 			NOT = {
 			has_government = fascism
 			has_global_flag = TUR_MAFIATIC_TR
@@ -7900,6 +7903,43 @@ TUR_dispatch_polled_events = {
 			}
 		}
 		country_event = Turkey.555
+	}
+	if = {  # Turkey.742  (Turkey.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkey_742 }
+			tag = TUR
+			AND = {
+			date > 2023.3.11
+			date < 2023.4.11
+			}
+			neutrality_neutral_muslim_brotherhood_are_in_power = yes
+			NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+			}
+		}
+		country_event = Turkey.742
+	}
+	if = {  # Turkey.743  (Turkey.txt)
+		limit = {
+			NOT = { has_country_flag = TUR_evf_Turkey_743 }
+			tag = TUR
+			AND = {
+			date > 2023.5.11
+			date < 2023.6.11
+			}
+			neutrality_neutral_muslim_brotherhood_are_in_power = yes
+			AND = { has_global_flag = MEMLEKET_INCE check_variable = { party_pop_array^0 > 0.06 } }
+			NOT = {
+			has_government = fascism
+			has_global_flag = TUR_MAFIATIC_TR
+			has_global_flag = ERDOGAN_NOT_ACHIEVED
+			has_capitulated = yes
+			}
+		}
+		country_event = Turkey.743
 	}
 	if = {  # Turkey.556  (Turkey.txt)
 		limit = {

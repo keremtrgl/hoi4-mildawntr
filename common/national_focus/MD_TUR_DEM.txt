@@ -7504,6 +7504,19 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
 search_filters = {FOCUS_FILTER_POLITICAL}
 
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = TUR_2023_WON_ERDOGAN_TT
+			OR = {
+				has_global_flag = TUR_2023_winner_erdogan
+				AND = {
+					NOT = { has_global_flag = TUR_2023_decided }
+					date > 2023.7.1
+				}
+			}
+		}
+	}
+
 	completion_reward = {
 		add_political_power = -50
 		custom_effect_tooltip = AKP_2023_R
@@ -7856,7 +7869,10 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
     
 	available = {
-	has_global_flag = SECOND_TOUR_DECLARATION
+	custom_trigger_tooltip = {
+		tooltip = TUR_OGAN_DEAL_MADE_TT
+		has_global_flag = TUR_ogan_deal
+	}
 	NOT = {
 	has_global_flag = SINAN_OGAN_THE_VICTOR
 	}
@@ -7897,6 +7913,19 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		y = 65
 
 search_filters = {FOCUS_FILTER_POLITICAL}
+
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = TUR_2023_WON_INCE_TT
+			OR = {
+				has_global_flag = TUR_2023_winner_ince
+				AND = {
+					NOT = { has_global_flag = TUR_2023_decided }
+					date > 2023.7.1
+				}
+			}
+		}
+	}
 
 	completion_reward = {
 		add_political_power = -50
@@ -8023,6 +8052,19 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
 search_filters = {FOCUS_FILTER_POLITICAL}
 
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = TUR_2023_WON_OGAN_TT
+			OR = {
+				has_global_flag = TUR_2023_winner_ogan
+				AND = {
+					NOT = { has_global_flag = TUR_2023_decided }
+					date > 2023.7.1
+				}
+			}
+		}
+	}
+
 	completion_reward = {
 		add_political_power = -50
 		set_global_flag = SINAN_OGAN_THE_VICTOR
@@ -8057,6 +8099,19 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 		y = 65
 
 search_filters = {FOCUS_FILTER_POLITICAL}
+
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = TUR_2023_WON_KILICDAROGLU_TT
+			OR = {
+				has_global_flag = TUR_2023_winner_kilicdaroglu
+				AND = {
+					NOT = { has_global_flag = TUR_2023_decided }
+					date > 2023.7.1
+				}
+			}
+		}
+	}
 
 	completion_reward = {
 		add_political_power = -50
@@ -8236,7 +8291,10 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 
     
 	available = {
-	has_global_flag = SECOND_TOUR_DECLARATION
+	custom_trigger_tooltip = {
+		tooltip = TUR_OZDAG_PROTOCOL_SIGNED_TT
+		has_global_flag = TUR_ozdag_protocol
+	}
 	NOT = {
 	has_global_flag = SINAN_OGAN_THE_VICTOR
 	}

@@ -1,0 +1,264 @@
+# 2023 presidential election, worked out from Turkey's party popularity.
+# Each candidate's share is half the alliance's current popularity and half the real 2023 result,
+# nudged by stability. Shares are kept in global.TUR_vote_* (first round) and global.TUR_run_* (runoff).
+
+TUR_2023_first_round_calc = {
+	# People's Alliance: AKP, MHP, BBP, plus Yeniden Refah and HUDA PAR if they joined
+	set_temp_variable = { c_e = party_pop_array^12 }
+	add_to_temp_variable = { c_e = party_pop_array^20 }
+	add_to_temp_variable = { c_e = party_pop_array^15 }
+	if = { limit = { has_country_flag = TUR_evf_Turkey_481 } add_to_temp_variable = { c_e = party_pop_array^7 } }
+	if = { limit = { has_country_flag = TUR_evf_Turkey_483 } add_to_temp_variable = { c_e = party_pop_array^9 } }
+	# Nation Alliance and the parties that backed Kilicdaroglu
+	set_temp_variable = { c_k = party_pop_array^3 }
+	add_to_temp_variable = { c_k = party_pop_array^1 }
+	add_to_temp_variable = { c_k = party_pop_array^17 }
+	add_to_temp_variable = { c_k = party_pop_array^13 }
+	add_to_temp_variable = { c_k = party_pop_array^6 }
+	add_to_temp_variable = { c_k = party_pop_array^8 }
+	add_to_temp_variable = { c_k = party_pop_array^19 }
+	add_to_temp_variable = { c_k = party_pop_array^5 }
+	# Muharrem Ince keeps the Memleket vote only if he stayed in the race
+	set_temp_variable = { c_i = 0 }
+	if = {
+		limit = { has_global_flag = TUR_ince_stays }
+		set_temp_variable = { c_i = party_pop_array^0 }
+		add_to_temp_variable = { c_i = 0.02 }
+	}
+	else = { add_to_temp_variable = { c_k = party_pop_array^0 } }
+	# ATA Alliance: Zafer plus Sinan Ogan's own appeal
+	set_temp_variable = { c_o = party_pop_array^21 }
+	add_to_temp_variable = { c_o = 0.025 }
+
+	set_temp_variable = { c_sum = c_e }
+	add_to_temp_variable = { c_sum = c_k }
+	add_to_temp_variable = { c_sum = c_o }
+	add_to_temp_variable = { c_sum = c_i }
+	if = {
+		limit = { check_variable = { c_sum > 0 } }
+		divide_temp_variable = { c_e = c_sum }
+		divide_temp_variable = { c_k = c_sum }
+		divide_temp_variable = { c_o = c_sum }
+		divide_temp_variable = { c_i = c_sum }
+	}
+
+	# blend with the real result
+	multiply_temp_variable = { c_e = 0.5 }
+	multiply_temp_variable = { c_k = 0.5 }
+	multiply_temp_variable = { c_o = 0.5 }
+	multiply_temp_variable = { c_i = 0.5 }
+	if = {
+		limit = { has_global_flag = TUR_ince_stays }
+		add_to_temp_variable = { c_e = 0.24 }
+		add_to_temp_variable = { c_k = 0.21 }
+		add_to_temp_variable = { c_o = 0.025 }
+		add_to_temp_variable = { c_i = 0.025 }
+	}
+	else = {
+		add_to_temp_variable = { c_e = 0.2475 }
+		add_to_temp_variable = { c_k = 0.2245 }
+		add_to_temp_variable = { c_o = 0.026 }
+		add_to_temp_variable = { c_i = 0.0022 }
+	}
+
+	# a stable country rewards the incumbent: up to 3 points either way
+	set_temp_variable = { c_s = stability }
+	subtract_from_temp_variable = { c_s = 0.5 }
+	multiply_temp_variable = { c_s = 0.06 }
+	add_to_temp_variable = { c_e = c_s }
+	subtract_from_temp_variable = { c_k = c_s }
+	clamp_temp_variable = { var = c_e min = 0 }
+	clamp_temp_variable = { var = c_k min = 0 }
+	clamp_temp_variable = { var = c_o min = 0 }
+	clamp_temp_variable = { var = c_i min = 0 }
+
+	set_temp_variable = { c_sum = c_e }
+	add_to_temp_variable = { c_sum = c_k }
+	add_to_temp_variable = { c_sum = c_o }
+	add_to_temp_variable = { c_sum = c_i }
+	set_variable = { global.TUR_vote_e = c_e }
+	divide_variable = { global.TUR_vote_e = c_sum }
+	set_variable = { global.TUR_vote_k = c_k }
+	divide_variable = { global.TUR_vote_k = c_sum }
+	set_variable = { global.TUR_vote_o = c_o }
+	divide_variable = { global.TUR_vote_o = c_sum }
+	set_variable = { global.TUR_vote_i = c_i }
+	divide_variable = { global.TUR_vote_i = c_sum }
+
+	if = {
+		limit = { check_variable = { global.TUR_vote_e > 0.5 } }
+		set_global_flag = TUR_2023_winner_erdogan
+		set_global_flag = TUR_2023_decided
+	}
+	else_if = {
+		limit = { check_variable = { global.TUR_vote_k > 0.5 } }
+		set_global_flag = TUR_2023_winner_kilicdaroglu
+		set_global_flag = TUR_2023_decided
+	}
+	else_if = {
+		limit = { check_variable = { global.TUR_vote_o > 0.5 } }
+		set_global_flag = TUR_2023_winner_ogan
+		set_global_flag = TUR_2023_decided
+	}
+	else_if = {
+		limit = { check_variable = { global.TUR_vote_i > 0.5 } }
+		set_global_flag = TUR_2023_winner_ince
+		set_global_flag = TUR_2023_decided
+	}
+	else = { set_global_flag = SECOND_TOUR_DECLARATION }
+}
+
+TUR_2023_runoff_calc = {
+	# Ogan's voters lean to Erdogan; his deal and Ozdag's protocol each pull some of them
+	set_temp_variable = { p_oe = 0.40 }
+	if = { limit = { has_global_flag = TUR_ogan_deal } add_to_temp_variable = { p_oe = 0.15 } }
+	set_temp_variable = { p_ok = 0.35 }
+	if = { limit = { has_global_flag = TUR_ozdag_protocol } add_to_temp_variable = { p_ok = 0.08 } }
+
+	# the two candidates with the most first-round votes go through
+	set_temp_variable = { n_e = 0 }
+	if = { limit = { check_variable = { global.TUR_vote_k > global.TUR_vote_e } } add_to_temp_variable = { n_e = 1 } }
+	if = { limit = { check_variable = { global.TUR_vote_o > global.TUR_vote_e } } add_to_temp_variable = { n_e = 1 } }
+	if = { limit = { check_variable = { global.TUR_vote_i > global.TUR_vote_e } } add_to_temp_variable = { n_e = 1 } }
+	set_temp_variable = { n_k = 0 }
+	if = { limit = { check_variable = { global.TUR_vote_e > global.TUR_vote_k } } add_to_temp_variable = { n_k = 1 } }
+	if = { limit = { check_variable = { global.TUR_vote_o > global.TUR_vote_k } } add_to_temp_variable = { n_k = 1 } }
+	if = { limit = { check_variable = { global.TUR_vote_i > global.TUR_vote_k } } add_to_temp_variable = { n_k = 1 } }
+	set_temp_variable = { n_o = 0 }
+	if = { limit = { check_variable = { global.TUR_vote_e > global.TUR_vote_o } } add_to_temp_variable = { n_o = 1 } }
+	if = { limit = { check_variable = { global.TUR_vote_k > global.TUR_vote_o } } add_to_temp_variable = { n_o = 1 } }
+	if = { limit = { check_variable = { global.TUR_vote_i > global.TUR_vote_o } } add_to_temp_variable = { n_o = 1 } }
+	set_temp_variable = { n_i = 0 }
+	if = { limit = { check_variable = { global.TUR_vote_e > global.TUR_vote_i } } add_to_temp_variable = { n_i = 1 } }
+	if = { limit = { check_variable = { global.TUR_vote_k > global.TUR_vote_i } } add_to_temp_variable = { n_i = 1 } }
+	if = { limit = { check_variable = { global.TUR_vote_o > global.TUR_vote_i } } add_to_temp_variable = { n_i = 1 } }
+	set_variable = { global.TUR_run_e = 0 }
+	set_variable = { global.TUR_run_k = 0 }
+	set_variable = { global.TUR_run_o = 0 }
+	set_variable = { global.TUR_run_i = 0 }
+	if = {
+		limit = { check_variable = { n_e < 2 } }
+		set_variable = { global.TUR_run_e = global.TUR_vote_e }
+		if = {
+			limit = { check_variable = { n_k > 1 } }
+			set_temp_variable = { t = global.TUR_vote_k }
+			multiply_temp_variable = { t = 0.05 }
+			add_to_variable = { global.TUR_run_e = t }
+		}
+		if = {
+			limit = { check_variable = { n_o > 1 } }
+			set_temp_variable = { t = global.TUR_vote_o }
+			multiply_temp_variable = { t = p_oe }
+			add_to_variable = { global.TUR_run_e = t }
+		}
+		if = {
+			limit = { check_variable = { n_i > 1 } }
+			set_temp_variable = { t = global.TUR_vote_i }
+			multiply_temp_variable = { t = 0.25 }
+			add_to_variable = { global.TUR_run_e = t }
+		}
+	}
+	if = {
+		limit = { check_variable = { n_k < 2 } }
+		set_variable = { global.TUR_run_k = global.TUR_vote_k }
+		if = {
+			limit = { check_variable = { n_e > 1 } }
+			set_temp_variable = { t = global.TUR_vote_e }
+			multiply_temp_variable = { t = 0.05 }
+			add_to_variable = { global.TUR_run_k = t }
+		}
+		if = {
+			limit = { check_variable = { n_o > 1 } }
+			set_temp_variable = { t = global.TUR_vote_o }
+			multiply_temp_variable = { t = p_ok }
+			add_to_variable = { global.TUR_run_k = t }
+		}
+		if = {
+			limit = { check_variable = { n_i > 1 } }
+			set_temp_variable = { t = global.TUR_vote_i }
+			multiply_temp_variable = { t = 0.60 }
+			add_to_variable = { global.TUR_run_k = t }
+		}
+	}
+	if = {
+		limit = { check_variable = { n_o < 2 } }
+		set_variable = { global.TUR_run_o = global.TUR_vote_o }
+		if = {
+			limit = { check_variable = { n_e > 1 } }
+			set_temp_variable = { t = global.TUR_vote_e }
+			multiply_temp_variable = { t = 0.60 }
+			add_to_variable = { global.TUR_run_o = t }
+		}
+		if = {
+			limit = { check_variable = { n_k > 1 } }
+			set_temp_variable = { t = global.TUR_vote_k }
+			multiply_temp_variable = { t = 0.45 }
+			add_to_variable = { global.TUR_run_o = t }
+		}
+		if = {
+			limit = { check_variable = { n_i > 1 } }
+			set_temp_variable = { t = global.TUR_vote_i }
+			multiply_temp_variable = { t = 0.10 }
+			add_to_variable = { global.TUR_run_o = t }
+		}
+	}
+	if = {
+		limit = { check_variable = { n_i < 2 } }
+		set_variable = { global.TUR_run_i = global.TUR_vote_i }
+		if = {
+			limit = { check_variable = { n_e > 1 } }
+			set_temp_variable = { t = global.TUR_vote_e }
+			multiply_temp_variable = { t = 0.10 }
+			add_to_variable = { global.TUR_run_i = t }
+		}
+		if = {
+			limit = { check_variable = { n_k > 1 } }
+			set_temp_variable = { t = global.TUR_vote_k }
+			multiply_temp_variable = { t = 0.60 }
+			add_to_variable = { global.TUR_run_i = t }
+		}
+		if = {
+			limit = { check_variable = { n_o > 1 } }
+			set_temp_variable = { t = global.TUR_vote_o }
+			multiply_temp_variable = { t = 0.10 }
+			add_to_variable = { global.TUR_run_i = t }
+		}
+	}
+	set_temp_variable = { r_sum = global.TUR_run_e }
+	add_to_temp_variable = { r_sum = global.TUR_run_k }
+	add_to_temp_variable = { r_sum = global.TUR_run_o }
+	add_to_temp_variable = { r_sum = global.TUR_run_i }
+	if = {
+		limit = { check_variable = { r_sum > 0 } }
+		divide_variable = { global.TUR_run_e = r_sum }
+		divide_variable = { global.TUR_run_k = r_sum }
+		divide_variable = { global.TUR_run_o = r_sum }
+		divide_variable = { global.TUR_run_i = r_sum }
+	}
+
+	if = {
+		limit = { check_variable = { global.TUR_run_e > global.TUR_run_k } check_variable = { global.TUR_run_e > global.TUR_run_o } check_variable = { global.TUR_run_e > global.TUR_run_i } }
+		set_global_flag = TUR_2023_winner_erdogan
+		set_global_flag = TUR_2023_decided
+	}
+	else_if = {
+		limit = { check_variable = { global.TUR_run_k > global.TUR_run_e } check_variable = { global.TUR_run_k > global.TUR_run_o } check_variable = { global.TUR_run_k > global.TUR_run_i } }
+		set_global_flag = TUR_2023_winner_kilicdaroglu
+		set_global_flag = TUR_2023_decided
+	}
+	else_if = {
+		limit = { check_variable = { global.TUR_run_o > global.TUR_run_e } check_variable = { global.TUR_run_o > global.TUR_run_k } check_variable = { global.TUR_run_o > global.TUR_run_i } }
+		set_global_flag = TUR_2023_winner_ogan
+		set_global_flag = TUR_2023_decided
+	}
+	else_if = {
+		limit = { check_variable = { global.TUR_run_i > global.TUR_run_e } check_variable = { global.TUR_run_i > global.TUR_run_k } check_variable = { global.TUR_run_i > global.TUR_run_o } }
+		set_global_flag = TUR_2023_winner_ince
+		set_global_flag = TUR_2023_decided
+	}
+	# a dead heat goes to the incumbent
+	else = {
+		set_global_flag = TUR_2023_winner_erdogan
+		set_global_flag = TUR_2023_decided
+	}
+}
