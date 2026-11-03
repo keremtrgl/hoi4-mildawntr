@@ -19429,6 +19429,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 has_global_flag = TUR_MAFIATIC_TR
          has_global_flag = ERDOGAN_NOT_ACHIEVED
 		 has_capitulated = yes
+		 has_country_flag = TUR_evf_Turkey_743
 		 AND = { has_global_flag = MEMLEKET_INCE check_variable = { party_pop_array^0 > 0.06 } }
 		 } 
     }
@@ -27167,6 +27168,7 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
 		 has_global_flag = TUR_MAFIATIC_TR
          has_global_flag = ERDOGAN_NOT_ACHIEVED
 		 has_capitulated = yes
+		 has_country_flag = TUR_evf_Turkey_539
 		 }
     }
 
@@ -27484,6 +27486,10 @@ country_event = {
 		tag = TUR
 		date > 2011.3.15
 		186 = { OR = { is_controlled_by = FSA is_controlled_by = NUS } }
+		OR = {
+			NOT = { country_exists = SYR }
+			SYR = { has_capitulated = yes }
+		}
 		NOT = { has_capitulated = yes }
 	}
 

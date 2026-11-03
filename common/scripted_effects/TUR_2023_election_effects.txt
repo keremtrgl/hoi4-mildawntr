@@ -35,11 +35,18 @@ TUR_2023_first_round_calc = {
 	add_to_temp_variable = { c_sum = c_o }
 	add_to_temp_variable = { c_sum = c_i }
 	if = {
-		limit = { check_variable = { c_sum > 0 } }
+		limit = { check_variable = { c_sum > 0.2 } }
 		divide_temp_variable = { c_e = c_sum }
 		divide_temp_variable = { c_k = c_sum }
 		divide_temp_variable = { c_o = c_sum }
 		divide_temp_variable = { c_i = c_sum }
+	}
+	# no usable popularity: fall back to the real result alone
+	else = {
+		set_temp_variable = { c_e = 0 }
+		set_temp_variable = { c_k = 0 }
+		set_temp_variable = { c_o = 0 }
+		set_temp_variable = { c_i = 0 }
 	}
 
 	# blend with the real result
