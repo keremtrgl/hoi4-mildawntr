@@ -1657,6 +1657,7 @@ set_global_flag = WARMONGERING_NATIONALISM_FOCUS_OPEN
 			focus = CHP_2023_chp_inside_elections
 		}
 		mutually_exclusive = {
+			focus = CHP_ozgur_ozel
 			focus = CHP_ekrem_imamoglu
 			focus = CHP_kilicdaroglu_third
 		}
@@ -1702,6 +1703,7 @@ set_global_flag = WARMONGERING_NATIONALISM_FOCUS_OPEN
 			focus = CHP_2023_chp_inside_elections
 		}
 		mutually_exclusive = {
+			focus = CHP_ozgur_ozel
 			focus = CHP_kilicdaroglu_third
 			focus = CHP_mansur_yavas
 		}
@@ -1760,6 +1762,7 @@ add_ideas =	media_opinion_towards_bad_1_right_wing_sad
 			focus = CHP_2023_chp_inside_elections
 		}
 		mutually_exclusive = {
+			focus = CHP_ozgur_ozel
 			focus = CHP_ekrem_imamoglu
 			focus = CHP_mansur_yavas
 		}
@@ -1790,7 +1793,52 @@ remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad
 remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad	
 add_ideas =	media_opinion_towards_bad_2_neutral_right_wing_sad
 }
-			} ai_will_do = { base = 10 } } 
+			} ai_will_do = { base = 10 } }
+	focus = {
+		id = CHP_ozgur_ozel
+		icon = ozgur_ozel
+		cost = 7.86
+		prerequisite = {
+			focus = CHP_2023_chp_inside_elections
+		}
+		mutually_exclusive = {
+			focus = CHP_mansur_yavas
+			focus = CHP_ekrem_imamoglu
+			focus = CHP_kilicdaroglu_third
+		}
+		x = 57
+		y = 10
+
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_TURKISH_KEMALISM}
+
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 25
+			remove_ideas = reliable_man
+			remove_ideas = kilicdaroglus_emergency_powers
+			create_country_leader = {
+				name = "Özgür Özel"
+				picture = "ozel.dds"
+				ideology = socialism
+				traits = {
+					western_socialism
+				}
+			}
+			hidden_effect = {
+				remove_ideas = media_opinion_towards_good_happy_everyone
+				remove_ideas = media_opinion_towards_bad_1_left_wing_sad
+				remove_ideas = media_opinion_towards_bad_1_right_wing_sad
+				remove_ideas = media_opinion_towards_bad_1_neutral_wing_sad
+				remove_ideas = media_opinion_towards_bad_2_neutral_left_wing_sad
+				remove_ideas = media_opinion_towards_bad_2_neutral_right_wing_sad
+				remove_ideas = media_opinion_towards_bad_2_right_left_wing_sad
+				remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
+				add_ideas = media_opinion_towards_bad_1_right_wing_sad
+			}
+		}
+		ai_will_do = { base = 10 }
+	} 
 	focus = {
 		id = CHP_milletin_adami
 		icon = neu_path
@@ -4179,6 +4227,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		cost = 7.15
 		prerequisite = {
 			focus = CHP_milletin_adami
+			focus = CHP_ozgur_ozel
 		}
 		x = 56
 		y = 12
