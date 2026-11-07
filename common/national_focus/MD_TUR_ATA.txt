@@ -524,8 +524,8 @@ swap_ideas = {
 
             completion_reward = {
 			add_stability = 0.01
-			# Atatürk's CHP wins outright. A random MD election could hand power to another
-			# party, and ATA_a_new_control would then stay locked forever.
+			# Atatürk's CHP wins outright and the elections stay suspended from here on. A random MD election could
+			# hand power to another party; the power lock (TUR_ata_power_lock.txt) keeps the CHP in office.
 			custom_effect_tooltip = ATA_CHP_WINS_ELECTIONS_TT
 			hidden_effect = {
 				set_temp_variable = { party_index = 3 }
@@ -533,8 +533,9 @@ swap_ideas = {
 				set_temp_variable = { temp_outlook_increase = 0.10 }
 				change_relative_party_popularity = yes
 				set_temp_variable = { rul_party_temp = 3 }
-				set_temp_variable = { disable_elections = 0 }
+				set_temp_variable = { disable_elections = 1 }
 				change_ruling_party_effect = yes
+				set_variable = { ATA_locked_party = 3 }
 			}
 				}
 		ai_will_do = { base = 10 }

@@ -1,0 +1,95 @@
+# Ataturk path power lock.
+# While ATA_FOCUS_LOCATION is set, the Ataturk tree and the ruling party must agree. The party that rules when the path
+# opens keeps power, with elections suspended, until ATA_declare_elections gives the country to Ataturk's CHP. The CHP
+# then stays. ATA_locked_party is the party index (0-23, the order of party_pop_array) that must be in power.
+# ATA_power_lock_check runs every month from on_monthly_TUR and repairs anything that slipped through: a random
+# election, a coup, a party change from another tree's decision or one of Millennium Dawn's own events.
+
+# Called when the path opens: remember who rules and close the elections without changing the party.
+ATA_start_power_lock = {
+	set_variable = { ATA_locked_party = ruling_party }
+	ATA_freeze_elections = yes
+}
+
+# Elections off, ruling party untouched. set_politics needs the ruling ideology group, so it is named from the government.
+ATA_freeze_elections = {
+	hidden_effect = {
+		if = {
+			limit = { has_government = democratic }
+			set_politics = { ruling_party = democratic elections_allowed = no }
+		}
+		else_if = {
+			limit = { has_government = neutrality }
+			set_politics = { ruling_party = neutrality elections_allowed = no }
+		}
+		else_if = {
+			limit = { has_government = nationalist }
+			set_politics = { ruling_party = nationalist elections_allowed = no }
+		}
+		else_if = {
+			limit = { has_government = communism }
+			set_politics = { ruling_party = communism elections_allowed = no }
+		}
+		else_if = {
+			limit = { has_government = fascism }
+			set_politics = { ruling_party = fascism elections_allowed = no }
+		}
+	}
+}
+
+# Mustafa Kemal as the CHP's leader. Used when he takes the presidency and when the lock puts him back.
+ATA_create_ataturk = {
+	create_country_leader = {
+		name = "Mustafa Kemal Pasha"
+		picture = "ataturk.dds"
+		ideology = socialism
+		traits = {
+			western_socialism
+			the_father_of_turks_modern_life
+			strategic_mastermind
+		}
+	}
+}
+
+# Puts the locked party back in power and closes the elections.
+ATA_restore_power = {
+	hidden_effect = {
+		set_temp_variable = { rul_party_temp = ATA_locked_party }
+		set_temp_variable = { disable_elections = 1 }
+		change_ruling_party_effect = yes
+	}
+	# change_ruling_party_effect picks a new leader, so Ataturk comes back after he has taken the presidency.
+	if = {
+		limit = { has_country_flag = ATA_NO_PR_ALLOWED }
+		ATA_create_ataturk = yes
+	}
+	if = {
+		limit = { is_ai = no }
+		country_event = { id = ATA_lock.1 }
+	}
+}
+
+ATA_power_lock_check = {
+	if = {
+		limit = { has_country_flag = ATA_FOCUS_LOCATION }
+		# Saves that opened the path before the lock existed: lock the party in power now, or the CHP once Ataturk governs.
+		if = {
+			limit = { NOT = { has_variable = ATA_locked_party } }
+			if = {
+				limit = { has_country_flag = ATA_NO_PR_ALLOWED }
+				set_variable = { ATA_locked_party = 3 }
+			}
+			else = {
+				set_variable = { ATA_locked_party = ruling_party }
+			}
+		}
+		if = {
+			limit = { has_elections = yes }
+			ATA_freeze_elections = yes
+		}
+		if = {
+			limit = { NOT = { check_variable = { ruling_party = ATA_locked_party } } }
+			ATA_restore_power = yes
+		}
+	}
+}

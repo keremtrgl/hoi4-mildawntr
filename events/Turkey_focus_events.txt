@@ -6059,6 +6059,7 @@ country_event = {
 			load_focus_tree = MD_TUR_ATA_X
     custom_effect_tooltip = MD_TUR_ATA_tooltip
 	add_ideas = political_troubles_caused_by_modernity
+		ATA_start_power_lock = yes
 		}
 }
 
@@ -6086,17 +6087,9 @@ country_event = {
 		set_temp_variable = { rul_party_temp = 3 }
 		set_temp_variable = { disable_elections = 1 }
 		change_ruling_party_effect = yes
+		set_variable = { ATA_locked_party = 3 }
 	}
-	create_country_leader = {
-		name = "Mustafa Kemal Pasha"
-		picture = "ataturk.dds"
-		ideology = socialism
-		traits = {
-			western_socialism
-		            the_father_of_turks_modern_life
-				    strategic_mastermind
-		}
-	}
+	ATA_create_ataturk = yes
     add_stability = 0.15
 	hidden_effect = {
 		remove_ideas = pr_necdet

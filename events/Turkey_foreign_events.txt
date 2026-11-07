@@ -2275,7 +2275,9 @@ TUR_kemalist_turn_hostile_effect = yes
 			}
 			hidden_effect = {
 				set_leader = yes
-		}	}
+		}
+		ATA_start_power_lock = yes
+	}
 }
 
 ##Event: AI Technocracy

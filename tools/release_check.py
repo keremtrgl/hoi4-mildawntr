@@ -654,6 +654,26 @@ def check_logic(rep, mod_files, en_values):
     rep.add(group, 'Party indexes are inside party_pop_array', 'WARN', party)
 
 
+def check_power(rep, mod_files):
+    """who rules: set_politics must name the ruling party (leaving it out crashed 2.0.3-TUR.12), and whatever opens
+    the Ataturk path must start the power lock that keeps the tree and the government together"""
+    group = 'refs'
+    comment = re.compile(r'#[^\n]*')
+    nameless, unlocked = [], []
+    for r, p in mod_files.items():
+        if not r.endswith('.txt') or 'politicsview' in r:
+            continue
+        t = comment.sub('', read(p))
+        for m in re.finditer(r'set_politics\s*=\s*\{([^{}]*)\}', t):
+            if 'ruling_party' not in m.group(1):
+                nameless.append(f'{r}:{t.count(chr(10), 0, m.start()) + 1}')
+        for m in re.finditer(r'load_focus_tree\s*=\s*MD_TUR_ATA_X', t):
+            if 'ATA_start_power_lock' not in t[max(0, m.start() - 1500):m.end() + 1500]:
+                unlocked.append(f'{r}:{t.count(chr(10), 0, m.start()) + 1}')
+    rep.add(group, 'Every set_politics names the ruling party', 'ERROR', nameless)
+    rep.add(group, 'Every start of the Ataturk path starts the power lock (ATA_start_power_lock)', 'ERROR', unlocked)
+
+
 def check_scopes(rep, mod_files):
     """country-only effects in a state scope and state-only effects in a country scope, in event options and
     immediates, focus rewards and decision effects; scopes we cannot know (ROOT, FROM, PREV, event targets) are skipped"""
@@ -830,6 +850,7 @@ def main():
         check_refs(rep, layers, loc_union, en_values)
         check_structure(rep, mod_files, a.md)
         check_logic(rep, mod_files, en_values)
+        check_power(rep, mod_files)
     if 'balance' in only:
         check_modifier_names(rep, mod_files, a.game, a.md)
         check_balance(rep, mod_files, a.md)

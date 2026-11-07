@@ -1,0 +1,15 @@
+add_namespace = ATA_lock
+
+# Shown when the lock reverses a change of government while the Ataturk path is open.
+country_event = {
+	id = ATA_lock.1
+	title = ATA_lock.1.t
+	desc = ATA_lock.1.d
+	picture = GFX_return_of_ataturk_2
+	is_triggered_only = yes
+
+	option = {
+		name = ATA_lock.1.a
+		ai_chance = { base = 1 }
+	}
+}
