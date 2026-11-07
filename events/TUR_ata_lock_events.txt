@@ -13,3 +13,17 @@ country_event = {
 		ai_chance = { base = 1 }
 	}
 }
+
+# Shown when the lock puts the junta back in office while a military tree is open.
+country_event = {
+	id = ATA_lock.2
+	title = ATA_lock.2.t
+	desc = ATA_lock.2.d
+	picture = GFX_kemalist_armed_forces_lekt_1
+	is_triggered_only = yes
+
+	option = {
+		name = ATA_lock.2.a
+		ai_chance = { base = 1 }
+	}
+}

@@ -1,0 +1,51 @@
+# Junta trees keep their government.
+# MD_TUR_MIL and MD_TUR_TSK cannot go on without a nationalist Turkey: their focuses read has_government = nationalist.
+# While one of them is loaded the government must stay in that group. The other trees only read other countries'
+# governments (GRE, GER, KAZ...), so they need no lock. Called every month from on_monthly_TUR.
+#
+# MIL lets the junta open the elections itself (TUR_open_elections) and hands over to the democratic tree
+# (TUR_elections_of_the_state), so the lock on MIL ends with that focus. USoE rewrites the government on purpose.
+# TUR_nationalist_party is the last nationalist party seen in power (index 20-23, party_pop_array order).
+
+TUR_junta_power_lock_check = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = USoE }
+			OR = {
+				has_focus_tree = MD_TUR_TSK
+				AND = {
+					has_focus_tree = MD_TUR_MIL
+					NOT = { has_completed_focus = TUR_open_elections }
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = nationalist
+				check_variable = { ruling_party > 19 }
+			}
+			set_variable = { TUR_nationalist_party = ruling_party }
+		}
+		else_if = {
+			limit = { NOT = { has_government = nationalist } }
+			TUR_restore_junta_power = yes
+		}
+	}
+}
+
+# Nationalist party back in power, elections closed. 22 (the Turan coup's party) when none was ever recorded.
+TUR_restore_junta_power = {
+	hidden_effect = {
+		if = {
+			limit = { NOT = { has_variable = TUR_nationalist_party } }
+			set_variable = { TUR_nationalist_party = 22 }
+		}
+		set_temp_variable = { rul_party_temp = TUR_nationalist_party }
+		set_temp_variable = { disable_elections = 1 }
+		change_ruling_party_effect = yes
+	}
+	if = {
+		limit = { is_ai = no }
+		country_event = { id = ATA_lock.2 }
+	}
+}

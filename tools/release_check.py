@@ -673,6 +673,17 @@ def check_power(rep, mod_files):
     rep.add(group, 'Every set_politics names the ruling party', 'ERROR', nameless)
     rep.add(group, 'Every start of the Ataturk path starts the power lock (ATA_start_power_lock)', 'ERROR', unlocked)
 
+    trees, used = set(), []
+    for r, p in mod_files.items():
+        if not r.endswith('.txt') or 'politicsview' in r:
+            continue
+        t = comment.sub('', read(p))
+        if '/national_focus/' in '/' + r.replace(os.sep, '/'):
+            trees |= set(re.findall(r'focus_tree\s*=\s*\{\s*id\s*=\s*(\w+)', t))
+        used += [(r, name) for name in re.findall(r'has_focus_tree\s*=\s*(\w+)', t)]
+    rep.add(group, 'Every has_focus_tree names a focus tree of the mod', 'ERROR',
+            [f'{r}: has_focus_tree = {name}' for r, name in used if name not in trees and name.startswith('MD_TUR')])
+
 
 def check_scopes(rep, mod_files):
     """country-only effects in a state scope and state-only effects in a country scope, in event options and
