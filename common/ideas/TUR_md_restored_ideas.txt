@@ -52,6 +52,21 @@ local_resources_chromium_factor = -0.10
 			}
 		}
 
+		TUR_economic_insecurity3 = {
+
+			name = TUR_economic_insecurity_name
+			picture = turkey_collapse_of_econ
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.15
+				tax_gain_multiplier_modifier = -0.01
+				interest_rate_multiplier_modifier = 0.15
+				projects_cost_modifier = 0.05
+				consumer_goods_factor = 0.01
+			}
+		}
+
 		TUR_party_rumours = {
 
 

@@ -1,0 +1,98 @@
+# The way out of the 2001 crash. Millennium Dawn's Turkey focus tree held the recovery focus and its mission;
+# the submod replaces that tree, so the recovery is a decision here and the mission is MD's own, restored.
+TUR_disaster_income = {
+	TUR_economic_crisis_over = {
+		icon = GFX_decision_generic_research
+		visible = {
+			has_idea = TUR_no_economic_plan
+		}
+		available = {
+			has_idea = TUR_no_economic_plan
+		}
+		cost = 100
+		days_remove = 70
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TUR_economic_crisis_over started"
+			custom_effect_tooltip = TUR_economic_crisis_over_TT
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TUR_economic_crisis_over finished"
+			remove_ideas = TUR_no_economic_plan
+			add_timed_idea = {
+				idea = TUR_economic_insecurity3
+				days = 365
+			}
+			set_country_flag = TUR_economic_crisis_over_done
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+
+	TUR_incoming_collapse = {
+		fire_only_once = yes
+		activation = { hidden_trigger = { has_country_flag = TUR_econ_disaster } }
+		available = {
+			has_country_flag = TUR_economic_crisis_over_done
+			OR = {
+				has_idea = stable_growth
+				has_idea = fast_growth
+				has_idea = economic_boom
+			}
+		}
+		days_mission_timeout = 175
+		is_good = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TUR_incoming_collapse"
+			add_stability = 0.10
+			increase_economic_growth = yes
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TUR_incoming_collapse"
+			if = {
+				limit = {
+					has_country_flag = Turkey_FP_banned
+				}
+				decrease_economic_growth = yes
+				add_stability = -0.10
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = Turkey_FP_banned }
+				}
+				custom_effect_tooltip = TUR_akp_formed
+				hidden_effect = {
+					set_country_flag = Turkey_FP_banned
+					#Reduce FP's popularity by 90%
+					set_temp_variable = { FP_pop_drop = party_pop_array^6 }
+					multiply_temp_variable = { FP_pop_drop = 0.9 }
+					set_temp_variable = { Hizmet_pop_gain = party_pop_array^6 }
+					multiply_temp_variable = { Hizmet_pop_gain = 0.10 }
+					set_temp_variable = { AKP_pop_gain = party_pop_array^6 }
+					multiply_temp_variable = { AKP_pop_gain = 0.80 }
+					set_temp_variable = { FP_pop_drop_neg = FP_pop_drop }
+					multiply_temp_variable = { FP_pop_drop_neg = -1 }
+					set_temp_variable = { party_index = 6 }
+					set_temp_variable = { party_popularity_increase = FP_pop_drop }
+					multiply_temp_variable = { party_popularity_increase = -1 }
+					set_temp_variable = { temp_outlook_increase = FP_pop_drop_neg }
+					change_relative_party_popularity = yes
+					custom_effect_tooltip = TUR_FP_POP_DROP
+					custom_effect_tooltip = TUR_FP_NEW_NAME
+					set_temp_variable = { party_index = 0 }
+					set_temp_variable = { party_popularity_increase = Hizmet_pop_gain }
+					set_temp_variable = { temp_outlook_increase = Hizmet_pop_gain }
+					change_relative_party_popularity = yes
+					custom_effect_tooltip = TUR_HIZMET_POP_GAIN
+					set_temp_variable = { party_index = 12 }
+					set_temp_variable = { party_popularity_increase = AKP_pop_gain }
+					set_temp_variable = { temp_outlook_increase = AKP_pop_gain }
+					change_relative_party_popularity = yes
+					custom_effect_tooltip = TUR_AKP_POP_GAIN
+					custom_effect_tooltip = TUR_AKP_EMERGES
+				}
+			}
+		}
+	}
+}

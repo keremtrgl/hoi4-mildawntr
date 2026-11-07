@@ -53,3 +53,12 @@ TUR_rebuilding_kurdistan = {
 
 	visible = { has_country_flag = TUR_PKK_reconciliation }
 }
+
+TUR_disaster_income = {
+	allowed = { original_tag = TUR }
+
+	icon = GFX_decision_category_generic_crisis
+	priority = 100
+
+	visible = { has_country_flag = TUR_econ_disaster }
+}
