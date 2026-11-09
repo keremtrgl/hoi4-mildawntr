@@ -180,6 +180,12 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
     `TUR_open_elections` odağıyla biter.
   - `release_check.py`: `set_politics` her zaman `ruling_party` ister; Atatürk yolunu açan her yer kilidi başlatır;
     `has_focus_tree` modun bir ağacını adlandırır.
+  - Gemi adları: `common/units/names_ships/TUR_ship_names.txt` MD'nin dosyasını değiştirir (md_overrides.json'da
+    `replace`). Gerçek sınıf adları, her ad tek listede.
+  - 58 dolgu odağa adına uygun etki (araştırma, hazine, bina, ordu tecrübesi, nüfuz). Betik:
+    yalnızca siyasi güç/istikrar veren odaklardan konusu belli olanlar seçildi; siyasi olanlar olduğu gibi kaldı.
+  - `TUR_focus_l_english.yml`: artık olmayan odakların 758 boş açıklaması silindi.
+  - Oyunda test (9 Kasım): kurtarma kararı ve Atatürk kilidi çalışıyor; askerî kilit yalnızca kodda incelendi.
 
 ## Kalıcı dersler (tekrar düşme!)
 
