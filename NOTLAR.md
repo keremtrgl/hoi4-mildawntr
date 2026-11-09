@@ -170,6 +170,16 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   - Teçhizat isimleri: `TUR_equipment_names_l_english.yml` (yeni anahtarlar) ve
     `replace/TUR_equipment_replace_l_english.yml` (MD'nin ABD'den kopyalanmış TUR_ isimleri).
   - 325 yeni odak ikonu: `tn_837`–`tn_1161`, `interface/TUR_focus_icons_2026.gfx`.
+- **2.0.3-TUR.13** (9 Kasım 2026), ekonomi ve iktidar kilidi:
+  - 2001 çöküşü: MD'nin kurtarma odağı ve "Ekonomik Felaket" sekmesi alt modda yoktu, "Ekonomik Plan Yok" hiç kalkmıyordu.
+    `common/decisions/TUR_economic_recovery.txt` (kurtarma kararı + geri getirilen `TUR_incoming_collapse` görevi,
+    `TUR_economic_crisis_over_done` bayrağına bakar), `TUR_economic_insecurity3`.
+  - Atatürk kilidi: `TUR_ata_power_lock.txt`, aylık `ATA_power_lock_check` (`on_monthly_TUR`), olay `ATA_lock.1`.
+    Yolu açan her yer `ATA_start_power_lock` çağırır, seçimler kapalı kalır.
+  - Askerî ağaç kilidi (`MD_TUR_MIL`, `MD_TUR_TSK`): `TUR_junta_power_lock.txt`, olay `ATA_lock.2`; MIL'de
+    `TUR_open_elections` odağıyla biter.
+  - `release_check.py`: `set_politics` her zaman `ruling_party` ister; Atatürk yolunu açan her yer kilidi başlatır;
+    `has_focus_tree` modun bir ağacını adlandırır.
 
 ## Kalıcı dersler (tekrar düşme!)
 
