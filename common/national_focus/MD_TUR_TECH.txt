@@ -13,7 +13,8 @@ focus_tree = {
 
 	completion_reward = {
 	add_political_power = 100
- }
+		add_tech_bonus = { name = TECH_the_order bonus = 0.5 uses = 1 category = CAT_information_technology }
+	}
 		ai_will_do = { base = 8 }
 }
 	focus = {
@@ -89,7 +90,8 @@ has_completed_focus = TECH_launch_the_new_government
 
 	completion_reward = {
 	add_political_power = 100
- }
+		add_tech_bonus = { name = TECH_education_reforms bonus = 0.5 uses = 1 category = CAT_civilian }
+	}
 		ai_will_do = { base = 14 }
 }
 	focus = {
@@ -108,7 +110,9 @@ has_completed_focus = TECH_launch_the_new_government
 
 	completion_reward = {
 	add_political_power = 100
- }
+		set_temp_variable = { treasury_change = 3 }
+		modify_treasury_effect = yes
+	}
 		ai_will_do = { base = 14 }
 }
 	focus = {
@@ -1966,7 +1970,9 @@ swap_ideas = {
 
 			completion_reward = {
 			add_political_power = 125
-	}
+				set_temp_variable = { treasury_change = 2 }
+				modify_treasury_effect = yes
+			}
 		ai_will_do = { base = 8 }
 			}
 	focus = {
@@ -3034,7 +3040,8 @@ swap_ideas = {
 		completion_reward = {
 add_political_power = 100
 add_stability = 0.03
-}   ai_will_do = { base = 10 } }
+			add_tech_bonus = { name = TECH_the_agriculture bonus = 0.5 uses = 1 category = CAT_agriculture }
+		}   ai_will_do = { base = 10 } }
 	focus = {
 		id = TECH_the_resource_planning
 		icon = resource_extraction
@@ -3250,7 +3257,8 @@ add_ideas = laws_of_bor
 
 		completion_reward = {
 add_political_power = 75
-}   ai_will_do = { base = 8 } }
+			add_tech_bonus = { name = TECH_anatolian_agriculture_sites bonus = 0.5 uses = 1 category = CAT_agriculture }
+		}   ai_will_do = { base = 8 } }
 	focus = {
 		id = TECH_villagers_committee
 		icon = farming
@@ -3800,7 +3808,8 @@ add_ideas = tourism_power
 
 	completion_reward = {
 	   add_political_power = 200
-      }
+		add_tech_bonus = { name = TECH_space_age bonus = 0.5 uses = 1 category = CAT_satellites }
+	}
 		ai_will_do = { base = 8 }
 	}
 	focus = {
@@ -5621,7 +5630,8 @@ swap_ideas = {
 
 			completion_reward = {
 			add_political_power = 125
-	}
+				army_experience = 10
+			}
 		ai_will_do = { base = 8 }
 			}
 	focus = {

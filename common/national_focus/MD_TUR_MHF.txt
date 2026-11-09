@@ -2040,7 +2040,8 @@ swap_ideas = {
 		
     completion_reward = {
     add_political_power = 150
-				}
+    	add_tech_bonus = { name = MHF_ulkist_science bonus = 0.5 uses = 1 category = CAT_civilian }
+    }
 		ai_will_do = { base = 14 }
 		}
 	focus = {
@@ -5083,6 +5084,33 @@ swap_ideas = {
 		
 		completion_reward = {
 			add_political_power = 125
+			if = {
+				limit = { country_exists = BOS }
+				BOS = {
+					set_temp_variable = { percent_change = 3 }
+					set_temp_variable = { tag_index = ROOT.id }
+					set_temp_variable = { influence_target = THIS.id }
+					change_influence_percentage = yes
+				}
+			}
+			if = {
+				limit = { country_exists = ALB }
+				ALB = {
+					set_temp_variable = { percent_change = 3 }
+					set_temp_variable = { tag_index = ROOT.id }
+					set_temp_variable = { influence_target = THIS.id }
+					change_influence_percentage = yes
+				}
+			}
+			if = {
+				limit = { country_exists = KOS }
+				KOS = {
+					set_temp_variable = { percent_change = 3 }
+					set_temp_variable = { tag_index = ROOT.id }
+					set_temp_variable = { influence_target = THIS.id }
+					change_influence_percentage = yes
+				}
+			}
 		} ai_will_do = { base = 8 } } 
 	focus = {
 		id = MHF_hide_plan

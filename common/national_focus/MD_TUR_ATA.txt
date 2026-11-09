@@ -1289,7 +1289,8 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
             completion_reward = {
 				add_stability = 0.03
 				add_political_power = 150
-			}
+            	army_experience = 10
+            }
 		ai_will_do = { base = 10 }
 	}	
 	focus = {
@@ -1815,7 +1816,9 @@ search_filters = {FOCUS_FILTER_EUROPEAN_UNION }
 
             completion_reward = {
 				add_political_power = 190
-			}
+            	set_temp_variable = { treasury_change = 3 }
+            	modify_treasury_effect = yes
+            }
 		ai_will_do = { base = 8 }
 	}	
 	focus = {
@@ -5436,7 +5439,8 @@ focus = {
 
             completion_reward = {
 			add_political_power = 150
-				}
+            	add_tech_bonus = { name = ATA_push_enviroenmental_laws bonus = 0.5 uses = 1 category = CAT_renewable_energy }
+            }
 		ai_will_do = { base = 8 }
 	}
 	focus = {
@@ -5892,7 +5896,8 @@ focus = {
 
             completion_reward = {
 			add_political_power = 150
-				}
+            	add_tech_bonus = { name = ATA_space_project bonus = 0.5 uses = 1 category = CAT_satellites }
+            }
 		ai_will_do = { base = 8 }
 	}
 	focus = {

@@ -1458,6 +1458,7 @@ swap_ideas = {
 
 		completion_reward = {
 		    add_political_power = 125
+			add_tech_bonus = { name = ANA_science bonus = 0.5 uses = 1 category = CAT_civilian }
 		}
 		ai_will_do = { base = 14 }
 	}
@@ -2586,6 +2587,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 
 		completion_reward = {
 			add_political_power = 100
+			add_tech_bonus = { name = ANA_focus_on_state bonus = 0.5 uses = 1 category = CAT_renewable_energy }
 		}
 		ai_will_do = { base = 8 }
 	}
@@ -3019,6 +3021,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 
 		completion_reward = {
 		    add_stability = 0.05
+			add_tech_bonus = { name = ANA_importance_to_carbon_levels bonus = 0.5 uses = 1 category = CAT_renewable_energy }
 		}
 		ai_will_do = { base = 10 }
 	}
@@ -3042,6 +3045,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 
 		completion_reward = {
 			add_stability = 0.15
+			add_tech_bonus = { name = ANA_renewable_state bonus = 0.5 uses = 1 category = CAT_renewable_energy }
 		}
 		ai_will_do = { base = 10 }
 	}
@@ -5960,6 +5964,8 @@ subtract_from_variable = { treasury = -100 }
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.02
+			set_temp_variable = { treasury_change = 3 }
+			modify_treasury_effect = yes
 		}
 		ai_will_do = { base = 10 }
 	}

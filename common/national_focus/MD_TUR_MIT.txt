@@ -1846,7 +1846,8 @@ remove_ideas = government_boosted_financial_sector
 
 		completion_reward = {
    add_political_power = 125
-} ai_will_do = { base = 8 } } 
+			add_manpower = 10000
+		} ai_will_do = { base = 8 } } 
 	focus = {
 		id = MIT_healthcare_basis
 		icon = GFX_focus_TURNEW_020
@@ -1948,7 +1949,8 @@ decrease_policing_budget = yes
 
 		completion_reward = {
    add_political_power = 125
-} ai_will_do = { base = 14 } } 
+			add_tech_bonus = { name = MIT_education_policies bonus = 0.5 uses = 1 category = CAT_civilian }
+		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = MIT_reform_the_curriculum
 		icon = education_reform
@@ -2080,7 +2082,8 @@ increase_education_budget = yes
 
 		completion_reward = {
    add_political_power = 125
-} ai_will_do = { base = 8 } } 
+			army_experience = 15
+		} ai_will_do = { base = 8 } } 
 	focus = {
 		id = MIT_MKEK
 		icon = MKE
@@ -2429,6 +2432,42 @@ swap_ideas = {
 
 		completion_reward = {
 			add_political_power = 175
+			if = {
+				limit = { country_exists = AZE }
+				AZE = {
+					set_temp_variable = { percent_change = 2 }
+					set_temp_variable = { tag_index = ROOT.id }
+					set_temp_variable = { influence_target = THIS.id }
+					change_influence_percentage = yes
+				}
+			}
+			if = {
+				limit = { country_exists = KAZ }
+				KAZ = {
+					set_temp_variable = { percent_change = 2 }
+					set_temp_variable = { tag_index = ROOT.id }
+					set_temp_variable = { influence_target = THIS.id }
+					change_influence_percentage = yes
+				}
+			}
+			if = {
+				limit = { country_exists = UZB }
+				UZB = {
+					set_temp_variable = { percent_change = 2 }
+					set_temp_variable = { tag_index = ROOT.id }
+					set_temp_variable = { influence_target = THIS.id }
+					change_influence_percentage = yes
+				}
+			}
+			if = {
+				limit = { country_exists = KYR }
+				KYR = {
+					set_temp_variable = { percent_change = 2 }
+					set_temp_variable = { tag_index = ROOT.id }
+					set_temp_variable = { influence_target = THIS.id }
+					change_influence_percentage = yes
+				}
+			}
 		}
 		ai_will_do = { base = 8 }
 	}
@@ -3398,6 +3437,42 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 
 		completion_reward = {
 			add_political_power = 175
+			if = {
+				limit = { country_exists = BOS }
+				BOS = {
+					set_temp_variable = { percent_change = 2 }
+					set_temp_variable = { tag_index = ROOT.id }
+					set_temp_variable = { influence_target = THIS.id }
+					change_influence_percentage = yes
+				}
+			}
+			if = {
+				limit = { country_exists = ALB }
+				ALB = {
+					set_temp_variable = { percent_change = 2 }
+					set_temp_variable = { tag_index = ROOT.id }
+					set_temp_variable = { influence_target = THIS.id }
+					change_influence_percentage = yes
+				}
+			}
+			if = {
+				limit = { country_exists = KOS }
+				KOS = {
+					set_temp_variable = { percent_change = 2 }
+					set_temp_variable = { tag_index = ROOT.id }
+					set_temp_variable = { influence_target = THIS.id }
+					change_influence_percentage = yes
+				}
+			}
+			if = {
+				limit = { country_exists = BUL }
+				BUL = {
+					set_temp_variable = { percent_change = 2 }
+					set_temp_variable = { tag_index = ROOT.id }
+					set_temp_variable = { influence_target = THIS.id }
+					change_influence_percentage = yes
+				}
+			}
 		}
 		ai_will_do = { base = 8 }
 	}

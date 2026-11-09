@@ -975,6 +975,8 @@ swap_ideas = {
 		
 		completion_reward = { 
 			add_stability = -0.05
+			set_temp_variable = { treasury_change = 5 }
+			modify_treasury_effect = yes
 		} ai_will_do = { base = 14 } } 
 	focus = {
 		id = TUR_kentsel_donusum
@@ -1290,7 +1292,9 @@ search_filters = {FOCUS_FILTER_POLITICAL}
 	completion_reward = {
       add_political_power = 100
 	  add_stability = 0.03
-      } 
+		set_temp_variable = { treasury_change = 3 }
+		modify_treasury_effect = yes
+	} 
 		ai_will_do = { base = 14 }
 	}
 	focus = {
@@ -5720,7 +5724,8 @@ swap_ideas = {
 	completion_reward = {
     add_political_power = 75
 	add_stability = 0.03
- }
+		add_tech_bonus = { name = TUR_judge_non bonus = 0.5 uses = 1 category = CAT_civilian }
+	}
 		ai_will_do = { base = 10 }
 }
 	focus = {
@@ -6803,7 +6808,8 @@ add_ideas =	media_opinion_towards_bad_2_neutral_left_wing_sad
                     completion_reward = {
 		add_political_power = 75
 		add_stability = 0.02
-		}
+                    	add_tech_bonus = { name = TUR_green_industry bonus = 0.5 uses = 1 category = CAT_renewable_energy }
+                    }
 		ai_will_do = { base = 14 }
 	}
 
