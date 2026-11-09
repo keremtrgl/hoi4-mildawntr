@@ -75,6 +75,10 @@
     "gfx/army_icons/army_icons.txt": {
       "mode": "merge",
       "why": "15 Turkish insignia (original_tag = TUR) appended to MD's army list (frames 101-115) and to the fleet and task force lists (frames 32-46)."
+    },
+    "common/units/names_ships/TUR_ship_names.txt": {
+      "mode": "replace",
+      "why": "Real Turkish Navy ship names (Yavuz, Barbaros, Gabya, İstanbul, Ada, Hisar, Reis classes, TCG Anadolu) instead of MD's made-up list; all 81 provinces in the city theme."
     }
   }
 }
