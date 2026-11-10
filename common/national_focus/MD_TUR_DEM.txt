@@ -3005,6 +3005,7 @@ TUR_kemalist_turn_hostile_effect = yes
         }
 		
 	completion_reward = {
+			TUR_clear_focus_location = yes
 		set_country_flag = CHP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_CHP
     custom_effect_tooltip = MD_TUR_CHP_tooltip
@@ -3060,6 +3061,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
 		
 	completion_reward = {
+			TUR_clear_focus_location = yes
 			load_focus_tree = MD_TUR_MIL
     custom_effect_tooltip = MIL_COUP
 	set_global_flag = coup_installed
@@ -3122,6 +3124,7 @@ TUR_traditionalists_turn_enemy_effect = yes
         }
 		
 	completion_reward = {
+			TUR_clear_focus_location = yes
 		set_country_flag = LDP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_LDP
     custom_effect_tooltip = LDP_RISE
@@ -3178,6 +3181,7 @@ TUR_traditionalists_turn_enemy_effect = yes
         }
 		
 	completion_reward = {
+			TUR_clear_focus_location = yes
 		set_country_flag = TECH_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_TECH
     custom_effect_tooltip = MD_TUR_TECH_tooltip
@@ -3217,6 +3221,7 @@ TUR_traditionalists_turn_enemy_effect = yes
         }
 		
 	completion_reward = {
+			TUR_clear_focus_location = yes
 set_country_flag = MHP_FOCUS_LOCATION
 		set_country_flag = MHP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_MHF
@@ -3272,6 +3277,7 @@ TUR_traditionalists_turn_enemy_effect = yes
         }
 		
 	completion_reward = {
+			TUR_clear_focus_location = yes
 			load_focus_tree = MD_TUR_TKP
     custom_effect_tooltip = TKP_TAKE_OVER_2000S
     set_country_flag = TKP_FOCUS_LOCATION	
@@ -3325,6 +3331,7 @@ TUR_traditionalists_turn_enemy_effect = yes
         }
 		
 	completion_reward = {
+			TUR_clear_focus_location = yes
 			load_focus_tree = MD_TUR_SAADET
     custom_effect_tooltip = SAADET_ACT
     set_country_flag = SAA_government
@@ -3364,6 +3371,7 @@ TUR_kemalist_turn_hostile_effect = yes
         }
 		
 	completion_reward = {
+			TUR_clear_focus_location = yes
 		set_country_flag = DSP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_DSP	
     custom_effect_tooltip = 3_COALIATION_ONE_ECEVIT
@@ -3407,6 +3415,7 @@ TUR_traditionalists_turn_enemy_effect = yes
         }
 		
 	completion_reward = {
+			TUR_clear_focus_location = yes
 		set_country_flag = GENC_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_GENC
     custom_effect_tooltip = GENC_RISE
@@ -3447,6 +3456,7 @@ TUR_traditionalists_turn_enemy_effect = yes
         }
 		
 	completion_reward = {
+			TUR_clear_focus_location = yes
     set_country_flag = ANAP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_ANAP
     custom_effect_tooltip = ANAP_RISE
@@ -4089,6 +4099,7 @@ has_global_flag = AKP_REFORMATION_DECLARED
         }
 
 	completion_reward = {
+			TUR_clear_focus_location = yes
 		set_country_flag = AKP_LIB_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_AK2007
 			set_global_flag = ERDOGAN_NOT_ACHIEVED

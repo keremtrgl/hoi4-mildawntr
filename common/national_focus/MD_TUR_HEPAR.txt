@@ -615,7 +615,7 @@ add_ideas = national_defence_organizations
 		
 	completion_reward = {
             162 = {
-                if = {
+                
                         add_building_construction = {
                             type = bunker
                             level = 3
@@ -640,7 +640,7 @@ add_ideas = national_defence_organizations
                             province = 1463
                             instant_build = yes
                         }
-                    }
+                    
                 }
 			} ai_will_do = { base = 8 } }
 	focus = {

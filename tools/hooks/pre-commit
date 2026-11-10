@@ -13,6 +13,12 @@ fi
 echo "pre-commit: running tools/release_check.py (files, loc, refs, balance, scope, pack)..."
 PYTHONIOENCODING=utf-8 "$py" "$root/tools/release_check.py" --only files,loc,refs,balance,scope,pack > "$root/.git/release_check_last.txt" 2>&1
 status=$?
+if grep -q "folder not found" "$root/.git/release_check_last.txt"; then
+	# no game or Millennium Dawn on this machine: run what needs neither
+	echo "pre-commit: game files not found, running the offline checks"
+	PYTHONIOENCODING=utf-8 "$py" "$root/tools/release_check.py" --offline > "$root/.git/release_check_last.txt" 2>&1
+	status=$?
+fi
 grep -E "ERROR|error check" "$root/.git/release_check_last.txt"
 if [ $status -ne 0 ]; then
 	echo "pre-commit: release_check found errors; commit blocked. Full report: .git/release_check_last.txt" >&2

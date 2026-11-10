@@ -1,0 +1,14 @@
+# Runs on every push and pull request the checks that need neither the game nor Millennium Dawn:
+# syntax, encodings, localisation, dates, focus layout, scopes, and the tool tests.
+name: check
+on: [push, pull_request]
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/release_check.py --offline --strict
+      - run: python -m unittest discover -s tools/tests

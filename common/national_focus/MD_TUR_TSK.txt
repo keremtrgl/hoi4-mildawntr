@@ -108,7 +108,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		
 	completion_reward = {
             162 = {
-                if = {
+                
                         add_building_construction = {
                             type = bunker
                             level = 3
@@ -133,7 +133,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
                             province = 1463
                             instant_build = yes
                         }
-                    }
+                    
                 }
 			} ai_will_do = { base = 8 } }
 	focus = {
@@ -1253,15 +1253,15 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		
 	completion_reward = {
             158 = {
-                if = {
+                
                         add_building_construction = {
                             type = bunker
                             level = 3
                             province = 12029
                             instant_build = yes
-                        } } }
+                        }  }
             992 = {
-                if = {			
+                			
                         add_building_construction = {
                             type = bunker
                             level = 3
@@ -1273,9 +1273,9 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
                             level = 3
                             province = 9893
                             instant_build = yes
-                        } } }
+                        }  }
             162 = {
-                if = {
+                
                         add_building_construction = {
                             type = bunker
                             level = 3
@@ -1320,7 +1320,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
                         }
 			subtract_from_variable = { treasury = 100.0 }
 			custom_effect_tooltip = 100_billion_expense_tt
-                    }
+                    
                 }
 			} ai_will_do = { base = 14 } }
 	focus = {

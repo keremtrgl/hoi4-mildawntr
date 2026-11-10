@@ -6171,7 +6171,7 @@ country_event = TurkeyF.111
 	  			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt	
             157 = {
-                if = {
+                
                         add_building_construction = {
                             type = coastal_bunker
                             level = 1
@@ -6196,9 +6196,9 @@ country_event = TurkeyF.111
                             province = 4127
                             instant_build = yes
                         }
-                    } }
+                     }
             157 = {
-                if = {
+                
                         add_building_construction = {
                             type = coastal_bunker
                             level = 1
@@ -6230,7 +6230,7 @@ country_event = TurkeyF.111
                             instant_build = yes
                         }
                    
-			} } } ai_will_do = { base = 14 } }
+			 } } ai_will_do = { base = 14 } }
 	focus = {
 		id = OTT_non_agression_with_russia
 		icon = align_to_russia

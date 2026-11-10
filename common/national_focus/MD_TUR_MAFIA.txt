@@ -2585,7 +2585,7 @@ swap_ideas = {
 	  			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt	
             992 = {
-                if = {
+                
                         add_building_construction = {
                             type = coastal_bunker
                             level = 2
@@ -2610,9 +2610,9 @@ swap_ideas = {
                             province = 9823
                             instant_build = yes
                         }
-                    } }
+                     }
             162 = {
-                if = {
+                
                         add_building_construction = {
                             type = coastal_bunker
                             level = 2
@@ -2638,7 +2638,7 @@ swap_ideas = {
                             instant_build = yes
                         }
                    
-			} } } 		
+			 } } 		
 		ai_will_do = { base = 14 }
 	}
 	focus = {
@@ -2746,7 +2746,7 @@ swap_ideas = {
 		
 	completion_reward = {
             162 = {
-                if = {
+                
                         add_building_construction = {
                             type = bunker
                             level = 3
@@ -2771,7 +2771,7 @@ swap_ideas = {
                             province = 1463
                             instant_build = yes
                         }
-                    }
+                    
                 }
 			} ai_will_do = { base = 10 } }
 	focus = {

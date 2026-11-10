@@ -386,7 +386,6 @@ country_event = {
  picture = GFX_election_day
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.11.a
@@ -516,7 +515,6 @@ country_event = {
  picture = GFX_iraq_war3
 is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.14.a
@@ -546,7 +544,6 @@ country_event = {
 is_triggered_only = yes
 
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.15.a
@@ -576,7 +573,6 @@ country_event = {
 is_triggered_only = yes
 
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.16.a
@@ -3518,7 +3514,6 @@ neutrality_neutral_muslim_brotherhood_are_in_power = yes
          }
     }
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.105.a
@@ -3933,7 +3928,6 @@ country_event = {
  picture = GFX_terrorist_attack
  is_triggered_only = yes 
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.120.a
@@ -7608,7 +7602,6 @@ country_event = {
  picture = GFX_sell_trt
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.240.a
@@ -7629,7 +7622,6 @@ country_event = {
  is_triggered_only = yes
 
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.241.a
@@ -8931,7 +8923,6 @@ country_event = {
  picture = GFX_nasa_launch_pad_mars
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.274.a
@@ -8951,7 +8942,6 @@ country_event = {
  picture = GFX_moonbase
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.275.a
@@ -8972,7 +8962,6 @@ country_event = {
  picture = GFX_manned_mission_mars
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.276.a
@@ -8993,7 +8982,6 @@ country_event = {
  picture = GFX_mars_colony_18
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.277.a
@@ -9086,7 +9074,6 @@ country_event = {
  picture = GFX_nasa_orion_space_capsule
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.278.a
@@ -9134,7 +9121,6 @@ country_event = {
  picture = GFX_gazprom
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.280.a
@@ -10573,13 +10559,13 @@ country_event = {
  picture = GFX_coup_tanks
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.322.a
 		ai_chance = { factor = 1}
 
 hidden_effect = {
+			TUR_clear_focus_location = yes
 			load_focus_tree = MD_TUR_MHPs
     country_event = MD4_election_campaign.0
 
@@ -11343,7 +11329,6 @@ country_event = {
  picture = GFX_erbakan_happy
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.343.a
@@ -11366,7 +11351,6 @@ country_event = {
  picture = GFX_d-8
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.344.a
@@ -11478,7 +11462,6 @@ country_event = {
  picture = GFX_bosphorus
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.348.a
@@ -14045,7 +14028,6 @@ country_event = {
  picture = GFX_osman_pamukoglu_in_army
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.414.a
@@ -14152,6 +14134,7 @@ country_event = {
 
      add_political_power = 5
 
+			TUR_clear_focus_location = yes
  set_country_flag = HEPAR_FOCUS_LOCATION
  TUR_kemalist_turn_ally_effect = yes 
 TUR_traditionalists_turn_enemy_effect = yes 
@@ -14235,6 +14218,7 @@ country_event = {
 		ai_chance = { factor = 0}
 
      add_stability = -0.03
+	TUR_clear_focus_location = yes
 	load_focus_tree = MD_TUR_MAFIA
 set_country_flag = MAFIA_FOCUS_LOCATION  
 TUR_traditionalists_turn_ally_effect = yes 
@@ -14298,6 +14282,7 @@ hidden_effect = {
 			remove_ideas = mafias_level_2_D
 }
 
+	TUR_clear_focus_location = yes
 set_country_flag = ANARCHY_FOCUS_LOCATION  
 	load_focus_tree = MD_TUR_ANARCHY
     custom_effect_tooltip = ANARCHY_ACT
@@ -15791,7 +15776,6 @@ country_event = {
  picture = GFX_sweden_pm_is_in_depression
  is_triggered_only = yes
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = Turkey.458.a
@@ -26655,6 +26639,7 @@ country_event = {
 	5 = {
  TUR_kemalist_turn_ally_effect = yes 
 TUR_traditionalists_turn_enemy_effect = yes 
+			TUR_clear_focus_location = yes
 		set_country_flag = DSP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_DSP
 				add_ideas = AI_powerhold_1
@@ -26683,6 +26668,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	5 = {
  TUR_kemalist_turn_ally_effect = yes 
 TUR_traditionalists_turn_enemy_effect = yes 
+			TUR_clear_focus_location = yes
 		set_country_flag = CHP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_CHP
 				add_ideas = AI_powerhold_1
@@ -26710,6 +26696,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	5 = {
  TUR_kemalist_turn_ally_effect = yes 
 TUR_traditionalists_turn_enemy_effect = yes 
+			TUR_clear_focus_location = yes
 		set_country_flag = LDP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_LDP
 				add_ideas = AI_powerhold_1
@@ -26743,6 +26730,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	5 = {
 TUR_traditionalists_turn_ally_effect = yes 
 TUR_kemalist_turn_hostile_effect = yes 
+	TUR_clear_focus_location = yes
 set_country_flag = MAFIA_FOCUS_LOCATION
 	set_global_flag = TUR_mafias_organized
 	load_focus_tree = MD_TUR_MAFIA
@@ -26754,6 +26742,7 @@ set_country_flag = MAFIA_FOCUS_LOCATION
 	5 = {
  TUR_kemalist_turn_ally_effect = yes 
 TUR_traditionalists_turn_enemy_effect = yes 
+	TUR_clear_focus_location = yes
 set_country_flag = ANARCHY_FOCUS_LOCATION
 	load_focus_tree = MD_TUR_ANARCHY
 			add_ideas = AI_powerhold_4
@@ -26766,6 +26755,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 
 set_global_flag = TECHNOCRATIC_APPROACH
 
+			TUR_clear_focus_location = yes
 		set_country_flag = TECH_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_TECH
 
@@ -26810,6 +26800,7 @@ set_global_flag = YES_MIT
 
 TUR_traditionalists_turn_ally_effect = yes 
 TUR_kemalist_turn_hostile_effect = yes 
+			TUR_clear_focus_location = yes
 		set_country_flag = MIT_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_MIT
 
@@ -26851,6 +26842,7 @@ TUR_kemalist_turn_hostile_effect = yes
 	5 = {
 TUR_kemalist_turn_ally_effect = yes 
 TUR_traditionalists_turn_enemy_effect = yes 
+			TUR_clear_focus_location = yes
 			load_focus_tree = MD_TUR_MIL
 			add_ideas = AI_powerhold_3
 	hidden_effect = { remove_ideas = pr_necdet }
@@ -26879,6 +26871,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	5 = {
 TUR_traditionalists_turn_ally_effect = yes 
 TUR_kemalist_turn_hostile_effect = yes 
+			TUR_clear_focus_location = yes
 set_country_flag = OTT_FOCUS_LOCATION   
 			load_focus_tree = MD_TUR_OTT
 			add_ideas = AI_powerhold_3
@@ -26888,6 +26881,7 @@ set_country_flag = OTT_FOCUS_LOCATION
 	5 = {
 TUR_traditionalists_turn_ally_effect = yes 
 TUR_kemalist_turn_hostile_effect = yes 
+			TUR_clear_focus_location = yes
 		set_country_flag = ANAP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_ANAP
 			add_ideas = AI_powerhold_4
@@ -26914,6 +26908,7 @@ TUR_kemalist_turn_hostile_effect = yes
 	5 = {
  TUR_kemalist_turn_ally_effect = yes 
 TUR_traditionalists_turn_enemy_effect = yes 
+			TUR_clear_focus_location = yes
 		set_country_flag = GENC_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_GENC
 			add_ideas = AI_powerhold_4
@@ -26940,6 +26935,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	5 = {  
 TUR_traditionalists_turn_ally_effect = yes 
 TUR_kemalist_turn_hostile_effect = yes 
+			TUR_clear_focus_location = yes
 set_country_flag = SAADET_FOCUS_LOCATION   
 			load_focus_tree = MD_TUR_SAADET
 			add_ideas = AI_powerhold_4
@@ -26973,6 +26969,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	set_variable = { var = TUR_soft_group value = 3 }
 	set_variable = { var = TUR_precision_group value = 7 }
 	set_variable = { var = TUR_transparent_group value = 5 }
+				TUR_clear_focus_location = yes
 		set_country_flag = AYM_FOCUS_LOCATION
         hidden_effect = { news_event = Turkey_news.35 }
 	hidden_effect = { remove_ideas = pr_necdet }
@@ -27021,6 +27018,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	5 = {
  TUR_kemalist_turn_ally_effect = yes 
 TUR_traditionalists_turn_enemy_effect = yes 
+			TUR_clear_focus_location = yes
 set_country_flag = TKP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_TKP 
 			add_ideas = AI_powerhold_2
@@ -27045,6 +27043,8 @@ set_country_flag = TKP_FOCUS_LOCATION
 	5 = {
  TUR_kemalist_turn_ally_effect = yes 
 TUR_traditionalists_turn_enemy_effect = yes 
+			TUR_clear_focus_location = yes
+			set_country_flag = MHP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_MHF
 			add_ideas = AI_powerhold_3
 	hidden_effect = { remove_ideas = pr_necdet }
@@ -27069,6 +27069,7 @@ TUR_traditionalists_turn_enemy_effect = yes
  TUR_kemalist_turn_ally_effect = yes 
 TUR_traditionalists_turn_enemy_effect = yes 
 				add_ideas = AI_powerhold_4
+			TUR_clear_focus_location = yes
  set_country_flag = HEPAR_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_HEPAR
 	hidden_effect = { remove_ideas = pr_necdet }
