@@ -275,3 +275,13 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   (`fossil_energy_gain = -100`) yazılmıştı. Düz değer santral üretimini eksiye düşürebilir ve MD'nin kuralına aykırıdır.
   5 düz değer silindi, `nuclear_energy_gain = -10` → `nuclear_energy_generation_modifier = -0.10`, bor -60/-25 → -15/-11.
   Kalanlar `tools/balance_allow.json`'da; yeni değerler uyarı vermeye devam eder.
+- Kod taraması (10 Kasım 2026, henüz yayınlanmadı, oyunda denenmedi):
+  - Düzeltildi: takvimde olmayan 16 tarih sınırı (`date < 2008.6.31`, `2009.2.29`, `2005.2.30`...) bir sonraki ayın 1'i
+    yapıldı (olay ve dağıtıcı birlikte, 32 satır). İngilizce 121 olay başlığındaki ı/ş/ğ harfleri Türkçe paketteki
+    kurala çevrildi. Üç kez fazladan yazılmış `is_triggered_only` (TurkeyF.76) ve çift `batumi_deal` silindi.
+    `release_check.py`: "takvimde olmayan tarih" ve "olay başlığında ı/ş/ğ" kontrolleri.
+  - Açık, karar bekliyor: mutlak x'i eksi olan odaklar (ANAP askerî dalı x = -6..-2, CHP'de 2 odak, AK2007/GENC/LDP/
+    AYM/DSP'de AB/USoE dalı) ekranın solunda kalabilir. `cost = 0.00` olan 7 odak. Yapay zekâ MHF'ye geçerken
+    (`Turkey.238`, `TurkeyAI.4`) `MHP_FOCUS_LOCATION` koymuyor. Ağaç değişiminde eski `*_FOCUS_LOCATION` temizlenmiyor.
+    `GFX_idea_coding_classes` ve `GFX_idea_collected_powers` iki farklı resimle iki kez tanımlı. DSI barajlarında
+    `fire_only_once` hem `no` hem `yes`. `confederacy_sheet.txt` eski (MD 1.12.3A) ve Workshop'a gidiyor.

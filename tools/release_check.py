@@ -212,6 +212,10 @@ def check_loc(rep, en_mod_files, loc_union):
                 seen[k] = (r + ':' + str(i), v)
     rep.add(group, 'Every localisation line is "key:0 \\"text\\""', 'ERROR', malformed)
     rep.add(group, 'No key defined twice in the mod', 'ERROR', dups)
+    # the event title font has no glyph for these letters (see NOTLAR.md); the Turkish pack already avoids them
+    glyphs = sorted(f'{at}: {k}' for k, (at, v) in seen.items()
+                    if re.search(r'\.(?:t|title)$', k) and re.search('[ıİşŞğĞ]', v))
+    rep.add(group, 'Event titles avoid ı ş ğ İ Ş Ğ (no glyph in the title font)', 'WARN', glyphs)
     empty_desc = sorted(k for k, (_, v) in seen.items() if k.endswith('_desc') and not v.strip())
     rep.add(group, 'Focus/idea descriptions still empty', 'INFO',
             [f'{len(empty_desc)} empty *_desc keys (tools/focus_desc fills them in batches)'] if empty_desc else [])
@@ -627,13 +631,18 @@ def check_logic(rep, mod_files, en_values):
     group = 'refs'
     comment = re.compile(r'#[^\n]*')
     texts = {r: comment.sub('', read(p)) for r, p in mod_files.items() if r.endswith('.txt') and 'politicsview' not in r}
-    dates, money, party = [], [], []
+    dates, money, party, calendar = [], [], [], []
     money_re = re.compile(r'subtract_from_variable\s*=\s*\{\s*treasury\s*=\s*(-?[\d.]+)\s*\}')
 
     def day(s):
         return tuple((int(x) for x in (s.split('.') + ['1', '1'])[:3]))
 
+    month_days = (0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)      # the game has no leap years
     for r, t in texts.items():
+        for m in re.finditer(r'\b(\d{4})\.(\d{1,2})\.(\d{1,2})\b(?!\.\d{3})', t):
+            month, dom = int(m.group(2)), int(m.group(3))
+            if not 1 <= month <= 12 or not 1 <= dom <= month_days[month]:
+                calendar.append(f'{r}:{t.count(chr(10), 0, m.start()) + 1}: {m.group(0)}')
         for m in re.finditer(r'date\s*>\s*([\d.]+)\s+date\s*<\s*([\d.]+)', t):
             if day(m.group(1)) >= day(m.group(2)):
                 dates.append(f'{r}:{t.count(chr(10), 0, m.start()) + 1}: date > {m.group(1)} and date < {m.group(2)}')
@@ -650,6 +659,7 @@ def check_logic(rep, mod_files, en_values):
             if int(m.group(1)) > 23:
                 party.append(f'{r}:{t.count(chr(10), 0, m.start()) + 1}: party_pop_array^{m.group(1)} (the array has 24 parties)')
     rep.add(group, 'Date windows can be true', 'WARN', dates)
+    rep.add(group, 'Dates exist in the calendar (no 31 June, no 29 February)', 'WARN', calendar)
     rep.add(group, 'Treasury changes match their tooltips', 'WARN', money)
     rep.add(group, 'Party indexes are inside party_pop_array', 'WARN', party)
 
