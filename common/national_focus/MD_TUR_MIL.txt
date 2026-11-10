@@ -794,6 +794,7 @@ reverse_add_opinion_modifier = { target = USA modifier = has_expressed_loyalty }
 		completion_reward = {
      add_stability = -0.07
 	 add_ideas = NATO_officers
+			TUR_clear_focus_location = yes
 	 set_country_flag = TSK_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_TSK
 
@@ -825,6 +826,7 @@ nationalist_Nat_Autocracy
 		completion_reward = {
      add_stability = 0.02
 	     country_event = MD4_election_campaign.0
+			TUR_clear_focus_location = yes
 			load_focus_tree = MD_TUR_DEM
 		complete_national_focus = TUR_economic_fail
 	 set_country_flag = MIL_ACTION

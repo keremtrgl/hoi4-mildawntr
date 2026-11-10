@@ -6,7 +6,7 @@ focus_tree = {
 		id = AYM_the_great_take_over
 		icon = GFX_focus_TURNEW_399
 		cost = 7.15
-		x = 21
+		x = 22
 		y = 0
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -18,7 +18,7 @@ focus_tree = {
 		id = AYM_european_union_strategy
 		icon = GFX_focus_TURNEW_877
 		cost = 7.15
-		x = 21
+		x = 22
 		y = 17
 
 
@@ -40,7 +40,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = AYM_enforced_law
 		}
-		x = 44
+		x = 45
 		y = 0
 
 
@@ -66,7 +66,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = AYM_mutual_government
 		}
-		x = 51
+		x = 52
 		y = 0
 
 
@@ -93,7 +93,7 @@ focus_tree = {
 		id = AYM_foreign_policy
 		icon = GFX_focus_TURNEW_599
 		cost = 7.15
-		x = 48
+		x = 49
 		y = 16
 
 
@@ -111,7 +111,7 @@ focus_tree = {
 		id = AYM_terror_policy
 		icon = anti_immigration1
 		cost = 7.15
-		x = 54
+		x = 55
 		y = 23
 
 
@@ -130,7 +130,7 @@ focus_tree = {
 		id = AYM_interventionary_guarantees
 		icon = border_conflict_bunker
 		cost = 7.15
-		x = 42
+		x = 43
 		y = 23
 
 
@@ -150,7 +150,7 @@ focus_tree = {
 		id = AYM_the_great_division
 		icon = Focus_Dice_Roll
 		cost = 5.00
-		x = 67
+		x = 68
 		y = 0
 
 
@@ -172,7 +172,7 @@ focus_tree = {
 		id = AYM_industrial_rise_up
 		icon = GFX_focus_TURNEW_879
 		cost = 7.86
-		x = 67
+		x = 68
 		y = 16
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -209,7 +209,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AYM_european_union_strategy
 		}
-		x = 16
+		x = 17
 		y = 18
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -226,7 +226,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AYM_compromise_focused_eu_policies
 		}
-		x = 14
+		x = 15
 		y = 19
 
 
@@ -259,7 +259,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AYM_compromise_kurds
 		}
-		x = 14
+		x = 15
 		y = 20
 
 
@@ -293,7 +293,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AYM_compromise_focused_eu_policies
 		}
-		x = 16
+		x = 17
 		y = 19
 
 
@@ -327,7 +327,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AYM_german_relations
 		}
-		x = 16
+		x = 17
 		y = 20
 
 
@@ -365,7 +365,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AYM_the_great_take_over
 		}
-		x = 19
+		x = 20
 		y = 1
 
 
@@ -381,7 +381,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AYM_military_relations
 		}
-		x = 18
+		x = 19
 		y = 2
 
 
@@ -401,7 +401,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		prerequisite = {
 			focus = AYM_compromise_focused_eu_policies
 		}
-		x = 18
+		x = 19
 		y = 19
 
 
@@ -434,7 +434,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		prerequisite = {
 			focus = AYM_normalize_with_greece
 		}
-		x = 18
+		x = 19
 		y = 20
 
 
@@ -485,7 +485,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		prerequisite = {
 			focus = AYM_kurdish_unregulationism
 		}
-		x = 16
+		x = 17
 		y = 21
 
 
@@ -507,7 +507,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		prerequisite = {
 			focus = AYM_first_level_acceptance
 		}
-		x = 14
+		x = 15
 		y = 22
 
 
@@ -542,7 +542,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		prerequisite = {
 			focus = AYM_first_level_acceptance
 		}
-		x = 18
+		x = 19
 		y = 22
 
 
@@ -573,7 +573,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		prerequisite = {
 			focus = AYM_syrian_way
 		}
-		x = 18
+		x = 19
 		y = 23
 
 
@@ -606,7 +606,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 	  			subtract_from_variable = { treasury = 25.0 }
 			custom_effect_tooltip = 25_billion_expense_tt	
             992 = {
-                if = {
+                
                         add_building_construction = {
                             type = coastal_bunker
                             level = 2
@@ -631,9 +631,9 @@ custom_effect_tooltip = TUR_MIL_relations_25
                             province = 9823
                             instant_build = yes
                         }
-                    } }
+                     }
             162 = {
-                if = {
+                
                         add_building_construction = {
                             type = coastal_bunker
                             level = 2
@@ -659,7 +659,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
                             instant_build = yes
                         }
                    
-			} } } 		
+			 } } 		
 		ai_will_do = { base = 14 }
 	}
 	focus = {
@@ -669,7 +669,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		prerequisite = {
 			focus = AYM_the_great_take_over
 		}
-		x = 21
+		x = 22
 		y = 1
 
 
@@ -685,7 +685,7 @@ custom_effect_tooltip = TUR_MIL_relations_25
 		prerequisite = {
 			focus = AYM_laws_above
 		}
-		x = 21
+		x = 22
 		y = 2
 
 
@@ -707,7 +707,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_law_unity
 		}
-		x = 20
+		x = 21
 		y = 3
 
 
@@ -729,7 +729,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_law_unity
 		}
-		x = 22
+		x = 23
 		y = 3
 
 
@@ -748,7 +748,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_appoint_lawmakers
 		}
-		x = 21
+		x = 22
 		y = 4
 
 
@@ -766,7 +766,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_constitution_amedment
 		}
-		x = 21
+		x = 22
 		y = 5
 
 
@@ -785,7 +785,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_mass_reformation
 		}
-		x = 17
+		x = 18
 		y = 6
 
 
@@ -801,7 +801,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_scientific_law
 		}
-		x = 15
+		x = 16
 		y = 7
 
 		search_filters = {FOCUS_FILTER_RESEARCH}	
@@ -817,7 +817,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_forced_university
 		}
-		x = 13
+		x = 14
 		y = 8
 
 		search_filters = {FOCUS_FILTER_RESEARCH}	
@@ -834,7 +834,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_mass_reformation
 		}
-		x = 21
+		x = 22
 		y = 6
 
 
@@ -850,7 +850,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_social_law
 		}
-		x = 20
+		x = 21
 		y = 7
 
 
@@ -866,7 +866,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_social_law
 		}
-		x = 22
+		x = 23
 		y = 7
 
 
@@ -885,7 +885,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_social_critics
 		}
-		x = 21
+		x = 22
 		y = 8
 
 
@@ -902,7 +902,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_organized_bureocracy
 		}
-		x = 19
+		x = 20
 		y = 8
 
 
@@ -928,7 +928,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_social_critics
 		}
-		x = 23
+		x = 24
 		y = 8
 
 
@@ -955,7 +955,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_a_political_laws
 		}
-		x = 21
+		x = 22
 		y = 9
 
 	
@@ -977,7 +977,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_the_great_take_over
 		}
-		x = 23
+		x = 24
 		y = 1
 
 
@@ -999,7 +999,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_question_the_system
 		}
-		x = 24
+		x = 25
 		y = 2
 
 		search_filters = {FOCUS_FILTER_POLITICAL}	
@@ -1024,7 +1024,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_european_union_strategy
 		}
-		x = 26
+		x = 27
 		y = 18
 
 		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
@@ -1043,7 +1043,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_relation_on_invest
 		}
-		x = 24
+		x = 25
 		y = 19
 
 
@@ -1102,7 +1102,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_romania_invest
 		}
-		x = 24
+		x = 25
 		y = 20
 
 		search_filters = {FOCUS_FILTER_EXPENDITURE}			
@@ -1160,7 +1160,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_mass_reformation
 		}
-		x = 25
+		x = 26
 		y = 6
 
         search_filters = {FOCUS_FILTER_TURKISH_ARMS}
@@ -1181,7 +1181,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_military_law
 		}
-		x = 25
+		x = 26
 		y = 7
 
         search_filters = {FOCUS_FILTER_TURKISH_ARMS}
@@ -1204,7 +1204,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_suspend_military_actions
 		}
-		x = 25
+		x = 26
 		y = 8
 
         search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
@@ -1228,7 +1228,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_relation_on_invest
 		}
-		x = 26
+		x = 27
 		y = 19
 
 
@@ -1287,7 +1287,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_bulgaria_invest
 		}
-		x = 26
+		x = 27
 		y = 20
 
 
@@ -1346,7 +1346,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_military_law
 		}
-		x = 27
+		x = 28
 		y = 7
 
 
@@ -1368,7 +1368,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_suspend_military_actions
 		}
-		x = 27
+		x = 28
 		y = 8
 
 
@@ -1380,11 +1380,11 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 	focus = {
 		id = AYM_hungary_invest
 		icon = hungarian_monarchism
-		cost = 0.00
+		cost = 7.15
 		prerequisite = {
 			focus = AYM_relation_on_invest
 		}
-		x = 28
+		x = 29
 		y = 19
 
 
@@ -1446,7 +1446,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_hungary_invest
 		}
-		x = 28
+		x = 29
 		y = 20
 
 
@@ -1504,7 +1504,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_relation_on_invest
 		}
-		x = 30
+		x = 31
 		y = 19
 
 
@@ -1568,7 +1568,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_hungary_invest_2
 		}
-		x = 26
+		x = 27
 		y = 21
 
 
@@ -1618,7 +1618,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_joint_infulencer_of_eu
 		}
-		x = 24
+		x = 25
 		y = 22
 
 		search_filters = {FOCUS_FILTER_EXPENDITURE}			
@@ -1677,7 +1677,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_joint_infulencer_of_eu
 		}
-		x = 28
+		x = 29
 		y = 22
 
 
@@ -1737,7 +1737,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_france_invest
 		}
-		x = 28
+		x = 29
 		y = 23
 
 
@@ -1796,7 +1796,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_clean_the_generals
 		}
-		x = 29
+		x = 30
 		y = 8
 
 		completion_reward = {
@@ -1817,7 +1817,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_military_courts
 		}
-		x = 25
+		x = 26
 		y = 9
 
 
@@ -1833,7 +1833,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_european_union_strategy
 		}
-		x = 31
+		x = 32
 		y = 18
 
 		search_filters = {FOCUS_FILTER_POLITICAL}				 	
@@ -1852,7 +1852,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_collabrative_members
 		}
-		x = 31
+		x = 32
 		y = 19
 
 
@@ -1879,7 +1879,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_reach_out_hungary
 		}
-		x = 31
+		x = 32
 		y = 20
 
 
@@ -1912,7 +1912,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		mutually_exclusive = {
 			focus = AYM_leave_european_council
 		}
-		x = 30
+		x = 31
 		y = 21
 
 
@@ -1942,7 +1942,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		mutually_exclusive = {
 			focus = AYM_hungarian_alliance
 		}
-		x = 32
+		x = 33
 		y = 21
 
 
@@ -1969,7 +1969,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_leave_european_council
 		}
-		x = 32
+		x = 33
 		y = 22
 
 
@@ -2007,7 +2007,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_interventionary_guarantees
 		}
-		x = 38
+		x = 39
 		y = 24
 
 
@@ -2036,7 +2036,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_gur_syr
 		}
-		x = 37
+		x = 38
 		y = 25
 
 
@@ -2085,7 +2085,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_gur_syr
 		}
-		x = 39
+		x = 40
 		y = 25
 
 
@@ -2167,7 +2167,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_mutual_government
 		}
-		x = 42
+		x = 43
 		y = 1
 
 
@@ -2185,7 +2185,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_mutual_government
 		}
-		x = 44
+		x = 45
 		y = 1
 
 
@@ -2212,7 +2212,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_new_parliament
 		}
-		x = 43
+		x = 44
 		y = 2
 
 
@@ -2237,7 +2237,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_appoint_technocrats
 		}
-		x = 41
+		x = 42
 		y = 3
 
 
@@ -2255,7 +2255,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_appoint_technocrats
 		}
-		x = 43
+		x = 44
 		y = 3
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2273,7 +2273,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_appoint_technocrats
 		}
-		x = 45
+		x = 46
 		y = 3
 
 
@@ -2299,7 +2299,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_economist_council
 		}
-		x = 43
+		x = 44
 		y = 4
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2316,7 +2316,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_collect_the_powers_united
 		}
-		x = 40
+		x = 41
 		y = 5
 
 		search_filters = {FOCUS_FILTER_CORRUPTION}
@@ -2333,7 +2333,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_collect_the_powers_united
 		}
-		x = 42
+		x = 43
 		y = 5
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -2353,7 +2353,7 @@ subtract_from_variable = { TUR_rel_hepar = 3 }
 		prerequisite = {
 			focus = AYM_collect_the_powers_united
 		}
-		x = 44
+		x = 45
 		y = 5
 
 
@@ -2386,7 +2386,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_overly_military_confidence
 		}
-		x = 43
+		x = 44
 		y = 6
 
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
@@ -2405,7 +2405,7 @@ remove_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_anti_corruption_workout
 		}
-		x = 41
+		x = 42
 		y = 6
 
 		search_filters = {FOCUS_FILTER_CORRUPTION}
@@ -2425,7 +2425,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_collect_the_powers_united
 		}
-		x = 46
+		x = 47
 		y = 5
 
 
@@ -2441,7 +2441,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_the_solid_system
 		}
-		x = 45
+		x = 46
 		y = 6
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -2467,7 +2467,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_divine_management
 		}
-		x = 43
+		x = 44
 		y = 7
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2484,7 +2484,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_foreign_policy
 		}
-		x = 46
+		x = 47
 		y = 17
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
@@ -2500,7 +2500,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_northern_politics
 		}
-		x = 45
+		x = 46
 		y = 18
 
 
@@ -2543,7 +2543,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_us_relations
 		}
-		x = 46
+		x = 47
 		y = 19
 
 
@@ -2575,7 +2575,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_interventionary_guarantees
 		}
-		x = 46
+		x = 47
 		y = 24
 
 
@@ -2606,7 +2606,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_gur_azerbaijan
 		}
-		x = 47
+		x = 48
 		y = 25
 
         available = {
@@ -2644,7 +2644,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_foreign_policy
 		}
-		x = 48
+		x = 49
 		y = 17
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
@@ -2666,7 +2666,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_middle_type_politics
 		}
-		x = 48
+		x = 49
 		y = 18
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
@@ -2684,7 +2684,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_national_stabilization
 		}
-		x = 48
+		x = 49
 		y = 19
 
 
@@ -2717,7 +2717,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_trancaucasian_deal
 		}
-		x = 48
+		x = 49
 		y = 20
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
@@ -2771,7 +2771,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_oil_deals
 		}
-		x = 48
+		x = 49
 		y = 21
 
 
@@ -2812,7 +2812,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_enforced_law
 		}
-		x = 51
+		x = 52
 		y = 1
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -2830,7 +2830,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_enforced_law
 		}
-		x = 53
+		x = 54
 		y = 1
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -2852,7 +2852,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_absolute_power
 		}
-		x = 52
+		x = 53
 		y = 2
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -2869,7 +2869,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_lawful_stability
 		}
-		x = 50
+		x = 51
 		y = 3
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2890,7 +2890,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_lawful_stability
 		}
-		x = 52
+		x = 53
 		y = 3
 
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
@@ -2928,7 +2928,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_lawful_stability
 		}
-		x = 54
+		x = 55
 		y = 3
 
 		search_filters = {FOCUS_FILTER_CORRUPTION}
@@ -2951,7 +2951,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_law_ensurance
 		}
-		x = 52
+		x = 53
 		y = 4
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -2969,7 +2969,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_das_statik
 		}
-		x = 49
+		x = 50
 		y = 5
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -2989,7 +2989,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_das_statik
 		}
-		x = 51
+		x = 52
 		y = 5
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -3008,7 +3008,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_das_statik
 		}
-		x = 53
+		x = 54
 		y = 5
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -3028,7 +3028,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_kickstart_the_military
 		}
-		x = 52
+		x = 53
 		y = 6
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -3047,7 +3047,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_dissolution_of_senate
 		}
-		x = 50
+		x = 51
 		y = 6
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -3068,7 +3068,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_das_statik
 		}
-		x = 55
+		x = 56
 		y = 5
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -3087,7 +3087,7 @@ add_ideas = quality_audits
 		prerequisite = {
 			focus = AYM_quality_control
 		}
-		x = 54
+		x = 55
 		y = 6
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -3111,7 +3111,7 @@ add_ideas = european_quality_life_standarts
 		prerequisite = {
 			focus = AYM_the_kemalist_state
 		}
-		x = 52
+		x = 53
 		y = 7
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -3129,7 +3129,7 @@ add_ideas = european_quality_life_standarts
 		prerequisite = {
 			focus = AYM_terror_policy
 		}
-		x = 55
+		x = 56
 		y = 24
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -3146,7 +3146,7 @@ add_ideas = european_quality_life_standarts
 		prerequisite = {
 			focus = AYM_cautions_for_feto
 		}
-		x = 55
+		x = 56
 		y = 25
 
 		
@@ -3167,7 +3167,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_terror_policy
 		}
-		x = 58
+		x = 59
 		y = 24
 
 		search_filters = {FOCUS_FILTER_NAME}
@@ -3196,7 +3196,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_violent_clash_with_feto
 		}
-		x = 57
+		x = 58
 		y = 25
 
 		search_filters = {FOCUS_FILTER_NAME}
@@ -3227,7 +3227,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_industrial_rise_up
 		}
-		x = 64
+		x = 65
 		y = 17
 
 
@@ -3252,7 +3252,7 @@ swap_ideas = {
 		mutually_exclusive = {
 			focus = AYM_completely_civilian_develop
 		}
-		x = 60
+		x = 61
 		y = 18
 
 
@@ -3282,7 +3282,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_military_development
 		}
-		x = 59
+		x = 60
 		y = 19
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -3306,7 +3306,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_new_generation_of_militaries
 		}
-		x = 59
+		x = 60
 		y = 20
 
 
@@ -3342,7 +3342,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_military_development
 		}
-		x = 61
+		x = 62
 		y = 19
 
 
@@ -3378,7 +3378,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_plane_factory_build_up
 		}
-		x = 61
+		x = 62
 		y = 20
 
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
@@ -3405,7 +3405,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_tank_factories
 		}
-		x = 60
+		x = 61
 		y = 21
 
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}
@@ -3444,7 +3444,7 @@ swap_ideas = {
 		mutually_exclusive = {
 			focus = AYM_soften_regime
 		}
-		x = 66
+		x = 67
 		y = 1
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -3464,7 +3464,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_hardcore_regime
 		}
-		x = 65
+		x = 66
 		y = 2
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -3484,7 +3484,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_position_the_wingers
 		}
-		x = 64
+		x = 65
 		y = 3
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -3507,7 +3507,7 @@ swap_ideas = {
 		mutually_exclusive = {
 			focus = AYM_hardcore_regime
 		}
-		x = 68
+		x = 69
 		y = 1
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -3530,7 +3530,7 @@ swap_ideas = {
 			focus = AYM_soften_regime
 			focus = AYM_hardcore_regime
 		}
-		x = 67
+		x = 68
 		y = 2
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -3552,7 +3552,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_appoint_orderers
 		}
-		x = 67
+		x = 68
 		y = 3
 
     available = {
@@ -3581,7 +3581,7 @@ swap_ideas = {
 		mutually_exclusive = {
 			focus = AYM_stay_with_the_course
 		}
-		x = 66
+		x = 67
 		y = 4
 
 
@@ -3607,7 +3607,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_soften_regime
 		}
-		x = 69
+		x = 70
 		y = 2
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -3629,7 +3629,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_criticize_itself
 		}
-		x = 70
+		x = 71
 		y = 3
 
 
@@ -3658,7 +3658,7 @@ swap_ideas = {
 		mutually_exclusive = {
 			focus = AYM_change_in_need
 		}
-		x = 68
+		x = 69
 		y = 4
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -3685,7 +3685,7 @@ swap_ideas = {
 			focus = AYM_stay_with_the_course
 			focus = AYM_change_in_need
 		}
-		x = 67
+		x = 68
 		y = 5
 
 
@@ -3714,7 +3714,7 @@ swap_ideas = {
 			focus = AYM_soft_regime
 			focus = AYM_definitive_regime
 		}
-		x = 65
+		x = 66
 		y = 6
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -3734,7 +3734,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_order_of_self_bureocracy
 		}
-		x = 63
+		x = 64
 		y = 7
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -3760,7 +3760,7 @@ swap_ideas = {
 			focus = AYM_order_of_self_bureocracy
 			focus = AYM_definitive_regime
 		}
-		x = 69
+		x = 70
 		y = 6
 
 
@@ -3781,7 +3781,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_industrial_rise_up
 		}
-		x = 70
+		x = 71
 		y = 17
 
 
@@ -3805,7 +3805,7 @@ swap_ideas = {
 		mutually_exclusive = {
 			focus = AYM_reach_out_the_east
 		}
-		x = 70
+		x = 71
 		y = 18
 
 
@@ -3846,7 +3846,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_soft_regime
 		}
-		x = 71
+		x = 72
 		y = 7
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -3869,7 +3869,7 @@ swap_ideas = {
 		mutually_exclusive = {
 			focus = AYM_reach_out_the_west
 		}
-		x = 74
+		x = 75
 		y = 18
 
 
@@ -3904,7 +3904,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_reach_out_the_east
 		}
-		x = 73
+		x = 74
 		y = 19
 
 
@@ -3968,7 +3968,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_chinese_investments
 		}
-		x = 73
+		x = 74
 		y = 20
 
 
@@ -4031,7 +4031,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_scientific_law
 		}
-		x = 17
+		x = 18
 		y = 7
 
 		search_filters = {FOCUS_FILTER_RESEARCH}	
@@ -4049,7 +4049,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_forced_university
 		}
-		x = 15
+		x = 16
 		y = 8
 
 		search_filters = {FOCUS_FILTER_RESEARCH}	
@@ -4076,7 +4076,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_expand_faculties
 		}
-		x = 17
+		x = 18
 		y = 8
 
 		search_filters = {FOCUS_FILTER_RESEARCH}	
@@ -4105,7 +4105,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_european_colleges
 		}
-		x = 17
+		x = 18
 		y = 9
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -4128,7 +4128,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_create_the_house_of_technology
 		}
-		x = 21
+		x = 22
 		y = 10
 
 
@@ -4149,7 +4149,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		prerequisite = {
 			focus = AYM_european_union_strategy
 		}
-		x = 21
+		x = 22
 		y = 18
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
@@ -4169,7 +4169,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		prerequisite = {
 			focus = AYM_accordance_with_AIHM
 		}
-		x = 20
+		x = 21
 		y = 19
 
 
@@ -4208,7 +4208,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		prerequisite = {
 			focus = AYM_accordance_with_AIHM
 		}
-		x = 22
+		x = 23
 		y = 19
 
 
@@ -4233,7 +4233,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		prerequisite = {
 			focus = AYM_task_the_general_council
 		}
-		x = 20
+		x = 21
 		y = 11
 
 		search_filters = {FOCUS_FILTER_POLITICAL}	
@@ -4249,7 +4249,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		prerequisite = {
 			focus = AYM_task_the_general_council
 		}
-		x = 22
+		x = 23
 		y = 11
 
 		search_filters = {FOCUS_FILTER_TURKISH_ARMS}	
@@ -4271,7 +4271,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		prerequisite = {
 			focus = AYM_create_the_senate
 		}
-		x = 21
+		x = 22
 		y = 12
 
 
@@ -4291,7 +4291,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		prerequisite = {
 			focus = AYM_guarentee_the_council
 		}
-		x = 23
+		x = 24
 		y = 12
 
 
@@ -4311,7 +4311,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		prerequisite = {
 			focus = AYM_create_the_senate
 		}
-		x = 19
+		x = 20
 		y = 12
 
 
@@ -4335,7 +4335,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		prerequisite = {
 			focus = AYM_semi_federalization_of_states
 		}
-		x = 21
+		x = 22
 		y = 13
 
 		search_filters = {FOCUS_FILTER_POLITICAL}	
@@ -4350,7 +4350,7 @@ custom_effect_tooltip = DISABLE_WAR_SYSTEM_PAR_CU
 		prerequisite = {
 			focus = AYM_built_in_4_laws
 		}
-		x = 21
+		x = 22
 		y = 14
 
 		search_filters = {FOCUS_FILTER_STABILITY}	
@@ -4384,7 +4384,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_taarif_laws
 		}
-		x = 21
+		x = 22
 		y = 20
 
         available = {
@@ -4415,7 +4415,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_gain_frontex_status
 		}
-		x = 21
+		x = 22
 		y = 23
 
 		search_filters = {FOCUS_FILTER_MIGRANT_CRISIS}	
@@ -4435,7 +4435,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_armenian_deal
 		}
-		x = 14
+		x = 15
 		y = 23
 
 
@@ -4471,7 +4471,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_first_level_acceptance
 		}
-		x = 16
+		x = 17
 		y = 22
 
 
@@ -4507,7 +4507,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_kosova_aid
 		}
-		x = 16
+		x = 17
 		y = 23
 
 
@@ -4554,7 +4554,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_open_the_borders
 		}
-		x = 16
+		x = 17
 		y = 24
 
 		
@@ -4576,7 +4576,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_new_homeland
 		}
-		x = 21
+		x = 22
 		y = 22
 
 
@@ -4600,7 +4600,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_lisbon_adoption
 		}
-		x = 21
+		x = 22
 		y = 21
 
 
@@ -4631,7 +4631,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_eu_reconstruction_state
 		}
-		x = 21
+		x = 22
 		y = 25
 
         available = {
@@ -4657,7 +4657,7 @@ add_ideas = media_opinion_towards_bad_3_right_left_neutral_wing_sad
 		prerequisite = {
 			focus = AYM_european_status
 		}
-		x = 21
+		x = 22
 		y = 26
 
 		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
@@ -4685,7 +4685,7 @@ add_ideas = media_opinion_towards_good_happy_everyone
 		prerequisite = {
 			focus = AYM_frontex_partition
 		}
-		x = 20
+		x = 21
 		y = 24
 
 
@@ -4705,7 +4705,7 @@ add_ideas = media_opinion_towards_good_happy_everyone
 		prerequisite = {
 			focus = AYM_frontex_partition
 		}
-		x = 22
+		x = 23
 		y = 24
 
 		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
@@ -4728,7 +4728,7 @@ add_ideas = media_opinion_towards_good_happy_everyone
 		prerequisite = {
 			focus = AYM_lisbon_adoption
 		}
-		x = 19
+		x = 20
 		y = 21
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}	
@@ -4748,7 +4748,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_romania_invest_2
 		}
-		x = 23
+		x = 24
 		y = 21
 
 
@@ -4806,7 +4806,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_austria_invest
 		}
-		x = 24
+		x = 25
 		y = 23
 
 
@@ -4872,7 +4872,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_germany_invest_2
 		}
-		x = 26
+		x = 27
 		y = 24
 
 
@@ -4917,7 +4917,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_joint_infulencer_of_eu
 		}
-		x = 26
+		x = 27
 		y = 22
 
 
@@ -4977,7 +4977,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_germany_invest
 		}
-		x = 26
+		x = 27
 		y = 23
 
 
@@ -5035,7 +5035,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_social_sciences
 		}
-		x = 43
+		x = 44
 		y = 8
 
 
@@ -5055,7 +5055,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_manupulation_pre
 		}
-		x = 42
+		x = 43
 		y = 9
 
 		search_filters = {FOCUS_FILTER_CORRUPTION}
@@ -5072,7 +5072,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_manupulation_pre
 		}
-		x = 44
+		x = 45
 		y = 9
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -5093,7 +5093,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_phyo_war
 		}
-		x = 43
+		x = 44
 		y = 10
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -5110,7 +5110,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_diversification
 		}
-		x = 42
+		x = 43
 		y = 11
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -5128,7 +5128,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_diversification
 		}
-		x = 44
+		x = 45
 		y = 11
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
@@ -5148,7 +5148,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_SGK_signatory
 		}
-		x = 43
+		x = 44
 		y = 12
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -5165,7 +5165,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_SGK_signatory
 		}
-		x = 41
+		x = 42
 		y = 12
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -5183,7 +5183,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_konjoktur_politik
 		}
-		x = 45
+		x = 46
 		y = 12
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -5207,7 +5207,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_research_sgy
 		}
-		x = 43
+		x = 44
 		y = 13
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -5229,7 +5229,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_governmental_confirigation
 		}
-		x = 43
+		x = 44
 		y = 14
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -5248,7 +5248,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_the_managing_autonomy
 		}
-		x = 52
+		x = 53
 		y = 8
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -5266,7 +5266,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_open_house_of_innovationalists
 		}
-		x = 51
+		x = 52
 		y = 9
 
 		search_filters = {FOCUS_FILTER_CORRUPTION}
@@ -5286,7 +5286,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_smaller_police_state
 		}
-		x = 52
+		x = 53
 		y = 10
 
 		search_filters = {FOCUS_FILTER_CORRUPTION}
@@ -5304,7 +5304,7 @@ add_named_threat = { threat = -5.0 name = EASE_TENSIONS }
 		prerequisite = {
 			focus = AYM_open_house_of_innovationalists
 		}
-		x = 53
+		x = 54
 		y = 9
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -5324,7 +5324,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_war_documents
 		}
-		x = 52
+		x = 53
 		y = 14
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -5351,7 +5351,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_scientific_brilliance
 		}
-		x = 52
+		x = 53
 		y = 13
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -5371,7 +5371,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_fraud_cleanizing
 		}
-		x = 51
+		x = 52
 		y = 11
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -5391,7 +5391,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_happy_family
 		}
-		x = 52
+		x = 53
 		y = 12
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -5408,7 +5408,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_fraud_cleanizing
 		}
-		x = 53
+		x = 54
 		y = 11
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -5429,7 +5429,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_regulationary
 		}
-		x = 50
+		x = 51
 		y = 12
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -5446,7 +5446,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_happy_family
 		}
-		x = 54
+		x = 55
 		y = 12
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -5467,7 +5467,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_saudi_deal
 		}
-		x = 51
+		x = 52
 		y = 20
 
 
@@ -5492,7 +5492,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_us_relations
 		}
-		x = 44
+		x = 45
 		y = 19
 
 
@@ -5524,7 +5524,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_qatar_non_agression
 		}
-		x = 50
+		x = 51
 		y = 19
 
 
@@ -5591,7 +5591,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_southern_politics
 		}
-		x = 51
+		x = 52
 		y = 18
 
         available = {
@@ -5633,7 +5633,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_excellence_with_us
 		}
-		x = 45
+		x = 46
 		y = 20
 
 
@@ -5691,7 +5691,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_northern_politics
 		}
-		x = 43
+		x = 44
 		y = 18
 
 
@@ -5732,7 +5732,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_destroy_the_hezbollah
 		}
-		x = 53
+		x = 54
 		y = 20
 
 	
@@ -5772,7 +5772,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_foreign_policy
 		}
-		x = 50
+		x = 51
 		y = 17
 
 		search_filters = {FOCUS_FILTER_FOREIGN_POLICY}
@@ -5788,7 +5788,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_southern_politics
 		}
-		x = 53
+		x = 54
 		y = 18
 
 
@@ -5828,7 +5828,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_qatar_non_agression
 		}
-		x = 52
+		x = 53
 		y = 19
 
 	
@@ -5869,7 +5869,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_approachment_with_eu
 		}
-		x = 42
+		x = 43
 		y = 19
 
 
@@ -5897,7 +5897,7 @@ diplomatic_relation = {
 		prerequisite = {
 			focus = AYM_excellence_with_us
 		}
-		x = 43
+		x = 44
 		y = 20
 
 
@@ -5925,7 +5925,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_interventionary_guarantees
 		}
-		x = 41
+		x = 42
 		y = 24
 
 
@@ -5956,7 +5956,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_gur_iraq
 		}
-		x = 41
+		x = 42
 		y = 25
 
 
@@ -5992,7 +5992,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_interventionary_guarantees
 		}
-		x = 43
+		x = 44
 		y = 24
 
 
@@ -6026,7 +6026,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_immediate_intervention_syr
 		}
-		x = 38
+		x = 39
 		y = 26
 
             available = {
@@ -6050,7 +6050,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_immediate_intervention_irq
 		}
-		x = 41
+		x = 42
 		y = 26
 
 
@@ -6083,7 +6083,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_gur_azerbaijan
 		}
-		x = 45
+		x = 46
 		y = 25
 
 
@@ -6114,7 +6114,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_gur_georgia
 		}
-		x = 43
+		x = 44
 		y = 25
 
 
@@ -6158,7 +6158,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_war_preparation_against_russia
 		}
-		x = 43
+		x = 44
 		y = 26
 
 
@@ -6196,7 +6196,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_gur_hungary
 		}
-		x = 46
+		x = 47
 		y = 26
 
 
@@ -6229,7 +6229,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_iranian_deal
 		}
-		x = 54
+		x = 55
 		y = 19
 
 
@@ -6249,7 +6249,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_perm_eu_membership
 		}
-		x = 46
+		x = 47
 		y = 21
 
 
@@ -6286,7 +6286,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_middle_eastern_railways
 		}
-		x = 50
+		x = 51
 		y = 21
 
        available = {
@@ -6324,7 +6324,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_arabic_saviour
 		}
-		x = 48
+		x = 49
 		y = 22
 
 
@@ -6354,7 +6354,7 @@ add_ideas = media_opinion_towards_bad_1_left_wing_sad
 		prerequisite = {
 			focus = AYM_terror_policy
 		}
-		x = 50
+		x = 51
 		y = 24
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
@@ -6374,7 +6374,7 @@ add_ideas = media_opinion_towards_bad_1_left_wing_sad
 		prerequisite = {
 			focus = AYM_violent_clash_with_feto
 		}
-		x = 59
+		x = 60
 		y = 25
 
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
@@ -6419,7 +6419,7 @@ TRGX_bop_very_low_decrease_effect = yes
 		prerequisite = {
 			focus = AYM_agents_for_pennyslvia
 		}
-		x = 58
+		x = 59
 		y = 26
 
 
@@ -6442,7 +6442,7 @@ TRGX_bop_very_low_decrease_effect = yes
 		prerequisite = {
 			focus = AYM_terror_policy
 		}
-		x = 53
+		x = 54
 		y = 24
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -6459,7 +6459,7 @@ TRGX_bop_very_low_decrease_effect = yes
 		prerequisite = {
 			focus = AYM_cautions_for_pkk
 		}
-		x = 53
+		x = 54
 		y = 25
 
 		
@@ -6480,7 +6480,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_agents_for_pennyslvia
 		}
-		x = 55
+		x = 56
 		y = 26
 
 			search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -6508,7 +6508,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_strike_on_global_presence
 		}
-		x = 53
+		x = 54
 		y = 26
 
 			search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -6532,7 +6532,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_order_and_establishment
 		}
-		x = 50
+		x = 51
 		y = 26
 
 
@@ -6573,7 +6573,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_cautions_for_pkk
 		}
-		x = 51
+		x = 52
 		y = 25
 
 
@@ -6602,7 +6602,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_violent_clash_with_pkk
 		}
-		x = 49
+		x = 50
 		y = 25
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -6632,7 +6632,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			focus = AYM_soft_regime
 			focus = AYM_order_of_self_bureocracy
 		}
-		x = 67
+		x = 68
 		y = 6
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6654,7 +6654,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_order_of_self_bureocracy
 		}
-		x = 65
+		x = 66
 		y = 7
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6677,7 +6677,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_mix_of_law
 		}
-		x = 65
+		x = 66
 		y = 8
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6697,7 +6697,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_definitive_regime
 		}
-		x = 67
+		x = 68
 		y = 7
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6717,7 +6717,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_clash_with_the_bureocratic_front
 		}
-		x = 67
+		x = 68
 		y = 8
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6737,7 +6737,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_soft_regime
 		}
-		x = 69
+		x = 70
 		y = 7
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6762,7 +6762,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_new_scandals
 		}
-		x = 69
+		x = 70
 		y = 8
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6786,7 +6786,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			focus = AYM_shut_the_softeners
 			focus = AYM_plans_for_take_over
 		}
-		x = 67
+		x = 68
 		y = 9
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -6812,7 +6812,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_order_change_of_2012
 		}
-		x = 67
+		x = 68
 		y = 10
 
     available = {
@@ -6839,7 +6839,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			focus = AYM_bureocratic_state
 			focus = AYM_the_rise_of_soft
 		}
-		x = 67
+		x = 68
 		y = 11
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6863,7 +6863,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			focus = AYM_issue_the_mutual_unity
 			focus = AYM_the_rise_of_soft
 		}
-		x = 65
+		x = 66
 		y = 11
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6887,7 +6887,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			focus = AYM_bureocratic_state
 			focus = AYM_issue_the_mutual_unity
 		}
-		x = 69
+		x = 70
 		y = 11
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6907,7 +6907,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_issue_the_mutual_unity
 		}
-		x = 67
+		x = 68
 		y = 12
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6927,7 +6927,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_appoint_the_general_governance
 		}
-		x = 67
+		x = 68
 		y = 13
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -6958,7 +6958,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_bureocratic_state
 		}
-		x = 65
+		x = 66
 		y = 12
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -6981,7 +6981,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_call_the_professors
 		}
-		x = 65
+		x = 66
 		y = 13
 
 
@@ -7013,7 +7013,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_bureocratic_state
 		}
-		x = 63
+		x = 64
 		y = 12
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -7037,7 +7037,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 			focus = AYM_shut_the_congress_type_elections
 			focus = AYM_contest_the_party_control
 		}
-		x = 67
+		x = 68
 		y = 14
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -7055,7 +7055,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_the_rise_of_soft
 		}
-		x = 69
+		x = 70
 		y = 12
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -7080,7 +7080,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_happiness_ratios
 		}
-		x = 69
+		x = 70
 		y = 13
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -7111,7 +7111,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_the_rise_of_soft
 		}
-		x = 71
+		x = 72
 		y = 12
 
         search_filters = {FOCUS_FILTER_COURT_DIVISION}
@@ -7131,7 +7131,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_industrial_rise_up
 		}
-		x = 67
+		x = 68
 		y = 17
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -7148,7 +7148,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_reach_out_the_west
 		}
-		x = 69
+		x = 70
 		y = 19
 
 
@@ -7192,7 +7192,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_reach_out_the_west
 		}
-		x = 71
+		x = 72
 		y = 19
 
         available = {
@@ -7224,7 +7224,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_reach_out_the_east
 		}
-		x = 75
+		x = 76
 		y = 19
 
 
@@ -7274,7 +7274,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_us_investment_program
 		}
-		x = 69
+		x = 70
 		y = 20
 
 
@@ -7331,7 +7331,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_german_trading
 		}
-		x = 71
+		x = 72
 		y = 20
 
         available = {
@@ -7365,7 +7365,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_gazprom_deal
 		}
-		x = 75
+		x = 76
 		y = 20
 
 
@@ -7426,7 +7426,7 @@ subtract_from_variable = { var = pkk_presence value = 5 }
 		prerequisite = {
 			focus = AYM_credit_law
 		}
-		x = 67
+		x = 68
 		y = 18
 
 		search_filters = {FOCUS_FILTER_EXPENDITURE}
@@ -7456,7 +7456,7 @@ has_idea = lira_2
 		mutually_exclusive = {
 			focus = AYM_military_development
 		}
-		x = 64
+		x = 65
 		y = 18
 
     available = {
@@ -7486,7 +7486,7 @@ has_idea = lira_2
 		prerequisite = {
 			focus = AYM_completely_civilian_develop
 		}
-		x = 65
+		x = 66
 		y = 19
 
 
@@ -7522,7 +7522,7 @@ has_idea = lira_2
 		prerequisite = {
 			focus = AYM_completely_civilian_develop
 		}
-		x = 63
+		x = 64
 		y = 19
 
 
@@ -7552,7 +7552,7 @@ has_idea = lira_2
 		prerequisite = {
 			focus = AYM_kayseri_industries
 		}
-		x = 65
+		x = 66
 		y = 20
 
 
@@ -7588,7 +7588,7 @@ has_idea = lira_2
 		prerequisite = {
 			focus = AYM_local_fund
 		}
-		x = 63
+		x = 64
 		y = 20
 
 
@@ -7627,7 +7627,7 @@ has_idea = lira_2
 		prerequisite = {
 			focus = AYM_glass_factories
 		}
-		x = 64
+		x = 65
 		y = 21
 
 		search_filters = {FOCUS_FILTER_EXPENDITURE}
@@ -7643,7 +7643,7 @@ has_idea = lira_2
 		prerequisite = {
 			focus = AYM_limitize_the_loss
 		}
-		x = 67
+		x = 68
 		y = 19
 
 		search_filters = {FOCUS_FILTER_TURKISH_ECONOMY}
@@ -7672,7 +7672,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_car_factories
 		}
-		x = 70
+		x = 71
 		y = 21
 
 
@@ -7766,7 +7766,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_chinese_investing_land
 		}
-		x = 74
+		x = 75
 		y = 21
 
 		search_filters = {FOCUS_FILTER_EXPENDITURE}	
@@ -7784,7 +7784,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_reach_out_global_world
 		}
-		x = 67
+		x = 68
 		y = 20
 
     available = {
@@ -7822,7 +7822,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = AYM_reach_out_expensive_resources
 		}
-		x = 67
+		x = 68
 		y = 21
 
 
@@ -7855,7 +7855,7 @@ swap_ideas = {
 			focus = AYM_perfection_of_industrials
 			focus = AYM_general_military_initative
 		}
-		x = 67
+		x = 68
 		y = 22
 
 
@@ -7896,7 +7896,7 @@ swap_ideas = {
 		id = TUR_covid-19_pandemic22
 		icon = GFX_focus_TURNEW_013
 		cost = 7.15
-		x = 80
+		x = 81
 		y = 0
 
         available = {
@@ -7917,7 +7917,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = TUR_covid-19_pandemic22
 		}
-		x = 80
+		x = 81
 		y = 1
 
 		search_filters = {FOCUS_FILTER_EXPENDITURE}		
@@ -7937,7 +7937,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = TUR_covid-19_preparations22
 		}
-		x = 78
+		x = 79
 		y = 2
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -7957,7 +7957,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = TUR_build_up_hospitals22
 		}
-		x = 78
+		x = 79
 		y = 3
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -7978,7 +7978,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = TUR_covid-19_preparations22
 		}
-		x = 80
+		x = 81
 		y = 2
 
 		search_filters = {FOCUS_FILTER_CORONA}	
@@ -8004,7 +8004,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = TUR_start_up_vaccine_program22
 		}
-		x = 80
+		x = 81
 		y = 3
 
 		search_filters = {FOCUS_FILTER_EXPENDITURE}		
@@ -8025,7 +8025,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = TUR_covid-19_preparations22
 		}
-		x = 82
+		x = 83
 		y = 2
 
 		search_filters = {FOCUS_FILTER_EXPENDITURE}		
@@ -8051,7 +8051,7 @@ swap_ideas = {
 		prerequisite = {                          
 			focus = TUR_increase_funds_to_science22
 		}
-		x = 82
+		x = 83
 		y = 3
 
 		search_filters = {FOCUS_FILTER_EXPENDITURE}		
@@ -8080,7 +8080,7 @@ swap_ideas = {
 		prerequisite = {
 			focus = TUR_buy_medicines22
 		}
-		x = 80
+		x = 81
 		y = 4
 
 		search_filters = {FOCUS_FILTER_EXPENDITURE}		
@@ -8104,7 +8104,7 @@ swap_ideas = {
 		available = {
 	check_variable = { var = TUR_the_power_of_covid value = 25 compare = less_than_or_equals
 		} }
-		x = 80
+		x = 81
 		y = 5
 
 		search_filters = {FOCUS_FILTER_CORONA}	
@@ -8127,7 +8127,7 @@ swap_ideas = {
 		available = {
 	check_variable = { var = TUR_the_power_of_covid value = 5 compare = less_than_or_equals
 		} }
-		x = 80
+		x = 81
 		y = 6
 
 		search_filters = {FOCUS_FILTER_CORONA}	

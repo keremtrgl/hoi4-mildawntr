@@ -1416,7 +1416,6 @@ country_event = {
     trigger = {
     }
 
-    mean_time_to_happen = {days = 1}
 
 	option = {
 		name = TurkeyNATO.5.a
@@ -1552,6 +1551,7 @@ country_event = {
 		name = TurkeyAI.2.a
 		ai_chance = { factor = 1}
 
+			TUR_clear_focus_location = yes
 		set_country_flag = CHP_FOCUS_LOCATION
         set_country_flag = CHP_government
 			load_focus_tree = MD_TUR_CHP
@@ -1602,6 +1602,7 @@ country_event = {
 		ai_chance = { factor = 1}
 
 
+			TUR_clear_focus_location = yes
 		set_country_flag = DSP_FOCUS_LOCATION
         set_country_flag = DSP_government
 			load_focus_tree = MD_TUR_DSP
@@ -1652,6 +1653,8 @@ country_event = {
 		name = TurkeyAI.4.a
 		ai_chance = { factor = 1}
 
+			TUR_clear_focus_location = yes
+			set_country_flag = MHP_FOCUS_LOCATION
 			load_focus_tree = MD_TUR_MHF
         set_country_flag = MHP_government
 			add_ideas = AI_powerhold_3
@@ -1699,6 +1702,7 @@ country_event = {
 		ai_chance = { factor = 1}
 
 
+			TUR_clear_focus_location = yes
 			load_focus_tree = MD_TUR_MIL
         set_country_flag = MIL_government
 			add_ideas = AI_powerhold_3
@@ -1751,6 +1755,7 @@ country_event = {
 		name = TurkeyAI.6.a
 		ai_chance = { factor = 1}
 
+			TUR_clear_focus_location = yes
 			load_focus_tree = MD_TUR_SAADET
 set_country_flag = SAADET_FOCUS_LOCATION 
         set_country_flag = SAA_government
@@ -1800,6 +1805,7 @@ country_event = {
 		name = TurkeyAI.7.a
 		ai_chance = { factor = 1}
 
+			TUR_clear_focus_location = yes
 		set_country_flag = GENC_FOCUS_LOCATION
         set_country_flag = GEN_government
 			load_focus_tree = MD_TUR_GENC
@@ -1852,6 +1858,7 @@ country_event = {
 		ai_chance = { factor = 1}
 
 				add_ideas = AI_powerhold_4
+			TUR_clear_focus_location = yes
  set_country_flag = HEPAR_FOCUS_LOCATION
          set_country_flag = HEP_government
 			load_focus_tree = MD_TUR_HEPAR
@@ -1913,6 +1920,7 @@ country_event = {
 		name = TurkeyAI.9.a
 		ai_chance = { factor = 1}
 
+			TUR_clear_focus_location = yes
 			load_focus_tree = MD_TUR_TKP 
 	set_country_flag = TKP_FOCUS_LOCATION
 			add_ideas = AI_powerhold_2
@@ -1962,6 +1970,7 @@ country_event = {
 		name = TurkeyAI.10.a
 		ai_chance = { factor = 1}
 
+			TUR_clear_focus_location = yes
 		set_country_flag = ANAP_FOCUS_LOCATION
         set_country_flag = ANA_government
 			load_focus_tree = MD_TUR_ANAP
@@ -2012,6 +2021,7 @@ country_event = {
 		name = TurkeyAI.11.a
 		ai_chance = { factor = 1}
 
+			TUR_clear_focus_location = yes
 		set_country_flag = LDP_FOCUS_LOCATION
         set_country_flag = LDP_government
 			load_focus_tree = MD_TUR_LDP
@@ -2067,6 +2077,7 @@ country_event = {
 		name = TurkeyAI.12.a
 		ai_chance = { factor = 1}
 
+	TUR_clear_focus_location = yes
 	load_focus_tree = MD_TUR_ANARCHY
 set_country_flag = ANARCHY_FOCUS_LOCATION  
 			add_ideas = AI_powerhold_4
@@ -2100,6 +2111,7 @@ country_event = {
 		name = TurkeyAI.13.a
 		ai_chance = { factor = 1}
 
+	TUR_clear_focus_location = yes
 	load_focus_tree = MD_TUR_MAFIA
 	set_global_flag = TUR_mafias_organized
         set_country_flag = MAF_government
@@ -2145,6 +2157,7 @@ TUR_traditionalists_turn_enemy_effect = yes
 	set_variable = { var = TUR_soft_group value = 3 }
 	set_variable = { var = TUR_precision_group value = 7 }
 	set_variable = { var = TUR_transparent_group value = 5 }
+				TUR_clear_focus_location = yes
 		set_country_flag = AYM_FOCUS_LOCATION
         hidden_effect = { news_event = Turkey_news.35 }
 	hidden_effect = { remove_ideas = pr_necdet }
@@ -2213,6 +2226,7 @@ country_event = {
 		name = TurkeyAI.15.a
 		ai_chance = { factor = 1}
 
+			TUR_clear_focus_location = yes
 			load_focus_tree = MD_TUR_OTT
 			add_ideas = AI_powerhold_3
 set_country_flag = OTT_FOCUS_LOCATION  
@@ -2251,6 +2265,7 @@ add_named_threat = { threat = -2 name = RETURN_OF_ATATURK }
 	news_event = Turkey_news.42
 TUR_traditionalists_turn_ally_effect = yes 
 TUR_kemalist_turn_hostile_effect = yes 
+			TUR_clear_focus_location = yes
 		set_country_flag = ATA_FOCUS_LOCATION
         set_country_flag = ATA_government
 			load_focus_tree = MD_TUR_ATA_X
@@ -2304,6 +2319,7 @@ country_event = {
 		ai_chance = { factor = 1}
 
 set_global_flag = TECHNOCRATIC_APPROACH
+			TUR_clear_focus_location = yes
 set_country_flag = TECH_FOCUS_LOCATION 
         set_country_flag = TECH_government
 
@@ -2369,6 +2385,7 @@ country_event = {
 		name = TurkeyAI.18.a
 		ai_chance = { factor = 1}
 
+			TUR_clear_focus_location = yes
 		set_country_flag = MIT_FOCUS_LOCATION
         set_country_flag = MIT_government
 

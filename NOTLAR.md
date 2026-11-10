@@ -237,7 +237,7 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
 3. `descriptor.mod` ve gerekiyorsa `turkish_pack/descriptor.mod` içinde `version=` artırılır.
 4. Senkronizasyon (PowerShell):
    ```
-   robocopy "<repo>" "$mod\md_turkey_upload" /MIR /XD .git turkish_pack _archive .claude _workshop_gallery .vscode tools MD_source /XF .gitignore NOTLAR.md
+   robocopy "<repo>" "$mod\md_turkey_upload" /MIR /XD .git .github turkish_pack _archive .claude _workshop_gallery .vscode tools MD_source /XF .gitignore NOTLAR.md
    robocopy "<repo>\turkish_pack" "$mod\md_turkey_tr" /MIR
    ```
    `/XD` ile hariç tutulan klasörler hedefte zaten varsa robocopy onları silmez. Elle silinir (`MD_source` gibi).
@@ -275,13 +275,26 @@ Ayrıntılı değişiklik notları Steam'deki **Change Notes** sekmesinde (açı
   (`fossil_energy_gain = -100`) yazılmıştı. Düz değer santral üretimini eksiye düşürebilir ve MD'nin kuralına aykırıdır.
   5 düz değer silindi, `nuclear_energy_gain = -10` → `nuclear_energy_generation_modifier = -0.10`, bor -60/-25 → -15/-11.
   Kalanlar `tools/balance_allow.json`'da; yeni değerler uyarı vermeye devam eder.
-- Kod taraması (10 Kasım 2026, henüz yayınlanmadı, oyunda denenmedi):
-  - Düzeltildi: takvimde olmayan 16 tarih sınırı (`date < 2008.6.31`, `2009.2.29`, `2005.2.30`...) bir sonraki ayın 1'i
-    yapıldı (olay ve dağıtıcı birlikte, 32 satır). İngilizce 121 olay başlığındaki ı/ş/ğ harfleri Türkçe paketteki
-    kurala çevrildi. Üç kez fazladan yazılmış `is_triggered_only` (TurkeyF.76) ve çift `batumi_deal` silindi.
-    `release_check.py`: "takvimde olmayan tarih" ve "olay başlığında ı/ş/ğ" kontrolleri.
-  - Açık, karar bekliyor: mutlak x'i eksi olan odaklar (ANAP askerî dalı x = -6..-2, CHP'de 2 odak, AK2007/GENC/LDP/
-    AYM/DSP'de AB/USoE dalı) ekranın solunda kalabilir. `cost = 0.00` olan 7 odak. Yapay zekâ MHF'ye geçerken
-    (`Turkey.238`, `TurkeyAI.4`) `MHP_FOCUS_LOCATION` koymuyor. Ağaç değişiminde eski `*_FOCUS_LOCATION` temizlenmiyor.
-    `GFX_idea_coding_classes` ve `GFX_idea_collected_powers` iki farklı resimle iki kez tanımlı. DSI barajlarında
-    `fire_only_once` hem `no` hem `yes`. `confederacy_sheet.txt` eski (MD 1.12.3A) ve Workshop'a gidiyor.
+- Kod taraması (10 Kasım 2026, henüz yayınlanmadı, **hiçbiri oyunda denenmedi**):
+  - Takvimde olmayan 16 tarih sınırı (`date < 2008.6.31`, `2009.2.29`, `2005.2.30`...) bir sonraki ayın 1'i oldu (olay ve
+    dağıtıcı birlikte, 32 satır).
+  - Olay başlıklarında ı/ş/ğ: İngilizce 121, Türkçe pakette 621 başlık (çoğu MD çevirileri) kurala çevrildi. Odak adları,
+    seçenekler ve gövde metinleri bırakıldı: pakette bu harflerle sorunsuz görünüyorlar.
+  - Odak yerleşimi (`tools/focus_layout.py`): eksi x'te kalan odaklar için yedi ağaç bütün olarak sağa kaydırıldı
+    (AK2007 +11, ANAP +6, GENC +4, LDP +3, CHP +2, AYM +1, DSP +1); ağacın kendi odakları ve paylaşılan dalların o ağaca
+    ait `offset` satırları birlikte, göreli konumlar aynı.
+  - `TUR_clear_focus_location` (`common/scripted_effects/TUR_focus_location.txt`): 55 `load_focus_tree` yerinin hepsi
+    yeni bayrağı koymadan önce eski `*_FOCUS_LOCATION` bayraklarını temizliyor. Yapay zekânın MHF geçişleri
+    (`Turkey.238`, `TurkeyAI.4`) artık `MHP_FOCUS_LOCATION` koyuyor. Yeni ağaç geçişi yazarken aynı sıra: temizle, bayrak, yükle.
+  - `cost = 0.00` olan 7 odak 50 gün (`7.15`). DSI barajlarındaki çift `fire_only_once` (`no` silindi, `yes` kaldı).
+    `GFX_idea_coding_classes` (bürokrasi resmi kaldı) ve `GFX_idea_collected_powers` (fascism4 kaldı) tek tanım.
+    Kapatılmamış `§` renkleri ve fazla `§!` (modda 52, pakette 44 satır). `TRGX_bop_absurdly_high_increase_effect`
+    `GER_power_balance` yerine `TRGX_power_balance`.
+  - Ölü kod: tetiklemeli 216 olaydaki `mean_time_to_happen`, `limit`'siz 22 `if` sarmalı (içerik aynı), üç kez fazladan
+    `is_triggered_only`, çift `batumi_deal`, `_archive/` ve eski `confederacy_sheet.txt`.
+  - Araçlar: `release_check.py --offline` (oyun ve MD olmadan çalışan kontroller; commit hook'u oyun yoksa buna düşer),
+    yerleşim, takvim ve başlık harfi kontrolleri, `.github/workflows/check.yml` (her push'ta çevrimdışı kontrol ve testler).
+    `.github` senkronizasyonda hariç tutulur (yukarıdaki robocopy satırı güncellendi).
+  - Açık: `MD_TUR_AYM.txt` ve `MD_TUR_TSK.txt` aynı eyaletleri (12029, 3889) farklı state'lerde (992, 158) kullanıyor;
+    harita olmadan hangisinin doğru olduğu bilinmiyor. Mod adındaki "Millenium" yazımı (Steam başlıklarıyla birlikte
+    değişmeli). İkili dosyalar (dds/png/wav) hâlâ depoda değil.

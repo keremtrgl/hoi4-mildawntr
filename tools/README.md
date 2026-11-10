@@ -68,10 +68,22 @@ country scope and the other way round), `pack` (Turkish pack: syntax, duplicates
 `.mod` files that make the game skip the Workshop copy, MD sync), `log` (did the last game session load the
 mod, errors from our files in `error.log`).
 
+`--offline` runs only what needs neither the game nor Millennium Dawn (syntax, encodings, localisation, dates,
+treasury tooltips, power lock, focus layout, scopes). `.github/workflows/check.yml` runs it with `--strict` and the
+tests on every push.
+
+## Focus layout: `focus_layout.py`
+
+Places every focus of every tree the way the game does, including the shared branches (Turan, Cyprus, EU/USoE)
+that `offset` blocks move by the tree's `*_FOCUS_LOCATION` flag. Reports focuses at a negative position, two
+focuses on one square, and `load_focus_tree` calls that do not call `TUR_clear_focus_location` first or do not set
+the flag the tree is laid out for. `python tools/focus_layout.py --boxes` prints each tree's bounding box.
+`release_check.py` runs the same checks.
+
 ## Pre-commit hook
 
 `git config core.hooksPath tools/hooks` enables `tools/hooks/pre-commit`, which runs the content checks
-(about 30 s) and blocks the commit on errors. The last report is in `.git/release_check_last.txt`.
+(about 30 s) and blocks the commit on errors. Without game files it runs the `--offline` checks instead. The last report is in `.git/release_check_last.txt`.
 
 ## Focus AI weights: `add_ai_weights.py`
 

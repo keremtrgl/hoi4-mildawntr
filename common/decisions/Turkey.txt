@@ -342,7 +342,7 @@ subtract_from_variable = { var = pkk_presence value = 2 }
 		remove_effect = {
 			add_stability = -0.02
            162 = {
-                if = {
+                
                         add_building_construction = {
                             type = bunker
                             level = 1
@@ -372,7 +372,7 @@ subtract_from_variable = { var = pkk_presence value = 2 }
 				remove_idea = TUR_kurdish_trouble5
 				add_idea = TUR_kurdish_trouble6
 			} }		
-	}  } } }
+	  } } }
 
 
 
@@ -7409,6 +7409,7 @@ TUR_islamist_restorationists = {
 		fire_only_once = yes
 		
 		complete_effect = {
+			TUR_clear_focus_location = yes
 set_country_flag = OTT_FOCUS_LOCATION  
 TUR_traditionalists_turn_ally_effect = yes 
 TUR_kemalist_turn_hostile_effect = yes 

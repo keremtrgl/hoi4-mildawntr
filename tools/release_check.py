@@ -13,6 +13,7 @@ problems by severity:
     python tools/release_check.py --all           list every item instead of the first 15 per check
     python tools/release_check.py --report FILE   also write the report as Markdown
     python tools/release_check.py --only refs,loc run some groups: files, loc, refs, pack, release, log
+    python tools/release_check.py --offline       no game or Millennium Dawn files: only the checks that need neither
 
 Paths default to this machine's Steam/Documents folders; override with --game, --md, --docs.
 """
@@ -21,13 +22,14 @@ import argparse, collections, glob, hashlib, json, os, re, subprocess, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from md_sync import blocks, inner, strip_code, definitions  # noqa: E402
 import md_loc  # noqa: E402
+import focus_layout  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PACK = os.path.join(ROOT, 'turkish_pack')
 STEAM = r'C:/Program Files (x86)/Steam/steamapps'
 MD_ID, MOD_ID, PACK_ID = '2777392649', '3826896215', '3827287270'
 # folders that never ship (keep in step with the robocopy sync in NOTLAR.md)
-DEV_DIRS = {'.git', 'turkish_pack', '_archive', '.claude', '_workshop_gallery', '.vscode', 'tools', 'MD_source'}
+DEV_DIRS = {'.git', '.github', 'turkish_pack', '_archive', '.claude', '_workshop_gallery', '.vscode', 'tools', 'MD_source'}
 DEV_FILES = {'.gitignore', 'NOTLAR.md'}
 EVENT_KEYS = ('country_event', 'news_event', 'state_event', 'unit_leader_event', 'operative_leader_event')
 LOC_LINE = re.compile(r'^\s*([^\s:#"]+):(\d*)\s*"(.*)"\s*(#.*)?$')
@@ -380,7 +382,7 @@ def strip_code_keep_strings(t):
 def check_pack(rep, loc_union, en_values, docs, md):
     group = 'pack'
     pack_files = files_under(PACK, ['localisation/**/*.yml'])
-    malformed, seen, dups, orphans, token_diff, bom = [], {}, [], [], [], []
+    malformed, seen, dups, orphans, token_diff, bom, glyphs = [], {}, [], [], [], [], []
     for r, p in sorted(pack_files.items()):
         if not open(p, 'rb').read(3) == b'\xef\xbb\xbf':
             bom.append(r)
@@ -391,6 +393,8 @@ def check_pack(rep, loc_union, en_values, docs, md):
                 dups.append(f'{k}: {seen[k]} and {r}:{i}')
                 continue
             seen[k] = f'{r}:{i}'
+            if re.search(r'\.(?:t|title)$', k) and re.search('[ıİşŞğĞ]', v):
+                glyphs.append(f'{k}  ({r}:{i})')
             if k not in loc_union:
                 orphans.append(f'{k}  ({r}:{i})')
                 continue
@@ -404,6 +408,7 @@ def check_pack(rep, loc_union, en_values, docs, md):
     rep.add(group, 'Pack files start with a UTF-8 BOM', 'ERROR', bom)
     rep.add(group, 'Every pack line is "key:0 \\"text\\""', 'ERROR', malformed)
     rep.add(group, 'No key translated twice', 'ERROR', dups)
+    rep.add(group, 'Event titles avoid ı ş ğ İ Ş Ğ (no glyph in the title font)', 'WARN', glyphs)
     rep.add(group, 'No translations for keys that no longer exist (deleted content)', 'WARN', orphans)
     rep.add(group, 'Translations keep the $variables$, [scripted loc] and £icons of the English text', 'WARN', token_diff)
     mod_keys = {k for k, v in en_values.items() if v.strip()}
@@ -695,6 +700,14 @@ def check_power(rep, mod_files):
             [f'{r}: has_focus_tree = {name}' for r, name in used if name not in trees and name.startswith('MD_TUR')])
 
 
+def check_layout(rep):
+    """where focuses land on screen once the shared branches are moved by the tree's location flag (tools/focus_layout.py)"""
+    off, over, flags = focus_layout.problems()
+    rep.add('refs', 'No focus left of or above the screen (negative position)', 'WARN', off)
+    rep.add('refs', 'No two focuses of a tree on the same square', 'WARN', over)
+    rep.add('refs', 'Every focus tree load clears the old location flag and sets its own', 'WARN', flags)
+
+
 def check_scopes(rep, mod_files):
     """country-only effects in a state scope and state-only effects in a country scope, in event options and
     immediates, focus rewards and decision effects; scopes we cannot know (ROOT, FROM, PREV, event targets) are skipped"""
@@ -842,11 +855,17 @@ def main():
     ap.add_argument('--strict', action='store_true')
     ap.add_argument('--all', action='store_true')
     ap.add_argument('--report')
+    ap.add_argument('--offline', action='store_true')
     a = ap.parse_args()
     only = set(a.only.split(','))
-    for p, what in ((a.game, '--game'), (a.md, '--md')):
-        if not os.path.isdir(p):
-            sys.exit(f'{what} folder not found: {p}')
+    if a.offline:
+        # nothing that resolves a name against vanilla or Millennium Dawn, and nothing about this machine's folders
+        only &= {'files', 'loc', 'refs', 'scope'}
+        print('offline: brace/encoding, localisation syntax, date, treasury, party, power-lock, focus layout and scope checks only')
+    else:
+        for p, what in ((a.game, '--game'), (a.md, '--md')):
+            if not os.path.isdir(p):
+                sys.exit(f'{what} folder not found: {p}\n(--offline runs the checks that need no game files)')
 
     t0 = time.time()
     rep = Report()
@@ -868,8 +887,10 @@ def main():
     if 'loc' in only:
         check_loc(rep, en_mod, loc_union)
     if 'refs' in only:
-        check_refs(rep, layers, loc_union, en_values)
-        check_structure(rep, mod_files, a.md)
+        if not a.offline:
+            check_refs(rep, layers, loc_union, en_values)
+            check_structure(rep, mod_files, a.md)
+        check_layout(rep)
         check_logic(rep, mod_files, en_values)
         check_power(rep, mod_files)
     if 'balance' in only:

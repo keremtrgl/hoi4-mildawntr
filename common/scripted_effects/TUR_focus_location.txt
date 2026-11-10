@@ -1,0 +1,24 @@
+# Every focus tree of Turkey that shows a shared branch (Turan, Cyprus, EU/USoE) is laid out for exactly one
+# *_FOCUS_LOCATION flag: the offsets of the shared focuses test it. Call this before load_focus_tree and before
+# setting the new tree's flag, so the flag of the previous tree cannot move the shared branches a second time.
+# tools/focus_layout.py checks that every load does.
+TUR_clear_focus_location = {
+	clr_country_flag = AKP_LIB_FOCUS_LOCATION
+	clr_country_flag = ANAP_FOCUS_LOCATION
+	clr_country_flag = ANARCHY_FOCUS_LOCATION
+	clr_country_flag = ATA_FOCUS_LOCATION
+	clr_country_flag = AYM_FOCUS_LOCATION
+	clr_country_flag = CHP_FOCUS_LOCATION
+	clr_country_flag = DSP_FOCUS_LOCATION
+	clr_country_flag = GENC_FOCUS_LOCATION
+	clr_country_flag = HEPAR_FOCUS_LOCATION
+	clr_country_flag = LDP_FOCUS_LOCATION
+	clr_country_flag = MAFIA_FOCUS_LOCATION
+	clr_country_flag = MHP_FOCUS_LOCATION
+	clr_country_flag = MIT_FOCUS_LOCATION
+	clr_country_flag = OTT_FOCUS_LOCATION
+	clr_country_flag = SAADET_FOCUS_LOCATION
+	clr_country_flag = TECH_FOCUS_LOCATION
+	clr_country_flag = TKP_FOCUS_LOCATION
+	clr_country_flag = TSK_FOCUS_LOCATION
+}
